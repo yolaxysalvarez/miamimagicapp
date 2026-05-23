@@ -12,9 +12,9 @@
 <meta name="apple-mobile-web-app-title" content="Miami Magic">
 <link rel="apple-touch-icon" href="https://img.icons8.com/emoji/192/palm-tree.png">
 <style>
-:root{--coral:#FF4D35;--coral2:#FF7A5C;--teal:#00C9B1;--gold:#FFD166;--navy:#080F1E;--navy2:#0E1B33;--sand:#FFFBF4;--warm:#FFF3E8;--purple:#8B5CF6;--sky:#0EA5E9;--green:#10B981;--amber:#F59E0B;--sidebar:260px;}
+:root{--coral:#FF4D35;--coral2:#FF7A5C;--teal:#00C9B1;--gold:#FFD166;--navy:#080F1E;--navy2:#0E1B33;--sand:#FFF8F0;--warm:#FFEEDD;--purple:#8B5CF6;--sky:#0EA5E9;--green:#10B981;--amber:#F59E0B;--sidebar:260px;}
 *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--sand);color:var(--navy);overflow-x:hidden;}
+body{font-family:'DM Sans',sans-serif;background:#FFF8F0;color:var(--navy);overflow-x:hidden;}
 button,a{cursor:pointer;}
 .sidebar{position:fixed;left:0;top:0;bottom:0;width:var(--sidebar);background:var(--navy);z-index:200;display:flex;flex-direction:column;overflow:hidden;}
 .sidebar-logo{padding:26px 22px 18px;border-bottom:1px solid rgba(255,255,255,.07);flex-shrink:0;}
@@ -44,25 +44,36 @@ button,a{cursor:pointer;}
 .mob-btn span{width:17px;height:2px;background:#fff;border-radius:2px;}
 .mob-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199;}
 .main{margin-left:var(--sidebar);}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 64px 60px;position:relative;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 85%,rgba(0,201,177,.2) 0%,transparent 55%),radial-gradient(ellipse 55% 50% at 90% 10%,rgba(255,77,53,.18) 0%,transparent 55%),radial-gradient(ellipse 45% 40% at 30% 60%,rgba(255,209,102,.13) 0%,transparent 55%);}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,77,53,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,77,53,.04) 1px,transparent 1px);background-size:55px 55px;mask-image:radial-gradient(ellipse 80% 80% at 60% 50%,black 0%,transparent 70%);}
-.flt{position:absolute;font-size:1.8rem;opacity:.4;animation:flt 8s ease-in-out infinite;pointer-events:none;}
-.flt:nth-child(1){top:15%;right:7%;animation-delay:0s;}.flt:nth-child(2){top:52%;right:4%;animation-delay:2.5s;}.flt:nth-child(3){bottom:20%;right:14%;animation-delay:4s;}.flt:nth-child(4){top:28%;right:22%;animation-delay:1.2s;}.flt:nth-child(5){bottom:30%;right:30%;animation-delay:3.5s;}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 64px 60px;position:relative;overflow:visible;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#FFE8D6 0%,#FFF0E0 35%,#E8FFF8 100%);}.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 60% at 92% 95%,rgba(255,77,53,.55) 0%,transparent 50%),radial-gradient(ellipse 55% 50% at 5% 8%,rgba(0,201,177,.45) 0%,transparent 50%),radial-gradient(ellipse 50% 45% at 60% 50%,rgba(255,209,102,.32) 0%,transparent 55%),radial-gradient(ellipse 30% 30% at 80% 20%,rgba(139,92,246,.15) 0%,transparent 50%);}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,77,53,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,77,53,.07) 1px,transparent 1px);background-size:55px 55px;mask-image:radial-gradient(ellipse 80% 80% at 60% 50%,black 0%,transparent 70%);}
+.flt{position:absolute;font-size:2rem;opacity:.5;animation:flt 8s ease-in-out infinite;pointer-events:none;}
+.flt:nth-child(1){top:8%;right:5%;animation-delay:0s;font-size:2.4rem;}
+.flt:nth-child(2){top:38%;right:2%;animation-delay:2.5s;font-size:1.6rem;}
+.flt:nth-child(3){bottom:12%;right:10%;animation-delay:4s;font-size:2rem;}
+.flt:nth-child(4){top:15%;right:16%;animation-delay:1.2s;font-size:1.5rem;opacity:.35;}
+.flt:nth-child(5){bottom:20%;right:3%;animation-delay:3.5s;font-size:2.2rem;}
+@media(max-width:900px){
+  .flt:nth-child(1){top:5%;right:4%;font-size:1.6rem;opacity:.3;}
+  .flt:nth-child(2){display:none;}
+  .flt:nth-child(3){bottom:8%;right:4%;font-size:1.4rem;opacity:.3;}
+  .flt:nth-child(4){display:none;}
+  .flt:nth-child(5){display:none;}
+}
 .hero-content{position:relative;z-index:2;max-width:620px;}
-.hero-eye{display:inline-flex;align-items:center;gap:9px;background:rgba(0,201,177,.1);border:1px solid rgba(0,201,177,.2);padding:5px 15px;border-radius:50px;font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:24px;animation:up .8s .2s both;}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,6rem);font-weight:900;line-height:.9;margin-bottom:24px;animation:up .8s .4s both;}
-.h1a{color:var(--navy);display:block;}.h1b{display:block;background:linear-gradient(135deg,var(--coral),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;}
-.hero-sub{font-size:1rem;color:#5a6070;max-width:480px;line-height:1.8;margin-bottom:36px;animation:up .8s .6s both;}
+.hero-eye{display:inline-flex;align-items:center;gap:9px;background:rgba(0,150,120,.12);border:2px solid rgba(0,150,120,.5);padding:7px 20px;border-radius:50px;font-size:.68rem;font-weight:800;letter-spacing:5px;text-transform:uppercase;color:#006B5A;margin-bottom:20px;animation:up .8s .2s both;box-shadow:0 4px 16px rgba(0,150,120,.15);}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3.2rem,8vw,6.5rem);font-weight:900;line-height:.88;margin-bottom:20px;animation:up .8s .4s both;}
+.h1a{color:var(--navy);display:block;}.h1b{display:block;background:linear-gradient(135deg,#FF3D20,#FF7A40,#FFB830);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;filter:drop-shadow(0 2px 8px rgba(255,77,53,.25));}
+.hero-sub{font-size:1.08rem;color:#2d3748;max-width:480px;line-height:1.75;margin-bottom:32px;animation:up .8s .6s both;font-weight:500;letter-spacing:.1px;}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap;animation:up .8s .8s both;}
 .hbtn{padding:13px 28px;border-radius:50px;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .25s;border:none;}
 .hbtn-p{background:linear-gradient(135deg,var(--coral),var(--coral2));color:#fff;box-shadow:0 8px 24px rgba(255,77,53,.3);}
 .hbtn-p:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(255,77,53,.4);}
-.hbtn-s{background:rgba(8,15,30,.07);color:var(--navy);border:2px solid rgba(8,15,30,.12);}
+.hbtn-s{background:rgba(8,15,30,.06);color:var(--navy);border:2px solid rgba(8,15,30,.15);}
 .hbtn-s:hover{background:var(--navy);color:#fff;transform:translateY(-3px);}
-.hero-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:48px;padding-top:32px;border-top:1px solid rgba(8,15,30,.08);animation:up .8s 1s both;}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:0;padding-top:28px;border-top:1px solid rgba(8,15,30,.1);animation:up .8s 1s both;}
 .hstat-n{font-family:'Bebas Neue',sans-serif;font-size:2rem;line-height:1;background:linear-gradient(135deg,var(--coral),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.hstat-l{font-size:.7rem;color:#999;font-weight:500;letter-spacing:.5px;margin-top:2px;}
+.hstat-l{font-size:.7rem;color:#777;font-weight:500;letter-spacing:.5px;margin-top:2px;}
 .mq-wrap{background:var(--navy);padding:12px 0;overflow:hidden;position:relative;}
 .mq-wrap::before,.mq-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;}
 .mq-wrap::before{left:0;background:linear-gradient(to right,var(--navy),transparent);}
@@ -73,13 +84,13 @@ button,a{cursor:pointer;}
 .mq-n{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--gold);}
 /* SEARCH */
 .search-zone{padding:44px 64px 0;position:relative;}
-.search-bar{display:flex;align-items:center;background:#fff;border-radius:50px;box-shadow:0 12px 40px rgba(0,0,0,.08);padding:6px 6px 6px 24px;max-width:680px;border:2px solid rgba(255,77,53,.15);transition:all .3s;}
-.search-bar:focus-within{border-color:var(--coral);box-shadow:0 12px 40px rgba(255,77,53,.15);}
+.search-bar{display:flex;align-items:center;background:rgba(255,255,255,.92);border-radius:50px;box-shadow:0 16px 48px rgba(255,77,53,.15),0 4px 16px rgba(0,0,0,.08);padding:6px 6px 6px 24px;max-width:680px;border:2px solid rgba(255,77,53,.2);transition:all .3s;backdrop-filter:blur(8px);}
+.search-bar:focus-within{border-color:var(--coral);box-shadow:0 16px 48px rgba(255,77,53,.25),0 4px 16px rgba(0,0,0,.1);}
 .search-bar input{flex:1;border:none;outline:none;font-family:'DM Sans',sans-serif;font-size:.93rem;color:var(--navy);background:transparent;}
 .search-bar input::placeholder{color:#bbb;}
 .search-go{background:linear-gradient(135deg,var(--coral),var(--coral2));color:#fff;border:none;border-radius:50px;padding:10px 24px;font-family:'DM Sans',sans-serif;font-weight:700;cursor:pointer;font-size:.84rem;transition:all .22s;}
 .search-go:hover{opacity:.9;transform:scale(1.03);}
-.search-panel{position:absolute;top:calc(100% + 6px);left:64px;max-width:680px;right:0;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.13);border:1px solid rgba(255,77,53,.1);max-height:500px;overflow-y:auto;z-index:250;display:none;scrollbar-width:thin;}
+.search-panel{position:absolute;top:calc(100% + 8px);left:0;width:100%;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.15);border:1px solid rgba(255,77,53,.15);max-height:480px;overflow-y:auto;z-index:999;display:none;scrollbar-width:thin;}
 .search-panel.open{display:block;}
 .sp-head{padding:12px 18px 8px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f5f5f5;position:sticky;top:0;background:#fff;z-index:1;}
 .sp-count{font-size:.67rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#bbb;}
@@ -99,7 +110,7 @@ button,a{cursor:pointer;}
 .sp-empty{padding:28px 18px;text-align:center;color:#bbb;}
 .sp-footer{padding:9px 18px;text-align:center;font-size:.72rem;color:#ccc;border-top:1px solid #f5f5f5;}
 /* SECTIONS */
-.sec{padding:60px 64px;max-width:1380px;}
+.sec{padding:60px 64px;max-width:1380px;position:relative;}
 .sec-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:26px;flex-wrap:wrap;gap:10px;}
 .sec-tt{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;line-height:1.1;}
 .sec-tt small{display:block;font-size:.68rem;font-family:'DM Sans',sans-serif;font-weight:700;color:var(--teal);letter-spacing:4px;text-transform:uppercase;margin-bottom:4px;}
@@ -110,8 +121,8 @@ button,a{cursor:pointer;}
 .chip:hover,.chip.on{border-color:var(--coral);background:var(--coral);color:#fff;}
 /* RESTAURANT CARDS */
 .rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:20px;}
-.rcard{background:#fff;border-radius:20px;overflow:hidden;cursor:pointer;transition:transform .28s cubic-bezier(.34,1.56,.64,1),box-shadow .28s;}
-.rcard:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 20px 50px rgba(0,0,0,.1);}
+.rcard{background:#fff;border-radius:22px;overflow:hidden;cursor:pointer;transition:transform .28s cubic-bezier(.34,1.56,.64,1),box-shadow .28s;box-shadow:0 4px 20px rgba(0,0,0,.06);}
+.rcard:hover{transform:translateY(-10px) scale(1.01);box-shadow:0 24px 56px rgba(255,77,53,.12),0 8px 24px rgba(0,0,0,.08);}
 .rcard-img{height:185px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
 .rcard-emoji{font-size:5rem;transition:transform .35s;position:relative;z-index:1;}
 .rcard:hover .rcard-emoji{transform:scale(1.1);}
@@ -337,7 +348,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 <div class="main">
   <section class="hero" id="home">
     <div class="hero-bg"></div><div class="hero-grid"></div>
-    <div class="flt">🌴</div><div class="flt">🌊</div><div class="flt">🌺</div><div class="flt">☀️</div><div class="flt">🦩</div>
+    <div class="flt">🌴</div><div class="flt">🍹</div><div class="flt">🌺</div><div class="flt">☀️</div><div class="flt">🦩</div>
     <div class="hero-content">
       <div class="hero-eye" id="hEye"></div>
       <h1><span class="h1a" id="hL1"></span><span class="h1b">Miami</span></h1>
@@ -346,17 +357,19 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
         <button class="hbtn hbtn-p" onclick="go('sec-rest')" id="hCta1"></button>
         <button class="hbtn hbtn-s" onclick="go('sec-events')" id="hCta2"></button>
       </div>
+      <!-- SEARCH INSIDE HERO — above stats -->
+      <div style="margin-top:28px;width:100%;max-width:560px;animation:up .8s 1s both;position:relative;z-index:999;">
+        <div class="search-bar">
+          <input type="text" id="sInp" autocomplete="off" oninput="doSearch(this.value)" onkeydown="searchKey(event)" />
+          <button class="search-go" id="sGo" onclick="doSearch(document.getElementById('sInp').value)"></button>
+        </div>
+        <div class="search-panel" id="searchPanel"></div>
+      </div>
       <div class="hero-stats" id="heroStats"></div>
     </div>
   </section>
   <div class="mq-wrap"><div class="mq-track" id="mqTrack"></div></div>
-  <div class="search-zone">
-    <div class="search-bar">
-      <input type="text" id="sInp" autocomplete="off" oninput="doSearch(this.value)" onkeydown="searchKey(event)">
-      <button class="search-go" id="sGo" onclick="doSearch(document.getElementById('sInp').value)"></button>
-    </div>
-    <div class="search-panel" id="searchPanel"></div>
-  </div>
+  <div style="height:0"></div>
   <div id="app"></div>
   <div class="money-sec fade" id="monetize">
     <div class="g1"></div><div class="g2"></div>
@@ -498,14 +511,14 @@ nightlife:[
 // ── LANGUAGE ──
 let lang='en', activeFlt='all';
 const TX={
-en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'30+',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'10',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
+en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Your insider guide to the best restaurants, beaches, concerts, events and nightlife in the Magic City. 🌴',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'30+',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'10',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
 nav:[{label:'Discover',items:[{icon:'🍽',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'🏖',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'📍',lbl:'Places',cnt:'8',id:'sec-place'}]},{label:'Entertainment',items:[{icon:'🏛',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'🎭',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'🎵',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'🏟',lbl:'Stadiums',cnt:'6',id:'sec-stad'}]},{label:'Going Out',items:[{icon:'🎉',lbl:'Events',cnt:'10',id:'sec-events'},{icon:'🌙',lbl:'Nightlife',cnt:'8',id:'sec-night'}]},{label:'Business',items:[{icon:'💰',lbl:'Monetize',cnt:'',id:'monetize'}]}],
 tt:{rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['This Month','Upcoming Events'],night:['After Dark','Nightlife']},
 sa:'See all →',rf:['All','🇨🇺 Cuban','🦞 Seafood','🌮 Mexican','🍣 Japanese','🫒 Mediterranean','🌶️ Latin','🍝 Italian','🍔 American','⭐ Fine Dining'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining'],
 fTag:'The Magic City, curated for you.',fDevLbl:'Developed by',fEx:'Explore',fCo:'Company',fLinks1:['Restaurants','Beaches','Museums','Theaters','Stadiums'],fLinks2:['About','Contact','Privacy Policy','Submit a Place','For Business'],fCopy:'© 2026 Miami Magic · Y & Y Entertainment Corp',fRights:'All Rights Reserved',
 mEye:'💰 Business Model',mH2:'How to Make <em>Money</em> with Miami Magic',mSub:'A complete guide to turning this app into a real, scalable business.',revT:'Realistic Revenue Projection (per month)',rmT:'Step-by-Step Launch Plan',rPh:['Phase 1','Phase 2','Phase 3'],rPer:['Months 1–3','Months 4–8','Month 12+'],rMo:'/ month',rD:['10 listings at $250/mo','Ads + commissions + 40 listings','All streams + partnerships'],
 },
-es:{logoTag:'La Guía Definitiva de Miami',eye:'Tu Guía Definitiva de la Ciudad',l1:'Descubre',sub:'Restaurantes, playas, museos, teatros, estadios, eventos y vida nocturna — la guía completa de la Ciudad Mágica.',cta1:'Explorar Ahora',cta2:'Próximos Eventos',stats:[{n:'30+',l:'Restaurantes'},{n:'8',l:'Playas'},{n:'8',l:'Museos'},{n:'6',l:'Estadios'},{n:'10',l:'Eventos'},{n:'8',l:'Vida Nocturna'}],sph:'Busca restaurante, concierto, artista, evento…',sgo:'Buscar',biz:'Para Negocios',langTxt:'English',reserveBtn:'Reservar en OpenTable →',ticketsBtn:'Comprar Entradas Ticketmaster →',moreBtn:'Más Información →',mapsBtn:'Ver en Google Maps →',gamesBtn:'Ver Partidos →',upLbl:'Próximos Shows:',tipLbl:'Consejo',
+es:{logoTag:'La Guía Definitiva de Miami',eye:'Tu Guía Definitiva de la Ciudad',l1:'Descubre',sub:'Tu guía exclusiva de los mejores restaurantes, playas, conciertos, eventos y vida nocturna de la Ciudad Mágica. 🌴',cta1:'Explorar Ahora',cta2:'Próximos Eventos',stats:[{n:'30+',l:'Restaurantes'},{n:'8',l:'Playas'},{n:'8',l:'Museos'},{n:'6',l:'Estadios'},{n:'10',l:'Eventos'},{n:'8',l:'Vida Nocturna'}],sph:'Busca restaurante, concierto, artista, evento…',sgo:'Buscar',biz:'Para Negocios',langTxt:'English',reserveBtn:'Reservar en OpenTable →',ticketsBtn:'Comprar Entradas Ticketmaster →',moreBtn:'Más Información →',mapsBtn:'Ver en Google Maps →',gamesBtn:'Ver Partidos →',upLbl:'Próximos Shows:',tipLbl:'Consejo',
 nav:[{label:'Descubrir',items:[{icon:'🍽',lbl:'Restaurantes',cnt:'30+',id:'sec-rest'},{icon:'🏖',lbl:'Playas',cnt:'8',id:'sec-beach'},{icon:'📍',lbl:'Lugares',cnt:'8',id:'sec-place'}]},{label:'Entretenimiento',items:[{icon:'🏛',lbl:'Museos',cnt:'8',id:'sec-museum'},{icon:'🎭',lbl:'Teatros',cnt:'5',id:'sec-theater'},{icon:'🎵',lbl:'Conciertos',cnt:'8',id:'sec-concert'},{icon:'🏟',lbl:'Estadios',cnt:'6',id:'sec-stad'}]},{label:'Salir',items:[{icon:'🎉',lbl:'Eventos',cnt:'10',id:'sec-events'},{icon:'🌙',lbl:'Vida Nocturna',cnt:'8',id:'sec-night'}]},{label:'Negocios',items:[{icon:'💰',lbl:'Monetizar',cnt:'',id:'monetize'}]}],
 tt:{rest:['Selección Especial','Mejores Restaurantes de Miami'],beach:['Sol y Arena','Mejores Playas'],museum:['Cultura y Arte','Museos'],theater:['En Escena','Teatros'],concert:['Música en Vivo','Recintos de Conciertos'],stad:['Deportes','Estadios y Arenas'],place:['Imprescindibles','Lugares y Vecindarios'],events:['Este Mes','Próximos Eventos'],night:['De Noche','Vida Nocturna']},
 sa:'Ver todo →',rf:['Todo','🇨🇺 Cubano','🦞 Mariscos','🌮 Mexicano','🍣 Japonés','🫒 Mediterráneo','🌶️ Latino','🍝 Italiano','🍔 Americano','⭐ Alta Cocina'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining'],
@@ -949,7 +962,31 @@ function build(){
   document.getElementById('logoTag').textContent=t.logoTag;
   document.getElementById('hEye').textContent=t.eye;
   document.getElementById('hL1').textContent=t.l1;
-  document.getElementById('hSub').textContent=t.sub;
+  // Styled subtitle with design
+const subEl = document.getElementById('hSub');
+if(lang==='es'){
+  subEl.innerHTML = `
+    <span style="display:block;font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:400;font-style:italic;color:#2d3748;line-height:1.5;margin-bottom:10px">
+      Restaurantes · Playas · Conciertos
+    </span>
+    <span style="display:block;font-size:.88rem;font-weight:500;color:#666;letter-spacing:.5px;line-height:1.7">
+      Estadios · Museos · Eventos · Vida Nocturna
+    </span>
+    <span style="display:inline-flex;align-items:center;gap:7px;margin-top:12px;background:linear-gradient(135deg,rgba(255,77,53,.1),rgba(255,209,102,.1));border:1.5px solid rgba(255,77,53,.2);padding:5px 16px;border-radius:50px;font-size:.75rem;font-weight:700;color:var(--coral);letter-spacing:1px">
+      ✦ LA GUÍA COMPLETA DE MIAMI
+    </span>`;
+} else {
+  subEl.innerHTML = `
+    <span style="display:block;font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:400;font-style:italic;color:#2d3748;line-height:1.5;margin-bottom:10px">
+      Restaurants · Beaches · Concerts
+    </span>
+    <span style="display:block;font-size:.88rem;font-weight:500;color:#666;letter-spacing:.5px;line-height:1.7">
+      Stadiums · Museums · Events · Nightlife
+    </span>
+    <span style="display:inline-flex;align-items:center;gap:7px;margin-top:12px;background:linear-gradient(135deg,rgba(255,77,53,.1),rgba(255,209,102,.1));border:1.5px solid rgba(255,77,53,.2);padding:5px 16px;border-radius:50px;font-size:.75rem;font-weight:700;color:var(--coral);letter-spacing:1px">
+      ✦ THE COMPLETE MIAMI GUIDE
+    </span>`;
+}
   document.getElementById('hCta1').textContent=t.cta1;
   document.getElementById('hCta2').textContent=t.cta2;
   document.getElementById('sInp').placeholder=t.sph;
