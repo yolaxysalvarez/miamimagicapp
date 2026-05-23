@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Miami Magic – The Ultimate City Guide</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#FF4D35">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Miami Magic">
+<link rel="apple-touch-icon" href="https://img.icons8.com/emoji/192/palm-tree.png">
 <style>
 :root{--coral:#FF4D35;--coral2:#FF7A5C;--teal:#00C9B1;--gold:#FFD166;--navy:#080F1E;--navy2:#0E1B33;--sand:#FFFBF4;--warm:#FFF3E8;--purple:#8B5CF6;--sky:#0EA5E9;--green:#10B981;--amber:#F59E0B;--sidebar:260px;}
 *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
@@ -1340,5 +1346,14 @@ async function sendAI(){
 }
 </script>
 
+<script>
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('sw.js')
+      .then(()=>console.log('✅ Miami Magic PWA ready'))
+      .catch(err=>console.log('SW error:', err));
+  });
+}
+</script>
 </body>
 </html>
