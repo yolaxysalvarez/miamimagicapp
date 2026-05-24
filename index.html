@@ -828,13 +828,11 @@ function renderRestCards(list){
   return list.map((r,i)=>{
     const feat=i===0&&activeFlt==='all';
     const imgH = feat ? '280px' : '185px';
-    const photoData = encodeURIComponent(JSON.stringify({id:r.id,name:r.name,emoji:r.emoji,bg:r.bg,photo_url:r.photo_url||r.photo||''}));
+    const rPhotoUrl = r.photo_url || r.photo || '';
     return '<div class="'+(feat?'rcard rcard-feat':'rcard')+'" onclick="openItemModal(D.restaurants.find(x=>x.id===\''+r.id+'\'),\'rest\')">'+
-      '<div class="rcard-img '+r.bg+'" style="position:relative;">'+
-      '<div data-photo-item="'+photoData+'" data-photo-h="'+imgH+'" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;"><div class="rcard-emoji">'+r.emoji+'</div></div>'+
-      '<div class="rcard-ov" style="position:absolute;inset:0;z-index:1"></div>'+
-      '<div class="rcard-top" style="position:relative;z-index:2"><span class="rbadge'+(r.pro?' rbadge-pro':'')+'">'+r.badge+'</span></div>'+
-      '<div class="rrating" style="position:relative;z-index:2"><span class="rstar">★</span>'+r.rating+' ('+r.rev+')</div></div>'+
+      photoCard(rPhotoUrl, r.emoji, r.bg, imgH, '0')+
+      '<div class="rcard-top" style="position:absolute;top:10px;left:10px;right:10px;z-index:2"><span class="rbadge'+(r.pro?' rbadge-pro':'')+'">'+r.badge+'</span></div>'+
+      '<div class="rrating" style="position:absolute;bottom:10px;left:10px;z-index:2"><span class="rstar">★</span>'+r.rating+' ('+r.rev+')</div>'+
       '<div class="rcard-body"><div class="rcard-cat">'+n(r.cat,r.cat_es)+'</div>'+
       '<div class="rcard-name">'+r.name+'</div>'+
       '<div class="rcard-meta">'+r.price+' · '+r.addr.split(',').slice(-2).join(',').trim()+'</div>'+
@@ -853,7 +851,8 @@ function renderRest(){
 function renderBeach(){
   return '<section class="sec fade" id="sec-beach">'+sHdr('beach')+'<div class="beach-grid">'+
     D.beaches.map(b=>'<div class="bcard" onclick="openItemModal(D.beaches.find(x=>x.id===\''+b.id+'\'),\'beach\')">'+
-      '<div class="bcard-bg '+b.bg+'">'+b.emoji+'</div><div class="bcard-ov"></div>'+
+      photoCard(b.photo_url||'', b.emoji, b.bg, '235px', '20px')+
+      '<div class="bcard-ov" style="position:absolute;inset:0;border-radius:20px"></div>'+
       '<span class="bcard-badge">'+n(b.badge,b.badge_es)+'</span>'+
       '<div class="bcard-body"><div class="bcard-name">'+n(b.name,b.name_es)+'</div><div class="bcard-desc">'+n(b.desc,b.desc_es)+'</div></div></div>').join('')+
     '</div></section>';
@@ -862,7 +861,7 @@ function renderBeach(){
 function renderMuseum(){
   return '<section class="sec fade" id="sec-museum">'+sHdr('museum')+'<div class="venue-grid">'+
     D.museums.map(m=>'<div class="vcard" onclick="openItemModal(D.museums.find(x=>x.id===\''+m.id+'\'),\'museum\')">'+
-      '<div class="vcard-img '+m.bg+'">'+m.emoji+'</div>'+
+      photoCard(m.photo_url||'', m.emoji, m.bg, '150px', '20px 20px 0 0')+
       '<div class="vcard-body"><div class="vcat" style="color:var(--purple)">'+n(m.cat,m.cat_es)+'</div>'+
       '<div class="vname">'+n(m.name,m.name_es)+'</div><div class="vdesc">'+n(m.desc,m.desc_es)+'</div>'+
       '<div class="vtags">'+m.tags.map(tg=>'<span class="vtag">'+tg+'</span>').join('')+'</div></div></div>').join('')+
@@ -872,7 +871,7 @@ function renderMuseum(){
 function renderTheater(){
   return '<section class="sec fade" id="sec-theater">'+sHdr('theater')+'<div class="venue-grid">'+
     D.theaters.map(th=>'<div class="vcard" onclick="openItemModal(D.theaters.find(x=>x.id===\''+th.id+'\'),\'theater\')">'+
-      '<div class="vcard-img bg-purple">'+th.emoji+'</div>'+
+      photoCard(th.photo_url||'', th.emoji, 'bg-purple', '150px', '20px 20px 0 0')+
       '<div class="vcard-body"><div class="vcat" style="color:var(--purple)">'+n(th.cat,th.cat_es)+'</div>'+
       '<div class="vname">'+n(th.name,th.name_es)+'</div><div class="vdesc">'+n(th.desc,th.desc_es)+'</div>'+
       '<div class="vtags">'+th.tags.map(tg=>'<span class="vtag">'+tg+'</span>').join('')+'</div></div></div>').join('')+
@@ -883,7 +882,8 @@ function renderConcert(){
   const t=T();
   return '<section class="sec fade" id="sec-concert">'+sHdr('concert')+'<div class="venue-grid">'+
     D.concerts.map(c=>'<div class="ccard" onclick="openConcertModal(\''+c.id+'\')">'+
-      '<div class="ccard-img '+c.bg+'"><span style="font-size:3.5rem;position:relative;z-index:1">'+c.emoji+'</span><span class="ccard-cap">'+c.cap+'</span></div>'+
+      photoCard(c.photo_url||'', c.emoji, c.bg, '155px', '20px 20px 0 0')+
+      '<span class="ccard-cap" style="position:absolute;bottom:8px;left:10px;z-index:3">'+c.cap+'</span>'+
       '<div class="ccard-body"><div class="ccard-cat">'+n(c.cat,c.cat_es)+'</div>'+
       '<div class="ccard-name">'+n(c.name,c.name_es)+'</div>'+
       '<div class="ccard-price">🎟 '+n(c.price,c.price_es)+' · 🎶 '+(c.genres||'').split('·')[0].trim()+'</div>'+
@@ -896,7 +896,7 @@ function renderConcert(){
 function renderStad(){
   return '<section class="sec fade" id="sec-stad">'+sHdr('stad')+'<div class="stad-grid">'+
     D.stadiums.map(s=>'<div class="stcard" onclick="openItemModal(D.stadiums.find(x=>x.id===\''+s.id+'\'),\'stadium\')">'+
-      '<div class="stcard-img '+s.bg+'">'+s.emoji+'</div>'+
+      photoCard(s.photo_url||'', s.emoji, s.bg, '140px', '20px 20px 0 0')+
       '<div class="stcard-body"><div class="stcat">'+n(s.cat,s.cat_es)+'</div>'+
       '<div class="stname">'+n(s.name,s.name_es)+'</div>'+
       '<div class="sttags"><span class="sttag">👕 '+s.team+'</span><span class="sttag">🏟 '+s.cap+'</span></div>'+
@@ -906,7 +906,7 @@ function renderStad(){
 function renderPlace(){
   return '<section class="sec fade" id="sec-place">'+sHdr('place')+'<div class="h-scroll">'+
     D.places.map(p=>'<div class="pcard" onclick="openItemModal(D.places.find(x=>x.id===\''+p.id+'\'),\'place\')">'+
-      '<div class="pcard-img '+p.bg+'">'+p.emoji+'</div>'+
+      photoCard(p.photo_url||'', p.emoji, p.bg, '132px', '18px 18px 0 0')+
       '<div class="pcard-body"><div class="pname">'+n(p.name,p.name_es)+'</div><div class="pdesc">'+n(p.desc,p.desc_es)+'</div></div></div>').join('')+
     '</div></section>';
 }
@@ -922,7 +922,7 @@ function renderEvents(){
 function renderNight(){
   return '<section class="sec fade" id="sec-night">'+sHdr('night')+'<div class="nite-grid">'+
     D.nightlife.map(ni=>'<div class="ncard" onclick="openItemModal(D.nightlife.find(x=>x.id===\''+ni.id+'\'),\'night\')">'+
-      '<div class="ncard-img '+ni.bg+'">'+ni.emoji+'</div>'+
+      photoCard(ni.photo_url||'', ni.emoji, ni.bg, '165px', '20px 20px 0 0')+
       '<div class="ncard-body"><div class="nname">'+ni.name+'</div><div class="nmeta">'+ni.hrs+'</div><span class="ntag">'+ni.vibe+'</span></div></div>').join('')+
     '</div></section>';
 }
@@ -962,6 +962,14 @@ function renderMono(){
   document.getElementById('revGrid').innerHTML='<div class="rev-col"><div class="rv-ph">'+t.rPh[0]+'</div><div class="rv-per">'+t.rPer[0]+'</div><div class="rv-amt c1">$2,500</div><div class="rv-mo">'+t.rMo+'</div><div class="rv-det">'+t.rD[0]+'</div></div><div class="rev-col"><div class="rv-ph">'+t.rPh[1]+'</div><div class="rv-per">'+t.rPer[1]+'</div><div class="rv-amt c2">$12,000</div><div class="rv-mo">'+t.rMo+'</div><div class="rv-det">'+t.rD[1]+'</div></div><div class="rev-col"><div class="rv-ph">'+t.rPh[2]+'</div><div class="rv-per">'+t.rPer[2]+'</div><div class="rv-amt c3">$35,000+</div><div class="rv-mo">'+t.rMo+'</div><div class="rv-det">'+t.rD[2]+'</div></div>';
   document.getElementById('rmList').innerHTML=rm.map(r=>'<div class="rmitem"><div class="rmstep">'+r.s+'</div><div><div class="rmtitle">'+r.t+'</div><div class="rmdesc">'+r.d+'</div></div></div>').join('');
 }
+// ── PHOTO HELPER ──
+function photoCard(url, emoji, bg, h, radius){
+  if(url && url.startsWith('http')){
+    return '<div style="height:'+h+';background:url('+JSON.stringify(url)+') center/cover no-repeat;border-radius:'+radius+';position:relative;"><div style=\"position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.5) 0%,transparent 55%);border-radius:'+radius+'\"></div></div>';
+  }
+  return '<div class="'+bg+'" style="height:'+h+';display:flex;align-items:center;justify-content:center;position:relative;border-radius:'+radius+'"><span style=\"font-size:3.2rem;position:relative;z-index:1\">'+emoji+'</span></div>';
+}
+
 // ── BUILD ──
 function build(){
   const t=T();
@@ -1036,6 +1044,23 @@ if(lang==='es'){
 }
 
 function toggleLang(){lang=lang==='en'?'es':'en';activeFlt='all';build();}
+
+// Check if returning from successful Stripe payment
+window.addEventListener('load', ()=>{
+  const params = new URLSearchParams(window.location.search);
+  if(params.get('premium')==='success'){
+    aiUnlocked = true;
+    // Clean URL
+    window.history.replaceState({}, '', window.location.pathname);
+    // Show success message after app loads
+    setTimeout(()=>{
+      document.getElementById('aiFab').click();
+      setTimeout(()=>{
+        addAIMsg(lang==='es'?'🎉 ¡Bienvenida a Miami Magic Premium! Itinerarios ilimitados desbloqueados. ¿Adónde quieres ir?':'🎉 Welcome to Miami Magic Premium! Unlimited itineraries unlocked. Where do you want to go?','bot');
+      }, 500);
+    }, 1500);
+  }
+});
 
 // ── GOOGLE SHEETS INTEGRATION ──
 // Replace this URL with your Apps Script deployment URL
@@ -1330,7 +1355,50 @@ function updateLock(){
   }
 }
 
-function unlockPremium(){
+async function unlockPremium(){
+  // Load Stripe
+  if(!window.Stripe){
+    const script = document.createElement('script');
+    script.src = 'https://js.stripe.com/v3/';
+    document.head.appendChild(script);
+    await new Promise(r => script.onload = r);
+  }
+  const stripe = Stripe('pk_live_51TaRySCurAD76R7NfKicR4yBUH8FfybFhFpy1PedaJvsWK6aUhmHXWdYT5Y9HcfZMWoMaXZGddOnBMaz5RmTGCO700ijakpxp9');
+  
+  // Show loading state
+  const lockBtn = document.getElementById('aiLockBtn');
+  lockBtn.textContent = lang==='es'?'Procesando...':'Processing...';
+  lockBtn.disabled = true;
+
+  try {
+    const result = await stripe.redirectToCheckout({
+      lineItems: [{
+        price_data: {
+          currency: 'usd',
+          product_data: {
+            name: 'Miami Magic Premium',
+            description: lang==='es'?'Itinerarios ilimitados con AI, sin anuncios, acceso exclusivo':'Unlimited AI itineraries, ad-free, exclusive access',
+            images: ['https://www.miamimagicapp.com/icon.png'],
+          },
+          unit_amount: 499,
+          recurring: { interval: 'month' },
+        },
+        quantity: 1,
+      }],
+      mode: 'subscription',
+      successUrl: 'https://www.miamimagicapp.com?premium=success',
+      cancelUrl: 'https://www.miamimagicapp.com?premium=cancelled',
+    });
+    if(result.error){
+      // Fallback — activate locally if Stripe fails
+      activatePremiumLocally();
+    }
+  } catch(err) {
+    activatePremiumLocally();
+  }
+}
+
+function activatePremiumLocally(){
   aiUnlocked=true;
   document.getElementById('aiLock').style.display='none';
   document.getElementById('aiInput').parentElement.style.display='flex';
