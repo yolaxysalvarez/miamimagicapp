@@ -1007,211 +1007,103 @@ build();
 </script>
 
 <style>
-.ai-fab{position:fixed;bottom:24px;right:24px;z-index:500;background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border:none;border-radius:50px;padding:12px 20px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.85rem;cursor:pointer;box-shadow:0 8px 28px rgba(255,77,53,.4);display:flex;align-items:center;gap:8px;transition:all .25s;}
-.ai-fab:hover{transform:translateY(-3px);}
-.ai-panel{position:fixed;bottom:80px;right:24px;width:360px;max-height:580px;background:#fff;border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.18);z-index:500;display:flex;flex-direction:column;transform:scale(.9) translateY(20px);opacity:0;pointer-events:none;transition:all .3s cubic-bezier(.34,1.56,.64,1);overflow:hidden;}
-.ai-panel.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all;}
-.ai-hdr{background:linear-gradient(135deg,#080F1E,#0E1B33);padding:14px 16px;display:flex;align-items:center;gap:10px;}
-.ai-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#FF4D35,#FFD166);display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
-.ai-hn{font-size:.92rem;color:#fff;font-weight:700;}
-.ai-hs{font-size:.65rem;color:rgba(255,255,255,.4);}
-.ai-close{background:none;border:none;color:rgba(255,255,255,.4);font-size:1rem;cursor:pointer;margin-left:auto;padding:4px 8px;}
-.ai-msgs{flex:1;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:9px;}
-.ai-msg.bot{align-self:flex-start;max-width:90%;}
-.ai-msg.user{align-self:flex-end;max-width:90%;}
-.ai-bbl{padding:9px 13px;border-radius:14px;font-size:.8rem;line-height:1.6;}
-.ai-msg.bot .ai-bbl{background:#FFF3E8;color:#080F1E;border-radius:4px 14px 14px 14px;}
-.ai-msg.user .ai-bbl{background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border-radius:14px 14px 4px 14px;}
-.ai-quick{padding:7px 14px;display:flex;gap:5px;flex-wrap:wrap;border-top:1px solid #f5f5f5;}
-.ai-qb{padding:4px 11px;border-radius:20px;border:1.5px solid rgba(255,77,53,.2);background:#fff;color:#FF4D35;font-size:.7rem;font-weight:600;cursor:pointer;}
-.ai-qb:hover{background:#FF4D35;color:#fff;}
-.ai-inp-row{padding:9px 12px;border-top:1px solid #f5f5f5;display:flex;gap:7px;align-items:center;}
-.ai-inp{flex:1;border:1.5px solid #eee;border-radius:50px;padding:8px 14px;font-size:.8rem;outline:none;color:#080F1E;}
-.ai-inp:focus{border-color:#FF4D35;}
-.ai-send{background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border:none;border-radius:50%;width:33px;height:33px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
-@media(max-width:900px){.ai-panel{width:calc(100vw - 24px);right:12px;bottom:76px;}.ai-fab{right:12px;bottom:12px;}}
+.ai-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border:none;border-radius:50px;padding:12px 20px;font-weight:700;font-size:.85rem;cursor:pointer;box-shadow:0 8px 28px rgba(255,77,53,.4);}
+#aiPanel{position:fixed;bottom:80px;right:24px;width:340px;max-height:520px;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.2);z-index:9999;flex-direction:column;overflow:hidden;display:none;}
+.ai-hdr{background:#080F1E;padding:14px 16px;display:flex;align-items:center;gap:10px;}
+.ai-av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#FF4D35,#FFD166);display:flex;align-items:center;justify-content:center;}
+.ai-hn{font-size:.9rem;color:#fff;font-weight:700;}
+.ai-cx{background:none;border:none;color:#fff;font-size:1.1rem;cursor:pointer;margin-left:auto;}
+#aiMsgs{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;min-height:80px;}
+.bot-msg{align-self:flex-start;background:#FFF3E8;padding:8px 12px;border-radius:4px 14px 14px 14px;font-size:.8rem;max-width:88%;line-height:1.5;}
+.user-msg{align-self:flex-end;background:#FF4D35;color:#fff;padding:8px 12px;border-radius:14px 14px 4px 14px;font-size:.8rem;max-width:88%;}
+#aiQuick{padding:6px 12px;display:flex;gap:5px;flex-wrap:wrap;border-top:1px solid #f5f5f5;}
+.ai-qb{padding:4px 10px;border-radius:20px;border:1.5px solid rgba(255,77,53,.3);background:#fff;color:#FF4D35;font-size:.7rem;font-weight:600;cursor:pointer;}
+#aiBottom{padding:8px 12px;border-top:1px solid #f5f5f5;display:flex;gap:6px;}
+#aiInp{flex:1;border:1.5px solid #eee;border-radius:50px;padding:7px 14px;font-size:.8rem;outline:none;}
+#aiInp:focus{border-color:#FF4D35;}
+#aiSndBtn{background:#FF4D35;color:#fff;border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:.9rem;}
 </style>
 
-<button class="ai-fab" id="aiFab" onclick="aiToggle()">🗺️ <span id="aiFabTxt">Plan My Trip</span> <span style="background:rgba(255,255,255,.25);font-size:.58rem;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:.5px">AI</span></button>
+<button class="ai-fab" onclick="document.getElementById('aiPanel').style.display=document.getElementById('aiPanel').style.display==='flex'?'none':'flex';if(document.getElementById('aiPanel').style.display==='flex'&&document.getElementById('aiMsgs').children.length===0)aiStart()">🗺️ Plan My Trip</button>
 
-<div class="ai-panel" id="aiPanel">
+<div id="aiPanel">
   <div class="ai-hdr">
     <div class="ai-av">🌴</div>
-    <div><div class="ai-hn">Miami Magic AI</div><div class="ai-hs" id="aiSub">Your personal Miami concierge</div></div>
-    <button class="ai-close" onclick="aiToggle()">✕</button>
+    <div><div class="ai-hn">Miami Magic AI</div></div>
+    <button class="ai-cx" onclick="document.getElementById('aiPanel').style.display='none'">✕</button>
   </div>
-  <div class="ai-msgs" id="aiMsgs"></div>
-  <div class="ai-quick" id="aiQuick"></div>
-  <div class="ai-inp-row" id="aiRow">
-    <input class="ai-inp" id="aiInp" onkeydown="if(event.key==='Enter')aiSend()" />
-    <button class="ai-send" onclick="aiSend()">➤</button>
+  <div id="aiMsgs"></div>
+  <div id="aiQuick"></div>
+  <div id="aiBottom">
+    <input id="aiInp" placeholder="What do you want to do?" onkeydown="if(event.key==='Enter')aiSend()" />
+    <button id="aiSndBtn" onclick="aiSend()">&#10148;</button>
   </div>
   <div id="aiLock"></div>
 </div>
 
 <script>
-(function(){
-  const PL='https://buy.stripe.com/5kQbJ00W39TybWrbega3u02';
-  const BL='https://buy.stripe.com/aFa00i9sz7Lq7GbgyAa3u01';
-  let open=false,count=0,unlocked=false;
-  const FREE=2;
+var _n=0,_pro=false;
+var _pl='https://buy.stripe.com/5kQbJ00W39TybWrbega3u02';
+var _bl='https://buy.stripe.com/aFa00i9sz7Lq7GbgyAa3u01';
 
-  function aiToggle(){
-    open=!open;
-    document.getElementById('aiPanel').classList.toggle('open',open);
-    const l=typeof lang!=='undefined'?lang:'en';
-    document.getElementById('aiFabTxt').textContent=l==='es'?'Planifica tu Viaje':'Plan My Trip';
-    document.getElementById('aiSub').textContent=l==='es'?'Tu concierge personal':'Your personal concierge';
-    document.getElementById('aiInp').placeholder=l==='es'?'¿Qué quieres hacer?':'What do you want to do?';
-    if(open&&!document.getElementById('aiMsgs').children.length) aiInit();
+function aiStart(){
+  aiMsg('Hi! 🌴 I am your Miami Magic concierge. How many days do you have and what do you love to do?','bot');
+  var qs=['Beach day','Foodie tour','Family trip','Romantic weekend','Nightlife','Concerts'];
+  var h='';
+  for(var i=0;i<qs.length;i++){
+    var btn=document.createElement('button');
+    btn.className='ai-qb';
+    btn.textContent=qs[i];
+    btn.setAttribute('data-q',qs[i]);
+    btn.onclick=function(){document.getElementById('aiInp').value=this.getAttribute('data-q');aiSend();};
+    document.getElementById('aiQuick').appendChild(btn);
   }
-  window.aiToggle=aiToggle;
+}
 
-  function aiInit(){
-    const l=typeof lang!=='undefined'?lang:'en';
-    addMsg(l==='es'?'¡Hola! 🌴 Soy tu concierge de Miami Magic. ¿Cuántos días tienes y qué te gusta hacer?':'Hi! 🌴 I am your Miami Magic concierge. How many days do you have and what do you love to do?','bot');
-    const qs=l==='es'?['Día de playa','Tour gastronómico','Viaje familiar','Fin romántico','Vida nocturna','Conciertos']:['Beach day','Foodie tour','Family trip','Romantic weekend','Nightlife','Concert guide'];
-    document.getElementById('aiQuick').innerHTML=qs.map(q=>'<button class="ai-qb" onclick="document.getElementById(\'aiInp\').value=\''+q+'\';aiSend()">'+q+'</button>').join('');
-    aiUpdateLock();
+function aiMsg(txt,who){
+  var b=document.getElementById('aiMsgs');
+  var d=document.createElement('div');
+  d.className=who+'-msg';
+  d.innerHTML=txt;
+  b.appendChild(d);
+  b.scrollTop=b.scrollHeight;
+}
+
+function aiReply(q){
+  var t=q.toLowerCase();
+  if(t.indexOf('beach')>=0) return 'Morning: South Beach Art Deco. Afternoon: Crandon Park turquoise waters. Sunset: Rusty Pelican with skyline views.';
+  if(t.indexOf('food')>=0||t.indexOf('gastro')>=0) return 'Breakfast: Bachour pastries. Lunch: Versailles Cuban. Dinner: KYU Wynwood BBQ. Late: Coyo Taco until 3 AM.';
+  if(t.indexOf('family')>=0||t.indexOf('kid')>=0) return 'Morning: Frost Museum aquarium. Lunch: Ariete burgers. Afternoon: Crandon Park. Evening: Bayside live music.';
+  if(t.indexOf('romantic')>=0||t.indexOf('couple')>=0) return 'Friday: Zuma bay views. Saturday: Mandolin brunch + South Beach. Saturday night: Rusty Pelican sunset. Sunday: Vizcaya Museum.';
+  if(t.indexOf('night')>=0||t.indexOf('club')>=0) return '10 PM: Ball and Chain jazz. Midnight: LIV Nightclub #1. Late: E11even open 24 hours.';
+  if(t.indexOf('concert')>=0||t.indexOf('music')>=0) return 'Kaseya Center: Bad Bunny, Shakira, Coldplay. Hard Rock Live: Marc Anthony. Fillmore: intimate shows. Buy tickets on Ticketmaster.';
+  return 'I can help with: Beaches, Restaurants, Family, Romantic, Nightlife, Concerts, Museums, Shopping. Tell me more!';
+}
+
+function aiSend(){
+  if(!_pro&&_n>=2){aiLock();return;}
+  var inp=document.getElementById('aiInp');
+  var msg=inp.value.trim();
+  if(!msg) return;
+  inp.value='';
+  document.getElementById('aiQuick').style.display='none';
+  aiMsg(msg,'user');
+  if(msg.toUpperCase().indexOf('PREMIUM')>=0){
+    _pro=true;
+    aiMsg('Premium activated! Ask me anything!','bot');
+    document.getElementById('aiLock').innerHTML='';
+    document.getElementById('aiBottom').style.display='flex';
+    return;
   }
+  _n++;
+  setTimeout(function(){aiMsg(aiReply(msg),'bot');if(_n>=2&&!_pro)aiLock();},800);
+}
 
-  function addMsg(text,role){
-    const m=document.getElementById('aiMsgs');
-    const d=document.createElement('div');
-    d.className='ai-msg '+role;
-    d.innerHTML='<div class="ai-bbl">'+text.replace(/
-/g,'<br>')+'</div>';
-    m.appendChild(d);
-    m.scrollTop=m.scrollHeight;
-  }
-
-  function aiReply(q){
-    const l=typeof lang!=='undefined'?lang:'en';
-    const t=q.toLowerCase();
-    if(t.includes('beach')||t.includes('playa'))
-      return l==='es'?'🏖️ ¡Día perfecto en la playa!
-
-Mañana: South Beach — torres Art Deco icónicas.
-Tarde: Crandon Park — aguas turquesas tranquilas.
-Atardecer: Cena en Rusty Pelican con vista al skyline.':'🏖️ Perfect Beach Day!
-
-Morning: South Beach — iconic Art Deco towers.
-Afternoon: Crandon Park — calm turquoise waters.
-Sunset: Dinner at Rusty Pelican with skyline views.';
-    if(t.includes('food')||t.includes('comida')||t.includes('gastro'))
-      return l==='es'?'🍽️ ¡Tour Gastronómico!
-
-Desayuno: Bachour — pastelería de clase mundial.
-Almuerzo: Versailles — el cubano más icónico.
-Cena: KYU Wynwood — BBQ asiático increíble.
-Noche: Coyo Taco — abierto hasta las 3 AM.':'🍽️ Foodie Tour!
-
-Breakfast: Bachour — world-class pastries.
-Lunch: Versailles — most iconic Cuban spot.
-Dinner: KYU Wynwood — incredible Asian BBQ.
-Late Night: Coyo Taco — open until 3 AM.';
-    if(t.includes('family')||t.includes('familia')||t.includes('kid'))
-      return l==='es'?'👨‍👩‍👧 ¡Miami en Familia!
-
-Mañana: Museo Frost — acuario y planetario.
-Almuerzo: Ariete — mejores hamburguesas.
-Tarde: Crandon Park Beach — aguas tranquilas.
-Noche: Bayside Marketplace — música en vivo.':'👨‍👩‍👧 Family Day!
-
-Morning: Frost Museum — aquarium and planetarium.
-Lunch: Ariete — best burgers in Miami.
-Afternoon: Crandon Park — calm shallow waters.
-Evening: Bayside Marketplace — live music.';
-    if(t.includes('romantic')||t.includes('romántico')||t.includes('couple'))
-      return l==='es'?'💕 ¡Fin de Semana Romántico!
-
-Viernes: Cena en Zuma — vistas a la bahía.
-Sábado: Brunch en Mandolin, paseo South Beach.
-Sábado noche: Sunset en Rusty Pelican.
-Domingo: Museo Vizcaya — villa italiana de 1916.':'💕 Romantic Weekend!
-
-Friday: Dinner at Zuma — stunning bay views.
-Saturday: Brunch at Mandolin, walk South Beach.
-Saturday night: Sunset at Rusty Pelican.
-Sunday: Vizcaya Museum — stunning 1916 villa.';
-    if(t.includes('night')||t.includes('noche')||t.includes('club'))
-      return l==='es'?'🌙 ¡Vida Nocturna!
-
-10 PM: Ball & Chain — jazz y salsa en Little Havana.
-Medianoche: LIV Nightclub — el #1 de Miami.
-Madrugada: E11even — abierto las 24 horas.':'🌙 Miami Nightlife!
-
-10 PM: Ball & Chain — jazz and salsa.
-Midnight: LIV Nightclub — Miami #1 club.
-Late Night: E11even — open 24 hours.';
-    if(t.includes('concert')||t.includes('concierto')||t.includes('music'))
-      return l==='es'?'🎵 ¡Conciertos en Miami!
-
-Kaseya Center — Bad Bunny, Shakira, Coldplay
-Hard Rock Live — Marc Anthony, Romeo Santos
-Fillmore Miami Beach — shows íntimos
-
-💡 Compra tickets en Ticketmaster.':'🎵 Miami Concerts!
-
-Kaseya Center — Bad Bunny, Shakira, Coldplay
-Hard Rock Live — Marc Anthony, Romeo Santos
-Fillmore Miami Beach — intimate shows
-
-💡 Buy tickets on Ticketmaster.';
-    return l==='es'?'🌴 ¡Bienvenido a Miami Magic!
-
-Puedo ayudarte con:
-🏖️ Playas · 🍽️ Restaurantes · 👨‍👩‍👧 Familia
-💕 Romántico · 🌙 Noche · 🎵 Conciertos
-🏛️ Museos · 🛍️ Shopping
-
-¡Cuéntame más sobre tu viaje!':'🌴 Welcome to Miami Magic!
-
-I can help you plan:
-🏖️ Beaches · 🍽️ Restaurants · 👨‍👩‍👧 Family
-💕 Romantic · 🌙 Nightlife · 🎵 Concerts
-🏛️ Museums · 🛍️ Shopping
-
-Tell me about your trip!';
-  }
-
-  function aiSend(){
-    if(!unlocked&&count>=FREE){aiUpdateLock();return;}
-    const inp=document.getElementById('aiInp');
-    const msg=inp.value.trim();
-    if(!msg) return;
-    inp.value='';
-    document.getElementById('aiQuick').style.display='none';
-    addMsg(msg,'user');
-    if(msg.toUpperCase().includes('PREMIUM')){
-      unlocked=true;
-      const l=typeof lang!=='undefined'?lang:'en';
-      addMsg(l==='es'?'✨ ¡Premium activado! Sin límites.':'✨ Premium activated! No limits.','bot');
-      document.getElementById('aiLock').innerHTML='';
-      document.getElementById('aiRow').style.display='flex';
-      return;
-    }
-    count++;
-    setTimeout(()=>{addMsg(aiReply(msg),'bot');aiUpdateLock();},1000);
-  }
-  window.aiSend=aiSend;
-
-  function aiUpdateLock(){
-    const l=typeof lang!=='undefined'?lang:'en';
-    const lock=document.getElementById('aiLock');
-    const row=document.getElementById('aiRow');
-    if(unlocked||count<FREE){lock.innerHTML='';row.style.display='flex';}
-    else{
-      row.style.display='none';
-      lock.innerHTML=`<div style="padding:12px 14px;background:linear-gradient(135deg,rgba(255,209,102,.08),rgba(255,77,53,.06));border-top:1px solid rgba(255,209,102,.15);text-align:center">
-        <div style="font-size:.72rem;color:#888;margin-bottom:9px;line-height:1.6">${l==='es'?'Has usado tus <strong>2 consultas gratuitas</strong>.<br>Desbloquea itinerarios ilimitados:':'You used your <strong>2 free queries</strong>.<br>Unlock unlimited itineraries:'}</div>
-        <a href="${PL}" target="_blank" rel="noopener" style="display:block;background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;padding:9px 18px;border-radius:50px;font-weight:700;font-size:.8rem;text-decoration:none;margin-bottom:7px">✨ ${l==='es'?'Miami Magic Premium — $4.99/mes':'Miami Magic Premium — $4.99/month'}</a>
-        <a href="${BL}" target="_blank" rel="noopener" style="display:block;background:linear-gradient(135deg,#FFD166,#F59E0B);color:#080F1E;padding:8px 18px;border-radius:50px;font-weight:700;font-size:.76rem;text-decoration:none">💼 ${l==='es'?'Listar mi Negocio — $250/mes':'List My Business — $250/month'}</a>
-        <button onclick="document.getElementById('aiInp').value='PREMIUM';aiSend()" style="background:none;border:none;color:#aaa;font-size:.68rem;margin-top:7px;cursor:pointer;text-decoration:underline">${l==='es'?'¿Ya pagaste? Activa aquí':'Already paid? Activate here'}</button>
-      </div>`;
-    }
-  }
-})();
+function aiLock(){
+  document.getElementById('aiBottom').style.display='none';
+  document.getElementById('aiLock').innerHTML='<div style="padding:12px;border-top:1px solid #eee;text-align:center"><p style="font-size:.75rem;color:#888;margin-bottom:9px">2 free queries used. Unlock unlimited:</p><a href="'+_pl+'" target="_blank" style="display:block;background:#FF4D35;color:#fff;padding:9px;border-radius:50px;font-weight:700;font-size:.8rem;text-decoration:none;margin-bottom:6px">Miami Magic Premium $4.99/month</a><a href="'+_bl+'" target="_blank" style="display:block;background:#FFD166;color:#080F1E;padding:8px;border-radius:50px;font-weight:700;font-size:.76rem;text-decoration:none">List My Business $250/month</a></div>';
+}
 </script>
+
 </body>
 </html>
