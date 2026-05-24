@@ -692,8 +692,11 @@ function openItemModal(obj,type,link,btnLabel){
   const t=T(); let cat,title,desc,rows='',upHtml='',tipHtml='';
   if(type==='rest'){
     cat=n(obj.cat,obj.cat_es); title=obj.name; desc=n(obj.desc,obj.desc_es);
-    rows='<div class="m-row">📍 '+obj.addr+'</div><div class="m-row">🕐 '+obj.hrs+'</div><div class="m-row">⭐ '+obj.rating+'/5 ('+obj.rev+' reviews) · '+obj.price+'</div>'+(obj.pro?'<div class="m-row" style="color:var(--amber);font-weight:700">✦ Pro Listing</div>':'');
+    rows='<div class="m-row">📍 '+obj.addr+'</div><div class="m-row">🕐 '+obj.hrs+'</div><div class="m-row">⭐ '+obj.rating+'/5 ('+obj.rev+' reviews) · '+obj.price+'</div>'+(obj.pro?'<div class="m-row" style="color:var(--amber);font-weight:700">✦ Pro Listing</div>':'')+(obj.photo_url&&obj.photo_url.includes('youtu')?'<div class="m-row"><a href="'+obj.photo_url+'" target="_blank" rel="noopener" style="color:#FF0000;font-weight:700;text-decoration:none;font-size:.85rem">▶ Watch on YouTube</a></div>':'');
     link=link||obj.link; btnLabel=btnLabel||t.reserveBtn;
+    if(obj.photo_url&&obj.photo_url.includes('youtu')){
+      rows+='<a href="'+obj.photo_url+'" target="_blank" rel="noopener" style="display:block;margin-top:10px;background:#FF0000;color:#fff;padding:10px 18px;border-radius:50px;font-weight:700;font-size:.85rem;text-decoration:none;text-align:center">▶ Watch on YouTube</a>';
+    }
     setModalImg(obj.bg,obj.emoji);
   } else if(type==='beach'){
     cat=lang==='es'?'Playa':'Beach'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
