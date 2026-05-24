@@ -5,16 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Miami Magic – The Ultimate City Guide</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#FF4D35">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Miami Magic">
-<link rel="apple-touch-icon" href="https://img.icons8.com/emoji/192/palm-tree.png">
 <style>
-:root{--coral:#FF4D35;--coral2:#FF7A5C;--teal:#00C9B1;--gold:#FFD166;--navy:#080F1E;--navy2:#0E1B33;--sand:#FFF8F0;--warm:#FFEEDD;--purple:#8B5CF6;--sky:#0EA5E9;--green:#10B981;--amber:#F59E0B;--sidebar:260px;}
+:root{--coral:#FF4D35;--coral2:#FF7A5C;--teal:#00C9B1;--gold:#FFD166;--navy:#080F1E;--navy2:#0E1B33;--sand:#FFFBF4;--warm:#FFF3E8;--purple:#8B5CF6;--sky:#0EA5E9;--green:#10B981;--amber:#F59E0B;--sidebar:260px;}
 *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:#FFF8F0;color:var(--navy);overflow-x:hidden;}
+body{font-family:'DM Sans',sans-serif;background:var(--sand);color:var(--navy);overflow-x:hidden;}
 button,a{cursor:pointer;}
 .sidebar{position:fixed;left:0;top:0;bottom:0;width:var(--sidebar);background:var(--navy);z-index:200;display:flex;flex-direction:column;overflow:hidden;}
 .sidebar-logo{padding:26px 22px 18px;border-bottom:1px solid rgba(255,255,255,.07);flex-shrink:0;}
@@ -44,36 +38,25 @@ button,a{cursor:pointer;}
 .mob-btn span{width:17px;height:2px;background:#fff;border-radius:2px;}
 .mob-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199;}
 .main{margin-left:var(--sidebar);}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 64px 60px;position:relative;overflow:visible;}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#FFE8D6 0%,#FFF0E0 35%,#E8FFF8 100%);}.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 60% at 92% 95%,rgba(255,77,53,.55) 0%,transparent 50%),radial-gradient(ellipse 55% 50% at 5% 8%,rgba(0,201,177,.45) 0%,transparent 50%),radial-gradient(ellipse 50% 45% at 60% 50%,rgba(255,209,102,.32) 0%,transparent 55%),radial-gradient(ellipse 30% 30% at 80% 20%,rgba(139,92,246,.15) 0%,transparent 50%);}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,77,53,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,77,53,.07) 1px,transparent 1px);background-size:55px 55px;mask-image:radial-gradient(ellipse 80% 80% at 60% 50%,black 0%,transparent 70%);}
-.flt{position:absolute;font-size:2rem;opacity:.5;animation:flt 8s ease-in-out infinite;pointer-events:none;}
-.flt:nth-child(1){top:8%;right:5%;animation-delay:0s;font-size:2.4rem;}
-.flt:nth-child(2){top:38%;right:2%;animation-delay:2.5s;font-size:1.6rem;}
-.flt:nth-child(3){bottom:12%;right:10%;animation-delay:4s;font-size:2rem;}
-.flt:nth-child(4){top:15%;right:16%;animation-delay:1.2s;font-size:1.5rem;opacity:.35;}
-.flt:nth-child(5){bottom:20%;right:3%;animation-delay:3.5s;font-size:2.2rem;}
-@media(max-width:900px){
-  .flt:nth-child(1){top:3%;right:4%;font-size:1.3rem;opacity:.25;}
-  .flt:nth-child(2){display:none;}
-  .flt:nth-child(3){bottom:5%;right:4%;font-size:1.2rem;opacity:.25;}
-  .flt:nth-child(4){display:none;}
-  .flt:nth-child(5){display:none;}
-}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 64px 60px;position:relative;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 85%,rgba(0,201,177,.2) 0%,transparent 55%),radial-gradient(ellipse 55% 50% at 90% 10%,rgba(255,77,53,.18) 0%,transparent 55%),radial-gradient(ellipse 45% 40% at 30% 60%,rgba(255,209,102,.13) 0%,transparent 55%);}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,77,53,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,77,53,.04) 1px,transparent 1px);background-size:55px 55px;mask-image:radial-gradient(ellipse 80% 80% at 60% 50%,black 0%,transparent 70%);}
+.flt{position:absolute;font-size:1.8rem;opacity:.4;animation:flt 8s ease-in-out infinite;pointer-events:none;}
+.flt:nth-child(1){top:15%;right:7%;animation-delay:0s;}.flt:nth-child(2){top:52%;right:4%;animation-delay:2.5s;}.flt:nth-child(3){bottom:20%;right:14%;animation-delay:4s;}.flt:nth-child(4){top:28%;right:22%;animation-delay:1.2s;}.flt:nth-child(5){bottom:30%;right:30%;animation-delay:3.5s;}
 .hero-content{position:relative;z-index:2;max-width:620px;}
-.hero-eye{display:inline-flex;align-items:center;gap:9px;background:rgba(0,150,120,.12);border:2px solid rgba(0,150,120,.5);padding:7px 20px;border-radius:50px;font-size:.68rem;font-weight:800;letter-spacing:5px;text-transform:uppercase;color:#006B5A;margin-bottom:20px;animation:up .8s .2s both;box-shadow:0 4px 16px rgba(0,150,120,.15);}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3.2rem,8vw,6.5rem);font-weight:900;line-height:.88;margin-bottom:20px;animation:up .8s .4s both;}
-.h1a{color:var(--navy);display:block;}.h1b{display:block;background:linear-gradient(135deg,#FF3D20,#FF7A40,#FFB830);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;filter:drop-shadow(0 2px 8px rgba(255,77,53,.25));}
-.hero-sub{font-size:1.08rem;color:#2d3748;max-width:480px;line-height:1.75;margin-bottom:32px;animation:up .8s .6s both;font-weight:500;letter-spacing:.1px;}
+.hero-eye{display:inline-flex;align-items:center;gap:9px;background:rgba(0,201,177,.1);border:1px solid rgba(0,201,177,.2);padding:5px 15px;border-radius:50px;font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:24px;animation:up .8s .2s both;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,6rem);font-weight:900;line-height:.9;margin-bottom:24px;animation:up .8s .4s both;}
+.h1a{color:var(--navy);display:block;}.h1b{display:block;background:linear-gradient(135deg,var(--coral),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;}
+.hero-sub{font-size:1rem;color:#5a6070;max-width:480px;line-height:1.8;margin-bottom:36px;animation:up .8s .6s both;}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap;animation:up .8s .8s both;}
 .hbtn{padding:13px 28px;border-radius:50px;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .25s;border:none;}
 .hbtn-p{background:linear-gradient(135deg,var(--coral),var(--coral2));color:#fff;box-shadow:0 8px 24px rgba(255,77,53,.3);}
 .hbtn-p:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(255,77,53,.4);}
-.hbtn-s{background:rgba(8,15,30,.06);color:var(--navy);border:2px solid rgba(8,15,30,.15);}
+.hbtn-s{background:rgba(8,15,30,.07);color:var(--navy);border:2px solid rgba(8,15,30,.12);}
 .hbtn-s:hover{background:var(--navy);color:#fff;transform:translateY(-3px);}
-.hero-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:0;padding-top:28px;border-top:1px solid rgba(8,15,30,.1);animation:up .8s 1s both;}
+.hero-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:48px;padding-top:32px;border-top:1px solid rgba(8,15,30,.08);animation:up .8s 1s both;}
 .hstat-n{font-family:'Bebas Neue',sans-serif;font-size:2rem;line-height:1;background:linear-gradient(135deg,var(--coral),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.hstat-l{font-size:.7rem;color:#777;font-weight:500;letter-spacing:.5px;margin-top:2px;}
+.hstat-l{font-size:.7rem;color:#999;font-weight:500;letter-spacing:.5px;margin-top:2px;}
 .mq-wrap{background:var(--navy);padding:12px 0;overflow:hidden;position:relative;}
 .mq-wrap::before,.mq-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;}
 .mq-wrap::before{left:0;background:linear-gradient(to right,var(--navy),transparent);}
@@ -84,13 +67,13 @@ button,a{cursor:pointer;}
 .mq-n{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--gold);}
 /* SEARCH */
 .search-zone{padding:44px 64px 0;position:relative;}
-.search-bar{display:flex;align-items:center;background:rgba(255,255,255,.92);border-radius:50px;box-shadow:0 16px 48px rgba(255,77,53,.15),0 4px 16px rgba(0,0,0,.08);padding:6px 6px 6px 24px;max-width:680px;border:2px solid rgba(255,77,53,.2);transition:all .3s;backdrop-filter:blur(8px);}
-.search-bar:focus-within{border-color:var(--coral);box-shadow:0 16px 48px rgba(255,77,53,.25),0 4px 16px rgba(0,0,0,.1);}
+.search-bar{display:flex;align-items:center;background:#fff;border-radius:50px;box-shadow:0 12px 40px rgba(0,0,0,.08);padding:6px 6px 6px 24px;max-width:680px;border:2px solid rgba(255,77,53,.15);transition:all .3s;}
+.search-bar:focus-within{border-color:var(--coral);box-shadow:0 12px 40px rgba(255,77,53,.15);}
 .search-bar input{flex:1;border:none;outline:none;font-family:'DM Sans',sans-serif;font-size:.93rem;color:var(--navy);background:transparent;}
 .search-bar input::placeholder{color:#bbb;}
 .search-go{background:linear-gradient(135deg,var(--coral),var(--coral2));color:#fff;border:none;border-radius:50px;padding:10px 24px;font-family:'DM Sans',sans-serif;font-weight:700;cursor:pointer;font-size:.84rem;transition:all .22s;}
 .search-go:hover{opacity:.9;transform:scale(1.03);}
-.search-panel{position:absolute;top:calc(100% + 8px);left:0;width:100%;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.15);border:1px solid rgba(255,77,53,.15);max-height:480px;overflow-y:auto;z-index:999;display:none;scrollbar-width:thin;}
+.search-panel{position:absolute;top:calc(100% + 6px);left:64px;max-width:680px;right:0;background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.13);border:1px solid rgba(255,77,53,.1);max-height:500px;overflow-y:auto;z-index:250;display:none;scrollbar-width:thin;}
 .search-panel.open{display:block;}
 .sp-head{padding:12px 18px 8px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #f5f5f5;position:sticky;top:0;background:#fff;z-index:1;}
 .sp-count{font-size:.67rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#bbb;}
@@ -110,7 +93,7 @@ button,a{cursor:pointer;}
 .sp-empty{padding:28px 18px;text-align:center;color:#bbb;}
 .sp-footer{padding:9px 18px;text-align:center;font-size:.72rem;color:#ccc;border-top:1px solid #f5f5f5;}
 /* SECTIONS */
-.sec{padding:60px 64px;max-width:1380px;position:relative;}
+.sec{padding:60px 64px;max-width:1380px;}
 .sec-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:26px;flex-wrap:wrap;gap:10px;}
 .sec-tt{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;line-height:1.1;}
 .sec-tt small{display:block;font-size:.68rem;font-family:'DM Sans',sans-serif;font-weight:700;color:var(--teal);letter-spacing:4px;text-transform:uppercase;margin-bottom:4px;}
@@ -121,8 +104,8 @@ button,a{cursor:pointer;}
 .chip:hover,.chip.on{border-color:var(--coral);background:var(--coral);color:#fff;}
 /* RESTAURANT CARDS */
 .rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:20px;}
-.rcard{background:#fff;border-radius:22px;overflow:hidden;cursor:pointer;transition:transform .28s cubic-bezier(.34,1.56,.64,1),box-shadow .28s;box-shadow:0 4px 20px rgba(0,0,0,.06);}
-.rcard:hover{transform:translateY(-10px) scale(1.01);box-shadow:0 24px 56px rgba(255,77,53,.12),0 8px 24px rgba(0,0,0,.08);}
+.rcard{background:#fff;border-radius:20px;overflow:hidden;cursor:pointer;transition:transform .28s cubic-bezier(.34,1.56,.64,1),box-shadow .28s;}
+.rcard:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 20px 50px rgba(0,0,0,.1);}
 .rcard-img{height:185px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
 .rcard-emoji{font-size:5rem;transition:transform .35s;position:relative;z-index:1;}
 .rcard:hover .rcard-emoji{transform:scale(1.1);}
@@ -297,10 +280,6 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 .f-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:20px;display:flex;justify-content:space-between;align-items:center;max-width:1380px;flex-wrap:wrap;gap:10px;}
 .f-copy,.f-rights{color:rgba(255,255,255,.18);font-size:.7rem;}
 .fade{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s;}.fade.vis{opacity:1;transform:translateY(0);}
-.card-photo{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
-.media-wrap{position:relative;overflow:hidden;background:#f5f5f5;}
-.media-wrap .card-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.55) 0%,transparent 55%);pointer-events:none;z-index:1;}
-.photo-badge{position:absolute;top:10px;right:10px;background:rgba(255,255,255,.9);border-radius:50px;padding:2px 8px;font-size:.6rem;font-weight:700;color:#333;z-index:2;}
 /* BG */
 .bg-coral{background:linear-gradient(135deg,#FF5F4B14,#FFD16614);}.bg-teal{background:linear-gradient(135deg,#00C9B114,#C8F5EF22);}.bg-purple{background:linear-gradient(135deg,#8B5CF614,#EC489914);}.bg-orange{background:linear-gradient(135deg,#FB923C14,#FDE68A22);}.bg-blue{background:linear-gradient(135deg,#3B82F614,#7DD3FC22);}.bg-pink{background:linear-gradient(135deg,#F4729914,#FFB5A722);}.bg-green{background:linear-gradient(135deg,#10B98114,#6EE7B722);}.bg-red{background:linear-gradient(135deg,#EF444414,#FCA5A522);}.bg-indigo{background:linear-gradient(135deg,#6366F114,#A5B4FC22);}.bg-cyan{background:linear-gradient(135deg,#06B6D414,#67E8F922);}.bg-amber{background:linear-gradient(135deg,#F59E0B14,#FDE68A22);}.bg-rose{background:linear-gradient(135deg,#F43F5E14,#FDA4AF22);}.bg-lime{background:linear-gradient(135deg,#84CC1614,#D9F99D22);}.bg-fuchsia{background:linear-gradient(135deg,#D946EF14,#F0ABFC22);}.bg-sky{background:linear-gradient(135deg,#0EA5E914,#BAE6FD22);}.bg-nd1{background:linear-gradient(135deg,#1e3a5f,#0A1628);}.bg-nd2{background:linear-gradient(135deg,#2d1b69,#180a3d);}.bg-nd3{background:linear-gradient(135deg,#003830,#001e1a);}.bg-nd4{background:linear-gradient(135deg,#5c1c1c,#2d0000);}.bg-nd5{background:linear-gradient(135deg,#3b2000,#1a0e00);}.bg-nd6{background:linear-gradient(135deg,#162040,#0a1228);}.bb1{background:linear-gradient(145deg,#0ea5e9,#06b6d4);}.bb2{background:linear-gradient(145deg,#10b981,#059669);}.bb3{background:linear-gradient(145deg,#f59e0b,#d97706);}.bb4{background:linear-gradient(145deg,#8b5cf6,#7c3aed);}.bb5{background:linear-gradient(145deg,#ec4899,#db2777);}.bb6{background:linear-gradient(145deg,#14b8a6,#0d9488);}.bb7{background:linear-gradient(145deg,#f97316,#ea580c);}.bb8{background:linear-gradient(145deg,#3b82f6,#2563eb);}
 @keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
@@ -348,7 +327,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 <div class="main">
   <section class="hero" id="home">
     <div class="hero-bg"></div><div class="hero-grid"></div>
-    <div class="flt">🌴</div><div class="flt">🍹</div><div class="flt">🌺</div><div class="flt">☀️</div><div class="flt">🦩</div>
+    <div class="flt">🌴</div><div class="flt">🌊</div><div class="flt">🌺</div><div class="flt">☀️</div><div class="flt">🦩</div>
     <div class="hero-content">
       <div class="hero-eye" id="hEye"></div>
       <h1><span class="h1a" id="hL1"></span><span class="h1b">Miami</span></h1>
@@ -357,19 +336,17 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
         <button class="hbtn hbtn-p" onclick="go('sec-rest')" id="hCta1"></button>
         <button class="hbtn hbtn-s" onclick="go('sec-events')" id="hCta2"></button>
       </div>
-      <!-- SEARCH INSIDE HERO — above stats -->
-      <div style="margin-top:28px;width:100%;max-width:560px;animation:up .8s 1s both;position:relative;z-index:999;">
-        <div class="search-bar">
-          <input type="text" id="sInp" autocomplete="off" oninput="doSearch(this.value)" onkeydown="searchKey(event)" />
-          <button class="search-go" id="sGo" onclick="doSearch(document.getElementById('sInp').value)"></button>
-        </div>
-        <div class="search-panel" id="searchPanel"></div>
-      </div>
       <div class="hero-stats" id="heroStats"></div>
     </div>
   </section>
   <div class="mq-wrap"><div class="mq-track" id="mqTrack"></div></div>
-  <div style="height:0"></div>
+  <div class="search-zone">
+    <div class="search-bar">
+      <input type="text" id="sInp" autocomplete="off" oninput="doSearch(this.value)" onkeydown="searchKey(event)">
+      <button class="search-go" id="sGo" onclick="doSearch(document.getElementById('sInp').value)"></button>
+    </div>
+    <div class="search-panel" id="searchPanel"></div>
+  </div>
   <div id="app"></div>
   <div class="money-sec fade" id="monetize">
     <div class="g1"></div><div class="g2"></div>
@@ -511,14 +488,14 @@ nightlife:[
 // ── LANGUAGE ──
 let lang='en', activeFlt='all';
 const TX={
-en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Your insider guide to the best restaurants, beaches, concerts, events and nightlife in the Magic City. 🌴',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'30+',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'10',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
+en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'30+',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'10',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
 nav:[{label:'Discover',items:[{icon:'🍽',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'🏖',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'📍',lbl:'Places',cnt:'8',id:'sec-place'}]},{label:'Entertainment',items:[{icon:'🏛',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'🎭',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'🎵',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'🏟',lbl:'Stadiums',cnt:'6',id:'sec-stad'}]},{label:'Going Out',items:[{icon:'🎉',lbl:'Events',cnt:'10',id:'sec-events'},{icon:'🌙',lbl:'Nightlife',cnt:'8',id:'sec-night'}]},{label:'Business',items:[{icon:'💰',lbl:'Monetize',cnt:'',id:'monetize'}]}],
 tt:{rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['This Month','Upcoming Events'],night:['After Dark','Nightlife']},
 sa:'See all →',rf:['All','🇨🇺 Cuban','🦞 Seafood','🌮 Mexican','🍣 Japanese','🫒 Mediterranean','🌶️ Latin','🍝 Italian','🍔 American','⭐ Fine Dining'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining'],
 fTag:'The Magic City, curated for you.',fDevLbl:'Developed by',fEx:'Explore',fCo:'Company',fLinks1:['Restaurants','Beaches','Museums','Theaters','Stadiums'],fLinks2:['About','Contact','Privacy Policy','Submit a Place','For Business'],fCopy:'© 2026 Miami Magic · Y & Y Entertainment Corp',fRights:'All Rights Reserved',
 mEye:'💰 Business Model',mH2:'How to Make <em>Money</em> with Miami Magic',mSub:'A complete guide to turning this app into a real, scalable business.',revT:'Realistic Revenue Projection (per month)',rmT:'Step-by-Step Launch Plan',rPh:['Phase 1','Phase 2','Phase 3'],rPer:['Months 1–3','Months 4–8','Month 12+'],rMo:'/ month',rD:['10 listings at $250/mo','Ads + commissions + 40 listings','All streams + partnerships'],
 },
-es:{logoTag:'La Guía Definitiva de Miami',eye:'Tu Guía Definitiva de la Ciudad',l1:'Descubre',sub:'Tu guía exclusiva de los mejores restaurantes, playas, conciertos, eventos y vida nocturna de la Ciudad Mágica. 🌴',cta1:'Explorar Ahora',cta2:'Próximos Eventos',stats:[{n:'30+',l:'Restaurantes'},{n:'8',l:'Playas'},{n:'8',l:'Museos'},{n:'6',l:'Estadios'},{n:'10',l:'Eventos'},{n:'8',l:'Vida Nocturna'}],sph:'Busca restaurante, concierto, artista, evento…',sgo:'Buscar',biz:'Para Negocios',langTxt:'English',reserveBtn:'Reservar en OpenTable →',ticketsBtn:'Comprar Entradas Ticketmaster →',moreBtn:'Más Información →',mapsBtn:'Ver en Google Maps →',gamesBtn:'Ver Partidos →',upLbl:'Próximos Shows:',tipLbl:'Consejo',
+es:{logoTag:'La Guía Definitiva de Miami',eye:'Tu Guía Definitiva de la Ciudad',l1:'Descubre',sub:'Restaurantes, playas, museos, teatros, estadios, eventos y vida nocturna — la guía completa de la Ciudad Mágica.',cta1:'Explorar Ahora',cta2:'Próximos Eventos',stats:[{n:'30+',l:'Restaurantes'},{n:'8',l:'Playas'},{n:'8',l:'Museos'},{n:'6',l:'Estadios'},{n:'10',l:'Eventos'},{n:'8',l:'Vida Nocturna'}],sph:'Busca restaurante, concierto, artista, evento…',sgo:'Buscar',biz:'Para Negocios',langTxt:'English',reserveBtn:'Reservar en OpenTable →',ticketsBtn:'Comprar Entradas Ticketmaster →',moreBtn:'Más Información →',mapsBtn:'Ver en Google Maps →',gamesBtn:'Ver Partidos →',upLbl:'Próximos Shows:',tipLbl:'Consejo',
 nav:[{label:'Descubrir',items:[{icon:'🍽',lbl:'Restaurantes',cnt:'30+',id:'sec-rest'},{icon:'🏖',lbl:'Playas',cnt:'8',id:'sec-beach'},{icon:'📍',lbl:'Lugares',cnt:'8',id:'sec-place'}]},{label:'Entretenimiento',items:[{icon:'🏛',lbl:'Museos',cnt:'8',id:'sec-museum'},{icon:'🎭',lbl:'Teatros',cnt:'5',id:'sec-theater'},{icon:'🎵',lbl:'Conciertos',cnt:'8',id:'sec-concert'},{icon:'🏟',lbl:'Estadios',cnt:'6',id:'sec-stad'}]},{label:'Salir',items:[{icon:'🎉',lbl:'Eventos',cnt:'10',id:'sec-events'},{icon:'🌙',lbl:'Vida Nocturna',cnt:'8',id:'sec-night'}]},{label:'Negocios',items:[{icon:'💰',lbl:'Monetizar',cnt:'',id:'monetize'}]}],
 tt:{rest:['Selección Especial','Mejores Restaurantes de Miami'],beach:['Sol y Arena','Mejores Playas'],museum:['Cultura y Arte','Museos'],theater:['En Escena','Teatros'],concert:['Música en Vivo','Recintos de Conciertos'],stad:['Deportes','Estadios y Arenas'],place:['Imprescindibles','Lugares y Vecindarios'],events:['Este Mes','Próximos Eventos'],night:['De Noche','Vida Nocturna']},
 sa:'Ver todo →',rf:['Todo','🇨🇺 Cubano','🦞 Mariscos','🌮 Mexicano','🍣 Japonés','🫒 Mediterráneo','🌶️ Latino','🍝 Italiano','🍔 Americano','⭐ Alta Cocina'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining'],
@@ -605,8 +582,6 @@ function buildDB(){
 }
 
 function doSearch(val){
-  const fab = document.getElementById('aiFab');
-  if(fab) fab.style.display = (val && val.trim().length >= 2) ? 'none' : 'flex';
   const panel=document.getElementById('searchPanel');
   const q=(val||'').trim().toLowerCase();
   if(q.length<2){panel.classList.remove('open');_sr=[];return;}
@@ -675,41 +650,13 @@ function searchKey(e){
   if(e.key==='Escape')closeSearch();
   if(e.key==='Enter'&&_sr.length>0)pickResult(0);
 }
-function closeSearch(){
-  document.getElementById('searchPanel').classList.remove('open');
-  _sr=[];
-  const fab = document.getElementById('aiFab');
-  if(fab) fab.style.display = 'flex';
-}
+function closeSearch(){document.getElementById('searchPanel').classList.remove('open');_sr=[];}
 document.addEventListener('click',e=>{if(!document.querySelector('.search-zone').contains(e.target))closeSearch();});
 // ── MODAL ──
-async function setModalImg(bg, emoji, item) {
-  const mi = document.getElementById('mImg');
-  mi.className = 'modal-img ' + bg;
-  mi.innerHTML = '<span style="font-size:4.2rem;position:relative;z-index:1">' + emoji + '</span><div class="modal-img-ov"></div>';
-  if (!item) return;
-  const url = item.photo_url || item.photo || '';
-  // YouTube
-  if (url && (url.includes('youtube.com') || url.includes('youtu.be'))) {
-    const vid = url.includes('youtu.be') ? url.split('/').pop().split('?')[0] : new URL(url).searchParams.get('v');
-    mi.innerHTML = `<iframe src="https://www.youtube.com/embed/${vid}?autoplay=0&rel=0" style="width:100%;height:100%;border:none;border-radius:24px 24px 0 0" allowfullscreen></iframe>`;
-    return;
-  }
-  // Direct photo
-  if (url && url.startsWith('http')) {
-    mi.style.background = `url('${url}') center/cover no-repeat`;
-    mi.innerHTML = '<div class="modal-img-ov"></div>';
-    return;
-  }
-  // Unsplash auto
-  if (UNSPLASH_KEY) {
-    const q = item.name || (item.name_es) || emoji;
-    const photoUrl = await getUnsplashPhoto(q);
-    if (photoUrl) {
-      mi.style.background = `url('${photoUrl}') center/cover no-repeat`;
-      mi.innerHTML = '<div class="modal-img-ov"></div>';
-    }
-  }
+function setModalImg(bg,emoji){
+  const mi=document.getElementById('mImg');
+  mi.className='modal-img '+bg;
+  mi.innerHTML='<span style="font-size:4.2rem;position:relative;z-index:1">'+emoji+'</span><div class="modal-img-ov"></div>';
 }
 function setModalBtn(link,label){
   const btn=document.getElementById('mBtn');
@@ -723,38 +670,38 @@ function openItemModal(obj,type,link,btnLabel){
     cat=n(obj.cat,obj.cat_es); title=obj.name; desc=n(obj.desc,obj.desc_es);
     rows='<div class="m-row">📍 '+obj.addr+'</div><div class="m-row">🕐 '+obj.hrs+'</div><div class="m-row">⭐ '+obj.rating+'/5 ('+obj.rev+' reviews) · '+obj.price+'</div>'+(obj.pro?'<div class="m-row" style="color:var(--amber);font-weight:700">✦ Pro Listing</div>':'');
     link=link||obj.link; btnLabel=btnLabel||t.reserveBtn;
-    setModalImg(obj.bg,obj.emoji,obj);
+    setModalImg(obj.bg,obj.emoji);
   } else if(type==='beach'){
     cat=lang==='es'?'Playa':'Beach'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows='<div class="m-row">📍 Miami, FL</div>';
     link=link||('https://www.google.com/maps/search/'+encodeURIComponent(n(obj.name,obj.name_es)+' Miami'));
-    btnLabel=btnLabel||t.mapsBtn; setModalImg(obj.bg,obj.emoji,obj);
+    btnLabel=btnLabel||t.mapsBtn; setModalImg(obj.bg,obj.emoji);
   } else if(type==='museum'){
     cat=n(obj.cat,obj.cat_es); title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows='<div class="m-row">📍 '+obj.addr+'</div><div class="m-row">🕐 '+obj.hrs+'</div>';
-    link=link||obj.link; btnLabel=btnLabel||t.ticketsBtn; setModalImg(obj.bg,obj.emoji,obj);
+    link=link||obj.link; btnLabel=btnLabel||t.ticketsBtn; setModalImg(obj.bg,obj.emoji);
   } else if(type==='theater'){
     cat=n(obj.cat,obj.cat_es); title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows='<div class="m-row">📍 '+obj.addr+'</div><div class="m-row">🕐 '+obj.hrs+'</div>';
-    link=link||obj.link; btnLabel=btnLabel||t.ticketsBtn; setModalImg('bg-purple',obj.emoji,obj);
+    link=link||obj.link; btnLabel=btnLabel||t.ticketsBtn; setModalImg('bg-purple',obj.emoji);
   } else if(type==='stadium'){
     cat=n(obj.cat,obj.cat_es); title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows='<div class="m-row">👕 '+obj.team+'</div><div class="m-row">🏅 '+n(obj.sport,obj.sport_es)+'</div><div class="m-row">📍 '+obj.addr+'</div><div class="m-row">🏟 Cap. '+obj.cap+'</div>';
-    link=link||obj.link; btnLabel=btnLabel||t.gamesBtn; setModalImg(obj.bg,obj.emoji,obj);
+    link=link||obj.link; btnLabel=btnLabel||t.gamesBtn; setModalImg(obj.bg,obj.emoji);
   } else if(type==='place'){
     cat=lang==='es'?'Lugar':'Landmark'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows='<div class="m-row">📍 '+obj.addr+'</div>';
     link=link||('https://www.google.com/maps/search/'+encodeURIComponent(n(obj.name,obj.name_es)+' Miami'));
-    btnLabel=btnLabel||t.mapsBtn; setModalImg(obj.bg,obj.emoji,obj);
+    btnLabel=btnLabel||t.mapsBtn; setModalImg(obj.bg,obj.emoji);
   } else if(type==='event'){
     cat=obj.type; title=n(obj.name,obj.name_es); desc=n(obj.venue,obj.venue_es)+' · '+obj.time;
     rows='<div class="m-row">📅 '+obj.day+' '+obj.mon+'</div><div class="m-row">🕐 '+obj.time+'</div><div class="m-row">🎟️ '+obj.price+'</div>';
     link=link||obj.link; btnLabel=btnLabel||(obj.price==='FREE'?t.moreBtn:t.ticketsBtn);
-    setModalImg('bg-coral',obj.emoji,obj);
+    setModalImg('bg-coral',obj.emoji);
   } else if(type==='night'){
     cat='Nightlife'; title=obj.name; desc=n(obj.desc,obj.desc_es);
     rows='<div class="m-row">📍 '+obj.addr+'</div><div class="m-row">🕐 '+obj.hrs+'</div><div class="m-row">🎶 '+obj.vibe+'</div>';
-    link=link||obj.link; btnLabel=btnLabel||t.moreBtn; setModalImg(obj.bg,obj.emoji,obj);
+    link=link||obj.link; btnLabel=btnLabel||t.moreBtn; setModalImg(obj.bg,obj.emoji);
   }
   document.getElementById('mCat').textContent=cat||'';
   document.getElementById('mTitle').textContent=title||'';
@@ -769,7 +716,7 @@ function openItemModal(obj,type,link,btnLabel){
 function openConcertModal(id,link,btnLabel){
   const c=D.concerts.find(x=>x.id===id); if(!c)return;
   const t=T();
-  setModalImg(c.bg,c.emoji,c);
+  setModalImg(c.bg,c.emoji);
   document.getElementById('mCat').textContent=n(c.cat,c.cat_es);
   document.getElementById('mTitle').textContent=n(c.name,c.name_es);
   document.getElementById('mDesc').textContent=n(c.desc,c.desc_es);
@@ -811,28 +758,13 @@ function sHdr(key){
 }
 
 // ── RENDER RESTAURANTS ──
-// After render, load photos async
-async function loadCardPhotos() {
-  const cards = document.querySelectorAll('[data-photo-item]');
-  for (const card of cards) {
-    try {
-      const itemData = JSON.parse(decodeURIComponent(card.dataset.photoItem));
-      const mediaEl = await resolveMedia(itemData, card.dataset.photoH || '185px');
-      mediaEl.style.borderRadius = card.dataset.photoR || '0';
-      card.replaceWith(mediaEl);
-    } catch(e) {}
-  }
-}
-
 function renderRestCards(list){
   return list.map((r,i)=>{
     const feat=i===0&&activeFlt==='all';
-    const imgH = feat ? '280px' : '185px';
-    const rPhotoUrl = r.photo_url || r.photo || '';
     return '<div class="'+(feat?'rcard rcard-feat':'rcard')+'" onclick="openItemModal(D.restaurants.find(x=>x.id===\''+r.id+'\'),\'rest\')">'+
-      photoCard(rPhotoUrl, r.emoji, r.bg, imgH, '0')+
-      '<div class="rcard-top" style="position:absolute;top:10px;left:10px;right:10px;z-index:2"><span class="rbadge'+(r.pro?' rbadge-pro':'')+'">'+r.badge+'</span></div>'+
-      '<div class="rrating" style="position:absolute;bottom:10px;left:10px;z-index:2"><span class="rstar">★</span>'+r.rating+' ('+r.rev+')</div>'+
+      '<div class="rcard-img '+r.bg+'"><div class="rcard-emoji">'+r.emoji+'</div><div class="rcard-ov"></div>'+
+      '<div class="rcard-top"><span class="rbadge'+(r.pro?' rbadge-pro':'')+'">'+r.badge+'</span></div>'+
+      '<div class="rrating"><span class="rstar">★</span>'+r.rating+' ('+r.rev+')</div></div>'+
       '<div class="rcard-body"><div class="rcard-cat">'+n(r.cat,r.cat_es)+'</div>'+
       '<div class="rcard-name">'+r.name+'</div>'+
       '<div class="rcard-meta">'+r.price+' · '+r.addr.split(',').slice(-2).join(',').trim()+'</div>'+
@@ -851,8 +783,7 @@ function renderRest(){
 function renderBeach(){
   return '<section class="sec fade" id="sec-beach">'+sHdr('beach')+'<div class="beach-grid">'+
     D.beaches.map(b=>'<div class="bcard" onclick="openItemModal(D.beaches.find(x=>x.id===\''+b.id+'\'),\'beach\')">'+
-      photoCard(b.photo_url||'', b.emoji, b.bg, '235px', '20px')+
-      '<div class="bcard-ov" style="position:absolute;inset:0;border-radius:20px"></div>'+
+      '<div class="bcard-bg '+b.bg+'">'+b.emoji+'</div><div class="bcard-ov"></div>'+
       '<span class="bcard-badge">'+n(b.badge,b.badge_es)+'</span>'+
       '<div class="bcard-body"><div class="bcard-name">'+n(b.name,b.name_es)+'</div><div class="bcard-desc">'+n(b.desc,b.desc_es)+'</div></div></div>').join('')+
     '</div></section>';
@@ -861,7 +792,7 @@ function renderBeach(){
 function renderMuseum(){
   return '<section class="sec fade" id="sec-museum">'+sHdr('museum')+'<div class="venue-grid">'+
     D.museums.map(m=>'<div class="vcard" onclick="openItemModal(D.museums.find(x=>x.id===\''+m.id+'\'),\'museum\')">'+
-      photoCard(m.photo_url||'', m.emoji, m.bg, '150px', '20px 20px 0 0')+
+      '<div class="vcard-img '+m.bg+'">'+m.emoji+'</div>'+
       '<div class="vcard-body"><div class="vcat" style="color:var(--purple)">'+n(m.cat,m.cat_es)+'</div>'+
       '<div class="vname">'+n(m.name,m.name_es)+'</div><div class="vdesc">'+n(m.desc,m.desc_es)+'</div>'+
       '<div class="vtags">'+m.tags.map(tg=>'<span class="vtag">'+tg+'</span>').join('')+'</div></div></div>').join('')+
@@ -871,7 +802,7 @@ function renderMuseum(){
 function renderTheater(){
   return '<section class="sec fade" id="sec-theater">'+sHdr('theater')+'<div class="venue-grid">'+
     D.theaters.map(th=>'<div class="vcard" onclick="openItemModal(D.theaters.find(x=>x.id===\''+th.id+'\'),\'theater\')">'+
-      photoCard(th.photo_url||'', th.emoji, 'bg-purple', '150px', '20px 20px 0 0')+
+      '<div class="vcard-img bg-purple">'+th.emoji+'</div>'+
       '<div class="vcard-body"><div class="vcat" style="color:var(--purple)">'+n(th.cat,th.cat_es)+'</div>'+
       '<div class="vname">'+n(th.name,th.name_es)+'</div><div class="vdesc">'+n(th.desc,th.desc_es)+'</div>'+
       '<div class="vtags">'+th.tags.map(tg=>'<span class="vtag">'+tg+'</span>').join('')+'</div></div></div>').join('')+
@@ -882,8 +813,7 @@ function renderConcert(){
   const t=T();
   return '<section class="sec fade" id="sec-concert">'+sHdr('concert')+'<div class="venue-grid">'+
     D.concerts.map(c=>'<div class="ccard" onclick="openConcertModal(\''+c.id+'\')">'+
-      photoCard(c.photo_url||'', c.emoji, c.bg, '155px', '20px 20px 0 0')+
-      '<span class="ccard-cap" style="position:absolute;bottom:8px;left:10px;z-index:3">'+c.cap+'</span>'+
+      '<div class="ccard-img '+c.bg+'"><span style="font-size:3.5rem;position:relative;z-index:1">'+c.emoji+'</span><span class="ccard-cap">'+c.cap+'</span></div>'+
       '<div class="ccard-body"><div class="ccard-cat">'+n(c.cat,c.cat_es)+'</div>'+
       '<div class="ccard-name">'+n(c.name,c.name_es)+'</div>'+
       '<div class="ccard-price">🎟 '+n(c.price,c.price_es)+' · 🎶 '+(c.genres||'').split('·')[0].trim()+'</div>'+
@@ -896,7 +826,7 @@ function renderConcert(){
 function renderStad(){
   return '<section class="sec fade" id="sec-stad">'+sHdr('stad')+'<div class="stad-grid">'+
     D.stadiums.map(s=>'<div class="stcard" onclick="openItemModal(D.stadiums.find(x=>x.id===\''+s.id+'\'),\'stadium\')">'+
-      photoCard(s.photo_url||'', s.emoji, s.bg, '140px', '20px 20px 0 0')+
+      '<div class="stcard-img '+s.bg+'">'+s.emoji+'</div>'+
       '<div class="stcard-body"><div class="stcat">'+n(s.cat,s.cat_es)+'</div>'+
       '<div class="stname">'+n(s.name,s.name_es)+'</div>'+
       '<div class="sttags"><span class="sttag">👕 '+s.team+'</span><span class="sttag">🏟 '+s.cap+'</span></div>'+
@@ -906,7 +836,7 @@ function renderStad(){
 function renderPlace(){
   return '<section class="sec fade" id="sec-place">'+sHdr('place')+'<div class="h-scroll">'+
     D.places.map(p=>'<div class="pcard" onclick="openItemModal(D.places.find(x=>x.id===\''+p.id+'\'),\'place\')">'+
-      photoCard(p.photo_url||'', p.emoji, p.bg, '132px', '18px 18px 0 0')+
+      '<div class="pcard-img '+p.bg+'">'+p.emoji+'</div>'+
       '<div class="pcard-body"><div class="pname">'+n(p.name,p.name_es)+'</div><div class="pdesc">'+n(p.desc,p.desc_es)+'</div></div></div>').join('')+
     '</div></section>';
 }
@@ -922,7 +852,7 @@ function renderEvents(){
 function renderNight(){
   return '<section class="sec fade" id="sec-night">'+sHdr('night')+'<div class="nite-grid">'+
     D.nightlife.map(ni=>'<div class="ncard" onclick="openItemModal(D.nightlife.find(x=>x.id===\''+ni.id+'\'),\'night\')">'+
-      photoCard(ni.photo_url||'', ni.emoji, ni.bg, '165px', '20px 20px 0 0')+
+      '<div class="ncard-img '+ni.bg+'">'+ni.emoji+'</div>'+
       '<div class="ncard-body"><div class="nname">'+ni.name+'</div><div class="nmeta">'+ni.hrs+'</div><span class="ntag">'+ni.vibe+'</span></div></div>').join('')+
     '</div></section>';
 }
@@ -962,14 +892,6 @@ function renderMono(){
   document.getElementById('revGrid').innerHTML='<div class="rev-col"><div class="rv-ph">'+t.rPh[0]+'</div><div class="rv-per">'+t.rPer[0]+'</div><div class="rv-amt c1">$2,500</div><div class="rv-mo">'+t.rMo+'</div><div class="rv-det">'+t.rD[0]+'</div></div><div class="rev-col"><div class="rv-ph">'+t.rPh[1]+'</div><div class="rv-per">'+t.rPer[1]+'</div><div class="rv-amt c2">$12,000</div><div class="rv-mo">'+t.rMo+'</div><div class="rv-det">'+t.rD[1]+'</div></div><div class="rev-col"><div class="rv-ph">'+t.rPh[2]+'</div><div class="rv-per">'+t.rPer[2]+'</div><div class="rv-amt c3">$35,000+</div><div class="rv-mo">'+t.rMo+'</div><div class="rv-det">'+t.rD[2]+'</div></div>';
   document.getElementById('rmList').innerHTML=rm.map(r=>'<div class="rmitem"><div class="rmstep">'+r.s+'</div><div><div class="rmtitle">'+r.t+'</div><div class="rmdesc">'+r.d+'</div></div></div>').join('');
 }
-// ── PHOTO HELPER ──
-function photoCard(url, emoji, bg, h, radius){
-  if(url && url.startsWith('http')){
-    return '<div style="height:'+h+';background:url('+JSON.stringify(url)+') center/cover no-repeat;border-radius:'+radius+';position:relative;"><div style=\"position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.5) 0%,transparent 55%);border-radius:'+radius+'\"></div></div>';
-  }
-  return '<div class="'+bg+'" style="height:'+h+';display:flex;align-items:center;justify-content:center;position:relative;border-radius:'+radius+'"><span style=\"font-size:3.2rem;position:relative;z-index:1\">'+emoji+'</span></div>';
-}
-
 // ── BUILD ──
 function build(){
   const t=T();
@@ -977,31 +899,7 @@ function build(){
   document.getElementById('logoTag').textContent=t.logoTag;
   document.getElementById('hEye').textContent=t.eye;
   document.getElementById('hL1').textContent=t.l1;
-  // Styled subtitle with design
-const subEl = document.getElementById('hSub');
-if(lang==='es'){
-  subEl.innerHTML = `
-    <span style="display:block;font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:400;font-style:italic;color:#2d3748;line-height:1.5;margin-bottom:10px">
-      Restaurantes · Playas · Conciertos
-    </span>
-    <span style="display:block;font-size:.88rem;font-weight:500;color:#666;letter-spacing:.5px;line-height:1.7">
-      Estadios · Museos · Eventos · Vida Nocturna
-    </span>
-    <span style="display:inline-flex;align-items:center;gap:7px;margin-top:12px;background:linear-gradient(135deg,rgba(255,77,53,.1),rgba(255,209,102,.1));border:1.5px solid rgba(255,77,53,.2);padding:5px 16px;border-radius:50px;font-size:.75rem;font-weight:700;color:var(--coral);letter-spacing:1px">
-      ✦ LA GUÍA COMPLETA DE MIAMI
-    </span>`;
-} else {
-  subEl.innerHTML = `
-    <span style="display:block;font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:400;font-style:italic;color:#2d3748;line-height:1.5;margin-bottom:10px">
-      Restaurants · Beaches · Concerts
-    </span>
-    <span style="display:block;font-size:.88rem;font-weight:500;color:#666;letter-spacing:.5px;line-height:1.7">
-      Stadiums · Museums · Events · Nightlife
-    </span>
-    <span style="display:inline-flex;align-items:center;gap:7px;margin-top:12px;background:linear-gradient(135deg,rgba(255,77,53,.1),rgba(255,209,102,.1));border:1.5px solid rgba(255,77,53,.2);padding:5px 16px;border-radius:50px;font-size:.75rem;font-weight:700;color:var(--coral);letter-spacing:1px">
-      ✦ THE COMPLETE MIAMI GUIDE
-    </span>`;
-}
+  document.getElementById('hSub').textContent=t.sub;
   document.getElementById('hCta1').textContent=t.cta1;
   document.getElementById('hCta2').textContent=t.cta2;
   document.getElementById('sInp').placeholder=t.sph;
@@ -1035,9 +933,6 @@ if(lang==='es'){
     document.getElementById('rGrid').innerHTML=renderRestCards(filt);
   });
   renderMono();
-  // Load photos async after render
-  setTimeout(loadCardPhotos, 100);
-
   // fade-in observer
   const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');});},{threshold:.06});
   document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
@@ -1045,202 +940,85 @@ if(lang==='es'){
 
 function toggleLang(){lang=lang==='en'?'es':'en';activeFlt='all';build();}
 
-// Check if returning from successful Stripe payment
-window.addEventListener('load', ()=>{
-  const params = new URLSearchParams(window.location.search);
-  if(params.get('premium')==='success'){
-    aiUnlocked = true;
-    // Clean URL
-    window.history.replaceState({}, '', window.location.pathname);
-    // Show success message after app loads
-    setTimeout(()=>{
-      document.getElementById('aiFab').click();
-      setTimeout(()=>{
-        addAIMsg(lang==='es'?'🎉 ¡Bienvenida a Miami Magic Premium! Itinerarios ilimitados desbloqueados. ¿Adónde quieres ir?':'🎉 Welcome to Miami Magic Premium! Unlimited itineraries unlocked. Where do you want to go?','bot');
-      }, 500);
-    }, 1500);
-  }
-});
-
-// ── GOOGLE SHEETS INTEGRATION ──
-// Replace this URL with your Apps Script deployment URL
+// ── GOOGLE SHEETS ──
 const SHEETS_API_URL = 'https://script.google.com/macros/s/AKfycbx8jdh-QaG45Y6nwbpg1L-dAKOTCzYCxuYqanoZzovgHYQllVuYdv2KvTJx9cF_2Ozy/exec';
 const UNSPLASH_KEY = 'RfPf8lqnx4u-v1wgov8yT75UxRN5WxOAKS0568H_H9Q';
-const unsplashCache = {};
-
-async function getUnsplashPhoto(query) {
-  if (!UNSPLASH_KEY) return null;
-  if (unsplashCache[query]) return unsplashCache[query];
-  try {
-    const r = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(query + ' miami')}&per_page=1&orientation=landscape&client_id=${UNSPLASH_KEY}`);
-    const d = await r.json();
-    const url = d.results && d.results[0] ? d.results[0].urls.regular : null;
-    if (url) unsplashCache[query] = url;
-    return url;
-  } catch { return null; }
-}
-
-// Returns a media element: photo, youtube embed, or emoji fallback
-async function resolveMedia(item, height='185px', radius='0') {
-  const el = document.createElement('div');
-  el.style.cssText = `height:${height};border-radius:${radius};overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;`;
-
-  const url = item.photo_url || item.photo || '';
-
-  // YouTube video
-  if (url && (url.includes('youtube.com') || url.includes('youtu.be'))) {
-    const vid = url.includes('youtu.be') ? url.split('/').pop() : new URL(url).searchParams.get('v');
-    el.innerHTML = `<iframe src="https://www.youtube.com/embed/${vid}?autoplay=0&rel=0" style="width:100%;height:100%;border:none;" allowfullscreen></iframe>`;
-    return el;
-  }
-
-  // Direct photo URL
-  if (url && url.startsWith('http')) {
-    el.style.background = `url('${url}') center/cover no-repeat`;
-    el.innerHTML = `<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.5) 0%,transparent 55%)"></div>`;
-    return el;
-  }
-
-  // Unsplash auto-search
-  if (UNSPLASH_KEY) {
-    const query = item.name || item.name_es || '';
-    const photoUrl = await getUnsplashPhoto(query);
-    if (photoUrl) {
-      el.style.background = `url('${photoUrl}') center/cover no-repeat`;
-      el.innerHTML = `<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.5) 0%,transparent 55%)"></div>`;
-      return el;
-    }
-  }
-
-  // Emoji fallback
-  el.className = (item.bg || 'bg-coral');
-  el.innerHTML = `<span style="font-size:4rem;position:relative;z-index:1">${item.emoji || '🌴'}</span><div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.5) 0%,transparent 55%)"></div>`;
-  return el;
-}
-
-let sheetsLoaded = false;
 
 async function loadFromSheets() {
   if (!SHEETS_API_URL) { build(); return; }
-  
-  // Show loading state
-  document.getElementById('app').innerHTML = `
-    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 32px;gap:14px;color:#999;">
-      <div style="font-size:2.5rem;animation:flt 2s ease-in-out infinite">🌴</div>
-      <div style="font-size:.88rem;font-weight:600">Loading Miami Magic data...</div>
-      <div style="font-size:.76rem;color:#ccc">Connecting to database</div>
-    </div>`;
-
+  document.getElementById('app').innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:80px 32px;gap:14px;color:#999;"><div style="font-size:2.5rem;animation:flt 2s ease-in-out infinite">🌴</div><div style="font-size:.88rem;font-weight:600">Loading Miami Magic...</div></div>';
   const tabs = ['restaurants','beaches','concerts','events','stadiums','theaters','places','nightlife'];
-  
   try {
     const results = await Promise.all(tabs.map(tab =>
-      fetch(SHEETS_API_URL + '?tab=' + tab)
-        .then(r => r.json())
-        .catch(() => ({data: null}))
+      fetch(SHEETS_API_URL + '?tab=' + tab).then(r => r.json()).catch(() => ({data: null}))
     ));
-
-    // Map results back — only override if data came back successfully
     const [rests, beaches, concerts, events, stadiums, theaters, places, nightlife] = results;
-
-    if (rests.data && rests.data.length > 0) {
-      D.restaurants = rests.data.map(r => ({
-        ...r,
-        pro: r.pro === true || r.pro === 'TRUE',
-        tags: r.tags ? r.tags.split('|').map(t=>t.trim()) : [],
-        photo: r.photo_url || ''
-      }));
-    }
+    if (rests.data && rests.data.length > 0) D.restaurants = rests.data.map(r => ({...r, pro: r.pro===true||r.pro==='TRUE', tags: r.tags?r.tags.split('|').map(t=>t.trim()):[], photo: r.photo_url||''}));
     if (beaches.data && beaches.data.length > 0) D.beaches = beaches.data;
-    if (concerts.data && concerts.data.length > 0) {
-      D.concerts = concerts.data.map(c => ({
-        ...c,
-        tags: c.tags ? c.tags.split('|').map(t=>t.trim()) : [],
-        photo: c.photo_url || ''
-      }));
-    }
-    if (events.data && events.data.length > 0) {
-      D.events = events.data.filter(e => e.active !== false && e.active !== 'FALSE');
-    }
+    if (concerts.data && concerts.data.length > 0) D.concerts = concerts.data.map(c => ({...c, tags: c.tags?c.tags.split('|').map(t=>t.trim()):[], photo: c.photo_url||''}));
+    if (events.data && events.data.length > 0) D.events = events.data.filter(e => e.active !== false && e.active !== 'FALSE');
     if (stadiums.data && stadiums.data.length > 0) D.stadiums = stadiums.data;
-    if (theaters.data && theaters.data.length > 0) {
-      D.theaters = theaters.data.map(t => ({
-        ...t,
-        tags: t.tags ? t.tags.split('|').map(x=>x.trim()) : []
-      }));
-    }
+    if (theaters.data && theaters.data.length > 0) D.theaters = theaters.data.map(t => ({...t, tags: t.tags?t.tags.split('|').map(x=>x.trim()):[]}));
     if (places.data && places.data.length > 0) D.places = places.data;
     if (nightlife.data && nightlife.data.length > 0) D.nightlife = nightlife.data;
-
-    sheetsLoaded = true;
-    console.log('✅ Miami Magic: data loaded from Google Sheets');
-  } catch(err) {
-    console.warn('⚠️ Sheets unavailable, using built-in data:', err);
-  }
-  
+  } catch(err) { console.warn('Sheets unavailable:', err); }
   build();
 }
 
-// Photo support in cards — use photo_url if available, else emoji
-function cardImg(item, h='185px') {
-  if (item.photo_url && item.photo_url.startsWith('http')) {
-    return `<div style="height:${h};background:url('${item.photo_url}') center/cover;position:relative;overflow:hidden;"></div>`;
+// Photo helper
+function photoCard(url, emoji, bg, h, radius){
+  if(url && url.startsWith('http') && !url.includes('youtu')){
+    return '<div style="height:'+h+';background:url('+JSON.stringify(url)+') center/cover no-repeat;border-radius:'+radius+';position:relative;"><div style=\"position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.5) 0%,transparent 55%);border-radius:'+radius+'\"></div></div>';
   }
-  return `<div class="rcard-img ${item.bg||''}" style="height:${h}"><div class="rcard-emoji">${item.emoji||'🌴'}</div><div class="rcard-ov"></div></div>`;
+  if(url && (url.includes('youtube.com')||url.includes('youtu.be'))){
+    const vid = url.includes('youtu.be') ? url.split('/').pop().split('?')[0] : new URL(url).searchParams.get('v');
+    return '<div style="height:'+h+';border-radius:'+radius+';overflow:hidden;"><iframe src=\"https://www.youtube.com/embed/'+vid+'?autoplay=0&rel=0\" style=\"width:100%;height:100%;border:none\" allowfullscreen></iframe></div>';
+  }
+  return '<div class="'+bg+'" style="height:'+h+';display:flex;align-items:center;justify-content:center;position:relative;border-radius:'+radius+'"><span style=\"font-size:3.2rem;position:relative;z-index:1\">'+emoji+'</span></div>';
 }
 
-// Start app
 loadFromSheets();
 </script>
 
-<!-- AI TRIP PLANNER CSS -->
+<!-- AI TRIP PLANNER -->
 <style>
-.ai-fab{position:fixed;bottom:28px;right:28px;z-index:500;background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border:none;border-radius:50px;padding:13px 22px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.88rem;cursor:pointer;box-shadow:0 8px 28px rgba(255,77,53,.4);display:flex;align-items:center;gap:9px;transition:all .25s;white-space:nowrap;}
-.ai-fab:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(255,77,53,.5);}
-.ai-fab .ai-fab-icon{font-size:1.2rem;}
-.ai-fab .ai-fab-badge{background:rgba(255,255,255,.25);font-size:.6rem;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:.5px;}
+.ai-fab{position:fixed;bottom:28px;right:28px;z-index:500;background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border:none;border-radius:50px;padding:13px 22px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.88rem;cursor:pointer;box-shadow:0 8px 28px rgba(255,77,53,.4);display:flex;align-items:center;gap:9px;transition:all .25s;}
+.ai-fab:hover{transform:translateY(-3px);}
+.ai-fab-badge{background:rgba(255,255,255,.25);font-size:.6rem;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:.5px;}
 .ai-panel{position:fixed;bottom:90px;right:28px;width:380px;max-height:600px;background:#fff;border-radius:24px;box-shadow:0 24px 70px rgba(0,0,0,.18);z-index:500;display:flex;flex-direction:column;transform:scale(.88) translateY(20px);opacity:0;pointer-events:none;transition:all .3s cubic-bezier(.34,1.56,.64,1);overflow:hidden;border:1px solid rgba(255,77,53,.1);}
 .ai-panel.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all;}
 .ai-header{background:linear-gradient(135deg,#080F1E,#0E1B33);padding:16px 18px;display:flex;align-items:center;gap:11px;flex-shrink:0;}
 .ai-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#FF4D35,#FFD166);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
-.ai-hinfo{flex:1;}
 .ai-hname{font-family:'Playfair Display',serif;font-size:.98rem;color:#fff;font-weight:700;}
 .ai-hsub{font-size:.68rem;color:rgba(255,255,255,.4);margin-top:1px;}
-.ai-hbadge{font-size:.6rem;font-weight:700;padding:2px 8px;border-radius:20px;background:rgba(255,209,102,.15);color:#FFD166;border:1px solid rgba(255,209,102,.2);}
-.ai-close{background:none;border:none;color:rgba(255,255,255,.4);font-size:1.1rem;cursor:pointer;padding:4px 7px;border-radius:8px;transition:all .2s;}
-.ai-close:hover{background:rgba(255,255,255,.08);color:#fff;}
-.ai-messages{flex:1;overflow-y:auto;padding:14px 16px;display:flex;flex-direction:column;gap:10px;scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.1) transparent;}
-.ai-messages::-webkit-scrollbar{width:3px;}.ai-messages::-webkit-scrollbar-thumb{background:rgba(0,0,0,.1);border-radius:3px;}
-.ai-msg{max-width:88%;line-height:1.6;}
+.ai-hbadge{font-size:.6rem;font-weight:700;padding:2px 8px;border-radius:20px;background:rgba(255,209,102,.15);color:#FFD166;border:1px solid rgba(255,209,102,.2);margin-left:auto;}
+.ai-close{background:none;border:none;color:rgba(255,255,255,.4);font-size:1.1rem;cursor:pointer;padding:4px 7px;}
+.ai-close:hover{color:#fff;}
+.ai-messages{flex:1;overflow-y:auto;padding:14px 16px;display:flex;flex-direction:column;gap:10px;scrollbar-width:thin;}
+.ai-msg{max-width:88%;}
 .ai-msg.bot{align-self:flex-start;}
 .ai-msg.user{align-self:flex-end;}
-.ai-bubble{padding:10px 14px;border-radius:16px;font-size:.82rem;}
-.ai-msg.bot .ai-bubble{background:var(--warm);color:var(--navy);border-radius:4px 16px 16px 16px;border:1px solid rgba(0,0,0,.05);}
+.ai-bubble{padding:10px 14px;border-radius:16px;font-size:.82rem;line-height:1.6;}
+.ai-msg.bot .ai-bubble{background:#FFF3E8;color:#080F1E;border-radius:4px 16px 16px 16px;border:1px solid rgba(0,0,0,.05);}
 .ai-msg.user .ai-bubble{background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border-radius:16px 16px 4px 16px;}
-.ai-typing{align-self:flex-start;}
-.ai-typing .ai-bubble{background:var(--warm);border:1px solid rgba(0,0,0,.05);border-radius:4px 16px 16px 16px;display:flex;gap:4px;align-items:center;padding:12px 16px;}
+.ai-typing .ai-bubble{display:flex;gap:4px;align-items:center;padding:12px 16px;}
 .ai-dot{width:6px;height:6px;border-radius:50%;background:#aaa;animation:aiDot 1.2s ease-in-out infinite;}
 .ai-dot:nth-child(2){animation-delay:.2s;}.ai-dot:nth-child(3){animation-delay:.4s;}
 .ai-quick{padding:8px 16px;display:flex;gap:6px;flex-wrap:wrap;flex-shrink:0;border-top:1px solid #f5f5f5;}
-.ai-qbtn{padding:5px 12px;border-radius:20px;border:1.5px solid rgba(255,77,53,.2);background:#fff;color:var(--coral);font-size:.72rem;font-weight:600;cursor:pointer;transition:all .2s;white-space:nowrap;}
-.ai-qbtn:hover{background:var(--coral);color:#fff;border-color:var(--coral);}
+.ai-qbtn{padding:5px 12px;border-radius:20px;border:1.5px solid rgba(255,77,53,.2);background:#fff;color:#FF4D35;font-size:.72rem;font-weight:600;cursor:pointer;white-space:nowrap;}
+.ai-qbtn:hover{background:#FF4D35;color:#fff;}
 .ai-input-row{padding:10px 14px;border-top:1px solid #f5f5f5;display:flex;gap:8px;align-items:center;flex-shrink:0;}
-.ai-input{flex:1;border:1.5px solid #eee;border-radius:50px;padding:9px 16px;font-family:'DM Sans',sans-serif;font-size:.82rem;outline:none;transition:border-color .2s;color:var(--navy);}
-.ai-input:focus{border-color:var(--coral);}
-.ai-send{background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all .22s;flex-shrink:0;}
-.ai-send:hover{transform:scale(1.08);}
-.ai-send:disabled{opacity:.4;cursor:not-allowed;transform:none;}
+.ai-input{flex:1;border:1.5px solid #eee;border-radius:50px;padding:9px 16px;font-family:'DM Sans',sans-serif;font-size:.82rem;outline:none;color:#080F1E;}
+.ai-input:focus{border-color:#FF4D35;}
+.ai-send{background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ai-send:disabled{opacity:.4;cursor:not-allowed;}
 .ai-lock{padding:12px 16px;background:linear-gradient(135deg,rgba(255,209,102,.08),rgba(255,77,53,.06));border-top:1px solid rgba(255,209,102,.15);text-align:center;flex-shrink:0;}
-.ai-lock-txt{font-size:.74rem;color:#888;margin-bottom:7px;line-height:1.5;}
-.ai-lock-btn{background:linear-gradient(135deg,#FFD166,#F59E0B);color:var(--navy);border:none;border-radius:50px;padding:7px 20px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.78rem;cursor:pointer;transition:all .22s;}
-.ai-lock-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(245,158,11,.3);}
 @keyframes aiDot{0%,60%,100%{transform:translateY(0);}30%{transform:translateY(-5px);}}
 @media(max-width:900px){.ai-panel{width:calc(100vw - 28px);right:14px;bottom:80px;}.ai-fab{right:14px;bottom:14px;}}
 </style>
 
-<!-- AI TRIP PLANNER HTML -->
-<button class="ai-fab" id="aiFab" onclick="toggleAI()">
-  <span class="ai-fab-icon">🗺️</span>
+<button class="ai-fab" id="aiFab">
+  <span>🗺️</span>
   <span id="aiFabTxt">Plan My Trip</span>
   <span class="ai-fab-badge">PREMIUM</span>
 </button>
@@ -1248,224 +1026,184 @@ loadFromSheets();
 <div class="ai-panel" id="aiPanel">
   <div class="ai-header">
     <div class="ai-avatar">🌴</div>
-    <div class="ai-hinfo">
+    <div style="flex:1">
       <div class="ai-hname">Miami Magic AI</div>
       <div class="ai-hsub" id="aiSubtitle">Your personal Miami concierge</div>
     </div>
     <span class="ai-hbadge">Premium</span>
-    <button class="ai-close" onclick="toggleAI()">✕</button>
+    <button class="ai-close" id="aiCloseBtn">✕</button>
   </div>
   <div class="ai-messages" id="aiMessages"></div>
   <div class="ai-quick" id="aiQuick"></div>
-  <div class="ai-input-row">
-    <input class="ai-input" id="aiInput" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendAI();}" />
-    <button class="ai-send" id="aiSendBtn" onclick="sendAI()">➤</button>
+  <div class="ai-input-row" id="aiInputRow">
+    <input class="ai-input" id="aiInput" />
+    <button class="ai-send" id="aiSendBtn">➤</button>
   </div>
-  <div class="ai-lock" id="aiLock" style="display:none">
-    <div class="ai-lock-txt" id="aiLockTxt"></div>
-    <button class="ai-lock-btn" id="aiLockBtn"></button>
-  </div>
+  <div id="aiLockArea"></div>
 </div>
 
 <script>
-// ── AI TRIP PLANNER ──
-let aiOpen=false, aiMsgCount=0, aiUnlocked=false;
-const AI_FREE_MSGS=2;
+(function(){
+  const PREMIUM_LINK = 'https://buy.stripe.com/5kQbJ00W39TybWrbega3u02';
+  const BUSINESS_LINK = 'https://buy.stripe.com/aFa00i9sz7Lq7GbgyAa3u01';
+  let aiOpen=false, aiMsgCount=0, aiUnlocked=false;
+  const AI_FREE_MSGS=2;
 
-const QUICK_EN=['1-day itinerary','Family trip 3 days','Romantic weekend','Best beaches','Budget trip','Foodie tour'];
-const QUICK_ES=['Itinerario 1 día','Viaje familiar 3 días','Fin de semana romántico','Mejores playas','Viaje económico','Tour gastronómico'];
+  const QUICK_EN=['1-day itinerary','Family trip','Romantic weekend','Best beaches','Foodie tour','Nightlife guide'];
+  const QUICK_ES=['Itinerario 1 día','Viaje familiar','Fin de semana romántico','Mejores playas','Tour gastronómico','Guía nocturna'];
 
-function buildAIContext(){
-  const rests=D.restaurants.map(r=>`${r.name} (${r.cat}, ${r.price}, ${r.addr.split(',')[0]})`).join(', ');
-  const beaches=D.beaches.map(b=>n(b.name,b.name_es)).join(', ');
-  const museums=D.museums.map(m=>n(m.name,m.name_es)).join(', ');
-  const concerts=D.concerts.map(c=>`${n(c.name,c.name_es)} (${(n(c.upcoming,c.upcoming_es)||'').split('|').slice(0,2).join(', ')})`).join('; ');
-  const events=D.events.map(e=>`${n(e.name,e.name_es)} (${e.day} ${e.mon}, ${e.price})`).join('; ');
-  const nightlife=D.nightlife.map(ni=>ni.name+' ('+ni.vibe+')').join(', ');
-  const places=D.places.map(p=>n(p.name,p.name_es)).join(', ');
-  return `You are Miami Magic AI, an expert Miami travel concierge. You help visitors plan perfect itineraries using ONLY real places from the Miami Magic app database.
+  function getLang(){ return typeof lang !== 'undefined' ? lang : 'en'; }
 
-DATABASE:
-RESTAURANTS (30): ${rests}
-BEACHES (8): ${beaches}
-MUSEUMS: ${museums}
-CONCERT VENUES & UPCOMING SHOWS: ${concerts}
-EVENTS: ${events}
-NIGHTLIFE: ${nightlife}
-LANDMARKS & NEIGHBORHOODS: ${places}
-
-RULES:
-- Recommend ONLY places from the database above
-- Be specific: include actual names, addresses hints, price ranges
-- Structure itineraries hour-by-hour when asked
-- Consider travel time between Miami neighborhoods
-- South Beach, Brickell, Wynwood, Little Havana, Coconut Grove, Design District are the main areas
-- For families: beaches, Frost Science Museum, Everglades, Gold Coast Railroad Museum
-- For couples: Zuma, Carbone, Stubborn Seed, South Beach sunset, rooftop bars
-- For foodies: Versailles, KYU, Cvi.che 105, Bachour, Mignonette
-- For nightlife: LIV, E11even, Ball and Chain, Story
-- Always mention that tickets/reservations can be booked directly in the app
-- Keep responses warm, energetic, concise — Miami vibes!
-- Language: respond in ${lang==='es'?'Spanish':'English'} always.`;
-}
-
-function toggleAI(){
-  aiOpen=!aiOpen;
-  document.getElementById('aiPanel').classList.toggle('open',aiOpen);
-  if(aiOpen&&document.getElementById('aiMessages').children.length===0) initAIChat();
-}
-
-function initAIChat(){
-  const msgs=document.getElementById('aiMessages');
-  msgs.innerHTML='';
-  aiMsgCount=0;
-  const welcome=lang==='es'
-    ?'¡Hola! 🌴 Soy tu concierge personal de Miami Magic. Cuéntame sobre tu viaje — ¿cuántos días tienes, con quién viajas, y qué fechas? ¡Te armo el itinerario perfecto!'
-    :"Hi! 🌴 I'm your personal Miami Magic concierge. Tell me about your trip — how many days, who are you traveling with, and what dates? I'll build your perfect Miami itinerary!";
-  addAIMsg(welcome,'bot');
-  document.getElementById('aiInput').placeholder=lang==='es'?'Ej: 3 días en julio con mi familia...':'E.g.: 3 days in July with my family...';
-  document.getElementById('aiFabTxt').textContent=lang==='es'?'Planifica tu Viaje':'Plan My Trip';
-  document.getElementById('aiSubtitle').textContent=lang==='es'?'Tu concierge personal de Miami':'Your personal Miami concierge';
-  // quick buttons
-  const qs=lang==='es'?QUICK_ES:QUICK_EN;
-  document.getElementById('aiQuick').innerHTML=qs.map(q=>`<button class="ai-qbtn" onclick="useQuick('${q}')">${q}</button>`).join('');
-  // lock
-  updateLock();
-}
-
-function useQuick(q){
-  document.getElementById('aiInput').value=q;
-  sendAI();
-}
-
-function updateLock(){
-  const lock=document.getElementById('aiLock');
-  const inputRow=document.getElementById('aiInput').parentElement;
-  if(aiUnlocked||aiMsgCount<AI_FREE_MSGS){
-    lock.style.display='none';
-    inputRow.style.display='flex';
-  } else {
-    lock.style.display='block';
-    inputRow.style.display='none';
-    document.getElementById('aiLockTxt').innerHTML=lang==='es'
-      ?'Has usado tus <strong>2 consultas gratuitas</strong>. Desbloquea itinerarios ilimitados con Premium.'
-      :'You\'ve used your <strong>2 free queries</strong>. Unlock unlimited itineraries with Premium.';
-    document.getElementById('aiLockBtn').textContent=lang==='es'?'Desbloquear Premium — $4.99/mes':'Unlock Premium — $4.99/month';
-    document.getElementById('aiLockBtn').onclick=unlockPremium;
-  }
-}
-
-async function unlockPremium(){
-  // Load Stripe
-  if(!window.Stripe){
-    const script = document.createElement('script');
-    script.src = 'https://js.stripe.com/v3/';
-    document.head.appendChild(script);
-    await new Promise(r => script.onload = r);
-  }
-  const stripe = Stripe('pk_live_51TaRySCurAD76R7NfKicR4yBUH8FfybFhFpy1PedaJvsWK6aUhmHXWdYT5Y9HcfZMWoMaXZGddOnBMaz5RmTGCO700ijakpxp9');
-  
-  // Show loading state
-  const lockBtn = document.getElementById('aiLockBtn');
-  lockBtn.textContent = lang==='es'?'Procesando...':'Processing...';
-  lockBtn.disabled = true;
-
-  try {
-    const result = await stripe.redirectToCheckout({
-      lineItems: [{
-        price_data: {
-          currency: 'usd',
-          product_data: {
-            name: 'Miami Magic Premium',
-            description: lang==='es'?'Itinerarios ilimitados con AI, sin anuncios, acceso exclusivo':'Unlimited AI itineraries, ad-free, exclusive access',
-            images: ['https://www.miamimagicapp.com/icon.png'],
-          },
-          unit_amount: 499,
-          recurring: { interval: 'month' },
-        },
-        quantity: 1,
-      }],
-      mode: 'subscription',
-      successUrl: 'https://www.miamimagicapp.com?premium=success',
-      cancelUrl: 'https://www.miamimagicapp.com?premium=cancelled',
-    });
-    if(result.error){
-      // Fallback — activate locally if Stripe fails
-      activatePremiumLocally();
-    }
-  } catch(err) {
-    activatePremiumLocally();
-  }
-}
-
-function activatePremiumLocally(){
-  aiUnlocked=true;
-  document.getElementById('aiLock').style.display='none';
-  document.getElementById('aiInput').parentElement.style.display='flex';
-  addAIMsg(lang==='es'?'✨ ¡Premium activado! Itinerarios ilimitados desbloqueados. ¿En qué más te ayudo?':'✨ Premium activated! Unlimited itineraries unlocked. How else can I help?','bot');
-}
-
-function addAIMsg(text,role){
-  const msgs=document.getElementById('aiMessages');
-  const div=document.createElement('div');
-  div.className='ai-msg '+role;
-  div.innerHTML='<div class="ai-bubble">'+text.replace(/\n/g,'<br>')+'</div>';
-  msgs.appendChild(div);
-  msgs.scrollTop=msgs.scrollHeight;
-}
-
-function showTyping(){
-  const msgs=document.getElementById('aiMessages');
-  const div=document.createElement('div');
-  div.className='ai-msg bot ai-typing-wrap';
-  div.innerHTML='<div class="ai-bubble ai-typing"><span class="ai-dot"></span><span class="ai-dot"></span><span class="ai-dot"></span></div>';
-  msgs.appendChild(div);
-  msgs.scrollTop=msgs.scrollHeight;
-  return div;
-}
-
-async function sendAI(){
-  if(!aiUnlocked&&aiMsgCount>=AI_FREE_MSGS)return;
-  const input=document.getElementById('aiInput');
-  const userMsg=input.value.trim(); if(!userMsg)return;
-  input.value='';
-  document.getElementById('aiSendBtn').disabled=true;
-  document.getElementById('aiQuick').style.display='none';
-  addAIMsg(userMsg,'user');
-  aiMsgCount++;
-  const typing=showTyping();
-  try{
-    const resp=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({
-        model:'claude-sonnet-4-20250514',
-        max_tokens:1000,
-        system:buildAIContext(),
-        messages:[{role:'user',content:userMsg}]
-      })
-    });
-    const data=await resp.json();
-    typing.remove();
-    const reply=data.content&&data.content[0]&&data.content[0].text?data.content[0].text:'Sorry, I could not generate a response. Please try again.';
-    addAIMsg(reply,'bot');
-  } catch(err){
-    typing.remove();
-    addAIMsg(lang==='es'?'Ocurrió un error. Por favor intenta de nuevo.':'Something went wrong. Please try again.','bot');
-  }
-  document.getElementById('aiSendBtn').disabled=false;
-  updateLock();
-}
-</script>
-
-<script>
-if('serviceWorker' in navigator){
-  window.addEventListener('load', ()=>{
-    navigator.serviceWorker.register('sw.js')
-      .then(()=>console.log('✅ Miami Magic PWA ready'))
-      .catch(err=>console.log('SW error:', err));
+  // AI Fab
+  document.getElementById('aiFab').addEventListener('click', toggleAI);
+  document.getElementById('aiCloseBtn').addEventListener('click', toggleAI);
+  document.getElementById('aiSendBtn').addEventListener('click', sendAI);
+  document.getElementById('aiInput').addEventListener('keydown', function(e){
+    if(e.key==='Enter') sendAI();
   });
-}
+
+  function toggleAI(){
+    aiOpen=!aiOpen;
+    document.getElementById('aiPanel').classList.toggle('open', aiOpen);
+    if(aiOpen && document.getElementById('aiMessages').children.length===0) initChat();
+  }
+
+  function initChat(){
+    const l = getLang();
+    document.getElementById('aiMessages').innerHTML='';
+    document.getElementById('aiFabTxt').textContent = l==='es'?'Planifica tu Viaje':'Plan My Trip';
+    document.getElementById('aiSubtitle').textContent = l==='es'?'Tu concierge personal de Miami':'Your personal Miami concierge';
+    document.getElementById('aiInput').placeholder = l==='es'?'Ej: 3 días en julio con mi familia...':'E.g.: 3 days in July with my family...';
+    aiMsgCount=0;
+    const welcome = l==='es'
+      ? '¡Hola! 🌴 Soy tu concierge personal de Miami Magic. Cuéntame sobre tu viaje — ¿cuántos días, con quién viajas y qué fechas? ¡Te armo el itinerario perfecto!'
+      : 'Hi! 🌴 I am your Miami Magic personal concierge. Tell me about your trip — how many days, who are you traveling with, and what dates? I will build your perfect Miami itinerary!';
+    addMsg(welcome,'bot');
+    const qs = l==='es'?QUICK_ES:QUICK_EN;
+    document.getElementById('aiQuick').innerHTML = qs.map(q=>'<button class="ai-qbtn">'+q+'</button>').join('');
+    document.querySelectorAll('.ai-qbtn').forEach(btn=>{
+      btn.addEventListener('click',function(){ document.getElementById('aiInput').value=this.textContent; sendAI(); });
+    });
+    updateLock();
+  }
+
+  function addMsg(text, role){
+    const msgs = document.getElementById('aiMessages');
+    const div = document.createElement('div');
+    div.className = 'ai-msg '+role;
+    div.innerHTML = '<div class="ai-bubble">'+text.replace(/\n/g,'<br>')+'</div>';
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  function showTyping(){
+    const msgs = document.getElementById('aiMessages');
+    const div = document.createElement('div');
+    div.className = 'ai-msg bot';
+    div.innerHTML = '<div class="ai-bubble ai-typing"><span class="ai-dot"></span><span class="ai-dot"></span><span class="ai-dot"></span></div>';
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+    return div;
+  }
+
+  function getItinerary(query){
+    const l = getLang();
+    const q = query.toLowerCase();
+    if(q.includes('beach')||q.includes('playa')){
+      return l==='es'
+        ? '🌴 ¡Día Perfecto en la Playa!\n\nMañana: South Beach — torres Art Deco icónicas y aguas cristalinas.\n\nTarde: Crandon Park Beach en Key Biscayne — aguas turquesas tranquilas.\n\nAtardecer: Cena en Rusty Pelican con la vista más espectacular del skyline de Miami.\n\n📍 Reserva todo en miamimagicapp.com'
+        : '🌴 Perfect Miami Beach Day!\n\nMorning: South Beach — iconic Art Deco towers and crystal clear water.\n\nAfternoon: Crandon Park Beach in Key Biscayne — calm turquoise waters.\n\nSunset: Dinner at Rusty Pelican with the most spectacular Miami skyline view.\n\n📍 Book everything at miamimagicapp.com';
+    }
+    if(q.includes('food')||q.includes('comida')||q.includes('eat')||q.includes('comer')||q.includes('foodie')||q.includes('gastro')){
+      return l==='es'
+        ? '🍽️ ¡Tour Gastronómico de Miami!\n\nDesayuno: Bachour (600 Brickell Ave) — pastelería de clase mundial.\n\nAlmuerzo: Versailles (3555 SW 8th St) — el restaurante cubano más icónico.\n\nCena: KYU Wynwood — increíble BBQ asiático al horno de leña.\n\nNoche: Coyo Taco — las mejores tacos y mezcal hasta las 3 AM.\n\n📍 miamimagicapp.com'
+        : '🍽️ Miami Foodie Tour!\n\nBreakfast: Bachour (600 Brickell Ave) — world-class pastries.\n\nLunch: Versailles (3555 SW 8th St) — most iconic Cuban restaurant.\n\nDinner: KYU Wynwood — incredible wood-fired Asian BBQ.\n\nLate Night: Coyo Taco — best tacos and mezcal open until 3 AM.\n\n📍 miamimagicapp.com';
+    }
+    if(q.includes('family')||q.includes('familia')||q.includes('kid')||q.includes('niño')){
+      return l==='es'
+        ? '👨‍👩‍👧 ¡Miami en Familia!\n\nMañana: Museo Frost de Ciencias — acuario de 1.9M litros y planetario.\n\nAlmuerzo: Ariete en Coconut Grove — las mejores hamburguesas de Miami.\n\nTarde: Crandon Park Beach — aguas tranquilas ideales para niños.\n\nNoche: Bayside Marketplace — restaurantes y música en vivo.\n\n📍 miamimagicapp.com'
+        : '👨‍👩‍👧 Miami Family Day!\n\nMorning: Frost Science Museum — 500,000-gallon aquarium and planetarium.\n\nLunch: Ariete in Coconut Grove — best smash burgers in Miami.\n\nAfternoon: Crandon Park Beach — calm shallow waters perfect for kids.\n\nEvening: Bayside Marketplace — waterfront dining and live music.\n\n📍 miamimagicapp.com';
+    }
+    if(q.includes('romantic')||q.includes('romántico')||q.includes('pareja')||q.includes('couple')||q.includes('date')||q.includes('cita')){
+      return l==='es'
+        ? '💕 ¡Fin de Semana Romántico!\n\nViernes Noche: Cena en Zuma Miami — vistas a la bahía y cocina japonesa de clase mundial.\n\nSábado: Brunch en Mandolin Aegean Bistro, paseo por South Beach.\n\nSábado Noche: Atardecer en Rusty Pelican, cócteles en Basement Miami.\n\nDomingo: Museo Vizcaya — impresionante villa italiana de 1916.\n\n📍 miamimagicapp.com'
+        : '💕 Romantic Miami Weekend!\n\nFriday Night: Dinner at Zuma Miami — stunning bay views and world-class Japanese cuisine.\n\nSaturday: Brunch at Mandolin Aegean Bistro, stroll through South Beach.\n\nSaturday Night: Sunset at Rusty Pelican, cocktails at Basement Miami.\n\nSunday: Vizcaya Museum — breathtaking 1916 Italian villa.\n\n📍 miamimagicapp.com';
+    }
+    if(q.includes('night')||q.includes('noche')||q.includes('club')||q.includes('party')||q.includes('fiesta')){
+      return l==='es'
+        ? '🌙 ¡Guía de Vida Nocturna de Miami!\n\n10 PM: Ball & Chain (1513 SW 8th St) — histórico bar de jazz y salsa de 1935.\n\nMedianoche: LIV Nightclub — el club #1 de Miami en el Fontainebleau.\n\nMadrugada: E11even Miami — legendario ultra-club abierto 24/7.\n\n💡 Tip: Reserva mesa VIP en LIV con anticipación.\n\n📍 miamimagicapp.com'
+        : '🌙 Miami Nightlife Guide!\n\n10 PM: Ball & Chain (1513 SW 8th St) — historic 1935 jazz and salsa bar.\n\nMidnight: LIV Nightclub — Miami #1 club at the Fontainebleau.\n\nLate Night: E11even Miami — legendary 24/7 ultra-club.\n\n💡 Tip: Book VIP tables at LIV in advance.\n\n📍 miamimagicapp.com';
+    }
+    if(q.includes('concert')||q.includes('concierto')||q.includes('music')||q.includes('música')||q.includes('show')){
+      return l==='es'
+        ? '🎵 ¡Guía de Conciertos en Miami!\n\nKaseya Center — Bad Bunny, Shakira, Coldplay, Beyoncé (Cap. 21,000)\nHard Rock Live Hollywood — Marc Anthony, Juan Luis Guerra, Romeo Santos\nFillmore Miami Beach — shows íntimos y gran acústica (Cap. 2,700)\nBayfront Park — Ultra Music Festival y shows al aire libre\n\n💡 Compra en Ticketmaster con anticipación.\n\n📍 miamimagicapp.com'
+        : '🎵 Miami Concert Guide!\n\nKaseya Center — Bad Bunny, Shakira, Coldplay, Beyoncé (Cap. 21,000)\nHard Rock Live Hollywood — Marc Anthony, Juan Luis Guerra, Romeo Santos\nFillmore Miami Beach — intimate shows with great acoustics (Cap. 2,700)\nBayfront Park — Ultra Music Festival and outdoor shows\n\n💡 Buy on Ticketmaster early.\n\n📍 miamimagicapp.com';
+    }
+    // Default response
+    return l==='es'
+      ? '🌴 ¡Bienvenido a Miami Magic!\n\nPuedo ayudarte a planificar:\n\n🏖️ Día en la playa\n🍽️ Tour gastronómico\n👨‍👩‍👧 Plan familiar\n💕 Fin de semana romántico\n🌙 Vida nocturna\n🎵 Conciertos y eventos\n\nCuéntame más — ¿cuántos días tienes, con quién viajas y qué te gusta hacer?'
+      : '🌴 Welcome to Miami Magic!\n\nI can help you plan:\n\n🏖️ Beach day\n🍽️ Foodie tour\n👨‍👩‍👧 Family plan\n💕 Romantic weekend\n🌙 Nightlife\n🎵 Concerts and events\n\nTell me more — how many days, who are you traveling with, and what do you love to do?';
+  }
+
+  function sendAI(){
+    if(!aiUnlocked && aiMsgCount>=AI_FREE_MSGS) return;
+    const input = document.getElementById('aiInput');
+    const msg = input.value.trim();
+    if(!msg) return;
+    input.value='';
+    document.getElementById('aiSendBtn').disabled=true;
+    document.getElementById('aiQuick').style.display='none';
+    addMsg(msg,'user');
+    aiMsgCount++;
+    const typing = showTyping();
+    setTimeout(()=>{
+      typing.remove();
+      // Check for activation code
+      if(msg.toUpperCase().includes('PREMIUM')||msg.toUpperCase().includes('ACTIVADO')||msg.toUpperCase().includes('ACTIVATED')){
+        aiUnlocked=true;
+        const l=getLang();
+        addMsg(l==='es'?'✨ ¡Premium activado! Itinerarios ilimitados desbloqueados. ¿En qué más te ayudo?':'✨ Premium activated! Unlimited itineraries unlocked. How can I help you?','bot');
+        updateLock();
+        return;
+      }
+      addMsg(getItinerary(msg),'bot');
+      document.getElementById('aiSendBtn').disabled=false;
+      updateLock();
+    }, 1200);
+  }
+
+  function updateLock(){
+    const lock = document.getElementById('aiLockArea');
+    const inputRow = document.getElementById('aiInputRow');
+    const l = getLang();
+    if(aiUnlocked || aiMsgCount < AI_FREE_MSGS){
+      lock.innerHTML='';
+      inputRow.style.display='flex';
+    } else {
+      inputRow.style.display='none';
+      lock.innerHTML = `
+        <div style="padding:14px 16px;background:linear-gradient(135deg,rgba(255,209,102,.08),rgba(255,77,53,.06));border-top:1px solid rgba(255,209,102,.15);text-align:center;">
+          <div style="font-size:.74rem;color:#888;margin-bottom:10px;line-height:1.6">
+            ${l==='es'?'Has usado tus <strong>2 consultas gratuitas</strong>.<br>Desbloquea itinerarios ilimitados:':'You used your <strong>2 free queries</strong>.<br>Unlock unlimited itineraries:'}
+          </div>
+          <a href="${PREMIUM_LINK}" target="_blank" rel="noopener"
+             style="display:block;background:linear-gradient(135deg,#FF4D35,#FF7A5C);color:#fff;padding:10px 20px;border-radius:50px;font-weight:700;font-size:.82rem;text-decoration:none;margin-bottom:8px;box-shadow:0 4px 14px rgba(255,77,53,.3)">
+            ✨ ${l==='es'?'Miami Magic Premium — $4.99/mes':'Miami Magic Premium — $4.99/month'}
+          </a>
+          <div style="font-size:.65rem;color:#ccc;margin-bottom:8px">${l==='es'?'— o si tienes un negocio —':'— or if you have a business —'}</div>
+          <a href="${BUSINESS_LINK}" target="_blank" rel="noopener"
+             style="display:block;background:linear-gradient(135deg,#FFD166,#F59E0B);color:#080F1E;padding:9px 20px;border-radius:50px;font-weight:700;font-size:.78rem;text-decoration:none;box-shadow:0 4px 14px rgba(255,209,102,.3)">
+            💼 ${l==='es'?'Listar mi Negocio — $250/mes':'List My Business — $250/month'}
+          </a>
+          <div style="font-size:.65rem;color:#ccc;margin-top:8px">${l==='es'?'Primeros 2 meses gratis · Cancela cuando quieras':'First 2 months free · Cancel anytime'}</div>
+          <button onclick="document.getElementById('aiInput').value='PREMIUM';document.getElementById('aiInputRow').style.display='flex';this.parentElement.innerHTML=''" 
+                  style="background:none;border:none;color:#aaa;font-size:.7rem;margin-top:8px;cursor:pointer;text-decoration:underline">
+            ${l==='es'?'¿Ya pagaste? Activa aquí':'Already paid? Activate here'}
+          </button>
+        </div>`;
+    }
+  }
+})();
 </script>
 </body>
 </html>
