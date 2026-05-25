@@ -285,7 +285,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 @keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes flt{0%,100%{transform:translateY(0) rotate(0);}33%{transform:translateY(-15px) rotate(4deg);}66%{transform:translateY(-6px) rotate(-3deg);}}
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-@media(max-width:900px){.fade{opacity:1;transform:none;}.fade.vis{opacity:1;transform:none;}:root{--sidebar:0px;}.sidebar{transform:translateX(-260px);width:260px;transition:transform .3s;}.sidebar.open{transform:translateX(0);}.mob-btn{display:flex;}.mob-ov{display:block;opacity:0;pointer-events:none;transition:opacity .3s;}.mob-ov.open{opacity:1;pointer-events:all;}.main{margin-left:0;}.hero{padding:80px 22px 50px;}.search-zone{padding:34px 22px 0;}.search-panel{left:22px;}.sec{padding:46px 22px;}.money-sec{padding:60px 22px;}footer{padding:44px 22px 22px;}.footer-inner{grid-template-columns:1fr;}.rev-grid{grid-template-columns:1fr;}.rcard-feat{grid-template-columns:1fr;}.rcard-feat .rcard-img{height:180px;}.f-bottom{flex-direction:column;text-align:center;}}
+@media(max-width:900px){.fade{opacity:1;transform:none;}.fade.vis{opacity:1;transform:none;}.rest-grid{grid-template-columns:1fr;}.beach-grid{grid-template-columns:1fr;}.venue-grid{grid-template-columns:1fr;}:root{--sidebar:0px;}.sidebar{transform:translateX(-260px);width:260px;transition:transform .3s;}.sidebar.open{transform:translateX(0);}.mob-btn{display:flex;}.mob-ov{display:block;opacity:0;pointer-events:none;transition:opacity .3s;}.mob-ov.open{opacity:1;pointer-events:all;}.main{margin-left:0;}.hero{padding:80px 22px 50px;}.search-zone{padding:34px 22px 0;}.search-panel{left:22px;}.sec{padding:46px 22px;}.money-sec{padding:60px 22px;}footer{padding:44px 22px 22px;}.footer-inner{grid-template-columns:1fr;}.rev-grid{grid-template-columns:1fr;}.rcard-feat{grid-template-columns:1fr;}.rcard-feat .rcard-img{height:180px;}.f-bottom{flex-direction:column;text-align:center;}}
 </style>
 </head>
 <body>
@@ -989,6 +989,8 @@ function build(){
   document.getElementById('mqTrack').innerHTML=mqs+mqs;
   // app sections
   document.getElementById('app').innerHTML=renderRest()+renderBeach()+renderMuseum()+renderShop()+renderTheater()+renderConcert()+renderStad()+renderPlace()+renderEvents()+renderNight();
+  // Force all sections visible immediately on mobile
+  document.querySelectorAll('.fade').forEach(function(el){el.classList.add('vis');});
   // chips filter
   document.getElementById('rChips').addEventListener('click',e=>{
     const chip=e.target.closest('.chip'); if(!chip)return;
