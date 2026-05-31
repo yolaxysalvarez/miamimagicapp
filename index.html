@@ -10,7 +10,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--sand);color:var(--navy);overflow-x:hidden;}
 button,a{cursor:pointer;}
-.sidebar{position:fixed;left:0;top:0;bottom:0;width:var(--sidebar);background:var(--navy);z-index:200;display:flex;flex-direction:column;overflow:hidden;}
+.sidebar{position:fixed;left:0;top:38px;bottom:0;width:var(--sidebar);background:var(--navy);z-index:200;display:flex;flex-direction:column;overflow:hidden;}
 .sidebar-logo{padding:26px 22px 18px;border-bottom:1px solid rgba(255,255,255,.07);flex-shrink:0;}
 .logo-wrap{font-family:'Bebas Neue',sans-serif;font-size:1.7rem;letter-spacing:3px;display:flex;align-items:center;gap:4px;margin-bottom:5px;}
 .lm{background:linear-gradient(135deg,var(--coral),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
@@ -34,20 +34,20 @@ button,a{cursor:pointer;}
 .sb-biz:hover{opacity:.9;transform:translateY(-1px);}
 .sb-lang{background:rgba(255,255,255,.07);color:rgba(255,255,255,.6);}
 .sb-lang:hover{background:rgba(255,255,255,.12);color:#fff;}
-.mob-btn{display:none;position:fixed;top:14px;left:14px;z-index:300;width:40px;height:40px;border-radius:11px;background:var(--navy);border:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+.mob-btn{display:none;position:fixed;top:40px;left:14px;z-index:300;width:40px;height:40px;border-radius:11px;background:var(--navy);border:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3);}
 .mob-btn span{width:17px;height:2px;background:#fff;border-radius:2px;}
 .mob-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199;}
 .main{margin-left:var(--sidebar);}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 64px 60px;position:relative;overflow:hidden;}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:calc(100px + 38px) 64px 60px;position:relative;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 80% 85%,rgba(0,201,177,.2) 0%,transparent 55%),radial-gradient(ellipse 55% 50% at 90% 10%,rgba(255,77,53,.18) 0%,transparent 55%),radial-gradient(ellipse 45% 40% at 30% 60%,rgba(255,209,102,.13) 0%,transparent 55%);}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,77,53,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,77,53,.04) 1px,transparent 1px);background-size:55px 55px;mask-image:radial-gradient(ellipse 80% 80% at 60% 50%,black 0%,transparent 70%);}
 .flt{position:absolute;font-size:1.8rem;opacity:.4;animation:flt 8s ease-in-out infinite;pointer-events:none;}
 .flt:nth-child(1){top:15%;right:7%;animation-delay:0s;}.flt:nth-child(2){top:52%;right:4%;animation-delay:2.5s;}.flt:nth-child(3){bottom:20%;right:14%;animation-delay:4s;}.flt:nth-child(4){top:28%;right:22%;animation-delay:1.2s;}.flt:nth-child(5){bottom:30%;right:30%;animation-delay:3.5s;}
 .hero-content{position:relative;z-index:2;max-width:620px;}
-.hero-eye{display:inline-flex;align-items:center;gap:9px;background:rgba(0,201,177,.1);border:1px solid rgba(0,201,177,.2);padding:5px 15px;border-radius:50px;font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:24px;animation:up .8s .2s both;}
+.hero-eye{display:inline-flex;align-items:center;gap:9px;background:rgba(0,201,177,.18);border:1px solid rgba(0,201,177,.4);padding:5px 15px;border-radius:50px;font-size:.7rem;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal);margin-bottom:24px;animation:up .8s .2s both;}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3.5rem);font-weight:900;line-height:.9;margin-bottom:24px;animation:up .8s .4s both;}
 .h1a{color:var(--navy);display:block;}.h1b{display:block;background:linear-gradient(135deg,var(--coral),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic;}
-.hero-sub{font-size:1rem;color:#5a6070;max-width:480px;line-height:1.8;margin-bottom:36px;animation:up .8s .6s both;}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.62);max-width:480px;line-height:1.8;margin-bottom:36px;animation:up .8s .6s both;}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap;animation:up .8s .8s both;}
 .hbtn{padding:13px 28px;border-radius:50px;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .25s;border:none;}
 .hbtn-p{background:linear-gradient(135deg,var(--coral),var(--coral2));color:#fff;box-shadow:0 8px 24px rgba(255,77,53,.3);}
@@ -285,10 +285,53 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 @keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes flt{0%,100%{transform:translateY(0) rotate(0);}33%{transform:translateY(-15px) rotate(4deg);}66%{transform:translateY(-6px) rotate(-3deg);}}
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-@media(max-width:900px){.fade{opacity:1;transform:none;}.fade.vis{opacity:1;transform:none;}.rest-grid{grid-template-columns:1fr;}.beach-grid{grid-template-columns:1fr;}.venue-grid{grid-template-columns:1fr;}:root{--sidebar:0px;}.sidebar{transform:translateX(-260px);width:260px;transition:transform .3s;}.sidebar.open{transform:translateX(0);}.mob-btn{display:flex;}.mob-ov{display:block;opacity:0;pointer-events:none;transition:opacity .3s;}.mob-ov.open{opacity:1;pointer-events:all;}.main{margin-left:0;}.hero{padding:80px 22px 50px;}.search-zone{padding:34px 22px 0;}.search-panel{left:22px;}.sec{padding:46px 22px;}.money-sec{padding:60px 22px;}footer{padding:44px 22px 22px;}.footer-inner{grid-template-columns:1fr;}.rev-grid{grid-template-columns:1fr;}.rcard-feat{grid-template-columns:1fr;}.rcard-feat .rcard-img{height:180px;}.f-bottom{flex-direction:column;text-align:center;}}
+@media(max-width:900px){.biz-topbar{position:fixed!important;top:0!important;left:0!important;right:0!important;height:32px!important;z-index:9999!important;display:block!important;}.biz-tb-item{font-size:.65rem;padding:0 16px;}.sidebar{top:32px!important;}.hero{padding:calc(80px + 32px) 22px 50px!important;}.fade{opacity:1;transform:none;}.fade.vis{opacity:1;transform:none;}.rest-grid{grid-template-columns:1fr;}.beach-grid{grid-template-columns:1fr;}.venue-grid{grid-template-columns:1fr;}:root{--sidebar:0px;}.sidebar{transform:translateX(-260px);width:260px;transition:transform .3s;}.sidebar.open{transform:translateX(0);}.mob-btn{display:flex;}.mob-ov{display:block;opacity:0;pointer-events:none;transition:opacity .3s;}.mob-ov.open{opacity:1;pointer-events:all;}.main{margin-left:0;}.hero{padding:calc(80px + 32px) 22px 50px;}.search-zone{padding:34px 22px 0;}.search-panel{left:22px;}.sec{padding:46px 22px;}.money-sec{padding:60px 22px;}footer{padding:44px 22px 22px;}.footer-inner{grid-template-columns:1fr;}.rev-grid{grid-template-columns:1fr;}.rcard-feat{grid-template-columns:1fr;}.rcard-feat .rcard-img{height:180px;}.f-bottom{flex-direction:column;text-align:center;}}
+
+/* ── BIZ TOPBAR ── */
+.biz-topbar{position:fixed;top:0;left:0;right:0;height:38px;z-index:300;overflow:hidden;background:linear-gradient(135deg,rgba(255,77,53,.15) 0%,rgba(4,8,18,.99) 45%,rgba(0,201,177,.1) 100%);border-bottom:1px solid rgba(255,209,102,.3);cursor:pointer;}
+.biz-topbar::before,.biz-topbar::after{content:'';position:absolute;top:0;bottom:0;width:70px;z-index:2;pointer-events:none;}
+.biz-topbar::before{left:0;background:linear-gradient(to right,#040810,transparent);}
+.biz-topbar::after{right:0;background:linear-gradient(to left,#040810,transparent);}
+.biz-tb-track{display:flex;align-items:center;height:100%;width:max-content;animation:marquee 34s linear infinite;}
+.biz-tb-track:hover{animation-play-state:paused;}
+.biz-tb-item{display:inline-flex;align-items:center;padding:0 22px;font-family:'Playfair Display',Georgia,serif;font-size:.73rem;font-weight:700;letter-spacing:.5px;color:rgba(255,255,255,.85);white-space:nowrap;text-decoration:none;transition:color .2s;}
+.biz-tb-item:hover{color:#fff;}
+.biz-tb-item .t-teal{font-style:italic;color:var(--teal);font-weight:700;}
+.biz-tb-item .t-gold{color:var(--gold);font-weight:700;}
+.biz-tb-item .t-coral{color:var(--coral);font-weight:700;}
+.biz-tb-item .t-premier{font-style:italic;background:linear-gradient(135deg,var(--coral),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700;}
+.biz-tb-sep{width:3px;height:3px;border-radius:50%;background:rgba(255,209,102,.4);flex-shrink:0;}
 </style>
 </head>
 <body>
+<div class="biz-topbar" onclick="window.open('https://miamimagicdirectory.com','_blank')">
+  <div class="biz-tb-track">
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">Miami's&nbsp;<span class="t-premier">Premier Business Directory</span></a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="t-teal">10,000+</span>&nbsp;locals &amp; tourists · every day</a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">First month&nbsp;<span class="t-gold">free</span>&nbsp;· no commitment</a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">List your business in&nbsp;<span class="t-gold">Miami Magic</span>&nbsp;🌴</a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="t-teal">English &amp; Español</span>&nbsp;· reach all of Miami</a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="t-gold">miamimagicdirectory.com</span>&nbsp;<span class="t-coral">→</span></a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">Miami's&nbsp;<span class="t-premier">Premier Business Directory</span></a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="t-teal">10,000+</span>&nbsp;locals &amp; tourists · every day</a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">First month&nbsp;<span class="t-gold">free</span>&nbsp;· no commitment</a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()">List your business in&nbsp;<span class="t-gold">Miami Magic</span>&nbsp;🌴</a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="t-teal">English &amp; Español</span>&nbsp;· reach all of Miami</a>
+    <div class="biz-tb-sep"></div>
+    <a class="biz-tb-item" href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="event.stopPropagation()"><span class="t-gold">miamimagicdirectory.com</span>&nbsp;<span class="t-coral">→</span></a>
+    <div class="biz-tb-sep"></div>
+  </div>
+</div>
 <!-- MODAL -->
 <div class="modal-ov" id="modalOv" onclick="if(event.target===this)closeModal()">
   <div class="modal">
@@ -1172,6 +1215,7 @@ function aiLock(){
   document.getElementById('aiLock').innerHTML='<div style="padding:12px;border-top:1px solid #eee;text-align:center"><p style="font-size:.75rem;color:#888;margin-bottom:9px">2 free queries used. Unlock unlimited:</p><a href="'+_pl+'" target="_blank" style="display:block;background:#FF4D35;color:#fff;padding:9px;border-radius:50px;font-weight:700;font-size:.8rem;text-decoration:none;margin-bottom:6px">Miami Magic Premium $4.99/month</a><a href="'+_bl+'" target="_blank" style="display:block;background:#FFD166;color:#080F1E;padding:8px;border-radius:50px;font-weight:700;font-size:.76rem;text-decoration:none">List My Business $250/month</a></div>';
 }
 </script>
+
 
 </body>
 </html>
