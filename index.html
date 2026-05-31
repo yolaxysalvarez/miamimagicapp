@@ -348,6 +348,12 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   .search-zone{margin-top:24px!important;padding:24px 26px 0!important;}
   .hero-stats-mobile{padding:20px 26px 14px!important;}
 }
+
+@media(max-width:900px){
+  .hstat-n{font-size:.92rem!important;}
+  .hstat-l{font-size:.44rem!important;color:#888!important;white-space:nowrap!important;}
+  .hero-stats-mobile .hstat{padding:0 6px!important;}
+}
 </style>
 </head>
 <body>
@@ -615,7 +621,7 @@ shopping:[
 // ── LANGUAGE ──
 let lang='en', activeFlt='all';
 const TX={
-en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'30+',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'10',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
+en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic&nbsp;City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'30+',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'10',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
 nav:[{label:'Discover',items:[{icon:'🍽',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'🏖',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'📍',lbl:'Places',cnt:'8',id:'sec-place'}]},{label:'Entertainment',items:[{icon:'🏛',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'🎭',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'🎵',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'🏟',lbl:'Stadiums',cnt:'6',id:'sec-stad'}]},{label:'Going Out',items:[{icon:'🎉',lbl:'Events',cnt:'10',id:'sec-events'},{icon:'🌙',lbl:'Nightlife',cnt:'8',id:'sec-night'},{icon:'🌳',lbl:'Parks',cnt:'10',id:'sec-parks'}]},{label:'Explore More',items:[{icon:'🏛️',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'🛍️',lbl:'Shopping',cnt:'8',id:'sec-shop'}]}],
 tt:{rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],shop:['Best Malls','Shopping Centers'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['This Month','Upcoming Events'],night:['After Dark','Nightlife']},
 sa:'See all →',rf:['All','🇨🇺 Cuban','🦞 Seafood','🌮 Mexican','🍣 Japanese','🫒 Mediterranean','🌶️ Latin','🍝 Italian','🍔 American','⭐ Fine Dining'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining'],
@@ -1071,7 +1077,7 @@ function build(){
   document.getElementById('logoTag').textContent=t.logoTag;
   document.getElementById('hEye').textContent=t.eye;
   document.getElementById('hL1').textContent=t.l1;
-  document.getElementById('hSub').textContent=t.sub;
+  document.getElementById('hSub').innerHTML=t.sub;
   document.getElementById('hCta1').textContent=t.cta1;
   document.getElementById('hCta2').textContent=t.cta2;
   document.getElementById('sInp').placeholder=t.sph;
