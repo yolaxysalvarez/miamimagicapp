@@ -1,22 +1,14 @@
 {
   "name": "Miami Magic",
   "short_name": "Miami Magic",
-  "description": "The Ultimate Miami City Guide",
-  "start_url": "/miamimagicapp/",
+  "description": "Your Ultimate Miami City Guide",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#080F1E",
+  "background_color": "#FFF0E0",
   "theme_color": "#FF4D35",
   "orientation": "portrait",
   "icons": [
-    {
-      "src": "https://img.icons8.com/emoji/192/palm-tree.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "https://img.icons8.com/emoji/512/palm-tree.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+    { "src": "miami-magic-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "miami-magic-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
   ]
 }
