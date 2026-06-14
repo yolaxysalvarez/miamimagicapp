@@ -96,7 +96,7 @@ button,a{cursor:pointer;}
 .search-bar input::placeholder{color:#bbb;}
 .search-go{background:linear-gradient(135deg,var(--coral),var(--coral2));color:#fff;border:none;border-radius:50px;padding:10px 24px;font-family:'DM Sans',sans-serif;font-weight:700;cursor:pointer;font-size:.84rem;transition:all .22s;}
 .search-go:hover{opacity:.9;transform:scale(1.03);}
-.search-panel{position:fixed;top:120px;left:50%;transform:translateX(-50%);width:88%;max-width:680px;background:rgba(255,255,255,.15);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-radius:20px;box-shadow:0 4px 24px rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.32);max-height:60vh;overflow-y:auto;z-index:9000;display:none;scrollbar-width:thin;}
+.search-panel{position:fixed;top:120px;left:50%;transform:translateX(-50%);width:88%;max-width:680px;background:rgba(255,255,255,.15);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-radius:20px;box-shadow:0 4px 24px rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.32);max-height:55vh;overflow-y:auto;z-index:9000;display:none;scrollbar-width:thin;}
 .search-panel.open{display:block;}
 .sp-head{padding:12px 18px 8px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.1);position:sticky;top:0;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);z-index:1;border-radius:20px 20px 0 0;}
 .sp-count{font-size:.67rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.8);}
@@ -107,11 +107,11 @@ button,a{cursor:pointer;}
 .sp-item:hover{background:rgba(255,255,255,.08);}
 .sp-icon{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.2);}
 .sp-info{flex:1;min-width:0;}
-.sp-name{font-weight:700;font-size:.88rem;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sp-name{font-weight:700;font-size:.88rem;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.8);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .sp-sub{font-size:.72rem;color:rgba(255,255,255,.7);text-shadow:0 1px 4px rgba(0,0,0,.4);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px;}
 .sp-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0;}
-.sp-badge{font-size:.63rem;font-weight:700;padding:2px 8px;border-radius:20px;background:rgba(255,77,53,.25);color:#FF7A5C;white-space:nowrap;}
-.sp-link{font-size:.63rem;color:#00C9B1;font-weight:600;white-space:nowrap;}
+.sp-badge{font-size:.63rem;font-weight:700;padding:3px 9px;border-radius:20px;background:rgba(8,23,46,.6);color:#fff;white-space:nowrap;border:1px solid rgba(255,255,255,.25);}
+.sp-link{font-size:.63rem;color:#00C9B1;font-weight:700;white-space:nowrap;text-shadow:0 1px 4px rgba(0,0,0,.5);}
 .sp-divider{height:1px;background:rgba(255,255,255,.08);margin:3px 0;}
 .sp-empty{padding:28px 18px;text-align:center;color:rgba(255,255,255,.4);}
 .sp-footer{padding:9px 18px;text-align:center;font-size:.72rem;color:rgba(255,255,255,.3);border-top:1px solid rgba(255,255,255,.08);}
@@ -562,7 +562,8 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 .hero-search input::placeholder { color: rgba(255,255,255,.65); }
 @media(max-width:899px){
   .hero-search-section { display: none !important; }
-  .search-panel { top:110px !important; width:88% !important; }
+  .search-panel { top:108px !important; width:92% !important; max-height:45vh !important; }
+  .sp-item { -webkit-tap-highlight-color:transparent; cursor:pointer; }
 }
 .hero-eyebrow { display:none; }
 /* H1 */
@@ -1554,9 +1555,10 @@ body{padding-bottom:0;}
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input id="heroSearchInp" type="text" autocomplete="off"
           placeholder="Search beaches, restaurants, events…"
-          oninput="var v=this.value;document.getElementById('sInp').value=v;doSearch(v);"
-          onkeydown="searchKey(event);"
+          oninput="var v=this.value;document.getElementById('sInp').value=v;clearTimeout(window._sT);window._sT=setTimeout(function(){doSearch(document.getElementById('heroSearchInp').value);},250);var x=document.getElementById('heroSearchClear');if(x)x.style.display=v?'flex':'none';"
+          onkeydown="if(event.key==='Enter'){clearTimeout(window._sT);var v=this.value;document.getElementById('sInp').value=v;doSearch(v);}"
           style="background:none;border:none;outline:none;flex:1;font-family:'DM Sans',sans-serif;font-size:.82rem;color:#fff;min-width:0;">
+        <button id="heroSearchClear" onclick="document.getElementById('heroSearchInp').value='';document.getElementById('sInp').value='';closeSearch();this.style.display='none';document.getElementById('heroSearchInp').focus();" style="display:none;background:rgba(255,255,255,.2);border:none;border-radius:50%;width:18px;height:18px;color:#fff;font-size:.65rem;cursor:pointer;align-items:center;justify-content:center;flex-shrink:0;line-height:1;">✕</button>
       </div>
       <!-- Palma + Título -->
       <div class="hero-brand">
@@ -2110,7 +2112,18 @@ function T(){return TX[lang];}
 function n(a,b){return(lang==='es'&&b)?b:a;}
 // ── SEARCH ENGINE ──
 let _sr=[];
+var _dbCache=null;
+function positionPanel(){
+  var panel=document.getElementById('searchPanel');
+  if(!panel) return;
+  panel.style.top='110px';
+  panel.style.left='50%';
+  panel.style.transform='translateX(-50%)';
+  panel.style.width='88%';
+  panel.style.maxWidth='680px';
+}
 function buildDB(){
+  if(_dbCache) return _dbCache;
   const t=T(), rows=[];
   D.restaurants.forEach(r=>{
     rows.push({id:r.id,type:'rest',emoji:r.emoji,bg:r.bg,name:r.name,
@@ -2202,10 +2215,8 @@ function buildDB(){
       btn:t.moreBtn,sec:'sec-shop',grp:lang==='es'?'Shopping':'Shopping',
       kw:[s.name,s.cat,s.addr,s.desc||'','shop mall shopping miami'].join(' ').toLowerCase(),obj:s});
   });
+  _dbCache = rows;
   return rows;
-}
-
-function positionPanel(){
   var bar=document.getElementById('searchZoneBar');
   var panel=document.getElementById('searchPanel');
   if(!bar||!panel)return;
@@ -2215,23 +2226,41 @@ function positionPanel(){
   panel.style.maxWidth='680px';
 }
 function doSearch(val){
+  try{
   const panel=document.getElementById('searchPanel');
   const q=(val||'').trim().toLowerCase();
-  if(q.length<2){panel.classList.remove('open');_sr=[];return;}
+  if(q.length<1){
+    if(panel){panel.classList.remove('open');panel.style.display='none';}
+    _sr=[];
+    var x=document.getElementById('heroSearchClear');
+    if(x)x.style.display='none';
+    return;
+  }
+  if(q.length<2){return;}
   const db=buildDB();
   const words=q.split(/\s+/).filter(w=>w.length>1);
-  // exact or all-words match first
-  let res=db.filter(row=>{
-    const kw=Array.isArray(row.kw)?row.kw.join(' '):row.kw;
-    return words.every(w=>kw.includes(w));
-  });
-  // fallback: any word matches
-  if(res.length===0) res=db.filter(row=>{
-    const kw=Array.isArray(row.kw)?row.kw.join(' '):row.kw;
-    return words.some(w=>kw.includes(w));
-  });
-  _sr=res.slice(0,4);
+  
+  // Score each result by relevance
+  var scored = db.map(function(row){
+    var kw = Array.isArray(row.kw) ? row.kw.join(' ') : row.kw;
+    var score = 0;
+    // Exact name match = highest score
+    if(row.name && row.name.toLowerCase().includes(q)) score += 100;
+    // Group/type match = high score (e.g. "beach" matches grp "Beaches")
+    if(row.grp && row.grp.toLowerCase().includes(q)) score += 80;
+    if(row.type && row.type.toLowerCase().includes(q)) score += 70;
+    // All words in keywords
+    if(words.every(function(w){ return kw.includes(w); })) score += 50;
+    // Any word in keywords
+    else if(words.some(function(w){ return kw.includes(w); })) score += 10;
+    return { row: row, score: score };
+  }).filter(function(x){ return x.score > 0; });
+  
+  // Sort by score descending
+  scored.sort(function(a,b){ return b.score - a.score; });
+  _sr = scored.slice(0,4).map(function(x){ return x.row; });
   renderPanel(q);
+  }catch(e){ console.warn('Search error:',e.message); }
 }
 
 function hl(text,q){
@@ -2240,7 +2269,7 @@ function hl(text,q){
   let out=text;
   words.forEach(w=>{
     const re=new RegExp('('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
-    out=out.replace(re,'<strong style="color:var(--coral)">$1</strong>');
+    out=out.replace(re,'<strong style="color:#fff;background:rgba(255,77,53,.5);border-radius:3px;padding:0 2px">$1</strong>');
   });
   return out;
 }
@@ -2266,6 +2295,9 @@ function renderPanel(q){
   positionPanel();
   panel.style.display='block';
   panel.classList.add('open');
+  // Restore cursor to end of input without triggering keyboard hide
+  var hi = document.getElementById('heroSearchInp');
+  if(hi) { var v=hi.value; hi.setSelectionRange(v.length,v.length); }
 }
 
 function pickResult(idx){
