@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='115' fill='%23FF4D35'/%3E%3Crect width='512' height='512' rx='115' fill='url(%23g)'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23FF4D35'/%3E%3Cstop offset='1' stop-color='%23e03a24'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ctext x='256' y='340' text-anchor='middle' font-family='Georgia,serif' font-weight='900' font-size='300' fill='white'%3EM%3C/text%3E%3C/svg%3E">
 <title>Miami Magic – The Ultimate City Guide</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=DM+Sans:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
@@ -2177,6 +2178,27 @@ function buildDB(){
       sub:ni.vibe+' · '+ni.hrs,badge:lang==='es'?'Vida Nocturna':'Nightlife',
       link:ni.link,btn:t.moreBtn,sec:'sec-night',grp:lang==='es'?'Vida Nocturna':'Nightlife',
       kw:[ni.name,ni.vibe,ni.addr,ni.desc,ni.desc_es||''].join(' ').toLowerCase(),obj:ni});
+  });
+  (D.hotels||[]).forEach(h=>{
+    rows.push({id:h.id,type:'hotel',emoji:'',bg:'bg-navy',name:h.name,
+      sub:h.cat+' · '+h.stars+' · '+h.addr,badge:h.price,
+      link:h.link||('https://www.google.com/maps/search/'+encodeURIComponent(h.name+' Miami')),
+      btn:t.moreBtn,sec:'sec-hotels',grp:lang==='es'?'Hoteles':'Hotels',
+      kw:[h.name,h.cat,h.addr,h.desc,h.desc_es||'','hotel miami beach brickell'].join(' ').toLowerCase(),obj:h});
+  });
+  (D.parks||[]).forEach(p=>{
+    rows.push({id:p.id,type:'park',emoji:'',bg:'bg-teal',name:p.name,
+      sub:(p.city||'Miami')+' · Park',badge:lang==='es'?'Parque':'Park',
+      link:p.link||('https://www.google.com/maps/search/'+encodeURIComponent(p.name+' Miami')),
+      btn:t.mapsBtn,sec:'sec-parks',grp:lang==='es'?'Parques':'Parks',
+      kw:[p.name,p.name_es||'','park parque nature miami',p.desc||'',p.addr||''].join(' ').toLowerCase(),obj:p});
+  });
+  (D.shopping||[]).forEach(s=>{
+    rows.push({id:s.id,type:'shop',emoji:'',bg:'bg-gold',name:n(s.name,s.name_es||s.name),
+      sub:n(s.cat,s.cat_es||s.cat)+' · '+s.addr,badge:lang==='es'?'Shopping':'Shopping',
+      link:s.link||('https://www.google.com/maps/search/'+encodeURIComponent(s.name+' Miami')),
+      btn:t.moreBtn,sec:'sec-shop',grp:lang==='es'?'Shopping':'Shopping',
+      kw:[s.name,s.cat,s.addr,s.desc||'','shop mall shopping miami'].join(' ').toLowerCase(),obj:s});
   });
   return rows;
 }
@@ -4917,7 +4939,13 @@ var AI_INTENTS = [
   { intent:'parking',     keys:['parking','parqueo','estacionamiento','park','where to park','dónde parquear','dónde estacionar','lot','garage','meter','garage','cheapest parking','parqueo gratis','free parking'] },
   { intent:'directions',  keys:['how to get to','cómo llegar','directions','ruta','route','drive to','driving','camino a','mejor ruta','fastest way','quickest','navigate','waze','google maps','distance','cuánto tiempo','how far','how long'] },
   { intent:'dessert',     keys:['dessert','postre','postres','dulce','dulces','sweet','sweets','ice cream','helado','cake','torta','churro','flan','tres leches','chocolate','bakery','panadería','pastelería'] },
-  { intent:'music',        keys:['concert','concierto','music','música','festival','live','en vivo','show','performance'] },
+  { intent:'hotel',        keys:['hotel','hoteles','stay','alojamiento','where to stay','dónde quedarme','hostel','airbnb','resort','accommodation','room','habitación','suite','brickell hotel','south beach hotel'] },
+  { intent:'park',         keys:['park','parque','nature','naturaleza','outdoor','aire libre','hiking','caminata','kayak','picnic','green','verde','amelia','crandon park','tropical park','bayfront park'] },
+  { intent:'shopping',     keys:['shopping','compras','mall','shop','tienda','aventura','bal harbour','brickell city','design district','outlet','fashion','moda','luxury brands','marcas'] },
+  { intent:'sport',        keys:['sport','deporte','game','partido','dolphins','heat','marlins','inter miami','messi','basketball','football','baseball','soccer','tennis','open','kaseya','hard rock stadium','loan depot'] },
+  { intent:'museum',       keys:['museum','museo','art','arte','pamm','frost science','science','ciencia','history','historia','vizcaya','wolfsonian','bass museum','rubell','art deco'] },
+  { intent:'theater',      keys:['theater','teatro','show','performance','adrienne arsht','gusman','fillmore','performing arts','arts center','broadway','espectáculo'] },
+
   { intent:'culture',      keys:['museum','museo','art','arte','culture','cultura','pamm','wynwood walls','vizcaya','history','historia','gallery','galería'] },
   { intent:'alerts',       keys:['alert','alerta','alertas','newsletter','events this week','eventos esta semana','what\'s on','qué hay','notify','notificar','subscribe','suscribir','weekly','semanal','upcoming','próximos eventos','this weekend','este finde','este fin de semana'] }
 ];
@@ -5487,6 +5515,108 @@ function aiGenerateResponse(userMsg) {
     return { type: 'html', html: html };
   }
 
+  // ── HOTELS ──
+  if (intents.indexOf('hotel') !== -1) {
+    var hotels = (typeof D !== 'undefined' && D.hotels) ? D.hotels.slice(0,4) : [];
+    var html = L === 'es'
+      ? '<strong>Mejores hoteles en Miami:</strong><br><br>'
+      : '<strong>Best hotels in Miami:</strong><br><br>';
+    if (hotels.length) {
+      html += hotels.map(function(h){ return aiHotelCard(h, L); }).join('');
+    } else {
+      html += L === 'es'
+        ? '<div style="font-size:.8rem;color:#555">Fontainebleau (Miami Beach) — ícono absoluto · The Edition (Mid-Beach) — ultra premium · Brickell Flatiron Residences · 1 Hotel South Beach — eco-luxury.</div>'
+        : '<div style="font-size:.8rem;color:#555">Fontainebleau (Miami Beach) — absolute icon · The Edition (Mid-Beach) — ultra premium · 1 Hotel South Beach — eco-luxury · Mandarin Oriental (Brickell) — best bay views.</div>';
+    }
+    html += L === 'es'
+      ? '<div style="margin-top:8px;font-size:.78rem;color:#666">Consejo: Reserva con 3+ semanas en temporada alta (Dic-Abr). Los hoteles de Brickell son 30-40% más baratos que South Beach con la misma calidad.</div>'
+      : '<div style="margin-top:8px;font-size:.78rem;color:#666">Tip: Book 3+ weeks ahead in high season (Dec-Apr). Brickell hotels are 30-40% cheaper than South Beach with same quality.</div>';
+    return { type: 'html', html: html };
+  }
+
+  // ── PARKS / NATURE ──
+  if (intents.indexOf('park') !== -1) {
+    var parks = (typeof D !== 'undefined' && D.parks) ? D.parks.slice(0,3) : [];
+    var html = L === 'es'
+      ? '<strong>Parques y naturaleza en Miami:</strong><br><br>'
+      : '<strong>Parks & nature in Miami:</strong><br><br>';
+    if (parks.length) {
+      html += parks.map(function(p){ return aiGenericCard(p, '#00C9B1', L); }).join('');
+    }
+    html += L === 'es'
+      ? '<div style="margin-top:8px;font-size:.78rem;color:#666">Consejo: Oleta River State Park (North Miami) es el mejor parque de mangles — kayak, paddleboard y ciclismo de montaña. Solo $6/carro.</div>'
+      : '<div style="margin-top:8px;font-size:.78rem;color:#666">Tip: Oleta River State Park (North Miami) is the best mangrove park — kayak, paddleboard and mountain biking. Just $6/car.</div>';
+    return { type: 'html', html: html };
+  }
+
+  // ── SHOPPING ──
+  if (intents.indexOf('shopping') !== -1) {
+    var shops = (typeof D !== 'undefined' && D.shopping) ? D.shopping.slice(0,3) : [];
+    var html = L === 'es'
+      ? '<strong>Shopping en Miami:</strong><br><br>'
+      : '<strong>Shopping in Miami:</strong><br><br>';
+    if (shops.length) {
+      html += shops.map(function(s){ return aiGenericCard(s, '#FFD166', L); }).join('');
+    } else {
+      html += L === 'es'
+        ? '<div style="font-size:.8rem;color:#555">Aventura Mall — el más grande de FL · Bal Harbour Shops — lujo absoluto (Chanel, Hermès) · Brickell City Centre — premium urbano · Design District — moda de autor · Dolphin Mall — outlets y marcas.</div>'
+        : '<div style="font-size:.8rem;color:#555">Aventura Mall — largest in FL · Bal Harbour Shops — absolute luxury (Chanel, Hermès) · Brickell City Centre — urban premium · Design District — designer fashion · Dolphin Mall — outlets and brands.</div>';
+    }
+    return { type: 'html', html: html };
+  }
+
+  // ── SPORTS ──
+  if (intents.indexOf('sport') !== -1) {
+    var stads = (typeof D !== 'undefined' && D.stadiums) ? D.stadiums.slice(0,3) : [];
+    var html = L === 'es'
+      ? '<strong>Deportes en Miami:</strong><br><br>'
+      : '<strong>Sports in Miami:</strong><br><br>';
+    if (stads.length) {
+      html += stads.map(function(s){
+        return '<div style="margin:8px 0 10px;padding:10px 12px;background:#fff3e0;border-radius:12px;border-left:3px solid #FFD166">'
+          + '<div style="font-weight:700;color:#08172E;font-size:.9rem">'+s.name+'</div>'
+          + '<div style="font-size:.75rem;color:#888;margin:2px 0">'+s.team+' · '+s.sport+'</div>'
+          + '<div style="font-size:.78rem;color:#555;margin-top:3px">Cap. '+s.cap+'</div>'
+          + (s.link ? ' <a href="'+s.link+'" target="_blank" style="color:#FF4D35;font-size:.75rem;font-weight:700;text-decoration:none">→ Tickets</a>' : '')
+          + '</div>';
+      }).join('');
+    }
+    html += L === 'es'
+      ? '<div style="margin-top:8px;font-size:.78rem;color:#666">Inter Miami (Messi) — entradas difíciles, compra con meses de anticipación. Miami Heat (NBA) — Kaseya Center, Downtown. Dolphins (NFL) — Hard Rock Stadium, Miramar.</div>'
+      : '<div style="margin-top:8px;font-size:.78rem;color:#666">Inter Miami (Messi) — tickets hard to get, buy months ahead. Miami Heat (NBA) — Kaseya Center, Downtown. Dolphins (NFL) — Hard Rock Stadium, Miramar.</div>';
+    return { type: 'html', html: html };
+  }
+
+  // ── MUSEUMS / CULTURE ──
+  if (intents.indexOf('museum') !== -1 || intents.indexOf('culture') !== -1) {
+    var museums = (typeof D !== 'undefined' && D.museums) ? D.museums.slice(0,3) : [];
+    var html = L === 'es'
+      ? '<strong>Museos y cultura en Miami:</strong><br><br>'
+      : '<strong>Museums & culture in Miami:</strong><br><br>';
+    if (museums.length) {
+      html += museums.map(function(m){ return aiGenericCard(m, '#8B5CF6', L); }).join('');
+    }
+    html += L === 'es'
+      ? '<div style="margin-top:8px;font-size:.78rem;color:#666">PAMM (Pérez Art Museum) — gratis los primeros jueves del mes (6-10pm). Frost Science Museum — imprescindible con niños. Vizcaya Museum — jardines italianos del 1916 sobre la bahía.</div>'
+      : '<div style="margin-top:8px;font-size:.78rem;color:#666">PAMM (Pérez Art Museum) — free first Thursdays (6-10pm). Frost Science Museum — unmissable with kids. Vizcaya Museum — 1916 Italian gardens over the bay.</div>';
+    return { type: 'html', html: html };
+  }
+
+  // ── THEATERS ──
+  if (intents.indexOf('theater') !== -1) {
+    var theaters = (typeof D !== 'undefined' && D.theaters) ? D.theaters.slice(0,3) : [];
+    var html = L === 'es'
+      ? '<strong>Teatros y shows en Miami:</strong><br><br>'
+      : '<strong>Theaters & shows in Miami:</strong><br><br>';
+    if (theaters.length) {
+      html += theaters.map(function(t){ return aiGenericCard(t, '#8B5CF6', L); }).join('');
+    }
+    html += L === 'es'
+      ? '<div style="margin-top:8px;font-size:.78rem;color:#666">Adrienne Arsht Center — el mejor teatro de FL, opera, ballet y Broadway. GableStage (Coral Gables) — teatro íntimo y contemporáneo. Fillmore Miami Beach — conciertos en sala histórica.</div>'
+      : '<div style="margin-top:8px;font-size:.78rem;color:#666">Adrienne Arsht Center — best theater in FL, opera, ballet and Broadway. GableStage (Coral Gables) — intimate contemporary theater. Fillmore Miami Beach — concerts in historic venue.</div>';
+    return { type: 'html', html: html };
+  }
+
   // ── DATING / MEET PEOPLE ──
   if (intents.indexOf('dating') !== -1) {
     var html = L === 'es'
@@ -5600,6 +5730,27 @@ function aiGenerateResponse(userMsg) {
       + ' By neighborhood — Wynwood, Brickell, Kendall, Coral Gables…<br>'
       + '💚 Free — the best things that cost nothing</div>';
   return { type: 'html', html: html };
+}
+
+function aiHotelCard(h, L) {
+  var desc = L === 'es' && h.desc_es ? h.desc_es : h.desc;
+  var short = desc ? desc.split('.')[0] + '.' : '';
+  var linkHtml = h.link ? ' <a href="'+h.link+'" target="_blank" style="color:#FF4D35;font-size:.75rem;font-weight:700;text-decoration:none">→ Ver hotel</a>' : '';
+  return '<div style="margin:8px 0 10px;padding:10px 12px;background:#f0f4ff;border-radius:12px;border-left:3px solid #8B5CF6">'
+    + '<div style="font-weight:700;color:#08172E;font-size:.9rem">'+h.name+'</div>'
+    + '<div style="font-size:.75rem;color:#888;margin:2px 0">'+h.cat+' · '+h.stars+' · '+h.price+'</div>'
+    + '<div style="font-size:.78rem;color:#555;margin-top:3px">'+short+'</div>'
+    + linkHtml + '</div>';
+}
+
+function aiGenericCard(item, color, L) {
+  var name = (L === 'es' && item.name_es) ? item.name_es : item.name;
+  var desc = (L === 'es' && item.desc_es) ? item.desc_es : (item.desc || '');
+  var short = desc ? desc.split('.')[0] + '.' : '';
+  return '<div style="margin:8px 0 10px;padding:10px 12px;background:#f8f8f8;border-radius:12px;border-left:3px solid '+color+'">'
+    + '<div style="font-weight:700;color:#08172E;font-size:.9rem">'+name+'</div>'
+    + '<div style="font-size:.78rem;color:#555;margin-top:3px">'+short+'</div>'
+    + '</div>';
 }
 
 function aiRenderBubble(role, content) {
