@@ -6169,34 +6169,101 @@ async function sendAmigo() {
   var chat = document.getElementById('amigoChat');
   if(chat) setTimeout(function(){ chat.scrollTop = chat.scrollHeight; }, 50);
 
+  // Call /api/chat serverless function
   try {
-    // Build messages for API
     var messages = history.slice(-8).map(function(m){ return { role:m.role, content:m.content }; });
-
-    var response = await fetch('https://api.anthropic.com/v1/messages', {
+    var response = await fetch('/api/chat', {
       method:'POST',
-      headers:{ 'Content-Type':'application/json' },
-      body: JSON.stringify({
-        model:'claude-sonnet-4-6',
-        max_tokens:300,
-        system: persona.system,
-        messages: messages
-      })
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ messages: messages, system: persona.system })
     });
-
     var data = await response.json();
-    var reply = (data.content && data.content[0] && data.content[0].text) || 'Hmm, try me again!';
-
-    // Add to history and display
+    var reply = (data.content && data.content[0] && data.content[0].text) || 'Try again in a sec!';
     history.push({ role:'assistant', content:reply });
     if(typingEl) typingEl.style.display = 'none';
     appendAmigoMessage('assistant', reply);
-
+    _amigoTyping = false;
+    return;
   } catch(e) {
-    if(typingEl) typingEl.style.display = 'none';
-    appendAmigoMessage('assistant', 'Oops, my connection dropped! Try again in a sec.');
+    console.warn('API error, using local replies:', e.message);
   }
-  _amigoTyping = false;
+
+  // Fallback smart keyword responses
+  var ql = q.toLowerCase();
+  var smartReplies = {
+    luna: [
+      {k:['beach','playa','swim','water','coast'], r:'Virginia Key Beach on a weekday — trust me babe. Crystal water, barely anyone there. Skip South Beach on weekends, way too crowded. Go early morning or around 5pm for golden hour.'},
+      {k:['eat','food','hungry','restaurant','dinner','lunch','breakfast','cuban','where to eat'], r:'For dinner tonight: KYU in Wynwood — smoked chicken, do NOT skip it. For Cuban, Versailles on Calle 8 is iconic. Fast and cheap: any Little Havana ventanita for a colada and pastelito. Chef kiss.'},
+      {k:['boyfriend','girlfriend','dating','date','love','meet','single','crush','romance'], r:'Girl, Wynwood on a Friday evening. Stand near Wynwood Walls looking cute and curious. Or Freehand Miami rooftop on Thursday — the energy is unmatched. Also farmers markets on Sunday mornings — people are so approachable.'},
+      {k:['nightlife','club','party','bar','night','drink','tonight'], r:'E11EVEN if you want to go ALL night — it literally never closes. Story on Saturday is iconic. For something more chill with great cocktails: Mama Tried in Wynwood. Start at 10pm, never before. And wear something cute.'},
+      {k:['wynwood','art','mural','graffiti','gallery'], r:'Wynwood is my home! Friday evening when all galleries are open — start at Wynwood Walls, then explore NW 2nd Ave side streets. The best murals are NOT the famous ones. End the night at Cage or Shots for drinks.'},
+      {k:['hotel','stay','airbnb','where to stay','sleep'], r:'For a girls trip: The Betsy on Ocean Drive — chic and central. For party mode: Mondrian South Beach has the best pool scene. Budget but adorable: Freehand Miami. Skip the generic chains, Miami has so much personality.'},
+      {k:['cheap','free','budget','no money','broke'], r:'Free things that actually slap: Wynwood Walls walk, Bayfront Park at sunset, Ocean Drive golden hour stroll. For food under $10: El Palacio de los Jugos on 8th St — full Cuban meal, freshest juices. Amazing.'},
+      {k:['move','moving','live','relocate','neighborhood','area'], r:'Moving to Miami? Wynwood if you are young and creative. Brickell if you want walkable urban vibes. Coconut Grove if you want chill and lush. South Beach if you want the full Miami experience. Avoid paying Brickell prices for a studio though — check Edgewater or Midtown.'},
+      {k:['kids','family','children','child'], r:'For families: Frost Museum of Science (kids go insane for the aquarium), Crandon Park Beach on Key Biscayne — shallow water, perfect for little ones. Zoo Miami on a weekday. And the Wynwood murals — kids actually love the color explosion.'},
+      {k:['weather','hot','rain','hurricane','summer'], r:'Miami weather is no joke babe. June-October is HOT and rainy — afternoon storms hit around 4pm and clear in 20 min. December-April is PERFECT, 75 degrees and sunny. Hurricane season is June-November but do not panic, just stay informed.'},
+    ],
+    mateo: [
+      {k:['beach','playa','surf','water','swim','ocean'], r:'Bro, Haulover Sandbar on a calm day is unreal — kayak out from Oleta and people are just chilling on boats in the middle of the bay. Virginia Key Beach is local and chill. Skip South Beach on weekends, too touristy.'},
+      {k:['eat','food','hungry','restaurant','dinner','lunch','breakfast','cuban'], r:'Dude, El Palacio de los Jugos on 8th Street. Local institution, dirt cheap, incredible Cuban food. Or if you want something nice on the water: Kiki on the River. For breakfast, any Little Havana ventanita for a colada and croqueta.'},
+      {k:['boyfriend','girlfriend','dating','date','love','meet','single','romance'], r:'Sunday morning Coconut Grove Farmers Market, bro. People are relaxed, in a good mood, no pressure. Or paddle boarding at Oleta — you bond naturally doing something active. Way better than any bar scene.'},
+      {k:['nature','park','outdoor','kayak','paddle','hike','mangrove'], r:'Oleta River State Park is the move — largest urban park in Florida. Rent a kayak, paddle through mangroves, spot manatees if you are lucky. Six dollars to get in. The mountain bike trails are also sick. Way better than sitting on a crowded beach.'},
+      {k:['nightlife','bar','drink','night','club'], r:'Skip the clubs man, those are tourist traps. Ball and Chain in Little Havana on a weekend — live salsa, old school Cuban vibes, super authentic. Freehand Miami rooftop is also chill. Way better energy than paying thirty dollar cover.'},
+      {k:['cheap','free','budget'], r:'Free in Miami: Oleta River trails on a bike, Crandon Park beach, the Causeway walk at sunset, Little Havana street walk on a Sunday. Miami is actually affordable if you know where locals go.'},
+      {k:['move','moving','live','neighborhood'], r:'Coconut Grove is the best kept secret — lush, walkable, real community feel. Edgewater is up and coming with great bay views. Little Havana if you want authentic culture. Avoid paying Brickell tower prices unless you really want that lifestyle.'},
+      {k:['boyfriend','girlfriend','dating'], r:'Sunday Coconut Grove Farmers Market. Relaxed vibe, good people, zero pressure. Or try a paddleboard tour — you meet cool people doing something active. Way better than apps bro.'},
+    ],
+    sofia: [
+      {k:['art','museum','culture','gallery','exhibit'], r:'Darling, the Rubell Museum in Allapattah is extraordinary — 300 contemporary works in a converted warehouse. PAMM is free on Thursday evenings after 6pm. The Bass Museum in South Beach is beautifully curated. All three in one weekend and you will fall in love with Miami.'},
+      {k:['eat','food','restaurant','dinner','lunch'], r:'For a truly special evening: Cote Miami in the Design District — Korean BBQ elevated to an art form. Mandolin Aegean Bistro for lunch in their garden — transports you to Greece. La Mar by Gaston Acurio on the Miami River for Peruvian. All are experiences, not just meals.'},
+      {k:['boyfriend','girlfriend','dating','date','love','meet','single','romance'], r:'Darling, PAMM Thursday evening openings attract the most interesting, cultured people in Miami. The Design District on a Saturday afternoon. Or an art opening in Wynwood — the conversation starts naturally. Quality over quantity, always.'},
+      {k:['hotel','stay'], r:'The Four Seasons Brickell has the most magnificent bay views in the city. But for something with genuine soul: The Surf Club in Surfside — the social center of Miami in the 1930s, redesigned with absolute elegance. Worth every penny.'},
+      {k:['cheap','free','budget'], r:'Free culture in Miami: PAMM Thursday evenings, the Design District outdoor sculptures, Wynwood Walls walk, the art deco architecture self-guided tour of South Beach. Download the free guide from the Miami Design Preservation League — it is wonderful.'},
+      {k:['move','moving','live','neighborhood'], r:'Coral Gables for timeless elegance — Mediterranean architecture, tree canopies, the Miracle Mile. Coconut Grove for intellectual community feel. The Design District if you live for aesthetics. Each neighborhood has its own soul here, which is what makes Miami so special.'},
+      {k:['kids','family','children'], r:'PAMM has wonderful family programming on weekends. The Frost Science Museum is genuinely educational and visually stunning. Vizcaya Museum and Gardens — children are mesmerized by the architecture and bay views. Miami offers extraordinary cultural experiences for families.'},
+      {k:['weather','hot'], r:'Miami has two seasons, darling — the gloriously perfect winter from December to April, and the dramatic summer with its daily afternoon storms. There is something rather cinematic about a Miami summer storm — they arrive quickly and leave just as fast, and the light afterward is extraordinary.'},
+    ]
+  };
+
+  var replies = smartReplies[_amigoFriend] || smartReplies.luna;
+  var reply = null;
+  for(var i=0; i<replies.length; i++){
+    if(replies[i].k.some(function(kw){ return ql.indexOf(kw) !== -1; })){
+      reply = replies[i].r;
+      break;
+    }
+  }
+
+  // Fallback responses by friend
+  if(!reply){
+    var fallbacks = {
+      luna: [
+        'Okay so I might not know that specific thing BUT — when in doubt in Miami, go to Wynwood. Something good always happens there. What vibe are you going for exactly?',
+        'Hmm babe, that is a great question! Really depends on which part of Miami you are in. What neighborhood are you staying in or heading to? Tell me more and I will give you the real scoop.',
+        'Girl I love that you are asking me this! Miami has so many layers. Can you tell me a bit more about what you are looking for? I want to give you the perfect recommendation.'
+      ],
+      mateo: [
+        'Honestly bro, just start exploring. Miami rewards the curious. What area are you in? I can point you somewhere good.',
+        'Good question man. Really depends on the neighborhood. Where are you based or heading? I will give you the local angle.',
+        'Dude that is a solid question. Tell me more about what you are looking for and I will give you the real Miami answer, not the tourist stuff.'
+      ],
+      sofia: [
+        'What a thoughtful question! I would suggest starting at the Design District and letting curiosity lead you. Miami always rewards those who look beyond the obvious.',
+        'Darling, could you tell me a bit more? Miami has so many dimensions and I want to give you truly useful advice rather than a generic answer.',
+        'That is a wonderful thing to explore. Miami surprises even those of us who have lived here for years. Tell me more about what draws you to this and I will point you in the right direction.'
+      ]
+    };
+    var fb = fallbacks[_amigoFriend] || fallbacks.luna;
+    reply = fb[Math.floor(Math.random() * fb.length)];
+  }
+
+  // Fallback response
+  setTimeout(function(){
+    history.push({ role:'assistant', content:reply });
+    if(typingEl) typingEl.style.display = 'none';
+    appendAmigoMessage('assistant', reply);
+    _amigoTyping = false;
+  }, 600);
 }
 
 function openAmigo(){
