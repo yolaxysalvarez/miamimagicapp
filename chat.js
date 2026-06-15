@@ -25,10 +25,14 @@ export default async function handler(req, res) {
     });
 
     const data = await response.json();
-    console.log('Anthropic response:', JSON.stringify(data).slice(0, 200));
+    console.log('STATUS:', response.status, 'DATA:', JSON.stringify(data).slice(0, 300));
+    
+    // Return whatever Anthropic sends back
     res.status(200).json(data);
   } catch (error) {
-    console.error('Error:', error.message);
-    res.status(500).json({ error: error.message });
+    console.error('CATCH ERROR:', error.message);
+    res.status(200).json({ 
+      content: [{ type: 'text', text: 'Error: ' + error.message }] 
+    });
   }
 }
