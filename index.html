@@ -6234,7 +6234,8 @@ async function sendAmigo() {
       body: JSON.stringify({ messages: messages, system: persona.system })
     });
     var data = await response.json();
-    var reply = (data.content && data.content[0] && data.content[0].text) || 'Try again in a sec!';
+    console.log('AMIGO DEBUG:', JSON.stringify(data).slice(0,300));
+    var reply = (data.content && data.content[0] && data.content[0].text) || (data.error && data.error.message) || 'Try again in a sec!';
     history.push({ role:'assistant', content:reply });
     if(typingEl) typingEl.style.display = 'none';
     appendAmigoMessage('assistant', reply);
