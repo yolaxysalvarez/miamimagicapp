@@ -1,20 +1,15 @@
-export const config = { runtime: 'edge' };
-
-export default async function handler(req) {
-  if (req.method !== 'POST') {
-    return new Response('Method Not Allowed', { status: 405 });
-  }
+export default async function handler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  
+  if (req.method === 'OPTIONS') return res.status(200).end();
+  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    const { msg, lang, history } = await req.json();
-
-    const sys = lang === 'es'
-      ? 'Eres el concierge de Miami Magic. Das consejos cortos, entusiastas y practicos sobre Miami: restaurantes, playas, vida nocturna, hoteles, eventos, barrios, secretos locales. Maximo 80 palabras. Usa emojis. Responde en espanol.'
-      : 'You are the Miami Magic concierge. Give short, enthusiastic, practical advice about Miami: restaurants, beaches, nightlife, hotels, events, neighborhoods, hidden gems. Max 80 words. Use emojis.';
-
-    const messages = [...(history || []), { role: 'user', content: msg }];
-
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
+    const { messages, system } = req.body;
+    
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -23,29 +18,17 @@ export default async function handler(req) {
       },
       body: JSON.stringify({
         model: 'claude-haiku-4-5-20251001',
-        max_tokens: 200,
-        system: sys,
-        messages
+        max_tokens: 300,
+        system: system,
+        messages: messages
       })
     });
 
-    const data = await res.json();
-    const reply = data?.content?.[0]?.text || null;
-
-    return new Response(JSON.stringify({ reply }), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      }
-    });
-  } catch (e) {
-    return new Response(JSON.stringify({ reply: null }), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      }
-    });
+    const data = await response.json();
+    console.log('Anthropic response:', JSON.stringify(data).slice(0, 200));
+    res.status(200).json(data);
+  } catch (error) {
+    console.error('Error:', error.message);
+    res.status(500).json({ error: error.message });
   }
 }
