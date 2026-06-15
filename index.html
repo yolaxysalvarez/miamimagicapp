@@ -2723,6 +2723,39 @@ function renderJune(){
     'e6':'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80',
   };
 
+  // Separate local vs national events
+  var localTypes = ['Festival','Local'];
+  var localEvents = D.events.filter(function(e){ return e.tags && (e.tags.indexOf('Free')!==-1 || e.tags.indexOf('Local')!==-1 || e.id==='wc_fan' || e.id==='wc_watch' || e.id==='viernes_culturales' || e.id==='wynwood_wc' || e.id==='marlins_giants'); });
+  var nationalEvents = D.events.filter(function(e){ return localEvents.indexOf(e)===-1; });
+
+  function makeEventCard(e){
+    var img = SP[e.id] || imgMap[e.id] || 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80';
+    var name = L === 'es' && e.name_es ? e.name_es : e.name;
+    var venue = L === 'es' && e.venue_es ? e.venue_es : e.venue;
+    var bgStyle = img ? 'background-size:cover;background-position:center;background-image:url("'+img+'");' : '';
+    var eid = e.id;
+    var card = document.createElement('div');
+    card.className = 'ccard';
+    card.style.cursor = 'pointer';
+    card.onclick = function(){ openItemModal(D.events.find(function(x){return x.id===eid;}),'event'); };
+    card.innerHTML = '<div class="ccard-img" style="'+bgStyle+'position:relative;">'
+      +'<div style="position:absolute;top:8px;left:8px;background:rgba(8,23,46,.75);backdrop-filter:blur(8px);border-radius:8px;padding:4px 8px;text-align:center;">'
+      +'<div style="font-size:.6rem;font-weight:800;color:#FFD166;letter-spacing:.05em;">'+e.day+'</div>'
+      +'<div style="font-size:.55rem;color:rgba(255,255,255,.8);">'+e.mon+'</div>'
+      +'</div>'
+      +'<div style="position:absolute;top:8px;right:8px;background:rgba(255,77,53,.9);border-radius:6px;padding:3px 7px;font-size:.58rem;font-weight:700;color:#fff;">'+e.type+'</div>'
+      +'</div>'
+      +'<div class="ccard-info">'
+      +'<div class="ccard-name">'+name.split(',')[0]+'</div>'
+      +'<div class="ccard-sub">'+venue.split('·')[0].trim()+'</div>'
+      +'<div style="font-size:.7rem;font-weight:700;color:#FF4D35;margin-top:3px;">'+e.price+'</div>'
+      +'</div>';
+    return card.outerHTML;
+  }
+
+    // Section label
+  function sectionLabel(txt, color){ return '<div style="font-size:.68rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:'+color+';padding:12px 16px 6px;">'+txt+'</div>'; }
+
   var cards = D.events.map(function(e){
     var img = SP[e.id] || imgMap[e.id] || 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80';
     var name = L === 'es' && e.name_es ? e.name_es : e.name;
@@ -2730,7 +2763,7 @@ function renderJune(){
     var dayBadge = e.day;
     var bgStyle = img ? 'background-image:url(\''+img+'\');background-size:cover;background-position:center;' : '';
 
-    return '<div class="ccard" onclick="openItemModal(D.events.find(x=>x.id===\''+e.id+'\'),\'event\')" style="cursor:pointer;">'+
+    return '<div class="ccard" onclick="openItemModal(D.events.find(function(x){return x.id===\''+e.id+'\'}),\'event\')" style="cursor:pointer;">'+
       '<div class="ccard-img" style="'+bgStyle+'position:relative;">'+
       '<div style="position:absolute;top:8px;left:8px;background:rgba(8,23,46,.75);backdrop-filter:blur(8px);border-radius:8px;padding:4px 8px;text-align:center;">'+
       '<div style="font-size:.6rem;font-weight:800;color:#FFD166;letter-spacing:.05em;">'+dayBadge+'</div>'+
@@ -2753,7 +2786,7 @@ function renderJune(){
       var name = L === 'es' && e.name_es ? e.name_es : e.name;
       var venue = L === 'es' && e.venue_es ? e.venue_es : e.venue;
       var bgStyle = img ? 'background-image:url(\''+img+'\');background-size:cover;background-position:center;' : '';
-      return '<div class="ccard" onclick="openItemModal(D.events.find(x=>x.id===\''+e.id+'\'),\'event\')" style="cursor:pointer;">'+
+      return '<div class="ccard" onclick="openItemModal(D.events.find(function(x){return x.id===\''+e.id+'\'),\'event\')" style="cursor:pointer;">'+
         '<div class="ccard-img" style="'+bgStyle+'"></div>'+
         '<div class="ccard-info"><div class="ccard-name">'+name+'</div>'+
         '<div class="ccard-sub">'+venue+' · '+e.time+'</div>'+
@@ -2761,19 +2794,54 @@ function renderJune(){
         '</div></div>';
     }).join('')+'</div>';
 
+  var nationalCards = nationalEvents.map(makeEventCard).join('');
+  var localCards = localEvents.map(makeEventCard).join('');
+
   return '<section class="sec fade" id="sec-june">'+
     '<div class="sec-hd"><div class="sec-tt"><small>'+subtitle+'</small>'+title+'</div></div>'+
-    '<div class="h-row" id="june-hrow">'+cards+'</div>'+
-    verTodos+full+
+    (nationalCards ? sectionLabel(L==='es'?'NACIONALES & INTERNACIONALES':'NATIONAL & INTERNATIONAL','#FF4D35')+'<div class="h-row">'+nationalCards+'</div>' : '')+
+    (localCards ? sectionLabel(L==='es'?'EVENTOS LOCALES':'LOCAL EVENTS','#00C9B1')+'<div class="h-row">'+localCards+'</div>' : '')+
     '</section>';
 }
 
 function renderEvents(){
-  return '<section class="sec fade" id="sec-events">'+sHdr('events')+'<div class="ev-list">'+
-    D.events.map(e=>'<div class="eitem" onclick="openItemModal(D.events.find(x=>x.id===\''+e.id+'\'),\'event\')">'+
-      '<div class="edate"><div class="eday">'+e.day+'</div><div class="emon">'+e.mon+'</div></div>'+
-      '<div class="einfo"><div class="ename">'+n(e.name,e.name_es)+'</div><div class="edet">'+e.emoji+' '+n(e.venue,e.venue_es)+' · '+e.time+'</div></div>'+
-      '<div class="eprice">'+e.price+'</div></div>').join('')+'</div></section>';
+  var L = typeof lang !== 'undefined' ? lang : 'en';
+  var title = L === 'es' ? 'Calendario de Miami' : 'Miami Events Calendar';
+  var sub = L === 'es' ? 'Eventos anuales imperdibles' : 'Annual events you cannot miss';
+
+  var annualEvents = [
+    {month:'JAN',name:'Art Deco Weekend',name_es:'Art Deco Weekend',venue:'Ocean Drive · South Beach',desc:'Free festival celebrating Miami Beach Art Deco architecture. Tours, live music, vintage cars on Ocean Drive.',desc_es:'Festival gratuito celebrando la arquitectura Art Deco de Miami Beach.',link:'https://www.mdpl.org/art-deco-weekend/'},
+    {month:'FEB',name:'South Beach Wine & Food Festival',name_es:'Festival de Vino y Gastronomía',venue:'South Beach',desc:'World-class chefs, celebrity tastings, and oceanside grand events. One of the top food festivals in the US.',desc_es:'Chefs de clase mundial, catas de celebridades y eventos junto al océano.',link:'https://sobewff.org'},
+    {month:'MAR',name:'Calle Ocho Music Festival',name_es:'Festival de la Calle Ocho',venue:'Calle Ocho · Little Havana',desc:'The largest Hispanic street festival in the US. 23 blocks of live music, food, and Cuban culture. Free.',desc_es:'El festival callejero hispano más grande de EE.UU. 23 cuadras de música en vivo, comida y cultura cubana. Gratis.',link:'https://carnavalmiami.com'},
+    {month:'MAR',name:'Miami Open Tennis',name_es:'Miami Open de Tenis',venue:'Hard Rock Stadium · Miami Gardens',desc:'One of the top tennis tournaments in the world. Roger Federer, Serena Williams, Rafa Nadal — all play here.',desc_es:'Uno de los torneos de tenis más importantes del mundo.',link:'https://www.miamiopen.com'},
+    {month:'MAR',name:'Ultra Music Festival',name_es:'Ultra Music Festival',venue:'Bayfront Park · Downtown Miami',desc:'The world-famous EDM festival that takes over Bayfront Park for three days. Global DJ headliners.',desc_es:'El famoso festival de música electrónica que toma Bayfront Park durante tres días.',link:'https://ultramusicfestival.com'},
+    {month:'APR',name:'Miami Beach Pride',name_es:'Miami Beach Pride',venue:'Ocean Drive · South Beach',desc:'Vibrant weekend festival and parade on Ocean Drive celebrating the LGBTQ+ community.',desc_es:'Festival y desfile vibrante en Ocean Drive celebrando la comunidad LGBTQ+.',link:'https://www.miamibeachpride.com'},
+    {month:'MAY',name:'Cuba Nostalgia',name_es:'Cuba Nostalgia',venue:'Miami Airport Convention Center',desc:'The largest Cuban cultural event in the world outside Cuba. Music, art, food, history. A must for Cuban heritage.',desc_es:'El evento cultural cubano más grande del mundo fuera de Cuba. Música, arte, comida, historia.',link:'https://www.cubanos.org'},
+    {month:'JUN',name:'FIFA World Cup 2026',name_es:'Copa Mundial FIFA 2026',venue:'Hard Rock Stadium · Miami Gardens',desc:'Miami is a host city for the 2026 FIFA World Cup. Brazil, Colombia, Portugal and more play here.',desc_es:'Miami es ciudad sede del Mundial FIFA 2026. Brasil, Colombia, Portugal y más juegan aquí.',link:'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026'},
+    {month:'AUG',name:'Miami Spice',name_es:'Miami Spice',venue:'Restaurants citywide',desc:'Two months of prix-fixe menus at Miami top restaurants. The best way to try luxury dining at half price.',desc_es:'Dos meses de menús prix-fixe en los mejores restaurantes de Miami. La mejor forma de disfrutar la gastronomía de lujo.',link:'https://www.miamiandbeaches.com/miami-spice'},
+    {month:'SEP',name:'Coconut Grove Arts Festival',name_es:'Festival de Arte de Coconut Grove',venue:'Coconut Grove',desc:'One of the top outdoor art festivals in the US. 360+ artists, live music, local food. Free to attend.',desc_es:'Uno de los mejores festivales de arte al aire libre de EE.UU. 360+ artistas, música en vivo, comida local. Gratis.',link:'https://cgaf.com'},
+    {month:'OCT',name:'III Points Music Festival',name_es:'III Points Music Festival',venue:'Mana Wynwood · Miami',desc:'Miami-born art and music hybrid festival across Wynwood warehouses. Electronic, hip-hop, and live art.',desc_es:'Festival de arte y música nacido en Miami en los almacenes de Wynwood. Electrónica, hip-hop y arte en vivo.',link:'https://iiipoints.com'},
+    {month:'DEC',name:'Art Basel Miami Beach',name_es:'Art Basel Miami Beach',venue:'Miami Beach Convention Center',desc:'The most important contemporary art fair in the Americas. 250+ galleries from 35 countries. Transforms the city.',desc_es:'La feria de arte contemporáneo más importante de las Américas. 250+ galerías de 35 países.',link:'https://www.artbasel.com/miami-beach'},
+  ];
+
+  var cards = annualEvents.map(function(e){
+    var name = L === 'es' && e.name_es ? e.name_es : e.name;
+    var desc = L === 'es' && e.desc_es ? e.desc_es : e.desc;
+    return '<div class="ccard" style="cursor:pointer;" onclick="window.open(\''+e.link+'\',\'_blank\')">'
+      +'<div class="ccard-img" style="background:linear-gradient(135deg,#08172E,#1a3a5c);display:flex;align-items:center;justify-content:center;position:relative;">'
+      +'<div style="font-size:.7rem;font-weight:900;color:#FFD166;letter-spacing:2px;">'+e.month+'</div>'
+      +'</div>'
+      +'<div class="ccard-info">'
+      +'<div class="ccard-name">'+name+'</div>'
+      +'<div class="ccard-sub">'+e.venue+'</div>'
+      +'<div style="font-size:.68rem;color:#888;margin-top:3px;line-height:1.4;">'+desc.split('.')[0]+'.</div>'
+      +'</div></div>';
+  }).join('');
+
+  return '<section class="sec fade" id="sec-events">'
+    +'<div class="sec-hd"><div class="sec-tt"><small>'+sub+'</small>'+title+'</div></div>'
+    +'<div class="h-row" id="events-hrow">'+cards+'</div>'
+    +'</section>';
 }
 
 function renderNight(){
@@ -6077,8 +6145,23 @@ Your personality:
 - You answer ANY question — food, love, fitness, family, moving to Miami, dating, money, whatever
 - When asked about love/dating: you give real advice with Miami context ("girl, go to Freehand rooftop on a Thursday")
 - When asked about non-Miami topics, you relate it back to Miami life
-- Keep responses under 150 words — punchy and real
+- Keep responses under 120 words — punchy and real. NO markdown, no asterisks, no bold. Write like a text message.
 - You know specific Miami spots: KYU, E11EVEN, Versailles, Ball & Chain, Mandolin, Carbone, Freehand, Story, LIV, Wynwood Walls, etc.
+
+
+MIAMI MAGIC APP DATA — These are the REAL places in the app. Always recommend from this list when relevant:
+
+BEACHES: South Beach, Crandon Park Beach, Virginia Key Beach, Haulover Beach, Bal Harbour Beach, Sunny Isles Beach, Key Biscayne, Matheson Hammock.
+
+RESTAURANTS: Versailles, Joe's Stone Crab, KYU, Stubborn Seed, Zuma Miami, Cvi.che 105, Carbone Miami, La Mar by Gaston Acurio, Ariete, Osteria del Teatro, Coyo Taco, Mandolin Aegean Bistro, Chotto Matte, Alter, Mignonette, Enriqueta's, Boia De, Finka Table & Tap, Wynwood Kitchen & Bar.
+
+NIGHTLIFE: LIV Nightclub, Ball & Chain, E11EVEN Miami, Story Nightclub, Basement Miami, Do Not Sit on the Furniture, Wynwood Yard, Freehand Miami.
+
+PARKS: Larry & Penny Thompson Park, Amelia Earhart Park, Matheson Hammock Park, Oleta River State Park, Virginia Key Beach Park.
+
+MUSEUMS: Perez Art Museum Miami (PAMM), Frost Museum of Science, History Miami Museum, Bass Museum of Art, Rubell Museum.
+
+When someone asks for the "best beach", "best restaurant", etc., choose from THIS list based on their needs. Be specific — use real names from the app.
 
 You are a real friend, not a chatbot. Never say "I'm an AI". Just be Luna.`
   },
@@ -6096,8 +6179,23 @@ Your personality:
 - You are warm and genuine, never pretentious
 - You answer ANY question — outdoors, food, dating, moving to Miami, jobs, neighborhoods, whatever
 - When asked about love/dating: real advice with Miami flavor ("bro, Sunday morning at Coconut Grove Farmers Market, trust me")
-- Keep responses under 150 words — conversational and real
+- Keep responses under 120 words — conversational and real. NO markdown, no asterisks, no bold. Write like a text message.
 - You know: Oleta River, Crandon Park, Little Havana ventanitas, Ball & Chain, El Palacio de los Jugos, Kiki on the River, Coconut Grove, Design District, etc.
+
+
+MIAMI MAGIC APP DATA — These are the REAL places in the app. Always recommend from this list when relevant:
+
+BEACHES: South Beach, Crandon Park Beach, Virginia Key Beach, Haulover Beach, Bal Harbour Beach, Sunny Isles Beach, Key Biscayne, Matheson Hammock.
+
+RESTAURANTS: Versailles, Joe's Stone Crab, KYU, Stubborn Seed, Zuma Miami, Cvi.che 105, Carbone Miami, La Mar by Gaston Acurio, Ariete, Osteria del Teatro, Coyo Taco, Mandolin Aegean Bistro, Chotto Matte, Alter, Mignonette, Enriqueta's, Boia De, Finka Table & Tap, Wynwood Kitchen & Bar.
+
+NIGHTLIFE: LIV Nightclub, Ball & Chain, E11EVEN Miami, Story Nightclub, Basement Miami, Do Not Sit on the Furniture, Wynwood Yard, Freehand Miami.
+
+PARKS: Larry & Penny Thompson Park, Amelia Earhart Park, Matheson Hammock Park, Oleta River State Park, Virginia Key Beach Park.
+
+MUSEUMS: Perez Art Museum Miami (PAMM), Frost Museum of Science, History Miami Museum, Bass Museum of Art, Rubell Museum.
+
+When someone asks for the "best beach", "best restaurant", etc., choose from THIS list based on their needs. Be specific — use real names from the app.
 
 You are a real friend giving real advice. Never say "I'm an AI". Just be Mateo.`
   },
@@ -6115,8 +6213,23 @@ Your personality:
 - You answer ANY question — culture, love, career, moving to Miami, dating, food, life advice
 - When asked about love/dating: thoughtful advice with Miami cultural context ("darling, PAMM on a Thursday evening — the people there are interesting")
 - When asked about non-Miami things, you bring culture and perspective
-- Keep responses under 150 words — elegant but accessible
+- Keep responses under 120 words — elegant but accessible. NO markdown, no asterisks, no bold. Write like a text message.
 - You know: PAMM, Rubell Museum, Vizcaya, The Surf Club, Mandolin, Cote Miami, Design District, Coral Gables, Coconut Grove, Brickell restaurants, etc.
+
+
+MIAMI MAGIC APP DATA — These are the REAL places in the app. Always recommend from this list when relevant:
+
+BEACHES: South Beach, Crandon Park Beach, Virginia Key Beach, Haulover Beach, Bal Harbour Beach, Sunny Isles Beach, Key Biscayne, Matheson Hammock.
+
+RESTAURANTS: Versailles, Joe's Stone Crab, KYU, Stubborn Seed, Zuma Miami, Cvi.che 105, Carbone Miami, La Mar by Gaston Acurio, Ariete, Osteria del Teatro, Coyo Taco, Mandolin Aegean Bistro, Chotto Matte, Alter, Mignonette, Enriqueta's, Boia De, Finka Table & Tap, Wynwood Kitchen & Bar.
+
+NIGHTLIFE: LIV Nightclub, Ball & Chain, E11EVEN Miami, Story Nightclub, Basement Miami, Do Not Sit on the Furniture, Wynwood Yard, Freehand Miami.
+
+PARKS: Larry & Penny Thompson Park, Amelia Earhart Park, Matheson Hammock Park, Oleta River State Park, Virginia Key Beach Park.
+
+MUSEUMS: Perez Art Museum Miami (PAMM), Frost Museum of Science, History Miami Museum, Bass Museum of Art, Rubell Museum.
+
+When someone asks for the "best beach", "best restaurant", etc., choose from THIS list based on their needs. Be specific — use real names from the app.
 
 You are a real friend and cultural guide. Never say "I'm an AI". Just be Sofia.`
   }
@@ -6227,15 +6340,17 @@ async function sendAmigo() {
 
   // Call /api/chat serverless function
   try {
-    var messages = history.slice(-8).map(function(m){ return { role:m.role, content:m.content }; });
+    var messages = history.slice(-6).map(function(m){ return { role:m.role, content:m.content }; });
     var response = await fetch('/api/chat', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify({ messages: messages, system: persona.system })
     });
-    var data = await response.json();
-    console.log('AMIGO DEBUG:', JSON.stringify(data).slice(0,300));
-    var reply = (data.content && data.content[0] && data.content[0].text) || (data.error && data.error.message) || 'Try again in a sec!';
+    var text = await response.text();
+    var data;
+    try { data = JSON.parse(text); } catch(je) { throw new Error('Bad response: '+text.slice(0,100)); }
+    var reply = (data.content && data.content[0] && data.content[0].text) || (data.error && data.error.message) || null;
+    if(!reply) throw new Error('No reply in response');
     history.push({ role:'assistant', content:reply });
     if(typingEl) typingEl.style.display = 'none';
     appendAmigoMessage('assistant', reply);
