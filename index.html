@@ -1983,6 +1983,49 @@ events:[
    desc_es:'Watch parties por toda Miami: Fado Irish Pub (Brickell), Ball & Chain (Little Havana), Wynwood Yard y bares en Ocean Drive.',
    tags:['World Cup','Watch Party','Free','Brickell','Wynwood','South Beach'],
    link:'https://www.miamiandbeaches.com/events/sporting-events/fifa-world-cup-guide'},
+  /* ── CONCERTS & LOCAL EVENTS – JUNE 2026 ── */
+  {id:'asap_rocky',name:'A$AP Rocky Live',name_es:'A$AP Rocky en Vivo',day:'MON',mon:'JUN 15',
+   venue:'Kaseya Center · Downtown Miami',venue_es:'Kaseya Center · Downtown Miami',time:'8:00 PM ET',price:'From $85',
+   emoji:'',type:'Concert',
+   desc:'A$AP Rocky performs live at Kaseya Center in Downtown Miami. One of hip-hop — one of the most stylish and influential artists brings his signature sound to Miami tonight.',
+   desc_es:'A$AP Rocky en el Kaseya Center en el Downtown de Miami. Uno de los artistas de hip-hop más influyentes trae su sonido característico a Miami esta noche.',
+   tags:['Concert','Hip-Hop','Kaseya','Downtown'],
+   link:'https://www.ticketmaster.com'},
+  {id:'marlins_giants',name:'Marlins vs San Francisco Giants',name_es:'Marlins vs San Francisco Giants',day:'FRI',mon:'JUN 19',
+   venue:'loanDepot Park · Little Havana',venue_es:'loanDepot Park · Little Havana',time:'7:10 PM ET',price:'From $18',
+   emoji:'',type:'Sports',
+   desc:'Miami Marlins host the San Francisco Giants at loanDepot Park. Friday night baseball in Miami — great atmosphere, affordable tickets, and the ballpark is stunning.',
+   desc_es:'Los Marlins de Miami reciben a los Gigantes de San Francisco en loanDepot Park. Béisbol del viernes por la noche en Miami — gran ambiente y entradas accesibles.',
+   tags:['Baseball','Marlins','Sports','loanDepot'],
+   link:'https://www.ticketmaster.com/miami-marlins'},
+  {id:'juvenile',name:'Juvenile ft. The 400 Degreez Band',name_es:'Juvenile ft. The 400 Degreez Band',day:'SUN',mon:'JUN 21',
+   venue:'Miami Beach Bandshell · Miami Beach',venue_es:'Miami Beach Bandshell · Miami Beach',time:'6:00 PM ET',price:'From $45',
+   emoji:'',type:'Concert',
+   desc:'Hip-hop legend Juvenile performs with The 400 Degreez Band at the iconic Miami Beach Bandshell. One of the greatest rap albums ever — performed live, outdoors, steps from the beach.',
+   desc_es:'El legendario Juvenile actúa con The 400 Degreez Band en el icónico Miami Beach Bandshell. Al aire libre, a pasos de la playa.',
+   tags:['Concert','Hip-Hop','Miami Beach','Bandshell'],
+   link:'https://www.ticketmaster.com'},
+  {id:'matt_rife',name:'Matt Rife: Stay Golden World Tour',name_es:'Matt Rife: Stay Golden World Tour',day:'FRI',mon:'JUN 26',
+   venue:'Hard Rock Live · Hollywood',venue_es:'Hard Rock Live · Hollywood',time:'8:00 PM ET',price:'From $65',
+   emoji:'',type:'Concert',
+   desc:'Comedian Matt Rife brings his Stay Golden World Tour to Hard Rock Live. One of the hottest comedians of the moment — sharp, funny, and completely sold out on most stops.',
+   desc_es:'El comediante Matt Rife trae su Stay Golden World Tour al Hard Rock Live. Agudo, gracioso y casi siempre agotado.',
+   tags:['Comedy','Hard Rock Live','Hollywood'],
+   link:'https://www.ticketmaster.com'},
+  {id:'wynwood_wc',name:'Lets Wyn – World Cup Experience',name_es:'Lets Wyn – Experiencia Mundial',day:'DAILY',mon:'JUN–JUL',
+   venue:'Wynwood Arts District · Miami',venue_es:'Wynwood Arts District · Miami',time:'All day',price:'Free',
+   emoji:'',type:'Festival',
+   desc:'Wynwood turns into its own World Cup experience: 6-week scavenger hunt, public art trail, food festival, and watch party series running through the entire tournament. Free and open to all.',
+   desc_es:'Wynwood se convierte en su propia experiencia del Mundial: búsqueda del tesoro de 6 semanas, ruta de arte público, festival de comida y watch parties durante todo el torneo. Gratis.',
+   tags:['Free','Wynwood','World Cup','Festival','Art'],
+   link:'https://www.wynwoodmiami.com'},
+  {id:'viernes_culturales',name:'Viernes Culturales – Little Havana',name_es:'Viernes Culturales – Little Havana',day:'FRI',mon:'JUN 19',
+   venue:'Calle Ocho · Little Havana',venue_es:'Calle Ocho · Little Havana',time:'7:00 PM ET',price:'Free',
+   emoji:'',type:'Festival',
+   desc:'The monthly Viernes Culturales festival on Calle 8 — art, live music, Cuban folklore, food vendors and the real heartbeat of Miami. Free, outdoors, incredibly local.',
+   desc_es:'El festival mensual Viernes Culturales en Calle 8 — arte, música en vivo, folklore cubano, vendedores de comida y el verdadero corazón de Miami. Gratis, al aire libre.',
+   tags:['Free','Little Havana','Cuban','Culture','Calle Ocho'],
+   link:'https://viernesculturales.org'},
   {id:'e1',name:'Wynwood Art Walk',name_es:'Paseo de Arte Wynwood',day:'SAT',mon:'WEEK',
    venue:'Wynwood Arts District',venue_es:'Distrito de Arte Wynwood',time:'7 PM – 11 PM',price:'Free',
    emoji:'',type:'Art',
@@ -2681,35 +2724,48 @@ function renderJune(){
   };
 
   var cards = D.events.map(function(e){
-    var img = imgMap[e.id] || 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80';
-    var tags = (e.tags||[]).map(function(t){return '<span class="etag">'+t+'</span>';}).join('');
+    var img = SP[e.id] || imgMap[e.id] || 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80';
     var name = L === 'es' && e.name_es ? e.name_es : e.name;
     var venue = L === 'es' && e.venue_es ? e.venue_es : e.venue;
-    var desc  = L === 'es' && e.desc_es  ? e.desc_es  : (e.desc||'');
-
-    // Day badge: show day label or day number
     var dayBadge = e.day;
+    var bgStyle = img ? 'background-image:url(\''+img+'\');background-size:cover;background-position:center;' : '';
 
-    return '<div class="june-card" onclick="openItemModal(D.events.find(x=>x.id===\''+e.id+'\'),\'event\')">'
-      +'<div class="june-card-img" style="background-image:url(\''+img+'\')">'
-      +'<div class="june-card-date"><span class="june-day">'+dayBadge+'</span><span class="june-mon">'+e.mon+'</span></div>'
-      +'</div>'
-      +'<div class="june-card-body">'
-      +'<div class="june-cat">'+e.type+'</div>'
-      +'<div class="june-title">'+name+'</div>'
-      +'<div class="june-venue">'+venue+' · '+e.time+'</div>'
-      +'<div class="june-price">'+e.price+'</div>'
-      +'<div class="june-tags">'+tags+'</div>'
-      +'</div></div>';
+    return '<div class="ccard" onclick="openItemModal(D.events.find(x=>x.id===\''+e.id+'\'),\'event\')" style="cursor:pointer;">'+
+      '<div class="ccard-img" style="'+bgStyle+'position:relative;">'+
+      '<div style="position:absolute;top:8px;left:8px;background:rgba(8,23,46,.75);backdrop-filter:blur(8px);border-radius:8px;padding:4px 8px;text-align:center;">'+
+      '<div style="font-size:.6rem;font-weight:800;color:#FFD166;letter-spacing:.05em;">'+dayBadge+'</div>'+
+      '<div style="font-size:.55rem;color:rgba(255,255,255,.8);">'+e.mon+'</div>'+
+      '</div>'+
+      '<div style="position:absolute;top:8px;right:8px;background:rgba(255,77,53,.9);border-radius:6px;padding:3px 7px;font-size:.58rem;font-weight:700;color:#fff;">'+e.type+'</div>'+
+      '</div>'+
+      '<div class="ccard-info">'+
+      '<div class="ccard-name">'+name.split(',')[0]+'</div>'+
+      '<div class="ccard-sub">'+venue.split('·')[0].trim()+'</div>'+
+      '<div style="font-size:.7rem;font-weight:700;color:#FF4D35;margin-top:3px;">'+e.price+'</div>'+
+      '</div></div>';
   }).join('');
 
-  return '<section class="sec fade" id="sec-june" style="background:#fff;">'
-    +'<div class="sec-hd">'
-    +'<div class="sec-tt"><small>'+subtitle+'</small>'+title+'</div>'
-    +'<a href="https://www.miami.com/events" target="_blank" class="see-all">'+seeAll+'</a>'
-    +'</div>'
-    +'<div class="june-grid">'+cards+'</div>'
-    +'</section>';
+  var verTodos = '<div class="ver-todos-wrap"><button class="ver-todos-btn" onclick="toggleFullGrid(\'june-full\',\'june-hrow\',this)">'+
+    (L==='es'?'Ver todos':'See all')+' ('+D.events.length+') →</button></div>';
+  var full = '<div class="full-grid-venue" id="june-full" style="display:none;">'+
+    D.events.map(function(e){
+      var img = SP[e.id] || imgMap[e.id] || 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80';
+      var name = L === 'es' && e.name_es ? e.name_es : e.name;
+      var venue = L === 'es' && e.venue_es ? e.venue_es : e.venue;
+      var bgStyle = img ? 'background-image:url(\''+img+'\');background-size:cover;background-position:center;' : '';
+      return '<div class="ccard" onclick="openItemModal(D.events.find(x=>x.id===\''+e.id+'\'),\'event\')" style="cursor:pointer;">'+
+        '<div class="ccard-img" style="'+bgStyle+'"></div>'+
+        '<div class="ccard-info"><div class="ccard-name">'+name+'</div>'+
+        '<div class="ccard-sub">'+venue+' · '+e.time+'</div>'+
+        '<div style="font-size:.7rem;font-weight:700;color:#FF4D35;margin-top:3px;">'+e.price+'</div>'+
+        '</div></div>';
+    }).join('')+'</div>';
+
+  return '<section class="sec fade" id="sec-june">'+
+    '<div class="sec-hd"><div class="sec-tt"><small>'+subtitle+'</small>'+title+'</div></div>'+
+    '<div class="h-row" id="june-hrow">'+cards+'</div>'+
+    verTodos+full+
+    '</section>';
 }
 
 function renderEvents(){
