@@ -273,6 +273,23 @@ button,a{cursor:pointer;}
 .ccard-upcoming{background:var(--warm);border-radius:10px;padding:8px 10px;margin-bottom:9px;}
 .ccard-up-lbl{font-size:.62rem;font-weight:700;color:var(--coral);letter-spacing:.5px;margin-bottom:3px;}
 .ccard-up-txt{font-size:.74rem;color:#555;line-height:1.5;}
+/* ══ EVENT CARDS (This Week + Calendar) ══ */
+.evcard{background:#fff;border-radius:20px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:transform .28s cubic-bezier(.34,1.56,.64,1),box-shadow .28s;box-shadow:0 3px 14px rgba(0,0,0,.07);}
+.evcard:hover{transform:translateY(-7px);box-shadow:0 18px 44px rgba(0,0,0,.13);}
+.evcard-img{height:160px;position:relative;background-size:cover;background-position:center;flex-shrink:0;}
+.evcard-gradient{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.72) 0%,rgba(8,15,30,.18) 55%,transparent 100%);}
+.evcard-date-badge{position:absolute;top:10px;left:10px;background:rgba(8,23,46,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:9px;padding:5px 10px;text-align:center;line-height:1.1;border:1px solid rgba(255,255,255,.12);}
+.evcard-day{display:block;font-family:'Bebas Neue',sans-serif;font-size:1.15rem;color:#FFD166;line-height:1;letter-spacing:.5px;}
+.evcard-mon{display:block;font-size:.52rem;font-weight:700;color:rgba(255,255,255,.75);letter-spacing:1px;margin-top:2px;text-transform:uppercase;}
+.evcard-type-badge{position:absolute;top:10px;right:10px;background:rgba(255,77,53,.92);border-radius:6px;padding:3px 9px;font-size:.58rem;font-weight:700;color:#fff;letter-spacing:.3px;}
+.evcard-price-badge{position:absolute;bottom:10px;right:10px;background:rgba(8,23,46,.82);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:6px;padding:3px 9px;font-size:.65rem;font-weight:800;letter-spacing:.2px;border:1px solid rgba(255,255,255,.14);}
+.evcard-body{padding:13px 15px 15px;flex:1;display:flex;flex-direction:column;gap:4px;}
+.evcard-title{font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;color:var(--navy);line-height:1.25;margin-bottom:2px;}
+.evcard-venue{font-size:.73rem;color:#888;line-height:1.4;}
+.evcard-time{font-size:.72rem;color:#aaa;}
+.evcard-desc{font-size:.72rem;color:#666;line-height:1.5;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+/* h-row sizing for event cards */
+.ev-row > .evcard{flex:0 0 230px !important;width:230px !important;min-width:230px !important;scroll-snap-align:start;}
 /* STADIUM */
 .stad-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;}
 .stcard{background:#fff;border-radius:20px;overflow:hidden;cursor:pointer;transition:transform .28s cubic-bezier(.34,1.56,.64,1),box-shadow .28s;}
@@ -1292,11 +1309,13 @@ body{padding-bottom:0;}
   .rcard-body{padding:10px 12px;}
   .rcard-name{font-size:.85rem;}
   .rcard-meta{font-size:.72rem;}
-  /* Hotels: horizontal scroll */
-  .hotel-grid{grid-template-columns:repeat(14,190px)!important;overflow-x:auto;scrollbar-width:none;padding-bottom:8px;}
-  .hotel-grid::-webkit-scrollbar{display:none;}
+  /* Hotels: 2-row preview scroll on mobile */
+  #hotels-preview{grid-template-columns:repeat(6,175px)!important;overflow-x:auto;scrollbar-width:none;padding-bottom:8px;display:flex!important;flex-wrap:nowrap;gap:12px;}
+  #hotels-preview::-webkit-scrollbar{display:none;}
+  #hotels-preview .hotel-card{min-width:175px;flex:0 0 175px;}
+  #hotels-full{grid-template-columns:repeat(2,1fr)!important;overflow-x:visible;}
   .hotel-desc{display:none;}
-  .hotel-img{height:120px!important;}
+  .hotel-img{height:110px!important;}
   /* Beach: single col */
   .beach-grid{grid-template-columns:1fr!important;}
   .bcard{height:140px!important;}
@@ -1888,6 +1907,15 @@ beaches:[
   {id:'b6',name:'Sunny Isles Beach',name_es:'Playa Sunny Isles',emoji:'',bg:'bb6',badge:'Best Sunrises',badge_es:'Mejor Amanecer',desc:'Known as "Little Moscow" for its Russian-speaking community, Sunny Isles offers spectacular Atlantic sunrises, a tranquil European beach atmosphere, and luxury towers lining the shore.',desc_es:'Conocida como "Pequeña Moscú", ofrece espectaculares amaneceres atlánticos, ambiente de playa europeo y una comunidad internacional vibrante.'},
   {id:'b7',name:'Key Biscayne',name_es:'Key Biscayne',emoji:'',bg:'bb7',badge:'Nature Paradise',badge_es:'Paraíso Natural',desc:'Bill Baggs Cape Florida State Park: a historic 1825 lighthouse, miles of cycling trails through tropical hammock, and the clearest, most pristine waters in Miami-Dade.',desc_es:'Parque Estatal Bill Baggs: faro histórico de 1825, senderos ciclistas y las aguas mas cristalinas de Miami-Dade. El paraíso natural de Miami.'},
   {id:'b8',name:'Matheson Hammock',name_es:'Matheson Hammock',emoji:'',bg:'bb8',badge:'Most Serene',badge_es:'Más Serena',desc:'Miami\'s best-kept secret: a man-made atoll pool naturally flushed by Biscayne Bay tides — calm, warm, shallow, and surrounded by mangroves. The most photogenic sunset spot in Miami.',desc_es:'El secreto mejor guardado de Miami: piscina de atolón bañada naturalmente por la Bahía Biscayne. Cálida, tranquila y rodeada de manglares. El mejor atardecer de Miami.'},
+  {id:'b9',name:'North Beach Oceanside Park',name_es:'North Beach Oceanside Park',emoji:'',bg:'bb1',badge:'Best Local Vibe',badge_es:'Ambiente Local',desc:'Miami Beach\'s most beloved local beach between 79th and 87th Streets. Palm-shaded shoreline, outdoor fitness stations, a bandshell with free concerts, two dog parks, and none of the South Beach tourist crowds.',desc_es:'La playa local favorita de Miami Beach entre las calles 79 y 87. Palmeras, estaciones de fitness, bandshell con conciertos gratis, parque para perros y sin el turismo de South Beach.'},
+  {id:'b10',name:'Surfside Beach',name_es:'Playa Surfside',emoji:'️',bg:'bb5',badge:'Quiet & Charming',badge_es:'Tranquila y Encantadora',desc:'Known as Miami\'s "Uptown Beachtown" — a quiet, community-driven town between Bal Harbour and North Beach with retro charm, empty stretches of sand and easy parking. Once a Hollywood elite playground in the 1940s.',desc_es:'Conocida como "Uptown Beachtown" — un pueblo tranquilo y comunitario entre Bal Harbour y North Beach con encanto retro, arena despejada y estacionamiento fácil.'},
+  {id:'b11',name:'Hobie Beach',name_es:'Hobie Beach',emoji:'',bg:'bb3',badge:'Water Sports',badge_es:'Deportes Acuáticos',desc:'Watersports paradise on the Rickenbacker Causeway with stunning Downtown Miami skyline views. Kayaking, paddleboarding, windsurfing and kitesurfing on Biscayne Bay\'s calm waters. Dog-friendly with free parking.',desc_es:'Paraíso acuático en la Calzada Rickenbacker con vistas espectaculares al skyline de Downtown. Kayak, paddle, windsurf y kitesurf en las aguas tranquilas de la Bahía Biscayne. Acepta perros.'},
+  {id:'b12',name:'South Pointe Beach',name_es:'South Pointe Beach',emoji:'',bg:'bb4',badge:'Best for Sunsets',badge_es:'Mejor para Atardeceres',desc:'The southernmost tip of South Beach with a gorgeous park, pier, and stunning views of cruise ships entering Government Cut. Peaceful, less crowded, and one of the most beautiful sunset spots in the city.',desc_es:'El extremo sur de South Beach con parque hermoso, muelle y vistas a cruceros entrando por Government Cut. Tranquilo, menos concurrido y uno de los mejores atardeceres de la ciudad.'},
+  {id:'b13',name:'Lummus Park Beach',name_es:'Playa Lummus Park',emoji:'',bg:'bb1',badge:'Classic South Beach',badge_es:'South Beach Clásico',desc:'The authentic heart of South Beach — white sand fronting the Art Deco historic district with iconic pastel lifeguard towers. Volleyball nets, Tot Lot playground, muscle beach gym and the most quintessential Miami beach experience.',desc_es:'El corazón auténtico de South Beach — arena blanca frente al distrito Art Deco con las icónicas torres de salvataje de colores pastel. Voleibol, juegos y la experiencia de playa más quintaesencial de Miami.'},
+  {id:'b14',name:'Hollywood Beach',name_es:'Hollywood Beach',emoji:'',bg:'bb6',badge:'Broadwalk',badge_es:'Broadwalk Famoso',desc:'Fort Lauderdale\'s neighbor with a legendary 2.5-mile Broadwalk lined with restaurants, bars and bike rentals. No high-rises blocking the ocean breeze, a relaxed authentic Florida beach town vibe and the Margaritaville resort.',desc_es:'Vecina de Fort Lauderdale con el legendario Broadwalk de 4 km bordeado de restaurantes y bares. Sin rascacielos, brisa del océano y el auténtico ambiente de pueblo costero de Florida.'},
+  {id:'b15',name:'Bill Baggs Cape Florida State Park',name_es:'Parque Estatal Bill Baggs',emoji:'',bg:'bb7',badge:'Lighthouse & History',badge_es:'Faro Histórico',desc:'Key Biscayne\'s crown jewel: a historic 1825 lighthouse, miles of nature trails through tropical hammock forest, two restaurants, kayak rentals and consistently ranked among the top 10 beaches in the US.',desc_es:'La joya de Key Biscayne: faro histórico de 1825, senderos de naturaleza, dos restaurantes y kayak. Clasificada constantemente entre las 10 mejores playas de EE.UU.'},
+  {id:'b16',name:'Oleta River Beach',name_es:'Playa Oleta River',emoji:'',bg:'bb2',badge:'Urban Escape',badge_es:'Escape Urbano',desc:'Florida\'s largest urban park hides a small secluded beach on Biscayne Bay with calm bay swimming, kayak and paddleboard rentals through mangrove tunnels, mountain bike trails and a picnic area. The wildest nature close to the city.',desc_es:'El parque urbano más grande de Florida esconde una pequeña playa en la Bahía Biscayne con natación, kayak y paddleboard por túneles de manglares, senderos MTB y picnic. La naturaleza más salvaje cerca de la ciudad.'},
+  {id:'b17',name:'Haulover Inlet Beach',name_es:'Playa Haulover Inlet',emoji:'',bg:'bb4',badge:'Fishermen & Surfers',badge_es:'Pesca y Surf',desc:'The north end of Haulover Park where the inlet meets the ocean — popular with local anglers fishing for snook and tarpon, with a small surf break and spectacular views of boats navigating the inlet. Raw and authentic Miami.',desc_es:'El extremo norte de Haulover donde el canal se une al océano. Popular entre pescadores locales y con olas pequeñas. Vistas espectaculares de botes navegando el canal. El Miami más auténtico.'},
 ],
 museums:[
   {id:'m1',name:'Pérez Art Museum Miami',name_es:'Museo de Arte Pérez Miami',emoji:'',bg:'bg-purple',cat:'Art Museum',cat_es:'Museo de Arte',desc:'World-class modern and contemporary art in a breathtaking waterfront building by architects Herzog & de Meuron. The PAMM is Miami\'s cultural crown — rotating exhibitions from Latin American, Caribbean, and global artists. Free admission every 2nd Saturday.',desc_es:'Arte moderno y contemporáneo de clase mundial en un impresionante edificio frente a la bahía. La joya cultural de Miami, con exposiciones de América Latina y el Caribe. Entrada gratis el 2do sábado de cada mes.',addr:'1103 Biscayne Blvd, Downtown',hrs:'10 AM – 6 PM · Closed Tuesdays',tags:['Modern Art','Architecture','Free 2nd Sat'],link:'https://www.pamm.org'},
@@ -1941,91 +1969,43 @@ places:[
 ],
 events:[
   /* ═══ JUNE 2026 — update each month ═══ */
-  {id:'wc1',name:'World Cup: Saudi Arabia vs Uruguay',name_es:'Mundial: Arabia Saudita vs Uruguay',day:'SUN',mon:'JUN 15',
-   venue:'Hard Rock Stadium · Miami',venue_es:'Hard Rock Stadium · Miami',time:'6:00 PM ET',price:'From $120',
-   emoji:'',type:'Sports',
-   desc:'FIFA World Cup 2026 Group Stage at Hard Rock Stadium. Two powerhouse nations face off in Miami. Fan Zone opens 3 hours before kickoff. Parking via ParkWhiz.',
-   desc_es:'Fase de Grupos del Mundial FIFA 2026 en Hard Rock Stadium. Zona de fans abre 3 horas antes. Estacionamiento vía ParkWhiz.',
-   tags:['World Cup','Soccer','Sports','Stadium'],
-   link:'https://www.ticketmaster.com/fifa-world-cup-2026'},
-  {id:'wc2',name:'World Cup: Uruguay vs Cape Verde',name_es:'Mundial: Uruguay vs Cabo Verde',day:'SUN',mon:'JUN 21',
-   venue:'Hard Rock Stadium · Miami',venue_es:'Hard Rock Stadium · Miami',time:'6:00 PM ET',price:'From $120',
-   emoji:'',type:'Sports',
-   desc:'FIFA World Cup 2026 Group Stage in Miami. Uruguay looks to advance while Cape Verde fights for a historic upset. Electric atmosphere guaranteed.',
-   desc_es:'Fase de Grupos del Mundial en Miami. Uruguay busca avanzar mientras Cabo Verde pelea por una hazaña histórica.',
-   tags:['World Cup','Soccer','Sports','Stadium'],
-   link:'https://www.ticketmaster.com/fifa-world-cup-2026'},
-  {id:'wc3',name:'World Cup: Brazil vs Scotland',name_es:'Mundial: Brasil vs Escocia',day:'WED',mon:'JUN 24',
-   venue:'Hard Rock Stadium · Miami',venue_es:'Hard Rock Stadium · Miami',time:'6:00 PM ET',price:'From $150',
-   emoji:'',type:'Sports',
-   desc:'FIFA World Cup 2026 — Brazil vs Scotland at Hard Rock Stadium. The 5-time World Cup champions bring Samba soccer to Miami. One of the most anticipated matches of the tournament.',
-   desc_es:'Brasil 5 veces campeón del mundo lleva el fútbol samba a Miami. Uno de los partidos más esperados del torneo.',
-   tags:['World Cup','Soccer','Brazil','Sports','Stadium'],
-   link:'https://www.ticketmaster.com/fifa-world-cup-2026'},
-  {id:'wc4',name:'World Cup: Colombia vs Portugal',name_es:'Mundial: Colombia vs Portugal',day:'SAT',mon:'JUN 27',
-   venue:'Hard Rock Stadium · Miami',venue_es:'Hard Rock Stadium · Miami',time:'7:30 PM ET',price:'From $150',
-   emoji:'',type:'Sports',
-   desc:'FIFA World Cup 2026 — Colombia vs Portugal featuring Cristiano Ronaldo. This could be CR7\'s last World Cup match in Miami. Historic night.',
-   desc_es:'Colombia vs Portugal con Cristiano Ronaldo. Puede ser el último partido de CR7 en un Mundial. Noche histórica en Miami.',
-   tags:['World Cup','Soccer','Ronaldo','Colombia','Sports','Stadium'],
-   link:'https://www.ticketmaster.com/fifa-world-cup-2026'},
-  {id:'wc_fan',name:'FIFA Fan Festival – Bayfront Park',name_es:'Festival de Fans FIFA – Bayfront Park',day:'DAILY',mon:'JUN–JUL',
-   venue:'Bayfront Park · Downtown Miami',venue_es:'Bayfront Park · Downtown Miami',time:'12 PM – 12 AM',price:'Free',
-   emoji:'',type:'Sports',
-   desc:'Free FIFA Fan Festival at Bayfront Park through July 19. Giant screens, live music, food & drinks, cultural activations and fan experiences. The place to be during the World Cup.',
-   desc_es:'Festival de Fans FIFA gratis en Bayfront Park hasta el 19 de julio. Pantallas gigantes, música en vivo, comida y activaciones culturales. El lugar del Mundial.',
-   tags:['World Cup','Free','Bayfront','Fan Festival','Soccer'],
-   link:'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026'},
-  {id:'wc_watch',name:'World Cup Watch Parties – Miami',name_es:'Watch Parties del Mundial – Miami',day:'DAILY',mon:'JUN–JUL',
-   venue:'South Beach · Brickell · Wynwood',venue_es:'South Beach · Brickell · Wynwood',time:'Varies',price:'Free–$$',
-   emoji:'',type:'Sports',
-   desc:'Watch parties all over Miami: Fado Irish Pub (Brickell), Ball & Chain (Little Havana), Wynwood Yard, and dozens of beachfront bars on Ocean Drive. Check local listings.',
-   desc_es:'Watch parties por toda Miami: Fado Irish Pub (Brickell), Ball & Chain (Little Havana), Wynwood Yard y bares en Ocean Drive.',
-   tags:['World Cup','Watch Party','Free','Brickell','Wynwood','South Beach'],
-   link:'https://www.miamiandbeaches.com/events/sporting-events/fifa-world-cup-guide'},
-  /* ── CONCERTS & LOCAL EVENTS – JUNE 2026 ── */
-  {id:'asap_rocky',name:'A$AP Rocky Live',name_es:'A$AP Rocky en Vivo',day:'MON',mon:'JUN 15',
-   venue:'Kaseya Center · Downtown Miami',venue_es:'Kaseya Center · Downtown Miami',time:'8:00 PM ET',price:'From $85',
+  /* ── THIS WEEK IN MIAMI – JUN 16–22, 2026 ── */
+  {id:'sports_miami',name:'Sports This Week in Miami',name_es:'Deportes Esta Semana en Miami',day:'FRI',mon:'JUN 19–22',
+   venue:'Hard Rock Stadium · loanDepot Park',venue_es:'Hard Rock Stadium · loanDepot Park',time:'See full schedule',price:'From $18',
+   emoji:'🏟️',type:'Sports',
+   desc:'FIFA World Cup, Marlins baseball and more happening this week in Miami. Tap for the full schedule and tickets on Ticketmaster.',
+   desc_es:'Copa Mundial FIFA, béisbol de los Marlins y más eventos deportivos esta semana. Toca para ver la cartelera completa en Ticketmaster.',
+   tags:['Sports','World Cup','Marlins','Miami'],
+   link:'https://www.ticketmaster.com/2026-world-cup-tickets/artist/4067734'},
+  {id:'josh_groban',name:'Josh Groban & Jennifer Hudson',name_es:'Josh Groban & Jennifer Hudson',day:'SAT',mon:'JUN 20',
+   venue:'Hard Rock Live · Hollywood',venue_es:'Hard Rock Live · Hollywood',time:'8:00 PM ET',price:'From $65',
    emoji:'',type:'Concert',
-   desc:'A$AP Rocky performs live at Kaseya Center in Downtown Miami. One of hip-hop — one of the most stylish and influential artists brings his signature sound to Miami tonight.',
-   desc_es:'A$AP Rocky en el Kaseya Center en el Downtown de Miami. Uno de los artistas de hip-hop más influyentes trae su sonido característico a Miami esta noche.',
-   tags:['Concert','Hip-Hop','Kaseya','Downtown'],
-   link:'https://www.ticketmaster.com'},
-  {id:'marlins_giants',name:'Marlins vs San Francisco Giants',name_es:'Marlins vs San Francisco Giants',day:'FRI',mon:'JUN 19',
-   venue:'loanDepot Park · Little Havana',venue_es:'loanDepot Park · Little Havana',time:'7:10 PM ET',price:'From $18',
-   emoji:'',type:'Sports',
-   desc:'Miami Marlins host the San Francisco Giants at loanDepot Park. Friday night baseball in Miami — great atmosphere, affordable tickets, and the ballpark is stunning.',
-   desc_es:'Los Marlins de Miami reciben a los Gigantes de San Francisco en loanDepot Park. Béisbol del viernes por la noche en Miami — gran ambiente y entradas accesibles.',
-   tags:['Baseball','Marlins','Sports','loanDepot'],
-   link:'https://www.ticketmaster.com/miami-marlins'},
+   desc:'Josh Groban brings his national tour to Hard Rock Live with special guest Jennifer Hudson. Two powerhouse voices, one unforgettable night.',
+   desc_es:'Josh Groban en Hard Rock Live con la invitada especial Jennifer Hudson. Dos voces extraordinarias en una noche inolvidable.',
+   tags:['Concert','Pop','Hard Rock Live'],
+   link:'https://www.ticketmaster.com/search?q=josh+groban+hard+rock+live+hollywood'},
   {id:'juvenile',name:'Juvenile ft. The 400 Degreez Band',name_es:'Juvenile ft. The 400 Degreez Band',day:'SUN',mon:'JUN 21',
    venue:'Miami Beach Bandshell · Miami Beach',venue_es:'Miami Beach Bandshell · Miami Beach',time:'6:00 PM ET',price:'From $45',
    emoji:'',type:'Concert',
-   desc:'Hip-hop legend Juvenile performs with The 400 Degreez Band at the iconic Miami Beach Bandshell. One of the greatest rap albums ever — performed live, outdoors, steps from the beach.',
-   desc_es:'El legendario Juvenile actúa con The 400 Degreez Band en el icónico Miami Beach Bandshell. Al aire libre, a pasos de la playa.',
-   tags:['Concert','Hip-Hop','Miami Beach','Bandshell'],
-   link:'https://www.ticketmaster.com'},
+   desc:'Hip-hop legend Juvenile performs live at the iconic outdoor Miami Beach Bandshell — steps from the ocean.',
+   desc_es:'El legendario Juvenile actúa en el icónico Miami Beach Bandshell al aire libre, a pasos del océano.',
+   tags:['Concert','Hip-Hop','Miami Beach'],
+   link:'https://www.ticketmaster.com/search?q=juvenile+miami+beach+bandshell'},
+  {id:'juneteenth',name:'Juneteenth Experience Miami Beach',name_es:'Experiencia Juneteenth Miami Beach',day:'THU',mon:'JUN 19',
+   venue:'Miami Beach Bandshell · Miami Beach',venue_es:'Miami Beach Bandshell · Miami Beach',time:'6:00 PM ET',price:'Free',
+   emoji:'',type:'Festival',
+   desc:'Free Juneteenth celebration with live performances, culture and community at the Miami Beach Bandshell.',
+   desc_es:'Celebración gratuita de Juneteenth con actuaciones en vivo, cultura y comunidad en el Miami Beach Bandshell.',
+   tags:['Free','Juneteenth','Culture','Miami Beach'],
+   link:'https://www.miamiandbeaches.com/events'},
   {id:'matt_rife',name:'Matt Rife: Stay Golden World Tour',name_es:'Matt Rife: Stay Golden World Tour',day:'FRI',mon:'JUN 26',
    venue:'Hard Rock Live · Hollywood',venue_es:'Hard Rock Live · Hollywood',time:'8:00 PM ET',price:'From $65',
    emoji:'',type:'Concert',
-   desc:'Comedian Matt Rife brings his Stay Golden World Tour to Hard Rock Live. One of the hottest comedians of the moment — sharp, funny, and completely sold out on most stops.',
-   desc_es:'El comediante Matt Rife trae su Stay Golden World Tour al Hard Rock Live. Agudo, gracioso y casi siempre agotado.',
-   tags:['Comedy','Hard Rock Live','Hollywood'],
-   link:'https://www.ticketmaster.com'},
-  {id:'wynwood_wc',name:'Lets Wyn – World Cup Experience',name_es:'Lets Wyn – Experiencia Mundial',day:'DAILY',mon:'JUN–JUL',
-   venue:'Wynwood Arts District · Miami',venue_es:'Wynwood Arts District · Miami',time:'All day',price:'Free',
-   emoji:'',type:'Festival',
-   desc:'Wynwood turns into its own World Cup experience: 6-week scavenger hunt, public art trail, food festival, and watch party series running through the entire tournament. Free and open to all.',
-   desc_es:'Wynwood se convierte en su propia experiencia del Mundial: búsqueda del tesoro de 6 semanas, ruta de arte público, festival de comida y watch parties durante todo el torneo. Gratis.',
-   tags:['Free','Wynwood','World Cup','Festival','Art'],
-   link:'https://www.wynwoodmiami.com'},
-  {id:'viernes_culturales',name:'Viernes Culturales – Little Havana',name_es:'Viernes Culturales – Little Havana',day:'FRI',mon:'JUN 19',
-   venue:'Calle Ocho · Little Havana',venue_es:'Calle Ocho · Little Havana',time:'7:00 PM ET',price:'Free',
-   emoji:'',type:'Festival',
-   desc:'The monthly Viernes Culturales festival on Calle 8 — art, live music, Cuban folklore, food vendors and the real heartbeat of Miami. Free, outdoors, incredibly local.',
-   desc_es:'El festival mensual Viernes Culturales en Calle 8 — arte, música en vivo, folklore cubano, vendedores de comida y el verdadero corazón de Miami. Gratis, al aire libre.',
-   tags:['Free','Little Havana','Cuban','Culture','Calle Ocho'],
-   link:'https://viernesculturales.org'},
+   desc:'Comedian Matt Rife brings his Stay Golden World Tour to Hard Rock Live. One of the hottest comedians right now.',
+   desc_es:'El comediante Matt Rife trae su gira al Hard Rock Live. Uno de los comediantes más populares del momento.',
+   tags:['Comedy','Hard Rock Live'],
+   link:'https://www.ticketmaster.com/search?q=matt+rife+hard+rock+live+hollywood'},
+  /* ── WEEKLY RECURRING ── */
   {id:'e1',name:'Wynwood Art Walk',name_es:'Paseo de Arte Wynwood',day:'SAT',mon:'WEEK',
    venue:'Wynwood Arts District',venue_es:'Distrito de Arte Wynwood',time:'7 PM – 11 PM',price:'Free',
    emoji:'',type:'Art',
@@ -2033,39 +2013,32 @@ events:[
    desc_es:'Cada 2do sábado: galerías abiertas hasta tarde, muralistas en vivo, DJs y food trucks. La mejor noche gratuita de Miami.',
    tags:['Art','Free','Wynwood'],
    link:'https://www.wynwoodmiami.com'},
-  {id:'e2',name:'FIFA World Cup 2026 – Miami',name_es:'Copa Mundial FIFA 2026 – Miami',day:'JUN',mon:'–JUL',
-   venue:'Hard Rock Stadium · Fan Zone Bayfront',venue_es:'Hard Rock Stadium · Fan Zone Bayfront',time:'Varios horarios',price:'From $120',
-   emoji:'',type:'Sports',
-   desc:'Miami hosts 6 matches of the most watched event on Earth. Fan Festival at Bayfront Park, watch parties on South Beach and Brickell. A once-in-a-generation experience.',
-   desc_es:'Miami recibe 6 partidos del evento más visto en el planeta. Fan Festival en Bayfront Park, watch parties en South Beach y Brickell. Una experiencia irrepetible.',
-   tags:['Soccer','World Cup','Fan Zone'],
-   link:'https://www.fifa.com/fifaworldcup/'},
   {id:'e3',name:'Ball & Chain Salsa Night',name_es:'Noche de Salsa en Ball & Chain',day:'FRI',mon:'WEEK',
    venue:'Ball & Chain · Little Havana',venue_es:'Ball & Chain · Little Havana',time:'9 PM – 3 AM',price:'Free',
    emoji:'',type:'Music',
    desc:'Every Friday: live salsa band, mojitos, and the most authentic Cuban nightlife energy in Miami. No reservations — just show up and dance.',
-   desc_es:'Cada viernes: banda de salsa en vivo, mojitos y la energía nocturna cubana más auténtica de Miami. Sin reservas, llega y baila.',
+   desc_es:'Cada viernes: banda de salsa en vivo, mojitos y la energía nocturna cubana más auténtica de Miami. Sin reservas.',
    tags:['Salsa','Live Music','Free'],
    link:'https://www.ballandchainmiami.com'},
   {id:'e4',name:'Miami Farmers Market',name_es:'Mercado Agrícola de Miami',day:'SAT',mon:'WEEK',
    venue:'Coconut Grove · Behind CocoWalk',venue_es:'Coconut Grove · Detrás de CocoWalk',time:'10 AM – 3 PM',price:'Free',
    emoji:'',type:'Market',
-   desc:'Every Saturday: local farmers, organic produce, artisan food, flowers, and live music in the shade of Coconut Grove. A beloved local ritual.',
-   desc_es:'Cada sábado: agricultores locales, productos orgánicos, comida artesanal, flores y música en vivo bajo la sombra de Coconut Grove. Un ritual local querido.',
+   desc:'Every Saturday: local farmers, organic produce, artisan food, flowers, and live music in Coconut Grove.',
+   desc_es:'Cada sábado: agricultores locales, comida artesanal, flores y música en vivo bajo la sombra de Coconut Grove.',
    tags:['Local','Organic','Family'],
-   link:'https://www.coconutgrovemarket.com'},
+   link:'https://www.coconutgrovefarmersmarket.com'},
   {id:'e5',name:'Sunset at Kiki on the River',name_es:'Atardecer en Kiki on the River',day:'SUN',mon:'WEEK',
    venue:'Kiki on the River · Downtown',venue_es:'Kiki on the River · Centro',time:'5 PM – 10 PM',price:'$$',
    emoji:'',type:'Dining',
-   desc:'Every Sunday: Greek-Mediterranean brunch and sunset cocktails on the Miami River with live DJ. Miami\'s most beautiful outdoor dining experience.',
-   desc_es:'Cada domingo: brunch greco-mediterráneo y cócteles al atardecer sobre el río Miami con DJ en vivo. La experiencia gastronómica al aire libre más hermosa de Miami.',
+   desc:'Every Sunday: Greek-Mediterranean brunch and sunset cocktails on the Miami River with live DJ.',
+   desc_es:'Cada domingo: brunch greco-mediterráneo y cócteles al atardecer sobre el río Miami con DJ en vivo.',
    tags:['Brunch','Waterfront','DJ'],
    link:'https://www.kikimiami.com'},
   {id:'e6',name:'Pérez Art Museum – Free Saturdays',name_es:'PAMM – Sábados Gratis',day:'2nd',mon:'SAT',
    venue:'Pérez Art Museum · Downtown',venue_es:'Museo de Arte Pérez · Centro',time:'10 AM – 6 PM',price:'Free',
    emoji:'',type:'Culture',
-   desc:'Every 2nd Saturday: world-class contemporary art with free admission for all. Bring the family — the waterfront views alone are worth the trip.',
-   desc_es:'Cada 2do sábado: arte contemporáneo de clase mundial con entrada gratuita para todos. Trae a la familia — las vistas al mar ya valen el viaje.',
+   desc:'Every 2nd Saturday: world-class contemporary art with free admission. The waterfront views alone are worth the trip.',
+   desc_es:'Cada 2do sábado: arte contemporáneo de clase mundial con entrada gratuita. Las vistas al mar ya valen el viaje.',
    tags:['Art','Free','Family'],
    link:'https://www.pamm.org'},
 ],
@@ -2140,6 +2113,452 @@ hotels:[
    price:'From $260/night',addr:'1200 Anastasia Ave, Coral Gables',
    link:'https://www.biltmorehotel.com',
    desc:'National Historic Landmark built in 1926. Largest hotel pool in the continental US, golf course and spa.'},
+  {id:'h15',name:'Four Seasons Hotel Miami',cat:'Urban Luxury · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=600&q=80',
+   price:'From $490/night',addr:'1435 Brickell Ave, Brickell',
+   link:'https://www.fourseasons.com/miami/',
+   desc:'Forbes Five-Star on Brickell Ave with panoramic Biscayne Bay views, two pools and celebrated EDGE Brasserie.'},
+  {id:'h16',name:'Acqualina Resort & Residences',cat:'Oceanfront · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80',
+   price:'From $600/night',addr:'17875 Collins Ave, Sunny Isles Beach',
+   link:'https://www.acqualinaresort.com',
+   desc:'#1 Best Resort in the US — Forbes Five-Star on 4.5 acres of pristine beachfront. Three oceanfront pools and four waterfront restaurants.'},
+  {id:'h17',name:'The Miami Beach EDITION',cat:'Lifestyle · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=80',
+   price:'From $550/night',addr:'2901 Collins Ave, Mid-Beach',
+   link:'https://www.editionhotels.com/miami-beach/',
+   desc:'Ian Schrager\'s hip luxury hotel with private beach access, rooftop pool, ice-skating rink and Matador Room restaurant.'},
+  {id:'h18',name:'The Ritz-Carlton Key Biscayne',cat:'Island Resort · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600&q=80',
+   price:'From $480/night',addr:'455 Grand Bay Dr, Key Biscayne',
+   link:'https://www.ritzcarlton.com/en/hotels/miakb-the-ritz-carlton-key-biscayne-miami/overview/',
+   desc:'Secluded island resort with private beach, 20,000 sq ft spa and the largest Ritz-Carlton tennis center in the world.'},
+  {id:'h19',name:'W South Beach',cat:'Design · Party · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80',
+   price:'From $380/night',addr:'2201 Collins Ave, South Beach',
+   link:'https://www.marriott.com/en-us/hotels/miawh-w-south-beach/overview/',
+   desc:'Ultra-chic South Beach icon with private beach oasis, WET pool deck and proximity to Art Basel scene.'},
+  /* ── SOUTH BEACH ── */
+  {id:'h20',name:'Versace Mansion – Villa Casa Casuarina',cat:'Iconic · Boutique · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80',
+   price:'From $1,200/night',addr:'1116 Ocean Dr, South Beach',
+   link:'https://www.villacasacasuarina.com',
+   desc:'Gianni Versace\'s legendary Ocean Drive mansion turned opulent boutique hotel. Only 10 suites, mosaic pool, and unforgettable baroque interiors.'},
+  {id:'h21',name:'The National Hotel Miami Beach',cat:'Art Deco · Adults Only · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   price:'From $200/night',addr:'1677 Collins Ave, South Beach',
+   link:'https://www.nationalhotel.com',
+   desc:'Landmark 1939 Art Deco hotel with Miami Beach\'s longest oceanview infinity pool. Adults-only tranquility in the heart of South Beach.'},
+  {id:'h22',name:'The Confidante Miami Beach',cat:'Boutique · Mid-Century · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   price:'From $180/night',addr:'4041 Collins Ave, Miami Beach',
+   link:'https://www.theconfidantemiamibeach.com',
+   desc:'Striking 1940s Art Deco tower with bohemian interiors, rooftop pool and direct beach access two minutes from the sand.'},
+  {id:'h23',name:'Esmé Miami Beach',cat:'Boutique · Artsy · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1530099486328-e021101a494a?w=600&q=80',
+   price:'From $220/night',addr:'800 Espanola Way, South Beach',
+   link:'https://www.esmehotel.com',
+   desc:'Eclectic jewel on historic Española Way. Richly decorated rooms, rooftop pool, curated art and one of South Beach\'s most intimate vibes.'},
+  {id:'h24',name:'The Balfour Hotel',cat:'Boutique · Luxury · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&q=80',
+   price:'From $230/night',addr:'350 Ocean Dr, South Beach',
+   link:'https://www.balfourhotelmiami.com',
+   desc:'Timeless South Beach luxury on Ocean Drive with custom Italian furnishings, ultracomfortable beds and steps-from-the-beach location.'},
+  {id:'h25',name:'Catalina Hotel & Beach Club',cat:'Boutique · Pool Party · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   price:'From $120/night',addr:'1756 Collins Ave, South Beach',
+   link:'https://www.catalinahotel.com',
+   desc:'Three pools, free shuttles, complimentary happy hour and a legendary South Beach pool scene. Best value boutique on Collins Ave.'},
+  {id:'h26',name:'Hotel Breakwater South Beach',cat:'Art Deco · Classic · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80',
+   price:'From $130/night',addr:'940 Ocean Dr, South Beach',
+   link:'https://www.hotelbreakwatersouthbeach.com',
+   desc:'Iconic 1939 Art Deco building steps from the sand on Ocean Drive. Rooftop pool and classic South Beach architecture.'},
+  {id:'h27',name:'Pelican Hotel',cat:'Design · Quirky · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
+   price:'From $150/night',addr:'826 Ocean Dr, South Beach',
+   link:'https://www.pelicanhotel.com',
+   desc:'Each room individually themed with wild vintage decor. Owned by Diesel — the coolest affordable design hotel on Ocean Drive.'},
+  {id:'h28',name:'The Julia South Beach',cat:'Adults Only · Art Deco · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1506059612708-99d6128a11f8?w=600&q=80',
+   price:'From $200/night',addr:'1701 James Ave, South Beach',
+   link:'https://www.thejuliasouthbeach.com',
+   desc:'Sophisticated adults-only boutique in a classic Art Deco building, one block from the beach with original artwork throughout.'},
+  {id:'h29',name:'Hotel Victor South Beach',cat:'Design · Luxury · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80',
+   price:'From $250/night',addr:'1144 Ocean Dr, South Beach',
+   link:'https://www.hotelvictorsouthbeach.com',
+   desc:'Jacques Garcia-designed oceanfront luxury on Ocean Drive. Plunge pools, private cabanas and a sophisticated European aesthetic.'},
+  {id:'h30',name:'The Clevelander South Beach',cat:'Party · Pool · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   price:'From $110/night',addr:'1020 Ocean Dr, South Beach',
+   link:'https://www.clevelander.com',
+   desc:'South Beach\'s legendary party hotel on Ocean Drive. Rooftop pool, swim-up bar, nightly DJs and the original Spirit of Miami Bar.'},
+  {id:'h31',name:'Mondrian South Beach',cat:'Design · Waterfront · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   price:'From $180/night',addr:'1100 West Ave, South Beach',
+   link:'https://www.sbe.com/hotels/mondrian/miami-south-beach/',
+   desc:'Marcel Wanders-designed hotel on the bay side. Stunning infinity pool overlooking the Miami skyline and Biscayne Bay sunsets.'},
+  {id:'h32',name:'SLS South Beach',cat:'Luxury · Design · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80',
+   price:'From $300/night',addr:'1701 Collins Ave, South Beach',
+   link:'https://www.sbe.com/hotels/sls/south-beach/',
+   desc:'Philippe Starck-designed landmark with Hyde Beach club, Katsuya restaurant and one of South Beach\'s most iconic pool scenes.'},
+  {id:'h33',name:'Sagamore Hotel',cat:'Art Hotel · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1506059612708-99d6128a11f8?w=600&q=80',
+   price:'From $200/night',addr:'1671 Collins Ave, South Beach',
+   link:'https://www.sagamorehotel.com',
+   desc:'South Beach\'s original art hotel with museum-quality contemporary art throughout. The pool is a social scene and gallery in one.'},
+  {id:'h34',name:'Casa SOBE',cat:'Boutique · Cozy · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   price:'From $130/night',addr:'835 Collins Ave, South Beach',
+   link:'https://www.casasobe.com',
+   desc:'Intimate South Beach boutique with 18 rooms, outdoor pool and a warm neighborhood feel away from the Ocean Drive crowds.'},
+  {id:'h35',name:'Circa 39 Hotel',cat:'Boutique · Chill · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   price:'From $120/night',addr:'3900 Collins Ave, Mid-Beach',
+   link:'https://www.circa39.com',
+   desc:'Laid-back Mid-Beach boutique with a local crowd, great pool and beach access. Best escape from the South Beach scene.'},
+  /* ── MID-BEACH & NORTH BEACH ── */
+  {id:'h36',name:'The Palms Hotel & Spa',cat:'Eco · Zen · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
+   price:'From $200/night',addr:'3025 Collins Ave, Miami Beach',
+   link:'https://www.thepalmshotel.com',
+   desc:'Tranquil oasis on the beach with lush tropical gardens, award-winning spa and one of Miami Beach\'s most serene pool environments.'},
+  {id:'h37',name:'Casa Faena',cat:'Art · Boutique · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1535827841776-24afc1e255ac?w=600&q=80',
+   price:'From $350/night',addr:'3500 Collins Ave, Mid-Beach',
+   link:'https://www.faena.com/miami-beach/casa-faena',
+   desc:'Sister property to Faena Hotel — Spanish villa aesthetic, art installations, eclectic rooms and access to Faena\'s legendary beach service.'},
+  {id:'h38',name:'Four Seasons Hotel at the Surf Club',cat:'Historic · Ultra Luxury · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   price:'From $800/night',addr:'9011 Collins Ave, Surfside',
+   link:'https://www.fourseasons.com/surfside/',
+   desc:'Historic 1930s Surf Club reimagined as Forbes Five-Star. Thomas Keller restaurant, 1,000 ft of beachfront and Richard Meier architecture.'},
+  {id:'h39',name:'UMA House South Beach',cat:'Boutique · Hip · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80',
+   price:'From $130/night',addr:'1671 Washington Ave, South Beach',
+   link:'https://www.umahouse.com',
+   desc:'Trendy boutique with rooftop terrace and South Beach energy. Local crowd favorite for its social atmosphere and great location.'},
+  {id:'h40',name:'Carillon Miami Wellness Resort',cat:'Wellness · Spa · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=600&q=80',
+   price:'From $290/night',addr:'6801 Collins Ave, Miami Beach',
+   link:'https://www.carillonhotel.com',
+   desc:'All-suite wellness resort with 70,000 sq ft spa and fitness center on North Beach. The best destination in Miami for health and recovery.'},
+  /* ── BAL HARBOUR & SURFSIDE ── */
+  {id:'h41',name:'St. Regis Bal Harbour Resort',cat:'Ultra Luxury · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600&q=80',
+   price:'From $700/night',addr:'9703 Collins Ave, Bal Harbour',
+   link:'https://www.marriott.com/en-us/hotels/miabr-the-st-regis-bal-harbour-resort/overview/',
+   desc:'Forbes Five-Star on Bal Harbour Beach adjacent to Bal Harbour Shops. Luxurious suites with butler service and a magnificent Italian restaurant.'},
+  {id:'h42',name:'Sea View Hotel Bal Harbour',cat:'Classic · Beachfront · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   price:'From $250/night',addr:'9909 Collins Ave, Bal Harbour',
+   link:'https://www.seaviewhotelbalharboursuite.com',
+   desc:'Italian villa-style boutique one block from Bal Harbour Beach and the famous Bal Harbour Shops. Jacuzzi suites and elegant charm.'},
+  /* ── SUNNY ISLES BEACH ── */
+  {id:'h43',name:'Turnberry Ocean Club',cat:'Ultra Luxury · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80',
+   price:'From $900/night',addr:'18501 Collins Ave, Sunny Isles Beach',
+   link:'https://www.turnberryoceanclub.com',
+   desc:'Soaring 54-story oceanfront tower with 154 ultra-luxury residences, three pools, private beach and world-class dining.'},
+  {id:'h44',name:'Marenas Beach Resort',cat:'Condo-Hotel · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   price:'From $200/night',addr:'18683 Collins Ave, Sunny Isles Beach',
+   link:'https://www.marenasresort.com',
+   desc:'Spacious oceanfront suites with full kitchens, private balconies and direct beach access in Sunny Isles. Perfect for families.'},
+  /* ── AVENTURA ── */
+  {id:'h45',name:'JW Marriott Miami Turnberry Resort & Spa',cat:'Mega Resort · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   price:'From $350/night',addr:'19999 W Country Club Dr, Aventura',
+   link:'https://www.marriott.com/en-us/hotels/miajt-jw-marriott-miami-turnberry-resort-and-spa/overview/',
+   desc:'300-acre resort paradise with 36-hole golf, Tidal Cove waterpark, 5 pools, BOURBON Steak by Michael Mina and a full-service spa.'},
+  {id:'h46',name:'Hilton Miami Aventura',cat:'Business · Modern · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   price:'From $180/night',addr:'2601 NE 211th Terrace, Aventura',
+   link:'https://www.hilton.com/en/hotels/fllavhh-hilton-miami-aventura/',
+   desc:'Four Diamond hotel with rooftop pool, skyline views and walkable distance to Aventura Mall. Opened 2021 with modern artful design.'},
+  {id:'h47',name:'AC Hotel Miami Aventura',cat:'Lifestyle · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
+   price:'From $150/night',addr:'2891 NE 191st St, Aventura',
+   link:'https://www.marriott.com/en-us/hotels/miaat-ac-hotel-miami-aventura/overview/',
+   desc:'Sleek European-inspired lifestyle hotel steps from Aventura Mall with rooftop bar and modern design-forward rooms.'},
+  /* ── BRICKELL & DOWNTOWN ── */
+  {id:'h48',name:'SLS LUX Brickell',cat:'Luxury · Urban · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80',
+   price:'From $300/night',addr:'801 S Miami Ave, Brickell',
+   link:'https://www.sbe.com/hotels/sls/brickell/',
+   desc:'Sophisticated Brickell luxury tower with Carna by Dani Garcia, rooftop infinity pool and panoramic bay views from every suite.'},
+  {id:'h49',name:'EAST Miami – Brickell City Centre',cat:'Lifestyle · Urban · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   price:'From $280/night',addr:'788 Brickell Plaza, Brickell',
+   link:'https://www.easthotels.com/miami',
+   desc:'Inside Brickell City Centre with rooftop SUGAR bar and panoramic views. The go-to for urban travelers wanting luxury and walkability.'},
+  {id:'h50',name:'JW Marriott Miami',cat:'Business · Luxury · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=600&q=80',
+   price:'From $280/night',addr:'1109 Brickell Ave, Brickell',
+   link:'https://www.marriott.com/en-us/hotels/miajw-jw-marriott-miami/overview/',
+   desc:'Brickell flagship with rooftop pool, acclaimed Isabelle\'s Grill & Bar and full conference facilities. Premier business hotel in downtown.'},
+  {id:'h51',name:'Intercontinental Miami',cat:'Waterfront · Business · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?w=600&q=80',
+   price:'From $200/night',addr:'100 Chopin Plaza, Downtown',
+   link:'https://www.ihg.com/intercontinental/hotels/us/en/miami/miaha/hoteldetail',
+   desc:'44-story tower on Biscayne Bay with spectacular water views, the renowned Toro Toro restaurant and prime downtown location.'},
+  {id:'h52',name:'Miami Marriott Biscayne Bay',cat:'Waterfront · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&q=80',
+   price:'From $180/night',addr:'1633 N Bayshore Dr, Downtown',
+   link:'https://www.marriott.com/en-us/hotels/miabb-miami-marriott-biscayne-bay/overview/',
+   desc:'Bayfront tower with marina views and outdoor pool. Close to Wynwood and the Design District — ideal base for exploring Miami.'},
+  {id:'h53',name:'Hyatt Regency Miami',cat:'Convention · Business · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1506059612708-99d6128a11f8?w=600&q=80',
+   price:'From $160/night',addr:'400 SE 2nd Ave, Downtown',
+   link:'https://www.hyatt.com/hyatt-regency/en-US/miarh-hyatt-regency-miami/overview',
+   desc:'Connected to the Miami Convention Center with 615 rooms, riverfront views and the largest hotel ballroom in Miami-Dade.'},
+  {id:'h54',name:'Kimpton Epic Hotel',cat:'Waterfront · Boutique · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1535827841776-24afc1e255ac?w=600&q=80',
+   price:'From $250/night',addr:'270 Biscayne Blvd Way, Brickell',
+   link:'https://www.epichotel.com',
+   desc:'Sleek bayfront Kimpton with rooftop pool and Edge Steak & Bar. Stunning panoramic views from the 16th floor rooftop terrace.'},
+  {id:'h55',name:'Hilton Downtown Miami',cat:'Business · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   price:'From $150/night',addr:'1601 Biscayne Blvd, Downtown',
+   link:'https://www.hilton.com/en/hotels/miaddtw-hilton-miami-downtown/',
+   desc:'Classic Hilton in the heart of downtown with pool deck and quick access to the Perez Art Museum and Bayside Marketplace.'},
+  {id:'h56',name:'Sheraton Miami Downtown',cat:'Business · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   price:'From $160/night',addr:'495 Brickell Ave, Brickell',
+   link:'https://www.marriott.com/en-us/hotels/miasd-sheraton-miami-downtown-hotel/overview/',
+   desc:'Reliable full-service Sheraton in Brickell with outdoor pool, fitness center and easy Metromover access to all downtown attractions.'},
+  {id:'h57',name:'Aloft Miami Brickell',cat:'Lifestyle · Budget Luxury · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   price:'From $130/night',addr:'1001 SW 2nd Ave, Brickell',
+   link:'https://www.marriott.com/en-us/hotels/miaak-aloft-miami-brickell/overview/',
+   desc:'Modern lifestyle hotel in Brickell with WXYZ Bar, rooftop pool and affordable rates. Perfect for younger travelers exploring the city.'},
+  /* ── WYNWOOD & DESIGN DISTRICT ── */
+  {id:'h58',name:'The Moore Miami – Design District',cat:'Art · Boutique · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
+   price:'From $300/night',addr:'4040 NE 2nd Ave, Design District',
+   link:'https://www.themoremiami.com',
+   desc:'Miami Design District\'s first boutique hotel — just 13 rooms inside a historic private club with museum-quality art, cocktail lounges and the Elastika restaurant.'},
+  {id:'h59',name:'Vagabond Hotel Miami',cat:'Boutique · MiMo · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   price:'From $150/night',addr:'7301 Biscayne Blvd, Upper East Side',
+   link:'https://www.thevagabondhotel.com',
+   desc:'Lovingly restored Miami Modern (MiMo) gem on the Biscayne corridor. Vintage-cool with pool, tropical garden and one of Miami\'s hippest bars.'},
+  /* ── COCONUT GROVE ── */
+  {id:'h60',name:'Mr. C Miami – Coconut Grove',cat:'Luxury · Boutique · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=600&q=80',
+   price:'From $380/night',addr:'2988 McFarlane Rd, Coconut Grove',
+   link:'https://www.mrccoconutgrove.com',
+   desc:'European-inspired 5-star boutique in Coconut Grove with panoramic bay views, Bellini\'s restaurant, rooftop pool and Leading Hotels of the World member.'},
+  {id:'h61',name:'Mayfair Hotel & Spa Coconut Grove',cat:'Boutique · Unique · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   price:'From $180/night',addr:'3000 Florida Ave, Coconut Grove',
+   link:'https://www.mayfairhotelandspa.com',
+   desc:'Open-air suites with private rooftop jacuzzis in the heart of Coconut Grove. Each suite is uniquely decorated with antiques and original art.'},
+  {id:'h62',name:'Mutiny Hotel',cat:'Boutique · Suite · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   price:'From $160/night',addr:'2951 S Bayshore Dr, Coconut Grove',
+   link:'https://www.mutinyhotel.com',
+   desc:'All-suite boutique on Coconut Grove\'s marina strip. Full kitchens, bayfront views and steps from CocoWalk and top Grove dining.'},
+  /* ── CORAL GABLES ── */
+  {id:'h63',name:'Hyatt Regency Coral Gables',cat:'Business · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=600&q=80',
+   price:'From $170/night',addr:'50 Alhambra Plaza, Coral Gables',
+   link:'https://www.hyatt.com/hyatt-regency/en-US/miamr-hyatt-regency-coral-gables/overview',
+   desc:'Mediterranean-style full-service hotel in the heart of Coral Gables\' Miracle Mile. Outdoor pool and ideal base for business travelers.'},
+  {id:'h64',name:'Aloft Coral Gables',cat:'Lifestyle · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   price:'From $130/night',addr:'2590 Salzedo St, Coral Gables',
+   link:'https://www.marriott.com/en-us/hotels/miacg-aloft-coral-gables/overview/',
+   desc:'Modern and social hotel in the Coral Gables downtown with rooftop pool and lively WXYZ bar. Walkable to Village of Merrick Park.'},
+  {id:'h65',name:'Hotel Colonnade Coral Gables',cat:'Historic · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80',
+   price:'From $180/night',addr:'180 Aragon Ave, Coral Gables',
+   link:'https://www.marriott.com/en-us/hotels/miacl-hotel-colonnade-coral-gables-autograph-collection/overview/',
+   desc:'Autograph Collection hotel in George Merrick\'s 1926 landmark building. Circular ballroom, Italianate architecture and walkable Miracle Mile.'},
+  /* ── KEY BISCAYNE ── */
+  {id:'h66',name:'Crandon Park Hotel',cat:'Budget · Beach · 2',stars:'',
+   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
+   price:'From $90/night',addr:'4000 Crandon Blvd, Key Biscayne',
+   link:'https://www.miamidade.gov/parks/crandon.asp',
+   desc:'Simple and affordable lodging inside Crandon Park, steps from one of Miami\'s most beautiful beaches. Best budget option on Key Biscayne.'},
+  /* ── MIAMI AIRPORT & DORAL ── */
+  {id:'h67',name:'Miami Airport Marriott',cat:'Airport · Business · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
+   price:'From $150/night',addr:'1201 NW LeJeune Rd, Miami Airport',
+   link:'https://www.marriott.com/en-us/hotels/miadt-miami-airport-marriott/overview/',
+   desc:'Directly connected to Miami International Airport via covered walkway. Full-service hotel with pool, gym and multiple dining options.'},
+  {id:'h68',name:'Miami International Airport Hotel',cat:'Airport · Convenient · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   price:'From $120/night',addr:'Concourse E, MIA Airport, Miami',
+   link:'https://www.miaairporthotel.com',
+   desc:'The only hotel inside Miami International Airport terminal. Perfect for early flights or overnight layovers with no transportation needed.'},
+  {id:'h69',name:'Trump National Doral Miami',cat:'Golf Resort · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   price:'From $200/night',addr:'4400 NW 87th Ave, Doral',
+   link:'https://www.trumphotels.com/doral',
+   desc:'World-famous golf resort with the iconic Blue Monster course, extensive spa and multiple pools. PGA Tour history on 800 manicured acres.'},
+  {id:'h70',name:'Doral Marriott',cat:'Golf · Resort · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   price:'From $160/night',addr:'1000 NW 87th Ave, Doral',
+   link:'https://www.marriott.com/en-us/hotels/miadl-doral-marriott/overview/',
+   desc:'Full-service resort in suburban Doral with golf, pool and easy access to both Miami International Airport and Dolphin Mall.'},
+  /* ── HOMESTEAD & SOUTH MIAMI ── */
+  {id:'h71',name:'Autograph Collection – Homewood Homestead',cat:'Budget · Comfortable · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   price:'From $100/night',addr:'2750 NE 1st Ave, Homestead',
+   link:'https://www.marriott.com/en-us/hotels/miahe-homewood-suites-by-hilton-homestead-miami-south/overview/',
+   desc:'Extended-stay suites near Everglades National Park and Florida Keys. Kitchen-equipped rooms ideal for multi-day Everglades and Keys trips.'},
+  /* ── BUDGET & VALUE SOUTH BEACH ── */
+  {id:'h72',name:'The Local House South Beach',cat:'Boutique · Social · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80',
+   price:'From $110/night',addr:'435 20th St, South Beach',
+   link:'https://www.thelocalhousehotel.com',
+   desc:'Charming neighborhood boutique beloved by locals. Great service, rooftop pool, social common spaces and walking distance to Lincoln Road.'},
+  {id:'h73',name:'Hotel Trouvail',cat:'Boutique · Artsy · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
+   price:'From $120/night',addr:'630 Ocean Dr, South Beach',
+   link:'https://www.hoteltrouvail.com',
+   desc:'Charming boutique on Ocean Drive steps from the beach. Well-designed rooms, great service and affordable rates for the location.'},
+  {id:'h74',name:'Crest Hotel Suites',cat:'Budget · Suite · 2',stars:'',
+   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
+   price:'From $90/night',addr:'1670 James Ave, South Beach',
+   link:'https://www.cresthotelsuites.com',
+   desc:'Affordable all-suite hotel with kitchenettes and small pool in South Beach. Best budget option for extended stays near the beach.'},
+  {id:'h75',name:'Winter Haven Hotel',cat:'Art Deco · Budget · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   price:'From $100/night',addr:'1400 Ocean Dr, South Beach',
+   link:'https://www.winterhavenmiami.com',
+   desc:'Classic 1939 Art Deco hotel on Ocean Drive with rooftop pool and excellent beach access. Best value on the iconic strip.'},
+  {id:'h76',name:'Ocean Five Hotel',cat:'Boutique · Adults Only · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1530099486328-e021101a494a?w=600&q=80',
+   price:'From $120/night',addr:'436 Ocean Dr, South Beach',
+   link:'https://www.oceanfivehotel.com',
+   desc:'Intimate adults-only boutique on quiet south end of Ocean Drive near South Pointe Park. Great value with personal service.'},
+  /* ── NORTH MIAMI & LITTLE HAITI ── */
+  {id:'h77',name:'AC Hotel Miami Wynwood',cat:'Lifestyle · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   price:'From $160/night',addr:'2912 NW 2nd Ave, Wynwood',
+   link:'https://www.marriott.com/en-us/hotels/miaww-ac-hotel-miami-wynwood/overview/',
+   desc:'Sleek European-design hotel in the heart of Wynwood Art District. Rooftop pool and bar with views of the world-famous murals below.'},
+  {id:'h78',name:'Hilton Garden Inn Miami Brickell',cat:'Business · Value · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   price:'From $140/night',addr:'45 SW 9th St, Brickell',
+   link:'https://www.hilton.com/en/hotels/miabcgi-hilton-garden-inn-miami-brickell-south/',
+   desc:'Reliable Hilton Garden Inn in Brickell with outdoor pool and good transit access. Ideal for business travelers on a budget.'},
+  {id:'h79',name:'Hampton Inn Miami Brickell Downtown',cat:'Business · Value · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80',
+   price:'From $130/night',addr:'50 SW 12th St, Brickell',
+   link:'https://www.hilton.com/en/hotels/miabrhx-hampton-inn-suites-miami-brickell-downtown/',
+   desc:'Well-rated Hampton Inn steps from Brickell financial district with rooftop pool and continental breakfast included.'},
+  {id:'h80',name:'Courtyard Miami Downtown Brickell',cat:'Business · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   price:'From $130/night',addr:'200 SE 2nd Ave, Downtown',
+   link:'https://www.marriott.com/en-us/hotels/miadm-courtyard-miami-downtown-brickell/overview/',
+   desc:'Central Courtyard by Marriott with outdoor pool, Bistro Bar, and walking distance to Bayfront Park and downtown attractions.'},
+  /* ── IBIS · AIRPORT ── */
+  {id:'h81',name:'Hampton Inn Miami Airport Blue Lagoon',cat:'Airport · Value · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   price:'From $100/night',addr:'5125 NW 36th St, Miami Airport',
+   link:'https://www.hilton.com/en/hotels/miaaphx-hampton-inn-miami-airport-west/',
+   desc:'Affordable and reliable Hampton Inn near MIA with free airport shuttle, outdoor pool and easy highway access to South Beach and Key Biscayne.'},
+  /* ── KEY BISCAYNE / EDGEWATER ── */
+  {id:'h82',name:'Beachcomber Hotel',cat:'Retro · Boutique · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
+   price:'From $130/night',addr:'1340 Collins Ave, South Beach',
+   link:'https://www.beachcombermiami.com',
+   desc:'Retro-cool boutique on Collins Ave with rooftop pool and old-school South Beach charm. Budget-friendly gem with great reviews.'},
+  {id:'h83',name:'Sextant Hotels Miami Beach',cat:'Boutique · Modern · 3',stars:'',
+   img:'https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80',
+   price:'From $120/night',addr:'521 Collins Ave, South Beach',
+   link:'https://www.sextanthotels.com/miami',
+   desc:'Modern boutique on historic Collins Ave steps from South Pointe Park. Clean design, great value and intimate South Beach vibe.'},
+  {id:'h84',name:'Stanton South Beach',cat:'Boutique · Trendy · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   price:'From $200/night',addr:'161 Ocean Dr, South Beach',
+   link:'https://www.stantonhotel.com',
+   desc:'Boutique South Beach hotel on quiet south end of Ocean Drive with rooftop pool, gym and steps from South Pointe Park and pier.'},
+  {id:'h85',name:'Nautilus South Beach',cat:'Design · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   price:'From $200/night',addr:'1825 Collins Ave, South Beach',
+   link:'https://www.nautilushotel.com',
+   desc:'1950s Morris Lapidus landmark reimagined as a design-forward hotel. Iconic architecture, pool club and steps from Lincoln Road.'},
+  {id:'h86',name:'Hotel 81 South Beach',cat:'Micro · Budget · 2',stars:'',
+   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   price:'From $80/night',addr:'2201 Park Ave, South Beach',
+   link:'https://www.hotel81southbeach.com',
+   desc:'Affordable micro-hotel in South Beach with compact but well-designed rooms. Best budget option steps from Lincoln Road Mall.'},
+  {id:'h87',name:'Cadillac Hotel & Beach Club',cat:'Historic · Art Deco · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   price:'From $220/night',addr:'3925 Collins Ave, Mid-Beach',
+   link:'https://www.cadillachotelbeachclub.com',
+   desc:'Restored 1940 Art Deco landmark on Mid-Beach with oceanfront pool, private beach access and nightly entertainment.'},
+  {id:'h88',name:'Shelborne South Beach',cat:'Art Deco · Classic · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80',
+   price:'From $200/night',addr:'1801 Collins Ave, South Beach',
+   link:'https://www.shelborne.com',
+   desc:'Landmark 1941 hotel with iconic Art Deco pool and beach access on mid-Collins Ave. Recently renovated by Proper Hospitality.'},
+  {id:'h89',name:'Ritz-Carlton South Beach',cat:'Luxury · Oceanfront · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600&q=80',
+   price:'From $500/night',addr:'1 Lincoln Rd, South Beach',
+   link:'https://www.ritzcarlton.com/en/hotels/miami/south-beach',
+   desc:'Forbes Five-Star on iconic Lincoln Road steps from the ocean. Rooftop pool, La Mer restaurant and the signature Ritz-Carlton level of service.'},
+  {id:'h90',name:'Tides Hotel South Beach',cat:'Luxury · Art Deco · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   price:'From $350/night',addr:'1220 Ocean Dr, South Beach',
+   link:'https://www.tideshotel.com',
+   desc:'All-suite 1936 landmark on Ocean Drive. Each suite has panoramic ocean views — one of the most elegant Art Deco hotels on the strip.'},
+  {id:'h91',name:'Palau Sunset Harbour',cat:'Boutique · Quiet · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   price:'From $180/night',addr:'1500 Bay Rd, Sunset Harbour',
+   link:'https://www.palausunset.com',
+   desc:'Hidden gem boutique in Sunset Harbour neighborhood — walkable to Lincoln Road with bayfront views and Miami\'s coolest local dining scene.'},
+  {id:'h92',name:'The Standard Spa Miami Beach',cat:'Wellness · Spa · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=600&q=80',
+   price:'From $200/night',addr:'40 Island Ave, Miami Beach',
+   link:'https://www.standardhotels.com/miami-beach',
+   desc:'Adults-only island spa retreat with hammam, infinity pool, and bay views. The antidote to Ocean Drive — serene, sexy and therapeutic.'},
+  {id:'h93',name:'Kimpton Angler\'s Hotel',cat:'Boutique · Quiet · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
+   price:'From $200/night',addr:'660 Washington Ave, South Beach',
+   link:'https://www.anglershotel.com',
+   desc:'Award-winning Kimpton boutique with private courtyard pools, gardens and a serene escape from the South Beach buzz.'},
+  {id:'h94',name:'The Ben Hotel West Palm Beach',cat:'Boutique · Waterfront · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   price:'From $200/night',addr:'251 N Narcissus Ave, West Palm Beach',
+   link:'https://www.thebenhotel.com',
+   desc:'Stunning waterfront boutique near Palm Beach — perfect add-on to a Miami trip. Rooftop pool, marina views and easy access to Worth Ave.'},
+  {id:'h95',name:'Hyatt Centric South Beach Miami',cat:'Lifestyle · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   price:'From $200/night',addr:'1600 Collins Ave, South Beach',
+   link:'https://www.hyatt.com/hyatt-centric/en-US/miasc-hyatt-centric-south-beach-miami/overview',
+   desc:'Modern lifestyle hotel at the heart of Collins Ave with rooftop pool and bar. Great location for exploring South Beach.'},
+  {id:'h96',name:'Le Méridien Dania Beach',cat:'Modern · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   price:'From $160/night',addr:'1825 Griffin Rd, Dania Beach',
+   link:'https://www.marriott.com/en-us/hotels/fllmb-le-meridien-dania-beach-at-fort-lauderdale-airport/overview/',
+   desc:'Stylish Le Méridien near Fort Lauderdale Airport — great option for early flights or as base for both Miami and Broward visits.'},
+  {id:'h97',name:'Conrad Fort Lauderdale Beach',cat:'Luxury · Beachfront · 5',stars:'',
+   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   price:'From $300/night',addr:'551 N Fort Lauderdale Beach Blvd, Fort Lauderdale',
+   link:'https://www.hilton.com/en/hotels/fllccci-conrad-fort-lauderdale-beach/',
+   desc:'All-suite oceanfront luxury tower in Fort Lauderdale — excellent alternative to South Beach with full kitchens, pools and beach access.'},
+  {id:'h98',name:'B Ocean Resort Fort Lauderdale',cat:'Beachfront · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   price:'From $180/night',addr:'1140 Seabreeze Blvd, Fort Lauderdale',
+   link:'https://www.bhotelsandresorts.com/b-ocean-resort/',
+   desc:'Beachfront resort on Fort Lauderdale\'s famous strip. Rooftop pool, multiple restaurants and the liveliest beach in South Florida outside of Miami.'},
+  {id:'h99',name:'Pelican Grand Beach Resort',cat:'Beachfront · Family · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   price:'From $200/night',addr:'2000 N Ocean Blvd, Fort Lauderdale',
+   link:'https://www.pelicangrand.com',
+   desc:'Family-friendly oceanfront resort in Fort Lauderdale with lazy river, pools and private beach access. Top-rated for families.'},
+  {id:'h100',name:'Margaritaville Hollywood Beach Resort',cat:'Fun · Beachfront · 4',stars:'',
+   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
+   price:'From $200/night',addr:'1111 N Ocean Dr, Hollywood Beach',
+   link:'https://www.margaritavilleresorts.com/margaritaville-hollywood-beach-resort',
+   desc:'Jimmy Buffett\'s iconic resort right on Hollywood Beach Broadwalk. 5 pools, rooftop LandShark Bar and pure Florida vacation vibes.'},
 ],
 parks:[
   {id:'pk1',name:'Larry & Penny Thompson Park',name_es:'Parque Larry y Penny Thompson',emoji:'',bg:'bg-green',city:'Miami',desc:'The most complete park in Miami-Dade: camping under the stars, an Olympic-size pool, a scenic lake with paddleboats, playgrounds, and sports fields. A true local favorite.',desc_es:'El parque más completo de Miami-Dade: camping bajo las estrellas, piscina olímpica, lago escénico con botes de pedal, juegos infantiles y canchas deportivas. Favorito local.',addr:'12451 SW 184th St, Miami',hrs:'Diario 8AM–6PM',link:'https://www.miamidade.gov/parks/larry-penny.asp'},
@@ -2162,6 +2581,18 @@ nightlife:[
   {id:'n6',name:'Basement Miami',emoji:'',bg:'bg-nd5',desc:'The most creative nightlife concept in Miami: bowling, ice skating, and an underground club all under one roof at 1 Hotel South Beach. The perfect alternative to megaclubs — eclectic music, intimate energy, and always something unexpected.',desc_es:'El concepto de vida nocturna más creativo de Miami: bowling, patinaje sobre hielo y club underground en el 1 Hotel South Beach. La perfecta alternativa a los megaclubs.',addr:'2341 Collins Ave, Miami Beach',vibe:'Underground · Ecléctico · Creativo',hrs:'Mié–Dom 10 PM – 5 AM',link:'https://www.1hotels.com/south-beach/places-to-be/basement'},
   {id:'n7',name:'Do Not Sit on the Furniture',emoji:'',bg:'bg-nd6',desc:'South Beach\'s most beloved underground club — intimate, art-forward, and the beating heart of Miami\'s indie electronic scene. Famous for rare DJ sets, disco, and house music in a small, unpretentious venue where music is always the priority. A true local cult favorite.',desc_es:'El club underground más querido de South Beach: íntimo, artístico y el corazón de la escena electrónica indie de Miami. DJs raros, disco y house en un ambiente pequeño sin pretensiones.',addr:'423 16th St, South Beach',vibe:'Indie Electronic · Disco · House',hrs:'Vie–Dom 10 PM – 5 AM',link:'https://www.donotsitonthefurniture.com'},
   {id:'n8',name:'Wynwood Yard',emoji:'',bg:'bg-nd3',desc:'Wynwood\'s beloved open-air entertainment hub — rotating food trucks, local craft cocktails, and live music in a relaxed outdoor setting. The perfect place to start your Miami night before heading to clubs. Locals come here to eat, drink, and connect.',desc_es:'El querido centro de entretenimiento al aire libre de Wynwood: food trucks rotativos, cócteles artesanales locales y música en vivo. El lugar perfecto para comenzar la noche en Miami.',addr:'56 NW 29th St, Wynwood',vibe:'Indie · Live Music · Foodie · Local',hrs:'Diario 12 PM – 12 AM',link:'https://www.thewynwoodyard.com'},
+  {id:'n9',name:'Club Space',emoji:'',bg:'bg-nd1',desc:'Miami\'s legendary underground techno church — a raw downtown warehouse club open 24/7 with a rooftop terrace and the city\'s most respected sound system. Where global electronic music legends play marathon sets from midnight to Monday morning. A true Miami institution.',desc_es:'La legendaria catedral underground de techno de Miami — club en un almacén del centro, abierto 24/7, con terraza y el mejor sistema de sonido de la ciudad. Leyendas del electrónico tocan maratones hasta el lunes. Una institución.',addr:'34 NE 11th St, Downtown',vibe:'Techno · House · Underground',hrs:'Vie–Dom 11 PM – sin cierre',link:'https://www.clubspace.com'},
+  {id:'n10',name:'Sugar Rooftop Bar',emoji:'',bg:'bg-nd5',desc:'Miami\'s most stunning rooftop cocktail bar — 40 floors above Brickell at the EAST Hotel with panoramic 360° bay and city views. Lush tropical garden, Asian-inspired cocktails and the perfect golden-hour perch. No cover, no attitude — just the city at your feet.',desc_es:'El bar en azotea más impresionante de Miami — 40 pisos sobre Brickell en el EAST Hotel con vistas panorámicas de 360°. Jardín tropical, cócteles asiáticos y el lugar ideal para ver el atardecer sin cover.',addr:'788 Brickell Plaza, Brickell (piso 40)',vibe:'Rooftop · Cocktails · Views · Trendy',hrs:'Lun–Vie 5 PM – 3 AM · Sáb–Dom 2 PM – 3 AM',link:'https://www.easthotels.com/miami/eat-drink/sugar/'},
+  {id:'n11',name:'Hoy Como Ayer',emoji:'',bg:'bg-nd4',desc:'Little Havana\'s beloved live music institution — a Cuban social club where local and international Latin artists perform nightly in an intimate wood-paneled room. Authentic son cubano, timba, trova, and salsa. No tourists, all locals, all music, all soul.',desc_es:'La querida institución musical de Little Havana — club social cubano donde artistas locales e internacionales tocan cada noche. Son cubano, timba, trova y salsa auténticos. Sin turistas, solo locales y alma.',addr:'2212 SW 8th St, Little Havana',vibe:'Son Cubano · Timba · Live Music · Local',hrs:'Jue–Dom 9 PM – 4 AM',link:'https://www.hoycomoayer.us'},
+  {id:'n12',name:'Gramps',emoji:'',bg:'bg-nd6',desc:'Wynwood\'s most beloved neighborhood bar — an artsy indoor-outdoor bar with cold beer, killer cocktails, rotating pop-up DJs and one of Miami\'s most eclectic regular crowds. The anti-club: zero attitude, all fun. Open-air patio, ping pong, and Tuesday karaoke nights.',desc_es:'El bar de barrio más querido de Wynwood — bar artístico indoor-outdoor con cerveza fría, cócteles, DJs rotativos y el ambiente más ecléctico de Miami. El anti-club: cero actitud, puro divertido.',addr:'176 NW 24th St, Wynwood',vibe:'Indie · Eclectic · Low-Key · Locals',hrs:'Lun–Vie 5 PM – 3 AM · Sáb–Dom 2 PM – 3 AM',link:'https://www.gramps.com'},
+  {id:'n13',name:'Rosa Sky Rooftop',emoji:'',bg:'bg-nd5',desc:'Downtown Miami\'s hottest rooftop bar with jaw-dropping views of Biscayne Bay and the city skyline. Latin DJ sets, craft cocktails, and a vibrant crowd. Dinner and bottle service available — the go-to for a lavish night out with a view.',desc_es:'El rooftop más caliente del centro de Miami con vistas impresionantes a la Bahía Biscayne. DJs latinos, cócteles artesanales y ambiente vibrante. Cenas y servicio de botellas disponibles.',addr:'199 SE 2nd Ave, Downtown (piso 11)',vibe:'Rooftop · Latin · Views · Upscale',hrs:'Mar–Dom 6 PM – 2 AM',link:'https://www.rosasky.com'},
+  {id:'n14',name:'Twist South Beach',emoji:'️',bg:'bg-nd6',desc:'South Beach\'s legendary LGBTQ+ institution for 25+ years — six bars and dance floors across two floors with no cover charge ever. Nightly themed nights, drag shows and an incredibly inclusive, welcoming crowd. A Miami Beach icon for the entire community.',desc_es:'La legendaria institución LGBTQ+ de South Beach por más de 25 años — seis barras y pistas en dos pisos sin cover nunca. Noches temáticas nightly, shows de drag y el ambiente más inclusivo de Miami.',addr:'1057 Washington Ave, South Beach',vibe:'LGBTQ+ · Dance · Inclusive · No Cover',hrs:'Diario 1 PM – 5 AM',link:'https://www.twistsobe.com'},
+  {id:'n15',name:'Better Days',emoji:'',bg:'bg-nd3',desc:'Wynwood\'s coolest no-frills bar where the industry crowd goes after their shifts end. Excellent rum cocktails, communal spirit, late hours and zero pretension. One of the last real neighborhood bars in a neighborhood full of tourists. Locals only energy.',desc_es:'El bar más cool de Wynwood sin pretensiones, donde el personal de la industria va después del turno. Cócteles de ron excelentes, espíritu comunitario y sin actitud. Uno de los últimos bares de barrio verdaderos.',addr:'150 NW 24th St, Wynwood',vibe:'No-Frills · Rum · Industry Crowd · Local',hrs:'Lun–Dom 5 PM – 3 AM',link:'https://www.betterdaysmiami.com'},
+  {id:'n16',name:'Palace Bar South Beach',emoji:'',bg:'bg-nd4',desc:'The most vibrant LGBTQ+ bar on Ocean Drive — famous for spectacular weekend drag brunches on the outdoor terrace that stop traffic on Ocean Drive. Iconic performers, bottomless mimosas, and an electric party atmosphere any day of the week.',desc_es:'El bar LGBTQ+ más vibrante de Ocean Drive — famoso por los espectaculares drag brunches del fin de semana en la terraza que detienen el tráfico. Artistas icónicos, mimosas y fiesta todo el día.',addr:'1200 Ocean Dr, South Beach',vibe:'LGBTQ+ · Drag · Brunch · Party',hrs:'Diario 11 AM – 2 AM',link:'https://www.palacesobe.com'},
+  {id:'n17',name:'Kaseya Center – Live Events',emoji:'',bg:'bg-nd1',desc:'Miami\'s premier indoor arena — home to the Miami Heat and the city\'s biggest concerts and events. From Bad Bunny to Beyoncé, every major touring artist plays here. 21,000-seat waterfront arena steps from Biscayne Bay.',desc_es:'El principal escenario cubierto de Miami — hogar del Miami Heat y los conciertos más grandes. De Bad Bunny a Beyoncé, todo artista importante toca aquí. Arena de 21,000 asientos frente a la bahía.',addr:'601 Biscayne Blvd, Downtown',vibe:'Arena · Concerts · Sports · Big Events',hrs:'Según programa de eventos',link:'https://www.kaseya.center'},
+  {id:'n18',name:'Coyo Taco Rooftop – Brickell',emoji:'',bg:'bg-nd3',desc:'Brickell\'s best casual rooftop — tacos and cocktails 12 floors above the city with killer views. Zero attitude, excellent margaritas, and the most relaxed high-rise hangout in Miami. The perfect pre-game or after-dinner drink spot.',desc_es:'El mejor rooftop casual de Brickell — tacos y cócteles a 12 pisos sobre la ciudad con vistas increíbles. Cero actitud, excelentes margaritas y el lugar más relajado en altura de Miami.',addr:'45 SW 9th St, Brickell (rooftop)',vibe:'Casual · Tacos · Cocktails · Views',hrs:'Dom–Jue 11 AM – 2 AM · Vie–Sáb 11 AM – 3 AM',link:'https://www.coyotaco.com'},
+  {id:'n19',name:'Lagniappe',emoji:'',bg:'bg-nd5',desc:'Miami\'s most beloved wine and cheese bar — a rustic Edgewater gem with an incredible selection of natural wines, charcuterie, and live jazz and classical music nightly in a garden setting. The anti-club: intellectual, intimate, and completely unique. A local treasure.',desc_es:'El bar de vinos y quesos más querido de Miami — una joya rústica en Edgewater con vinos naturales, charcutería y jazz y música clásica en vivo cada noche en jardín. El anti-club: intelectual e íntimo.',addr:'3425 NE 2nd Ave, Edgewater',vibe:'Wine · Jazz · Garden · Low-Key',hrs:'Lun–Dom 6 PM – 2 AM',link:'https://www.lagniappehouse.com'},
+  {id:'n20',name:'Bardot',emoji:'',bg:'bg-nd2',desc:'Miami\'s most beautiful underground bar — a stunning 1940s supper club aesthetic in Midtown with exposed brick, chandeliers and a diverse indie music program. Indie rock, electronic, hip-hop and DJ nights in the most gorgeous setting in the city. A true gem.',desc_es:'El bar underground más hermoso de Miami — estética de club de cena de los 40 en Midtown con ladrillo expuesto y candelabros. Programa musical indie ecléctico. La sala más bella de la ciudad.',addr:'3456 N Miami Ave, Midtown',vibe:'Indie · Electronic · Eclectic · Beautiful',hrs:'Mié–Dom 9 PM – 5 AM',link:'https://www.bardotmiami.com'},
 ],
 shopping:[
   {id:'sh1',name:'Aventura Mall',name_es:'Aventura Mall',emoji:'',bg:'bg-blue',badge:'Largest in FL',addr:'19501 Biscayne Blvd, Aventura',hrs:'Mon–Sat 10AM–9PM · Sun 12–7PM',link:'https://www.aventuramall.com'},
@@ -2669,24 +3100,35 @@ function renderPlace(){
 
 
 function renderHotels(){
+  var L = typeof lang !== 'undefined' ? lang : 'en';
   var html='<section class="sec fade" id="sec-hotels">';
   html+=sHdr('hotels');
-  html+='<div class="hotel-grid">';
   var hotelList=zoneFilter(D.hotels);
   if(!hotelList.length){html+=emptyZone();html+='</section>';return html;}
-  hotelList.forEach(function(h){
-    html+='<div class="hotel-card" onclick="openItemModal(D.hotels.find(x=>x.id===\''+h.id+'\'),\'hotel\')">';
-    var hPhoto=sPhoto(h.id)||h.img; html+='<div class="hotel-img" style="background-image:url('+hPhoto+');background-size:cover;background-position:center">';
-    html+='<div class="hotel-stars">'+h.stars+'</div></div>';
-    html+='<div class="hotel-body">';
-    html+='<div class="hotel-cat">'+h.cat+'</div>';
-    html+='<div class="hotel-name">'+h.name+'</div>';
-    html+='<div class="hotel-desc">'+h.desc+'</div>';
-    html+='<div class="hotel-price">'+h.price+'</div>';
-    html+='<div class="hotel-addr"> '+h.addr+'</div>';
-    html+='</div></div>';
-  });
-  html+='</div></section>';
+  function hotelCard(h){
+    var hPhoto=sPhoto(h.id)||h.img;
+    return '<div class="hotel-card" onclick="openItemModal(D.hotels.find(x=>x.id===\''+h.id+'\'),\'hotel\')">'
+      +'<div class="hotel-img" style="background-image:url('+hPhoto+');background-size:cover;background-position:center">'
+      +'<div class="hotel-stars">'+h.stars+'</div></div>'
+      +'<div class="hotel-body">'
+      +'<div class="hotel-cat">'+h.cat+'</div>'
+      +'<div class="hotel-name">'+h.name+'</div>'
+      +'<div class="hotel-desc">'+h.desc+'</div>'
+      +'<div class="hotel-price">'+h.price+'</div>'
+      +'<div class="hotel-addr"> '+h.addr+'</div>'
+      +'</div></div>';
+  }
+  var preview = hotelList.slice(0,6);
+  var rest    = hotelList.slice(6);
+  var totalLbl = L==='es' ? 'Ver todos ('+hotelList.length+') →' : 'See all '+hotelList.length+' hotels →';
+  html+='<div class="hotel-grid" id="hotels-preview">';
+  preview.forEach(function(h){ html+=hotelCard(h); });
+  html+='</div>';
+  html+='<div class="ver-todos-wrap"><button class="ver-todos-btn" id="hotels-toggle-btn" onclick="toggleHotelsGrid()">'+totalLbl+'</button></div>';
+  html+='<div class="hotel-grid" id="hotels-full" style="display:none;margin-top:16px;">';
+  rest.forEach(function(h){ html+=hotelCard(h); });
+  html+='</div>';
+  html+='</section>';
   return html;
 }
 
@@ -2715,68 +3157,55 @@ function renderJune(){
   var seeAll   = L === 'es' ? 'Ver en miami.com →' : 'See all events →';
 
   var imgMap = {
-    'e1':'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&q=80',
-    'e2':'https://images.unsplash.com/photo-1551958219-acbc630f9f28?w=600&q=80',
-    'e3':'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80',
-    'e4':'https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=600&q=80',
-    'e5':'https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=600&q=80',
-    'e6':'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&q=80',
+    /* weekly recurring */
+    'e1':'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=600&q=80',
+    'e3':'https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&q=80',
+    'e4':'https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=600&q=80',
+    'e5':'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
+    'e6':'https://images.unsplash.com/photo-1594638760884-f84e8ca7c6b9?w=600&q=80',
+    /* this week specific */
+    'sports_miami':  'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80',
+    'josh_groban':   'https://images.unsplash.com/photo-1501386761578-eaa54b02d0f6?w=600&q=80',
+    'juvenile':      'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80',
+    'juneteenth':    'https://images.unsplash.com/photo-1556816213-7f8ec1ef9b3b?w=600&q=80',
+    'matt_rife':     'https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=600&q=80',
   };
 
   // Separate local vs national events
   var localTypes = ['Festival','Local'];
-  var localEvents = D.events.filter(function(e){ return e.tags && (e.tags.indexOf('Free')!==-1 || e.tags.indexOf('Local')!==-1 || e.id==='wc_fan' || e.id==='wc_watch' || e.id==='viernes_culturales' || e.id==='wynwood_wc' || e.id==='marlins_giants'); });
+  var localEvents = D.events.filter(function(e){ return e.tags && (e.tags.indexOf('Free')!==-1 || e.tags.indexOf('Local')!==-1); });
   var nationalEvents = D.events.filter(function(e){ return localEvents.indexOf(e)===-1; });
 
   function makeEventCard(e){
     var img = SP[e.id] || imgMap[e.id] || 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80';
     var name = L === 'es' && e.name_es ? e.name_es : e.name;
     var venue = L === 'es' && e.venue_es ? e.venue_es : e.venue;
-    var bgStyle = img ? 'background-size:cover;background-position:center;background-image:url("'+img+'");' : '';
-    var eid = e.id;
-    var card = document.createElement('div');
-    card.className = 'ccard';
-    card.style.cursor = 'pointer';
-    card.onclick = function(){ openItemModal(D.events.find(function(x){return x.id===eid;}),'event'); };
-    card.innerHTML = '<div class="ccard-img" style="'+bgStyle+'position:relative;">'
-      +'<div style="position:absolute;top:8px;left:8px;background:rgba(8,23,46,.75);backdrop-filter:blur(8px);border-radius:8px;padding:4px 8px;text-align:center;">'
-      +'<div style="font-size:.6rem;font-weight:800;color:#FFD166;letter-spacing:.05em;">'+e.day+'</div>'
-      +'<div style="font-size:.55rem;color:rgba(255,255,255,.8);">'+e.mon+'</div>'
+    var desc  = L === 'es' && e.desc_es ? e.desc_es : (e.desc || '');
+    var isFree = e.price && e.price.toLowerCase().indexOf('free') !== -1;
+    var priceColor = isFree ? '#00C9B1' : '#FF4D35';
+    return '<a class="evcard" href="'+e.link+'" target="_blank" rel="noopener" style="text-decoration:none;">'
+      +'<div class="evcard-img" style="background-image:url(\''+img+'\');">'
+      +'<div class="evcard-gradient"></div>'
+      +'<div class="evcard-date-badge">'
+        +'<span class="evcard-day">'+e.day+'</span>'
+        +'<span class="evcard-mon">'+e.mon+'</span>'
       +'</div>'
-      +'<div style="position:absolute;top:8px;right:8px;background:rgba(255,77,53,.9);border-radius:6px;padding:3px 7px;font-size:.58rem;font-weight:700;color:#fff;">'+e.type+'</div>'
+      +'<div class="evcard-type-badge">'+e.type+'</div>'
+      +'<div class="evcard-price-badge" style="color:'+priceColor+'">'+e.price+'</div>'
       +'</div>'
-      +'<div class="ccard-info">'
-      +'<div class="ccard-name">'+name.split(',')[0]+'</div>'
-      +'<div class="ccard-sub">'+venue.split('·')[0].trim()+'</div>'
-      +'<div style="font-size:.7rem;font-weight:700;color:#FF4D35;margin-top:3px;">'+e.price+'</div>'
-      +'</div>';
-    return card.outerHTML;
+      +'<div class="evcard-body">'
+        +'<div class="evcard-title">'+name+'</div>'
+        +'<div class="evcard-venue">📍 '+venue.split('·')[0].trim()+'</div>'
+        +(e.time ? '<div class="evcard-time">🕐 '+e.time+'</div>' : '')
+        +(desc ? '<div class="evcard-desc">'+desc.split('.')[0]+'.</div>' : '')
+      +'</div>'
+      +'</a>';
   }
 
     // Section label
   function sectionLabel(txt, color){ return '<div style="font-size:.68rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:'+color+';padding:12px 16px 6px;">'+txt+'</div>'; }
 
-  var cards = D.events.map(function(e){
-    var img = SP[e.id] || imgMap[e.id] || 'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80';
-    var name = L === 'es' && e.name_es ? e.name_es : e.name;
-    var venue = L === 'es' && e.venue_es ? e.venue_es : e.venue;
-    var dayBadge = e.day;
-    var bgStyle = img ? 'background-image:url(\''+img+'\');background-size:cover;background-position:center;' : '';
-
-    return '<div class="ccard" onclick="openItemModal(D.events.find(function(x){return x.id===\''+e.id+'\'}),\'event\')" style="cursor:pointer;">'+
-      '<div class="ccard-img" style="'+bgStyle+'position:relative;">'+
-      '<div style="position:absolute;top:8px;left:8px;background:rgba(8,23,46,.75);backdrop-filter:blur(8px);border-radius:8px;padding:4px 8px;text-align:center;">'+
-      '<div style="font-size:.6rem;font-weight:800;color:#FFD166;letter-spacing:.05em;">'+dayBadge+'</div>'+
-      '<div style="font-size:.55rem;color:rgba(255,255,255,.8);">'+e.mon+'</div>'+
-      '</div>'+
-      '<div style="position:absolute;top:8px;right:8px;background:rgba(255,77,53,.9);border-radius:6px;padding:3px 7px;font-size:.58rem;font-weight:700;color:#fff;">'+e.type+'</div>'+
-      '</div>'+
-      '<div class="ccard-info">'+
-      '<div class="ccard-name">'+name.split(',')[0]+'</div>'+
-      '<div class="ccard-sub">'+venue.split('·')[0].trim()+'</div>'+
-      '<div style="font-size:.7rem;font-weight:700;color:#FF4D35;margin-top:3px;">'+e.price+'</div>'+
-      '</div></div>';
-  }).join('');
+  /* cards var removed – sections use makeEventCard directly */
 
   var verTodos = '<div class="ver-todos-wrap"><button class="ver-todos-btn" onclick="toggleFullGrid(\'june-full\',\'june-hrow\',this)">'+
     (L==='es'?'Ver todos':'See all')+' ('+D.events.length+') →</button></div>';
@@ -2796,11 +3225,14 @@ function renderJune(){
 
   var nationalCards = nationalEvents.map(makeEventCard).join('');
   var localCards = localEvents.map(makeEventCard).join('');
+  var seeAllUrl = 'https://www.miamiandbeaches.com/events';
+  var seeAllLabel = L === 'es' ? 'Ver todos →' : 'See all events →';
 
   return '<section class="sec fade" id="sec-june">'+
-    '<div class="sec-hd"><div class="sec-tt"><small>'+subtitle+'</small>'+title+'</div></div>'+
-    (nationalCards ? sectionLabel(L==='es'?'NACIONALES & INTERNACIONALES':'NATIONAL & INTERNATIONAL','#FF4D35')+'<div class="h-row">'+nationalCards+'</div>' : '')+
-    (localCards ? sectionLabel(L==='es'?'EVENTOS LOCALES':'LOCAL EVENTS','#00C9B1')+'<div class="h-row">'+localCards+'</div>' : '')+
+    '<div class="sec-hd"><div class="sec-tt"><small>'+subtitle+'</small>'+title+'</div>'+
+    '<a class="see-all" href="'+seeAllUrl+'" target="_blank" rel="noopener">'+seeAllLabel+'</a></div>'+
+    (nationalCards ? sectionLabel(L==='es'?'NACIONALES & INTERNACIONALES':'NATIONAL & INTERNATIONAL','#FF4D35')+'<div class="h-row ev-row">'+nationalCards+'</div>' : '')+
+    (localCards ? sectionLabel(L==='es'?'EVENTOS LOCALES':'LOCAL EVENTS','#00C9B1')+'<div class="h-row ev-row">'+localCards+'</div>' : '')+
     '</section>';
 }
 
@@ -2810,37 +3242,71 @@ function renderEvents(){
   var sub = L === 'es' ? 'Eventos anuales imperdibles' : 'Annual events you cannot miss';
 
   var annualEvents = [
-    {month:'JAN',name:'Art Deco Weekend',name_es:'Art Deco Weekend',venue:'Ocean Drive · South Beach',desc:'Free festival celebrating Miami Beach Art Deco architecture. Tours, live music, vintage cars on Ocean Drive.',desc_es:'Festival gratuito celebrando la arquitectura Art Deco de Miami Beach.',link:'https://www.mdpl.org/art-deco-weekend/'},
-    {month:'FEB',name:'South Beach Wine & Food Festival',name_es:'Festival de Vino y Gastronomía',venue:'South Beach',desc:'World-class chefs, celebrity tastings, and oceanside grand events. One of the top food festivals in the US.',desc_es:'Chefs de clase mundial, catas de celebridades y eventos junto al océano.',link:'https://sobewff.org'},
-    {month:'MAR',name:'Calle Ocho Music Festival',name_es:'Festival de la Calle Ocho',venue:'Calle Ocho · Little Havana',desc:'The largest Hispanic street festival in the US. 23 blocks of live music, food, and Cuban culture. Free.',desc_es:'El festival callejero hispano más grande de EE.UU. 23 cuadras de música en vivo, comida y cultura cubana. Gratis.',link:'https://carnavalmiami.com'},
-    {month:'MAR',name:'Miami Open Tennis',name_es:'Miami Open de Tenis',venue:'Hard Rock Stadium · Miami Gardens',desc:'One of the top tennis tournaments in the world. Roger Federer, Serena Williams, Rafa Nadal — all play here.',desc_es:'Uno de los torneos de tenis más importantes del mundo.',link:'https://www.miamiopen.com'},
-    {month:'MAR',name:'Ultra Music Festival',name_es:'Ultra Music Festival',venue:'Bayfront Park · Downtown Miami',desc:'The world-famous EDM festival that takes over Bayfront Park for three days. Global DJ headliners.',desc_es:'El famoso festival de música electrónica que toma Bayfront Park durante tres días.',link:'https://ultramusicfestival.com'},
-    {month:'APR',name:'Miami Beach Pride',name_es:'Miami Beach Pride',venue:'Ocean Drive · South Beach',desc:'Vibrant weekend festival and parade on Ocean Drive celebrating the LGBTQ+ community.',desc_es:'Festival y desfile vibrante en Ocean Drive celebrando la comunidad LGBTQ+.',link:'https://www.miamibeachpride.com'},
-    {month:'MAY',name:'Cuba Nostalgia',name_es:'Cuba Nostalgia',venue:'Miami Airport Convention Center',desc:'The largest Cuban cultural event in the world outside Cuba. Music, art, food, history. A must for Cuban heritage.',desc_es:'El evento cultural cubano más grande del mundo fuera de Cuba. Música, arte, comida, historia.',link:'https://www.cubanos.org'},
-    {month:'JUN',name:'FIFA World Cup 2026',name_es:'Copa Mundial FIFA 2026',venue:'Hard Rock Stadium · Miami Gardens',desc:'Miami is a host city for the 2026 FIFA World Cup. Brazil, Colombia, Portugal and more play here.',desc_es:'Miami es ciudad sede del Mundial FIFA 2026. Brasil, Colombia, Portugal y más juegan aquí.',link:'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026'},
-    {month:'AUG',name:'Miami Spice',name_es:'Miami Spice',venue:'Restaurants citywide',desc:'Two months of prix-fixe menus at Miami top restaurants. The best way to try luxury dining at half price.',desc_es:'Dos meses de menús prix-fixe en los mejores restaurantes de Miami. La mejor forma de disfrutar la gastronomía de lujo.',link:'https://www.miamiandbeaches.com/miami-spice'},
-    {month:'SEP',name:'Coconut Grove Arts Festival',name_es:'Festival de Arte de Coconut Grove',venue:'Coconut Grove',desc:'One of the top outdoor art festivals in the US. 360+ artists, live music, local food. Free to attend.',desc_es:'Uno de los mejores festivales de arte al aire libre de EE.UU. 360+ artistas, música en vivo, comida local. Gratis.',link:'https://cgaf.com'},
-    {month:'OCT',name:'III Points Music Festival',name_es:'III Points Music Festival',venue:'Mana Wynwood · Miami',desc:'Miami-born art and music hybrid festival across Wynwood warehouses. Electronic, hip-hop, and live art.',desc_es:'Festival de arte y música nacido en Miami en los almacenes de Wynwood. Electrónica, hip-hop y arte en vivo.',link:'https://iiipoints.com'},
-    {month:'DEC',name:'Art Basel Miami Beach',name_es:'Art Basel Miami Beach',venue:'Miami Beach Convention Center',desc:'The most important contemporary art fair in the Americas. 250+ galleries from 35 countries. Transforms the city.',desc_es:'La feria de arte contemporáneo más importante de las Américas. 250+ galerías de 35 países.',link:'https://www.artbasel.com/miami-beach'},
+    {month:'JAN',name:'Art Deco Weekend',name_es:'Art Deco Weekend',venue:'Ocean Drive · South Beach',type:'Culture',
+     img:'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80',
+     desc:'Free festival celebrating Miami Beach Art Deco architecture. Tours, live music, vintage cars on Ocean Drive.',desc_es:'Festival gratuito celebrando la arquitectura Art Deco de Miami Beach.',link:'https://www.mdpl.org/'},
+    {month:'FEB',name:'South Beach Wine & Food Festival',name_es:'Festival de Vino y Gastronomía',venue:'South Beach',type:'Food',
+     img:'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
+     desc:'World-class chefs, celebrity tastings, and oceanside grand events. One of the top food festivals in the US.',desc_es:'Chefs de clase mundial, catas de celebridades y eventos junto al océano.',link:'https://sobewff.org'},
+    {month:'MAR',name:'Calle Ocho Music Festival',name_es:'Festival de la Calle Ocho',venue:'Calle Ocho · Little Havana',type:'Festival',
+     img:'https://images.unsplash.com/photo-1528495612343-9ca9f4a4de28?w=600&q=80',
+     desc:'The largest Hispanic street festival in the US. 23 blocks of live music, food, and Cuban culture. Free.',desc_es:'El festival callejero hispano más grande de EE.UU. 23 cuadras de música en vivo, comida y cultura cubana. Gratis.',link:'https://carnavalmiami.com'},
+    {month:'MAR',name:'Miami Open Tennis',name_es:'Miami Open de Tenis',venue:'Hard Rock Stadium · Miami Gardens',type:'Sports',
+     img:'https://images.unsplash.com/photo-1529926706528-db9e5010cd8a?w=600&q=80',
+     desc:'One of the top tennis tournaments in the world. Roger Federer, Serena Williams, Rafa Nadal — all play here.',desc_es:'Uno de los torneos de tenis más importantes del mundo.',link:'https://www.miamiopen.com'},
+    {month:'MAR',name:'Ultra Music Festival',name_es:'Ultra Music Festival',venue:'Bayfront Park · Downtown Miami',type:'Concert',
+     img:'https://images.unsplash.com/photo-1501386761578-eaa54b02d0f6?w=600&q=80',
+     desc:'The world-famous EDM festival that takes over Bayfront Park for three days. Global DJ headliners.',desc_es:'El famoso festival de música electrónica que toma Bayfront Park durante tres días.',link:'https://ultramusicfestival.com'},
+    {month:'APR',name:'Miami Beach Pride',name_es:'Miami Beach Pride',venue:'Ocean Drive · South Beach',type:'Festival',
+     img:'https://images.unsplash.com/photo-1567942712661-82b9b407abbf?w=600&q=80',
+     desc:'Vibrant weekend festival and parade on Ocean Drive celebrating the LGBTQ+ community.',desc_es:'Festival y desfile vibrante en Ocean Drive celebrando la comunidad LGBTQ+.',link:'https://www.miamibeachpride.com'},
+    {month:'MAY',name:'Cuba Nostalgia',name_es:'Cuba Nostalgia',venue:'Miami Airport Convention Center',type:'Culture',
+     img:'https://images.unsplash.com/photo-1556816213-7f8ec1ef9b3b?w=600&q=80',
+     desc:'The largest Cuban cultural event in the world outside Cuba. Music, art, food, history. A must for Cuban heritage.',desc_es:'El evento cultural cubano más grande del mundo fuera de Cuba. Música, arte, comida, historia.',link:'https://www.google.com/search?q=Cuba+Nostalgia+festival+Miami'},
+    {month:'JUN',name:'FIFA World Cup 2026',name_es:'Copa Mundial FIFA 2026',venue:'Hard Rock Stadium · Miami Gardens',type:'Sports',
+     img:'https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80',
+     desc:'Miami is a host city for the 2026 FIFA World Cup. Brazil, Colombia, Portugal and more play here.',desc_es:'Miami es ciudad sede del Mundial FIFA 2026. Brasil, Colombia, Portugal y más juegan aquí.',link:'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026'},
+    {month:'AUG',name:'Miami Spice',name_es:'Miami Spice',venue:'Restaurants citywide',type:'Food',
+     img:'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80',
+     desc:'Two months of prix-fixe menus at Miami top restaurants. The best way to try luxury dining at half price.',desc_es:'Dos meses de menús prix-fixe en los mejores restaurantes de Miami. La mejor forma de disfrutar la gastronomía de lujo.',link:'https://www.miamiandbeaches.com/miami-spice'},
+    {month:'SEP',name:'Coconut Grove Arts Festival',name_es:'Festival de Arte de Coconut Grove',venue:'Coconut Grove',type:'Art',
+     img:'https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=600&q=80',
+     desc:'One of the top outdoor art festivals in the US. 360+ artists, live music, local food. Free to attend.',desc_es:'Uno de los mejores festivales de arte al aire libre de EE.UU. 360+ artistas, música en vivo, comida local. Gratis.',link:'https://cgaf.com'},
+    {month:'OCT',name:'III Points Music Festival',name_es:'III Points Music Festival',venue:'Mana Wynwood · Miami',type:'Concert',
+     img:'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80',
+     desc:'Miami-born art and music hybrid festival across Wynwood warehouses. Electronic, hip-hop, and live art.',desc_es:'Festival de arte y música nacido en Miami en los almacenes de Wynwood. Electrónica, hip-hop y arte en vivo.',link:'https://iiipoints.com'},
+    {month:'DEC',name:'Art Basel Miami Beach',name_es:'Art Basel Miami Beach',venue:'Miami Beach Convention Center',type:'Art',
+     img:'https://images.unsplash.com/photo-1594638760884-f84e8ca7c6b9?w=600&q=80',
+     desc:'The most important contemporary art fair in the Americas. 250+ galleries from 35 countries. Transforms the city.',desc_es:'La feria de arte contemporáneo más importante de las Américas. 250+ galerías de 35 países.',link:'https://www.artbasel.com/miami-beach'},
   ];
 
   var cards = annualEvents.map(function(e){
     var name = L === 'es' && e.name_es ? e.name_es : e.name;
     var desc = L === 'es' && e.desc_es ? e.desc_es : e.desc;
-    return '<div class="ccard" style="cursor:pointer;" onclick="window.open(\''+e.link+'\',\'_blank\')">'
-      +'<div class="ccard-img" style="background:linear-gradient(135deg,#08172E,#1a3a5c);display:flex;align-items:center;justify-content:center;position:relative;">'
-      +'<div style="font-size:.7rem;font-weight:900;color:#FFD166;letter-spacing:2px;">'+e.month+'</div>'
+    var isFree = desc && desc.toLowerCase().indexOf('free') !== -1;
+    var priceBadge = isFree
+      ? '<div class="evcard-price-badge" style="color:#00C9B1">Free</div>'
+      : '';
+    return '<a class="evcard" href="'+e.link+'" target="_blank" rel="noopener" style="text-decoration:none;">'
+      +'<div class="evcard-img" style="background-image:url(\''+e.img+'\');">'
+      +'<div class="evcard-gradient"></div>'
+      +'<div class="evcard-date-badge">'
+        +'<span class="evcard-day" style="font-size:.9rem;letter-spacing:1px;">'+e.month+'</span>'
       +'</div>'
-      +'<div class="ccard-info">'
-      +'<div class="ccard-name">'+name+'</div>'
-      +'<div class="ccard-sub">'+e.venue+'</div>'
-      +'<div style="font-size:.68rem;color:#888;margin-top:3px;line-height:1.4;">'+desc.split('.')[0]+'.</div>'
-      +'</div></div>';
+      +(e.type ? '<div class="evcard-type-badge">'+e.type+'</div>' : '')
+      +priceBadge
+      +'</div>'
+      +'<div class="evcard-body">'
+        +'<div class="evcard-title">'+name+'</div>'
+        +'<div class="evcard-venue">📍 '+e.venue+'</div>'
+        +'<div class="evcard-desc">'+desc.split('.')[0]+'.</div>'
+      +'</div></a>';
   }).join('');
 
   return '<section class="sec fade" id="sec-events">'
-    +'<div class="sec-hd"><div class="sec-tt"><small>'+sub+'</small>'+title+'</div></div>'
-    +'<div class="h-row" id="events-hrow">'+cards+'</div>'
+    +'<div class="sec-hd"><div class="sec-tt"><small>'+sub+'</small>'+title+'</div>'
+    +'<a class="see-all" href="https://www.miamiandbeaches.com/events" target="_blank" rel="noopener">'+(L==='es'?'Ver todos →':'See all →')+'</a></div>'
+    +'<div class="h-row ev-row" id="events-hrow">'+cards+'</div>'
     +'</section>';
 }
 
@@ -3094,6 +3560,20 @@ function toggleMore(id, btn){
   } else {
     el.style.display='grid';
     btn.textContent=(L==='es'?'Ver menos':'See less')+' ↑';
+  }
+}
+function toggleHotelsGrid(){
+  var L=typeof lang!=="undefined"?lang:"en";
+  var preview=document.getElementById("hotels-preview");
+  var full=document.getElementById("hotels-full");
+  var btn=document.getElementById("hotels-toggle-btn");
+  var isOpen=full.style.display!=="none";
+  if(isOpen){
+    full.style.display="none";
+    btn.textContent=(L==="es"?"Ver todos ("+window._hotelTotal+") 2192":"See all "+window._hotelTotal+" hotels 2192");
+  } else {
+    full.style.display="grid";
+    btn.textContent=(L==="es"?"Ver menos 2191":"Show less 2191");
   }
 }
 function toggleFullGrid(fullId, hrowId, btn){
