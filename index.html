@@ -974,6 +974,21 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 .hotel-price { font-size: .82rem; font-weight: 700; color: #FF4D35; margin-bottom: 4px; }
 .hotel-addr { font-size: .72rem; color: #999; }
 
+
+/* ══ SPA CARDS ══ */
+
+.maps-btn{display:inline-block;margin-top:6px;font-size:.68rem;font-weight:700;color:#4285F4;background:#f0f4ff;padding:3px 8px;border-radius:8px;text-decoration:none;}
+.maps-btn:hover{background:#e0eaff;}
+/* ══ TRANSPORT CARDS ══ */
+.transport-intro{font-size:.82rem;color:var(--navy);opacity:.7;padding:0 16px 14px;line-height:1.6;font-style:italic;}
+.tcard-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px 16px;}
+.tcard{background:#fff;border-radius:20px;padding:16px;box-shadow:0 4px 18px rgba(8,23,46,.08);display:flex;flex-direction:column;gap:8px;transition:transform .25s cubic-bezier(.34,1.56,.64,1),box-shadow .25s;text-decoration:none;color:inherit;border-top:3px solid var(--coral);}
+.tcard:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(8,23,46,.13);}
+.tcard-icon{font-size:1.6rem;line-height:1;}
+.tcard-title{font-size:.85rem;font-weight:800;color:var(--navy);line-height:1.2;}
+.tcard-desc{font-size:.72rem;color:#555;line-height:1.5;}
+.tcard-tip{font-size:.7rem;color:var(--coral);font-weight:700;background:linear-gradient(135deg,#fff5f3,#fff);padding:6px 9px;border-radius:10px;border-left:3px solid var(--coral);margin-top:2px;}
+
 /* When photo exists, kill the bg gradient so photo shows */
 .vcard-img
 .ccard-img
@@ -1315,6 +1330,10 @@ body{padding-bottom:0;}
   #hotels-preview .hotel-card{min-width:175px;flex:0 0 175px;}
   #hotels-full{grid-template-columns:repeat(2,1fr)!important;overflow-x:visible;}
   .hotel-desc{display:none;}
+  /* Spa mobile */
+  .tcard-grid{grid-template-columns:1fr 1fr!important;gap:10px;padding:0 10px 12px;}
+  .tcard{padding:12px;}
+
   .hotel-img{height:110px!important;}
   /* Beach: single col */
   .beach-grid{grid-template-columns:1fr!important;}
@@ -1480,6 +1499,10 @@ body{padding-bottom:0;}
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.67s"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11"/></svg></div>
         Museums <span class="hm-link-count">8</span>
       </a>
+      <a href="#" onclick="go('sec-transport');toggleHM();return false;" class="hm-link" >
+        <div class="hm-ico-wrap c-teal"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.69s"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        Getting Around
+      </a>
       <a href="#" onclick="go('sec-shop');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.72s"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg></div>
         Shopping <span class="hm-link-count">8</span>
@@ -1629,6 +1652,7 @@ body{padding-bottom:0;}
       <button onclick="go('sec-stad')"    class="hss-cat">&#127967; Stadiums</button>
       <button onclick="go('sec-shop')"    class="hss-cat">&#128717; Shopping</button>
       <button onclick="go('sec-parks')"   class="hss-cat">&#127807; Parks</button>
+      <button onclick="go('sec-transport')" class="hss-cat">&#128663; Getting Around</button>
       <button onclick="go('sec-map')"     class="hss-cat">&#128205; Map</button>
     </div>
   </div>
@@ -1683,87 +1707,7 @@ body{padding-bottom:0;}
     <div class="f-bottom"><span class="f-copy" id="fCopy"></span><span class="f-rights" id="fRights"></span></div>
   </footer>
 </div>
-<script>var SP={b1:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",b2:"https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",b3:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",b4:"https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",b5:"https://images.unsplash.com/photo-1548574505-5e239809cd89?w=600&q=80",b6:"https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80",b7:"https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?w=600&q=80",b8:"https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80",m1:"https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=600&q=80",m2:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",m3:"https://images.unsplash.com/photo-1541535650810-10d26f5c2ab3?w=600&q=80",m4:"https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=600&q=80",m5:"https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=600&q=80",m6:"https://images.unsplash.com/photo-1574182245530-967d9b3831af?w=600&q=80",m7:"https://images.unsplash.com/photo-1576872381149-7847515ce5d8?w=600&q=80",m8:"https://images.unsplash.com/photo-1561059488-916d621c8e8e?w=600&q=80",n1:"https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?w=600&q=80",n2:"https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80",n3:"https://images.unsplash.com/photo-1570127236682-4bf07bd9a71f?w=600&q=80",n4:"https://images.unsplash.com/photo-1545128485-c400e7702796?w=600&q=80",n5:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",n6:"https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80",n7:"https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=600&q=80",n8:"https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&q=80",c1:"https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80",c2:"https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&q=80",c3:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80",c4:"https://images.unsplash.com/photo-1540039155733-5bb30b631f50?w=600&q=80",t1:"https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&q=80",t2:"https://images.unsplash.com/photo-1580809361436-42a7ec0a21d8?w=600&q=80",t3:"https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80",pk1:"https://images.unsplash.com/photo-1518818419601-72c8673f5852?w=600&q=80",pk2:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80",pk3:"https://images.unsplash.com/photo-1542401886-65d6c61db217?w=600&q=80",r1:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",r2:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",r3:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",r4:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",r5:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",c1:"https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80",c2:"https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&q=80",c3:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80",c4:"https://images.unsplash.com/photo-1540039155733-5bb30b631f50?w=600&q=80",c5:"https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80",c6:"https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&q=80",c7:"https://images.unsplash.com/photo-1468818438311-4bab781ab9b9?w=600&q=80",c8:"https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&q=80",t1:"https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&q=80",t2:"https://images.unsplash.com/photo-1580809361436-42a7ec0a21d8?w=600&q=80",t3:"https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80",t4:"https://images.unsplash.com/photo-1576510132736-ea5b5d5e3ba1?w=600&q=80",t5:"https://images.unsplash.com/photo-1594552072238-b8a33785b6cd?w=600&q=80",pl1:"https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80",pl2:"https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&q=80",pl3:"https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=600&q=80",pl4:"https://images.unsplash.com/photo-1414609245224-aea2814fcdde?w=600&q=80",pl5:"https://images.unsplash.com/photo-1601918774946-25832a4be0d6?w=600&q=80",pl6:"https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80",st1:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=600&q=80",st2:"https://images.unsplash.com/photo-1540747913346-19212a4b3993?w=600&q=80",st3:"https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=600&q=80",st4:"https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80",pk1:"https://images.unsplash.com/photo-1518818419601-72c8673f5852?w=600&q=80",pk2:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80",pk3:"https://images.unsplash.com/photo-1542401886-65d6c61db217?w=600&q=80",pk4:"https://images.unsplash.com/photo-1518182170546-07661fd94144?w=600&q=80",pk5:"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&q=80",pl7:"https://images.unsplash.com/photo-1601918774946-25832a4be0d6?w=600&q=80",pl8:"https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80",pl9:"https://images.unsplash.com/photo-1529651737248-dad5e287768e?w=600&q=80",sh1:"https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=600&q=80",sh2:"https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80",pk5:"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&q=80",r01:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",r02:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",r03:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",r04:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",r05:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",r06:"https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80",r07:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80",r08:"https://images.unsplash.com/photo-1484659619207-9165d119dafe?w=600&q=80",r09:"https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80",r10:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80",r11:"https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=600&q=80",r12:"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80",r13:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",r14:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",r15:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80",r16:"https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80",r17:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",r18:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&q=80",r19:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80",r20:"https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&q=80",r21:"https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80",r22:"https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",r23:"https://images.unsplash.com/photo-1561043433-aaf687c4cf04?w=600&q=80",r24:"https://images.unsplash.com/photo-1536338890248-5dc4f8a2c501?w=600&q=80",r25:"https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&q=80",r26:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",r27:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",r28:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",r29:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",r30:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",r31:"https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80",r32:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80",r33:"https://images.unsplash.com/photo-1484659619207-9165d119dafe?w=600&q=80",r34:"https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80",r35:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80",r36:"https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=600&q=80",r37:"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80",r38:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",r39:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",r40:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80",r41:"https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80",r43:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",r44:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&q=80",r45:"https://images.unsplash.com/photo-1604908177453-7462950a8a3b?w=600&q=80",
-/* Cuban */
-r50:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80",
-wc1:"https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80",
-wc2:"https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80",
-wc3:"https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=600&q=80",
-wc4:"https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600&q=80",
-wc_fan:"https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&q=80",
-wc_watch:"https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=600&q=80",
-r51:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",
-r52:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",
-r53:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",
-r54:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80",
-/* Mexican */
-r55:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80",
-r56:"https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=600&q=80",
-r57:"https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=600&q=80",
-r58:"https://images.unsplash.com/photo-1548940740-204726a19be3?w=600&q=80",
-r59:"https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?w=600&q=80",
-r60:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80",
-r61:"https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80",
-r62:"https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=600&q=80",
-/* Seafood */
-r63:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80",
-r64:"https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80",
-r65:"https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=600&q=80",
-r66:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=600&q=80",
-r67:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=80",
-r68:"https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80",
-r69:"https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?w=600&q=80",
-/* Japanese */
-r70:"https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=600&q=80",
-r71:"https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80",
-r72:"https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=80",
-r73:"https://images.unsplash.com/photo-1617196034096-2186592bafad?w=600&q=80",
-r74:"https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=600&q=80",
-r75:"https://images.unsplash.com/photo-1559410545-0bdcd187e0a6?w=600&q=80",
-/* Latin */
-r76:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=80",
-r77:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80",
-r78:"https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80",
-r79:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",
-/* Mediterranean */
-r80:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",
-r81:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80",
-r82:"https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&q=80",
-r83:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80",
-r84:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=600&q=80",
-/* Asian */
-r85:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80",
-r86:"https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80",
-r87:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80",
-r88:"https://images.unsplash.com/photo-1617196034094-f0b1d3b03c1a?w=600&q=80",
-/* Fine Dining */
-r89:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",
-r90:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",
-r91:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
-r92:"https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80",
-r93:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",
-r94:"https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
-/* Key Biscayne */
-rk1:"https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80",
-rk2:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",
-rk3:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",
-rk4:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80",
-rk5:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=600&q=80",
-/* Kendall */
-rn1:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80",
-rn2:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=80",
-rn3:"https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=80",
-rn4:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80",
-rn5:"https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80",
-rn6:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",
-rn7:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80",
-rn8:"https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80",
-rn9:"https://images.unsplash.com/photo-1604908177453-7462950a8a3b?w=600&q=80",
-rn10:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80",
-rn11:"https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80",
-rn12:"https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",
-rn13:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-rn14:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80",pk6:"https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=600&q=80",pk7:"https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=600&q=80",pk8:"https://images.unsplash.com/photo-1564767655658-4e43b9b048b5?w=600&q=80",pk9:"https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=600&q=80",pk10:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80",sh3:"https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80",sh4:"https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=600&q=80",sh5:"https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=600&q=80",s1:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=600&q=80",s2:"https://images.unsplash.com/photo-1540747913346-19212a4b3993?w=600&q=80",s3:"https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=600&q=80",s4:"https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80",s5:"https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600&q=80",s6:"https://images.unsplash.com/photo-1519861531473-9200262188bf?w=600&q=80",sh6:"https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80",sh7:"https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=600&q=80",sh8:"https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&q=80",sh9:"https://images.unsplash.com/photo-1530099486328-e021101a494a?w=600&q=80",h10:"https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",h11:"https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80",h12:"https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=80",h13:"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",h14:"https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80"};
+<script>var SP={b1:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",b2:"https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",b3:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",b4:"https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80",b5:"https://images.unsplash.com/photo-1548574505-5e239809cd89?w=600&q=80",b6:"https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80",b7:"https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?w=600&q=80",b8:"https://images.unsplash.com/photo-1526392060635-9d6019884377?w=600&q=80",m1:"https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=600&q=80",m2:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",m3:"https://images.unsplash.com/photo-1541535650810-10d26f5c2ab3?w=600&q=80",m4:"https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=600&q=80",m5:"https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=600&q=80",m6:"https://images.unsplash.com/photo-1574182245530-967d9b3831af?w=600&q=80",m7:"https://images.unsplash.com/photo-1576872381149-7847515ce5d8?w=600&q=80",m8:"https://images.unsplash.com/photo-1561059488-916d621c8e8e?w=600&q=80",n1:"https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?w=600&q=80",n2:"https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80",n3:"https://images.unsplash.com/photo-1570127236682-4bf07bd9a71f?w=600&q=80",n4:"https://images.unsplash.com/photo-1545128485-c400e7702796?w=600&q=80",n5:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",n6:"https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&q=80",n7:"https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=600&q=80",n8:"https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&q=80",c1:"https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80",c2:"https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&q=80",c3:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80",c4:"https://images.unsplash.com/photo-1540039155733-5bb30b631f50?w=600&q=80",t1:"https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&q=80",t2:"https://images.unsplash.com/photo-1580809361436-42a7ec0a21d8?w=600&q=80",t3:"https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80",pk1:"https://images.unsplash.com/photo-1518818419601-72c8673f5852?w=600&q=80",pk2:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80",pk3:"https://images.unsplash.com/photo-1542401886-65d6c61db217?w=600&q=80",r1:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",r2:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",r3:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",r4:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",r5:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",c1:"https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80",c2:"https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=600&q=80",c3:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600&q=80",c4:"https://images.unsplash.com/photo-1540039155733-5bb30b631f50?w=600&q=80",c5:"https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=600&q=80",c6:"https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=600&q=80",c7:"https://images.unsplash.com/photo-1468818438311-4bab781ab9b9?w=600&q=80",c8:"https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&q=80",t1:"https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&q=80",t2:"https://images.unsplash.com/photo-1580809361436-42a7ec0a21d8?w=600&q=80",t3:"https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&q=80",t4:"https://images.unsplash.com/photo-1576510132736-ea5b5d5e3ba1?w=600&q=80",t5:"https://images.unsplash.com/photo-1594552072238-b8a33785b6cd?w=600&q=80",pl1:"https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=600&q=80",pl2:"https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&q=80",pl3:"https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=600&q=80",pl4:"https://images.unsplash.com/photo-1414609245224-aea2814fcdde?w=600&q=80",pl5:"https://images.unsplash.com/photo-1601918774946-25832a4be0d6?w=600&q=80",pl6:"https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80",st1:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=600&q=80",st2:"https://images.unsplash.com/photo-1540747913346-19212a4b3993?w=600&q=80",st3:"https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=600&q=80",st4:"https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80",pk1:"https://images.unsplash.com/photo-1518818419601-72c8673f5852?w=600&q=80",pk2:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80",pk3:"https://images.unsplash.com/photo-1542401886-65d6c61db217?w=600&q=80",pk4:"https://images.unsplash.com/photo-1518182170546-07661fd94144?w=600&q=80",pk5:"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&q=80",pl7:"https://images.unsplash.com/photo-1601918774946-25832a4be0d6?w=600&q=80",pl8:"https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600&q=80",pl9:"https://images.unsplash.com/photo-1529651737248-dad5e287768e?w=600&q=80",sh1:"https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=600&q=80",sh2:"https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80",pk5:"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&q=80",r01:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",r02:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",r03:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",r04:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",r05:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",r06:"https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80",r07:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80",r08:"https://images.unsplash.com/photo-1484659619207-9165d119dafe?w=600&q=80",r09:"https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80",r10:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80",r11:"https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=600&q=80",r12:"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80",r13:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",r14:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",r15:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80",r16:"https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80",r17:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",r18:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&q=80",r19:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80",r20:"https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=600&q=80",r21:"https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80",r22:"https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80",r23:"https://images.unsplash.com/photo-1561043433-aaf687c4cf04?w=600&q=80",r24:"https://images.unsplash.com/photo-1536338890248-5dc4f8a2c501?w=600&q=80",r25:"https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&q=80",r26:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80",r27:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",r28:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",r29:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80",r30:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",r31:"https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80",r32:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80",r33:"https://images.unsplash.com/photo-1484659619207-9165d119dafe?w=600&q=80",r34:"https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80",r35:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80",r36:"https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=600&q=80",r37:"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80",r38:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80",r39:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80",r40:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80",r41:"https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80",r43:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",r44:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&q=80",r45:"https://images.unsplash.com/photo-1604908177453-7462950a8a3b?w=600&q=80", r50:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80", r51:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80", r52:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80", r53:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80", r54:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80", r55:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80", r56:"https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=600&q=80", r57:"https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=600&q=80", r58:"https://images.unsplash.com/photo-1548940740-204726a19be3?w=600&q=80", r59:"https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?w=600&q=80", r60:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80", r61:"https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80", r62:"https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=600&q=80", /* Seafood */ r63:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80", r64:"https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80", r65:"https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=600&q=80", r66:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=600&q=80", r67:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=80", r68:"https://images.unsplash.com/photo-1559847844-5315695dadae?w=600&q=80", r69:"https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?w=600&q=80", /* Japanese */ r70:"https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=600&q=80", r71:"https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80", r72:"https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=80", r73:"https://images.unsplash.com/photo-1617196034096-2186592bafad?w=600&q=80", r74:"https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=600&q=80", r75:"https://images.unsplash.com/photo-1559410545-0bdcd187e0a6?w=600&q=80", /* Latin */ r76:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=80", r77:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80", r78:"https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80", r79:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80", /* Mediterranean */ r80:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80", r81:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600&q=80", r82:"https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&q=80", r83:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80", r84:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=600&q=80", /* Asian */ r85:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80", r86:"https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80", r87:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80", r88:"https://images.unsplash.com/photo-1617196034094-f0b1d3b03c1a?w=600&q=80", /* Fine Dining */ r89:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80", r90:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80", r91:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80", r92:"https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80", r93:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80", r94:"https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80", /* Key Biscayne */ rk1:"https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80", rk2:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80", rk3:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80", rk4:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80", rk5:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=600&q=80", /* Kendall */ rn1:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80", rn2:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&q=80", rn3:"https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&q=80", rn4:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80", rn5:"https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&q=80", rn6:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80", rn7:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80", rn8:"https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80", rn9:"https://images.unsplash.com/photo-1604908177453-7462950a8a3b?w=600&q=80", rn10:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80", rn11:"https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80", rn12:"https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80", rn13:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", rn14:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=600&q=80",pk6:"https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=600&q=80",pk7:"https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=600&q=80",pk8:"https://images.unsplash.com/photo-1564767655658-4e43b9b048b5?w=600&q=80",pk9:"https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=600&q=80",pk10:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80",sh3:"https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80",sh4:"https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=600&q=80",sh5:"https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=600&q=80",s1:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=600&q=80",s2:"https://images.unsplash.com/photo-1540747913346-19212a4b3993?w=600&q=80",s3:"https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=600&q=80",s4:"https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80",s5:"https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600&q=80",s6:"https://images.unsplash.com/photo-1519861531473-9200262188bf?w=600&q=80",sh6:"https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80",sh7:"https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=600&q=80",sh8:"https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&q=80",sh9:"https://images.unsplash.com/photo-1530099486328-e021101a494a?w=600&q=80",h10:"https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",h11:"https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=600&q=80",h12:"https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600&q=80",h13:"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",h14:"https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80"};
 function sPhoto(id){return SP[id]||"";}
 function sBg(id){var u=sPhoto(id);return u?"background-image:url("+u+");background-size:cover;background-position:center":"";}
 
@@ -1917,6 +1861,19 @@ beaches:[
   {id:'b16',name:'Oleta River Beach',name_es:'Playa Oleta River',emoji:'',bg:'bb2',badge:'Urban Escape',badge_es:'Escape Urbano',desc:'Florida\'s largest urban park hides a small secluded beach on Biscayne Bay with calm bay swimming, kayak and paddleboard rentals through mangrove tunnels, mountain bike trails and a picnic area. The wildest nature close to the city.',desc_es:'El parque urbano más grande de Florida esconde una pequeña playa en la Bahía Biscayne con natación, kayak y paddleboard por túneles de manglares, senderos MTB y picnic. La naturaleza más salvaje cerca de la ciudad.'},
   {id:'b17',name:'Haulover Inlet Beach',name_es:'Playa Haulover Inlet',emoji:'',bg:'bb4',badge:'Fishermen & Surfers',badge_es:'Pesca y Surf',desc:'The north end of Haulover Park where the inlet meets the ocean — popular with local anglers fishing for snook and tarpon, with a small surf break and spectacular views of boats navigating the inlet. Raw and authentic Miami.',desc_es:'El extremo norte de Haulover donde el canal se une al océano. Popular entre pescadores locales y con olas pequeñas. Vistas espectaculares de botes navegando el canal. El Miami más auténtico.'},
 ],
+
+transport:{
+  intro:{en:'Miami is a car-first city — but you have more options than you think. Here\'s how locals get around.',es:'Miami es una ciudad de carros — pero hay más opciones de lo que crees. Así se mueven los locales.'},
+  sections:[
+    {icon:'',title:{en:'Metromover — Free Downtown Loop',es:'Metromover — Gratis en el Centro'},desc:{en:'Miami\'s free automated people-mover loops through Downtown, Brickell and Omni. Connects to Metrorail at Government Center. Perfect for hotel-to-restaurant hops in the urban core. Runs daily 5AM–midnight.',es:'El tren automatizado gratuito de Miami recorre Downtown, Brickell y Omni. Conecta con Metrorail en Government Center. Perfecto para moverte entre hoteles y restaurantes en el centro. Opera diario 5AM–medianoche.'},tip:{en:'Tip: Grab the Miami Trolley app — free electric trolleys cover Brickell, Wynwood, and Coconut Grove.',es:'Tip: Descarga la app Miami Trolley — trolebuses eléctricos gratuitos cubren Brickell, Wynwood y Coconut Grove.'},link:'https://www.miamidade.gov/transit/metromover.asp'},
+    {icon:'',title:{en:'Brightline — Miami to Orlando',es:'Brightline — Miami a Orlando'},desc:{en:'Florida\'s private high-speed train. MiamiCentral station in downtown connects to Fort Lauderdale (30 min), West Palm Beach (1h), and Orlando (3h). Book in advance — fares from $10 to Fort Lauderdale. Free parking at most stations.',es:'El tren privado de alta velocidad de Florida. La estación MiamiCentral conecta con Fort Lauderdale (30 min), West Palm Beach (1h) y Orlando (3h). Reserva con anticipación — tarifas desde $10 a Fort Lauderdale.'},tip:{en:'Tip: Brightline Select class includes free drinks and snacks. Great for a day trip to Palm Beach.',es:'Tip: La clase Brightline Select incluye bebidas y snacks gratis. Excelente para excursión de un día a Palm Beach.'},link:'https://www.gobrightline.com'},
+    {icon:'',title:{en:'Uber & Lyft — The Miami Standard',es:'Uber y Lyft — El Estándar Miami'},desc:{en:'Rideshare is king in Miami. Budget $15–25 for most South Beach to Brickell trips. Surge pricing kicks in after midnight on weekends — plan ahead or walk to a less busy pickup spot. Miami Beach has designated rideshare pickup zones on Washington Ave.',es:'El rideshare es el rey en Miami. Presupuesta $15–25 para viajes de South Beach a Brickell. Los precios suben tras la medianoche los fines de semana — planea con anticipación o camina a una zona menos concurrida.'},tip:{en:'Tip: Airport pickups — use the designated rideshare lot, not the terminal, to avoid $5 surcharge.',es:'Tip: Para el aeropuerto — usa el lote de rideshare designado, no la terminal, para evitar el cargo de $5.'},link:'https://www.uber.com/us/en/cities/miami/'},
+    {icon:'',title:{en:'Citi Bike Miami',es:'Citi Bike Miami'},desc:{en:'200+ docking stations across Miami Beach, Downtown, Wynwood and Brickell. Day pass $25, monthly $30. South Beach is perfectly flat and bike-friendly — ride from South Pointe to Lincoln Road in 15 minutes along the beachfront path.',es:'200+ estaciones de anclaje en Miami Beach, Downtown, Wynwood y Brickell. Pase diario $25, mensual $30. South Beach es plana y perfecta para bici — de South Pointe a Lincoln Road en 15 minutos por el paseo costero.'},tip:{en:'Tip: The Bayside Marketplace to Wynwood ride is one of the most scenic urban rides in Miami.',es:'Tip: El paseo de Bayside Marketplace a Wynwood es uno de los más escénicos de Miami.'},link:'https://citibikemiami.com'},
+    {icon:'',title:{en:'SunPass — Tolls Made Easy',es:'SunPass — Peajes Fáciles'},desc:{en:'Almost every highway in Miami charges tolls. Buy a SunPass transponder at CVS, Walmart or the airport before renting a car — rental company toll fees are outrageously expensive ($15–25/day). The 836 (Dolphin Expressway), 826 (Palmetto) and I-395 all have tolls. Budget $5–15/day for highway driving.',es:'Casi todas las autopistas de Miami cobran peaje. Compra un transponder SunPass en CVS, Walmart o el aeropuerto antes de alquilar un carro — los cargos de la empresa de alquiler son abusivos ($15–25/día). La 836, la 826 y la I-395 tienen peaje. Presupuesta $5–15/día para autopistas.'},tip:{en:'Tip: If you forget a SunPass, use Pay by Plate — you\'ll get a bill by mail, usually cheaper than rental fees.',es:'Tip: Si olvidaste el SunPass, usa Pay by Plate — recibirás una factura por correo, generalmente más barata que los cargos del alquiler.'},link:'https://www.sunpass.com'},
+    {icon:'️',title:{en:'Parking in Miami — What You Need to Know',es:'Estacionamiento en Miami — Lo Que Debes Saber'},desc:{en:'South Beach: park in garages on Collins Ave between 7th–13th St ($1–2/hr). Avoid Ocean Drive — $40+ tickets. Wynwood: lot parking $10–15. Brickell: use the Underline garages or street park on SW 15th Rd. Apps: SpotHero, ParkWhiz and ParkMobile save you 30–50% on garages.',es:'South Beach: estaciona en garages en Collins Ave entre las calles 7–13 ($1–2/hr). Evita Ocean Drive — multas de $40+. Wynwood: lotes de estacionamiento $10–15. Brickell: garages del Underline o calles en SW 15th Rd. Apps: SpotHero, ParkWhiz y ParkMobile ahorran 30–50% en garages.'},tip:{en:'Tip: Many restaurants in Brickell and Wynwood offer free valet — always ask before self-parking.',es:'Tip: Muchos restaurantes en Brickell y Wynwood ofrecen valet gratuito — siempre pregunta antes de estacionar solo.'},link:'https://www.miami.gov/Government/Departments/Parking-Authority'},
+    {icon:'',title:{en:'Traffic Tips — Survive Miami Roads',es:'Consejos de Tráfico — Sobrevive las Carreteras'},desc:{en:'Avoid I-95 northbound 7–9AM and southbound 5–7PM. The Palmetto (826) is chaotic all day. MacArthur Causeway (I-395) to Miami Beach is best — avoid the Julia Tuttle (I-195) during rush hour. Waze is essential. Locals use SW 8th St (Calle Ocho) and 7th Ave to bypass the highways.',es:'Evita la I-95 al norte 7–9AM y al sur 5–7PM. El Palmetto (826) es caótico todo el día. La MacArthur Causeway (I-395) a Miami Beach es la mejor — evita la Julia Tuttle (I-195) en hora pico. Waze es esencial. Los locales usan la SW 8th St y la 7th Ave para evitar las autopistas.'},tip:{en:'Tip: On Art Basel week (December), add 45 minutes to every trip. The entire city gridlocks.',es:'Tip: En la semana de Art Basel (diciembre), agrega 45 minutos a cada viaje. La ciudad colapsa.'},link:'https://fl511.com'},
+  ]
+},
 museums:[
   {id:'m1',name:'Pérez Art Museum Miami',name_es:'Museo de Arte Pérez Miami',emoji:'',bg:'bg-purple',cat:'Art Museum',cat_es:'Museo de Arte',desc:'World-class modern and contemporary art in a breathtaking waterfront building by architects Herzog & de Meuron. The PAMM is Miami\'s cultural crown — rotating exhibitions from Latin American, Caribbean, and global artists. Free admission every 2nd Saturday.',desc_es:'Arte moderno y contemporáneo de clase mundial en un impresionante edificio frente a la bahía. La joya cultural de Miami, con exposiciones de América Latina y el Caribe. Entrada gratis el 2do sábado de cada mes.',addr:'1103 Biscayne Blvd, Downtown',hrs:'10 AM – 6 PM · Closed Tuesdays',tags:['Modern Art','Architecture','Free 2nd Sat'],link:'https://www.pamm.org'},
   {id:'m2',name:'Frost Museum of Science',name_es:'Museo de Ciencias Frost',emoji:'',bg:'bg-blue',cat:'Science Museum',cat_es:'Museo de Ciencias',desc:'A 250,000 sq ft marvel: a 500,000-gallon shark aquarium with a live Gulf Stream reef, a cutting-edge planetarium, and 4 floors of hands-on science. One of the best science museums in the US — kids and adults equally obsessed.',desc_es:'Un prodigio de 23,000 m²: acuario de 1.9M litros con tiburones, arrecife vivo del Golfo, planetario de última generación y 4 pisos de ciencia interactiva. Uno de los mejores museos de ciencias de EE.UU.',addr:'1101 Biscayne Blvd, Downtown',hrs:'9 AM – 6 PM Daily',tags:['Aquarium','Planetarium','Family'],link:'https://www.frostscience.org'},
@@ -2140,7 +2097,7 @@ hotels:[
    desc:'Ultra-chic South Beach icon with private beach oasis, WET pool deck and proximity to Art Basel scene.'},
   /* ── SOUTH BEACH ── */
   {id:'h20',name:'Versace Mansion – Villa Casa Casuarina',cat:'Iconic · Boutique · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&q=80',
    price:'From $1,200/night',addr:'1116 Ocean Dr, South Beach',
    link:'https://www.villacasacasuarina.com',
    desc:'Gianni Versace\'s legendary Ocean Drive mansion turned opulent boutique hotel. Only 10 suites, mosaic pool, and unforgettable baroque interiors.'},
@@ -2150,7 +2107,7 @@ hotels:[
    link:'https://www.nationalhotel.com',
    desc:'Landmark 1939 Art Deco hotel with Miami Beach\'s longest oceanview infinity pool. Adults-only tranquility in the heart of South Beach.'},
   {id:'h22',name:'The Confidante Miami Beach',cat:'Boutique · Mid-Century · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?w=600&q=80',
    price:'From $180/night',addr:'4041 Collins Ave, Miami Beach',
    link:'https://www.theconfidantemiamibeach.com',
    desc:'Striking 1940s Art Deco tower with bohemian interiors, rooftop pool and direct beach access two minutes from the sand.'},
@@ -2160,42 +2117,42 @@ hotels:[
    link:'https://www.esmehotel.com',
    desc:'Eclectic jewel on historic Española Way. Richly decorated rooms, rooftop pool, curated art and one of South Beach\'s most intimate vibes.'},
   {id:'h24',name:'The Balfour Hotel',cat:'Boutique · Luxury · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1506059612708-99d6128a11f8?w=600&q=80',
    price:'From $230/night',addr:'350 Ocean Dr, South Beach',
    link:'https://www.balfourhotelmiami.com',
    desc:'Timeless South Beach luxury on Ocean Drive with custom Italian furnishings, ultracomfortable beds and steps-from-the-beach location.'},
   {id:'h25',name:'Catalina Hotel & Beach Club',cat:'Boutique · Pool Party · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80',
    price:'From $120/night',addr:'1756 Collins Ave, South Beach',
    link:'https://www.catalinahotel.com',
    desc:'Three pools, free shuttles, complimentary happy hour and a legendary South Beach pool scene. Best value boutique on Collins Ave.'},
   {id:'h26',name:'Hotel Breakwater South Beach',cat:'Art Deco · Classic · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1519751138083-f5d4e87f3a02?w=600&q=80',
    price:'From $130/night',addr:'940 Ocean Dr, South Beach',
    link:'https://www.hotelbreakwatersouthbeach.com',
    desc:'Iconic 1939 Art Deco building steps from the sand on Ocean Drive. Rooftop pool and classic South Beach architecture.'},
   {id:'h27',name:'Pelican Hotel',cat:'Design · Quirky · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&q=80',
    price:'From $150/night',addr:'826 Ocean Dr, South Beach',
    link:'https://www.pelicanhotel.com',
    desc:'Each room individually themed with wild vintage decor. Owned by Diesel — the coolest affordable design hotel on Ocean Drive.'},
   {id:'h28',name:'The Julia South Beach',cat:'Adults Only · Art Deco · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1506059612708-99d6128a11f8?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&q=80',
    price:'From $200/night',addr:'1701 James Ave, South Beach',
    link:'https://www.thejuliasouthbeach.com',
    desc:'Sophisticated adults-only boutique in a classic Art Deco building, one block from the beach with original artwork throughout.'},
   {id:'h29',name:'Hotel Victor South Beach',cat:'Design · Luxury · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1567964321-2f3a72021e98?w=600&q=80',
    price:'From $250/night',addr:'1144 Ocean Dr, South Beach',
    link:'https://www.hotelvictorsouthbeach.com',
    desc:'Jacques Garcia-designed oceanfront luxury on Ocean Drive. Plunge pools, private cabanas and a sophisticated European aesthetic.'},
   {id:'h30',name:'The Clevelander South Beach',cat:'Party · Pool · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=600&q=80',
    price:'From $110/night',addr:'1020 Ocean Dr, South Beach',
    link:'https://www.clevelander.com',
    desc:'South Beach\'s legendary party hotel on Ocean Drive. Rooftop pool, swim-up bar, nightly DJs and the original Spirit of Miami Bar.'},
   {id:'h31',name:'Mondrian South Beach',cat:'Design · Waterfront · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
    price:'From $180/night',addr:'1100 West Ave, South Beach',
    link:'https://www.sbe.com/hotels/mondrian/miami-south-beach/',
    desc:'Marcel Wanders-designed hotel on the bay side. Stunning infinity pool overlooking the Miami skyline and Biscayne Bay sunsets.'},
@@ -2205,7 +2162,7 @@ hotels:[
    link:'https://www.sbe.com/hotels/sls/south-beach/',
    desc:'Philippe Starck-designed landmark with Hyde Beach club, Katsuya restaurant and one of South Beach\'s most iconic pool scenes.'},
   {id:'h33',name:'Sagamore Hotel',cat:'Art Hotel · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1506059612708-99d6128a11f8?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80',
    price:'From $200/night',addr:'1671 Collins Ave, South Beach',
    link:'https://www.sagamorehotel.com',
    desc:'South Beach\'s original art hotel with museum-quality contemporary art throughout. The pool is a social scene and gallery in one.'},
@@ -2215,13 +2172,13 @@ hotels:[
    link:'https://www.casasobe.com',
    desc:'Intimate South Beach boutique with 18 rooms, outdoor pool and a warm neighborhood feel away from the Ocean Drive crowds.'},
   {id:'h35',name:'Circa 39 Hotel',cat:'Boutique · Chill · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80',
    price:'From $120/night',addr:'3900 Collins Ave, Mid-Beach',
    link:'https://www.circa39.com',
    desc:'Laid-back Mid-Beach boutique with a local crowd, great pool and beach access. Best escape from the South Beach scene.'},
   /* ── MID-BEACH & NORTH BEACH ── */
   {id:'h36',name:'The Palms Hotel & Spa',cat:'Eco · Zen · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=600&q=80',
    price:'From $200/night',addr:'3025 Collins Ave, Miami Beach',
    link:'https://www.thepalmshotel.com',
    desc:'Tranquil oasis on the beach with lush tropical gardens, award-winning spa and one of Miami Beach\'s most serene pool environments.'},
@@ -2236,40 +2193,40 @@ hotels:[
    link:'https://www.fourseasons.com/surfside/',
    desc:'Historic 1930s Surf Club reimagined as Forbes Five-Star. Thomas Keller restaurant, 1,000 ft of beachfront and Richard Meier architecture.'},
   {id:'h39',name:'UMA House South Beach',cat:'Boutique · Hip · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
    price:'From $130/night',addr:'1671 Washington Ave, South Beach',
    link:'https://www.umahouse.com',
    desc:'Trendy boutique with rooftop terrace and South Beach energy. Local crowd favorite for its social atmosphere and great location.'},
   {id:'h40',name:'Carillon Miami Wellness Resort',cat:'Wellness · Spa · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=80',
    price:'From $290/night',addr:'6801 Collins Ave, Miami Beach',
    link:'https://www.carillonhotel.com',
    desc:'All-suite wellness resort with 70,000 sq ft spa and fitness center on North Beach. The best destination in Miami for health and recovery.'},
   /* ── BAL HARBOUR & SURFSIDE ── */
   {id:'h41',name:'St. Regis Bal Harbour Resort',cat:'Ultra Luxury · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=600&q=80',
    price:'From $700/night',addr:'9703 Collins Ave, Bal Harbour',
    link:'https://www.marriott.com/en-us/hotels/miabr-the-st-regis-bal-harbour-resort/overview/',
    desc:'Forbes Five-Star on Bal Harbour Beach adjacent to Bal Harbour Shops. Luxurious suites with butler service and a magnificent Italian restaurant.'},
   {id:'h42',name:'Sea View Hotel Bal Harbour',cat:'Classic · Beachfront · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=80',
    price:'From $250/night',addr:'9909 Collins Ave, Bal Harbour',
    link:'https://www.seaviewhotelbalharboursuite.com',
    desc:'Italian villa-style boutique one block from Bal Harbour Beach and the famous Bal Harbour Shops. Jacuzzi suites and elegant charm.'},
   /* ── SUNNY ISLES BEACH ── */
   {id:'h43',name:'Turnberry Ocean Club',cat:'Ultra Luxury · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1611892440504-42a792e793ba?w=600&q=80',
    price:'From $900/night',addr:'18501 Collins Ave, Sunny Isles Beach',
    link:'https://www.turnberryoceanclub.com',
    desc:'Soaring 54-story oceanfront tower with 154 ultra-luxury residences, three pools, private beach and world-class dining.'},
   {id:'h44',name:'Marenas Beach Resort',cat:'Condo-Hotel · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80',
    price:'From $200/night',addr:'18683 Collins Ave, Sunny Isles Beach',
    link:'https://www.marenasresort.com',
    desc:'Spacious oceanfront suites with full kitchens, private balconies and direct beach access in Sunny Isles. Perfect for families.'},
   /* ── AVENTURA ── */
   {id:'h45',name:'JW Marriott Miami Turnberry Resort & Spa',cat:'Mega Resort · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1543332164-6e82f355badc?w=600&q=80',
    price:'From $350/night',addr:'19999 W Country Club Dr, Aventura',
    link:'https://www.marriott.com/en-us/hotels/miajt-jw-marriott-miami-turnberry-resort-and-spa/overview/',
    desc:'300-acre resort paradise with 36-hole golf, Tidal Cove waterpark, 5 pools, BOURBON Steak by Michael Mina and a full-service spa.'},
@@ -2279,23 +2236,23 @@ hotels:[
    link:'https://www.hilton.com/en/hotels/fllavhh-hilton-miami-aventura/',
    desc:'Four Diamond hotel with rooftop pool, skyline views and walkable distance to Aventura Mall. Opened 2021 with modern artful design.'},
   {id:'h47',name:'AC Hotel Miami Aventura',cat:'Lifestyle · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=600&q=80',
    price:'From $150/night',addr:'2891 NE 191st St, Aventura',
    link:'https://www.marriott.com/en-us/hotels/miaat-ac-hotel-miami-aventura/overview/',
    desc:'Sleek European-inspired lifestyle hotel steps from Aventura Mall with rooftop bar and modern design-forward rooms.'},
   /* ── BRICKELL & DOWNTOWN ── */
   {id:'h48',name:'SLS LUX Brickell',cat:'Luxury · Urban · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80',
    price:'From $300/night',addr:'801 S Miami Ave, Brickell',
    link:'https://www.sbe.com/hotels/sls/brickell/',
    desc:'Sophisticated Brickell luxury tower with Carna by Dani Garcia, rooftop infinity pool and panoramic bay views from every suite.'},
   {id:'h49',name:'EAST Miami – Brickell City Centre',cat:'Lifestyle · Urban · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1587213811864-c02b686d3d58?w=600&q=80',
    price:'From $280/night',addr:'788 Brickell Plaza, Brickell',
    link:'https://www.easthotels.com/miami',
    desc:'Inside Brickell City Centre with rooftop SUGAR bar and panoramic views. The go-to for urban travelers wanting luxury and walkability.'},
   {id:'h50',name:'JW Marriott Miami',cat:'Business · Luxury · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&q=80',
    price:'From $280/night',addr:'1109 Brickell Ave, Brickell',
    link:'https://www.marriott.com/en-us/hotels/miajw-jw-marriott-miami/overview/',
    desc:'Brickell flagship with rooftop pool, acclaimed Isabelle\'s Grill & Bar and full conference facilities. Premier business hotel in downtown.'},
@@ -2305,257 +2262,257 @@ hotels:[
    link:'https://www.ihg.com/intercontinental/hotels/us/en/miami/miaha/hoteldetail',
    desc:'44-story tower on Biscayne Bay with spectacular water views, the renowned Toro Toro restaurant and prime downtown location.'},
   {id:'h52',name:'Miami Marriott Biscayne Bay',cat:'Waterfront · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80',
    price:'From $180/night',addr:'1633 N Bayshore Dr, Downtown',
    link:'https://www.marriott.com/en-us/hotels/miabb-miami-marriott-biscayne-bay/overview/',
    desc:'Bayfront tower with marina views and outdoor pool. Close to Wynwood and the Design District — ideal base for exploring Miami.'},
   {id:'h53',name:'Hyatt Regency Miami',cat:'Convention · Business · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1506059612708-99d6128a11f8?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
    price:'From $160/night',addr:'400 SE 2nd Ave, Downtown',
    link:'https://www.hyatt.com/hyatt-regency/en-US/miarh-hyatt-regency-miami/overview',
    desc:'Connected to the Miami Convention Center with 615 rooms, riverfront views and the largest hotel ballroom in Miami-Dade.'},
   {id:'h54',name:'Kimpton Epic Hotel',cat:'Waterfront · Boutique · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1535827841776-24afc1e255ac?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80',
    price:'From $250/night',addr:'270 Biscayne Blvd Way, Brickell',
    link:'https://www.epichotel.com',
    desc:'Sleek bayfront Kimpton with rooftop pool and Edge Steak & Bar. Stunning panoramic views from the 16th floor rooftop terrace.'},
   {id:'h55',name:'Hilton Downtown Miami',cat:'Business · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
    price:'From $150/night',addr:'1601 Biscayne Blvd, Downtown',
    link:'https://www.hilton.com/en/hotels/miaddtw-hilton-miami-downtown/',
    desc:'Classic Hilton in the heart of downtown with pool deck and quick access to the Perez Art Museum and Bayside Marketplace.'},
   {id:'h56',name:'Sheraton Miami Downtown',cat:'Business · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80',
    price:'From $160/night',addr:'495 Brickell Ave, Brickell',
    link:'https://www.marriott.com/en-us/hotels/miasd-sheraton-miami-downtown-hotel/overview/',
    desc:'Reliable full-service Sheraton in Brickell with outdoor pool, fitness center and easy Metromover access to all downtown attractions.'},
   {id:'h57',name:'Aloft Miami Brickell',cat:'Lifestyle · Budget Luxury · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1615460549335-2d4a9fbf6e37?w=600&q=80',
    price:'From $130/night',addr:'1001 SW 2nd Ave, Brickell',
    link:'https://www.marriott.com/en-us/hotels/miaak-aloft-miami-brickell/overview/',
    desc:'Modern lifestyle hotel in Brickell with WXYZ Bar, rooftop pool and affordable rates. Perfect for younger travelers exploring the city.'},
   /* ── WYNWOOD & DESIGN DISTRICT ── */
   {id:'h58',name:'The Moore Miami – Design District',cat:'Art · Boutique · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1543161655-1084a9b15339?w=600&q=80',
    price:'From $300/night',addr:'4040 NE 2nd Ave, Design District',
    link:'https://www.themoremiami.com',
    desc:'Miami Design District\'s first boutique hotel — just 13 rooms inside a historic private club with museum-quality art, cocktail lounges and the Elastika restaurant.'},
   {id:'h59',name:'Vagabond Hotel Miami',cat:'Boutique · MiMo · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1564540574859-0dfb63985953?w=600&q=80',
    price:'From $150/night',addr:'7301 Biscayne Blvd, Upper East Side',
    link:'https://www.thevagabondhotel.com',
    desc:'Lovingly restored Miami Modern (MiMo) gem on the Biscayne corridor. Vintage-cool with pool, tropical garden and one of Miami\'s hippest bars.'},
   /* ── COCONUT GROVE ── */
   {id:'h60',name:'Mr. C Miami – Coconut Grove',cat:'Luxury · Boutique · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1561501878-aabd62634533?w=600&q=80',
    price:'From $380/night',addr:'2988 McFarlane Rd, Coconut Grove',
    link:'https://www.mrccoconutgrove.com',
    desc:'European-inspired 5-star boutique in Coconut Grove with panoramic bay views, Bellini\'s restaurant, rooftop pool and Leading Hotels of the World member.'},
   {id:'h61',name:'Mayfair Hotel & Spa Coconut Grove',cat:'Boutique · Unique · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1461896836374-cf382f80b897?w=600&q=80',
    price:'From $180/night',addr:'3000 Florida Ave, Coconut Grove',
    link:'https://www.mayfairhotelandspa.com',
    desc:'Open-air suites with private rooftop jacuzzis in the heart of Coconut Grove. Each suite is uniquely decorated with antiques and original art.'},
   {id:'h62',name:'Mutiny Hotel',cat:'Boutique · Suite · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1596436289041-3b4bdcbb9e49?w=600&q=80',
    price:'From $160/night',addr:'2951 S Bayshore Dr, Coconut Grove',
    link:'https://www.mutinyhotel.com',
    desc:'All-suite boutique on Coconut Grove\'s marina strip. Full kitchens, bayfront views and steps from CocoWalk and top Grove dining.'},
   /* ── CORAL GABLES ── */
   {id:'h63',name:'Hyatt Regency Coral Gables',cat:'Business · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1598977522048-6c2bdb8a8c12?w=600&q=80',
    price:'From $170/night',addr:'50 Alhambra Plaza, Coral Gables',
    link:'https://www.hyatt.com/hyatt-regency/en-US/miamr-hyatt-regency-coral-gables/overview',
    desc:'Mediterranean-style full-service hotel in the heart of Coral Gables\' Miracle Mile. Outdoor pool and ideal base for business travelers.'},
   {id:'h64',name:'Aloft Coral Gables',cat:'Lifestyle · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
    price:'From $130/night',addr:'2590 Salzedo St, Coral Gables',
    link:'https://www.marriott.com/en-us/hotels/miacg-aloft-coral-gables/overview/',
    desc:'Modern and social hotel in the Coral Gables downtown with rooftop pool and lively WXYZ bar. Walkable to Village of Merrick Park.'},
   {id:'h65',name:'Hotel Colonnade Coral Gables',cat:'Historic · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1549294413-26f195200980?w=600&q=80',
    price:'From $180/night',addr:'180 Aragon Ave, Coral Gables',
    link:'https://www.marriott.com/en-us/hotels/miacl-hotel-colonnade-coral-gables-autograph-collection/overview/',
    desc:'Autograph Collection hotel in George Merrick\'s 1926 landmark building. Circular ballroom, Italianate architecture and walkable Miracle Mile.'},
   /* ── KEY BISCAYNE ── */
   {id:'h66',name:'Crandon Park Hotel',cat:'Budget · Beach · 2',stars:'',
-   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1455587734955-081b22074882?w=600&q=80',
    price:'From $90/night',addr:'4000 Crandon Blvd, Key Biscayne',
    link:'https://www.miamidade.gov/parks/crandon.asp',
    desc:'Simple and affordable lodging inside Crandon Park, steps from one of Miami\'s most beautiful beaches. Best budget option on Key Biscayne.'},
   /* ── MIAMI AIRPORT & DORAL ── */
   {id:'h67',name:'Miami Airport Marriott',cat:'Airport · Business · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1569227812436-340c9f2f0a08?w=600&q=80',
    price:'From $150/night',addr:'1201 NW LeJeune Rd, Miami Airport',
    link:'https://www.marriott.com/en-us/hotels/miadt-miami-airport-marriott/overview/',
    desc:'Directly connected to Miami International Airport via covered walkway. Full-service hotel with pool, gym and multiple dining options.'},
   {id:'h68',name:'Miami International Airport Hotel',cat:'Airport · Convenient · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1605538032936-42f7e80b6d1a?w=600&q=80',
    price:'From $120/night',addr:'Concourse E, MIA Airport, Miami',
    link:'https://www.miaairporthotel.com',
    desc:'The only hotel inside Miami International Airport terminal. Perfect for early flights or overnight layovers with no transportation needed.'},
   {id:'h69',name:'Trump National Doral Miami',cat:'Golf Resort · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1506974210756-8e1b8985d348?w=600&q=80',
    price:'From $200/night',addr:'4400 NW 87th Ave, Doral',
    link:'https://www.trumphotels.com/doral',
    desc:'World-famous golf resort with the iconic Blue Monster course, extensive spa and multiple pools. PGA Tour history on 800 manicured acres.'},
   {id:'h70',name:'Doral Marriott',cat:'Golf · Resort · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1602002108533-bc20f5a3e74a?w=600&q=80',
    price:'From $160/night',addr:'1000 NW 87th Ave, Doral',
    link:'https://www.marriott.com/en-us/hotels/miadl-doral-marriott/overview/',
    desc:'Full-service resort in suburban Doral with golf, pool and easy access to both Miami International Airport and Dolphin Mall.'},
   /* ── HOMESTEAD & SOUTH MIAMI ── */
   {id:'h71',name:'Autograph Collection – Homewood Homestead',cat:'Budget · Comfortable · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=600&q=80',
    price:'From $100/night',addr:'2750 NE 1st Ave, Homestead',
    link:'https://www.marriott.com/en-us/hotels/miahe-homewood-suites-by-hilton-homestead-miami-south/overview/',
    desc:'Extended-stay suites near Everglades National Park and Florida Keys. Kitchen-equipped rooms ideal for multi-day Everglades and Keys trips.'},
   /* ── BUDGET & VALUE SOUTH BEACH ── */
   {id:'h72',name:'The Local House South Beach',cat:'Boutique · Social · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1468774871041-fc64dd4b5a4e?w=600&q=80',
    price:'From $110/night',addr:'435 20th St, South Beach',
    link:'https://www.thelocalhousehotel.com',
    desc:'Charming neighborhood boutique beloved by locals. Great service, rooftop pool, social common spaces and walking distance to Lincoln Road.'},
   {id:'h73',name:'Hotel Trouvail',cat:'Boutique · Artsy · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1444201983204-c43324c87f58?w=600&q=80',
    price:'From $120/night',addr:'630 Ocean Dr, South Beach',
    link:'https://www.hoteltrouvail.com',
    desc:'Charming boutique on Ocean Drive steps from the beach. Well-designed rooms, great service and affordable rates for the location.'},
   {id:'h74',name:'Crest Hotel Suites',cat:'Budget · Suite · 2',stars:'',
-   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1598966739654-5bbdb26c1d78?w=600&q=80',
    price:'From $90/night',addr:'1670 James Ave, South Beach',
    link:'https://www.cresthotelsuites.com',
    desc:'Affordable all-suite hotel with kitchenettes and small pool in South Beach. Best budget option for extended stays near the beach.'},
   {id:'h75',name:'Winter Haven Hotel',cat:'Art Deco · Budget · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1562778612-e1e0cda9915c?w=600&q=80',
    price:'From $100/night',addr:'1400 Ocean Dr, South Beach',
    link:'https://www.winterhavenmiami.com',
    desc:'Classic 1939 Art Deco hotel on Ocean Drive with rooftop pool and excellent beach access. Best value on the iconic strip.'},
   {id:'h76',name:'Ocean Five Hotel',cat:'Boutique · Adults Only · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1530099486328-e021101a494a?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1505855265981-d52719d1f64e?w=600&q=80',
    price:'From $120/night',addr:'436 Ocean Dr, South Beach',
    link:'https://www.oceanfivehotel.com',
    desc:'Intimate adults-only boutique on quiet south end of Ocean Drive near South Pointe Park. Great value with personal service.'},
   /* ── NORTH MIAMI & LITTLE HAITI ── */
   {id:'h77',name:'AC Hotel Miami Wynwood',cat:'Lifestyle · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1555529771-122aeab5b6f6?w=600&q=80',
    price:'From $160/night',addr:'2912 NW 2nd Ave, Wynwood',
    link:'https://www.marriott.com/en-us/hotels/miaww-ac-hotel-miami-wynwood/overview/',
    desc:'Sleek European-design hotel in the heart of Wynwood Art District. Rooftop pool and bar with views of the world-famous murals below.'},
   {id:'h78',name:'Hilton Garden Inn Miami Brickell',cat:'Business · Value · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1541804106459-b60c44b640b0?w=600&q=80',
    price:'From $140/night',addr:'45 SW 9th St, Brickell',
    link:'https://www.hilton.com/en/hotels/miabcgi-hilton-garden-inn-miami-brickell-south/',
    desc:'Reliable Hilton Garden Inn in Brickell with outdoor pool and good transit access. Ideal for business travelers on a budget.'},
   {id:'h79',name:'Hampton Inn Miami Brickell Downtown',cat:'Business · Value · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1582719508476-9d7b3bb0e6c8?w=600&q=80',
    price:'From $130/night',addr:'50 SW 12th St, Brickell',
    link:'https://www.hilton.com/en/hotels/miabrhx-hampton-inn-suites-miami-brickell-downtown/',
    desc:'Well-rated Hampton Inn steps from Brickell financial district with rooftop pool and continental breakfast included.'},
   {id:'h80',name:'Courtyard Miami Downtown Brickell',cat:'Business · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=600&q=80',
    price:'From $130/night',addr:'200 SE 2nd Ave, Downtown',
    link:'https://www.marriott.com/en-us/hotels/miadm-courtyard-miami-downtown-brickell/overview/',
    desc:'Central Courtyard by Marriott with outdoor pool, Bistro Bar, and walking distance to Bayfront Park and downtown attractions.'},
   /* ── IBIS · AIRPORT ── */
   {id:'h81',name:'Hampton Inn Miami Airport Blue Lagoon',cat:'Airport · Value · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1605379399844-bfedda3a73b5?w=600&q=80',
    price:'From $100/night',addr:'5125 NW 36th St, Miami Airport',
    link:'https://www.hilton.com/en/hotels/miaaphx-hampton-inn-miami-airport-west/',
    desc:'Affordable and reliable Hampton Inn near MIA with free airport shuttle, outdoor pool and easy highway access to South Beach and Key Biscayne.'},
   /* ── KEY BISCAYNE / EDGEWATER ── */
   {id:'h82',name:'Beachcomber Hotel',cat:'Retro · Boutique · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1529619768328-484d4f2ef4d3?w=600&q=80',
    price:'From $130/night',addr:'1340 Collins Ave, South Beach',
    link:'https://www.beachcombermiami.com',
    desc:'Retro-cool boutique on Collins Ave with rooftop pool and old-school South Beach charm. Budget-friendly gem with great reviews.'},
   {id:'h83',name:'Sextant Hotels Miami Beach',cat:'Boutique · Modern · 3',stars:'',
-   img:'https://images.unsplash.com/photo-1462536943532-57a629f6cc60?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1618245318763-462413e36d33?w=600&q=80',
    price:'From $120/night',addr:'521 Collins Ave, South Beach',
    link:'https://www.sextanthotels.com/miami',
    desc:'Modern boutique on historic Collins Ave steps from South Pointe Park. Clean design, great value and intimate South Beach vibe.'},
   {id:'h84',name:'Stanton South Beach',cat:'Boutique · Trendy · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1578645510-c7b6e3de4cf3?w=600&q=80',
    price:'From $200/night',addr:'161 Ocean Dr, South Beach',
    link:'https://www.stantonhotel.com',
    desc:'Boutique South Beach hotel on quiet south end of Ocean Drive with rooftop pool, gym and steps from South Pointe Park and pier.'},
   {id:'h85',name:'Nautilus South Beach',cat:'Design · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1616046229478-9328a5c7e912?w=600&q=80',
    price:'From $200/night',addr:'1825 Collins Ave, South Beach',
    link:'https://www.nautilushotel.com',
    desc:'1950s Morris Lapidus landmark reimagined as a design-forward hotel. Iconic architecture, pool club and steps from Lincoln Road.'},
   {id:'h86',name:'Hotel 81 South Beach',cat:'Micro · Budget · 2',stars:'',
-   img:'https://images.unsplash.com/photo-1503174971373-b1f69850bded?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=80',
    price:'From $80/night',addr:'2201 Park Ave, South Beach',
    link:'https://www.hotel81southbeach.com',
    desc:'Affordable micro-hotel in South Beach with compact but well-designed rooms. Best budget option steps from Lincoln Road Mall.'},
   {id:'h87',name:'Cadillac Hotel & Beach Club',cat:'Historic · Art Deco · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80',
    price:'From $220/night',addr:'3925 Collins Ave, Mid-Beach',
    link:'https://www.cadillachotelbeachclub.com',
    desc:'Restored 1940 Art Deco landmark on Mid-Beach with oceanfront pool, private beach access and nightly entertainment.'},
   {id:'h88',name:'Shelborne South Beach',cat:'Art Deco · Classic · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600&q=80',
    price:'From $200/night',addr:'1801 Collins Ave, South Beach',
    link:'https://www.shelborne.com',
    desc:'Landmark 1941 hotel with iconic Art Deco pool and beach access on mid-Collins Ave. Recently renovated by Proper Hospitality.'},
   {id:'h89',name:'Ritz-Carlton South Beach',cat:'Luxury · Oceanfront · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1560200353-ce0a76b1d438?w=600&q=80',
    price:'From $500/night',addr:'1 Lincoln Rd, South Beach',
    link:'https://www.ritzcarlton.com/en/hotels/miami/south-beach',
    desc:'Forbes Five-Star on iconic Lincoln Road steps from the ocean. Rooftop pool, La Mer restaurant and the signature Ritz-Carlton level of service.'},
   {id:'h90',name:'Tides Hotel South Beach',cat:'Luxury · Art Deco · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1578774296842-a59bb08beb0e?w=600&q=80',
    price:'From $350/night',addr:'1220 Ocean Dr, South Beach',
    link:'https://www.tideshotel.com',
    desc:'All-suite 1936 landmark on Ocean Drive. Each suite has panoramic ocean views — one of the most elegant Art Deco hotels on the strip.'},
   {id:'h91',name:'Palau Sunset Harbour',cat:'Boutique · Quiet · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1594653836789-8f1b41c49bfe?w=600&q=80',
    price:'From $180/night',addr:'1500 Bay Rd, Sunset Harbour',
    link:'https://www.palausunset.com',
    desc:'Hidden gem boutique in Sunset Harbour neighborhood — walkable to Lincoln Road with bayfront views and Miami\'s coolest local dining scene.'},
   {id:'h92',name:'The Standard Spa Miami Beach',cat:'Wellness · Spa · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1548690312-93d3f13a8e91?w=600&q=80',
    price:'From $200/night',addr:'40 Island Ave, Miami Beach',
    link:'https://www.standardhotels.com/miami-beach',
    desc:'Adults-only island spa retreat with hammam, infinity pool, and bay views. The antidote to Ocean Drive — serene, sexy and therapeutic.'},
   {id:'h93',name:'Kimpton Angler\'s Hotel',cat:'Boutique · Quiet · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&q=80',
    price:'From $200/night',addr:'660 Washington Ave, South Beach',
    link:'https://www.anglershotel.com',
    desc:'Award-winning Kimpton boutique with private courtyard pools, gardens and a serene escape from the South Beach buzz.'},
   {id:'h94',name:'The Ben Hotel West Palm Beach',cat:'Boutique · Waterfront · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1564238058-4e87b07e3a0b?w=600&q=80',
    price:'From $200/night',addr:'251 N Narcissus Ave, West Palm Beach',
    link:'https://www.thebenhotel.com',
    desc:'Stunning waterfront boutique near Palm Beach — perfect add-on to a Miami trip. Rooftop pool, marina views and easy access to Worth Ave.'},
   {id:'h95',name:'Hyatt Centric South Beach Miami',cat:'Lifestyle · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1529290130-4ca3753253ae?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1568495248636-0f95536d31e7?w=600&q=80',
    price:'From $200/night',addr:'1600 Collins Ave, South Beach',
    link:'https://www.hyatt.com/hyatt-centric/en-US/miasc-hyatt-centric-south-beach-miami/overview',
    desc:'Modern lifestyle hotel at the heart of Collins Ave with rooftop pool and bar. Great location for exploring South Beach.'},
   {id:'h96',name:'Le Méridien Dania Beach',cat:'Modern · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1561360052-a5e85b2a8232?w=600&q=80',
    price:'From $160/night',addr:'1825 Griffin Rd, Dania Beach',
    link:'https://www.marriott.com/en-us/hotels/fllmb-le-meridien-dania-beach-at-fort-lauderdale-airport/overview/',
    desc:'Stylish Le Méridien near Fort Lauderdale Airport — great option for early flights or as base for both Miami and Broward visits.'},
   {id:'h97',name:'Conrad Fort Lauderdale Beach',cat:'Luxury · Beachfront · 5',stars:'',
-   img:'https://images.unsplash.com/photo-1540541338537-1220059ec600?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80',
    price:'From $300/night',addr:'551 N Fort Lauderdale Beach Blvd, Fort Lauderdale',
    link:'https://www.hilton.com/en/hotels/fllccci-conrad-fort-lauderdale-beach/',
    desc:'All-suite oceanfront luxury tower in Fort Lauderdale — excellent alternative to South Beach with full kitchens, pools and beach access.'},
   {id:'h98',name:'B Ocean Resort Fort Lauderdale',cat:'Beachfront · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1502636995-5d9fc57800a8?w=600&q=80',
    price:'From $180/night',addr:'1140 Seabreeze Blvd, Fort Lauderdale',
    link:'https://www.bhotelsandresorts.com/b-ocean-resort/',
    desc:'Beachfront resort on Fort Lauderdale\'s famous strip. Rooftop pool, multiple restaurants and the liveliest beach in South Florida outside of Miami.'},
   {id:'h99',name:'Pelican Grand Beach Resort',cat:'Beachfront · Family · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1521747116042-5a810fda9664?w=600&q=80',
    price:'From $200/night',addr:'2000 N Ocean Blvd, Fort Lauderdale',
    link:'https://www.pelicangrand.com',
    desc:'Family-friendly oceanfront resort in Fort Lauderdale with lazy river, pools and private beach access. Top-rated for families.'},
   {id:'h100',name:'Margaritaville Hollywood Beach Resort',cat:'Fun · Beachfront · 4',stars:'',
-   img:'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?w=600&q=80',
+   img:'https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?w=600&q=80',
    price:'From $200/night',addr:'1111 N Ocean Dr, Hollywood Beach',
    link:'https://www.margaritavilleresorts.com/margaritaville-hollywood-beach-resort',
    desc:'Jimmy Buffett\'s iconic resort right on Hollywood Beach Broadwalk. 5 pools, rooftop LandShark Bar and pure Florida vacation vibes.'},
@@ -2611,14 +2568,14 @@ let lang='en', activeFlt='all';
 const TX={
 en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic&nbsp;City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'108',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'6',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
 nav:[{label:'Discover',items:[{icon:'',lbl:'Map',cnt:'',id:'sec-map'},{icon:'',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'',lbl:'Places',cnt:'8',id:'sec-place'}]},{label:'Entertainment',items:[{icon:'',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'',lbl:'Stadiums',cnt:'6',id:'sec-stad'}]},{label:'Going Out',items:[{icon:'',lbl:'Events',cnt:'10',id:'sec-events'},{icon:'',lbl:'Nightlife',cnt:'8',id:'sec-night'},{icon:'',lbl:'Parks',cnt:'10',id:'sec-parks'}]},{label:'Explore More',items:[{icon:'️',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'️',lbl:'Shopping',cnt:'8',id:'sec-shop'}]}],
-tt:{rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],shop:['Best Malls','Shopping Centers'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['Recurring','Events Calendar'],night:['After Dark','Nightlife'],hotels:['Where to Stay','Best Hotels in Miami'],parks:['Nature','Parks']},
+tt:{rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],shop:['Best Malls','Shopping Centers'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['Recurring','Events Calendar'],night:['After Dark','Nightlife'],hotels:['Where to Stay','Best Hotels in Miami'],parks:['Nature','Parks'],transport:['Getting Around','Transportation Guide']},
 sa:'See all →',rf:['All',' Cuban',' Seafood',' Mexican',' Japanese',' Mediterranean','️ Latin',' Italian',' American',' Fine Dining'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining'],
 fTag:'The Magic City, curated for you.',fDevLbl:'Developed by',fEx:'Explore',fCo:'Company',fLinks1:['Restaurants','Beaches','Museums','Theaters','Stadiums'],fLinks2:['About','Contact','Privacy Policy','Submit a Place','For Business'],fCopy:'© 2026 Miami Magic · Y & Y Entertainment Corp',fRights:'All Rights Reserved',
 mEye:' Business Model',mH2:'How to Make <em>Money</em> with Miami Magic',mSub:'A complete guide to turning this app into a real, scalable business.',revT:'Realistic Revenue Projection (per month)',rmT:'Step-by-Step Launch Plan',rPh:['Phase 1','Phase 2','Phase 3'],rPer:['Months 1–3','Months 4–8','Month 12+'],rMo:'/ month',rD:['10 listings at $250/mo','Ads + commissions + 40 listings','All streams + partnerships'],
 },
 es:{logoTag:'La Guía Definitiva de Miami',eye:'Tu Guía Definitiva de la Ciudad',l1:'Descubre',sub:'Restaurantes, playas, museos, teatros, estadios, eventos y vida nocturna — la guía completa de la Ciudad Mágica.',cta1:'Explorar Ahora',cta2:'Próximos Eventos',stats:[{n:'30+',l:'Restaurantes'},{n:'8',l:'Playas'},{n:'8',l:'Museos'},{n:'6',l:'Estadios'},{n:'10',l:'Eventos'},{n:'8',l:'Vida Nocturna'}],sph:'Busca restaurante, concierto, artista, evento…',sgo:'Buscar',biz:'Para Negocios',langTxt:'English',reserveBtn:'Reservar en OpenTable →',ticketsBtn:'Comprar Entradas Ticketmaster →',moreBtn:'Más Información →',mapsBtn:'Ver en Google Maps →',gamesBtn:'Ver Partidos →',upLbl:'Próximos Shows:',tipLbl:'Consejo',
 nav:[{label:'Descubrir',items:[{icon:'',lbl:'Mapa',cnt:'',id:'sec-map'},{icon:'',lbl:'Restaurantes',cnt:'30+',id:'sec-rest'},{icon:'',lbl:'Playas',cnt:'8',id:'sec-beach'},{icon:'',lbl:'Lugares',cnt:'8',id:'sec-place'}]},{label:'Entretenimiento',items:[{icon:'',lbl:'Museos',cnt:'8',id:'sec-museum'},{icon:'',lbl:'Teatros',cnt:'5',id:'sec-theater'},{icon:'',lbl:'Conciertos',cnt:'8',id:'sec-concert'},{icon:'',lbl:'Estadios',cnt:'6',id:'sec-stad'}]},{label:'Salir',items:[{icon:'',lbl:'Eventos',cnt:'10',id:'sec-events'},{icon:'',lbl:'Vida Nocturna',cnt:'8',id:'sec-night'}]}],
-tt:{rest:['Selección Especial','Mejores Restaurantes de Miami'],beach:['Sol y Arena','Mejores Playas'],museum:['Cultura y Arte','Museos'],shop:['Mejores Centros Comerciales','Shopping'],theater:['En Escena','Teatros'],concert:['Música en Vivo','Recintos de Conciertos'],stad:['Deportes','Estadios y Arenas'],place:['Imprescindibles','Lugares y Vecindarios'],events:['Recurrentes','Calendario de Eventos'],night:['De Noche','Vida Nocturna'],hotels:['D\u00f3nde Quedarse','Mejores Hoteles en Miami'],parks:['Naturaleza','Parques']},
+tt:{rest:['Selección Especial','Mejores Restaurantes de Miami'],beach:['Sol y Arena','Mejores Playas'],museum:['Cultura y Arte','Museos'],shop:['Mejores Centros Comerciales','Shopping'],theater:['En Escena','Teatros'],concert:['Música en Vivo','Recintos de Conciertos'],stad:['Deportes','Estadios y Arenas'],place:['Imprescindibles','Lugares y Vecindarios'],events:['Recurrentes','Calendario de Eventos'],night:['De Noche','Vida Nocturna'],hotels:['Dónde Quedarse','Mejores Hoteles en Miami'],parks:['Naturaleza','Parques'],transport:['Cómo Moverse','Guía de Transporte']},
 sa:'Ver todo →',rf:['Todo',' Cubano',' Mariscos',' Mexicano',' Japonés',' Mediterráneo','️ Latino',' Italiano',' Americano',' Alta Cocina'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining'],
 fTag:'La Ciudad Mágica, curada para ti.',fDevLbl:'Desarrollado por',fEx:'Explorar',fCo:'Empresa',fLinks1:['Restaurantes','Playas','Museos','Teatros','Estadios'],fLinks2:['Acerca de','Contacto','Privacidad','Sugerir Lugar','Para Negocios'],fCopy:'© 2026 Miami Magic · Y & Y Entertainment Corp',fRights:'Todos los Derechos Reservados',
 mEye:' Modelo de Negocio',mH2:'Cómo Ganar <em>Dinero</em> con Miami Magic',mSub:'Guía completa para convertir esta app en un negocio real y escalable.',revT:'Proyección de Ingresos Realista (por mes)',rmT:'Plan de Lanzamiento Paso a Paso',rPh:['Fase 1','Fase 2','Fase 3'],rPer:['Meses 1–3','Meses 4–8','Mes 12+'],rMo:'/ mes',rD:['10 listings a $250/mes','Publicidad + comisiones + 40 listings','Todos los streams + alianzas'],
@@ -2632,10 +2589,11 @@ var _dbCache=null;
 function positionPanel(){
   var panel=document.getElementById('searchPanel');
   if(!panel) return;
-  panel.style.top='110px';
+  var isMobile=window.innerWidth<=900;
+  panel.style.top=isMobile?'108px':'110px';
   panel.style.left='50%';
   panel.style.transform='translateX(-50%)';
-  panel.style.width='88%';
+  panel.style.width=isMobile?'92%':'88%';
   panel.style.maxWidth='680px';
 }
 function buildDB(){
@@ -2767,7 +2725,7 @@ function doSearch(val){
   
   // Sort by score descending
   scored.sort(function(a,b){ return b.score - a.score; });
-  _sr = scored.slice(0,4).map(function(x){ return x.row; });
+  _sr = scored.slice(0,8).map(function(x){ return x.row; });
   renderPanel(q);
   }catch(e){ console.warn('Search error:',e.message); }
 }
@@ -2811,6 +2769,7 @@ function renderPanel(q){
 
 function pickResult(idx){
   const item=_sr[idx]; if(!item)return;
+  _lastQuery='';
   closeSearch();
   document.getElementById('sInp').value='';
   const sec=document.getElementById(item.sec);
@@ -2826,9 +2785,35 @@ function searchKey(e){
   if(e.key==='Escape')closeSearch();
   if(e.key==='Enter'&&_sr.length>0)pickResult(0);
 }
-function closeSearch(){var p=document.getElementById('searchPanel');p.classList.remove('open');p.style.display='none';_sr=[];}
+var _lastQuery='';
+function closeSearch(){
+  var p=document.getElementById('searchPanel');
+  p.classList.remove('open');p.style.display='none';_sr=[];
+  var hi=document.getElementById('heroSearchInp');
+  var si=document.getElementById('sInp');
+  if(hi&&hi.value.trim()) _lastQuery=hi.value.trim();
+  if(hi){hi.value='';hi.blur();}
+  if(si) si.value='';
+  var cl=document.getElementById('heroSearchClear');
+  if(cl) cl.style.display='none';
+}
+document.addEventListener('focusin',function(e){
+  var hi=document.getElementById('heroSearchInp');
+  var si=document.getElementById('sInp');
+  if((e.target===hi||e.target===si)&&_lastQuery){
+    if(hi) hi.value=_lastQuery;
+    if(si) si.value=_lastQuery;
+    var cl=document.getElementById('heroSearchClear');
+    if(cl) cl.style.display='flex';
+    clearTimeout(window._sT);
+    window._sT=setTimeout(function(){doSearch(_lastQuery);},150);
+  }
+});
 document.addEventListener('click',function(e){
-  var sz=document.querySelector('.search-zone');if(sz&&!sz.contains(e.target))closeSearch();
+  var sz=document.querySelector('.search-zone');
+  var hss=document.querySelector('.hero-search');
+  var inside=(sz&&sz.contains(e.target))||(hss&&hss.contains(e.target));
+  if(!inside) closeSearch();
 });
 // ── MODAL ──
 function setModalImg(bg,emoji,photoId){
@@ -2908,11 +2893,14 @@ function openItemModal(obj,type,link,btnLabel){
     setModalImg('bg-coral',obj.emoji,obj.id);
   } else if(type==='night'){
     cat='Nightlife'; title=obj.name; desc=n(obj.desc,obj.desc_es);
-    rows='<div class="m-row"> '+obj.addr+'</div><div class="m-row"> '+obj.hrs+'</div><div class="m-row"> '+obj.vibe+'</div>';
+    var mMn='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(obj.name+' Miami');
+    rows='<div class="m-row"> '+obj.addr+'</div><div class="m-row"> '+obj.hrs+'</div><div class="m-row"> '+obj.vibe+'</div><a href="'+mMn+'" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;margin-top:6px;color:#4285F4;font-size:.78rem;font-weight:700;background:#f0f4ff;padding:5px 12px;border-radius:10px;text-decoration:none;"> Google Maps</a>';
     link=link||obj.link; btnLabel=btnLabel||t.moreBtn; setModalImg(obj.bg,obj.emoji,obj.id);
   } else if(type==='hotel'){
     cat=obj.cat; title=obj.name; desc=obj.desc||'';
     rows='<div class="m-row">\u{1F4CD} '+obj.addr+'</div><div class="m-row">\u{1F4B0} '+obj.price+'</div>'+(obj.stars?'<div class="m-row">'+obj.stars+'</div>':'');
+    var mMh='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(obj.name+' '+obj.addr);
+    rows+='<a href="'+mMh+'" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:5px;margin-top:6px;color:#4285F4;font-size:.78rem;font-weight:700;background:#f0f4ff;padding:5px 12px;border-radius:10px;text-decoration:none;"> Google Maps</a>';
     link=link||obj.link; btnLabel=btnLabel||'Book Now';
     setModalImg('bg-teal','',obj.id);
     var mi=document.getElementById('mImg');
@@ -3116,6 +3104,7 @@ function renderHotels(){
       +'<div class="hotel-desc">'+h.desc+'</div>'
       +'<div class="hotel-price">'+h.price+'</div>'
       +'<div class="hotel-addr"> '+h.addr+'</div>'
+      +'<a href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(h.name+' '+h.addr)+'" target="_blank" onclick="event.stopPropagation()" class="maps-btn"> Maps</a>'
       +'</div></div>';
   }
   var preview = hotelList.slice(0,6);
@@ -3128,6 +3117,7 @@ function renderHotels(){
   html+='<div class="hotel-grid" id="hotels-full" style="display:none;margin-top:16px;">';
   rest.forEach(function(h){ html+=hotelCard(h); });
   html+='</div>';
+  html+='<div style="text-align:center;padding:10px 16px 4px;"><a href="https://www.booking.com/city/us/miami.html?aid=304142" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#003580;color:#fff;padding:9px 18px;border-radius:24px;font-size:.78rem;font-weight:700;text-decoration:none;">&#127970; Compare All Miami Hotel Prices on Booking.com</a></div>';
   html+='</section>';
   return html;
 }
@@ -3303,10 +3293,17 @@ function renderEvents(){
       +'</div></a>';
   }).join('');
 
+  var viator = '<div style="text-align:center;padding:14px 16px 4px;">'
+    +'<a href="https://www.viator.com/Miami/d662-ttd?pid=P00101684&mcid=42383&medium=link" target="_blank" rel="noopener" '
+    +'style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#FF6B35,#e8440f);color:#fff;padding:11px 22px;border-radius:24px;font-size:.8rem;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(255,107,53,.35);">'
+    +'&#127903; '+(L==='es'?'Reserva Tours y Experiencias en Miami':'Book Miami Tours & Experiences on Viator')
+    +'</a></div>';
+
   return '<section class="sec fade" id="sec-events">'
     +'<div class="sec-hd"><div class="sec-tt"><small>'+sub+'</small>'+title+'</div>'
     +'<a class="see-all" href="https://www.miamiandbeaches.com/events" target="_blank" rel="noopener">'+(L==='es'?'Ver todos →':'See all →')+'</a></div>'
     +'<div class="h-row ev-row" id="events-hrow">'+cards+'</div>'
+    +viator
     +'</section>';
 }
 
@@ -3343,6 +3340,31 @@ en:[{s:'1',t:'Month 1: Launch and First Paying Clients',d:'Go live. Call 15 rest
 es:[{s:'1',t:'Mes 1: Lanzamiento y Primeros Clientes',d:'Lanza la app. Llama a 15 negocios de tu red. Ofrece 3 meses gratis, luego $250/mes. Meta: 5 clientes = $1,250/mes.'},{s:'2',t:'Meses 2–3: Cobertura Mediática',d:'Usa tu experiencia en medios para aparecer en prensa local. Agrega OpenTable. Meta: $3,500/mes.'},{s:'3',t:'Meses 4–6: Publicidad y Dashboard',d:'Vende campañas geolocalizadas. Lanza la beta del dashboard Pro. Meta: $8,000/mes.'},{s:'4',t:'Meses 7–9: Alianzas y Suscripciones',d:'Propón al Miami CVB y 3 hoteles de lujo. Lanza suscripción premium. Meta: $15,000/mes.'},{s:'5',t:'Meses 10–12: Escalar y Automatizar',d:'Contrata vendedor a comisión. Automatiza el onboarding. Todos los streams funcionando. Meta: $35,000+/mes.'}],
 };
 
+
+
+
+// ── RENDER TRANSPORT ──
+function renderTransport(){
+  var L = typeof lang !== 'undefined' ? lang : 'en';
+  var T2 = D.transport;
+  if(!T2) return '';
+  var intro = L==='es' ? T2.intro.es : T2.intro.en;
+  var cards = T2.sections.map(function(s){
+    var title = L==='es' ? s.title.es : s.title.en;
+    var desc  = L==='es' ? s.desc.es  : s.desc.en;
+    var tip   = L==='es' ? s.tip.es   : s.tip.en;
+    return '<a href="'+s.link+'" target="_blank" rel="noopener" class="tcard">'
+      +'<div class="tcard-icon">'+s.icon+'</div>'
+      +'<div class="tcard-title">'+title+'</div>'
+      +'<div class="tcard-desc">'+desc+'</div>'
+      +'<div class="tcard-tip">'+tip+'</div>'
+      +'</a>';
+  }).join('');
+  return '<section class="sec fade" id="sec-transport">'+sHdr('transport')
+    +'<div class="transport-intro">'+intro+'</div>'
+    +'<div class="tcard-grid">'+cards+'</div>'
+    +'</section>';
+}
 
 function renderShop(){
   const cards=zoneFilter(D.shopping).map(s=>
@@ -3414,7 +3436,7 @@ function build(){
   var zbEl=document.getElementById('zoneBar');
   if(zbEl){zbEl.innerHTML=renderZoneBar();}
   // app sections
-  document.getElementById('app').innerHTML=renderJune()+renderRest()+renderHotels()+renderBeach()+renderNight()+renderMuseum()+renderConcert()+renderTheater()+renderStad()+renderPlace()+renderParks()+renderShop()+renderEvents();
+  document.getElementById('app').innerHTML=renderJune()+renderRest()+renderHotels()+renderBeach()+renderNight()+renderMuseum()+renderConcert()+renderTheater()+renderStad()+renderPlace()+renderParks()+renderShop()+renderTransport()+renderEvents();
   // Force all sections visible immediately on mobile
   document.querySelectorAll('.fade').forEach(function(el){el.classList.add('vis');});
   var ms=document.getElementById('heroStatsMobile'),hs=document.getElementById('heroStats');
@@ -3434,7 +3456,7 @@ function renderParks(){
   return '<section class="sec fade" id="sec-parks">'+sHdr('parks')+'<div class="h-row" id="parks-hrow">'+items.map(mkCard).join('')+'</div>'+verTodos+'<div class="full-grid-venue" id="parks-full">'+items.map(mkCard).join('')+'</div></section>';
 }
 
-function toggleLang(){lang=lang==='en'?'es':'en';activeFlt='all';build();}
+function toggleLang(){lang=lang==='en'?'es':'en';activeFlt='all';_dbCache=null;closeSearch();build();}
 
 
 var ZONES={'r01':'little-havana','r02':'south-beach','r03':'wynwood','r04':'south-beach','r05':'brickell','r06':'downtown','r07':'south-beach','r08':'brickell','r09':'coconut-grove','r10':'south-beach','r11':'wynwood','r12':'upper-east','r13':'south-beach','r14':'wynwood','r15':'edgewater','r16':'brickell','r17':'little-havana','r18':'design-district','r19':'wynwood','r20':'miami-beach','r21':'south-beach','r22':'downtown','r23':'north-miami','r24':'wynwood','r25':'coral-gables','r26':'miami-beach','r27':'upper-east','r28':'brickell','r29':'downtown','r30':'brickell','r31':'other','r32':'downtown','r33':'other','r34':'wynwood','r35':'coconut-grove','r36':'brickell','r37':'key-biscayne','r38':'edgewater','r39':'miami-beach','r40':'wynwood','r41':'brickell','r43':'other','r44':'little-havana','r45':'little-havana',
@@ -3492,7 +3514,7 @@ function renderZoneBar(){
 
 function renderAll(){
   try {
-    return renderJune()+renderRest()+renderHotels()+renderBeach()+renderNight()+renderMuseum()+renderConcert()+renderTheater()+renderStad()+renderPlace()+renderParks()+renderShop()+renderEvents();
+    return renderJune()+renderRest()+renderHotels()+renderBeach()+renderNight()+renderMuseum()+renderConcert()+renderTheater()+renderStad()+renderPlace()+renderParks()+renderShop()+renderTransport()+renderEvents();
   } catch(e) {
     console.error('renderAll error:',e);
     return '<div style="padding:40px;color:red">Error: '+e.message+'</div>';
@@ -4039,6 +4061,7 @@ function accLang(l){
   document.getElementById('lang-es').style.background=l==='es'?'#FF4D35':'transparent';
   document.getElementById('lang-es').style.color=l==='es'?'#fff':'#888';
   document.getElementById('lang-es').style.borderColor=l==='es'?'#FF4D35':'#eee';
+  lang=l;_dbCache=null;closeSearch();
   try{localStorage.setItem('mm_lang',l);}catch(e){}
 }
 function accEdit(){
