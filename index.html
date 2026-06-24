@@ -1578,8 +1578,6 @@ body{padding-bottom:0;}
 /* ══ END HERO ROTATOR ══ */
 
 </style>
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#FF4D35">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="anonymous"></script>
 </head>
@@ -1731,12 +1729,6 @@ body{padding-bottom:0;}
         <span class="hm-drawer-section-lbl">Settings</span>
         <div class="hm-drawer-section-line" style="animation-delay:1.2s"></div>
       </div>
-      <div class="hm-link" style="cursor:pointer;" onclick="toggleLang()">
-        <div class="hm-ico-wrap" style="font-size:1.1rem;display:flex;align-items:center;justify-content:center;">🌐</div>
-        <span id="langToggleLabel" style="flex:1;">Español / English</span>
-        <span id="langToggleStat" style="font-size:.7rem;color:rgba(255,255,255,.4);margin-left:auto;">EN</span>
-      </div>
-
       <div class="hm-link" style="cursor:pointer;" onclick="toggleDarkMode()">
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg></div>
         <span id="dmToggle" style="flex:1;">Dark Mode</span>
@@ -1860,7 +1852,6 @@ body{padding-bottom:0;}
       <button onclick="go('sec-parks')"   class="hss-cat">&#127807; Parks</button>
       <button onclick="go('sec-transport')" class="hss-cat">&#128663; Getting Around</button>
       <button onclick="go('sec-map')"     class="hss-cat">&#128205; Map</button>
-      <button onclick="toggleAdvFilters()" id="filterToggleBtn" class="hss-cat" style="border-color:rgba(255,77,53,.35);color:#FF4D35;">&#9965; Filters</button>
     </div>
   </div>
 </div>
@@ -2824,7 +2815,7 @@ kids:[
   {id:'k2',name:'Miami Children\'s Museum',name_es:'Museo de los Niños de Miami',emoji:'🎨',bg:'bg-coral',desc:'12 galleries for kids 0-12. Miniature grocery store, TV studio, bank, and art studio where children learn by doing. On Watson Island between downtown and South Beach.',desc_es:'12 galerías para niños de 0-12 años. Supermercado, estudio de TV, banco y estudio de arte donde los niños aprenden haciendo.',addr:'980 MacArthur Causeway, Watson Island',hrs:'Daily 10AM–6PM',age:'0-12 years',price:'$22 per person',link:'https://www.miamichildrensmuseum.org'},
   {id:'k3',name:'Jungle Island',name_es:'Jungle Island',emoji:'🦜',bg:'bg-teal',desc:'Tropical wildlife park with lemurs, sloths, penguins, and exotic birds. The Safari Beach waterpark and zip line make it a full-day adventure. Kids can feed and interact with animals.',desc_es:'Parque de vida silvestre tropical con lémures, perezosos, pingüinos y aves exóticas. El parque acuático Safari Beach y la tirolesa lo convierten en una aventura de todo el día.',addr:'1111 Parrot Jungle Trail, Watson Island',hrs:'Daily 10AM–5PM',age:'All ages',price:'From $39.95',link:'https://www.jungleisland.com'},
   {id:'k4',name:'Monkey Jungle',name_es:'Monkey Jungle',emoji:'🐒',bg:'bg-amber',desc:'Over 400 primates roam free while visitors walk through caged paths. A 30-acre tropical forest where you\'re in the cage and the monkeys are free. A uniquely Miami experience.',desc_es:'Más de 400 primates en libertad mientras los visitantes caminan en jaulas. Un bosque tropical donde tú estás enjaulado y los monos son libres. Una experiencia única.',addr:'14805 SW 216th St, South Miami',hrs:'Daily 9:30AM–5PM',age:'All ages',price:'$29.95 adults · $23.95 kids',link:'https://monkeyjungle.com'},
-  {id:'k5',name:'Crandon Park Family Zone',name_es:'Zona Familiar Crandon Park',emoji:'🏝️',bg:'bg-cyan',desc:'Key Biscayne\'s best family beach with calm lagoon waters perfect for young swimmers, shaded picnic areas, a nature center with sea turtle education, and playgrounds right on the sand.',desc_es:'La mejor playa familiar de Key Biscayne con aguas tranquilas perfectas para niños, áreas de picnic y parques de juego en la arena.',addr:'6747 Crandon Blvd, Key Biscayne',hrs:'Daily 8AM–Sunset',age:'All ages',price:'$5 parking',link:'https://www.miamidade.gov/parks/crandon.asp'},
+  {id:'k5',name:'Crandon Park Family Zone',name_es:'Zona Familiar Crandon Park',emoji:'🏝️',bg:'bg-cyan',desc:'Key Biscayne\'s best family beach with calm lagoon waters perfect for young swimmers, shaded picnic areas, a nature center with sea turtle education, and playgrounds right on the sand.',desc_es:'La mejor playa familiar de Key Biscayne con aguas tranquilas perfectas para niños, áreas de picnic y parques de juego en la arena.',addr:'6747 Crandon Blvd, Key Biscayne',hrs:'Daily 8AM–Sunset',age:'All ages',price:'$5 parking',link:'https://www.miamidade.gov/parks/crandon.asp'},,
   {id:'k6',name:'iFly Indoor Skydiving',name_es:'iFly Paracaidismo Interior',emoji:'🪂',bg:'bg-purple',desc:'Real indoor skydiving in a vertical wind tunnel. Kids as young as 3 can fly with an instructor in 120mph winds. No experience needed. Unforgettable for the whole family.',desc_es:'Paracaidismo real en túnel de viento vertical. Niños desde 3 años pueden volar con instructor a 120mph. Sin experiencia necesaria. Inolvidable para toda la familia.',addr:'401 Biscayne Blvd, Downtown',hrs:'Daily 10AM–9PM',age:'3+ years',price:'From $49.99',link:'https://www.ifly.com/miami'},
   {id:'k7',name:'Zoo Miami',name_es:'Zoo Miami',emoji:'🦁',bg:'bg-green',desc:'The largest zoo east of the Mississippi. Over 3,000 animals in natural habitats across 740 acres. The Amazon & Beyond exhibit and Wildlife Show are highlights for all ages.',desc_es:'El zoológico más grande al este del Mississippi. Más de 3,000 animales en hábitats naturales. La exhibición Amazon & Beyond y el Wildlife Show son imprescindibles.',addr:'12400 SW 152nd St, Miami',hrs:'Daily 10AM–5PM',age:'All ages',price:'$22 adults · $18 kids',link:'https://www.zoomiami.org'},
   {id:'k8',name:'Bayride Miami',name_es:'Bayride Miami',emoji:'⛵',bg:'bg-cyan',desc:'Electric boat tours of Biscayne Bay designed for families. Kids can captain the boat, spot manatees and dolphins, and swim in the clear bay waters. The most fun way to see Miami from the water.',desc_es:'Tours en bote eléctrico por la Bahía Biscayne diseñados para familias. Los niños pueden manejar el bote, ver manatíes y delfines y nadar en las aguas claras de la bahía.',addr:'Bayside Marina, Downtown',hrs:'Daily 9AM–7PM',age:'All ages',price:'From $35',link:'https://www.bayride.com'},
@@ -3065,7 +3056,7 @@ function buildDB(){
   _dbCache = rows;
   return rows;
 }
-function doSearch(val, fromFilter){
+function doSearch(val){
   try{
   var panel=document.getElementById('searchPanel');
   const q=(val||'').trim().toLowerCase();
@@ -3098,22 +3089,7 @@ function doSearch(val, fromFilter){
   
   // Sort by score descending
   scored.sort(function(a,b){ return b.score - a.score; });
-  // Apply advanced filters
-  if (typeof _advFilterState !== 'undefined' && _advFilterState) {
-    var _af = _advFilterState;
-    scored = scored.filter(function(x){
-      var row = x.row;
-      if(_af.cat && row.type && row.type !== _af.cat) return false;
-      if(_af.price && row.obj && row.obj.price && !row.obj.price.startsWith(_af.price)) return false;
-      if(_af.zone && row.kw) {
-        var kw = (Array.isArray(row.kw) ? row.kw.join(' ') : String(row.kw)).toLowerCase();
-        if(kw.indexOf(_af.zone) === -1) return false;
-      }
-      return true;
-    });
-  }
-  var _maxR = (typeof _advFilterState!=='undefined' && _advFilterState) ? 15 : 8;
-  _sr = scored.slice(0,_maxR).map(function(x){ return x.row; });
+  _sr = scored.slice(0,8).map(function(x){ return x.row; });
   renderPanel(q);
   }catch(e){ console.warn('Search error:',e.message); }
 }
@@ -3477,11 +3453,10 @@ function renderRestCards(list){
     var badgeClass = 'rbadge'+(r.pro?' rbadge-pro':'');
 
     return '<div class="'+(feat?'rcard rcard-feat':'rcard')+'" onclick="openItemModal(D.restaurants.find(x=>x.id===\''+r.id+'\'),\'rest\')">'
-      +'<div class="rcard-img '+r.bg+'" style="position:relative;"+imgStyle+">'
+      +'<div class="rcard-img '+r.bg+'" style="position:relative;'+imgStyle+'">'
         +'<div class="rcard-ov"></div>'
         +'<div class="rcard-top"><span class="'+badgeClass+'">'+r.badge+'</span></div>'
         +'<div class="rrating"><span class="rstar">★</span> '+r.rating+'</div>'
-        +'<button class="save-btn" onclick="event.stopPropagation();addToTrip(\'' +r.id+'\',\''+r.name.replace(/\'/g,'\"')+'\'\,'+'\''+'rest'+'\''+')">+ Trip</button>'
       +'</div>'
       +'<div class="rcard-body">'
         +'<div class="rcard-name">'+r.name+'</div>'
@@ -4031,15 +4006,7 @@ function renderParks(){
   return '<section class="sec fade" id="sec-parks">'+sHdr('parks')+'<div class="h-row" id="parks-hrow">'+items.map(mkCard).join('')+'</div>'+verTodos+'<div class="full-grid-venue" id="parks-full">'+items.map(mkCard).join('')+'</div></section>';
 }
 
-function toggleLang(){
-  lang = lang==='en' ? 'es' : 'en';
-  activeFlt='all'; _dbCache=null; closeSearch(); build();
-  var stat = document.getElementById('langToggleStat');
-  if(stat) stat.textContent = lang==='es' ? 'ES ✓' : 'EN';
-  var lbl = document.getElementById('langToggleLabel');
-  if(lbl) lbl.textContent = lang==='es' ? 'English / Español ✓' : 'Español / English';
-  try { localStorage.setItem('mm_lang', lang); } catch(e) {}
-}
+function toggleLang(){lang=lang==='en'?'es':'en';activeFlt='all';_dbCache=null;closeSearch();build();}
 
 function toggleDarkMode(){
   var html=document.documentElement;
@@ -4416,7 +4383,7 @@ document.addEventListener("DOMContentLoaded",function(){
         <button onclick="accEditPhoto()" style="position:absolute;bottom:0;right:0;background:#FF4D35;border:2px solid rgba(8,23,46,.9);border-radius:50%;width:22px;height:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:10px;height:10px;"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>
       </div>
       <div id="acc-name-display" style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#08172E;margin-bottom:3px;">Explorador de Miami</div>
-      <div id="acc-role-display" style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:#888;margin-bottom:12px;">Crea tu cuenta gratis</div>
+      <div id="acc-role-display" style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:#888;margin-bottom:12px;">Create your free account</div>
       <div style="display:flex;gap:8px;justify-content:center;">
         <button onclick="accEdit()" style="padding:7px 18px;background:rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.12);border-radius:50px;color:#08172E;font-size:.72rem;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;">Editar Perfil</button>
         <div id="acc-badge" style="padding:7px 14px;background:linear-gradient(135deg,#FF4D35,#e03a24);border-radius:50px;font-size:.65rem;font-weight:700;color:#fff;letter-spacing:.5px;display:flex;align-items:center;">&#10022; INSIDER</div>
@@ -4427,13 +4394,13 @@ document.addEventListener("DOMContentLoaded",function(){
       <div style="background:#fff;border:1px solid #ede8e3;border-radius:14px;padding:12px 8px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.06);"><div id="acc-stat-saved" style="font-size:1.3rem;font-weight:800;color:#00C9B1;font-family:'DM Sans',sans-serif;">0</div><div style="font-size:.62rem;color:#888;font-weight:600;margin-top:2px;font-family:'DM Sans',sans-serif;">Favoritos</div></div>
       <div style="background:#fff;border:1px solid #ede8e3;border-radius:14px;padding:12px 8px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.06);"><div id="acc-stat-hist" style="font-size:1.3rem;font-weight:800;color:#FFD166;font-family:'DM Sans',sans-serif;">0</div><div style="font-size:.62rem;color:#888;font-weight:600;margin-top:2px;font-family:'DM Sans',sans-serif;">Visitados</div></div>
     </div>
-    <div class="acc-section-lbl">Exploración</div><div class="acc-section-line"></div>
-    <div class="acc-row" onclick="accToggle('trips')"><div class="acc-ico-wrap c-coral"><svg class="acc-ico" viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><path d="M8 2v16M16 6v16"/></svg></div><div class="acc-row-label"><div class="acc-row-title">Mis Viajes</div><div class="acc-row-sub">Itinerarios guardados</div></div><span class="acc-chevron" id="acc-arr-trips">&#8250;</span></div>
-    <div class="acc-toggle-section" id="acc-trips"><div id="acc-trips-list"><p>Sin viajes guardados aún.</p></div></div>
-    <div class="acc-row" onclick="accToggle('saved')"><div class="acc-ico-wrap c-teal"><svg class="acc-ico" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><div class="acc-row-label"><div class="acc-row-title">Favoritos</div><div class="acc-row-sub">Lugares que te encantaron</div></div><span class="acc-chevron" id="acc-arr-saved">&#8250;</span></div>
-    <div class="acc-toggle-section" id="acc-saved"><div id="acc-saved-list"><p>Explora Miami y guarda tus spots.</p></div></div>
-    <div class="acc-row" onclick="accToggle('hist')"><div class="acc-ico-wrap c-gold"><svg class="acc-ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg></div><div class="acc-row-label"><div class="acc-row-title">Historial</div><div class="acc-row-sub">Búsquedas recientes</div></div><span class="acc-chevron" id="acc-arr-hist">&#8250;</span></div>
-    <div class="acc-toggle-section" id="acc-hist"><div id="acc-history-list"><p>Tu historial aparecerá aquí.</p></div></div>
+    <div class="acc-section-lbl" id="acc-lbl-explore">Explore</div><div class="acc-section-line"></div>
+    <div class="acc-row" onclick="accToggle('trips')"><div class="acc-ico-wrap c-coral"><svg class="acc-ico" viewBox="0 0 24 24"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><path d="M8 2v16M16 6v16"/></svg></div><div class="acc-row-label"><div class="acc-row-title" id="acc-title-trips">My Trips</div><div class="acc-row-sub" id="acc-sub-trips">Saved itineraries</div></div><span class="acc-chevron" id="acc-arr-trips">&#8250;</span></div>
+    <div class="acc-toggle-section" id="acc-trips"><div id="acc-trips-list"><p id="acc-trips-empty">No saved trips yet.</p></div></div>
+    <div class="acc-row" onclick="accToggle('saved')"><div class="acc-ico-wrap c-teal"><svg class="acc-ico" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div><div class="acc-row-label"><div class="acc-row-title" id="acc-title-saved">Favorites</div><div class="acc-row-sub" id="acc-sub-saved">Places you loved</div></div><span class="acc-chevron" id="acc-arr-saved">&#8250;</span></div>
+    <div class="acc-toggle-section" id="acc-saved"><div id="acc-saved-list"><p id="acc-saved-empty">Explore Miami and save your spots.</p></div></div>
+    <div class="acc-row" onclick="accToggle('hist')"><div class="acc-ico-wrap c-gold"><svg class="acc-ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg></div><div class="acc-row-label"><div class="acc-row-title" id="acc-title-hist">History</div><div class="acc-row-sub" id="acc-sub-hist">Recent searches</div></div><span class="acc-chevron" id="acc-arr-hist">&#8250;</span></div>
+    <div class="acc-toggle-section" id="acc-hist"><div id="acc-history-list"><p id="acc-hist-empty">Your history will appear here.</p></div></div>
     <div class="acc-row" style="opacity:.55;cursor:default;"><div class="acc-ico-wrap" style="background:rgba(139,92,246,.15);"><svg class="acc-ico" viewBox="0 0 24 24" style="stroke:#8B5CF6;"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><circle cx="12" cy="16" r="1.5" fill="#8B5CF6"/></svg></div><div class="acc-row-label"><div class="acc-row-title">Mis Reservas</div><div class="acc-row-sub">Restaurantes &middot; Eventos &middot; Tours</div></div><span class="acc-badge-pill" style="background:#FFD166;color:#08172E;">SOON</span></div>
     <div class="acc-section-lbl" style="margin-top:8px;">Premium</div><div class="acc-section-line"></div>
     <div style="margin:8px 22px 4px;background:linear-gradient(135deg,#fff8f7,#fff3e8);border:1px solid rgba(255,77,53,.2);border-radius:18px;padding:18px;">
@@ -4441,16 +4408,16 @@ document.addEventListener("DOMContentLoaded",function(){
       <div style="font-family:'DM Sans',sans-serif;font-size:.78rem;color:#666;margin-bottom:12px;line-height:1.6;">Secret Spots &middot; Itinerarios VIP<br>Sin anuncios &middot; Acceso anticipado</div>
       <a href="https://buy.stripe.com/5kQbJ00W39TybWrbega3u02" target="_blank" style="display:block;padding:11px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border-radius:50px;font-size:.8rem;font-weight:700;text-decoration:none;text-align:center;font-family:'DM Sans',sans-serif;">Unlock Premium &mdash; $4.99/mes &#8594;</a>
     </div>
-    <div class="acc-section-lbl" style="margin-top:12px;">Configuraci&#243;n</div><div class="acc-section-line"></div>
+    <div class="acc-section-lbl" id="acc-lbl-settings" style="margin-top:12px;">Settings</div><div class="acc-section-line"></div>
     <div class="acc-row" style="cursor:default;"><div class="acc-ico-wrap"><svg class="acc-ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><div class="acc-row-label"><div class="acc-row-title">Idioma</div></div><div style="display:flex;gap:5px;"><button onclick="accLang('en')" id="lang-en" class="acc-lang-btn" style="background:#FF4D35;color:#fff;border-color:#FF4D35;">EN</button><button onclick="accLang('es')" id="lang-es" class="acc-lang-btn" style="background:transparent;color:rgba(255,255,255,.45);border-color:rgba(255,255,255,.15);">ES</button></div></div>
     <div class="acc-row" style="cursor:default;"><div class="acc-ico-wrap"><svg class="acc-ico" viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg></div><div class="acc-row-label"><div class="acc-row-title">Notificaciones</div></div><div class="acc-switch" id="sw-notif" onclick="accToggleSwitch('notif')" data-on="1" style="background:#00C9B1;"><div class="acc-switch-dot" style="right:3px;left:auto;"></div></div></div>
     <div class="acc-row" style="cursor:default;"><div class="acc-ico-wrap"><svg class="acc-ico" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg></div><div class="acc-row-label"><div class="acc-row-title">Modo Oscuro</div></div><div class="acc-switch" id="sw-dark" onclick="accToggleSwitch('dark')" data-on="0" style="background:rgba(255,255,255,.12);"><div class="acc-switch-dot" style="left:3px;"></div></div></div>
     <div class="acc-row"><div class="acc-ico-wrap"><svg class="acc-ico" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div class="acc-row-label"><div class="acc-row-title">Privacidad</div></div><span class="acc-chevron">&#8250;</span></div>
-    <div class="acc-section-lbl" style="margin-top:8px;">Mis Datos</div><div class="acc-section-line"></div>
+    <div class="acc-section-lbl" id="acc-lbl-data" style="margin-top:8px;">My Data</div><div class="acc-section-line"></div>
     <div style="padding:10px 22px 14px;"><div style="font-family:'DM Sans',sans-serif;font-size:.82rem;color:#444;line-height:2.4;">
       <div style="display:flex;justify-content:space-between;border-bottom:1px solid #ede8e3;padding-bottom:6px;margin-bottom:6px;"><span style="font-weight:600;color:#08172E;">Nombre</span><span id="acc-data-name" style="color:#666;">&#8212;</span></div>
       <div style="display:flex;justify-content:space-between;border-bottom:1px solid #ede8e3;padding-bottom:6px;margin-bottom:6px;"><span style="font-weight:600;color:#08172E;">Email</span><span id="acc-data-email" style="color:#666;font-size:.75rem;">&#8212;</span></div>
-      <div style="display:flex;justify-content:space-between;"><span style="font-weight:600;color:#08172E;">Miembro desde</span><span id="acc-data-since" style="color:#666;">&#8212;</span></div>
+      <div style="display:flex;justify-content:space-between;"><span id="acc-lbl-since" style="font-weight:600;color:#08172E;">Member since</span><span id="acc-data-since" style="color:#666;">&#8212;</span></div>
     </div></div>
     <div style="padding:8px 22px 40px;">
       <button id="acc-logout-btn" onclick="accLogout()" style="width:100%;padding:13px;background:transparent;border:1.5px solid #ddd;border-radius:50px;font-size:.82rem;font-weight:600;color:#aaa;cursor:pointer;font-family:'DM Sans',sans-serif;">Cerrar sesi&#243;n</button>
@@ -4573,6 +4540,8 @@ function doLogin(){
   }
 }
 function openAccount(){
+  var L = (typeof lang !== 'undefined') ? lang : 'en';
+  var ES = L === 'es';
   var name='',email='',since='';
   try{
     email=localStorage.getItem('mm_subscribed')||'';
@@ -4580,9 +4549,24 @@ function openAccount(){
     since=localStorage.getItem('mm_since')||'';
   }catch(e){}
 
-  // Header — con o sin cuenta
-  document.getElementById('acc-name-display').textContent=name||'Explorador de Miami';
-  document.getElementById('acc-role-display').textContent=email||'Crea tu cuenta gratis';
+  // Header — bilingual
+  document.getElementById('acc-name-display').textContent = name || (ES ? 'Explorador de Miami' : 'Miami Explorer');
+  document.getElementById('acc-role-display').textContent = email || (ES ? 'Crea tu cuenta gratis' : 'Create your free account');
+
+  // Section labels
+  var el;
+  el = document.getElementById('acc-lbl-explore');   if(el) el.textContent = ES ? 'Exploración' : 'Explore';
+  el = document.getElementById('acc-lbl-settings');  if(el) el.textContent = ES ? 'Configuración' : 'Settings';
+  el = document.getElementById('acc-lbl-data');      if(el) el.textContent = ES ? 'Mis Datos' : 'My Data';
+  el = document.getElementById('acc-lbl-since');     if(el) el.textContent = ES ? 'Miembro desde' : 'Member since';
+
+  // Row titles & subs
+  el = document.getElementById('acc-title-trips'); if(el) el.textContent = ES ? 'Mis Viajes' : 'My Trips';
+  el = document.getElementById('acc-sub-trips');   if(el) el.textContent = ES ? 'Itinerarios guardados' : 'Saved itineraries';
+  el = document.getElementById('acc-title-saved'); if(el) el.textContent = ES ? 'Favoritos' : 'Favorites';
+  el = document.getElementById('acc-sub-saved');   if(el) el.textContent = ES ? 'Lugares que te encantaron' : 'Places you loved';
+  el = document.getElementById('acc-title-hist');  if(el) el.textContent = ES ? 'Historial' : 'History';
+  el = document.getElementById('acc-sub-hist');    if(el) el.textContent = ES ? 'Búsquedas recientes' : 'Recent searches';
   document.getElementById('acc-data-name').textContent=name||'—';
   document.getElementById('acc-data-email').textContent=email||'—';
   document.getElementById('acc-data-since').textContent=since||'—';
@@ -4594,7 +4578,7 @@ function openAccount(){
   var sEl=document.getElementById('acc-saved-list');
   sEl.innerHTML=saved.length
     ? saved.map(function(s){return '<div style="padding:8px 0;border-bottom:1px solid #f0ebe5;font-size:.82rem;color:#444;display:flex;gap:8px;align-items:center;"><span></span>'+s+'</div>';}).join('')
-    : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">Aún no tienes favoritos.<br><span style="color:#00C9B1;font-weight:600;">Explora Miami →</span></div>';
+    : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">'+(ES?'Aún no tienes favoritos.':'No favorites yet.')+'<br><span style="color:#00C9B1;font-weight:600;">'+(ES?'Explora Miami →':'Explore Miami →')+'</span></div>';
 
   // Historial
   var hist=[];
@@ -4603,7 +4587,7 @@ function openAccount(){
   var hEl=document.getElementById('acc-history-list');
   hEl.innerHTML=hist.length
     ? hist.slice(0,6).map(function(h){return '<div style="padding:8px 0;border-bottom:1px solid #f0ebe5;font-size:.82rem;color:#444;display:flex;gap:8px;align-items:center;"><span></span>'+h+'</div>';}).join('')
-    : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">Tu historial aparecerá aquí.</div>';
+    : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">'+(ES?'Tu historial aparecerá aquí.':'Your history will appear here.')+'</div>';
 
   // Viajes
   var trips=[];
@@ -4612,16 +4596,16 @@ function openAccount(){
   var tEl=document.getElementById('acc-trips-list');
   tEl.innerHTML=trips.length
     ? trips.map(function(t){return '<div style="padding:8px 0;border-bottom:1px solid #f0ebe5;font-size:.82rem;color:#444;display:flex;gap:8px;align-items:center;"><span></span>'+t+'</div>';}).join('')
-    : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">Aún no tienes viajes.<br><span style="color:#FF4D35;font-weight:600;">Planifica tu próxima aventura →</span></div>';
+    : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">'+(ES?'Aún no tienes viajes.':'No saved trips yet.')+'<br><span style="color:#FF4D35;font-weight:600;">'+(ES?'Planifica tu próxima aventura →':'Plan your next adventure →')+'</span></div>';
 
   // Si no tiene cuenta, mostrar botón de unirse en lugar de cerrar sesión
   var logoutBtn=document.getElementById('acc-logout-btn');
   if(logoutBtn){
     if(email){
-      logoutBtn.textContent='Cerrar sesión';
+      logoutBtn.textContent = ES ? 'Cerrar sesión' : 'Sign out';
       logoutBtn.onclick=accLogout;
     } else {
-      logoutBtn.textContent='✦ Crear cuenta gratis';
+      logoutBtn.textContent = ES ? '✦ Crear cuenta gratis' : '✦ Create free account';
       logoutBtn.style.background='linear-gradient(135deg,#FF4D35,#e03a24)';
       logoutBtn.style.color='#fff';
       logoutBtn.style.border='none';
@@ -4935,66 +4919,8 @@ document.addEventListener('DOMContentLoaded',function(){
     <button onclick="closeItin()" style="background:#f5f0eb;border:none;border-radius:50%;width:36px;height:36px;font-size:1.1rem;cursor:pointer;color:#08172E">✕</button>
   </div>
 
-  <!-- ── MODE TOGGLE ── -->
-  <div style="padding:14px 22px 0;display:flex;gap:8px;">
-    <button id="itinModeAI" onclick="setItinMode('ai')" style="flex:1;padding:10px;border-radius:50px;border:none;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;font-size:.8rem;font-weight:700;cursor:pointer;">✦ Ask AI</button>
-    <button id="itinModeQuiz" onclick="setItinMode('quiz')" style="flex:1;padding:10px;border-radius:50px;border:1.5px solid #e0dbd4;background:#fff;color:#666;font-size:.8rem;font-weight:600;cursor:pointer;">🗂 Quick Quiz</button>
-  </div>
-
-  <!-- ── AI FREE TEXT MODE ── -->
-  <div id="itinAIMode" style="padding:22px">
-    <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#08172E;margin-bottom:3px;">Tell me about your trip</div>
-    <div style="font-size:.74rem;color:#999;margin-bottom:11px;">Days, vibe, budget — be specific</div>
-    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px;">
-      <button onclick="itinAISugg(this)" style="padding:6px 12px;border-radius:50px;border:1px solid #e0dbd4;background:#fff;font-size:.72rem;color:#555;cursor:pointer;">3 days, beach &amp; nightlife</button>
-      <button onclick="itinAISugg(this)" style="padding:6px 12px;border-radius:50px;border:1px solid #e0dbd4;background:#fff;font-size:.72rem;color:#555;cursor:pointer;">Family trip, 4 days, kids</button>
-      <button onclick="itinAISugg(this)" style="padding:6px 12px;border-radius:50px;border:1px solid #e0dbd4;background:#fff;font-size:.72rem;color:#555;cursor:pointer;">Romantic weekend, luxury</button>
-      <button onclick="itinAISugg(this)" style="padding:6px 12px;border-radius:50px;border:1px solid #e0dbd4;background:#fff;font-size:.72rem;color:#555;cursor:pointer;">Solo foodie, 2 days, budget</button>
-    </div>
-    <textarea id="itinAIInput" rows="4" placeholder="E.g.: 3 days in Miami, couple, love beaches, good food and some nightlife. Mid budget." style="width:100%;border:1.5px solid #e0dbd4;border-radius:16px;padding:12px 14px;font-size:.85rem;font-family:'DM Sans',sans-serif;outline:none;resize:none;box-sizing:border-box;line-height:1.5;color:#08172E;" onfocus="this.style.borderColor='#FF4D35'" onblur="this.style.borderColor='#e0dbd4'"></textarea>
-    <button onclick="runItinAI()" id="itinAIBtn" style="margin-top:10px;width:100%;padding:13px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border:none;border-radius:50px;font-size:.88rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">✦ Generate My Itinerary</button>
-    <div id="itinAILoading" style="display:none;text-align:center;padding:22px 0;">
-      <div style="font-size:1.4rem;animation:spin 1.2s linear infinite;display:inline-block;">⏳</div>
-      <div style="font-size:.82rem;color:#999;margin-top:8px;">Luna is planning your trip…</div>
-    </div>
-    <div id="itinAIResult" style="display:none;margin-top:14px;padding:16px;background:#fff8f5;border-radius:16px;border:1px solid rgba(255,77,53,.15);font-size:.84rem;line-height:1.8;color:#08172E;"></div>
-    <div id="itinAIError" style="display:none;margin-top:10px;padding:10px 14px;background:#fff0f0;border-radius:12px;font-size:.78rem;color:#e03a24;text-align:center;"></div>
-  </div>
-
-  <!-- ── ADVANCED FILTERS (inside hss) ── -->
-  <div id="advFilters" style="display:none;padding:8px 16px 4px;gap:6px;flex-wrap:wrap;align-items:center;">
-    <select id="fltCat" onchange="applyAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #e0dbd4;font-size:.72rem;font-family:'DM Sans',sans-serif;background:#fff;color:#444;outline:none;cursor:pointer;">
-      <option value="">All categories</option>
-      <option value="rest">🍽 Restaurants</option>
-      <option value="beach">🏖 Beaches</option>
-      <option value="museum">🎨 Museums</option>
-      <option value="night">🌙 Nightlife</option>
-      <option value="hotel">🏨 Hotels</option>
-      <option value="park">🌿 Parks</option>
-    </select>
-    <select id="fltPrice" onchange="applyAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #e0dbd4;font-size:.72rem;font-family:'DM Sans',sans-serif;background:#fff;color:#444;outline:none;cursor:pointer;">
-      <option value="">Any price</option>
-      <option value="$">$ Budget</option>
-      <option value="$$">$$ Mid-range</option>
-      <option value="$$$">$$$ Upscale</option>
-      <option value="$$$$">$$$$ Luxury</option>
-    </select>
-    <select id="fltZone" onchange="applyAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #e0dbd4;font-size:.72rem;font-family:'DM Sans',sans-serif;background:#fff;color:#444;outline:none;cursor:pointer;">
-      <option value="">All Miami</option>
-      <option value="south beach">South Beach</option>
-      <option value="wynwood">Wynwood</option>
-      <option value="brickell">Brickell</option>
-      <option value="coconut grove">Coconut Grove</option>
-      <option value="little havana">Little Havana</option>
-      <option value="coral gables">Coral Gables</option>
-      <option value="design district">Design District</option>
-      <option value="kendall">Kendall</option>
-    </select>
-    <button onclick="clearAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #FF4D35;background:#fff;font-size:.7rem;color:#FF4D35;font-weight:600;cursor:pointer;">✕ Clear</button>
-  </div>
-
   <!-- ── QUIZ STEP ── -->
-  <div id="itinQuiz" style="padding:22px;display:none;">
+  <div id="itinQuiz" style="padding:22px">
 
     <!-- Step 1: Type -->
     <div class="itin-step" id="qStep1">
@@ -5076,7 +5002,6 @@ document.addEventListener('DOMContentLoaded',function(){
 .itin-slot-sub{font-size:.76rem;color:#888;margin-top:2px;line-height:1.4}
 .itin-slot-tag{display:inline-block;font-size:.6rem;padding:2px 7px;border-radius:20px;background:#f5f0eb;color:#888;font-weight:600;margin-top:5px}
 .itin-divider{height:1px;background:#f0ebe3;margin:4px 0 18px}
-@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 </style>
 
 <script>
@@ -5089,256 +5014,14 @@ function openItinPanel() {
   document.getElementById('itinOverlay').style.display = 'block';
   document.getElementById('itinPanel').style.display = 'block';
   document.body.style.overflow = 'hidden';
-  setItinMode('ai');
-  var res = document.getElementById('itinResult');
-  if(res) res.style.display = 'none';
-  var aiRes = document.getElementById('itinAIResult');
-  if(aiRes) aiRes.style.display = 'none';
-  var aiErr = document.getElementById('itinAIError');
-  if(aiErr) aiErr.style.display = 'none';
-  var aiLoad = document.getElementById('itinAILoading');
-  if(aiLoad) aiLoad.style.display = 'none';
-  var aiBtn = document.getElementById('itinAIBtn');
-  if(aiBtn) aiBtn.style.display = 'block';
-  var aiInp = document.getElementById('itinAIInput');
-  if(aiInp) aiInp.value = '';
+  // Show quiz, hide result
+  document.getElementById('itinQuiz').style.display = 'block';
+  document.getElementById('itinResult').style.display = 'none';
   document.getElementById('qStep1').style.display = 'block';
   document.getElementById('qStep2').style.display = 'none';
   document.getElementById('qStep3').style.display = 'none';
   itinData = { type:'', days:1, budget:'' };
   document.getElementById('itinSubtitle').textContent = 'Plan your perfect Miami trip';
-}
-
-function setItinMode(mode) {
-  var ai  = document.getElementById('itinAIMode');
-  var qz  = document.getElementById('itinQuiz');
-  var bAI = document.getElementById('itinModeAI');
-  var bQz = document.getElementById('itinModeQuiz');
-  var res = document.getElementById('itinResult');
-  if(res) res.style.display = 'none';
-  if(mode === 'ai') {
-    if(ai) ai.style.display = 'block';
-    if(qz) qz.style.display = 'none';
-    if(bAI) { bAI.style.background='linear-gradient(135deg,#FF4D35,#e03a24)'; bAI.style.color='#fff'; bAI.style.border='none'; }
-    if(bQz) { bQz.style.background='#fff'; bQz.style.color='#666'; bQz.style.border='1.5px solid #e0dbd4'; }
-  } else {
-    if(ai) ai.style.display = 'none';
-    if(qz) qz.style.display = 'block';
-    if(bQz) { bQz.style.background='var(--navy)'; bQz.style.color='#fff'; bQz.style.border='none'; }
-    if(bAI) { bAI.style.background='#fff'; bAI.style.color='#FF4D35'; bAI.style.border='1.5px solid #FF4D35'; }
-  }
-}
-
-function itinAISugg(btn) {
-  var inp = document.getElementById('itinAIInput');
-  if(inp) inp.value = btn.textContent.trim();
-}
-
-function restartItinAI() {
-  var el;
-  el = document.getElementById('itinAIResult');  if(el) el.style.display='none';
-  el = document.getElementById('itinAIError');   if(el) el.style.display='none';
-  el = document.getElementById('itinAIInput');   if(el) el.value='';
-  el = document.getElementById('itinAIBtn');     if(el) el.style.display='block';
-}
-
-async function runItinAI() {
-  var inp = document.getElementById('itinAIInput');
-  var query = inp ? inp.value.trim() : '';
-  if(!query) { if(inp) inp.focus(); return; }
-  var L = (typeof lang !== 'undefined') ? lang : 'en';
-  var elBtn  = document.getElementById('itinAIBtn');
-  var elLoad = document.getElementById('itinAILoading');
-  var elRes  = document.getElementById('itinAIResult');
-  var elErr  = document.getElementById('itinAIError');
-  if(elBtn)  elBtn.style.display  = 'none';
-  if(elLoad) elLoad.style.display = 'block';
-  if(elRes)  elRes.style.display  = 'none';
-  if(elErr)  elErr.style.display  = 'none';
-  var sys = 'You are Luna, Miami Magic app expert planner. Create a detailed day-by-day itinerary in ' + (L==='es'?'Spanish':'English') + '. Format each day as "**Day 1 — Theme**" then time slots "9:00 AM — Activity — tip". Include real Miami spots (Versailles, KYU, Wynwood Walls, Vizcaya, PAMM, Ball & Chain, South Beach, Little Havana, Brickell). Under 350 words. Be specific and exciting.';
-  try {
-    var resp = await fetch('/api/chat', {
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({messages:[{role:'user',content:'Create itinerary for: '+query}], system:sys})
-    });
-    var data = await resp.json();
-    var text = (data.content && data.content[0] && data.content[0].text) ? data.content[0].text : '';
-    if(!text) throw new Error('empty');
-    var html = text
-      .replace(/\*\*([^*]+)\*\*/g, '<strong style="color:#08172E;display:block;margin:12px 0 3px;">$1</strong>')
-      .replace(/\n/g, '<br>');
-    if(elRes) {
-      elRes.innerHTML = html + '<div style="margin-top:14px;padding-top:12px;border-top:1px solid #f0ebe3;"><button onclick="restartItinAI()" style="padding:8px 18px;border-radius:50px;border:1.5px solid #e0dbd4;background:#fff;font-size:.75rem;color:#666;cursor:pointer;">↺ New itinerary</button></div>';
-      elRes.style.display = 'block';
-    }
-    try { localStorage.setItem('mmLastItin', text); } catch(e) {}
-  } catch(ex) {
-    if(elErr) { elErr.textContent = 'AI unavailable — check connection or try the Quick Quiz tab.'; elErr.style.display='block'; }
-    if(elBtn) elBtn.style.display = 'block';
-  }
-  if(elLoad) elLoad.style.display = 'none';
-}
-
-// ── ADVANCED FILTERS ──
-var _advFiltersOpen = false;
-var _advFilterState = null;
-
-function toggleAdvFilters() {
-  _advFiltersOpen = !_advFiltersOpen;
-  var el = document.getElementById('advFilters');
-  var btn = document.getElementById('filterToggleBtn');
-  if(el)  el.style.display  = _advFiltersOpen ? 'flex' : 'none';
-  if(btn) { btn.style.background = _advFiltersOpen ? '#FF4D35' : ''; btn.style.color = _advFiltersOpen ? '#fff' : '#FF4D35'; }
-}
-
-function applyAdvFilters() {
-  var cat   = (document.getElementById('fltCat')   || {}).value || '';
-  var price = (document.getElementById('fltPrice') || {}).value || '';
-  var zone  = (document.getElementById('fltZone')  || {}).value || '';
-  _advFilterState = (cat || price || zone) ? {cat:cat, price:price, zone:zone} : null;
-  doSearch(cat || 'miami', true);
-}
-
-// ── MY TRIP ──────────────────────────────────────
-function getTripItems(){ try{ return JSON.parse(localStorage.getItem('mm_trip')||'[]'); }catch(e){ return []; } }
-function saveTripItems(items){ try{ localStorage.setItem('mm_trip', JSON.stringify(items)); }catch(e){} }
-
-function isTripSaved(id){
-  return getTripItems().some(function(x){ return x.id===id; });
-}
-
-function addToTrip(id, name, type){
-  var items = getTripItems();
-  var btn = document.querySelector('.save-btn[onclick*="\'' + id + '\'"]');
-  if(items.some(function(x){ return x.id===id; })){
-    // already saved — remove
-    items = items.filter(function(x){ return x.id!==id; });
-    saveTripItems(items);
-    if(btn){ btn.classList.remove('saved'); btn.textContent='+ Trip'; }
-  } else {
-    items.push({id:id, name:name, type:type||'place', ts:Date.now()});
-    saveTripItems(items);
-    if(btn){ btn.classList.add('saved'); btn.innerHTML='✓ Saved'; }
-    // mini toast
-    showTripToast(name);
-  }
-  updateTripFab();
-}
-
-function updateTripFab(){
-  var items = getTripItems();
-  var fab = document.getElementById('tripFab');
-  var cnt = document.getElementById('tripFabCount');
-  if(!fab) return;
-  if(items.length > 0){
-    fab.classList.add('visible');
-    if(cnt) cnt.textContent = items.length;
-  } else {
-    fab.classList.remove('visible');
-  }
-}
-
-function openMyTrip(){
-  var panel = document.getElementById('myTripPanel');
-  var ov    = document.getElementById('myTripOverlay');
-  if(!panel) return;
-  renderTripList();
-  panel.classList.add('open');
-  if(ov) { ov.style.display='block'; }
-  document.body.style.overflow='hidden';
-}
-
-function closeMyTrip(){
-  var panel = document.getElementById('myTripPanel');
-  var ov    = document.getElementById('myTripOverlay');
-  if(panel) panel.classList.remove('open');
-  if(ov) ov.style.display='none';
-  document.body.style.overflow='';
-}
-
-function renderTripList(){
-  var items = getTripItems();
-  var list  = document.getElementById('tripList');
-  var empty = document.getElementById('tripEmpty');
-  var cnt   = document.getElementById('tripCount');
-  if(!list) return;
-  if(cnt) cnt.textContent = items.length + (items.length===1?' place':' places') + ' saved';
-  if(items.length===0){
-    list.innerHTML='';
-    if(empty) empty.style.display='block';
-    return;
-  }
-  if(empty) empty.style.display='none';
-  list.innerHTML = items.map(function(item){
-    var emoji = item.type==='rest'?'🍽':item.type==='beach'?'🏖':item.type==='hotel'?'🏨':'📍';
-    return '<div class="trip-card">'      +'<div class="trip-card-img" style="display:flex;align-items:center;justify-content:center;font-size:1.4rem;">'+emoji+'</div>'      +'<div><div class="trip-card-name">'+item.name+'</div><div class="trip-card-cat">'+item.type+'</div></div>'      +'<button class="trip-rm" onclick="removeFromTrip(\'' +item.id+ '\')">✕</button>'      +'</div>';
-  }).join('');
-}
-
-function removeFromTrip(id){
-  var items = getTripItems().filter(function(x){ return x.id!==id; });
-  saveTripItems(items);
-  renderTripList();
-  updateTripFab();
-  // un-highlight card button if visible
-  var btn = document.querySelector('.save-btn[onclick*="\'' +id+ '\'"]');
-  if(btn){ btn.classList.remove('saved'); btn.textContent='+ Trip'; }
-}
-
-function shareTrip(){
-  var items = getTripItems();
-  if(!items.length){ alert('Add some places first!'); return; }
-  var text = '🗺 My Miami Trip Plan\n\n' + items.map(function(x,i){ return (i+1)+'. '+x.name; }).join('\n') + '\n\nPlanned with Miami Magic 🌴';
-  if(navigator.share){ navigator.share({title:'My Miami Trip',text:text}).catch(function(){}); }
-  else if(navigator.clipboard){ navigator.clipboard.writeText(text).then(function(){ showTripToast('Trip copied to clipboard!'); }); }
-}
-
-function showTripToast(name){
-  var t = document.createElement('div');
-  t.textContent = '✓ ' + name.substring(0,22) + ' saved to trip';
-  t.style.cssText='position:fixed;bottom:160px;left:50%;transform:translateX(-50%);background:#08172E;color:#fff;padding:10px 18px;border-radius:50px;font-size:.78rem;font-weight:600;z-index:9999;white-space:nowrap;animation:fadeInUp .3s ease;pointer-events:none;';
-  document.body.appendChild(t);
-  setTimeout(function(){ t.style.opacity='0'; t.style.transition='opacity .4s'; setTimeout(function(){ t.remove(); }, 400); }, 2000);
-}
-
-// ── LAZY IMAGE LOADING ──────────────────────────────
-function lazyLoadImages(){
-  if(!('IntersectionObserver' in window)) return;
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        var img = e.target;
-        if(img.dataset.src){ img.src=img.dataset.src; delete img.dataset.src; }
-        io.unobserve(img);
-      }
-    });
-  },{rootMargin:'200px'});
-  document.querySelectorAll('img[data-src]').forEach(function(img){ io.observe(img); });
-}
-
-// ── SERVICE WORKER ──────────────────────────────────
-if('serviceWorker' in navigator){
-  window.addEventListener('load', function(){
-    navigator.serviceWorker.register('/sw.js').catch(function(){});
-  });
-}
-
-// Init trip fab on load
-document.addEventListener('DOMContentLoaded', function(){
-  updateTripFab();
-  lazyLoadImages();
-});
-
-function clearAdvFilters() {
-  ['fltCat','fltPrice','fltZone'].forEach(function(id){ var e=document.getElementById(id); if(e) e.value=''; });
-  _advFilterState = null;
-  _advFiltersOpen = false;
-  var el  = document.getElementById('advFilters');
-  var btn = document.getElementById('filterToggleBtn');
-  if(el)  el.style.display  = 'none';
-  if(btn) { btn.style.background=''; btn.style.color='#FF4D35'; }
-  closeSearch();
 }
 
 function closeItin() {
@@ -8066,55 +7749,5 @@ document.addEventListener('keydown', function(e) {
 })();
 /* ══ END HERO ROTATOR JS ══ */
 </script>
-<style>
-/* ── SKELETON LOADERS ── */
-@keyframes shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
-.skel{background:linear-gradient(90deg,#f0ebe3 25%,#e8e2da 50%,#f0ebe3 75%);background-size:800px 100%;animation:shimmer 1.4s infinite;border-radius:10px;}
-.skel-card{height:200px;border-radius:16px;margin:0 0 12px;}
-.skel-line{height:14px;margin:8px 0;border-radius:6px;}
-.skel-line.short{width:60%;}
-
-/* ── MY TRIP PANEL ── */
-#myTripPanel{position:fixed;bottom:0;left:0;right:0;max-height:80vh;overflow-y:auto;background:#fff;border-radius:24px 24px 0 0;z-index:1200;padding:0 0 100px;box-shadow:0 -8px 40px rgba(0,0,0,.18);transform:translateY(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);}
-#myTripPanel.open{transform:translateY(0);}
-#myTripOverlay{display:none;position:fixed;inset:0;background:rgba(8,15,30,.5);z-index:1199;}
-.trip-card{display:flex;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid #f5f0eb;}
-.trip-card-img{width:52px;height:52px;border-radius:10px;object-fit:cover;background:#f0ebe3;flex-shrink:0;}
-.trip-card-name{font-weight:600;font-size:.88rem;color:#08172E;}
-.trip-card-cat{font-size:.72rem;color:#999;margin-top:2px;}
-.trip-rm{background:none;border:none;color:#FF4D35;font-size:1.1rem;cursor:pointer;padding:4px;margin-left:auto;flex-shrink:0;}
-.save-btn{position:absolute;bottom:8px;right:8px;background:rgba(8,15,30,.72);border:none;border-radius:50px;color:#fff;font-size:.68rem;font-weight:700;padding:5px 10px;cursor:pointer;backdrop-filter:blur(4px);transition:background .2s;white-space:nowrap;}
-.save-btn:hover,.save-btn.saved{background:#FF4D35;}
-.save-btn.saved::before{content:'✓ ';}
-.trip-fab{position:fixed;bottom:84px;right:16px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border:none;border-radius:50px;padding:11px 18px;font-size:.82rem;font-weight:700;cursor:pointer;box-shadow:0 4px 20px rgba(255,77,53,.4);z-index:1000;display:none;gap:6px;align-items:center;transition:all .3s;}
-.trip-fab.visible{display:flex;}
-.trip-count{background:rgba(255,255,255,.25);border-radius:50px;padding:1px 7px;font-size:.72rem;}
-</style>
-<!-- ── MY TRIP PANEL ── -->
-<div id="myTripOverlay" onclick="closeMyTrip()"></div>
-<div id="myTripPanel">
-  <div style="text-align:center;padding:12px 0 0"><div style="width:36px;height:4px;background:#e0dbd4;border-radius:4px;display:inline-block"></div></div>
-  <div style="padding:16px 18px 0;display:flex;align-items:center;justify-content:space-between;">
-    <div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#08172E;">🗺 My Trip</div>
-      <div id="tripCount" style="font-size:.74rem;color:#999;margin-top:2px;">0 places saved</div>
-    </div>
-    <div style="display:flex;gap:8px;">
-      <button onclick="shareTrip()" style="padding:8px 14px;border-radius:50px;border:1.5px solid #e0dbd4;background:#fff;font-size:.75rem;color:#444;cursor:pointer;">Share ↗</button>
-      <button onclick="closeMyTrip()" style="background:#f5f0eb;border:none;border-radius:50%;width:34px;height:34px;font-size:1rem;cursor:pointer;">✕</button>
-    </div>
-  </div>
-  <div id="tripList" style="padding:12px 0 0;"></div>
-  <div id="tripEmpty" style="padding:40px 18px;text-align:center;color:#aaa;font-size:.85rem;">
-    <div style="font-size:2rem;margin-bottom:10px;">📍</div>
-    Tap the <strong>+ Trip</strong> button on any place to save it here.
-  </div>
-</div>
-
-<!-- MY TRIP FAB -->
-<button class="trip-fab" id="tripFab" onclick="openMyTrip()">
-  🗺 My Trip <span class="trip-count" id="tripFabCount">0</span>
-</button>
-
 </body>
 </html>
