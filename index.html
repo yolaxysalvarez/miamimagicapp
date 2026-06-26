@@ -3,6 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO -->
+<meta name="description" content="Miami Magic — Your ultimate local guide to Miami. Beaches, restaurants, nightlife, hotels, events & hidden gems.">
+<meta name="keywords" content="Miami, city guide, restaurants Miami, beaches Miami, nightlife Miami, hotels Miami, things to do Miami">
+<meta name="author" content="Y & Y Entertainment Corp">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://miamimagicapp.com">
+<meta property="og:title" content="Miami Magic — Your Local City Guide">
+<meta property="og:description" content="Beaches, restaurants, nightlife, hotels & hidden gems — all in one place. The insider's guide to Miami.">
+<meta property="og:image" content="https://miamimagicapp.com/miami-magic-icon-180.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Miami Magic">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@miamimagicapp">
+<meta name="twitter:title" content="Miami Magic — Your Local City Guide">
+<meta name="twitter:description" content="Beaches, restaurants, nightlife, hotels & hidden gems — all in one place.">
+<meta name="twitter:image" content="https://miamimagicapp.com/miami-magic-icon-180.png">
 <link rel="apple-touch-icon" sizes="180x180" href="miami-magic-icon-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Miami Magic">
@@ -57,46 +75,7 @@ button,a{cursor:pointer;}
 .sb-biz:hover{opacity:.9;transform:translateY(-1px);}
 .sb-lang{background:rgba(255,255,255,.07);color:rgba(255,255,255,.6);}
 .sb-lang:hover{background:rgba(255,255,255,.12);color:#fff;}
-/* ── HAMBURGER BTN — GLASSMORPHISM PREMIUM ── */
-.mob-btn{
-  display:none;
-  position:fixed;
-  top:14px;
-  left:14px;
-  z-index:9998;
-  width:48px;
-  height:48px;
-  border-radius:14px;
-  background:rgba(255,255,255,0.12)!important;
-  backdrop-filter:blur(20px) saturate(180%)!important;
-  -webkit-backdrop-filter:blur(20px) saturate(180%)!important;
-  border:1px solid rgba(255,255,255,0.22)!important;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:5.5px;
-  cursor:pointer;
-  box-shadow:0 8px 32px rgba(0,0,0,0.22),0 1px 0 rgba(255,255,255,0.1) inset;
-  transition:transform .22s cubic-bezier(.34,1.56,.64,1), box-shadow .22s ease, background .22s ease;
-}
-.mob-btn:hover{
-  transform:scale(1.08);
-  background:rgba(255,77,53,0.22)!important;
-  border-color:rgba(255,77,53,0.5)!important;
-  box-shadow:0 10px 36px rgba(255,77,53,0.28),0 1px 0 rgba(255,255,255,0.1) inset;
-}
-.mob-btn:hover span{background:#FF4D35;}
-.mob-btn span{
-  width:18px;
-  height:1.8px;
-  background:rgba(255,255,255,0.92);
-  border-radius:3px;
-  transition:background .22s ease, transform .22s ease, width .22s ease;
-  display:block;
-}
-.mob-btn span:nth-child(1){width:18px;}
-.mob-btn span:nth-child(2){width:13px;margin-left:-2.5px;}
-.mob-btn span:nth-child(3){width:18px;}
+/* ── HAMBURGER BTN — TRANSPARENT ── */
 .mob-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:199;}
 .main { margin-left:0; width:100%; overflow-x:hidden; }
 .hero {
@@ -174,8 +153,8 @@ button,a{cursor:pointer;}
 .sp-empty{padding:28px 18px;text-align:center;color:rgba(255,255,255,.4);}
 .sp-footer{padding:9px 18px;text-align:center;font-size:.72rem;color:rgba(255,255,255,.3);border-top:1px solid rgba(255,255,255,.08);}
 /* SECTIONS */
-.sec{padding:52px 28px;max-width:1380px;width:100%;margin:0 auto;box-sizing:border-box;}
-.sec-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:26px;flex-wrap:wrap;gap:10px;}
+.sec{padding:20px 28px 4px;max-width:1380px;width:100%;margin:0 auto;box-sizing:border-box;}
+.sec-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;}
 .sec-tt{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;line-height:1.1;}
 .sec-tt small{display:block;font-size:.68rem;font-family:'DM Sans',sans-serif;font-weight:700;color:var(--teal);letter-spacing:4px;text-transform:uppercase;margin-bottom:4px;}
 .see-all{font-size:.78rem;color:var(--coral);font-weight:700;text-decoration:none;padding:6px 15px;border:2px solid var(--coral);border-radius:50px;transition:all .2s;cursor:pointer;}
@@ -191,15 +170,15 @@ button,a{cursor:pointer;}
 .h-row-wrap::after{right:0;background:linear-gradient(to left,var(--sand) 0%,transparent 100%);}
 [data-theme="dark"] .h-row-wrap::before{background:linear-gradient(to right,var(--bg) 0%,transparent 100%);}
 [data-theme="dark"] .h-row-wrap::after{background:linear-gradient(to left,var(--bg) 0%,transparent 100%);}
-.h-row{display:flex;gap:18px;overflow-x:auto;padding:8px 28px 22px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-padding-left:28px;}
+.h-row{display:flex;gap:14px;overflow-x:auto;padding:6px 28px 18px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;scroll-padding-left:28px;}
 .h-row::-webkit-scrollbar{display:none;}
-.h-row>*{flex:0 0 240px!important;width:240px!important;min-width:240px!important;scroll-snap-align:start;box-sizing:border-box;border-radius:20px!important;overflow:hidden;transition:transform .28s cubic-bezier(.34,1.4,.64,1),box-shadow .28s ease!important;will-change:transform;}
+.h-row>*{flex:0 0 260px!important;width:260px!important;min-width:260px!important;scroll-snap-align:start;box-sizing:border-box;border-radius:20px!important;overflow:hidden;transition:transform .28s cubic-bezier(.34,1.4,.64,1),box-shadow .28s ease!important;will-change:transform;}
 .h-row>*:hover{transform:translateY(-7px) scale(1.025)!important;box-shadow:0 20px 48px rgba(0,0,0,.13),0 0 0 1.5px rgba(255,77,53,.18),0 8px 24px rgba(255,77,53,.12)!important;}
-.h-row .rcard-img{height:148px!important;border-radius:0!important;}
-.h-row .vcard-img{height:130px!important;border-radius:0!important;}
-.h-row .bcard{min-height:195px!important;}
-.h-row .ncard-img{height:130px!important;border-radius:0!important;}
-.h-row .stcard-img{height:130px!important;border-radius:0!important;}
+.h-row .rcard-img{height:165px!important;border-radius:0!important;}
+.h-row .vcard-img{height:148px!important;border-radius:0!important;}
+.h-row .bcard{min-height:210px!important;}
+.h-row .ncard-img{height:148px!important;border-radius:0!important;}
+.h-row .stcard-img{height:148px!important;border-radius:0!important;}
 .h-row .vname,.h-row .stname,.h-row .nname,.h-row .rcard-name{font-size:.88rem!important;white-space:normal!important;}
 .h-row .vdesc,.h-row .rcard-desc{-webkit-line-clamp:2!important;font-size:.73rem!important;}
 .h-row .rcard-feat{flex:0 0 270px!important;width:270px!important;display:block!important;}
@@ -218,6 +197,12 @@ button,a{cursor:pointer;}
   .full-grid-beach{grid-template-columns:1fr!important;}
   .full-grid-venue{grid-template-columns:1fr!important;}
   .full-grid-nite{grid-template-columns:1fr 1fr!important;}
+  .full-grid-stad{grid-template-columns:1fr 1fr!important;}
+  .h-row>*{flex:0 0 210px!important;width:210px!important;min-width:210px!important;border-radius:16px!important;}
+  .h-row .rcard-img,.h-row .vcard-img,.h-row .hotel-img,.h-row .ncard-img{height:128px!important;}
+  .h-row-wrap::before{width:28px!important;}
+  .h-row-wrap::after{width:28px!important;}
+}
   .full-grid-stad{grid-template-columns:1fr 1fr!important;}
 }
 .rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
@@ -568,7 +553,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 @keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes flt{0%,100%{transform:translateY(0) rotate(0);}33%{transform:translateY(-15px) rotate(4deg);}66%{transform:translateY(-6px) rotate(-3deg);}}
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-@media(max-width:900px){.sidebar{top:32px!important;}.hero{padding:calc(44px + 32px) 22px 24px!important;min-height:100svh!important;}.logo-wrap{font-size:2.2rem!important;margin-bottom:8px!important;}.hero-eye{margin-bottom:10px!important;animation:none!important;}.hero h1{margin-bottom:10px!important;animation:none!important;font-size:clamp(2rem,8vw,3rem)!important;}.hero-sub{margin-bottom:14px!important;animation:none!important;font-size:.88rem!important;max-width:100%!important;}.hero-btns{animation:none!important;gap:8px!important;}.hero-stats{margin-top:10px!important;animation:none!important;padding-top:14px!important;gap:12px!important;flex-wrap:nowrap!important;overflow-x:auto!important;}.hstat-n{font-size:1.2rem!important;}.hstat-l{font-size:.6rem!important;}.flt{display:none!important;}.fade{opacity:1;transform:none;}.fade.vis{opacity:1;transform:none;}.rest-grid{grid-template-columns:1fr;}.beach-grid{grid-template-columns:1fr;}.venue-grid{grid-template-columns:1fr;}:root{--sidebar:0px;}.sidebar{transform:translateX(-260px);width:260px;transition:transform .3s;}.sidebar.open{transform:translateX(0);}.mob-btn{display:flex;}.mob-ov{display:block;opacity:0;pointer-events:none;transition:opacity .3s;}.mob-ov.open{opacity:1;pointer-events:all;}.main{margin-left:0;}.hero{padding:calc(50px + 32px) 22px 160px;}.search-zone{padding:34px 22px 0;}.sec{padding:46px 22px;}#sec-favs{padding:0 22px!important;}.money-sec{padding:60px 22px;}footer{padding:44px 22px 22px;}.footer-inner{grid-template-columns:1fr;}.rev-grid{grid-template-columns:1fr;}.rcard-feat{grid-template-columns:1fr;}.rcard-feat .rcard-img{height:180px;}.f-bottom{flex-direction:column;text-align:center;}}
+@media(max-width:900px){.sidebar{top:32px!important;}.hero{padding:calc(44px + 32px) 22px 24px!important;min-height:100svh!important;}.logo-wrap{font-size:2.2rem!important;margin-bottom:8px!important;}.hero-eye{margin-bottom:10px!important;animation:none!important;}.hero h1{margin-bottom:10px!important;animation:none!important;font-size:clamp(2rem,8vw,3rem)!important;}.hero-sub{margin-bottom:14px!important;animation:none!important;font-size:.88rem!important;max-width:100%!important;}.hero-btns{animation:none!important;gap:8px!important;}.hero-stats{margin-top:10px!important;animation:none!important;padding-top:14px!important;gap:12px!important;flex-wrap:nowrap!important;overflow-x:auto!important;}.hstat-n{font-size:1.2rem!important;}.hstat-l{font-size:.6rem!important;}.flt{display:none!important;}.fade{opacity:1;transform:none;}.fade.vis{opacity:1;transform:none;}.rest-grid{grid-template-columns:1fr;}.beach-grid{grid-template-columns:1fr;}.venue-grid{grid-template-columns:1fr;}:root{--sidebar:0px;}.sidebar{transform:translateX(-260px);width:260px;transition:transform .3s;}.sidebar.open{transform:translateX(0);}.mob-btn{display:flex;}.mob-ov{display:block;opacity:0;pointer-events:none;transition:opacity .3s;}.mob-ov.open{opacity:1;pointer-events:all;}.main{margin-left:0;}.hero{padding:calc(50px + 32px) 22px 160px;}.search-zone{padding:34px 22px 0;}.sec{padding:20px 16px;}#sec-favs{padding:0 22px!important;}.money-sec{padding:60px 22px;}footer{padding:44px 22px 22px;}.footer-inner{grid-template-columns:1fr;}.rev-grid{grid-template-columns:1fr;}.rcard-feat{grid-template-columns:1fr;}.rcard-feat .rcard-img{height:180px;}.f-bottom{flex-direction:column;text-align:center;}}
 
 /* ── BIZ TOPBAR ── */
 
@@ -621,12 +606,12 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 .h-row .stcard-img,
 .h-row .ccard-img,
 .h-row .pcard-img,
-.h-row .evcard-img { height: 120px !important; }
+.h-row .evcard-img { height: 148px !important; }
 
 /* Tighter section headers on mobile */
 @media(max-width:899px){
   .sec-tt{font-size:1.2rem !important;}
-  .sec{padding:22px 14px !important;}
+  .sec{padding:18px 14px 12px !important;}
   .h-row{padding:6px 16px 16px !important;gap:13px !important;}
   .h-row>*{flex:0 0 188px !important;width:188px !important;min-width:188px !important;border-radius:16px !important;}
   .h-row .rcard-img,
@@ -737,7 +722,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 72px 24px 160px;
+  padding: 96px 28px 180px;
   max-width: 100%;
   width: 100%;
   gap: 0;
@@ -750,7 +735,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   align-items: center;
   justify-content: center;
   gap: 14px;
-  margin-bottom: 28px;
+  margin-bottom: 36px;
 }
 .hero-palm {
   width: 42px;
@@ -811,7 +796,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   letter-spacing: .15em;
   text-transform: uppercase;
   color: #fff;
-  margin: 0 0 20px;
+  margin: 0 0 28px;
   text-shadow: 0 1px 4px rgba(0,0,0,.8), 0 2px 16px rgba(0,0,0,.6);
 }
 /* Fabs bar */
@@ -1067,8 +1052,41 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   .hero-inline-search { max-width: 100%; margin-top: 22px; }
 }
 
-/* SEARCH SECTION */
-.hero-search-section {
+/* ── FLUID SECTION FLOW ── */
+.sec-wrap {
+  position: relative;
+}
+/* Alternating section tints for rhythm */
+.sec-tint-a { background: var(--sand); }
+.sec-tint-b { background: #fff; }
+.sec-tint-c { background: #f5f8ff; }
+
+/* Section separator — subtle gradient fade between sections */
+.sec-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,77,53,.12) 20%, rgba(0,201,177,.1) 50%, rgba(255,77,53,.12) 80%, transparent 100%);
+  margin: 0 40px;
+}
+
+/* Between consecutive .sec sections — a hairline divider */
+.sec.fade + .sec.fade {
+  border-top: 1px solid rgba(0,0,0,.04);
+}
+
+/* Fade-in animation for sections */
+.sec.fade {
+  animation: secFadeIn .45s ease both;
+}
+@keyframes secFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Hero search zone — reduce top gap */
+.hero-search-section { padding: 20px 20px 16px; }
+
+/* Kill excessive bottom padding on sections */
+.sec + .sec { padding-top: 16px !important; }
   background: #FFE8D6;
   padding: 24px 20px 20px;
   box-sizing: border-box;
@@ -1396,12 +1414,16 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 @keyframes hmIconIn{from{opacity:0;transform:rotate(-15deg) scale(.7)}to{opacity:1;transform:rotate(0) scale(1)}}
 
 #hmDrawer{
-  background:rgba(8,23,46,.85)!important;
+  background:rgba(4,8,16,.35)!important;
+  backdrop-filter:blur(4px)!important;
+  -webkit-backdrop-filter:blur(4px)!important;
 }
 #hmDrawer > div {
-  background:rgba(8,23,46,.96)!important;
-  border-right:1px solid rgba(255,255,255,.08)!important;
-  box-shadow:4px 0 30px rgba(0,0,0,.4)!important;
+  background:rgba(8,23,46,.45)!important;
+  backdrop-filter:blur(28px)!important;
+  -webkit-backdrop-filter:blur(28px)!important;
+  border-right:1px solid rgba(255,255,255,.15)!important;
+  box-shadow:4px 0 40px rgba(0,0,0,.3), inset 1px 0 0 rgba(255,255,255,.08)!important;
   width:275px!important;
   animation:hmDrawerSlide .25s ease-out both!important;
   will-change:transform;
@@ -1495,33 +1517,64 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   border-top:1px solid rgba(255,255,255,.05);
   text-align:center;
 }
-.hm-btn{
-  display:none;
-  flex-direction:column;
-  align-items:center;justify-content:center;
-  width:36px;height:36px;
-  border-radius:50px;
-  background:transparent;
-  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
-  border:1px solid rgba(255,255,255,.3)!important;
-  cursor:pointer;
-  transition:background .22s ease,transform .15s ease;
-  flex-shrink:0;
-  gap:5px;
-  padding:0;
-  box-shadow:none;
+/* ═══════════════════════════════════════════
+   HAMBURGER — TRANSPARENTE PREMIUM
+   Bloque único y definitivo. No tocar.
+═══════════════════════════════════════════ */
+.hm-btn {
+  /* Layout */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  /* Strip browser native button appearance */
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  /* Glass transparente — igual estilo que weather card */
+  background: rgba(255,255,255,.1) !important;
+  border: 1px solid rgba(255,255,255,.22) !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,.18), inset 0 1px 0 rgba(255,255,255,.12) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  outline: none !important;
+  border-radius: 10px !important;
+  /* Transición suave */
+  transition: transform .18s cubic-bezier(.4,0,.2,1), opacity .18s ease;
 }
-.hm-btn:hover{background:rgba(255,255,255,.1);transform:scale(1.05);}
-.hm-btn:active{transform:scale(.94);}
-.hm-btn span{
-  display:block;
-  background:#fff;border-radius:2px;
-  transition:all .28s cubic-bezier(.34,1.28,.64,1);
+.hm-btn:hover {
+  background: rgba(255,255,255,.18) !important;
+  transform: scale(1.08);
+  opacity: .85;
 }
-.hm-btn span:nth-child(1){width:18px;height:2px;}
-.hm-btn span:nth-child(2){width:12px;height:2px;}
-.hm-btn span:nth-child(3){width:15px;height:2px;}
-.hm-btn:hover span{width:18px!important;}
+.hm-btn:active {
+  background: rgba(255,255,255,.08) !important;
+  transform: scale(.9);
+}
+/* Las 3 líneas del ícono */
+.hm-btn span {
+  display: block;
+  height: 1.5px;
+  border-radius: 2px;
+  background: #fff;
+  transition: width .25s cubic-bezier(.4,0,.2,1), background .2s ease, transform .25s ease, opacity .2s ease;
+  /* Sombra sutil para que se vea sobre cualquier fondo */
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,.45));
+}
+/* Longitudes asimétricas — carácter visual */
+.hm-btn span:nth-child(1) { width: 22px; align-self: flex-start; }
+.hm-btn span:nth-child(2) { width: 16px; align-self: flex-end; }
+.hm-btn span:nth-child(3) { width: 20px; align-self: flex-start; }
+/* Hover: alinean y se vuelven coral */
+.hm-btn:hover span:nth-child(1) { width: 20px; background: var(--coral,#FF4D35); }
+.hm-btn:hover span:nth-child(2) { width: 20px; background: var(--coral,#FF4D35); align-self: flex-start; }
+.hm-btn:hover span:nth-child(3) { width: 20px; background: var(--coral,#FF4D35); }
 
 /* ── REDESIGNED MAGIC FABS ── */
 .magic-fabs{position:relative;bottom:auto;left:auto;transform:none;margin:0 auto;z-index:9500;display:flex;gap:0;background:rgba(255,255,255,.14);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.28);border-radius:50px;padding:4px 5px;box-shadow:0 4px 20px rgba(0,0,0,.18);white-space:nowrap;overflow-x:auto;max-width:min(460px,calc(100vw - 32px));scrollbar-width:none;}
@@ -1562,18 +1615,7 @@ body{padding-bottom:0;}
     align-items:center;
     justify-content:space-between;
   }
-  .hm-btn{
-    display:flex!important;
-    padding:8px 10px!important;
-    flex-shrink:0;
-    background:rgba(255,255,255,.08)!important;
-    backdrop-filter:blur(20px)!important;
-    -webkit-backdrop-filter:blur(20px)!important;
-    border:1px solid rgba(255,255,255,.22)!important;
-    border-radius:50px!important;
-    box-shadow:0 4px 14px rgba(0,0,0,.12)!important;
-  }
-  .hm-btn span{}
+  .hm-btn{ display:flex!important; }
   .hero-logo .logo-wrap{font-size:1.35rem!important;white-space:nowrap;}
   #wxSimple{font-size:.75rem!important;white-space:nowrap;flex-shrink:0;}
   /* Fila 2: links centrados */
@@ -1615,11 +1657,11 @@ body{padding-bottom:0;}
   .logo-wrap{margin-bottom:0!important;font-size:1.35rem!important;}
   .hero-nav{display:flex!important;flex-direction:column!important;align-items:center!important;padding:14px 16px 0!important;gap:8px!important;}
   .hero-nav .nav-row1{display:flex!important;width:100%!important;align-items:center!important;justify-content:space-between!important;}
-  .hm-btn{display:flex!important;background:transparent!important;backdrop-filter:blur(20px)!important;-webkit-backdrop-filter:blur(20px)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:50px!important;box-shadow:none!important;}
+  .hm-btn{display:flex!important;}
   .hn-mobile{display:flex!important;justify-content:center!important;gap:22px!important;width:100%!important;}
   .hn-desktop{display:none!important;}
   /* Sections */
-  .sec{padding:28px 16px!important;}
+  .sec{padding:16px 14px 4px!important;}
   .sec-h2{font-size:1.3rem!important;}
   .sec-hdr{flex-direction:column;align-items:flex-start;gap:6px;}
   /* Rest: 2 cols */
@@ -1659,7 +1701,7 @@ body{padding-bottom:0;}
 .hn-desktop{display:flex!important;}
 /* Mobile */
 @media(max-width:899px){
-  .hm-btn{display:flex!important;background:transparent!important;backdrop-filter:blur(20px)!important;-webkit-backdrop-filter:blur(20px)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:50px!important;box-shadow:none!important;}
+  .hm-btn{display:flex!important;}
   .hn-desktop{display:none!important;}
   .hn-mobile{display:flex!important;}
 }
@@ -1779,7 +1821,7 @@ body{padding-bottom:0;}
 .hm-btn{display:none;}
 @media(max-width:899px){
   /* ── NAV MOBILE ── */
-  .hm-btn{display:flex!important;background:transparent!important;backdrop-filter:blur(20px)!important;-webkit-backdrop-filter:blur(20px)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:50px!important;box-shadow:none!important;}
+  .hm-btn{display:flex!important;}
   #navLinks{display:none!important;}
   #navLinksMob{display:none!important;}
   #navRow1{
@@ -1792,7 +1834,7 @@ body{padding-bottom:0;}
     padding-bottom:0!important;
     position:relative!important;
   }
-  .hm-btn{order:1!important;flex-shrink:0!important;display:flex!important;background:transparent!important;backdrop-filter:blur(20px)!important;-webkit-backdrop-filter:blur(20px)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:50px!important;box-shadow:none!important;}
+  .hm-btn{display:flex!important;order:1!important;flex-shrink:0!important;}
   .nav-logo{
     order:2!important;
     position:absolute!important;
@@ -4088,7 +4130,6 @@ function renderHotels(){
   html+='<div class="hotel-grid" id="hotels-full" style="display:none;margin-top:16px;">';
   rest.forEach(function(h){ html+=hotelCard(h); });
   html+='</div>';
-  html+='<div style="text-align:center;padding:10px 16px 4px;"><a href="https://www.booking.com/city/us/miami.html?aid=304142" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#003580;color:#fff;padding:9px 18px;border-radius:24px;font-size:.78rem;font-weight:700;text-decoration:none;">&#127970; Compare All Miami Hotel Prices on Booking.com</a></div>';
   html+='</section>';
   return html;
 }
@@ -5140,8 +5181,10 @@ function closeSignup(){
   document.getElementById('signupOverlay').style.display='none';
 }
 function signupGoogle(){
-  // Google auth placeholder - opens signup flow
-  alert('Google sign-in coming soon! Use email signup for now.');
+  // Google auth — show elegant coming soon toast
+  showPremiumToast(typeof lang!=='undefined'&&lang==='es'
+    ? '🔜 Google Sign-in próximamente'
+    : '🔜 Google Sign-in coming soon — use email below');
 }
 function showLogin(){
   // Toggle to login view - placeholder
@@ -5268,7 +5311,11 @@ function accEdit(){
     document.getElementById('acc-data-name').textContent=n.trim();
   }
 }
-function accEditPhoto(){ alert('Foto de perfil: coming soon!'); }
+function accEditPhoto(){
+  showPremiumToast(typeof lang!=='undefined'&&lang==='es'
+    ? '📸 Foto de perfil — próximamente'
+    : '📸 Profile photo upload coming soon');
+}
 function accLogout(){
   if(confirm('¿Cerrar sesión?')){
     try{localStorage.removeItem('mm_subscribed');localStorage.removeItem('mm_name');localStorage.removeItem('mm_since');}catch(e){}
@@ -5577,8 +5624,36 @@ document.addEventListener('DOMContentLoaded',function(){
     <textarea id="itinAIInput" rows="4" placeholder="E.g.: 3 days in Miami, couple, love beaches, good food and some nightlife. Mid budget." style="width:100%;border:1.5px solid #e0dbd4;border-radius:16px;padding:12px 14px;font-size:.85rem;font-family:'DM Sans',sans-serif;outline:none;resize:none;box-sizing:border-box;line-height:1.5;color:#08172E;" onfocus="this.style.borderColor='#FF4D35'" onblur="this.style.borderColor='#e0dbd4'"></textarea>
     <button onclick="runItinAI()" id="itinAIBtn" style="margin-top:10px;width:100%;padding:13px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border:none;border-radius:50px;font-size:.88rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">✦ Generate My Itinerary</button>
     <div id="itinAILoading" style="display:none;text-align:center;padding:22px 0;">
-      <div style="font-size:1.4rem;animation:spin 1.2s linear infinite;display:inline-block;">⏳</div>
-      <div style="font-size:.82rem;color:#999;margin-top:8px;">Luna is planning your trip…</div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+        <div style="position:relative;width:54px;height:54px;">
+          <!-- Palm SVG animada estilo logo Miami Magic -->
+          <svg viewBox="0 0 54 54" width="54" height="54" xmlns="http://www.w3.org/2000/svg" style="animation:palmThink 1.6s ease-in-out infinite;transform-origin:50% 85%;">
+            <style>
+              @keyframes palmThink{
+                0%,100%{transform:rotate(0deg) scale(1);}
+                20%{transform:rotate(-8deg) scale(1.04);}
+                50%{transform:rotate(6deg) scale(1.06);}
+                75%{transform:rotate(-4deg) scale(1.03);}
+              }
+            </style>
+            <!-- Tronco -->
+            <path d="M27 48 C25 42 24 36 26 28 C27 24 28 22 27 18" stroke="#c8913a" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- Hojas izquierda -->
+            <path d="M26 22 C20 18 12 16 8 20" stroke="#00C9B1" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M26 24 C19 22 11 24 9 30" stroke="#00C9B1" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M26 20 C22 14 18 10 14 10" stroke="#00C9B1" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <!-- Hojas derecha -->
+            <path d="M27 22 C33 18 41 16 45 20" stroke="#FF4D35" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M27 24 C34 22 42 24 44 30" stroke="#FF4D35" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M27 20 C31 14 35 10 39 10" stroke="#FF4D35" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <!-- Hoja centro arriba -->
+            <path d="M27 18 C27 12 27 8 28 5" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <!-- Base / arena -->
+            <ellipse cx="27" cy="49" rx="9" ry="3" fill="#FFD166" opacity="0.35"/>
+          </svg>
+        </div>
+        <div style="font-size:.8rem;color:#999;font-family:'DM Sans',sans-serif;font-weight:500;letter-spacing:.5px;">Luna is planning your trip…</div>
+      </div>
     </div>
     <div id="itinAIResult" style="display:none;margin-top:14px;padding:16px;background:#fff8f5;border-radius:16px;border:1px solid rgba(255,77,53,.15);font-size:.84rem;line-height:1.8;color:#08172E;"></div>
     <div id="itinAIError" style="display:none;margin-top:10px;padding:10px 14px;background:#fff0f0;border-radius:12px;font-size:.78rem;color:#e03a24;text-align:center;"></div>
@@ -5911,7 +5986,7 @@ function removeFromTrip(id){
 
 function shareTrip(){
   var items = getTripItems();
-  if(!items.length){ alert('Add some places first!'); return; }
+  if(!items.length){ showPremiumToast(typeof lang!=='undefined'&&lang==='es'?'➕ Agrega lugares primero':'➕ Add some places first'); return; }
   var text = '🗺 My Miami Trip Plan\n\n' + items.map(function(x,i){ return (i+1)+'. '+x.name; }).join('\n') + '\n\nPlanned with Miami Magic 🌴';
   if(navigator.share){ navigator.share({title:'My Miami Trip',text:text}).catch(function(){}); }
   else if(navigator.clipboard){ navigator.clipboard.writeText(text).then(function(){ showTripToast('Trip copied to clipboard!'); }); }
@@ -6145,7 +6220,7 @@ function shareItin() {
   if (navigator.share) {
     navigator.share({ title: 'My Miami Itinerary', text: 'Check out my Miami trip plan via Miami Magic!', url: 'https://miamimagicapp.com' });
   } else {
-    navigator.clipboard.writeText('https://miamimagicapp.com').then(function(){ alert('Link copied!'); });
+    navigator.clipboard.writeText('https://miamimagicapp.com').then(function(){ showPremiumToast('🔗 Link copied!'); });
   }
 }
 </script>
@@ -6330,11 +6405,12 @@ function bnActive(el){
     <div id="amigoTyping" style="display:none;padding:0 20px 8px;flex-shrink:0;">
       <div style="display:flex;align-items:center;gap:8px;">
         <div id="amigoTypingAvatar" style="width:32px;height:32px;border-radius:50%;background:#FF4D35;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.85rem;color:#fff;font-family:'DM Sans',sans-serif;flex-shrink:0;">L</div>
-        <div style="background:#f0ebe5;border-radius:18px 18px 18px 4px;padding:10px 16px;">
+        <div style="background:#f0ebe5;border-radius:18px 18px 18px 4px;padding:10px 16px;display:flex;align-items:center;gap:8px;">
+          <span style="font-size:1.2rem;line-height:1;display:inline-block;animation:palmSway 1.6s ease-in-out infinite;transform-origin:bottom center;">🌴</span>
           <div style="display:flex;gap:4px;align-items:center;height:16px;">
-            <div style="width:7px;height:7px;border-radius:50%;background:#999;animation:typingDot 1.2s infinite .0s;"></div>
-            <div style="width:7px;height:7px;border-radius:50%;background:#999;animation:typingDot 1.2s infinite .2s;"></div>
-            <div style="width:7px;height:7px;border-radius:50%;background:#999;animation:typingDot 1.2s infinite .4s;"></div>
+            <div style="width:6px;height:6px;border-radius:50%;background:#ccc;animation:palmDot 1.4s infinite .0s;"></div>
+            <div style="width:6px;height:6px;border-radius:50%;background:#ccc;animation:palmDot 1.4s infinite .18s;"></div>
+            <div style="width:6px;height:6px;border-radius:50%;background:#ccc;animation:palmDot 1.4s infinite .36s;"></div>
           </div>
         </div>
       </div>
@@ -6578,12 +6654,12 @@ function closeMM(id){document.getElementById(id).classList.remove('open');}
 function enableMoments(){
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(function(){
-      alert(' Magic Moments enabled! You\'ll be notified when something amazing is near you.');
+      showPremiumToast('✨ Magic Moments enabled! We\'ll alert you to nearby gems.');
     },function(){
-      alert('Enable location in your browser settings to use Magic Moments.');
+      showPremiumToast('📍 Enable location in browser settings to use Magic Moments.');
     });
   } else {
-    alert('Your browser doesn\'t support location. Try Chrome or Safari.');
+    showPremiumToast('📍 Location not supported — try Chrome or Safari.');
   }
 }
 
@@ -7028,28 +7104,49 @@ renderTimeMachine();
 }
 .ai-upgrade-pill:hover { transform: scale(1.04); }
 
-/* ── TYPING INDICATOR ── */
+/* ── TYPING INDICATOR — PALM SPINNER ── */
 .ai-typing {
   display: flex;
-  gap: 5px;
-  padding: 12px 15px;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
   background: #fff;
   border-radius: 18px;
   border-bottom-left-radius: 6px;
   width: fit-content;
   box-shadow: 0 2px 10px rgba(0,0,0,.07);
 }
-.ai-typing span {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: #ccc;
-  animation: typingDot 1.2s ease-in-out infinite;
+.ai-typing-palm {
+  font-size: 1.3rem;
+  line-height: 1;
+  display: inline-block;
+  animation: palmSway 1.6s ease-in-out infinite;
+  transform-origin: bottom center;
+  filter: drop-shadow(0 1px 3px rgba(255,77,53,.25));
 }
-.ai-typing span:nth-child(2) { animation-delay: .2s; }
-.ai-typing span:nth-child(3) { animation-delay: .4s; }
-@keyframes typingDot {
-  0%,60%,100%{ transform: translateY(0); background: #ccc; }
-  30%{ transform: translateY(-6px); background: #FF4D35; }
+@keyframes palmSway {
+  0%   { transform: rotate(-10deg) scaleX(.92); }
+  25%  { transform: rotate(8deg)  scaleX(1.05); }
+  50%  { transform: rotate(-6deg) scaleX(.95); }
+  75%  { transform: rotate(10deg) scaleX(1.04); }
+  100% { transform: rotate(-10deg) scaleX(.92); }
+}
+.ai-typing-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.ai-typing-dots span {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #e0d8d0;
+  animation: palmDot 1.4s ease-in-out infinite;
+}
+.ai-typing-dots span:nth-child(2) { animation-delay: .18s; }
+.ai-typing-dots span:nth-child(3) { animation-delay: .36s; }
+@keyframes palmDot {
+  0%,60%,100%{ transform: translateY(0); background: #e0d8d0; }
+  30%{ transform: translateY(-5px); background: #FF4D35; }
 }
 
 /* ── QUICK SUGGESTIONS ── */
@@ -8132,7 +8229,7 @@ function aiShowTyping() {
   ava.innerHTML = '<img src="' + (document.getElementById('palmLogoSrc')||{src:''}).src + '" style="width:18px;height:26px;object-fit:contain;" alt="palm">';
   var typing = document.createElement('div');
   typing.className = 'ai-typing';
-  typing.innerHTML = '<span></span><span></span><span></span>';
+  typing.innerHTML = '<span class="ai-typing-palm">🌴</span><div class="ai-typing-dots"><span></span><span></span><span></span></div>';
   wrap.appendChild(ava);
   wrap.appendChild(typing);
   msgs.appendChild(wrap);
@@ -8613,12 +8710,9 @@ document.addEventListener('keydown', function(e) {
   }
   window.closeSplash = closeSplash;
   function initSplash(){
-    var seen = false;
-    try{ seen = localStorage.getItem(SPLASH_KEY); }catch(e){}
-    if(seen){
-      var el = document.getElementById('mm-splash');
-      if(el) el.remove();
-    }
+    // Always skip splash — open directly to Home
+    var el = document.getElementById('mm-splash');
+    if(el) el.remove();
   }
   if(document.readyState === 'loading'){
     document.addEventListener('DOMContentLoaded', initSplash);
@@ -8853,6 +8947,422 @@ document.addEventListener('keydown', function(e) {
   window.openInAppSheet = openInAppSheet;
   window.closeInAppSheet = closeInAppSheet;
   window.openExternal = openExternal;
+})();
+</script>
+<!-- ══ PREMIUM UX ENHANCEMENTS ══ -->
+<style>
+/* ── Toast notification ── */
+#mm-toast{
+  position:fixed;bottom:88px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:rgba(8,23,46,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,.15);border-radius:50px;
+  color:#fff;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600;
+  padding:11px 22px;white-space:nowrap;z-index:99999;
+  box-shadow:0 8px 32px rgba(0,0,0,.35);
+  opacity:0;pointer-events:none;
+  transition:opacity .25s ease,transform .25s cubic-bezier(.34,1.56,.64,1);
+}
+#mm-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+/* ── Scroll-to-top button ── */
+#stt-btn{
+  position:fixed;bottom:28px;right:20px;z-index:9000;
+  width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
+  background:rgba(8,23,46,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 4px 20px rgba(0,0,0,.25);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;pointer-events:none;
+  transform:translateY(12px);
+  transition:opacity .25s ease,transform .25s cubic-bezier(.34,1.56,.64,1),background .2s;
+}
+#stt-btn.visible{opacity:1;pointer-events:all;transform:translateY(0);}
+#stt-btn:hover{background:rgba(255,77,53,.85);}
+#stt-btn svg{width:18px;height:18px;stroke:#fff;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+
+/* ── Fav heart burst ── */
+@keyframes heartBurst{
+  0%{transform:scale(1);}
+  30%{transform:scale(1.55);}
+  55%{transform:scale(.88);}
+  80%{transform:scale(1.18);}
+  100%{transform:scale(1);}
+}
+@keyframes heartPop{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(0);}
+  60%{opacity:1;transform:translate(-50%,-50%) scale(1.4);}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1.8);}
+}
+.fav-card-btn.burst{animation:heartBurst .45s cubic-bezier(.34,1.56,.64,1) both;}
+.heart-pop{
+  position:absolute;left:50%;top:50%;pointer-events:none;
+  font-size:1.6rem;z-index:20;
+  animation:heartPop .5s ease-out both;
+}
+</style>
+
+<!-- Scroll-to-top button -->
+<button id="stt-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+// ── Toast system ──
+function showPremiumToast(msg, duration){
+  duration = duration || 2800;
+  var t = document.getElementById('mm-toast');
+  if(!t){ t=document.createElement('div'); t.id='mm-toast'; document.body.appendChild(t); }
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(function(){ t.classList.remove('show'); }, duration);
+}
+
+// ── Scroll-to-top visibility ──
+(function(){
+  var btn = document.getElementById('stt-btn');
+  if(!btn) return;
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 400){ btn.classList.add('visible'); }
+    else { btn.classList.remove('visible'); }
+  }, {passive:true});
+})();
+
+// ── Fav heart burst animation ──
+(function(){
+  var orig = window.addFavFromCard;
+  if(typeof orig !== 'function') return;
+  window.addFavFromCard = function(id, name, type, btn){
+    orig(id, name, type, btn);
+    if(btn){
+      // burst animation
+      btn.classList.remove('burst');
+      void btn.offsetWidth; // reflow
+      btn.classList.add('burst');
+      btn.addEventListener('animationend', function(){ btn.classList.remove('burst'); }, {once:true});
+      // floating heart pop (only when adding, not removing)
+      if(btn.textContent === '♥'){
+        var pop = document.createElement('span');
+        pop.className = 'heart-pop';
+        pop.textContent = '❤️';
+        var wrap = btn.parentElement;
+        if(wrap){ wrap.style.position='relative'; wrap.appendChild(pop); }
+        setTimeout(function(){ if(pop.parentElement) pop.remove(); }, 600);
+      }
+      // toast feedback
+      var isFaved = btn.textContent === '♥';
+      var L = typeof lang !== 'undefined' ? lang : 'en';
+      showPremiumToast(isFaved
+        ? (L==='es' ? '❤️ Guardado en favoritos' : '❤️ Saved to favorites')
+        : (L==='es' ? '💔 Eliminado de favoritos' : '💔 Removed from favorites')
+      , 1800);
+    }
+  };
+})();
+
+// ── Create toast container ──
+(function(){
+  var t = document.createElement('div');
+  t.id = 'mm-toast';
+  document.body.appendChild(t);
+})();
+</script>
+<!-- ══ BOTTOM NAV BAR (mobile) ══ -->
+<style>
+#bottom-nav{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:8500;
+  background:rgba(8,23,46,.78);
+  backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);
+  border-top:1px solid rgba(255,255,255,.11);
+  box-shadow:0 -2px 24px rgba(0,0,0,.22);
+  padding-bottom:env(safe-area-inset-bottom,0);
+}
+.bn-inner{
+  display:flex;align-items:stretch;
+  max-width:480px;margin:0 auto;
+  height:58px;
+}
+.bn-item{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:4px;cursor:pointer;border:none;background:none;
+  color:rgba(255,255,255,.38);padding:0 2px;
+  transition:color .2s ease,transform .18s cubic-bezier(.34,1.56,.64,1);
+  position:relative;
+  -webkit-tap-highlight-color:transparent;
+  outline:none;
+}
+.bn-item:active{transform:scale(.88);}
+.bn-item.bn-active{color:rgba(255,255,255,.95);}
+.bn-item.bn-active .bn-svg{stroke:var(--coral,#FF4D35);}
+.bn-item.bn-active::after{
+  content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:28px;height:2px;border-radius:0 0 2px 2px;
+  background:var(--coral,#FF4D35);
+  box-shadow:0 0 8px rgba(255,77,53,.6);
+}
+.bn-svg{
+  width:22px;height:22px;
+  stroke:currentColor;stroke-width:1.8;
+  fill:none;stroke-linecap:round;stroke-linejoin:round;
+  transition:stroke .2s ease;
+}
+.bn-item.bn-active .bn-svg{ stroke-width:2.2; }
+.bn-lbl{
+  font-family:'DM Sans',sans-serif;
+  font-size:.56rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;line-height:1;
+  transition:color .2s;
+}
+
+@media(max-width:900px){
+  #bottom-nav{display:block;}
+  #app,.main{padding-bottom:72px;}
+  /* scroll-to-top clears the bottom nav */
+  #stt-btn{bottom:76px !important;}
+}
+</style>
+
+<nav id="bottom-nav" role="navigation" aria-label="Main navigation">
+  <div class="bn-inner">
+
+    <button class="bn-item bn-active" id="bn-home" onclick="bnGo('home')" aria-label="Home">
+      <svg class="bn-svg" viewBox="0 0 24 24">
+        <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H5a1 1 0 01-1-1V9.5z"/>
+        <path d="M9 21V12h6v9"/>
+      </svg>
+      <span class="bn-lbl" id="bn-lbl-home">Home</span>
+    </button>
+
+    <button class="bn-item" id="bn-rest" onclick="bnGo('sec-rest')" aria-label="Food">
+      <svg class="bn-svg" viewBox="0 0 24 24">
+        <path d="M3 2v7c0 1.657 1.343 3 3 3s3-1.343 3-3V2"/>
+        <line x1="6" y1="2" x2="6" y2="22"/>
+        <path d="M21 15V2s-5 2-5 9v4"/>
+        <line x1="16" y1="22" x2="21" y2="22"/>
+        <line x1="18.5" y1="15" x2="18.5" y2="22"/>
+      </svg>
+      <span class="bn-lbl" id="bn-lbl-rest">Food</span>
+    </button>
+
+    <button class="bn-item" id="bn-beach" onclick="bnGo('sec-beach')" aria-label="Beaches">
+      <svg class="bn-svg" viewBox="0 0 24 24">
+        <path d="M17.5 8.5c2 2 2.5 5 1.3 7.5"/>
+        <path d="M5.7 5.7C3 8.4 2.3 12.5 4 16"/>
+        <path d="M11 3C7 5 6 9 8 13"/>
+        <path d="M3 21c3-3 6-3 9 0s6 3 9 0"/>
+        <path d="M12 3v2M8.5 6.5l1.5 1.5"/>
+      </svg>
+      <span class="bn-lbl" id="bn-lbl-beach">Beaches</span>
+    </button>
+
+    <button class="bn-item" id="bn-hotels" onclick="bnGo('sec-hotels')" aria-label="Hotels">
+      <svg class="bn-svg" viewBox="0 0 24 24">
+        <rect x="2" y="7" width="20" height="14" rx="1"/>
+        <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+        <path d="M6 13h2M6 17h2M16 13h2M16 17h2"/>
+      </svg>
+      <span class="bn-lbl" id="bn-lbl-hotels">Hotels</span>
+    </button>
+
+    <button class="bn-item" id="bn-favs" onclick="bnGo('sec-favs')" aria-label="Saved">
+      <svg class="bn-svg" viewBox="0 0 24 24">
+        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+      </svg>
+      <span class="bn-lbl" id="bn-lbl-favs">Saved</span>
+    </button>
+
+  </div>
+</nav>
+
+<script>
+(function(){
+  // ── Section → button map ──
+  var BN_MAP = {
+    'home'      : 'bn-home',
+    'sec-rest'  : 'bn-rest',
+    'sec-beach' : 'bn-beach',
+    'sec-hotels': 'bn-hotels',
+    'sec-favs'  : 'bn-favs'
+  };
+  var BN_SECTIONS = Object.keys(BN_MAP).filter(function(k){ return k !== 'home'; });
+
+  // ── Translations ──
+  var BN_LABELS = {
+    en:{ home:'Home', rest:'Food', beach:'Beaches', hotels:'Hotels', favs:'Saved' },
+    es:{ home:'Inicio', rest:'Comida', beach:'Playas', hotels:'Hoteles', favs:'Guardado' }
+  };
+
+  function bnSetLang(l){
+    var lb = BN_LABELS[l] || BN_LABELS.en;
+    document.getElementById('bn-lbl-home').textContent   = lb.home;
+    document.getElementById('bn-lbl-rest').textContent   = lb.rest;
+    document.getElementById('bn-lbl-beach').textContent  = lb.beach;
+    document.getElementById('bn-lbl-hotels').textContent = lb.hotels;
+    document.getElementById('bn-lbl-favs').textContent   = lb.favs;
+  }
+
+  function bnSetActive(btnId){
+    document.querySelectorAll('.bn-item').forEach(function(b){
+      b.classList.toggle('bn-active', b.id === btnId);
+    });
+  }
+
+  window.bnGo = function(id){
+    if(id === 'home'){
+      window.scrollTo({top:0, behavior:'smooth'});
+      bnSetActive('bn-home');
+      return;
+    }
+    if(typeof go === 'function') go(id);
+    bnSetActive(BN_MAP[id] || '');
+  };
+
+  // ── Sync active state on scroll ──
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if(ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      ticking = false;
+      if(window.scrollY < 300){
+        bnSetActive('bn-home');
+        return;
+      }
+      var closest = null, closestDist = Infinity;
+      BN_SECTIONS.forEach(function(sid){
+        var el = document.getElementById(sid);
+        if(!el) return;
+        var dist = Math.abs(el.getBoundingClientRect().top);
+        if(dist < closestDist){ closestDist = dist; closest = sid; }
+      });
+      if(closest) bnSetActive(BN_MAP[closest]);
+    });
+  }, {passive:true});
+
+  // ── Sync lang on change ──
+  var _origSetLang = window.setLang;
+  window.setLang = function(l){
+    if(typeof _origSetLang === 'function') _origSetLang(l);
+    bnSetLang(l);
+  };
+
+  // ── Init lang ──
+  document.addEventListener('DOMContentLoaded', function(){
+    var l = (typeof lang !== 'undefined' ? lang : null)
+         || localStorage.getItem('mm_lang') || 'en';
+    bnSetLang(l);
+  });
+})();
+</script>
+<!-- ══ SKELETON LOADING + CARD STAGGER ANIMATIONS ══ -->
+<style>
+/* ── Shimmer keyframe ── */
+@keyframes shimmer{
+  0%{background-position:-600px 0}
+  100%{background-position:600px 0}
+}
+
+/* ── Skeleton base ── */
+.sk{
+  border-radius:12px;
+  background:linear-gradient(90deg,rgba(0,0,0,.06) 25%,rgba(0,0,0,.12) 37%,rgba(0,0,0,.06) 63%);
+  background-size:600px 100%;
+  animation:shimmer 1.4s ease infinite;
+}
+[data-theme="dark"] .sk{
+  background:linear-gradient(90deg,rgba(255,255,255,.06) 25%,rgba(255,255,255,.12) 37%,rgba(255,255,255,.06) 63%);
+  background-size:600px 100%;
+  animation:shimmer 1.4s ease infinite;
+}
+
+/* ── Skeleton card shell ── */
+.sk-card{
+  border-radius:18px;overflow:hidden;
+  background:#f2f2f2;
+  flex-shrink:0;width:220px;min-height:270px;
+  display:flex;flex-direction:column;
+}
+[data-theme="dark"] .sk-card{background:#1a2540;}
+.sk-img{height:150px;width:100%;}.sk-img.sk{border-radius:0;}
+.sk-body{padding:14px;display:flex;flex-direction:column;gap:9px;}
+.sk-title{height:14px;width:75%;}.sk-sub{height:11px;width:55%;}
+.sk-tag{height:22px;width:45%;border-radius:50px;}
+.sk-row{display:flex;gap:12px;}
+
+/* ── Skeleton section ── */
+.sk-section{padding:20px 64px;}
+@media(max-width:900px){.sk-section{padding:20px 16px;}}
+.sk-hdr{height:18px;width:160px;margin-bottom:6px;}
+.sk-hdr2{height:28px;width:240px;margin-bottom:20px;}
+.sk-h-row{display:flex;gap:16px;overflow:hidden;padding-bottom:8px;}
+
+/* ── Card stagger animation ── */
+@keyframes cardIn{
+  from{opacity:0;transform:translateY(22px);}
+  to{opacity:1;transform:translateY(0);}
+}
+.h-row > *, .full-grid-rest > *, .full-grid-venue > *,
+.full-grid-nite > *, .full-grid-stad > *, .hotel-grid > *{
+  animation:cardIn .38s ease both;
+}
+/* stagger first 12 children */
+.h-row > *:nth-child(1),.full-grid-rest > *:nth-child(1),.full-grid-venue > *:nth-child(1),.hotel-grid > *:nth-child(1){animation-delay:.04s}
+.h-row > *:nth-child(2),.full-grid-rest > *:nth-child(2),.full-grid-venue > *:nth-child(2),.hotel-grid > *:nth-child(2){animation-delay:.08s}
+.h-row > *:nth-child(3),.full-grid-rest > *:nth-child(3),.full-grid-venue > *:nth-child(3),.hotel-grid > *:nth-child(3){animation-delay:.12s}
+.h-row > *:nth-child(4),.full-grid-rest > *:nth-child(4),.full-grid-venue > *:nth-child(4),.hotel-grid > *:nth-child(4){animation-delay:.16s}
+.h-row > *:nth-child(5),.full-grid-rest > *:nth-child(5),.full-grid-venue > *:nth-child(5),.hotel-grid > *:nth-child(5){animation-delay:.20s}
+.h-row > *:nth-child(6),.full-grid-rest > *:nth-child(6),.full-grid-venue > *:nth-child(6),.hotel-grid > *:nth-child(6){animation-delay:.24s}
+.h-row > *:nth-child(n+7),.full-grid-rest > *:nth-child(n+7),.full-grid-venue > *:nth-child(n+7),.hotel-grid > *:nth-child(n+7){animation-delay:.28s}
+
+/* respect reduced-motion */
+@media(prefers-reduced-motion:reduce){
+  .sk{animation:none;}
+  .h-row > *, .full-grid-rest > *, .full-grid-venue > *,
+  .full-grid-nite > *, .full-grid-stad > *, .hotel-grid > *{animation:none;}
+}
+</style>
+
+<script>
+// ── Skeleton builder ──
+function mkSkeletonSection(count){
+  count = count || 4;
+  var cards = '';
+  for(var i=0;i<count;i++){
+    cards += '<div class="sk-card">'
+      +'<div class="sk-img sk"></div>'
+      +'<div class="sk-body">'
+        +'<div class="sk sk-title"></div>'
+        +'<div class="sk sk-sub"></div>'
+        +'<div class="sk sk-tag"></div>'
+      +'</div></div>';
+  }
+  return '<div class="sk-section">'
+    +'<div class="sk sk-hdr"></div>'
+    +'<div class="sk sk-hdr2" style="margin-top:4px"></div>'
+    +'<div class="sk-h-row">'+cards+'</div>'
+    +'</div>';
+}
+
+// ── Inject skeletons while app renders ──
+(function(){
+  // Only on first paint — if #app already has content, skip
+  document.addEventListener('DOMContentLoaded', function(){
+    var app = document.getElementById('app');
+    if(!app) return;
+    // If app innerHTML is short (not yet rendered), show skeletons
+    if(app.innerHTML.trim().length < 500){
+      var ph = document.createElement('div');
+      ph.id = 'mm-skeletons';
+      ph.innerHTML = mkSkeletonSection(5) + mkSkeletonSection(5) + mkSkeletonSection(4);
+      app.insertBefore(ph, app.firstChild);
+      // Remove after render (generous timeout)
+      setTimeout(function(){
+        var el = document.getElementById('mm-skeletons');
+        if(el){ el.style.transition='opacity .4s'; el.style.opacity='0'; setTimeout(function(){ el && el.remove(); },420); }
+      }, 900);
+    }
+  });
 })();
 </script>
 </body>
