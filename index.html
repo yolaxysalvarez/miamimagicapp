@@ -235,7 +235,7 @@ button,a{cursor:pointer;}
 .rcard-body{padding:10px 12px 12px;}
 .rcard-name{
   font-family:'Playfair Display',serif;
-  font-size:.92rem;font-weight:700;
+  font-size:1rem;font-weight:700;
   color:var(--navy);margin-bottom:2px;
   line-height:1.2;
 }
@@ -257,49 +257,49 @@ button,a{cursor:pointer;}
 .vdesc{display:none !important;}
 .vtags{display:none !important;}
 .vcat{font-size:.6rem;margin-bottom:1px;}
-.vname{font-family:'Playfair Display',serif;font-size:.9rem;font-weight:700;margin-bottom:0;}
+.vname{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;margin-bottom:0;}
 .vcard-body{padding:10px 12px 12px;}
 
 /* Nightlife */
 .nmeta{display:none !important;}
 .ntag{display:none !important;}
 .ncard-body{padding:12px;}
-.nname{font-size:.9rem;}
+.nname{font-size:1rem;}
 
 /* Hotel cards */
 .hotel-desc{display:none !important;}
 .hotel-addr{display:none !important;}
 .hotel-body{padding:10px 12px 12px;}
-.hotel-name{font-size:.88rem;margin-bottom:3px;}
+.hotel-name{font-size:.98rem;margin-bottom:3px;}
 .hotel-price{font-size:.78rem;margin-bottom:0;}
 
 /* June/Events */
 .june-venue{display:none !important;}
 .june-tags{display:none !important;}
 .june-card-body{padding:10px 12px 13px;}
-.june-title{font-size:.88rem;margin-bottom:2px;}
+.june-title{font-size:.98rem;margin-bottom:2px;}
 
 /* Concert venue cards */
 .ccard-upcoming{display:none !important;}
 .ccard-price{display:none !important;}
 .ccard-body{padding:10px 12px 12px;}
-.ccard-name{font-size:.9rem;margin-bottom:0;}
+.ccard-name{font-size:1rem;margin-bottom:0;}
 
 /* Stadium */
 .sttags{display:none !important;}
 .stcard-body{padding:10px 12px 12px;}
-.stname{font-size:.88rem;margin-bottom:0;}
+.stname{font-size:.98rem;margin-bottom:0;}
 
 /* Parks/Places/Day Trips */
 .pdesc{display:none !important;}
 .pcard-body{padding:9px 11px 10px;}
-.pname{font-size:.85rem;margin-bottom:0;}
+.pname{font-size:.95rem;margin-bottom:0;}
 
 /* Event cards (evcard) */
 .evcard-desc{display:none !important;}
 .evcard-time{display:none !important;}
 .evcard-body{padding:10px 12px 12px;gap:2px;}
-.evcard-title{font-size:.88rem;}
+.evcard-title{font-size:.98rem;}
 .evcard-venue{font-size:.7rem;}
 
 /* Transport cards — keep full, they're functional */
@@ -1293,9 +1293,9 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   transform:translateX(-50%) translateY(0);
   width:auto;
   max-width:calc(100vw - 32px);
-  background:rgba(255,255,255,.08);
-  backdrop-filter:blur(20px);
-  -webkit-backdrop-filter:blur(20px);
+  background:rgba(8,23,46,.35);
+  backdrop-filter:blur(28px);
+  -webkit-backdrop-filter:blur(28px);
   border:1px solid rgba(255,255,255,.18);
   border-radius:50px;
   padding:10px 18px;
@@ -1304,7 +1304,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   align-items:center;
   gap:6px;
   z-index:500;
-  box-shadow:0 4px 24px rgba(0,0,0,.15);
+  box-shadow:0 8px 32px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.1);
   transition:transform .35s cubic-bezier(.4,0,.2,1), opacity .35s;
   will-change:transform,opacity;
   white-space:nowrap;
@@ -1594,7 +1594,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 @media(min-width:900px){.hero-body{padding:100px 60px 120px!important;max-width:700px;margin:0 auto;}.hero-brand{gap:20px;margin-bottom:28px;}.hero-palm{width:56px;height:84px;}.hero-h1{font-size:clamp(2.8rem,5vw,4rem);text-align:left;}.magic-fabs{display:none!important;}}
 
 body{padding-bottom:0;}
-@media(max-width:899px){body{padding-bottom:100px;}}
+@media(max-width:899px){body{padding-bottom:90px;}}
 
 /* ── MOBILE ── */
 @media(max-width:899px){
@@ -1816,7 +1816,7 @@ body{padding-bottom:0;}
 #navLinks{display:flex;justify-content:center;gap:28px;padding:10px 0 4px;flex-wrap:nowrap;}
 #navLinks a{color:rgba(255,255,255,.88);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s;}
 #navLinks a:hover{color:#FFD166;}
-.nav-web{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:4px 16px;border-radius:50px;}
+.nav-web{background:linear-gradient(135deg,var(--coral),#FF7A5C);border:none;padding:5px 18px;border-radius:50px;color:#fff!important;font-weight:700;box-shadow:0 3px 12px rgba(255,77,53,.35);}
 #navLinksMob{display:none;}
 .hm-btn{display:none;}
 @media(max-width:899px){
@@ -1995,8 +1995,10 @@ body{padding-bottom:0;}
 </style>
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#FF4D35">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="anonymous"></script>
+<!-- Google Identity Services -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- ══ ONBOARDING SPLASH ══ -->
@@ -2159,7 +2161,10 @@ body{padding-bottom:0;}
       </div>
 
       <div class="hm-drawer-footer">
-        <a href="https://miamimagicdirectory.com" target="_blank" style="color:rgba(255,255,255,.18);font-size:.6rem;text-decoration:none;letter-spacing:2px;text-transform:uppercase;">Business Directory ↗</a>
+        <a href="https://miamimagicdirectory.com" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:13px 18px;background:linear-gradient(135deg,#FF4D35,#FF7A5C);border-radius:50px;text-decoration:none;box-shadow:0 4px 16px rgba(255,77,53,.35);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          <span style="font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:700;color:#fff;letter-spacing:.02em;">Miami Magic Directory ↗</span>
+        </a>
       </div>
     </div>
   </div>
@@ -5088,6 +5093,18 @@ document.addEventListener("DOMContentLoaded",function(){
     </div></div>
     <div style="padding:8px 22px 40px;">
       <button id="acc-logout-btn" onclick="accLogout()" style="width:100%;padding:13px;background:transparent;border:1.5px solid #ddd;border-radius:50px;font-size:.82rem;font-weight:600;color:#aaa;cursor:pointer;font-family:'DM Sans',sans-serif;">Cerrar sesi&#243;n</button>
+
+      <!-- ── Business Directory CTA ── -->
+      <a href="https://miamimagicdirectory.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:12px;margin-top:16px;padding:14px 18px;background:linear-gradient(135deg,#08172E,#0d2240);border-radius:16px;text-decoration:none;box-shadow:0 4px 16px rgba(8,23,46,.2);">
+        <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#FF4D35,#FF7A5C);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+        </div>
+        <div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:700;color:#fff;">¿Tienes un negocio?</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:.72rem;color:rgba(255,255,255,.55);margin-top:1px;">Aparece en Miami Magic Directory ↗</div>
+        </div>
+      </a>
+
       <div style="text-align:center;font-family:'DM Sans',sans-serif;font-size:.65rem;color:#ccc;margin-top:12px;letter-spacing:1px;">MIAMI MAGIC v1.0 &middot; hola@miamimagicapp.com</div>
     </div>
   </div>
@@ -5180,11 +5197,75 @@ function openSignup(){
 function closeSignup(){
   document.getElementById('signupOverlay').style.display='none';
 }
+// ── GOOGLE SIGN-IN REAL ──
+var MM_GOOGLE_CLIENT_ID = '1037843559471-mt6gdpacp94pak9e5ugb3t3brvnn7u08.apps.googleusercontent.com';
+
 function signupGoogle(){
-  // Google auth — show elegant coming soon toast
-  showPremiumToast(typeof lang!=='undefined'&&lang==='es'
-    ? '🔜 Google Sign-in próximamente'
-    : '🔜 Google Sign-in coming soon — use email below');
+  if(typeof google === 'undefined'){
+    showPremiumToast('📡 Cargando Google Sign-in...');
+    setTimeout(signupGoogle, 1000);
+    return;
+  }
+  google.accounts.id.initialize({
+    client_id: MM_GOOGLE_CLIENT_ID,
+    callback: handleGoogleCredential,
+    auto_select: false,
+    cancel_on_tap_outside: true
+  });
+  google.accounts.id.prompt(function(notification){
+    if(notification.isNotDisplayed() || notification.isSkippedMoment()){
+      // Fallback: abrir popup manual
+      google.accounts.id.renderButton(
+        document.getElementById('g-btn-container'),
+        {theme:'outline', size:'large', width:280, text:'continue_with'}
+      );
+      document.getElementById('g-btn-container').style.display='flex';
+    }
+  });
+}
+
+function handleGoogleCredential(response){
+  try{
+    // Decodificar JWT payload (no verificar firma — solo datos del perfil)
+    var parts = response.credential.split('.');
+    var payload = JSON.parse(atob(parts[1].replace(/-/g,'+').replace(/_/g,'/')));
+    var name  = payload.name  || payload.given_name || 'Usuario';
+    var email = payload.email || '';
+    var pic   = payload.picture || '';
+    var since = new Date().toLocaleDateString(typeof lang!=='undefined'&&lang==='es'?'es-ES':'en-US',{year:'numeric',month:'long'});
+
+    // Guardar en localStorage
+    try{
+      localStorage.setItem('mm_name', name);
+      localStorage.setItem('mm_subscribed', email);
+      localStorage.setItem('mm_since', since);
+      localStorage.setItem('mm_google_pic', pic);
+      localStorage.setItem('mm_google_auth', '1');
+    }catch(e){}
+
+    // Actualizar avatar si existe
+    var avatarEl = document.getElementById('acc-avatar-img');
+    if(avatarEl && pic) avatarEl.src = pic;
+
+    // Cerrar modal de signup
+    closeSignup();
+
+    // Toast de bienvenida
+    var L = typeof lang !== 'undefined' ? lang : 'en';
+    showPremiumToast(
+      (L==='es' ? '✅ Bienvenido, ' : '✅ Welcome, ') + name.split(' ')[0] + '!'
+    , 3000);
+
+    // Actualizar panel de cuenta
+    if(typeof openAccount === 'function'){
+      // Refrescar datos visibles si el panel está abierto
+      var accPanel = document.getElementById('accPanel');
+      if(accPanel && accPanel.style.display !== 'none') openAccount();
+    }
+  }catch(e){
+    showPremiumToast('⚠️ Error al iniciar sesión. Intenta de nuevo.');
+    console.error('Google auth error:', e);
+  }
 }
 function showLogin(){
   // Toggle to login view - placeholder
@@ -5318,8 +5399,19 @@ function accEditPhoto(){
 }
 function accLogout(){
   if(confirm('¿Cerrar sesión?')){
-    try{localStorage.removeItem('mm_subscribed');localStorage.removeItem('mm_name');localStorage.removeItem('mm_since');}catch(e){}
+    try{
+      localStorage.removeItem('mm_subscribed');
+      localStorage.removeItem('mm_name');
+      localStorage.removeItem('mm_since');
+      localStorage.removeItem('mm_google_pic');
+      localStorage.removeItem('mm_google_auth');
+    }catch(e){}
+    // Revocar sesión de Google si disponible
+    if(typeof google !== 'undefined' && google.accounts && google.accounts.id){
+      try{ google.accounts.id.disableAutoSelect(); }catch(e){}
+    }
     closeAccount();
+    showPremiumToast(typeof lang!=='undefined'&&lang==='es'?'👋 Sesión cerrada':'👋 Signed out');
   }
 }
 
@@ -5389,6 +5481,8 @@ if(_suOv) _suOv.addEventListener('click', function(e){
         <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.2l6.7-6.7C35.8 2.5 30.2 0 24 0 14.6 0 6.6 5.5 2.7 13.5l7.8 6.1C12.4 13.2 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17z"/><path fill="#FBBC05" d="M10.5 28.4A14.8 14.8 0 0 1 9.5 24c0-1.5.3-3 .7-4.4l-7.8-6.1A23.9 23.9 0 0 0 0 24c0 3.9.9 7.5 2.5 10.8l7.9-6.4z"/><path fill="#34A853" d="M24 48c6.2 0 11.4-2 15.2-5.5l-7.5-5.8c-2 1.4-4.6 2.2-7.7 2.2-6.3 0-11.6-3.7-13.5-9l-7.9 6.4C6.6 42.5 14.6 48 24 48z"/></svg>
         Continue with Google
       </button>
+      <!-- Fallback: Google rendered button (si One Tap no funciona) -->
+      <div id="g-btn-container" style="display:none;justify-content:center;margin-bottom:16px;"></div>
 
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
         <div style="flex:1;height:1px;background:#eee"></div>
@@ -5490,6 +5584,11 @@ function buildMapData(){
 
 function initMap(){
   if(_map)return;
+  if(typeof L==='undefined'){
+    // Leaflet not loaded yet — retry in 500ms
+    setTimeout(initMap,500);
+    return;
+  }
   try{
     _map=L.map('miami-map',{center:[25.7900,-80.1800],zoom:12,zoomControl:true});
     L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
@@ -5565,9 +5664,9 @@ document.addEventListener('DOMContentLoaded',function(){
     <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></span>
     <span class="bn-lbl">Home</span>
   </button>
-  <button class="bn-item" onclick="go('sec-map');bnActive(this)">
-    <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
-    <span class="bn-lbl">Map</span>
+  <button class="bn-item" onclick="go('sec-rest');bnActive(this)">
+    <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.657 1.343 3 3 3s3-1.343 3-3V2"/><line x1="6" y1="2" x2="6" y2="22"/><path d="M21 15V2s-5 2-5 9v4"/><line x1="16" y1="22" x2="21" y2="22"/><line x1="18.5" y1="15" x2="18.5" y2="22"/></svg></span>
+    <span class="bn-lbl">Food</span>
   </button>
   <!-- AI CENTER BUTTON -->
   <button class="bn-item bn-ai" onclick="openItinPanel();bnActive(this)">
@@ -5576,10 +5675,10 @@ document.addEventListener('DOMContentLoaded',function(){
     </span>
     <span class="bn-lbl" style="color:#FF4D35;font-weight:700;">Plan Trip</span>
   </button>
-  <a class="bn-item" href="https://miamimagicdirectory.com" target="_blank" style="text-decoration:none;">
-    <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></span>
-    <span class="bn-lbl">Web</span>
-  </a>
+  <button class="bn-item" onclick="go('sec-hotels');bnActive(this)">
+    <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/><path d="M6 13h2M6 17h2M16 13h2M16 17h2"/></svg></span>
+    <span class="bn-lbl">Hotels</span>
+  </button>
   <button class="bn-item" onclick="openAccount();bnActive(this)">
     <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
     <span class="bn-lbl">Account</span>
@@ -8966,7 +9065,7 @@ document.addEventListener('keydown', function(e) {
 
 /* ── Scroll-to-top button ── */
 #stt-btn{
-  position:fixed;bottom:28px;right:20px;z-index:9000;
+  position:fixed;bottom:100px;right:20px;z-index:9000;
   width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
   background:rgba(8,23,46,.75);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
   border:1px solid rgba(255,255,255,.18);
@@ -9065,194 +9164,6 @@ function showPremiumToast(msg, duration){
   var t = document.createElement('div');
   t.id = 'mm-toast';
   document.body.appendChild(t);
-})();
-</script>
-<!-- ══ BOTTOM NAV BAR (mobile) ══ -->
-<style>
-#bottom-nav{
-  display:none;
-  position:fixed;bottom:0;left:0;right:0;z-index:8500;
-  background:rgba(8,23,46,.78);
-  backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);
-  border-top:1px solid rgba(255,255,255,.11);
-  box-shadow:0 -2px 24px rgba(0,0,0,.22);
-  padding-bottom:env(safe-area-inset-bottom,0);
-}
-.bn-inner{
-  display:flex;align-items:stretch;
-  max-width:480px;margin:0 auto;
-  height:58px;
-}
-.bn-item{
-  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:4px;cursor:pointer;border:none;background:none;
-  color:rgba(255,255,255,.38);padding:0 2px;
-  transition:color .2s ease,transform .18s cubic-bezier(.34,1.56,.64,1);
-  position:relative;
-  -webkit-tap-highlight-color:transparent;
-  outline:none;
-}
-.bn-item:active{transform:scale(.88);}
-.bn-item.bn-active{color:rgba(255,255,255,.95);}
-.bn-item.bn-active .bn-svg{stroke:var(--coral,#FF4D35);}
-.bn-item.bn-active::after{
-  content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);
-  width:28px;height:2px;border-radius:0 0 2px 2px;
-  background:var(--coral,#FF4D35);
-  box-shadow:0 0 8px rgba(255,77,53,.6);
-}
-.bn-svg{
-  width:22px;height:22px;
-  stroke:currentColor;stroke-width:1.8;
-  fill:none;stroke-linecap:round;stroke-linejoin:round;
-  transition:stroke .2s ease;
-}
-.bn-item.bn-active .bn-svg{ stroke-width:2.2; }
-.bn-lbl{
-  font-family:'DM Sans',sans-serif;
-  font-size:.56rem;font-weight:700;
-  letter-spacing:.06em;text-transform:uppercase;line-height:1;
-  transition:color .2s;
-}
-
-@media(max-width:900px){
-  #bottom-nav{display:block;}
-  #app,.main{padding-bottom:72px;}
-  /* scroll-to-top clears the bottom nav */
-  #stt-btn{bottom:76px !important;}
-}
-</style>
-
-<nav id="bottom-nav" role="navigation" aria-label="Main navigation">
-  <div class="bn-inner">
-
-    <button class="bn-item bn-active" id="bn-home" onclick="bnGo('home')" aria-label="Home">
-      <svg class="bn-svg" viewBox="0 0 24 24">
-        <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H5a1 1 0 01-1-1V9.5z"/>
-        <path d="M9 21V12h6v9"/>
-      </svg>
-      <span class="bn-lbl" id="bn-lbl-home">Home</span>
-    </button>
-
-    <button class="bn-item" id="bn-rest" onclick="bnGo('sec-rest')" aria-label="Food">
-      <svg class="bn-svg" viewBox="0 0 24 24">
-        <path d="M3 2v7c0 1.657 1.343 3 3 3s3-1.343 3-3V2"/>
-        <line x1="6" y1="2" x2="6" y2="22"/>
-        <path d="M21 15V2s-5 2-5 9v4"/>
-        <line x1="16" y1="22" x2="21" y2="22"/>
-        <line x1="18.5" y1="15" x2="18.5" y2="22"/>
-      </svg>
-      <span class="bn-lbl" id="bn-lbl-rest">Food</span>
-    </button>
-
-    <button class="bn-item" id="bn-beach" onclick="bnGo('sec-beach')" aria-label="Beaches">
-      <svg class="bn-svg" viewBox="0 0 24 24">
-        <path d="M17.5 8.5c2 2 2.5 5 1.3 7.5"/>
-        <path d="M5.7 5.7C3 8.4 2.3 12.5 4 16"/>
-        <path d="M11 3C7 5 6 9 8 13"/>
-        <path d="M3 21c3-3 6-3 9 0s6 3 9 0"/>
-        <path d="M12 3v2M8.5 6.5l1.5 1.5"/>
-      </svg>
-      <span class="bn-lbl" id="bn-lbl-beach">Beaches</span>
-    </button>
-
-    <button class="bn-item" id="bn-hotels" onclick="bnGo('sec-hotels')" aria-label="Hotels">
-      <svg class="bn-svg" viewBox="0 0 24 24">
-        <rect x="2" y="7" width="20" height="14" rx="1"/>
-        <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
-        <path d="M6 13h2M6 17h2M16 13h2M16 17h2"/>
-      </svg>
-      <span class="bn-lbl" id="bn-lbl-hotels">Hotels</span>
-    </button>
-
-    <button class="bn-item" id="bn-favs" onclick="bnGo('sec-favs')" aria-label="Saved">
-      <svg class="bn-svg" viewBox="0 0 24 24">
-        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
-      </svg>
-      <span class="bn-lbl" id="bn-lbl-favs">Saved</span>
-    </button>
-
-  </div>
-</nav>
-
-<script>
-(function(){
-  // ── Section → button map ──
-  var BN_MAP = {
-    'home'      : 'bn-home',
-    'sec-rest'  : 'bn-rest',
-    'sec-beach' : 'bn-beach',
-    'sec-hotels': 'bn-hotels',
-    'sec-favs'  : 'bn-favs'
-  };
-  var BN_SECTIONS = Object.keys(BN_MAP).filter(function(k){ return k !== 'home'; });
-
-  // ── Translations ──
-  var BN_LABELS = {
-    en:{ home:'Home', rest:'Food', beach:'Beaches', hotels:'Hotels', favs:'Saved' },
-    es:{ home:'Inicio', rest:'Comida', beach:'Playas', hotels:'Hoteles', favs:'Guardado' }
-  };
-
-  function bnSetLang(l){
-    var lb = BN_LABELS[l] || BN_LABELS.en;
-    document.getElementById('bn-lbl-home').textContent   = lb.home;
-    document.getElementById('bn-lbl-rest').textContent   = lb.rest;
-    document.getElementById('bn-lbl-beach').textContent  = lb.beach;
-    document.getElementById('bn-lbl-hotels').textContent = lb.hotels;
-    document.getElementById('bn-lbl-favs').textContent   = lb.favs;
-  }
-
-  function bnSetActive(btnId){
-    document.querySelectorAll('.bn-item').forEach(function(b){
-      b.classList.toggle('bn-active', b.id === btnId);
-    });
-  }
-
-  window.bnGo = function(id){
-    if(id === 'home'){
-      window.scrollTo({top:0, behavior:'smooth'});
-      bnSetActive('bn-home');
-      return;
-    }
-    if(typeof go === 'function') go(id);
-    bnSetActive(BN_MAP[id] || '');
-  };
-
-  // ── Sync active state on scroll ──
-  var ticking = false;
-  window.addEventListener('scroll', function(){
-    if(ticking) return;
-    ticking = true;
-    requestAnimationFrame(function(){
-      ticking = false;
-      if(window.scrollY < 300){
-        bnSetActive('bn-home');
-        return;
-      }
-      var closest = null, closestDist = Infinity;
-      BN_SECTIONS.forEach(function(sid){
-        var el = document.getElementById(sid);
-        if(!el) return;
-        var dist = Math.abs(el.getBoundingClientRect().top);
-        if(dist < closestDist){ closestDist = dist; closest = sid; }
-      });
-      if(closest) bnSetActive(BN_MAP[closest]);
-    });
-  }, {passive:true});
-
-  // ── Sync lang on change ──
-  var _origSetLang = window.setLang;
-  window.setLang = function(l){
-    if(typeof _origSetLang === 'function') _origSetLang(l);
-    bnSetLang(l);
-  };
-
-  // ── Init lang ──
-  document.addEventListener('DOMContentLoaded', function(){
-    var l = (typeof lang !== 'undefined' ? lang : null)
-         || localStorage.getItem('mm_lang') || 'en';
-    bnSetLang(l);
-  });
 })();
 </script>
 <!-- ══ SKELETON LOADING + CARD STAGGER ANIMATIONS ══ -->
@@ -9365,5 +9276,45 @@ function mkSkeletonSection(count){
   });
 })();
 </script>
+<!-- ══ FONT SIZE UPGRADES ══ -->
+<style>
+/* ── AI chat bubbles — bigger text ── */
+.ai-bubble{font-size:.95rem;line-height:1.65;}
+.ai-bubble .ai-itinerary-item{font-size:.9rem;}
+
+/* ── Card descriptions ── */
+.vdesc{font-size:.82rem !important;}
+.h-row .vdesc,.h-row .rcard-desc{font-size:.78rem !important;}
+
+/* ── Card category labels ── */
+.vcat{font-size:.65rem !important;}
+
+/* ── Section title small labels ── */
+.sec-tt small{font-size:.72rem;}
+
+/* ── Itinerary / trip planner ── */
+.itin-slot-name{font-size:1.05rem !important;}
+.itin-slot-sub{font-size:.82rem !important;}
+.itin-slot-time{font-size:.78rem !important;}
+.itin-q{font-size:1.22rem !important;}
+.itin-day-tab{font-size:.82rem !important;}
+
+/* ── Hotel, concert, event card details ── */
+.hotel-name{font-size:.98rem !important;}
+.ccard-name{font-size:1rem !important;}
+.stname{font-size:.98rem !important;}
+.pname{font-size:.95rem !important;}
+.evcard-title{font-size:.98rem !important;}
+.june-title{font-size:.98rem !important;}
+
+/* ── h-row card names keep decent size ── */
+.h-row .vname,.h-row .stname,.h-row .nname,.h-row .rcard-name{font-size:.92rem !important;}
+
+/* ── Transport/getting-around cards ── */
+.tcard-name,.tcard-tip{font-size:.82rem;}
+
+/* ── Rating / price pills ── */
+.rcard-cat,.rcard-desc{font-size:.72rem;}
+</style>
 </body>
 </html>
