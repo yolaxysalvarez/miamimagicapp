@@ -6,6 +6,10 @@
       "use": "@vercel/node"
     },
     {
+      "src": "api/send-pulse.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "*.html",
       "use": "@vercel/static"
     },
@@ -28,8 +32,18 @@
       "dest": "/api/chat.js"
     },
     {
+      "src": "/api/send-pulse",
+      "dest": "/api/send-pulse.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/send-pulse",
+      "schedule": "0 * * * *"
     }
   ]
 }
