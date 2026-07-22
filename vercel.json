@@ -8,6 +8,7 @@
     { "src": "*.jpg", "use": "@vercel/static" },
     { "src": "*.jpeg", "use": "@vercel/static" },
     { "src": "*.webp", "use": "@vercel/static" },
+    { "src": "fotos/*.jpg", "use": "@vercel/static" },
     { "src": "*.json", "use": "@vercel/static" },
     { "src": "*.js", "use": "@vercel/static" }
   ],
