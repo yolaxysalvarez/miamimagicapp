@@ -39,11 +39,5 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ],
-  "crons": [
-    {
-      "path": "/api/send-pulse",
-      "schedule": "0 * * * *"
-    }
   ]
 }
