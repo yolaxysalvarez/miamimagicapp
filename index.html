@@ -2993,8 +2993,7 @@ function mmDeferEl(el){
   if(!m) return;
   var u=m[2];
   if(u.indexOf('data:')===0) return;
-  if(typeof MMHOME!=='undefined'&&MMHOME[u]){ el.setAttribute('style', st.replace(m[0],'')); el.style.backgroundImage='url("'+MMHOME[u]+'")'; return; }
-  if(typeof MMPRI!=='undefined'&&MMPRI.indexOf(u)>-1){ el.dataset.mmbg=u; return; }              /* palmas inline: no tocar */
+  if(typeof MMHOME!=='undefined'&&MMHOME[u]){ el.setAttribute('style', st.replace(m[0],'')); el.style.backgroundImage='url("'+MMHOME[u]+'")'; return; }              /* palmas inline: no tocar */
   el.dataset.mmbg=u;
   el.setAttribute('style', st.replace(m[0],''));
   var lm=u.match(/fotos\/(mm-[^.]+)\.jpg/);
@@ -3028,7 +3027,7 @@ function mmPreload(){
   els.sort(function(a,b){
     return (a.dataset.mmbg.indexOf('fotos/')===0?0:1)-(b.dataset.mmbg.indexOf('fotos/')===0?0:1);
   });
-  var i=0, act=0, MAXC=3;
+  var i=0, act=0, MAXC=4;
   function fin(){ act--; if(i>=els.length&&act<=0){ mmPreBusy=false; } setTimeout(next,80); }
   function next(){
     while(act<MAXC && i<els.length){
@@ -3048,7 +3047,7 @@ function mmPreload(){
   }
   next();
 }
-setTimeout(mmPreload, 2500);
+setTimeout(mmPreload, 300);
 setInterval(mmPreload, 25000);
 
 
