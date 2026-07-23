@@ -2694,7 +2694,7 @@ body{padding-bottom:0;}
 
 <section class="hero" style="position:relative;" id="home">
   <div class="hero-bg">
-    <img src="fotos/mm-x.jpg" alt="Miami" class="hero-image">
+    <img loading="lazy" src="fotos/mm-x.jpg" alt="Miami" class="hero-image">
   </div>
   <div class="hero-overlay"></div>
   <div class="hero-glow" aria-hidden="true"></div>
@@ -2957,6 +2957,34 @@ ins_onlyindade:"fotos/mm-ins_onlyindade.jpg"
 ,r63:"https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80",r70:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80",r76:"https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&q=80",r80:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",r85:"https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80",rk1:"https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80",rn1:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80",n10:"https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=600&q=80",n11:"https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80",n12:"https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&q=80",n13:"https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80",n14:"https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=600&q=80",n15:"https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&q=80",n16:"https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&q=80",n17:"https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&q=80",n18:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80",n19:"https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80",n20:"https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80"};
 function sPhoto(id){return SP[id]||"";}
 function sBg(id){var u=sPhoto(id);return u?"background-image:url("+u+");background-size:cover;background-position:center":"";}
+/* ===== MOTOR DE CARGA PEREZOSA — solo pide fotos cercanas a pantalla ===== */
+var mmIO=('IntersectionObserver' in window)?new IntersectionObserver(function(es){
+  es.forEach(function(en){ if(en.isIntersecting){ var el=en.target;
+    el.style.backgroundImage='url("'+el.dataset.mmbg+'")'; mmIO.unobserve(el); } });
+},{rootMargin:'600px'}):null;
+function mmDeferEl(el){
+  if(!mmIO||el.dataset.mmbg) return;
+  var st=el.getAttribute('style')||'';
+  var m=st.match(/background-image:\s*url\((['"]?)([^)'"]+)\1\)\s*;?/);
+  if(!m) return;
+  var u=m[2];
+  if(u.indexOf('data:')===0) return;              /* palmas inline: no tocar */
+  el.dataset.mmbg=u;
+  el.setAttribute('style', st.replace(m[0],''));
+  mmIO.observe(el);
+}
+function mmDeferScan(root){
+  if(!mmIO||!root||!root.querySelectorAll) return;
+  if(root.getAttribute&&/background-image/.test(root.getAttribute('style')||'')) mmDeferEl(root);
+  root.querySelectorAll('[style*="background-image"]').forEach(mmDeferEl);
+}
+if(mmIO){
+  new MutationObserver(function(muts){
+    muts.forEach(function(mu){ mu.addedNodes&&mu.addedNodes.forEach(function(n){ if(n.nodeType===1) mmDeferScan(n); }); });
+  }).observe(document.body,{childList:true,subtree:true});
+  mmDeferScan(document.body);
+}
+/* ===== fin motor perezoso ===== */
 
 const D={
 restaurants:[
