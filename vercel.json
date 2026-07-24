@@ -10,7 +10,9 @@
     { "src": "*.webp", "use": "@vercel/static" },
     { "src": "fotos/*.jpg", "use": "@vercel/static" },
     { "src": "*.json", "use": "@vercel/static" },
-    { "src": "*.js", "use": "@vercel/static" }
+    { "src": "*.js", "use": "@vercel/static" },
+    { "src": "videos/*.mp4", "use": "@vercel/static" },
+    { "src": "videos/*.jpg", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/api/chat", "dest": "/api/chat.js" },
