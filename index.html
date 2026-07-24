@@ -2733,9 +2733,9 @@ body{padding-bottom:0;}
 
     <!-- ── HERO BODY — todo en flujo natural ── -->
     <div class="hero-body">
-      <div class="hero-eyebrow-pill">
+      <div class="hero-eyebrow-pill" onclick="mmOpenStories(0)" role="button" style="cursor:pointer">
         <span class="hero-eyebrow-dot"></span>
-        <span data-en="The Insider's Miami Guide" data-es="La Guía Insider de Miami">The Insider's Miami Guide</span>
+        <span data-en="Fly Over Miami" data-es="Fly Over Miami">Fly Over Miami</span>
       </div>
       <!-- Palma + Título -->
       <div class="hero-brand">
@@ -4315,40 +4315,159 @@ function addFavFromCard(id,name,type,btn){
 
 
 /* ── MIAMI FROM ABOVE · DRONES ── */
+/* ── MIAMI FROM ABOVE · DRONES (premium editorial) ── */
+
+/* ── MIAMI STORIES · DRONE EDITION ── */
+var _mmStIdx=0,_mmStOpen=false;
+function mmOpenStories(start){
+  var clips=window._mmDroneClips||[];
+  if(!clips.length) return;
+  _mmStIdx=Math.max(0,Math.min(start||0,clips.length-1));
+  var ov=document.getElementById('mmStoriesOv');
+  if(!ov){
+    ov=document.createElement('div');
+    ov.id='mmStoriesOv';
+    ov.innerHTML='<div class="mmst-bars" id="mmstBars"></div>'
+      +'<button class="mmst-close" onclick="mmCloseStories()">\u2715</button>'
+      +'<div class="mmst-stage" id="mmstStage"></div>'
+      +'<div class="mmst-caption" id="mmstCaption"></div>'
+      +'<div class="mmst-tap mmst-tap-l" onclick="mmStPrev()"></div>'
+      +'<div class="mmst-tap mmst-tap-r" onclick="mmStNext()"></div>';
+    document.body.appendChild(ov);
+  }
+  var bars=clips.map(function(_,i){return '<div class="mmst-bar"><i id="mmstFill'+i+'"></i></div>';}).join('');
+  document.getElementById('mmstBars').innerHTML=bars;
+  ov.classList.add('open');
+  document.body.style.overflow='hidden';
+  _mmStOpen=true;
+  mmStShow();
+}
+function mmStShow(){
+  var clips=window._mmDroneClips||[];
+  var c=clips[_mmStIdx]; if(!c) return mmCloseStories();
+  var L=typeof lang!=='undefined'?lang:'en'; var e=L==='es';
+  var stage=document.getElementById('mmstStage');
+  stage.innerHTML='';
+  var v=document.createElement('video');
+  v.src='videos/mm-drone-'+c.id+'.mp4';
+  v.autoplay=true;v.muted=true;v.playsInline=true;v.setAttribute('playsinline','');
+  v.onended=function(){ mmStNext(); };
+  v.ontimeupdate=function(){
+    var f=document.getElementById('mmstFill'+_mmStIdx);
+    if(f&&v.duration) f.style.width=(v.currentTime/v.duration*100)+'%';
+  };
+  stage.appendChild(v);
+  var pr=v.play(); if(pr&&pr.catch)pr.catch(function(){});
+  for(var i=0;i<clips.length;i++){
+    var f=document.getElementById('mmstFill'+i);
+    if(f) f.style.width = i<_mmStIdx?'100%':(i===_mmStIdx?'0%':'0%');
+  }
+  document.getElementById('mmstCaption').innerHTML=
+    '<div class="mmst-loc">'+c.loc+'</div>'
+    +'<div class="mmst-title">'+(e?c.t_es:c.t)+'</div>'
+    +'<div class="mmst-desc">'+(e?c.d_es:c.d)+'</div>';
+}
+function mmStNext(){
+  var clips=window._mmDroneClips||[];
+  if(_mmStIdx>=clips.length-1) return mmCloseStories();
+  _mmStIdx++; mmStShow();
+}
+function mmStPrev(){
+  if(_mmStIdx<=0){ mmStShow(); return; }
+  _mmStIdx--; mmStShow();
+}
+function mmCloseStories(){
+  var ov=document.getElementById('mmStoriesOv');
+  if(ov){ ov.classList.remove('open'); var st=document.getElementById('mmstStage'); if(st)st.innerHTML=''; }
+  document.body.style.overflow='';
+  _mmStOpen=false;
+}
+
 function renderDrones(){
   var L=typeof lang!=='undefined'?lang:'en';
+  var e=L==='es';
   var clips=[
-    {id:'197587233',dur:'0:12'},
-    {id:'200235713',dur:'0:06'},
-    {id:'531103603',dur:'0:11'},
-    {id:'616330095',dur:'0:22'}
+    {id:'197587233',dur:'0:12',
+      t:'The Metromover Ride',t_es:'El vuelo del Metromover',
+      loc:'Downtown Miami',
+      d:'Gliding between skyscrapers alongside Miami\'s free elevated rail — palms, traffic and towers in one frame.',
+      d_es:'Volando entre rascacielos junto al tren elevado gratuito de Miami — palmas, tráfico y torres en un solo plano.'},
+    {id:'200235713',dur:'0:06',
+      t:'Boulevard of Towers',t_es:'Bulevar de torres',
+      loc:'Downtown · Biscayne',
+      d:'Condo towers and royal palms lining the boulevard under that impossibly blue Miami sky.',
+      d_es:'Torres de condominios y palmas reales bordeando el bulevar bajo ese cielo azul imposible de Miami.'},
+    {id:'531103603',dur:'0:11',
+      t:'South Beach from the Sky',t_es:'South Beach desde el cielo',
+      loc:'South Beach · Miami Beach',
+      d:'Turquoise water, white sand, blue umbrellas and the iconic lifeguard tower — the postcard, in motion.',
+      d_es:'Agua turquesa, arena blanca, sombrillas azules y la icónica torre de salvavidas — la postal, en movimiento.'},
+    {id:'616330095',dur:'0:22',
+      t:'Marina & Skyline',t_es:'Marina y skyline',
+      loc:'Biscayne Bay',
+      d:'Golden hour over a marina full of yachts, with the downtown skyline and causeway bridges behind.',
+      d_es:'Hora dorada sobre una marina llena de yates, con el skyline del downtown y los puentes de la bahía al fondo.'},
+    {id:'294601032',dur:'0:28',
+      t:'Downtown at Dusk',t_es:'Downtown al anochecer',
+      loc:'Downtown · Bayfront Park',
+      d:'Twilight over the skyline — Bayfront Park glowing green below, Biscayne Bay fading into the horizon as the city lights come alive.',
+      d_es:'El crepúsculo sobre el skyline — Bayfront Park brillando en verde abajo, la Bahía de Biscayne fundiéndose con el horizonte mientras la ciudad se enciende.'},
+    {id:'1496517307',dur:'0:09',
+      t:'The Miami River',t_es:'El Río Miami',
+      loc:'Brickell · Miami River',
+      d:'The river winding between Brickell\'s glass towers — drawbridge, yachts, and the ancient Miami Circle in view.',
+      d_es:'El río serpenteando entre las torres de cristal de Brickell — puente levadizo, yates y el milenario Miami Circle a la vista.'}
   ];
-  var sub=L==='es'?'La Ciudad Mágica como nunca la has visto — filmada desde el aire.':'The Magic City like you\'ve never seen it — filmed from the sky.';
-  var cards=clips.map(function(c){
-    return '<div class="drone-card" onclick="mmPlayDrone(this)" data-vid="videos/mm-drone-'+c.id+'.mp4">'
-      +'<div class="drone-poster" style="background-image:url(videos/mm-drone-'+c.id+'.jpg)"></div>'
-      +'<div class="drone-grad"></div>'
-      +'<span class="drone-play"><svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;margin-left:2px"><path d="M8 5v14l11-7z"/></svg></span>'
-      +'<span class="drone-dur">'+c.dur+'</span>'
+  window._mmDroneClips=clips;
+  var sub=e?'La Ciudad Mágica como nunca la has visto — filmada desde el aire, en alta definición.':'The Magic City like you\'ve never seen it — filmed from the sky, in high definition.';
+  var chips='<div class="drone-stats">'
+    +'<span class="drone-stat"><b>'+clips.length+'</b> '+(e?'vistas aéreas':'aerial views')+'</span>'
+    +'<span class="drone-stat-div"></span>'
+    +'<span class="drone-stat"><b>Full HD</b> 1080p</span>'
+    +'<span class="drone-stat-div"></span>'
+    +'<span class="drone-stat"><b>'+(e?'Toca':'Tap')+'</b> '+(e?'para volar':'to fly')+'</span>'
+  +'</div>';
+  var cards=clips.map(function(c,i){
+    var num=('0'+(i+1)).slice(-2);
+    return '<div class="drone-card">'
+      +'<div class="drone-media" onclick="mmPlayDrone(this)" data-vid="videos/mm-drone-'+c.id+'.mp4">'
+        +'<div class="drone-poster" style="background-image:url(videos/mm-drone-'+c.id+'.jpg)"></div>'
+        +'<div class="drone-grad"></div>'
+        +'<span class="drone-num">'+num+'</span>'
+        +'<span class="drone-play"><svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;margin-left:2px"><path d="M8 5v14l11-7z"/></svg></span>'
+        +'<span class="drone-dur">'+c.dur+'</span>'
+      +'</div>'
+      +'<div class="drone-info">'
+        +'<div class="drone-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:11px;height:11px;vertical-align:-1px;margin-right:4px"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>'+c.loc+'</div>'
+        +'<div class="drone-name">'+(e?c.t_es:c.t)+'</div>'
+        +'<div class="drone-desc">'+(e?c.d_es:c.d)+'</div>'
+      +'</div>'
     +'</div>';
   }).join('');
+  var storiesBtn='<button class="drone-stories-btn" onclick="mmOpenStories(0)">'
+    +'<svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px;margin-right:7px"><path d="M8 5v14l11-7z"/></svg>'
+    +'Fly Over Miami'
+  +'</button>';
   return '<section class="sec fade" id="sec-drones">'
     +sHdr('drones')
     +'<p class="drone-sub">'+sub+'</p>'
+    +chips
     +'<div class="drone-rail">'+cards+'</div>'
+    +storiesBtn
   +'</section>';
 }
-function mmPlayDrone(card){
-  var vid=card.getAttribute('data-vid');
-  if(!vid || card.querySelector('video')) return;
+function mmPlayDrone(media){
+  var vid=media.getAttribute('data-vid');
+  if(!vid || media.querySelector('video')) return;
   var v=document.createElement('video');
   v.src=vid; v.autoplay=true; v.muted=true; v.loop=true; v.playsInline=true; v.controls=true;
   v.setAttribute('playsinline','');
-  v.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;z-index:4;background:#000;';
-  card.appendChild(v);
+  v.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:4;background:#000;';
+  media.appendChild(v);
   var pr=v.play(); if(pr&&pr.catch)pr.catch(function(){});
-  var p=card.querySelector('.drone-play'); if(p)p.style.display='none';
-  var d=card.querySelector('.drone-dur'); if(d)d.style.display='none';
+  var p=media.querySelector('.drone-play'); if(p)p.style.display='none';
+  var d=media.querySelector('.drone-dur'); if(d)d.style.display='none';
+  var n=media.querySelector('.drone-num'); if(n)n.style.display='none';
 }
 
 function renderUGC(){
@@ -11030,18 +11149,47 @@ document.addEventListener('keydown', function(e) {
 .mm-spice-title{font:700 1.05rem 'Playfair Display',serif;color:#fff;line-height:1.25;margin-top:1px;}
 .mm-spice-sub{font:600 .74rem 'DM Sans',sans-serif;color:rgba(255,255,255,.9);margin-top:2px;}
 
-/* ── Miami desde el cielo · drones ── */
-.drone-sub{font:400 .9rem/1.55 'DM Sans',sans-serif;color:var(--text2,#777);margin:-4px 0 14px;max-width:640px;}
-.drone-rail{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 10px;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+/* ── Miami desde el cielo · drones (premium) ── */
+.drone-sub{font:400 .92rem/1.55 'DM Sans',sans-serif;color:var(--text2,#777);margin:-4px 0 10px;max-width:640px;}
+.drone-stats{display:flex;align-items:center;gap:12px;margin:0 0 16px;flex-wrap:wrap;}
+.drone-stat{font:600 .78rem 'DM Sans',sans-serif;color:var(--text2,#8a8a8a);}
+.drone-stat b{color:#FF4D35;font-weight:800;}
+.drone-stat-div{width:4px;height:4px;border-radius:50%;background:#FFD166;}
+.drone-rail{display:flex;gap:16px;overflow-x:auto;padding:4px 2px 12px;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
 .drone-rail::-webkit-scrollbar{display:none;}
-.drone-card{position:relative;flex:0 0 305px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;cursor:pointer;scroll-snap-align:start;background:linear-gradient(160deg,#0E1B30,#0B1526);box-shadow:0 8px 24px rgba(0,0,0,.22);}
+.drone-card{flex:0 0 305px;scroll-snap-align:start;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(8,15,30,.14);display:flex;flex-direction:column;border:1px solid rgba(8,15,30,.06);}
+.drone-media{position:relative;aspect-ratio:16/9;overflow:hidden;cursor:pointer;background:linear-gradient(160deg,#0E1B30,#0B1526);}
 .drone-poster{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .4s;}
-.drone-card:hover .drone-poster{transform:scale(1.05);}
-.drone-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.55) 0%,transparent 45%);z-index:2;}
+.drone-media:hover .drone-poster{transform:scale(1.05);}
+.drone-grad{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,15,30,.5) 0%,transparent 45%);z-index:2;}
+.drone-num{position:absolute;top:10px;left:12px;font:400 1.5rem 'Bebas Neue',sans-serif;color:#FFD166;letter-spacing:.05em;z-index:3;text-shadow:0 2px 8px rgba(0,0,0,.5);}
 .drone-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,77,53,.94);color:#fff;display:flex;align-items:center;justify-content:center;z-index:3;box-shadow:0 6px 20px rgba(0,0,0,.4);transition:transform .15s;}
-.drone-card:active .drone-play{transform:translate(-50%,-50%) scale(.92);}
+.drone-media:active .drone-play{transform:translate(-50%,-50%) scale(.92);}
 .drone-dur{position:absolute;right:10px;bottom:9px;background:rgba(8,15,30,.72);backdrop-filter:blur(6px);color:#fff;font:700 .68rem 'DM Sans',sans-serif;padding:4px 9px;border-radius:50px;z-index:3;}
+.drone-info{padding:13px 15px 15px;border-top:3px solid #FFD166;background:linear-gradient(180deg,#fff,#FFFDF8);flex:1;}
+.drone-loc{font:800 .64rem 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#FF4D35;margin-bottom:4px;display:flex;align-items:center;}
+.drone-name{font:700 1.08rem 'Playfair Display',serif;color:#08172E;line-height:1.25;margin-bottom:5px;}
+.drone-desc{font:400 .8rem/1.55 'DM Sans',sans-serif;color:#666;}
 @media(min-width:900px){.drone-card{flex:0 0 400px;}}
+
+/* ── Miami Stories · Drone Edition ── */
+.drone-stories-btn{display:flex;align-items:center;justify-content:center;margin:14px auto 0;background:linear-gradient(120deg,#FF4D35,#E8862B);color:#fff;border:none;border-radius:50px;padding:12px 26px;font:800 .9rem 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 8px 22px rgba(255,77,53,.32);transition:transform .15s;}
+.drone-stories-btn:active{transform:scale(.96);}
+#mmStoriesOv{position:fixed;inset:0;background:#04080F;z-index:99999;display:none;}
+#mmStoriesOv.open{display:block;}
+.mmst-stage{position:absolute;inset:0;}
+.mmst-stage video{width:100%;height:100%;object-fit:cover;}
+.mmst-bars{position:absolute;top:calc(env(safe-area-inset-top,0px) + 12px);left:12px;right:12px;display:flex;gap:5px;z-index:5;}
+.mmst-bar{flex:1;height:3px;background:rgba(255,255,255,.28);border-radius:99px;overflow:hidden;}
+.mmst-bar i{display:block;height:100%;width:0;background:#fff;border-radius:99px;transition:width .15s linear;}
+.mmst-close{position:absolute;top:calc(env(safe-area-inset-top,0px) + 26px);right:14px;width:40px;height:40px;border-radius:50%;border:none;background:rgba(8,15,30,.55);backdrop-filter:blur(8px);color:#fff;font-size:17px;font-weight:700;cursor:pointer;z-index:6;display:flex;align-items:center;justify-content:center;}
+.mmst-caption{position:absolute;left:18px;right:18px;bottom:calc(env(safe-area-inset-bottom,0px) + 26px);z-index:5;text-shadow:0 2px 12px rgba(0,0,0,.6);}
+.mmst-loc{font:800 .68rem 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#FFD166;margin-bottom:5px;}
+.mmst-title{font:700 1.5rem 'Playfair Display',serif;color:#fff;line-height:1.2;margin-bottom:6px;}
+.mmst-desc{font:400 .86rem/1.5 'DM Sans',sans-serif;color:rgba(255,255,255,.85);max-width:520px;}
+.mmst-tap{position:absolute;top:0;bottom:120px;width:34%;z-index:4;cursor:pointer;}
+.mmst-tap-l{left:0;}
+.mmst-tap-r{right:0;width:66%;}
 </style>
 
 <script>
