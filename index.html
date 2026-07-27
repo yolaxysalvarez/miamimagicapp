@@ -33,7 +33,29 @@
 <link rel="preload" as="image" href="https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?w=500&q=72">
 
 <meta charset="UTF-8">
+<title>Miami Magic — Your Insider Miami Guide | Tu Guía Insider de Miami</title>
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.miamimagicapp.com/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Miami Magic",
+  "url": "https://www.miamimagicapp.com/",
+  "description": "Bilingual insider guide to Miami — 300+ curated restaurants, hotels, beaches, museums, live cams, walking tours and hidden gems. Free.",
+  "image": "https://www.miamimagicapp.com/og-share.jpg",
+  "areaServed": {
+    "@type": "City",
+    "name": "Miami",
+    "containedInPlace": {
+      "@type": "AdministrativeArea",
+      "name": "Florida"
+    }
+  },
+  "inLanguage": ["en", "es"]
+}
+</script>
 <link rel="apple-touch-icon" sizes="180x180" href="miami-magic-icon-180.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Miami Magic">
@@ -2768,8 +2790,8 @@ body{padding-bottom:0;}
         <button class="hbtn-main" onclick="var t=document.getElementById('sec-rest')||document.getElementById('app');if(t)t.scrollIntoView({behavior:'smooth'});">
           <span>Start Exploring →</span>
         </button>
-        <button class="hbtn-alt" onclick="go('sec-map')">
-          <span>View Map</span>
+        <button class="hbtn-alt" onclick="window.open(carLink(),'_blank');" data-en="Rent a Car" data-es="Renta un Auto">
+          <span data-en="Rent a Car" data-es="Renta un Auto">Rent a Car</span>
         </button>
       </div>
       <div class="hero-stats-row">
@@ -2897,7 +2919,7 @@ body{padding-bottom:0;}
       </div>
       <div class="rcat-rail" id="mapFilters" style="max-width:100%;"><button class="rcat-tile map-filter-btn on active" data-cat="all" style="--rc-ac:#FF4D35" onclick="filterMap('all',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span class="rcat-lbl">All</span></button><button class="rcat-tile map-filter-btn" data-cat="rest" style="--rc-ac:#FF4D35" onclick="filterMap('rest',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4v7M6 4v3.5a2 2 0 0 0 4 0V4"/><path d="M16.5 4c-1.4 1-2 2.8-2 4.6 0 1.9.8 2.9 2 2.9V20"/><path d="M8 13v7"/></svg></span><span class="rcat-lbl">Food</span></button><button class="rcat-tile map-filter-btn" data-cat="beach" style="--rc-ac:#00C9B1" onclick="filterMap('beach',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4a8.5 8.5 0 0 1 8.5 8.5H3.5A8.5 8.5 0 0 1 12 4z"/><path d="M12 12.5V20"/><path d="M9 20h6"/></svg></span><span class="rcat-lbl">Beaches</span></button><button class="rcat-tile map-filter-btn" data-cat="museum" style="--rc-ac:#7B5EA7" onclick="filterMap('museum',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M12 3.5 4.5 8.5h15L12 3.5z"/><path d="M6.5 11v6M12 11v6M17.5 11v6"/></svg></span><span class="rcat-lbl">Culture</span></button><button class="rcat-tile map-filter-btn" data-cat="night" style="--rc-ac:#FFD166" onclick="filterMap('night',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 4.5h13L12 12 5.5 4.5z"/><path d="M12 12v6.5"/><path d="M8.5 20h7"/></svg></span><span class="rcat-lbl">Nightlife</span></button><button class="rcat-tile map-filter-btn" data-cat="hotel" style="--rc-ac:#4A9EDB" onclick="filterMap('hotel',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.5v13"/><path d="M3.5 14h17v5.5"/><path d="M3.5 11h7.5a4 4 0 0 1 4 4"/><circle cx="7" cy="9" r="1.4"/></svg></span><span class="rcat-lbl">Hotels</span></button><button class="rcat-tile map-filter-btn" data-cat="sport" style="--rc-ac:#3E7BFA" onclick="filterMap('sport',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 20.5h7M12 16.5v4"/><path d="M6.5 4h11v4.5a5.5 5.5 0 0 1-11 0V4z"/><path d="M6.5 6H4.5a2 2 0 0 0 2 3.6M17.5 6h2a2 2 0 0 1-2 3.6"/></svg></span><span class="rcat-lbl">Sports</span></button><button class="rcat-tile map-filter-btn" data-cat="park" style="--rc-ac:#3FA65C" onclick="filterMap('park',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 6.8 11h3l-4 6h12.4l-4-6h3L12 3.5z"/><path d="M12 17v3.5"/></svg></span><span class="rcat-lbl">Parks</span></button><button class="rcat-tile map-filter-btn" data-cat="shop" style="--rc-ac:#E85D9C" onclick="filterMap('shop',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5h12l1 12H5l1-12z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></svg></span><span class="rcat-lbl">Shops</span></button><button class="rcat-tile map-filter-btn" data-cat="coffee" style="--rc-ac:#B07D48" onclick="filterMap('coffee',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 9.5h10v4a4.2 4.2 0 0 1-4.2 4.2h-1.6a4.2 4.2 0 0 1-4.2-4.2v-4z"/><path d="M15.5 10.5h1.5a2 2 0 0 1 0 4h-1.5"/><path d="M8.5 6.5c0-1.3.9-1.3.9-2.6M11.8 6.5c0-1.3.9-1.3.9-2.6"/></svg></span><span class="rcat-lbl">Coffee</span></button><button class="rcat-tile map-filter-btn" data-cat="kids" style="--rc-ac:#FF8A3D" onclick="filterMap('kids',this)"><span class="rcat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4.5"/><path d="M12 12.5c-.8 2.2.8 3 .1 5"/><path d="M10.3 7.4a2.4 2.4 0 0 1 1.7-.9"/></svg></span><span class="rcat-lbl">Kids</span></button></div>
     </div>
-    <div class="mmtour-row"><p class="mmtour-row-tt">&#9654; Walking Tours &middot; Tours Guiados a Pie</p><div class="mmtour-row-cards"><button class="mmtour-big" style="--tp:#FF4D35" onclick="startTour('havana')"><span class="mmtour-big-bg" style="background-image:linear-gradient(180deg,rgba(8,15,30,.15),rgba(8,15,30,.85)),url('https://images.unsplash.com/photo-1571061125816-a1a4b57a7d95?w=700&q=60&auto=format')"></span><span class="mmtour-big-tx"><em>WALKING TOUR</em><b>Little Havana</b><i>7 paradas · ~2 h</i></span><span class="mmtour-big-go">&#9654;</span></button><button class="mmtour-big" style="--tp:#00C9B1" onclick="startTour('wynwood')"><span class="mmtour-big-bg" style="background-image:linear-gradient(180deg,rgba(8,15,30,.15),rgba(8,15,30,.85)),url('https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=700&q=60&auto=format')"></span><span class="mmtour-big-tx"><em>WALKING TOUR</em><b>Wynwood Street Art</b><i>6 paradas · ~1.5 h</i></span><span class="mmtour-big-go">&#9654;</span></button><button class="mmtour-big" style="--tp:#FFD166" onclick="startTour('sobe')"><span class="mmtour-big-bg" style="background-image:linear-gradient(180deg,rgba(8,15,30,.15),rgba(8,15,30,.85)),url('https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=700&q=60&auto=format')"></span><span class="mmtour-big-tx"><em>WALKING TOUR</em><b>South Beach & Art Deco</b><i>6 paradas · ~2 h</i></span><span class="mmtour-big-go">&#9654;</span></button></div></div><div id="miami-map" style="height:520px;border-radius:20px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.12);"></div>
+    <div class="mmtour-row"><p class="mmtour-row-tt">&#9654; Walking Tours &middot; Tours Guiados a Pie</p><div class="mmtour-row-cards"><button class="mmtour-big" style="--tp:#FF4D35" onclick="startTour('havana')"><span class="mmtour-big-bg" style="background-image:linear-gradient(180deg,rgba(8,15,30,.15),rgba(8,15,30,.85)),url('https://images.unsplash.com/photo-1571061125816-a1a4b57a7d95?w=700&q=60&auto=format')"></span><span class="mmtour-big-tx"><em>WALKING TOUR</em><b>Little Havana</b><i>7 paradas · ~2 h</i></span><span class="mmtour-big-go">&#9654;</span></button><a class="mmtour-food-chip" href="#" onclick="event.stopPropagation();this.href=klLink('havanafood');" target="_blank" rel="noopener sponsored"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;vertical-align:-2px;margin-right:5px"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg><span data-en="Prefer a guided food tour? Book one →" data-es="¿Prefieres un tour gastronómico guiado? Resérvalo →">¿Prefieres un tour gastronómico guiado? Resérvalo →</span></a><button class="mmtour-big" style="--tp:#00C9B1" onclick="startTour('wynwood')"><span class="mmtour-big-bg" style="background-image:linear-gradient(180deg,rgba(8,15,30,.15),rgba(8,15,30,.85)),url('https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=700&q=60&auto=format')"></span><span class="mmtour-big-tx"><em>WALKING TOUR</em><b>Wynwood Street Art</b><i>6 paradas · ~1.5 h</i></span><span class="mmtour-big-go">&#9654;</span></button><button class="mmtour-big" style="--tp:#FFD166" onclick="startTour('sobe')"><span class="mmtour-big-bg" style="background-image:linear-gradient(180deg,rgba(8,15,30,.15),rgba(8,15,30,.85)),url('https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=700&q=60&auto=format')"></span><span class="mmtour-big-tx"><em>WALKING TOUR</em><b>South Beach & Art Deco</b><i>6 paradas · ~2 h</i></span><span class="mmtour-big-go">&#9654;</span></button></div></div><div id="miami-map" style="height:520px;border-radius:20px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.12);"></div>
   </div>
 </section>
 
@@ -3278,7 +3300,7 @@ places:[
   {id:'pl5',name:'Everglades National Park',name_es:'Parque Nacional Everglades',emoji:'',bg:'bg-green',desc:'America\'s most unique and irreplaceable ecosystem — a UNESCO World Heritage Site and International Biosphere Reserve. Airboat rides through sawgrass prairies, alligator sightings, rare birds including the snail kite and roseate spoonbill, and stargazing without light pollution. Just 45 minutes from Downtown Miami.',desc_es:'El ecosistema más único e irremplazable de América. Patrimonio de la Humanidad UNESCO. Paseos en aerodeslizador, avistamiento de caimanes, aves exóticas como la espátula rosada y cielos sin contaminación lumínica. Solo 45 minutos del centro de Miami.',addr:'40001 State Road 9336, Homestead'},
   {id:'pl6',name:'Design District',name_es:'Distrito del Diseño',emoji:'',bg:'bg-pink',desc:'Miami\'s luxury epicenter — Hermès, Louis Vuitton, Dior, and 130 world-class boutiques alongside gallery spaces, innovative architecture by Sou Fujimoto, and some of Miami\'s best restaurants. The district reimagines what luxury retail can be, turning shopping into a cultural experience.',desc_es:'El epicentro del lujo en Miami: Hermès, Louis Vuitton, Dior y 130 boutiques de clase mundial junto a galerías, arquitectura innovadora y algunos de los mejores restaurantes de Miami. El shopping convertido en experiencia cultural.',addr:'NW 39th–42nd St, Miami'},
   {id:'pl7',name:'Coconut Grove',name_es:'Coconut Grove',emoji:'',bg:'bg-green',desc:'Miami\'s oldest neighborhood — bohemian, leafy, and waterfront. Indie cafés, sailing culture, art galleries, and a village-like atmosphere unlike anywhere else in Miami. Home to Vizcaya, CocoWalk, and the annual Coconut Grove Arts Festival — the largest outdoor art fair in the Southeast.',desc_es:'El barrio más antiguo de Miami: bohemio, verde y frente al mar. Cafeterías independientes, cultura náutica, galerías de arte y un ambiente de pueblo único en Miami. Sede del Festival de Arte Anual, la mayor feria de arte al aire libre del sureste de EE.UU.',addr:'Coconut Grove, Miami'},
-  {id:'pl8',name:'Bayside Marketplace',name_es:'Bayside Marketplace',emoji:'',bg:'bg-teal',desc:'Miami\'s waterfront gathering place on Biscayne Bay: open-air dining, live music every evening, shopping, and boat tours with stunning views of the downtown skyline. The departure point for bay cruises and the best spot to watch cruise ships leave for the Caribbean.',desc_es:'El punto de encuentro junto a la Bahía Biscayne: restaurantes al aire libre, música en vivo, tiendas y tours en bote con vistas al skyline. El punto de partida para cruceros por la bahía y el mejor lugar para ver los cruceros zarpar hacia el Caribe.',addr:'401 Biscayne Blvd, Downtown'},
+  {id:'pl8',name:'Bayside Marketplace',name_es:'Bayside Marketplace',emoji:'',bg:'bg-teal',desc:'Miami\'s waterfront gathering place on Biscayne Bay: open-air dining, live music every evening, shopping, and boat tours with stunning views of the downtown skyline. The departure point for bay cruises and the best spot to watch cruise ships leave for the Caribbean.',desc_es:'El punto de encuentro junto a la Bahía Biscayne: restaurantes al aire libre, música en vivo, tiendas y tours en bote con vistas al skyline. El punto de partida para cruceros por la bahía y el mejor lugar para ver los cruceros zarpar hacia el Caribe.',addr:'401 Biscayne Blvd, Downtown',kl:'baycruise'},
   {id:'pl9',name:'Freedom Tower',name_es:'Torre de la Libertad',emoji:'',bg:'bg-coral',
    desc:"Miami's Ellis Island — the 1925 Mediterranean Revival landmark where hundreds of thousands of Cuban exiles were processed for entry into the United States between 1962–1974. A National Historic Landmark, now home to MDC's Museum of Art and Design. The Libertad Exhibition tells this extraordinary story.",
    desc_es:"El Ellis Island de Miami: el edificio de 1925 donde cientos de miles de exiliados cubanos fueron procesados entre 1962 y 1974. Monumento Histórico Nacional, hoy sede del Museo de Arte y Diseño del MDC. La Exposición Libertad narra esta historia extraordinaria.",
@@ -3969,8 +3991,8 @@ kids:[
   {id:'k9',name:'Patch of Heaven Butterfly House',name_es:'Casa de Mariposas Patch of Heaven',cat:'Nature · Butterflies',cat_es:'Naturaleza · Mariposas',desc:'A magical tropical butterfly garden in South Miami Heights. Walk among hundreds of free-flying butterflies.',desc_es:'Un mágico jardín de mariposas tropicales en South Miami Heights. Camina entre cientos de mariposas.',addr:'22601 SW 152nd Ave, Miami',hrs:'Wed–Sun 10 AM – 4 PM',tags:['Butterflies','Nature','Family'],link:'https://www.facebook.com/patchofheavenmia',photo_url:''},
 ],
 daytrips:[
-  {id:'dt1',name:'Everglades National Park',name_es:'Parque Nacional Everglades',emoji:'',ico_color:'c-teal',ico_path:'<path d="M12 3v18"/><path d="M12 8c-3-3-7-3-9 0 2 3 6 4 9 2"/><path d="M12 13c3-3 7-3 9 0-2 3-6 4-9 2"/>',bg:'bg-green',dist:'30 min',duration:'4–8 hrs',desc:'The largest subtropical wilderness in the US. Airboat rides, hiking trails, alligator sightings, and some of the best birdwatching in North America. A UNESCO World Heritage Site on Miami\'s doorstep.',desc_es:'La mayor zona selvática subtropical de EE.UU. Paseos en airboat, senderos, avistamiento de caimanes y las mejores aves de América del Norte. Patrimonio de la Humanidad a las puertas de Miami.',addr:'Homestead, FL',link:'https://www.nps.gov/ever'},
-  {id:'dt2',name:'Key West',name_es:'Key West',emoji:'',ico_color:'c-gold',ico_path:'<path d="M17 18a5 5 0 00-10 0"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/>',bg:'bg-coral',dist:'3.5 hrs',duration:'Full day',desc:'The southernmost point in the continental US. Duval Street bars, Hemingway\'s house, sunset at Mallory Square, snorkeling in crystal-clear waters, and the laid-back Keys vibe. Worth every mile.',desc_es:'El punto más meridional de EE.UU. continental. Los bares de Duval Street, la casa de Hemingway, el atardecer en Mallory Square y buceo en aguas cristalinas. Vale cada milla.',addr:'Key West, FL',link:'https://www.keywest.com'},
+  {id:'dt1',name:'Everglades National Park',name_es:'Parque Nacional Everglades',emoji:'',ico_color:'c-teal',ico_path:'<path d="M12 3v18"/><path d="M12 8c-3-3-7-3-9 0 2 3 6 4 9 2"/><path d="M12 13c3-3 7-3 9 0-2 3-6 4-9 2"/>',bg:'bg-green',dist:'30 min',duration:'4–8 hrs',desc:'The largest subtropical wilderness in the US. Airboat rides, hiking trails, alligator sightings, and some of the best birdwatching in North America. A UNESCO World Heritage Site on Miami\'s doorstep.',desc_es:'La mayor zona selvática subtropical de EE.UU. Paseos en airboat, senderos, avistamiento de caimanes y las mejores aves de América del Norte. Patrimonio de la Humanidad a las puertas de Miami.',addr:'Homestead, FL',kl:'everglades',link:'https://www.nps.gov/ever'},
+  {id:'dt2',name:'Key West',name_es:'Key West',emoji:'',ico_color:'c-gold',ico_path:'<path d="M17 18a5 5 0 00-10 0"/><line x1="12" y1="2" x2="12" y2="9"/><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"/><line x1="1" y1="18" x2="3" y2="18"/><line x1="21" y1="18" x2="23" y2="18"/><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"/>',bg:'bg-coral',dist:'3.5 hrs',duration:'Full day',desc:'The southernmost point in the continental US. Duval Street bars, Hemingway\'s house, sunset at Mallory Square, snorkeling in crystal-clear waters, and the laid-back Keys vibe. Worth every mile.',desc_es:'El punto más meridional de EE.UU. continental. Los bares de Duval Street, la casa de Hemingway, el atardecer en Mallory Square y buceo en aguas cristalinas. Vale cada milla.',addr:'Key West, FL',kl:'keywest',link:'https://www.keywest.com'},
   {id:'dt3',name:'Florida Keys',name_es:'Florida Keys',emoji:'',ico_color:'c-teal',ico_path:'<path d="M12 8v13"/><path d="M5 12H2a10 10 0 0020 0h-3"/><circle cx="12" cy="5" r="3"/>',bg:'bg-teal',dist:'45 min',duration:'Full day',desc:'A 125-mile chain of coral islands connected by 42 bridges. Islamorada for world-class fishing, Marathon for snorkeling, Big Pine Key for Key deer. The Overseas Highway is one of the world\'s great drives.',desc_es:'Una cadena de 125 millas de islas de coral conectadas por 42 puentes. Islamorada para pesca de clase mundial, Marathon para snorkel. La Overseas Highway es una de las mejores carreteras del mundo.',addr:'Florida Keys, US-1',link:'https://www.fla-keys.com'},
   {id:'dt4',name:'Palm Beach',name_es:'Palm Beach',emoji:'',ico_color:'c-gold',ico_path:'<path d="M12 22V11"/><path d="M12 11C9 11 6 9 5 6c3-1 6 0 7 3"/><path d="M12 11c3 0 6-2 7-5-3-1-6 0-7 3"/><path d="M12 11c-2 0-4.5-1-6-3 2-1.5 4.5-1 6 1"/><path d="M12 11c2 0 4.5-1 6-3-2-1.5-4.5-1-6 1"/>',bg:'bg-amber',dist:'1.5 hrs',duration:'Full day',desc:'The most glamorous address in Florida. Worth Avenue shopping, the Breakers Hotel, stunning Gilded Age mansions, and some of the most beautiful beaches in the state. Old Florida money at its finest.',desc_es:'La dirección más glamorosa de Florida. Las tiendas de Worth Avenue, el Hotel Breakers, mansiones de la Era Dorada y algunas de las playas más bellas del estado. El viejo dinero de Florida.',addr:'Palm Beach, FL',link:'https://www.palmbeachfl.com'},
   {id:'dt5',name:'Fort Lauderdale',name_es:'Fort Lauderdale',emoji:'',ico_color:'c-teal',ico_path:'<path d="M4 19h16"/><path d="M12 3v13"/><path d="M12 3l6 10H6z"/>',bg:'bg-blue',dist:'45 min',duration:'Half day',desc:'Miami\'s sophisticated northern neighbor. 300 miles of waterways earn it the "Venice of America" title. Las Olas Boulevard dining, Riverwalk, and the beach strip without the South Beach crowds.',desc_es:'El vecino norteño y sofisticado de Miami. 300 millas de canales le ganan el título de "Venecia de América". Las Olas Boulevard, Riverwalk y una playa sin las multitudes de South Beach.',addr:'Fort Lauderdale, FL',link:'https://www.sunny.org'},
@@ -4651,6 +4673,8 @@ function openItemModal(obj,type,link,btnLabel){
     rows='<div class="m-row"> '+obj.addr+'</div>';
     if(obj.tq && typeof tqLink==='function'){
       link=link||tqLink(obj.tq); btnLabel=btnLabel||(lang==='es'?'Comprar Entradas →':'Get Tickets →');
+    } else if(obj.kl && typeof klLink==='function'){
+      link=link||klLink(obj.kl); btnLabel=btnLabel||(lang==='es'?'Reservar Tour →':'Book Tour →');
     } else {
       link=link||('https://www.google.com/maps/search/'+encodeURIComponent(n(obj.name,obj.name_es)+' Miami'));
       btnLabel=btnLabel||t.mapsBtn;
@@ -4713,7 +4737,7 @@ function openItemModal(obj,type,link,btnLabel){
   } else if(type==='daytrip'){
     cat=lang==='es'?'Day Trip':'Day Trip'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows='<div class="m-row"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.6-4.8A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.2L19 11"/><rect x="3" y="11" width="18" height="6" rx="2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg>'+(lang==='es'?'Distancia':'Distance')+': '+obj.dist+'</div><div class="m-row"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>'+(lang==='es'?'Duración':'Duration')+': '+obj.duration+'</div><div class="m-row"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>'+obj.addr+'</div>';
-    link=link||obj.link; btnLabel=btnLabel||(lang==='es'?'Planear Viaje →':'Plan Trip →');
+    link=link||((obj.kl && typeof klLink==='function')?klLink(obj.kl):obj.link); btnLabel=btnLabel||(obj.kl?(lang==='es'?'Reservar Tour →':'Book Tour →'):(lang==='es'?'Planear Viaje →':'Plan Trip →'));
     setModalImg(obj.bg||'bg-navy','<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">'+(obj.ico_path||'')+'</svg>',obj.id);
   } else if(type==='park'){
     cat=lang==='es'?'Parque':'Park'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
@@ -5151,7 +5175,7 @@ function renderBeach(){
   };
   var verTodos='<div class="ver-todos-wrap"><button class="ver-todos-btn" onclick="toggleFullGrid(\'beach-full\',\'beach-hrow\',this)">'+n('See all','Ver todos')+' ('+items.length+') →</button></div>';
   var full='<div class="full-grid-beach" id="beach-full">'+items.map(mkCard).join('')+'</div>';
-  return '<section class="sec fade" id="sec-beach">'+sHdr('beach')+'<div class="h-row" id="beach-hrow">'+items.map(mkCardH).join('')+'</div>'+verTodos+full+'</section>';
+  return '<section class="sec fade" id="sec-beach">'+sHdr('beach')+'<div class="h-row" id="beach-hrow">'+items.map(mkCardH).join('')+'</div>'+'<a class="tq-band" href="'+carLink()+'" target="_blank" rel="noopener sponsored"><span class="tq-band-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.6-4.8A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.2L19 11"/><rect x="3" y="11" width="18" height="6" rx="2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg></span><span class="tq-band-tx"><b>'+n('Beach hop by car','Recorre las playas en auto')+'</b><i>'+n('South Beach, Sunny Isles, Key Biscayne &amp; more','South Beach, Sunny Isles, Key Biscayne y m&aacute;s')+'</i></span><span class="tq-band-go">'+n('Rent','Rentar')+' &rarr;</span></a>'+verTodos+full+'</section>';
 }
 
 
@@ -5164,6 +5188,15 @@ function renderBeach(){
 var MM_TQ = {
   enabled: true,
   base: 'https://tp.media/r?campaign_id=89&marker=756583&p=2074&trs=555302',
+  klookBase: 'https://tp.media/r?campaign_id=137&marker=756583&p=4110&trs=555302',
+  klookDest: {
+    everglades: 'https://www.klook.com/en-US/activity/11219-everglades-safari-park-admission-ticket-miami/',
+    citytour:   'https://www.klook.com/en-US/activity/11284-guided-city-tour-miami/',
+    miami:      'https://www.klook.com/en-US/city/198-Miami-things-to-do/',
+    keywest:    'https://www.klook.com/en-US/activity/11349-key-west-day-trip-miami/',
+    baycruise:  'https://www.klook.com/en-US/activity/54424-miami-sightseeing-cruise-millionaires-row-venetian-islands/',
+    havanafood: 'https://www.klook.com/en-US/activity/111719-miami-little-havana-food-and-walking-tour/'
+  },
   dest: {
     museos:   'https://www.tiqets.com/en/miami-attractions-c79868/',
     tours:    'https://www.tiqets.com/en/miami-attractions-c79868/city-tours-t1040/',
@@ -5188,11 +5221,35 @@ function tqBand(key, tEn, tEs, sEn, sEs){
     +'<span class="tq-band-go">'+n('Book','Reservar')+' →</span>'
   +'</a>';
 }
+function klLink(key){
+  try{
+    var d = MM_TQ.klookDest[key] || MM_TQ.klookDest.miami;
+    return MM_TQ.klookBase + '&sub_id=' + encodeURIComponent(key) + '&u=' + encodeURIComponent(d);
+  }catch(e){ return 'https://www.klook.com/en-US/city/198-Miami-things-to-do/'; }
+}
 function tqLink(key){
   try{
     var d = MM_TQ.dest[key] || MM_TQ.dest.museos;
     return MM_TQ.base + '&sub_id=' + encodeURIComponent(key) + '&u=' + encodeURIComponent(d);
   }catch(e){ return 'https://www.tiqets.com/en/miami-attractions-c79868/'; }
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   DISCOVERCARS · enlace de afiliada
+   Igual que MM_AFF (hoteles): apagado hasta pegar el enlace real.
+   Mientras enabled sea false, lleva a una búsqueda genérica de
+   DiscoverCars en Miami (sin comisión, pero funcional).
+   ══════════════════════════════════════════════════════════ */
+var MM_CAR = {
+  enabled: false,
+  link: ''
+};
+function carLink(){
+  try{
+    if(MM_CAR.enabled && MM_CAR.link) return MM_CAR.link;
+    return 'https://www.discovercars.com';
+  }catch(e){ return 'https://www.discovercars.com'; }
 }
 
 function renderMuseum(){
@@ -5910,8 +5967,14 @@ function renderDayTrips(){
   var verTodos='<div class="ver-todos-wrap"><button class="ver-todos-btn" onclick="toggleFullGrid(\'daytrips-full\',\'daytrips-hrow\',this)">'+n('See all','Ver todos')+' →</button></div>';
   var cards=items.map(mkCard).join('');
   var cardsH=items.map(mkCardH).join('');
-  var tqB=tqBand('daytrips','Everglades &amp; beyond','Everglades y más allá','Airboats, day trips &amp; excursions from Miami','Aerodeslizadores, day trips y excursiones desde Miami');
-  return '<section class="sec fade" id="sec-daytrips">'+sHdr('daytrips')+'<div class="h-row" id="daytrips-hrow">'+cardsH+'</div>'+tqB+verTodos+'<div class="full-grid-venue" id="daytrips-full">'+cards+'</div></section>';
+  var klB = MM_TQ.enabled ? ('<a class="tq-band" href="'+klLink('miami')+'" target="_blank" rel="noopener sponsored">'
+    +'<span class="tq-band-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M12 8c-3-3-7-3-9 0 2 3 6 4 9 2"/><path d="M12 13c3-3 7-3 9 0-2 3-6 4-9 2"/></svg></span>'
+    +'<span class="tq-band-tx"><b>'+n('Everglades &amp; beyond','Everglades y más allá')+'</b>'
+    +'<i>'+n('Airboats, day trips &amp; excursions from Miami','Aerodeslizadores, day trips y excursiones desde Miami')+'</i></span>'
+    +'<span class="tq-band-go">'+n('Book','Reservar')+' →</span>'
+  +'</a>') : '';
+  var carB='<a class="tq-band" href="'+carLink()+'" target="_blank" rel="noopener sponsored"><span class="tq-band-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.6-4.8A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.2L19 11"/><rect x="3" y="11" width="18" height="6" rx="2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/></svg></span><span class="tq-band-tx"><b>'+n('Explore Miami at your own pace','Explora Miami a tu ritmo')+'</b><i>'+n('Rent a car for your day trip','Renta un auto para tu excursi&oacute;n')+'</i></span><span class="tq-band-go">'+n('Rent','Rentar')+' &rarr;</span></a>';
+  return '<section class="sec fade" id="sec-daytrips">'+sHdr('daytrips')+'<div class="h-row" id="daytrips-hrow">'+cardsH+'</div>'+klB+carB+verTodos+'<div class="full-grid-venue" id="daytrips-full">'+cards+'</div></section>';
 }
 
 function renderMono(){
@@ -11291,6 +11354,9 @@ document.addEventListener('keydown', function(e) {
 .tq-band-tx b{font:800 .92rem 'DM Sans',sans-serif;color:#fff;letter-spacing:.01em;}
 .tq-band-tx i{font:400 .76rem/1.35 'DM Sans',sans-serif;font-style:normal;color:rgba(255,255,255,.68);}
 .tq-band-go{flex-shrink:0;font:800 .78rem 'DM Sans',sans-serif;color:#08172E;background:#FFD166;padding:8px 14px;border-radius:50px;white-space:nowrap;}
+
+.mmtour-food-chip{display:flex;align-items:center;margin-top:6px;padding:8px 12px;border-radius:12px;background:rgba(255,209,102,.1);border:1px solid rgba(255,209,102,.35);color:#B8862B;font:700 .74rem 'DM Sans',sans-serif;text-decoration:none;transition:transform .15s;}
+.mmtour-food-chip:active{transform:scale(.98);}
 </style>
 
 <script>
