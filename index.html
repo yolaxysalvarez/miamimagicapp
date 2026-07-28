@@ -2136,8 +2136,8 @@ body{padding-bottom:0;}
 
 #siteNav{position:absolute;top:0;left:0;right:0;z-index:500;}
 #mainNav{display:flex;flex-direction:column;gap:0;}
-#navRow1{display:flex;align-items:center;justify-content:center;width:100%;padding-top:72px;position:relative;}
-.nav-logo{font-family:'DM Sans',sans-serif;font-size:2.3rem;font-weight:900;letter-spacing:.04em;line-height:1.1;display:flex;flex-direction:row;align-items:stretch;gap:12px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.35));}
+#navRow1{display:flex;align-items:center;justify-content:space-between;width:100%;padding-top:72px;padding-left:28px;padding-right:28px;box-sizing:border-box;position:relative;}
+.nav-logo{font-family:'DM Sans',sans-serif;font-size:2.3rem;font-weight:900;letter-spacing:.04em;line-height:1.1;display:flex;flex-direction:row;align-items:stretch;gap:12px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.35));position:absolute;left:50%;transform:translateX(-50%);}
 .nl-row1{display:flex;flex-direction:column;align-items:flex-start;gap:0;}
 .nav-logo .lm{color:#fff;-webkit-text-fill-color:#fff;display:block;font-weight:900;}
 .nl-palm{width:auto;height:100%;min-height:64px;max-height:90px;display:block;flex-shrink:0;object-fit:contain;}
@@ -2246,7 +2246,7 @@ body{padding-bottom:0;}
 #navLinks a:hover{color:#FFD166;}
 .nav-web{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:4px 16px;border-radius:50px;}
 #navLinksMob{display:none;}
-.hm-btn{display:none;}
+.hm-btn{display:flex;}
 @media(max-width:899px){
   /* ── NAV MOBILE ── */
   .hm-btn{display:flex!important;}
@@ -2781,10 +2781,10 @@ body{padding-bottom:0;}
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input id="heroSearchInp" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="search_miami"
           placeholder="Search beaches, restaurants, events…"
-          oninput="var v=this.value;document.getElementById('sInp').value=v;clearTimeout(window._sT);window._sT=setTimeout(function(){doSearch(document.getElementById('heroSearchInp').value);},250);var x=document.getElementById('heroSearchClear');if(x)x.style.display=v?'flex':'none';"
-          onkeydown="if(event.key==='Enter'){clearTimeout(window._sT);var v=this.value;document.getElementById('sInp').value=v;doSearch(v);}"
+          oninput="var v=this.value;clearTimeout(window._sT);window._sT=setTimeout(function(){doSearch(document.getElementById('heroSearchInp').value);},250);var x=document.getElementById('heroSearchClear');if(x)x.style.display=v?'flex':'none';"
+          onkeydown="if(event.key==='Enter'){clearTimeout(window._sT);var v=this.value;doSearch(v);}"
           style="background:none;border:none;outline:none;flex:1;font-family:'DM Sans',sans-serif;font-size:.82rem;color:#fff;min-width:0;">
-        <button id="heroSearchClear" onclick="document.getElementById('heroSearchInp').value='';document.getElementById('sInp').value='';closeSearch();this.style.display='none';document.getElementById('heroSearchInp').focus();" style="display:none;background:rgba(255,255,255,.2);border:none;border-radius:50%;width:18px;height:18px;color:#fff;font-size:.65rem;cursor:pointer;align-items:center;justify-content:center;flex-shrink:0;line-height:1;">✕</button>
+        <button id="heroSearchClear" onclick="document.getElementById('heroSearchInp').value='';closeSearch();this.style.display='none';document.getElementById('heroSearchInp').focus();" style="display:none;background:rgba(255,255,255,.2);border:none;border-radius:50%;width:18px;height:18px;color:#fff;font-size:.65rem;cursor:pointer;align-items:center;justify-content:center;flex-shrink:0;line-height:1;">✕</button>
       </div>
       <div class="hero-btns-row">
         <button class="hbtn-main" onclick="var t=document.getElementById('sec-rest')||document.getElementById('app');if(t)t.scrollIntoView({behavior:'smooth'});">
@@ -2822,13 +2822,6 @@ body{padding-bottom:0;}
 <div class="hero-search-section">
   <div class="hss-inner">
     <!-- WEATHER PUSH BANNER -->
-    <div class="hss-bar" id="searchZoneBar">
-      <span class="hss-ico" style="display:flex;align-items:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;vertical-align:-2px;margin-right:0"><circle cx="11" cy="11" r="7.2"/><path d="m20.5 20.5-4.2-4.2"/></svg></span>
-      <input type="text" id="sInp" autocomplete="off"
-        oninput="doSearch(this.value)" onkeydown="searchKey(event)"
-        placeholder="Search beaches, restaurants, events&hellip;">
-      <button id="sGo" onclick="doSearch(document.getElementById('sInp').value)">Search</button>
-    </div>
     <div class="hss-cats">
       <button onclick="openItinPanel()" class="hss-cat" style="background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border-color:transparent;font-weight:700">✦ Plan Trip</button>
       <button onclick="mmNearMe()" class="hss-cat" style="background:linear-gradient(135deg,#00C9B1,#019a88);color:#fff;border-color:transparent;font-weight:700"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;vertical-align:-2px;margin-right:4px"><circle cx="12" cy="12" r="7.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22"/></svg>Near Me</button>
@@ -4320,7 +4313,7 @@ function pickResult(idx){
   const item=_sr[idx]; if(!item)return;
   _lastQuery='';
   closeSearch();
-  document.getElementById('sInp').value='';
+  var siEl=document.getElementById('sInp');if(siEl)siEl.value='';
   const sec=document.getElementById(item.sec);
   if(sec) sec.scrollIntoView({behavior:'smooth',block:'start'});
   setTimeout(()=>{
@@ -5585,7 +5578,10 @@ function mmcamSection(){
 function mmcamPlay(){
   var f=document.getElementById('mmcamFeat'); if(!f||f.dataset.on)return;
   f.dataset.on='1';
-  f.innerHTML='<iframe src="https://www.youtube.com/embed/7i8ARjIeM2k?autoplay=1&mute=1" title="Coral City Camera" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>';
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  f.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/7i8ARjIeM2k?autoplay=1&mute=1&playsinline=1" title="Coral City Camera" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>'
+    +'<a href="https://www.youtube.com/watch?v=7i8ARjIeM2k" target="_blank" rel="noopener" style="position:absolute;bottom:10px;right:10px;z-index:5;background:rgba(8,15,30,.75);backdrop-filter:blur(6px);color:#fff;font:700 .68rem \'DM Sans\',sans-serif;padding:6px 12px;border-radius:50px;text-decoration:none;display:flex;align-items:center;gap:5px;">'
+    +(ES?'Ver en YouTube':'Watch on YouTube')+' ↗</a>';
 }
 function twxSection(){
   var p = document.getElementById('twxMainPanel');
@@ -6011,8 +6007,8 @@ function build(){
   document.getElementById('hSub').innerHTML=t.sub;
   document.getElementById('hCta1').textContent=t.cta1;
   document.getElementById('hCta2').textContent=t.cta2;
-  document.getElementById('sInp').placeholder=t.sph;
-  document.getElementById('sGo').textContent=t.sgo;
+  var siEl2=document.getElementById('sInp');if(siEl2)siEl2.placeholder=t.sph;
+  var sgEl=document.getElementById('sGo');if(sgEl)sgEl.textContent=t.sgo;
   var el_lg=document.getElementById('langTxt');if(el_lg)el_lg.textContent=t.langTxt;
   document.getElementById('fTag').textContent=t.fTag;
   document.getElementById('fDevLbl').textContent=t.fDevLbl;
@@ -6026,7 +6022,7 @@ function build(){
   // sidebar
   var el_sn=document.getElementById('sidebarNav');if(el_sn)el_sn.innerHTML=t.nav.map(sec=>'<div class="nav-label">'+sec.label+'</div>'+sec.items.map(item=>'<button class="nav-item" data-id="'+item.id+'" onclick="go(\''+item.id+'\')"><div class="ni-icon">'+item.icon+'</div><span class="ni-lbl">'+item.lbl+'</span>'+(item.cnt?'<span class="ni-cnt">'+item.cnt+'</span>':'')+'</button>').join('')).join('');
   // marquee
-  const mqItems=['30+ Restaurants','8 Beaches','8 Museums','8 Concert Venues','6 Stadiums','10 Events','8 Nightlife','Bilingual EN/ES','Business Ready'];
+  const mqItems=['100+ Restaurants','100+ Hotels','17 Beaches','11 Museums','20 Nightlife Spots','14 Live Cams','Fly Over Miami','Bilingual EN/ES','Business Ready'];
   const mqs=mqItems.map(q=>'<div class="mq-item"><span class="mq-dot"></span><span class="mq-n">'+q.split(' ')[0]+'</span> '+q.split(' ').slice(1).join(' ')+'</div>').join('');
   var el_mq=document.getElementById('mqTrack');if(el_mq)el_mq.innerHTML=mqs+mqs;
   // app sections
