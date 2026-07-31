@@ -4827,6 +4827,7 @@ function openItemModal(obj,type,link,btnLabel){
   // Favorito
   _currentFavItem = { id: obj.id, name: title, type: type, emoji: obj.emoji||'', obj: obj };
   updateFavBtn();
+  try{ mmTrackVisit(obj.id, title, type); }catch(e){}
   try{ renderSimilar(obj,type); }catch(e){}
   document.getElementById('modalOv').classList.add('open');
 }
@@ -6265,12 +6266,17 @@ function toggleLang(){
 function navSyncUser(){
   var j=document.querySelector('.nav-join'); if(!j) return;
   var email=''; try{email=localStorage.getItem('mm_subscribed')||'';}catch(e){}
+  var ES=(typeof lang!=='undefined'&&lang==='es');
   if(email){
     j.setAttribute('data-en','My Account');
     j.setAttribute('data-es','Mi Cuenta');
-    var ES=(typeof lang!=='undefined'&&lang==='es');
     j.textContent=ES?'Mi Cuenta':'My Account';
     j.onclick=function(){openAccount();return false;};
+  } else {
+    j.setAttribute('data-en','Join Free');
+    j.setAttribute('data-es','\u00danete Gratis');
+    j.textContent=ES?'\u00danete Gratis':'Join Free';
+    j.onclick=function(){openSignup('signup');return false;};
   }
 }
 document.addEventListener('DOMContentLoaded',function(){setTimeout(navSyncUser,300);});
@@ -6807,10 +6813,25 @@ document.addEventListener("DOMContentLoaded",function(){
 .acc-toggle-section{display:none;padding:10px 22px 14px 70px;}
 .acc-toggle-section p{font-family:'DM Sans',sans-serif;font-size:.8rem;color:#aaa;text-align:center;padding:8px 0;}
 .acc-toggle-item{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid #f0ebe5;font-family:'DM Sans',sans-serif;font-size:.82rem;color:#444;}
+.acc-list-item{display:flex;align-items:center;gap:9px;padding:9px 0;border-bottom:1px solid #f0ebe5;font-family:'DM Sans',sans-serif;font-size:.82rem;color:#444;cursor:pointer;transition:opacity .15s;}
+.acc-list-item:hover{opacity:.65;}
+.acc-list-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+.acc-list-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.acc-list-time{font-size:.68rem;color:#bbb;flex-shrink:0;}
+.acc-list-go{color:#ccc;flex-shrink:0;}
 .acc-switch{width:40px;height:22px;border-radius:50px;position:relative;cursor:pointer;transition:background .2s;flex-shrink:0;}
 .acc-switch-dot{position:absolute;top:3px;width:16px;height:16px;background:#fff;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,.3);transition:left .2s;}
 .acc-lang-btn{padding:5px 12px;border-radius:50px;font-size:.72rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;border:1.5px solid transparent;transition:all .2s;}
 </style>
+<div id="mmTripOv" onclick="if(event.target===this)mmCloseTrip()" style="display:none;position:fixed;inset:0;background:rgba(8,15,30,.72);backdrop-filter:blur(6px);z-index:10050;align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#fff;border-radius:22px;max-width:520px;width:100%;max-height:80vh;overflow-y:auto;padding:26px 24px;box-shadow:0 20px 60px rgba(0,0,0,.35);">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px;">
+      <div id="mmTripTitle" style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:#08172E;"></div>
+      <button onclick="mmCloseTrip()" style="background:#f2ede8;border:none;width:30px;height:30px;border-radius:50%;font-size:1rem;color:#666;cursor:pointer;flex-shrink:0;">&times;</button>
+    </div>
+    <div id="mmTripBody" style="font-family:'DM Sans',sans-serif;font-size:.85rem;color:#444;line-height:1.7;"></div>
+  </div>
+</div>
 <div id="accountOverlay" style="display:none;position:fixed;inset:0;touch-action:none;background:rgba(4,8,15,.82);backdrop-filter:blur(40px);-webkit-backdrop-filter:blur(40px);z-index:10000;align-items:flex-end;justify-content:center;">
   <div id="accountBox" style="background:#F5F0EB;border-radius:28px 28px 0 0;width:100%;max-width:480px;max-height:92vh;overflow-y:auto;overflow-x:hidden;touch-action:pan-y;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;position:relative;box-shadow:0 -16px 60px rgba(0,0,0,.25);">
     <div style="position:sticky;top:0;z-index:2;background:#08172E;border-radius:28px 28px 0 0;padding:18px 22px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.1);">
@@ -6879,6 +6900,7 @@ document.addEventListener("DOMContentLoaded",function(){
     </div></div>
     <div style="padding:8px 22px 40px;">
       <button id="acc-logout-btn" onclick="accLogout()" style="width:100%;padding:13px;background:transparent;border:1.5px solid #ddd;border-radius:50px;font-size:.82rem;font-weight:600;color:#aaa;cursor:pointer;font-family:'DM Sans',sans-serif;">Cerrar sesi&#243;n</button>
+      <div id="acc-signin-link" onclick="closeAccount();openSignin();" style="display:none;text-align:center;margin-top:14px;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;color:#FF4D35;cursor:pointer;">&iquest;Ya tienes cuenta? <span style="text-decoration:underline">Inicia sesi&oacute;n</span></div>
       <div style="text-align:center;font-family:'DM Sans',sans-serif;font-size:.65rem;color:#ccc;margin-top:12px;letter-spacing:1px;">MIAMI MAGIC v1.0 &middot; hola@miamimagicapp.com</div>
     </div>
   </div>
@@ -6890,15 +6912,15 @@ document.addEventListener("DOMContentLoaded",function(){
     <!-- Header coral -->
     <div style="background:linear-gradient(135deg,#08172E,#0C2040);padding:28px 28px 22px;text-align:center;">
       <div style="margin-bottom:8px;color:#00C9B1;display:flex;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:34px;height:34px;vertical-align:-2px"><path d="M12 21c.5-4.5.2-8-1.5-11"/><path d="M10.5 10C8.5 8.5 5.8 8.2 3.5 9.5c2-3.3 5.3-4 7.5-2.5"/><path d="M11 7C10 4.6 7.8 3 5.2 3c3-1.6 6.4-.5 7.6 2.2"/><path d="M12.8 5.8C13.6 3.4 15.9 2 18.5 2.3 15.9 3 14.2 4.7 13.8 7"/><path d="M12.6 7.5c2.2-1.4 5.2-1.2 7.2.7-2.6-.6-5.2 0-6.8 1.6"/><path d="M8 21h8"/></svg></div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:#fff;margin-bottom:6px">Crea tu Cuenta Gratis</div>
-      <div style="font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.5">Tu cuenta Miami Magic · Favoritos y viajes · Acceso Insider</div>
+      <div id="su-title" style="font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:#fff;margin-bottom:6px">Crea tu Cuenta Gratis</div>
+      <div id="su-sub" style="font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.5">Tu cuenta Miami Magic · Favoritos y viajes · Acceso Insider</div>
     </div>
 
     <!-- Form body -->
     <div style="padding:24px 28px 28px">
 
       <!-- What you get -->
-      <div style="margin-bottom:20px">
+      <div id="su-benefits" style="margin-bottom:20px">
         <div style="font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#FF4D35;margin-bottom:10px">Con tu cuenta gratis:</div>
         <div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:#444;line-height:1.9">
           <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D35" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;vertical-align:-2px"><path d="M4 8a2 2 0 0 0 0 8v3h16v-3a2 2 0 0 1 0-8V5H4v3z"/><path d="M14 5v14" stroke-dasharray="2.5 2.5"/></svg> Los eventos que <strong>realmente</strong> valen la pena<br>
@@ -6918,7 +6940,7 @@ document.addEventListener("DOMContentLoaded",function(){
           onfocus="this.style.borderColor='#FF4D35'" onblur="this.style.borderColor='#eee'"
           onkeydown="if(event.key==='Enter')doSignup()">
 
-        <label style="display:flex;align-items:flex-start;gap:8px;margin-bottom:14px;font-size:.76rem;color:#666;cursor:pointer;font-family:'DM Sans',sans-serif;line-height:1.5">
+        <label id="su-news-row" style="display:flex;align-items:flex-start;gap:8px;margin-bottom:14px;font-size:.76rem;color:#666;cursor:pointer;font-family:'DM Sans',sans-serif;line-height:1.5">
           <input id="su-news" type="checkbox" checked style="margin-top:2px;accent-color:#FF4D35;width:15px;height:15px;flex-shrink:0">
           <span>Quiero recibir las <strong>alertas semanales</strong> por email (eventos, spots nuevos, preventas)</span>
         </label>
@@ -6929,6 +6951,9 @@ document.addEventListener("DOMContentLoaded",function(){
 
         <div style="text-align:center;margin-top:12px;font-size:.72rem;color:#bbb">
           Sin spam. Cancela cuando quieras. 100% gratis.
+        </div>
+        <div id="su-mode-toggle" onclick="suToggleMode()" style="text-align:center;margin-top:14px;font-family:'DM Sans',sans-serif;font-size:.78rem;color:#FF4D35;font-weight:700;cursor:pointer">
+          &iquest;Ya tienes cuenta? <span style="text-decoration:underline">Inicia sesi&oacute;n</span>
         </div>
       </div>
 
@@ -6963,14 +6988,34 @@ document.addEventListener("DOMContentLoaded",function(){
 </div>
 
 <script>
-function openSignup(){
+function suSetMode(m){
+  suMode = (m==='signin') ? 'signin' : 'signup';
+  var signin=(suMode==='signin');
+  var t=document.getElementById('su-title');
+  if(t) t.textContent = signin ? 'Inicia Sesi\u00f3n' : 'Crea tu Cuenta Gratis';
+  var st=document.getElementById('su-sub');
+  if(st) st.textContent = signin ? 'Entra con el email de tu cuenta' : 'Tu cuenta Miami Magic \u00b7 Favoritos y viajes \u00b7 Acceso Insider';
+  var b=document.getElementById('su-benefits'); if(b) b.style.display = signin?'none':'block';
+  var n=document.getElementById('su-name');     if(n) n.style.display = signin?'none':'block';
+  var c=document.getElementById('su-news-row'); if(c) c.style.display = signin?'none':'flex';
+  var btn=document.getElementById('su-btn');
+  if(btn) btn.textContent = signin ? 'Entrar \u2192' : '\u2726 Crear mi cuenta \u2014 Gratis';
+  var tg=document.getElementById('su-mode-toggle');
+  if(tg) tg.innerHTML = signin
+    ? '\u00bfNo tienes cuenta? <span style="text-decoration:underline">Cr\u00e9ala gratis</span>'
+    : '\u00bfYa tienes cuenta? <span style="text-decoration:underline">Inicia sesi\u00f3n</span>';
+}
+function openSignup(mode){
   document.getElementById('signupOverlay').style.display='flex';
   document.getElementById('su-form').style.display='block';
   document.getElementById('su-success').style.display='none';
   document.getElementById('su-error').style.display='none';
   document.getElementById('su-name').value='';
   document.getElementById('su-email').value='';
+  var eIn=document.getElementById('su-email'); if(eIn) eIn.style.borderColor='';
+  suSetMode(mode==='signin'?'signin':'signup');
 }
+function openSignin(){ openSignup('signin'); }
 function closeSignup(){
   document.getElementById('signupOverlay').style.display='none';
 }
@@ -7015,45 +7060,72 @@ function openAccount(){
   document.getElementById('acc-data-email').textContent=email||'—';
   document.getElementById('acc-data-since').textContent=since||'—';
 
-  // Favoritos
+  // Favoritos — lee mm_favs (misma fuente que el corazón del modal)
   var saved=[];
-  try{saved=JSON.parse(localStorage.getItem('mm_saved')||'[]');}catch(e){}
+  try{saved=JSON.parse(localStorage.getItem('mm_favs')||'[]');}catch(e){}
   document.getElementById('acc-stat-saved').textContent=saved.length;
   var sEl=document.getElementById('acc-saved-list');
   sEl.innerHTML=saved.length
-    ? saved.map(function(s){return '<div style="padding:8px 0;border-bottom:1px solid #f0ebe5;font-size:.82rem;color:#444;display:flex;gap:8px;align-items:center;"><span></span>'+s+'</div>';}).join('')
+    ? saved.map(function(f){
+        var nm=(f&&f.name)?f.name:String(f);
+        var id=(f&&f.id)?f.id:'';
+        return '<div class="acc-list-item" onclick="closeAccount();openFavById(\''+id+'\')">'
+          +'<span class="acc-list-dot" style="background:#00C9B1"></span>'
+          +'<span class="acc-list-name">'+nm+'</span>'
+          +'<span class="acc-list-go">&#8250;</span></div>';
+      }).join('')
     : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">Aún no tienes favoritos.<br><span style="color:#00C9B1;font-weight:600;">Explora Miami →</span></div>';
 
-  // Historial
+  // Historial — lugares visitados (mm_history)
   var hist=[];
   try{hist=JSON.parse(localStorage.getItem('mm_history')||'[]');}catch(e){}
   document.getElementById('acc-stat-hist').textContent=hist.length;
   var hEl=document.getElementById('acc-history-list');
   hEl.innerHTML=hist.length
-    ? hist.slice(0,6).map(function(h){return '<div style="padding:8px 0;border-bottom:1px solid #f0ebe5;font-size:.82rem;color:#444;display:flex;gap:8px;align-items:center;"><span></span>'+h+'</div>';}).join('')
+    ? hist.slice(0,8).map(function(h){
+        var nm=(h&&h.name)?h.name:String(h);
+        var id=(h&&h.id)?h.id:'';
+        return '<div class="acc-list-item" onclick="closeAccount();openFavById(\''+id+'\')">'
+          +'<span class="acc-list-dot" style="background:#FFD166"></span>'
+          +'<span class="acc-list-name">'+nm+'</span>'
+          +'<span class="acc-list-time">'+mmAgo(h&&h.t)+'</span></div>';
+      }).join('')
+      +'<div onclick="mmClearHistory()" style="text-align:center;margin-top:8px;font-size:.72rem;color:#bbb;cursor:pointer;font-family:\'DM Sans\',sans-serif;">Borrar historial</div>'
     : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">Tu historial aparecerá aquí.</div>';
 
-  // Viajes
+  // Viajes — itinerarios generados y guardados (mm_trips)
   var trips=[];
   try{trips=JSON.parse(localStorage.getItem('mm_trips')||'[]');}catch(e){}
   document.getElementById('acc-stat-trips').textContent=trips.length;
   var tEl=document.getElementById('acc-trips-list');
   tEl.innerHTML=trips.length
-    ? trips.map(function(t){return '<div style="padding:8px 0;border-bottom:1px solid #f0ebe5;font-size:.82rem;color:#444;display:flex;gap:8px;align-items:center;"><span></span>'+t+'</div>';}).join('')
+    ? trips.map(function(t,i){
+        var q=(t&&t.q)?t.q:String(t);
+        return '<div class="acc-list-item" onclick="mmOpenTrip('+i+')">'
+          +'<span class="acc-list-dot" style="background:#FF4D35"></span>'
+          +'<span class="acc-list-name">'+q+'</span>'
+          +'<span class="acc-list-time">'+mmAgo(t&&t.t)+'</span></div>';
+      }).join('')
     : '<div style="font-size:.8rem;color:#aaa;text-align:center;padding:10px 0;">Aún no tienes viajes.<br><span style="color:#FF4D35;font-weight:600;">Planifica tu próxima aventura →</span></div>';
 
   // Si no tiene cuenta, mostrar botón de unirse en lugar de cerrar sesión
   var logoutBtn=document.getElementById('acc-logout-btn');
+  var signinLink=document.getElementById('acc-signin-link');
   if(logoutBtn){
     if(email){
       logoutBtn.textContent='Cerrar sesión';
+      logoutBtn.style.background='transparent';
+      logoutBtn.style.color='#aaa';
+      logoutBtn.style.border='1.5px solid #ddd';
       logoutBtn.onclick=accLogout;
+      if(signinLink) signinLink.style.display='none';
     } else {
       logoutBtn.textContent='✦ Crear cuenta gratis';
       logoutBtn.style.background='linear-gradient(135deg,#FF4D35,#e03a24)';
       logoutBtn.style.color='#fff';
       logoutBtn.style.border='none';
-      logoutBtn.onclick=function(){ closeAccount(); openSignup(); };
+      logoutBtn.onclick=function(){ closeAccount(); openSignup('signup'); };
+      if(signinLink) signinLink.style.display='block';
     }
   }
 
@@ -7085,6 +7157,50 @@ function closeAccount(){
   document.body.style.overflow='';
   document.documentElement.style.overflow='';
 }
+function mmAgo(ts){
+  if(!ts) return '';
+  var s=Math.floor((Date.now()-ts)/1000);
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  if(s<60) return ES?'ahora':'now';
+  var m=Math.floor(s/60); if(m<60) return m+'m';
+  var h=Math.floor(m/60); if(h<24) return h+'h';
+  var d=Math.floor(h/24); if(d<7) return d+'d';
+  return Math.floor(d/7)+(ES?'sem':'w');
+}
+function mmTrackVisit(id,name,type){
+  if(!id||!name) return;
+  try{
+    var h=JSON.parse(localStorage.getItem('mm_history')||'[]');
+    h=h.filter(function(x){return x && x.id!==id;});
+    h.unshift({id:id,name:name,type:type||'',t:Date.now()});
+    if(h.length>30) h=h.slice(0,30);
+    localStorage.setItem('mm_history',JSON.stringify(h));
+  }catch(e){}
+}
+function mmClearHistory(){
+  try{localStorage.removeItem('mm_history');}catch(e){}
+  try{openAccount();accToggle('hist');}catch(e){}
+}
+function mmSaveTrip(q,text){
+  if(!text) return;
+  try{
+    var t=JSON.parse(localStorage.getItem('mm_trips')||'[]');
+    t.unshift({q:(q||'Mi viaje a Miami').slice(0,60),text:text,t:Date.now()});
+    if(t.length>12) t=t.slice(0,12);
+    localStorage.setItem('mm_trips',JSON.stringify(t));
+  }catch(e){}
+}
+function mmOpenTrip(i){
+  var t=[];
+  try{t=JSON.parse(localStorage.getItem('mm_trips')||'[]');}catch(e){}
+  var trip=t[i]; if(!trip) return;
+  var body=(trip.text||'').replace(/\*\*([^*]+)\*\*/g,'<strong style="color:#08172E;display:block;margin:12px 0 3px;">$1</strong>').replace(/\n/g,'<br>');
+  var ov=document.getElementById('mmTripOv');
+  document.getElementById('mmTripTitle').textContent=trip.q||'Mi viaje';
+  document.getElementById('mmTripBody').innerHTML=body;
+  ov.style.display='flex';
+}
+function mmCloseTrip(){ var o=document.getElementById('mmTripOv'); if(o) o.style.display='none'; }
 function accToggle(sec){
   var el=document.getElementById('acc-'+sec);
   var arr=document.getElementById('acc-arr-'+sec);
@@ -7135,8 +7251,9 @@ function accEdit(){
 }
 function accEditPhoto(){ alert('Foto de perfil: coming soon!'); }
 function accLogout(){
-  if(confirm('¿Cerrar sesión?')){
+  if(confirm('¿Cerrar sesión? Podrás volver a entrar con tu email.')){
     try{localStorage.removeItem('mm_subscribed');localStorage.removeItem('mm_name');localStorage.removeItem('mm_since');}catch(e){}
+    try{navSyncUser();}catch(e){}
     closeAccount();
   }
 }
@@ -7159,12 +7276,29 @@ function mmFinishAccount(name,email){
   document.getElementById('su-form').style.display='none';
   document.getElementById('su-success').style.display='block';
 }
+var suMode='signup';
+function suToggleMode(){
+  suSetMode(suMode==='signup'?'signin':'signup');
+}
 function doSignup(){
   var name  = document.getElementById('su-name').value.trim();
   var email = document.getElementById('su-email').value.trim();
   if (!email || email.indexOf('@') === -1) {
     document.getElementById('su-email').style.borderColor = '#FF4D35';
     document.getElementById('su-email').focus();
+    return;
+  }
+  if(suMode==='signin'){
+    // Sign in: restore the session with this email (no Mailchimp, no new profile row)
+    var prevName=''; try{prevName=localStorage.getItem('mm_name')||'';}catch(e){}
+    try{
+      localStorage.setItem('mm_subscribed', email);
+      if(name||prevName) localStorage.setItem('mm_name', name||prevName);
+      if(!localStorage.getItem('mm_since')) localStorage.setItem('mm_since', new Date().getFullYear());
+    }catch(e){}
+    try{navSyncUser();}catch(e){}
+    closeSignup();
+    openAccount();
     return;
   }
   var wantsNews = true;
@@ -8032,6 +8166,7 @@ async function runItinAI() {
       elRes.style.display = 'block';
     }
     try { localStorage.setItem('mmLastItin', text); } catch(e) {}
+    try { mmSaveTrip(query, text); } catch(e) {}
   } catch(ex) {
     if(elErr) { elErr.textContent = 'AI unavailable — check connection or try the Quick Quiz tab.'; elErr.style.display='block'; }
     if(elBtn) elBtn.style.display = 'block';
