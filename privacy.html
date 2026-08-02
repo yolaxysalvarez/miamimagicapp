@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad · Privacy Policy — Miami Magic</title>
+<meta name="description" content="Política de privacidad de Miami Magic · Miami Magic privacy policy. Qué datos recogemos, para qué, y tus derechos.">
+<link rel="canonical" href="https://miamimagicapp.com/privacy.html">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Política de Privacidad · Miami Magic">
+<meta property="og:description" content="Qué recoge Miami Magic, para qué, y qué control tienes tú.">
+<meta property="og:url" content="https://miamimagicapp.com/privacy.html">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#08172E; --coral:#FF4D35; --teal:#00C9B1; --cream:#FDF6EE;
+    --ink:#3a3a3a; --ink2:#666; --line:rgba(8,23,46,.1);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--cream); color:var(--ink);
+    font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .top{
+    background:linear-gradient(135deg,var(--navy),#0f2847);
+    padding:34px 22px 30px; color:#fff;
+  }
+  .top-inner{max-width:720px;margin:0 auto;}
+  .brand{
+    display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    color:#fff;margin-bottom:20px;
+  }
+  .brand svg{width:24px;height:34px;}
+  .brand span{font:800 1.02rem 'DM Sans',sans-serif;letter-spacing:.02em;}
+  h1{font:700 2rem/1.15 'Playfair Display',serif;margin:0 0 8px;}
+  .upd{
+    font:700 .68rem 'DM Sans',sans-serif;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--teal);
+  }
+  .lang{margin-top:18px;display:flex;gap:7px;}
+  .lang button{
+    padding:7px 15px;border-radius:50px;cursor:pointer;
+    font:700 .74rem 'DM Sans',sans-serif;
+    background:transparent;color:rgba(255,255,255,.55);
+    border:1px solid rgba(255,255,255,.2);transition:all .18s ease;
+  }
+  .lang button.on{background:var(--coral);color:#fff;border-color:var(--coral);}
+  main{max-width:720px;margin:0 auto;padding:30px 22px 70px;}
+  .intro{
+    font:500 .96rem/1.75 'DM Sans',sans-serif;color:var(--ink);
+    padding-bottom:20px;margin:0 0 6px;border-bottom:1px solid var(--line);
+  }
+  h2{font:700 1.06rem 'DM Sans',sans-serif;color:var(--navy);margin:26px 0 7px;}
+  p{font:500 .92rem/1.78 'DM Sans',sans-serif;color:#4a4a4a;margin:0;}
+  a{color:var(--coral);font-weight:700;}
+  footer{
+    border-top:1px solid var(--line);margin-top:38px;padding-top:20px;
+    font:500 .78rem/1.7 'DM Sans',sans-serif;color:var(--ink2);
+  }
+  footer a{text-decoration:none;}
+  @media(min-width:760px){ h1{font-size:2.5rem;} .top{padding:46px 22px 40px;} }
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="top-inner">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 24 34" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 33V15"/>
+        <path d="M12 15c-3-4-7-5-10-4 1.5 4 5.5 6 10 4z"/>
+        <path d="M12 15c3-4 7-5 10-4-1.5 4-5.5 6-10 4z"/>
+        <path d="M12 15c-1.5-4 0-8 2.5-11C16.5 7 15 12 12 15z"/>
+      </svg>
+      <span>Miami Magic</span>
+    </a>
+    <h1 id="pTitle">Política de Privacidad</h1>
+    <div class="upd" id="pUpd"></div>
+    <div class="lang">
+      <button id="bEs" onclick="setLang('es')">ESPAÑOL</button>
+      <button id="bEn" onclick="setLang('en')">ENGLISH</button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <p class="intro" id="pIntro"></p>
+  <div id="pBody"></div>
+  <footer id="pFoot"></footer>
+</main>
+
+<script>
+var MM_PRIV = {
+ en:{
+  title:'Privacy Policy',
+  upd:'Last updated: August 1, 2026',
+  intro:'Miami Magic is operated by Y &amp; Y Entertainment Corp. in Miami, Florida. This policy explains, in plain language, what the app collects, why, and what control you have. We do not sell your personal information.',
+  s:[
+   {h:'What stays on your device', b:'Most of what Miami Magic knows about you never leaves your phone. Your saved favorites, your browsing history inside the app, your planned trips, your search history, your language, theme and notification preferences are stored in your browser\u2019s local storage on your own device. We cannot read them, and clearing your browser data erases them permanently.'},
+   {h:'What you give us on purpose', b:'If you create a free account, we store the name and email you type, plus your language preference, in our database (hosted by Supabase). If you opt in to the newsletter, your email is also sent to Mailchimp so we can send it to you. That is the entire set of personal data we hold. There is no password, no payment information and no phone number.'},
+   {h:'Notifications', b:'If you allow push notifications, your browser generates an anonymous subscription token that we store so we can send you alerts. It identifies a browser, not a person. Turning notifications off in your device settings stops them immediately, and you can ask us to delete the token.'},
+   {h:'Location', b:'The app can ask for your location only to show you what is near you. It is processed on your device in the moment, and is never stored on our servers or shared with anyone. Declining the permission leaves the rest of the app fully usable.'},
+   {h:'Children', b:'Miami Magic is not directed to children under 13 and we do not knowingly collect their personal information. If you believe a child has given us data, contact us and we will delete it.'},
+   {h:'Third-party services', b:'The app loads weather and marine conditions from Open-Meteo, images from Unsplash, and maps and place links from Google. It also contains affiliate links to travel partners such as Klook, Kiwi and Airalo. When you tap one of those links you leave Miami Magic, the partner may set its own cookie to credit the referral, and that partner\u2019s privacy policy governs what happens next. We earn a commission on some purchases at no extra cost to you. We never pass your name or email to any of them.'},
+   {h:'Analytics and advertising', b:'We do not run advertising networks or third-party behavioural tracking inside the app, and we do not build advertising profiles about you.'},
+   {h:'Your rights', b:'You can ask us at any time for a copy of the data we hold about you, ask us to correct it, or ask us to delete it entirely. Write to the address below and we will act on it. If you are in the EU or UK, GDPR applies to you; if you are in California, the CCPA applies. Either way, the same request works.'},
+   {h:'Security and changes', b:'Data is transmitted over encrypted connections and access is limited to the operator of the app. No system is perfect, so we hold only the minimum we need. If this policy changes we will update the date at the top of this page.'},
+   {h:'Contact', b:'Questions, corrections or deletion requests: <a href="mailto:info@miamimagicapp.com">info@miamimagicapp.com</a> — Y &amp; Y Entertainment Corp., Miami, Florida, USA.'}
+  ],
+  foot:'© 2026 Miami Magic · Y &amp; Y Entertainment Corp. · <a href="/">Back to the app</a>'
+ },
+ es:{
+  title:'Política de Privacidad',
+  upd:'Última actualización: 1 de agosto de 2026',
+  intro:'Miami Magic es operada por Y &amp; Y Entertainment Corp. en Miami, Florida. Esta política explica, en lenguaje claro, qué recoge la app, para qué, y qué control tienes tú. No vendemos tu información personal.',
+  s:[
+   {h:'Lo que se queda en tu dispositivo', b:'Casi todo lo que Miami Magic sabe de ti nunca sale de tu teléfono. Tus favoritos guardados, el historial de lo que viste dentro de la app, tus itinerarios, tu historial de búsquedas, el idioma, el tema y tus preferencias de notificación se guardan en el almacenamiento local de tu navegador, en tu propio dispositivo. Nosotros no podemos leerlos, y si borras los datos de tu navegador desaparecen para siempre.'},
+   {h:'Lo que nos das a propósito', b:'Si creas una cuenta gratis, guardamos el nombre y el correo que escribes, más tu preferencia de idioma, en nuestra base de datos (alojada por Supabase). Si aceptas el boletín, tu correo también se envía a Mailchimp para poder mandártelo. Ese es todo el conjunto de datos personales que tenemos. No hay contraseña, ni información de pago, ni número de teléfono.'},
+   {h:'Notificaciones', b:'Si permites las notificaciones, tu navegador genera un token de suscripción anónimo que guardamos para poder enviarte avisos. Identifica un navegador, no a una persona. Desactivar las notificaciones en la configuración de tu dispositivo las detiene de inmediato, y puedes pedirnos que borremos el token.'},
+   {h:'Ubicación', b:'La app puede pedirte tu ubicación únicamente para mostrarte lo que tienes cerca. Se procesa en tu dispositivo en ese momento y nunca se guarda en nuestros servidores ni se comparte con nadie. Si rechazas el permiso, el resto de la app funciona igual.'},
+   {h:'Menores', b:'Miami Magic no está dirigida a menores de 13 años y no recogemos conscientemente su información personal. Si crees que un menor nos ha dado datos, escríbenos y los eliminaremos.'},
+   {h:'Servicios de terceros', b:'La app carga el clima y las condiciones marinas desde Open-Meteo, imágenes desde Unsplash, y mapas y enlaces de lugares desde Google. También contiene enlaces de afiliados a socios de viaje como Klook, Kiwi y Airalo. Cuando tocas uno de esos enlaces sales de Miami Magic, el socio puede instalar su propia cookie para acreditar la referencia, y a partir de ahí rige la política de privacidad de ese socio. Ganamos una comisión en algunas compras sin costo adicional para ti. Nunca les pasamos tu nombre ni tu correo.'},
+   {h:'Analítica y publicidad', b:'No usamos redes publicitarias ni rastreo de comportamiento de terceros dentro de la app, y no construimos perfiles publicitarios sobre ti.'},
+   {h:'Tus derechos', b:'Puedes pedirnos en cualquier momento una copia de los datos que tenemos sobre ti, pedir que los corrijamos, o pedir que los borremos por completo. Escríbenos a la dirección de abajo y lo haremos. Si estás en la Unión Europea o el Reino Unido, te aplica el GDPR; si estás en California, te aplica la CCPA. En cualquier caso, la misma solicitud sirve.'},
+   {h:'Seguridad y cambios', b:'Los datos se transmiten por conexiones cifradas y el acceso está limitado a quien opera la app. Ningún sistema es perfecto, así que guardamos solo el mínimo necesario. Si esta política cambia, actualizaremos la fecha al inicio de esta página.'},
+   {h:'Contacto', b:'Preguntas, correcciones o solicitudes de borrado: <a href="mailto:info@miamimagicapp.com">info@miamimagicapp.com</a> — Y &amp; Y Entertainment Corp., Miami, Florida, EE.UU.'}
+  ],
+  foot:'© 2026 Miami Magic · Y &amp; Y Entertainment Corp. · <a href="/">Volver a la app</a>'
+ }
+};
+
+function setLang(L){
+  var P = MM_PRIV[L] || MM_PRIV.es;
+  document.documentElement.lang = L;
+  document.getElementById('pTitle').textContent = P.title;
+  document.getElementById('pUpd').textContent = P.upd;
+  document.getElementById('pIntro').innerHTML = P.intro;
+  document.getElementById('pBody').innerHTML =
+    P.s.map(function(x){ return '<h2>' + x.h + '</h2><p>' + x.b + '</p>'; }).join('');
+  document.getElementById('pFoot').innerHTML = P.foot;
+  document.getElementById('bEs').className = (L === 'es' ? 'on' : '');
+  document.getElementById('bEn').className = (L === 'en' ? 'on' : '');
+  try{ localStorage.setItem('mm_lang', L); }catch(e){}
+}
+
+(function(){
+  var L = 'es';
+  try{
+    var saved = localStorage.getItem('mm_lang');
+    if(saved === 'en' || saved === 'es') L = saved;
+    else if((navigator.language || '').slice(0,2) !== 'es') L = 'en';
+  }catch(e){}
+  // ?lang=en / ?lang=es wins, so the Play listing can link a specific language
+  try{
+    var q = new URLSearchParams(location.search).get('lang');
+    if(q === 'en' || q === 'es') L = q;
+  }catch(e){}
+  setLang(L);
+})();
+</script>
+
+</body>
+</html>
