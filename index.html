@@ -783,6 +783,8 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 .wtr-where{font:400 .74rem 'DM Sans',sans-serif;color:rgba(255,255,255,.6);margin-bottom:5px;}
 .wtr-price{font:700 .78rem 'DM Sans',sans-serif;color:#FFD166;}
 .lux-card{border-color:rgba(201,162,39,.22);}
+.esc-card{border-color:rgba(0,169,206,.24);}
+.esc-note{background:rgba(0,169,206,.08)!important;border-color:rgba(0,169,206,.22)!important;}
 .lux-note{background:rgba(201,162,39,.08)!important;border-color:rgba(201,162,39,.22)!important;}
 .wtr-note{display:flex;align-items:flex-start;gap:9px;margin:14px 2px 0;padding:12px 14px;border-radius:13px;background:rgba(0,201,177,.07);border:1px solid rgba(0,201,177,.18);font:500 .78rem/1.55 'DM Sans',sans-serif;color:var(--text2,#5a5a5a);}
 #mwOv{display:none;position:fixed;inset:0;z-index:10060;background:rgba(8,15,30,.72);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:18px;}
@@ -799,6 +801,7 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 .mw-tiptxt{font:500 .8rem/1.6 'DM Sans',sans-serif;color:#555;}
 .mw-btn{display:block;text-align:center;padding:13px;border-radius:13px;color:#fff;font:800 .84rem 'DM Sans',sans-serif;text-decoration:none;}
 .twx-list{display:flex;flex-direction:column;gap:12px;}
+
 .priv-perma{margin-top:20px;padding-top:14px;border-top:1px solid rgba(0,0,0,.08);font:600 .8rem 'DM Sans',sans-serif;}
 [data-theme="dark"] .priv-perma{border-color:rgba(255,255,255,.12);}
 .priv-perma a{color:#FF4D35;text-decoration:none;}
@@ -818,6 +821,8 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 .priv-p{font:500 .84rem/1.72 'DM Sans',sans-serif;color:#4a4a4a;margin:0;}
 [data-theme="dark"] .priv-p{color:rgba(255,255,255,.7);}
 .priv-p a{color:#FF4D35;font-weight:700;}
+.promo-tag{display:inline-block;margin-left:6px;padding:2px 6px;border-radius:4px;background:rgba(255,255,255,.16);font-size:.52rem;letter-spacing:.08em;vertical-align:1px;}
+.mm-spice-banner.promo-paid{outline:1px solid rgba(255,209,102,.4);}
 .evs-wrap{margin-top:14px;padding:14px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);}
 .evs-head{margin-bottom:11px;}
 .evs-head b{display:block;font:700 .92rem 'Playfair Display',serif;color:#fff;}
@@ -855,10 +860,21 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 .twx-card.open .twx-chev{transform:rotate(180deg);color:var(--twx-ac);}
 .twx-body{max-height:0;opacity:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1),opacity .35s,padding .3s;padding:0 15px;}
 .twx-card.open .twx-body{max-height:560px;opacity:1;padding:0 15px 16px;}
+@media(min-width:900px){
+  .twx-list{max-width:760px;margin-left:auto;margin-right:auto;gap:14px;padding-bottom:20px;}
+  .twx-desc{font-size:.95rem;line-height:1.78;margin-bottom:15px;}
+  .twx-name{font-size:1.18rem;}
+  .twx-venue{font-size:.8rem;}
+  .twx-tip{font-size:.85rem;padding:12px 15px;margin:4px 0 15px;}
+  .twx-head{padding:18px 20px;}
+  .twx-row{margin-bottom:16px;}
+  .twx-card.open .twx-body{padding:0 22px 24px;max-height:640px;}
+  .evs-wrap{max-width:760px;margin-left:auto;margin-right:auto;padding:18px;}
+}
 .twx-photo{position:relative;border-radius:13px;overflow:hidden;margin-bottom:11px;aspect-ratio:16/8.5;background:linear-gradient(135deg,rgba(0,201,177,.15),rgba(255,77,53,.15));}
 .twx-photo img{width:100%;height:100%;object-fit:cover;display:block;}
 .twx-photo-fade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,15,30,.55) 100%);}
-.twx-desc{font:400 .8rem/1.6 'DM Sans',sans-serif;color:rgba(255,255,255,.75);margin:0 0 11px;}
+.twx-desc{font:400 .92rem/1.75 'DM Sans',sans-serif;color:rgba(255,255,255,.82);margin:0 0 12px;}
 .twx-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;}
 .twx-pill{font:600 .68rem 'DM Sans',sans-serif;color:rgba(255,255,255,.8);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:99px;padding:5px 11px;}
 .twx-cta{width:100%;display:flex;align-items:center;justify-content:center;gap:7px;font:700 .78rem 'DM Sans',sans-serif;letter-spacing:.04em;color:#fff;background:linear-gradient(135deg,var(--twx-ac),color-mix(in srgb,var(--twx-ac) 70%,#000));border:none;border-radius:13px;padding:12px;cursor:pointer;}
@@ -2683,6 +2699,10 @@ body{padding-bottom:0;}
         <div class="hm-ico-wrap c-coral"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.12s"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></div>
         Home
       </a>
+      <a href="#" onclick="go('sec-esc');toggleHM();return false;" class="hm-link" >
+        <div class="hm-ico-wrap c-blue"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.15s"><path d="M3 18.5h18l-2 3H5z"/><path d="M4.8 18.5L6 12.5h12l1.2 6"/><path d="M8 12.5V8h8v4.5"/><path d="M12 8V4.5"/></svg></div>
+        <span data-en="Cruises &amp; Escapes" data-es="Cruceros y Escapadas">Cruceros y Escapadas</span>
+      </a>
       <a href="#" onclick="go('sec-lux');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-gold"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.13s"><path d="M12 2.8l2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.2l6-.8z"/></svg></div>
         <span data-en="Luxury Miami" data-es="Miami de Lujo">Miami de Lujo</span>
@@ -3281,6 +3301,8 @@ restaurants:[
   {id:'r10',name:'Osteria del Teatro',cat:'Italian',cat_es:'Italiano',filter:'italian',emoji:'',bg:'bg-green',badge:'Since 1987',rating:4.8,rev:'1.4k',price:'$$$',occ:'Romantic',occ_es:'Romántico',tags:['Handmade Pasta','Northern Italian'],desc:'Miami&#39;s finest Italian restaurant since 1987. The handmade pasta and tiramisu are legendary.',desc_es:'El mejor restaurante italiano de Miami desde 1987.',addr:'1443 Washington Ave, South Beach',hrs:'6 PM – 11 PM',pro:true,link:'https://www.opentable.com/osteria-del-teatro'},
   {id:'r11',name:'Coyo Taco',cat:'Mexican',cat_es:'Mexicano',filter:'mexican',emoji:'',bg:'bg-orange',badge:'Late Night',rating:4.4,rev:'3.2k',price:'$',occ:'Late Night',occ_es:'Noche',tags:['Tacos','Mezcal','Wynwood'],desc:'Wynwood\'s beloved taco institution. From al pastor and carnitas to creative seasonal specials — fresh tortillas, bold salsas, and craft mezcal cocktails in a vibrant outdoor setting.',desc_es:'La institución taquera de Wynwood. Al pastor, carnitas y especiales de temporada — tortillas frescas, salsas vibrantes y cócteles de mezcal artesanal.',addr:'2300 NW 2nd Ave, Wynwood',hrs:'11 AM – 3 AM',pro:false,photo_url:'https://youtu.be/0ZnZXE8mSfA',link:'https://www.coyotaco.com'},
   {id:'r12',name:'Mandolin Aegean Bistro',cat:'Greek · Turkish',cat_es:'Griego · Turco',filter:'mediterranean',emoji:'',bg:'bg-blue',badge:'Garden Dining',rating:4.6,rev:'1.9k',price:'$$$',occ:'Brunch',occ_es:'Brunch',tags:['Mezze','Garden','Brunch'],desc:'A 1940s bungalow turned magical Aegean garden — whitewashed walls, blue shutters and authentic Greek-Turkish mezze under the trees. Regulars swear an afternoon here feels like being in Mykonos.',desc_es:'Un bungalow de los años 40 convertido en un mágico jardín egeo: paredes blancas, persianas azules y auténticos mezze greco-turcos bajo los árboles. Sus habituales juran que una tarde aquí se siente como estar en Mykonos.',addr:'4312 NE 2nd Ave',hrs:'12 PM – 10 PM',pro:false,link:'https://www.mandolinmiami.com'},
+  {id:'r100',name:'Delilah Miami',cat:'Supper Club',cat_es:'Supper Club',filter:'american',emoji:'',bg:'bg-gold',badge:'Dinner & Show',rating:4.2,rev:'1k',price:'$$$$',occ:'Date Night · Celebration',occ_es:'Cita · Celebraci\u00f3n',tags:['Supper Club','Live Show','Art Deco'],desc:'A 1920s-style supper club on Brickell Key: Art Deco opulence, live performers between courses, and a room built for a night out rather than a quiet dinner. Steaks, classics and a serious cocktail list.',desc_es:'Un supper club estilo a\u00f1os 20 en Brickell Key: opulencia Art Deco, artistas en vivo entre platos, y un sal\u00f3n hecho para una noche de fiesta m\u00e1s que para una cena tranquila. Carnes, cl\u00e1sicos y una carta de c\u00f3cteles seria.',addr:'301 Brickell Key Dr, Brickell Key',hrs:'Mar\u2013Jue 5\u201311 PM \u00b7 Vie\u2013S\u00e1b 5 PM\u201312 AM \u00b7 cierra Dom y Lun',pro:true,perks:['photo'],pnote:'There is a no-photo policy inside to protect the room\u2019s privacy, so plan on living it rather than posting it. Closed Sunday and Monday, and it is a scene — not the place for a quiet conversation.',pnote_es:'Hay pol\u00edtica de no fotos adentro para proteger la privacidad del sal\u00f3n, as\u00ed que ve a vivirlo, no a publicarlo. Cierra domingo y lunes, y es ambiente de fiesta \u2014 no el lugar para una conversaci\u00f3n tranquila.',link:'https://www.delilahmiami.com'},
+  {id:'r101',name:'Elia',cat:'Mediterranean',cat_es:'Mediterr\u00e1neo',filter:'italian',emoji:'',bg:'bg-teal',badge:'On The River',rating:4.8,rev:'4.6k',price:'$$$',occ:'Date Night · Friends',occ_es:'Cita · Amigos',tags:['Mediterranean','Waterfront','Pizza'],desc:'One of the highest-rated dining rooms in Miami, right on the Miami River at River Landing. Mediterranean-Italian cooking with standout truffle carpaccio, pizza and octopus, and a terrace where boats slide past your table.',desc_es:'Uno de los restaurantes mejor calificados de Miami, justo sobre el R\u00edo Miami en River Landing. Cocina mediterr\u00e1nea-italiana con carpaccio de trufa, pizza y pulpo sobresalientes, y una terraza donde los botes pasan junto a tu mesa.',addr:'1440 NW N River Dr Ste 195, Miami',hrs:'Lun\u2013Jue 11:30 AM\u201311 PM \u00b7 Vie\u2013S\u00e1b hasta 12 AM \u00b7 Dom hasta 11 PM',pro:true,perks:['sunset','photo'],pnote:'The GPS drops you at the wrong door: it sits inside the River Landing complex, so park on level 3 and take the elevator down. The riverfront tables are the ones worth asking for.',pnote_es:'El GPS te deja en la puerta equivocada: est\u00e1 dentro del complejo River Landing, as\u00ed que parquea en el nivel 3 y baja en elevador. Las mesas frente al r\u00edo son las que vale la pena pedir.',link:'https://www.eliamiami.com'},
   {id:'r99',name:'Graziano\'s Coral Gables',cat:'Argentinian',cat_es:'Argentino',filter:'latin',emoji:'',bg:'bg-coral',badge:'Local Institution',rating:4.6,rev:'2k',price:'$$$',occ:'Family · Dinner',occ_es:'Familia · Cena',tags:['Argentinian','Steakhouse','Wine'],desc:'A Miami family institution: Argentinian parrilla with quebracho-wood grilling, house empanadas, handmade pastas and one of the deepest wine lists in the city.',desc_es:'Una institución familiar de Miami: parrilla argentina con leña de quebracho, empanadas de la casa, pastas hechas a mano y una de las cartas de vinos más profundas de la ciudad.',addr:'394 Giralda Ave, Coral Gables',hrs:'11:30 AM – 10:30 PM',pro:true,link:'https://www.grazianosgroup.com',photo_url:''},
   {id:'r13',name:'Chotto Matte',pnote:'Heads up: closing August 10 for renovations — call before you go.',pnote_es:'Ojo: cierra el 10 de agosto por remodelación — llama antes de ir.',cat:'Nikkei',cat_es:'Nikkei',filter:'japanese',emoji:'',bg:'bg-pink',badge:'Rooftop Bar',rating:4.5,rev:'2.8k',price:'$$$',occ:'Date Night',occ_es:'Cita',tags:['Japanese-Peruvian','Rooftop'],desc:'Stunning Nikkei fusion — Japanese-Peruvian plates under a retractable roof, a living green wall and one of South Beach\'s most spectacular settings. The black cod and Nikkei sashimi are exceptional.',desc_es:'Impresionante fusión Nikkei: platos japonés-peruanos bajo techo retráctil, un muro verde vivo y uno de los ambientes más espectaculares de South Beach. El black cod y el sashimi nikkei son excepcionales.',addr:'1664 Lenox Ave, South Beach',hrs:'6 PM – 1 AM',pro:false,link:'https://www.chotto-matte.com/miami'},
   {id:'r16',name:'Bachour',cat:'Pastry · Café',cat_es:'Pastelería',filter:'american',emoji:'',bg:'bg-rose',badge:'World-Class Pastry',rating:4.9,rev:'2.6k',price:'$$',occ:'Brunch',occ_es:'Brunch',tags:['Pastry','Croissants','Brickell'],desc:'Chef Antonio Bachour — one of the world&#39;s best pastry chefs. The croissants are jaw-dropping.',desc_es:'El chef Bachour, uno de los mejores pasteleros del mundo. Croissants impresionantes.',addr:'600 Brickell Ave, Brickell',hrs:'7 AM – 7 PM',pro:false,link:'https://www.bachour.com'},
@@ -3392,21 +3414,21 @@ restaurants:[
 ],
 beaches:[
   {id:'b1',name:'South Beach',name_es:'South Beach',emoji:'️',bg:'bb1',badge:'Most Famous',badge_es:'La Más Famosa',desc:'The crown jewel of Miami. Iconic pastel Art Deco lifeguard towers, powdery white sand, electric Ocean Drive, and world-class people-watching at its finest.',desc_es:'La joya de la corona. Torres Art Deco de colores pastel, arena blanca y el icónico Ocean Drive. Ideal para ver y ser visto.',photo_url:''},
-  {id:'b2',name:'Crandon Park Beach',name_es:'Playa Crandon Park',emoji:'',bg:'bb2',badge:'Best Families',badge_es:'Ideal Familias',desc:'Key Biscayne\'s hidden paradise. Calm turquoise lagoon waters, shaded picnic pavilions, and pristine nature — the best family beach in Miami by far.',desc_es:'El paraíso escondido de Key Biscayne. Aguas color turquesa en laguna tranquila, áreas de picnic y naturaleza pristina. La mejor playa familiar de Miami.',photo_url:''},
+  {id:'b2',perks:['swim'],name:'Crandon Park Beach',name_es:'Playa Crandon Park',emoji:'',bg:'bb2',badge:'Best Families',badge_es:'Ideal Familias',desc:'Key Biscayne\'s hidden paradise. Calm turquoise lagoon waters, shaded picnic pavilions, and pristine nature — the best family beach in Miami by far.',desc_es:'El paraíso escondido de Key Biscayne. Aguas color turquesa en laguna tranquila, áreas de picnic y naturaleza pristina. La mejor playa familiar de Miami.',photo_url:''},
   {id:'b3',perks:['fauna','film'],pnote:'Historic Virginia Key Beach Park was Miami\'s beach for Black residents during segregation, opened in 1945. The mangrove edges hold manatees and shorebirds.',pnote_es:'El histórico Virginia Key Beach Park fue la playa para residentes negros durante la segregación, abierta en 1945. Los bordes de manglar guardan manatíes y aves costeras.',name:'Virginia Key Beach',name_es:'Playa Virginia Key',emoji:'',bg:'bb3',badge:'Hidden Gem',badge_es:'Joya Escondida',desc:'A historic gem with deep civil rights roots — Miami\'s first beach open to Black residents in 1945. Today: mangroves, a beloved vintage carousel, and a serene atmosphere far from the tourist crowds.',desc_es:'Una joya histórica. Fue la primera playa abierta a residentes negros en Miami en 1945. Hoy: manglares, carrusel vintage y ambiente sereno lejos del turismo.'},
   {id:'b4',name:'Haulover Beach',name_es:'Playa Haulover',emoji:'️',bg:'bb4',badge:'Kite & Surf',badge_es:'Kite y Surf',desc:'World-class kitesurfing, sand volleyball courts, and a lively park atmosphere. Also home to Miami\'s famous clothing-optional stretch — Haulover embraces all of Miami\'s free spirit.',desc_es:'Kitesurf de clase mundial, voleibol de playa y parque vibrante. Hogar de la famosa zona naturista de Miami. Playa para todos.'},
   {id:'b5',name:'Bal Harbour Beach',name_es:'Playa Bal Harbour',emoji:'',bg:'bb5',badge:'Most Elegant',badge_es:'Más Elegante',desc:'Exclusive, uncrowded, and breathtaking. Steps from the legendary Bal Harbour Shops luxury mall, this beach is where Miami\'s elite and savvy travelers come for crystal water without the South Beach scene.',desc_es:'Exclusiva, tranquila y hermosa. A pasos de Bal Harbour Shops, frecuentada por la élite de Miami y viajeros que buscan aguas cristalinas sin el caos de South Beach.'},
   {id:'b6',name:'Sunny Isles Beach',name_es:'Playa Sunny Isles',emoji:'',bg:'bb6',badge:'Best Sunrises',badge_es:'Mejor Amanecer',desc:'Known as "Little Moscow" for its Russian-speaking community, Sunny Isles offers spectacular Atlantic sunrises, a tranquil European beach atmosphere, and luxury towers lining the shore.',desc_es:'Conocida como "Pequeña Moscú", ofrece espectaculares amaneceres atlánticos, ambiente de playa europeo y una comunidad internacional vibrante.'},
-  {id:'b7',name:'Key Biscayne',name_es:'Key Biscayne',emoji:'',bg:'bb7',badge:'Nature Paradise',badge_es:'Paraíso Natural',desc:'Bill Baggs Cape Florida State Park: a historic 1825 lighthouse, miles of cycling trails through tropical hammock, and the clearest, most pristine waters in Miami-Dade.',desc_es:'Parque Estatal Bill Baggs: faro histórico de 1825, senderos ciclistas y las aguas mas cristalinas de Miami-Dade. El paraíso natural de Miami.',photo_url:''},
-  {id:'b8',perks:['fauna','sunset','photo'],pnote:'The atoll pool is fed by Biscayne Bay, so rays and small fish circle inside it. Facing west, it is one of the few Miami beaches where the sun sets over the water.',pnote_es:'La piscina atolón se alimenta de la Bahía Biscayne, así que rayas y peces pequeños circulan dentro. Mirando al oeste, es de las pocas playas de Miami donde el sol se pone sobre el agua.',name:'Matheson Hammock',name_es:'Matheson Hammock',emoji:'',bg:'bb8',badge:'Most Serene',badge_es:'Más Serena',desc:'Miami\'s best-kept secret: a man-made atoll pool naturally flushed by Biscayne Bay tides — calm, warm, shallow, and surrounded by mangroves. The most photogenic sunset spot in Miami.',desc_es:'El secreto mejor guardado de Miami: piscina de atolón bañada naturalmente por la Bahía Biscayne. Cálida, tranquila y rodeada de manglares. El mejor atardecer de Miami.'},
+  {id:'b7',perks:['swim','paddle'],name:'Key Biscayne',name_es:'Key Biscayne',emoji:'',bg:'bb7',badge:'Nature Paradise',badge_es:'Paraíso Natural',desc:'Bill Baggs Cape Florida State Park: a historic 1825 lighthouse, miles of cycling trails through tropical hammock, and the clearest, most pristine waters in Miami-Dade.',desc_es:'Parque Estatal Bill Baggs: faro histórico de 1825, senderos ciclistas y las aguas mas cristalinas de Miami-Dade. El paraíso natural de Miami.',photo_url:''},
+  {id:'b8',perks:['fauna','sunset','photo','swim','paddle'],pnote:'The atoll pool is fed by Biscayne Bay, so rays and small fish circle inside it. Facing west, it is one of the few Miami beaches where the sun sets over the water.',pnote_es:'La piscina atolón se alimenta de la Bahía Biscayne, así que rayas y peces pequeños circulan dentro. Mirando al oeste, es de las pocas playas de Miami donde el sol se pone sobre el agua.',name:'Matheson Hammock',name_es:'Matheson Hammock',emoji:'',bg:'bb8',badge:'Most Serene',badge_es:'Más Serena',desc:'Miami\'s best-kept secret: a man-made atoll pool naturally flushed by Biscayne Bay tides — calm, warm, shallow, and surrounded by mangroves. The most photogenic sunset spot in Miami.',desc_es:'El secreto mejor guardado de Miami: piscina de atolón bañada naturalmente por la Bahía Biscayne. Cálida, tranquila y rodeada de manglares. El mejor atardecer de Miami.'},
   {id:'b9',name:'North Beach Oceanside Park',name_es:'North Beach Oceanside Park',emoji:'',bg:'bb1',badge:'Best Local Vibe',badge_es:'Ambiente Local',desc:'Miami Beach\'s most beloved local beach between 79th and 87th Streets. Palm-shaded shoreline, outdoor fitness stations, a bandshell with free concerts, two dog parks, and none of the South Beach tourist crowds.',desc_es:'La playa local favorita de Miami Beach entre las calles 79 y 87. Palmeras, estaciones de fitness, bandshell con conciertos gratis, parque para perros y sin el turismo de South Beach.'},
   {id:'b10',name:'Surfside Beach',name_es:'Playa Surfside',emoji:'️',bg:'bb5',badge:'Quiet & Charming',badge_es:'Tranquila y Encantadora',desc:'Known as Miami\'s "Uptown Beachtown" — a quiet, community-driven town between Bal Harbour and North Beach with retro charm, empty stretches of sand and easy parking. Once a Hollywood elite playground in the 1940s.',desc_es:'Conocida como "Uptown Beachtown" — un pueblo tranquilo y comunitario entre Bal Harbour y North Beach con encanto retro, arena despejada y estacionamiento fácil.'},
-  {id:'b11',perks:['pet','fauna'],pnote:'Miami\'s official dog beach — the only stretch where dogs run off-leash in the water. Manatees drift through the shallows on calm mornings.',pnote_es:'La playa de perros oficial de Miami — el único tramo donde los perros corren sueltos en el agua. Los manatíes pasan por los bajos en las mañanas tranquilas.',name:'Hobie Beach',name_es:'Hobie Beach',emoji:'',bg:'bb3',badge:'Water Sports',badge_es:'Deportes Acuáticos',desc:'Watersports paradise on the Rickenbacker Causeway with stunning Downtown Miami skyline views. Kayaking, paddleboarding, windsurfing and kitesurfing on Biscayne Bay\'s calm waters. Dog-friendly with free parking.',desc_es:'Paraíso acuático en la Calzada Rickenbacker con vistas espectaculares al skyline de Downtown. Kayak, paddle, windsurf y kitesurf en las aguas tranquilas de la Bahía Biscayne. Acepta perros.'},
+  {id:'b11',perks:['pet','fauna','paddle','swim'],pnote:'Miami\'s official dog beach — the only stretch where dogs run off-leash in the water. Manatees drift through the shallows on calm mornings.',pnote_es:'La playa de perros oficial de Miami — el único tramo donde los perros corren sueltos en el agua. Los manatíes pasan por los bajos en las mañanas tranquilas.',name:'Hobie Beach',name_es:'Hobie Beach',emoji:'',bg:'bb3',badge:'Water Sports',badge_es:'Deportes Acuáticos',desc:'Watersports paradise on the Rickenbacker Causeway with stunning Downtown Miami skyline views. Kayaking, paddleboarding, windsurfing and kitesurfing on Biscayne Bay\'s calm waters. Dog-friendly with free parking.',desc_es:'Paraíso acuático en la Calzada Rickenbacker con vistas espectaculares al skyline de Downtown. Kayak, paddle, windsurf y kitesurf en las aguas tranquilas de la Bahía Biscayne. Acepta perros.'},
   {id:'b12',perks:['sunset','photo','pet'],pnote:'The pier at the tip of South Beach frames both the skyline and the cruise ships heading out — the classic Miami shot. The adjacent park is dog-friendly.',pnote_es:'El muelle en la punta de South Beach encuadra el skyline y los cruceros saliendo — la foto clásica de Miami. El parque de al lado admite perros.',name:'South Pointe Beach',name_es:'South Pointe Beach',emoji:'',bg:'bb4',badge:'Best for Sunsets',badge_es:'Mejor para Atardeceres',desc:'The southernmost tip of South Beach with a gorgeous park, pier, and stunning views of cruise ships entering Government Cut. Peaceful, less crowded, and one of the most beautiful sunset spots in the city.',desc_es:'El extremo sur de South Beach con parque hermoso, muelle y vistas a cruceros entrando por Government Cut. Tranquilo, menos concurrido y uno de los mejores atardeceres de la ciudad.'},
   {id:'b13',name:'Lummus Park Beach',name_es:'Playa Lummus Park',emoji:'',bg:'bb1',badge:'Classic South Beach',badge_es:'South Beach Clásico',desc:'The authentic heart of South Beach — white sand fronting the Art Deco historic district with iconic pastel lifeguard towers. Volleyball nets, Tot Lot playground, muscle beach gym and the most quintessential Miami beach experience.',desc_es:'El corazón auténtico de South Beach — arena blanca frente al distrito Art Deco con las icónicas torres de salvataje de colores pastel. Voleibol, juegos y la experiencia de playa más quintaesencial de Miami.'},
   {id:'b14',name:'Hollywood Beach',name_es:'Hollywood Beach',emoji:'',bg:'bb6',badge:'Broadwalk',badge_es:'Broadwalk Famoso',desc:'Fort Lauderdale\'s neighbor with a legendary 2.5-mile Broadwalk lined with restaurants, bars and bike rentals. No high-rises blocking the ocean breeze, a relaxed authentic Florida beach town vibe and the Margaritaville resort.',desc_es:'Vecina de Fort Lauderdale con el legendario Broadwalk de 4 km bordeado de restaurantes y bares. Sin rascacielos, brisa del océano y el auténtico ambiente de pueblo costero de Florida.'},
   {id:'b15',perks:['fauna','photo'],pnote:'The 1825 lighthouse is the oldest standing structure in Miami-Dade. Manatees gather in the shallows on the bay side, and the beach faces sunrise.',pnote_es:'El faro de 1825 es la estructura en pie más antigua de Miami-Dade. Los manatíes se juntan en los bajos del lado de la bahía, y la playa mira al amanecer.',name:'Bill Baggs Cape Florida State Park',name_es:'Parque Estatal Bill Baggs',emoji:'',bg:'bb7',badge:'Lighthouse & History',badge_es:'Faro Histórico',desc:'Key Biscayne\'s crown jewel: a historic 1825 lighthouse, miles of nature trails through tropical hammock forest, two restaurants, kayak rentals and consistently ranked among the top 10 beaches in the US.',desc_es:'La joya de Key Biscayne: faro histórico de 1825, senderos de naturaleza, dos restaurantes y kayak. Clasificada constantemente entre las 10 mejores playas de EE.UU.'},
-  {id:'b16',name:'Oleta River Beach',name_es:'Playa Oleta River',emoji:'',bg:'bb2',badge:'Urban Escape',badge_es:'Escape Urbano',desc:'Florida\'s largest urban park hides a small secluded beach on Biscayne Bay with calm bay swimming, kayak and paddleboard rentals through mangrove tunnels, mountain bike trails and a picnic area. The wildest nature close to the city.',desc_es:'El parque urbano más grande de Florida esconde una pequeña playa en la Bahía Biscayne con natación, kayak y paddleboard por túneles de manglares, senderos MTB y picnic. La naturaleza más salvaje cerca de la ciudad.'},
+  {id:'b16',perks:['paddle'],name:'Oleta River Beach',name_es:'Playa Oleta River',emoji:'',bg:'bb2',badge:'Urban Escape',badge_es:'Escape Urbano',desc:'Florida\'s largest urban park hides a small secluded beach on Biscayne Bay with calm bay swimming, kayak and paddleboard rentals through mangrove tunnels, mountain bike trails and a picnic area. The wildest nature close to the city.',desc_es:'El parque urbano más grande de Florida esconde una pequeña playa en la Bahía Biscayne con natación, kayak y paddleboard por túneles de manglares, senderos MTB y picnic. La naturaleza más salvaje cerca de la ciudad.'},
   {id:'b17',name:'Haulover Inlet Beach',name_es:'Playa Haulover Inlet',emoji:'',bg:'bb4',badge:'Fishermen & Surfers',badge_es:'Pesca y Surf',desc:'The north end of Haulover Park where the inlet meets the ocean — popular with local anglers fishing for snook and tarpon, with a small surf break and spectacular views of boats navigating the inlet. Raw and authentic Miami.',desc_es:'El extremo norte de Haulover donde el canal se une al océano. Popular entre pescadores locales y con olas pequeñas. Vistas espectaculares de botes navegando el canal. El Miami más auténtico.'},
 ],
 
@@ -4128,8 +4150,8 @@ hotels:[
 parks:[
   {id:'pk1',name:'Larry & Penny Thompson Park',name_es:'Parque Larry y Penny Thompson',emoji:'',bg:'bg-green',city:'Miami',desc:'The most complete park in Miami-Dade: camping under the stars, an Olympic-size pool, a scenic lake with paddleboats, playgrounds, and sports fields. A true local favorite.',desc_es:'El parque más completo de Miami-Dade: camping bajo las estrellas, piscina olímpica, lago escénico con botes de pedal, juegos infantiles y canchas deportivas. Favorito local.',addr:'12451 SW 184th St, Miami',hrs:'Diario 8AM–6PM',link:'https://www.miamidade.gov/parks/larry-penny.asp'},
   {id:'pk2',perks:['fauna','pet'],pnote:'Freshwater lakes with resident birds, turtles and the occasional alligator along the edges. There is a dedicated off-leash dog park inside.',pnote_es:'Lagos de agua dulce con aves residentes, tortugas y algún caimán en las orillas. Tiene un parque para perros sueltos adentro.',name:'Amelia Earhart Park',name_es:'Parque Amelia Earhart',emoji:'️',bg:'bg-blue',city:'Hialeah',desc:'515 acres of outdoor adventure: freshwater fishing in scenic lakes, a dog park with agility course, BMX track, equestrian center, and extensive picnic facilities. Named after the legendary aviator.',desc_es:'515 acres de aventura al aire libre: pesca en lagos, parque para perros con pista de agilidad, pista BMX, centro ecuestre y extensas áreas de picnic. Nombrado en honor a la legendaria aviadora.',addr:'401 E 65th St, Hialeah',hrs:'Diario 9AM–Atardecer',link:'https://www.miamidade.gov/parks/amelia-earhart.asp'},
-  {id:'pk3',perks:['fauna','sunset','photo'],pnote:'The palm-ringed atoll pool is one of the most photographed spots in Miami, and the west-facing shoreline gets a real sunset over the bay.',pnote_es:'La piscina atolón rodeada de palmas es uno de los lugares más fotografiados de Miami, y la orilla que mira al oeste tiene un atardecer real sobre la bahía.',name:'Matheson Hammock Park',name_es:'Parque Matheson Hammock',emoji:'',bg:'bg-teal',city:'Coral Gables',desc:'A true Miami gem: a man-made atoll pool flushed by Biscayne Bay tides, a full-service marina, picnic areas among mangroves, nature trails, and spectacular sunset views. One of the most serene spots in the entire city.',desc_es:'Una verdadera joya de Miami: piscina de atolón bañada por la Bahía Biscayne, marina completa, picnic entre manglares y senderos naturales. Uno de los lugares más serenos de la ciudad.',addr:'9610 Old Cutler Rd, Coral Gables',hrs:'Diario Amanecer–Atardecer',link:'https://www.miamidade.gov/parks/matheson-hammock.asp'},
-  {id:'pk4',perks:['fauna','pet'],pnote:'Manatees enter the mangrove creeks year-round and are most visible from a kayak in the early morning. Leashed dogs are welcome on the trails.',pnote_es:'Los manatíes entran a los canales de manglar todo el año y se ven mejor desde un kayak temprano en la mañana. Los perros con correa son bienvenidos en los senderos.',name:'Oleta River State Park',name_es:'Parque Estatal Río Oleta',emoji:'',bg:'bg-cyan',city:'North Miami Beach',desc:'Florida\'s largest urban park: kayaking and paddleboarding through mangrove tunnels, 14 miles of mountain bike trails through tropical forest, a swimming beach, and camping. The best nature escape closest to the city.',desc_es:'El parque urbano más grande de Florida: kayak por túneles de manglares, 22 km de senderos para mountain bike, playa de natación y camping. La mejor escapada natural cerca de la ciudad.',addr:'3400 NE 163rd St, North Miami Beach',hrs:'Diario 8AM–Atardecer',link:'https://www.floridastateparks.org/parks-and-trails/oleta-river-state-park'},
+  {id:'pk3',perks:['fauna','sunset','photo','swim'],pnote:'The palm-ringed atoll pool is one of the most photographed spots in Miami, and the west-facing shoreline gets a real sunset over the bay.',pnote_es:'La piscina atolón rodeada de palmas es uno de los lugares más fotografiados de Miami, y la orilla que mira al oeste tiene un atardecer real sobre la bahía.',name:'Matheson Hammock Park',name_es:'Parque Matheson Hammock',emoji:'',bg:'bg-teal',city:'Coral Gables',desc:'A true Miami gem: a man-made atoll pool flushed by Biscayne Bay tides, a full-service marina, picnic areas among mangroves, nature trails, and spectacular sunset views. One of the most serene spots in the entire city.',desc_es:'Una verdadera joya de Miami: piscina de atolón bañada por la Bahía Biscayne, marina completa, picnic entre manglares y senderos naturales. Uno de los lugares más serenos de la ciudad.',addr:'9610 Old Cutler Rd, Coral Gables',hrs:'Diario Amanecer–Atardecer',link:'https://www.miamidade.gov/parks/matheson-hammock.asp'},
+  {id:'pk4',perks:['fauna','pet','paddle'],pnote:'Manatees enter the mangrove creeks year-round and are most visible from a kayak in the early morning. Leashed dogs are welcome on the trails.',pnote_es:'Los manatíes entran a los canales de manglar todo el año y se ven mejor desde un kayak temprano en la mañana. Los perros con correa son bienvenidos en los senderos.',name:'Oleta River State Park',name_es:'Parque Estatal Río Oleta',emoji:'',bg:'bg-cyan',city:'North Miami Beach',desc:'Florida\'s largest urban park: kayaking and paddleboarding through mangrove tunnels, 14 miles of mountain bike trails through tropical forest, a swimming beach, and camping. The best nature escape closest to the city.',desc_es:'El parque urbano más grande de Florida: kayak por túneles de manglares, 22 km de senderos para mountain bike, playa de natación y camping. La mejor escapada natural cerca de la ciudad.',addr:'3400 NE 163rd St, North Miami Beach',hrs:'Diario 8AM–Atardecer',link:'https://www.floridastateparks.org/parks-and-trails/oleta-river-state-park'},
   {id:'pk5',name:'Virginia Key Beach Park',name_es:'Parque Virginia Key Beach',emoji:'️',bg:'bg-coral',city:'Miami',desc:'A historically significant park and a beautiful secret. The first beach open to Black residents in Miami (1945), Virginia Key offers a serene bay beach, a beloved vintage carousel from the 1950s, mountain bike trails, and stunning views of the Downtown skyline.',desc_es:'Un parque histórico y un hermoso secreto. La primera playa abierta a residentes negros en Miami (1945), con playa serena, carrusel vintage de los 50, senderos y vistas al skyline del centro.',addr:'4020 Virginia Beach Dr, Miami',hrs:'Diario 8AM–7PM',link:'https://virginiakeybeachpark.net'},
   {id:'pk6',name:'Miami Beach Botanical Garden',name_es:'Jardín Botánico Miami Beach',emoji:'',bg:'bg-pink',city:'Miami Beach',desc:'A free tropical oasis in the heart of Miami Beach: rare orchids, towering royal palms, a tranquil Japanese garden, and rotating floral installations. The perfect peaceful escape steps from the busy city.',desc_es:'Un oasis tropical gratuito en el corazón de Miami Beach: orquídeas raras, palmas reales, jardín japonés tranquilo e instalaciones florales rotativas. La escapada perfecta a pasos de la ciudad.',addr:'2000 Convention Center Dr, Miami Beach',hrs:'Mar–Dom 9AM–5PM',link:'https://mbgarden.org'},
   {id:'pk7',name:'Fruit & Spice Park',name_es:'Parque Fruit & Spice',emoji:'',bg:'bg-lime',city:'Homestead',desc:'The only park of its kind in the US: 500 varieties of tropical fruit trees, exotic spices, and bamboo from around the world. Guided tours let you taste rambutan, jackfruit, carambola, and dozens of fruits you\'ve never tried. A completely unique Miami experience.',desc_es:'El único parque de su tipo en EE.UU.: 500 variedades de árboles frutales tropicales, especias exóticas y bambú de todo el mundo. Tours guiados donde puedes probar rambután, jackfruit y carambola. Única en Miami.',addr:'24801 SW 187th Ave, Homestead',hrs:'Diario 9AM–5PM',link:'https://www.fruitandspicepark.org'},
@@ -4269,14 +4291,14 @@ let lang='en', activeFlt='all';
 const TX={
 en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic&nbsp;City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'108',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'6',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
 nav:[{label:'Discover',items:[{icon:'',lbl:'Map',cnt:'',id:'sec-map'},{icon:'',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'',lbl:'Places',cnt:'8',id:'sec-place'}]},{label:'Entertainment',items:[{icon:'',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'',lbl:'Stadiums',cnt:'6',id:'sec-stad'}]},{label:'Going Out',items:[{icon:'',lbl:'Events',cnt:'10',id:'sec-events'},{icon:'',lbl:'Nightlife',cnt:'8',id:'sec-night'},{icon:'',lbl:'Parks',cnt:'10',id:'sec-parks'}]},{label:'Explore More',items:[{icon:'️',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'️',lbl:'Shopping',cnt:'8',id:'sec-shop'}]}],
-tt:{airports:['Fly In','Airports & Getting Here'],drones:['Aerial Views','Miami from Above'],rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],shop:['Best Malls','Shopping Centers'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['Recurring','Events Calendar'],night:['After Dark','Nightlife'],hotels:['Where to Stay','Best Hotels in Miami'],parks:['Green Miami','Parks & Nature'],transport:['Getting Around','Transportation Guide'],art:['Wynwood & Beyond','Art & Galleries'],coffee:['Best Brews','Coffee Shops & Cafés'],kids:['Family Fun','Kids & Families'],daytrips:['Beyond Miami','Day Trips'],water:['On The Water','Boating & Fishing'],lux:['The High Life','Luxury Miami']},
+tt:{airports:['Fly In','Airports & Getting Here'],drones:['Aerial Views','Miami from Above'],rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],shop:['Best Malls','Shopping Centers'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['Recurring','Events Calendar'],night:['After Dark','Nightlife'],hotels:['Where to Stay','Best Hotels in Miami'],parks:['Green Miami','Parks & Nature'],transport:['Getting Around','Transportation Guide'],art:['Wynwood & Beyond','Art & Galleries'],coffee:['Best Brews','Coffee Shops & Cafés'],kids:['Family Fun','Kids & Families'],daytrips:['Beyond Miami','Day Trips'],water:['On The Water','Boating & Fishing'],lux:['The High Life','Luxury Miami'],esc:['Leave The Mainland','Cruises & Island Escapes']},
 sa:'See all →',rf:['All',' Cuban',' Seafood',' Mexican',' Japanese',' Mediterranean','️ Latin',' Italian',' American',' Fine Dining',' Brunch'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining','brunch'],
 fTag:'The Magic City, curated for you.',fDevLbl:'Developed by',fEx:'Explore',fCo:'Company',fLinks1:['Restaurants','Beaches','Museums','Theaters','Stadiums'],fLinks2:['About','Contact','Privacy Policy','Submit a Place','For Business'],fCopy:'© 2026 Miami Magic · Y & Y Entertainment Corp',fRights:'All Rights Reserved',
 mEye:' Business Model',mH2:'How to Make <em>Money</em> with Miami Magic',mSub:'A complete guide to turning this app into a real, scalable business.',revT:'Realistic Revenue Projection (per month)',rmT:'Step-by-Step Launch Plan',rPh:['Phase 1','Phase 2','Phase 3'],rPer:['Months 1–3','Months 4–8','Month 12+'],rMo:'/ month',rD:['10 listings at $250/mo','Ads + commissions + 40 listings','All streams + partnerships'],
 },
 es:{logoTag:'La Guía Definitiva de Miami',eye:'Tu Guía Definitiva de la Ciudad',l1:'Descubre',sub:'Restaurantes, playas, museos, teatros, estadios, eventos y vida nocturna — la guía completa de la Ciudad Mágica.',cta1:'Explorar Ahora',cta2:'Próximos Eventos',stats:[{n:'30+',l:'Restaurantes'},{n:'8',l:'Playas'},{n:'8',l:'Museos'},{n:'6',l:'Estadios'},{n:'10',l:'Eventos'},{n:'8',l:'Vida Nocturna'}],sph:'Busca restaurante, concierto, artista, evento…',sgo:'Buscar',biz:'Para Negocios',langTxt:'English',reserveBtn:'Reservar en OpenTable →',ticketsBtn:'Comprar Entradas Ticketmaster →',moreBtn:'Más Información →',mapsBtn:'Ver en Google Maps →',gamesBtn:'Ver Partidos →',upLbl:'Próximos Shows:',tipLbl:'Consejo',
 nav:[{label:'Descubrir',items:[{icon:'',lbl:'Mapa',cnt:'',id:'sec-map'},{icon:'',lbl:'Restaurantes',cnt:'30+',id:'sec-rest'},{icon:'',lbl:'Playas',cnt:'8',id:'sec-beach'},{icon:'',lbl:'Lugares',cnt:'8',id:'sec-place'}]},{label:'Entretenimiento',items:[{icon:'',lbl:'Museos',cnt:'8',id:'sec-museum'},{icon:'',lbl:'Teatros',cnt:'5',id:'sec-theater'},{icon:'',lbl:'Conciertos',cnt:'8',id:'sec-concert'},{icon:'',lbl:'Estadios',cnt:'6',id:'sec-stad'}]},{label:'Salir',items:[{icon:'',lbl:'Eventos',cnt:'10',id:'sec-events'},{icon:'',lbl:'Vida Nocturna',cnt:'8',id:'sec-night'}]}],
-tt:{airports:['Vuela a Miami','Aeropuertos y C\u00f3mo Llegar'],drones:['Tomas Aéreas','Miami desde el cielo'],rest:['Selección Especial','Mejores Restaurantes de Miami'],beach:['Sol y Arena','Mejores Playas'],museum:['Cultura y Arte','Museos'],shop:['Mejores Malls','Centros Comerciales'],theater:['En Escena','Teatros'],concert:['Música en Vivo','Recintos de Conciertos'],stad:['Deportes','Estadios y Arenas'],place:['Imprescindibles','Lugares y Vecindarios'],events:['Recurrentes','Calendario de Eventos'],night:['De Noche','Vida Nocturna'],hotels:['Dónde Quedarse','Mejores Hoteles en Miami'],parks:['Miami Verde','Parques y Naturaleza'],transport:['Cómo Moverse','Guía de Transporte'],art:['Wynwood y Más','Arte y Galerías'],coffee:['Mejores Cafés','Cafés y Cafeterías'],kids:['Para Familias','Niños y Familias'],daytrips:['Más Allá de Miami','Day Trips'],water:['Sobre el Agua','Botes y Pesca'],lux:['La Buena Vida','Miami de Lujo']},
+tt:{airports:['Vuela a Miami','Aeropuertos y C\u00f3mo Llegar'],drones:['Tomas Aéreas','Miami desde el cielo'],rest:['Selección Especial','Mejores Restaurantes de Miami'],beach:['Sol y Arena','Mejores Playas'],museum:['Cultura y Arte','Museos'],shop:['Mejores Malls','Centros Comerciales'],theater:['En Escena','Teatros'],concert:['Música en Vivo','Recintos de Conciertos'],stad:['Deportes','Estadios y Arenas'],place:['Imprescindibles','Lugares y Vecindarios'],events:['Recurrentes','Calendario de Eventos'],night:['De Noche','Vida Nocturna'],hotels:['Dónde Quedarse','Mejores Hoteles en Miami'],parks:['Miami Verde','Parques y Naturaleza'],transport:['Cómo Moverse','Guía de Transporte'],art:['Wynwood y Más','Arte y Galerías'],coffee:['Mejores Cafés','Cafés y Cafeterías'],kids:['Para Familias','Niños y Familias'],daytrips:['Más Allá de Miami','Day Trips'],water:['Sobre el Agua','Botes y Pesca'],lux:['La Buena Vida','Miami de Lujo'],esc:['Salir de Tierra Firme','Cruceros y Escapadas']},
 sa:'Ver todo →',rf:['Todo',' Cubano',' Mariscos',' Mexicano',' Japonés',' Mediterráneo','️ Latino',' Italiano',' Americano',' Alta Cocina',' Brunch'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining','brunch'],
 fTag:'La Ciudad Mágica, curada para ti.',fDevLbl:'Desarrollado por',fEx:'Explorar',fCo:'Empresa',fLinks1:['Restaurantes','Playas','Museos','Teatros','Estadios'],fLinks2:['Acerca de','Contacto','Privacidad','Sugerir Lugar','Para Negocios'],fCopy:'© 2026 Miami Magic · Y & Y Entertainment Corp',fRights:'Todos los Derechos Reservados',
 mEye:' Modelo de Negocio',mH2:'Cómo Ganar <em>Dinero</em> con Miami Magic',mSub:'Guía completa para convertir esta app en un negocio real y escalable.',revT:'Proyección de Ingresos Realista (por mes)',rmT:'Plan de Lanzamiento Paso a Paso',rPh:['Fase 1','Fase 2','Fase 3'],rPer:['Meses 1–3','Meses 4–8','Mes 12+'],rMo:'/ mes',rD:['10 listings a $250/mes','Publicidad + comisiones + 40 listings','Todos los streams + alianzas'],
@@ -5166,6 +5188,8 @@ var MM_PERK_META={
   film:{en:'On screen',es:'En pantalla',ac:'#7C5CFF',ico:'<rect x="3" y="6.5" width="18" height="11" rx="2"/><path d="M3 10h18M7 6.5v3.5M12 6.5v3.5M17 6.5v3.5"/>'},
   mural:{en:'Street art',es:'Arte urbano',ac:'#FF4D35',ico:'<path d="M4 20V5.5A1.5 1.5 0 0 1 5.5 4h9A1.5 1.5 0 0 1 16 5.5V20"/><path d="M16 9h2.5A1.5 1.5 0 0 1 20 10.5V20"/><path d="M3 20h18"/><circle cx="9" cy="10" r="2"/>'},
   sunset:{en:'Sunset spot',es:'Buen atardecer',ac:'#FFD166',ico:'<circle cx="12" cy="13" r="3.2"/><path d="M12 6.5V8M6.5 13H8M16 13h1.5M8.2 9.2l1 1M15.8 9.2l-1 1"/><path d="M3.5 19.5h17"/>'},
+  paddle:{en:'Paddle & kayak',es:'Paddle y kayak',ac:'#00C9B1',ico:'<path d="M4 15.5c2 0 2-1.4 4-1.4s2 1.4 4 1.4 2-1.4 4-1.4 2 1.4 4 1.4"/><path d="M4 19.5c2 0 2-1.4 4-1.4s2 1.4 4 1.4 2-1.4 4-1.4 2 1.4 4 1.4"/><path d="M7.5 12.5L17 3"/><path d="M15.4 4.6l3 3"/><path d="M6 11l2.5 2.5"/>'},
+  swim:{en:'Calm swimming',es:'Buen ba\u00f1o',ac:'#0B6FA4',ico:'<path d="M3 17.5c1.8 0 1.8-1.3 3.6-1.3s1.8 1.3 3.6 1.3 1.8-1.3 3.6-1.3 1.8 1.3 3.6 1.3 1.8-1.3 3.6-1.3"/><path d="M3 21c1.8 0 1.8-1.3 3.6-1.3s1.8 1.3 3.6 1.3 1.8-1.3 3.6-1.3 1.8 1.3 3.6 1.3"/><circle cx="16.5" cy="6" r="2"/><path d="M6.5 14l4-3.5 3 1.5 3.5-2.5"/>'},
   photo:{en:'Photo spot',es:'Foto obligada',ac:'#00A9CE',ico:'<rect x="3" y="7" width="18" height="13" rx="2.5"/><circle cx="12" cy="13.5" r="3.6"/><path d="M8.5 7l1.3-2.2h4.4L15.5 7"/>'}
 };
 function perkChips(obj){
@@ -5396,6 +5420,99 @@ function buildRcatTiles(t){
   }).join('');
 }
 
+/* ── PROMO ROTATIVO SOBRE RESTAURANTES ──
+   Slots de patrocinio: agrega objetos a MM_PROMO_PAID con
+   {until:'YYYY-MM-DD', eyebrowEN/ES, titleEN/ES, subEN/ES, ids:[...]}
+   y tendrán prioridad sobre los slots automáticos hasta esa fecha. */
+var MM_PROMO_PAID=[];
+function promoIco(k){
+  var P={
+    spark:'<path d="M12 2.5l2.2 5.6 5.8.6-4.3 4 1.2 5.8L12 15.6 7.1 18.5l1.2-5.8-4.3-4 5.8-.6z"/>',
+    heart:'<path d="M12 20.5s-7.5-4.6-7.5-9.7a4.2 4.2 0 0 1 7.5-2.6 4.2 4.2 0 0 1 7.5 2.6c0 5.1-7.5 9.7-7.5 9.7z"/>',
+    family:'<circle cx="8" cy="8" r="2.6"/><circle cx="16.5" cy="9.5" r="2"/><path d="M3.5 19c0-2.8 2-4.6 4.5-4.6s4.5 1.8 4.5 4.6"/><path d="M14 19c0-2.2 1.2-3.6 2.9-3.6 1.5 0 2.6 1.1 2.9 2.8"/>',
+    friends:'<circle cx="9" cy="8.5" r="3"/><circle cx="17" cy="10" r="2.3"/><path d="M2.5 19.5c0-3.3 2.6-5.5 6.5-5.5s6.5 2.2 6.5 5.5"/><path d="M16 14.5c2.8 0 4.5 1.6 5 4"/>',
+    fire:'<path d="M12 2c1 3-2 4-2 7a4 4 0 0 0 8 0c0-1.5-.7-2.3-1.3-3.2.4 2-1 3-2 2.2-.8-.6-.4-1.8-.4-3C14.3 3.5 13 2.5 12 2z"/><path d="M8.5 13.5A5.5 5.5 0 0 0 14 19a5.5 5.5 0 0 0 5.5-5.5c0-1-.3-1.8-.7-2.6"/>',
+    clock:'<circle cx="12" cy="12" r="8.6"/><path d="M12 6.8V12l3.6 2.1"/>'
+  };
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px">'+(P[k]||P.spark)+'</svg>';
+}
+function promoNames(ids,max){
+  try{
+    var out=[];
+    (ids||[]).forEach(function(id){
+      var r=D.restaurants.find(function(x){return x.id===id;});
+      if(r) out.push(r.name);
+    });
+    return out.slice(0,max||3).join(' · ');
+  }catch(e){ return ''; }
+}
+function promoByOcc(rx,max){
+  try{
+    return D.restaurants.filter(function(r){ return rx.test(r.occ||''); })
+      .sort(function(a,b){ return (b.rating||0)-(a.rating||0); })
+      .slice(0,max||3).map(function(r){return r.name;}).join(' · ');
+  }catch(e){ return ''; }
+}
+function promoMostVisited(){
+  try{
+    var h=JSON.parse(localStorage.getItem('mm_history')||'[]');
+    var tally={};
+    h.forEach(function(x){ if(x && x.type==='rest' && x.name) tally[x.name]=(tally[x.name]||0)+1; });
+    var names=Object.keys(tally).sort(function(a,b){return tally[b]-tally[a];});
+    return names.slice(0,3).join(' · ');
+  }catch(e){ return ''; }
+}
+function buildPromo(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var slots=[];
+  // 1) paid placements first, while their window is open
+  var today=new Date(); today.setHours(0,0,0,0);
+  (MM_PROMO_PAID||[]).forEach(function(s){
+    var ok=true;
+    try{ if(s.until){ var p=s.until.split('-'); ok=new Date(+p[0],+p[1]-1,+p[2])>=today; } }catch(e){}
+    if(!ok) return;
+    slots.push({ico:s.ico||'spark',paid:true,
+      eyebrow:ES?(s.eyebrowES||s.eyebrowEN):s.eyebrowEN,
+      title:ES?(s.titleES||s.titleEN):s.titleEN,
+      sub:(ES?(s.subES||s.subEN):s.subEN)||promoNames(s.ids)});
+  });
+  // 2) newest additions
+  var newest=promoNames(['r101','r100','r99'],3);
+  if(newest) slots.push({ico:'spark',eyebrow:ES?'RECIÉN AÑADIDOS':'JUST ADDED',
+    title:ES?'Nuevos en la guía':'New on the guide', sub:newest});
+  // 3) best for couples
+  var couples=promoByOcc(/date|cita|romantic|rom.ntic/i,3);
+  if(couples) slots.push({ico:'heart',eyebrow:ES?'PARA DOS':'FOR TWO',
+    title:ES?'Los mejores para una cita':'Best for date night', sub:couples});
+  // 4) best for families
+  var fam=promoByOcc(/family|familia/i,3);
+  if(fam) slots.push({ico:'family',eyebrow:ES?'EN FAMILIA':'WITH THE FAMILY',
+    title:ES?'Mesa para todos':'A table for everyone', sub:fam});
+  // 5) best with friends / groups
+  var friends=promoByOcc(/friend|amigo|group|grupo/i,3);
+  if(friends) slots.push({ico:'friends',eyebrow:ES?'CON AMIGOS':'WITH FRIENDS',
+    title:ES?'Para ir en grupo':'Good for a group', sub:friends});
+  // 6) what this user actually opened
+  var mine=promoMostVisited();
+  if(mine) slots.push({ico:'clock',eyebrow:ES?'VOLVISTE A ESTOS':'YOU KEEP COMING BACK',
+    title:ES?'Los que más miras':'The ones you open most', sub:mine});
+  // 7) Miami Spice while it runs (Aug 1 – Sep 30)
+  var mo=today.getMonth();
+  if(mo===7||mo===8) slots.push({ico:'fire',eyebrow:'MIAMI SPICE 2026',
+    title:ES?'Menús de 3 tiempos desde $40':'3-course menus from $40',
+    sub:ES?'200+ restaurantes · hasta el 30 de septiembre':'200+ restaurants · through September 30'});
+  if(!slots.length) return '';
+  // paid slots always show; otherwise rotate by day so it feels alive
+  var pick = slots[0].paid ? slots[0] : slots[today.getDate() % slots.length];
+  return '<div class="mm-spice-banner'+(pick.paid?' promo-paid':'')+'" onclick="document.getElementById(&quot;rest-hrow&quot;).scrollIntoView({behavior:&quot;smooth&quot;})">'
+    +'<div class="mm-spice-ico">'+promoIco(pick.ico)+'</div>'
+    +'<div class="mm-spice-txt">'
+      +'<div class="mm-spice-eyebrow">'+pick.eyebrow+(pick.paid?' <span class="promo-tag">'+(ES?'PATROCINADO':'SPONSORED')+'</span>':'')+'</div>'
+      +'<div class="mm-spice-title">'+pick.title+'</div>'
+      +'<div class="mm-spice-sub">'+pick.sub+'</div>'
+    +'</div>'
+  +'</div>';
+}
 function renderRest(){
   const t=T();
   const chips=buildRcatTiles(t);
@@ -5405,12 +5522,7 @@ function renderRest(){
   var preview=renderRestCardsHorizontal(filtZ.slice(0,8));
   var all=renderRestCards(filtZ);
   var verTodos=filtZ.length>3?'<div class="ver-todos-wrap"><button class="ver-todos-btn" onclick="toggleFullGrid(\'rest-full\',\'rest-hrow\',this)">'+n('See all','Ver todos')+' ('+filtZ.length+') →</button></div>':'';
-  return '<section class="sec fade" id="sec-rest">'+sHdr('rest')+'<div class="chips rcat-rail" id="rChips">'+chips+'</div>'+'<div class="mm-spice-banner" onclick="document.getElementById(&quot;rest-hrow&quot;).scrollIntoView({behavior:&quot;smooth&quot;})">'
-    +'<div class="mm-spice-ico">'+'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M12 2c1 3-2 4-2 7a4 4 0 0 0 8 0c0-1.5-.7-2.3-1.3-3.2.4 2-1 3-2 2.2-.8-.6-.4-1.8-.4-3C14.3 3.5 13 2.5 12 2z"/><path d="M8.5 13.5A5.5 5.5 0 0 0 14 19a5.5 5.5 0 0 0 5.5-5.5c0-1-.3-1.8-.7-2.6"/></svg>'+'</div>'
-    +'<div class="mm-spice-txt"><div class="mm-spice-eyebrow">'+n('MIAMI SPICE 2026','MIAMI SPICE 2026')+'</div>'
-    +'<div class="mm-spice-title">'+n('New Restaurants for 2026','Nuevos restaurantes para 2026')+'</div>'
-    +'<div class="mm-spice-sub">'+n('Tin Tin · China Grill · Amazónico Miami','Tin Tin · China Grill · Amazónico Miami')+'</div></div>'
-  +'</div>'+'<div class="h-row" id="rest-hrow">'+preview+'</div>'+verTodos+'<div class="full-grid-rest" id="rest-full">'+all+'</div></section>';
+  return '<section class="sec fade" id="sec-rest">'+sHdr('rest')+'<div class="chips rcat-rail" id="rChips">'+chips+'</div>'+buildPromo()+'<div class="h-row" id="rest-hrow">'+preview+'</div>'+verTodos+'<div class="full-grid-rest" id="rest-full">'+all+'</div></section>';
 }
 
 function renderBeach(){
@@ -6704,7 +6816,7 @@ function waterLink(w){
   }catch(e){ return w.link||'#'; }
 }
 function openWaterModal(id){
-  var pool=(MM_WATER||[]).concat(typeof MM_LUX!=='undefined'?MM_LUX:[]);
+  var pool=(MM_WATER||[]).concat(typeof MM_LUX!=='undefined'?MM_LUX:[]).concat(typeof MM_ESC!=='undefined'?MM_ESC:[]);
   var w=pool.find(function(x){return x.id===id;});
   if(!w) return;
   var ES=(typeof lang!=='undefined'&&lang==='es');
@@ -6834,6 +6946,90 @@ function seaLoad(){
   }).catch(function(){ try{el.innerHTML='';}catch(e){} });
 }
 document.addEventListener('DOMContentLoaded',function(){ setTimeout(seaLoad,1400); setTimeout(seaLoad,6000); });
+var MM_ESC=[
+ {id:'e1',name:'3-Night Bahamas Cruise',name_es:'Crucero de 3 Noches a Bahamas',cat:'Cruise',cat_es:'Crucero',ac:'#0B6FA4',
+  ico:'<path d="M3 18.5h18l-2 3H5z"/><path d="M4.8 18.5L6 12.5h12l1.2 6"/><path d="M8 12.5V8h8v4.5"/><rect x="9.5" y="9" width="2" height="2"/><rect x="13" y="9" width="2" height="2"/><path d="M12 8V4.5"/>',
+  photo:'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=60&auto=format',
+  where:'PortMiami · Dodge Island',where_es:'PortMiami · Dodge Island',
+  price:'From ~$300 per person',price_es:'Desde ~$300 por persona',
+  when:'Weekend departures year-round',when_es:'Salidas de fin de semana todo el año',
+  desc:'The easiest cruise on earth: three or four nights to Nassau and a private island, leaving from the second-busiest cruise port in the world — twenty minutes from South Beach. Royal Caribbean, Carnival, MSC and Norwegian all sail these.',
+  desc_es:'El crucero más fácil del mundo: tres o cuatro noches a Nassau y una isla privada, saliendo del segundo puerto de cruceros más activo del planeta — a veinte minutos de South Beach. Royal Caribbean, Carnival, MSC y Norwegian hacen esta ruta.',
+  tip:'The advertised fare is the cabin only. Port fees, taxes, gratuities and drinks land on top and can add 40–60%. Ask for the total per person before you put down a deposit — and an interior cabin on a short sailing is the best value in cruising.',
+  tip_es:'La tarifa que anuncian es solo el camarote. Impuestos portuarios, propinas y bebidas se suman aparte y pueden agregar un 40–60%. Pide el total por persona antes de dar depósito — y un camarote interior en un viaje corto es la mejor relación precio-valor que existe.',
+  link:'https://www.portmiami.biz/cruise'},
+ {id:'e2',name:'Cruises from Port Everglades',name_es:'Cruceros desde Port Everglades',cat:'Cruise',cat_es:'Crucero',ac:'#00A9CE',
+  ico:'<path d="M3 18.5h18l-2 3H5z"/><path d="M5 18.5V10h14v8.5"/><path d="M8.5 10V6.5h7V10"/><path d="M12 6.5V3.5"/><rect x="9.5" y="12.5" width="2" height="2"/><rect x="13" y="12.5" width="2" height="2"/>',
+  photo:'https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=900&q=60&auto=format',
+  where:'Fort Lauderdale · ~30 mi north',where_es:'Fort Lauderdale · ~48 km al norte',
+  price:'From ~$300 per person',price_es:'Desde ~$300 por persona',
+  when:'Year-round · busiest Nov–Apr',when_es:'Todo el año · más movido Nov–Abr',
+  desc:'The world\u2019s third-largest cruise port, and often the better option: shorter security lines than Miami, easier parking, and itineraries to Nassau, Bimini, Key West and CocoCay. Celebrity, Princess and Holland America base ships here.',
+  desc_es:'El tercer puerto de cruceros más grande del mundo, y a menudo la mejor opción: filas más cortas que en Miami, parqueo más fácil, e itinerarios a Nassau, Bimini, Key West y CocoCay. Celebrity, Princess y Holland America basan barcos aquí.',
+  tip:'It is 30 miles from Miami, so add an hour of driving and check whether your fare includes port parking — a week of it costs more than the ride from Miami. Same-day flights out of FLL are the classic mistake; give yourself a night.',
+  tip_es:'Está a 48 km de Miami, así que suma una hora de manejo y revisa si tu tarifa incluye parqueo en el puerto — una semana cuesta más que el viaje desde Miami. Los vuelos el mismo día desde FLL son el error clásico; date una noche.',
+  link:'https://www.porteverglades.net/cruise/'},
+ {id:'e3',name:'Balearia Ferry to Bimini',name_es:'Ferry Balearia a Bimini',cat:'Ferry',cat_es:'Ferry',ac:'#00C9B1',
+  ico:'<path d="M3 19h18l-2 2.5H5z"/><path d="M4.5 19L6 13.5h12L19.5 19"/><path d="M7.5 13.5v-4h9v4"/><path d="M12 9.5V6"/><path d="M9.5 6h5"/>',
+  photo:'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=900&q=60&auto=format',
+  where:'Port Everglades · Terminal 21',where_es:'Port Everglades · Terminal 21',
+  price:'Round trip from ~$199 all-in',price_es:'Ida y vuelta desde ~$199 todo incluido',
+  when:'Wed · Fri · Sun (more in summer)',when_es:'Mié · Vie · Dom (más en verano)',
+  desc:'The only scheduled passenger ferry between Florida and the Bahamas. A high-speed catamaran crosses the Gulf Stream to Bimini in about two hours — close enough to do it and come back the same day.',
+  desc_es:'El único ferry de pasajeros con itinerario fijo entre Florida y Bahamas. Un catamarán de alta velocidad cruza la Corriente del Golfo hasta Bimini en unas dos horas — lo bastante cerca para ir y volver el mismo día.',
+  tip:'Passport required, no exceptions, and check-in opens around 6 AM for a 9 AM sailing — the gate closes well before departure. It leaves from Fort Lauderdale, not Miami, so budget 40 minutes of driving before check-in even starts.',
+  tip_es:'Pasaporte obligatorio, sin excepciones, y el check-in abre cerca de las 6 AM para zarpar a las 9 — la puerta cierra bastante antes de la salida. Sale de Fort Lauderdale, no de Miami, así que cuenta 40 minutos de manejo antes de que empiece el check-in.',
+  link:'https://www.baleariacaribbean.com'},
+ {id:'e4',name:'Seaplane to Bimini',name_es:'Hidroavión a Bimini',cat:'Seaplane',cat_es:'Hidroavión',ac:'#FFD166',
+  ico:'<path d="M10.5 13l-7-2.5 1.5-1.5 6 1 4-4a2 2 0 0 1 2.8 2.8l-4 4 1 6-1.5 1.5z"/><path d="M3 19.5c1.8 0 1.8-1.2 3.6-1.2s1.8 1.2 3.6 1.2 1.8-1.2 3.6-1.2 1.8 1.2 3.6 1.2"/>',
+  photo:'https://images.unsplash.com/photo-1534321238895-da3ab632df3e?w=900&q=60&auto=format',
+  where:'Miami Seaplane Base · minutes from Downtown',where_es:'Base de Hidroaviones de Miami · a minutos de Downtown',
+  price:'One way from ~$246',price_es:'Solo ida desde ~$246',
+  when:'Year-round · same-day trips available',when_es:'Todo el año · hay viajes de ida y vuelta el mismo día',
+  desc:'Twenty-five minutes and you are in the Bahamas. Tropic Ocean Airways flies amphibious Cessna Grand Caravans with no more than eight passengers, low over the turquoise, landing at a floating dock in North Bimini instead of an airport.',
+  desc_es:'Veinticinco minutos y estás en Bahamas. Tropic Ocean Airways vuela Cessna Grand Caravan anfibios con no más de ocho pasajeros, bajito sobre el turquesa, y aterriza en un muelle flotante en North Bimini en vez de un aeropuerto.',
+  tip:'This is the version that skips everything: arrive 30 minutes before, no commercial terminal, and you land at the resort dock. Passport still required. They also fly to Nassau, Eleuthera and the Exumas if Bimini is too easy.',
+  tip_es:'Esta es la versión que se salta todo: llegas 30 minutos antes, sin terminal comercial, y aterrizas en el muelle del resort. El pasaporte sigue siendo obligatorio. También vuelan a Nassau, Eleuthera y los Exumas si Bimini te sabe a poco.',
+  link:'https://flytropic.com/bimini/'},
+ {id:'e5',name:'Key West by Ferry',name_es:'Cayo Hueso en Ferry',cat:'Ferry',cat_es:'Ferry',ac:'#E8734A',
+  ico:'<path d="M3 19h18l-2 2.5H5z"/><path d="M4.5 19L6 14h12l1.5 5"/><path d="M12 3.5v10.5"/><path d="M12 5l5 6.5H12z"/>',
+  photo:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=60&auto=format',
+  where:'Departs Fort Myers Beach or Marco Island',where_es:'Sale de Fort Myers Beach o Marco Island',
+  price:'Varies by season',price_es:'Varía según la temporada',
+  when:'Check schedules — seasonal service',when_es:'Consulta horarios — servicio de temporada',
+  desc:'No ferry runs from Miami to Key West, so the drive down the Overseas Highway is still the trip — seven bridges, forty-two islands, and the Seven Mile Bridge in the middle of it. Three and a half hours each way.',
+  desc_es:'No hay ferry de Miami a Cayo Hueso, así que manejar por la Overseas Highway sigue siendo el viaje — siete puentes, cuarenta y dos islas, y el Puente de las Siete Millas en medio. Tres horas y media por lado.',
+  tip:'Leave Miami before 7 AM or you will sit in traffic through Key Largo. And do not try it as a day trip in summer: you arrive in the heat, everything good in Key West happens at sunset, and the drive back at night is long.',
+  tip_es:'Sal de Miami antes de las 7 AM o te comes el tráfico de Key Largo. Y no lo intentes como paseo de un día en verano: llegas con el calor, todo lo bueno de Cayo Hueso pasa al atardecer, y el regreso de noche es largo.',
+  link:'https://www.fla-keys.com/key-west/'}
+];
+
+function renderEsc(){
+  var items=(typeof MM_ESC!=='undefined')?MM_ESC:[];
+  if(!items.length) return '';
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var cards=items.map(function(w){
+    var nm=ES&&w.name_es?w.name_es:w.name;
+    return '<div class="wtr-card esc-card" style="--wtr-ac:'+w.ac+'" onclick="openWaterModal(\''+w.id+'\')">'
+      +'<div class="wtr-photo" style="background-image:url('+w.photo+')"></div>'
+      +'<div class="wtr-fade"></div>'
+      +'<div class="wtr-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+w.ico+'</svg></div>'
+      +'<div class="wtr-info">'
+        +'<div class="wtr-cat">'+(ES&&w.cat_es?w.cat_es:w.cat)+'</div>'
+        +'<div class="wtr-name">'+nm+'</div>'
+        +'<div class="wtr-where">'+(ES&&w.where_es?w.where_es:w.where)+'</div>'
+        +'<div class="wtr-price">'+(ES&&w.price_es?w.price_es:w.price)+'</div>'
+      +'</div>'
+    +'</div>';
+  }).join('');
+  var note = ES
+    ? 'Para Bahamas necesitas pasaporte vigente, siempre — en ferry, en avión y en crucero. Y ojo: el ferry y varios cruceros salen de Fort Lauderdale, no de Miami.'
+    : 'A valid passport is required for the Bahamas — by ferry, by plane and by cruise, no exceptions. And note the ferry and several cruises leave from Fort Lauderdale, not Miami.';
+  return '<section class="sec fade" id="sec-esc">'+sHdr('esc')
+    +'<div class="h-row" id="esc-hrow">'+cards+'</div>'
+    +'<div class="wtr-note esc-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;flex-shrink:0;margin-top:1px;opacity:.8"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/></svg><span>'+note+'</span></div>'
+    +'</section>';
+}
 function renderLux(){
   var items=(typeof MM_LUX!=='undefined')?MM_LUX:[];
   if(!items.length) return '';
@@ -7034,7 +7230,7 @@ function build(){
   // zone bar
   var juneTopEl=document.getElementById('juneTop');
   if(juneTopEl){juneTopEl.innerHTML=renderJune()+renderMonth();}
-  document.getElementById('app').innerHTML=renderRest()+renderHotels()+renderBeach()+renderNight()+(window.renderMiamiPast?window.renderMiamiPast():'')+renderMuseum()+renderConcert()+renderTheater()+renderStad()+renderMiamiInsiders()+renderPlace()+renderParks()+renderShop()+renderArt()+renderCoffee()+renderKids()+renderWater()+renderLux()+renderDayTrips()+renderAirports()+renderTransport()+renderEvents()+renderDrones()+renderUGC();
+  document.getElementById('app').innerHTML=renderRest()+renderHotels()+renderBeach()+renderNight()+(window.renderMiamiPast?window.renderMiamiPast():'')+renderMuseum()+renderConcert()+renderTheater()+renderStad()+renderMiamiInsiders()+renderPlace()+renderParks()+renderShop()+renderArt()+renderCoffee()+renderKids()+renderWater()+renderLux()+renderEsc()+renderDayTrips()+renderAirports()+renderTransport()+renderEvents()+renderDrones()+renderUGC();
   // Favoritos section (rendered separately, before app content)
   var favsEl = document.getElementById('sec-favs');
   if(favsEl) renderFavsSection();
@@ -7352,19 +7548,63 @@ document.addEventListener("DOMContentLoaded",function(){
       out.push({tgEN:'HEADS UP',tgES:'OJO HOY',ic:'rain',go:'sec-museum',
         en:S.rain+'% chance of rain — good museum day',es:S.rain+'% de lluvia — buen día de museos'});
     }
-    // this week's events — read from what renderJune already put in the DOM
-    try{
-      var cards=document.querySelectorAll('#twxMainPanel .twx-card');
-      var picks=[];
-      for(var c=0;c<cards.length && picks.length<3;c++){
-        var nEl=cards[c].querySelector('.twx-name');
-        if(nEl && nEl.textContent.trim()) picks.push(nEl.textContent.trim());
-      }
-      picks.forEach(function(nm){
-        out.push({tgEN:'THIS WEEK',tgES:'ESTA SEMANA',ic:'cal',go:'sec-june',
-          en:'This week: '+nm, es:'Esta semana: '+nm});
-      });
-    }catch(e){}
+    // events straight from the rendered DOM — today first, then week, then month
+    var MONS=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
+    var MONE=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    function readPanel(sel){
+      var res=[];
+      try{
+        document.querySelectorAll(sel+' .twx-card').forEach(function(c){
+          var nEl=c.querySelector('.twx-name');
+          if(!nEl||!nEl.textContent.trim()) return;
+          var dEl=c.querySelector('.twx-day'), mEl=c.querySelector('.twx-mon');
+          res.push({name:nEl.textContent.trim(),
+                    day:dEl?dEl.textContent.trim():'',
+                    mon:mEl?mEl.textContent.trim().toUpperCase():''});
+        });
+      }catch(e){}
+      return res;
+    }
+    var now=new Date(), tD=now.getDate(), tM=now.getMonth();
+    function isToday(e){
+      if(!e.day) return false;
+      // date chips can read "8" or "7–9"; treat a range that contains today as today
+      var nums=(e.day.match(/\d+/g)||[]).map(Number);
+      // only a single exact date counts as "today" — long ranges stay week/month items
+      if(nums.length!==1 || nums[0]!==tD) return false;
+      if(!e.mon) return true;
+      var mi=MONS.indexOf(e.mon); if(mi<0) mi=MONE.indexOf(e.mon);
+      return mi<0 ? true : mi===tM;
+    }
+    var week=readPanel('#twxMainPanel'), month=readPanel('#twxMonthPanel');
+    var today=week.filter(isToday).concat(month.filter(isToday));
+    var seen={};
+    // TODAY first — highest priority
+    today.slice(0,2).forEach(function(e){
+      if(seen[e.name]) return; seen[e.name]=1;
+      out.unshift({tgEN:'TODAY',tgES:'HOY',ic:'cal',go:'sec-june',
+        en:'Today: '+e.name, es:'Hoy: '+e.name});
+    });
+    week.forEach(function(e){
+      if(out.length>9 || seen[e.name]) return;
+      if(week.indexOf(e)>3) return;
+      seen[e.name]=1;
+      out.push({tgEN:'THIS WEEK',tgES:'ESTA SEMANA',ic:'cal',go:'sec-june',
+        en:'This week: '+e.name, es:'Esta semana: '+e.name});
+    });
+    month.slice(0,3).forEach(function(e){
+      if(seen[e.name]) return; seen[e.name]=1;
+      out.push({tgEN:'THIS MONTH',tgES:'ESTE MES',ic:'cal',go:'sec-month',
+        en:'This month: '+e.name, es:'Este mes: '+e.name});
+    });
+    // monetized nudges — the sections that actually earn
+    var money=[
+      {tgEN:'ON THE WATER',tgES:'EN EL AGUA',ic:'wave',go:'sec-water',
+       en:'Charters, boats & snorkeling — book ahead', es:'Charters, botes y snorkel — reserva con tiempo'},
+      {tgEN:'THE HIGH LIFE',tgES:'LA BUENA VIDA',ic:'sun',go:'sec-lux',
+       en:'Yachts, helicopters & spa days', es:'Yates, helicópteros y días de spa'}
+    ];
+    out.push(money[(new Date().getHours())%2]);
     return out;
   }
   function deck(){
