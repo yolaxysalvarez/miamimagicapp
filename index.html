@@ -191,8 +191,8 @@ button,a{cursor:pointer;}
 .sec{padding:20px 28px 4px;max-width:1380px;width:100%;margin:0 auto;box-sizing:border-box;}
 .sec-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;}
 .sec-tt{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:700;line-height:1.1;}
-.sec-tt small{display:flex;align-items:center;gap:8px;font-size:.86rem;font-family:'DM Sans',sans-serif;font-weight:800;color:var(--teal);letter-spacing:3px;text-transform:uppercase;margin-bottom:6px;text-shadow:0 0 14px rgba(0,201,177,.45);}
-.sec-tt small::before{content:'';width:26px;height:3px;border-radius:3px;background:var(--teal);box-shadow:0 0 8px rgba(0,201,177,.6);flex-shrink:0;}
+.sec-tt small{display:flex;align-items:center;gap:10px;font-size:.99rem;font-family:'DM Sans',sans-serif;font-weight:800;color:var(--teal);letter-spacing:3.4px;text-transform:uppercase;margin-bottom:9px;text-shadow:0 0 18px rgba(0,201,177,.6);}
+.sec-tt small::before{content:'';width:34px;height:4px;border-radius:3px;background:var(--teal);box-shadow:0 0 12px rgba(0,201,177,.75);flex-shrink:0;}
 @keyframes pulse-dot-coral{
   0%{box-shadow:0 0 0 0 rgba(255,77,53,.55);}
   70%{box-shadow:0 0 0 6px rgba(255,77,53,0);}
@@ -821,6 +821,7 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 .priv-p{font:500 .84rem/1.72 'DM Sans',sans-serif;color:#4a4a4a;margin:0;}
 [data-theme="dark"] .priv-p{color:rgba(255,255,255,.7);}
 .priv-p a{color:#FF4D35;font-weight:700;}
+.hcat-tile{--rc-ac:#FF8A78;}
 .promo-tag{display:inline-block;margin-left:6px;padding:2px 6px;border-radius:4px;background:rgba(255,255,255,.16);font-size:.52rem;letter-spacing:.08em;vertical-align:1px;}
 .mm-spice-banner.promo-paid{outline:1px solid rgba(255,209,102,.4);}
 .evs-wrap{margin-top:14px;padding:14px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);}
@@ -1084,6 +1085,8 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 /* Tighter section headers on mobile */
 @media(max-width:899px){
   .sec-tt{font-size:1.2rem !important;}
+  .sec-tt small{font-size:.87rem;letter-spacing:2.6px;}
+  .sec-tt small::before{width:28px;}
   .sec{padding:18px 14px 12px !important;}
   .h-row{padding:6px 16px 16px !important;gap:13px !important;}
   .h-row>*{flex:0 0 188px !important;width:188px !important;min-width:188px !important;border-radius:16px !important;}
@@ -5038,6 +5041,34 @@ function openConcertModal(id,link,btnLabel){
   document.getElementById('modalOv').classList.add('open');
 }
 function closeModal(){document.getElementById('modalOv').classList.remove('open');}
+/* Scroll anchor: opening a modal locks the page and closing it used to land the
+   user hundreds of pixels away (she reported being thrown to the end of the app).
+   One observer per overlay restores the exact position for EVERY modal. */
+(function(){
+  var saved=null, ticking=false;
+  function scrollTop(){ return window.pageYOffset||document.documentElement.scrollTop||0; }
+  function watch(id){
+    var el=document.getElementById(id);
+    if(!el) return;
+    new MutationObserver(function(){
+      var open = el.classList.contains('open') || (el.style && el.style.display==='flex');
+      if(open){
+        if(saved===null) saved=scrollTop();
+      } else if(saved!==null){
+        var y=saved; saved=null;
+        if(ticking) return;
+        ticking=true;
+        // restore across the frames the browser uses to unlock scrolling
+        [0,1,60,160].forEach(function(d){
+          setTimeout(function(){ window.scrollTo(0,y); if(d===160) ticking=false; }, d);
+        });
+      }
+    }).observe(el,{attributes:true,attributeFilter:['class','style']});
+  }
+  function boot(){ ['modalOv','mwOv','privOv'].forEach(watch); }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',boot);
+  else boot();
+})();
 
 function openAnnualEventModal(id){
   var list = window.annualEvents || [];
@@ -5312,18 +5343,6 @@ function renderMiamiInsiders(){
       desc_es:'La cuenta de Instagram que captura el alma auténtica de Miami — joyas escondidas, comida local, cultura y todo lo que hace único al condado de Dade.',
       link:'https://www.instagram.com/onlyindade/',
       ico_path:'<path d="M12 22V11"/><path d="M12 11C9 11 6 9 5 6c3-1 6 0 7 3"/><path d="M12 11c3 0 6-2 7-5-3-1-6 0-7 3"/><path d="M12 11c-2 0-4.5-1-6-3 2-1.5 4.5-1 6 1"/><path d="M12 11c2 0 4.5-1 6-3-2-1.5-4.5-1-6 1"/>'
-    },
-    {
-      id:'ins_mayitakeabite',
-      name:'May, It a Bite',
-      handle:'@mayitakeabite',
-      type:'Instagram',
-      cat_en:'Miami Food & Restaurants', cat_es:'Comida & Restaurantes Miami',
-      stats:'2x Miami New Times Best Foodie',
-      desc_en:'Curated Miami restaurant recommendations and food reviews — the perfect foodie counterpart to Only in Dade\'s viral street life. Seen on ABC News.',
-      desc_es:'Recomendaciones curadas de restaurantes y reseñas de comida en Miami — el complemento gastronómico perfecto a la vida viral de Only in Dade. Vista en ABC News.',
-      link:'https://www.instagram.com/mayitakeabite/',
-      ico_path:'<path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>'
     }
   ];
 
@@ -5415,7 +5434,6 @@ function buildRcatTiles(t){
     return '<button class="chip rcat-tile'+(activeFlt===fv?' on':'')+'" data-fv="'+fv+'" style="--rc-ac:'+ac+'">'
       +'<span class="rcat-ico">'+rcatIcon(fv)+'</span>'
       +'<span class="rcat-lbl">'+label+'</span>'
-      +'<span class="rcat-cnt">'+rcatCount(fv)+'</span>'
     +'</button>';
   }).join('');
 }
@@ -5780,6 +5798,85 @@ function affLink(obj){
   }catch(e){ return obj.link; }
 }
 
+var hotelFlt='all';
+var MM_HFLT=[
+ {fv:'all',   en:'All',           es:'Todos',            ac:'#FF4D35'},
+ {fv:'beach', en:'On the sand',   es:'Frente al mar',    ac:'#00A9CE'},
+ {fv:'lux',   en:'Luxury',        es:'Lujo',             ac:'#C9A227'},
+ {fv:'btq',   en:'Boutique',      es:'Boutique',         ac:'#7C5CFF'},
+ {fv:'value', en:'Best value',    es:'Buen precio',      ac:'#2E9E5B'},
+ {fv:'work',  en:'For business',  es:'De negocios',      ac:'#0B6FA4'},
+ {fv:'spa',   en:'Spa & wellness',es:'Spa y bienestar',  ac:'#00C9B1'},
+ {fv:'family',en:'For families',  es:'En familia',       ac:'#E8734A'}
+];
+function hotelPrice(h){
+  try{ var m=(h.price||'').match(/\$\s*([\d,]+)/); return m?parseInt(m[1].replace(/,/g,''),10):null; }catch(e){ return null; }
+}
+function hotelMatch(h,fv){
+  if(fv==='all') return true;
+  var cat=(h.cat||'')+' '+(h.name||'');
+  var addr=(h.addr||'');
+  var p=hotelPrice(h);
+  switch(fv){
+    case 'beach':  return /South Beach|Miami Beach|Mid-Beach|Sunny Isles|Bal Harbour|Surfside|Key Biscayne|Hollywood Beach/i.test(addr);
+    case 'lux':    return (p!==null && p>=450) || /Ultra Luxury|Iconic|Celebrity/i.test(cat);
+    case 'btq':    return /Boutique|Design|Art Deco|Historic/i.test(cat);
+    case 'value':  return /Budget/i.test(cat) || (p!==null && p<=150);
+    case 'work':   return /Business|Urban/i.test(cat) || /Brickell|Downtown|Doral|Airport/i.test(addr);
+    case 'spa':    return /Wellness|Spa|Eco/i.test(cat);
+    case 'family': return /Family|Resort|Classic/i.test(cat);
+  }
+  return true;
+}
+var HCAT_ICONS={
+  all:'<circle cx="12" cy="12" r="8.6"/><path d="M8.6 12h6.8M12 8.6v6.8"/>',
+  beach:'<path d="M12 20.5V11"/><path d="M12 11c-2.6-3.4-6-4.2-8.6-3.4 1.3 3.4 4.7 5.1 8.6 3.4z"/><path d="M12 11c2.6-3.4 6-4.2 8.6-3.4-1.3 3.4-4.7 5.1-8.6 3.4z"/><path d="M3 20.5c1.8 0 1.8-1.2 3.6-1.2s1.8 1.2 3.6 1.2 1.8-1.2 3.6-1.2 1.8 1.2 3.6 1.2"/>',
+  lux:'<path d="M4 9.5h16l-8 11z"/><path d="M4 9.5L7 4.5h10l3 5"/><path d="M9 9.5L12 4.5l3 5"/>',
+  btq:'<path d="M9 4.5h6l-1.2 2.4a2.6 2.6 0 0 1-3.6 0z"/><path d="M9 4.5L5.5 6.8 7 10l1.5-.7V19.5h7V9.3l1.5.7 1.5-3.2L15 4.5"/>',
+  value:'<path d="M20.5 12.5l-8 8-9-9v-8h8z"/><circle cx="8" cy="8" r="1.4"/>',
+  work:'<rect x="3" y="7.5" width="18" height="12" rx="2"/><path d="M9 7.5V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1.5"/><path d="M3 12.5h18"/>',
+  spa:'<path d="M12 20.5c0-4.5 2.8-8 6.5-9.2-1 4.6-3.4 7.6-6.5 9.2z"/><path d="M12 20.5c0-4.5-2.8-8-6.5-9.2 1 4.6 3.4 7.6 6.5 9.2z"/><path d="M12 20.5c-1.4-3.4-1.4-7.6 0-11.5 1.4 3.9 1.4 8.1 0 11.5z"/><path d="M4 20.5h16"/>',
+  family:'<circle cx="8" cy="7.5" r="2.4"/><circle cx="16.5" cy="9" r="1.9"/><path d="M3.5 19.5c0-2.8 2-4.6 4.5-4.6s4.5 1.8 4.5 4.6"/><path d="M14 19.5c0-2.1 1.1-3.5 2.7-3.5 1.4 0 2.5 1 2.8 2.7"/>'
+};
+function hcatIcon(fv){
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+(HCAT_ICONS[fv]||HCAT_ICONS.all)+'</svg>';
+}
+function hcatCount(fv){
+  try{ return zoneFilter(D.hotels).filter(function(h){return hotelMatch(h,fv);}).length; }catch(e){ return 0; }
+}
+function hotelChips(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  return '<div class="chips rcat-rail" id="hChips">'+MM_HFLT.map(function(f){
+    var lbl=ES?f.es:f.en;
+    return '<button class="chip rcat-tile hcat-tile'+(hotelFlt===f.fv?' on':'')+'" data-hf="'+f.fv+'">'
+      +'<span class="rcat-ico">'+hcatIcon(f.fv)+'</span>'
+      +'<span class="rcat-lbl">'+lbl+'</span>'
+    +'</button>';
+  }).join('')+'</div>';
+}
+function applyHotelFilter(){
+  var list=zoneFilter(D.hotels).filter(function(h){return hotelMatch(h,hotelFlt);});
+  var prev=document.getElementById('hotels-preview');
+  var full=document.getElementById('hotels-full');
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  if(prev) prev.innerHTML=list.map(function(h){return hotelCardHOuter(h);}).join('');
+  if(full) full.innerHTML=list.map(function(h){return hotelCardOuter(h);}).join('');
+  var btn=document.getElementById('hotels-toggle-btn');
+  if(btn) btn.textContent = ES ? 'Ver todos ('+list.length+') \u2192' : 'See all '+list.length+' hotels \u2192';
+  var none=document.getElementById('hotels-none');
+  if(none) none.style.display = list.length ? 'none' : 'block';
+
+}
+document.addEventListener('click',function(e){
+  var c=e.target.closest && e.target.closest('#hChips .chip');
+  if(!c) return;
+  var fv=c.dataset.hf;
+  hotelFlt = (hotelFlt===fv && fv!=='all') ? 'all' : fv;
+  document.querySelectorAll('#hChips .chip').forEach(function(x){
+    x.classList.toggle('on', x.dataset.hf===hotelFlt);
+  });
+  applyHotelFilter();
+});
 function renderHotels(){
   var L = typeof lang !== 'undefined' ? lang : 'en';
   var html='<section class="sec fade" id="sec-hotels">';
@@ -5825,10 +5922,14 @@ function renderHotels(){
       +'</div>'
     +'</div>';
   }
+  window.hotelCardOuter=hotelCard; window.hotelCardHOuter=hotelCardH;
+  hotelList = hotelList.filter(function(h){return hotelMatch(h,hotelFlt);});
   var preview = hotelList;
   var rest    = hotelList;
   window._hotelTotal = hotelList.length;
   var totalLbl = L==='es' ? 'Ver todos ('+hotelList.length+') →' : 'See all '+hotelList.length+' hotels →';
+  html+=hotelChips();
+  html+='<div id="hotels-none" style="display:none;padding:22px;text-align:center;font:500 .9rem \'DM Sans\',sans-serif;color:rgba(255,255,255,.5)">'+(L==='es'?'No hay hoteles con ese criterio en esta zona.':'No hotels match that filter in this area.')+'</div>';
   html+='<div class="h-row" id="hotels-preview">';
   preview.forEach(function(h){ html+=hotelCardH(h); });
   html+='</div>';
@@ -6198,9 +6299,23 @@ function twxSection(){
   b.classList.toggle('open', open);
 }
 
+function mmInOverlay(t){
+  try{
+    if(!t||!t.closest) return false;
+    // any modal, sheet, drawer or tour surface — closing one must NOT collapse the section behind it
+    if(t.closest('#mOv,#mwOv,#privOv,#searchPanel,#hmDrawer,.modal,.sheet,.tour-wrap,[role="dialog"]')) return true;
+    // a modal is on screen at all → treat the click as modal business
+    var ids=['mOv','mwOv','privOv'];
+    for(var i=0;i<ids.length;i++){
+      var el=document.getElementById(ids[i]);
+      if(el && getComputedStyle(el).display!=='none') return true;
+    }
+  }catch(e){}
+  return false;
+}
 document.addEventListener('click',function(e){
   var open=document.querySelector('.twx-card.open');
-  if(open && !open.contains(e.target)) open.classList.remove('open');
+  if(open && !open.contains(e.target) && !mmInOverlay(e.target)) open.classList.remove('open');
   // acordeones grandes: tocar fuera los cierra
   [['twxMainPanel','sec-june','twxSection'],
    ['twxMonthPanel','sec-month','twxMonthSection'],
@@ -6208,7 +6323,7 @@ document.addEventListener('click',function(e){
    ['mttPanel','sec-mtt','mttToggle']].forEach(function(cfg){
     var p=document.getElementById(cfg[0]);
     var sec=document.getElementById(cfg[1]);
-    if(p&&sec&&p.classList.contains('open')&&!sec.contains(e.target)){
+    if(p&&sec&&p.classList.contains('open')&&!sec.contains(e.target)&&!mmInOverlay(e.target)){
       try{ window[cfg[2]](); }catch(err){}
     }
   });
@@ -7429,9 +7544,11 @@ function attachListeners(){
     rc.addEventListener('click',function(e){
       var chip=e.target.closest('.chip');
       if(!chip)return;
-      activeFlt=chip.dataset.fv;
-      document.querySelectorAll('#rChips .chip').forEach(function(c){c.classList.remove('on');});
-      chip.classList.add('on');
+      // tapping the active chip again clears the filter
+      activeFlt = (activeFlt===chip.dataset.fv && chip.dataset.fv!=='all') ? 'all' : chip.dataset.fv;
+      document.querySelectorAll('#rChips .chip').forEach(function(c){
+        c.classList.toggle('on', c.dataset.fv===activeFlt);
+      });
       var filtered=zoneFilter(activeFlt==='all'?D.restaurants:D.restaurants.filter(function(r){return r.filter===activeFlt;}));
       var hrow=document.getElementById('rest-hrow');
       var full=document.getElementById('rest-full');
@@ -8666,7 +8783,7 @@ document.addEventListener('click',function(e){
   var inp=document.getElementById('heroSearchInp');
   if(p && p.classList.contains('on') && !p.contains(e.target) && e.target!==inp) mmHideHistory();
 });
-function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #sec-livecams [data-en], #fAffDisc').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';}
+function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';}
 function socApplyLang(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   document.querySelectorAll('#sec-social [data-en], #socPubOv [data-en]').forEach(function(el){
@@ -12532,10 +12649,16 @@ document.addEventListener('keydown', function(e) {
   transition:box-shadow .25s, transform .2s;
 }
 .mtt-bar:hover{box-shadow:0 8px 36px rgba(0,201,177,.22);transform:translateY(-1px);}
+.mtt-era-photo{position:relative;margin:-18px -18px 14px;height:132px;overflow:hidden;border-radius:18px 18px 0 0;background:linear-gradient(140deg,var(--era),#0a1424);}
+.mtt-era-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+.mtt-era-photo.noimg img{display:none;}
+.mtt-era-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,20,36,.05) 40%,rgba(10,20,36,.75) 80%,#0e1b30 100%);}
+.mtt-era{overflow:hidden;}
 .mtt-bar-bg{
   position:absolute;inset:0;
-  background-image:url('fotos/mm-x-14.jpg');
-  background-size:cover;background-position:center 40%;
+  background-color:#123049;
+  background-image:linear-gradient(115deg,rgba(255,77,53,.35),rgba(0,201,177,.25)),url('fotos/mm-x-14.jpg');
+  background-size:cover;background-position:center 40%;background-blend-mode:overlay,normal;
 }
 .mtt-bar-overlay{
   position:absolute;inset:0;
@@ -12611,6 +12734,16 @@ document.addEventListener('keydown', function(e) {
 (function(){
   function isEs(){ return (typeof lang!=="undefined"?lang:"en")==="es"; }
 
+  window.mttGo=function(arr,id){
+    try{
+      var pool=(typeof D!=='undefined'&&D[arr])?D[arr]:null;
+      var obj=pool?pool.find(function(x){return x.id===id;}):null;
+      if(arr==='concerts'&&typeof openConcertModal==='function'){ openConcertModal(id); return; }
+      var type={places:'place',parks:'park',nightlife:'night',museums:'museum',restaurants:'rest',galleries:'gallery',coffee:'coffee'}[arr]||'place';
+      if(obj&&typeof openItemModal==='function'){ openItemModal(obj,type); return; }
+    }catch(e){}
+    if(typeof go==='function') go('sec-map');
+  };
   window.mttToggle=function(){
     var bar=document.getElementById('mttBar');
     var panel=document.getElementById('mttPanel');
@@ -12636,58 +12769,59 @@ document.addEventListener('keydown', function(e) {
       sky:'<path d="M3.5 20h17"/><path d="M5.5 20V11h4v9M13 20V6h4.5v14"/><path d="M7 13.5h1M7 16.5h1M14.8 9h1M14.8 12h1M14.8 15h1"/>'};
     function ico(k){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+IC[k]+'</svg>';}
     var eras=[
-     {yr:e?'Antes de 1566':'Before 1566',c:'#C4956A',ic:'tequesta',
+     {yr:e?'Antes de 1566':'Before 1566',c:'#C4956A',ic:'tequesta',img:'https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?w=800&q=60&auto=format',
       tt:e?'Los Tequesta':'The Tequesta',
       hook:e?'Miami ya era antigua antes de Colón':'Miami was ancient before Columbus',
       tx:e?'Durante 2,000 años los Tequesta vivieron en la desembocadura del río Miami. En 1998, excavadoras en pleno Brickell descubrieron el Miami Circle: un círculo perfecto de huecos tallados en la roca, hoy declarado tesoro nacional.'
           :'For 2,000 years the Tequesta lived at the mouth of the Miami River. In 1998, bulldozers in the middle of Brickell uncovered the Miami Circle: a perfect ring of holes carved into bedrock, now a national treasure.',
       fact:e?'<b>Dato:</b> puedes pararte junto al Miami Circle hoy — está entre los rascacielos de Brickell.':'<b>Fact:</b> you can stand next to the Miami Circle today — right between Brickell\'s skyscrapers.',
-      cta:e?'Vérlo en el mapa':'See it on the map',act:"go('sec-map')"},
-     {yr:'1896',c:'#FFD166',ic:'blossom',
+      cta:e?'Ver la Torre de la Libertad':'See the Freedom Tower',act:"mttGo('places','pl9')"},
+     {yr:'1896',c:'#FFD166',ic:'blossom',img:'https://images.unsplash.com/photo-1557800636-894a64c1696f?w=800&q=60&auto=format',
       tt:e?'La ciudad que fundó una mujer':'The city a woman founded',
       hook:e?'Flores de naranjo en plena helada':'Orange blossoms in a freeze',
       tx:e?'Cuando una helada arrasó los cítricos de Florida, Julia Tuttle envió a Henry Flagler azahares frescos de Miami: aquí no cayó el hielo. Flagler trajo su ferrocarril y 368 personas — un tercio, esclavos liberados — votaron fundar la ciudad. Es la única gran ciudad de EE.UU. fundada por una mujer.'
           :'When a freeze destroyed Florida\'s citrus, Julia Tuttle sent Henry Flagler fresh orange blossoms from Miami: no frost here. Flagler brought his railroad, and 368 people — a third of them freed slaves — voted the city into existence. It remains the only major US city founded by a woman.',
       fact:e?'<b>Dato:</b> a Tuttle la llaman "la Madre de Miami" — y su estatua está en Bayfront Park.':'<b>Fact:</b> Tuttle is called "the Mother of Miami" — her statue stands in Bayfront Park.',
-      cta:e?'Visitar Bayfront':'Visit Bayfront',act:"go('sec-parks')"},
-     {yr:'1926',c:'#00C9B1',ic:'deco',
+      cta:e?'Ver Bayfront Park':'See Bayfront Park',act:"mttGo('concerts','c4')"},
+     {yr:'1926',c:'#00C9B1',ic:'deco',img:'https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=800&q=60&auto=format',
       tt:e?'Huracán, ruina y Art Deco':'Hurricane, ruin & Art Deco',
       hook:e?'De los escombros nació el estilo':'From the rubble, a style was born',
       tx:e?'En plena fiebre inmobiliaria, un huracán categoría 4 arrasó la ciudad y reventó la burbuja. Pero de la reconstrucción nació algo eterno: South Beach se llenó de hoteles Art Deco en tonos pastel. Hoy es la mayor colección del mundo — 800+ edificios salvados por vecinos activistas en los años 80.'
           :'At the height of a real-estate frenzy, a Category 4 hurricane flattened the city and burst the bubble. But the rebuild created something eternal: South Beach filled with pastel Art Deco hotels. Today it\'s the world\'s largest collection — 800+ buildings saved by activist neighbors in the 1980s.',
       fact:e?'<b>Dato:</b> el tour de South Beach de esta app te lleva por lo mejor del distrito Deco.':'<b>Fact:</b> this app\'s South Beach tour walks you through the best of the Deco district.',
-      cta:e?'Hacer el tour Art Deco':'Take the Art Deco tour',act:"startTour('sobe')"},
-     {yr:'1959–1980',c:'#FF4D35',ic:'tower',
+      cta:e?'Ver el Wolfsonian':'See the Wolfsonian',act:"mttGo('museums','m7')"},
+     {yr:'1959–1980',c:'#FF4D35',ic:'tower',img:'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=60&auto=format',
       tt:e?'El exilio cubano':'The Cuban exile',
       hook:e?'La Habana llegó a la Calle Ocho':'Havana arrived on Calle Ocho',
       tx:e?'Tras la revolución cubana, cientos de miles cruzaron el estrecho. La Freedom Tower se volvió "la Ellis Island del sur", procesando a más de 400,000 refugiados. En 1980, el éxodo del Mariel trajo 125,000 más en cinco meses. Miami se transformó para siempre: hoy el español es el idioma de la calle.'
           :'After the Cuban revolution, hundreds of thousands crossed the straits. The Freedom Tower became "the Ellis Island of the South," processing 400,000+ refugees. In 1980, the Mariel boatlift brought 125,000 more in five months. Miami changed forever: Spanish became the language of the street.',
       fact:e?'<b>Dato:</b> el tour de La Pequeña Habana termina con un cafecito en la ventanita de Versailles.':'<b>Fact:</b> the Little Havana tour ends with a cafecito at the Versailles ventanita.',
-      cta:e?'Caminar La Pequeña Habana':'Walk Little Havana',act:"startTour('havana')"},
-     {yr:e?'Años 80':'The 1980s',c:'#E85D9C',ic:'neon',
+      cta:e?'Ver Versailles':'See Versailles',act:"mttGo('restaurants','r01')"},
+     {yr:e?'Años 80':'The 1980s',c:'#E85D9C',ic:'neon',img:'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=60&auto=format',
       tt:'Vice City',
       hook:e?'Neón, vicio y el nacimiento del mito':'Neon, vice & the birth of the myth',
       tx:e?'La década más oscura y más brillante: guerras del narco de día, Miami Vice en la TV de noche. La ciudad que el país daba por perdida se reinventó con neón pastel, arquitectura salvada y una escena artística que explotaría después. El mito de Miami — peligrosa, hermosa, imparable — nació aquí.'
           :'The darkest and brightest decade: drug wars by day, Miami Vice on TV by night. A city the country had written off reinvented itself with pastel neon, rescued architecture and an art scene about to explode. The myth of Miami — dangerous, beautiful, unstoppable — was born here.',
       fact:e?'<b>Dato:</b> los letreros de neón originales de Ocean Drive siguen encendiéndose cada noche.':'<b>Fact:</b> Ocean Drive\'s original neon signs still light up every single night.',
-      cta:e?'Ver la vida nocturna':'See the nightlife',act:"go('sec-night')"},
-     {yr:e?'Hoy':'Today',c:'#4A9EDB',ic:'sky',
+      cta:e?'Ver Ball & Chain':'See Ball & Chain',act:"mttGo('nightlife','n2')"},
+     {yr:e?'Hoy':'Today',c:'#4A9EDB',ic:'sky',img:'https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=800&q=60&auto=format',
       tt:e?'Capital de las Américas':'Capital of the Americas',
       hook:e?'De pantano a skyline en 130 años':'From swamp to skyline in 130 years',
       tx:e?'Wynwood convirtió bodegas en el mayor museo de arte urbano del mundo. Art Basel puso a Miami en el mapa del arte global. Y entre cripto, tech y el efecto Messi, la ciudad vive su mayor boom desde los años 20. 24 millones de visitantes al año — y tú eres uno de ellos.'
           :'Wynwood turned warehouses into the world\'s largest street-art museum. Art Basel put Miami on the global art map. And between crypto, tech and the Messi effect, the city is living its biggest boom since the 1920s. 24 million visitors a year — and you\'re one of them.',
       fact:e?'<b>Dato:</b> más del 70% de los residentes de Miami nacieron fuera de EE.UU. — la ciudad más internacional del país.':'<b>Fact:</b> over 70% of Miami residents were born outside the US — the most international city in the country.',
-      cta:e?'Tour de arte en Wynwood':'Wynwood street-art tour',act:"startTour('wynwood')"}
+      cta:e?'Ver Wynwood Walls':'See Wynwood Walls',act:"mttGo('galleries','art1')"}
     ];
     var cards=eras.map(function(x){
       return '<div class="mtt-era" style="--era:'+x.c+'">'
+        +(x.img?'<div class="mtt-era-photo"><img loading="lazy" src="'+x.img+'" alt="" onerror="this.parentNode.classList.add(\'noimg\')"></div>':'')
         +'<div class="mtt-era-ico">'+ico(x.ic)+'</div>'
         +'<div class="mtt-era-yr">'+x.yr+'</div>'
         +'<div class="mtt-era-tt">'+x.tt+'</div>'
         +'<div class="mtt-era-hook">'+x.hook+'</div>'
         +'<div class="mtt-era-tx">'+x.tx+'</div>'
         +'<div class="mtt-era-fact">'+x.fact+'</div>'
-        +'<button class="mtt-era-cta" onclick="event.stopPropagation();mttToggle();'+x.act+'">'+x.cta
+        +'<button class="mtt-era-cta" onclick="event.stopPropagation();'+x.act+'">'+x.cta
         +' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>'
       +'</div>';
     }).join('');
@@ -13017,27 +13151,8 @@ function showInsiderModal(id){
         {label:'Seguidores', value:'2M'},
         {label:'Siguiendo', value:'3,255'}
       ]
-    },
-    'ins_mayitakeabite': {
-      name: 'May, It a Bite',
-      handle: '@mayitakeabite',
-      cat_en: 'Instagram · Miami Food & Restaurants',
-      cat_es: 'Instagram · Comida & Restaurantes Miami',
-      desc_en: 'Curated Miami restaurant recommendations and honest food reviews — 2x Miami New Times Best Foodie, seen on ABC News. The perfect foodie counterpart to Only in Dade\'s viral street life.',
-      desc_es: 'Recomendaciones curadas de restaurantes de Miami y reseñas honestas — 2 veces Best Foodie de Miami New Times, vista en ABC News. El complemento gastronómico perfecto a la vida viral de Only in Dade.',
-      link: 'https://www.instagram.com/mayitakeabite/',
-      img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=72',
-      stats_en: [
-        {label:'Recognition', value:'2x Best Foodie'},
-        {label:'Seen on', value:'ABC News'},
-        {label:'Focus', value:'Restaurants'}
-      ],
-      stats_es: [
-        {label:'Reconocimiento', value:'2x Best Foodie'},
-        {label:'Visto en', value:'ABC News'},
-        {label:'Enfoque', value:'Restaurantes'}
-      ]
     }
+
   };
   var m = members[id];
   if(!m) return;
