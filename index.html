@@ -216,7 +216,7 @@ button,a{cursor:pointer;}
 .h-row::-webkit-scrollbar{display:none;}
 .h-row>*{flex:0 0 260px!important;width:260px!important;min-width:260px!important;scroll-snap-align:start;box-sizing:border-box;border-radius:20px!important;overflow:hidden;transition:transform .28s cubic-bezier(.34,1.4,.64,1),box-shadow .28s ease!important;will-change:transform;}
 .h-row>*:hover{transform:translateY(-7px) scale(1.025)!important;box-shadow:0 20px 48px rgba(0,0,0,.13),0 0 0 1.5px rgba(255,77,53,.18),0 8px 24px rgba(255,77,53,.12)!important;}
-.h-row .rcard-img{height:165px!important;border-radius:0!important;}
+.h-row .rcard-img{aspect-ratio:1/1;height:auto!important;border-radius:0!important;}
 .h-row .vcard-img{height:148px!important;border-radius:0!important;}
 .h-row .bcard{min-height:210px!important;}
 .h-row .ncard-img{height:148px!important;border-radius:0!important;}
@@ -224,7 +224,7 @@ button,a{cursor:pointer;}
 .h-row .vname,.h-row .stname,.h-row .nname,.h-row .rcard-name{font-size:.88rem!important;white-space:normal!important;}
 .h-row .vdesc,.h-row .rcard-desc{-webkit-line-clamp:2!important;font-size:.73rem!important;}
 .h-row .rcard-feat{flex:0 0 270px!important;width:270px!important;display:block!important;}
-.h-row .rcard-feat .rcard-img{height:158px!important;border-radius:20px 20px 0 0!important;}
+.h-row .rcard-feat .rcard-img{aspect-ratio:1/1;height:auto!important;border-radius:20px 20px 0 0!important;}
 /* Ver todos button */
 .ver-todos-wrap{padding:0 22px 8px;text-align:right;}
 .ver-todos-btn{background:none;border:none;color:#FF4D35;font-size:1rem;font-weight:800;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:.2px;padding:6px 4px;}
@@ -248,6 +248,8 @@ button,a{cursor:pointer;}
   .full-grid-stad{grid-template-columns:1fr 1fr!important;}
 }
 .rest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
+.rcard-img{flex:0 0 auto;}
+.rcard-img{aspect-ratio:1/1!important;height:auto!important;min-height:unset!important;}
 .rcard{position:relative;background:#fff;border-radius:18px;overflow:hidden;cursor:pointer;transition:transform .22s cubic-bezier(.34,1.3,.64,1),box-shadow .22s;box-shadow:0 2px 10px rgba(0,0,0,.06);display:flex;flex-direction:column;flex-shrink:0;}
 .rcard:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(8,15,30,.13);}
 .rcard:active{transform:scale(.97);}
@@ -270,8 +272,8 @@ button,a{cursor:pointer;}
   background:linear-gradient(135deg,var(--coral),var(--coral2));
   color:#fff;
 }
-.rrating{position:absolute;bottom:10px;left:10px;background:rgba(8,15,30,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:50px;padding:4px 8px;font-size:.68rem;font-weight:700;color:#FFD166;display:flex;align-items:center;gap:3px;z-index:2;}
-.rstar{color:#FFD166;}
+.rrating{position:absolute;bottom:11px;left:11px;background:rgba(8,15,30,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,209,102,.45);border-radius:50px;padding:6px 12px;font-size:.92rem;font-weight:800;color:#FFD166;display:flex;align-items:center;gap:5px;z-index:2;box-shadow:0 3px 12px rgba(0,0,0,.35);letter-spacing:.02em;}
+.rstar{color:#FFD166;font-size:1em;filter:drop-shadow(0 0 5px rgba(255,209,102,.6));}
 /* ── PREMIUM MINIMAL CARDS ── */
 /* Restaurant cards */
 .rcard-body{padding:10px 12px 12px;}
@@ -320,7 +322,7 @@ button,a{cursor:pointer;}
 .rcardh-metaitem svg{width:12px;height:12px;flex-shrink:0;color:var(--teal);}
 .rtags{display:none !important;}
 /* Rating stays */
-.rrating{font-size:.65rem;}
+.rrating{font-size:.86rem;padding:5px 10px;}
 /* Name overlay on image for compact style */
 .rcard-name-ov-txt{font-size:.78rem;}
 
@@ -340,6 +342,22 @@ button,a{cursor:pointer;}
 .ncard-body{padding:12px;}
 .nname{font-size:.9rem;}
 
+/* ── Full-grid cards: readable outside, worth tapping ── */
+.card-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:5px 0 2px;flex-wrap:wrap;}
+.card-price{font:800 .95rem 'DM Sans',sans-serif;color:#08172E;letter-spacing:-.01em;}
+[data-theme="dark"] .card-price{color:#fff;}
+.card-stars{font:700 .82rem 'DM Sans',sans-serif;color:#C9A227;letter-spacing:.5px;}
+.hotel-grid .rcard-name,.full-grid-rest .rcard-name,.hotel-grid .hotel-name{font-size:1.02rem!important;line-height:1.3;font-weight:800;}
+.hotel-grid .rcard-cat,.full-grid-rest .rcard-cat{font-size:.76rem!important;letter-spacing:.06em;font-weight:700;opacity:.85;}
+.hotel-grid .card-price,.full-grid-rest .card-price{font-size:1rem;}
+.hotel-grid .maps-btn,.full-grid-rest .maps-btn{font-size:.78rem;}
+@media(max-width:900px){
+  .hotel-grid .rcard-name,.full-grid-rest .rcard-name{font-size:1.12rem!important;}
+  .hotel-grid .rcard-cat,.full-grid-rest .rcard-cat{font-size:.8rem!important;}
+  .card-price{font-size:1.08rem;}
+  .card-stars{font-size:.9rem;}
+  .hotel-grid .hotel-body,.full-grid-rest .rcard-body{padding:14px 16px 16px!important;}
+}
 /* Hotel cards */
 .hotel-desc{display:none !important;}
 .hotel-addr{display:none !important;}
@@ -822,6 +840,19 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 [data-theme="dark"] .priv-p{color:rgba(255,255,255,.7);}
 .priv-p a{color:#FF4D35;font-weight:700;}
 .hcat-tile{--rc-ac:#FF8A78;}
+.mm-less-fab{position:fixed;left:50%;transform:translateX(-50%) translateY(24px);bottom:96px;z-index:9500;display:none;align-items:center;gap:7px;padding:12px 22px;border:none;border-radius:50px;background:linear-gradient(135deg,#08172E,#12304a);color:#fff;font:800 .86rem 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.45);opacity:0;transition:opacity .22s ease,transform .22s ease;}
+.mm-less-fab.on{display:flex;opacity:1;transform:translateX(-50%) translateY(0);}
+.mm-less-fab svg{width:15px;height:15px;}
+@media(min-width:900px){.mm-less-fab{bottom:34px;}}
+.mm-ai-price{margin-bottom:12px;color:#fff;}
+.mm-ai-price b{font:800 2rem 'DM Sans',sans-serif;letter-spacing:-.02em;}
+.mm-ai-price span{font:600 .82rem 'DM Sans',sans-serif;color:rgba(255,255,255,.6);margin-left:4px;}
+.mm-ai-gate-f{margin-top:9px;font:500 .7rem 'DM Sans',sans-serif;color:rgba(255,255,255,.45);}
+.mm-ai-gate{margin:14px 0;padding:18px;border-radius:18px;background:linear-gradient(140deg,rgba(255,77,53,.14),rgba(201,162,39,.12));border:1px solid rgba(255,77,53,.34);text-align:center;}
+.mm-ai-gate-t{font:800 1rem 'DM Sans',sans-serif;color:#FF4D35;margin-bottom:6px;}
+.mm-ai-gate-s{font:500 .84rem/1.6 'DM Sans',sans-serif;color:rgba(255,255,255,.78);margin-bottom:13px;}
+.mm-ai-gate-btn{background:linear-gradient(135deg,#FF4D35,#ff6f5c);border:none;color:#fff;font:800 .88rem 'DM Sans',sans-serif;padding:12px 26px;border-radius:50px;cursor:pointer;box-shadow:0 6px 18px rgba(255,77,53,.4);}
+.mm-gate-note{margin:0 0 14px;padding:11px 14px;border-radius:12px;background:rgba(255,77,53,.1);border:1px solid rgba(255,77,53,.3);font:600 .82rem/1.55 'DM Sans',sans-serif;color:#FF4D35;}
 .promo-tag{display:inline-block;margin-left:6px;padding:2px 6px;border-radius:4px;background:rgba(255,255,255,.16);font-size:.52rem;letter-spacing:.08em;vertical-align:1px;}
 .mm-spice-banner.promo-paid{outline:1px solid rgba(255,209,102,.4);}
 .evs-wrap{margin-top:14px;padding:14px;border-radius:16px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);}
@@ -1027,7 +1058,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 @keyframes up{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 @keyframes flt{0%,100%{transform:translateY(0) rotate(0);}33%{transform:translateY(-15px) rotate(4deg);}66%{transform:translateY(-6px) rotate(-3deg);}}
 @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-@media(max-width:900px){.sidebar{top:32px!important;}.hero{padding:calc(44px + 76px) 22px 130px!important;min-height:100svh!important;}.logo-wrap{font-size:2.2rem!important;margin-bottom:8px!important;}.hero-eye{margin-bottom:10px!important;animation:none!important;}.hero h1{margin-bottom:10px!important;animation:none!important;font-size:clamp(2rem,8vw,3rem)!important;}.hero-sub{margin-bottom:14px!important;animation:none!important;font-size:.88rem!important;max-width:100%!important;}.hero-btns{animation:none!important;gap:8px!important;}.hero-stats{margin-top:10px!important;animation:none!important;padding-top:14px!important;gap:12px!important;flex-wrap:nowrap!important;overflow-x:auto!important;}.hstat-n{font-size:1.2rem!important;}.hstat-l{font-size:.6rem!important;}.flt{display:none!important;}.fade{opacity:1;transform:none;}.fade.vis{opacity:1;transform:none;}.rest-grid{grid-template-columns:1fr;}.beach-grid{grid-template-columns:1fr;}.venue-grid{grid-template-columns:1fr;}:root{--sidebar:0px;}.sidebar{transform:translateX(-260px);width:260px;transition:transform .3s;}.sidebar.open{transform:translateX(0);}.mob-btn{display:flex;}.mob-ov{display:block;opacity:0;pointer-events:none;transition:opacity .3s;}.mob-ov.open{opacity:1;pointer-events:all;}.main{margin-left:0;}.hero{padding:calc(50px + 32px) 22px 160px;}.search-zone{padding:34px 22px 0;}.sec{padding:20px 16px;}#sec-favs{padding:0 22px!important;}.money-sec{padding:60px 22px;}footer{padding:44px 22px 22px;}.footer-inner{grid-template-columns:1fr 1fr;gap:28px 18px;}.footer-inner>div:first-child{grid-column:1/-1;}.rev-grid{grid-template-columns:1fr;}.rcard-feat{grid-template-columns:1fr;}.rcard-feat .rcard-img{height:180px;}.f-bottom{flex-direction:column;text-align:center;}}
+@media(max-width:900px){.sidebar{top:32px!important;}.hero{padding:calc(44px + 76px) 22px 130px!important;min-height:100svh!important;}.logo-wrap{font-size:2.2rem!important;margin-bottom:8px!important;}.hero-eye{margin-bottom:10px!important;animation:none!important;}.hero h1{margin-bottom:10px!important;animation:none!important;font-size:clamp(2rem,8vw,3rem)!important;}.hero-sub{margin-bottom:14px!important;animation:none!important;font-size:.88rem!important;max-width:100%!important;}.hero-btns{animation:none!important;gap:8px!important;}.hero-stats{margin-top:10px!important;animation:none!important;padding-top:14px!important;gap:12px!important;flex-wrap:nowrap!important;overflow-x:auto!important;}.hstat-n{font-size:1.2rem!important;}.hstat-l{font-size:.6rem!important;}.flt{display:none!important;}.fade{opacity:1;transform:none;}.fade.vis{opacity:1;transform:none;}.rest-grid{grid-template-columns:1fr;}.beach-grid{grid-template-columns:1fr;}.venue-grid{grid-template-columns:1fr;}:root{--sidebar:0px;}.sidebar{transform:translateX(-260px);width:260px;transition:transform .3s;}.sidebar.open{transform:translateX(0);}.mob-btn{display:flex;}.mob-ov{display:block;opacity:0;pointer-events:none;transition:opacity .3s;}.mob-ov.open{opacity:1;pointer-events:all;}.main{margin-left:0;}.hero{padding:calc(50px + 32px) 22px 160px;}.search-zone{padding:34px 22px 0;}.sec{padding:20px 16px;}#sec-favs{padding:0 22px!important;}.money-sec{padding:60px 22px;}footer{padding:44px 22px 22px;}.footer-inner{grid-template-columns:1fr 1fr;gap:28px 18px;}.footer-inner>div:first-child{grid-column:1/-1;}.rev-grid{grid-template-columns:1fr;}.rcard-feat{grid-template-columns:1fr;}.rcard-feat .rcard-img{aspect-ratio:1/1;height:auto;}.f-bottom{flex-direction:column;text-align:center;}}
 
 /* ── BIZ TOPBAR ── */
 
@@ -1043,7 +1074,6 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 
 /* ══ UNIFORM CARD SIZE — match june-card ══ */
 /* Image height: 160px across all card types */
-.rcard-img,
 .vcard-img,
 .hotel-img,
 .ncard-img,
@@ -1068,7 +1098,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 
 /* Disable rcard-feat — all same size */
 .rcard-feat { display:block !important; grid-template-columns:none !important; }
-.rcard-feat .rcard-img  { height:160px !important; min-height:unset !important; border-radius:20px 20px 0 0 !important; }
+.rcard-feat .rcard-img  { aspect-ratio:1/1 !important; height:auto !important; min-height:unset !important; border-radius:20px 20px 0 0 !important; }
 .rcard-feat .rcard-body { padding:10px 12px 12px !important; display:block !important; }
 .rcard-feat .rcard-name { font-size:.92rem !important; margin-bottom:2px !important; }
 
@@ -1698,6 +1728,14 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
+@media(max-width:900px){
+  .hotel-grid{grid-template-columns:1fr!important;gap:16px;padding:0 4px;}
+  .hotel-grid .hotel-card{width:100%;}
+  .hotel-grid .hotel-img{aspect-ratio:1/1;height:auto!important;}
+}
+@media(min-width:901px) and (max-width:1200px){
+  .hotel-grid{grid-template-columns:repeat(2,1fr);}
+}
 .hotel-card {
   background: #fff;
   border-radius: 18px;
@@ -2244,15 +2282,15 @@ body{padding-bottom:0;}
   .rest-grid{grid-template-columns:1fr 1fr!important;}
   .rcard-feat{grid-template-columns:1fr!important;}
   .rcard-desc{display:none;}
-  .rcard-img{height:110px;}
+  .rcard-img{aspect-ratio:1/1;height:auto;}
   .rcard-body{padding:10px 12px;}
   .rcard-name{font-size:.85rem;}
   .rcard-meta{font-size:.72rem;}
   /* Hotels: 2-row preview scroll on mobile */
-  #hotels-preview{grid-template-columns:repeat(6,175px)!important;overflow-x:auto;scrollbar-width:none;padding-bottom:8px;display:flex!important;flex-wrap:nowrap;gap:12px;}
+  #hotels-preview:not([style*="display: none"]){grid-template-columns:repeat(6,175px)!important;overflow-x:auto;scrollbar-width:none;padding-bottom:8px;display:flex!important;flex-wrap:nowrap;gap:12px;}
   #hotels-preview::-webkit-scrollbar{display:none;}
   #hotels-preview .hotel-card{min-width:175px;flex:0 0 175px;}
-  #hotels-full{grid-template-columns:repeat(2,1fr)!important;overflow-x:visible;}
+  #hotels-full{grid-template-columns:1fr!important;overflow-x:visible;}
   .hotel-desc{display:none;}
   /* Transport mobile */
   .tcard-bar{padding:12px;}
@@ -5899,8 +5937,10 @@ function renderHotels(){
     html += '<button class="trip-card-btn'+(isSaved?' saved':'')+'" onclick="event.stopPropagation();addToTrip(&quot;'+h.id+'&quot;,&quot;'+safeName+'&quot;,&quot;hotel&quot;)">'+(isSaved?'✓':'+ Trip')+'</button>';
     html += '</div>';
     html += '<div class="hotel-body" style="padding:10px 12px 12px;background:#fff;flex:1;display:flex;flex-direction:column;">';
-    html += '<div class="rcard-cat">'+h.cat+'</div>';
+    var hArea=(h.addr||'').split(',').slice(-1)[0].trim();
+    html += '<div class="rcard-cat">'+(h.cat||'').split('·')[0].trim()+(hArea?' · '+hArea:'')+'</div>';
     html += '<div class="rcard-name">'+h.name+'</div>';
+    if(h.price||hStars) html += '<div class="card-meta">'+(h.price?'<span class="card-price">'+h.price+'</span>':'')+(hStars?'<span class="card-stars">'+hStars+'</span>':'')+'</div>';
     html += '<div class="rcard-actions"><a class="maps-btn" href="'+mapsUrl+'" target="_blank" onclick="event.stopPropagation()">'+miSvg('pin')+' Maps</a></div>';
     html += '</div></div>';
     return html;
@@ -7573,23 +7613,64 @@ function toggleMore(id, btn){
     btn.textContent=(L==='es'?'Ver menos':'See less')+' ↑';
   }
 }
+/* Floating "show less" — closing a long list without scrolling back up.
+   Works for every section that uses a full grid. */
+var _mmOpenGrid=null;
+function mmShowLessFab(gridId, closeFn, label){
+  _mmOpenGrid={id:gridId, close:closeFn};
+  var f=document.getElementById('mmLessFab');
+  if(!f){
+    f=document.createElement('button');
+    f.id='mmLessFab';
+    f.className='mm-less-fab';
+    f.onclick=function(){
+      var g=_mmOpenGrid;
+      if(!g) return;
+      var sec=document.getElementById(g.id);
+      sec=sec?sec.closest('section'):null;
+      try{ g.close(); }catch(e){}
+      if(sec) sec.scrollIntoView({behavior:'smooth',block:'start'});
+      mmHideLessFab();
+    };
+    document.body.appendChild(f);
+  }
+  f.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg><span>'+label+'</span>';
+  f.classList.add('on');
+}
+function mmHideLessFab(){
+  _mmOpenGrid=null;
+  var f=document.getElementById('mmLessFab');
+  if(f) f.classList.remove('on');
+}
 function toggleHotelsGrid(){
   var L=typeof lang!=="undefined"?lang:"en";
   var preview=document.getElementById("hotels-preview");
   var full=document.getElementById("hotels-full");
   var btn=document.getElementById("hotels-toggle-btn");
   var isOpen=full.style.display!=="none";
+  var chips=document.getElementById("hChips");
   if(isOpen){
     full.style.display="none";
+    if(preview) preview.style.display="";
+    mmHideLessFab();
     btn.textContent=(L==="es"?"Ver todos ("+window._hotelTotal+") →":"See all "+window._hotelTotal+" hotels →");
   } else {
     full.style.display="grid";
+    if(preview) preview.style.display="none";   // one list at a time
     btn.textContent=(L==="es"?"Ver menos ↑":"Show less ↑");
+    mmShowLessFab("hotels-full", toggleHotelsGrid, (L==="es"?"Ver menos":"Show less"));
+    try{ if(chips) chips.scrollIntoView({behavior:"smooth",block:"start"}); }catch(e){}
   }
 }
 function toggleFullGrid(fullId, hrowId, btn){
   var full=document.getElementById(fullId);
   var hrow=document.getElementById(hrowId);
+  setTimeout(function(){
+    var L=(typeof lang!=='undefined'?lang:'en');
+    if(full && getComputedStyle(full).display!=='none'){
+      mmShowLessFab(fullId, function(){ toggleFullGrid(fullId,hrowId,btn); }, (L==='es'?'Ver menos':'Show less'));
+    } else { mmHideLessFab(); }
+  },60);
   var L=typeof lang!=='undefined'?lang:'en';
   var isOpen=full.style.display==='grid';
   if(isOpen){
@@ -8329,7 +8410,110 @@ function doLogin(){
   if(email&&pass){
     localStorage.setItem('mm_subscribed',email.value);
     closeSignup();
+    try{ mmResumePremium(); }catch(e){}
   }
+}
+/* ── PREMIUM GATE ──
+   Nobody pays without an account first, so the purchase is tied to a person
+   and survives a new phone. mmGoPremium() is the single entry point every
+   premium button must call. */
+function mmHasAccount(){
+  try{ return !!(localStorage.getItem('mm_subscribed')||'').trim(); }catch(e){ return false; }
+}
+function mmGoPremium(plan){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  try{ localStorage.setItem('mm_premium_intent', plan||'premium'); }catch(e){}
+  if(!mmHasAccount()){
+    try{ if(typeof closeAccount==='function') closeAccount(); }catch(e){}
+    if(typeof openSignup==='function'){
+      openSignup();
+      setTimeout(function(){
+        var box=document.getElementById('signupNotice');
+        if(!box){
+          var host=document.getElementById('su-form')||document.getElementById('signupBox');
+          if(host){
+            box=document.createElement('div');
+            box.id='signupNotice';
+            box.className='mm-gate-note';
+            host.insertBefore(box, host.firstChild);
+          }
+        }
+        if(box) box.textContent = ES
+          ? 'Crea tu cuenta gratis para continuar — así tu suscripción queda guardada y la recuperas en cualquier dispositivo.'
+          : 'Create your free account to continue — this keeps your subscription tied to you and available on any device.';
+      },120);
+    }
+    return false;
+  }
+  mmPremiumCheckout(plan);
+  return true;
+}
+var MM_STRIPE_LINK='https://buy.stripe.com/5kQbJ00W39TybWrbega3u02';
+function mmPremiumCheckout(plan){
+  var email='';
+  try{ email=localStorage.getItem('mm_subscribed')||''; }catch(e){}
+  try{ localStorage.setItem('mm_premium_pending','1'); }catch(e){}
+  // Prefill the buyer's email so the Stripe customer matches the app account
+  var url=MM_STRIPE_LINK+(email?('?prefilled_email='+encodeURIComponent(email)):'');
+  window.open(url,'_blank','noopener');
+  mmPremiumPendingUI();
+}
+/* After returning from Stripe, offer a one-tap confirm so the app unlocks.
+   NOTE: this trusts the user. It is fine at $4.99 to avoid blocking real
+   payers, but the durable fix is a Stripe webhook writing to Supabase and the
+   app checking subscription status by email on load. */
+function mmPremiumPendingUI(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var box=document.getElementById('aiMessages');
+  if(!box) return;
+  var old=document.getElementById('mmPendingCard'); if(old) old.remove();
+  var d=document.createElement('div');
+  d.id='mmPendingCard';
+  d.className='mm-ai-gate';
+  d.innerHTML='<div class="mm-ai-gate-t">'+(ES?'Termina tu pago en la pestaña de Stripe':'Finish your payment in the Stripe tab')+'</div>'
+    +'<div class="mm-ai-gate-s">'+(ES?'Cuando lo completes, vuelve aquí y toca el botón para activar tu Premium.':'Once it is done, come back here and tap the button to activate Premium.')+'</div>'
+    +'<button class="mm-ai-gate-btn" onclick="mmConfirmPaid()">'+(ES?'Ya pagué · Activar':'I paid · Activate')+'</button>';
+  box.appendChild(d);
+  box.scrollTop=box.scrollHeight;
+}
+function mmConfirmPaid(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  mmUnlockPremium();
+  try{ localStorage.removeItem('mm_premium_pending'); }catch(e){}
+  var c=document.getElementById('mmPendingCard'); if(c) c.remove();
+  var box=document.getElementById('aiMessages');
+  if(box){
+    var d=document.createElement('div');
+    d.className='mm-ai-gate';
+    d.innerHTML='<div class="mm-ai-gate-t">'+(ES?'¡Premium activado!':'Premium activated!')+'</div>'
+      +'<div class="mm-ai-gate-s">'+(ES?'Pregunta lo que quieras, sin límite.':'Ask anything you want, no limits.')+'</div>';
+    box.appendChild(d);
+    box.scrollTop=box.scrollHeight;
+  }
+}
+function mmPremiumCheckoutLegacy(plan){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var email='';
+  try{ email=localStorage.getItem('mm_subscribed')||''; }catch(e){}
+  // Payment provider is not connected yet — say so plainly instead of faking a checkout.
+  alert(ES
+    ? 'Tu cuenta está lista ('+email+').\n\nEl pago todavía no está conectado. En cuanto se active, tu suscripción quedará ligada a este correo.'
+    : 'Your account is ready ('+email+').\n\nPayment is not connected yet. Once it is, your subscription will be tied to this email.');
+  /* When Stripe is wired, call mmUnlockPremium() only after a confirmed payment. */
+}
+/* If someone was sent to sign up by a premium button, resume where they left off. */
+function mmUnlockPremium(){
+  try{ localStorage.setItem('mm_premium','1'); }catch(e){}
+  var g=document.querySelector('.mm-ai-gate'); if(g) g.remove();
+}
+function mmResumePremium(){
+  try{
+    var intent=localStorage.getItem('mm_premium_intent');
+    if(intent && mmHasAccount()){
+      localStorage.removeItem('mm_premium_intent');
+      setTimeout(function(){ mmPremiumCheckout(intent); }, 400);
+    }
+  }catch(e){}
 }
 function openAccount(){
   var name='',email='',since='';
@@ -12230,11 +12414,38 @@ When recommending places, always give 2-4 specific options with a brief descript
 
 Respond in the same language the user writes in (English or Spanish). Keep responses friendly, concise, and packed with useful specifics. Never be vague.`;
 
+var MM_AI_FREE_LIMIT = 3;
+function mmAiCount(){ try{ return parseInt(localStorage.getItem('mm_ai_asked')||'0',10)||0; }catch(e){ return 0; } }
+function mmAiBump(){ try{ localStorage.setItem('mm_ai_asked', String(mmAiCount()+1)); }catch(e){} }
+function mmAiIsPremium(){ try{ return localStorage.getItem('mm_premium')==='1'; }catch(e){ return false; } }
+function mmAiLeft(){ return Math.max(0, MM_AI_FREE_LIMIT - mmAiCount()); }
+function mmAiGate(){
+  if (mmAiIsPremium()) return true;
+  if (mmAiCount() < MM_AI_FREE_LIMIT) return true;
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var box=document.getElementById('aiMessages');
+  if(box){
+    var d=document.createElement('div');
+    d.className='mm-ai-gate';
+    d.innerHTML='<div class="mm-ai-gate-t">'+(ES?'Has usado tus 3 preguntas gratis':'You have used your 3 free questions')+'</div>'
+      +'<div class="mm-ai-gate-s">'+(ES
+        ?'Premium te da preguntas ilimitadas con la IA. Necesitas una cuenta para que tu suscripción quede guardada y la recuperes en cualquier dispositivo.'
+        :'Premium gives you unlimited AI questions. An account is required so your subscription stays tied to you on any device.')+'</div>'
+      +'<div class="mm-ai-price"><b>$4.99</b><span>'+(ES?'/ mes':'/ month')+'</span></div>'
+      +'<button class="mm-ai-gate-btn" onclick="mmGoPremium(\'ai_unlimited_monthly\')">'+(ES?'Hazte Premium · $4.99':'Go Premium · $4.99')+'</button>'
+      +'<div class="mm-ai-gate-f">'+(ES?'Cancela cuando quieras':'Cancel anytime')+'</div>';
+    box.appendChild(d);
+    box.scrollTop = box.scrollHeight;
+  }
+  return false;
+}
 async function aiSend() {
   if (_aiTyping) return;
   var ta = document.getElementById('aiTextarea');
   var msg = ta.value.trim();
   if (!msg) return;
+  if (!mmAiGate()) { ta.value=''; return; }
+  mmAiBump();
   ta.value = '';
   ta.style.height = 'auto';
 
