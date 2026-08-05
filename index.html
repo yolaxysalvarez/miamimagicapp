@@ -8545,15 +8545,31 @@ function accLogout(){
 }
 
 function mmSaveProfile(name,email){
-  try{
-    fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/profiles',{
+  var URL='https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/profiles';
+  var KEY='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
+  function post(body,label){
+    return fetch(URL,{
       method:'POST',
-      headers:{'Content-Type':'application/json','apikey':'sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
-               'Authorization':'Bearer sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
-               'Prefer':'return=minimal'},
-      body:JSON.stringify({name:name||null,email:email,lang:(typeof lang!=='undefined'?lang:'es')})
-    }).catch(function(){});
-  }catch(e){}
+      headers:{'Content-Type':'application/json','apikey':KEY,
+               'Authorization':'Bearer '+KEY,'Prefer':'return=minimal'},
+      body:JSON.stringify(body)
+    }).then(function(r){
+      if(r.ok){ console.log('[mm] profile saved ('+label+')'); return {ok:true}; }
+      return r.text().then(function(t){
+        console.warn('[mm] profile save failed ('+label+') '+r.status+': '+t);
+        return {ok:false,status:r.status,msg:t};
+      });
+    });
+  }
+  try{
+    var full={name:name||null,email:email,lang:(typeof lang!=='undefined'?lang:'es')};
+    post(full,'full').then(function(res){
+      // a missing column (e.g. lang) returns 400/PGRST204 — retry with the core fields
+      if(!res.ok && (res.status===400 || (res.msg||'').indexOf('column')>-1)){
+        post({name:name||null,email:email},'minimal');
+      }
+    }).catch(function(e){ console.warn('[mm] profile save network error:',e); });
+  }catch(e){ console.warn('[mm] profile save threw:',e); }
 }
 function mmFinishAccount(name,email){
   try{ localStorage.setItem('mm_subscribed', email); localStorage.setItem('mm_name', name); localStorage.setItem('mm_since', new Date().getFullYear()); }catch(e){}
