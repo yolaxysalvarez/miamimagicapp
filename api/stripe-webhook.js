@@ -12,7 +12,7 @@
 //    STRIPE_SECRET_KEY       → opcional, para cancelaciones
 // ═══════════════════════════════════════════════════════════════
 
-const crypto = require('crypto');
+import crypto from 'crypto';
 
 
 function readRawBody(req) {
@@ -87,7 +87,7 @@ async function setPremium(email, isPremium, extra) {
   return { ok: true };
 }
 
-async function handler(req, res) {
+export default async function handler(req, res) {
   // Una visita normal desde el navegador cae aquí — sirve para comprobar que existe
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -160,8 +160,5 @@ async function handler(req, res) {
   return res.status(200).json({ received: true });
 };
 
-// Exportar al final: el handler Y la config juntos, para que Vercel no
-// modifique el cuerpo de la petición (Stripe firma los bytes exactos).
-module.exports = handler;
-module.exports.config = { api: { bodyParser: false } };
-module.exports.default = handler;
+// Stripe firma los bytes exactos del cuerpo — Vercel no debe modificarlo.
+export const config = { api: { bodyParser: false } };
