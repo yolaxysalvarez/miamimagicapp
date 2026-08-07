@@ -840,6 +840,25 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 [data-theme="dark"] .priv-p{color:rgba(255,255,255,.7);}
 .priv-p a{color:#FF4D35;font-weight:700;}
 .hcat-tile{--rc-ac:#FF8A78;}
+/* ── Events: List / Map switch ── */
+.evview-wrap{padding:0 22px 4px;display:flex;justify-content:center;}
+.evview{display:inline-flex;padding:4px;border-radius:50px;background:rgba(8,23,46,.55);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 6px 22px rgba(0,0,0,.28);}
+.evview-btn{display:flex;align-items:center;gap:7px;padding:9px 20px;border:none;border-radius:50px;background:transparent;color:rgba(255,255,255,.6);font:800 .82rem 'DM Sans',sans-serif;cursor:pointer;transition:background .25s ease,color .25s ease,box-shadow .25s ease;}
+.evview-btn svg{width:16px;height:16px;}
+.evview-btn.on{background:linear-gradient(135deg,#FF4D35,#ff7a63);color:#fff;box-shadow:0 4px 14px rgba(255,77,53,.42);}
+.evmap-shell{margin:0 18px;border-radius:26px;overflow:hidden;background:linear-gradient(160deg,#0b1a30,#08172E);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 48px rgba(0,0,0,.45);}
+.evmap-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:18px 20px 14px;}
+.evmap-eyebrow{font:800 .68rem 'DM Sans',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#00C9B1;margin-bottom:4px;}
+.evmap-title{font:700 1.35rem 'Playfair Display',serif;color:#fff;line-height:1.15;}
+.evmap-legend{display:flex;flex-direction:column;gap:5px;flex-shrink:0;padding-top:3px;}
+.evmap-legend span{display:flex;align-items:center;gap:6px;font:600 .68rem 'DM Sans',sans-serif;color:rgba(255,255,255,.62);white-space:nowrap;}
+.evmap-legend i{width:9px;height:9px;border-radius:50%;display:inline-block;}
+#evMap{height:64vh;min-height:380px;max-height:620px;width:100%;background:#0b1a30;}
+.evmap-foot{padding:12px 20px 16px;font:600 .76rem 'DM Sans',sans-serif;color:rgba(255,255,255,.5);border-top:1px solid rgba(255,255,255,.08);}
+.evmap-msg{display:flex;align-items:center;justify-content:center;height:100%;color:rgba(255,255,255,.5);font:500 .85rem 'DM Sans',sans-serif;}
+.evpin{width:34px;height:34px;border-radius:50%;background:var(--pin);display:flex;align-items:center;justify-content:center;color:#fff;font:800 .82rem 'DM Sans',sans-serif;border:2.5px solid rgba(255,255,255,.92);box-shadow:0 4px 14px rgba(0,0,0,.5);transition:transform .18s ease;}
+.evpin:hover{transform:scale(1.14);}
+@media(min-width:900px){.evmap-shell{max-width:940px;margin:0 auto;}#evMap{height:56vh;}}
 .mm-less-fab{position:fixed;left:50%;transform:translateX(-50%) translateY(24px);bottom:96px;z-index:9500;display:none;align-items:center;gap:7px;padding:12px 22px;border:none;border-radius:50px;background:linear-gradient(135deg,#08172E,#12304a);color:#fff;font:800 .86rem 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.45);opacity:0;transition:opacity .22s ease,transform .22s ease;}
 .mm-less-fab.on{display:flex;opacity:1;transform:translateX(-50%) translateY(0);}
 .mm-less-fab svg{width:15px;height:15px;}
@@ -3578,6 +3597,24 @@ events:[
    desc:'The Marlins host the Los Angeles Angels for a three-game weekend series under the retractable roof of loanDepot park — air-conditioned baseball in the heart of Little Havana.',
    desc_es:'Los Marlins reciben a los Angels de Los \u00c1ngeles en una serie de tres juegos de fin de semana bajo el techo retr\u00e1ctil del loanDepot park — b\u00e9isbol con aire acondicionado en el coraz\u00f3n de La Peque\u00f1a Habana.',
    tags:['Baseball','Sports'],link:'https://www.mlb.com/marlins/tickets'},
+  {id:'monlaferte26',tip:'Doors open about an hour before, and the Fillmore is a seated theater — this is a listening show, not a dance floor. Street parking on Washington is rough; use a garage or rideshare.',tip_es:'Las puertas abren una hora antes, y el Fillmore es un teatro con asientos — es un concierto para escuchar, no para bailar. El parqueo en Washington es difícil; usa garaje o Uber.',scope:'world',d:'2026-08-07',name:'Mon Laferte — Femme Fatale Tour',name_es:'Mon Laferte — Gira Femme Fatale',
+   venue:'The Fillmore Miami Beach · 1700 Washington Ave',venue_es:'The Fillmore Miami Beach · 1700 Washington Ave',time:'Fri · 8 PM',time_es:'Vie · 8 PM',price:'From ~$108',type:'Concert · Latin Alt',type_es:'Concierto · Latino Alt',
+   photo:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format',
+   desc:'The Chilean-Mexican singer brings her Femme Fatale Tour to the Fillmore — five Latin Grammys and a voice that moves between bolero, jazz and rock in the same song.',
+   desc_es:'La cantante chileno-mexicana trae su gira Femme Fatale al Fillmore — cinco Latin Grammy y una voz que se mueve entre el bolero, el jazz y el rock en la misma canción.',
+   link:'https://www.fillmore-miami.com'},
+  {id:'pokemongo26',tip:'The Pokémon item only comes with the special ticket package, not a regular seat — buy the bundle or you will show up empty-handed. Fireworks are after the last out, so do not leave early.',tip_es:'El artículo de Pokémon solo viene con el paquete especial, no con una entrada normal — compra el paquete o llegas con las manos vacías. Los fuegos son después del último out, así que no te vayas antes.',scope:'local',d:'2026-08-07',name:'Marlins vs Angels — Pokémon GO Night',name_es:'Marlins vs Angels — Noche Pokémon GO',
+   venue:'loanDepot park · Little Havana',venue_es:'loanDepot park · La Pequeña Habana',time:'Fri · 7:10 PM',time_es:'Vie · 7:10 PM',price:'Ticket packages',type:'Baseball · Family',type_es:'Béisbol · Familia',
+   photo:'https://images.unsplash.com/photo-1508344928928-7165b67de128?w=900&q=60&auto=format',
+   desc:'Third annual Pokémon GO Night: PokéStops, Gyms and raid battles you can reach from anywhere in the ballpark, plus postgame fireworks. The Marlins host the Los Angeles Angels.',
+   desc_es:'Tercera Noche Pokémon GO: PokéStops, gimnasios y batallas raid accesibles desde cualquier punto del estadio, más fuegos artificiales al final. Los Marlins reciben a los Angels de Los Ángeles.',
+   link:'https://www.mlb.com/marlins/tickets/offers/themes/pokemon-go'},
+  {id:'faro200-26',tip:'It sits inside Bill Baggs Cape Florida State Park, so you pay park entry at the gate — bring cash or card and get there before sunset for the walk out to the lighthouse.',tip_es:'Está dentro del Parque Estatal Bill Baggs Cape Florida, así que pagas entrada al parque en la caseta — lleva efectivo o tarjeta y llega antes del atardecer para la caminata hasta el faro.',scope:'local',d:'2026-08-07',name:'National Lighthouse Day at Cape Florida',name_es:'Día Nacional del Faro en Cape Florida',
+   venue:'Bill Baggs Cape Florida State Park · Key Biscayne',venue_es:'Parque Estatal Bill Baggs Cape Florida · Key Biscayne',time:'Fri · 6–8:30 PM',time_es:'Vie · 6–8:30 PM',price:'Park entry',type:'History · Free-ish',type_es:'Historia · Casi gratis',
+   photo:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=60&auto=format',
+   desc:'The Cape Florida Lighthouse — built in 1825 and the oldest standing structure in Miami-Dade — marks National Lighthouse Day during its bicentennial year. Locals call it El Farito.',
+   desc_es:'El Faro de Cape Florida — construido en 1825 y la estructura más antigua en pie de Miami-Dade — celebra el Día Nacional del Faro en su año del bicentenario. Los locales le dicen El Farito.',
+   link:'https://www.floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park'},
   {id:'lcmonterrey26',tip:'Saturday night vs Monterrey means a big traveling Mexican crowd — the atmosphere is half the ticket. Arrive early.',tip_es:'Sábado por la noche contra Monterrey significa mucha afición mexicana — el ambiente es la mitad del ticket. Llega temprano.',scope:'world',d:'2026-08-08',name:'Inter Miami vs Monterrey — Leagues Cup',name_es:'Inter Miami vs Monterrey — Leagues Cup',
    venue:'Nu Stadium · Miami Freedom Park',venue_es:'Nu Stadium · Miami Freedom Park',time:'Sat · 8 PM',time_es:'S\u00e1b · 8 PM',price:'From $50',type:'Soccer · Messi',type_es:'F\u00fatbol · Messi',
    photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
@@ -3639,6 +3676,17 @@ events:[
    desc_es:'Los favoritos del indie-folk Lord Huron tocan en el histórico Fillmore del Jackie Gleason Theater junto a The Army, The Navy.',
    tags:['Concert','Indie'],link:'https://www.ticketmaster.com/search?q=lord+huron+fillmore+miami+beach'},
   /* ── SEMANALES / RECURRENTES (siempre vigentes) ── */
+  {id:'fbcrawl26',scope:'local',wk:6,until:'2026-08-22',
+   tip:'The ticket does NOT include pool access — if you want to stay by the water afterward you have to reserve a daybed or cabana separately. Valet is discounted with the ticket, which matters on Collins.',
+   tip_es:'El boleto NO incluye acceso a la piscina — si quieres quedarte junto al agua después, debes reservar daybed o cabana aparte. El valet sale con descuento con el boleto, lo que se agradece en Collins.',
+   name:'Fontainebleau Poolside Bar Crawl',name_es:'Bar Crawl junto a la Piscina — Fontainebleau',
+   venue:'Fontainebleau Miami Beach · 4441 Collins Ave',venue_es:'Fontainebleau Miami Beach · 4441 Collins Ave',
+   time:'Sat · 1–3 PM',time_es:'Sáb · 1–3 PM',price:'From $73',type:'Hotel · 21+',type_es:'Hotel · 21+',
+   photo:'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=900&q=60&auto=format',
+   desc:'A Saturday afternoon crawl through three of the Fontainebleau\'s own venues: it starts at Arkadia Day Club with music, moves to Glow Bar for cocktails in the sun, and ends at La Côte with performers and ocean views. 21 and over.',
+   desc_es:'Un recorrido de sábado por la tarde por tres espacios del propio Fontainebleau: arranca en Arkadia Day Club con música, sigue en Glow Bar con cócteles al sol, y termina en La Côte con artistas y vista al mar. Solo mayores de 21.',
+   hotelId:'h4',
+   link:'https://www.eventbrite.com/e/fontainebleau-miami-beach-poolside-bar-crawl-tickets-1990815141680'},
   {id:'e1',scope:'local',wk:6,name:'Wynwood Art Walk',name_es:'Paseo de Arte Wynwood',
    venue:'Wynwood Arts District',venue_es:'Distrito de Arte Wynwood',time:'7 PM – 11 PM',time_es:'7 PM – 11 PM',price:'Free',type:'Art',type_es:'Arte',
    photo:'https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=900&q=60&auto=format',
@@ -5997,7 +6045,12 @@ function renderJune(){
   var list = [];
   (D.events||[]).forEach(function(e){
     var d, isWeekly = (typeof e.wk === 'number');
-    if(isWeekly){ d = nextWeekday(e.wk); }
+    // a weekly run can have a last date: after it, the event retires itself
+    if(e.until){ try{ if(parseD(e.until) < now) return; }catch(x){} }
+    if(isWeekly){
+      d = nextWeekday(e.wk);
+      if(e.until){ try{ if(d > parseD(e.until)) return; }catch(x){} }
+    }
     else if(e.d){
       d = parseD(e.d);
       var dEnd = e.d2 ? parseD(e.d2) : d;
@@ -6129,60 +6182,60 @@ function goWeek(){
 }
 var MM_MONTH=[
  {id:'mx1',photo:'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format',type:'Food',type_es:'Gastronomía',ac:'#FF4D35',dTop:'AGO',dBig:'1–31',dBot:'+SEP',end:'2026-09-30',
-  name:'Miami Spice — edición 25',venue:'300+ restaurantes en toda la ciudad',venue_es:'300+ restaurantes en toda la ciudad',
+  name:'Miami Spice — 25th Edition',name_es:'Miami Spice — edición 25',venue:'300+ restaurants citywide',venue_es:'300+ restaurantes en toda la ciudad',
   desc:'The city\u2019s restaurant festival turns 25: more than 300 restaurants — including Michelin rooms — serve 3-course prix-fixe menus at a minimum 30% off. 2026 tiers: $40 brunch/lunch, $50 or $65 dinner, and the new Reserve tier from $95. Drinks, tax and tip are extra, and each restaurant picks its own days — check the menu before you book.',
   desc_es:'El festival gastronómico cumple 25 años: más de 300 restaurantes — incluyendo los de estrella Michelin — sirven menús prix-fixe de 3 tiempos con mínimo 30% de descuento. Precios 2026: $40 brunch/almuerzo, $50 o $65 la cena, y el nuevo nivel Reserve desde $95. Bebidas, impuesto y propina van aparte, y cada restaurante elige sus días — revisa el menú antes de reservar.',
-  time:'Ago 1 – Sep 30',price:'$40–65',free:false,link:'https://www.miamiandbeaches.com/deals/spice-restaurant-months'},
+  time:'Aug 1 – Sep 30',time_es:'Ago 1 – Sep 30',price:'$40–65',free:false,link:'https://www.miamiandbeaches.com/deals/spice-restaurant-months'},
  {id:'mx2',photo:'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=60&auto=format',type:'Wellness',type_es:'Bienestar',ac:'#00C9B1',dTop:'AGO',dBig:'1–31',dBot:'+SEP',end:'2026-09-30',
-  name:'Miami Spa Months',venue:'Spas de hoteles de lujo',venue_es:'Spas de hoteles de lujo',
+  name:'Miami Spa Months',name_es:'Miami Spa Months',venue:'Luxury hotel spas',venue_es:'Spas de hoteles de lujo',
   desc:'Five-star hotel spas drop treatments to around $109 for two months. The same massage that costs $300+ in season — this is the deal locals actually use.',
   desc_es:'Los spas de hoteles cinco estrellas bajan sus tratamientos a alrededor de $109 por dos meses. El mismo masaje que cuesta $300+ en temporada — esta es la ganga que los residentes de verdad usan.',
-  time:'Ago 1 – Sep 30',price:'~$109',free:false,link:'https://www.miamiandbeaches.com'},
+  time:'Aug 1 – Sep 30',time_es:'Ago 1 – Sep 30',price:'~$109',free:false,link:'https://www.miamiandbeaches.com'},
  {id:'mx6',photo:'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=60&auto=format',type:'Festival',type_es:'Festival',ac:'#2E9E5B',dTop:'AGO',dBig:'2',dBot:'WYNWOOD',end:'2026-08-02',
-  name:'Jamaica Independence Festival',venue:'Wynwood',venue_es:'Wynwood',
+  name:'Jamaica Independence Festival',name_es:'Festival de la Independencia de Jamaica',venue:'Wynwood',venue_es:'Wynwood',
   desc:'Reggae, Caribbean food and Jamaican culture take over Wynwood for the island\u2019s independence celebration.',
   desc_es:'Reggae, comida caribeña y cultura jamaiquina toman Wynwood por la celebración de la independencia de la isla.',
-  time:'Dom Ago 2',price:'',free:true,link:'https://www.google.com/search?q=Jamaica+Independence+Festival+Wynwood+Miami'},
+  time:'Sun Aug 2',time_es:'Dom Ago 2',price:'',free:true,link:'https://www.google.com/search?q=Jamaica+Independence+Festival+Wynwood+Miami'},
  {id:'mx3',photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',type:'Fútbol',type_es:'Fútbol',ac:'#F7B5CD',dTop:'AGO',dBig:'6',dBot:'EN CASA',end:'2026-08-29',
-  name:'Inter Miami — 6 partidos en casa',venue:'Nu Stadium · Miami Freedom Park',venue_es:'Nu Stadium · Miami Freedom Park',
+  name:'Inter Miami — 6 Home Matches',name_es:'Inter Miami — 6 partidos en casa',venue:'Nu Stadium · Miami Freedom Park',venue_es:'Nu Stadium · Miami Freedom Park',
   desc:'Six home matches in one month at the new stadium. MLS: Columbus (Aug 1), Toronto (Aug 22) and Montréal (Aug 29), all 7:30 PM. Leagues Cup vs LIGA MX: Atlético San Luis (Wed 5, 7:30 PM), Monterrey (Sat 8, 8 PM) and León (Wed 12, 7:30 PM).',
   desc_es:'Seis partidos en casa en un solo mes en el nuevo estadio. MLS: Columbus (Ago 1), Toronto (Ago 22) y Montréal (Ago 29), todos 7:30 PM. Leagues Cup contra la LIGA MX: Atlético San Luis (mié 5, 7:30 PM), Monterrey (sáb 8, 8 PM) y León (mié 12, 7:30 PM).',
-  time:'Ago 1 · 5 · 8 · 12 · 22 · 29',price:'Tickets',free:false,link:'https://www.intermiamicf.com/tickets'},
+  time:'Aug 1 · 5 · 8 · 12 · 22 · 29',time_es:'Ago 1 · 5 · 8 · 12 · 22 · 29',price:'Tickets',free:false,link:'https://www.intermiamicf.com/tickets'},
  {id:'mx10',photo:'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=900&q=60&auto=format',type:'Danza',type_es:'Danza',ac:'#C9A227',dTop:'JUL 31',dBig:'→',dBot:'AGO 16',end:'2026-08-16',
-  name:'Festival Internacional de Ballet de Miami — XXXI',venue:'Manuel Artime · Broward Center · varios teatros',venue_es:'Manuel Artime · Broward Center · varios teatros',
+  name:'Miami International Ballet Festival — XXXI',name_es:'Festival Internacional de Ballet de Miami — XXXI',venue:'Manuel Artime · Broward Center · several theaters',venue_es:'Manuel Artime · Broward Center · varios teatros',
   desc:'The 31st edition of one of the most prestigious dance festivals in the US: 100+ principal dancers from 20+ international companies across classical and contemporary programs (Contemporary I: Fri Aug 7 at Manuel Artime Theater; Broward Center: Sun Aug 9). Bonus for locals: a FREE dance film series at the Miami Hispanic Cultural Arts Center (Aug 3, 5 and 14, 8 PM).',
   desc_es:'La edición 31 de uno de los festivales de danza más prestigiosos de EE.UU.: más de 100 bailarines principales de 20+ compañías internacionales en programas clásicos y contemporáneos (Contemporáneo I: vie Ago 7 en el Teatro Manuel Artime; Broward Center: dom Ago 9). Bonus para residentes: ciclo GRATIS de cine de danza en el Miami Hispanic Cultural Arts Center (Ago 3, 5 y 14, 8 PM).',
-  time:'Jul 31 – Ago 16',price:'Tickets · cine gratis',free:false,link:'https://www.internationalballetfestival.org'},
+  time:'Jul 31 – Aug 16',time_es:'Jul 31 – Ago 16',price:'Tickets · cine gratis',free:false,link:'https://www.internationalballetfestival.org'},
  {id:'mx9',photo:'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=900&q=60&auto=format',type:'Museo Gratis',type_es:'Museo Gratis',ac:'#00A9CE',dTop:'SÁB',dBig:'8',dBot:'PAMM',end:'2026-08-08',
-  name:'PAMM gratis — Free Second Saturday',venue:'Pérez Art Museum Miami, Downtown',venue_es:'Pérez Art Museum Miami, Downtown',
+  name:'PAMM Free Second Saturday',name_es:'PAMM gratis — Segundo Sábado',venue:'Pérez Art Museum Miami, Downtown',venue_es:'Pérez Art Museum Miami, Downtown',
   desc:'Free admission ALL DAY at PAMM on the waterfront. This month\u2019s theme is "Back to School," with hands-on family art-making from 11 AM to 3 PM inspired by Deborah Brown\u2019s Moonlight, led by multilingual teaching artists. Come early, do the activity, then stay for the galleries and the terrace over the bay — it happens every second Saturday of the month.',
   desc_es:'Entrada gratis TODO EL DÍA en el PAMM frente a la bahía. El tema del mes es "Back to School", con taller familiar de arte de 11 AM a 3 PM inspirado en Moonlight de Deborah Brown, guiado por artistas educadores multilingües. Llega temprano, haz la actividad, y quédate para las galerías y la terraza sobre la bahía — se repite cada segundo sábado del mes.',
-  time:'Sáb Ago 8 · taller 11 AM–3 PM',price:'',free:true,link:'https://www.pamm.org'},
+  time:'Sat Aug 8 · workshop 11 AM–3 PM',time_es:'Sáb Ago 8 · taller 11 AM–3 PM',price:'',free:true,link:'https://www.pamm.org'},
  {id:'mx5',photo:'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=900&q=60&auto=format',type:'NFL',type_es:'NFL',ac:'#0B6FA4',dTop:'AGO',dBig:'22·28',dBot:'HARD ROCK',end:'2026-08-28',
-  name:'Dolphins — pretemporada en casa',venue:'Hard Rock Stadium',venue_es:'Hard Rock Stadium',
+  name:'Dolphins — Preseason at Home',name_es:'Dolphins — pretemporada en casa',venue:'Hard Rock Stadium',venue_es:'Hard Rock Stadium',
   desc:'Football is back: the Dolphins host the Giants on Saturday Aug 22 at 4 PM and close preseason vs the Falcons on Friday Aug 28 at 7 PM. Preseason is the cheapest way of the year to see NFL live.',
   desc_es:'Vuelve el fútbol americano: los Dolphins reciben a los Giants el sábado 22 a las 4 PM y cierran la pretemporada contra los Falcons el viernes 28 a las 7 PM. La pretemporada es la forma más barata del año de ver NFL en vivo.',
-  time:'Sáb 22, 4 PM · Vie 28, 7 PM',price:'Desde precio bajo',free:false,link:'https://www.miamidolphins.com'},
+  time:'Sat 22, 4 PM · Fri 28, 7 PM',time_es:'Sáb 22, 4 PM · Vie 28, 7 PM',price:'Desde precio bajo',free:false,link:'https://www.miamidolphins.com'},
  {id:'mx11',photo:'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&q=60&auto=format',type:'Espectáculo',type_es:'Espectáculo',ac:'#E75480',dTop:'AGO',dBig:'24–27',dBot:'ARSHT',end:'2026-08-27',
-  name:'Miss USA 75 años — Semana Diamante',venue:'Adrienne Arsht Center, Downtown',venue_es:'Adrienne Arsht Center, Downtown',
+  name:'Miss USA 75th — Diamond Week',name_es:'Miss USA 75 años — Semana Diamante',venue:'Adrienne Arsht Center, Downtown',venue_es:'Adrienne Arsht Center, Downtown',
   desc:'Miss USA returns to Florida for the first time in decades for its 75th "Diamond" edition, all week at the Arsht: state-costume runway (Mon 24, 7 PM), Miss USA preliminaries (Tue 25, noon), Miss Teen USA final (Wed 26) and the 75th Miss USA crowning (Thu 27, airing live on The CW 8–10 PM). Past titleholders join the celebration.',
   desc_es:'Miss USA vuelve a Florida por primera vez en décadas para su edición 75 "Diamante", toda la semana en el Arsht: pasarela de trajes de estado (lun 24, 7 PM), preliminares de Miss USA (mar 25, mediodía), final de Miss Teen USA (mié 26) y la coronación 75 de Miss USA (jue 27, en vivo por The CW 8–10 PM). Ex reinas se suman a la celebración.',
-  time:'Ago 24–27',price:'Tickets',free:false,link:'https://www.arshtcenter.org'},
+  time:'Aug 24–27',time_es:'Ago 24–27',price:'Tickets',free:false,link:'https://www.arshtcenter.org'},
  {id:'mx4',photo:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format',type:'Concierto',type_es:'Concierto',ac:'#7C5CFF',dTop:'AGO',dBig:'29·30',dBot:'KASEYA',end:'2026-08-30',
-  name:'Ricardo Montaner — El Último Regreso',venue:'Kaseya Center, Downtown',venue_es:'Kaseya Center, Downtown',
+  name:'Ricardo Montaner — El Último Regreso',name_es:'Ricardo Montaner — El Último Regreso',venue:'Kaseya Center, Downtown',venue_es:'Kaseya Center, Downtown',
   desc:'Two nights from one of Latin music\u2019s most enduring voices on his "El Último Regreso" tour — Saturday and Sunday at 8 PM, with a career-spanning setlist and a crowd that knows every word.',
   desc_es:'Dos noches con una de las voces más queridas de la música latina en su gira "El Último Regreso" — sábado y domingo a las 8 PM, con un repertorio de toda su carrera y un público que se sabe cada palabra.',
-  time:'Sáb 29 y Dom 30 · 8 PM',price:'Tickets',free:false,link:'https://www.kaseyacenter.com'},
+  time:'Sat 29 & Sun 30 · 8 PM',time_es:'Sáb 29 y Dom 30 · 8 PM',price:'Tickets',free:false,link:'https://www.kaseyacenter.com'},
  {id:'mx7',photo:'https://images.unsplash.com/photo-1531058020387-3be344556be6?w=900&q=60&auto=format',type:'Cultura Gratis',type_es:'Cultura Gratis',ac:'#FFD166',dTop:'AGO',dBig:'8+',dBot:'GRATIS',end:'2026-08-21',
-  name:'Noches de arte gratis del mes',venue:'Wynwood · Lincoln Rd · Calle 8',venue_es:'Wynwood · Lincoln Rd · Calle 8',
+  name:'Free Art Nights This Month',name_es:'Noches de arte gratis del mes',venue:'Wynwood · Lincoln Rd · Calle Ocho',venue_es:'Wynwood · Lincoln Rd · Calle Ocho',
   desc:'Wynwood Art Walk (Sat Aug 8), Lincoln Road Art Walk (Thu Aug 20), and Viernes Culturales in Little Havana (Fri Aug 21) — galleries open late, street music, all free.',
   desc_es:'Wynwood Art Walk (sáb Ago 8), Lincoln Road Art Walk (jue Ago 20), y Viernes Culturales en La Pequeña Habana (vie Ago 21) — galerías abiertas hasta tarde, música en la calle, todo gratis.',
-  time:'Ago 8 · 20 · 21',price:'',free:true,link:'https://www.google.com/search?q=Wynwood+Art+Walk+Lincoln+Road+Viernes+Culturales+agosto'},
+  time:'Aug 8 · 20 · 21',time_es:'Ago 8 · 20 · 21',price:'',free:true,link:'https://www.google.com/search?q=Wynwood+Art+Walk+Lincoln+Road+Viernes+Culturales+agosto'},
  {id:'mx8',photo:'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=900&q=60&auto=format',type:'Conciertos',type_es:'Conciertos',ac:'#E8734A',dTop:'AGO',dBig:'♪♪',dBot:'HARD ROCK LIVE',end:'2026-08-31',
-  name:'Hard Rock Live — cartelera del mes',venue:'Hard Rock Live, Hollywood',venue_es:'Hard Rock Live, Hollywood',
+  name:'Hard Rock Live — This Month\'s Lineup',name_es:'Hard Rock Live — cartelera del mes',venue:'Hard Rock Live, Hollywood',venue_es:'Hard Rock Live, Hollywood',
   desc:'A stacked month: Mumford & Sons, Deep Purple with Kansas, Goo Goo Dolls, Brooks & Dunn, 5 Seconds of Summer, Ella Mai and more.',
   desc_es:'Un mes cargado: Mumford & Sons, Deep Purple con Kansas, Goo Goo Dolls, Brooks & Dunn, 5 Seconds of Summer, Ella Mai y más.',
-  time:'Todo el mes',price:'Tickets',free:false,link:'https://www.seminolehardrockhollywood.com'}
+  time:'All month',time_es:'Todo el mes',price:'Tickets',free:false,link:'https://www.seminolehardrockhollywood.com'}
 ];
 var MM_PRIV={
  en:{title:'Privacy Policy',upd:'Last updated: August 1, 2026',
@@ -6260,6 +6313,153 @@ function evStrip(which){
     +'<div class="evs-note">'+(ES?'Algunos enlaces son de afiliados. No te cuesta más y ayuda a mantener la app.':'Some links are affiliate links. Costs you nothing extra and helps keep the app running.')+'</div>'
   +'</div>';
 }
+/* ══ MAPA DE EVENTOS — semana + mes en una sola vista ══ */
+var MM_VENUE_GEO={
+  'nu stadium':[25.7784,-80.2214],'miami freedom park':[25.7784,-80.2214],
+  'loandepot':[25.7781,-80.2197],'kaseya':[25.7814,-80.1870],
+  'adrienne arsht':[25.7887,-80.1900],'arsht':[25.7887,-80.1900],
+  'hard rock stadium':[25.9580,-80.2389],'hard rock live':[26.0512,-80.2100],
+  'fillmore':[25.7907,-80.1300],'bill baggs':[25.6667,-80.1567],'cape florida':[25.6667,-80.1567],
+  'wynwood':[25.8010,-80.1990],'lincoln road':[25.7907,-80.1400],'lincoln rd':[25.7907,-80.1400],
+  'ball & chain':[25.7657,-80.2198],'little havana':[25.7657,-80.2198],'calle ocho':[25.7657,-80.2198],
+  'bayfront':[25.7767,-80.1867],'fontainebleau':[25.8175,-80.1221],
+  'pamm':[25.7856,-80.1863],'perez art museum':[25.7856,-80.1863],
+  'manuel artime':[25.7660,-80.2270],'broward center':[26.1190,-80.1520],
+  'south beach':[25.7825,-80.1340],'miami beach':[25.7907,-80.1300],
+  'downtown':[25.7743,-80.1937],'brickell':[25.7601,-80.1951],
+  'coconut grove':[25.7280,-80.2436],'key biscayne':[25.6906,-80.1628],
+  'aventura':[25.9564,-80.1428],'coral gables':[25.7215,-80.2684],
+  'portmiami':[25.7743,-80.1650],'port everglades':[26.0930,-80.1180]
+};
+function mmGeoFor(txt){
+  var s=(txt||'').toLowerCase();
+  for(var k in MM_VENUE_GEO){ if(s.indexOf(k)>-1) return MM_VENUE_GEO[k]; }
+  return null;
+}
+var _evMap=null, _evMarkers=[], _evData=[];
+function mmEventPoints(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var out=[], seen={};
+  function push(name, venue, when, kind, onclick){
+    var g=mmGeoFor(venue)||mmGeoFor(name);
+    if(!g) return;
+    var key=name.slice(0,24);
+    if(seen[key]) return; seen[key]=1;
+    out.push({name:name, venue:venue, when:when, kind:kind, ll:g, go:onclick});
+  }
+  try{
+    document.querySelectorAll('#twxMainPanel .twx-card').forEach(function(c){
+      var n=(c.querySelector('.twx-name')||{}).textContent||'';
+      var v=(c.querySelector('.twx-venue')||{}).textContent||'';
+      var d=(c.querySelector('.twx-day')||{}).textContent||'';
+      var m=(c.querySelector('.twx-mon')||{}).textContent||'';
+      push(n, v, (d+' '+m).trim(), 'week', c.id);
+    });
+  }catch(e){}
+  try{
+    document.querySelectorAll('#twxMonthPanel .twx-card').forEach(function(c){
+      var n=(c.querySelector('.twx-name')||{}).textContent||'';
+      var v=(c.querySelector('.twx-venue')||{}).textContent||'';
+      var t=(c.querySelector('.twx-pill')||{}).textContent||'';
+      push(n, v, t, 'month', c.id);
+    });
+  }catch(e){}
+  return out;
+}
+function mmEvMapToggle(mode){
+  var wrap=document.getElementById('evMapWrap');
+  var bList=document.getElementById('evViewList'), bMap=document.getElementById('evViewMap');
+  var june=document.getElementById('sec-june'), month=document.getElementById('sec-month');
+  if(!wrap) return;
+  if(mode==='map'){
+    // panels must be in the DOM to be scraped, so open them silently first
+    ['twxMainPanel','twxMonthPanel'].forEach(function(id){
+      var p=document.getElementById(id); if(p) p.classList.add('open');
+    });
+    wrap.style.display='block';
+    if(june) june.style.display='none';
+    if(month) month.style.display='none';
+    bMap.classList.add('on'); bList.classList.remove('on');
+    setTimeout(mmEvMapDraw, 60);
+  } else {
+    wrap.style.display='none';
+    if(june) june.style.display='';
+    if(month) month.style.display='';
+    bList.classList.add('on'); bMap.classList.remove('on');
+  }
+}
+function mmEvMapDraw(){
+  if(typeof L==='undefined'){
+    var el=document.getElementById('evMap');
+    if(el) el.innerHTML='<div class="evmap-msg">'+((typeof lang!=='undefined'&&lang==='es')?'No pudimos cargar el mapa.':'Could not load the map.')+'</div>';
+    return;
+  }
+  _evData=mmEventPoints();
+  if(!_evMap){
+    _evMap=L.map('evMap',{center:[25.7850,-80.1900],zoom:11,zoomControl:true,scrollWheelZoom:false});
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png',
+      {attribution:'&copy; <a href="https://carto.com/">CARTO</a>',maxZoom:19}).addTo(_evMap);
+  }
+  _evMarkers.forEach(function(m){ try{_evMap.removeLayer(m);}catch(e){} });
+  _evMarkers=[];
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var bounds=[];
+  _evData.forEach(function(d,i){
+    var ac = d.kind==='week' ? '#FF4D35' : '#00C9B1';
+    var ic=L.divIcon({className:'',iconSize:[34,34],iconAnchor:[17,17],
+      html:'<div class="evpin" style="--pin:'+ac+'"><span>'+(i+1)+'</span></div>'});
+    var m=L.marker(d.ll,{icon:ic}).addTo(_evMap);
+    m.bindPopup('<div class="map-popup"><h4>'+d.name+'</h4><p>'+(d.when||'')+' · '+(d.venue||'')+'</p>'
+      +'<a href="#" onclick="mmEvOpen('+i+');return false;">'+(ES?'Ver detalles →':'View details →')+'</a></div>',{maxWidth:230});
+    _evMarkers.push(m); bounds.push(d.ll);
+  });
+  var cnt=document.getElementById('evMapCount');
+  if(cnt) cnt.textContent=_evData.length+(ES?' eventos en el mapa':' events on the map');
+  try{ if(bounds.length) _evMap.fitBounds(bounds,{padding:[42,42],maxZoom:13}); }catch(e){}
+  setTimeout(function(){ try{_evMap.invalidateSize();}catch(e){} },120);
+}
+function mmEvOpen(i){
+  var d=_evData[i]; if(!d) return;
+  mmEvMapToggle('list');
+  setTimeout(function(){
+    var c=document.getElementById(d.go);
+    if(c){
+      c.classList.add('open');
+      c.scrollIntoView({behavior:'smooth',block:'center'});
+      c.style.transition='box-shadow .4s ease';
+      c.style.boxShadow='0 0 0 2px '+(d.kind==='week'?'#FF4D35':'#00C9B1');
+      setTimeout(function(){ c.style.boxShadow=''; },2200);
+    }
+  },220);
+}
+function renderEvViewBar(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  return '<div class="evview-wrap"><div class="evview">'
+    +'<button id="evViewList" class="evview-btn on" onclick="mmEvMapToggle(\'list\')">'
+      +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>'
+      +'<span>'+(ES?'Lista':'List')+'</span></button>'
+    +'<button id="evViewMap" class="evview-btn" onclick="mmEvMapToggle(\'map\')">'
+      +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5L3.5 6.8v12.7L9 17.2l6 2.3 5.5-2.3V4.5L15 6.8z"/><path d="M9 4.5v12.7M15 6.8v12.7"/></svg>'
+      +'<span>'+(ES?'Mapa':'Map')+'</span></button>'
+  +'</div></div>';
+}
+function renderEvMap(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  return '<section class="sec fade" id="evMapWrap" style="display:none;">'
+    +'<div class="evmap-shell">'
+      +'<div class="evmap-head">'
+        +'<div><div class="evmap-eyebrow">'+(ES?'DÓNDE ESTÁ TODO':'WHERE IT ALL IS')+'</div>'
+        +'<div class="evmap-title">'+(ES?'Eventos en el mapa':'Events on the map')+'</div></div>'
+        +'<div class="evmap-legend">'
+          +'<span><i style="background:#FF4D35"></i>'+(ES?'Semana':'Week')+'</span>'
+          +'<span><i style="background:#00C9B1"></i>'+(ES?'Mes':'Month')+'</span>'
+        +'</div>'
+      +'</div>'
+      +'<div id="evMap"></div>'
+      +'<div class="evmap-foot" id="evMapCount"></div>'
+    +'</div>'
+  +'</section>';
+}
 function twxMonthSection(){
   var p=document.getElementById('twxMonthPanel');
   var b=document.getElementById('twxMonthBar');
@@ -6273,11 +6473,16 @@ function renderMonth(){
   var items=(MM_MONTH||[]).filter(function(e){
     try{ var p=e.end.split('-'); return new Date(+p[0],+p[1]-1,+p[2]) >= now; }catch(x){ return true; }
   });
-  if(!items.length) return '';
+  var annCount=0;
+  try{
+    var MOx=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    annCount=(window.annualEvents||[]).filter(function(a){return a.month===MOx[now.getMonth()];}).length;
+  }catch(x){}
+  if(!items.length && !annCount) return '';
   function esc(s){ return (s||'').replace(/'/g,"\\'"); }
   var cards=items.map(function(e){
     var cid='mcard-'+e.id;
-    var name=e.name, venue=ES&&e.venue_es?e.venue_es:e.venue;
+    var name=(ES&&e.name_es)?e.name_es:e.name, venue=ES&&e.venue_es?e.venue_es:e.venue;
     var type=ES&&e.type_es?e.type_es:e.type;
     var desc=ES&&e.desc_es?e.desc_es:e.desc;
     var badge=e.free?(ES?'GRATIS':'FREE'):(e.price||'');
@@ -6301,7 +6506,7 @@ function renderMonth(){
         +photo
         +'<p class="twx-desc">'+desc+'</p>'
         +'<div class="twx-row">'
-          +'<span class="twx-pill">'+e.time+'</span>'
+          +'<span class="twx-pill">'+((ES&&e.time_es)?e.time_es:e.time)+'</span>'
           +(e.price?'<span class="twx-pill twx-price" style="color:'+(e.free?'#00C9B1':'#FFD166')+'">'+(e.free?(ES?'Gratis':'Free'):e.price)+'</span>':'')
         +'</div>'
         +'<button class="twx-cta" onclick="event.stopPropagation();twxOpen(\''+esc(e.link)+'\',\''+esc(name)+'\')">'+(e.free?lblInfo:lblTix)
@@ -6310,6 +6515,60 @@ function renderMonth(){
       +'</div>'
     +'</div>';
   }).join('');
+  // Annual traditions that fall in this month — pulled from the yearly calendar
+  // so the section fills itself every year with no maintenance.
+  try{
+    var MO=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    var thisMo=MO[now.getMonth()];
+    function norm(s){
+      return (s||'').toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g,'')   // sin acentos
+        .replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+    }
+    var curated=items.map(function(e){ return norm(e.name); });
+    var ann=(window.annualEvents||[]).filter(function(a){
+      if(a.month!==thisMo) return false;
+      var an=norm(a.name);
+      // an annual duplicates a curated card if either name contains the other
+      return !curated.some(function(c){
+        return c===an || c.indexOf(an)===0 || an.indexOf(c)===0;
+      });
+    });
+    cards += ann.map(function(a){
+      var nm=ES&&a.name_es?a.name_es:a.name;
+      var dsc=ES&&a.desc_es?a.desc_es:a.desc;
+      var when=ES&&a.when_es?a.when_es:(a.when||'');
+      var cost=ES&&a.cost_es?a.cost_es:(a.cost||'');
+      var free=/free|gratis/i.test(cost);
+      var cid='mcard-'+a.id;
+      var lbl=ES?'Más info':'More info';
+      var photo=a.img?'<div class="twx-photo"><img loading="lazy" src="'+a.img+'" alt="" onerror="this.parentNode.style.display=\'none\'"><div class="twx-photo-fade"></div></div>':'';
+      return '<div class="twx-card" id="'+cid+'" style="--twx-ac:#C9A227" onclick="twxToggle(\''+cid+'\')">'
+        +'<div class="twx-head">'
+          +'<div class="twx-date"><span class="twx-dow">'+(ES?'CADA':'EVERY')+'</span><span class="twx-day" style="font-size:1.05rem">'+(ES?'AÑO':'YEAR')+'</span><span class="twx-mon">'+thisMo+'</span></div>'
+          +'<div class="twx-meta">'
+            +'<div class="twx-type">'+(ES?'TRADICIÓN ANUAL':'ANNUAL TRADITION')+'</div>'
+            +'<div class="twx-name">'+nm+'</div>'
+            +'<div class="twx-venue">'+(a.venue||'')+'</div>'
+          +'</div>'
+          +'<div class="twx-side">'
+            +'<span class="twx-badge">'+(free?(ES?'GRATIS':'FREE'):(cost||(ES?'ANUAL':'ANNUAL')))+'</span>'
+            +'<span class="twx-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>'
+          +'</div>'
+        +'</div>'
+        +'<div class="twx-body">'
+          +photo
+          +'<p class="twx-desc">'+dsc+'</p>'
+          +'<div class="twx-row">'+(when?'<span class="twx-pill">'+when+'</span>':'')
+            +(cost?'<span class="twx-pill twx-price" style="color:'+(free?'#00C9B1':'#FFD166')+'">'+cost+'</span>':'')+'</div>'
+          +'<button class="twx-cta" onclick="event.stopPropagation();openAnnualEventModal(\''+a.id+'\')">'+lbl
+            +' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>'
+          +'</button>'
+        +'</div>'
+      +'</div>';
+    }).join('');
+  }catch(e){}
+
   var eyebrow=ES?'PARA RESIDENTES · Y TURISTAS QUE VUELVEN':'FOR LOCALS · AND RETURNING VISITORS';
   var title=ES?'Este Mes en Miami':'This Month in Miami';
   var range=ES?'Agosto 2026':'August 2026';
@@ -6446,6 +6705,12 @@ function renderEvents(){
      hi:['Techno, house, hip-hop, indie and experimental on the same lineup','Set in Mana Wynwood — five city blocks of warehouses and murals','Art installations and extended four-hour DJ sets'],hi_es:['Techno, house, hip-hop, indie y experimental en el mismo cartel','En Mana Wynwood — cinco cuadras de bodegas y murales','Instalaciones de arte y sets de DJ extendidos de cuatro horas'],
      tip:'They schedule the big acts against each other on purpose, to push you to wander. Don\'t plan every set — the discovery is the point, and it\'s the most Miami festival of them all.',tip_es:'Programan a los grandes a la misma hora a propósito, para que deambules. No planifiques cada set — el descubrimiento es la idea, y es el festival más Miami de todos.',
      link:'https://iiipoints.com'},
+    {id:'ae13',month:'AUG',name:'National Lighthouse Day at Cape Florida',name_es:'Día Nacional del Faro en Cape Florida',venue:'Bill Baggs Cape Florida State Park · Key Biscayne',type:'History',
+     img:'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=72',
+     desc:'Every August 7 the Cape Florida Lighthouse marks National Lighthouse Day. Built in 1825, it is the oldest standing structure in Miami-Dade — locals call it El Farito.',desc_es:'Cada 7 de agosto el Faro de Cape Florida celebra el Día Nacional del Faro. Construido en 1825, es la estructura más antigua en pie de Miami-Dade — los locales le dicen El Farito.',when:'August 7, every year',when_es:'7 de agosto, cada año',cost:'Park entry',cost_es:'Entrada al parque',stat:'200 years standing',stat_es:'200 años en pie',
+     hi:['Climb the tower and the keeper\'s cottage museum','The southern tip was an escape route of the Saltwater Underground Railroad','Sunset over Biscayne Bay from the point'],hi_es:['Sube la torre y visita el museo de la casa del farero','La punta sur fue ruta de escape del Saltwater Underground Railroad','Atardecer sobre la Bahía de Biscayne desde la punta'],
+     tip:'It sits inside a state park, so you pay park entry at the gate — it is not a free event. Go before sunset: the walk out to the lighthouse is part of it, and the light on the water at that hour is the reason to come.',tip_es:'Está dentro de un parque estatal, así que pagas entrada en la caseta — no es un evento gratis. Ve antes del atardecer: la caminata hasta el faro es parte del plan, y la luz sobre el agua a esa hora es la razón para ir.',
+     link:'https://www.floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park'},
     {id:'ae12',month:'DEC',name:'Art Basel Miami Beach',name_es:'Art Basel Miami Beach',venue:'Miami Beach Convention Center',type:'Art',
      img:'https://images.unsplash.com/photo-1594638760884-f84e8ca7c6b9?w=500&q=72',
      desc:'The most important contemporary art fair in the Americas. 250+ galleries from 35 countries. Transforms the city.',desc_es:'La feria de arte contemporáneo más importante de las Américas. 250+ galerías de 35 países.',when:'Dec 4–6, 2026 · Art Week Dec 1–7',when_es:'4–6 Dic, 2026 · Art Week 1–7 Dic',cost:'GA ~$55–80/day',cost_es:'Entrada ~$55–80/día',stat:'280+ galleries · 80,000+ visitors',stat_es:'280+ galerías · 80,000+ visitantes',
@@ -6487,8 +6752,9 @@ function renderEvents(){
 
   return '<section class="sec fade" id="sec-events">'
     +'<div class="sec-hd"><div class="sec-tt"><small>'+sub+'</small>'+title+'</div>'
-    +'<a class="see-all" href="https://www.miamiandbeaches.com/events" target="_blank" rel="noopener">'+(L==='es'?'Ver todos →':'See all →')+'</a></div>'
+    +'<button class="see-all" id="events-toggle-btn" onclick="toggleAnnualGrid()" style="background:none;border:none;cursor:pointer;">'+(L==='es'?'Ver los 13 →':'See all 13 →')+'</button></div>'
     +'<div class="h-row ev-row" id="events-hrow">'+cards+'</div>'
+    +'<div class="full-grid-rest" id="events-full" style="display:none;">'+cards+'</div>'
     +'</section>';
 }
 
@@ -7384,7 +7650,25 @@ function build(){
   // app sections
   // zone bar
   var juneTopEl=document.getElementById('juneTop');
-  if(juneTopEl){juneTopEl.innerHTML=renderJune()+renderMonth();}
+  if(juneTopEl){
+    juneTopEl.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+renderEvMap();
+    // annualEvents is defined in a later block — refresh the month once it lands
+    (function(){
+      var tries=0;
+      (function wait(){
+        if(window.annualEvents && window.annualEvents.length){
+          try{
+            var wasOpen=(document.getElementById('twxMonthPanel')||{classList:{contains:function(){return false;}}}).classList.contains('open');
+            juneTopEl.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+renderEvMap();
+            if(wasOpen){ var p=document.getElementById('twxMonthPanel'), b=document.getElementById('twxMonthBar');
+              if(p){p.classList.add('open');} if(b){b.classList.add('open');} }
+          }catch(e){}
+          return;
+        }
+        if(tries++<25) setTimeout(wait,200);
+      })();
+    })();
+  }
   document.getElementById('app').innerHTML=renderRest()+renderHotels()+renderBeach()+renderNight()+(window.renderMiamiPast?window.renderMiamiPast():'')+renderMuseum()+renderConcert()+renderTheater()+renderStad()+renderMiamiInsiders()+renderPlace()+renderParks()+renderShop()+renderArt()+renderCoffee()+renderKids()+renderWater()+renderLux()+renderEsc()+renderDayTrips()+renderAirports()+renderTransport()+renderEvents()+renderDrones()+renderUGC();
   // Favoritos section (rendered separately, before app content)
   var favsEl = document.getElementById('sec-favs');
@@ -7641,6 +7925,27 @@ function mmHideLessFab(){
   _mmOpenGrid=null;
   var f=document.getElementById('mmLessFab');
   if(f) f.classList.remove('on');
+}
+function toggleAnnualGrid(){
+  var L=(typeof lang!=='undefined'?lang:'en');
+  var row=document.getElementById('events-hrow');
+  var full=document.getElementById('events-full');
+  var btn=document.getElementById('events-toggle-btn');
+  if(!row||!full) return;
+  var n=full.children.length;
+  var isOpen=full.style.display!=='none';
+  if(isOpen){
+    full.style.display='none';
+    row.style.display='';
+    mmHideLessFab();
+    btn.textContent=(L==='es'?'Ver los '+n+' →':'See all '+n+' →');
+  } else {
+    full.style.display='grid';
+    row.style.display='none';
+    btn.textContent=(L==='es'?'Ver menos ↑':'Show less ↑');
+    mmShowLessFab('events-full', toggleAnnualGrid, (L==='es'?'Ver menos':'Show less'));
+    try{ document.getElementById('sec-events').scrollIntoView({behavior:'smooth',block:'start'}); }catch(e){}
+  }
 }
 function toggleHotelsGrid(){
   var L=typeof lang!=="undefined"?lang:"en";
@@ -8477,6 +8782,22 @@ function mmPremiumPendingUI(){
   box.scrollTop=box.scrollHeight;
 }
 function mmConfirmPaid(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var btn=document.querySelector('#mmPendingCard .mm-ai-gate-btn');
+  if(btn){ btn.disabled=true; btn.textContent=(ES?'Comprobando…':'Checking…'); }
+  mmSyncPremium().then(function(isPrem){
+    if(isPrem){ mmPaidSuccess(); return; }
+    if(btn){
+      btn.disabled=false;
+      btn.textContent=(ES?'Reintentar':'Try again');
+    }
+    var s=document.querySelector('#mmPendingCard .mm-ai-gate-s');
+    if(s) s.textContent=(ES
+      ? 'Todavía no vemos tu pago. Si acabas de pagar, espera unos segundos y vuelve a tocar.'
+      : 'We do not see your payment yet. If you just paid, wait a few seconds and tap again.');
+  });
+}
+function mmPaidSuccess(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   mmUnlockPremium();
   try{ localStorage.removeItem('mm_premium_pending'); }catch(e){}
@@ -12418,6 +12739,33 @@ var MM_AI_FREE_LIMIT = 3;
 function mmAiCount(){ try{ return parseInt(localStorage.getItem('mm_ai_asked')||'0',10)||0; }catch(e){ return 0; } }
 function mmAiBump(){ try{ localStorage.setItem('mm_ai_asked', String(mmAiCount()+1)); }catch(e){} }
 function mmAiIsPremium(){ try{ return localStorage.getItem('mm_premium')==='1'; }catch(e){ return false; } }
+/* Ask Supabase whether this email is really premium. The webhook is the only
+   thing that can set it, so this survives a new phone and can't be faked. */
+function mmSyncPremium(){
+  var email='';
+  try{ email=(localStorage.getItem('mm_subscribed')||'').trim(); }catch(e){}
+  if(!email) return Promise.resolve(false);
+  var KEY='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
+  var url='https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/profiles'
+    +'?select=premium&email=eq.'+encodeURIComponent(email.toLowerCase())+'&limit=1';
+  return fetch(url,{headers:{apikey:KEY,Authorization:'Bearer '+KEY}})
+    .then(function(r){ return r.ok?r.json():null; })
+    .then(function(rows){
+      if(!rows||!rows.length) return false;
+      var isPrem=!!rows[0].premium;
+      try{
+        if(isPrem) localStorage.setItem('mm_premium','1');
+        else localStorage.removeItem('mm_premium');
+      }catch(e){}
+      if(isPrem){
+        var g=document.querySelector('.mm-ai-gate'); if(g) g.remove();
+        var p=document.getElementById('mmPendingCard'); if(p) p.remove();
+      }
+      return isPrem;
+    })
+    .catch(function(e){ console.warn('[mm] premium sync failed:',e); return false; });
+}
+document.addEventListener('DOMContentLoaded',function(){ setTimeout(mmSyncPremium,1500); });
 function mmAiLeft(){ return Math.max(0, MM_AI_FREE_LIMIT - mmAiCount()); }
 function mmAiGate(){
   if (mmAiIsPremium()) return true;
@@ -13128,7 +13476,7 @@ document.addEventListener('keydown', function(e) {
 .tw-bar-chevron svg{width:13px;height:13px;}
 .tw-bar.open .tw-bar-chevron{transform:rotate(180deg);background:rgba(0,201,177,.2);color:var(--gold);border-color:rgba(0,201,177,.55);box-shadow:0 0 0 2px rgba(0,201,177,.08),0 3px 12px rgba(0,201,177,.14);animation:none;}
 .tw-panel{max-height:0;overflow:hidden;transition:max-height .5s cubic-bezier(.4,0,.2,1);background:radial-gradient(ellipse at top,var(--tw-accent-border,rgba(255,209,102,.10)),transparent 55%),#08172E;}
-.tw-panel.open{max-height:3000px;}
+.tw-panel.open{max-height:none;}
 .tw-items{padding:4px 0;}
 .tw-card-header{position:relative;height:100px;overflow:hidden;}
 .tw-card-header-bg{position:absolute;inset:0;background-size:cover;background-position:center;filter:brightness(.5);}
