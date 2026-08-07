@@ -842,8 +842,8 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 .hcat-tile{--rc-ac:#FF8A78;}
 /* ── Events: List / Map switch ── */
 .evview-wrap{padding:0 22px 4px;display:flex;justify-content:center;}
-.evview{display:inline-flex;padding:4px;border-radius:50px;background:rgba(8,23,46,.55);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 6px 22px rgba(0,0,0,.28);}
-.evview-btn{display:flex;align-items:center;gap:7px;padding:9px 20px;border:none;border-radius:50px;background:transparent;color:rgba(255,255,255,.6);font:800 .82rem 'DM Sans',sans-serif;cursor:pointer;transition:background .25s ease,color .25s ease,box-shadow .25s ease;}
+.evview{display:inline-flex;padding:4px;border-radius:50px;background:linear-gradient(135deg,rgba(16,30,54,.92),rgba(5,10,20,.92));border:1px solid rgba(255,209,102,.32);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 6px 22px rgba(0,0,0,.32),0 1px 0 rgba(255,255,255,.08) inset;}
+.evview-btn{display:flex;align-items:center;gap:7px;padding:9px 20px;border:none;border-radius:50px;background:transparent;color:#00C9B1;font:800 .82rem 'DM Sans',sans-serif;cursor:pointer;transition:background .25s ease,color .25s ease,box-shadow .25s ease;}
 .evview-btn svg{width:16px;height:16px;}
 .evview-btn.on{background:linear-gradient(135deg,#FF4D35,#ff7a63);color:#fff;box-shadow:0 4px 14px rgba(255,77,53,.42);}
 .evmap-shell{margin:0 18px;border-radius:26px;overflow:hidden;background:linear-gradient(160deg,#0b1a30,#08172E);border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 48px rgba(0,0,0,.45);}
@@ -2036,6 +2036,62 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 .hero-ticker-txt.tick-fade{opacity:0;}
 @keyframes scrollCTAFade{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
 @media(max-width:899px){.hero-ticker{padding:9px 18px;}}
+
+/* ══ MIAMI AHORA — smart hero card (flotante, sin caja) ══
+   Fondo por defecto de la app = crema (#FFF0E0) → tinta navy;
+   [data-theme="dark"] → paleta clara. */
+#mmNow{width:calc(100% - 36px);max-width:560px;margin:20px auto 4px;}
+.mm-now-card{position:relative;background:none;border:none;box-shadow:none;padding:0;}
+.mm-now-top{display:flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:700;letter-spacing:.05em;color:rgba(14,27,48,.82);padding:0 4px;}
+.mm-now-dot{width:7px;height:7px;border-radius:50%;background:#00C9B1;box-shadow:0 0 10px rgba(0,201,177,.8);animation:mmNowPulse 2.2s ease-in-out infinite;flex-shrink:0;}
+@keyframes mmNowPulse{0%,100%{opacity:1;}50%{opacity:.45;}}
+.mm-now-date{margin-left:auto;font-weight:800;color:#FF4D35;letter-spacing:.04em;text-align:right;}
+.mm-now-status{font-family:'DM Sans',sans-serif;font-size:1.22rem;font-weight:800;color:#0E1B30;margin:8px 4px 2px;line-height:1.5;}
+.mm-now-sep{opacity:.3;margin:0 3px;font-weight:400;}
+.mm-nw-sea{color:#00998A;}.mm-nw-rain{color:#2E7CC7;}.mm-nw-sun{color:#D98E04;}.mm-nw-moon{color:#7A6BC9;}
+.mm-now-ev{display:flex;align-items:center;gap:9px;margin-top:10px;padding:10px 12px;border-radius:16px;cursor:pointer;
+  background:rgba(255,77,53,.10);border:1px solid rgba(255,77,53,.35);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  box-shadow:0 8px 22px -12px rgba(14,27,48,.28);}
+.mm-now-ev-tag{font-family:'Bebas Neue',sans-serif;font-size:.78rem;letter-spacing:.12em;color:#fff;background:linear-gradient(135deg,#FF4D35,#e0402a);padding:3px 8px 1px;border-radius:6px;flex-shrink:0;line-height:1.1;}
+.mm-now-ev-nm{font-family:'DM Sans',sans-serif;font-size:.88rem;font-weight:700;color:#0E1B30;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.mm-now-lbl{margin:14px 6px 2px;font-family:'DM Sans',sans-serif;font-size:.67rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#00998A;}
+.mm-now-rec{display:flex;align-items:center;gap:11px;margin-top:9px;padding:11px 12px;border-radius:17px;cursor:pointer;
+  background:rgba(255,255,255,.62);border:1px solid rgba(14,27,48,.10);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  box-shadow:0 10px 26px -14px rgba(14,27,48,.28);
+  transition:background .18s,border-color .18s,transform .18s;}
+.mm-now-rec:active{background:rgba(255,255,255,.85);transform:translateY(1px);}
+@media(hover:hover){.mm-now-rec:hover{background:rgba(255,255,255,.8);border-color:rgba(14,27,48,.18);}}
+.mm-now-ic{width:36px;height:36px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--nowac,#00998A);background:rgba(255,255,255,.75);border:1px solid rgba(14,27,48,.08);}
+.mm-now-ic svg{width:19px;height:19px;}
+.mm-now-tx{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1;}
+.mm-now-tx b{font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:800;color:#0E1B30;line-height:1.25;}
+.mm-now-tx i{font-style:normal;font-family:'DM Sans',sans-serif;font-size:.76rem;color:rgba(14,27,48,.62);line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.mm-now-arr{width:16px;height:16px;color:#FF4D35;flex-shrink:0;margin-left:auto;}
+.mm-now-paid{border-color:rgba(217,142,4,.55);background:rgba(255,209,102,.22);}
+.mm-now-paid .promo-tag{background:rgba(217,142,4,.18);color:#8a5b00;}
+/* dark mode */
+[data-theme="dark"] .mm-now-top{color:rgba(255,255,255,.88);}
+[data-theme="dark"] .mm-now-date{color:#FF6A55;}
+[data-theme="dark"] .mm-now-status{color:#fff;}
+[data-theme="dark"] .mm-nw-sea{color:#00C9B1;}
+[data-theme="dark"] .mm-nw-rain{color:#7CC7FF;}
+[data-theme="dark"] .mm-nw-sun{color:#FFD166;}
+[data-theme="dark"] .mm-nw-moon{color:#C9BFFF;}
+[data-theme="dark"] .mm-now-ev{background:rgba(255,77,53,.13);border-color:rgba(255,77,53,.32);box-shadow:0 10px 26px -12px rgba(0,0,0,.5);}
+[data-theme="dark"] .mm-now-ev-nm{color:#fff;}
+[data-theme="dark"] .mm-now-lbl{color:#00C9B1;}
+[data-theme="dark"] .mm-now-rec{background:rgba(255,255,255,.055);border-color:rgba(255,255,255,.13);box-shadow:0 10px 26px -14px rgba(0,0,0,.5);}
+[data-theme="dark"] .mm-now-rec:active{background:rgba(255,255,255,.11);}
+[data-theme="dark"] .mm-now-ic{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.13);color:var(--nowac,#00C9B1);}
+[data-theme="dark"] .mm-now-tx b{color:#fff;}
+[data-theme="dark"] .mm-now-tx i{color:rgba(255,255,255,.66);}
+[data-theme="dark"] .mm-now-arr{color:#FF6A55;}
+[data-theme="dark"] .mm-now-paid{border-color:rgba(255,209,102,.55);background:rgba(255,209,102,.09);}
+[data-theme="dark"] .mm-now-paid .promo-tag{background:rgba(255,255,255,.16);color:inherit;}
+@media(max-width:374px){.mm-now-status{font-size:1.06rem;}}
+@media(min-width:900px){#mmNow{max-width:640px;margin:26px auto 8px;}.mm-now-status{font-size:1.32rem;}}
 /* ── CUSTOM SCROLLBARS ── */
 ::-webkit-scrollbar{width:5px;height:5px;}
 ::-webkit-scrollbar-track{background:transparent;}
@@ -3070,6 +3126,9 @@ body{padding-bottom:0;}
   <span id="hCta2" style="display:none"></span>
   <span id="heroStats" style="display:none"></span>
 </section>
+
+<!-- ══ MIAMI AHORA — smart card (rendered by mmNowRender) ══ -->
+<div id="mmNow" style="display:none"></div>
 
 <!-- SEARCH SECTION -->
 <div class="hero-search-section">
@@ -4376,7 +4435,7 @@ coffee:[
 ],
 };
 // ── LANGUAGE ──
-let lang='en', activeFlt='all';
+let lang=(function(){try{return localStorage.getItem('mm_lang')==='es'?'es':'en';}catch(e){return 'en';}})(), activeFlt='all';
 const TX={
 en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic&nbsp;City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'108',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'6',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
 nav:[{label:'Discover',items:[{icon:'',lbl:'Map',cnt:'',id:'sec-map'},{icon:'',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'',lbl:'Places',cnt:'8',id:'sec-place'}]},{label:'Entertainment',items:[{icon:'',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'',lbl:'Stadiums',cnt:'6',id:'sec-stad'}]},{label:'Going Out',items:[{icon:'',lbl:'Events',cnt:'10',id:'sec-events'},{icon:'',lbl:'Nightlife',cnt:'8',id:'sec-night'},{icon:'',lbl:'Parks',cnt:'10',id:'sec-parks'}]},{label:'Explore More',items:[{icon:'️',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'️',lbl:'Shopping',cnt:'8',id:'sec-shop'}]}],
@@ -7276,7 +7335,10 @@ function mmSeaWidget(m,s,ES){
   try{ sunset=hhmm(s.daily.sunset[0]); }catch(e){}
   // expose for the hero ticker
   window.mmSea={wave:wv, waveFt:(wv!=null?wv*3.28084:null), rain:rain, sunset:sunset,
-                sunrise:(function(){try{return hhmm(s.daily.sunrise[0]);}catch(e){return '';}})()};
+                sunrise:(function(){try{return hhmm(s.daily.sunrise[0]);}catch(e){return '';}})(),
+                sunsetRaw:(function(){try{return s.daily.sunset[0];}catch(e){return null;}})(),
+                sunriseRaw:(function(){try{return s.daily.sunrise[0];}catch(e){return null;}})()};
+  try{ mmNowRender(); }catch(e){}
   if(!box) return;
   try{
     if(window.innerWidth<900){
@@ -7367,6 +7429,270 @@ function seaLoad(){
   }).catch(function(){ try{el.innerHTML='';}catch(e){} });
 }
 document.addEventListener('DOMContentLoaded',function(){ setTimeout(seaLoad,1400); setTimeout(seaLoad,6000); });
+
+/* Idioma restaurado al abrir: sincroniza las etiquetas del toggle con el lang guardado */
+document.addEventListener('DOMContentLoaded',function(){
+  setTimeout(function(){
+    try{
+      var stat=document.getElementById('langToggleStat');
+      if(stat) stat.textContent = lang==='es' ? 'ES ✓' : 'EN';
+      var lbl=document.getElementById('langToggleLabel');
+      if(lbl) lbl.textContent = lang==='es' ? 'English / Español ✓' : 'Español / English';
+    }catch(e){}
+  },700);
+});
+
+/* ══ MM ANALYTICS — taps de la tarjeta Miami Ahora ══
+   Requiere la tabla public.mm_events en Supabase (insert-only para anon).
+   Fire-and-forget: nunca bloquea la UI; loguea el fallo en consola. */
+function mmTrack(ev,item){
+  try{
+    fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/mm_events',{
+      method:'POST',
+      headers:{'Content-Type':'application/json',
+               'apikey':'sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
+               'Authorization':'Bearer sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
+               'Prefer':'return=minimal'},
+      body:JSON.stringify({ev:ev,item:(item||'').slice(0,120),lang:(typeof lang!=='undefined'?lang:'')})
+    }).then(function(r){
+      if(!r.ok) r.text().then(function(t){ console.warn('[mm] track failed '+r.status+': '+t); });
+    }).catch(function(e){ console.warn('[mm] track error',e); });
+  }catch(e){}
+}
+
+/* ══ MIAMI AHORA — smart hero card ══
+   La tarjeta viva del home: estado (clima + mar + atardecer), eventos de HOY,
+   y 2-3 recomendaciones elegidas por hora, día, lluvia y estado del mar.
+   PATROCINIO: agrega objetos a MM_NOW_PAID con
+   {until:'YYYY-MM-DD', ic:'star', titleEN,titleES, subEN,subES,
+    act:"mmNowOpen('r99')" (o "go('sec-x')") — o link:'https://...'}
+   y toman el primer slot con tag PATROCINADO hasta esa fecha. */
+var MM_NOW_PAID=[];
+function mmNowIco(k){
+  var P={
+    sun:'<circle cx="12" cy="12" r="3.6"/><path d="M12 3v2.4M12 18.6V21M3 12h2.4M18.6 12H21M5.6 5.6l1.7 1.7M16.7 16.7l1.7 1.7M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7"/>',
+    wave:'<path d="M3 14.5c2 0 2-1.6 4-1.6s2 1.6 4 1.6 2-1.6 4-1.6 2 1.6 4 1.6"/><path d="M3 18.5c2 0 2-1.6 4-1.6s2 1.6 4 1.6 2-1.6 4-1.6 2 1.6 4 1.6"/><path d="M6 9.5c1.5-3.5 4.5-5 9-4.5"/>',
+    rain:'<path d="M7 16.5a4.5 4.5 0 0 1-.6-8.96 6 6 0 0 1 11.5 1.7A3.8 3.8 0 0 1 17.5 16.5z"/><path d="M9 19l-.7 1.6M13 19l-.7 1.6M17 19l-.7 1.6"/>',
+    food:'<path d="M8 4v7M6 4v3.5a2 2 0 0 0 4 0V4"/><path d="M16.5 4c-1.4 1-2 2.8-2 4.6 0 1.9.8 2.9 2 2.9V20"/><path d="M8 13v7"/>',
+    music:'<path d="M9 18V6l10-2v11.5"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="15.5" r="2.5"/>',
+    moon:'<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/>',
+    star:'<path d="M12 2.5l2.2 5.6 5.8.6-4.3 4 1.2 5.8L12 15.6 7.1 18.5l1.2-5.8-4.3-4 5.8-.6z"/>',
+    museum:'<path d="M4 20h16"/><path d="M12 3.5 4.5 8.5h15L12 3.5z"/><path d="M6.5 11v6M12 11v6M17.5 11v6"/>',
+    coffee:'<path d="M4 8h12v6a5 5 0 0 1-10 0V8z"/><path d="M16 9h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M7 4.5c0 .8.8.8.8 1.6M10.6 4.5c0 .8.8.8.8 1.6"/>'
+  };
+  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">'+(P[k]||P.star)+'</svg>';
+}
+function mmMoonPhase(d,ES){
+  /* fase lunar sin API — ciclo sinódico desde la luna nueva del 6 ene 2000 18:14 UTC */
+  var syn=29.53058867;
+  var age=(((d.getTime()/86400000 - Date.UTC(2000,0,6,18,14)/86400000)%syn)+syn)%syn;
+  var i = age<1.85?0 : age<5.54?1 : age<9.23?2 : age<12.92?3 : age<16.61?4 : age<20.30?5 : age<23.99?6 : age<27.68?7 : 0;
+  var Emm=['luna nueva','luna creciente','cuarto creciente','luna casi llena','luna llena','luna menguante','cuarto menguante','luna menguante'];
+  var Enn=['new moon','waxing crescent','first quarter','almost full moon','full moon','waning gibbous','last quarter','waning crescent'];
+  return ES?Emm[i]:Enn[i];
+}
+function mmNowOpen(id){
+  try{
+    var map=[['restaurants','rest'],['museums','museum'],['beaches','beach'],['nightlife','night']];
+    for(var i=0;i<map.length;i++){
+      var o=(D[map[i][0]]||[]).find(function(x){return x.id===id;});
+      if(o){ openItemModal(o,map[i][1]); return; }
+    }
+    openWaterModal(id); /* MM_WATER / MM_LUX / MM_ESC */
+  }catch(e){}
+}
+function mmNowRest(rx,max){
+  try{
+    return D.restaurants.filter(function(r){ return rx.test((r.occ||'')+' '+(r.tags||[]).join(' ')); })
+      .sort(function(a,b){ return (b.rating||0)-(a.rating||0); }).slice(0,max||3);
+  }catch(e){ return []; }
+}
+function mmNowToday(){
+  var MONS=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
+  var MONE=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  var now=new Date(), tD=now.getDate(), tM=now.getMonth();
+  function read(sel,src){
+    var res=[];
+    try{
+      document.querySelectorAll(sel+' .twx-card').forEach(function(c){
+        var nEl=c.querySelector('.twx-name'); if(!nEl||!nEl.textContent.trim()) return;
+        var dEl=c.querySelector('.twx-day'), mEl=c.querySelector('.twx-mon');
+        res.push({name:nEl.textContent.trim(), src:src,
+          day:dEl?dEl.textContent.trim():'', mon:mEl?mEl.textContent.trim().toUpperCase():''});
+      });
+    }catch(e){}
+    return res;
+  }
+  function isT(e){
+    if(!e.day) return false;
+    /* solo una fecha exacta cuenta como HOY — los rangos largos no */
+    var nums=(e.day.match(/\d+/g)||[]).map(Number);
+    if(nums.length!==1||nums[0]!==tD) return false;
+    if(!e.mon) return true;
+    var mi=MONS.indexOf(e.mon); if(mi<0) mi=MONE.indexOf(e.mon);
+    return mi<0?true:mi===tM;
+  }
+  var all=read('#twxMainPanel','week').concat(read('#twxMonthPanel','month'));
+  var out=[], seen={};
+  all.forEach(function(e){ if(isT(e)&&!seen[e.name]){ seen[e.name]=1; out.push(e); } });
+  return out.slice(0,2);
+}
+function mmNowPicks(ES){
+  var now=new Date(), h=now.getHours(), dw=now.getDay();
+  var S=window.mmSea||{}, W=window.mmWx||{};
+  var rain=Math.max(S.rain!=null?S.rain:0, W.rain3h!=null?W.rain3h:0);
+  var ft=S.waveFt, out=[];
+  function add(ic,ac,tE,tS,sE,sS,act){ out.push({ic:ic,ac:ac,t:ES?tS:tE,s:ES?sS:sE,act:act}); }
+  function names(arr,mx){ return arr.slice(0,mx||2).map(function(r){return r.name;}).join(' · '); }
+  function bName(id){ try{ var b=D.beaches.find(function(x){return x.id===id;}); return b?b.name:''; }catch(e){ return ''; } }
+  /* 1) si llueve, el plan cambia primero */
+  if(rain>=50){
+    add('museum','#3D8FE0','A museum day','Día de museos',
+      rain+'% rain — PAMM, art over the bay', rain+'% de lluvia — PAMM, arte frente a la bahía',"mmNowOpen('m1')");
+    add('star','#8E6BE8','Immersive art, indoors','Arte inmersivo bajo techo',
+      'Superblue — book your entry','Superblue — reserva tu entrada',"mmNowOpen('m9')");
+  }
+  /* 2) la hora del día */
+  if(h>=7&&h<12){
+    var br=mmNowRest(/brunch|breakfast/i,2);
+    if((dw===0||dw===6)&&br.length){
+      add('food','#FF4D35', dw===0?'Sunday brunch':'Weekend brunch', dw===0?'Brunch de domingo':'Brunch de fin de semana',
+        names(br), names(br), "mmNowOpen('"+br[0].id+"')");
+    } else if(br.length){
+      add('coffee','#B5793A','Start with breakfast','Empieza desayunando', names(br), names(br), "mmNowOpen('"+br[0].id+"')");
+    }
+    if(rain<40){
+      var bm=['b1','b5','b6'][now.getDate()%3];
+      add('sun','#00B39E','Morning on the sand','Mañana de playa',
+        bName(bm)+' — early is the best light', bName(bm)+' — temprano es la mejor luz',"mmNowOpen('"+bm+"')");
+    }
+  } else if(h>=12&&h<16){
+    if(rain<40){
+      var ba=['b1','b5','b6'][now.getDate()%3];
+      add('sun','#F5A302','Beach afternoon','Tarde de playa',
+        (W.temp!=null?Math.round(W.temp)+'° — ':'')+bName(ba),
+        (W.temp!=null?Math.round(W.temp)+'° — ':'')+bName(ba),"mmNowOpen('"+ba+"')");
+    }
+  } else if(h>=16&&h<20){
+    add('sun','#FF7A2E','Rooftop for sunset','Rooftop para el atardecer',
+      (S.sunset?'Sunset at '+S.sunset+' — ':'')+'Rosa Sky & Amazónico',
+      (S.sunset?'Atardece '+S.sunset+' — ':'')+'Rosa Sky y Amazónico',"mmNowOpen('n13')");
+    var dt=mmNowRest(/date|romantic/i,2);
+    if(dt.length) add('food','#E0568C','Then, dinner','Y después, la cena', names(dt), names(dt), "mmNowOpen('"+dt[0].id+"')");
+  } else if(h>=20||h<2){
+    if(dw===5||dw===6){
+      var nc=(now.getDate()%2)?'n3':'n1';
+      var ncn=nc==='n3'?'E11EVEN':'LIV';
+      add('music','#FF4D35','The night is starting','La noche empieza',
+        ncn+(nc==='n3'?' — the 24/7 ultraclub':' — Fontainebleau'), ncn+(nc==='n3'?' — el ultraclub 24/7':' — Fontainebleau'),"mmNowOpen('"+nc+"')");
+    } else add('music','#00B39E','Live music tonight','Música en vivo hoy',
+      'Ball & Chain — salsa in Little Havana','Ball & Chain — salsa en La Pequeña Habana',"mmNowOpen('n2')");
+  } else {
+    add('moon','#F5A302','Open 24/7','Abierto 24/7',
+      'Versailles — cafecito at any hour','Versailles — cafecito a cualquier hora',"mmNowOpen('r01')");
+  }
+  /* 3) bahía plana de día = oro (y monetiza) */
+  if(ft!=null&&ft<1.5&&h>=8&&h<18&&rain<50)
+    add('wave','#00B39E','The bay is flat','La bahía está plana',
+      ft.toFixed(1)+' ft — rent a boat today', ft.toFixed(1)+' ft — renta un bote hoy',"mmNowOpen('w2')");
+  /* 4) rellenos siempre válidos */
+  if(out.length<3) add('star','#F5A302','A day on a yacht','Un día en yate',
+    'Private charter on Biscayne Bay','Charter privado por la bahía',"mmNowOpen('x1')");
+  if(out.length<3){
+    var nw=[];
+    try{ nw=['r101','r100','r99'].map(function(i){return D.restaurants.find(function(x){return x.id===i;});}).filter(Boolean); }catch(e){}
+    if(nw.length) add('food','#FF4D35','Just added','Recién añadidos', names(nw), names(nw), "mmNowOpen('"+nw[0].id+"')");
+  }
+  /* pagados primero, mientras su ventana esté abierta */
+  var today=new Date(); today.setHours(0,0,0,0);
+  var paid=[];
+  (MM_NOW_PAID||[]).forEach(function(p){
+    var ok=true;
+    try{ if(p.until){ var q=p.until.split('-'); ok=new Date(+q[0],+q[1]-1,+q[2])>=today; } }catch(e){}
+    if(!ok) return;
+    paid.push({ic:p.ic||'star',ac:'#FFD166',paid:true,
+      t:ES?(p.titleES||p.titleEN):p.titleEN, s:(ES?(p.subES||p.subEN):p.subEN)||'',
+      act:p.act||(p.link?"window.open('"+p.link+"','_blank')":'')});
+  });
+  return paid.concat(out).slice(0,3);
+}
+function mmNowRender(){
+  var box=document.getElementById('mmNow'); if(!box) return;
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var now=new Date(), h=now.getHours();
+  var S=window.mmSea||{}, W=window.mmWx||{};
+  var DE=['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  var DN=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var ME=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var dayTx = ES ? DE[now.getDay()]+' '+now.getDate()+' de '+ME[now.getMonth()]
+                 : DN[now.getDay()]+', '+MN[now.getMonth()]+' '+now.getDate();
+  dayTx = dayTx.charAt(0).toUpperCase()+dayTx.slice(1);
+  var who='Miami';
+  try{
+    var nm=(localStorage.getItem('mm_name')||'').trim();
+    if(nm){ nm=nm.split(/\s+/)[0].replace(/[<>&"']/g,'').slice(0,18);
+      if(nm) who=nm.charAt(0).toUpperCase()+nm.slice(1); }
+  }catch(e){}
+  var greet = h<12 ? (ES?'Buenos días, ':'Good morning, ')+who
+            : h<19 ? (ES?'Buenas tardes, ':'Good afternoon, ')+who
+                   : (ES?'Buenas noches, ':'Good evening, ')+who;
+  var st=[];
+  if(W.temp!=null) st.push('<b>'+Math.round(W.temp)+'°</b>');
+  if(S.waveFt!=null){
+    var ftv=S.waveFt;
+    var w = ftv<1 ? (ES?'bahía plana':'flat bay') : ftv<2 ? (ES?'mar ligero':'light seas') : ftv<3.5 ? (ES?'mar moderado':'moderate seas') : (ES?'mar picado':'choppy seas');
+    st.push('<b class="mm-nw-sea" style="white-space:nowrap">'+w+'</b>');
+  }
+  if(S.rain!=null&&S.rain>=40) st.push('<b class="mm-nw-rain" style="white-space:nowrap">'+S.rain+'% '+(ES?'lluvia':'rain')+'</b>');
+  /* segmento del cielo — varía con el momento: madrugada=amanecer, día=atardecer, noche=luna */
+  var sunUp=null, sunDn=null, tNow=now.getTime();
+  try{ if(S.sunriseRaw) sunUp=new Date(S.sunriseRaw).getTime(); }catch(e){}
+  try{ if(S.sunsetRaw) sunDn=new Date(S.sunsetRaw).getTime(); }catch(e){}
+  if(h>=4&&sunUp&&tNow<sunUp&&S.sunrise){
+    st.push('<span style="white-space:nowrap">'+(ES?'amanece ':'sunrise ')+'<b class="mm-nw-sun">'+S.sunrise+'</b></span>');
+  } else if(h>=21||h<5||(sunDn&&tNow>=sunDn)){
+    st.push('<b class="mm-nw-moon" style="white-space:nowrap">'+mmMoonPhase(now,ES)+'</b>');
+  } else if(sunDn&&tNow<sunDn&&S.sunset){
+    st.push('<span style="white-space:nowrap">'+(ES?'atardece ':'sunset ')+'<b class="mm-nw-sun">'+S.sunset+'</b></span>');
+  } else if(S.sunset){
+    st.push('<span style="white-space:nowrap">'+(ES?'atardece ':'sunset ')+'<b class="mm-nw-sun">'+S.sunset+'</b></span>');
+  }
+  var status = st.length ? st.join(' <span class="mm-now-sep">·</span> ') : (ES?'Tu guía, en tiempo real':'Your guide, in real time');
+  var ev=mmNowToday(), evH='';
+  ev.forEach(function(e){
+    var act = e.src==='month' ? "go('sec-month')" : 'goWeek()';
+    var evNm=e.name.replace(/[\"']/g,'');
+    evH+='<div class="mm-now-ev" onclick="mmTrack(&quot;now_today&quot;,&quot;'+evNm+'&quot;);'+act+'">'
+      +'<span class="mm-now-ev-tag">'+(ES?'HOY':'TODAY')+'</span>'
+      +'<span class="mm-now-ev-nm">'+e.name+'</span>'
+      +'<svg class="mm-now-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></div>';
+  });
+  var recs=mmNowPicks(ES), rH='';
+  function nowTint(hex,a){
+    try{ var x=hex.replace('#',''); var r=parseInt(x.substr(0,2),16),g=parseInt(x.substr(2,2),16),b=parseInt(x.substr(4,2),16);
+      return 'rgba('+r+','+g+','+b+','+a+')'; }catch(e){ return 'rgba(0,179,158,'+a+')'; }
+  }
+  recs.forEach(function(r){
+    var ac=r.ac||'#00B39E';
+    var tk=(r.paid?'now_paid':'now_rec'), ti=(r.t||'').replace(/[\"']/g,'');
+    rH+='<div class="mm-now-rec'+(r.paid?' mm-now-paid':'')+'" onclick="mmTrack(&quot;'+tk+'&quot;,&quot;'+ti+'&quot;);'+(r.act||'')+'">'
+      +'<span class="mm-now-ic" style="--nowac:'+ac+';color:'+ac+';background:'+nowTint(ac,.16)+';border-color:'+nowTint(ac,.5)+'">'+mmNowIco(r.ic)+'</span>'
+      +'<span class="mm-now-tx"><b>'+r.t+(r.paid?' <span class="promo-tag">'+(ES?'PATROCINADO':'SPONSORED')+'</span>':'')+'</b><i>'+r.s+'</i></span>'
+      +'<svg class="mm-now-arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></div>';
+  });
+  box.innerHTML='<div class="mm-now-card">'
+    +'<div class="mm-now-top"><span class="mm-now-dot"></span>'+greet+'<span class="mm-now-date">'+dayTx+'</span></div>'
+    +'<div class="mm-now-status">'+status+'</div>'
+    +evH
+    +(rH?'<div class="mm-now-lbl">'+(ES?'Para ahora mismo':'For right now')+'</div>'+rH:'')
+  +'</div>';
+  box.style.display='block';
+}
+document.addEventListener('DOMContentLoaded',function(){ setTimeout(mmNowRender,900); setTimeout(mmNowRender,2600); setTimeout(mmNowRender,7500); });
+/* la tarjeta sigue el reloj si la pestaña queda abierta */
+setInterval(function(){ try{mmNowRender();}catch(e){} }, 30*60*1000);
+
 var MM_ESC=[
  {id:'e1',name:'3-Night Bahamas Cruise',name_es:'Crucero de 3 Noches a Bahamas',cat:'Cruise',cat_es:'Crucero',ac:'#0B6FA4',
   ico:'<path d="M3 18.5h18l-2 3H5z"/><path d="M4.8 18.5L6 12.5h12l1.2 6"/><path d="M8 12.5V8h8v4.5"/><rect x="9.5" y="9" width="2" height="2"/><rect x="13" y="9" width="2" height="2"/><path d="M12 8V4.5"/>',
@@ -8392,6 +8718,7 @@ document.addEventListener("DOMContentLoaded",function(){
     .then(function(data){
       var c=data.current, daily=data.daily, code=c.weathercode;
       try{var _pp=0;if(data.hourly&&data.hourly.precipitation_probability){var _hn=new Date().getHours();for(var _k=_hn;_k<Math.min(_hn+3,data.hourly.precipitation_probability.length);_k++){_pp=Math.max(_pp,data.hourly.precipitation_probability[_k]||0);}}window.mmWx={temp:c.temperature_2m,feels:c.apparent_temperature,code:c.weathercode,wind:c.windspeed_10m,hum:c.relativehumidity_2m,uv:(c.uv_index!=null?c.uv_index:(daily.uv_index_max?daily.uv_index_max[0]:0)),uvMax:(daily.uv_index_max?daily.uv_index_max[0]:0),rain3h:_pp};}catch(e){}
+      try{ mmNowRender(); }catch(e){}
 
       // Current
       var t=document.getElementById('wx-temp'); if(t)t.textContent=Math.round(c.temperature_2m);
@@ -8876,7 +9203,8 @@ function openAccount(){
     ? hist.slice(0,8).map(function(h){
         var nm=(h&&h.name)?h.name:String(h);
         var id=(h&&h.id)?h.id:'';
-        return '<div class="acc-list-item" onclick="closeAccount();openFavById(\''+id+'\')">'
+        var ty=(h&&h.type)?h.type:'';
+        return '<div class="acc-list-item" onclick="closeAccount();mmOpenHist(\''+id+'\',\''+ty+'\')">'
           +'<span class="acc-list-dot" style="background:#FFD166"></span>'
           +'<span class="acc-list-name">'+nm+'</span>'
           +'<span class="acc-list-time">'+mmAgo(h&&h.t)+'</span></div>';
@@ -8966,6 +9294,20 @@ function mmTrackVisit(id,name,type){
     h.unshift({id:id,name:name,type:type||'',t:Date.now()});
     if(h.length>30) h=h.slice(0,30);
     localStorage.setItem('mm_history',JSON.stringify(h));
+  }catch(e){}
+}
+function mmOpenHist(id,type){
+  /* reabre un lugar del historial aunque NO sea favorito, con su tipo original */
+  try{
+    if(type==='water'){ openWaterModal(id); return; }
+    var ks=Object.keys(D||{});
+    for(var i=0;i<ks.length;i++){
+      var arr=D[ks[i]];
+      if(!arr||typeof arr.find!=='function') continue;
+      var o=arr.find(function(x){return x&&x.id===id;});
+      if(o){ openItemModal(o,type||'place'); return; }
+    }
+    openFavById(id); /* último recurso: por si vive solo en favoritos */
   }catch(e){}
 }
 function mmClearHistory(){
@@ -9304,7 +9646,7 @@ document.addEventListener('click',function(e){
   var inp=document.getElementById('heroSearchInp');
   if(p && p.classList.contains('on') && !p.contains(e.target) && e.target!==inp) mmHideHistory();
 });
-function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';}
+function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';try{mmNowRender();}catch(e){}}
 function socApplyLang(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   document.querySelectorAll('#sec-social [data-en], #socPubOv [data-en]').forEach(function(el){
