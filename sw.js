@@ -17,7 +17,8 @@ var VERSION = 'mm-v3';
 var SHELL_CACHE = VERSION + '-shell';
 var IMG_CACHE   = VERSION + '-img';
 var API_CACHE   = VERSION + '-api';
-var ALL_CACHES  = [SHELL_CACHE, IMG_CACHE, API_CACHE];
+var OFF_CACHE   = VERSION + '-offline';   /* guardado a propósito por el usuario — NUNCA se poda */
+var ALL_CACHES  = [SHELL_CACHE, IMG_CACHE, API_CACHE, OFF_CACHE];
 
 var IMG_MAX = 220;
 
@@ -91,9 +92,32 @@ self.addEventListener('fetch', function (e) {
   var url = new URL(req.url);
   var mismo = (url.origin === self.location.origin);
 
+  /* 0) MODO SIN CONEXIÓN — lo que el usuario guardó a propósito manda.
+        Con red: se sirve la red y se refresca la copia en silencio.
+        Sin red: se sirve la copia guardada. */
+  if (mismo) {
+    e.respondWith(
+      caches.open(OFF_CACHE).then(function (off) {
+        return off.match(req, { ignoreSearch: true }).then(function (hit) {
+          if (!hit) return null;
+          return fetch(req).then(function (res) {
+            if (res && res.ok) off.put(req, res.clone());
+            return res;
+          }).catch(function () { return hit; });
+        });
+      }).catch(function () { return null; })
+        .then(function (r) { return r || mmRoute(req, url, mismo); })
+    );
+    return;
+  }
+  e.respondWith(mmRoute(req, url, mismo));
+});
+
+function mmRoute(req, url, mismo) {
+
   /* 1) Navegación → network-first, guarda shell */
   if (req.mode === 'navigate') {
-    e.respondWith(
+    return (
       caches.open(SHELL_CACHE).then(function (cache) {
         return fetch(req).then(function (res) {
           if (res && res.ok) cache.put('/', res.clone());
@@ -105,23 +129,21 @@ self.addEventListener('fetch', function (e) {
         });
       })
     );
-    return;
   }
 
   /* 2) Clima → network-first con fallback (CORS: res.ok verificable, seguro) */
   if (url.hostname.indexOf('open-meteo.com') !== -1) {
-    e.respondWith(networkFirst(req, API_CACHE, 5000));
-    return;
+    return networkFirst(req, API_CACHE, 5000);
   }
 
   /* 3) TODO lo externo pasa directo a la red: el SW no lo toca ni guarda.
         (El caché HTTP del navegador ya lo maneja bien.) */
-  if (!mismo) return;
+  if (!mismo) return fetch(req);
 
   /* 4) Imágenes propias (/fotos/, iconos, png) → cache-first,
         guardando SOLO descargas exitosas */
   if (url.pathname.indexOf('/fotos/') === 0 || /\.(jpg|jpeg|png|webp)$/i.test(url.pathname)) {
-    e.respondWith(
+    return (
       caches.open(IMG_CACHE).then(function (cache) {
         return cache.match(req).then(function (hit) {
           if (hit) return hit;
@@ -135,10 +157,52 @@ self.addEventListener('fetch', function (e) {
         });
       })
     );
-    return;
   }
 
   /* 5) resto del mismo origen (manifest, sw, json) → red directa */
+  return fetch(req);
+}
+
+/* ══ MODO SIN CONEXIÓN · guardar / borrar / consultar ══
+   La página envía un mensaje con un MessageChannel y recibe el progreso:
+   {type:'MM_OFF_SAVE', urls:[...]} · {type:'MM_OFF_CLEAR'} · {type:'MM_OFF_STATUS'} */
+self.addEventListener('message', function (e) {
+  var d = e.data || {};
+  var port = e.ports && e.ports[0];
+  function reply(m) { if (port) { try { port.postMessage(m); } catch (x) {} } }
+
+  if (d.type === 'MM_OFF_STATUS') {
+    caches.open(OFF_CACHE).then(function (c) {
+      return c.keys().then(function (k) { reply({ type: 'status', saved: k.length }); });
+    }).catch(function () { reply({ type: 'status', saved: 0 }); });
+    return;
+  }
+
+  if (d.type === 'MM_OFF_CLEAR') {
+    caches.delete(OFF_CACHE).then(function () { reply({ type: 'cleared' }); })
+      .catch(function () { reply({ type: 'cleared' }); });
+    return;
+  }
+
+  if (d.type === 'MM_OFF_SAVE') {
+    var urls = (d.urls || []).slice(0, 400);
+    e.waitUntil(caches.open(OFF_CACHE).then(function (cache) {
+      var done = 0, failed = 0, i = 0;
+      function next() {
+        if (i >= urls.length) { reply({ type: 'done', saved: done, failed: failed }); return Promise.resolve(); }
+        var u = urls[i++];
+        return fetch(u, { cache: 'reload' }).then(function (res) {
+          if (res && res.ok) return cache.put(u, res.clone()).then(function () { done++; });
+          failed++;
+        }).catch(function () { failed++; })
+          .then(function () {
+            reply({ type: 'progress', done: done, failed: failed, total: urls.length });
+            return next();
+          });
+      }
+      return next();
+    }));
+  }
 });
 
 /* ── PUSH Miami Pulse ── */

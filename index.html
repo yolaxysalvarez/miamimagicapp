@@ -7442,6 +7442,105 @@ document.addEventListener('DOMContentLoaded',function(){
   },700);
 });
 
+/* ══ ACCESOS DIRECTOS del ícono (manifest shortcuts) — /?go=week|map|livecams|ask ══ */
+document.addEventListener('DOMContentLoaded',function(){
+  var g='';
+  try{ g=(new URLSearchParams(location.search)).get('go')||''; }catch(e){}
+  if(!g) return;
+  setTimeout(function(){
+    try{
+      if(g==='week'){ goWeek(); }
+      else if(g==='map'){ go('sec-map'); }
+      else if(g==='livecams'){ go('sec-livecams');
+        setTimeout(function(){ var p=document.getElementById('mmcamPanel'); if(p&&!p.classList.contains('open')) mmcamSection(); },700); }
+      else if(g==='ask'){ openAmigo(); }
+    }catch(e){}
+    try{ history.replaceState(null,'',location.pathname); }catch(e){}
+  },1200);
+});
+
+/* ══ MODO SIN CONEXIÓN — habla con sw.js (caché mm-v3-offline) ══
+   Guarda el shell + los assets propios. El texto completo de la guía vive
+   dentro de index.html, así que con el shell guardado los 300+ lugares
+   quedan legibles sin señal. */
+function mmOffPort(msg, onMsg){
+  return new Promise(function(res){
+    var sw = navigator.serviceWorker && navigator.serviceWorker.controller;
+    if(!sw){ res(null); return; }
+    var ch = new MessageChannel();
+    ch.port1.onmessage = function(ev){
+      var d = ev.data || {};
+      if(onMsg) onMsg(d);
+      if(d.type==='done'||d.type==='status'||d.type==='cleared') res(d);
+    };
+    try{ sw.postMessage(msg, [ch.port2]); }catch(e){ res(null); }
+    setTimeout(function(){ res(null); }, 120000);
+  });
+}
+function mmOffTx(en,es){ return (typeof lang!=='undefined'&&lang==='es')?es:en; }
+function mmOffSet(sub,btn,clr){
+  var a=document.getElementById('acc-off-sub'); if(a&&sub) a.textContent=sub;
+  var b=document.getElementById('mmOffBtn'); if(b&&btn) b.textContent=btn;
+  var c=document.getElementById('mmOffClr'); if(c) c.style.display=clr?'block':'none';
+}
+function mmOffStatus(){
+  mmOffPort({type:'MM_OFF_STATUS'}).then(function(d){
+    if(!d) return;
+    if(d.saved>0){
+      mmOffSet(mmOffTx('Saved · '+d.saved+' files','Guardada · '+d.saved+' archivos'),
+               mmOffTx('Update offline copy','Actualizar copia'), true);
+    } else {
+      mmOffSet(mmOffTx('Use the guide with no signal','Usa la guía sin señal'),
+               mmOffTx('Save guide for offline','Guardar guía sin conexión'), false);
+    }
+  });
+}
+function mmOffList(){
+  /* el shell + los assets propios que la página realmente referencia */
+  var out=['/','/manifest.json','/privacy.html'];
+  try{
+    document.querySelectorAll('img[src]').forEach(function(im){
+      var u=im.getAttribute('src')||'';
+      if(u.indexOf('data:')===0) return;
+      if(u.indexOf('/fotos/')===0||u.indexOf('fotos/')===0||/^\/[\w.-]+\.(png|jpg|jpeg|webp|svg)$/i.test(u)) out.push(u);
+    });
+  }catch(e){}
+  try{
+    var html=document.documentElement.innerHTML;
+    (html.match(/fotos\/[A-Za-z0-9._-]+\.(?:jpg|jpeg|png|webp)/g)||[]).forEach(function(p){ out.push('/'+p); });
+    (html.match(/\/miami-magic-icon-[0-9]+\.png/g)||[]).forEach(function(p){ out.push(p); });
+  }catch(e){}
+  var seen={},list=[];
+  out.forEach(function(u){
+    if(!u) return;
+    if(u.charAt(0)!=='/') u='/'+u.replace(/^\.\//,'');   /* normaliza a ruta absoluta: evita duplicados */
+    if(!seen[u]){ seen[u]=1; list.push(u); }
+  });
+  return list;
+}
+function mmOffSave(){
+  var btn=document.getElementById('mmOffBtn'), wrap=document.getElementById('mmOffBarWrap'), bar=document.getElementById('mmOffBar');
+  if(!navigator.serviceWorker || !navigator.serviceWorker.controller){
+    if(btn) btn.textContent=mmOffTx('Reload the app and try again','Recarga la app e inténtalo otra vez');
+    return;
+  }
+  var urls=mmOffList();
+  if(btn){ btn.disabled=true; btn.style.opacity='.65'; btn.textContent=mmOffTx('Saving…','Guardando…'); }
+  if(wrap) wrap.style.display='block';
+  mmOffPort({type:'MM_OFF_SAVE',urls:urls}, function(d){
+    if(d.type==='progress'&&bar) bar.style.width=Math.round((d.done+d.failed)/d.total*100)+'%';
+  }).then(function(d){
+    if(btn){ btn.disabled=false; btn.style.opacity='1'; }
+    if(bar) bar.style.width='100%';
+    setTimeout(function(){ if(wrap) wrap.style.display='none'; if(bar) bar.style.width='0%'; },1200);
+    mmOffStatus();
+  });
+}
+function mmOffClear(){
+  mmOffPort({type:'MM_OFF_CLEAR'}).then(function(){ mmOffStatus(); });
+}
+document.addEventListener('DOMContentLoaded',function(){ setTimeout(mmOffStatus,2500); });
+
 /* ══ MM ANALYTICS — taps de la tarjeta Miami Ahora ══
    Requiere la tabla public.mm_events en Supabase (insert-only para anon).
    Fire-and-forget: nunca bloquea la UI; loguea el fallo en consola. */
@@ -8890,6 +8989,15 @@ document.addEventListener("DOMContentLoaded",function(){
     </div>
     <div class="acc-row" style="cursor:default;"><div class="acc-ico-wrap"><svg class="acc-ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><div class="acc-row-label"><div class="acc-row-title" data-en="Language" data-es="Idioma">Idioma</div></div><div style="display:flex;gap:5px;"><button onclick="accLang('en')" id="lang-en" class="acc-lang-btn" style="background:#FF4D35;color:#fff;border-color:#FF4D35;">EN</button><button onclick="accLang('es')" id="lang-es" class="acc-lang-btn" style="background:transparent;color:rgba(255,255,255,.45);border-color:rgba(255,255,255,.15);">ES</button></div></div>
     <div class="acc-row" style="cursor:default;"><div class="acc-ico-wrap"><svg class="acc-ico" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg></div><div class="acc-row-label"><div class="acc-row-title" data-en="Dark Mode" data-es="Modo Oscuro">Modo Oscuro</div></div><div class="acc-switch" id="sw-dark" onclick="accDarkToggle()" data-on="0" style="background:rgba(255,255,255,.12);"><div class="acc-switch-dot" style="left:3px;"></div></div></div>
+    <div class="acc-row" onclick="accToggle('off');mmOffStatus();"><div class="acc-ico-wrap c-teal"><svg class="acc-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v10"/><path d="M8.5 9.5L12 13l3.5-3.5"/><path d="M4 15v3.5A1.5 1.5 0 005.5 20h13a1.5 1.5 0 001.5-1.5V15"/></svg></div><div class="acc-row-label"><div class="acc-row-title" data-en="Offline Mode" data-es="Modo Sin Conexi&#243;n">Modo Sin Conexi&#243;n</div><div class="acc-row-sub" id="acc-off-sub" data-en="Use the guide with no signal" data-es="Usa la gu&#237;a sin se&#241;al">Usa la gu&#237;a sin se&#241;al</div></div><span class="acc-chevron" id="acc-arr-off">&#8250;</span></div>
+    <div class="acc-toggle-section" id="acc-off">
+      <div style="padding:6px 22px 14px;">
+        <div id="mmOffMsg" style="font-family:'DM Sans',sans-serif;font-size:.76rem;color:#666;line-height:1.6;margin-bottom:12px;" data-en="Save the complete guide to your phone: all 300+ places with their descriptions, addresses and local tips stay readable in Airplane Mode." data-es="Guarda la gu&#237;a completa en tu tel&#233;fono: los 300+ lugares con sus descripciones, direcciones y tips siguen legibles en modo avi&#243;n.">Guarda la gu&#237;a completa en tu tel&#233;fono: los 300+ lugares con sus descripciones, direcciones y tips siguen legibles en modo avi&#243;n.</div>
+        <div id="mmOffBarWrap" style="display:none;height:7px;border-radius:5px;background:rgba(0,0,0,.08);overflow:hidden;margin-bottom:10px;"><div id="mmOffBar" style="height:100%;width:0%;background:linear-gradient(90deg,#00C9B1,#00998A);transition:width .25s;"></div></div>
+        <button id="mmOffBtn" onclick="mmOffSave()" style="width:100%;padding:11px;background:rgba(0,201,177,.10);color:#00998A;border:1.5px solid rgba(0,201,177,.40);border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:700;cursor:pointer;" data-en="Save guide for offline" data-es="Guardar gu&#237;a sin conexi&#243;n">Guardar gu&#237;a sin conexi&#243;n</button>
+        <button id="mmOffClr" onclick="mmOffClear()" style="display:none;width:100%;margin-top:8px;padding:9px;background:transparent;color:#aaa;border:1.5px solid #ddd;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;cursor:pointer;" data-en="Delete offline copy" data-es="Borrar copia sin conexi&#243;n">Borrar copia sin conexi&#243;n</button>
+      </div>
+    </div>
     <div class="acc-row" onclick="openPrivacy()"><div class="acc-ico-wrap c-teal"><svg class="acc-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.5c0 4.4-3.1 8.3-7.5 9.5-4.4-1.2-7.5-5.1-7.5-9.5V6z"/><path d="M9.5 12l1.8 1.8 3.4-3.6"/></svg></div><div class="acc-row-label"><div class="acc-row-title" data-en="Privacy Policy" data-es="Pol&#237;tica de Privacidad">Pol&#237;tica de Privacidad</div><div class="acc-row-sub" data-en="What we collect and what we don't" data-es="Qu&#233; recogemos y qu&#233; no">Qu&#233; recogemos y qu&#233; no</div></div><span class="acc-chevron">&#8250;</span></div>
     <div class="acc-section-lbl" style="margin-top:8px;" data-en="My Data" data-es="Mis Datos">Mis Datos</div><div class="acc-section-line"></div>
     <div style="padding:10px 22px 14px;"><div style="font-family:'DM Sans',sans-serif;font-size:.82rem;color:#444;line-height:2.4;">
