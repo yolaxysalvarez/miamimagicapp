@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Your Account — Miami Magic | Eliminar tu Cuenta</title>
+<meta name="description" content="Request deletion of your Miami Magic account and associated data. Solicita la eliminación de tu cuenta de Miami Magic y tus datos.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.miamimagicapp.com/delete-account.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#080F1E;--navy2:#0E1B33;--cream:#FFF0E0;--coral:#FF4D35;--teal:#00C9B1;--gold:#FFD166;--ink:#0E1B30;}
+*{box-sizing:border-box;}
+body{margin:0;font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);}
+header{background:linear-gradient(150deg,#152643,#0B1526);padding:22px 24px;display:flex;align-items:center;gap:12px;}
+header a{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;}
+header svg{width:30px;height:30px;}
+header b{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;letter-spacing:.04em;}
+main{max-width:640px;margin:0 auto;padding:40px 24px 80px;}
+h1{font-family:'Playfair Display',serif;font-weight:900;font-size:1.9rem;margin:0 0 6px;color:var(--ink);}
+.sub{color:rgba(14,27,48,.6);font-size:.92rem;margin-bottom:28px;}
+.lang-toggle{display:inline-flex;gap:4px;background:rgba(14,27,48,.06);padding:4px;border-radius:50px;margin-bottom:24px;}
+.lang-toggle button{border:none;background:transparent;padding:7px 16px;border-radius:50px;font:700 .78rem 'DM Sans',sans-serif;cursor:pointer;color:rgba(14,27,48,.55);}
+.lang-toggle button.on{background:var(--coral);color:#fff;}
+.card{background:#fff;border-radius:18px;padding:26px;box-shadow:0 12px 34px -20px rgba(14,27,48,.35);margin-bottom:20px;}
+.card h2{font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:800;margin:0 0 10px;}
+.card p{font-size:.88rem;line-height:1.65;color:rgba(14,27,48,.72);margin:0 0 10px;}
+.card ul{margin:0;padding-left:20px;font-size:.88rem;line-height:1.75;color:rgba(14,27,48,.72);}
+label{display:block;font-size:.78rem;font-weight:700;margin:16px 0 6px;color:var(--ink);}
+input,textarea,select{width:100%;padding:12px 14px;border-radius:12px;border:1.5px solid rgba(14,27,48,.15);font:400 .9rem 'DM Sans',sans-serif;background:var(--cream);color:var(--ink);}
+textarea{resize:vertical;min-height:80px;}
+button.submit{margin-top:20px;width:100%;padding:14px;border:none;border-radius:50px;background:linear-gradient(135deg,var(--coral),#e0402a);color:#fff;font:800 .9rem 'DM Sans',sans-serif;cursor:pointer;}
+button.submit:disabled{opacity:.6;cursor:default;}
+.note{font-size:.74rem;color:rgba(14,27,48,.5);margin-top:14px;line-height:1.6;}
+.ok{display:none;text-align:center;padding:40px 20px;}
+.ok svg{width:52px;height:52px;color:var(--teal);margin-bottom:14px;}
+.ok h2{font-family:'Playfair Display',serif;font-size:1.4rem;margin:0 0 8px;}
+.ok p{font-size:.88rem;color:rgba(14,27,48,.65);}
+.err{display:none;color:var(--coral);font-size:.8rem;margin-top:10px;}
+footer{text-align:center;padding:24px;font-size:.72rem;color:rgba(14,27,48,.4);}
+</style>
+</head>
+<body>
+<header>
+  <a href="https://www.miamimagicapp.com">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-5 5-5 8a5 5 0 0 0 10 0c0-3-2-5-5-8z"/><path d="M12 11v10"/><path d="M12 15c-2 0-3.5 1-4.5 2.5M12 18c2 0 3.5 1 4.5 2.5"/></svg>
+    <b>MIAMI MAGIC</b>
+  </a>
+</header>
+<main>
+  <div class="lang-toggle" id="langT">
+    <button data-l="en" class="on">English</button>
+    <button data-l="es">Español</button>
+  </div>
+
+  <div id="formWrap">
+    <h1 data-en="Delete Your Account" data-es="Eliminar tu Cuenta">Delete Your Account</h1>
+    <p class="sub" data-en="Request deletion of your Miami Magic account and all associated data. No app install required."
+                    data-es="Solicita la eliminación de tu cuenta de Miami Magic y todos tus datos asociados. No necesitas tener la app instalada.">
+      Request deletion of your Miami Magic account and all associated data. No app install required.
+    </p>
+
+    <div class="card">
+      <h2 data-en="What gets deleted" data-es="Qué se elimina">What gets deleted</h2>
+      <ul id="whatList">
+        <li data-en="Your account name and email" data-es="Tu nombre y correo de la cuenta">Your account name and email</li>
+        <li data-en="Saved favorites, visit history and trip plans" data-es="Favoritos guardados, historial de visitas y viajes planeados">Saved favorites, visit history and trip plans</li>
+        <li data-en="Any active push notification subscription" data-es="Cualquier suscripción activa a notificaciones">Any active push notification subscription</li>
+        <li data-en="Business directory listing data, if applicable" data-es="Datos de tu ficha del directorio de negocios, si aplica">Business directory listing data, if applicable</li>
+      </ul>
+      <p style="margin-top:12px" data-en="Processed within 30 days. Active paid subscriptions must be cancelled separately in Stripe or your payment method — deleting your account does not cancel billing."
+                                  data-es="Se procesa en un plazo de 30 días. Las suscripciones pagadas activas deben cancelarse por separado en Stripe o tu método de pago — eliminar la cuenta no cancela el cobro.">
+        Processed within 30 days. Active paid subscriptions must be cancelled separately in Stripe or your payment method — deleting your account does not cancel billing.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 data-en="Request deletion" data-es="Solicitar eliminación">Request deletion</h2>
+      <form id="delForm">
+        <label data-en="Full name" data-es="Nombre completo">Full name</label>
+        <input type="text" id="fName" required>
+
+        <label data-en="Email used for your account" data-es="Correo de tu cuenta">Email used for your account</label>
+        <input type="email" id="fEmail" required>
+
+        <label data-en="Anything else we should know (optional)" data-es="Algo más que debamos saber (opcional)">Anything else we should know (optional)</label>
+        <textarea id="fNote"></textarea>
+
+        <button type="submit" class="submit" id="fBtn" data-en="Submit deletion request" data-es="Enviar solicitud de eliminación">Submit deletion request</button>
+        <div class="err" id="fErr" data-en="Something went wrong — please email info@miamimagicapp.com directly."
+                                    data-es="Algo salió mal — por favor escribe directo a info@miamimagicapp.com.">
+          Something went wrong — please email info@miamimagicapp.com directly.
+        </div>
+        <p class="note" data-en="Prefer email? Write to info@miamimagicapp.com with subject 'Delete my account'."
+                         data-es="¿Prefieres correo? Escribe a info@miamimagicapp.com con el asunto 'Eliminar mi cuenta'.">
+          Prefer email? Write to info@miamimagicapp.com with subject "Delete my account".
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <div class="ok" id="okBox">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5 5-5"/></svg>
+    <h2 data-en="Request received" data-es="Solicitud recibida">Request received</h2>
+    <p data-en="We'll process your deletion within 30 days and confirm by email." data-es="Procesaremos la eliminación en un plazo de 30 días y te confirmaremos por correo.">We'll process your deletion within 30 days and confirm by email.</p>
+  </div>
+</main>
+<footer>© 2026 Y & Y Entertainment Corp. · Miami, FL · info@miamimagicapp.com</footer>
+
+<script>
+var ES=false;
+function applyLang(){
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');
+    if(v!=null){
+      if(el.tagName==='BUTTON'&&el.id==='fBtn') el.textContent=v; else el.textContent=v;
+    }
+  });
+  document.getElementById('langT').querySelectorAll('button').forEach(function(b){
+    b.classList.toggle('on', (b.dataset.l==='es')===ES);
+  });
+}
+document.getElementById('langT').addEventListener('click',function(e){
+  var b=e.target.closest('button'); if(!b) return;
+  ES=(b.dataset.l==='es'); applyLang();
+});
+
+document.getElementById('delForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var btn=document.getElementById('fBtn'), err=document.getElementById('fErr');
+  var name=document.getElementById('fName').value.trim();
+  var email=document.getElementById('fEmail').value.trim();
+  var note=document.getElementById('fNote').value.trim();
+  if(!name||!email){ return; }
+  btn.disabled=true; err.style.display='none';
+  fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/mm_deletion_requests',{
+    method:'POST',
+    headers:{'Content-Type':'application/json',
+             'apikey':'sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
+             'Authorization':'Bearer sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
+             'Prefer':'return=minimal'},
+    body:JSON.stringify({name:name,email:email,note:note})
+  }).then(function(r){
+    if(!r.ok) throw new Error('bad status');
+    document.getElementById('formWrap').style.display='none';
+    document.getElementById('okBox').style.display='block';
+  }).catch(function(){
+    err.style.display='block';
+    btn.disabled=false;
+  });
+});
+</script>
+</body>
+</html>
