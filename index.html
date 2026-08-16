@@ -1879,10 +1879,16 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 /* Map */
 .map-filter-btn{padding:8px 18px;border-radius:50px;border:1.5px solid #ddd;background:#fff;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;cursor:pointer;transition:all .2s;color:#444;}
 .map-filter-btn:hover,.map-filter-btn.active{background:#FF4D35;color:#fff;border-color:#FF4D35;}
-.map-popup{font-family:'DM Sans',sans-serif;min-width:180px;}
+.map-popup{font-family:'DM Sans',sans-serif;min-width:180px;max-width:220px;}
 .map-popup h4{margin:0 0 4px;font-size:.9rem;color:#080F1E;font-weight:700;}
 .map-popup p{margin:0 0 8px;font-size:.75rem;color:#666;}
+.map-popup-meta{color:#888!important;}
+.map-popup-desc{color:#444!important;line-height:1.45;}
+.map-popup-tip{color:#00998A!important;font-weight:600;}
+.map-popup-cta{display:block;width:100%;text-align:center;padding:7px 12px;background:#FF4D35;color:#fff;border:none;border-radius:50px;font:700 .75rem 'DM Sans',sans-serif;cursor:pointer;margin-bottom:6px;}
+.map-popup-list{display:block;text-align:center;padding:2px;font-size:.7rem;font-weight:600;color:#999;text-decoration:none;}
 .map-popup a{display:block;text-align:center;padding:6px 12px;background:#FF4D35;color:#fff;border-radius:50px;font-size:.75rem;font-weight:700;text-decoration:none;}
+.map-popup a.map-popup-list{background:none;color:#999;padding:2px;font-weight:600;border-radius:0;}
 
 /* Zone filter bar */
 #zoneBar{width:100%;background:#fff;border-bottom:1px solid rgba(0,0,0,.07);padding:0;position:sticky;top:0;z-index:200;}
@@ -6515,15 +6521,22 @@ function mmGeoFor(txt){
   return null;
 }
 var _evMap=null, _evMarkers=[], _evData=[];
+function mmEvTrim(s,n){ s=(s||'').trim(); return s.length>n ? s.slice(0,n).replace(/\s+\S*$/,'')+'…' : s; }
 function mmEventPoints(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   var out=[], seen={};
-  function push(name, venue, when, kind, onclick){
+  function push(name, venue, when, kind, onclick, desc, tip, ctaOnclick, ctaLabel){
     var g=mmGeoFor(venue)||mmGeoFor(name);
     if(!g) return;
     var key=name.slice(0,24);
     if(seen[key]) return; seen[key]=1;
-    out.push({name:name, venue:venue, when:when, kind:kind, ll:g, go:onclick});
+    out.push({name:name, venue:venue, when:when, kind:kind, ll:g, go:onclick,
+      desc:mmEvTrim(desc,150), tip:mmEvTrim(tip,110), ctaOnclick:ctaOnclick||'', ctaLabel:ctaLabel||''});
+  }
+  function ctaOf(c){
+    var b=c.querySelector('.twx-cta');
+    if(!b) return {onclick:'',label:''};
+    return {onclick:b.getAttribute('onclick')||'', label:(b.textContent||'').trim()};
   }
   try{
     document.querySelectorAll('#twxMainPanel .twx-card').forEach(function(c){
@@ -6531,7 +6544,10 @@ function mmEventPoints(){
       var v=(c.querySelector('.twx-venue')||{}).textContent||'';
       var d=(c.querySelector('.twx-day')||{}).textContent||'';
       var m=(c.querySelector('.twx-mon')||{}).textContent||'';
-      push(n, v, (d+' '+m).trim(), 'week', c.id);
+      var desc=(c.querySelector('.twx-desc')||{}).textContent||'';
+      var tip=(c.querySelector('.twx-tip')||{}).textContent||'';
+      var cta=ctaOf(c);
+      push(n, v, (d+' '+m).trim(), 'week', c.id, desc, tip, cta.onclick, cta.label);
     });
   }catch(e){}
   try{
@@ -6539,7 +6555,10 @@ function mmEventPoints(){
       var n=(c.querySelector('.twx-name')||{}).textContent||'';
       var v=(c.querySelector('.twx-venue')||{}).textContent||'';
       var t=(c.querySelector('.twx-pill')||{}).textContent||'';
-      push(n, v, t, 'month', c.id);
+      var desc=(c.querySelector('.twx-desc')||{}).textContent||'';
+      var tip=(c.querySelector('.twx-tip')||{}).textContent||'';
+      var cta=ctaOf(c);
+      push(n, v, t, 'month', c.id, desc, tip, cta.onclick, cta.label);
     });
   }catch(e){}
   return out;
@@ -6587,8 +6606,18 @@ function mmEvMapDraw(){
     var ic=L.divIcon({className:'',iconSize:[34,34],iconAnchor:[17,17],
       html:'<div class="evpin" style="--pin:'+ac+'"><span>'+(i+1)+'</span></div>'});
     var m=L.marker(d.ll,{icon:ic}).addTo(_evMap);
-    m.bindPopup('<div class="map-popup"><h4>'+d.name+'</h4><p>'+(d.when||'')+' · '+(d.venue||'')+'</p>'
-      +'<a href="#" onclick="mmEvOpen('+i+');return false;">'+(ES?'Ver detalles →':'View details →')+'</a></div>',{maxWidth:230});
+    // Detalle completo AQUÍ MISMO en el popup — el mapa ya no se cierra al seleccionar.
+    var ctaBtn = d.ctaOnclick
+      ? '<button class="map-popup-cta" onclick="'+d.ctaOnclick.replace(/"/g,'&quot;')+'">'+(d.ctaLabel||(ES?'Info':'Info'))+' →</button>'
+      : '';
+    m.bindPopup('<div class="map-popup">'
+      +'<h4>'+d.name+'</h4>'
+      +'<p class="map-popup-meta">'+(d.when||'')+(d.venue?' · '+d.venue:'')+'</p>'
+      +(d.desc?'<p class="map-popup-desc">'+d.desc+'</p>':'')
+      +(d.tip?'<p class="map-popup-tip">'+(ES?'Tip: ':'Tip: ')+d.tip+'</p>':'')
+      +ctaBtn
+      +'<a class="map-popup-list" href="#" onclick="mmEvOpen('+i+');return false;">'+(ES?'Ver en la lista →':'View in list →')+'</a>'
+      +'</div>',{maxWidth:250});
     _evMarkers.push(m); bounds.push(d.ll);
   });
   var cnt=document.getElementById('evMapCount');
