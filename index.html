@@ -581,6 +581,7 @@ button,a{cursor:pointer;}
 .soc-ring-in{flex:1;border-radius:50%;background:var(--sand,#F5F0EB);padding:3px;display:flex;position:relative;}
 .soc-av{flex:1;border-radius:50%;display:block;padding:3px;box-sizing:border-box;overflow:hidden;}
 .soc-add{flex:1;display:flex;align-items:center;justify-content:center;font:300 2rem 'DM Sans',sans-serif;color:#FF4D35;}
+.soc-add-badge{position:absolute;bottom:1px;right:1px;width:22px;height:22px;border-radius:50%;background:#FF4D35;color:#fff;font:700 1rem/1 'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;border:2px solid var(--sand,#F5F0EB);}
 .soc-live-tag{position:absolute;bottom:-2px;left:50%;transform:translateX(-50%);font:800 .5rem 'DM Sans',sans-serif;letter-spacing:.1em;color:#fff;background:#FF3B30;border:2px solid var(--sand,#F5F0EB);border-radius:6px;padding:1.5px 6px;}
 .soc-story-lb{font:700 .72rem 'DM Sans',sans-serif;color:#3f382f;max-width:80px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .soc-cards{display:flex;flex-direction:column;gap:11px;padding:0 22px 8px;}
@@ -1320,9 +1321,9 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 }
 .hero-h1 em { font-style:italic; color:#FFD166; -webkit-text-fill-color:#FFD166; text-shadow:0 2px 12px rgba(0,0,0,.5); }
 /* Hero premium line */
-.hero-line{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;white-space:nowrap;gap:6px;margin:12px 0 22px;font-family:'DM Sans',sans-serif;font-size:clamp(.46rem,1.95vw,.66rem);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82);text-shadow:0 1px 8px rgba(0,0,0,.6);animation:up .8s .5s both;max-width:100%;}
+.hero-line{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;white-space:nowrap;gap:6px;margin:12px 0 22px;font-family:'DM Sans',sans-serif;font-size:clamp(.54rem,2.3vw,.76rem);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82);text-shadow:0 1px 8px rgba(0,0,0,.6);animation:up .8s .5s both;max-width:100%;}
 .hero-line .hl-sep{color:#FFD166;font-weight:700;opacity:.9;text-shadow:0 0 8px rgba(255,209,102,.4);}
-@media(max-width:380px){.hero-line{font-size:clamp(.42rem,1.8vw,.6rem);gap:5px;letter-spacing:.06em;}}
+@media(max-width:380px){.hero-line{font-size:clamp(.5rem,2.1vw,.7rem);gap:5px;letter-spacing:.06em;}}
 .hero-line .hl-live{display:inline-flex;align-items:center;gap:5px;}
 .hchip-live{width:5px;height:5px;border-radius:50%;background:#FF4D35;flex-shrink:0;box-shadow:0 0 0 0 rgba(255,77,53,.6);animation:hchipPulse 1.8s infinite;}
 @keyframes hchipPulse{0%{box-shadow:0 0 0 0 rgba(255,77,53,.55);}70%{box-shadow:0 0 0 5px rgba(255,77,53,0);}100%{box-shadow:0 0 0 0 rgba(255,77,53,0);}}
@@ -1466,7 +1467,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   background: linear-gradient(to top, rgba(8,15,30,.92) 0%, rgba(8,15,30,.4) 60%, transparent 100%);
   padding: 18px 10px 8px;
   font-family: 'DM Sans', sans-serif;
-  font-size: .62rem;
+  font-size: .72rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: .03em;
@@ -1481,7 +1482,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   backdrop-filter: blur(8px);
   border-radius: 50px;
   padding: 2px 8px;
-  font-size: .52rem;
+  font-size: .6rem;
   font-weight: 700;
   color: rgba(255,255,255,.88);
   letter-spacing: .06em;
@@ -1515,7 +1516,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   padding: 6px 18px;
   border-radius: 50px;
   font-family: 'DM Sans', sans-serif;
-  font-size: .72rem;
+  font-size: .82rem;
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -1949,9 +1950,9 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   background:rgba(255,77,53,.1);
 }
 .bn-icon{font-size:20px;line-height:1;filter:drop-shadow(0 1px 3px rgba(255,77,53,.25));}
-.bn-lbl{font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--coral);}
+.bn-lbl{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--coral);}
 .bn-icon{font-size:22px;line-height:1;}
-.bn-lbl{font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;}
+.bn-lbl{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;}
 /* AI center button — premium pill */
 .bn-ai{
   flex:0 0 auto;
@@ -1981,7 +1982,7 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 }
 @keyframes bnAiPulse{0%{transform:scale(1);opacity:.7;}100%{transform:scale(1.75);opacity:0;}}
 .bn-ai-icon{font-size:1.3rem;position:relative;z-index:1;}
-.bn-ai .bn-lbl{color:var(--coral);font-weight:700;font-size:10px;}
+.bn-ai .bn-lbl{color:var(--coral);font-weight:700;font-size:11px;}
 /* desktop: quiet icon rail, bottom-left, tooltips on hover, yields to hamburger drawer */
 @media(min-width:900px){
   .bottom-nav{
@@ -2318,9 +2319,9 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  width: 40px;
-  height: 40px;
+  gap: 7px;
+  width: 48px;
+  height: 48px;
   padding: 0;
   flex-shrink: 0;
   cursor: pointer;
@@ -2351,8 +2352,8 @@ footer{background:#04080F;color:#fff;padding:50px 64px 24px;}
 /* Las 3 líneas del ícono */
 .hm-btn span {
   display: block;
-  width: 22px;
-  height: 2px;
+  width: 26px;
+  height: 2.5px;
   border-radius: 2px;
   background: var(--coral,#FF4D35);
   transition: width .25s cubic-bezier(.4,0,.2,1), background .2s ease, transform .25s ease, opacity .2s ease;
@@ -2433,9 +2434,9 @@ body{padding-bottom:0;}
   .hn-desktop{display:none!important;}
   /* Hero mobile — VALORES FIJOS, NO TOCAR */
   .hero-btns-row{display:flex!important;flex-direction:row!important;gap:10px!important;padding:0!important;justify-content:center!important;}
-  .hbtn-main,.hbtn-alt{padding:16px 36px!important;font-size:.95rem!important;}
+  .hbtn-main,.hbtn-alt{padding:16px 36px!important;font-size:1.05rem!important;}
   .hero-body{position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:0!important;transform:none!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;padding:154px 24px 0!important;max-width:100%!important;box-sizing:border-box!important;margin-bottom:300px!important;}
-  .hero-h1{font-size:clamp(1.7rem,5.5vw,2.1rem)!important;margin-bottom:12px!important;}
+  .hero-h1{font-size:clamp(1.95rem,6.3vw,2.4rem)!important;margin-bottom:12px!important;}
   .hero-hsub{font-size:.75rem!important;letter-spacing:.08em!important;margin-bottom:18px!important;}
   .magic-fabs button{padding:7px 11px!important;font-size:.68rem!important;}
   /* Hide stats row on mobile */
@@ -2687,7 +2688,7 @@ body{padding-bottom:0;}
   /* ── HERO BODY: subido según instrucciones ── */
 
   /* Headline: Playfair 900, 2.6-2.8rem, sombra */
-  .hero-h1{ font-size:clamp(1.7rem,5.5vw,2.1rem)!important; }
+  .hero-h1{ font-size:clamp(1.95rem,6.3vw,2.4rem)!important; }
   /* Subtítulo legible */
   .hero-hsub{
     font-size:.75rem!important;
@@ -2699,7 +2700,7 @@ body{padding-bottom:0;}
   }
   .magic-fabs{max-width:calc(100vw - 36px)!important;margin:0 auto 20px!important;overflow-x:auto!important;}
   .magic-fabs button{padding:7px 11px!important;font-size:.68rem!important;}
-  .hbtn-main,.hbtn-alt{padding:15px 28px!important;font-size:.92rem!important;}
+  .hbtn-main,.hbtn-alt{padding:15px 28px!important;font-size:1.02rem!important;}
   .hero-btns-row{display:flex!important;flex-direction:row!important;gap:10px!important;padding:0!important;justify-content:center!important;}
   .hero-stats-row{display:none!important;}
 }
@@ -3194,7 +3195,7 @@ body{padding-bottom:0;}
           placeholder="Search beaches, restaurants, events…"
           oninput="var v=this.value;if(v)mmHideHistory();else mmShowHistory();clearTimeout(window._sT);window._sT=setTimeout(function(){doSearch(document.getElementById('heroSearchInp').value);},250);var x=document.getElementById('heroSearchClear');if(x)x.style.display=v?'flex':'none';"
           onkeydown="if(event.key==='Enter'){clearTimeout(window._sT);var v=this.value;mmSaveSearch(v);doSearch(v);}" onfocus="mmShowHistory();"
-          style="background:none;border:none;outline:none;flex:1;font-family:'DM Sans',sans-serif;font-size:.82rem;color:#fff;min-width:0;">
+          style="background:none;border:none;outline:none;flex:1;font-family:'DM Sans',sans-serif;font-size:.92rem;color:#fff;min-width:0;">
         <button id="heroSearchClear" onclick="document.getElementById('heroSearchInp').value='';closeSearch();this.style.display='none';document.getElementById('heroSearchInp').focus();" style="display:none;background:rgba(255,255,255,.28);border:none;border-radius:50%;width:26px;height:26px;color:#fff;font-size:.85rem;cursor:pointer;align-items:center;justify-content:center;flex-shrink:0;line-height:1;padding:0;">&times;</button>
         <div id="mmSearchHist"></div>
       </div>
@@ -10135,13 +10136,18 @@ function socRenderRail(){
   function faceAv(n,bg){ return '<span class="soc-av" style="background:'+bg+'">'+(P&&P[n]?P[n].face:'')+'</span>'; }
   function photoAv(url){ return '<span class="soc-av" style="background-image:url('+url+');background-size:cover;background-position:center;"></span>'; }
   var live='<span class="soc-live-tag">LIVE</span>';
+  // Contenido de la app siempre delante; tu foto va al final, en UN solo círculo
+  // (aunque publiques varias — se ven todas dentro al tocarlo, nunca se crean círculos nuevos).
+  var arr=mmUStGet();
+  var myRing = arr.length
+    ? ring(photoAv(arr[0])+'<span class="soc-add-badge">+</span>', ES?'Tu Miami':'My Miami', 'mmViewStory(0)','soc-story-mine')
+    : ring('<span class="soc-add">+</span>', ES?'Tu foto':'Your photo', 'openPublish()','soc-story-add');
   el.innerHTML =
-    ring('<span class="soc-add">+</span>', ES?'Tu foto':'Your photo', 'openPublish()','soc-story-add')
-    +ring(faceAv('luna','#FF4D35'), ES?'Luna':'Lucy', "openAmigoFocused('luna');","")
+    ring(faceAv('luna','#FF4D35'), ES?'Luna':'Lucy', "openAmigoFocused('luna');","")
     +ring(faceAv('mateo','#00C9B1'), ES?'Mateo':'Matt', "openAmigoFocused('mateo');","")
     +ring(faceAv('sofia','#FFD166'), ES?'Sofía':'Sophie', "openAmigoFocused('sofia');","")
     +ring(photoAv('https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=200&q=60&auto=format')+live, ES?'En Vivo':'Live', "go('sec-livecams');setTimeout(function(){var p=document.getElementById('mmcamPanel');if(p&&!p.classList.contains('open'))mmcamSection();},600);","soc-story-live")
-    +socUserStories(ES);
+    +myRing;
 }
 function mmSaveSearch(q){
   q=(q||'').trim(); if(q.length<2) return;
@@ -10247,10 +10253,14 @@ function mmRenderStoryView(){
   var chevR='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M9 5l7 7-7 7"/></svg>';
   var arrL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>';
   var arrR='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  var plusIco='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M12 5v14M5 12h14"/></svg>';
   var topbar='<div style="display:flex;align-items:center;justify-content:space-between;max-width:420px;width:100%;margin:0 auto 10px;">'
     +'<button onclick="mmCloseStoryView()" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.12);border:none;display:flex;align-items:center;justify-content:center;color:#fff;cursor:pointer;">'+xIco+'</button>'
     +(n>1?'<span style="font:700 .78rem \'DM Sans\',sans-serif;color:rgba(255,255,255,.7);letter-spacing:.04em;">'+(i+1)+' / '+n+'</span>':'<span></span>')
+    +'<span style="display:flex;gap:8px;">'
+    +'<button onclick="mmStoryAddMore()" title="'+(ES?'Añadir otra foto':'Add another photo')+'" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.12);border:none;display:flex;align-items:center;justify-content:center;color:#00C9B1;cursor:pointer;">'+plusIco+'</button>'
     +'<button onclick="mmStoryDelete()" style="width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.12);border:none;display:flex;align-items:center;justify-content:center;color:#FF6B60;cursor:pointer;">'+trashIco+'</button>'
+    +'</span>'
     +'</div>';
   var imgwrap='<div style="position:relative;max-width:420px;width:100%;margin:0 auto;" onclick="event.stopPropagation()">'
     +'<img src="'+arr[i]+'" style="max-width:100%;max-height:64vh;width:100%;object-fit:contain;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.6);display:block;">'
@@ -10289,6 +10299,10 @@ function mmStoryMove(delta){
   _mmUStIdx=ni;
   try{socRenderRail();}catch(e){}
   mmRenderStoryView();
+}
+function mmStoryAddMore(){
+  mmCloseStoryView();
+  openPublish();
 }
 function socSaveStory(){
   try{
