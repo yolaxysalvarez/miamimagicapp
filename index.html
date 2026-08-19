@@ -9607,6 +9607,7 @@ function mmPremiumPendingUI(){
   box.appendChild(d);
   box.scrollTop=box.scrollHeight;
 }
+function mmSyncPremium(){ return mmSyncProfile(); }
 function mmConfirmPaid(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   var btn=document.querySelector('#mmPendingCard .mm-ai-gate-btn');
@@ -9915,6 +9916,21 @@ function accLoadPhoto(input){
         try{ localStorage.setItem('mm_avatar',data); }
         catch(err){ alert(lang==='es'?'No se pudo guardar la foto (memoria llena).':'Could not save the photo (storage full).'); return; }
         accApplyAvatar();
+        // Sincroniza a la nube en segundo plano — si no hay cuenta, se queda solo local (como antes).
+        try{
+          var _email=''; try{_email=(localStorage.getItem('mm_subscribed')||'').trim();}catch(e2){}
+          if(_email){
+            mmUploadToStorage(data,'avatars/'+mmHashEmail(_email)+'.jpg').then(function(url){
+              if(!url) return;
+              var KEY='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
+              fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/profiles?email=eq.'+encodeURIComponent(_email.toLowerCase()),{
+                method:'PATCH',
+                headers:{'Content-Type':'application/json','apikey':KEY,'Authorization':'Bearer '+KEY,'Prefer':'return=minimal'},
+                body:JSON.stringify({avatar_url:url})
+              }).catch(function(){});
+            });
+          }
+        }catch(e3){}
       }catch(err){ alert(lang==='es'?'No se pudo procesar la imagen.':'Could not process the image.'); }
     };
     img.onerror=function(){ alert(lang==='es'?'No se pudo leer la imagen.':'Could not read the image.'); };
@@ -9940,6 +9956,29 @@ function accLogout(){
   }
 }
 
+function mmHashEmail(email){
+  // Identificador estable y corto para nombrar archivos en Storage sin exponer el email en la URL pública.
+  var h=0, str=(email||'').toLowerCase().trim();
+  for(var i=0;i<str.length;i++){ h=(h*31+str.charCodeAt(i))|0; }
+  return (h>>>0).toString(16);
+}
+function mmUploadToStorage(dataUrl, path){
+  // Sube una foto (dataURL) al bucket público "user-photos" y devuelve su URL pública.
+  // Falla en silencio a propósito — si no hay red o el bucket no existe aún, la app sigue
+  // funcionando 100% local, igual que siempre; esto es una MEJORA, nunca un requisito.
+  var KEY='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
+  var BASE='https://rlhawyyhqhjhwdeghkon.supabase.co/storage/v1';
+  return fetch(dataUrl).then(function(r){ return r.blob(); }).then(function(blob){
+    return fetch(BASE+'/object/user-photos/'+path,{
+      method:'POST',
+      headers:{'apikey':KEY,'Authorization':'Bearer '+KEY,'Content-Type':blob.type||'image/jpeg','x-upsert':'true'},
+      body:blob
+    });
+  }).then(function(r){
+    if(!r.ok) return null;
+    return BASE+'/object/public/user-photos/'+path;
+  }).catch(function(e){ console.warn('[mm] photo upload failed:',e); return null; });
+}
 function mmSaveProfile(name,email){
   var URL='https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/profiles';
   var KEY='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
@@ -9995,6 +10034,8 @@ function doSignup(){
       if(!localStorage.getItem('mm_since')) localStorage.setItem('mm_since', new Date().getFullYear());
     }catch(e){}
     try{navSyncUser();}catch(e){}
+    // Nombre real desde Supabase — cubre el caso de un teléfono/navegador donde nunca se guardó localmente.
+    try{ mmSyncProfile(); }catch(e){}
     closeSignup();
     openAccount();
     return;
@@ -10319,6 +10360,21 @@ function socSaveStory(){
     arr.unshift(url); arr=arr.slice(0,20);
     localStorage.setItem('mm_user_stories',JSON.stringify(arr));
     socRenderRail();
+    // Sincroniza a la nube en segundo plano — si no hay cuenta, se queda solo local (como antes).
+    try{
+      var _email=''; try{_email=(localStorage.getItem('mm_subscribed')||'').trim();}catch(e2){}
+      if(_email){
+        mmUploadToStorage(url,'stories/'+mmHashEmail(_email)+'/'+Date.now()+'.jpg').then(function(publicUrl){
+          if(!publicUrl) return;
+          var KEY='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
+          fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/mm_stories',{
+            method:'POST',
+            headers:{'Content-Type':'application/json','apikey':KEY,'Authorization':'Bearer '+KEY,'Prefer':'return=minimal'},
+            body:JSON.stringify({email:_email.toLowerCase(),photo_url:publicUrl})
+          }).catch(function(){});
+        });
+      }
+    }catch(e3){}
   }catch(e){}
 }
 var _socImg=null;
@@ -13736,18 +13792,54 @@ function mmAiBump(){ try{ localStorage.setItem('mm_ai_asked', String(mmAiCount()
 function mmAiIsPremium(){ try{ return localStorage.getItem('mm_premium')==='1'; }catch(e){ return false; } }
 /* Ask Supabase whether this email is really premium. The webhook is the only
    thing that can set it, so this survives a new phone and can't be faked. */
-function mmSyncPremium(){
+function mmSyncProfile(){
+  // Trae nombre + premium + foto de perfil + historias desde Supabase por email — así
+  // "entrar por tu email" en un teléfono/navegador nuevo (o después de borrar datos)
+  // recupera TODO lo tuyo, no solo lo que hubiera guardado localStorage en ese aparato.
   var email='';
   try{ email=(localStorage.getItem('mm_subscribed')||'').trim(); }catch(e){}
   if(!email) return Promise.resolve(false);
   var KEY='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
   var url='https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/profiles'
-    +'?select=premium&email=eq.'+encodeURIComponent(email.toLowerCase())+'&limit=1';
+    +'?select=name,premium,avatar_url&email=eq.'+encodeURIComponent(email.toLowerCase())+'&limit=1';
   return fetch(url,{headers:{apikey:KEY,Authorization:'Bearer '+KEY}})
     .then(function(r){ return r.ok?r.json():null; })
     .then(function(rows){
       if(!rows||!rows.length) return false;
-      var isPrem=!!rows[0].premium;
+      var row=rows[0];
+      try{
+        if(row.name && row.name.trim() && row.name.trim()!==(localStorage.getItem('mm_name')||'').trim()){
+          localStorage.setItem('mm_name', row.name.trim());
+          try{ navSyncUser(); }catch(e){}
+          try{ mmNowRender(); }catch(e){}
+          var nmEl=document.getElementById('mwName'); // no-op guard, kept for future modal reuse
+        }
+      }catch(e){}
+      try{
+        // Foto de perfil: solo la adopta si ESTE aparato todavía no tiene una propia
+        // (para no pisar una foto recién tomada aquí mismo con la de otro dispositivo).
+        if(row.avatar_url && !(localStorage.getItem('mm_avatar')||'').trim()){
+          localStorage.setItem('mm_avatar', row.avatar_url);
+          try{ accApplyAvatar(); }catch(e){}
+        }
+      }catch(e){}
+      try{
+        // Historias: mismo criterio — solo si este aparato no tiene ninguna guardada todavía.
+        var localStories=[]; try{ localStories=JSON.parse(localStorage.getItem('mm_user_stories')||'[]'); }catch(e){}
+        if(!localStories.length){
+          fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/mm_stories'
+            +'?select=photo_url&email=eq.'+encodeURIComponent(email.toLowerCase())+'&order=created_at.desc&limit=20',
+            {headers:{apikey:KEY,Authorization:'Bearer '+KEY}})
+            .then(function(r2){ return r2.ok?r2.json():[]; })
+            .then(function(srows){
+              if(srows && srows.length){
+                localStorage.setItem('mm_user_stories', JSON.stringify(srows.map(function(x){return x.photo_url;})));
+                try{ socRenderRail(); }catch(e){}
+              }
+            }).catch(function(){});
+        }
+      }catch(e){}
+      var isPrem=!!row.premium;
       try{
         if(isPrem) localStorage.setItem('mm_premium','1');
         else localStorage.removeItem('mm_premium');
