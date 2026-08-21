@@ -11,6 +11,7 @@
     { "src": "*.webp", "use": "@vercel/static" },
     { "src": "fotos/*.jpg", "use": "@vercel/static" },
     { "src": "*.json", "use": "@vercel/static" },
+    { "src": ".well-known/*.json", "use": "@vercel/static" },
     { "src": "*.js", "use": "@vercel/static" },
     { "src": "videos/*.mp4", "use": "@vercel/static" },
     { "src": "videos/*.jpg", "use": "@vercel/static" },
