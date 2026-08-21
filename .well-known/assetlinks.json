@@ -1,8 +1,13 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "com.miamimagicapp.app",
-        "sha256_cert_fingerprints": ["B7:37:6A:F6:5B:99:29:AD:E2:9A:0A:9A:3D:A9:33:EC:7B:43:BA:B1:0A:C0:7F:69:6A:42:C8:91:4F:54:1A:72"]
-      }
-    }]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.yyentertainment.miamimagic",
+      "sha256_cert_fingerprints": [
+        "B7:37:6A:F6:5B:99:29:AD:E2:9A:0A:9A:3D:A9:33:EC:7B:43:BA:B1:0A:C0:7F:69:6A:42:C8:91:4F:54:1A:72",
+        "CF:A0:F3:63:7D:69:90:16:26:ED:4C:A2:6C:C7:5C:62:71:C7:A8:FE:73:E4:93:06:AC:A7:71:47:5F:F0:4C:54"
+      ]
+    }
+  }
+]
