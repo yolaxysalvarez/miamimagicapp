@@ -232,6 +232,15 @@ button,a{cursor:pointer;}
 #sec-livecams .tw-bar-overlay{z-index:2;}
 #sec-livecams .tw-bar-body{position:relative;z-index:3;}
 @media (prefers-reduced-motion:reduce){.tw-bar-vid{display:none;}}
+/* Con el panel abierto la card crece y el video (inset:0) se estiraba a TODA esa
+   altura: se veía un trozo congelado, oscuro y sin encuadre. Ahora el medio se
+   limita al alto real de la cabecera (--camHead, lo mide mmcamMedia) para que el
+   drone siga corriendo con su encuadre, tal como se ve con la card cerrada. */
+#sec-livecams .tw-bar.open .tw-bar-bg,
+#sec-livecams .tw-bar.open .tw-bar-vid,
+#sec-livecams .tw-bar.open .tw-bar-overlay{bottom:auto;height:var(--camHead,392px);}
+/* Degradado más ligero: antes tapaba el video casi por completo (.96/.88/.55). */
+#sec-livecams .tw-bar-body{background:linear-gradient(to top,rgba(6,15,30,.93) 0%,rgba(6,15,30,.72) 30%,rgba(6,15,30,.32) 62%,rgba(6,15,30,.06) 86%,transparent 100%);}
 #sec-livecams .tw-bar-body{padding:96px 18px 17px;}
 #sec-livecams .tw-bar-meta{gap:14px;}
 #sec-livecams .tw-bar-eyebrow{font-size:.72rem;letter-spacing:.13em;}
@@ -3099,7 +3108,7 @@ body{padding-bottom:0;}
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.20s"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
         Miami Insiders <span class="hm-link-badge" style="background:linear-gradient(135deg,#f5a623,#f7c948);color:#7a4d00;animation-delay:.20s;"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" style="width:10px;height:10px;vertical-align:-1px"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
       </a>
-      <a href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="toggleHM();return false;" class="hm-link" style="padding-left:48px;opacity:.85;">
+      <a href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="toggleHM();openInAppSheet(this.href,'Miami Magic Directory');return false;" class="hm-link" style="padding-left:48px;opacity:.85;">
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.21s"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg></div>
         Get Featured · $9.99/mo
       </a>
@@ -3233,7 +3242,7 @@ body{padding-bottom:0;}
       </div>
 
       <div class="hm-drawer-footer">
-        <a href="https://miamimagicdirectory.com" target="_blank" style="color:rgba(255,255,255,.18);font-size:.6rem;text-decoration:none;letter-spacing:2px;text-transform:uppercase;">Business Directory ↗</a>
+        <a href="https://miamimagicdirectory.com" target="_blank" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" style="color:rgba(255,255,255,.18);font-size:.6rem;text-decoration:none;letter-spacing:2px;text-transform:uppercase;">Business Directory ↗</a>
       </div>
     </div>
   </div>
@@ -3315,11 +3324,11 @@ body{padding-bottom:0;}
       <a href="#" onclick="go('sec-map');return false;" data-en="Map" data-es="Mapa">Map</a>
       <a href="#" onclick="go('sec-airports');return false;" data-en="Fly In" data-es="Vuela">Fly In</a>
       <a href="#" onclick="openSignup();return false;" class="nav-join" data-en="Join Free" data-es="&Uacute;nete Gratis">Join Free</a>
-      <a href="https://miamimagicdirectory.com" target="_blank" class="nav-web">Web ↗</a>
+      <a href="https://miamimagicdirectory.com" target="_blank" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" class="nav-web">Web ↗</a>
     </div>
     <!-- Fila 2 móvil: solo 3 links -->
     <div id="navLinksMob">
-      <a href="https://miamimagicdirectory.com" target="_blank" class="nav-web">Web ↗</a>
+      <a href="https://miamimagicdirectory.com" target="_blank" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" class="nav-web">Web ↗</a>
     </div>
   </nav>
 </header>
@@ -6771,7 +6780,18 @@ function mmcamSection(){
   var p=document.getElementById('mmcamPanel'),b=document.getElementById('mmcamBar');
   if(!p||!b)return; var o=p.classList.toggle('open'); b.classList.toggle('open',o);
   mmcamCtaLabel(o);
+  mmcamMedia();
 }
+/* Mide la cabecera y mantiene el video reproduciéndose al abrir/cerrar el panel. */
+function mmcamMedia(){
+  var b=document.getElementById('mmcamBar'); if(!b) return;
+  var body=b.querySelector('.tw-bar-body');
+  if(body) b.style.setProperty('--camHead', body.offsetHeight+'px');
+  var v=document.getElementById('mmcamVid');
+  if(v){ try{ v.muted=true; var pr=v.play(); if(pr&&pr.catch) pr.catch(function(){}); }catch(e){} }
+}
+window.addEventListener('resize', function(){ try{ mmcamMedia(); }catch(e){} });
+document.addEventListener('DOMContentLoaded', function(){ setTimeout(function(){ try{ mmcamMedia(); }catch(e){} }, 900); });
 /* El botón dice Explorar cuando está cerrado y Ver menos cuando está abierto.
    Se escriben también data-en/data-es para que sobreviva al cambio de idioma. */
 function mmcamCtaLabel(abierto){
@@ -6897,7 +6917,7 @@ function openPrivacy(){
   document.getElementById('privBody').innerHTML=
     '<p class="priv-intro">'+P.intro+'</p>'
     +P.s.map(function(x){return '<h3 class="priv-h">'+x.h+'</h3><p class="priv-p">'+x.b+'</p>';}).join('')
-    +'<p class="priv-perma"><a href="privacy.html?lang='+(ES?'es':'en')+'" target="_blank" rel="noopener">'
+    +'<p class="priv-perma"><a href="privacy.html?lang='+(ES?'es':'en')+'" target="_blank" rel="noopener" onclick="openInAppSheet(this.href,\'Privacy\');return false;">'
       +(ES?'Ver esta política en una página independiente':'View this policy on its own page')+' \u2197</a></p>';
   ov.style.display='flex';
   document.body.style.overflow='hidden';
@@ -8531,8 +8551,8 @@ function renderBiz(){
       +'<div class="biz-grid">'+rest.map(function(b){return bizCard(b,ES);}).join('')+'</div>';
   }
   out+='<div class="biz-note">'+(ES
-    ?'\u00bfTienes un negocio en Miami? <a href="https://www.miamimagicdirectory.com" target="_blank" rel="noopener">Aparece aqu\u00ed \u2192</a>'
-    :'Run a Miami business? <a href="https://www.miamimagicdirectory.com" target="_blank" rel="noopener">Get listed here \u2192</a>')
+    ?'\u00bfTienes un negocio en Miami? <a href="https://www.miamimagicdirectory.com" target="_blank" rel="noopener" onclick="openInAppSheet(this.href,this.textContent);return false;">Aparece aqu\u00ed \u2192</a>'
+    :'Run a Miami business? <a href="https://www.miamimagicdirectory.com" target="_blank" rel="noopener" onclick="openInAppSheet(this.href,this.textContent);return false;">Get listed here \u2192</a>')
     +'</div></section>';
   return out;
 }
@@ -11079,7 +11099,7 @@ document.addEventListener('click',function(e){
   var inp=document.getElementById('heroSearchInp');
   if(p && p.classList.contains('on') && !p.contains(e.target) && e.target!==inp) mmHideHistory();
 });
-function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en]').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}}
+function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en]').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}}
 function socApplyLang(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   document.querySelectorAll('#sec-social [data-en], #socPubOv [data-en]').forEach(function(el){
@@ -11744,7 +11764,7 @@ document.addEventListener('DOMContentLoaded',function(){
     </span>
     <span class="bn-lbl" style="color:#FF4D35;font-weight:700;" data-en="Plan Trip" data-es="Planea">Plan Trip</span>
   </button>
-  <a class="bn-item" href="https://miamimagicdirectory.com" target="_blank" style="text-decoration:none;">
+  <a class="bn-item" href="https://miamimagicdirectory.com" target="_blank" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" style="text-decoration:none;">
     <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></span>
     <span class="bn-lbl" data-en="Web" data-es="Web">Web</span>
   </a>
@@ -15106,7 +15126,7 @@ document.addEventListener('keydown', function(e) {
     </div>
     <!-- iFrame or fallback -->
     <div id="inAppContent" style="flex:1;position:relative;overflow:hidden;">
-      <iframe id="inAppFrame" style="width:100%;height:100%;border:none;" sandbox="allow-scripts allow-same-origin allow-forms" allowfullscreen></iframe>
+      <iframe id="inAppFrame" style="width:100%;height:100%;border:none;" sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation" allowfullscreen></iframe>
       <!-- Fallback shown when iframe fails -->
       <div id="inAppFallback" style="display:none;position:absolute;inset:0;flex-direction:column;align-items:stretch;justify-content:flex-start;text-align:left;background:#0d1b2a;overflow-y:auto;">
         <div id="inAppFallbackPhoto" style="height:150px;background-size:cover;background-position:center;position:relative;background-image:linear-gradient(135deg,#0a2030,#0d1b2a),url('https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800&q=80');background-blend-mode:overlay;">
@@ -15173,7 +15193,31 @@ document.addEventListener('keydown', function(e) {
     // to embed them caused blank screens, sites escaping into a new tab on their own,
     // and the sheet becoming unclosable. Go straight to the clean info card with a
     // real, direct link every time — simplest path, zero surprises.
-    showFallback();
+    // Sitios PROPIOS (miamimagicapp.com / miamimagicdirectory.com): sí se embeben,
+    // porque controlamos sus cabeceras y así el usuario no sale de la app.
+    // Cualquier otro sitio sigue yendo a la ficha con enlace real: casi ninguno
+    // permite ser embebido y antes eso daba pantallas en blanco.
+    if(isOwnSite(url)){ showFrame(url); } else { showFallback(); }
+  }
+
+  var OWN_SITES = ['miamimagicapp.com','miamimagicdirectory.com'];
+  function isOwnSite(u){
+    try{
+      var h = new URL(u, location.href).hostname.replace(/^www\./,'');
+      return OWN_SITES.some(function(d){ return h===d || h.endsWith('.'+d); });
+    }catch(e){ return false; }
+  }
+  function showFrame(url){
+    var f = document.getElementById('inAppFrame');
+    document.getElementById('inAppFallback').style.display = 'none';
+    f.style.display = 'block';
+    f.dataset.ok = '';
+    f.onload = function(){ f.dataset.ok = '1'; };
+    f.src = url;
+    // Red de seguridad: si en 6s no cargó (bloqueo o sin conexión), se enseña la ficha.
+    setTimeout(function(){
+      if(f.dataset.ok !== '1' && f.style.display !== 'none') showFallback();
+    }, 6000);
   }
 
   function showFallback(){
@@ -15215,7 +15259,9 @@ document.addEventListener('keydown', function(e) {
 (function(){
   var CARD_LINK_SEL = '.rcard,.rcardh,.vcard,.bcard,.ncard,.ccard,.mcard,.pcard,.stcard,'
     + '.hotel-card,.hp-card,.fav-card,.tw-item,.june-card,.evcard';
-  var EXTERNAL_ALWAYS = ['instagram.com','youtube.com','buy.stripe.com','miamimagicdirectory.com'];
+  var EXTERNAL_ALWAYS = ['instagram.com','youtube.com','buy.stripe.com'];
+  // El directorio salió de esta lista: al ser sitio propio ahora abre DENTRO
+  // de la app (openInAppSheet -> iframe). Stripe sigue fuera, por el pago.
 
   function staysExternal(url){
     try{
@@ -15857,7 +15903,7 @@ function showInsiderModal(id){
         <div id="promoPerMoEl" style="font-family:'DM Sans',sans-serif;font-size:.7rem;color:var(--text2);">/ month · App + Web included</div>
       </div>
       <!-- CTA Button -->
-      <a href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="document.getElementById('insidersPromoModal').style.display='none'" style="display:block;background:linear-gradient(135deg,var(--coral),#c0392b);color:#fff;text-align:center;padding:14px;border-radius:30px;font-size:.9rem;font-weight:800;text-decoration:none;letter-spacing:.02em;box-shadow:0 4px 18px rgba(220,80,60,.35);font-family:'DM Sans',sans-serif;">
+      <a href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="document.getElementById('insidersPromoModal').style.display='none';openInAppSheet(this.href,'Miami Magic Directory');return false;" style="display:block;background:linear-gradient(135deg,var(--coral),#c0392b);color:#fff;text-align:center;padding:14px;border-radius:30px;font-size:.9rem;font-weight:800;text-decoration:none;letter-spacing:.02em;box-shadow:0 4px 18px rgba(220,80,60,.35);font-family:'DM Sans',sans-serif;">
         <span id="promoCtaEl">Get Featured on Miami Magic →</span>
       </a>
     </div>
