@@ -3270,57 +3270,13 @@ body{padding-bottom:0;}
           <span class="lg">MAGIC</span>
         </div>
       </div>
-      <div id="navWx" onclick="this.classList.toggle('wx-expanded')" title="Miami Weather">
-  <div id="wx-top">
-    <div id="wx-left">
-      <span id="wx-icon" style="line-height:1;display:inline-flex;color:#FFD166;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;vertical-align:-2px"><circle cx="9" cy="9.5" r="3.4"/><path d="M9 3.2v1.8M3.2 9.5H5M4.9 5.4l1.3 1.3M13.1 5.4l-1.3 1.3"/><path d="M9.5 19.5h8.3a3.2 3.2 0 0 0 .6-6.35A4.6 4.6 0 0 0 9.6 12a3.8 3.8 0 0 0-.1 7.5z"/></svg></span>
-    </div>
-    <div style="display:flex;flex-direction:column;align-items:flex-end;">
-      <div id="wx-main">
-        <span id="wx-temp" style="color:#fff!important;-webkit-text-fill-color:#fff!important;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:700;">--</span><span id="wx-unit" style="color:rgba(255,255,255,.7)!important;-webkit-text-fill-color:rgba(255,255,255,.7)!important;font-size:.68rem;">°F</span>
-      </div>
-      <div id="wx-desc" style="color:rgba(255,255,255,.6);font-size:.6rem;font-weight:600;letter-spacing:.05em;">Miami, FL</div>
-    </div>
-  </div>
-  <div id="wx-meta">
-    <span id="wx-feel"></span>
-    <span id="wx-wind"></span>
-    <span id="wx-hum"></span>
-    <span id="wx-uv-pill"></span>
-  </div>
-  <div id="wx-uv-row">
-    <span id="wx-uv-label">UV Index</span>
-    <div id="wx-uv-bar"><div id="wx-uv-fill" style="width:0%"></div></div>
-    <span id="wx-uv-val" style="font-family:'DM Sans',sans-serif;font-size:.6rem;font-weight:700;color:rgba(255,255,255,.6);"></span>
-  </div>
-  <div id="wx-sea"></div>
-  <div id="wx-forecast">
-    <div class="wx-day">
-      <div class="wx-day-name" id="wx-d1n">--</div>
-      <div class="wx-day-ico" id="wx-d1i">--</div>
-      <div class="wx-day-hi" id="wx-d1h">--</div>
-      <div class="wx-day-lo" id="wx-d1l">--</div>
-    </div>
-    <div class="wx-day">
-      <div class="wx-day-name" id="wx-d2n">--</div>
-      <div class="wx-day-ico" id="wx-d2i">--</div>
-      <div class="wx-day-hi" id="wx-d2h">--</div>
-      <div class="wx-day-lo" id="wx-d2l">--</div>
-    </div>
-    <div class="wx-day">
-      <div class="wx-day-name" id="wx-d3n">--</div>
-      <div class="wx-day-ico" id="wx-d3i">--</div>
-      <div class="wx-day-hi" id="wx-d3h">--</div>
-      <div class="wx-day-lo" id="wx-d3l">--</div>
-    </div>
-    <div class="wx-day">
-      <div class="wx-day-name" id="wx-d4n">--</div>
-      <div class="wx-day-ico" id="wx-d4i">--</div>
-      <div class="wx-day-hi" id="wx-d4h">--</div>
-      <div class="wx-day-lo" id="wx-d4l">--</div>
-    </div>
-  </div>
-</div>
+      <!-- Su nota (sep 2026): el chip del clima del home ya no hacía falta —
+     el dato del mar y la lluvia viven en las bandas. En su lugar, la
+     puerta de entrada a la cuenta, con el mismo vidrio transparente. -->
+<button id="navSignin" onclick="try{ if(localStorage.getItem('mm_subscribed')){openAccount();}else{openSignin();} }catch(e){ openSignin(); }">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.2" r="3.6"/><path d="M5 20a7 7 0 0 1 14 0"/></svg>
+  <span data-en="Sign in" data-es="Entrar">Sign in</span>
+</button>
     </div>
     <!-- Fila 2: desktop links / mobile links -->
     <div id="navLinks">
@@ -3447,6 +3403,7 @@ body{padding-bottom:0;}
   <!-- ══ MIAMI SOCIAL ══ -->
 <section class="sec fade" id="sec-social">
   <div class="sec-hd"><div class="sec-tt"><small><span class="eyebrow-dot-mini"></span><span data-en="Community" data-es="Comunidad">Community</span></small>Miami Social <span class="soc-new">NEW</span></div></div>
+  <p class="soc-sub" data-en="Plan your trip with the community: photos, stories and tips from real travelers." data-es="Planea tu viaje con la comunidad: fotos, historias y datos de viajeros reales.">Plan your trip with the community: photos, stories and tips from real travelers.</p>
   <div class="soc-rail" id="socRail"></div>
   
 </section>
@@ -6318,19 +6275,8 @@ function buildPromo(){
   var mine=promoMostVisited();
   if(mine) slots.push({ico:'clock',eyebrow:ES?'VOLVISTE A ESTOS':'YOU KEEP COMING BACK',
     title:ES?'Los que más miras':'The ones you open most', sub:mine});
-  // 6b) free museum days — the recurring ones, highlighted when they are close
-  var d=today.getDate(), dow=today.getDay();
-  var sat1=1+((6-new Date(today.getFullYear(),today.getMonth(),1).getDay())+7)%7; // 1er sabado
-  var sat2=sat1+7;                                                                // 2do sabado
-  var proxTxt='';
-  if(d<=sat1)      proxTxt=ES?('Gold Coast gratis el sáb '+sat1):('Gold Coast free Sat '+sat1);
-  else if(d<=sat2) proxTxt=ES?('PAMM gratis el sáb '+sat2):('PAMM free Sat '+sat2);
-  else if(dow===5) proxTxt=ES?'Wolfsonian gratis hoy 6–9 PM':'Wolfsonian free tonight 6–9 PM';
-  slots.push({ico:'spark',go:'sec-museum',
-    eyebrow:ES?'ENTRAR GRATIS':'GET IN FREE',
-    title:ES?'Museos sin pagar entrada':'Museums with no admission',
-    sub:proxTxt||(ES?'ICA siempre gratis · Wolfsonian gratis para residentes de Florida'
-                    :'ICA always free · Wolfsonian free for Florida residents')});
+  /* (ENTRAR GRATIS se mudó al ticker del saludo — su nota sep 2026:
+     es un dato general de la ciudad, no gastronómico) */
   // 7) Miami Spice while it runs (Aug 1 – Sep 30)
   var mo=today.getMonth();
   if(mo===7||mo===8) slots.push({ico:'fire',eyebrow:'MIAMI SPICE 2026',
@@ -6341,6 +6287,18 @@ function buildPromo(){
      rotando todas las curadurías. Lo pagado abre la rotación. */
   window._mmPromoTV=slots;
   return '<div class="sea-strip promo-strip" id="promoStrip" onclick="mmPromoGo()"></div>';
+}
+function mmMqDock(){
+  var ex=document.getElementById('sec-explore');
+  var mq=document.querySelector('.mq-wrap');
+  if(!ex) return;
+  if(!mq){
+    ex.insertAdjacentHTML('beforebegin','<div class="mq-wrap"><div class="mq-track" id="mqTrack"></div></div>');
+  } else if(mq.nextElementSibling!==ex){
+    ex.parentNode.insertBefore(mq,ex);
+  }
+  var tr=document.getElementById('mqTrack');
+  if(tr&&window._mmMqHtml) tr.innerHTML=window._mmMqHtml;
 }
 var _mmPromoIdx=0,_mmPromoTimer=null;
 function mmPromoGo(){
@@ -7374,15 +7332,10 @@ function mmEvOpen(i){
   },220);
 }
 function renderEvViewBar(){
-  var ES=(typeof lang!=='undefined'&&lang==='es');
-  return '<div class="evview-wrap"><div class="evview">'
-    +'<button id="evViewList" class="evview-btn on" onclick="mmEvMapToggle(\'list\')">'
-      +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>'
-      +'<span>'+(ES?'Lista':'List')+'</span></button>'
-    +'<button id="evViewMap" class="evview-btn" onclick="mmEvMapToggle(\'map\')">'
-      +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5L3.5 6.8v12.7L9 17.2l6 2.3 5.5-2.3V4.5L15 6.8z"/><path d="M9 4.5v12.7M15 6.8v12.7"/></svg>'
-      +'<span>'+(ES?'Mapa':'Map')+'</span></button>'
-  +'</div></div>';
+  /* Su nota (sep 2026): el toggle Lista/Mapa cargaba demasiado esa zona.
+     Los eventos quedan en lista; renderEvMap sigue montado oculto por si
+     el mapa regresa algún día. */
+  return '';
 }
 function renderEvMap(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
@@ -9563,7 +9516,10 @@ function build(){
   // marquee
   const mqItems=['100+ Restaurants','100+ Hotels','17 Beaches','12 Theaters','11 Museums','20 Nightlife Spots','20 On the Water','14 Live Cams','Fly Over Miami','Walking Tours','Bilingual EN/ES','Business Ready'];
   const mqs=mqItems.map(q=>'<div class="mq-item"><span class="mq-dot"></span><span class="mq-n">'+q.split(' ')[0]+'</span> '+q.split(' ').slice(1).join(' ')+'</div>').join('');
-  var el_mq=document.getElementById('mqTrack');if(el_mq)el_mq.innerHTML=mqs+mqs;
+  /* Su nota (sep 2026): este marquee de conteos competía con la banda
+     de restaurantes. Ahora vive justo antes de "Explore more" — el HTML
+     se guarda aquí y mmMqDock() lo coloca tras montar #app. */
+  window._mmMqHtml=mqs+mqs;
   // app sections
   // zone bar
   var juneTopEl=document.getElementById('juneTop');
@@ -9597,6 +9553,7 @@ function build(){
   var ugcW = document.getElementById('ugcWrap');
   if(ugcW){ try{ ugcW.innerHTML = renderUGC(); }catch(e){} }
   try{ mmPromoStart(); }catch(e){}
+  try{ mmMqDock(); }catch(e){}
   // Favoritos section (rendered separately, before app content)
   var favsEl = document.getElementById('sec-favs');
   if(favsEl) renderFavsSection();
@@ -10134,12 +10091,35 @@ document.addEventListener("DOMContentLoaded",function(){
         act:p.act||(p.link?"window.open('"+p.link+"','_blank')":'')});
     });
     var paidArr=out.slice();
-    out=out.concat(liveItems());
-    items.forEach(function(it){ out.push(it); });
-    out=out.slice(0,14); /* vuelta ~100s: el dato no envejece en pantalla */
+    /* Su nota (sep 2026): en la web se ven 3–4 ítems a la vez y los
+       eventos venían todos seguidos — leía como "scroll de eventos".
+       La secuencia ahora se TRENZA (evento → curado → dato vivo → ...)
+       para que cualquier ventana visible sea GENERAL, en web y app. */
+    var live=liveItems(), evs=[], data=[];
+    live.forEach(function(it){
+      if(/^(TODAY|THIS WEEK|THIS MONTH)$/.test(it.tgEN||'')) evs.push(it); else data.push(it);
+    });
+    /* ENTRAR GRATIS: dato general de la ciudad */
+    (function(){
+      var d=today.getDate(), dow=today.getDay();
+      var sat1=1+((6-new Date(today.getFullYear(),today.getMonth(),1).getDay())+7)%7;
+      var sat2=sat1+7, tx='';
+      if(d<=sat1)      tx=ES?('Museos: Gold Coast gratis el sáb '+sat1):('Museums: Gold Coast free Sat '+sat1);
+      else if(d<=sat2) tx=ES?('Museos: PAMM gratis el sáb '+sat2):('Museums: PAMM free Sat '+sat2);
+      else if(dow===5) tx=ES?'Wolfsonian gratis hoy 6–9 PM':'Wolfsonian free tonight 6–9 PM';
+      if(!tx) tx=ES?'ICA siempre gratis · Wolfsonian gratis p/ residentes de FL':'ICA always free · Wolfsonian free for FL residents';
+      data.push({tgEN:'GET IN FREE',tgES:'ENTRAR GRATIS',go:'sec-museum',en:tx,es:tx});
+    })();
+    var rest=items.slice(), woven=[];
+    while(evs.length||rest.length||data.length){
+      if(evs.length)  woven.push(evs.shift());
+      if(rest.length) woven.push(rest.shift());
+      if(data.length) woven.push(data.shift());
+    }
+    var seqOut=paidArr.concat(woven).slice(0,14); /* vuelta ~100s */
     /* el patrocinado también a mitad de vuelta — presencia cada ~50s */
-    if(paidArr.length && out.length>9) out.splice(Math.floor(out.length/2),0,paidArr[0]);
-    return out;
+    if(paidArr.length && seqOut.length>9) seqOut.splice(Math.floor(seqOut.length/2),0,paidArr[0]);
+    return seqOut;
   }
   window.mmTickerGo=function(ix){
     var arr=window._mmTickerSeq||[]; var it=arr[ix]; if(!it) return;
@@ -10173,6 +10153,40 @@ document.addEventListener("DOMContentLoaded",function(){
   setTimeout(mmTickerBuild,15000);   /* con mar y clima ya cargados */
   setInterval(mmTickerBuild,300000); /* datos vivos frescos cada 5 min */
 })();
+
+/* ══ SAFARI iOS — GUARDIA DE ALTURA DEL HERO (sep 2026) ══
+   El hero móvil es un sándwich de capas absolutas: .hero-body ocupa
+   inset:0 con margin-bottom:300px como reserva para el carril de
+   preview (anclado a bottom:138px). Con las barras de Safari el
+   viewport visible baja a ~660px: el contenido (título+búsqueda+CTAs)
+   mide más que (svh−300) y DESBORDA su caja hacia la zona reservada
+   — por eso las cards se montaban sobre los botones. CSS no puede
+   expresar "hero ≥ contenido+reserva" entre capas absolutas, así que
+   esta guardia lo mide y estira el hero cuando hace falta. */
+function mmHeroFit(){
+  try{
+    var h=document.querySelector('.hero'); if(!h) return;
+    if(window.innerWidth>=900){ h.style.removeProperty('min-height'); return; }
+    var hb=document.querySelector('.hero-body'); if(!hb) return;
+    var last=null, kids=hb.children;
+    for(var i=kids.length-1;i>=0;i--){
+      if(getComputedStyle(kids[i]).display!=='none'){ last=kids[i]; break; }
+    }
+    if(!last) return;
+    var need=Math.ceil(last.getBoundingClientRect().bottom
+                       - h.getBoundingClientRect().top) + 320; /* reserva del carril */
+    /* setProperty con 'important': la regla móvil min-height:100svh
+       lleva !important y le gana al style inline normal */
+    if(need>window.innerHeight){ h.style.setProperty('min-height', need+'px', 'important'); }
+    else { h.style.removeProperty('min-height'); }
+  }catch(e){}
+}
+addEventListener('resize',mmHeroFit);
+addEventListener('orientationchange',mmHeroFit);
+document.addEventListener('DOMContentLoaded',function(){
+  setTimeout(mmHeroFit,300); setTimeout(mmHeroFit,1600);
+});
+if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ setTimeout(mmHeroFit,60); }); }
 
 /* ── HERO PREVIEW CAROUSEL ── */
 (function(){
@@ -10611,14 +10625,15 @@ document.addEventListener("DOMContentLoaded",function(){
   </div>
 </div>
 
-<div id="signupOverlay" style="display:none;position:fixed;inset:0;background:rgba(4,8,15,.75);backdrop-filter:blur(8px);z-index:10000;align-items:center;justify-content:center;">
-  <div id="signupBox" style="background:#fff;border-radius:24px;width:92%;max-width:400px;position:relative;box-shadow:0 24px 60px rgba(0,0,0,.25);overflow:hidden;">
+<div id="signupOverlay" style="display:none;position:fixed;inset:0;background:rgba(14,27,48,.42);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:10000;align-items:center;justify-content:center;">
+  <div id="signupBox" style="background:#FFFDF8;border:1px solid rgba(14,27,48,.14);border-radius:24px;width:92%;max-width:400px;position:relative;box-shadow:0 24px 70px rgba(14,27,48,.28);overflow:hidden;">
 
     <!-- Header coral -->
-    <div style="background:linear-gradient(135deg,#08172E,#0C2040);padding:28px 28px 22px;text-align:center;">
-      <div style="margin-bottom:8px;color:#00C9B1;display:flex;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:34px;height:34px;vertical-align:-2px"><path d="M12 21c.5-4.5.2-8-1.5-11"/><path d="M10.5 10C8.5 8.5 5.8 8.2 3.5 9.5c2-3.3 5.3-4 7.5-2.5"/><path d="M11 7C10 4.6 7.8 3 5.2 3c3-1.6 6.4-.5 7.6 2.2"/><path d="M12.8 5.8C13.6 3.4 15.9 2 18.5 2.3 15.9 3 14.2 4.7 13.8 7"/><path d="M12.6 7.5c2.2-1.4 5.2-1.2 7.2.7-2.6-.6-5.2 0-6.8 1.6"/><path d="M8 21h8"/></svg></div>
-      <div id="su-title" style="font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:#fff;margin-bottom:6px">Crea tu Cuenta Gratis</div>
-      <div id="su-sub" style="font-size:.8rem;color:rgba(255,255,255,.7);line-height:1.5">Tu cuenta Miami Magic · Favoritos y viajes · Acceso Insider</div>
+    <div style="padding:30px 28px 6px;text-align:center;">
+      <div style="margin-bottom:10px;color:#FF4D35;display:flex;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:34px;height:34px;vertical-align:-2px"><path d="M12 21c.5-4.5.2-8-1.5-11"/><path d="M10.5 10C8.5 8.5 5.8 8.2 3.5 9.5c2-3.3 5.3-4 7.5-2.5"/><path d="M11 7C10 4.6 7.8 3 5.2 3c3-1.6 6.4-.5 7.6 2.2"/><path d="M12.8 5.8C13.6 3.4 15.9 2 18.5 2.3 15.9 3 14.2 4.7 13.8 7"/><path d="M12.6 7.5c2.2-1.4 5.2-1.2 7.2.7-2.6-.6-5.2 0-6.8 1.6"/><path d="M8 21h8"/></svg></div>
+      <div id="su-title" style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:#0E1B30;letter-spacing:-.01em;margin-bottom:6px">Crea tu Cuenta Gratis</div>
+      <div id="su-sub" style="font-size:.8rem;font-family:'DM Sans',sans-serif;color:rgba(14,27,48,.6);line-height:1.5">Tu cuenta Miami Magic · Favoritos y viajes · Acceso Insider</div>
+      <div style="width:44px;height:1px;background:rgba(176,120,0,.55);margin:14px auto 0"></div>
     </div>
 
     <!-- Form body -->
@@ -10626,8 +10641,8 @@ document.addEventListener("DOMContentLoaded",function(){
 
       <!-- What you get -->
       <div id="su-benefits" style="margin-bottom:20px">
-        <div style="font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#FF4D35;margin-bottom:10px">Con tu cuenta gratis:</div>
-        <div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:#444;line-height:1.9">
+        <div style="font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#B07800;margin-bottom:10px">Con tu cuenta gratis:</div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(14,27,48,.78);line-height:1.9">
           <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D35" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;vertical-align:-2px"><path d="M4 8a2 2 0 0 0 0 8v3h16v-3a2 2 0 0 1 0-8V5H4v3z"/><path d="M14 5v14" stroke-dasharray="2.5 2.5"/></svg> Los eventos que <strong>realmente</strong> valen la pena<br>
           <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D35" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;vertical-align:-2px"><path d="M8 4v7M6 4v3.5a2 2 0 0 0 4 0V4"/><path d="M16.5 4c-1.4 1-2 2.8-2 4.6 0 1.9.8 2.9 2 2.9V20"/><path d="M8 13v7"/></svg> Restaurantes nuevos antes de que todo el mundo los conozca<br>
           <svg viewBox="0 0 24 24" fill="none" stroke="#FF4D35" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px;vertical-align:-2px"><path d="M12 3v3M5.6 6.6l2.1 2.1M18.4 6.6l-2.1 2.1M4 13a8 8 0 0 1 16 0"/><path d="M2 17h20M6 21h12"/></svg> Tips de insider que no están en Google<br>
@@ -10638,14 +10653,14 @@ document.addEventListener("DOMContentLoaded",function(){
       <!-- Form state: input -->
       <div id="su-form">
         <input id="su-name" type="text" placeholder="Tu nombre" autocomplete="given-name"
-          style="width:100%;padding:12px 16px;border:1.5px solid #eee;border-radius:50px;font-size:.88rem;outline:none;margin-bottom:10px;box-sizing:border-box;font-family:'DM Sans',sans-serif"
-          onfocus="this.style.borderColor='#FF4D35'" onblur="this.style.borderColor='#eee'">
+          style="width:100%;padding:12px 16px;border:1.5px solid rgba(14,27,48,.2);background:#FFFDF8;color:#0E1B30;border-radius:50px;font-size:.88rem;outline:none;margin-bottom:10px;box-sizing:border-box;font-family:'DM Sans',sans-serif"
+          onfocus="this.style.borderColor='#FF4D35'" onblur="this.style.borderColor='rgba(14,27,48,.2)'">
         <input id="su-email" type="email" placeholder="Tu email" autocomplete="email"
-          style="width:100%;padding:12px 16px;border:1.5px solid #eee;border-radius:50px;font-size:.88rem;outline:none;margin-bottom:14px;box-sizing:border-box;font-family:'DM Sans',sans-serif"
-          onfocus="this.style.borderColor='#FF4D35'" onblur="this.style.borderColor='#eee'"
+          style="width:100%;padding:12px 16px;border:1.5px solid rgba(14,27,48,.2);background:#FFFDF8;color:#0E1B30;border-radius:50px;font-size:.88rem;outline:none;margin-bottom:14px;box-sizing:border-box;font-family:'DM Sans',sans-serif"
+          onfocus="this.style.borderColor='#FF4D35'" onblur="this.style.borderColor='rgba(14,27,48,.2)'"
           onkeydown="if(event.key==='Enter')doSignup()">
 
-        <label id="su-news-row" style="display:flex;align-items:flex-start;gap:8px;margin-bottom:14px;font-size:.76rem;color:#666;cursor:pointer;font-family:'DM Sans',sans-serif;line-height:1.5">
+        <label id="su-news-row" style="display:flex;align-items:flex-start;gap:8px;margin-bottom:14px;font-size:.76rem;color:rgba(14,27,48,.62);cursor:pointer;font-family:'DM Sans',sans-serif;line-height:1.5">
           <input id="su-news" type="checkbox" checked style="margin-top:2px;accent-color:#FF4D35;width:15px;height:15px;flex-shrink:0">
           <span>Quiero recibir las <strong>alertas semanales</strong> por email (eventos, spots nuevos, preventas)</span>
         </label>
@@ -10654,7 +10669,7 @@ document.addEventListener("DOMContentLoaded",function(){
           ✦ Crear mi cuenta — Gratis
         </button>
 
-        <div style="text-align:center;margin-top:12px;font-size:.72rem;color:#bbb">
+        <div style="text-align:center;margin-top:12px;font-family:'DM Sans',sans-serif;font-size:.72rem;color:rgba(14,27,48,.45)">
           Sin spam. Cancela cuando quieras. 100% gratis.
         </div>
         <div id="su-mode-toggle" onclick="suToggleMode()" style="text-align:center;margin-top:14px;font-family:'DM Sans',sans-serif;font-size:.78rem;color:#FF4D35;font-weight:700;cursor:pointer">
@@ -10666,13 +10681,13 @@ document.addEventListener("DOMContentLoaded",function(){
       <div id="su-success" style="display:none;text-align:center;padding:10px 0">
         <div style="margin-bottom:12px;color:#00C9B1;display:flex;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:42px;height:42px;vertical-align:-2px"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16.5 9"/></svg></div>
         <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#08172E;margin-bottom:8px">¡Cuenta creada!</div>
-        <div style="font-family:'DM Sans',sans-serif;font-size:.84rem;color:#666;margin-bottom:20px;line-height:1.5">Tu cuenta Miami Magic est&aacute; lista. Si activaste las alertas semanales, revisa tu email &mdash; te llega una bienvenida.</div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:.84rem;color:rgba(14,27,48,.65);margin-bottom:20px;line-height:1.5">Tu cuenta Miami Magic est&aacute; lista. Si activaste las alertas semanales, revisa tu email &mdash; te llega una bienvenida.</div>
         <button onclick="closeSignup()" style="padding:12px 36px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border:none;border-radius:50px;font-size:.9rem;font-weight:700;cursor:pointer">
           ¡Perfecto! →
         </button>
-        <div style="margin-top:18px;padding:14px;background:#f5f0eb;border-radius:16px">
+        <div style="margin-top:18px;padding:14px;background:#F7F1E8;border:1px solid rgba(14,27,48,.1);border-radius:16px">
           <div style="font-size:.75rem;font-weight:700;color:#FF4D35;margin-bottom:4px">✦ Miami Magic Premium</div>
-          <div style="font-size:.75rem;color:#666;margin-bottom:10px">Itinerarios guardados · Ofertas exclusivas · Acceso VIP</div>
+          <div style="font-size:.75rem;color:rgba(14,27,48,.62);margin-bottom:10px">Itinerarios guardados · Ofertas exclusivas · Acceso VIP</div>
           <a href="https://buy.stripe.com/5kQbJ00W39TybWrbega3u02" target="_blank"
             style="display:block;padding:10px;background:#08172E;color:#fff;border-radius:50px;font-size:.8rem;font-weight:700;text-decoration:none">
             Unlock Premium — $4.99/mo
@@ -10688,7 +10703,7 @@ document.addEventListener("DOMContentLoaded",function(){
     </div>
 
     <!-- Close button -->
-    <button onclick="closeSignup()" style="position:absolute;top:14px;right:16px;background:rgba(255,255,255,.15);border:none;border-radius:50%;width:30px;height:30px;font-size:1rem;cursor:pointer;color:#fff;line-height:30px">✕</button>
+    <button onclick="closeSignup()" style="position:absolute;top:14px;right:16px;background:rgba(14,27,48,.07);border:none;border-radius:50%;width:30px;height:30px;font-size:1rem;cursor:pointer;color:#0E1B30;line-height:30px">✕</button>
   </div>
 </div>
 
@@ -11387,7 +11402,8 @@ function socRenderRail(){
   var P=(typeof _amigoPersonas!=='undefined')?_amigoPersonas:null;
   function faceAv(n,bg){ return '<span class="soc-av" style="background:'+bg+'">'+(P&&P[n]?P[n].face:'')+'</span>'; }
   function photoAv(url){ return '<span class="soc-av" style="background-image:url('+url+');background-size:cover;background-position:center;"></span>'; }
-  var live='<span class="soc-live-tag">LIVE</span>';
+  /* (la historia "En Vivo" salió del rail — su nota: Live Cams ya
+     tiene su propia puerta y no hace falta repetirla aquí) */
   // Contenido de la app siempre delante; tu foto va al final, en UN solo círculo
   // (aunque publiques varias — se ven todas dentro al tocarlo, nunca se crean círculos nuevos).
   var arr=mmUStGet();
@@ -11399,7 +11415,6 @@ function socRenderRail(){
   // final las tres personas de IA. Sigue siendo UN solo círculo tuyo.
   el.innerHTML =
     myRing
-    +ring(photoAv('https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=200&q=60&auto=format')+live, ES?'En Vivo':'Live', "go('sec-livecams');setTimeout(function(){var p=document.getElementById('mmcamPanel');if(p&&!p.classList.contains('open'))mmcamSection();},600);","soc-story-live")
     +ring(faceAv('luna','#FF4D35'), ES?'Luna':'Lucy', "openAmigoFocused('luna');","")
     +ring(faceAv('mateo','#00C9B1'), ES?'Mateo':'Matt', "openAmigoFocused('mateo');","")
     +ring(faceAv('sofia','#FFD166'), ES?'Sofía':'Sophie', "openAmigoFocused('sofia');","");
@@ -11451,7 +11466,7 @@ document.addEventListener('click',function(e){
   var inp=document.getElementById('heroSearchInp');
   if(p && p.classList.contains('on') && !p.contains(e.target) && e.target!==inp) mmHideHistory();
 });
-function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en]').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}try{setTimeout(function(){if(window.mmTickerBuild)window.mmTickerBuild();},650);}catch(e){}}
+function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('#navSignin [data-en], .hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en]').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}try{setTimeout(function(){if(window.mmTickerBuild)window.mmTickerBuild();},650);}catch(e){}}
 function socApplyLang(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   document.querySelectorAll('#sec-social [data-en], #socPubOv [data-en]').forEach(function(el){
@@ -17184,6 +17199,24 @@ function showInsiderModal(id){
 [data-theme="dark"] #heroTicker .mq-item b{color:#fff;}
 [data-theme="dark"] #heroTicker .mq-n{color:#FF6B55;}
 [data-theme="dark"] #heroTicker .mq-dot{background:#FF6B55;}
+
+/* ══ MIAMI SOCIAL: subtítulo que dice de qué va la sección */
+.soc-sub{font:400 .92rem/1.45 'DM Sans',sans-serif;color:rgba(14,27,48,.62);
+  margin:-6px 0 14px;max-width:520px;}
+[data-theme="dark"] .soc-sub{color:rgba(255,255,255,.6);}
+
+/* ══ SIGN IN en el header: el mismo vidrio del chip que reemplaza */
+#navSignin{display:inline-flex;align-items:center;gap:7px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.38);
+  border-radius:999px;padding:9px 18px;cursor:pointer;color:#fff;
+  font:800 .78rem 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  transition:background .2s ease,transform .2s ease;}
+#navSignin:hover{background:rgba(255,255,255,.22);transform:translateY(-1px);}
+#navSignin svg{width:15px;height:15px;}
+/* En móvil el header ordena por order: hamburguesa 1, logo 2, y el
+   clima iba con order 3 a la derecha — Sign in hereda ese puesto. */
+@media(max-width:899px){ #navSignin{order:3!important;} }
 [data-theme="dark"] .sea-strip .mq-item{color:rgba(255,255,255,.82);}
 [data-theme="dark"] .sea-strip .mq-item b{color:#fff;}
 
