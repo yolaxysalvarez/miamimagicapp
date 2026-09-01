@@ -990,6 +990,14 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 .twx-tip-lbl{display:block;font:800 .58rem 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#00806F;margin-bottom:3px;}
 .twx-card{background:#fff;border:1px solid rgba(14,27,48,.10);border-left:3px solid var(--twx-ac,#00C9B1);border-radius:5px;overflow:hidden;cursor:pointer;box-shadow:0 1px 3px rgba(14,27,48,.06);transition:border-color .25s,transform .15s,box-shadow .25s;}
 .twx-card:active{transform:scale(.985);}
+/* Chip de urgencia de la tarjeta de evento. Coral sólido para HOY,
+   contorno dorado para el resto — jerarquía sin ruido. */
+.twx-soon{display:inline-block;font-family:'Bebas Neue',sans-serif;font-size:.7rem;letter-spacing:.09em;
+  padding:3px 9px 2px;border-radius:3px;white-space:nowrap;margin-bottom:6px;
+  color:#B07800;border:1px solid rgba(176,120,0,.42);background:rgba(255,209,102,.16);}
+.twx-soon-now{color:#fff;background:var(--coral,#FF4D35);border-color:var(--coral,#FF4D35);
+  box-shadow:0 2px 10px rgba(255,77,53,.32);}
+#sec-june .twx-side,#sec-month .twx-side{gap:3px;}
 .twx-card.open{border-color:var(--twx-ac);box-shadow:0 10px 34px -12px rgba(0,0,0,.6),0 0 0 1px var(--twx-ac) inset;}
 .twx-head{display:flex;align-items:center;gap:13px;padding:14px 14px;}
 .twx-date{flex:0 0 52px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(14,27,48,.05);border:1px solid rgba(14,27,48,.10);border-radius:13px;padding:7px 4px;}
@@ -3481,7 +3489,7 @@ body{padding-bottom:0;}
   <div id="sec-favs" style="padding:0 64px;margin-bottom:0;"></div>
   <div id="app"></div>
   
-<section class="sec fade tw-wrap" id="sec-livecams"><div class="tw-bar-wrap" style="--tw-accent:#FF3B30;--tw-accent-border:rgba(255,59,48,.25);"><div class="tw-bar" id="mmcamBar" onclick="if(!(event.target.closest&&event.target.closest('#mmcamPanel')))mmcamSection()"><div class="tw-bar-bg" style="background-image:url('videos/mm-livecams.jpg')"></div><video class="tw-bar-vid" id="mmcamVid" autoplay muted loop playsinline preload="none" poster="videos/mm-livecams.jpg" aria-hidden="true"><source src="videos/mm-livecams.mp4" type="video/mp4"></video><div class="tw-bar-overlay"></div><div class="tw-bar-body"><div class="tw-bar-label"><span class="tw-bar-eyebrow" style="color:#FF6B60"><span class="mmcam-dot"></span><span data-en="LIVE · 14 cameras" data-es="EN VIVO · 14 c&aacute;maras">EN VIVO · 14 c&aacute;maras</span></span><span class="tw-bar-title" data-en="Miami Live" data-es="Miami en Vivo">Miami en Vivo</span><span class="tw-bar-desc" data-en="Beaches, skyline and marinas &mdash; the city exactly as it looks right now" data-es="Playas, skyline y marinas &mdash; la ciudad tal como se ve ahora mismo">Playas, skyline y marinas &mdash; la ciudad tal como se ve ahora mismo</span></div><div class="cam-chips"><span class="cam-chips-lbl" data-en="Cameras in" data-es="C&aacute;maras en">C&aacute;maras en</span><span class="cam-chip" data-en="South Beach" data-es="South Beach">South Beach</span><span class="cam-chip" data-en="Wynwood" data-es="Wynwood">Wynwood</span><span class="cam-chip" data-en="Little Havana" data-es="La Peque&ntilde;a Habana">La Peque&ntilde;a Habana</span><span class="cam-chip" data-en="PortMiami" data-es="PortMiami">PortMiami</span><span class="cam-chip" data-en="Key Biscayne" data-es="Key Biscayne">Key Biscayne</span><span class="cam-chip cam-chip-more" data-en="and 9 more" data-es="y 9 m&aacute;s">y 9 m&aacute;s</span></div><div class="tw-bar-meta"><div class="tw-bar-when"><span class="cam-stats"><span class="cam-stat"><b>14</b> <i data-en="cameras" data-es="c&aacute;maras">c&aacute;maras</i></span><span class="cam-stat-div"></span><span class="cam-stat"><b>24/7</b> <i data-en="live" data-es="en directo">en directo</i></span></span></div><div class="tw-bar-meta"><span class="tw-bar-cta"><span data-en="Explore" data-es="Explorar">Explorar</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></div></div></div><div class="tw-panel" id="mmcamPanel" onclick="event.stopPropagation()"><div class="mmcam-inner"><div class="mmcam-feat" id="mmcamFeat" onclick="mmcamPlay()"><span class="mmcam-feat-bg" style="background-image:url('https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=1000&q=60&auto=format')"></span><span class="mmcam-live mmcam-live-lg"><i></i>LIVE</span><span class="mmcam-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span class="mmcam-feat-tx"><b>Coral City Camera</b><i data-en="Underwater urban reef &middot; YouTube" data-es="Arrecife urbano bajo el agua &middot; YouTube">Arrecife urbano bajo el agua &middot; YouTube</i></span></div><p class="mmcam-grp" data-en="Beaches" data-es="Playas">Playas</p><div class="mmcam-wall"><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/ae9f232c-7af2-47b4-a614-5420910253b3/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Ocean_Drive_webcam_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Ocean Drive</b><i>South Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/2e8bf32f-619d-4143-bd57-c6788c976512/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/HiltonBentley_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>1st Street Beach</b><i>South Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/f19006f5-7575-4162-9938-e69d53497ea0/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/miami-beach-21st_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1519046904884-53103b34b206?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>21st Street Beach</b><i>South Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/2915fad5-9cc2-4f7e-8114-632c80acc91f/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Eden-Roc_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>45th Street Beach</b><i>Mid Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/88a0f753-0b37-48da-899a-c5574f126384/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Sunny-Isles-North_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1468413253725-0d5181091126?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b data-en="Sunny Isles · North" data-es="Sunny Isles · Norte">Sunny Isles · Norte</b><i>Sunny Isles</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/5bf6e865-7cc8-4725-962c-e9e84dcd0c3d/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Sunny-Isles-2_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b data-en="Sunny Isles · South" data-es="Sunny Isles · Sur">Sunny Isles · Sur</b><i>Sunny Isles</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/2e895fab-f69f-4860-91b6-193f8e5bf952/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/vkbeach-webcam_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1476673160081-cf065607f449?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Virginia Key Beach</b><i>Key Biscayne</i></span></button></div><p class="mmcam-grp" data-en="City" data-es="Ciudad">Ciudad</p><div class="mmcam-wall"><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/0a6ca939-c242-457b-ae2a-4a9444bc5c1c/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/CalleOcho-Webcam_1_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Calle Ocho</b><i>Little Havana</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/e40b9b09-9855-43fc-8143-ded0f6ff4aa0/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Winwood_1_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Wynwood Walls</b><i>Wynwood</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/8f11617b-ceff-4a6f-b25b-7e9cd7e3bba7/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Intercontinental-webcam_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Bayfront Park</b><i>Downtown</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/4a7a4179-086d-4912-acbe-3564e204b75d/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Lincoln-Road_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Lincoln Road</b><i>Miami Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.portmiamiwebcam.com','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/df75c6b8-1a3b-4b2d-9410-6a0709f618c6/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/double-tree_2_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>PortMiami</b><i>Biscayne Bay</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiairportcam.com','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/1055a989-682e-4500-8e69-0502df9f42bf/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Embassy-Suites-Airport_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b data-en="MIA Airport" data-es="Aeropuerto MIA">Aeropuerto MIA</b><i>Miami Intl</i></span></button></div><p class="mmcam-credit" data-en="Real views from every camera · Courtesy of Greater Miami &amp; Beaches (GMCVB), PTZtv and Miami Airport Cam · they open on their official site" data-es="Vistas reales de cada c&aacute;mara · Cortes&iacute;a de Greater Miami &amp; Beaches (GMCVB), PTZtv y Miami Airport Cam · se abren en su sitio oficial">Vistas reales de cada c&aacute;mara &middot; Cortes&iacute;a de Greater Miami &amp; Beaches (GMCVB), PTZtv y Miami Airport Cam &middot; se abren en su sitio oficial</p></div></div></div></section>
+<section class="sec fade tw-wrap" id="sec-livecams"><div class="tw-bar-wrap" style="--tw-accent:#FF3B30;--tw-accent-border:rgba(255,59,48,.25);"><div class="tw-bar" id="mmcamBar" onclick="if(!(event.target.closest&&event.target.closest('#mmcamPanel')))mmcamSection()"><div class="tw-bar-body"><div class="tw-bar-label"><span class="tw-bar-eyebrow" style="color:#FF6B60"><span class="mmcam-dot"></span><span data-en="LIVE · 14 cameras" data-es="EN VIVO · 14 c&aacute;maras">EN VIVO · 14 c&aacute;maras</span></span><span class="tw-bar-title" data-en="Miami Live" data-es="Miami en Vivo">Miami en Vivo</span><span class="tw-bar-desc" data-en="Beaches, skyline and marinas &mdash; the city exactly as it looks right now" data-es="Playas, skyline y marinas &mdash; la ciudad tal como se ve ahora mismo">Playas, skyline y marinas &mdash; la ciudad tal como se ve ahora mismo</span></div><div class="cam-chips"><span class="cam-chips-lbl" data-en="Cameras in" data-es="C&aacute;maras en">C&aacute;maras en</span><span class="cam-chip" data-en="South Beach" data-es="South Beach">South Beach</span><span class="cam-chip" data-en="Wynwood" data-es="Wynwood">Wynwood</span><span class="cam-chip" data-en="Little Havana" data-es="La Peque&ntilde;a Habana">La Peque&ntilde;a Habana</span><span class="cam-chip" data-en="PortMiami" data-es="PortMiami">PortMiami</span><span class="cam-chip" data-en="Key Biscayne" data-es="Key Biscayne">Key Biscayne</span><span class="cam-chip cam-chip-more" data-en="and 9 more" data-es="y 9 m&aacute;s">y 9 m&aacute;s</span></div><div class="tw-bar-meta"><div class="tw-bar-when"><span class="cam-stats"><span class="cam-stat"><b>14</b> <i data-en="cameras" data-es="c&aacute;maras">c&aacute;maras</i></span><span class="cam-stat-div"></span><span class="cam-stat"><b>24/7</b> <i data-en="live" data-es="en directo">en directo</i></span></span></div><div class="tw-bar-meta"><span class="tw-bar-cta"><span data-en="Explore" data-es="Explorar">Explorar</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></div></div></div><div class="tw-panel" id="mmcamPanel" onclick="event.stopPropagation()"><div class="mmcam-inner"><div class="mmcam-feat" id="mmcamFeat" onclick="mmcamPlay()"><span class="mmcam-feat-bg" style="background-image:url('https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=1000&q=60&auto=format')"></span><span class="mmcam-live mmcam-live-lg"><i></i>LIVE</span><span class="mmcam-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span class="mmcam-feat-tx"><b>Coral City Camera</b><i data-en="Underwater urban reef &middot; YouTube" data-es="Arrecife urbano bajo el agua &middot; YouTube">Arrecife urbano bajo el agua &middot; YouTube</i></span></div><p class="mmcam-grp" data-swipe="→" data-en="Beaches" data-es="Playas">Playas</p><div class="mmcam-wall"><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/ae9f232c-7af2-47b4-a614-5420910253b3/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Ocean_Drive_webcam_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Ocean Drive</b><i>South Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/2e8bf32f-619d-4143-bd57-c6788c976512/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/HiltonBentley_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>1st Street Beach</b><i>South Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/f19006f5-7575-4162-9938-e69d53497ea0/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/miami-beach-21st_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1519046904884-53103b34b206?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>21st Street Beach</b><i>South Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/2915fad5-9cc2-4f7e-8114-632c80acc91f/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Eden-Roc_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>45th Street Beach</b><i>Mid Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/88a0f753-0b37-48da-899a-c5574f126384/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Sunny-Isles-North_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1468413253725-0d5181091126?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b data-en="Sunny Isles · North" data-es="Sunny Isles · Norte">Sunny Isles · Norte</b><i>Sunny Isles</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/5bf6e865-7cc8-4725-962c-e9e84dcd0c3d/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Sunny-Isles-2_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b data-en="Sunny Isles · South" data-es="Sunny Isles · Sur">Sunny Isles · Sur</b><i>Sunny Isles</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/2e895fab-f69f-4860-91b6-193f8e5bf952/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/vkbeach-webcam_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1476673160081-cf065607f449?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Virginia Key Beach</b><i>Key Biscayne</i></span></button></div><p class="mmcam-grp" data-swipe="→" data-en="City" data-es="Ciudad">Ciudad</p><div class="mmcam-wall"><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/0a6ca939-c242-457b-ae2a-4a9444bc5c1c/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/CalleOcho-Webcam_1_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Calle Ocho</b><i>Little Havana</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/e40b9b09-9855-43fc-8143-ded0f6ff4aa0/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Winwood_1_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Wynwood Walls</b><i>Wynwood</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/8f11617b-ceff-4a6f-b25b-7e9cd7e3bba7/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Intercontinental-webcam_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Bayfront Park</b><i>Downtown</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiandbeaches.com/plan-your-trip/miami-webcams','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/4a7a4179-086d-4912-acbe-3564e204b75d/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Lincoln-Road_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>Lincoln Road</b><i>Miami Beach</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.portmiamiwebcam.com','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/df75c6b8-1a3b-4b2d-9410-6a0709f618c6/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/double-tree_2_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1548574505-5e239809ee19?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b>PortMiami</b><i>Biscayne Bay</i></span></button><button class="mmcam-mon" onclick="window.open('https://www.miamiairportcam.com','_blank','noopener')"><span class="mmcam-mon-bg" style="background-image:url('https://www.miamiandbeaches.com/getContentAsset/1055a989-682e-4500-8e69-0502df9f42bf/ebf524bb-ee44-41e8-9d60-d33824777762/Thumb/Embassy-Suites-Airport_Thumb.webp?language=en-US'),url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=640&q=60&auto=format')"></span><span class="mmcam-live"><i></i>LIVE</span><span class="mmcam-mon-tx"><b data-en="MIA Airport" data-es="Aeropuerto MIA">Aeropuerto MIA</b><i>Miami Intl</i></span></button></div><p class="mmcam-credit" data-en="Real views from every camera · Courtesy of Greater Miami &amp; Beaches (GMCVB), PTZtv and Miami Airport Cam · they open on their official site" data-es="Vistas reales de cada c&aacute;mara · Cortes&iacute;a de Greater Miami &amp; Beaches (GMCVB), PTZtv y Miami Airport Cam · se abren en su sitio oficial">Vistas reales de cada c&aacute;mara &middot; Cortes&iacute;a de Greater Miami &amp; Beaches (GMCVB), PTZtv y Miami Airport Cam &middot; se abren en su sitio oficial</p></div></div></div></section>
 <!-- MIAMI IN PHOTOS — ahora debajo de las cámaras en vivo -->
 <div id="ugcWrap"></div>
 <!-- MAP SECTION -->
@@ -3701,7 +3709,7 @@ restaurants:[
   {id:'r22',name:'NIU Kitchen',cat:'Modern Catalan',cat_es:'Catalán Moderno',filter:'mediterranean',emoji:'',bg:'bg-sky',badge:'Hidden Gem',rating:4.7,rev:'720',price:'$$$',occ:'Foodie',occ_es:'Gourmet',tags:['Catalan','Small Plates'],desc:'One of Miami\'s best-kept secrets. Chef Deme Lomas\' extraordinary modern Catalan small plates.',desc_es:'Uno de los mejores secretos de Miami. Platos catalanes modernos del chef Deme Lomas.',addr:'104 NE 2nd Ave, Downtown',hrs:'Tue–Thu 5–10 PM · Fri–Sat 5–10:30 PM · Closed Sun–Mon',pro:false,pnote:'Dinner only, and closed Sunday and Monday. Their sister wine bar, NIU Wine, is a block away at 134 NE 2nd Ave.',pnote_es:'Solo cena, y cierra domingo y lunes. Su bar de vinos hermano, NIU Wine, está a una cuadra en el 134 NE 2nd Ave.',link:'https://niukitchen.com/niu-kitchen/'},
   {id:'r25',name:'La Palma',cat:'Italian',cat_es:'Italiano',filter:'italian',emoji:'',bg:'bg-green',badge:'Coral Gables Gem',rating:4.7,rev:'1.1k',price:'$$$',occ:'Romantic',occ_es:'Romántico',tags:['Historic Building','Courtyard','Sunday Brunch'],desc:'A Coral Gables trattoria inside the 1924 La Palma building, one of the George Merrick originals — homemade pastas under the trees of a stone-fountain courtyard, and a Sunday brunch buffet with live music.',desc_es:'Trattoria de Coral Gables dentro del edificio La Palma de 1924, uno de los originales de George Merrick: pastas caseras bajo los árboles de un patio con fuente de piedra, y brunch buffet los domingos con música en vivo.',addr:'116 Alhambra Cir, Coral Gables',hrs:'Tue–Thu 11:30 AM–10 PM · Fri 11:30 AM–12 AM · Sat 5 PM–12 AM · Sun 11 AM–6 PM · Closed Mon',pro:false,link:'https://www.google.com/maps/search/La+Palma+Ristorante+116+Alhambra+Circle+Coral+Gables'},
   {id:'r26',name:'Torno Subito',cat:'Creative Italian',cat_es:'Italiano Creativo',filter:'italian',emoji:'',bg:'bg-lime',badge:'3 Michelin Stars Chef',rating:4.7,rev:'1.1k',price:'$$$',occ:'Design District',occ_es:'Design District',tags:['Massimo Bottura','Design District'],desc:'Three-Michelin-star chef Massimo Bottura\'s playful Italian restaurant, now in the Design District.',desc_es:'El restaurante italiano del chef Massimo Bottura (3 estrellas Michelin), ahora en el Design District.',addr:'191 NE 40th St, Miami Design District',hrs:'Lunch 12–3 PM · Dinner 6–10 PM (Fri–Sat to 11 PM)',pro:false,link:'https://tornosubitomia.com',mmNote:'Torno Subito moved from the W Hotel to The Moore in the Design District — update your GPS if you\u2019re going by an old address.',mmNote_es:'Torno Subito se mudó del W Hotel a The Moore en el Design District — actualiza tu GPS si tenías la dirección anterior.'},
-  {id:'r28',name:'Palat',cat:'Italian',cat_es:'Italiano',filter:'italian',emoji:'',bg:'bg-amber',badge:'Buena Vista',rating:4.6,rev:'540',price:'$$$',occ:'Date Night',occ_es:'Cita',tags:['Italian','Small Plates','Buena Vista'],desc:'Contemporary Italian small plates a block north of the Design District — the Lamberti family first restaurant outside Philadelphia. Sea urchin with squid-ink pasta, tagliolini cacio e pepe finished in a parmigiano wheel, grilled Spanish octopus.',desc_es:'Italiano contemporáneo de platos para compartir a una cuadra del Design District: el primer restaurante de la familia Lamberti fuera de Filadelfia. Erizo con pasta al negro de sepia, tagliolini cacio e pepe terminados en rueda de parmigiano y pulpo a la brasa.',addr:'4702 NE 2nd Ave, Buena Vista',hrs:'Tue–Thu & Sun 11:30 AM–10 PM · Fri–Sat 11:30 AM–11 PM · Closed Mon',pro:false,pnote:'They close for part of the summer season, so call before you go.',pnote_es:'Cierran una temporada en verano, así que llama antes de ir.',link:'https://palatmiami.com/'},
+  {id:'r28',name:'Palat',cat:'Italian',cat_es:'Italiano',filter:'italian',emoji:'',bg:'bg-amber',badge:'Buena Vista',rating:4.6,rev:'540',price:'$$$',occ:'Date Night',occ_es:'Cita',tags:['Italian','Small Plates','Buena Vista'],desc:'Contemporary Italian small plates a block north of the Design District — the Lamberti family first restaurant outside Philadelphia. Sea urchin with squid-ink pasta, tagliolini cacio e pepe finished in a parmigiano wheel, grilled Spanish octopus.',desc_es:'Italiano contemporáneo de platos para compartir a una cuadra del Design District: el primer restaurante de la familia Lamberti fuera de Filadelfia. Erizo con pasta al negro de sepia, tagliolini cacio e pepe terminados en rueda de parmigiano y pulpo a la brasa.',addr:'4702 NE 2nd Ave, Buena Vista',hrs:'Tue–Thu & Sun 11:30 AM–10 PM · Fri–Sat 11:30 AM–11 PM · Closed Mon',pro:false,pnote:'They close for part of the summer season, so call before you go.',pnote_es:'Cierran una temporada en verano, así que llama antes de ir.',link:'https://www.miamiandbeaches.com/l/eat-and-drink/palat/13477'},
   {id:'r31',name:'Echate Pa Lla',cat:'Spanish',cat_es:'Español',filter:'mediterranean',emoji:'',bg:'bg-coral',badge:'Live Flamenco',rating:4.6,rev:'890',price:'$$',occ:'Casual',occ_es:'Casual',tags:['Spanish','Flamenco','Doral'],desc:'A Spanish restaurant in Doral with a live flamenco tablao on weekends — Mediterranean cooking by chef Antonio Puertas built around rice dishes and paella, with a terrace and free parking.',desc_es:'Restaurante español en Doral con tablao flamenco en vivo los fines de semana: cocina mediterránea del chef Antonio Puertas centrada en arroces y paellas, con terraza y estacionamiento gratis.',addr:'7835 NW 107th Ave Ste 3-06, Doral',hrs:'Tue–Thu 12–9 PM · Fri–Sat 12–11 PM · Sun 12–8 PM · Closed Mon',pro:true,photo_url:'https://youtu.be/OrTWNT0PbZQ',link:'https://www.echatepalla.com/'},
   {id:'r32',name:'Habibi Miami',cat:'Middle Eastern',cat_es:'Árabe',filter:'mediterranean',emoji:'',bg:'bg-green',badge:'Nightlife',rating:4.5,rev:'620',price:'$$$',occ:'Late Night',occ_es:'Noche',tags:['Lebanese','Hookah','Late Night'],desc:'The most vibrant Middle Eastern restaurant in Miami. Lebanese cuisine, hookah, and live entertainment.',desc_es:'El restaurante árabe mas vibrante de Miami. Cocina libanesa, hookah y entretenimiento.',addr:'452 NW North River Dr',hrs:'Wed 7 PM–1 AM · Thu–Sun 7 PM–3 AM · Closed Mon–Tue',pro:false,photo_url:'https://youtu.be/2QHD4BLekY4',link:'https://habibimia.com/'},
   {id:'r33',name:'Smoke and Dough',cat:'BBQ · Bakery',cat_es:'BBQ · Panadería',filter:'american',emoji:'',bg:'bg-amber',badge:'NY Times Top 50',rating:4.8,rev:'1.1k',price:'$$',occ:'Casual',occ_es:'Casual',tags:['BBQ','Smoked Meats','Top 50'],desc:'Named one of the NY Times\' 50 best restaurants in America — a family operation where Cuban soul meets Texas-style smoke. The brisket croquetas and guava-glazed ribs are unlike anything else in the country.',desc_es:'Nombrado entre los 50 mejores restaurantes de EE.UU. por el NY Times: una operación familiar donde el alma cubana se une al ahumado estilo Texas. Las croquetas de brisket y las costillas glaseadas con guayaba no existen en ningún otro lugar.',addr:'4013 SW 152nd Ave',pro:true,photo_url:'',pnote:'Hours move around and the listings disagree, so call before driving out to Kendall.',pnote_es:'Los horarios cambian y las fuentes no coinciden, así que llama antes de manejar hasta Kendall.',link:'https://smokeanddough.com'},
@@ -3840,6 +3848,13 @@ theaters:[
   {id:'t3',name:'Miami New Drama',name_es:'Miami New Drama',emoji:'',bg:'bg-teal',cat:'Theater Company',cat_es:'Compañía Teatral',desc:'Miami\'s premier theatrical company — bold, adventurous, and proudly bilingual. Under Artistic Director Michel Hausmann, Miami New Drama produces work that speaks directly to Miami\'s multicultural soul at the Colony Theatre on Lincoln Road.',desc_es:'La principal compañía teatral de Miami: audaz, valiente y bilingüe. Bajo el director Michel Hausmann, produce obras que hablan directamente al alma multicultural de Miami.',addr:'1040 Lincoln Rd, Miami Beach',hrs:'Varía por función',tags:['Bilingual','Contemporary','Lincoln Road'],link:'https://miaminewdrama.org'},
   {id:'t4',name:'Colony Theatre',name_es:'Teatro Colony',emoji:'',bg:'bg-coral',cat:'Historic Venue · 1935',cat_es:'Recinto Histórico · 1935',desc:'A gorgeous 1935 Art Deco gem on Miami Beach\'s iconic Lincoln Road. The Colony hosts concerts, dance performances, and intimate shows with spectacular architecture that makes every event feel special.',desc_es:'Una joya Art Deco de 1935 en el icónico Lincoln Road de Miami Beach. Conciertos, danza y funciones íntimas en un ambiente arquitectónico espectacular.',addr:'1040 Lincoln Rd, Miami Beach',hrs:'Taquilla: 12 PM – 6 PM',tags:['Art Deco','Historic','Intimate'],link:'https://www.miamibeacharts.org/colonytheatre'},
   {id:'t5',name:'GableStage',name_es:'GableStage',emoji:'',bg:'bg-indigo',cat:'Professional Theater',cat_es:'Teatro Profesional',desc:'Coral Gables\' acclaimed professional theater — one of the most respected companies in South Florida. GableStage is known for fearless productions of classic and contemporary drama. Intimate 150-seat theater inside the Biltmore Hotel.',desc_es:'El aclamado teatro profesional de Coral Gables, uno de los más respetados del sur de Florida. Producciones audaces de drama clásico y contemporáneo. 150 asientos íntimos en el Biltmore Hotel.',addr:'1200 Anastasia Ave, Coral Gables',hrs:'Taquilla varía',tags:['Drama','Award-Winning','Intimate'],link:'https://gablestage.org'},
+  {id:'t6',name:'Actors\u2019 Playhouse at the Miracle Theatre',name_es:'Actors\u2019 Playhouse en el Miracle Theatre',emoji:'',bg:'bg-coral',cat:'Regional Theater · Musicals',cat_es:'Teatro Regional · Musicales',desc:'Broadway-caliber musicals and plays inside a 1948 Art Deco landmark on Miracle Mile. An award-winning nonprofit company with a full mainstage season plus a beloved children\u2019s theatre \u2014 and Coral Gables restaurants at the door for dinner before the show.',desc_es:'Musicales y obras de calibre Broadway dentro de una joya Art Deco de 1948 en Miracle Mile. Compa\u00f1\u00eda premiada sin fines de lucro con temporada completa y un querido teatro infantil \u2014 y los restaurantes de Coral Gables en la puerta para cenar antes de la funci\u00f3n.',addr:'280 Miracle Mile, Coral Gables',hrs:'Taquilla 10 AM\u20136 PM',tags:['Musicals','Historic','Family'],link:'https://actorsplayhouse.org'},
+  {id:'t7',name:'Teatro Trail',name_es:'Teatro Trail',emoji:'',bg:'bg-red',cat:'Spanish-Language Theater',cat_es:'Teatro en Espa\u00f1ol',desc:'The icon of Miami\u2019s Spanish-language stage since 1930: 431 seats under a classic street marquee on Calle Ocho, with comedies and dramas that pack the house every weekend, plus the 90-seat black box Sala Catarsis next door. Shows run Thursday through Sunday.',desc_es:'El \u00edcono de la escena en espa\u00f1ol de Miami desde 1930: 431 butacas bajo una marquesina cl\u00e1sica en la Calle Ocho, con comedias y dramas que llenan la sala cada fin de semana, m\u00e1s la Sala Catarsis, un black box de 90 asientos al lado. Funciones de jueves a domingo.',addr:'3715 SW 8th St, Calle Ocho',hrs:'Jue\u2013Dom \u00b7 funciones tarde/noche',tags:['En Espa\u00f1ol','Historic','Comedy'],link:'https://www.teatrotrail.com'},
+  {id:'t8',name:'Teatro 8',name_es:'Teatro 8',emoji:'',bg:'bg-purple',cat:'Spanish-Language Theater',cat_es:'Teatro en Espa\u00f1ol',desc:'An intimate Little Havana playhouse where every seat is close to the stage. Spanish-language premieres, classics of the Hispanic repertoire and hit comedy runs \u2014 the kind of room where the audience answers back and the night feels alive.',desc_es:'Una sala \u00edntima en La Peque\u00f1a Habana donde todas las butacas quedan cerca del escenario. Estrenos en espa\u00f1ol, cl\u00e1sicos del repertorio hispano y comedias de temporada \u2014 el tipo de teatro donde el p\u00fablico contesta y la noche se siente viva.',addr:'2173 SW 8th St, La Peque\u00f1a Habana',hrs:'Funciones Vie\u2013Dom',tags:['En Espa\u00f1ol','Intimate','Comedy'],link:'https://teatro8.com'},
+  {id:'t9',name:'Havanafama Theater Company',name_es:'Compa\u00f1\u00eda Teatral Havanafama',emoji:'',bg:'bg-amber',cat:'Independent Theater',cat_es:'Teatro Independiente',desc:'A tiny, fiercely loved Cuban theater company with premieres and revivals every season \u2014 from classic Cuban playwrights to monologue festivals. The room is small and regulars book ahead; this is Miami theater at its most personal.',desc_es:'Una compa\u00f1\u00eda cubana peque\u00f1a y ferozmente querida, con estrenos y reposiciones cada temporada \u2014 de los dramaturgos cubanos cl\u00e1sicos a festivales de mon\u00f3logos. La sala es chica y los habituales reservan antes; esto es el teatro de Miami en su versi\u00f3n m\u00e1s personal.',addr:'4227 SW 75th Ave, Miami',hrs:'Seg\u00fan cartelera',tags:['En Espa\u00f1ol','Intimate','Drama'],link:'https://www.havanafama.org'},
+  {id:'t10',name:'Sandrell Rivers Theater',name_es:'Teatro Sandrell Rivers',emoji:'',bg:'bg-teal',cat:'Community Stage · Drama',cat_es:'Escenario Comunitario · Drama',desc:'A state-of-the-art county theater in Liberty City, home to M Ensemble \u2014 South Florida\u2019s longest-running African American theater company, a Carbonell Award regular \u2014 and to Fantasy Theatre Factory\u2019s family shows. Powerful drama at neighborhood prices.',desc_es:'Un teatro del condado de \u00faltima generaci\u00f3n en Liberty City, sede del M Ensemble \u2014 la compa\u00f1\u00eda de teatro afroamericano m\u00e1s antigua del sur de Florida, habitual en los premios Carbonell \u2014 y de los shows familiares de Fantasy Theatre Factory. Drama poderoso a precio de barrio.',addr:'6103 NW 7th Ave, Liberty City',hrs:'Seg\u00fan cartelera',tags:['Drama','Community','Family'],link:'https://www.sandrellriverstheater.com'},
+  {id:'t11',name:'Miami Theater Center',name_es:'Miami Theater Center',emoji:'',bg:'bg-blue',cat:'Art Deco Playhouse',cat_es:'Sala Art Deco',desc:'A lovingly restored 1949 movie palace in downtown Miami Shores, now a nonprofit stage known for original productions, immersive experiences and standout programming for young audiences. Free parking and a 10-minute hop from the Design District.',desc_es:'Un cine de 1949 restaurado con cari\u00f1o en el downtown de Miami Shores, hoy una sala sin fines de lucro conocida por producciones originales, experiencias inmersivas y una programaci\u00f3n excelente para p\u00fablicos j\u00f3venes. Parqueo gratis y a 10 minutos del Design District.',addr:'9806 NE 2nd Ave, Miami Shores',hrs:'Seg\u00fan cartelera',tags:['Historic','Family','Original Works'],link:'https://www.mtcmiami.org'},
+  {id:'t12',name:'Area Stage',name_es:'Area Stage',emoji:'',bg:'bg-indigo',cat:'Professional Theater',cat_es:'Teatro Profesional',desc:'Founded in 1989 as a pioneer of the Lincoln Road arts scene and called one of the region\u2019s most influential theaters. Now in South Miami with contemporary plays, immersive productions and sold-out shows from its acclaimed conservatory and inclusive theater program.',desc_es:'Fundado en 1989 como pionero de la escena art\u00edstica de Lincoln Road y llamado uno de los teatros m\u00e1s influyentes de la regi\u00f3n. Hoy en South Miami, con obras contempor\u00e1neas, producciones inmersivas y funciones agotadas de su aclamado conservatorio y su programa de teatro inclusivo.',addr:'5701 Sunset Dr, South Miami',hrs:'Seg\u00fan cartelera',tags:['Contemporary','Immersive','Conservatory'],link:'https://www.areastage.org'},
 ],
 concerts:[
   {id:'c1',name:'Kaseya Center',name_es:'Kaseya Center',emoji:'',bg:'bg-blue',cat:'Arena · NBA Home',cat_es:'Arena · Sede NBA',desc:'Miami\'s premier indoor arena hosting the world\'s biggest acts — Taylor Swift, Beyoncé, Bad Bunny, Coldplay, Shakira.',desc_es:'La principal arena de Miami. Bad Bunny, Shakira, Coldplay, Beyoncé.',addr:'601 Biscayne Blvd, Downtown',cap:'21,000',hrs:'Doors open 1–2 hrs before show',price:'From $45 – $500+',price_es:'Desde $45',parking:'FTX Garage · $25–$40',parking_es:'Garaje FTX · $25–$40',upcoming:'Bad Bunny · Jul 2026|Shakira World Tour · Sep 2026|Coldplay · Nov 2026',upcoming_es:'Bad Bunny · Jul 2026|Shakira World Tour · Sep 2026|Coldplay · Nov 2026',genres:'Pop · Hip-Hop · Latin · Rock · EDM',tip:'Buy on Ticketmaster. Arrive 45 min early — security lines are long for major shows.',tip_es:'Compra en Ticketmaster. Llega 45 min antes, las filas son largas.',tags:['Arena','NBA','Mega Shows'],link:'https://www.ticketmaster.com/search?q=kaseya+center+miami'},
@@ -3882,6 +3897,190 @@ events:[
      · scope:'local' (badge teal) | 'world' (badge coral).
      · photo: URL opcional (si falla, la card muestra gradiente).
      ═══════════════════════════════════════════════════════════════ */
+  /* ── CARGA SEP–DIC 2026 · verificada contra kaseyacenter.com y los
+     calendarios oficiales de MLS/NFL/MLB/NBA. Caducan solas. ── */
+  {id:'k-juanes',scope:'local',d:'2026-09-04',name:'Juanes — World Tour 2026',name_es:'Juanes — World Tour 2026',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:00 PM',time_es:'8:00 PM',price:'$$',type:'Music · Latin Rock',type_es:'Música · Rock Latino',
+   photo:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format',
+   desc:'The Colombian who made Latin rock global opens the arena season in Miami, with the songs everyone knows and a band built for a room this size.',
+   desc_es:'El colombiano que hizo global el rock latino abre la temporada de arena en Miami, con las canciones que todo el mundo se sabe y una banda hecha para un lugar así de grande.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D00644C82656F1A'},
+  {id:'k-omarcourtz',scope:'local',d:'2026-09-11',d2:'2026-09-12',name:'Omar Courtz — Por Si Mañana No Estoy',name_es:'Omar Courtz — Por Si Mañana No Estoy',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'Fri–Sat',time_es:'Vie–Sáb',price:'$$',type:'Music · Urbano',type_es:'Música · Urbano',
+   photo:'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&q=60&auto=format',
+   desc:'Two nights of the new wave of Puerto Rican urbano. Young crowd, sold-out energy, and Miami always gets the loudest version of these shows.',
+   desc_es:'Dos noches de la nueva ola del urbano puertorriqueño. Público joven, energía de sold-out, y Miami siempre recibe la versión más ruidosa de estos shows.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D006494AAAD946F'},
+  {id:'k-rosalia1',scope:'world',d:'2026-09-14',name:'Rosalía — LUX Tour',name_es:'Rosalía — Gira LUX',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:30 PM',time_es:'8:30 PM',price:'$$$',type:'Music · Pop',type_es:'Música · Pop',
+   photo:'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=900&q=60&auto=format',
+   desc:'Her biggest tour to date, built on LUX — the album recorded with the London Symphony Orchestra. Rescheduled from June, and she plays two nights here.',
+   desc_es:'Su gira más grande hasta ahora, construida sobre LUX — el álbum grabado con la London Symphony Orchestra. Reprogramada desde junio, y toca dos noches aquí.',
+   tip:'Doors open at 7. This is a production show, not a hits show — get in early, the opening is part of it.',
+   tip_es:'Las puertas abren a las 7. Es un show de producción, no de éxitos — entra temprano, la apertura es parte del espectáculo.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D00636E0CE06340'},
+  {id:'k-rosalia2',scope:'world',d:'2026-09-16',name:'Rosalía — LUX Tour (2nd night)',name_es:'Rosalía — Gira LUX (2ª noche)',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:30 PM',time_es:'8:30 PM',price:'$$$',type:'Music · Pop',type_es:'Música · Pop',
+   photo:'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=900&q=60&auto=format',
+   desc:'Second and final Miami date of the LUX Tour. Same production, usually the easier night to find seats.',
+   desc_es:'Segunda y última fecha en Miami de la gira LUX. Misma producción, y suele ser la noche donde es más fácil conseguir asientos.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D00636E0CE06340'},
+  {id:'k-gorillaz',scope:'world',d:'2026-09-18',name:'Gorillaz — The Mountain Tour',name_es:'Gorillaz — The Mountain Tour',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'7:30 PM',time_es:'7:30 PM',price:'$$',type:'Music · Alternative',type_es:'Música · Alternativo',
+   photo:'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=900&q=60&auto=format',
+   desc:'Damon Albarn brings the animated band back to the arena with the visual show that made them famous — one of the few concerts worth seeing for the screen alone.',
+   desc_es:'Damon Albarn trae de vuelta a la banda animada con el show visual que los hizo famosos — uno de los pocos conciertos que vale la pena ver solo por la pantalla.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D00645ACAB6102B'},
+  {id:'k-sodastereo',scope:'world',d:'2026-09-20',name:'Soda Stereo — ECOS Tour',name_es:'Soda Stereo — Gira ECOS',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:00 PM',time_es:'8:00 PM',price:'$$$',type:'Music · Rock',type_es:'Música · Rock',
+   photo:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format',
+   desc:'The most important rock band in Latin American history returns with ECOS, the show that puts Cerati back on stage through technology. For a Miami crowd, this one is personal.',
+   desc_es:'La banda de rock más importante de la historia de América Latina vuelve con ECOS, el show que devuelve a Cerati al escenario a través de la tecnología. Para el público de Miami, este es personal.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D00649D9866B5C7'},
+  {id:'k-arly',scope:'local',d:'2026-09-25',name:'Arly Larivière — Konpa En Symphony',name_es:'Arly Larivière — Konpa En Symphony',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:00 PM',time_es:'8:00 PM',price:'$$',type:'Music · Konpa',type_es:'Música · Konpa',
+   photo:'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&q=60&auto=format',
+   desc:'Haitian konpa played with a full symphony orchestra. Miami has the largest Haitian community in the country and this is its big night of the year.',
+   desc_es:'Konpa haitiano tocado con orquesta sinfónica completa. Miami tiene la comunidad haitiana más grande del país y esta es su gran noche del año.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D0064989005C8A9'},
+  {id:'k-aespa',scope:'world',d:'2026-09-26',name:'aespa — SYNK : Complæxity',name_es:'aespa — SYNK : Complæxity',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:00 PM',time_es:'8:00 PM',price:'$$$',type:'Music · K-Pop',type_es:'Música · K-Pop',
+   photo:'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&q=60&auto=format',
+   desc:'K-pop arrives at the Kaseya with one of the genre biggest groups. Expect the full fandom experience: light sticks, coordinated chants, queues from the afternoon.',
+   desc_es:'El K-pop llega al Kaseya con uno de los grupos más grandes del género. Espera la experiencia completa del fandom: light sticks, cánticos coordinados y filas desde la tarde.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D0064940F3C61C3'},
+  {id:'k-kany',scope:'local',d:'2026-10-03',name:'Kany García — Puerta Abierta Tour',name_es:'Kany García — Gira Puerta Abierta',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:00 PM',time_es:'8:00 PM',price:'$$',type:'Music · Singer-Songwriter',type_es:'Música · Cantautora',
+   photo:'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&q=60&auto=format',
+   desc:'One of the finest songwriters in Latin music, in a show built on lyrics rather than spectacle. If you like actually hearing the words, this is your night.',
+   desc_es:'Una de las mejores compositoras de la música latina, en un show construido sobre las letras y no sobre el espectáculo. Si te gusta de verdad escuchar lo que dicen, esta es tu noche.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D006488B386B2C2'},
+  {id:'k-donomar',scope:'local',d:'2026-10-04',name:'Don Omar — The Last King World Tour',name_es:'Don Omar — The Last King World Tour',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:00 PM',time_es:'8:00 PM',price:'$$$',type:'Music · Reggaetón',type_es:'Música · Reggaetón',
+   photo:'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&q=60&auto=format',
+   desc:'Billed as his last world tour: two decades of reggaetón in one night, with the songs that were playing in Miami before the genre went global.',
+   desc_es:'Anunciada como su última gira mundial: dos décadas de reggaetón en una noche, con las canciones que ya sonaban en Miami antes de que el género se volviera global.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D0064ADD895DB42'},
+  {id:'k-jonas',scope:'world',d:'2026-10-05',name:'Jonas Brothers — Burning Up Tour',name_es:'Jonas Brothers — Burning Up Tour',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'7:30 PM',time_es:'7:30 PM',price:'$$',type:'Music · Pop',type_es:'Música · Pop',
+   photo:'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=900&q=60&auto=format',
+   desc:'The nostalgia tour that sells out everywhere. Family-friendly, early start, and the crowd sings every word.',
+   desc_es:'La gira de nostalgia que agota en todas partes. Apto para familias, empieza temprano, y el público se sabe cada palabra.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D00650C15C53D08'},
+  {id:'k-camilo',scope:'local',d:'2026-10-09',name:'Camilo — Para Cuando Sean Mayores',name_es:'Camilo — Para Cuando Sean Mayores',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:00 PM',time_es:'8:00 PM',price:'$$',type:'Music · Pop Latino',type_es:'Música · Pop Latino',
+   photo:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format',
+   desc:'The most family-friendly show on the Latin calendar — kids know the songs, parents know the songs, and it ends early enough for a school night.',
+   desc_es:'El show más familiar del calendario latino — los niños se saben las canciones, los padres también, y termina lo bastante temprano para un día de escuela.',
+   tags:['Music'],link:'https://www.ticketmaster.com/event/0D006331BF132ABC'},
+  {id:'mlb-cubs',scope:'local',d:'2026-09-04',d2:'2026-09-06',name:'Marlins vs Chicago Cubs',name_es:'Marlins vs Chicago Cubs',
+   venue:'loanDepot park · Little Havana',venue_es:'loanDepot park · La Pequeña Habana',time:'Fri 7:10 · Sat 4:10 · Sun 1:40',time_es:'Vie 7:10 · Sáb 4:10 · Dom 1:40',price:'From $15',type:'Sports · Baseball',type_es:'Deportes · Béisbol',
+   photo:'https://images.unsplash.com/photo-1508344928928-7165b67de128?w=900&q=60&auto=format',
+   desc:'Three games against one of the best travelling fanbases in baseball. The roof is closed all summer, so it is air-conditioned baseball — still the cheapest pro sports ticket in the city.',
+   desc_es:'Tres juegos contra una de las aficiones visitantes más grandes del béisbol. El techo está cerrado todo el verano, así que es béisbol con aire acondicionado — y sigue siendo la entrada más barata del deporte profesional en la ciudad.',
+   tip:'Sunday is the family game and the earliest start. Park in the garages on the west side, they empty faster.',
+   tip_es:'El domingo es el juego familiar y el que empieza más temprano. Estaciona en los garajes del lado oeste, se vacían más rápido.',
+   tags:['Sports'],link:'https://www.mlb.com/marlins/tickets'},
+  {id:'mlb-mets',scope:'local',d:'2026-09-07',name:'Marlins vs New York Mets',name_es:'Marlins vs New York Mets',
+   venue:'loanDepot park · Little Havana',venue_es:'loanDepot park · La Pequeña Habana',time:'1:10 PM',time_es:'1:10 PM',price:'From $15',type:'Sports · Baseball',type_es:'Deportes · Béisbol',
+   photo:'https://images.unsplash.com/photo-1508344928928-7165b67de128?w=900&q=60&auto=format',
+   desc:'Labor Day afternoon baseball against a division rival that always brings half the stadium with it.',
+   desc_es:'Béisbol de tarde en Labor Day contra un rival de división que siempre se trae media grada consigo.',
+   tags:['Sports'],link:'https://www.mlb.com/marlins/tickets'},
+  {id:'im-atl26',scope:'local',d:'2026-09-05',name:'Inter Miami vs Atlanta United',name_es:'Inter Miami vs Atlanta United',
+   venue:'Miami Freedom Park',venue_es:'Miami Freedom Park',time:'7:30 PM',time_es:'7:30 PM',price:'$$',type:'Sports · Soccer',type_es:'Deportes · Fútbol',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'MLS at the new stadium on a Saturday night. Atlanta travels well, so expect a real away section and a full house.',
+   desc_es:'MLS en el estadio nuevo un sábado por la noche. Atlanta viaja bien, así que espera una hinchada visitante real y lleno total.',
+   tip:'Rideshare beats driving here — the new stadium roads still bottleneck an hour before kickoff.',
+   tip_es:'El rideshare le gana al carro — los accesos al estadio nuevo todavía se traban una hora antes del pitazo inicial.',
+   tags:['Sports'],link:'https://www.intermiamicf.com/tickets/'},
+  {id:'im-nsh26',scope:'local',d:'2026-09-12',name:'Inter Miami vs Nashville SC',name_es:'Inter Miami vs Nashville SC',
+   venue:'Miami Freedom Park',venue_es:'Miami Freedom Park',time:'7:30 PM',time_es:'7:30 PM',price:'$$',type:'Sports · Soccer',type_es:'Deportes · Fútbol',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Saturday night MLS in the run-in to the playoffs, when every home point starts to matter.',
+   desc_es:'MLS de sábado por la noche en la recta final hacia los playoffs, cuando cada punto en casa empieza a pesar.',
+   tags:['Sports'],link:'https://www.intermiamicf.com/tickets/'},
+  {id:'im-sd26',scope:'local',d:'2026-09-20',name:'Inter Miami vs San Diego FC',name_es:'Inter Miami vs San Diego FC',
+   venue:'Miami Freedom Park',venue_es:'Miami Freedom Park',time:'7:00 PM',time_es:'7:00 PM',price:'$$',type:'Sports · Soccer',type_es:'Deportes · Fútbol',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Sunday evening kickoff against the league newest team — earlier start, easier night to bring kids.',
+   desc_es:'Pitazo inicial de domingo por la tarde contra el equipo más nuevo de la liga — empieza más temprano, mejor noche para llevar niños.',
+   tags:['Sports'],link:'https://www.intermiamicf.com/tickets/'},
+  {id:'nfl-kc26',scope:'local',d:'2026-09-27',name:'Dolphins vs Kansas City Chiefs',name_es:'Dolphins vs Kansas City Chiefs',
+   venue:'Hard Rock Stadium · Miami Gardens',venue_es:'Hard Rock Stadium · Miami Gardens',time:'1:00 PM',time_es:'1:00 PM',price:'$$$',type:'Sports · NFL',type_es:'Deportes · NFL',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'The home game of the month: the Chiefs in Miami Gardens on a Sunday at one. Expect the stadium to be half red.',
+   desc_es:'El juego en casa del mes: los Chiefs en Miami Gardens un domingo a la una. Espera que medio estadio esté de rojo.',
+   tip:'A 1 PM kickoff in September means real heat in the open sections — the shaded side is the west stand.',
+   tip_es:'Un juego a la 1 PM en septiembre significa calor de verdad en las secciones abiertas — el lado con sombra es la tribuna oeste.',
+   tags:['Sports'],link:'https://www.miamidolphins.com/tickets/'},
+  {id:'nfl-cin26',scope:'local',d:'2026-10-11',name:'Dolphins vs Cincinnati Bengals',name_es:'Dolphins vs Cincinnati Bengals',
+   venue:'Hard Rock Stadium · Miami Gardens',venue_es:'Hard Rock Stadium · Miami Gardens',time:'1:00 PM',time_es:'1:00 PM',price:'$$',type:'Sports · NFL',type_es:'Deportes · NFL',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Sunday afternoon football at Hard Rock, usually an easier ticket than the marquee games.',
+   desc_es:'Fútbol americano de domingo por la tarde en el Hard Rock, y normalmente una entrada más fácil que la de los juegos estelares.',
+   tags:['Sports'],link:'https://www.miamidolphins.com/tickets/'},
+  {id:'heat-nop26',scope:'local',d:'2026-10-08',name:'Miami HEAT vs New Orleans Pelicans',name_es:'Miami HEAT vs New Orleans Pelicans',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'7:30 PM',time_es:'7:30 PM',price:'From $20',type:'Sports · NBA Preseason',type_es:'Deportes · Pretemporada NBA',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Basketball is back downtown. Preseason means the cheapest seats of the year inside the Kaseya and a good look at the new roster.',
+   desc_es:'El baloncesto vuelve al downtown. La pretemporada significa los asientos más baratos del año dentro del Kaseya y una buena mirada a la plantilla nueva.',
+   tags:['Sports'],link:'https://www.ticketmaster.com/event/0D0064A5AB209DF4'},
+  {id:'heat-min26',scope:'local',d:'2026-10-10',name:'Miami HEAT vs Minnesota Timberwolves',name_es:'Miami HEAT vs Minnesota Timberwolves',
+   venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',time:'8:00 PM',time_es:'8:00 PM',price:'From $20',type:'Sports · NBA Preseason',type_es:'Deportes · Pretemporada NBA',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Second preseason home game, Saturday night, walking distance from Bayside and the Metromover.',
+   desc_es:'Segundo juego de pretemporada en casa, sábado por la noche, a poca distancia caminando de Bayside y del Metromover.',
+   tags:['Sports'],link:'https://www.ticketmaster.com/event/0D0064A5AB259E01'},
+  {id:'im-dc26',scope:'local',d:'2026-10-10',name:'Inter Miami vs DC United',name_es:'Inter Miami vs DC United',
+   venue:'Miami Freedom Park',venue_es:'Miami Freedom Park',time:'7:30 PM',time_es:'7:30 PM',price:'$$',type:'Sports · Soccer',type_es:'Deportes · Fútbol',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Saturday night at the new stadium, with the regular season entering its final stretch.',
+   desc_es:'Sábado por la noche en el estadio nuevo, con la temporada regular entrando en su tramo final.',
+   tags:['Sports'],link:'https://www.intermiamicf.com/tickets/'},
+  {id:'im-nyc26',scope:'local',d:'2026-10-14',name:'Inter Miami vs New York City FC',name_es:'Inter Miami vs New York City FC',
+   venue:'Miami Freedom Park',venue_es:'Miami Freedom Park',time:'7:30 PM',time_es:'7:30 PM',price:'$$',type:'Sports · Soccer',type_es:'Deportes · Fútbol',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Midweek MLS against an Eastern Conference rival — usually the easiest home ticket of the month.',
+   desc_es:'MLS de mitad de semana contra un rival del Este — suele ser la entrada en casa más fácil del mes.',
+   tags:['Sports'],link:'https://www.intermiamicf.com/tickets/'},
+  {id:'im-cin26',scope:'local',d:'2026-10-28',name:'Inter Miami vs FC Cincinnati',name_es:'Inter Miami vs FC Cincinnati',
+   venue:'Miami Freedom Park',venue_es:'Miami Freedom Park',time:'7:30 PM',time_es:'7:30 PM',price:'$$',type:'Sports · Soccer',type_es:'Deportes · Fútbol',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'The last scheduled home match of the regular season, and usually the one that decides seeding.',
+   desc_es:'El último partido en casa de la temporada regular, y normalmente el que decide la siembra.',
+   tags:['Sports'],link:'https://www.intermiamicf.com/tickets/'},
+  {id:'nfl-ne26',scope:'local',d:'2026-11-01',name:'Dolphins vs New England Patriots',name_es:'Dolphins vs New England Patriots',
+   venue:'Hard Rock Stadium · Miami Gardens',venue_es:'Hard Rock Stadium · Miami Gardens',time:'4:25 PM',time_es:'4:25 PM',price:'$$$',type:'Sports · NFL',type_es:'Deportes · NFL',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Division rivalry at Hard Rock with a late-afternoon kickoff, when the heat finally breaks.',
+   desc_es:'Rivalidad de división en el Hard Rock con inicio al final de la tarde, cuando por fin cede el calor.',
+   tags:['Sports'],link:'https://www.miamidolphins.com/tickets/'},
+  {id:'nfl-det26',scope:'local',d:'2026-11-08',name:'Dolphins vs Detroit Lions',name_es:'Dolphins vs Detroit Lions',
+   venue:'Hard Rock Stadium · Miami Gardens',venue_es:'Hard Rock Stadium · Miami Gardens',time:'1:00 PM',time_es:'1:00 PM',price:'$$',type:'Sports · NFL',type_es:'Deportes · NFL',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Sunday afternoon football in the best weather month of the season.',
+   desc_es:'Fútbol americano de domingo por la tarde en el mejor mes de clima de la temporada.',
+   tags:['Sports'],link:'https://www.miamidolphins.com/tickets/'},
+  {id:'nfl-nyj26',scope:'local',d:'2026-11-29',name:'Dolphins vs New York Jets',name_es:'Dolphins vs New York Jets',
+   venue:'Hard Rock Stadium · Miami Gardens',venue_es:'Hard Rock Stadium · Miami Gardens',time:'1:00 PM',time_es:'1:00 PM',price:'$$',type:'Sports · NFL',type_es:'Deportes · NFL',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'Thanksgiving weekend at Hard Rock, with plenty of visiting fans in the stands.',
+   desc_es:'Fin de semana de Acción de Gracias en el Hard Rock, con muchos aficionados visitantes en las gradas.',
+   tags:['Sports'],link:'https://www.miamidolphins.com/tickets/'},
+  {id:'nfl-chi26',scope:'local',d:'2026-12-13',name:'Dolphins vs Chicago Bears',name_es:'Dolphins vs Chicago Bears',
+   venue:'Hard Rock Stadium · Miami Gardens',venue_es:'Hard Rock Stadium · Miami Gardens',time:'1:00 PM',time_es:'1:00 PM',price:'$$',type:'Sports · NFL',type_es:'Deportes · NFL',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'December football in Miami Gardens — perfect weather and a stadium full of snowbirds.',
+   desc_es:'Fútbol americano de diciembre en Miami Gardens — clima perfecto y un estadio lleno de visitantes del norte.',
+   tags:['Sports'],link:'https://www.miamidolphins.com/tickets/'},
+  {id:'nfl-lac26',scope:'local',d:'2026-12-27',name:'Dolphins vs Los Angeles Chargers',name_es:'Dolphins vs Los Angeles Chargers',
+   venue:'Hard Rock Stadium · Miami Gardens',venue_es:'Hard Rock Stadium · Miami Gardens',time:'1:00 PM',time_es:'1:00 PM',price:'$$$',type:'Sports · NFL',type_es:'Deportes · NFL',
+   photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',
+   desc:'The last home game of the year, between Christmas and New Year, when the city is at its fullest.',
+   desc_es:'El último juego en casa del año, entre Navidad y Año Nuevo, cuando la ciudad está más llena.',
+   tags:['Sports'],link:'https://www.miamidolphins.com/tickets/'},
   {id:'spa26',tip:'The $109 window is exactly why locals book spas in August and September — reserve ahead, the good slots go first.',tip_es:'La ventana de $109 es exactamente por lo que los residentes reservan spa en agosto y septiembre — reserva antes, los buenos horarios vuelan.',scope:'local',d:'2026-07-01',d2:'2026-08-31',name:'Miami Spa Months',name_es:'Miami Spa Months',
    venue:'30+ spas · Greater Miami & Miami Beach',venue_es:'Más de 30 spas · Gran Miami y Miami Beach',time:'All summer',time_es:'Todo el verano',price:'From $109',type:'Wellness · Spa',type_es:'Spa · Romántico',
    photo:'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900&q=60&auto=format',
@@ -4084,7 +4283,7 @@ hotels:[
   {id:'h7',name:'Kimpton Surfcomber',cat:'Cool · Collins Ave · 4',stars:'',
    img:'https://images.unsplash.com/photo-1562790351-d273a961e0e9?w=500&q=72',
    price:'From $200/night',addr:'1717 Collins Ave, South Beach',
-   link:'https://www.surfcomberhotel.com',
+   link:'https://www.surfcomber.com',
    desc:'A 1948 Art Deco classic with South Beach\'s most social pool scene. Complimentary evening wine hour — a beloved Kimpton tradition — lush cabana gardens, and the sand just steps beyond the pool deck.',desc_es:'Un clásico Art Deco de 1948 con la escena de piscina más social de South Beach. Hora de vino de cortesía cada tarde — querida tradición Kimpton — jardines con cabañas y la arena a pasos del deck.'},
   {id:'h8',name:'Brickell Arch, a Luxury Collection Hotel',cat:'Urban · Business · 5',stars:'',
    img:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=500&q=72',
@@ -5762,9 +5961,57 @@ function renderExploreGrid(){
   return '<section class="sec fade" id="sec-explore">'
     +'<div class="sec-hd"><div class="sec-tt"><small><span class="eyebrow-dot-mini"></span>'+(ES?'HAY MÁS':'THERE\'S MORE')+'</small>'+(ES?'Explorar más':'Explore more')+'</div>'
     +'<span class="mm-exp-swipe">'+(ES?'Desliza':'Swipe')+' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>'
-    +'<div class="mm-exp-grid">'+tiles+'</div>'
+    +'<div class="mm-rail-wrap">'
+      +'<div class="mm-exp-grid" id="mmExpGrid">'+tiles+'</div>'
+      +'<button type="button" class="mm-rail-nav mm-rail-prev" aria-label="'+(ES?'Anterior':'Previous')+'" onclick="mmRailScroll(this,-1)">'
+        +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>'
+      +'<button type="button" class="mm-rail-nav mm-rail-next" aria-label="'+(ES?'Siguiente':'Next')+'" onclick="mmRailScroll(this,1)">'
+        +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>'
+    +'</div>'
     +'</section>';
 }
+/* ══ RIELES CON MOUSE (su nota: en computadora no había forma de mover
+   el scroll de las tarjetas). Tres vías, todas solo desde 900px:
+   flechas a los lados, rueda vertical traducida a desplazamiento
+   horizontal, y las flechas se apagan solas en cada extremo. */
+function mmRailScroll(btn,dir){
+  var wrap=btn.closest('.mm-rail-wrap'); if(!wrap) return;
+  var rail=wrap.querySelector('.mm-exp-grid'); if(!rail) return;
+  rail.scrollBy({left:dir*Math.round(rail.clientWidth*.8),behavior:'smooth'});
+}
+function mmRailSync(rail){
+  var wrap=rail.closest('.mm-rail-wrap'); if(!wrap) return;
+  var max=rail.scrollWidth-rail.clientWidth-2;
+  var prev=wrap.querySelector('.mm-rail-prev'), next=wrap.querySelector('.mm-rail-next');
+  if(prev) prev.classList.toggle('off', rail.scrollLeft<=2);
+  if(next) next.classList.toggle('off', rail.scrollLeft>=max);
+}
+function mmRailInit(){
+  var rails=document.querySelectorAll('.mm-rail-wrap .mm-exp-grid'),i;
+  for(i=0;i<rails.length;i++){
+    (function(rail){
+      if(rail._mmRail) return; rail._mmRail=1;
+      rail.addEventListener('scroll',function(){mmRailSync(rail);},{passive:true});
+      /* La rueda del mouse solo da eje Y: aquí se traduce a X, y solo
+         cuando el gesto es claramente vertical (para no pelear con el
+         swipe horizontal de un trackpad, que ya funciona solo). */
+      rail.addEventListener('wheel',function(e){
+        if(Math.abs(e.deltaY)<=Math.abs(e.deltaX)) return;
+        if(window.innerWidth<900) return;
+        var max=rail.scrollWidth-rail.clientWidth;
+        if(max<=0) return;
+        var next=rail.scrollLeft+e.deltaY;
+        if(next<0||next>max) return;      /* en los extremos, deja pasar el scroll de la página */
+        e.preventDefault(); rail.scrollLeft=next;
+      },{passive:false});
+      mmRailSync(rail);
+    })(rails[i]);
+  }
+}
+window.addEventListener('resize',function(){
+  var r=document.querySelectorAll('.mm-rail-wrap .mm-exp-grid'),i;
+  for(i=0;i<r.length;i++) mmRailSync(r[i]);
+});
 function mmExpandSection(id){
   var item=MM_DEFERRED.find(function(x){return x.id===id;});
   if(!item) return;
@@ -6054,19 +6301,19 @@ function buildPromo(){
   // 2) newest additions
   var newest=promoNames(['r101','r100','r99'],3);
   if(newest) slots.push({ico:'spark',eyebrow:ES?'RECIÉN AÑADIDOS':'JUST ADDED',
-    title:ES?'Nuevos en la guía':'New on the guide', sub:newest});
+    title:ES?'Nuevos en la guía, ya verificados':'New on the guide, freshly verified', sub:newest});
   // 3) best for couples
   var couples=promoByOcc(/date|cita|romantic|rom.ntic/i,3);
   if(couples) slots.push({ico:'heart',eyebrow:ES?'PARA DOS':'FOR TWO',
-    title:ES?'Los mejores para una cita':'Best for date night', sub:couples});
+    title:ES?'Mesa para dos que sí impresiona':'Date spots that actually impress', sub:couples});
   // 4) best for families
   var fam=promoByOcc(/family|familia/i,3);
   if(fam) slots.push({ico:'family',eyebrow:ES?'EN FAMILIA':'WITH THE FAMILY',
-    title:ES?'Mesa para todos':'A table for everyone', sub:fam});
+    title:ES?'Donde los niños también gozan':'Where the kids have fun too', sub:fam});
   // 5) best with friends / groups
   var friends=promoByOcc(/friend|amigo|group|grupo/i,3);
   if(friends) slots.push({ico:'friends',eyebrow:ES?'CON AMIGOS':'WITH FRIENDS',
-    title:ES?'Para ir en grupo':'Good for a group', sub:friends});
+    title:ES?'Mesas largas y buen ambiente':'Long tables, loud laughs', sub:friends});
   // 6) what this user actually opened
   var mine=promoMostVisited();
   if(mine) slots.push({ico:'clock',eyebrow:ES?'VOLVISTE A ESTOS':'YOU KEEP COMING BACK',
@@ -6088,7 +6335,7 @@ function buildPromo(){
   var mo=today.getMonth();
   if(mo===7||mo===8) slots.push({ico:'fire',eyebrow:'MIAMI SPICE 2026',
     title:ES?'Menús de 3 tiempos desde $40':'3-course menus from $40',
-    sub:ES?'200+ restaurantes · hasta el 30 de septiembre':'200+ restaurants · through September 30'});
+    sub:ES?'300+ restaurantes · cierra el 30 de septiembre':'300+ restaurants · ends September 30'});
   if(!slots.length) return '';
   /* ya no es un cartel fijo por día: es una banda de TV que va
      rotando todas las curadurías. Lo pagado abre la rotación. */
@@ -6097,40 +6344,32 @@ function buildPromo(){
 }
 var _mmPromoIdx=0,_mmPromoTimer=null;
 function mmPromoGo(){
-  var slots=window._mmPromoTV||[];
-  var idx=(typeof _mmPromoIdx!=='undefined')?_mmPromoIdx:0;
-  var it=slots.length?slots[idx%slots.length]:null;
-  if(it && it.go && typeof go==='function'){ go(it.go); return; }
+  /* Fallback del contenedor (tap fuera de un ítem): al carril de restaurantes. */
   var el=document.getElementById('rest-hrow');
   if(el) el.scrollIntoView({behavior:'smooth'});
+}
+function mmPromoOpen(i){
+  var slots=window._mmPromoTV||[];
+  var it=slots.length?slots[i%slots.length]:null;
+  if(it && it.go && typeof go==='function'){ go(it.go); return; }
+  mmPromoGo();
 }
 function mmPromoPaint(){
   var el=document.getElementById('promoStrip');
   var slots=window._mmPromoTV||[];
   if(!el||!slots.length) return;
   var ES=(typeof lang!=='undefined'&&lang==='es');
-  var it=slots[_mmPromoIdx%slots.length];
-  var dots=slots.map(function(_,i){
-    return '<span class="seatv-dot'+(i===(_mmPromoIdx%slots.length)?' on':'')+'"></span>';
+  var seq=slots.map(function(it,i){
+    return '<div class="mq-item" style="cursor:pointer" onclick="event.stopPropagation();mmPromoOpen('+i+')">'
+      +'<span class="mq-dot"></span>'
+      +'<span class="mq-n">'+it.eyebrow+(it.paid?' \u00b7 '+(ES?'PATROCINADO':'SPONSORED'):'')+'</span>'
+      +'<b>'+it.title+'</b> \u00b7 '+it.sub+'</div>';
   }).join('');
-  el.innerHTML='<div class="seatv" id="promoRow">'
-    +'<span class="seatv-ic">'+promoIco(it.ico)+'</span>'
-    +'<span class="seatv-lbl">'+it.eyebrow+(it.paid?' · '+(ES?'PATROCINADO':'SPONSORED'):'')+'</span>'
-    +'<span class="seatv-sub"><b class="seatv-strong">'+it.title+'</b> \u00b7 '+it.sub+'</span>'
-  +'</div><div class="seatv-dots">'+dots+'</div>';
+  mmMarqueeFill(el, seq);
 }
 function mmPromoStart(){
   if(_mmPromoTimer){ clearInterval(_mmPromoTimer); _mmPromoTimer=null; }
-  var slots=window._mmPromoTV||[];
-  if(!slots.length) return;
-  _mmPromoIdx=0; mmPromoPaint();
-  if(slots.length<2) return;
-  _mmPromoTimer=setInterval(function(){
-    var row=document.getElementById('promoRow');
-    if(!row) return;
-    row.classList.add('tv-out');
-    setTimeout(function(){ _mmPromoIdx++; mmPromoPaint(); }, 430);
-  }, 4600);
+  mmPromoPaint();
 }
 function renderRest(){
   const t=T();
@@ -6657,7 +6896,33 @@ function renderJune(){
     });
   }catch(x){}
 
-  list.sort(function(a,b){ return a._date - b._date; });
+  /* ── ORDEN EDITORIAL (su regla, sep 2026): lo NUEVO arriba, lo que
+     se mantiene por un tiempo abajo. Antes era orden puramente
+     cronológico, y los rangos largos en curso (Miami Spice dura dos
+     meses) recibían fecha "hoy" y acaparaban el tope todos los días.
+     Niveles:
+       0 · puntual — fecha única o serie corta (≤7 días), incluso si
+           aún no empieza. Es la novedad de la semana.
+       1 · en curso largo — rangos ya empezados de más de 7 días.
+           Siguen visibles, pero ya no tapan lo nuevo.
+       2 · recurrente — semanales y mensuales, la base de siempre.
+     Dentro de cada nivel, cronológico. */
+  function twxTier(e){
+    if(e._weekly || e._monthly) return 2;
+    if(e.d && e.d2){
+      try{
+        var ini=parseD(e.d), fin=parseD(e.d2);
+        var dias=(fin-ini)/86400000;
+        if(dias>7 && ini<now) return 1;
+      }catch(x){}
+    }
+    return 0;
+  }
+  list.sort(function(a,b){
+    var ta=twxTier(a), tb=twxTier(b);
+    if(ta!==tb) return ta-tb;
+    return a._date - b._date;
+  });
 
   var sunday = new Date(now); sunday.setDate(now.getDate() + ((7 - now.getDay())%7 || 7) - 1 + 1);
   var weekEnd = new Date(now); weekEnd.setDate(now.getDate()+6);
@@ -6700,6 +6965,19 @@ function renderJune(){
           +'<div class="twx-venue">'+venue+'</div>'
         +'</div>'
         +'<div class="twx-side">'
+          +(function(){
+              /* Chip de urgencia: convierte una lista de fechas en algo accionable.
+                 Solo aparece dentro de los proximos 3 dias — si saliera en todas
+                 las tarjetas dejaria de significar nada. */
+              if(e._weekly||e._monthly||!e._date) return '';
+              var t0=new Date(); t0.setHours(0,0,0,0);
+              var dd=Math.round((e._date-t0)/86400000);
+              if(dd<0||dd>3) return '';
+              var tx = dd===0 ? (ES?'HOY':'TODAY')
+                     : dd===1 ? (ES?'MAÑANA':'TOMORROW')
+                     : (ES?('EN '+dd+' DÍAS'):('IN '+dd+' DAYS'));
+              return '<span class="twx-soon'+(dd===0?' twx-soon-now':'')+'">'+tx+'</span>';
+            })()
           +'<span class="twx-badge">'+badge+'</span>'
           +'<span class="twx-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>'
         +'</div>'
@@ -6721,7 +6999,7 @@ function renderJune(){
 
   // ── barra maestra estilo acordeón premium (como las otras secciones) ──
   var heroBg = 'fotos/mm-week-brickell.jpg';   /* AdobeStock 259445495 */
-  var eyebrow = ES ? 'Local + Mundial · '+list.length+' eventos' : 'Local + World · '+list.length+' events';
+  var eyebrow = ES ? 'Local + Mundial' : 'Local + World';  /* el conteo ya vive en la línea de fechas — no se repite */
   return '<section class="sec fade tw-wrap" id="sec-june">'
     +'<div class="tw-bar-wrap" style="--tw-accent:#FFD166;--tw-accent-border:rgba(255,209,102,.22);">'
       +'<div class="tw-bar" id="twxMainBar" onclick="twxSection()">'
@@ -6821,61 +7099,61 @@ function goWeek(){
   return false;
 }
 var MM_MONTH=[
- {id:'mx1',photo:'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format',type:'Food',type_es:'Gastronomía',ac:'#FF4D35',dTop:'AGO',dBig:'1–31',dBot:'+SEP',end:'2026-09-30',
-  name:'Miami Spice — 25th Edition',name_es:'Miami Spice — edición 25',venue:'300+ restaurants citywide',venue_es:'300+ restaurantes en toda la ciudad',
-  desc:'The city\u2019s restaurant festival turns 25: more than 300 restaurants — including Michelin rooms — serve 3-course prix-fixe menus at a minimum 30% off. 2026 tiers: $40 brunch/lunch, $50 or $65 dinner, and the new Reserve tier from $95. Drinks, tax and tip are extra, and each restaurant picks its own days — check the menu before you book.',
-  desc_es:'El festival gastronómico cumple 25 años: más de 300 restaurantes — incluyendo los de estrella Michelin — sirven menús prix-fixe de 3 tiempos con mínimo 30% de descuento. Precios 2026: $40 brunch/almuerzo, $50 o $65 la cena, y el nuevo nivel Reserve desde $95. Bebidas, impuesto y propina van aparte, y cada restaurante elige sus días — revisa el menú antes de reservar.',
-  time:'Aug 1 – Sep 30',time_es:'Ago 1 – Sep 30',price:'$40–65',free:false,link:'https://www.miamiandbeaches.com/deals/spice-restaurant-months'},
- {id:'mx2',photo:'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&q=60&auto=format',type:'Wellness',type_es:'Bienestar',ac:'#00C9B1',dTop:'AGO',dBig:'1–31',dBot:'+SEP',end:'2026-09-30',
-  name:'Miami Spa Months',name_es:'Miami Spa Months',venue:'Luxury hotel spas',venue_es:'Spas de hoteles de lujo',
-  desc:'Five-star hotel spas drop treatments to around $109 for two months. The same massage that costs $300+ in season — this is the deal locals actually use.',
-  desc_es:'Los spas de hoteles cinco estrellas bajan sus tratamientos a alrededor de $109 por dos meses. El mismo masaje que cuesta $300+ en temporada — esta es la ganga que los residentes de verdad usan.',
-  time:'Aug 1 – Sep 30',time_es:'Ago 1 – Sep 30',price:'~$109',free:false,link:'https://www.miamiandbeaches.com'},
- {id:'mx6',photo:'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=900&q=60&auto=format',type:'Festival',type_es:'Festival',ac:'#2E9E5B',dTop:'AGO',dBig:'2',dBot:'WYNWOOD',end:'2026-08-02',
-  name:'Jamaica Independence Festival',name_es:'Festival de la Independencia de Jamaica',venue:'Wynwood',venue_es:'Wynwood',
-  desc:'Reggae, Caribbean food and Jamaican culture take over Wynwood for the island\u2019s independence celebration.',
-  desc_es:'Reggae, comida caribeña y cultura jamaiquina toman Wynwood por la celebración de la independencia de la isla.',
-  time:'Sun Aug 2',time_es:'Dom Ago 2',price:'',free:true,link:'https://www.google.com/search?q=Jamaica+Independence+Festival+Wynwood+Miami'},
- {id:'mx3',photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',type:'Fútbol',type_es:'Fútbol',ac:'#F7B5CD',dTop:'AGO',dBig:'6',dBot:'EN CASA',end:'2026-08-29',
-  name:'Inter Miami — 6 Home Matches',name_es:'Inter Miami — 6 partidos en casa',venue:'Nu Stadium · Miami Freedom Park',venue_es:'Nu Stadium · Miami Freedom Park',
-  desc:'Six home matches in one month at the new stadium. MLS: Columbus (Aug 1), Toronto (Aug 22) and Montréal (Aug 29), all 7:30 PM. Leagues Cup vs LIGA MX: Atlético San Luis (Wed 5, 7:30 PM), Monterrey (Sat 8, 8 PM) and León (Wed 12, 7:30 PM).',
-  desc_es:'Seis partidos en casa en un solo mes en el nuevo estadio. MLS: Columbus (Ago 1), Toronto (Ago 22) y Montréal (Ago 29), todos 7:30 PM. Leagues Cup contra la LIGA MX: Atlético San Luis (mié 5, 7:30 PM), Monterrey (sáb 8, 8 PM) y León (mié 12, 7:30 PM).',
-  time:'Aug 1 · 5 · 8 · 12 · 22 · 29',time_es:'Ago 1 · 5 · 8 · 12 · 22 · 29',price:'Tickets',free:false,link:'https://www.intermiamicf.com/tickets'},
- {id:'mx10',photo:'https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=900&q=60&auto=format',type:'Danza',type_es:'Danza',ac:'#C9A227',dTop:'JUL 31',dBig:'→',dBot:'AGO 16',end:'2026-08-16',
-  name:'Miami International Ballet Festival — XXXI',name_es:'Festival Internacional de Ballet de Miami — XXXI',venue:'Manuel Artime · Broward Center · several theaters',venue_es:'Manuel Artime · Broward Center · varios teatros',
-  desc:'The 31st edition of one of the most prestigious dance festivals in the US: 100+ principal dancers from 20+ international companies across classical and contemporary programs (Contemporary I: Fri Aug 7 at Manuel Artime Theater; Broward Center: Sun Aug 9). Bonus for locals: a FREE dance film series at the Miami Hispanic Cultural Arts Center (Aug 3, 5 and 14, 8 PM).',
-  desc_es:'La edición 31 de uno de los festivales de danza más prestigiosos de EE.UU.: más de 100 bailarines principales de 20+ compañías internacionales en programas clásicos y contemporáneos (Contemporáneo I: vie Ago 7 en el Teatro Manuel Artime; Broward Center: dom Ago 9). Bonus para residentes: ciclo GRATIS de cine de danza en el Miami Hispanic Cultural Arts Center (Ago 3, 5 y 14, 8 PM).',
-  time:'Jul 31 – Aug 16',time_es:'Jul 31 – Ago 16',price:'Tickets · cine gratis',free:false,link:'https://www.internationalballetfestival.org'},
- {id:'mx9',photo:'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=900&q=60&auto=format',type:'Museo Gratis',type_es:'Museo Gratis',ac:'#00A9CE',dTop:'SÁB',dBig:'8',dBot:'PAMM',end:'2026-08-08',
-  name:'PAMM Free Second Saturday',name_es:'PAMM gratis — Segundo Sábado',venue:'Pérez Art Museum Miami, Downtown',venue_es:'Pérez Art Museum Miami, Downtown',
-  desc:'Free admission ALL DAY at PAMM on the waterfront. This month\u2019s theme is "Back to School," with hands-on family art-making from 11 AM to 3 PM inspired by Deborah Brown\u2019s Moonlight, led by multilingual teaching artists. Come early, do the activity, then stay for the galleries and the terrace over the bay — it happens every second Saturday of the month.',
-  desc_es:'Entrada gratis TODO EL DÍA en el PAMM frente a la bahía. El tema del mes es "Back to School", con taller familiar de arte de 11 AM a 3 PM inspirado en Moonlight de Deborah Brown, guiado por artistas educadores multilingües. Llega temprano, haz la actividad, y quédate para las galerías y la terraza sobre la bahía — se repite cada segundo sábado del mes.',
-  time:'Sat Aug 8 · workshop 11 AM–3 PM',time_es:'Sáb Ago 8 · taller 11 AM–3 PM',price:'',free:true,link:'https://www.pamm.org'},
- {id:'mx5',photo:'https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=900&q=60&auto=format',type:'NFL',type_es:'NFL',ac:'#0B6FA4',dTop:'AGO',dBig:'22·28',dBot:'HARD ROCK',end:'2026-08-28',
-  name:'Dolphins — Preseason at Home',name_es:'Dolphins — pretemporada en casa',venue:'Hard Rock Stadium',venue_es:'Hard Rock Stadium',
-  desc:'Football is back: the Dolphins host the Giants on Saturday Aug 22 at 4 PM and close preseason vs the Falcons on Friday Aug 28 at 7 PM. Preseason is the cheapest way of the year to see NFL live.',
-  desc_es:'Vuelve el fútbol americano: los Dolphins reciben a los Giants el sábado 22 a las 4 PM y cierran la pretemporada contra los Falcons el viernes 28 a las 7 PM. La pretemporada es la forma más barata del año de ver NFL en vivo.',
-  time:'Sat 22, 4 PM · Fri 28, 7 PM',time_es:'Sáb 22, 4 PM · Vie 28, 7 PM',price:'Desde precio bajo',free:false,link:'https://www.miamidolphins.com'},
- {id:'mx11',photo:'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&q=60&auto=format',type:'Espectáculo',type_es:'Espectáculo',ac:'#E75480',dTop:'AGO',dBig:'24–27',dBot:'ARSHT',end:'2026-08-27',
-  name:'Miss USA 75th — Diamond Week',name_es:'Miss USA 75 años — Semana Diamante',venue:'Adrienne Arsht Center, Downtown',venue_es:'Adrienne Arsht Center, Downtown',
-  desc:'Miss USA returns to Florida for the first time in decades for its 75th "Diamond" edition, all week at the Arsht: state-costume runway (Mon 24, 7 PM), Miss USA preliminaries (Tue 25, noon), Miss Teen USA final (Wed 26) and the 75th Miss USA crowning (Thu 27, airing live on The CW 8–10 PM). Past titleholders join the celebration.',
-  desc_es:'Miss USA vuelve a Florida por primera vez en décadas para su edición 75 "Diamante", toda la semana en el Arsht: pasarela de trajes de estado (lun 24, 7 PM), preliminares de Miss USA (mar 25, mediodía), final de Miss Teen USA (mié 26) y la coronación 75 de Miss USA (jue 27, en vivo por The CW 8–10 PM). Ex reinas se suman a la celebración.',
-  time:'Aug 24–27',time_es:'Ago 24–27',price:'Tickets',free:false,link:'https://www.arshtcenter.org'},
- {id:'mx4',photo:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format',type:'Concierto',type_es:'Concierto',ac:'#7C5CFF',dTop:'AGO',dBig:'29·30',dBot:'KASEYA',end:'2026-08-30',
-  name:'Ricardo Montaner — El Último Regreso',name_es:'Ricardo Montaner — El Último Regreso',venue:'Kaseya Center, Downtown',venue_es:'Kaseya Center, Downtown',
-  desc:'Two nights from one of Latin music\u2019s most enduring voices on his "El Último Regreso" tour — Saturday and Sunday at 8 PM, with a career-spanning setlist and a crowd that knows every word.',
-  desc_es:'Dos noches con una de las voces más queridas de la música latina en su gira "El Último Regreso" — sábado y domingo a las 8 PM, con un repertorio de toda su carrera y un público que se sabe cada palabra.',
-  time:'Sat 29 & Sun 30 · 8 PM',time_es:'Sáb 29 y Dom 30 · 8 PM',price:'Tickets',free:false,link:'https://www.kaseyacenter.com'},
- {id:'mx7',photo:'https://images.unsplash.com/photo-1531058020387-3be344556be6?w=900&q=60&auto=format',type:'Cultura Gratis',type_es:'Cultura Gratis',ac:'#FFD166',dTop:'AGO',dBig:'8+',dBot:'GRATIS',end:'2026-08-21',
-  name:'Free Art Nights This Month',name_es:'Noches de arte gratis del mes',venue:'Wynwood · Lincoln Rd · Calle Ocho',venue_es:'Wynwood · Lincoln Rd · Calle Ocho',
-  desc:'Wynwood Art Walk (Sat Aug 8), Lincoln Road Art Walk (Thu Aug 20), and Viernes Culturales in Little Havana (Fri Aug 21) — galleries open late, street music, all free.',
-  desc_es:'Wynwood Art Walk (sáb Ago 8), Lincoln Road Art Walk (jue Ago 20), y Viernes Culturales en La Pequeña Habana (vie Ago 21) — galerías abiertas hasta tarde, música en la calle, todo gratis.',
-  time:'Aug 8 · 20 · 21',time_es:'Ago 8 · 20 · 21',price:'',free:true,link:'https://www.google.com/search?q=Wynwood+Art+Walk+Lincoln+Road+Viernes+Culturales+agosto'},
- {id:'mx8',photo:'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=900&q=60&auto=format',type:'Conciertos',type_es:'Conciertos',ac:'#E8734A',dTop:'AGO',dBig:'♪♪',dBot:'HARD ROCK LIVE',end:'2026-08-31',
-  name:'Hard Rock Live — This Month\'s Lineup',name_es:'Hard Rock Live — cartelera del mes',venue:'Hard Rock Live, Hollywood',venue_es:'Hard Rock Live, Hollywood',
-  desc:'A stacked month: Mumford & Sons, Deep Purple with Kansas, Goo Goo Dolls, Brooks & Dunn, 5 Seconds of Summer, Ella Mai and more.',
-  desc_es:'Un mes cargado: Mumford & Sons, Deep Purple con Kansas, Goo Goo Dolls, Brooks & Dunn, 5 Seconds of Summer, Ella Mai y más.',
-  time:'All month',time_es:'Todo el mes',price:'Tickets',free:false,link:'https://www.seminolehardrockhollywood.com'}
+ {id:'ms1',photo:'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format',type:'Food',type_es:'Gastronomía',ac:'#FF4D35',dTop:'SEP',dBig:'1–30',dBot:'FIN',end:'2026-09-30',
+  name:'Miami Spice — final month',name_es:'Miami Spice — último mes',venue:'300+ restaurants citywide',venue_es:'300+ restaurantes en toda la ciudad',
+  desc:'September is the last month of the 25th edition: more than 300 restaurants, including Michelin rooms, serving 3-course prix-fixe menus at a minimum 30% off. Tiers are $40 brunch and lunch, $50 or $65 dinner, and the new Reserve from $95. Drinks, tax and tip are extra, and each restaurant picks its own days.',
+  desc_es:'Septiembre es el último mes de la edición 25: más de 300 restaurantes, incluidos los de estrella Michelin, sirviendo menús prix-fixe de 3 tiempos con mínimo 30% de descuento. Los niveles son $40 brunch y almuerzo, $50 o $65 la cena, y el nuevo Reserve desde $95. Bebidas, impuesto y propina van aparte, y cada restaurante elige sus días.',
+  time:'Through Sep 30',time_es:'Hasta el 30 de sep',price:'$40–65',free:false,link:'https://www.miamiandbeaches.com/deals/spice-restaurant-months'},
+ {id:'ms2',photo:'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900&q=60&auto=format',type:'Wellness',type_es:'Bienestar',ac:'#00C9B1',dTop:'SEP',dBig:'1–30',dBot:'FIN',end:'2026-09-30',
+  name:'Miami Spa Months — final month',name_es:'Miami Spa Months — último mes',venue:'Hotel spas across Miami and the Beach',venue_es:'Spas de hoteles en Miami y la playa',
+  desc:'The last weeks to get into the best hotel spas in the city for around $109 instead of $400. Same treatments, same rooms, off-season pricing — and this is why locals book their spa day in August and September.',
+  desc_es:'Las últimas semanas para entrar a los mejores spas de hotel de la ciudad por unos $109 en vez de $400. Los mismos tratamientos, las mismas instalaciones, precio de temporada baja — y por eso los residentes reservan su día de spa en agosto y septiembre.',
+  time:'Through Sep 30',time_es:'Hasta el 30 de sep',price:'From $109',free:false,link:'https://www.miamiandbeaches.com/deals/spa-months'},
+ {id:'ms3',photo:'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=900&q=60&auto=format',type:'Culture',type_es:'Cultura',ac:'#FFD166',dTop:'SEP',dBig:'15',dBot:'→OCT',end:'2026-10-15',
+  name:'Hispanic Heritage Month',name_es:'Mes de la Herencia Hispana',venue:'Citywide · Little Havana, Wynwood, Downtown',venue_es:'Toda la ciudad · La Pequeña Habana, Wynwood, Downtown',
+  desc:'From September 15 to October 15 the whole city programs around it: concerts, film, gallery nights and street festivals. In a city where most of the population is Hispanic, this is less a special month than the city being fully itself.',
+  desc_es:'Del 15 de septiembre al 15 de octubre la ciudad entera programa alrededor de esto: conciertos, cine, noches de galería y festivales de calle. En una ciudad donde la mayoría de la población es hispana, más que un mes especial es la ciudad siendo del todo ella misma.',
+  time:'Sep 15 – Oct 15',time_es:'15 sep – 15 oct',price:'Many free',free:true,link:'https://www.miamiandbeaches.com/events'},
+ {id:'ms4',photo:'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=900&q=60&auto=format',type:'Music',type_es:'Música',ac:'#FF4D35',dTop:'SEP',dBig:'14',dBot:'y 16',end:'2026-09-16',
+  name:'Rosalía — LUX Tour, two nights',name_es:'Rosalía — Gira LUX, dos noches',venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',
+  desc:'The biggest arena moment of the month, and the two dates rescheduled from June. LUX was recorded with the London Symphony Orchestra, so this is closer to staged theatre than a pop concert.',
+  desc_es:'El momento de arena más grande del mes, y las dos fechas reprogramadas desde junio. LUX se grabó con la London Symphony Orchestra, así que esto se parece más a teatro montado que a un concierto de pop.',
+  time:'8:30 PM',time_es:'8:30 PM',price:'$$$',free:false,link:'https://www.kaseyacenter.com/events/detail/rosalia'},
+ {id:'ms5',photo:'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format',type:'Music',type_es:'Música',ac:'#FF4D35',dTop:'SEP',dBig:'4',dBot:'VIE',end:'2026-09-04',
+  name:'Juanes opens the arena season',name_es:'Juanes abre la temporada de arena',venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',
+  desc:'The first big show of the fall, on the Friday of Labor Day weekend. Two decades of songs that everyone in this city grew up with.',
+  desc_es:'El primer gran show del otoño, el viernes del fin de semana de Labor Day. Dos décadas de canciones con las que creció todo el mundo en esta ciudad.',
+  time:'8:00 PM',time_es:'8:00 PM',price:'$$',free:false,link:'https://www.kaseyacenter.com/events/detail/juanes-1'},
+ {id:'ms6',photo:'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=900&q=60&auto=format',type:'Music',type_es:'Música',ac:'#00C9B1',dTop:'SEP',dBig:'18',dBot:'y 20',end:'2026-09-20',
+  name:'Gorillaz and Soda Stereo, same week',name_es:'Gorillaz y Soda Stereo, la misma semana',venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',
+  desc:'Gorillaz bring The Mountain Tour on Friday the 18th, and on Sunday the 20th Soda Stereo returns with ECOS, the show that puts Cerati back on stage through technology. Two very different nights, two full houses.',
+  desc_es:'Gorillaz traen The Mountain Tour el viernes 18, y el domingo 20 Soda Stereo vuelve con ECOS, el show que devuelve a Cerati al escenario a través de la tecnología. Dos noches muy distintas, dos llenos.',
+  time:'7:30 PM · 8:00 PM',time_es:'7:30 PM · 8:00 PM',price:'$$–$$$',free:false,link:'https://www.kaseyacenter.com/events'},
+ {id:'ms7',photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',type:'Sports',type_es:'Deportes',ac:'#FFD166',dTop:'SEP',dBig:'27',dBot:'DOM',end:'2026-09-27',
+  name:'Dolphins vs Chiefs at Hard Rock',name_es:'Dolphins vs Chiefs en el Hard Rock',venue:'Hard Rock Stadium · Miami Gardens',venue_es:'Hard Rock Stadium · Miami Gardens',
+  desc:'The football game of the month. Kansas City in Miami Gardens on a Sunday at one in the afternoon, which in September means real heat in the open sections.',
+  desc_es:'El juego de fútbol americano del mes. Kansas City en Miami Gardens un domingo a la una de la tarde, que en septiembre significa calor de verdad en las secciones abiertas.',
+  time:'1:00 PM',time_es:'1:00 PM',price:'$$$',free:false,link:'https://www.miamidolphins.com/tickets/'},
+ {id:'ms8',photo:'https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=60&auto=format',type:'Sports',type_es:'Deportes',ac:'#00C9B1',dTop:'SEP',dBig:'5·12·20',dBot:'CASA',end:'2026-09-20',
+  name:'Inter Miami — three home games',name_es:'Inter Miami — tres juegos en casa',venue:'Miami Freedom Park',venue_es:'Miami Freedom Park',
+  desc:'Atlanta United on the 5th, Nashville on the 12th, San Diego on the 20th — all at the new stadium, all in the stretch of the season where home points decide the playoffs.',
+  desc_es:'Atlanta United el 5, Nashville el 12 y San Diego el 20 — todos en el estadio nuevo, todos en el tramo de la temporada donde los puntos en casa deciden los playoffs.',
+  time:'7:30 · 7:30 · 7:00 PM',time_es:'7:30 · 7:30 · 7:00 PM',price:'$$',free:false,link:'https://www.intermiamicf.com/tickets/'},
+ {id:'ms9',photo:'https://images.unsplash.com/photo-1508344928928-7165b67de128?w=900&q=60&auto=format',type:'Sports',type_es:'Deportes',ac:'#FF4D35',dTop:'SEP',dBig:'4–7',dBot:'LOAN',end:'2026-09-07',
+  name:'Marlins home stand — Cubs and Mets',name_es:'Serie en casa de los Marlins — Cubs y Mets',venue:'loanDepot park · Little Havana',venue_es:'loanDepot park · La Pequeña Habana',
+  desc:'Four games over Labor Day weekend against two of the biggest travelling fanbases in baseball. Roof closed, air conditioning on, and still the cheapest pro sports ticket in Miami.',
+  desc_es:'Cuatro juegos durante el fin de semana de Labor Day contra dos de las aficiones visitantes más grandes del béisbol. Techo cerrado, aire acondicionado puesto, y sigue siendo la entrada más barata del deporte profesional en Miami.',
+  time:'Sep 4–7',time_es:'4–7 de sep',price:'From $15',free:false,link:'https://www.mlb.com/marlins/tickets'},
+ {id:'ms10',photo:'https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=900&q=60&auto=format',type:'Free',type_es:'Gratis',ac:'#00C9B1',dTop:'SEP',dBig:'12·25',dBot:'FREE',end:'2026-09-25',
+  name:'The free September: art walk, museum and Calle Ocho',name_es:'El septiembre gratis: art walk, museo y Calle Ocho',venue:'Wynwood · Museum Park · Little Havana',venue_es:'Wynwood · Museum Park · La Pequeña Habana',
+  desc:'Saturday the 12th is a double: Wynwood Art Walk at night and free admission all day at PAMM, which is free every second Saturday. Friday the 25th is Viernes Culturales on Calle Ocho, with live music, open studios and dominoes until late.',
+  desc_es:'El sábado 12 es doble: Wynwood Art Walk por la noche y entrada gratis todo el día en el PAMM, que es gratis cada segundo sábado. El viernes 25 son los Viernes Culturales en la Calle Ocho, con música en vivo, estudios abiertos y dominó hasta tarde.',
+  time:'Sep 12 and Sep 25',time_es:'12 y 25 de sep',price:'Free',free:true,link:'https://www.pamm.org/en/visit/'},
+ {id:'ms11',photo:'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=900&q=60&auto=format',type:'Music',type_es:'Música',ac:'#FFD166',dTop:'SEP',dBig:'25·26',dBot:'FIN',end:'2026-09-26',
+  name:'Konpa with a symphony, then K-pop',name_es:'Konpa con sinfónica, y luego K-pop',venue:'Kaseya Center · Downtown',venue_es:'Kaseya Center · Downtown',
+  desc:'The month closes with two nights that could not be more different: Arly Larivière playing Haitian konpa with a full orchestra on Friday, and aespa bringing the K-pop fandom downtown on Saturday.',
+  desc_es:'El mes cierra con dos noches que no podrían ser más distintas: Arly Larivière tocando konpa haitiano con orquesta completa el viernes, y aespa trayendo el fandom del K-pop al downtown el sábado.',
+  time:'8:00 PM',time_es:'8:00 PM',price:'$$–$$$',free:false,link:'https://www.kaseyacenter.com/events'}
 ];
 var MM_PRIV={
  en:{title:'Privacy Policy',upd:'Last updated: August 1, 2026',
@@ -7129,6 +7407,7 @@ function twxMonthSection(){
   if(!p||!b) return;
   var open=p.classList.toggle('open');
   b.classList.toggle('open', open);
+  setTimeout(twxStickySync, 30);
 }
 function renderMonth(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
@@ -7234,7 +7513,11 @@ function renderMonth(){
 
   var eyebrow=ES?'PARA RESIDENTES · Y TURISTAS QUE VUELVEN':'FOR LOCALS · AND RETURNING VISITORS';
   var title=ES?'Este Mes en Miami':'This Month in Miami';
-  var range=ES?'Agosto 2026':'August 2026';
+  /* El mes se calculaba a mano y se quedaba viejo. Ahora sale del reloj. */
+  var MMES=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  var MMEN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var _hoy=new Date();
+  var range=(ES?MMES:MMEN)[_hoy.getMonth()]+' '+_hoy.getFullYear();
   return '<section class="sec fade tw-wrap" id="sec-month">'
     +'<div class="tw-bar-wrap" style="--tw-accent:#00C9B1;--tw-accent-border:rgba(0,201,177,.22);">'
       +'<div class="tw-bar" id="twxMonthBar" onclick="twxMonthSection()">'
@@ -7284,12 +7567,47 @@ function mmEventLayout(){
   wk.classList.add('twc-host');
   mo.style.display='none';
 }
+/* Inserta (una sola vez) la barra pegajosa dentro de un panel abierto.
+   No toca el markup de las tarjetas ni los handlers de cierre. */
+function twxSticky(panelId, titulo, meta){
+  var p=document.getElementById(panelId); if(!p) return;
+  var old=p.querySelector('.twx-sticky'); if(old) old.parentNode.removeChild(old);
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var d=document.createElement('div');
+  d.className='twx-sticky';
+  d.innerHTML='<b></b><i></i><button type="button">'+(ES?'Cerrar':'Close')+'</button>';
+  d.querySelector('b').textContent=titulo||'';
+  d.querySelector('i').textContent=meta||'';
+  d.querySelector('button').onclick=function(ev){
+    ev.stopPropagation();
+    var bar=document.getElementById(panelId==='twxMainPanel'?'twxMainBar':'twxMonthBar');
+    if(panelId==='twxMainPanel'){ twxSection(); } else { twxMonthSection(); }
+    if(bar) bar.scrollIntoView({behavior:'smooth',block:'start'});
+  };
+  p.insertBefore(d, p.firstChild);
+}
+function twxStickySync(){
+  try{
+    [['twxMainPanel','twxMainBar'],['twxMonthPanel','twxMonthBar']].forEach(function(x){
+      var p=document.getElementById(x[0]), b=document.getElementById(x[1]);
+      if(!p||!b) return;
+      if(p.classList.contains('open')){
+        var t=(b.querySelector('.tw-bar-title')||{}).textContent||'';
+        var m=(b.querySelector('.tw-bar-when')||{}).textContent||'';
+        twxSticky(x[0], t.trim(), m.replace(/\s+/g,' ').trim());
+      }else{
+        var o=p.querySelector('.twx-sticky'); if(o) o.parentNode.removeChild(o);
+      }
+    });
+  }catch(e){}
+}
 function twxSection(){
   var p = document.getElementById('twxMainPanel');
   var b = document.getElementById('twxMainBar');
   if(!p||!b) return;
   var open = p.classList.toggle('open');
   b.classList.toggle('open', open);
+  setTimeout(twxStickySync, 30);
 }
 
 function mmInOverlay(t){
@@ -8239,36 +8557,36 @@ function mmSeaWidget(m,s,ES){
   box.innerHTML=cells;
   box.className = cells ? 'on' : '';
 }
-/* ══ ZÓCALO DE CONDICIONES — estilo generador de caracteres de TV ══
-   Un solo dato a la vez, a todo lo ancho: entra, se queda unos
-   segundos y sale para dar paso al siguiente. Los datos son los
-   mismos de siempre (Open-Meteo), solo cambia cómo se presentan. */
+/* ══ ZÓCALO DE CONDICIONES — ahora corre como el scroll de la web ══
+   (su nota: la letra pequeña quedaba amontonada al partir en dos
+   líneas). Las dos bandas usan el MISMO carril del marquee de la web
+   (.mq-track/.mq-item): una sola línea en movimiento continuo, sin
+   apilar ni cortar. mmMarqueeFill repite la secuencia hasta llenar el
+   ancho, la duplica para el bucle del -50% y fija la duración por
+   ancho (~70px/s), la velocidad a la que corre el de la web. */
 var _mmSeaTV=[], _mmSeaIdx=0, _mmSeaTimer=null;
+function mmMarqueeFill(el, seq){
+  if(!el||!seq) return;
+  el.innerHTML='<div class="mq-track">'+seq+'</div>';
+  var tr=el.querySelector('.mq-track');
+  var seqW=tr.scrollWidth||1, boxW=el.clientWidth||360;
+  var k=Math.max(1, Math.ceil(boxW/seqW));
+  var half=''; for(var i=0;i<k;i++) half+=seq;
+  tr.innerHTML=half+half;
+  tr.style.animationDuration=Math.max(14, Math.round((seqW*k)/70))+'s';
+}
 function mmSeaTVPaint(){
   var el=document.getElementById('seaStrip');
   if(!el||!_mmSeaTV.length) return;
-  var it=_mmSeaTV[_mmSeaIdx%_mmSeaTV.length];
-  el.style.setProperty('--sea-ac', it.ac);
-  var dots=_mmSeaTV.map(function(_,i){
-    return '<span class="seatv-dot'+(i===(_mmSeaIdx%_mmSeaTV.length)?' on':'')+'"></span>';
+  var seq=_mmSeaTV.map(function(it){
+    return '<div class="mq-item"><span class="mq-dot"></span>'
+      +'<span class="mq-n">'+it.val+'</span> '+it.lbl+(it.sub?' \u00b7 '+it.sub:'')+'</div>';
   }).join('');
-  el.innerHTML='<div class="seatv" id="seatvRow" style="--sea-ac:'+it.ac+'">'
-    +'<span class="seatv-ic">'+it.ico+'</span>'
-    +'<span class="seatv-lbl">'+it.lbl+'</span>'
-    +'<span class="seatv-val">'+it.val+'</span>'
-    +'<span class="seatv-sub">'+it.sub+'</span>'
-  +'</div><div class="seatv-dots">'+dots+'</div>';
+  mmMarqueeFill(el, seq);
 }
 function mmSeaTVStart(){
   if(_mmSeaTimer){ clearInterval(_mmSeaTimer); _mmSeaTimer=null; }
-  if(_mmSeaTV.length<2){ mmSeaTVPaint(); return; }
   mmSeaTVPaint();
-  _mmSeaTimer=setInterval(function(){
-    var row=document.getElementById('seatvRow');
-    if(!row) return;
-    row.classList.add('tv-out');
-    setTimeout(function(){ _mmSeaIdx++; mmSeaTVPaint(); }, 430);
-  }, 4600);
 }
 function seaLoad(){
   var el=document.getElementById('seaStrip')||document.createElement('div');
@@ -8302,16 +8620,18 @@ function seaLoad(){
       push(acc,'wave', ES?'ESTADO DEL MAR':'SEA STATE', ft.toFixed(1)+' ft', word);
     }
     if(s && s.current){
-      push('#7CC7FF','wind', ES?'VIENTO':'WIND', Math.round(s.current.windspeed_10m)+' mph', ES?'ahora mismo':'right now');
+      push('#7CC7FF','wind', ES?'VIENTO':'WIND', Math.round(s.current.windspeed_10m)+' mph', ES?'medido ahora en la costa':'measured now on the coast');
     }
     try{
       var pr=s.daily.precipitation_probability_max[0];
       var pacc = pr>=60?'#FF4D35':pr>=30?'#FFD166':'#00C9B1';
-      push(pacc,'rain', ES?'LLUVIA':'RAIN', pr+'%', ES?'probabilidad hoy':'chance today');
+      var rsub = pr>=40 ? (ES?'plan B: 11 museos bajo techo':'plan B: 11 museums indoors')
+                        : (ES?'probabilidad hoy':'chance today');
+      push(pacc,'rain', ES?'LLUVIA':'RAIN', pr+'%', rsub);
     }catch(e){}
     try{
       push('#FFD166','sun', ES?'ATARDECER':'SUNSET', hhmm(s.daily.sunset[0]),
-        (ES?'amanece ':'sunrise ')+hhmm(s.daily.sunrise[0]));
+        (ES?'amanece ':'sunrise ')+hhmm(s.daily.sunrise[0])+(ES?' · hora dorada ~30 min antes':' · golden hour ~30 min before'));
     }catch(e){}
     if(wv!=null){
       var ftv=wv*3.28084;
@@ -9241,7 +9561,7 @@ function build(){
   // sidebar
   
   // marquee
-  const mqItems=['100+ Restaurants','100+ Hotels','17 Beaches','11 Museums','20 Nightlife Spots','14 Live Cams','Fly Over Miami','Bilingual EN/ES','Business Ready'];
+  const mqItems=['100+ Restaurants','100+ Hotels','17 Beaches','12 Theaters','11 Museums','20 Nightlife Spots','20 On the Water','14 Live Cams','Fly Over Miami','Walking Tours','Bilingual EN/ES','Business Ready'];
   const mqs=mqItems.map(q=>'<div class="mq-item"><span class="mq-dot"></span><span class="mq-n">'+q.split(' ')[0]+'</span> '+q.split(' ').slice(1).join(' ')+'</div>').join('');
   var el_mq=document.getElementById('mqTrack');if(el_mq)el_mq.innerHTML=mqs+mqs;
   // app sections
@@ -9271,6 +9591,7 @@ function build(){
     })();
   }
   document.getElementById('app').innerHTML=renderRest()+renderHotels()+renderBeach()+renderNight()+renderWater()+renderLux()+renderEsc()+renderAirports()+renderExploreGrid()+'<div id="moreWrap"></div>';
+  try{ mmRailInit(); }catch(e){}
   _mmExpanded={};
   // Miami in Photos ahora vive DESPUÉS de las cámaras en vivo
   var ugcW = document.getElementById('ugcWrap');
@@ -9642,16 +9963,16 @@ document.addEventListener("DOMContentLoaded",function(){
     music:'<path d="M9 18V6l10-2v11.5"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="15.5" r="2.5"/>'
   };
   var items=[
-    {tgEN:'ICONIC',tgES:'ICÓNICO',type:'rest',ic:'rest',id:'r01',arr:'restaurants',en:'Trending now: Versailles',es:'Tendencia ahora: Versailles'},
-    {tgEN:'TODAY',tgES:'HOY',type:'beach',ic:'beach',id:'b1',arr:'beaches',en:'Hot right now: South Beach',es:'Ahora mismo: South Beach'},
-    {tgEN:'TONIGHT',tgES:'ESTA NOCHE',type:'night',ic:'night',id:'n1',arr:'nightlife',en:'Buzzing tonight: LIV Nightclub',es:'Sonando esta noche: LIV Nightclub'},
-    {tgEN:'MUST-SEE',tgES:'IMPERDIBLE',type:'museum',ic:'museum',id:'m1',arr:'museums',en:'Worth a visit: Pérez Art Museum Miami',es:'Vale la pena: Pérez Art Museum Miami'},
-    {tgEN:'TOP STAY',tgES:'TOP HOTEL',type:'hotel',ic:'hotel',id:'h1',arr:'hotels',en:'Top stay: 1 Hotel South Beach',es:'Top hospedaje: 1 Hotel South Beach'},
-    {tgEN:'LOCAL FAVE',tgES:'FAVORITO LOCAL',type:'coffee',ic:'coffee',id:'cf1',arr:'coffee',en:'Local favorite: Panther Coffee',es:'Favorito local: Panther Coffee'},
-    {tgEN:'GAME DAY',tgES:'DÍA DE JUEGO',type:'stadium',ic:'stadium',id:'s2',arr:'stadiums',en:'Game day: Hard Rock Stadium',es:'Día de juego: Hard Rock Stadium'},
-    {tgEN:'ON STAGE',tgES:'EN ESCENA',type:'theater',ic:'theater',id:'t1',arr:'theaters',en:'On stage: Adrienne Arsht Center',es:'En escena: Adrienne Arsht Center'},
-    {tgEN:'OUTDOORS',tgES:'AIRE LIBRE',type:'park',ic:'park',id:'pk3',arr:'parks',en:'Get outside: Matheson Hammock Park',es:'Al aire libre: Matheson Hammock Park'},
-    {tgEN:'LIVE MUSIC',tgES:'MÚSICA EN VIVO',type:'night',ic:'music',id:'n2',arr:'nightlife',en:'Live music tonight: Ball & Chain',es:'Música en vivo hoy: Ball & Chain'}
+    {tgEN:'ICONIC',tgES:'ICÓNICO',type:'rest',ic:'rest',id:'r01',arr:'restaurants',en:'Versailles — the cafecito window where Miami talks politics',es:'Versailles — la ventanita donde Miami arregla el mundo'},
+    {tgEN:'TODAY',tgES:'HOY',type:'beach',ic:'beach',id:'b1',arr:'beaches',en:'South Beach — pastel lifeguard towers, postcard guaranteed',es:'South Beach — casetas pastel y postal garantizada'},
+    {tgEN:'TONIGHT',tgES:'ESTA NOCHE',type:'night',ic:'night',id:'n1',arr:'nightlife',en:'LIV at the Fontainebleau — the line starts before the DJ',es:'LIV en el Fontainebleau — la fila empieza antes que el DJ'},
+    {tgEN:'MUST-SEE',tgES:'IMPERDIBLE',type:'museum',ic:'museum',id:'m1',arr:'museums',en:'Pérez Art Museum — hanging gardens and art over the bay',es:'Pérez Art Museum — jardines colgantes y arte sobre la bahía'},
+    {tgEN:'TOP STAY',tgES:'TOP HOTEL',type:'hotel',ic:'hotel',id:'h1',arr:'hotels',en:'1 Hotel South Beach — barefoot luxury on the sand',es:'1 Hotel South Beach — lujo descalzo sobre la arena'},
+    {tgEN:'LOCAL FAVE',tgES:'FAVORITO LOCAL',type:'coffee',ic:'coffee',id:'cf1',arr:'coffee',en:'Panther Coffee — the roaster that fuels Wynwood',es:'Panther Coffee — el tostador que mueve Wynwood'},
+    {tgEN:'GAME DAY',tgES:'DÍA DE JUEGO',type:'stadium',ic:'stadium',id:'s2',arr:'stadiums',en:'Hard Rock Stadium — Dolphins, F1 and the Miami Open',es:'Hard Rock Stadium — Dolphins, F1 y el Miami Open'},
+    {tgEN:'ON STAGE',tgES:'EN ESCENA',type:'theater',ic:'theater',id:'t1',arr:'theaters',en:'Adrienne Arsht — Broadway, ballet and opera downtown',es:'Adrienne Arsht — Broadway, ballet y ópera en Downtown'},
+    {tgEN:'OUTDOORS',tgES:'AIRE LIBRE',type:'park',ic:'park',id:'pk3',arr:'parks',en:'Matheson Hammock — a natural pool facing the skyline',es:'Matheson Hammock — piscina natural frente al skyline'},
+    {tgEN:'LIVE MUSIC',tgES:'MÚSICA EN VIVO',type:'night',ic:'music',id:'n2',arr:'nightlife',en:'Ball & Chain — live salsa since 1935',es:'Ball & Chain — salsa en vivo desde 1935'}
   ];
   TKI.wave='<path d="M3 15.5c2 0 2-1.6 4-1.6s2 1.6 4 1.6 2-1.6 4-1.6 2 1.6 4 1.6"/><path d="M3 19.5c2 0 2-1.6 4-1.6s2 1.6 4 1.6 2-1.6 4-1.6 2 1.6 4 1.6"/><path d="M6 10.5c1.5-3.5 4.5-5 9-4.5"/>';
   TKI.sun='<circle cx="12" cy="13" r="3.2"/><path d="M12 6.5V8M6.5 13H8M16 13h1.5M8.2 9.2l1 1M15.8 9.2l-1 1"/><path d="M3.5 19.5h17"/>';
@@ -9781,45 +10102,76 @@ document.addEventListener("DOMContentLoaded",function(){
     while(li<live.length) out.push(live[li++]);
     return out;
   }
-  var deckArr=items.slice();
-  var i=0;
-  var el=document.getElementById('heroTickerTxt');
+  /* ══ EL TICKER ES AHORA LA TERCERA BANDA DEL MARQUEE (su ok al plan).
+     Antes: un ítem cada 4.2s con nowrap+ellipsis — los largos salían
+     amputados y un patrocinado solo existía 4 segundos por vuelta.
+     Ahora: la secuencia completa corre en el carril de la web
+     (.mq-track/.mq-item vía mmMarqueeFill), nada se corta, y cada
+     ítem lleva su propio tap (mmTickerGo).
+
+     PATROCINIO — el gancho de venta: window.MM_TICKER_PAID.push({
+       until:'YYYY-MM-DD', tagEN:'BRAND', tagES:'MARCA',
+       txtEN:'...', txtES:'...', act:"go('sec-x')"  ó  link:'https://...'
+     }) → abre CADA vuelta con la etiqueta · PATROCINADO, corre íntegro
+     en ambos idiomas y sus taps se miden como 'now_paid' en mm_events. */
+  window.MM_TICKER_PAID = window.MM_TICKER_PAID || [];
   var tickerEl=document.getElementById('heroTicker');
-  if(!el||!tickerEl)return;
-  function show(){
-    var L=(typeof lang!=='undefined'&&lang==='es')?'es':'en';
-    var it=deckArr[i]; if(!it){ i=0; it=deckArr[0]; }
-    el.innerHTML='<span class="htk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+(TKI[it.ic]||'')+'</svg></span><span class="htk-txt">'+it[L]+'</span>';
-    var tg=document.getElementById('htkTagTxt');
-    if(tg) tg.textContent=(L==='es'?(it.tgES||'Tendencia'):(it.tgEN||'Trending'));
+  if(!tickerEl) return;
+  function tickerSeq(){
+    var ES=(typeof lang!=='undefined'&&lang==='es');
+    var out=[];
+    var today=new Date(); today.setHours(0,0,0,0);
+    (window.MM_TICKER_PAID||[]).forEach(function(p){
+      var ok=true;
+      try{ if(p.until){ var q=p.until.split('-'); ok=new Date(+q[0],+q[1]-1,+q[2])>=today; } }catch(e){}
+      if(!ok) return;
+      var lb=ES?'PATROCINADO':'SPONSORED';
+      var tag=(ES?(p.tagES||p.tagEN):p.tagEN);
+      out.push({paid:true,
+        tgEN:(p.tagEN?p.tagEN+' \u00b7 ':'')+'SPONSORED',
+        tgES:(tag?tag+' \u00b7 ':'')+lb,
+        en:p.txtEN||'', es:p.txtES||p.txtEN||'',
+        act:p.act||(p.link?"window.open('"+p.link+"','_blank')":'')});
+    });
+    var paidArr=out.slice();
+    out=out.concat(liveItems());
+    items.forEach(function(it){ out.push(it); });
+    out=out.slice(0,14); /* vuelta ~100s: el dato no envejece en pantalla */
+    /* el patrocinado también a mitad de vuelta — presencia cada ~50s */
+    if(paidArr.length && out.length>9) out.splice(Math.floor(out.length/2),0,paidArr[0]);
+    return out;
   }
-  function goToCurrent(){
-    var it=deckArr[i]; if(!it) return;
-    if(it.act){
-      try{ mmTrack(it.paid?'now_paid':'now_rec', (it.en||'').slice(0,120)); }catch(e){}
-      try{ (new Function(it.act))(); }catch(e){}
-      return;
-    }
+  window.mmTickerGo=function(ix){
+    var arr=window._mmTickerSeq||[]; var it=arr[ix]; if(!it) return;
+    try{ if(it.paid) mmTrack('now_paid',(it.en||'').slice(0,120));
+         else if(it.act) mmTrack('now_rec',(it.en||'').slice(0,120)); }catch(e){}
+    if(it.act){ try{ (new Function(it.act))(); }catch(e){} return; }
     if(it.go){
       if(it.go==='sec-june'&&typeof goWeek==='function'){ goWeek(); return; }
-      if(typeof go==='function'){ go(it.go); }
-      return;
+      if(typeof go==='function'){ go(it.go); } return;
     }
     var obj=(typeof D!=='undefined'&&D[it.arr])?D[it.arr].find(function(x){return x.id===it.id;}):null;
-    if(obj&&typeof openItemModal==='function'){openItemModal(obj,it.type);}
+    if(obj&&typeof openItemModal==='function'){ openItemModal(obj,it.type); }
+  };
+  function mmTickerBuild(){
+    var L=(typeof lang!=='undefined'&&lang==='es')?'es':'en';
+    var arr=tickerSeq(); if(!arr.length) return;
+    window._mmTickerSeq=arr;
+    var seq=arr.map(function(it,ix){
+      return '<div class="mq-item" style="cursor:pointer" onclick="event.stopPropagation();mmTickerGo('+ix+')">'
+        +'<span class="mq-dot"></span>'
+        +'<span class="mq-n">'+(L==='es'?(it.tgES||'MIAMI'):(it.tgEN||'MIAMI'))+'</span>'
+        +(it[L]||it.en||'')+'</div>';
+    }).join('');
+    if(typeof mmMarqueeFill==='function'){ mmMarqueeFill(tickerEl, seq); }
+    else{ tickerEl.innerHTML='<div class="mq-track">'+seq+seq+'</div>'; }
   }
-  tickerEl.onclick=goToCurrent;
-  show();
-  setTimeout(function(){ deckArr=deck(); },7000);
-  setInterval(function(){
-    el.classList.add('tick-fade');
-    setTimeout(function(){
-      i=i+1;
-      if(i>=deckArr.length){ i=0; deckArr=deck(); }
-      show();
-      el.classList.remove('tick-fade');
-    },320);
-  },4200);
+  window.mmTickerBuild=mmTickerBuild;
+  tickerEl.onclick=null; /* cada ítem lleva su propio tap */
+  mmTickerBuild();
+  setTimeout(mmTickerBuild,7000);    /* con los paneles de eventos montados */
+  setTimeout(mmTickerBuild,15000);   /* con mar y clima ya cargados */
+  setInterval(mmTickerBuild,300000); /* datos vivos frescos cada 5 min */
 })();
 
 /* ── HERO PREVIEW CAROUSEL ── */
@@ -11099,7 +11451,7 @@ document.addEventListener('click',function(e){
   var inp=document.getElementById('heroSearchInp');
   if(p && p.classList.contains('on') && !p.contains(e.target) && e.target!==inp) mmHideHistory();
 });
-function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en]').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}}
+function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('.hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en]').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, restaurantes, eventos…':'Search beaches, restaurants, events…';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}try{setTimeout(function(){if(window.mmTickerBuild)window.mmTickerBuild();},650);}catch(e){}}
 function socApplyLang(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   document.querySelectorAll('#sec-social [data-en], #socPubOv [data-en]').forEach(function(el){
@@ -16167,16 +16519,9 @@ function showInsiderModal(id){
 [data-theme="dark"] .seatv-dot{background:rgba(255,255,255,.2);}
 .seatv-dot.on{background:var(--sea-ac,#00C9B1);}
 
-/* only the promo band is tappable, so only it gets the ring */
+/* la flecha en círculo se fue: el marquee de la web no la lleva y
+   tapaba el texto en movimiento; cada ítem es tappable por sí mismo */
 .promo-strip{margin:14px 0 16px;}
-.promo-strip::after{content:'\2192';position:absolute;right:2px;top:50%;
-  transform:translateY(-50%);width:36px;height:36px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  border:1.5px solid var(--sea-ac,#FFD166);color:var(--sea-ac,#FFD166);
-  font:400 1.05rem 'DM Sans',sans-serif;line-height:1;
-  transition:background .22s ease,color .22s ease,transform .22s ease;}
-.promo-strip:hover::after{background:var(--sea-ac,#FFD166);color:#0B1526;
-  transform:translateY(-50%) translateX(2px);}
 @media(min-width:900px){
   .seatv-val{font-size:1.42rem;} .seatv-sub{font-size:.98rem;}
   .sea-strip{min-height:66px;}
@@ -16342,21 +16687,15 @@ function showInsiderModal(id){
     color:color-mix(in srgb, var(--sea-ac,#00C9B1) 45%, #0B1526);}
   .seatv-lbl::before,.seatv-lbl::after,.seatv-dot.on{
     background:color-mix(in srgb, var(--sea-ac,#00C9B1) 55%, #0B1526);}
-  .promo-strip::after{
-    color:color-mix(in srgb, var(--sea-ac,#FFD166) 45%, #0B1526);
-    border-color:color-mix(in srgb, var(--sea-ac,#FFD166) 55%, #0B1526);}
-  .promo-strip:hover::after{
-    background:color-mix(in srgb, var(--sea-ac,#FFD166) 55%, #0B1526);color:#FFF0E0;}
+  /* (las reglas de .promo-strip::after de aqui se fueron: vestian la
+     flecha en circulo ya eliminada, y su hover pintaba de rojo el
+     fundido del borde derecho del marquee) */
   [data-theme="dark"] .seatv-lbl,
   [data-theme="dark"] .seatv-ic,
   [data-theme="dark"] .seatv-ico{color:var(--sea-ac,#00C9B1);}
   [data-theme="dark"] .seatv-lbl::before,
   [data-theme="dark"] .seatv-lbl::after,
   [data-theme="dark"] .seatv-dot.on{background:var(--sea-ac,#00C9B1);}
-  [data-theme="dark"] .promo-strip::after{
-    color:var(--sea-ac,#FFD166);border-color:var(--sea-ac,#FFD166);}
-  [data-theme="dark"] .promo-strip:hover::after{
-    background:var(--sea-ac,#FFD166);color:#0B1526;}
 }
 
 /* The hero ticker's coral is a fixed colour, so it gets exact values:
@@ -16399,7 +16738,611 @@ function showInsiderModal(id){
 /* Row labels in the airport detail sat at 4.42:1 in dark — just under. */
 [data-theme="dark"] .ap-feat-row span{color:rgba(255,255,255,.55)!important;}
 
+
+/* ══════════════════════════════════════════════════════════════════════
+   EVENTOS — REDISEÑO EDITORIAL (sep 2026)
+   Referencias que ella eligió: la portada de Joe's Stone Crab (dos
+   paneles a foto completa, tipografía mínima, eliges por cuál entras)
+   y el scroll de Zak the Baker (la imagen se queda, el contenido pasa
+   por encima). Se respetan TODOS los ids y handlers existentes:
+   esto es solo capa visual.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* 1 · LA PUERTA DOBLE ------------------------------------------------ */
+/* En móvil iban dos paneles de 180px de ancho: ilegibles y sin fuerza.
+   Ahora se apilan a todo lo ancho, como hace Joe's en el teléfono. */
+.twc-grid{grid-template-columns:1fr;gap:0;}
+.twc-grid .tw-bar{min-height:258px;}
+@media(min-width:900px){
+  .twc-grid{grid-template-columns:1fr 1fr;gap:18px;}
+  .twc-grid .tw-bar{min-height:420px;}
+}
+
+/* 🐞 ORDEN EN MÓVIL — el fallo real que ella encontró.
+   mmEventLayout mete los DOS paneles en .twc-panels, DESPUÉS de las dos
+   barras. Con las barras lado a lado (escritorio) eso funciona; apiladas
+   en el teléfono, al abrir la de arriba el contenido aparecía debajo de
+   la segunda barra y había que deslizar toda la lista para volver.
+   Con display:contents las barras y los paneles pasan a ser hijos
+   directos de .twc-host y se pueden intercalar con `order`:
+   barra semana → panel semana → barra mes → panel mes. */
+@media(max-width:899px){
+  .twc-host{display:flex;flex-direction:column;gap:0;}
+  .twc-host .twc-grid,.twc-host .twc-panels{display:contents;}
+  .twc-host .twc-cell{margin-bottom:14px;}
+  .twc-host .twc-cell:nth-of-type(1){order:1;}
+  .twc-host #twxMainPanel{order:2;}
+  .twc-host .twc-cell:nth-of-type(2){order:3;}
+  .twc-host #twxMonthPanel{order:4;}
+  .twc-host .tw-panel.open{margin:-6px 0 16px;border-radius:0 0 18px 18px;}
+  .twx-sticky{border-radius:0;}
+}
+
+/* MOVIMIENTO — la foto respira. Lento y en bucle, sin marear, y se
+   apaga si el sistema pide menos animación. */
+@keyframes mmKen{
+  0%{transform:scale(1.02) translate3d(0,0,0);}
+  100%{transform:scale(1.11) translate3d(-1.5%,-1.5%,0);}
+}
+.twc-grid .tw-bar-bg{animation:mmKen 22s ease-in-out infinite alternate;will-change:transform;}
+.twc-grid .tw-bar:nth-of-type(1) .tw-bar-bg{animation-delay:-7s;}
+@media (prefers-reduced-motion:reduce){.twc-grid .tw-bar-bg{animation:none;}}
+
+/* Foto a sangre, sin recortes, con un movimiento muy lento al abrir */
+.twc-grid .tw-bar-bg{transition:transform 1.1s cubic-bezier(.2,.6,.2,1);transform:scale(1.02);}
+.twc-grid .tw-bar.open .tw-bar-bg{transform:scale(1.06);}
+
+/* El velo: negro abajo, nada arriba. La foto se ve, el texto se lee. */
+.twc-grid .tw-bar-body{
+  background:linear-gradient(to top,rgba(5,12,24,.97) 0%,rgba(5,12,24,.91) 32%,
+             rgba(5,12,24,.68) 60%,rgba(5,12,24,.30) 84%,rgba(5,12,24,.06) 100%);
+  padding:84px 20px 18px;}
+/* En el teléfono la descripción sobra: el título y la línea de datos ya
+   dicen todo, y así las dos puertas caben casi juntas en pantalla. */
+@media(max-width:899px){
+  .twc-grid .tw-bar-desc{display:none;}
+  .twc-grid .tw-bar-title{font-size:1.92rem!important;}
+  .twc-grid .tw-bar-when{margin-top:12px!important;padding-top:10px;}
+}
+/* Un velo superior corto: da profundidad a la foto y asegura que el
+   eyebrow se lea aunque la imagen tenga cielo claro justo detrás. */
+.twc-grid .tw-bar-overlay{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(5,12,24,.52) 0%,rgba(5,12,24,.16) 42%,transparent 70%);}
+@media(min-width:900px){.twc-grid .tw-bar-body{padding:180px 28px 26px;}}
+
+/* Tipografía: el eyebrow se calla, el título manda. */
+.twc-grid .tw-bar-eyebrow{font-size:.58rem!important;letter-spacing:.2em;opacity:.9;}
+.twc-grid .tw-bar-title{
+  font-size:2.05rem!important;line-height:1.06;letter-spacing:-.015em;
+  text-wrap:balance;margin-top:6px;}
+@media(min-width:900px){.twc-grid .tw-bar-title{font-size:2.5rem!important;}}
+.twc-grid .tw-bar-desc{font-size:.82rem!important;opacity:.72;max-width:30ch;margin-top:8px;}
+
+/* La franja de datos: una hairline dorada y letra pequeña en versalitas */
+.twc-grid .tw-bar-when{
+  margin:16px 0 0!important;padding-top:12px;
+  border-top:1px solid rgba(255,209,102,.34);
+  font-family:'DM Sans',sans-serif;font-weight:700;font-size:.68rem;
+  letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.82);}
+
+/* El botón deja de ser pastilla y pasa a ser un gesto editorial */
+.twc-grid .tw-bar-cta{
+  background:none!important;border:0!important;box-shadow:none!important;
+  padding:12px 0 0!important;min-height:0;
+  font-family:'DM Sans',sans-serif;font-weight:800;font-size:.82rem;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--gold,#FFD166);}
+.twc-grid .tw-bar-cta span{border-bottom:1.5px solid rgba(255,209,102,.55);padding-bottom:3px;}
+.twc-grid .tw-bar-cta svg{width:13px;height:13px;}
+
+/* 2 · EL SCROLL (Zak) ------------------------------------------------ */
+/* Al abrir, una barra fina se queda pegada arriba mientras las tarjetas
+   pasan por debajo: nunca pierdes de vista en qué sección estás ni
+   cuántos eventos quedan. */
+.twx-sticky{
+  position:sticky;top:0;z-index:6;display:flex;align-items:center;justify-content:space-between;
+  gap:12px;padding:11px 16px;background:rgba(8,17,32,.94);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.10);}
+.twx-sticky b{flex:1 1 auto;min-width:0;font-family:'Playfair Display',serif;font-weight:700;
+  font-size:.98rem;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+/* En pantallas estrechas el título manda: el rango se calla. */
+@media(max-width:430px){.twx-sticky i{display:none;}}
+.twx-sticky i{font:700 .62rem 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--gold,#FFD166);font-style:normal;white-space:nowrap;}
+.twx-sticky button{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);
+  color:#fff;border-radius:50px;padding:5px 12px;font:700 .66rem 'DM Sans',sans-serif;
+  letter-spacing:.05em;cursor:pointer;flex:0 0 auto;}
+.tw-panel.open{overflow:visible;}
+
+/* ══════════════════════════════════════════════════════════════════════
+   EVENTOS v2 — PUERTA DOBLE PLANA (sep 2026)
+   Ella: "esas cards negras siguen sin convencerme". El intento anterior
+   mantuvo la foto con velo negro; el home de Joe's NO lleva foto: son dos
+   paneles planos (uno crema, uno azul) con el logotipo como protagonista.
+   Aquí la tipografía ES el logotipo. Todo scoped a .twc-grid — el bar de
+   Live Cams comparte .tw-bar y NO se toca.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* La foto y sus velos se van. La animación Ken Burns queda muerta. */
+.twc-grid .tw-bar-bg{display:none;animation:none;}
+.twc-grid .tw-bar-overlay{display:none;}
+
+/* Puerta 1 (Esta Semana): papel crema, tinta navy — como el panel de
+   Joe's Stone Crab. Puerta 2 (Este Mes): navy con tinta crema — como el
+   panel de Take Away. El dúo claro/oscuro es lo que hace que se lean
+   como DOS PUERTAS y no como dos cajas iguales. */
+.twc-grid .twc-cell{background:#FBF7EF;border:1px solid rgba(14,27,48,.16);
+  border-radius:6px;box-shadow:none;}
+.twc-grid .twc-cell::before{display:none;}
+.twc-grid .twc-cell:hover{box-shadow:0 12px 34px rgba(14,27,48,.10);transform:translateY(-1px);}
+.twc-grid .twc-cell:nth-of-type(2){background:#0E1B30;border-color:rgba(255,255,255,.14);}
+
+/* El cuerpo se centra: la puerta es un lockup tipográfico, no una card
+   de contenido. Alturas más contenidas: el aire manda, no el bulto. */
+.twc-grid .tw-bar{justify-content:center;min-height:224px;}
+.twc-grid .tw-bar-body{background:none!important;padding:30px 22px 26px!important;
+  align-items:center;justify-content:center;text-align:center;flex:0 0 auto!important;}
+.twc-grid .tw-bar-label{align-items:center;}
+.twc-grid .tw-bar-desc{display:none!important;}
+
+/* Eyebrow en versalitas muy abiertas; título Playfair grande; debajo,
+   una hairline corta centrada — el gesto "menú de restaurante clásico". */
+.twc-grid .tw-bar-eyebrow{font-size:.6rem!important;letter-spacing:.26em;opacity:1;
+  color:#B07800!important;}
+.twc-grid .tw-bar-title{color:#0E1B30;font-size:2rem!important;line-height:1.05;
+  letter-spacing:-.01em;margin-top:8px;}
+.twc-grid .tw-bar-label::after{content:'';width:44px;height:1px;
+  background:rgba(176,120,0,.55);margin:15px auto 0;}
+.twc-grid .tw-bar-when{margin:11px 0 0!important;padding-top:0;border-top:0;
+  color:rgba(14,27,48,.62);font-size:.64rem;letter-spacing:.16em;}
+.twc-grid .tw-bar-meta{border-top:0;justify-content:center;margin-top:2px;padding-top:0;}
+.twc-grid .tw-bar-cta{color:#0E1B30;}
+.twc-grid .tw-bar-cta span{border-bottom-color:rgba(176,120,0,.6);}
+
+/* Tinta de la puerta navy */
+.twc-grid .twc-cell:nth-of-type(2) .tw-bar-eyebrow{color:#FFD166!important;}
+.twc-grid .twc-cell:nth-of-type(2) .tw-bar-title{color:#F7F1E8;}
+.twc-grid .twc-cell:nth-of-type(2) .tw-bar-label::after{background:rgba(255,209,102,.5);}
+.twc-grid .twc-cell:nth-of-type(2) .tw-bar-when{color:rgba(247,241,232,.68);}
+.twc-grid .twc-cell:nth-of-type(2) .tw-bar-cta{color:#F7F1E8;}
+.twc-grid .twc-cell:nth-of-type(2) .tw-bar-cta span{border-bottom-color:rgba(255,209,102,.55);}
+
+@media(min-width:900px){
+  .twc-grid .tw-bar{min-height:340px;}
+  .twc-grid .tw-bar-title{font-size:2.6rem!important;}
+  .twc-grid .tw-bar-eyebrow{font-size:.66rem!important;}
+  .twc-grid .tw-bar-when{font-size:.68rem;}
+}
+/* El panel abierto se acopla a la puerta con el mismo radio (6, no 18) */
+@media(max-width:899px){
+  .twc-host .tw-panel.open{border-radius:0 0 6px 6px;}
+}
+
+/* ── EL SCROLL (Zak v2): de cajitas blancas a PROGRAMA EDITORIAL ──────
+   En Zak cada pieza respira sobre el fondo, separada por aire y línea,
+   sin marcos. Las cards dejan de ser cajas: filas tipográficas sobre el
+   crema del panel, separadas por hairlines. Mismo markup, misma
+   interacción, cero handlers tocados. */
+.twx-list{gap:0;}
+.twx-card{background:transparent;border:0;border-radius:0;box-shadow:none;
+  border-bottom:1px solid rgba(14,27,48,.14);}
+.twx-card:last-child{border-bottom:0;}
+.twx-card.open{border-color:rgba(14,27,48,.14);box-shadow:none;
+  background:#FFFDF6;}
+.twx-head{padding:17px 8px;}
+/* La fecha pierde su cajita y pasa a ser tipografía pura: día enorme en
+   Bebas, como el cartel de un teatro. */
+.twx-date{background:transparent;border:0;border-radius:0;padding:0;flex-basis:54px;}
+.twx-day{font-size:2.05rem;}
+.twx-name{font-weight:700;font-size:1.08rem;}
+/* Los badges dejan la pastilla: versalitas al aire, estilo programa. */
+.twx-badge{background:transparent!important;border:0!important;border-radius:0;
+  padding:0;letter-spacing:.14em;}
+/* ── AJUSTE (su nota): "aumentar un poco y destacar" las letras ADENTRO.
+   Solo tipografía — nada de estructura ni handlers. Tinta más negra
+   (#0B1526) y un punto más de cuerpo en todo el programa. */
+.twx-name{font-size:1.18rem;color:#0B1526;}
+.twx-day{font-size:2.2rem;color:#0B1526;}
+.twx-dow,.twx-mon{font-size:.6rem;}
+.twx-type{font-size:.68rem;}
+.twx-venue{font-size:.8rem;color:rgba(14,27,48,.74);}
+.twx-badge{font-size:.62rem;}
+.twx-desc{font-size:.98rem;color:rgba(11,21,38,.86);}
+.twx-tip{font-size:.84rem;}
+@media(min-width:900px){
+  .twx-name{font-size:1.42rem;}
+  .twx-day{font-size:2.5rem;}
+  .twx-head{padding:20px 10px;}
+  .twx-venue{font-size:.88rem;}
+  .twx-desc{font-size:1.02rem;}
+  .twx-tip{font-size:.9rem;}
+}
+
+/* Y la puerta clara sube de crema a BLANCO PAPEL: sobre el fondo crema
+   del body, el crema-sobre-crema solo se leía por el borde. En papel
+   blanco la puerta se despega de la página, como el panel claro de
+   Joe's, y el dúo con la navy gana contraste. */
+.twc-grid .twc-cell{background:#FFFDF8;box-shadow:0 6px 22px rgba(14,27,48,.06);}
+.twc-grid .twc-cell:nth-of-type(2){background:#0E1B30;box-shadow:0 6px 22px rgba(14,27,48,.14);}
+
+/* ══ RONDA 3 (sus notas): movimiento que fluya · menos cuadradas ·
+   letras pequeñas más oscuras dentro y fuera. La tipografía no se toca
+   — le encantó. ═══════════════════════════════════════════════════ */
+
+/* MENOS CUADRADAS: las puertas redondean a 22 (premium, como las cards
+   grandes del resto de la app) y la ficha abierta a 14. */
+.twc-grid .twc-cell{border-radius:22px;}
+@media(max-width:899px){.twc-host .tw-panel.open{border-radius:0 0 22px 22px;}}
+.twx-card.open{border-radius:14px;}
+
+/* MOVIMIENTO — tres capas (subido de intensidad a su nota "parecen
+   tímidas"):
+   1) ENTRADA: filas suben 34px en .8s; las puertas suben 46px con un
+      leve zoom en 1s. `backwards` y no `both`: al terminar, la
+      animación suelta el transform y no bloquea el :active.
+   2) FLOTE PERPETUO de las puertas: tras la entrada, cada puerta sube y
+      baja 7px en un vaivén de 6.5s, desincronizadas entre sí — nunca se
+      quedan quietas. Va en la MISMA lista de animaciones con delay
+      posterior: dos animaciones sobre transform no se suman, la última
+      en empezar manda, así que la secuencia entrada→flote es limpia.
+      OJO: por esto mismo el hover con translateY dejó de poder actuar
+      (el flote posee el transform) — el hover ahora habla solo con la
+      sombra.
+   3) El JS de mmFlow escalona las FILAS 90ms entre sí; a las puertas no
+      les pisa el delay (romperían la secuencia de dos tiempos). */
+.mm-flow{opacity:0;}
+.mm-flow-in{opacity:1;animation:mmFlowIn .8s cubic-bezier(.16,.84,.28,1) backwards;}
+@keyframes mmFlowIn{from{opacity:0;transform:translateY(34px);}to{opacity:1;transform:none;}}
+/* ENTRADA LATERAL DESDE FUERA DEL FRAME (su spec exacta, adaptada a
+   vanilla): This Week vive a la DERECHA, This Month a la IZQUIERDA,
+   opacity 0. Al entrar la sección ~35% en viewport (observer propio,
+   rootMargin -8% abajo, once), aterrizan escalonadas .05s/.14s con
+   curva de resorte y la opacidad resuelta antes que el recorrido.
+   El transform de entrada va SOLO en la celda; el parallax vive en
+   .tw-bar-body y el panel en su propio nodo — nunca dos en el mismo. */
+.twc-cell.mm-flow-in{animation:mmDoorInR .62s cubic-bezier(.22,1.2,.28,1) .05s backwards;}
+.twc-grid .twc-cell:nth-of-type(2).mm-flow-in{animation-name:mmDoorInL;animation-delay:.14s;}
+@keyframes mmDoorInR{
+  from{opacity:0;transform:translateX(80px) translateY(16px) scale(.96);}
+  55%{opacity:1;}
+  to{opacity:1;transform:none;}}
+@keyframes mmDoorInL{
+  from{opacity:0;transform:translateX(-80px) translateY(16px) scale(.96);}
+  55%{opacity:1;}
+  to{opacity:1;transform:none;}}
+/* MOVIMIENTO ACORDE A LA SELECCIÓN (su corrección: nada de flote
+   ambiental "como peces"). La card solo se mueve cuando el usuario
+   actúa:
+   · al PRESIONAR, la puerta cede (dip táctil);
+   · al SELECCIONAR (panel abierto), la puerta elegida se eleva y se
+     queda arriba con la hairline dorada encendida, y la otra retrocede
+     — foco claro en lo elegido;
+   · al soltar la selección, todo vuelve con la misma curva suave.
+   El transform de la celda vuelve a estar libre (sin flote), así que el
+   hover de desktop recupera su lift. */
+/* HOVER = EXACTAMENTE el de Restaurantes/Hoteles (.rcardh:hover):
+   lift de 6px con rebote rápido .22s cubic-bezier(.34,1.3,.64,1) y
+   sombra honda — su referencia directa. */
+.twc-grid .twc-cell{transition:transform .22s cubic-bezier(.34,1.3,.64,1),box-shadow .22s,border-color .22s,opacity .45s ease;will-change:transform;}
+.twc-grid .twc-cell:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(14,27,48,.28);border-color:rgba(176,120,0,.45);}
+.twc-grid .twc-cell:nth-of-type(2):hover{border-color:rgba(255,255,255,.28);}
+.twc-grid .tw-bar:active{transform:scale(.985);transition:transform .12s ease;}
+.twc-grid .twc-cell:has(.tw-bar.open){transform:translateY(-6px);
+  box-shadow:0 22px 52px rgba(14,27,48,.2);border-color:rgba(176,120,0,.55);}
+.twc-host:has(.tw-bar.open) .twc-cell:not(:has(.tw-bar.open)){opacity:.55;transform:scale(.975);}
+.twc-host:has(.tw-bar.open) .twc-cell:not(:has(.tw-bar.open)):hover{opacity:.85;transform:scale(.99);}
+
+/* ── LETRA DE LOS SCROLLS, MÁS DESTACADA (su nota) ──────────────────
+   1) El scroll negro de la web (.mq-wrap): texto del 55% al 88% de
+      blanco, cuerpo .76→.88rem con peso 600, números Bebas dorados
+      1.1→1.4rem.
+   2) Las bandas TV de la app (sea-strip y promo comparten .seatv):
+      subtítulo .74→.84rem al 88%, valor Bebas 1.15→1.32, etiqueta
+      .86→.95.
+   3) El ticker coral del hero: texto .78→.88rem, tag Bebas .86→.95. */
+.mq-wrap{padding:14px 0;}
+.mq-item{color:rgba(255,255,255,.88);font-size:.88rem;font-weight:600;letter-spacing:.02em;}
+.mq-n{font-size:1.4rem;}
+.seatv-lbl{font-size:.95rem;}
+.seatv-val{font-size:1.32rem;}
+.seatv-sub{font-size:.84rem;font-weight:600;color:rgba(255,255,255,.88);}
+@media(min-width:640px){.seatv-val{font-size:1.5rem;}.seatv-sub{font-size:.92rem;}}
+.hero-ticker-txt{font-size:.88rem;}
+.htk-tag{font-size:.95rem;}
+
+/* ══ TODAS LAS BANDAS COMO LA INICIAL (su nota). La banda de referencia
+   es el ticker del hero: NO es coral relleno — es papel con hairlines
+   arriba y abajo, el rótulo Bebas en coral y el titular en navy. Antes
+   cada banda iba por su lado (mar en navy con teal, promo en navy con
+   dorado, y la de la web en negro) y competían entre sí. Ahora las
+   tres copian exactamente esa receta: el coral vive en el acento, no
+   en el fondo. */
+.sea-strip{background:transparent!important;border:none!important;
+  border-top:1px solid rgba(14,27,48,.13)!important;
+  border-bottom:1px solid rgba(14,27,48,.13)!important;
+  border-radius:0!important;box-shadow:none!important;}
+.seatv{padding:15px 2px;}
+.seatv-ic,.seatv-lbl{color:var(--coral,#FF4D35)!important;}
+.seatv-val{color:#0E1B30;}
+.seatv-sub{color:rgba(14,27,48,.68);}
+.seatv-dot{background:rgba(14,27,48,.2);}
+.seatv-dot.on{background:var(--coral,#FF4D35)!important;}
+.sea-load{color:rgba(14,27,48,.55);}
+/* La promo comparte .seatv: hereda todo lo anterior; solo se le retira
+   su acento dorado propio para que el coral no lo pierda. */
+.promo-strip{--sea-ac:var(--coral,#FF4D35);}
+/* El scroll de la web deja el negro y adopta la misma banda de papel. */
+.mq-wrap{background:transparent;
+  border-top:1px solid rgba(14,27,48,.13);border-bottom:1px solid rgba(14,27,48,.13);}
+.mq-wrap::before,.mq-wrap::after{width:56px;}
+.mq-wrap::before{background:linear-gradient(to right,var(--sand,#FDF0E3),transparent);}
+.mq-wrap::after{background:linear-gradient(to left,var(--sand,#FDF0E3),transparent);}
+.mq-item{color:rgba(14,27,48,.82);}
+.mq-dot{background:var(--coral,#FF4D35);}
+.mq-n{color:var(--coral,#FF4D35);}
+/* En modo oscuro las hairlines y la tinta se invierten, como hace el
+   propio ticker. */
+[data-theme="dark"] .sea-strip,[data-theme="dark"] .mq-wrap{
+  border-top-color:rgba(255,255,255,.15);border-bottom-color:rgba(255,255,255,.15);}
+[data-theme="dark"] .seatv-val,[data-theme="dark"] .mq-item{color:#fff;}
+[data-theme="dark"] .seatv-sub{color:rgba(255,255,255,.7);}
+
+/* ══ LIVE CAMS — PUERTA BLANCA, LA MISMA DE THIS WEEK (sep 2026) ════
+   Sus tres notas: (1) el color de This Week, (2) limpiar lo que la
+   ensucia, (3) el tamaño enorme. Lo que ensuciaba era el VIDEO del dron
+   y sus degradados mezclándose con cualquier fondo — la puerta de This
+   Week se ve limpia porque es papel sólido SIN foto. Aquí se aplica esa
+   misma receta: papel #FFFDF8, tinta navy, lockup centrado, hairline
+   corta. El único acento es el ROJO de EN VIVO, que aquí significa
+   algo. El video salió del markup (se ahorra también su descarga).
+   Alturas de puerta: 224 móvil / 280 escritorio — se acabó el bulto. */
+#sec-livecams .tw-bar-bg,
+#sec-livecams .tw-bar-vid,
+#sec-livecams .tw-bar-overlay{display:none!important;}
+#sec-livecams .tw-bar-wrap{background:#FFFDF8;border:1px solid rgba(14,27,48,.16);
+  border-radius:22px;box-shadow:0 6px 22px rgba(14,27,48,.06);}
+#sec-livecams .tw-bar{padding-top:0;min-height:224px;justify-content:center;}
+#sec-livecams .tw-bar-body{background:none!important;
+  padding:28px 22px 24px!important;align-items:center;text-align:center;
+  flex:0 0 auto;justify-content:center;}
+#sec-livecams .tw-bar-label{align-items:center;}
+#sec-livecams .tw-bar-desc{display:none!important;}
+#mmcamPanel{background:#FFFDF6;}
+
+/* Lockup: EN VIVO en rojo tinta (pisa el #FF6B60 inline), título
+   Playfair navy, hairline roja corta — el gesto de la puerta. */
+#sec-livecams .tw-bar-eyebrow{font-size:.68rem!important;letter-spacing:.24em;
+  color:#B3261E!important;display:inline-flex;align-items:center;justify-content:center;}
+#sec-livecams .mmcam-dot{background:#C4331C;}
+#sec-livecams .tw-bar-title{font-size:2.05rem!important;line-height:1.05;
+  letter-spacing:-.015em;color:#0E1B30;margin-top:8px;text-wrap:balance;}
+#sec-livecams .tw-bar-label::after{content:'';width:44px;height:1px;
+  background:rgba(179,38,30,.5);margin:15px auto 0;}
+
+/* La dateline de cámaras, centrada bajo la hairline — hace el papel
+   de la línea de fecha en las puertas de eventos. */
+#sec-livecams .cam-chips{justify-content:center;margin-top:12px;gap:2px 8px;}
+#sec-livecams .cam-chips-lbl{width:auto;margin:0;font-size:.66rem;
+  letter-spacing:.18em;color:rgba(14,27,48,.5);}
+#sec-livecams .cam-chip{font-size:.86rem;color:rgba(14,27,48,.78);}
+#sec-livecams .cam-chip:not(:last-child)::after{color:rgba(14,27,48,.35);}
+#sec-livecams .cam-chip-more{color:rgba(14,27,48,.55);}
+
+/* Los stats duplicaban el eyebrow ("14 cámaras" dos veces): fuera.
+   Queda el gesto Explorar centrado, subrayado en rojo. */
+#sec-livecams .tw-bar-when{display:none;}
+#sec-livecams .tw-bar-meta{border-top:0;justify-content:center!important;
+  margin-top:4px!important;padding-top:0;}
+#sec-livecams .tw-bar-cta{background:none!important;border:0!important;
+  box-shadow:none!important;padding:12px 0 0!important;min-height:0;
+  font:800 .82rem 'DM Sans',sans-serif;letter-spacing:.06em;
+  text-transform:uppercase;color:#0E1B30!important;}
+#sec-livecams .tw-bar-cta span{border-bottom:1.5px solid rgba(179,38,30,.55);padding-bottom:3px;}
+#sec-livecams .tw-bar-cta svg{width:13px;height:13px;}
+@media(min-width:900px){
+  #sec-livecams .tw-bar{min-height:280px;}
+  #sec-livecams .tw-bar-body{padding:32px 28px 28px!important;}
+  #sec-livecams .tw-bar-title{font-size:2.6rem!important;}
+  #sec-livecams .tw-bar-eyebrow{font-size:.74rem!important;}
+  #sec-livecams .cam-chip{font-size:.92rem;}
+}
+
+/* ══ LAS DOS BANDAS = EL SCROLL DE LA WEB, IDÉNTICO (su nota: la
+   letra pequeña quedaba amontonada al partir en dos líneas). Las
+   bandas de restaurantes y de boating ya no apilan texto: corren en el
+   mismo carril del marquee de la web (.mq-track/.mq-item) — una sola
+   línea continua, punto coral + número Bebas dorado→coral del papel,
+   fundidos en los bordes. La velocidad la fija mmMarqueeFill. */
+.sea-strip{overflow:hidden;}
+.sea-strip::before,.sea-strip::after{content:'';position:absolute;top:0;bottom:0;
+  width:56px;z-index:2;pointer-events:none;}
+.sea-strip::before{left:0;background:linear-gradient(to right,var(--sand,#FFF0E0),transparent);}
+.sea-strip::after{right:0;background:linear-gradient(to left,var(--sand,#FFF0E0),transparent);}
+[data-theme="dark"] .sea-strip::before{background:linear-gradient(to right,var(--bg,#0d1117),transparent);}
+[data-theme="dark"] .sea-strip::after{background:linear-gradient(to left,var(--bg,#0d1117),transparent);}
+.sea-strip .mq-track{padding:2px 0;}
+.sea-strip .mq-item b{color:var(--text,#0E1B30);font-weight:700;}
+/* su nota: la letra negra del de restaurantes, un poco mas grande */
+.promo-strip .mq-item{font-size:.98rem;}
+
+/* ══ EL TICKER DEL SALUDO = TERCERA BANDA DEL MARQUEE. Nada se corta:
+   la línea corre completa y el patrocinado abre cada vuelta. Conserva
+   su coral de contraste (#C4331C, AA sobre crema). */
+#heroTicker.hero-ticker{overflow:hidden!important;justify-content:flex-start!important;}
+#heroTicker::before,#heroTicker::after{content:'';position:absolute;top:0;bottom:0;
+  width:56px;z-index:2;pointer-events:none;}
+#heroTicker::before{left:0;background:linear-gradient(to right,var(--sand,#FFF0E0),transparent);}
+#heroTicker::after{right:0;background:linear-gradient(to left,var(--sand,#FFF0E0),transparent);}
+[data-theme="dark"] #heroTicker::before{background:linear-gradient(to right,var(--bg,#0d1117),transparent);}
+[data-theme="dark"] #heroTicker::after{background:linear-gradient(to left,var(--bg,#0d1117),transparent);}
+#heroTicker .mq-track{padding:2px 0;}
+#heroTicker .mq-item{font-size:.98rem;}
+#heroTicker .mq-item b{color:var(--text,#0E1B30);font-weight:700;}
+#heroTicker .mq-n{color:#C4331C;}
+#heroTicker .mq-dot{background:#C4331C;}
+[data-theme="dark"] #heroTicker .mq-item{color:rgba(255,255,255,.82);}
+[data-theme="dark"] #heroTicker .mq-item b{color:#fff;}
+[data-theme="dark"] #heroTicker .mq-n{color:#FF6B55;}
+[data-theme="dark"] #heroTicker .mq-dot{background:#FF6B55;}
+[data-theme="dark"] .sea-strip .mq-item{color:rgba(255,255,255,.82);}
+[data-theme="dark"] .sea-strip .mq-item b{color:#fff;}
+
+/* ══ LA FECHA DEL INICIO (Miami Ahora): de 10px casi invisibles a
+   dateline editorial con presencia. */
+#mmNow .mm-now-eyebrow{font-size:.8rem;letter-spacing:.18em;color:rgba(14,27,48,.6);}
+[data-theme="dark"] #mmNow .mm-now-eyebrow{color:rgba(255,255,255,.62);}
+
+/* 3 · POR QUÉ SE EXTENDÍA TANTO — medido: al abrir, la sección pasaba
+   de 432px a 2.026px (2.4 pantallas). De esos, 790px eran las dos
+   "paredes" de monitores: 13 cámaras en rejilla de 2 columnas se
+   apilan en 7 filas. Solución con el patrón que ya usa toda la app:
+   cada grupo pasa a RIEL HORIZONTAL con snap — una sola fila por
+   grupo, se deslizan como los carruseles de restaurantes y hoteles.
+   Se ve más contenido en menos alto y el ritmo horizontal se mantiene. */
+.mmcam-wall{display:flex;grid-template-columns:none;gap:11px;overflow-x:auto;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;
+  scrollbar-width:none;-ms-overflow-style:none;
+  padding-bottom:4px;margin-bottom:14px;}
+.mmcam-wall::-webkit-scrollbar{display:none;}
+.mmcam-wall .mmcam-mon{flex:0 0 63%;scroll-snap-align:start;aspect-ratio:16/10;}
+.mmcam-wall .mmcam-mon:last-child:nth-child(odd){grid-column:auto;aspect-ratio:16/10;}
+@media(min-width:640px){.mmcam-wall .mmcam-mon{flex-basis:38%;}}
+@media(min-width:900px){.mmcam-wall .mmcam-mon{flex-basis:26%;}}
+/* Los rótulos de cada monitor, también más destacados */
+.mmcam-mon-tx b{font-size:1.02rem;}
+.mmcam-mon-tx i{font-size:.8rem;}
+.mmcam-grp{font-size:1.1rem;}
+/* Señal de que el riel se desliza. Flecha sola: no necesita traducción,
+   así sobrevive al cambio EN/ES sin depender de heroApplyLang. */
+.mmcam-grp::after{content:attr(data-swipe);margin-left:auto;font-size:1.05rem;
+  color:rgba(11,21,38,.38);line-height:1;}
+
+/* ── FLECHAS DEL RIEL "EXPLORAR MÁS" (solo escritorio) ──────────────
+   Con mouse no había manera de mover el carrusel: la barra de scroll
+   está oculta y la rueda solo da eje vertical. En táctil no aparecen —
+   ahí el swipe ya funciona y el hint "Desliza →" sigue siendo la guía. */
+.mm-rail-wrap{position:relative;}
+.mm-rail-nav{display:none;}
+@media(min-width:900px){
+  .mm-rail-nav{display:flex;align-items:center;justify-content:center;
+    position:absolute;top:calc(50% - 7px);transform:translateY(-50%);
+    width:44px;height:44px;border-radius:50%;cursor:pointer;z-index:6;
+    background:rgba(11,21,38,.92);border:1px solid rgba(255,255,255,.16);
+    color:#fff;box-shadow:0 8px 24px rgba(14,27,48,.28);
+    transition:background .2s,border-color .2s,transform .22s cubic-bezier(.34,1.3,.64,1),opacity .25s;}
+  .mm-rail-nav svg{width:19px;height:19px;}
+  .mm-rail-nav:hover{background:#0E1B30;border-color:rgba(255,209,102,.6);
+    color:var(--gold,#FFD166);transform:translateY(-50%) scale(1.08);}
+  .mm-rail-prev{left:-6px;}
+  .mm-rail-next{right:-6px;}
+  /* En los extremos la flecha se apaga en vez de desaparecer: el riel
+     no "salta" de ancho y se entiende que ahí se acabó. */
+  .mm-rail-nav.off{opacity:0;pointer-events:none;}
+}
+/* PARALLAX (se queda): también es movimiento por acción del usuario —
+   el lockup se desliza SOLO mientras haces scroll, con retardo
+   elástico. */
+.twc-grid .tw-bar-body{transition:transform .3s cubic-bezier(.2,.7,.3,1);will-change:transform;}
+@media(prefers-reduced-motion:reduce){
+  .mm-flow{opacity:1;}
+  .mm-flow-in,.twc-cell.mm-flow-in{animation:none;}
+}
+/* (La transición y el hover de estas celdas viven arriba, con la receta
+   de .rcardh:hover — no volver a declararlos aquí.) */
+
+/* LETRAS PEQUEÑAS MÁS OSCURAS — FUERA (las puertas) */
+.twc-grid .tw-bar-eyebrow{color:#8F6300!important;}
+.twc-grid .tw-bar-when{color:rgba(11,21,38,.8);}
+.twc-grid .twc-cell:nth-of-type(2) .tw-bar-eyebrow{color:#FFD166!important;}
+.twc-grid .twc-cell:nth-of-type(2) .tw-bar-when{color:rgba(247,241,232,.88);}
+
+/* LETRAS PEQUEÑAS MÁS OSCURAS — DENTRO (el programa). Los acentos de
+   categoría/día/badge pasan de mezclar 50% a 38% de su color con navy:
+   conservan el matiz pero ganan tinta. */
+.twx-dow,.twx-type,.twx-badge{color:color-mix(in srgb,var(--twx-ac) 38%,#0B1526)!important;}
+@supports not (color:color-mix(in srgb,red,blue)){.twx-dow,.twx-type,.twx-badge{color:#0B1526!important;}}
+.twx-mon{color:rgba(11,21,38,.8);}
+.twx-venue{color:rgba(11,21,38,.9);}
+.twx-weekly{color:rgba(11,21,38,.76);}
+.twx-pill{color:rgba(11,21,38,.88);border-color:rgba(14,27,48,.2);}
+.twx-soon{color:#8F6300;border-color:rgba(143,99,0,.5);}
+.twx-tip{color:rgba(11,21,38,.88);}
+.twx-tip-lbl{color:#00695B;}
+.evs-head span{color:rgba(11,21,38,.72);}
+.evs-txt i{color:rgba(11,21,38,.7);}
+.evs-note{color:rgba(11,21,38,.62);}
 </style>
+
+<script>
+/* ══ mmFlow — "que fluyan": puertas y filas de eventos entran con una
+   subida suave y escalonada cuando aparecen en pantalla. Solo visual:
+   añade/quita clases, no toca handlers ni markup. Si el sistema pide
+   menos animación o no hay IntersectionObserver, no hace nada. */
+(function(){
+  if(!('IntersectionObserver' in window)) return;
+  try{ if(matchMedia('(prefers-reduced-motion:reduce)').matches) return; }catch(e){}
+  var io=new IntersectionObserver(function(es){
+    var seen=0;
+    es.forEach(function(en){
+      if(!en.isIntersecting) return;
+      var el=en.target;
+      /* Las puertas traen su propia secuencia con delays CSS (.05/.14);
+         pisarles animationDelay la rompería. Solo las filas se escalonan. */
+      if(!el.classList.contains('twc-cell')){ el.style.animationDelay=(seen*90)+'ms'; seen++; }
+      el.classList.add('mm-flow-in');
+      io.unobserve(el); ioDoor.unobserve(el);
+    });
+  },{threshold:.12});
+  /* Observer propio de las PUERTAS (su spec): disparan cuando la
+     sección asoma ~35%, con -8% de margen inferior, una sola vez. */
+  var ioDoor=new IntersectionObserver(function(es){
+    es.forEach(function(en){
+      if(!en.isIntersecting) return;
+      en.target.classList.add('mm-flow-in');
+      ioDoor.unobserve(en.target);
+    });
+  },{threshold:.35,rootMargin:'0px 0px -8% 0px'});
+  function mmFlowScan(){
+    var n=document.querySelectorAll('.twc-cell,.twx-card'),i,el;
+    for(i=0;i<n.length;i++){
+      el=n[i];
+      if(el._mmFlow) continue;
+      el._mmFlow=1;
+      el.classList.add('mm-flow');
+      (el.classList.contains('twc-cell')?ioDoor:io).observe(el);
+    }
+  }
+  window._mmFlowScan=mmFlowScan;
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',mmFlowScan);}else{mmFlowScan();}
+  new MutationObserver(function(){
+    clearTimeout(window._mmFlowT);
+    window._mmFlowT=setTimeout(mmFlowScan,180);
+  }).observe(document.documentElement,{childList:true,subtree:true});
+
+  /* PARALLAX de las puertas: el lockup (.tw-bar-body) se desliza según
+     la posición de su puerta en el viewport, con la transición CSS
+     haciendo de retardo elástico. rAF-throttled, transform-only, solo 2
+     elementos: coste ~cero. Hereda el guard de reduced-motion de arriba. */
+  var pTick=false;
+  function mmDoorPar(){
+    pTick=false;
+    var cells=document.querySelectorAll('.twc-grid .twc-cell');
+    if(!cells.length) return;
+    var vh=window.innerHeight||1;
+    for(var i=0;i<cells.length;i++){
+      var r=cells[i].getBoundingClientRect();
+      if(r.bottom<0||r.top>vh) continue;
+      var c=(r.top+r.height/2)/vh-.5;                 /* -0.5 arriba … 0.5 abajo */
+      var y=Math.max(-14,Math.min(14,-c*28));
+      var body=cells[i].querySelector('.tw-bar-body');
+      if(body) body.style.transform='translateY('+y.toFixed(1)+'px)';
+    }
+  }
+  window.addEventListener('scroll',function(){
+    if(!pTick){pTick=true;requestAnimationFrame(mmDoorPar);}
+  },{passive:true});
+})();
+</script>
 
 <script>
 /* ══ ACCESSIBILITY WIRING ══════════════════════════════════════════════
