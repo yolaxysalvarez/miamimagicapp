@@ -11473,6 +11473,9 @@ function mmGoPremium(plan){
   try{ localStorage.setItem('mm_premium_intent', plan||'premium'); }catch(e){}
   if(!mmHasAccount()){
     try{ if(typeof closeAccount==='function') closeAccount(); }catch(e){}
+    /* Cierra el chat que lanzó el gate (Pregúntale a un Local z20000 / planificador) antes de abrir el registro (z10000) */
+    try{ if(typeof closeMM==='function') closeMM('overlayAmigo'); }catch(e){}
+    try{ if(typeof closeAIPanel==='function' && document.getElementById('aiPlanOverlay')) closeAIPanel(); }catch(e){}
     if(typeof openSignup==='function'){
       openSignup();
       setTimeout(function(){
