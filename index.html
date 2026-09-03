@@ -308,7 +308,11 @@ button,a{cursor:pointer;}
 .full-grid-beach{display:none;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;padding:0 22px 8px;}
 .full-grid-venue{display:none;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px;padding:0 22px 8px;}
 .full-grid-nite{display:none;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:18px;padding:0 22px 8px;}
-.full-grid-stad{display:none;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px;padding:0 22px 8px;}
+.full-grid-stad{display:none;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:18px;padding:0 22px 8px;}
+/* Estadios: la card era mas alta que las demas (foto 140 + cuerpo grande). Igualada a Nightlife. */
+.full-grid-stad .stcard-img{height:120px!important;}
+.full-grid-stad .stcard-body{padding:12px!important;}
+.full-grid-stad .stname{font-size:.95rem!important;margin-bottom:4px!important;}
 @media(max-width:899px){
   .full-grid-rest{grid-template-columns:1fr!important;}
   .full-grid-beach{grid-template-columns:1fr!important;}
@@ -374,6 +378,9 @@ button,a{cursor:pointer;}
   padding:13px 15px;display:flex;flex-direction:column;gap:3px;background:#fff;overflow:hidden;
   border-radius:0 0 17px 17px;}
 @media(min-width:900px){.rcardh-info{height:142px;}}
+/* Historia: los títulos de 2 líneas empujaban el 'Leer la historia' fuera del bloque (altura fija). Que crezca y le quite alto a la foto. */
+#mttRail .rcardh-info{height:auto;min-height:134px;}
+@media(min-width:900px){#mttRail .rcardh-info{min-height:142px;}}
 .rcardh-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
 .rcardh-meta,.rcardh-metaitem{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .rcardh-metarow{margin-top:auto;}
@@ -641,7 +648,7 @@ button,a{cursor:pointer;}
 #amigoChat a{color:#FF4D35;}
 /* ── TRENDING pill (floating, no full-bleed cut) ── */
 .hero-ticker{
-  /* mismo diseño que la banda de Boating & Fishing, en coral */
+  /* mismo diseño que la banda de Boating and Fishing, en coral */
   width:calc(100% - 32px)!important;max-width:660px!important;
   margin:14px auto 12px!important;
   border-radius:4px!important;
@@ -1212,6 +1219,30 @@ footer h4{font:800 .64rem 'DM Sans',sans-serif!important;letter-spacing:.2em;tex
 .f-links a:hover{color:var(--coral);}
 .f-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:20px;display:flex;justify-content:space-between;align-items:center;max-width:1380px;flex-wrap:wrap;gap:10px;}
 .f-copy,.f-rights{color:rgba(255,255,255,.28);font-size:.7rem;}
+/* ── PIE REDISEÑADO (sep 2026) — letra mas grande y todo alineado en una
+   sola columna centrada en el telefono, en vez de bloques regados. ── */
+.f-tag{font-size:.92rem!important;}
+.f-links a{font-size:.92rem!important;padding:3px 0;}
+.f-links a:hover{color:#fff;}
+footer h4{font-size:.72rem!important;margin-bottom:12px;}
+.f-cred{max-width:none;}
+.f-cred-eyebrow{font-size:.7rem!important;}
+.f-cred-row{font-size:.92rem!important;}
+.f-cred-row a{color:rgba(255,255,255,.86);text-decoration:none;}
+.f-cred-made{font-size:.72rem!important;}
+.f-affdisc{font-size:.78rem!important;}
+.f-copy,.f-rights{font-size:.78rem!important;color:rgba(255,255,255,.4)!important;}
+@media(max-width:900px){
+  footer{padding:38px 22px 22px!important;text-align:center;}
+  .footer-inner{grid-template-columns:1fr!important;gap:26px!important;margin-bottom:26px!important;}
+  .footer-inner>div:first-child{grid-column:auto!important;}
+  .f-logo{justify-content:center;}
+  .f-tag{margin-left:auto;margin-right:auto;max-width:34ch;}
+  .f-cred{text-align:left;margin-left:auto;margin-right:auto;max-width:340px;}
+  .footer-inner>div:first-child>div[style*="display:flex"]{justify-content:center;}
+  .f-links{align-items:center;gap:9px;}
+  .f-bottom{flex-direction:column;text-align:center;gap:6px;}
+}
 .fade{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s;}.fade.vis{opacity:1;transform:translateY(0);}
 /* BG */
 .bg-coral{background-color:#FF4D3520;}.bg-teal{background-color:#00C9B120;}.bg-purple{background-color:#8B5CF620;}.bg-orange{background:linear-gradient(135deg,#FB923C14,#FDE68A22);}.bg-blue{background-color:#3B82F620;}.bg-pink{background-color:#EC489920;}.bg-green{background:linear-gradient(135deg,#10B98114,#6EE7B722);}.bg-red{background:linear-gradient(135deg,#EF444414,#FCA5A522);}.bg-indigo{background:linear-gradient(135deg,#6366F114,#A5B4FC22);}.bg-cyan{background:linear-gradient(135deg,#06B6D414,#67E8F922);}.bg-amber{background:linear-gradient(135deg,#F59E0B14,#FDE68A22);}.bg-rose{background:linear-gradient(135deg,#F43F5E14,#FDA4AF22);}.bg-lime{background:linear-gradient(135deg,#84CC1614,#D9F99D22);}.bg-fuchsia{background:linear-gradient(135deg,#D946EF14,#F0ABFC22);}.bg-sky{background:linear-gradient(135deg,#0EA5E914,#BAE6FD22);}.bg-nd1{background:linear-gradient(135deg,#1e3a5f,#0A1628);}.bg-nd2{background:linear-gradient(135deg,#2d1b69,#180a3d);}.bg-nd3{background:linear-gradient(135deg,#003830,#001e1a);}.bg-nd4{background:linear-gradient(135deg,#5c1c1c,#2d0000);}.bg-nd5{background:linear-gradient(135deg,#3b2000,#1a0e00);}.bg-nd6{background:linear-gradient(135deg,#162040,#0a1228);}.bb1{background-color:#0ea5e9;}.bb2{background-color:#10b981;}.bb3{background-color:#f59e0b;}.bb4{background-color:#8B5CF6;}.bb5{background-color:#EC4899;}.bb6{background-color:#06b6d4;}.bb7{background-color:#84cc16;}.bb8{background-color:#f97316;}
@@ -3113,7 +3144,7 @@ body{padding-bottom:0;}
       </a>
       <a href="#" onclick="go('sec-esc');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-blue"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.15s"><path d="M3 18.5h18l-2 3H5z"/><path d="M4.8 18.5L6 12.5h12l1.2 6"/><path d="M8 12.5V8h8v4.5"/><path d="M12 8V4.5"/></svg></div>
-        <span data-en="Cruises &amp; Escapes" data-es="Cruceros y Escapadas">Cruceros y Escapadas</span>
+        <span data-en="Cruises and Escapes" data-es="Cruceros y Escapadas">Cruceros y Escapadas</span>
       </a>
       <a href="#" onclick="go('sec-lux');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-gold"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.13s"><path d="M12 2.8l2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.2l6-.8z"/></svg></div>
@@ -3121,7 +3152,7 @@ body{padding-bottom:0;}
       </a>
       <a href="#" onclick="go('sec-water');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-teal"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.14s"><path d="M3 18h18l-2 3H5z"/><path d="M4.5 18l1.5-5.5h12L19.5 18"/><path d="M12 3v9"/><path d="M12 3l5 6.5H12z"/></svg></div>
-        <span data-en="Boating &amp; Fishing" data-es="Botes y Pesca">Botes y Pesca</span>
+        <span data-en="Boating and Fishing" data-es="Botes y Pesca">Botes y Pesca</span>
       </a>
       <a href="#" onclick="goWeek();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-teal"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.15s"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
@@ -3237,7 +3268,7 @@ body{padding-bottom:0;}
       </div>
       <a href="#" onclick="go('sec-art');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-coral"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M2 12c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10-10 10c-1.5 0-3-.3-4.3-.9"/><path d="M2 12c2 2 4 3 6 3s4-1 6-3"/></svg></div>
-        Art &amp; Galleries <span class="hm-link-count">8</span>
+        Art and Galleries <span class="hm-link-count">8</span>
       </a>
       <a href="#" onclick="go('sec-coffee');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 010 8h-1"/><path d="M3 8h14v9a4 4 0 01-4 4H7a4 4 0 01-4-4V8z"/><path d="M6 2v3M10 2v3M14 2v3"/></svg></div>
@@ -3245,7 +3276,7 @@ body{padding-bottom:0;}
       </a>
       <a href="#" onclick="go('sec-kids');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-teal"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M6 21v-2a6 6 0 0112 0v2"/><path d="M9 14l2 2 4-4"/></svg></div>
-        Kids &amp; Families <span class="hm-link-count">8</span>
+        Kids and Families <span class="hm-link-count">8</span>
       </a>
       <a href="#" onclick="go('sec-daytrips');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 010 20M2 12h20"/></svg></div>
@@ -3506,7 +3537,7 @@ body{padding-bottom:0;}
       <div>
         <div class="f-logo"><span class="fm">MIAMI</span><span class="fstar"></span><span class="fg">MAGIC</span></div>
         <p class="f-tag" id="fTag"></p>
-        <div class="f-cred"><div class="f-cred-eyebrow" id="fDevLbl"></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 20V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14"/><path d="M15 10h3a2 2 0 0 1 2 2v8"/><path d="M3 20h18"/><path d="M8 8h2M8 12h2M8 16h2"/></svg></span><span>Y &amp; Y Entertainment Corp</span></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg></span><span><a href="mailto:yyentertainment@outlook.com">yyentertainment@outlook.com</a></span></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M6 6l3.5 3.5M18 6l-3.5 3.5M6 18l3.5-3.5M18 18l-3.5-3.5"/></svg></span><span><a href="mailto:yyentertainment@outlook.com?subject=Miami Magic Support">Help &amp; Support · Ayuda y Soporte</a></span></div><div class="f-cred-made"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M12 20.5C6.5 16.5 3 13 3 9.3 3 6.4 5.2 4.5 7.7 4.5c1.7 0 3.2.9 4.3 2.4 1.1-1.5 2.6-2.4 4.3-2.4 2.5 0 4.7 1.9 4.7 4.8 0 3.7-3.5 7.2-9 11.2z"/></svg><span>Designed &amp; produced in Miami · Diseñada y producida en Miami</span></div></div>
+        <div class="f-cred"><div class="f-cred-eyebrow" id="fDevLbl"></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 20V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14"/><path d="M15 10h3a2 2 0 0 1 2 2v8"/><path d="M3 20h18"/><path d="M8 8h2M8 12h2M8 16h2"/></svg></span><span>Y &amp; Y Entertainment Corp</span></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg></span><span><a href="mailto:yyentertainment@outlook.com">yyentertainment@outlook.com</a></span></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M6 6l3.5 3.5M18 6l-3.5 3.5M6 18l3.5-3.5M18 18l-3.5-3.5"/></svg></span><span><a href="mailto:yyentertainment@outlook.com?subject=Miami Magic Support">Help and Support · Ayuda y Soporte</a></span></div><div class="f-cred-made"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M12 20.5C6.5 16.5 3 13 3 9.3 3 6.4 5.2 4.5 7.7 4.5c1.7 0 3.2.9 4.3 2.4 1.1-1.5 2.6-2.4 4.3-2.4 2.5 0 4.7 1.9 4.7 4.8 0 3.7-3.5 7.2-9 11.2z"/></svg><span>Designed &amp; produced in Miami · Diseñada y producida en Miami</span></div></div>
         <div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap">
           <a href="https://www.instagram.com/miamimagicapp/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-size:.82rem;font-weight:600;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:9px 15px;border-radius:8px">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -3665,6 +3696,7 @@ restaurants:[
   {id:'r95',name:'Marabú Restaurant',cat:'Cuban',cat_es:'Cubano',filter:'cuban',emoji:'',bg:'bg-coral',badge:'Brickell City Centre',rating:4.8,rev:'10.9k',price:'$$',occ:'Family · Group',occ_es:'Familia · Grupos',tags:['Cuban','Coal-Fired','Brickell City Centre'],desc:'Coal-fired Cuban cuisine on the 4th floor of Brickell City Centre — a modern take on traditional flavors, live music and mojitos with sugar cane, in a space that transports you straight to Cuba.',desc_es:'Cocina cubana al carbón en el piso 4 de Brickell City Centre — un giro moderno a los sabores tradicionales, música en vivo y mojitos con caña de azúcar, en un espacio que te transporta directo a Cuba.',addr:'701 S Miami Ave Fl 4, Brickell City Centre',hrs:'Sun–Thu 11:30AM–10PM · Fri–Sat 11:30AM–11PM',link:'https://maraburestaurant.com/'},
   {id:'r96',name:'Tin Tin',cat:'Cuban',cat_es:'Cubano',filter:'cuban',emoji:'',bg:'bg-coral',badge:'New for Miami Spice',rating:4.9,rev:'712',price:'$$$',occ:'Date Night',occ_es:'Cena Romántica',tags:['Cuban','French Accent','Little Havana'],desc:'Little Havana\'s chef-forward Cuban dining room, from the Tinta y Café team — Cuban cooking with a French and Italian accent. New to Miami Spice 2026.',desc_es:'La sala cubana con toque de chef en La Pequeña Habana, del equipo de Tinta y Café — cocina cubana con acento francés e italiano. Nuevo en Miami Spice 2026.',addr:'2555 SW 8th St, Little Havana',hrs:'Tue–Sat 4:30–10PM · Sun 11AM–4:30PM',link:'https://www.tintinmiami.co/'},
   {id:'r97',name:'China Grill',cat:'Asian Fusion',cat_es:'Fusión Asiática',filter:'japanese',emoji:'',bg:'bg-green',badge:'New for Miami Spice',rating:4.4,rev:'108',price:'$$$$',occ:'Date Night',occ_es:'Cena Romántica',tags:['Asian Fusion','Bal Harbour','Iconic Revival'],desc:'The restaurant that defined Miami\'s power-dinner era in the \'90s is back — this time at Bal Harbour Shops. New to Miami Spice 2026.',desc_es:'El restaurante que definió la era de las cenas de poder en Miami en los 90 está de vuelta — ahora en Bal Harbour Shops. Nuevo en Miami Spice 2026.',addr:'9700 Collins Ave D-135, Bal Harbour',hrs:'Daily 12PM–11PM (Fri–Sat until 12AM)',link:'https://chinagrillbalharbour.com/'},
+  {id:'r100',name:'Little Hen',cat:'Breakfast and Brunch',cat_es:'Desayuno y Brunch',filter:'american',emoji:'',bg:'bg-amber',badge:'Midtown Brunch',badge_es:'Brunch en Midtown',rating:4.4,rev:'1.1k',price:'$$',occ:'Brunch · Date',occ_es:'Brunch · Pareja',tags:['Brunch','Breakfast','Afternoon Tea'],desc:'An English-inspired brunch boutique in Midtown: pastel rooms, flowers everywhere and a tea-party mood. The Rose Petal Pancakes are the signature; the chilaquiles are the savory answer. Weekends fill up — reserve.',desc_es:'Una boutique de brunch de inspiración inglesa en Midtown: salones en tonos pastel, flores por todas partes y ambiente de hora del té. Los Rose Petal Pancakes son el plato insignia; los chilaquiles, la respuesta salada. Los fines de semana se llena — reserva.',addr:'3451 NE 1st Ave Suite 100/102, Midtown',hrs:'Mon–Fri 8 AM–3 PM · Sat–Sun 8 AM–4 PM',hrs_es:'Lun–Vie 8 AM–3 PM · Sáb–Dom 8 AM–4 PM',pro:false,pnote:'It closes mid-afternoon — this is breakfast and lunch only, no dinner. Same family runs the Weston and Fort Lauderdale locations.',pnote_es:'Cierra a media tarde — es solo desayuno y almuerzo, no hay cena. La misma familia tiene los locales de Weston y Fort Lauderdale.',link:'https://dish.io/littlehen'},
   {id:'r98',name:'Amazónico Miami',cat:'Latin American',cat_es:'Latinoamericana',filter:'latin',emoji:'',bg:'bg-orange',badge:'New for Miami Spice',rating:4.6,rev:'2.2k',price:'$$$$',occ:'Rooftop · Group',occ_es:'Rooftop · Grupos',tags:['Latin','Rooftop','Nightlife'],desc:'Brickell\'s lush rainforest escape where Latin America, Asia, and nightlife all meet at the table — a three-story jungle-inspired venue with a rooftop lounge. New to Miami Spice 2026.',desc_es:'El exuberante escape amazónico de Brickell donde Latinoamérica, Asia y la vida nocturna se encuentran en la mesa — tres pisos inspirados en la selva con rooftop lounge. Nuevo en Miami Spice 2026.',addr:'800 Brickell Ave, Brickell',pnote:'Only the ground-floor restaurant admits minors, with an adult and a reservation, and only until 8 PM; after 10 PM the whole venue is 21+ and the lounge and rooftop are 21+ at all times. Dress code is enforced. Valet is right out front on Brickell Avenue.',pnote_es:'Solo el restaurante de planta baja admite menores, con un adulto y con reserva, y nada más hasta las 8 PM; después de las 10 PM todo el local es 21+, y el lounge y el rooftop son 21+ siempre. El código de vestimenta se hace cumplir. El valet está justo al frente, en Brickell Avenue.',hrs:'Mon–Wed 6–11:30PM · Thu–Sat 6PM–12:30AM · Sun 6–11:30PM',link:'https://www.amazonicorestaurant.com/miami/'},
   {id:'r02',name:'Joe\'s Stone Crab',cat:'Seafood',cat_es:'Mariscos',filter:'seafood',emoji:'',bg:'bg-teal',badge:'Since 1913',rating:4.8,rev:'5.4k',price:'$$$',occ:'Special Occasion',occ_es:'Ocasión especial',tags:['Stone Crab','Fine Dining','Historic'],desc:'Miami\'s most legendary seafood restaurant since 1913. Stone crab claws Oct–May with legendary mustard sauce.',desc_es:'El restaurante de mariscos mas legendario de Miami desde 1913. Cangrejos oct–may.',addr:'11 Washington Ave, South Beach',hrs:'Wed–Sun 5–10 PM · Lunch Fri–Sun 11:30 AM–2:30 PM · Closed Mon–Tue',pro:false,pnote:'The Monday and Tuesday closure is their summer schedule, so hours shift with the stone crab season — confirm on joesstonecrab.com before you go. The Take Away counter next door stays open all year.',pnote_es:'El cierre de lunes y martes es su horario de verano, así que los horarios cambian con la temporada de stone crab — confirma en joesstonecrab.com antes de ir. El Take Away de al lado abre todo el año.',link:'https://www.joesstonecrab.com'},
   {id:'r03',name:'KYU',cat:'Asian BBQ',cat_es:'BBQ Asiático',filter:'asian',emoji:'',bg:'bg-orange',badge:'Trending',rating:4.6,rev:'1.8k',price:'$$$',occ:'Date Night',occ_es:'Cita romántica',tags:['Asian BBQ','Wood-Fired','Wynwood'],desc:'Wynwood\'s wood-fired phenomenon — Korean BBQ meets Japanese technique. The smoked beef brisket and the coconut cake have cult status among locals; book ahead, it\'s one of Miami\'s toughest tables.',desc_es:'El fenómeno a leña de Wynwood: BBQ coreano con técnica japonesa. El brisket ahumado y el pastel de coco tienen estatus de culto entre los locales. Reserva con tiempo: es una de las mesas más difíciles de Miami.',addr:'251 NW 25th St, Wynwood',hrs:'Mon–Tue 5–10 PM · Wed & Sun 12–10 PM · Thu–Sat 12–11 PM',pro:false,link:'https://www.kyurestaurants.com/miami/'},
@@ -3675,7 +3707,7 @@ restaurants:[
   {id:'r09',name:'Ariete',cat:'American',cat_es:'Americano',filter:'american',emoji:'',bg:'bg-amber',badge:'Local Fave',rating:4.7,rev:'890',price:'$$',occ:'Casual',occ_es:'Casual',tags:['Smash Burger','Farm-to-Table'],desc:'Michelin-starred Coconut Grove icon from chef Michael Beltran — Cuban-American haute cuisine where a foie gras pastelito and a legendary smash burger share the same menu. Miami\'s story on a plate.',desc_es:'Ícono de Coconut Grove con estrella Michelin del chef Michael Beltrán: alta cocina cubano-americana donde un pastelito de foie gras y una smash burger legendaria comparten el mismo menú. La historia de Miami en un plato.',addr:'3540 Main Hwy, Coconut Grove',hrs:'Sun–Thu 5:30–10 PM · Fri–Sat 5:30–11 PM',pro:false,link:'https://www.arietecoconutgrove.com'},
   {id:'r11',name:'Coyo Taco',cat:'Mexican',cat_es:'Mexicano',filter:'mexican',emoji:'',bg:'bg-orange',badge:'Late Night',rating:4.4,rev:'3.2k',price:'$',occ:'Late Night',occ_es:'Noche',tags:['Tacos','Mezcal','Wynwood'],desc:'Wynwood\'s beloved taco institution. From al pastor and carnitas to creative seasonal specials — fresh tortillas, bold salsas, and craft mezcal cocktails in a vibrant outdoor setting.',desc_es:'La institución taquera de Wynwood. Al pastor, carnitas y especiales de temporada — tortillas frescas, salsas vibrantes y cócteles de mezcal artesanal.',addr:'2300 NW 2nd Ave, Wynwood',hrs:'Mon–Wed 11 AM–2 AM · Thu–Sun 11 AM–3 AM',pro:false,photo_url:'https://youtu.be/0ZnZXE8mSfA',link:'https://www.coyo-taco.com/restaurants/wynwood'},
   {id:'r12',name:'Mandolin Aegean Bistro',cat:'Greek · Turkish',cat_es:'Griego · Turco',filter:'mediterranean',emoji:'',bg:'bg-blue',badge:'Garden Dining',rating:4.6,rev:'1.9k',price:'$$$',occ:'Brunch',occ_es:'Brunch',tags:['Mezze','Garden','Brunch'],desc:'A 1940s bungalow turned magical Aegean garden — whitewashed walls, blue shutters and authentic Greek-Turkish mezze under the trees. Regulars swear an afternoon here feels like being in Mykonos.',desc_es:'Un bungalow de los años 40 convertido en un mágico jardín egeo: paredes blancas, persianas azules y auténticos mezze greco-turcos bajo los árboles. Sus habituales juran que una tarde aquí se siente como estar en Mykonos.',addr:'4312 NE 2nd Ave, Buena Vista',hrs:'Daily 12–11 PM',pro:false,link:'https://www.mandolinmiami.com'},
-  {id:'r100',name:'Delilah Miami',cat:'Supper Club',cat_es:'Supper Club',filter:'american',emoji:'',bg:'bg-gold',badge:'Dinner & Show',rating:4.2,rev:'1k',price:'$$$$',occ:'Date Night · Celebration',occ_es:'Cita · Celebraci\u00f3n',tags:['Supper Club','Live Show','Art Deco'],desc:'A 1920s-style supper club on Brickell Key from the h.wood group (Los Angeles, Las Vegas, Dallas): Art Deco opulence, live music, a jazz night, and a room built for a night out rather than a quiet dinner. Steaks, classics and a serious cocktail list.',desc_es:'Un supper club estilo años 20 en Brickell Key del grupo h.wood (Los Ángeles, Las Vegas, Dallas): opulencia Art Deco, música en vivo, una noche de jazz y un salón hecho para salir de fiesta más que para una cena tranquila. Carnes, clásicos y una carta de cócteles seria.',addr:'301 Brickell Key Dr, Brickell Key',hrs:'Tue–Sat · Golden Hour 5–7 PM · Dinner from 6 PM · Closed Sun–Mon',pro:true,perks:['photo'],pnote:'Golden Hour (Tue–Sat 5–7 PM) is half off the signature cocktails, beer and wine by the glass. Closed Sunday and Monday, and it is a scene — dress up and don\'t expect a quiet conversation.',pnote_es:'El Golden Hour (Mar–Sáb 5–7 PM) es mitad de precio en cócteles de la casa, cerveza y vino por copa. Cierra domingo y lunes, y es ambiente de fiesta — vístete para la ocasión y no esperes una conversación tranquila.',link:'https://www.delilahrestaurants.com/location/miami/'},
+  {id:'r100',name:'Delilah Miami',cat:'Supper Club',cat_es:'Supper Club',filter:'american',emoji:'',bg:'bg-gold',badge:'Dinner and Show',rating:4.2,rev:'1k',price:'$$$$',occ:'Date Night · Celebration',occ_es:'Cita · Celebraci\u00f3n',tags:['Supper Club','Live Show','Art Deco'],desc:'A 1920s-style supper club on Brickell Key from the h.wood group (Los Angeles, Las Vegas, Dallas): Art Deco opulence, live music, a jazz night, and a room built for a night out rather than a quiet dinner. Steaks, classics and a serious cocktail list.',desc_es:'Un supper club estilo años 20 en Brickell Key del grupo h.wood (Los Ángeles, Las Vegas, Dallas): opulencia Art Deco, música en vivo, una noche de jazz y un salón hecho para salir de fiesta más que para una cena tranquila. Carnes, clásicos y una carta de cócteles seria.',addr:'301 Brickell Key Dr, Brickell Key',hrs:'Tue–Sat · Golden Hour 5–7 PM · Dinner from 6 PM · Closed Sun–Mon',pro:true,perks:['photo'],pnote:'Golden Hour (Tue–Sat 5–7 PM) is half off the signature cocktails, beer and wine by the glass. Closed Sunday and Monday, and it is a scene — dress up and don\'t expect a quiet conversation.',pnote_es:'El Golden Hour (Mar–Sáb 5–7 PM) es mitad de precio en cócteles de la casa, cerveza y vino por copa. Cierra domingo y lunes, y es ambiente de fiesta — vístete para la ocasión y no esperes una conversación tranquila.',link:'https://www.delilahrestaurants.com/location/miami/'},
   {id:'r101',name:'Elia on the River',cat:'Coastal Italian',cat_es:'Italiano Costero',filter:'italian',emoji:'',bg:'bg-teal',badge:'On The River',rating:4.8,rev:'4.6k',price:'$$$',occ:'Date Night · Friends',occ_es:'Cita · Amigos',tags:['Coastal Italian','Waterfront','Pizza'],desc:'One of the highest-rated dining rooms in Miami, right on the Miami River at River Landing. Southern Italian cooking with standout truffle carpaccio, brick-oven pizza and octopus, and a terrace where boats slide past your table.',desc_es:'Uno de los restaurantes mejor calificados de Miami, justo sobre el Río Miami en River Landing. Cocina del sur de Italia con carpaccio de trufa, pizza al horno de leña y pulpo sobresalientes, y una terraza donde los botes pasan junto a tu mesa.',addr:'1440 NW N River Dr Ste 195, Miami',hrs:'Sun–Thu 11:30 AM–11 PM · Fri–Sat 11:30 AM–12 AM',pro:true,perks:['sunset','photo'],pnote:'It is on the ground floor of River Landing facing the river, and the garage gives you two free hours — follow the signs, the street entrance is easy to miss. Ask for a riverfront table. On weekends the lounge stays open later than the kitchen.',pnote_es:'Está en la planta baja de River Landing, frente al río, y el garaje te da dos horas gratis — sigue la señalización, la entrada por la calle es fácil de pasar por alto. Pide mesa frente al río. Los fines de semana el lounge cierra más tarde que la cocina.',link:'https://www.eliaontheriver.com/'},
   {id:'r99',name:'Graziano\'s Coral Gables',cat:'Argentinian',cat_es:'Argentino',filter:'latin',emoji:'',bg:'bg-coral',badge:'Local Institution',rating:4.6,rev:'2k',price:'$$$',occ:'Family · Dinner',occ_es:'Familia · Cena',tags:['Argentinian','Steakhouse','Wine'],desc:'A Miami family institution: Argentinian parrilla with quebracho-wood grilling, house empanadas, handmade pastas and one of the deepest wine lists in the city.',desc_es:'Una institución familiar de Miami: parrilla argentina con leña de quebracho, empanadas de la casa, pastas hechas a mano y una de las cartas de vinos más profundas de la ciudad.',addr:'394 Giralda Ave, Coral Gables',hrs:'Mon–Fri 11:30 AM–3 PM & 5–10:30 PM (Fri to 11:30 PM) · Sat 12–11:30 PM · Sun 12–10 PM',pro:true,link:'https://www.grazianosgroup.com/pages/coral-gables',photo_url:''},
   {id:'r16',name:'Bachour',cat:'Pastry · Café',cat_es:'Pastelería',filter:'american',emoji:'',bg:'bg-rose',badge:'World-Class Pastry',rating:4.9,rev:'2.6k',price:'$$',occ:'Brunch',occ_es:'Brunch',tags:['Pastry','Croissants','Coral Gables'],desc:'Chef Antonio Bachour — one of the world\'s best pastry chefs. The croissants are jaw-dropping.',desc_es:'El chef Bachour, uno de los mejores pasteleros del mundo. Croissants impresionantes.',addr:'2020 Salzedo St, Coral Gables',hrs:'Mon–Sat 7 AM–7 PM · Sun 7 AM–5 PM',pro:false,link:'https://antoniobachour.com/'},
@@ -3701,7 +3733,7 @@ restaurants:[
   {id:'r43',name:'Abiaka',cat:'Native American · Florida',cat_es:'Nativo Americano',filter:'american',emoji:'',bg:'bg-green',badge:'Seminole Cultural',rating:4.7,rev:'720',price:'$$$',occ:'Cultural',occ_es:'Cultural',tags:['Seminole','Native American','Unique'],desc:'A unique dining experience inside the Seminole Hard Rock celebrating Native American cuisine and culture.',desc_es:'Una experiencia gastronómica única dentro del Seminole Hard Rock celebrando la cocina nativa americana.',addr:'1 Seminole Way, Hollywood (Seminole Hard Rock)',hrs:'Daily 5–10 PM',pro:true,photo_url:'https://youtu.be/Q-aG1NWPFlw',link:'https://www.google.com/maps/search/Abiaka+Wood+Fire+Grill+Seminole+Hard+Rock+Hollywood'},
   {id:'r44',name:'Calle Dragones',cat:'Asian Fusion · Cocktail Bar',cat_es:'Fusión Asiática',filter:'asian',emoji:'',bg:'bg-purple',badge:'Little Havana',rating:4.8,rev:'850',price:'$$$',occ:'Date Night',occ_es:'Cita',tags:['Asian Fusion','Cocktails','Little Havana'],desc:'An extraordinary Asian fusion cocktail bar hidden in Little Havana. Creative cocktails and incredible small plates.',desc_es:'Un extraordinario bar de cócteles de fusión asiática escondido en Little Havana.',addr:'1036 SW 8th St, Little Havana',hrs:'Wed–Thu 5–11 PM · Fri–Sat 5 PM–1 AM · Sun 11 AM–10 PM · Closed Mon–Tue',pro:true,photo_url:'https://youtu.be/iiMnTgNSZlA',link:'https://calledragonesmia.com'},
   {id:'r45',name:'Neme Gastro Bar',cat:'Venezuelan · Latin',cat_es:'Venezolano · Latino',filter:'latin',emoji:'',bg:'bg-orange',badge:'Hidden Gem',rating:4.7,rev:'560',price:'$$',occ:'Casual',occ_es:'Casual',tags:['Venezuelan','Latin','Gastropub'],desc:'A beloved Venezuelan gastropub with outstanding arepas, tequeños, and creative Latin cocktails.',desc_es:'Un querido gastropub venezolano con arepas, tequeños y cócteles latinos creativos.',addr:'1252 SW 22nd St, The Roads',hrs:'Mon–Thu 5 PM–4 AM · Fri–Sat 5 PM–5 AM · Sun 6 PM–4 AM',pro:true,photo_url:'https://youtu.be/kn4jTV2pRXU',link:'https://www.google.com/maps/search/Neme+Gastro+Bar+Miami'},
-  {id:'r08',name:'Ockap Caviar & Cuisine',cat:'Fine Dining · Caviar',cat_es:'Alta Cocina · Caviar',filter:'finedining',emoji:'',bg:'bg-navy',badge:'Caviar House',rating:4.9,rev:'42',price:'$$$$',occ:'Special Occasion',occ_es:'Ocasi\u00f3n Especial',tags:['Caviar','French','Brickell'],desc:'A Brickell dining room where caviar is the foundation of the meal rather than a garnish \u2014 at least ten grams of Osetra on every course, twenty on the pastas and mains. The menu was built in Paris with Ducasse Conseil; Spanish chef Carlos Consuegra Graino runs the kitchen. The caviar croquetas and the fried chicken with caviar are the signatures.',desc_es:'Un comedor de Brickell donde el caviar es la base de la comida y no un adorno: al menos diez gramos de Osetra en cada tiempo, veinte en las pastas y los platos fuertes. El men\u00fa se dise\u00f1\u00f3 en Par\u00eds con Ducasse Conseil y el chef espa\u00f1ol Carlos Consuegra Graino dirige la cocina. Las croquetas de caviar y el pollo frito con caviar son los platos insignia.',addr:'1060 Brickell Ave, Brickell',hrs:'Tue\u2013Thu 5:30\u201310 PM \u00b7 Fri\u2013Sat 5:30\u201311:45 PM \u00b7 Closed Sun\u2013Mon',pro:true,photo_url:'https://youtu.be/mu-XK8sEcWo',link:'https://ockapcaviar.com'},
+  {id:'r08',name:'Ockap Caviar and Cuisine',cat:'Fine Dining · Caviar',cat_es:'Alta Cocina · Caviar',filter:'finedining',emoji:'',bg:'bg-navy',badge:'Caviar House',rating:4.9,rev:'42',price:'$$$$',occ:'Special Occasion',occ_es:'Ocasi\u00f3n Especial',tags:['Caviar','French','Brickell'],desc:'A Brickell dining room where caviar is the foundation of the meal rather than a garnish \u2014 at least ten grams of Osetra on every course, twenty on the pastas and mains. The menu was built in Paris with Ducasse Conseil; Spanish chef Carlos Consuegra Graino runs the kitchen. The caviar croquetas and the fried chicken with caviar are the signatures.',desc_es:'Un comedor de Brickell donde el caviar es la base de la comida y no un adorno: al menos diez gramos de Osetra en cada tiempo, veinte en las pastas y los platos fuertes. El men\u00fa se dise\u00f1\u00f3 en Par\u00eds con Ducasse Conseil y el chef espa\u00f1ol Carlos Consuegra Graino dirige la cocina. Las croquetas de caviar y el pollo frito con caviar son los platos insignia.',addr:'1060 Brickell Ave, Brickell',hrs:'Tue\u2013Thu 5:30\u201310 PM \u00b7 Fri\u2013Sat 5:30\u201311:45 PM \u00b7 Closed Sun\u2013Mon',pro:true,photo_url:'https://youtu.be/mu-XK8sEcWo',link:'https://ockapcaviar.com'},
   {id:'r10',name:'Toro Toro',cat:'Pan-Latin Steakhouse',cat_es:'Asador Panlatino',filter:'latin',emoji:'',bg:'bg-red',badge:'InterContinental Miami',rating:4.2,rev:'1.2k',price:'$$$$',occ:'Groups',occ_es:'Grupos',tags:['Steakhouse','Pan-Latin','Downtown'],desc:'Chef Richard Sandoval\'s Pan-Latin steakhouse inside the InterContinental, open downtown since 2012. Dry-aged prime cuts off a wood-burning rodizio, arepas and small plates built for sharing, and a bar heavy on Latin spirits.',desc_es:'El asador panlatino del chef Richard Sandoval dentro del InterContinental, abierto en Downtown desde 2012. Cortes prime madurados en un rodizio de le\u00f1a, arepas y platos peque\u00f1os para compartir, y una barra cargada de destilados latinos.',addr:'100 Chopin Plaza, Downtown',hrs:'Sun\u2013Mon 12\u201310 PM \u00b7 Tue\u2013Sat 12\u201311 PM',pro:true,photo_url:'https://youtu.be/jCnTjUJavzM',link:'https://www.torotoromiami.com'},
   {id:'r13',name:'Altamura Trattoria e Forno',cat:'Italian',cat_es:'Italiano',filter:'italian',emoji:'',bg:'bg-lime',badge:'Doral',rating:4.7,rev:'225',price:'$$$',occ:'Date Night',occ_es:'Cita',tags:['Italian','Handmade Pasta','Doral'],desc:'A husband-and-wife project from chefs Elisabetta Callegaro and Massimo Tundo, who built a following at Dal Plin in the Design District before opening here. Handmade pasta, a dome oven turning out bread and pizza to order, and regional recipes you rarely see outside Italy. Named one of Miami New Times\' best new restaurants of 2025.',desc_es:'Un proyecto de los chefs Elisabetta Callegaro y Massimo Tundo, matrimonio que se hizo de seguidores en Dal Plin del Design District antes de abrir aqu\u00ed. Pasta hecha a mano, un horno de c\u00fapula que saca pan y pizza al momento, y recetas regionales que rara vez se ven fuera de Italia. Miami New Times lo puso entre los mejores restaurantes nuevos de 2025.',addr:'7835 NW 107th Ave, Doral',hrs:'Tue\u2013Thu 5\u201310 PM \u00b7 Fri\u2013Sat 5\u201311 PM \u00b7 Sun 1\u201310 PM \u00b7 Closed Mon',pro:false,photo_url:'https://youtu.be/Qofs2E0TfEI',link:'https://www.altamuratrattoria.com'},
   {id:'r14',name:'Double Knot Miami',cat:'Japanese Izakaya',cat_es:'Izakaya Japon\u00e9s',filter:'japanese',emoji:'',bg:'bg-indigo',badge:'Wynwood Izakaya',rating:4.7,rev:'700',price:'$$$',occ:'Groups',occ_es:'Grupos',tags:['Izakaya','Robatayaki','Wynwood'],desc:'Chef Michael Schulson brought his Philadelphia izakaya to Wynwood in 2025. Two levels: a cocktail lounge upstairs, a darker sushi bar and robata grill downstairs. The skewers off the robata are the reason to come; there is also a tasting menu if the long list feels like too much work.',desc_es:'El chef Michael Schulson trajo su izakaya de Filadelfia a Wynwood en 2025. Dos niveles: sal\u00f3n de c\u00f3cteles arriba, barra de sushi y parrilla robata abajo, m\u00e1s oscura. Los pinchos de la robata son la raz\u00f3n para venir; tambi\u00e9n hay men\u00fa de degustaci\u00f3n si la carta larga abruma.',addr:'2550 NW 2nd Ave, Wynwood',hrs:'Sun\u2013Mon 5\u201310 PM \u00b7 Tue\u2013Thu 5\u201311 PM \u00b7 Fri\u2013Sat 5 PM\u201312 AM',pro:true,photo_url:'https://youtu.be/pL_XuNaATaw',link:'https://www.doubleknotmiami.com'},
@@ -3742,7 +3774,7 @@ restaurants:[
   /* ── LATIN (non-Cuban) ── */
   {id:'r76',name:'Bulla Gastrobar',cat:'Spanish · Tapas',cat_es:'Español · Tapas',filter:'latin',emoji:'',bg:'bg-red',badge:'Best Tapas',rating:4.6,rev:'2.2k',price:'$$$',occ:'Groups',occ_es:'Grupos',tags:['Spanish','Tapas','Coral Gables'],desc:'The very first Bulla and Coral Gables\' most beloved Spanish restaurant. Authentic tapas — patatas bravas, jamón ibérico, gambas al ajillo — an impressive Spanish wine list, weekend brunch and a daily happy hour 5–7 PM.',desc_es:'El primer Bulla de todos y el restaurante español más querido de Coral Gables. Tapas auténticas — patatas bravas, jamón ibérico, gambas al ajillo — una impresionante carta de vinos españoles, brunch los fines de semana y happy hour diario 5–7 PM.',addr:'2500 Ponce de Leon Blvd, Coral Gables',hrs:'Mon–Tue 11:30 AM–10 PM · Wed–Thu 11:30 AM–11 PM · Fri 11:30 AM–12 AM · Sat 11 AM–12 AM · Sun 11 AM–10 PM',pro:false,link:'https://bullagastrobar.com/locations/coral-gables/'},
   {id:'r78',name:'Boia De',cat:'Italian · Contemporary',cat_es:'Italiano · Contemporáneo',filter:'italian',emoji:'',bg:'bg-green',badge:'Michelin Star',rating:4.9,rev:'560',price:'$$$',occ:'Foodie',occ_es:'Gastrónomo',tags:['Michelin','Pasta','Intimate'],desc:'A 27-seat Michelin-starred gem hidden in a Little Haiti strip mall under a neon-pink exclamation mark. Chefs Luciana Giangrandi and Alex Meyer\'s modern Italian — rabbit pappardelle, potato skins with stracciatella and caviar — has held its star since 2022.',desc_es:'Una joya de 27 asientos con estrella Michelin, escondida en una plaza comercial de Little Haiti bajo un signo de exclamación de neón rosa. La cocina italiana moderna de los chefs Luciana Giangrandi y Alex Meyer — pappardelle de conejo, papas rellenas de stracciatella y caviar — conserva su estrella desde 2022.',addr:'5205 NE 2nd Ave, Little Haiti',hrs:'Daily 5:30–10:30 PM',pro:true,link:'https://www.boiaderestaurant.com/location/boia-de/',pnote:'Reservations are on Resy and go fast — turn on the “notify” feature, they get same-day cancellations. A few seats are held for walk-ins, first come first served, and indoor tables take parties of four or fewer.',pnote_es:'Las reservas son por Resy y vuelan — activa la función “notify”, porque reciben cancelaciones el mismo día. Guardan algunos asientos para walk-ins por orden de llegada, y las mesas interiores son para grupos de cuatro o menos.'},
-  {id:'r79',name:'Finka Table & Tap',cat:'Cuban-Korean Fusion',cat_es:'Fusión Cubana-Coreana',filter:'latin',emoji:'',bg:'bg-pink',badge:'Unique Fusion',rating:4.7,rev:'1.1k',price:'$$',occ:'Casual',occ_es:'Casual',tags:['Cuban-Korean','Fusion','Craft Beer'],desc:'Miami\'s most original fusion concept: Cuban grandmother meets Korean street food. The Korean BBQ pork with tostones and the kimchi fried rice with picadillo are impossibly delicious.',desc_es:'El concepto de fusión más original de Miami: abuela cubana se encuentra con la comida callejera coreana. El cerdo BBQ coreano con tostones y el arroz frito kimchi con picadillo son increíblemente deliciosos.',addr:'14690 SW 26th St, Kendall',hrs:'Sun–Thu 11:30 AM–11 PM · Fri–Sat 11:30 AM–12 AM',pro:false,link:'https://www.finkarestaurant.com/'},
+  {id:'r79',name:'Finka Table and Tap',cat:'Cuban-Korean Fusion',cat_es:'Fusión Cubana-Coreana',filter:'latin',emoji:'',bg:'bg-pink',badge:'Unique Fusion',rating:4.7,rev:'1.1k',price:'$$',occ:'Casual',occ_es:'Casual',tags:['Cuban-Korean','Fusion','Craft Beer'],desc:'Miami\'s most original fusion concept: Cuban grandmother meets Korean street food. The Korean BBQ pork with tostones and the kimchi fried rice with picadillo are impossibly delicious.',desc_es:'El concepto de fusión más original de Miami: abuela cubana se encuentra con la comida callejera coreana. El cerdo BBQ coreano con tostones y el arroz frito kimchi con picadillo son increíblemente deliciosos.',addr:'14690 SW 26th St, Kendall',hrs:'Sun–Thu 11:30 AM–11 PM · Fri–Sat 11:30 AM–12 AM',pro:false,link:'https://www.finkarestaurant.com/'},
 
   /* ── MEDITERRANEAN ── */
     {id:'r83',name:'Abbalé',cat:'Israeli · Mediterranean',cat_es:'Israelí · Mediterráneo',filter:'mediterranean',emoji:'',bg:'bg-purple',badge:'Tel Aviv in Miami',rating:4.7,rev:'680',price:'$$$',occ:'Brunch',occ_es:'Brunch',tags:['Israeli','Mediterranean','Brunch'],desc:'Miami\'s best Israeli restaurant — vibrant Tel Aviv-inspired food in the heart of South Beach. The shakshuka, sabich, and mezze platters are exceptional. The all-day brunch is Miami\'s most exciting weekend ritual.',desc_es:'El mejor restaurante israelí de Miami: comida inspirada en Tel Aviv en el corazón de South Beach. La shakshuka, el sabich y los platillos de mezze son excepcionales.',addr:'864 Commerce St, South of Fifth',hrs:'Mon–Fri 11 AM–9:30 PM · Sat–Sun 10 AM–9:30 PM',pro:false,link:'https://abbaletlv.com/'},
@@ -3778,20 +3810,20 @@ beaches:[
   {id:'b1',name:'South Beach',name_es:'South Beach',emoji:'',bg:'bb1',badge:'Most Famous',badge_es:'La Más Famosa',desc:'The crown jewel of Miami. Iconic pastel Art Deco lifeguard towers, powdery white sand, electric Ocean Drive, and world-class people-watching at its finest.',desc_es:'La joya de la corona. Torres Art Deco de colores pastel, arena blanca y el icónico Ocean Drive. Ideal para ver y ser visto.',photo_url:'',addr:'Ocean Dr, 5th–23rd St, Miami Beach',hrs:'Open 24 h · Lifeguards 9 AM–6 PM',hrs_es:'Abierta 24 h · Salvavidas 9 AM–6 PM'},
   {id:'b2',perks:['swim','family'],name:'Crandon Park Beach',name_es:'Playa Crandon Park',emoji:'',bg:'bb2',badge:'Best Families',badge_es:'Ideal Familias',desc:'Key Biscayne\'s hidden paradise. Calm turquoise lagoon waters, shaded picnic pavilions, and pristine nature — the best family beach in Miami by far.',desc_es:'El paraíso escondido de Key Biscayne. Aguas color turquesa en laguna tranquila, áreas de picnic y naturaleza pristina. La mejor playa familiar de Miami.',photo_url:'',addr:'6747 Crandon Blvd, Key Biscayne',hrs:'Sunrise–sunset · Park office 8 AM–5 PM',hrs_es:'Amanecer–atardecer · Oficina 8 AM–5 PM',fee:'Paid parking per vehicle (PayByPhone or staffed gate)',fee_es:'Parqueo de pago por vehículo (PayByPhone o caseta)',link:'https://www.miamidade.gov/parks/crandon.asp',pnote:'No pets except service animals, and glass containers are banned — the county fine runs to $500. Parking is paid by app or at the gate.',pnote_es:'No se permiten mascotas salvo animales de servicio, y el vidrio está prohibido: la multa del condado llega a $500. El parqueo se paga por app o en la caseta.'},
   {id:'b3',perks:['fauna','film'],pnote:'Historic Virginia Key Beach Park was Miami\'s beach for Black residents during segregation, opened in 1945. The mangrove edges hold manatees and shorebirds.',pnote_es:'El histórico Virginia Key Beach Park fue la playa para residentes negros durante la segregación, abierta en 1945. Los bordes de manglar guardan manatíes y aves costeras.',name:'Virginia Key Beach',name_es:'Playa Virginia Key',emoji:'',bg:'bb3',badge:'Hidden Gem',badge_es:'Joya Escondida',desc:'A historic gem with deep civil rights roots — Miami\'s first beach open to Black residents in 1945. Today: mangroves, a beloved vintage carousel, and a serene atmosphere far from the tourist crowds.',desc_es:'Una joya histórica. Fue la primera playa abierta a residentes negros en Miami en 1945. Hoy: manglares, carrusel vintage y ambiente sereno lejos del turismo.',addr:'4020 Virginia Beach Dr, Virginia Key',hrs:'Daily 7 AM–6 PM',hrs_es:'Todos los días 7 AM–6 PM',fee:'$8 per car',fee_es:'$8 por auto'},
-  {id:'b4',name:'Haulover Beach',name_es:'Playa Haulover',emoji:'',bg:'bb4',badge:'Kite & Surf',badge_es:'Kite y Surf',desc:'World-class kitesurfing, sand volleyball courts, and a lively park atmosphere. Also home to Miami\'s famous clothing-optional stretch — Haulover embraces all of Miami\'s free spirit.',desc_es:'Kitesurf de clase mundial, voleibol de playa y parque vibrante. Hogar de la famosa zona naturista de Miami. Playa para todos.',addr:'10800 Collins Ave, Miami Beach',hrs:'Sunrise–sunset · Park office 8 AM–5 PM',hrs_es:'Amanecer–atardecer · Oficina 8 AM–5 PM',fee:'Paid parking per vehicle',fee_es:'Parqueo de pago por vehículo',link:'https://www.miamidade.gov/parks/haulover.asp',pnote:'Two things to know before you go: there is a well-signposted clothing-optional section at the north end, and a separate fenced dog beach. Neither is where you land by default.',pnote_es:'Dos cosas antes de ir: hay una sección opcional de ropa bien señalizada en el extremo norte y una playa para perros cercada aparte. Ninguna de las dos es donde llegas por defecto.'},
+  {id:'b4',name:'Haulover Beach',name_es:'Playa Haulover',emoji:'',bg:'bb4',badge:'Kite and Surf',badge_es:'Kite y Surf',desc:'World-class kitesurfing, sand volleyball courts, and a lively park atmosphere. Also home to Miami\'s famous clothing-optional stretch — Haulover embraces all of Miami\'s free spirit.',desc_es:'Kitesurf de clase mundial, voleibol de playa y parque vibrante. Hogar de la famosa zona naturista de Miami. Playa para todos.',addr:'10800 Collins Ave, Miami Beach',hrs:'Sunrise–sunset · Park office 8 AM–5 PM',hrs_es:'Amanecer–atardecer · Oficina 8 AM–5 PM',fee:'Paid parking per vehicle',fee_es:'Parqueo de pago por vehículo',link:'https://www.miamidade.gov/parks/haulover.asp',pnote:'Two things to know before you go: there is a well-signposted clothing-optional section at the north end, and a separate fenced dog beach. Neither is where you land by default.',pnote_es:'Dos cosas antes de ir: hay una sección opcional de ropa bien señalizada en el extremo norte y una playa para perros cercada aparte. Ninguna de las dos es donde llegas por defecto.'},
   {id:'b5',name:'Bal Harbour Beach',name_es:'Playa Bal Harbour',emoji:'',bg:'bb5',badge:'Most Elegant',badge_es:'Más Elegante',desc:'Exclusive, uncrowded, and breathtaking. Steps from the legendary Bal Harbour Shops luxury mall, this beach is where Miami\'s elite and savvy travelers come for crystal water without the South Beach scene.',desc_es:'Exclusiva, tranquila y hermosa. A pasos de Bal Harbour Shops, frecuentada por la élite de Miami y viajeros que buscan aguas cristalinas sin el caos de South Beach.',addr:'Collins Ave at 96th St, Bal Harbour',hrs:'Sunrise–sunset',hrs_es:'Amanecer–atardecer'},
   {id:'b6',name:'Sunny Isles Beach',name_es:'Playa Sunny Isles',emoji:'',bg:'bb6',badge:'Best Sunrises',badge_es:'Mejor Amanecer',desc:'Known as "Little Moscow" for its Russian-speaking community, Sunny Isles offers spectacular Atlantic sunrises, a tranquil European beach atmosphere, and luxury towers lining the shore.',desc_es:'Conocida como "Pequeña Moscú", ofrece espectaculares amaneceres atlánticos, ambiente de playa europeo y una comunidad internacional vibrante.',addr:'Samson Oceanfront Park, 17425 Collins Ave, Sunny Isles Beach',hrs:'Daily 7 AM–7 PM',hrs_es:'Todos los días 7 AM–7 PM'},
   {id:'b8',perks:['fauna','sunset','photo','swim','paddle','family'],pnote:'The atoll pool is fed by Biscayne Bay, so rays and small fish circle inside it. Facing west, it is one of the few Miami beaches where the sun sets over the water.',pnote_es:'La piscina atolón se alimenta de la Bahía Biscayne, así que rayas y peces pequeños circulan dentro. Mirando al oeste, es de las pocas playas de Miami donde el sol se pone sobre el agua.',name:'Matheson Hammock',name_es:'Matheson Hammock',emoji:'',bg:'bb8',badge:'Most Serene',badge_es:'Más Serena',desc:'Miami\'s best-kept secret: a man-made atoll pool naturally flushed by Biscayne Bay tides — calm, warm, shallow, and surrounded by mangroves. The most photogenic sunset spot in Miami.',desc_es:'El secreto mejor guardado de Miami: piscina de atolón bañada naturalmente por la Bahía Biscayne. Cálida, tranquila y rodeada de manglares. El mejor atardecer de Miami.',addr:'9610 Old Cutler Rd, Coral Gables',hrs:'Sunrise–sunset · Park office 8 AM–5 PM',hrs_es:'Amanecer–atardecer · Oficina 8 AM–5 PM',fee:'$7 + tax weekdays · $10 + tax weekends and holidays',fee_es:'$7 + impuesto entre semana · $10 + impuesto fines de semana y feriados',link:'https://www.miamidade.gov/global/recreation/park/matheson-hammock-park.page'},
   {id:'b9',perks:['pet'],name:'North Beach Oceanside Park',name_es:'North Beach Oceanside Park',emoji:'',bg:'bb1',badge:'Best Local Vibe',badge_es:'Ambiente Local',desc:'Miami Beach\'s most beloved local beach between 79th and 87th Streets. Palm-shaded shoreline, outdoor fitness stations, a bandshell with free concerts, two dog parks, and none of the South Beach tourist crowds.',desc_es:'La playa local favorita de Miami Beach entre las calles 79 y 87. Palmeras, estaciones de fitness, bandshell con conciertos gratis, parque para perros y sin el turismo de South Beach.',addr:'8328 Collins Ave, Miami Beach',hrs:'Daily 7:30 AM–8:30 PM',hrs_es:'Todos los días 7:30 AM–8:30 PM',pnote:'Free concerts at the bandshell and a dog park on site. City parking is metered and cheap, paid by app.',pnote_es:'Conciertos gratis en la concha acústica y parque para perros. El parqueo municipal es barato y se paga por app.'},
-  {id:'b10',name:'Surfside Beach',name_es:'Playa Surfside',emoji:'',bg:'bb5',badge:'Quiet & Charming',badge_es:'Tranquila y Encantadora',desc:'Known as Miami\'s "Uptown Beachtown" — a quiet, community-driven town between Bal Harbour and North Beach with retro charm, empty stretches of sand and easy parking. Once a Hollywood elite playground in the 1940s.',desc_es:'Conocida como "Uptown Beachtown" — un pueblo tranquilo y comunitario entre Bal Harbour y North Beach con encanto retro, arena despejada y estacionamiento fácil.',addr:'93rd St at Collins Ave, Surfside',hrs:'Sunrise–sunset',hrs_es:'Amanecer–atardecer'},
+  {id:'b10',name:'Surfside Beach',name_es:'Playa Surfside',emoji:'',bg:'bb5',badge:'Quiet and Charming',badge_es:'Tranquila y Encantadora',desc:'Known as Miami\'s "Uptown Beachtown" — a quiet, community-driven town between Bal Harbour and North Beach with retro charm, empty stretches of sand and easy parking. Once a Hollywood elite playground in the 1940s.',desc_es:'Conocida como "Uptown Beachtown" — un pueblo tranquilo y comunitario entre Bal Harbour y North Beach con encanto retro, arena despejada y estacionamiento fácil.',addr:'93rd St at Collins Ave, Surfside',hrs:'Sunrise–sunset',hrs_es:'Amanecer–atardecer'},
   {id:'b11',perks:['pet','fauna','paddle','swim'],pnote:'Miami\'s official dog beach — the only stretch where dogs run off-leash in the water. Manatees drift through the shallows on calm mornings.',pnote_es:'La playa de perros oficial de Miami — el único tramo donde los perros corren sueltos en el agua. Los manatíes pasan por los bajos en las mañanas tranquilas.',name:'Hobie Beach',name_es:'Hobie Beach',emoji:'',bg:'bb3',badge:'Water Sports',badge_es:'Deportes Acuáticos',desc:'Watersports paradise on the Rickenbacker Causeway with stunning Downtown Miami skyline views. Kayaking, paddleboarding, windsurfing and kitesurfing on Biscayne Bay\'s calm waters. Dog-friendly with free parking.',desc_es:'Paraíso acuático en la Calzada Rickenbacker con vistas espectaculares al skyline de Downtown. Kayak, paddle, windsurf y kitesurf en las aguas tranquilas de la Bahía Biscayne. Acepta perros.',addr:'Rickenbacker Causeway, Virginia Key',hrs:'Mon–Thu 6:30 AM–8 PM · Fri–Sun 6:30 AM–9 PM',hrs_es:'Lun–Jue 6:30 AM–8 PM · Vie–Dom 6:30 AM–9 PM',fee:'Free parking',fee_es:'Parqueo gratis'},
   {id:'b12',perks:['sunset','photo','pet'],pnote:'The pier at the tip of South Beach frames both the skyline and the cruise ships heading out — the classic Miami shot. The adjacent park is dog-friendly.',pnote_es:'El muelle en la punta de South Beach encuadra el skyline y los cruceros saliendo — la foto clásica de Miami. El parque de al lado admite perros.',name:'South Pointe Beach',name_es:'South Pointe Beach',emoji:'',bg:'bb4',badge:'Best for Sunsets',badge_es:'Mejor para Atardeceres',desc:'The southernmost tip of South Beach with a gorgeous park, pier, and stunning views of cruise ships entering Government Cut. Peaceful, less crowded, and one of the most beautiful sunset spots in the city.',desc_es:'El extremo sur de South Beach con parque hermoso, muelle y vistas a cruceros entrando por Government Cut. Tranquilo, menos concurrido y uno de los mejores atardeceres de la ciudad.',addr:'1 Washington Ave, Miami Beach',hrs:'Daily 5 AM–10 PM',hrs_es:'Todos los días 5 AM–10 PM'},
   {id:'b13',perks:['family'],name:'Lummus Park Beach',name_es:'Playa Lummus Park',emoji:'',bg:'bb1',badge:'Classic South Beach',badge_es:'South Beach Clásico',desc:'The green strip that separates Ocean Drive from the sand — palms, a paved promenade, volleyball nets, a playground and roped-off sea-turtle nests in season. This is the park itself; the beach scene is South Beach, one entry over.',desc_es:'La franja verde que separa Ocean Drive de la arena: palmeras, paseo pavimentado, canchas de voleibol, área de juegos y nidos de tortuga marina acordonados en temporada. Este es el parque en sí; el ambiente de playa es South Beach, una ficha más allá.',addr:'1130 Ocean Dr, Miami Beach',hrs:'Open 24 h',hrs_es:'Abierta 24 h',pnote:'Free street parking citywide runs 3–9 AM. After that meters south of 23rd Street are the priciest on the beach.',pnote_es:'El parqueo gratis en la calle va de 3 a 9 AM en toda la ciudad. Después, los parquímetros al sur de la calle 23 son los más caros de la playa.'},
   {id:'b14',name:'Hollywood Beach',name_es:'Hollywood Beach',emoji:'',bg:'bb6',badge:'Broadwalk',badge_es:'Broadwalk Famoso',desc:'Fort Lauderdale\'s neighbor with a legendary 2.5-mile Broadwalk lined with restaurants, bars and bike rentals. No high-rises blocking the ocean breeze, a relaxed authentic Florida beach town vibe and the Margaritaville resort.',desc_es:'Vecina de Fort Lauderdale con el legendario Broadwalk de 4 km bordeado de restaurantes y bares. Sin rascacielos, brisa del océano y el auténtico ambiente de pueblo costero de Florida.',addr:'101 S Broadwalk, Hollywood',hrs:'Broadwalk 6 AM–7 PM · Beach sunrise–sunset',hrs_es:'Broadwalk 6 AM–7 PM · Playa amanecer–atardecer'},
-  {id:'b15',perks:['fauna','photo'],pnote:'The 1825 lighthouse is the oldest standing structure in Miami-Dade. Manatees gather in the shallows on the bay side, and the beach faces sunrise.',pnote_es:'El faro de 1825 es la estructura en pie más antigua de Miami-Dade. Los manatíes se juntan en los bajos del lado de la bahía, y la playa mira al amanecer.',name:'Bill Baggs Cape Florida State Park',name_es:'Parque Estatal Bill Baggs',emoji:'',bg:'bb7',badge:'Lighthouse & History',badge_es:'Faro Histórico',desc:'Key Biscayne\'s crown jewel: a historic 1825 lighthouse, miles of nature trails through tropical hammock forest, two restaurants, kayak rentals and consistently ranked among the top 10 beaches in the US.',desc_es:'La joya de Key Biscayne: faro histórico de 1825, senderos de naturaleza, dos restaurantes y kayak. Clasificada constantemente entre las 10 mejores playas de EE.UU.',addr:'1200 Crandon Blvd, Key Biscayne',hrs:'Daily 8 AM–sunset',hrs_es:'Todos los días 8 AM–atardecer',fee:'$8 per vehicle (up to 8 people)',fee_es:'$8 por vehículo (hasta 8 personas)'},
+  {id:'b15',perks:['fauna','photo'],pnote:'The 1825 lighthouse is the oldest standing structure in Miami-Dade. Manatees gather in the shallows on the bay side, and the beach faces sunrise.',pnote_es:'El faro de 1825 es la estructura en pie más antigua de Miami-Dade. Los manatíes se juntan en los bajos del lado de la bahía, y la playa mira al amanecer.',name:'Bill Baggs Cape Florida State Park',name_es:'Parque Estatal Bill Baggs',emoji:'',bg:'bb7',badge:'Lighthouse and History',badge_es:'Faro Histórico',desc:'Key Biscayne\'s crown jewel: a historic 1825 lighthouse, miles of nature trails through tropical hammock forest, two restaurants, kayak rentals and consistently ranked among the top 10 beaches in the US.',desc_es:'La joya de Key Biscayne: faro histórico de 1825, senderos de naturaleza, dos restaurantes y kayak. Clasificada constantemente entre las 10 mejores playas de EE.UU.',addr:'1200 Crandon Blvd, Key Biscayne',hrs:'Daily 8 AM–sunset',hrs_es:'Todos los días 8 AM–atardecer',fee:'$8 per vehicle (up to 8 people)',fee_es:'$8 por vehículo (hasta 8 personas)'},
   {id:'b16',perks:['paddle','family'],name:'Oleta River Beach',name_es:'Playa Oleta River',emoji:'',bg:'bb2',badge:'Urban Escape',badge_es:'Escape Urbano',desc:'Florida\'s largest urban park hides a small secluded beach on Biscayne Bay with calm bay swimming, kayak and paddleboard rentals through mangrove tunnels, mountain bike trails and a picnic area. The wildest nature close to the city.',desc_es:'El parque urbano más grande de Florida esconde una pequeña playa en la Bahía Biscayne con natación, kayak y paddleboard por túneles de manglares, senderos MTB y picnic. La naturaleza más salvaje cerca de la ciudad.',addr:'3400 NE 163rd St, North Miami Beach',hrs:'Daily 8 AM–sunset',hrs_es:'Todos los días 8 AM–atardecer',fee:'State park entry fee per vehicle',fee_es:'Entrada de parque estatal por vehículo',pnote:'The beach is on the bay, not the ocean — calm, shallow, no waves. Kayak and paddleboard rentals go through the mangrove tunnels.',pnote_es:'La playa da a la bahía, no al océano: tranquila, baja y sin olas. Los alquileres de kayak y paddleboard entran por los túneles de mangle.'},
-  {id:'b17',name:'Haulover Inlet Beach',name_es:'Playa Haulover Inlet',emoji:'',bg:'bb4',badge:'Fishermen & Surfers',badge_es:'Pesca y Surf',desc:'The north end of Haulover Park where the inlet meets the ocean — popular with local anglers fishing for snook and tarpon, with a small surf break and spectacular views of boats navigating the inlet. Raw and authentic Miami.',desc_es:'El extremo norte de Haulover donde el canal se une al océano. Popular entre pescadores locales y con olas pequeñas. Vistas espectaculares de botes navegando el canal. El Miami más auténtico.',addr:'Haulover Park north end, 10800 Collins Ave, Miami Beach',hrs:'Sunrise–sunset',hrs_es:'Amanecer–atardecer',link:'https://www.miamidade.gov/parks/haulover.asp',pnote:'The inlet current is strong and there are no lifeguards at the very tip — this end is for fishing and watching boats, not for swimming with kids.',pnote_es:'La corriente del canal es fuerte y en la punta no hay salvavidas: este extremo es para pescar y ver botes, no para bañarse con niños.'},
-  {id:'b18',name:'12th Street Beach',name_es:'Playa de la Calle 12',emoji:'',bg:'bb2',badge:'Central & Lively',badge_es:'Céntrica y Animada',perks:['swim','photo'],desc:'The busiest stretch of sand in the middle of South Beach, at 12th and Ocean. Its lifeguard tower is one of the most photographed on the whole beach. Locals come here because the currents keep this section clearer of sargassum than the beach by the pier, and because chair and umbrella rentals, showers and year-round lifeguards are all right there.',desc_es:'El tramo de arena más concurrido en pleno South Beach, en la calle 12 con Ocean. Su torre de salvavidas es de las más fotografiadas de toda la playa. Los locales vienen porque las corrientes mantienen esta sección más limpia de sargazo que la playa junto al muelle, y porque el alquiler de sillas y sombrillas, las duchas y los salvavidas todo el año están ahí mismo.',addr:'12th St at Ocean Dr, Miami Beach',hrs:'Open 24 h · Lifeguards 9 AM–6 PM',hrs_es:'Abierta 24 h · Salvavidas 9 AM–6 PM',pnote:'Walk two blocks north or south of the tower and the crowd thins out fast without losing the services.',pnote_es:'Camina dos cuadras al norte o al sur de la torre y la gente se dispersa rápido sin perder los servicios.',photo_url:''},
+  {id:'b17',name:'Haulover Inlet Beach',name_es:'Playa Haulover Inlet',emoji:'',bg:'bb4',badge:'Fishermen and Surfers',badge_es:'Pesca y Surf',desc:'The north end of Haulover Park where the inlet meets the ocean — popular with local anglers fishing for snook and tarpon, with a small surf break and spectacular views of boats navigating the inlet. Raw and authentic Miami.',desc_es:'El extremo norte de Haulover donde el canal se une al océano. Popular entre pescadores locales y con olas pequeñas. Vistas espectaculares de botes navegando el canal. El Miami más auténtico.',addr:'Haulover Park north end, 10800 Collins Ave, Miami Beach',hrs:'Sunrise–sunset',hrs_es:'Amanecer–atardecer',link:'https://www.miamidade.gov/parks/haulover.asp',pnote:'The inlet current is strong and there are no lifeguards at the very tip — this end is for fishing and watching boats, not for swimming with kids.',pnote_es:'La corriente del canal es fuerte y en la punta no hay salvavidas: este extremo es para pescar y ver botes, no para bañarse con niños.'},
+  {id:'b18',name:'12th Street Beach',name_es:'Playa de la Calle 12',emoji:'',bg:'bb2',badge:'Central and Lively',badge_es:'Céntrica y Animada',perks:['swim','photo'],desc:'The busiest stretch of sand in the middle of South Beach, at 12th and Ocean. Its lifeguard tower is one of the most photographed on the whole beach. Locals come here because the currents keep this section clearer of sargassum than the beach by the pier, and because chair and umbrella rentals, showers and year-round lifeguards are all right there.',desc_es:'El tramo de arena más concurrido en pleno South Beach, en la calle 12 con Ocean. Su torre de salvavidas es de las más fotografiadas de toda la playa. Los locales vienen porque las corrientes mantienen esta sección más limpia de sargazo que la playa junto al muelle, y porque el alquiler de sillas y sombrillas, las duchas y los salvavidas todo el año están ahí mismo.',addr:'12th St at Ocean Dr, Miami Beach',hrs:'Open 24 h · Lifeguards 9 AM–6 PM',hrs_es:'Abierta 24 h · Salvavidas 9 AM–6 PM',pnote:'Walk two blocks north or south of the tower and the crowd thins out fast without losing the services.',pnote_es:'Camina dos cuadras al norte o al sur de la torre y la gente se dispersa rápido sin perder los servicios.',photo_url:''},
   {id:'b19',name:'Homestead Bayfront Park',name_es:'Homestead Bayfront Park',emoji:'',bg:'bb5',badge:'South Miami-Dade',badge_es:'Sur de Miami-Dade',perks:['swim','family','fauna'],desc:'The southern answer to Matheson Hammock: a tidal atoll pool flushed by Biscayne Bay, calm and shallow enough for small children, with a wide sandy edge, picnic shelters and grills. It sits next to Biscayne National Park, so this is the natural stop before or after a boat trip out to the reef.',desc_es:'La respuesta del sur a Matheson Hammock: una piscina atolón alimentada por la marea de la Bahía Biscayne, tranquila y baja para niños pequeños, con una orilla ancha de arena, quioscos de picnic y parrillas. Está pegada al Parque Nacional Biscayne, así que es la parada natural antes o después de una salida en bote al arrecife.',addr:'9698 SW 328th St, Homestead',hrs:'Sunrise–sunset',hrs_es:'Amanecer–atardecer',fee:'Paid parking per vehicle',fee_es:'Parqueo de pago por vehículo',pnote:'It is about 45 minutes south of Downtown — pack the cooler, there is little nearby. There is a marina, a snack bar and a tiki bar on site.',pnote_es:'Queda a unos 45 minutos al sur de Downtown: lleva la nevera, hay poco alrededor. En el parque hay marina, cafetería y un tiki bar.',photo_url:''},
 ],
 
@@ -3800,7 +3832,7 @@ transport:{
   sections:[
     {cat:'transit',photo:'fotos/mm-tr1.jpg',svg:'<rect x="4" y="4" width="16" height="12" rx="2"/><path d="M4 12h16"/><path d="M8 16l-2 4"/><path d="M16 16l2 4"/><circle cx="8" cy="9" r="1"/><circle cx="16" cy="9" r="1"/>',title:{en:'Metromover — Free Downtown Loop',es:'Metromover — Gratis en el Centro'},desc:{en:'Miami\'s free automated people-mover loops through Downtown, Brickell and Omni. Connects to Metrorail at Government Center. Perfect for hotel-to-restaurant hops in the urban core. Runs daily 5AM–midnight.',es:'El tren automatizado gratuito de Miami recorre Downtown, Brickell y Omni. Conecta con Metrorail en Government Center. Perfecto para moverte entre hoteles y restaurantes en el centro. Opera diario 5AM–medianoche.'},tip:{en:'Tip: Grab the Miami Trolley app — free electric trolleys cover Brickell, Wynwood, and Coconut Grove.',es:'Tip: Descarga la app Miami Trolley — trolebuses eléctricos gratuitos cubren Brickell, Wynwood y Coconut Grove.'},link:'https://www.miamidade.gov/transit/metromover.asp'},
     {cat:'transit',photo:'fotos/mm-tr2.jpg',svg:'<path d="M3 12h6"/><path d="M9 6l7 6-7 6"/><path d="M16 6l5 6-5 6"/>',title:{en:'Brightline — Miami to Orlando',es:'Brightline — Miami a Orlando'},desc:{en:'Florida\'s private high-speed train. MiamiCentral station in downtown connects to Fort Lauderdale (30 min), West Palm Beach (1h), and Orlando (3h). Book in advance — fares from ~$19 to Fort Lauderdale. Free parking at most stations.',es:'El tren privado de alta velocidad de Florida. La estación MiamiCentral conecta con Fort Lauderdale (30 min), West Palm Beach (1h) y Orlando (3h). Reserva con anticipación — tarifas desde ~$19 a Fort Lauderdale.'},tip:{en:'Tip: Brightline Select class includes free drinks and snacks. Great for a day trip to Palm Beach.',es:'Tip: La clase Brightline Select incluye bebidas y snacks gratis. Excelente para excursión de un día a Palm Beach.'},link:'https://www.gobrightline.com'},
-    {cat:'ride',photo:'fotos/mm-tr3.jpg',svg:'<path d="M5 11l1.6-4.8A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.2L19 11"/><rect x="3" y="11" width="18" height="6" rx="2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/>',title:{en:'Uber & Lyft — The Miami Standard',es:'Uber y Lyft — El Estándar Miami'},desc:{en:'Rideshare is king in Miami. Budget $15–25 for most South Beach to Brickell trips. Surge pricing kicks in after midnight on weekends — plan ahead or walk to a less busy pickup spot. Miami Beach has designated rideshare pickup zones on Washington Ave.',es:'El rideshare es el rey en Miami. Presupuesta $15–25 para viajes de South Beach a Brickell. Los precios suben tras la medianoche los fines de semana — planea con anticipación o camina a una zona menos concurrida.'},tip:{en:'Tip: Airport pickups — use the designated rideshare lot, not the terminal, to avoid $5 surcharge.',es:'Tip: Para el aeropuerto — usa el lote de rideshare designado, no la terminal, para evitar el cargo de $5.'},link:'https://www.uber.com/us/en/cities/miami/'},
+    {cat:'ride',photo:'fotos/mm-tr3.jpg',svg:'<path d="M5 11l1.6-4.8A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.2L19 11"/><rect x="3" y="11" width="18" height="6" rx="2"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/>',title:{en:'Uber and Lyft — The Miami Standard',es:'Uber y Lyft — El Estándar Miami'},desc:{en:'Rideshare is king in Miami. Budget $15–25 for most South Beach to Brickell trips. Surge pricing kicks in after midnight on weekends — plan ahead or walk to a less busy pickup spot. Miami Beach has designated rideshare pickup zones on Washington Ave.',es:'El rideshare es el rey en Miami. Presupuesta $15–25 para viajes de South Beach a Brickell. Los precios suben tras la medianoche los fines de semana — planea con anticipación o camina a una zona menos concurrida.'},tip:{en:'Tip: Airport pickups — use the designated rideshare lot, not the terminal, to avoid $5 surcharge.',es:'Tip: Para el aeropuerto — usa el lote de rideshare designado, no la terminal, para evitar el cargo de $5.'},link:'https://www.uber.com/us/en/cities/miami/'},
     {cat:'bike',photo:'fotos/mm-tr4.jpg',svg:'<circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-9h5l3 9"/><path d="M10 8h3"/>',title:{en:'Citi Bike Miami',es:'Citi Bike Miami'},desc:{en:'200+ docking stations across Miami Beach, Downtown, Wynwood and Brickell. Day pass $25, monthly $30. South Beach is perfectly flat and bike-friendly — ride from South Pointe to Lincoln Road in 15 minutes along the beachfront path.',es:'200+ estaciones de anclaje en Miami Beach, Downtown, Wynwood y Brickell. Pase diario $25, mensual $30. South Beach es plana y perfecta para bici — de South Pointe a Lincoln Road en 15 minutos por el paseo costero.'},tip:{en:'Tip: The Bayside Marketplace to Wynwood ride is one of the most scenic urban rides in Miami.',es:'Tip: El paseo de Bayside Marketplace a Wynwood es uno de los más escénicos de Miami.'},link:'https://citibikemiami.com'},
     {cat:'park',photo:'fotos/mm-tr5.jpg',svg:'<rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10.5h18"/><path d="M6.5 14h4"/>',title:{en:'SunPass — Tolls Made Easy',es:'SunPass — Peajes Fáciles'},desc:{en:'Almost every highway in Miami charges tolls. Buy a SunPass transponder at CVS, Walmart or the airport before renting a car — rental company toll fees are outrageously expensive ($15–25/day). The 836 (Dolphin Expressway), 826 (Palmetto) and I-395 all have tolls. Budget $5–15/day for highway driving.',es:'Casi todas las autopistas de Miami cobran peaje. Compra un transponder SunPass en CVS, Walmart o el aeropuerto antes de alquilar un carro — los cargos de la empresa de alquiler son abusivos ($15–25/día). La 836, la 826 y la I-395 tienen peaje. Presupuesta $5–15/día para autopistas.'},tip:{en:'Tip: If you forget a SunPass, use Pay by Plate — you\'ll get a bill by mail, usually cheaper than rental fees.',es:'Tip: Si olvidaste el SunPass, usa Pay by Plate — recibirás una factura por correo, generalmente más barata que los cargos del alquiler.'},link:'https://www.sunpass.com'},
     {cat:'park',photo:'fotos/mm-tr6.jpg',svg:'<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9.5 16V8h3a2.5 2.5 0 0 1 0 5h-3"/>',title:{en:'Parking in Miami — What You Need to Know',es:'Estacionamiento en Miami — Lo Que Debes Saber'},desc:{en:'South Beach: park in garages on Collins Ave between 7th–13th St ($1–2/hr). Avoid Ocean Drive — $40+ tickets. Wynwood: lot parking $10–15. Brickell: use the Underline garages or street park on SW 15th Rd. Apps: SpotHero, ParkWhiz and ParkMobile save you 30–50% on garages.',es:'South Beach: estaciona en garages en Collins Ave entre las calles 7–13 ($1–2/hr). Evita Ocean Drive — multas de $40+. Wynwood: lotes de estacionamiento $10–15. Brickell: garages del Underline o calles en SW 15th Rd. Apps: SpotHero, ParkWhiz y ParkMobile ahorran 30–50% en garages.'},tip:{en:'Tip: Many restaurants in Brickell and Wynwood offer free valet — always ask before self-parking.',es:'Tip: Muchos restaurantes en Brickell y Wynwood ofrecen valet gratuito — siempre pregunta antes de estacionar solo.'},link:'https://www.miami.gov/Government/Departments/Parking-Authority'},
@@ -4114,13 +4146,13 @@ events:[
    desc_es:'Segunda ronda en el Nu Stadium: el Inter Miami enfrenta a los Rayados de Monterrey, uno de los clubes m\u00e1s grandes de M\u00e9xico, en la fase de grupos de la Leagues Cup. Un clasicazo de s\u00e1bado por la noche.',
    tags:['Soccer','Sports'],link:'https://www.intermiamicf.com/tickets/'},
   {id:'spice26',tip:'If the Spice menu isn’t on the table, ask for it — restaurants must show it. Lunch at $40 is the best value of the program.',tip_es:'Si el menú Spice no está en la mesa, pídelo — los restaurantes deben mostrarlo. El almuerzo a $40 es el mejor valor del programa.',scope:'local',d:'2026-08-01',d2:'2026-09-30',name:'Miami Spice Restaurant Months',name_es:'Miami Spice — Meses Gastronómicos',
-   venue:'200+ restaurants · Miami & Miami Beach',venue_es:'Más de 200 restaurantes · Miami y Miami Beach',time:'Lunch & dinner',time_es:'Almuerzo y cena',price:'From $40',type:'Food & Dining',type_es:'Gastronomía',
+   venue:'200+ restaurants · Miami & Miami Beach',venue_es:'Más de 200 restaurantes · Miami y Miami Beach',time:'Lunch & dinner',time_es:'Almuerzo y cena',price:'From $40',type:'Food and Dining',type_es:'Gastronomía',
    photo:'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format',
    desc:'25th anniversary of Miami Spice: 3-course prix-fixe menus at 200+ top restaurants — $40 lunch/brunch, $50–65 dinner, plus the new Reserve tier from $95. The city\'s best excuse for a date night.',
    desc_es:'25 aniversario de Miami Spice: menús de 3 tiempos en más de 200 restaurantes top — almuerzo/brunch $40, cena $50–65, y el nuevo nivel Reserve desde $95. La mejor excusa de la ciudad para una cita.',
    tags:['Food','Romantic'],link:'https://www.miamiandbeaches.com/deals/spice-restaurant-months'},
   {id:'kidsfree26',scope:'local',d:'2026-06-01',d2:'2026-08-31',name:'Kids Eat Free Mondays',name_es:'Niños Comen Gratis los Lunes',
-   venue:'Participating restaurants · Greater Miami',venue_es:'Restaurantes participantes · Gran Miami',time:'Mondays',time_es:'Los lunes',price:'Free for kids 10 & under',type:'Kids & Family',type_es:'Niños y Familia',
+   venue:'Participating restaurants · Greater Miami',venue_es:'Restaurantes participantes · Gran Miami',time:'Mondays',time_es:'Los lunes',price:'Free for kids 10 & under',type:'Kids and Family',type_es:'Niños y Familia',
    photo:'https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=900&q=60&auto=format',
    desc:'All summer long, kids 10 and under eat free every Monday at select Miami dining spots with the purchase of an adult entrée. Family dinner out, solved.',
    desc_es:'Todo el verano, los niños de 10 años o menos comen gratis cada lunes en restaurantes seleccionados de Miami con la compra de un plato de adulto. La cena familiar, resuelta.',
@@ -4155,7 +4187,7 @@ events:[
    desc:'The former One Direction star tours his new album with openers The Beaches and Picture Parlour.',
    desc_es:'La ex estrella de One Direction presenta su nuevo álbum con The Beaches y Picture Parlour como teloneros.',
    tags:['Concert','Pop'],link:'https://www.ticketmaster.com/search?q=louis+tomlinson+kaseya+center'},
-  {id:'lionel',scope:'world',d:'2026-07-24',name:'Lionel Richie & Earth, Wind + Fire',name_es:'Lionel Richie & Earth, Wind + Fire',
+  {id:'lionel',scope:'world',d:'2026-07-24',name:'Lionel Richie and Earth, Wind + Fire',name_es:'Lionel Richie and Earth, Wind + Fire',
    venue:'Hard Rock Live · Hollywood',venue_es:'Hard Rock Live · Hollywood',time:'7:30 PM',time_es:'7:30 PM',price:'From $95',type:'Concert',type_es:'Concierto',
    photo:'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=900&q=60&auto=format',
    desc:'Two legends, one stage: "Sing a Song All Night Long" packs decades of hits into an unmissable night at Hard Rock Live.',
@@ -4185,8 +4217,8 @@ events:[
    desc:'Every 2nd Saturday: galleries open late, live muralists, DJs and food trucks fill the streets. The best free night in Miami.',
    desc_es:'Cada 2do sábado: galerías abiertas hasta tarde, muralistas en vivo, DJs y food trucks. La mejor noche gratuita de Miami.',
    tags:['Art','Free'],link:'https://www.wynwoodmiami.com'},
-  {id:'e3',scope:'local',wk:5,name:'Ball & Chain Salsa Night',name_es:'Noche de Salsa en Ball & Chain',
-   venue:'Ball & Chain · Little Havana',venue_es:'Ball & Chain · La Pequeña Habana',time:'9 PM – 3 AM',time_es:'9 PM – 3 AM',price:'Free',type:'Music',type_es:'Música',
+  {id:'e3',scope:'local',wk:5,name:'Ball and Chain Salsa Night',name_es:'Noche de Salsa en Ball and Chain',
+   venue:'Ball and Chain · Little Havana',venue_es:'Ball and Chain · La Pequeña Habana',time:'9 PM – 3 AM',time_es:'9 PM – 3 AM',price:'Free',type:'Music',type_es:'Música',
    photo:'https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=900&q=60&auto=format',
    desc:'Every Friday: live salsa band, mojitos, and the most authentic Cuban nightlife energy in Miami. No reservations — just show up and dance.',
    desc_es:'Cada viernes: banda de salsa en vivo, mojitos y la energía cubana más auténtica de Miami. Sin reservas — llega y baila.',
@@ -4303,7 +4335,7 @@ hotels:[
    price:'From $490/night',addr:'1435 Brickell Ave, Brickell',
    link:'https://www.fourseasons.com/miami/',
    desc:'Forbes Five-Star on Brickell Ave with panoramic Biscayne Bay views, two pools and celebrated EDGE Brasserie.',desc_es:'Forbes Cinco Estrellas en Brickell Ave con vistas panorámicas a la Bahía Biscayne, dos piscinas y el celebrado EDGE Brasserie.'},
-  {id:'h16',name:'Acqualina Resort & Residences',cat:'Oceanfront · 5',stars:'',
+  {id:'h16',name:'Acqualina Resort and Residences',cat:'Oceanfront · 5',stars:'',
    img:'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&q=72',
    price:'From $600/night',addr:'17875 Collins Ave, Sunny Isles Beach',
    link:'https://www.acqualinaresort.com',
@@ -4334,7 +4366,7 @@ hotels:[
    price:'From $200/night',addr:'1677 Collins Ave, South Beach',
    link:'https://www.nationalhotel.com',
    desc:'Landmark 1939 Art Deco hotel with Miami Beach\'s longest oceanview infinity pool. Adults-only tranquility in the heart of South Beach.',desc_es:'Emblemático hotel Art Deco de 1939 con la piscina infinita con vista al mar más larga de Miami Beach. Tranquilidad solo para adultos en pleno South Beach.'},
-  {id:'h22',name:'Andaz Miami Beach Resort & Spa',cat:'Lifestyle · Oceanfront · 5',stars:'',
+  {id:'h22',name:'Andaz Miami Beach Resort and Spa',cat:'Lifestyle · Oceanfront · 5',stars:'',
    img:'https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?w=500&q=72',
    price:'From $300/night',addr:'4041 Collins Ave, Miami Beach',
    link:'https://www.hyatt.com/andaz/miaob-andaz-miami-beach',
@@ -4349,7 +4381,7 @@ hotels:[
    price:'From $230/night',addr:'350 Ocean Dr, South Beach',
    link:'https://www.balfourhotelmiami.com',
    desc:'Timeless South Beach luxury on Ocean Drive with custom Italian furnishings, ultracomfortable beds and steps-from-the-beach location.',desc_es:'Lujo atemporal de South Beach en Ocean Drive con mobiliario italiano a medida, camas ultracómodas y la playa a solo pasos.'},
-  {id:'h25',name:'Catalina Hotel & Beach Club',cat:'Boutique · Pool Party · 3',stars:'',
+  {id:'h25',name:'Catalina Hotel and Beach Club',cat:'Boutique · Pool Party · 3',stars:'',
    img:'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&q=72',
    price:'From $120/night',addr:'1756 Collins Ave, South Beach',
    link:'https://www.catalinahotel.com',
@@ -4400,7 +4432,7 @@ hotels:[
    link:'https://www.circa39.com',
    desc:'Laid-back Mid-Beach boutique with a local crowd, great pool and beach access. Best escape from the South Beach scene.',desc_es:'Boutique relajado de Mid-Beach con público local, gran piscina y acceso a la playa. El mejor escape de la escena de South Beach.'},
   /* ── MID-BEACH & NORTH BEACH ── */
-  {id:'h36',name:'The Palms Hotel & Spa',cat:'Eco · Zen · 4',stars:'',
+  {id:'h36',name:'The Palms Hotel and Spa',cat:'Eco · Zen · 4',stars:'',
    img:'https://images.unsplash.com/photo-1563911302283-d2bc129e7570?w=500&q=72',
    price:'From $200/night',addr:'3025 Collins Ave, Miami Beach',
    link:'https://www.thepalmshotel.com',
@@ -4438,7 +4470,7 @@ hotels:[
    link:'https://www.marenasresort.com',
    desc:'Spacious oceanfront suites with full kitchens, private balconies and direct beach access in Sunny Isles. Perfect for families.',desc_es:'Amplias suites frente al mar con cocinas completas, balcones privados y acceso directo a la playa en Sunny Isles. Perfecto para familias.'},
   /* ── AVENTURA ── */
-  {id:'h45',name:'JW Marriott Miami Turnberry Resort & Spa',cat:'Mega Resort · 5',stars:'',
+  {id:'h45',name:'JW Marriott Miami Turnberry Resort and Spa',cat:'Mega Resort · 5',stars:'',
    img:'https://images.unsplash.com/photo-1543332164-6e82f355badc?w=500&q=72',
    price:'From $350/night',addr:'19999 W Country Club Dr, Aventura',
    link:'https://www.marriott.com/en-us/hotels/miajt-jw-marriott-miami-turnberry-resort-and-spa/overview/',
@@ -4511,7 +4543,7 @@ hotels:[
    price:'From $380/night',addr:'2988 McFarlane Rd, Coconut Grove',
    link:'https://www.mrccoconutgrove.com',
    desc:'European-inspired 5-star boutique in Coconut Grove with panoramic bay views, Bellini\'s restaurant, rooftop pool and Leading Hotels of the World member.',desc_es:'Boutique 5 estrellas de inspiración europea en Coconut Grove con vistas panorámicas a la bahía, restaurante Bellini, piscina en la azotea y miembro de Leading Hotels of the World.'},
-  {id:'h61',name:'Mayfair House Hotel & Garden',cat:'Boutique · Unique · 4',stars:'',
+  {id:'h61',name:'Mayfair House Hotel and Garden',cat:'Boutique · Unique · 4',stars:'',
    img:'https://images.unsplash.com/photo-1461896836374-cf382f80b897?w=500&q=72',
    price:'From $180/night',addr:'3000 Florida Ave, Coconut Grove',
    link:'https://www.mayfairhousemiami.com',
@@ -4629,7 +4661,7 @@ hotels:[
    price:'From $200/night',addr:'1825 Collins Ave, South Beach',
    link:'https://www.nautilushotelmiami.com',
    desc:'1950s Morris Lapidus landmark reimagined as a design-forward hotel. Iconic architecture, pool club and steps from Lincoln Road.',desc_es:'Emblema de Morris Lapidus de los años 50 reinventado como hotel de diseño. Arquitectura icónica, club de piscina y Lincoln Road a pasos.'},
-  {id:'h87',name:'Cadillac Hotel & Beach Club',cat:'Historic · Art Deco · 4',stars:'',
+  {id:'h87',name:'Cadillac Hotel and Beach Club',cat:'Historic · Art Deco · 4',stars:'',
    img:'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&q=72',
    price:'From $220/night',addr:'3925 Collins Ave, Mid-Beach',
    link:'https://www.cadillachotelbeachclub.com',
@@ -4666,23 +4698,23 @@ hotels:[
    desc:'Jimmy Buffett\'s iconic resort right on Hollywood Beach Broadwalk. 5 pools, rooftop LandShark Bar and pure Florida vacation vibes.',desc_es:'El icónico resort de Jimmy Buffett sobre el Broadwalk de Hollywood Beach. 5 piscinas, el bar LandShark en la azotea y puro ambiente vacacional de Florida.'},
 ],
 parks:[
-  {id:'pk1',name:'Larry & Penny Thompson Park',name_es:'Parque Larry y Penny Thompson',emoji:'',bg:'bg-green',city:'Miami',desc:'The most complete park in Miami-Dade: camping under the stars, an Olympic-size pool, a scenic lake with paddleboats, playgrounds, and sports fields. A true local favorite.',desc_es:'El parque más completo de Miami-Dade: camping bajo las estrellas, piscina olímpica, lago escénico con botes de pedal, juegos infantiles y canchas deportivas. Favorito local.',addr:'12451 SW 184th St, Miami',hrs:'Diario 8AM–6PM',link:'https://www.miamidade.gov/parks/larry-penny.asp'},
+  {id:'pk1',name:'Larry and Penny Thompson Park',name_es:'Parque Larry y Penny Thompson',emoji:'',bg:'bg-green',city:'Miami',desc:'The most complete park in Miami-Dade: camping under the stars, an Olympic-size pool, a scenic lake with paddleboats, playgrounds, and sports fields. A true local favorite.',desc_es:'El parque más completo de Miami-Dade: camping bajo las estrellas, piscina olímpica, lago escénico con botes de pedal, juegos infantiles y canchas deportivas. Favorito local.',addr:'12451 SW 184th St, Miami',hrs:'Diario 8AM–6PM',link:'https://www.miamidade.gov/parks/larry-penny.asp'},
   {id:'pk2',perks:['fauna','pet'],pnote:'Freshwater lakes with resident birds, turtles and the occasional alligator along the edges. There is a dedicated off-leash dog park inside.',pnote_es:'Lagos de agua dulce con aves residentes, tortugas y algún caimán en las orillas. Tiene un parque para perros sueltos adentro.',name:'Amelia Earhart Park',name_es:'Parque Amelia Earhart',emoji:'',bg:'bg-blue',city:'Hialeah',desc:'515 acres of outdoor adventure: freshwater fishing in scenic lakes, a dog park with agility course, BMX track, equestrian center, and extensive picnic facilities. Named after the legendary aviator.',desc_es:'515 acres de aventura al aire libre: pesca en lagos, parque para perros con pista de agilidad, pista BMX, centro ecuestre y extensas áreas de picnic. Nombrado en honor a la legendaria aviadora.',addr:'401 E 65th St, Hialeah',hrs:'Diario 9AM–Atardecer',link:'https://www.miamidade.gov/parks/amelia-earhart.asp'},
   {id:'pk3',perks:['fauna','sunset','photo','swim'],pnote:'The palm-ringed atoll pool is one of the most photographed spots in Miami, and the west-facing shoreline gets a real sunset over the bay.',pnote_es:'La piscina atolón rodeada de palmas es uno de los lugares más fotografiados de Miami, y la orilla que mira al oeste tiene un atardecer real sobre la bahía.',name:'Matheson Hammock Park',name_es:'Parque Matheson Hammock',emoji:'',bg:'bg-teal',city:'Coral Gables',desc:'A true Miami gem: a man-made atoll pool flushed by Biscayne Bay tides, a full-service marina, picnic areas among mangroves, nature trails, and spectacular sunset views. One of the most serene spots in the entire city.',desc_es:'Una verdadera joya de Miami: piscina de atolón bañada por la Bahía Biscayne, marina completa, picnic entre manglares y senderos naturales. Uno de los lugares más serenos de la ciudad.',addr:'9610 Old Cutler Rd, Coral Gables',hrs:'Sunrise–sunset · Park office 8 AM–5 PM',link:'https://www.miamidade.gov/parks/matheson-hammock.asp'},
   {id:'pk4',perks:['fauna','pet','paddle'],pnote:'Manatees enter the mangrove creeks year-round and are most visible from a kayak in the early morning. Leashed dogs are welcome on the trails.',pnote_es:'Los manatíes entran a los canales de manglar todo el año y se ven mejor desde un kayak temprano en la mañana. Los perros con correa son bienvenidos en los senderos.',name:'Oleta River State Park',name_es:'Parque Estatal Río Oleta',emoji:'',bg:'bg-cyan',city:'North Miami Beach',desc:'Florida\'s largest urban park: kayaking and paddleboarding through mangrove tunnels, 14 miles of mountain bike trails through tropical forest, a swimming beach, and camping. The best nature escape closest to the city.',desc_es:'El parque urbano más grande de Florida: kayak por túneles de manglares, 22 km de senderos para mountain bike, playa de natación y camping. La mejor escapada natural cerca de la ciudad.',addr:'3400 NE 163rd St, North Miami Beach',hrs:'Daily 8 AM–sunset',link:'https://www.floridastateparks.org/parks-and-trails/oleta-river-state-park'},
   {id:'pk5',name:'Virginia Key Beach Park',name_es:'Parque Virginia Key Beach',emoji:'',bg:'bg-coral',city:'Miami',desc:'A historically significant park and a beautiful secret. The first beach open to Black residents in Miami (1945), Virginia Key offers a serene bay beach, a beloved vintage carousel from the 1950s, mountain bike trails, and stunning views of the Downtown skyline.',desc_es:'Un parque histórico y un hermoso secreto. La primera playa abierta a residentes negros en Miami (1945), con playa serena, carrusel vintage de los 50, senderos y vistas al skyline del centro.',addr:'4020 Virginia Beach Dr, Miami',hrs:'Daily 7 AM–6 PM',link:'https://virginiakeybeachpark.net'},
   {id:'pk6',name:'Miami Beach Botanical Garden',name_es:'Jardín Botánico Miami Beach',emoji:'',bg:'bg-pink',city:'Miami Beach',desc:'A free tropical oasis in the heart of Miami Beach: rare orchids, towering royal palms, a tranquil Japanese garden, and rotating floral installations. The perfect peaceful escape steps from the busy city.',desc_es:'Un oasis tropical gratuito en el corazón de Miami Beach: orquídeas raras, palmas reales, jardín japonés tranquilo e instalaciones florales rotativas. La escapada perfecta a pasos de la ciudad.',addr:'2000 Convention Center Dr, Miami Beach',hrs:'Tue–Sun 9 AM–5 PM · Closed Mon',link:'https://mbgarden.org'},
-  {id:'pk7',name:'Fruit & Spice Park',name_es:'Parque Fruit & Spice',emoji:'',bg:'bg-lime',city:'Homestead',desc:'The only park of its kind in the US: 500 varieties of tropical fruit trees, exotic spices, and bamboo from around the world. Guided tours let you taste rambutan, jackfruit, carambola, and dozens of fruits you\'ve never tried. A completely unique Miami experience.',desc_es:'El único parque de su tipo en EE.UU.: 500 variedades de árboles frutales tropicales, especias exóticas y bambú de todo el mundo. Tours guiados donde puedes probar rambután, jackfruit y carambola. Única en Miami.',addr:'24801 SW 187th Ave, Homestead',hrs:'Daily 10 AM–5 PM',link:'https://www.fruitandspicepark.org'},
+  {id:'pk7',name:'Fruit and Spice Park',name_es:'Parque Fruit and Spice',emoji:'',bg:'bg-lime',city:'Homestead',desc:'The only park of its kind in the US: 500 varieties of tropical fruit trees, exotic spices, and bamboo from around the world. Guided tours let you taste rambutan, jackfruit, carambola, and dozens of fruits you\'ve never tried. A completely unique Miami experience.',desc_es:'El único parque de su tipo en EE.UU.: 500 variedades de árboles frutales tropicales, especias exóticas y bambú de todo el mundo. Tours guiados donde puedes probar rambután, jackfruit y carambola. Única en Miami.',addr:'24801 SW 187th Ave, Homestead',hrs:'Daily 10 AM–5 PM',link:'https://www.fruitandspicepark.org'},
   {id:'pk8',name:'Bill Sadowski Park',name_es:'Parque Bill Sadowski',emoji:'',bg:'bg-indigo',city:'Palmetto Bay',desc:'Miami\'s best stargazing destination: a public observatory with a 16-inch telescope, butterfly garden, native plant trail, and weekend astronomy programs. Far enough from city lights to see the Milky Way on clear nights.',desc_es:'El mejor lugar para observar estrellas en Miami: observatorio público con telescopio de 40 cm, jardín de mariposas, sendero de plantas nativas y programas de astronomía. Lo suficientemente lejos para ver la Vía Láctea.',addr:'17555 SW 79th Ave, Palmetto Bay',hrs:'Diario 9AM–5PM',link:'https://www.miamidade.gov/parks/bill-sadowski.asp'},
   {id:'pk9',name:'Tropical Park',name_es:'Tropical Park',emoji:'',bg:'bg-amber',city:'Miami',desc:'West Miami\'s most popular park: indoor skating rink, tennis courts, athletic fields, weekend food truck gatherings, and a large equestrian center. The social hub for Miami\'s western communities.',desc_es:'El parque más popular del oeste de Miami: pista de patinaje cubierta, canchas de tenis, campos deportivos, food trucks los fines de semana y un centro ecuestre. El centro social del oeste de Miami.',addr:'7900 SW 40th St, Miami',hrs:'Diario 7AM–10PM',link:'https://www.miamidade.gov/parks/tropical.asp'},
   {id:'pk10',name:'Cutler Bay Town Center Park',name_es:'Parque Cutler Bay',emoji:'',bg:'bg-teal',city:'Cutler Bay',desc:'A modern family park in South Miami-Dade with a splash pad, shaded playground, outdoor fitness equipment, walking trails, and a peaceful pond. Designed with families in mind — one of Miami\'s newest and most thoughtfully planned parks.',desc_es:'Parque familiar moderno en el sur de Miami-Dade con splash pad, juegos sombreados, equipos de fitness al aire libre y senderos tranquilos junto a una laguna. Uno de los parques más nuevos y bien diseñados de Miami.',addr:'10100 SW 200th St, Cutler Bay',hrs:'Diario Amanecer–Atardecer',link:'https://www.cutlerbay-fl.gov/parks'},
 ],
 nightlife:[
   {id:'n1',name:'LIV Nightclub',emoji:'',bg:'bg-nd1',desc:'Miami\'s undisputed #1 club — inside the legendary Fontainebleau Hotel on Miami Beach. LIV hosts the world\'s biggest DJs every Thursday through Sunday in a three-story theatrical space. The list includes Drake, DJ Khaled, and Tiësto. Book table service months in advance.',desc_es:'El club #1 indiscutible de Miami, dentro del legendario Hotel Fontainebleau. Drake, DJ Khaled y Tiësto actúan aquí. Reserva mesa con meses de anticipación.',addr:'4441 Collins Ave, Miami Beach',vibe:'Electronic · Hip-Hop · Celebrity',hrs:'Jue–Dom 11 PM – 5 AM',link:'https://www.livnightclub.com'},
-  {id:'n2',name:'Ball & Chain',emoji:'',bg:'bg-nd4',desc:'Little Havana\'s historic soul — open since 1935, where Billie Holiday, Chet Baker, and Count Basie once played. Today, nightly live salsa bands, incredible mojitos, and the most authentic Cuban nightlife energy in Miami. No reservations — just show up and dance.',desc_es:'El alma histórica de Little Havana desde 1935. Billie Holiday y Count Basie tocaron aquí. Hoy: salsa en vivo cada noche, mojitos increíbles y la energía nocturna cubana más auténtica de Miami.',addr:'1513 SW 8th St, Little Havana',vibe:'Salsa · Jazz · Latin',hrs:'Dom–Jue 11 AM – 1 AM · Vie y Sáb 11 AM – 3 AM',link:'https://www.ballandchainmiami.com'},
+  {id:'n2',name:'Ball and Chain',emoji:'',bg:'bg-nd4',desc:'Little Havana\'s historic soul — open since 1935, where Billie Holiday, Chet Baker, and Count Basie once played. Today, nightly live salsa bands, incredible mojitos, and the most authentic Cuban nightlife energy in Miami. No reservations — just show up and dance.',desc_es:'El alma histórica de Little Havana desde 1935. Billie Holiday y Count Basie tocaron aquí. Hoy: salsa en vivo cada noche, mojitos increíbles y la energía nocturna cubana más auténtica de Miami.',addr:'1513 SW 8th St, Little Havana',vibe:'Salsa · Jazz · Latin',hrs:'Dom–Jue 11 AM – 1 AM · Vie y Sáb 11 AM – 3 AM',link:'https://www.ballandchainmiami.com'},
   {id:'n3',name:'E11EVEN Miami',emoji:'',bg:'bg-nd2',desc:'The world\'s only 24/7 ultra-club — a full sensory experience that never closes. Aerial performers, world-class DJs, celebrity appearances, and a production level that rivals Las Vegas. Come at midnight or sunrise — it\'s always going.',desc_es:'El único ultra-club 24/7 del mundo. Artistas aéreos, DJs de clase mundial y apariciones de celebridades. Nivel de producción comparable a Las Vegas. No importa la hora — siempre está en marcha.',addr:'29 NE 11th St, Downtown Miami',vibe:'Multi-género · Espectáculo · Sin cierre',hrs:'Abierto 24/7',link:'https://11miami.com'},
   {id:'n4',name:'Mango\'s Tropical Cafe',emoji:'',bg:'bg-nd3',desc:'Ocean Drive\'s most electrifying entertainment venue. Live Brazilian samba shows, Latin dance performances, and an infectious energy that spills onto the sidewalk. Equal parts club, restaurant, and live theater — the most Miami experience on the strip.',desc_es:'El recinto de entretenimiento más electrizante de Ocean Drive. Shows de samba brasileña, danzas latinas y energía que se desborda a la acera. Mitad club, mitad teatro en vivo.',addr:'900 Ocean Dr, South Beach',vibe:'Latin · Samba · Entertainment',hrs:'Todos los días 12 PM – 5 AM',link:'https://miami.mangos.com'},
-    {id:'n6',name:'Basement Bowl & Skate',emoji:'',bg:'bg-nd5',desc:'Bowling lanes, a small ice rink and a bar under one roof in the basement of The Miami Beach EDITION. An alternative to the megaclubs: DJ sets, an odd crowd and something to actually do besides stand around. Minors are usually cut off around 8 PM.',desc_es:'Bolera, una pista de hielo pequeña y un bar bajo un mismo techo, en el sótano del Miami Beach EDITION. Una alternativa a los megaclubs: sesiones de DJ, público variado y algo que hacer además de estar de pie. A los menores los cortan cerca de las 8 PM.',addr:'2901 Collins Ave, Miami Beach',vibe:'Bowling · Patinaje · Underground',hrs:'Sun–Thu 5–11 PM · Fri–Sat 5 PM–2 AM',perks:['family','photo'],pnote:'It is inside the Miami Beach EDITION, not 1 Hotel — a mix-up that sends people to the wrong block. Bowling and the ice rink run early; minors are usually cut off around 8 or 9 PM, after which it turns into a bar with a DJ.',pnote_es:'Está dentro del Miami Beach EDITION, no en el 1 Hotel — una confusión que manda a la gente a la cuadra equivocada. El bowling y la pista de hielo funcionan temprano; a los menores los cortan sobre las 8 o 9 PM, y de ahí se vuelve un bar con DJ.',link:'https://basementmiami.com'},
+    {id:'n6',name:'Basement Bowl and Skate',emoji:'',bg:'bg-nd5',desc:'Bowling lanes, a small ice rink and a bar under one roof in the basement of The Miami Beach EDITION. An alternative to the megaclubs: DJ sets, an odd crowd and something to actually do besides stand around. Minors are usually cut off around 8 PM.',desc_es:'Bolera, una pista de hielo pequeña y un bar bajo un mismo techo, en el sótano del Miami Beach EDITION. Una alternativa a los megaclubs: sesiones de DJ, público variado y algo que hacer además de estar de pie. A los menores los cortan cerca de las 8 PM.',addr:'2901 Collins Ave, Miami Beach',vibe:'Bowling · Patinaje · Underground',hrs:'Sun–Thu 5–11 PM · Fri–Sat 5 PM–2 AM',perks:['family','photo'],pnote:'It is inside the Miami Beach EDITION, not 1 Hotel — a mix-up that sends people to the wrong block. Bowling and the ice rink run early; minors are usually cut off around 8 or 9 PM, after which it turns into a bar with a DJ.',pnote_es:'Está dentro del Miami Beach EDITION, no en el 1 Hotel — una confusión que manda a la gente a la cuadra equivocada. El bowling y la pista de hielo funcionan temprano; a los menores los cortan sobre las 8 o 9 PM, y de ahí se vuelve un bar con DJ.',link:'https://basementmiami.com'},
   {id:'n7',name:'Do Not Sit on the Furniture',emoji:'',bg:'bg-nd6',desc:'South Beach\'s most beloved underground club — intimate, art-forward, and the beating heart of Miami\'s indie electronic scene. Famous for rare DJ sets, disco, and house music in a small, unpretentious venue where music is always the priority. A true local cult favorite.',desc_es:'El club underground más querido de South Beach: íntimo, artístico y el corazón de la escena electrónica indie de Miami. DJs raros, disco y house en un ambiente pequeño sin pretensiones.',addr:'423 16th St, South Beach',vibe:'Indie Electronic · Disco · House',hrs:'Vie–Dom 10 PM – 5 AM',link:'https://www.donotsitonthefurniture.com'},
     {id:'n9',name:'Club Space',emoji:'',bg:'bg-nd1',desc:'Miami\'s legendary underground techno church — a raw downtown warehouse club open 24/7 with a rooftop terrace and the city\'s most respected sound system. Where global electronic music legends play marathon sets from midnight to Monday morning. A true Miami institution.',desc_es:'La legendaria catedral underground de techno de Miami — club en un almacén del centro, abierto 24/7, con terraza y el mejor sistema de sonido de la ciudad. Leyendas del electrónico tocan maratones hasta el lunes. Una institución.',addr:'34 NE 11th St, Downtown',vibe:'Techno · House · Underground',hrs:'Jue–Dom 11 PM – 11 AM del día siguiente',link:'https://www.clubspace.com'},
   {id:'n10',name:'Sugar Rooftop Bar',emoji:'',bg:'bg-nd5',desc:'Miami\'s most stunning rooftop cocktail bar — 40 floors above Brickell at the EAST Hotel with panoramic 360° bay and city views. Lush tropical garden, Asian-inspired cocktails and the perfect golden-hour perch. No cover, no attitude — just the city at your feet.',desc_es:'El bar en azotea más impresionante de Miami — 40 pisos sobre Brickell en el EAST Hotel con vistas panorámicas de 360°. Jardín tropical, cócteles asiáticos y el lugar ideal para ver el atardecer sin cover.',addr:'788 Brickell Plaza, Brickell (piso 40)',vibe:'Rooftop · Cocktails · Views · Trendy',hrs:'Lun–Vie 5 PM – 3 AM · Sáb–Dom 2 PM – 3 AM',link:'https://www.easthotels.com/en/miami/restaurants-and-bars/sugar/'},
@@ -4697,7 +4729,7 @@ nightlife:[
     {id:'n23',name:'The Sylvester',emoji:'',bg:'bg-nd1',desc:'A retro cocktail bar between Wynwood and the Design District, done up in quirky old-Florida decor with a pool table by the door. Serious drinks, a resident DJ, and a happy hour that starts cheapest at five and climbs a dollar every hour until eight. Where people who live here go after dinner.',desc_es:'Un bar de c\u00f3cteles retro entre Wynwood y el Design District, decorado con aire de Florida antigua y una mesa de billar junto a la puerta. Tragos serios, DJ residente, y un happy hour que arranca m\u00e1s barato a las cinco y sube un d\u00f3lar cada hora hasta las ocho. Donde va la gente que vive aqu\u00ed despu\u00e9s de cenar.',addr:'3456 N Miami Ave, Wynwood / Design District',vibe:'C\u00f3cteles \u00b7 Retro \u00b7 Billar \u00b7 DJ',hrs:'Mar\u2013Jue 5 PM \u2013 2 AM \u00b7 Vie y S\u00e1b 5 PM \u2013 3 AM',perks:['photo'],pnote:'Closed Sunday and Monday. Come between five and eight if the happy hour is the point \u2014 the price climbs by the hour. There is one pool table and it gets claimed early.',pnote_es:'Cierra domingo y lunes. Ve entre cinco y ocho si vas por el happy hour \u2014 el precio sube por hora. Solo hay una mesa de billar y se ocupa temprano.',link:'https://www.thesylvesterbar.com'},
   {id:'n24',name:'Conventillo',emoji:'',bg:'bg-nd4',desc:'A small Argentinian cocktail bar in the MiMo District with a patio that feels like a courtyard in Buenos Aires. Creative drinks, gnocchi and pizza people come back for, and salsa nights that fill the place. One of the highest-rated bars in the city and still almost nobody outside the neighborhood knows it.',desc_es:'Un bar de c\u00f3cteles argentino peque\u00f1o en el MiMo District, con un patio que se siente como un conventillo porte\u00f1o. Tragos creativos, \u00f1oquis y pizza por los que la gente regresa, y noches de salsa que lo llenan. Uno de los bares mejor calificados de la ciudad y todav\u00eda casi nadie fuera del barrio lo conoce.',addr:'749 NE 79th St, MiMo District',vibe:'C\u00f3cteles \u00b7 Argentino \u00b7 Patio \u00b7 Salsa',hrs:'Mon\u2013Thu 6 PM \u2013 1 AM \u00b7 Fri\u2013Sat 6 PM \u2013 2 AM \u00b7 Closed Sun',hrs_es:'Lun\u2013Jue 6 PM \u2013 1 AM \u00b7 Vie y S\u00e1b 6 PM \u2013 2 AM \u00b7 Cierra Dom',perks:['photo'],pnote:'Closed Sundays. It is genuinely small, so a group of more than four should message ahead on WhatsApp at (786) 824-0548. It sits behind Battubelin Italian Restaurant and parking is free. Happy hour runs daily 6 to 8 PM.',pnote_es:'Cierra los domingos. Es de verdad peque\u00f1o, as\u00ed que un grupo de m\u00e1s de cuatro deber\u00eda escribir antes por WhatsApp al (786) 824-0548. Est\u00e1 detr\u00e1s del restaurante Battubelin y tiene estacionamiento gratis. Happy hour todos los d\u00edas de 6 a 8 PM.',link:'https://www.thisconventillo.com'},
   {id:'n25',name:'Bar Kaiju',emoji:'',bg:'bg-nd2',desc:'A tiny cocktail bar on the second floor of The Citadel in Little River, themed around movie monsters and run by people who take the drinks far more seriously than the joke. Dim, hip, and the kind of place where the bartender asks what you like instead of handing you a menu.',desc_es:'Un bar de c\u00f3cteles diminuto en el segundo piso de The Citadel, en Little River, con tema de monstruos de cine y hecho por gente que se toma los tragos mucho m\u00e1s en serio que el chiste. Oscuro, moderno, y de esos donde el bartender te pregunta qu\u00e9 te gusta en vez de darte una carta.',addr:'8300 NE 2nd Ave, 2do piso, Little River',vibe:'C\u00f3cteles de autor \u00b7 \u00cdntimo \u00b7 Tem\u00e1tico',hrs:'Mar\u2013Jue y Dom 6 PM \u2013 1 AM \u00b7 Vie y S\u00e1b 7 PM \u2013 2 AM',perks:['photo'],pnote:'Closed Mondays. It is upstairs inside The Citadel food hall, so walk in and go up \u2014 people miss it from the street. Cocktails run around $18: a two-drinks-and-talk place, not a night out.',pnote_es:'Cierra los lunes. Est\u00e1 arriba, dentro del food hall The Citadel, as\u00ed que entra y sube \u2014 desde la calle se pasa por alto. Los c\u00f3cteles rondan los $18: es un lugar de dos tragos y conversar, no de noche larga.',link:'https://barkaiju.com'},
-  {id:'n26',name:'River House Wine & Bar',emoji:'',bg:'bg-nd6',desc:'An old Florida house near the Miami River whose front door opens onto a big backyard full of trees and fairy lights \u2014 and a converted bus. Wine, cocktails, charcuterie and pizza in a green pocket that does not feel like Miami at all. Four nights a week only.',desc_es:'Una casa vieja de Florida cerca del r\u00edo Miami cuya puerta da a un patio grande lleno de \u00e1rboles y luces \u2014 y un autob\u00fas reconvertido. Vino, c\u00f3cteles, embutidos y pizza, en un rinc\u00f3n verde que no se siente para nada como Miami. Solo cuatro noches a la semana.',addr:'437 SW 2nd St, Miami River',vibe:'Vino \u00b7 Jard\u00edn \u00b7 Pizza \u00b7 Fotog\u00e9nico',hrs:'Mi\u00e9\u2013S\u00e1b desde las 6 PM \u00b7 Vie y S\u00e1b hasta 1 AM',perks:['photo'],pnote:'Open Wednesday to Saturday only \u2014 closed Sunday through Tuesday, which catches people out. Go for the garden; service slows when it fills, so it is a linger place, not a quick stop.',pnote_es:'Abre solo de mi\u00e9rcoles a s\u00e1bado \u2014 cierra de domingo a martes, y eso agarra a mucha gente. Ve por el jard\u00edn; el servicio se pone lento cuando se llena, as\u00ed que es para quedarse, no para pasar r\u00e1pido.'},
+  {id:'n26',name:'River House Wine and Bar',emoji:'',bg:'bg-nd6',desc:'An old Florida house near the Miami River whose front door opens onto a big backyard full of trees and fairy lights \u2014 and a converted bus. Wine, cocktails, charcuterie and pizza in a green pocket that does not feel like Miami at all. Four nights a week only.',desc_es:'Una casa vieja de Florida cerca del r\u00edo Miami cuya puerta da a un patio grande lleno de \u00e1rboles y luces \u2014 y un autob\u00fas reconvertido. Vino, c\u00f3cteles, embutidos y pizza, en un rinc\u00f3n verde que no se siente para nada como Miami. Solo cuatro noches a la semana.',addr:'437 SW 2nd St, Miami River',vibe:'Vino \u00b7 Jard\u00edn \u00b7 Pizza \u00b7 Fotog\u00e9nico',hrs:'Mi\u00e9\u2013S\u00e1b desde las 6 PM \u00b7 Vie y S\u00e1b hasta 1 AM',perks:['photo'],pnote:'Open Wednesday to Saturday only \u2014 closed Sunday through Tuesday, which catches people out. Go for the garden; service slows when it fills, so it is a linger place, not a quick stop.',pnote_es:'Abre solo de mi\u00e9rcoles a s\u00e1bado \u2014 cierra de domingo a martes, y eso agarra a mucha gente. Ve por el jard\u00edn; el servicio se pone lento cuando se llena, as\u00ed que es para quedarse, no para pasar r\u00e1pido.'},
   {id:'n27',name:'Cervecería La Tropical',emoji:'',bg:'bg-nd3',desc:'The revival of Cuba\'s first great brewery, founded in Havana in 1888 and brought back to Wynwood by a descendant of the founding family. An open-air garden brewery with Cuban-style lagers, live music and a kitchen by chef Cindy Hutson. Family-friendly early, a proper night out after dark.',desc_es:'El renacer de la primera gran cervecería de Cuba, fundada en La Habana en 1888 y devuelta a la vida en Wynwood por un descendiente de la familia fundadora. Cervecería jardín al aire libre con lagers de estilo cubano, música en vivo y cocina de la chef Cindy Hutson. Familiar temprano, salida de verdad al caer la noche.',addr:'42 NE 25th St, Wynwood',vibe:'Brewery · Cuban · Live Music',vibe_es:'Cervecería · Cubano · Música en vivo',hrs:'Wed–Thu 4–10 PM · Fri 4–11 PM · Sat 12–11 PM · Sun 12–9 PM · Closed Mon–Tue',hrs_es:'Mié–Jue 4–10 PM · Vie 4–11 PM · Sáb 12–11 PM · Dom 12–9 PM · Cierra Lun–Mar',link:'https://www.cervecerialatropical.com'},
   {id:'n28',name:'Floyd',emoji:'',bg:'bg-nd2',desc:'The small room next door to Club Space, and for a lot of people the better one. A red-lit basement built around its sound system, where the DJ plays deep house and breakbeats to a few hundred people instead of a few thousand. Locals bring out-of-town friends here to show them Miami without the velvet rope.',desc_es:'La sala peque\u00f1a al lado de Club Space, y para muchos la mejor. Un s\u00f3tano de luz roja construido alrededor de su sonido, donde el DJ pincha deep house y breakbeats para unos cientos de personas en vez de miles. Los locales traen aqu\u00ed a sus amigos de fuera.',addr:'34 NE 11th St, Downtown',vibe:'Deep House · Intimate · Underground',vibe_es:'Deep house \u00b7 \u00cdntimo \u00b7 Underground',hrs:'Fri\u2013Sat 11 PM\u20136 AM \u00b7 Sun 11 PM\u20134 AM',hrs_es:'Vie\u2013S\u00e1b 11 PM\u20136 AM \u00b7 Dom 11 PM\u20134 AM',link:'https://www.floydmiami.com'},
   {id:'n29',name:'Jolene Sound Room',emoji:'',bg:'bg-nd5',desc:'A downtown basement with a New York disco feel and a no-phones policy on the floor \u2014 you dance instead of filming. Disco, house and hi-fi listening, with the sound system as the whole point. Check the ticket price online before you go; the door runs higher.',desc_es:'Un s\u00f3tano en Downtown con aire de disco neoyorquina y prohibici\u00f3n de celulares en la pista: aqu\u00ed se baila, no se graba. Disco, house y escucha en alta fidelidad, con el sonido como raz\u00f3n de ser. Compra en l\u00ednea: en la puerta cuesta bastante m\u00e1s.',addr:'200 E Flagler St, Downtown',vibe:'Disco · House · Hi-Fi',vibe_es:'Disco \u00b7 House \u00b7 Alta fidelidad',hrs:'Thu\u2013Sun 10 PM\u20134 AM',hrs_es:'Jue\u2013Dom 10 PM\u20134 AM',link:'https://jolenesoundroom.com'},
@@ -4727,7 +4759,7 @@ kids:[
   {id:'k4',name:'Monkey Jungle',name_es:'Monkey Jungle',emoji:'',ico_color:'c-gold',ico_path:'<circle cx="12" cy="13" r="7"/><circle cx="8.5" cy="12" r="1"/><circle cx="15.5" cy="12" r="1"/><path d="M9.5 16c1 1 4 1 5 0"/><path d="M6 8c-1-2-1-4 1-5"/><path d="M18 8c1-2 1-4-1-5"/>',bg:'bg-amber',desc:'Over 400 primates roam free while visitors walk through caged paths. A 30-acre tropical forest where you\'re in the cage and the monkeys are free. A uniquely Miami experience.',desc_es:'Más de 400 primates en libertad mientras los visitantes caminan en jaulas. Un bosque tropical donde tú estás enjaulado y los monos son libres. Una experiencia única.',addr:'14805 SW 216th St, South Miami',hrs:'Daily 9:45 AM–4 PM',age:'All ages',price:'$29.95 adults · $23.95 kids',link:'https://monkeyjungle.com'},
   {id:'k5',name:'Crandon Park Family Zone',name_es:'Zona Familiar Crandon Park',emoji:'',ico_color:'c-teal',ico_path:'<path d="M2 20c2-4 5-6 10-6s8 2 10 6"/><circle cx="12" cy="7" r="4"/>',bg:'bg-cyan',desc:'Key Biscayne\'s best family beach with calm lagoon waters perfect for young swimmers, shaded picnic areas, a nature center with sea turtle education, and playgrounds right on the sand.',desc_es:'La mejor playa familiar de Key Biscayne con aguas tranquilas perfectas para niños, áreas de picnic y parques de juego en la arena.',addr:'6747 Crandon Blvd, Key Biscayne',hrs:'Sunrise–sunset · Park office 8 AM–5 PM',age:'All ages',price:'$5 parking',link:'https://www.miamidade.gov/parks/crandon.asp'},
   {id:'k6',name:'iFly Indoor Skydiving',name_es:'iFly Paracaidismo Interior',emoji:'',ico_color:'c-purple',ico_path:'<path d="M12 3v6"/><path d="M3 13c3-3 6-4 9-4s6 1 9 4"/><path d="M8 13l-2 8"/><path d="M16 13l2 8"/><path d="M9 21h6"/>',bg:'bg-purple',desc:'Real indoor skydiving in a vertical wind tunnel. Kids as young as 3 can fly with an instructor in 120mph winds. No experience needed. Unforgettable for the whole family.',desc_es:'Paracaidismo real en túnel de viento vertical. Niños desde 3 años pueden volar con instructor a 120mph. Sin experiencia necesaria. Inolvidable para toda la familia.',addr:'1501 NW N River Dr, Miami',hrs:'Mon–Fri 12–7:30 PM · Sat 10 AM–8 PM · Sun 10 AM–6 PM',age:'3+ years',price:'From $49.99',link:'https://www.ifly.com/miami'},
-  {id:'k7',name:'Zoo Miami',name_es:'Zoo Miami',emoji:'',ico_color:'c-green',ico_path:'<circle cx="12" cy="13" r="6"/><path d="M8 8l-2-4"/><path d="M16 8l2-4"/><circle cx="10" cy="12" r="1"/><circle cx="14" cy="12" r="1"/><path d="M9 16c1.5 1 4.5 1 6 0"/>',bg:'bg-green',desc:'The largest zoo east of the Mississippi. Over 3,000 animals in natural habitats across 740 acres. The Amazon & Beyond exhibit and Wildlife Show are highlights for all ages.',desc_es:'El zoológico más grande al este del Mississippi. Más de 3,000 animales en hábitats naturales. La exhibición Amazon & Beyond y el Wildlife Show son imprescindibles.',addr:'12400 SW 152nd St, Miami',hrs:'Daily 10AM–5PM',age:'All ages',price:'$22 adults · $18 kids',tq:'zoo',link:'https://www.zoomiami.org'},
+  {id:'k7',name:'Zoo Miami',name_es:'Zoo Miami',emoji:'',ico_color:'c-green',ico_path:'<circle cx="12" cy="13" r="6"/><path d="M8 8l-2-4"/><path d="M16 8l2-4"/><circle cx="10" cy="12" r="1"/><circle cx="14" cy="12" r="1"/><path d="M9 16c1.5 1 4.5 1 6 0"/>',bg:'bg-green',desc:'The largest zoo east of the Mississippi. Over 3,000 animals in natural habitats across 740 acres. The Amazon and Beyond exhibit and Wildlife Show are highlights for all ages.',desc_es:'El zoológico más grande al este del Mississippi. Más de 3,000 animales en hábitats naturales. La exhibición Amazon and Beyond y el Wildlife Show son imprescindibles.',addr:'12400 SW 152nd St, Miami',hrs:'Daily 10AM–5PM',age:'All ages',price:'$22 adults · $18 kids',tq:'zoo',link:'https://www.zoomiami.org'},
   {id:'k8',name:'Bayride Miami',name_es:'Bayride Miami',emoji:'',ico_color:'c-teal',ico_path:'<path d="M3 17h18l-2 4H5z"/><path d="M12 3v11"/><path d="M12 3l6 8H12z"/>',bg:'bg-cyan',desc:'Electric boat tours of Biscayne Bay designed for families. Kids can captain the boat, spot manatees and dolphins, and swim in the clear bay waters. The most fun way to see Miami from the water.',desc_es:'Tours en bote eléctrico por la Bahía Biscayne diseñados para familias. Los niños pueden manejar el bote, ver manatíes y delfines y nadar en las aguas claras de la bahía.',addr:'Bayside Marina, Downtown',hrs:'Daily 9AM–7PM',age:'All ages',price:'From $35',link:'https://www.bayride.com'},
   {id:'k9',name:'Patch of Heaven Sanctuary',name_es:'Casa de Mariposas Patch of Heaven',cat:'Nature · Butterflies',cat_es:'Naturaleza · Mariposas',desc:'A magical tropical butterfly garden in South Miami Heights. Walk among hundreds of free-flying butterflies.',desc_es:'Un mágico jardín de mariposas tropicales en South Miami Heights. Camina entre cientos de mariposas.',addr:'21900 SW 157th Ave, Miami',hrs:'Wed–Fri 8 AM–5 PM · Sat–Sun 8 AM–6 PM · Closed Mon–Tue',tags:['Butterflies','Nature','Family'],link:'https://patchofheavensanctuary.org',photo_url:'',addr:'Haulover Park north end, 10800 Collins Ave, Miami Beach',hrs:'Sunrise–sunset',hrs_es:'Amanecer–atardecer'},
 
@@ -4786,6 +4818,11 @@ coffee:[
     desc:'Miami\'s original third-wave coffee roaster, born in Wynwood in 2010. Single-origin beans, expert roasting, and a cool industrial-chic space. The gold standard of Miami specialty coffee.',
     desc_es:'El primer tostador de café de tercera ola de Miami, nacido en Wynwood en 2010. Granos de origen único, tostado experto y un espacio industrial chic. El estándar de oro del café especial.',
     addr:'2390 NW 2nd Ave, Wynwood',hrs:'Daily 7 AM–7 PM',link:'https://panthercoffee.com'},
+  {id:'cf13',name:'Don Pietro Gelato',name_es:'Don Pietro Gelato',emoji:'',bg:'bg-blue',badge:'New Gelateria',badge_es:'Nueva Gelatería',
+    desc:'Artisanal Italian gelato made fresh daily at RK Sunny Isles Square. Handmade waffle cones, cannoli cones dipped in dark and white chocolate, and classics like pistachio and tiramisu. Opens in the afternoon and stays late.',
+    desc_es:'Gelato italiano artesanal hecho fresco cada día en RK Sunny Isles Square. Conos de waffle hechos a mano, conos de cannoli bañados en chocolate negro y blanco, y clásicos como pistacho y tiramisú. Abre en la tarde y cierra tarde.',
+    addr:'3099 NE 163rd St, North Miami Beach',hrs:'Daily 2 PM–10:45 PM',hrs_es:'Todos los días 2 PM–10:45 PM',
+    link:'https://www.instagram.com/donpietrogelato/'},
   {id:'cf3',name:'Café Versailles',name_es:'Café Versailles',emoji:'',bg:'bg-coral',badge:'Little Havana',zone:'little-havana',
     desc:'The most famous Cuban coffee window in Miami. A cultural institution since 1971. The ventanita (walk-up window) serves the best café cubano and colada in the city. Standing room only.',
     desc_es:'La ventanita de café cubano más famosa de Miami. Una institución cultural desde 1971. La ventanita sirve el mejor café cubano y colada de la ciudad. Solo de pie.',
@@ -4818,8 +4855,8 @@ coffee:[
 let lang=(function(){try{return localStorage.getItem('mm_lang')==='es'?'es':'en';}catch(e){return 'en';}})(), activeFlt='all';
 const TX={
 en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic&nbsp;City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'108',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'6',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
-nav:[{label:'Discover',items:[{icon:'',lbl:'Map',cnt:'',id:'sec-map'},{icon:'',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'',lbl:'Hotels',cnt:'',id:'sec-hotels'},{icon:'',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'',lbl:'Cinemas',cnt:'9',id:'sec-cine'},{icon:'',lbl:'Nightlife',cnt:'8',id:'sec-night'}]},{label:'Curated',items:[{icon:'',lbl:'On the Water',cnt:'',id:'sec-water'},{icon:'',lbl:'Luxury Miami',cnt:'',id:'sec-lux'},{icon:'',lbl:'Leave the Mainland',cnt:'',id:'sec-esc'}]},{label:'Explore More',items:[{icon:'',lbl:'Miami Through Time',cnt:'',id:'sec-mtt'},{icon:'',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'',lbl:'Stadiums',cnt:'6',id:'sec-stad'},{icon:'',lbl:'Miami Insiders',cnt:'',id:'sec-insiders'},{icon:'',lbl:'Top Landmarks',cnt:'',id:'sec-place'},{icon:'',lbl:'Parks',cnt:'10',id:'sec-parks'},{icon:'',lbl:'Shopping',cnt:'8',id:'sec-shop'},{icon:'',lbl:'Art & Galleries',cnt:'',id:'sec-art'},{icon:'',lbl:'Coffee Shops',cnt:'',id:'sec-coffee'},{icon:'',lbl:'Kids & Families',cnt:'',id:'sec-kids'},{icon:'',lbl:'Day Trips',cnt:'',id:'sec-daytrips'},{icon:'',lbl:'Airports',cnt:'',id:'sec-airports'},{icon:'',lbl:'Getting Around',cnt:'',id:'sec-transport'},{icon:'',lbl:'Events Calendar',cnt:'10',id:'sec-events'},{icon:'',lbl:'Fly Over Miami',cnt:'',id:'sec-drones'}]}],
-tt:{airports:['Fly In','Miami Airports'],drones:['Aerial Views','Miami from Above'],rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],shop:['Best Malls','Shopping Centers'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['Recurring','Events Calendar'],cine:['Now Showing','Miami Cinemas'],night:['After Dark','Nightlife'],hotels:['Where to Stay','Best Hotels in Miami'],parks:['Green Miami','Parks & Nature'],transport:['Getting Around','Transportation Guide'],art:['Wynwood & Beyond','Art & Galleries'],coffee:['Best Brews','Coffee Shops & Cafés'],kids:['Family Fun','Kids & Families'],daytrips:['Beyond Miami','Day Trips'],water:['On The Water','Boats in Miami'],lux:['The High Life','Luxury Miami'],esc:['Leave The Mainland','Cruises from Miami']},
+nav:[{label:'Discover',items:[{icon:'',lbl:'Map',cnt:'',id:'sec-map'},{icon:'',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'',lbl:'Hotels',cnt:'',id:'sec-hotels'},{icon:'',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'',lbl:'Cinemas',cnt:'9',id:'sec-cine'},{icon:'',lbl:'Nightlife',cnt:'8',id:'sec-night'}]},{label:'Curated',items:[{icon:'',lbl:'On the Water',cnt:'',id:'sec-water'},{icon:'',lbl:'Luxury Miami',cnt:'',id:'sec-lux'},{icon:'',lbl:'Leave the Mainland',cnt:'',id:'sec-esc'}]},{label:'Explore More',items:[{icon:'',lbl:'Miami Through Time',cnt:'',id:'sec-mtt'},{icon:'',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'',lbl:'Stadiums',cnt:'6',id:'sec-stad'},{icon:'',lbl:'Miami Insiders',cnt:'',id:'sec-insiders'},{icon:'',lbl:'Top Landmarks',cnt:'',id:'sec-place'},{icon:'',lbl:'Parks',cnt:'10',id:'sec-parks'},{icon:'',lbl:'Shopping',cnt:'8',id:'sec-shop'},{icon:'',lbl:'Art and Galleries',cnt:'',id:'sec-art'},{icon:'',lbl:'Coffee Shops',cnt:'',id:'sec-coffee'},{icon:'',lbl:'Kids and Families',cnt:'',id:'sec-kids'},{icon:'',lbl:'Day Trips',cnt:'',id:'sec-daytrips'},{icon:'',lbl:'Airports',cnt:'',id:'sec-airports'},{icon:'',lbl:'Getting Around',cnt:'',id:'sec-transport'},{icon:'',lbl:'Events Calendar',cnt:'10',id:'sec-events'},{icon:'',lbl:'Fly Over Miami',cnt:'',id:'sec-drones'}]}],
+tt:{airports:['Fly In','Miami Airports'],drones:['Aerial Views','Miami from Above'],rest:['Top Picks','Best Restaurants in Miami'],beach:['Sun and Sand','Best Beaches'],museum:['Culture and Art','Museums'],shop:['Best Malls','Shopping Centers'],theater:['On Stage','Theaters'],concert:['Live Music','Concert Venues'],stad:['Sports','Stadiums and Arenas'],place:['Must-See','Top Landmarks'],events:['Recurring','Events Calendar'],cine:['Now Showing','Miami Cinemas'],night:['After Dark','Nightlife'],hotels:['Where to Stay','Best Hotels in Miami'],parks:['Green Miami','Parks and Nature'],transport:['Getting Around','Transportation Guide'],art:['Wynwood and Beyond','Art and Galleries'],coffee:['Best Brews','Coffee Shops & Cafés'],kids:['Family Fun','Kids and Families'],daytrips:['Beyond Miami','Day Trips'],water:['On The Water','Boats in Miami'],lux:['The High Life','Luxury Miami'],esc:['Leave The Mainland','Cruises from Miami']},
 sa:'See all →',rf:['All',' Cuban',' Seafood',' Mexican',' Japanese',' Mediterranean','️ Latin',' Italian',' American',' Fine Dining',' Brunch'],rfv:['all','cuban','seafood','mexican','japanese','mediterranean','latin','italian','american','finedining','brunch'],
 fTag:'The Magic City, curated for you.',fDevLbl:'Developed by',fEx:'Explore',fCo:'Company',fLinks1:['Restaurants','Beaches','Museums','Theaters','Stadiums'],fLinks2:['About','Contact','Privacy Policy','Submit a Place','For Business'],fCopy:'© 2026 Miami Magic · Y & Y Entertainment Corp',fRights:'All Rights Reserved',
 mEye:' Business Model',mH2:'How to Make <em>Money</em> with Miami Magic',mSub:'A complete guide to turning this app into a real, scalable business.',revT:'Realistic Revenue Projection (per month)',rmT:'Step-by-Step Launch Plan',rPh:['Phase 1','Phase 2','Phase 3'],rPer:['Months 1–3','Months 4–8','Month 12+'],rMo:'/ month',rD:['10 listings at $250/mo','Ads + commissions + 40 listings','All streams + partnerships'],
@@ -4958,7 +4995,7 @@ function buildDB(){
     rows.push({id:g.id,type:'gallery',emoji:g.emoji||'',bg:g.bg||'bg-coral',name:n(g.name,g.name_es||g.name),
       sub:(lang==='es'?'Arte · ':'Art · ')+g.addr,badge:lang==='es'?'Arte':'Art',
       link:g.link||('https://www.google.com/maps/search/'+encodeURIComponent(g.name+' Miami')),
-      btn:t.moreBtn,sec:'sec-art',grp:lang==='es'?'Arte y Galerías':'Art & Galleries',
+      btn:t.moreBtn,sec:'sec-art',grp:lang==='es'?'Arte y Galerías':'Art and Galleries',
       kw:[g.name,g.addr,n(g.desc,g.desc_es)||'','art gallery wynwood museo miami'].join(' ').toLowerCase(),obj:g});
   });
   (D.coffee||[]).forEach(c=>{
@@ -4972,7 +5009,7 @@ function buildDB(){
     rows.push({id:k.id,type:'kids',emoji:k.emoji||'',bg:k.bg||'bg-teal',name:n(k.name,k.name_es||k.name),
       sub:(lang==='es'?'Familias · ':'Kids · ')+k.addr,badge:lang==='es'?'Familias':'Kids',
       link:k.link||('https://www.google.com/maps/search/'+encodeURIComponent(k.name+' Miami')),
-      btn:t.moreBtn,sec:'sec-kids',grp:lang==='es'?'Niños y Familias':'Kids & Families',
+      btn:t.moreBtn,sec:'sec-kids',grp:lang==='es'?'Niños y Familias':'Kids and Families',
       kw:[k.name,k.addr,n(k.desc,k.desc_es)||'','kids family children zoo museum miami'].join(' ').toLowerCase(),obj:k});
   });
   (D.daytrips||[]).forEach(d=>{
@@ -5579,7 +5616,7 @@ function openItemModal(obj,type,link,btnLabel){
     var mi=document.getElementById('mImg');
     if(mi&&obj.img){mi.style.backgroundImage='url('+obj.img+')';mi.style.backgroundSize='cover';mi.style.backgroundPosition='center';}
   } else if(type==='gallery'){
-    cat=lang==='es'?'Arte & Galerías':'Art & Galleries'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
+    cat=lang==='es'?'Arte y Galerías':'Art and Galleries'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows=mmAddrRow(obj.addr,miSvg('pin',13))+'<div class="m-row">'+miSvg('clock',13)+' '+obj.hrs+'</div>';
     /* chip de Google Maps eliminado: la fila de direccion ya abre Maps */
     link=link||obj.link; btnLabel=btnLabel||(lang==='es'?'Más Información →':'More Info →');
@@ -5590,7 +5627,7 @@ function openItemModal(obj,type,link,btnLabel){
     link=link||obj.link; btnLabel=btnLabel||(lang==='es'?'Visitar Sitio Web →':'Visit Website →');
     setModalImg(obj.bg||'bg-amber',obj.emoji||'',obj.id);
   } else if(type==='kids'){
-    cat=lang==='es'?'Niños y Familias':'Kids & Families'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
+    cat=lang==='es'?'Niños y Familias':'Kids and Families'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows=mmAddrRow(obj.addr,'<svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>')+'<div class="m-row"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>'+obj.hrs+'</div><div class="m-row"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L13.41 20.59a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>'+obj.price+'</div><div class="m-row"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>'+obj.age+'</div>';
     /* chip de Google Maps eliminado: la fila de direccion ya abre Maps */
     link=link||((obj.tq && typeof tqLink==='function')?tqLink(obj.tq):obj.link); btnLabel=btnLabel||(obj.tq?(lang==='es'?'Comprar Entradas →':'Get Tickets →'):(lang==='es'?'Más Info →':'More Info →'));
@@ -5998,7 +6035,7 @@ var MM_DEFERRED=[
   {id:'sec-place',src:'places',fn:function(){return renderPlace();},en:'Places',es:'Lugares',ic:'<path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/>'},
   {id:'sec-parks',src:'parks',fn:function(){return renderParks();},en:'Parks',es:'Parques',ic:'<path d="M12 3.5 6.8 11h3l-4 6h12.4l-4-6h3L12 3.5z"/><path d="M12 17v3.5"/>'},
   {id:'sec-shop',src:'shopping',fn:function(){return renderShop();},en:'Shopping',es:'Tiendas',ic:'<path d="M6 8.5h12l1 12H5l1-12z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/>'},
-  {id:'sec-art',src:'galleries',fn:function(){return renderArt();},en:'Art & Murals',es:'Arte y Murales',ic:'<path d="M12 3.5c-4.7 0-8.5 3.6-8.5 8s3.8 8 8.5 8c1 0 1.8-.8 1.8-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8h2.1c2.4 0 4.3-1.9 4.3-4.3 0-3.3-4-5.7-9-5.7z"/><circle cx="7.8" cy="10.2" r="1.1"/><circle cx="12" cy="7.8" r="1.1"/><circle cx="16.2" cy="10.2" r="1.1"/>'},
+  {id:'sec-art',src:'galleries',fn:function(){return renderArt();},en:'Art and Murals',es:'Arte y Murales',ic:'<path d="M12 3.5c-4.7 0-8.5 3.6-8.5 8s3.8 8 8.5 8c1 0 1.8-.8 1.8-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8h2.1c2.4 0 4.3-1.9 4.3-4.3 0-3.3-4-5.7-9-5.7z"/><circle cx="7.8" cy="10.2" r="1.1"/><circle cx="12" cy="7.8" r="1.1"/><circle cx="16.2" cy="10.2" r="1.1"/>'},
   {id:'sec-coffee',src:'coffee',fn:function(){return renderCoffee();},en:'Coffee',es:'Café',ic:'<path d="M5.5 9.5h10v4a4.2 4.2 0 0 1-4.2 4.2h-1.6a4.2 4.2 0 0 1-4.2-4.2v-4z"/><path d="M15.5 10.5h1.5a2 2 0 0 1 0 4h-1.5"/><path d="M8.5 6.5c0-1.3.9-1.3.9-2.6M11.8 6.5c0-1.3.9-1.3.9-2.6"/>'},
   {id:'sec-kids',src:'kids',fn:function(){return renderKids();},en:'Kids',es:'Niños',ic:'<circle cx="12" cy="8" r="4.5"/><path d="M12 12.5c-.8 2.2.8 3 .1 5"/><path d="M10.3 7.4a2.4 2.4 0 0 1 1.7-.9"/>'},
   {id:'sec-daytrips',src:'daytrips',fn:function(){return renderDayTrips();},en:'Day Trips',es:'Day Trips',ic:'<rect x="3" y="10" width="18" height="6" rx="2"/><circle cx="7.5" cy="17" r="1.6"/><circle cx="16.5" cy="17" r="1.6"/>'},
@@ -6043,9 +6080,9 @@ function mmExpCount(x,ES){
 var MM_SEA_GROUP=[
   {id:'sec-beach',src:'beaches',fn:function(){return renderBeach();},en:'Beaches',es:'Playas',
    ct:0, w:['beaches','playas']},
-  {id:'sec-water',src:'',ph:'',fn:function(){return renderWater();},en:'Boating & Fishing',es:'Botes y Pesca',
+  {id:'sec-water',src:'',ph:'',fn:function(){return renderWater();},en:'Boating and Fishing',es:'Botes y Pesca',
    ct:(typeof MM_WATER!=='undefined'?MM_WATER.length:0), w:['charters','charters']},
-  {id:'sec-esc',src:'',ph:'',fn:function(){return renderEsc();},en:'Cruises & Islands',es:'Cruceros e Islas',
+  {id:'sec-esc',src:'',ph:'',fn:function(){return renderEsc();},en:'Cruises and Islands',es:'Cruceros e Islas',
    ct:(typeof MM_ESC!=='undefined'?MM_ESC.length:0), w:['escapes','escapadas']}
 ];
 function mmSeaPhoto(x){
@@ -6295,7 +6332,7 @@ function renderMiamiInsiders(){
       name:'Only in Dade',
       handle:'@onlyindade',
       type:'Instagram',
-      cat_en:'Miami Culture & Life', cat_es:'Cultura & Vida Miami',
+      cat_en:'Miami Culture and Life', cat_es:'Cultura y Vida Miami',
       stats:'14,226 posts · 2M followers',
       desc_en:'The Instagram account capturing the authentic soul of Miami — hidden gems, local food, culture, and everything that makes Dade County unique.',
       desc_es:'La cuenta de Instagram que captura el alma auténtica de Miami — joyas escondidas, comida local, cultura y todo lo que hace único al condado de Dade.',
@@ -7859,7 +7896,7 @@ function renderEvents(){
      hi:['Ocean Drive closes: 5th to 14th Street','Vintage cars, swing bands, 1920s dance lessons','Architecture walking tours by the Miami Design Preservation League'],hi_es:['Ocean Drive cierra: de la calle 5 a la 14','Autos clásicos, bandas de swing, clases de baile de los años 20','Recorridos de arquitectura con la Miami Design Preservation League'],
      tip:'Go at dusk. The neon comes on around 7 PM and that\'s when the district actually looks like 1935 — best photos of the whole year on Ocean Drive.',tip_es:'Ve al atardecer. El neón se enciende cerca de las 7 PM y ahí el distrito de verdad parece 1935 — las mejores fotos del año en Ocean Drive.',
      link:'https://www.mdpl.org/'},
-    {id:'ae2',d:'2027-02-25',d2:'2027-02-28',month:'FEB',name:'South Beach Wine & Food Festival',name_es:'Festival de Vino y Gastronomía',venue:'South Beach',type:'Food',
+    {id:'ae2',d:'2027-02-25',d2:'2027-02-28',month:'FEB',name:'South Beach Wine and Food Festival',name_es:'Festival de Vino y Gastronomía',venue:'South Beach',type:'Food',
      img:'fotos/mm-img-1.jpg',
      desc:'World-class chefs, celebrity tastings, and oceanside grand events. One of the top food festivals in the US.',desc_es:'Chefs de clase mundial, catas de celebridades y eventos junto al océano.',when:'Feb 25–28, 2027 · 26th edition',when_es:'25–28 Feb, 2027 · 26ª edición',cost:'From $59 to $500+',cost_es:'Desde $59 hasta $500+',stat:'500+ chefs · 4 days',stat_es:'500+ chefs · 4 días',
      hi:['Food Network stars cooking on the sand of South Beach','Burger Bash, Tacos & Tequila, and late-night parties','Proceeds fund FIU hospitality students — $45M+ raised to date'],hi_es:['Estrellas de Food Network cocinando en la arena de South Beach','Burger Bash, Tacos & Tequila y fiestas hasta la madrugada','Lo recaudado financia a estudiantes de hotelería de FIU — $45M+ hasta hoy'],
@@ -8899,7 +8936,7 @@ var MM_WATER=[
   tip:'Renting without a captain means you are responsible for the boat — and Biscayne Bay is shallow in places that do not look shallow. First time out, pay for the captain.',
   tip_es:'Alquilar sin capitán significa que el bote es tu responsabilidad — y la Bahía Biscayne es poco profunda en zonas que no lo parecen. La primera vez, paga el capitán.',
   kl:'boatrental'},
- {id:'w3',name:'Haulover Inlet & Pier',name_es:'Canal y Muelle de Haulover',cat:'Shore Fishing',cat_es:'Pesca de Orilla',ac:'#FFD166',
+ {id:'w3',name:'Haulover Inlet and Pier',name_es:'Canal y Muelle de Haulover',cat:'Shore Fishing',cat_es:'Pesca de Orilla',ac:'#FFD166',
   ico:'<path d="M4 20V7"/><path d="M4 7c4 0 8 1.5 12 1.5"/><path d="M16 8.5l3 2.5-3 2.5"/><path d="M3 20h18"/>',
   photo:'https://images.unsplash.com/photo-1516962126636-27ad087061cc?w=900&q=60&auto=format',
   where:'Haulover Park · 10800 Collins Ave',where_es:'Parque Haulover · 10800 Collins Ave',
@@ -8921,7 +8958,7 @@ var MM_WATER=[
   tip:'Sit on the left side going out — that is where the mansions are. And the last departure before sunset gives you the skyline lighting up on the way back.',
   tip_es:'Siéntate del lado izquierdo a la ida — ahí están las mansiones. Y la última salida antes del atardecer te regala el skyline encendiéndose al regreso.',
   kl:'baycruise'},
- {id:'w5',name:'Jet Skis & Watersports',name_es:'Jet Skis y Deportes Acuáticos',cat:'Watersports',cat_es:'Deportes Acuáticos',ac:'#7C5CFF',
+ {id:'w5',name:'Jet Skis and Watersports',name_es:'Jet Skis y Deportes Acuáticos',cat:'Watersports',cat_es:'Deportes Acuáticos',ac:'#7C5CFF',
   ico:'<path d="M3 17.5c2 0 2 1.5 4 1.5s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5"/><path d="M5 14.5l3-5h5l2.5 3H19l-1.5 2z"/><circle cx="9.5" cy="7" r="1.6"/>',
   photo:'https://images.unsplash.com/photo-1530053969600-caed2596d242?w=900&q=60&auto=format',
   where:'Hobie Beach · Haulover · South Beach',where_es:'Hobie Beach · Haulover · South Beach',
@@ -9024,7 +9061,7 @@ var MM_LUX=[
   tip:'Time it with Miami Spa Months in August and September — the same spas that charge $400 in season run treatments closer to $109. It is the single best luxury deal on the Miami calendar.',
   tip_es:'Hazlo coincidir con los Miami Spa Months de agosto y septiembre — los mismos spas que cobran $400 en temporada dejan los tratamientos cerca de $109. Es la mejor ganga de lujo del calendario de Miami.',
   kl:'spaday'},
- {id:'x5',name:'Chef\u2019s Table & Fine Dining',name_es:'Mesa del Chef y Alta Cocina',cat:'Dining',cat_es:'Gastronomía',ac:'#E8734A',
+ {id:'x5',name:'Chef\u2019s Table and Fine Dining',name_es:'Mesa del Chef y Alta Cocina',cat:'Dining',cat_es:'Gastronomía',ac:'#E8734A',
   ico:'<path d="M7 3v8a2.5 2.5 0 0 0 5 0V3"/><path d="M9.5 11v10"/><path d="M17 3c-1.5 1.5-2 3.5-2 5.5V13h3.5V3z"/><path d="M17 13v8"/>',
   photo:'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format',
   where:'Brickell · Design District · Miami Beach',where_es:'Brickell · Design District · Miami Beach',
@@ -9400,8 +9437,26 @@ function mmDatoSend(){
       +'<span>'+(ES?'Lo revisamos pronto. Si entra, lo verás en la ficha con tu nombre.':'We review it soon. If it makes the cut, you\'ll see it on the listing with your name.')+'</span>'
       +'</div></div>';
     setTimeout(mmDatoClose,2600);
-  }).catch(function(){
-    if(btn){ btn.disabled=false; btn.textContent=ES?'Reintentar':'Try again'; }
+  }).catch(function(err){
+    /* Si Supabase no acepta el dato (tabla ausente, sin red, bloqueador),
+       NO se pierde: se envia por correo, que siempre funciona. */
+    console.debug('[mm] tip POST failed, falling back to email', err);
+    var body=(ES?'Lugar: ':'Place: ')+MM_DATO_PLACE.name+' ('+MM_DATO_PLACE.id+')\n\n'
+      +(ES?'Dato: ':'Tip: ')+txt+'\n\n'
+      +(ES?'De: ':'From: ')+who+(mail?' · '+mail:'');
+    try{
+      location.href='mailto:yyentertainment@outlook.com?subject='
+        +encodeURIComponent((ES?'Dato para Miami Magic — ':'Tip for Miami Magic — ')+MM_DATO_PLACE.name)
+        +'&body='+encodeURIComponent(body);
+    }catch(e){}
+    var ov=document.getElementById('datoOv');
+    if(ov) ov.innerHTML='<div class="dato-box"><div class="dato-ok">'
+      +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5 5-5"/></svg>'
+      +'<b>'+(ES?'¡Gracias!':'Thank you!')+'</b>'
+      +'<span>'+(ES?'Te abrimos el correo con tu dato listo para enviar. Dale a enviar y lo revisamos.'
+                  :'We opened your email with the tip ready to go. Hit send and we will review it.')+'</span>'
+      +'</div></div>';
+    setTimeout(mmDatoClose,3400);
   });
 }
 
@@ -10069,7 +10124,7 @@ function renderKids(){
     return '<div class="vcard" onclick="openItemModal(D.kids.find(x=>x.id===\''+k.id+'\'),\'kids\')">'
       +'<div class="vcard-img" style="height:140px;'+imgStyle+'">'+(hasPhoto?'':'')+'</div>'
       +'<div class="vcard-body">'
-        +'<div class="vcat" style="color:var(--teal)">'+(lang==='es'?'Familias':'Kids & Families')+'</div>'
+        +'<div class="vcat" style="color:var(--teal)">'+(lang==='es'?'Familias':'Kids and Families')+'</div>'
         +'<div class="vname">'+n(k.name,k.name_es)+'</div>'
         +'<div class="vdesc">'+n(k.desc,k.desc_es).substring(0,75)+'…</div>'
         +'<div style="font-size:.72rem;color:#888;margin-top:4px"><svg style="width:12px;height:12px;vertical-align:-1px;margin-right:3px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L13.41 20.59a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>'+k.price+'</div>'
@@ -10085,7 +10140,7 @@ function renderKids(){
       +'<div class="rcardh-fade"></div>'
       +'<button class="rcardh-fav-btn'+(isFaved?' faved':'')+'" onclick="event.stopPropagation();addFavFromCard(\''+k.id+'\',\''+safeName+'\',\'kids\',this)">'+(isFaved?'♥':'♡')+'</button>'
       +'<div class="rcardh-info">'
-        +'<div class="rcardh-cat">'+(lang==='es'?'Familias':'Kids & Families')+'</div>'
+        +'<div class="rcardh-cat">'+(lang==='es'?'Familias':'Kids and Families')+'</div>'
         +'<div class="rcardh-mid"><div class="rcardh-name">'+n(k.name,k.name_es)+'</div><div class="rcardh-desc">'+n(k.desc,k.desc_es)+'</div></div>'
         +'<div class="rcardh-metarow">'
           +'<div class="rcardh-metaitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L13.41 20.59a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>'+k.price+'</div>'
@@ -10184,10 +10239,15 @@ function build(){
   document.getElementById('fCo').textContent=t.fCo;
   document.getElementById('fCopy').textContent=t.fCopy;
   document.getElementById('fRights').textContent=t.fRights;
-  document.getElementById('fLinks1').innerHTML=t.fLinks1.map(l=>'<a>'+l+'</a>').join('');
-  document.getElementById('fLinks2').innerHTML=t.fLinks2.map(function(l){
-    if(/Privac/i.test(l)) return '<a style="cursor:pointer" onclick="openPrivacy()">'+l+'</a>';
-    return '<a>'+l+'</a>';
+  /* Los enlaces del pie eran <a> vacios (no hacian nada). Ahora cada uno
+     lleva a su seccion o a su accion real, en ES y EN. */
+  var F1SEC=['sec-rest','sec-beach','sec-museum','sec-theater','sec-stad'];
+  document.getElementById('fLinks1').innerHTML=t.fLinks1.map(function(l,i){
+    return '<a role="button" tabindex="0" onclick="mmFootGo(\''+F1SEC[i]+'\')">'+l+'</a>';
+  }).join('');
+  var F2ACT=['mmFootAbout()','mmFootContact()','openPrivacy()','mmFootSubmit()','mmFootBiz()'];
+  document.getElementById('fLinks2').innerHTML=t.fLinks2.map(function(l,i){
+    return '<a role="button" tabindex="0" onclick="'+(F2ACT[i]||'')+'">'+l+'</a>';
   }).join('');
   document.getElementById('heroStats').innerHTML=t.stats.map(s=>'<div><div class="hstat-n">'+s.n+'</div><div class="hstat-l">'+s.l+'</div></div>').join('');
   // sidebar
@@ -10280,11 +10340,11 @@ function updateHMLabels(){
     'hm-lbl-museum':    ES?'Museos':'Museums',
     'hm-lbl-transport': ES?'Cómo Moverse':'Getting Around',
     'hm-lbl-shop':      ES?'Centros Comerciales':'Shopping',
-    'hm-lbl-parks':     ES?'Parques y Naturaleza':'Parks & Nature',
+    'hm-lbl-parks':     ES?'Parques y Naturaleza':'Parks and Nature',
     'hm-lbl-place':     ES?'Lugares':'Landmarks',
-    'hm-lbl-art':       ES?'Arte y Galerías':'Art & Galleries',
+    'hm-lbl-art':       ES?'Arte y Galerías':'Art and Galleries',
     'hm-lbl-coffee':    ES?'Cafeterías':'Coffee Shops',
-    'hm-lbl-kids':      ES?'Niños y Familias':'Kids & Families',
+    'hm-lbl-kids':      ES?'Niños y Familias':'Kids and Families',
     'hm-lbl-daytrips':  ES?'Excursiones':'Day Trips',
     'hm-lbl-localspot': ES?'Mi Amigo Local':'Ask a Local',
   };
@@ -10613,7 +10673,7 @@ document.addEventListener("DOMContentLoaded",function(){
     {tgEN:'GAME DAY',tgES:'DÍA DE JUEGO',type:'stadium',ic:'stadium',id:'s2',arr:'stadiums',en:'Hard Rock Stadium — Dolphins, F1 and the Miami Open',es:'Hard Rock Stadium — Dolphins, F1 y el Miami Open'},
     {tgEN:'ON STAGE',tgES:'EN ESCENA',type:'theater',ic:'theater',id:'t1',arr:'theaters',en:'Adrienne Arsht — Broadway, ballet and opera downtown',es:'Adrienne Arsht — Broadway, ballet y ópera en Downtown'},
     {tgEN:'OUTDOORS',tgES:'AIRE LIBRE',type:'park',ic:'park',id:'pk3',arr:'parks',en:'Matheson Hammock — a natural pool facing the skyline',es:'Matheson Hammock — piscina natural frente al skyline'},
-    {tgEN:'LIVE MUSIC',tgES:'MÚSICA EN VIVO',type:'night',ic:'music',id:'n2',arr:'nightlife',en:'Ball & Chain — live salsa since 1935',es:'Ball & Chain — salsa en vivo desde 1935'},
+    {tgEN:'LIVE MUSIC',tgES:'MÚSICA EN VIVO',type:'night',ic:'music',id:'n2',arr:'nightlife',en:'Ball and Chain — live salsa since 1935',es:'Ball and Chain — salsa en vivo desde 1935'},
     {tgEN:'ON SCREEN',tgES:'EN PANTALLA',go:'sec-cine',en:'Tower Theater — on Calle Ocho since 1926',es:'Tower Theater — en la Calle Ocho desde 1926'},
     {tgEN:'UNDER THE STARS',tgES:'BAJO LAS ESTRELLAS',go:'sec-cine',en:'Rooftop Cinema Club — films on a Lincoln Road roof',es:'Rooftop Cinema Club — cine en una azotea de Lincoln Road'}
   ];
@@ -10957,7 +11017,7 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
           all.forEach(function(arr){if(arr[i])items.push(arr[i]);});
         }
         // cards vivas al frente: EN VIVO + tour del día
-        var _tours=[['sobe',_mE?'South Beach y Art Deco':'South Beach & Art Deco','https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=500&q=60&auto=format'],
+        var _tours=[['sobe',_mE?'South Beach y Art Deco':'South Beach and Art Deco','https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=500&q=60&auto=format'],
                     ['havana',_mE?'Paseo La Pequeña Habana':'Little Havana Walk','https://images.unsplash.com/photo-1571061125816-a1a4b57a7d95?w=500&q=60&auto=format'],
                     ['wynwood',_mE?'Arte Urbano Wynwood':'Wynwood Street Art','https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=500&q=60&auto=format']];
         var _t=_tours[new Date().getDate()%3];
@@ -12165,6 +12225,35 @@ document.addEventListener('click',function(e){
   var inp=document.getElementById('heroSearchInp');
   if(p && p.classList.contains('on') && !p.contains(e.target) && e.target!==inp) mmHideHistory();
 });
+/* ── Acciones del pie ── */
+function mmFootGo(id){
+  try{
+    if(typeof MM_DEFERRED!=='undefined' && MM_DEFERRED.some(function(x){return x.id===id;})){
+      mmExpandSection(id); return;
+    }
+  }catch(e){}
+  if(typeof go==='function') go(id);
+  else { var el=document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth'}); }
+}
+function mmFootAbout(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  if(typeof openAmigo==='function'){ openAmigo(); return; }
+  alert(ES?'Miami Magic — tu guía local de Miami.':'Miami Magic — your local Miami guide.');
+}
+function mmFootContact(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  location.href='mailto:yyentertainment@outlook.com?subject='+encodeURIComponent(ES?'Miami Magic — Contacto':'Miami Magic — Contact');
+}
+function mmFootSubmit(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  location.href='mailto:yyentertainment@outlook.com?subject='+encodeURIComponent(ES?'Sugerir un lugar para Miami Magic':'Submit a place to Miami Magic')
+    +'&body='+encodeURIComponent(ES?'Lugar:\nDirección:\n¿Por qué vale la pena?\n':'Place:\nAddress:\nWhy is it worth it?\n');
+}
+function mmFootBiz(){
+  var u='https://www.miamimagicdirectory.com';
+  if(typeof openInAppSheet==='function') openInAppSheet(u,'Miami Magic Directory');
+  else window.open(u,'_blank','noopener');
+}
 function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('#navSignin [data-en], .hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en]').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, comida':'Search beaches, food';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}try{setTimeout(function(){if(window.mmTickerBuild)window.mmTickerBuild();},650);}catch(e){}}
 function socApplyLang(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
@@ -12397,7 +12486,9 @@ function mmFmtDist(m,es){
   var mi=m/1609.34;
   return (mi<10?mi.toFixed(1):Math.round(mi))+' mi';
 }
-var MM_TYPELBL={rest:['Dining','Restaurantes'],beach:['Beach','Playa'],museum:['Culture','Cultura'],gallery:['Art','Arte'],theater:['Theater','Teatro'],night:['Nightlife','Vida Nocturna'],hotel:['Hotel','Hotel'],stadium:['Sports','Deportes'],park:['Park','Parque'],shop:['Shopping','Compras'],coffee:['Coffee','Café'],kids:['Family','Familia'],place:['Landmark','Lugar'],concert:['Music','Música'],event:['Event','Evento']};
+var MM_TYPELBL={rest:['Dining','Restaurantes'],beach:['Beach','Playa'],museum:['Culture','Cultura'],gallery:['Art','Arte'],theater:['Theater','Teatro'],night:['Nightlife','Vida Nocturna'],hotel:['Hotel','Hotel'],stadium:['Sports','Deportes'],park:['Park','Parque'],shop:['Shopping','Compras'],coffee:['Coffee','Café'],kids:['Family','Familia'],place:['Landmark','Lugar'],concert:['Music','Música'],event:['Event','Evento'],daytrip:['Day Trip','Day Trip'],cine:['Cinema','Cine']};
+/* Títulos en plural para el carrusel "más de lo mismo" dentro de la ficha */
+var MM_MORELBL={rest:['More restaurants','Más restaurantes'],beach:['More beaches','Más playas'],hotel:['More hotels','Más hoteles'],night:['More nightlife','Más vida nocturna'],museum:['More museums','Más museos'],gallery:['More galleries','Más galerías'],theater:['More theaters','Más teatros'],stadium:['More stadiums','Más estadios'],park:['More parks','Más parques'],shop:['More shopping','Más tiendas'],coffee:['More coffee shops','Más cafeterías'],kids:['More for families','Más para familias'],place:['More landmarks','Más lugares'],daytrip:['More day trips','Más day trips'],cine:['More cinemas','Más cines']};
 function mmPhoto(d){var o=(d&&d.obj)||{};var p=(typeof sPhoto==='function')?sPhoto(d.id):'';return p||o.img||o.photo||o.image||'';}
 function mmSimilar(obj,type){
   var es=(typeof lang!=='undefined'&&lang==='es');
@@ -12458,10 +12549,76 @@ function mmRailHtml(list,es){
     +'</div>';
   }).join('');
 }
+function mmCrossPool(){
+  var pool=(typeof buildMapData==='function')?buildMapData():[];
+  var have={}; pool.forEach(function(d){ have[d.id]=1; });
+  var out=pool.slice();
+  function add(arr,type){
+    (arr||[]).forEach(function(x){
+      if(!x||have[x.id]) return;
+      have[x.id]=1;
+      out.push({id:x.id,name:n(x.name,x.name_es),obj:x,type:type,latlng:COORDS[x.id]||null});
+    });
+  }
+  add(D.restaurants,'rest'); add(D.hotels,'hotel'); add(D.beaches,'beach');
+  add(D.nightlife,'night'); add(D.museums,'museum'); add(D.galleries,'gallery');
+  add(D.theaters,'theater'); add(D.stadiums,'stadium'); add(D.parks,'park');
+  add(D.shopping,'shop'); add(D.coffee,'coffee'); add(D.kids,'kids');
+  add(D.places,'place'); add(D.daytrips,'daytrip');
+  if(typeof MM_CINE!=='undefined') add(MM_CINE,'cine');
+  return out;
+}
+function mmZoneOf(o){
+  if(!o) return '';
+  var z=(typeof ZONES!=='undefined'&&ZONES[o.id])||'';
+  if(z) return z;
+  var txt=((o.addr||o.where||o.city||'')+'').toLowerCase();
+  if(!txt) return '';
+  var hit='';
+  (ZONE_META||[]).forEach(function(m){
+    if(hit||m.id==='all') return;
+    var nm=(m.en||'').toLowerCase(); if(!nm) return;
+    /* Palabra completa y sin prefijo de otro barrio: "North Miami Beach"
+       NO es "Miami Beach", y "South Beach" no es "Beach" a secas. */
+    var re=new RegExp('(^|[^\\w])(?<!north |south |west |east |northeast |northwest |southeast |southwest )'
+                      +nm.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'($|[^\\w])');
+    try{ if(re.test(txt)) hit=m.id; }
+    catch(e){ /* navegador sin lookbehind: exige palabra completa */
+      var re2=new RegExp('(^|[^\\w])'+nm.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'($|[^\\w])');
+      if(re2.test(txt) && txt.indexOf('north '+nm)===-1 && txt.indexOf('south '+nm)===-1) hit=m.id;
+    }
+  });
+  return hit;
+}
+function mmZoneLabel(id){
+  var es=(typeof lang!=='undefined'&&lang==='es');
+  var m=(ZONE_META||[]).find(function(z){return z.id===id;});
+  return m?(es?m.es:m.en):'';
+}
+/* Encadenado: cada ficha ofrece el siguiente paso del plan, no solo mas de
+   lo mismo. Prioriza el mismo barrio y, si hay coordenadas, lo mas cercano. */
+var MM_CHAIN={
+  rest:[['night','Para seguir la noche','Keep the night going'],['coffee','El cafecito de después','Coffee afterwards'],['place','Qué ver cerca','What to see nearby']],
+  hotel:[['rest','Donde comer','Where to eat'],['night','Para salir','Where to go out'],['beach','Playas para tu estadía','Beaches for your stay']],
+  beach:[['rest','Para comer después de la playa','Eat after the beach'],['coffee','Un café cerca','Coffee nearby'],['park','Parques cerca','Parks nearby']],
+  night:[['rest','Cena antes de salir','Dinner before going out'],['night','Otra parada de la noche','Another stop tonight']],
+  museum:[['coffee','Café después del museo','Coffee after the museum'],['gallery','Mas arte','More art'],['rest','Donde comer cerca','Where to eat nearby']],
+  gallery:[['museum','Museos que te van a gustar','Museums you will like'],['coffee','Café cerca','Coffee nearby']],
+  theater:[['rest','Cena antes de la función','Dinner before the show'],['night','Copas después','Drinks afterwards']],
+  stadium:[['rest','Comer antes del juego','Eat before the game'],['night','Celebrar después','Celebrate afterwards']],
+  park:[['kids','Con niños','With kids'],['coffee','Café cerca','Coffee nearby'],['rest','Donde comer','Where to eat']],
+  shop:[['coffee','Pausa para un café','Coffee break'],['rest','Donde comer','Where to eat']],
+  coffee:[['shop','De compras cerca','Shopping nearby'],['rest','Si te da hambre','If you get hungry']],
+  kids:[['park','Parques','Parks'],['beach','Playas cerca','Beaches nearby']],
+  place:[['rest','Donde comer cerca','Where to eat nearby'],['museum','Cultura cerca','Culture nearby']],
+  cine:[['rest','Cena y cine','Dinner and a movie'],['coffee','Café cerca','Coffee nearby']],
+  daytrip:[['place','Lugares imperdibles','Must-see landmarks'],['beach','Playas','Beaches']]
+};
 function mmCrossNavRows(obj,type){
   var es=(typeof lang!=='undefined'&&lang==='es');
-  var pool=(typeof buildMapData==='function')?buildMapData():[];
+  var pool=mmCrossPool();
   var meC=COORDS[obj.id]||null;
+  var meZone=mmZoneOf(obj);
   var meCat=(obj.filter||obj.cat||'').toString().toLowerCase();
   var used={}; used[obj.id]=1;
   var rows=[];
@@ -12480,6 +12637,19 @@ function mmCrossNavRows(obj,type){
     });
     list1.forEach(function(x){used[x.d.id]=1;});
     rows.push({tt:es?'Semejantes':'Similar picks',sb:es?'misma cocina · mismo tipo':'same cuisine · same type',list:list1});
+  } else {
+    var anySame=pool.filter(function(d){ return !used[d.id] && d.type===type; });
+    if(anySame.length>=2){
+      var lblT=MM_TYPELBL[type]?(es?MM_TYPELBL[type][1]:MM_TYPELBL[type][0]):'';
+      var listA=anySame.slice(0,12).map(function(d){
+        var dist=(meC&&d.latlng)?mmDistM(meC,d.latlng):null;
+        var zl=mmZoneLabel(mmZoneOf(d.obj));
+        return {d:d,meta:(dist!==null?mmFmtDist(dist,es):(zl||lblT))};
+      });
+      listA.forEach(function(x){used[x.d.id]=1;});
+      var mlbl=MM_MORELBL[type]?(es?MM_MORELBL[type][1]:MM_MORELBL[type][0]):((es?'Más ':'More ')+lblT.toLowerCase());
+      rows.push({tt:mlbl,sb:es?'del mismo tipo':'same category',list:listA});
+    }
   }
 
   // 2) Cerca de aquí — cualquier tipo, solo distancia
@@ -12497,6 +12667,17 @@ function mmCrossNavRows(obj,type){
       });
       list2.forEach(function(x){used[x.d.id]=1;});
       rows.push({tt:es?'Cerca de aquí':'Nearby',sb:es?'a poca distancia':'a short trip away',list:list2});
+    }
+  }
+  if(!meC && meZone && mmZoneLabel(meZone)){
+    var sameZone=pool.filter(function(d){ return !used[d.id] && mmZoneOf(d.obj)===meZone; });
+    if(sameZone.length>=2){
+      var list2b=sameZone.slice(0,12).map(function(d){
+        var lbl=MM_TYPELBL[d.type]?(es?MM_TYPELBL[d.type][1]:MM_TYPELBL[d.type][0]):d.type;
+        return {d:d,meta:lbl};
+      });
+      list2b.forEach(function(x){used[x.d.id]=1;});
+      rows.push({tt:(es?'En ':'In ')+mmZoneLabel(meZone),sb:es?'en el mismo barrio':'same neighborhood',list:list2b});
     }
   }
 
@@ -12519,6 +12700,49 @@ function mmCrossNavRows(obj,type){
       }
     }
   }
+
+  /* Encadenado por tipo: el siguiente paso del plan */
+  var chain=MM_CHAIN[type]||[];
+  chain.forEach(function(c){
+    var tgt=c[0];
+    var cand=pool.filter(function(d){ return !used[d.id] && d.type===tgt; });
+    if(cand.length<2) return;
+    cand=cand.map(function(d){
+      var dist=(meC&&d.latlng)?mmDistM(meC,d.latlng):null;
+      var sameZ=(meZone&&mmZoneOf(d.obj)===meZone)?1:0;
+      return {d:d,dist:dist,sameZ:sameZ};
+    }).sort(function(a,b){
+      if(a.dist!==null&&b.dist!==null) return a.dist-b.dist;
+      return b.sameZ-a.sameZ;
+    });
+    var listC=cand.slice(0,12).map(function(x){
+      var lbl=MM_TYPELBL[x.d.type]?(es?MM_TYPELBL[x.d.type][1]:MM_TYPELBL[x.d.type][0]):x.d.type;
+      var zl=mmZoneLabel(mmZoneOf(x.d.obj));
+      return {d:x.d,meta:(x.dist!==null?mmFmtDist(x.dist,es):(zl||lbl))};
+    });
+    listC.forEach(function(x){used[x.d.id]=1;});
+    rows.push({tt:(es?c[1]:c[2]),sb:(es?'el siguiente paso':'your next stop'),list:listC});
+  });
+
+  /* Cierre: siempre queda algo mas por descubrir (mezcla de tipos, rota por sesion) */
+  var rest=pool.filter(function(d){ return !used[d.id]; });
+  if(rest.length>=2){
+    var seen={}, mix=[];
+    (typeof mmRotate==='function'?mmRotate(rest):rest).forEach(function(d){
+      if(mix.length>=12) return;
+      if(seen[d.type]>=2) return;
+      seen[d.type]=(seen[d.type]||0)+1;
+      mix.push(d);
+    });
+    if(mix.length>=2){
+      var listZ=mix.map(function(d){
+        var lbl=MM_TYPELBL[d.type]?(es?MM_TYPELBL[d.type][1]:MM_TYPELBL[d.type][0]):d.type;
+        var zl=mmZoneLabel(mmZoneOf(d.obj));
+        return {d:d,meta:lbl+(zl?' · '+zl:'')};
+      });
+      rows.push({tt:es?'Sigue explorando':'Keep exploring',sb:es?'otras cosas de Miami':'more of Miami',list:listZ});
+    }
+  }
   return rows;
 }
 function renderSimilar(obj,type){
@@ -12535,7 +12759,9 @@ function renderSimilar(obj,type){
   }).join('');
 }
 function mmOpenSim(mType,id){
-  var pool=(typeof buildMapData==='function')?buildMapData():[];
+  /* Usa el pool COMPLETO: los carruseles ya ofrecen lugares sin coordenadas,
+     que no estan en buildMapData y por eso no abrian al tocarlos. */
+  var pool=(typeof mmCrossPool==='function')?mmCrossPool():((typeof buildMapData==='function')?buildMapData():[]);
   var d=pool.find(function(x){return x.id===id;});
   if(d&&d.obj&&typeof openItemModal==='function'){
     var mb=document.querySelector('.modal-body'); if(mb) mb.scrollTop=0;
@@ -12598,7 +12824,7 @@ var MM_TOURS=[
    {nm:'Museum of Graffiti',ll:[25.8022,-80.1986],ph:'https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=800&q=60&auto=format',ds:'The world\'s first museum dedicated to graffiti history. Small, powerful, very Miami.',ds_es:'El primer museo del mundo dedicado a la historia del grafiti. Pequeño, potente, muy Miami.'},
    {nm:'Cervecería La Tropical',ll:[25.8060,-80.1970],ph:'https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&q=60&auto=format',ds:'Finish with a Cuban beer reborn: the historic 1888 Havana brewery, revived in a tropical garden.',ds_es:'Termina con una cerveza cubana renacida: la histórica cervecería habanera de 1888, revivida en un jardín tropical.'}
   ]},
- {id:'sobe',ac:'#FFD166',name:'South Beach & Art Deco',name_es:'South Beach y Art Déco',dur:'~2 h · 2 mi',
+ {id:'sobe',ac:'#FFD166',name:'South Beach and Art Deco',name_es:'South Beach y Art Déco',dur:'~2 h · 2 mi',
   ico:'<path d="M12 4a8.5 8.5 0 0 1 8.5 8.5H3.5A8.5 8.5 0 0 1 12 4z"/><path d="M12 12.5V20"/><path d="M9 20h6"/>',
   stops:[
    {nm:'South Pointe Park',ll:[25.7645,-80.1330],ph:'https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=800&q=60&auto=format',ds:'Start where Miami Beach begins: cruise ships gliding past, fishermen on the pier, the whole skyline behind you.',ds_es:'Empieza donde nace Miami Beach: cruceros pasando, pescadores en el muelle y todo el skyline detrás.'},
@@ -16571,7 +16797,7 @@ document.addEventListener('keydown', function(e) {
       fact:e?'<b>Dato:</b> a Tuttle la llaman "la Madre de Miami" — y su estatua está en Bayfront Park.':'<b>Fact:</b> Tuttle is called "the Mother of Miami" — her statue stands in Bayfront Park.',
       cta:e?'Ver Bayfront Park':'See Bayfront Park',act:"mttGo('concerts','c8')"},
      {yr:'1926',c:'#00C9B1',ic:'deco',img:'https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=800&q=60&auto=format',
-      tt:e?'Huracán, ruina y Art Deco':'Hurricane, ruin & Art Deco',
+      tt:e?'Huracán, ruina y Art Deco':'Hurricane, ruin and Art Deco',
       hook:e?'De los escombros nació el estilo':'From the rubble, a style was born',
       tx:e?'En plena fiebre inmobiliaria, un huracán categoría 4 arrasó la ciudad y reventó la burbuja. Pero de la reconstrucción nació algo eterno: South Beach se llenó de hoteles Art Deco en tonos pastel. Hoy es la mayor colección del mundo — 800+ edificios salvados por vecinos activistas en los años 80.'
           :'At the height of a real-estate frenzy, a Category 4 hurricane flattened the city and burst the bubble. But the rebuild created something eternal: South Beach filled with pastel Art Deco hotels. Today it\'s the world\'s largest collection — 800+ buildings saved by activist neighbors in the 1980s.',
@@ -16923,8 +17149,8 @@ function showInsiderModal(id){
     'ins_onlyindade': {
       name: 'Only in Dade',
       handle: '@onlyindade',
-      cat_en: 'Instagram · Miami Culture & Life',
-      cat_es: 'Instagram · Cultura & Vida Miami',
+      cat_en: 'Instagram · Miami Culture and Life',
+      cat_es: 'Instagram · Cultura y Vida Miami',
       desc_en: 'The Instagram account capturing the authentic soul of Miami — hidden gems, local food, culture, and everything that makes Dade County unique. One of the most followed Miami lifestyle accounts.',
       desc_es: 'La cuenta de Instagram que captura el alma auténtica de Miami — joyas escondidas, comida local, cultura y todo lo que hace único al condado de Dade. Una de las cuentas de estilo de vida más seguidas de Miami.',
       link: 'https://www.instagram.com/onlyindade/',
@@ -18136,6 +18362,28 @@ function showInsiderModal(id){
 [data-theme="dark"] .cine-est-w{color:rgba(255,255,255,.72);}
 [data-theme="dark"] .cine-est-lbl,[data-theme="dark"] .cine-fest-lbl{color:#C9A227;}
 @media(min-width:900px){.cine-est-tx{font-size:1.02rem;}.cine-est-day{font-size:1.34rem;}}
+
+/* ── CINES · tipografía premium (sep 2026) ─────────────────────────────
+   La sección heredaba el estilo genérico de Nightlife (etiqueta salmón,
+   nombres pequeños). Aquí se alinea con el lenguaje editorial de la app:
+   Playfair para los nombres, versalitas doradas para el género y tinta
+   navy para los horarios. */
+#sec-cine .rcardh-badge{font-size:.66rem;letter-spacing:.14em;font-weight:800;
+  background:#FFFDF6;color:#8F6300;border-color:rgba(176,120,0,.28);}
+#sec-cine .rcardh-name{font-size:1.2rem;line-height:1.18;letter-spacing:-.01em;}
+#sec-cine .rcardh-metaitem{font-size:.86rem;color:rgba(14,27,48,.66);}
+#sec-cine .rcardh-metaitem svg{color:#B07800;}
+#cine-full .ncard-body{background:#FFFDF8;padding:14px 15px 16px;}
+#cine-full .nname{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:700;
+  line-height:1.2;color:#0E1B30;margin-bottom:5px;}
+#cine-full .nmeta{font:400 .84rem/1.4 'DM Sans',sans-serif;color:rgba(14,27,48,.62);}
+#cine-full .ntag{display:inline-block;margin-top:8px;background:none!important;padding:0!important;
+  font:800 .64rem 'DM Sans',sans-serif;letter-spacing:.18em;text-transform:uppercase;
+  color:#8F6300!important;border:0!important;}
+@media(min-width:900px){
+  #sec-cine .rcardh-name{font-size:1.34rem;}
+  #cine-full .nname{font-size:1.16rem;}
+}
 
 /* ══ MIAMI SOCIAL: subtítulo que dice de qué va la sección */
 .soc-sub{font:400 .92rem/1.45 'DM Sans',sans-serif;color:rgba(14,27,48,.62);
