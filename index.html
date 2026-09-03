@@ -368,9 +368,15 @@ button,a{cursor:pointer;}
 .rcardh{position:relative;display:flex;flex-direction:column;align-items:stretch;border-radius:16px;overflow:hidden;cursor:pointer;border:1px solid rgba(255,255,255,.07);box-shadow:0 2px 10px rgba(0,0,0,.15);transition:transform .22s cubic-bezier(.34,1.3,.64,1),box-shadow .22s,border-color .22s;flex-shrink:0;background:#0d1830;}
 .rcardh:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.28);border-color:rgba(255,255,255,.14);}
 .rcardh:active{transform:scale(.97);}
-.rcardh-photo{position:relative;flex:1 1 auto;width:100%;background-size:cover;background-position:center;border-top:1px solid rgba(255,255,255,.07);}
+.rcardh-photo{position:relative;flex:1 1 auto;min-height:0;width:100%;background-size:cover;background-position:center;border-radius:17px 17px 0 0;}
 .rcardh-fade{display:none;}
-.rcardh-info{position:relative;z-index:2;flex:0 0 auto;min-width:0;padding:14px 15px 12px;display:flex;flex-direction:column;gap:4px;background:#fff;}
+.rcardh-info{position:relative;z-index:2;flex:0 0 auto;min-width:0;height:134px;box-sizing:border-box;margin-top:auto;
+  padding:13px 15px;display:flex;flex-direction:column;gap:3px;background:#fff;overflow:hidden;
+  border-radius:0 0 17px 17px;}
+@media(min-width:900px){.rcardh-info{height:142px;}}
+.rcardh-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.rcardh-meta,.rcardh-metaitem{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.rcardh-metarow{margin-top:auto;}
 .rcardh-top-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
 .rcardh-badge{display:inline-block;max-width:calc(100% - 14px);overflow:hidden;text-overflow:ellipsis;background:#F4F6F9;color:#0B1A32;border:1px solid rgba(11,26,50,.1);font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:20px;white-space:nowrap;}
 .rcardh-badge.pro{background:#FFD166;color:#3a2a00;box-shadow:none;}
@@ -392,8 +398,9 @@ button,a{cursor:pointer;}
   .rcardh-name{font-size:1.04rem;}
 }
 .rcardh-cat{font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);}
-.rcardh-desc{font-family:'DM Sans',sans-serif;font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.3;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px;}
+.rcardh-desc{font-family:'DM Sans',sans-serif;font-size:.88rem;color:rgba(11,26,50,.7);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:2px;}
 .rcardh-metarow{display:flex;flex-direction:row;align-items:center;gap:5px;margin-top:1px;}
+#night-hrow .rcardh-metarow,#cine-hrow .rcardh-metarow{margin-top:auto;padding-top:6px;}
 .rcardh-metaitem{display:flex;align-items:center;gap:4px;font-size:.8rem;line-height:1.3;color:rgba(11,26,50,.72);font-family:'DM Sans',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .rcardh-metaitem svg{width:12px;height:12px;flex-shrink:0;color:#0A9E8B;}
 .rtags{display:none !important;}
@@ -3513,6 +3520,7 @@ body{padding-bottom:0;}
     <p class="f-affdisc" id="fAffDisc" data-en="Some hotel and booking links may earn Miami Magic a commission, at no extra cost to you." data-es="Algunos enlaces de hoteles y reservas pueden generar una comisi&oacute;n para Miami Magic, sin costo adicional para ti." style="display:none;">Some hotel and booking links may earn Miami Magic a commission, at no extra cost to you.</p><div class="f-bottom"><span class="f-copy" id="fCopy"></span><span class="f-rights" id="fRights"></span></div>
   </footer>
 </div>
+<script>/* Base del API: relativa en la web, absoluta dentro de la app nativa (capacitor://) */var MM_API=(location.protocol==='capacitor:'||location.protocol==='ionic:')?'https://miamimagicapp.com':'';</script>
 <script>var SP={r99:"fotos/mm-grazianos-mercado.jpg",m9:"https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&q=72",m10:"https://images.unsplash.com/photo-1533158307587-828f0a76ef46?w=500&q=72",m11:"https://images.unsplash.com/photo-1596436889106-be35e843f974?w=500&q=72",r96:"https://images.unsplash.com/photo-1544148103-0773bf10d330?w=500&q=72",r97:"https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&q=72",r98:"https://images.unsplash.com/photo-1602273660127-a0000560a4d8?w=500&q=72",r95:"fotos/mm-salsita.jpg",k9:"fotos/mm-k9.jpg",b1:"fotos/mm-b1.jpg",b2:"fotos/mm-b2.jpg",b3:"fotos/mm-b3.jpg",b4:"https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500&q=72",b5:"fotos/mm-b5.jpg",b6:"fotos/mm-b6.jpg",b7:"fotos/mm-b7.jpg",b8:"fotos/mm-b8.jpg",m1:"https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=500&q=72",m2:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=72",m3:"https://images.unsplash.com/photo-1541535650810-10d26f5c2ab3?w=500&q=72",m4:"https://images.unsplash.com/photo-1519999482648-25049ddd37b1?w=500&q=72",m5:"https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=500&q=72",m6:"https://images.unsplash.com/photo-1574182245530-967d9b3831af?w=500&q=72",m7:"https://images.unsplash.com/photo-1576872381149-7847515ce5d8?w=500&q=72",m8:"https://images.unsplash.com/photo-1561059488-916d621c8e8e?w=500&q=72",n1:"https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?w=500&q=72",n2:"https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=500&q=72",n3:"https://images.unsplash.com/photo-1570127236682-4bf07bd9a71f?w=500&q=72",n4:"https://images.unsplash.com/photo-1545128485-c400e7702796?w=500&q=72",n5:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=72",n6:"https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&q=72",n7:"https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=500&q=72",n8:"https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=500&q=72",c4:"fotos/mm-c4.jpg",t1:"fotos/mm-t1.jpg",pk3:"fotos/mm-pk3.jpg",r1:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=72",r2:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=72",r3:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=72",r4:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&q=72",r5:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=72",c1:"https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=500&q=72",c2:"https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=500&q=72",c3:"https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=500&q=72",c5:"https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=500&q=72",c6:"https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=500&q=72",c7:"https://images.unsplash.com/photo-1468818438311-4bab781ab9b9?w=500&q=72",c8:"https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=500&q=72",t1:"fotos/mm-t1.jpg",t2:"https://images.unsplash.com/photo-1580809361436-42a7ec0a21d8?w=500&q=72",t3:"https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=500&q=72",t4:"https://images.unsplash.com/photo-1576510132736-ea5b5d5e3ba1?w=500&q=72",t5:"https://images.unsplash.com/photo-1594552072238-b8a33785b6cd?w=500&q=72",pl1:"fotos/mm-pl1.jpg",pl2:"fotos/mm-pl2.jpg",pl3:"fotos/mm-pl3.jpg",pl4:"fotos/mm-pl4.jpg",pl5:"fotos/mm-pl5.jpg",pl6:"fotos/mm-pl6.jpg",st1:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=500&q=72",st2:"https://images.unsplash.com/photo-1540747913346-19212a4b3993?w=500&q=72",st3:"https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=500&q=72",st4:"https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500&q=72",pk1:"https://images.unsplash.com/photo-1518818419601-72c8673f5852?w=500&q=72",pk2:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=72",pk4:"fotos/mm-pk4.jpg",pl7:"fotos/mm-pl7.jpg",pl8:"fotos/mm-pl8.jpg",pl9:"fotos/mm-downtown-freedom-tower.jpg",sh1:"https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=500&q=72",sh2:"https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=500&q=72",pk5:"https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&q=72",r01:"fotos/mm-r01.jpg",r02:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=72",r03:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=72",r04:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=72",r05:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=72",r06:"https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=500&q=72",r07:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&q=72",r08:"https://images.unsplash.com/photo-1484659619207-9165d119dafe?w=500&q=72",r09:"https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=500&q=72",r10:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=500&q=72",r11:"https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=500&q=72",r12:"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&q=72",r13:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=72",r14:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&q=72",r15:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=72",r16:"https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500&q=72",r17:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=72",r18:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=72",r19:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=72",r20:"https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=500&q=72",r21:"https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=72",r22:"https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=72",r23:"https://images.unsplash.com/photo-1561043433-aaf687c4cf04?w=500&q=72",r24:"https://images.unsplash.com/photo-1536338890248-5dc4f8a2c501?w=500&q=72",r25:"https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=500&q=72",r26:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&q=72",r27:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=72",r28:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=72",r29:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=72",r30:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=72",r31:"https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=500&q=72",r32:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&q=72",r33:"https://images.unsplash.com/photo-1484659619207-9165d119dafe?w=500&q=72",r34:"https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=500&q=72",r35:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=500&q=72",r36:"https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=500&q=72",r37:"https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&q=72",r38:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&q=72",r39:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&q=72",r40:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=72",r41:"https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500&q=72",r43:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500&q=72",r44:"https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=72",r45:"https://images.unsplash.com/photo-1604908177453-7462950a8a3b?w=500&q=72", r50:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=500&q=72", r51:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&q=72", r52:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=72", r53:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=72", r54:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=500&q=72", r55:"https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=500&q=72", r56:"https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=500&q=72", r57:"https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?w=500&q=72", r58:"https://images.unsplash.com/photo-1548940740-204726a19be3?w=500&q=72", r59:"https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?w=500&q=72", r60:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=500&q=72", r61:"https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&q=72", r62:"https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=500&q=72", /* Seafood */ r63:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&q=72", r64:"https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&q=72", r65:"https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&q=72", r66:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=500&q=72", r67:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=500&q=72", r68:"https://images.unsplash.com/photo-1559847844-5315695dadae?w=500&q=72", r69:"https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?w=500&q=72", /* Japanese */ r70:"https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=500&q=72", r71:"https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=500&q=72", r72:"https://images.unsplash.com/photo-1563245372-f21724e3856d?w=500&q=72", r73:"https://images.unsplash.com/photo-1617196034096-2186592bafad?w=500&q=72", r74:"https://images.unsplash.com/photo-1611143669185-af224c5e3252?w=500&q=72", r75:"https://images.unsplash.com/photo-1559410545-0bdcd187e0a6?w=500&q=72", /* Latin */ r76:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=500&q=72", r77:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=72", r78:"https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=72", r79:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=72", /* Mediterranean */ r80:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&q=72", r81:"https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=500&q=72", r82:"https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=500&q=72", r83:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=500&q=72", r84:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=500&q=72", /* Asian */ r85:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=500&q=72", r86:"https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&q=72", r87:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=72", r88:"https://images.unsplash.com/photo-1617196034094-f0b1d3b03c1a?w=500&q=72", /* Fine Dining */ r89:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=72", r90:"https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=72", r91:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=72", r92:"https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=72", r93:"https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&q=72", r94:"https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=72", /* Key Biscayne */ rk1:"https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=72", rk2:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=72", rk3:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=72", rk4:"https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=500&q=72", rk5:"https://images.unsplash.com/photo-1464347744102-11db6282f854?w=500&q=72", /* Kendall */ rn1:"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=72", rn2:"https://images.unsplash.com/photo-1534482421-64566f976cfa?w=500&q=72", rn3:"https://images.unsplash.com/photo-1563245372-f21724e3856d?w=500&q=72", rn4:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=72", rn5:"https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=500&q=72", rn6:"https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&q=72", rn7:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=500&q=72", rn8:"https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=72", n9:"fotos/mm-n9.jpg", rn9:"", rn10:"https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=500&q=72", rn11:"https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=500&q=72", rn12:"https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=72", rn13:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=72", rn14:"https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=500&q=72",pk6:"https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=500&q=72",pk7:"https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=500&q=72",pk8:"https://images.unsplash.com/photo-1564767655658-4e43b9b048b5?w=500&q=72",pk9:"fotos/mm-pk9.jpg",pk10:"https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=72",sh3:"fotos/mm-sh3.jpg",sh4:"https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=500&q=72",sh5:"https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=500&q=72",s1:"https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=500&q=72",s2:"fotos/mm-s2.jpg",s3:"https://images.unsplash.com/photo-1577223625816-7546f13df25d?w=500&q=72",s4:"https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500&q=72",s5:"https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=500&q=72",s6:"https://images.unsplash.com/photo-1519861531473-9200262188bf?w=500&q=72",sh6:"fotos/mm-sh6.jpg",sh7:"https://images.unsplash.com/photo-1519058082700-08a0b56da9b4?w=500&q=72",sh8:"https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500&q=72",sh9:"fotos/mm-river-landing.jpg",h10:"https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&q=72",h11:"https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=500&q=72",h12:"https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=500&q=72",h13:"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=500&q=72",h14:"fotos/mm-h14.jpg",
 art1:"https://images.unsplash.com/photo-1569429593410-b498b3fb3387?w=500&q=72",
 art2:"https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=500&q=72",
@@ -5979,12 +5987,10 @@ function perkNote(obj){
    cargue más rápido y se sienta más corto. Nada se elimina,
    solo se pospone. ══════════════════════════════════════════ */
 var MM_DEFERRED=[
-  {id:'sec-mtt',src:'',ph:'b1',fn:function(){return window.renderMiamiPast?window.renderMiamiPast():'';},en:'Miami Through Time',es:'Miami a Través del Tiempo',ic:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/>'},
   {id:'sec-museum',src:'museums',fn:function(){return renderMuseum();},en:'Museums',es:'Museos',ic:'<path d="M4 20h16"/><path d="M12 3.5 4.5 8.5h15L12 3.5z"/><path d="M6.5 11v6M12 11v6M17.5 11v6"/>'},
   {id:'sec-concert',src:'concerts',fn:function(){return renderConcert();},en:'Concerts',es:'Conciertos',ic:'<path d="M9 18V5l10-2v13"/><circle cx="6" cy="18" r="2.5"/><circle cx="16" cy="16" r="2.5"/>'},
   {id:'sec-theater',src:'theaters',fn:function(){return renderTheater();},en:'Theater',es:'Teatro',ic:'<path d="M3.5 4.5h9v6.5a4.5 4.5 0 0 1-9 0V4.5z"/><path d="M5.8 7.6c.5.5 1.2.5 1.7 0M9 7.6c.5.5 1.2.5 1.7 0M6 12.2c.6.7 1.4 1.1 2 1.1s1.4-.4 2-1.1"/><path d="M11.5 8.5h9V15a4.5 4.5 0 0 1-9 0V8.5z" fill="var(--sand,#F5F0EB)" fill-opacity=".06"/><path d="M13.8 11.6c.5-.5 1.2-.5 1.7 0M17 11.6c.5-.5 1.2-.5 1.7 0M14 17.2c.6-.7 1.4-1.1 2-1.1s1.4.4 2 1.1"/>'},
   {id:'sec-stad',src:'stadiums',fn:function(){return renderStad();},en:'Stadiums',es:'Estadios',ic:'<path d="M8.5 20.5h7M12 16.5v4"/><path d="M6.5 4h11v4.5a5.5 5.5 0 0 1-11 0V4z"/><path d="M6.5 6H4.5a2 2 0 0 0 2 3.6M17.5 6h2a2 2 0 0 1-2 3.6"/>'},
-  {id:'sec-insiders',src:'',ph:'n2',fn:function(){return renderMiamiInsiders();},en:'Miami Insiders',es:'Miami Insiders',ic:'<path d="M12 3l2.6 6.2L21 10l-5 4.4L17.5 21 12 17.5 6.5 21 8 14.4 3 10l6.4-.8L12 3z"/>'},
   {id:'sec-place',src:'places',fn:function(){return renderPlace();},en:'Places',es:'Lugares',ic:'<path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/>'},
   {id:'sec-parks',src:'parks',fn:function(){return renderParks();},en:'Parks',es:'Parques',ic:'<path d="M12 3.5 6.8 11h3l-4 6h12.4l-4-6h3L12 3.5z"/><path d="M12 17v3.5"/>'},
   {id:'sec-shop',src:'shopping',fn:function(){return renderShop();},en:'Shopping',es:'Tiendas',ic:'<path d="M6 8.5h12l1 12H5l1-12z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/>'},
@@ -6298,49 +6304,43 @@ function renderMiamiInsiders(){
     var photo = (typeof sPhoto==='function' && sPhoto(m.id)) ? sPhoto(m.id) : '';
     var tag = m.type + ' · ' + (e ? m.cat_es : m.cat_en);
     var desc = e ? m.desc_es : m.desc_en;
-    var imgStyle = photo ? 'background-image:url('+photo+');' : '';
-    var fallbackIco = photo ? '' : '<div class="mi-item-ico-wrap"><svg class="mi-item-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+m.ico_path+'</svg></div>';
-    return '<div class="mi-item" onclick="showInsiderModal(\''+m.id+'\')">'
-      +'<div class="mi-item-img" style="'+imgStyle+'">'
-        +fallbackIco
-        +'<div class="mi-item-ov"></div>'
-        +'<span class="mi-item-badge">'+starIcoSm+' Miami Insider</span>'
-        +'<div class="mi-item-name">'+m.name+'</div>'
+    /* Card uniforme de la app (.rcardh): foto arriba, bloque blanco abajo */
+    return '<div class="rcardh" onclick="showInsiderModal(\''+m.id+'\')">'
+      +(photo?'<div class="rcardh-photo" style="background-image:url('+photo+')"></div>':'<div class="rcardh-photo mm-door-nophoto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">'+m.ico_path+'</svg></div>')
+      +'<div class="rcardh-fade"></div>'
+      +'<div class="rcardh-info">'
+        +'<div class="rcardh-top-row"><span class="rcardh-badge pro">'+starIcoSm+' Miami Insider</span></div>'
+        +'<div class="rcardh-mid"><div class="rcardh-name">'+m.name+'</div><div class="rcardh-meta">'+tag+'</div></div>'
+        +'<div class="rcardh-metarow"><div class="rcardh-metaitem">'+m.handle+' · '+m.stats+'</div></div>'
       +'</div>'
-      +'<div class="mi-item-body">'
-        +'<div class="mi-item-tag">'+tag+'</div>'
-        +'<div class="mi-item-handle">'+m.handle+' · '+m.stats+'</div>'
-        +'<div class="mi-item-desc">'+desc+'</div>'
-        +'<div class="mi-item-footer">'
-          +'<a class="mi-item-link" href="'+m.link+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+viewLabel+' →</a>'
-        +'</div>'
-      +'</div>'
-      +'</div>';
+    +'</div>';
   }).join('');
 
-  var miBarBg = 'fotos/mm-x-7.jpg';
-
-  return '<section class="sec fade mi-wrap" id="sec-insiders">'
-    +'<div class="mi-bar" id="miBar" onclick="miToggle()">'
-      +'<div class="mi-bar-bg" style="background-image:url(\''+miBarBg+'\')"></div>'
-      +'<div class="mi-bar-overlay"></div>'
-      +'<div class="mi-bar-body">'
-        +'<div class="mi-bar-label">'
-          +'<span class="mi-bar-eyebrow">'+eyebrow+'</span>'
-          +'<span class="mi-bar-title">'+title+'</span>'
+  /* PUERTA uniforme (misma anatomía que Live Cams / This Week): afuera solo
+     nombre + anuncio; adentro el rail horizontal y, debajo, la inscripción. */
+  return '<section class="sec fade tw-wrap mm-door" id="sec-insiders">'
+    +'<div class="tw-bar-wrap">'
+      +'<div class="tw-bar" id="miBar" onclick="if(!(event.target.closest&&event.target.closest(\'#miPanel\')))miToggle()">'
+        +'<div class="tw-bar-body">'
+          +'<div class="tw-bar-label">'
+            +'<span class="tw-bar-eyebrow">'+eyebrow+'</span>'
+            +'<span class="tw-bar-title">'+title+'</span>'
+          +'</div>'
+          +'<div class="mm-door-line">'+subline+'</div>'
+          +'<div class="tw-bar-meta"><span class="tw-bar-cta"><span data-en="Explore" data-es="Explorar">'+(e?'Explorar':'Explore')+'</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9l6 6 6-6\"/></svg></span></div>'
         +'</div>'
-        +'<div class="mi-bar-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></div>'
-      +'</div>'
-    +'</div>'
-    +'<div class="mi-panel" id="miPanel">'
-      +'<div class="mi-subline">'+subline+'</div>'
-      +'<div class="mi-grid">'+cardsHTML+'</div>'
-      +'<div class="mi-promo">'
-        +'<div class="mi-promo-star">'+starIco+'</div>'
-        +'<div class="mi-promo-eyebrow">'+promoEyebrow+'</div>'
-        +'<div class="mi-promo-title">'+promoTitle+'</div>'
-        +'<div class="mi-promo-sub">'+promoSub+'</div>'
-        +'<button class="mi-promo-btn" onclick="event.stopPropagation();showInsidersPromo()">'+starIcoSm+' '+promoBtnLabel+'</button>'
+        +'<div class="tw-panel" id="miPanel" onclick="event.stopPropagation()">'
+          +'<div class="mm-door-inner">'
+            +'<div class="h-row" id="insiders-hrow">'+cardsHTML+'</div>'
+            +'<div class="mi-promo">'
+              +'<div class="mi-promo-star">'+starIco+'</div>'
+              +'<div class="mi-promo-eyebrow">'+promoEyebrow+'</div>'
+              +'<div class="mi-promo-title">'+promoTitle+'</div>'
+              +'<div class="mi-promo-sub">'+promoSub+'</div>'
+              +'<button class="mi-promo-btn" onclick="event.stopPropagation();showInsidersPromo()">'+starIcoSm+' '+promoBtnLabel+'</button>'
+            +'</div>'
+          +'</div>'
+        +'</div>'
       +'</div>'
     +'</div>'
   +'</section>';
@@ -6351,6 +6351,14 @@ function miToggle(){
   var panel=document.getElementById('miPanel');
   var open=panel.classList.toggle('open');
   bar.classList.toggle('open',open);
+  mmDoorCta(bar,open);
+}
+/* Etiqueta Explorar/Ver menos de las puertas uniformes (misma lógica que mmcamCtaLabel) */
+function mmDoorCta(bar,abierto){
+  if(!bar) return; var sp=bar.querySelector('.tw-bar-cta span[data-en]'); if(!sp) return;
+  var en=abierto?'View less':'Explore', es=abierto?'Ver menos':'Explorar';
+  sp.setAttribute('data-en',en); sp.setAttribute('data-es',es);
+  sp.textContent=(typeof lang!=='undefined'&&lang==='es')?es:en;
 }
 
 /* ── Iconos propios por categoría (stroke SVG, estilo Hidden Miami) ── */
@@ -6553,7 +6561,7 @@ function renderBeach(){
     return '<div class="rcardh" onclick="openItemModal(D.beaches.find(x=>x.id===\''+b.id+'\'),\'beach\')">'
       +(photoUrl?'<div class="rcardh-photo" style="background-image:url('+photoUrl+')"></div>':'')
       +'<div class="rcardh-fade"></div>'
-      +beachPerkIcons(b,'tr')
+      +beachPerkIcons(b,'tl')
       +'<button class="rcardh-fav-btn'+(isFaved?' faved':'')+'" onclick="event.stopPropagation();addFavFromCard(\''+b.id+'\',\''+safeName+'\',\'beach\',this)">'+(isFaved?'♥':'♡')+'</button>'
       +'<div class="rcardh-info">'
         +'<div class="rcardh-top-row"><span class="rcardh-badge">'+n(b.badge,b.badge_es)+'</span></div>'
@@ -10213,7 +10221,10 @@ function build(){
       })();
     })();
   }
-  document.getElementById('app').innerHTML=renderRest()+renderHotels()+renderBeach()+renderWater()+renderEsc()+renderCine()+renderNight()+renderLux()+renderTransport()+renderBeforeFly()+renderAirports()+renderExploreGrid()+'<div id="moreWrap"></div>';
+  document.getElementById('app').innerHTML=renderRest()+renderHotels()+renderBeach()+renderWater()+renderEsc()+renderCine()+renderNight()+renderLux()+renderTransport()+renderBeforeFly()+renderAirports()+renderExploreGrid()
+    +(typeof renderMiamiInsiders==='function'?renderMiamiInsiders():'')
+    +(window.renderMiamiPast?window.renderMiamiPast():'')
+    +'<div id="moreWrap"></div>';
   try{ mmRailInit(); }catch(e){}
   _mmExpanded={};
   // Miami in Photos ahora vive DESPUÉS de las cámaras en vivo
@@ -13090,7 +13101,7 @@ async function runItinAI() {
   if(elErr)  elErr.style.display  = 'none';
   var sys = 'You are Luna, Miami Magic app expert planner. Create a detailed day-by-day itinerary in ' + (L==='es'?'Spanish':'English') + '. Format each day as "**Day 1 — Theme**" then time slots "9:00 AM — Activity — tip". Include real Miami spots (Versailles, KYU, Wynwood Walls, Vizcaya, PAMM, Ball & Chain, South Beach, Little Havana, Brickell). Under 350 words. Be specific and exciting.';
   try {
-    var resp = await fetch('/api/chat', {
+    var resp = await fetch(MM_API+'/api/chat', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({messages:[{role:'user',content:'Create itinerary for: '+query}], system:sys})
@@ -13370,7 +13381,7 @@ document.addEventListener('DOMContentLoaded', function(){ setTimeout(mmpInitPush
 // ── SERVICE WORKER ──────────────────────────────────
 if('serviceWorker' in navigator){
   window.addEventListener('load', function(){
-    navigator.serviceWorker.register('/sw.js').catch(function(){});
+    if(location.protocol!=='capacitor:') navigator.serviceWorker.register('/sw.js').catch(function(){});
   });
 }
 
@@ -15696,7 +15707,7 @@ async function sendAmigo() {
   // Call /api/chat serverless function
   try {
     var messages = history.slice(-6).map(function(m){ return { role:m.role, content:m.content }; });
-    var response = await fetch('/api/chat', {
+    var response = await fetch(MM_API+'/api/chat', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body: JSON.stringify({ messages: messages, system: persona.system })
@@ -15935,7 +15946,7 @@ async function aiSend() {
   // Try real AI via /api/chat
   try {
     var messages = _aiHistory.slice(-10).map(function(m){ return { role: m.role, content: m.content }; });
-    var response = await fetch('/api/chat', {
+    var response = await fetch(MM_API+'/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ messages: messages, system: _AI_PLAN_SYSTEM })
@@ -16417,6 +16428,30 @@ document.addEventListener('keydown', function(e) {
 }
 .mtt-panel::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--gold),var(--coral));z-index:3;}
 .mtt-panel.open{max-height:3000px;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+/* Insiders e Historia: secciones normales, abiertas, con fila horizontal */
+.mi-panel,.mtt-panel{max-height:none!important;overflow:visible!important;background:none!important;border-radius:0!important;}
+.mi-panel::before,.mtt-panel::before{display:none;}
+.mi-bar,.mtt-bar{background:none!important;box-shadow:none!important;border:0!important;border-radius:0!important;
+  padding:0!important;min-height:0!important;height:auto!important;cursor:default;pointer-events:none;overflow:visible;}
+.mi-bar-bg,.mi-bar-overlay,.mi-bar-chevron,.mtt-bar-bg,.mtt-bar-overlay,.mtt-bar-chevron{display:none!important;}
+.mi-bar-body,.mtt-bar-body{padding:0!important;background:none!important;
+  display:flex!important;justify-content:flex-start!important;text-align:left!important;}
+.mi-bar-label,.mtt-bar-label{display:flex!important;flex-direction:column;gap:2px;
+  align-items:flex-start!important;text-align:left!important;}
+.mi-bar,.mtt-bar{text-align:left!important;}
+.mi-subline,.mtt-intro,.mtt-hint{padding-left:2px!important;padding-right:2px!important;}
+.mi-bar-eyebrow,.mtt-bar-eyebrow{font:800 .7rem 'DM Sans',sans-serif!important;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--teal)!important;}
+.mi-bar-title,.mtt-bar-title{font:700 1.5rem 'Playfair Display',serif!important;color:var(--text)!important;}
+.mi-subline,.mtt-intro,.mtt-hint{color:var(--text2)!important;}
+.mi-subline::after{display:none;}
+.mi-grid{display:flex!important;gap:14px;overflow-x:auto;padding:14px 2px 6px!important;
+  scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+.mi-grid::-webkit-scrollbar{display:none;}
+.mi-grid>.mi-item{flex:0 0 200px;scroll-snap-align:start;}
+.mtt-rail{padding:16px 2px 8px!important;}
+.mi-promo{margin-top:10px;}
+@media(max-width:600px){.mi-grid>.mi-item{flex:0 0 172px;}}
 
 .mtt-panel-grid{
   display:grid;
@@ -16473,6 +16508,24 @@ document.addEventListener('keydown', function(e) {
     var panel=document.getElementById('mttPanel');
     var open=panel.classList.toggle('open');
     bar.classList.toggle('open',open);
+    if(typeof mmDoorCta==='function') mmDoorCta(bar,open);
+  };
+  /* Ficha de una era: reutiliza el modal de las cards de agua (#mwOv). */
+  window.mmOpenEra=function(i){
+    var x=(window._mmEras||[])[i]; if(!x) return;
+    var es=isEs();
+    document.getElementById('mwPhoto').style.backgroundImage=x.img?'url('+x.img+')':'none';
+    document.getElementById('mwCat').textContent=x.yr;
+    document.getElementById('mwName').textContent=x.tt;
+    document.getElementById('mwDesc').textContent=x.tx;
+    document.getElementById('mwRows').innerHTML='<div class="mw-row"><span style="font-style:italic;color:#B07800;font-weight:700">'+x.hook+'</span></div>';
+    document.getElementById('mwTipLbl').textContent=es?'Dato':'Fact';
+    document.getElementById('mwTip').innerHTML=x.fact.replace(/<b>[^<]*<\/b>\s*/,'');
+    var n=document.getElementById('mwNote'); if(n) n.style.display='none';
+    var btn=document.getElementById('mwBtn'); btn.style.display='none'; btn.removeAttribute('href');
+    var old=btn.parentNode.querySelector('.mw-web'); if(old) old.parentNode.removeChild(old);
+    btn.insertAdjacentHTML('beforebegin','<div class="mw-web"><a class="m-row m-row-web" href="#" onclick="event.preventDefault();closeWaterModal();'+x.act.replace(/"/g,'&quot;')+'">'+x.cta+' \u2192</a></div>');
+    document.getElementById('mwOv').style.display='flex';
   };
 
   window.renderMiamiPast=function(){
@@ -16536,39 +16589,38 @@ document.addEventListener('keydown', function(e) {
       fact:e?'<b>Dato:</b> más del 70% de los residentes de Miami nacieron fuera de EE.UU. — la ciudad más internacional del país.':'<b>Fact:</b> over 70% of Miami residents were born outside the US — the most international city in the country.',
       cta:e?'Ver Wynwood Walls':'See Wynwood Walls',act:"mttGo('galleries','art1')"}
     ];
-    var cards=eras.map(function(x){
-      return '<div class="mtt-era" style="--era:'+x.c+'">'
-        +(x.img?'<div class="mtt-era-photo"><img loading="lazy" src="'+x.img+'" alt="" onerror="this.parentNode.classList.add(\'noimg\')"></div>':'')
-        +'<div class="mtt-era-ico">'+ico(x.ic)+'</div>'
-        +'<div class="mtt-era-yr">'+x.yr+'</div>'
-        +'<div class="mtt-era-tt">'+x.tt+'</div>'
-        +'<div class="mtt-era-hook">'+x.hook+'</div>'
-        +'<div class="mtt-era-tx">'+x.tx+'</div>'
-        +'<div class="mtt-era-fact">'+x.fact+'</div>'
-        +'<button class="mtt-era-cta" onclick="event.stopPropagation();'+x.act+'">'+x.cta
-        +' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>'
+    window._mmEras=eras; /* para el modal mmOpenEra(i) */
+    var cards=eras.map(function(x,i){
+      /* Card uniforme de la app (.rcardh, 385/395px): foto, año como badge,
+         título, gancho. Al tocar se abre la ficha completa. */
+      return '<div class="rcardh" onclick="mmOpenEra('+i+')">'
+        +(x.img?'<div class="rcardh-photo" style="background-image:url('+x.img+')"></div>':'<div class="rcardh-photo mm-door-nophoto">'+ico(x.ic)+'</div>')
+        +'<div class="rcardh-fade"></div>'
+        +'<div class="rcardh-info">'
+          +'<div class="rcardh-top-row"><span class="rcardh-badge" style="background:'+x.c+'22;border-color:'+x.c+'66">'+x.yr+'</span></div>'
+          +'<div class="rcardh-mid"><div class="rcardh-name">'+x.tt+'</div><div class="rcardh-desc">'+x.hook+'</div></div>'
+          +'<div class="rcardh-metarow"><div class="rcardh-metaitem" style="color:#B07800;font-weight:700">'+(e?'Leer la historia →':'Read the story →')+'</div></div>'
+        +'</div>'
       +'</div>';
     }).join('');
-    var dots=eras.map(function(_,i){return '<i'+(i===0?' class="on"':'')+'></i>';}).join('');
 
-    return '<section class="sec fade mtt-wrap" id="sec-mtt">'
-      +'<div class="mtt-bar" id="mttBar" onclick="mttToggle()">'
-        +'<div class="mtt-bar-bg"></div>'
-        +'<div class="mtt-bar-overlay"></div>'
-        +'<div class="mtt-bar-body">'
-          +'<div class="mtt-bar-label">'
-            +'<span class="mtt-bar-eyebrow">'+eyebrow+' · '+sub+'</span>'
-            +'<span class="mtt-bar-title">'+title+'</span>'
+    return '<section class="sec fade tw-wrap mm-door mm-door-navy" id="sec-mtt">'
+      +'<div class="tw-bar-wrap">'
+        +'<div class="tw-bar" id="mttBar" onclick="if(!(event.target.closest&&event.target.closest(\'#mttPanel\')))mttToggle()">'
+          +'<div class="tw-bar-body">'
+            +'<div class="tw-bar-label">'
+              +'<span class="tw-bar-eyebrow">'+eyebrow+'</span>'
+              +'<span class="tw-bar-title">'+title+'</span>'
+            +'</div>'
+            +'<div class="mm-door-line">'+sub+'</div>'
+            +'<div class="tw-bar-meta"><span class="tw-bar-cta"><span data-en="Explore" data-es="Explorar">'+(e?'Explorar':'Explore')+'</span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9l6 6 6-6\"/></svg></span></div>'
           +'</div>'
-          +'<div class="mtt-bar-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></div>'
-        +'</div>'
-      +'</div>'
-      +'<div class="mtt-panel" id="mttPanel">'
-        +'<div class="mtt-inner">'
-          +'<p class="mtt-intro">'+intro+'</p>'
-          +'<p class="mtt-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:13px;height:13px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'+hint+'</p>'
-          +'<div class="mtt-rail" id="mttRail" onscroll="mttDots(this)">'+cards+'</div>'
-          +'<div class="mtt-dots" id="mttDotsEl">'+dots+'</div>'
+          +'<div class="tw-panel" id="mttPanel" onclick="event.stopPropagation()">'
+            +'<div class="mm-door-inner">'
+              +'<p class="mtt-intro">'+intro+'</p>'
+              +'<div class="h-row" id="mttRail">'+cards+'</div>'
+            +'</div>'
+          +'</div>'
         +'</div>'
       +'</div>'
     +'</section>';
@@ -16587,7 +16639,7 @@ document.addEventListener('keydown', function(e) {
     if(_origSetLang) _origSetLang(l);
     // Find the section and re-render
     setTimeout(function(){
-      var existing=document.querySelector('.mtt-wrap');
+      var existing=document.getElementById('sec-mtt');
       if(existing){
         var wasOpen=document.getElementById('mttPanel') && document.getElementById('mttPanel').classList.contains('open');
         var tmp=document.createElement('div');
@@ -17843,6 +17895,48 @@ function showInsiderModal(id){
   #sec-livecams .tw-bar-title{font-size:2.6rem!important;}
   #sec-livecams .tw-bar-eyebrow{font-size:.74rem!important;}
   #sec-livecams .cam-chip{font-size:.92rem;}
+}
+
+
+/* ══ PUERTAS UNIFORMES (.mm-door) — Insiders + Historia. Misma anatomía que
+   la puerta de Live Cams: paper, lockup centrado, hairline corta, EXPLORAR
+   subrayado. Afuera solo nombre + anuncio; adentro rail .h-row de cards
+   .rcardh (las mismas de Playas/Restaurantes) y, en Insiders, la inscripción
+   debajo del rail. Historia usa la variante navy (como la puerta This Month). */
+.mm-door .tw-bar-wrap{background:#FFFDF8;border:1px solid rgba(14,27,48,.16);border-radius:22px;box-shadow:0 6px 22px rgba(14,27,48,.06);}
+.mm-door .tw-bar{padding-top:0;min-height:224px;justify-content:center;}
+.mm-door .tw-bar-body{background:none!important;padding:28px 22px 24px!important;align-items:center;text-align:center;flex:0 0 auto;justify-content:center;}
+.mm-door .tw-bar-label{align-items:center;}
+.mm-door .tw-bar-eyebrow{font-size:.68rem!important;letter-spacing:.24em;color:#B07800!important;}
+.mm-door .tw-bar-title{font-size:2.05rem!important;line-height:1.05;letter-spacing:-.015em;color:#0E1B30;margin-top:8px;text-wrap:balance;}
+.mm-door .tw-bar-label::after{content:'';width:44px;height:1px;background:rgba(176,120,0,.55);margin:15px auto 0;}
+.mm-door .mm-door-line{font:400 .92rem/1.45 'DM Sans',sans-serif;color:rgba(14,27,48,.72);margin-top:12px;max-width:520px;}
+.mm-door .tw-bar-meta{border-top:0;justify-content:center!important;margin-top:4px!important;padding-top:0;}
+.mm-door .tw-bar-cta{background:none!important;border:0!important;box-shadow:none!important;padding:12px 0 0!important;min-height:0;font:800 .82rem 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#FF4D35!important;}
+.mm-door .tw-bar-cta span{border-bottom:1.5px solid rgba(255,77,53,.6);padding-bottom:3px;}
+.mm-door .tw-bar-cta svg{color:#FF4D35;width:13px;height:13px;}
+.mm-door .tw-panel{background:#FFFDF6;cursor:default;}
+.mm-door .tw-bar-wrap::before{display:none;}
+.mm-door .mm-door-inner{padding:6px 0 18px;}
+.mm-door .mtt-intro{padding:10px 22px 2px!important;margin:0!important;font-size:.98rem!important;}
+.mm-door .mi-promo{margin:6px 16px 0;}
+.mm-door .mm-door-nophoto{display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#12213A,#0B1526);color:#FFD166;}
+.mm-door .mm-door-nophoto svg{width:54px;height:54px;}
+/* variante navy (Historia) */
+.mm-door-navy .tw-bar-wrap{background:#0E1B30;border-color:rgba(255,209,102,.22);}
+.mm-door-navy .tw-bar-eyebrow{color:#FFD166!important;}
+.mm-door-navy .tw-bar-title{color:#fff;}
+.mm-door-navy .tw-bar-label::after{background:rgba(255,209,102,.6);}
+.mm-door-navy .mm-door-line{color:rgba(255,255,255,.72);}
+.mm-door-navy .tw-bar-cta{color:#FFD166!important;}
+.mm-door-navy .tw-bar-cta span{border-bottom-color:rgba(255,209,102,.6);}
+.mm-door-navy .tw-bar-cta svg{color:#FFD166;}
+@media(min-width:900px){
+  .mm-door .tw-bar{min-height:280px;}
+  .mm-door .tw-bar-body{padding:32px 28px 28px!important;}
+  .mm-door .tw-bar-title{font-size:2.6rem!important;}
+  .mm-door .tw-bar-eyebrow{font-size:.74rem!important;}
+  .mm-door .mm-door-line{font-size:1rem;}
 }
 
 /* ══ LAS DOS BANDAS = EL SCROLL DE LA WEB, IDÉNTICO (su nota: la
