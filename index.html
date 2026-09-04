@@ -2311,6 +2311,54 @@ body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
 @media(min-width:640px){.dato-ov{align-items:center;} .dato-box{border-radius:22px;}}
 [data-theme="dark"] .dato-box{background:#0E1B33;}
 .dato-box h3{margin:0 0 4px;font:900 1.3rem 'Playfair Display',serif;color:#0E1B30;}
+/* ── VENTANA "SOBRE LA APP" ──────────────────────────────────────── */
+.about-box{position:relative;text-align:center;padding-top:26px;}
+.about-x{position:absolute;top:12px;right:14px;width:34px;height:34px;border:none;border-radius:50%;
+  background:rgba(14,27,48,.07);color:#0E1B30;font-size:1.3rem;line-height:1;cursor:pointer;
+  -webkit-appearance:none;appearance:none;}
+.about-palm{width:44px;height:62px;object-fit:contain;margin:0 auto 10px;display:block;}
+.about-eyebrow{font:800 .64rem 'DM Sans',sans-serif;letter-spacing:.22em;text-transform:uppercase;
+  color:#B07800;margin-bottom:4px;}
+.about-box h3{font-size:1.6rem!important;margin-bottom:14px!important;}
+.about-tx{font:400 .9rem/1.65 'DM Sans',sans-serif;color:rgba(14,27,48,.76);margin:0 0 12px;text-align:left;}
+.about-by{font:400 .78rem 'DM Sans',sans-serif;color:rgba(14,27,48,.5);margin:16px 0 14px;
+  padding-top:14px;border-top:1px solid rgba(14,27,48,.1);}
+.about-links{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+.about-links a{font:700 .84rem 'DM Sans',sans-serif;color:#FF4D35;cursor:pointer;text-decoration:none;}
+/* ── PLANEA TU VIAJE · look premium (sep 2026) ────────────────────── */
+#itinPanel{background:#FFF9F2!important;}
+.itin-load-tx{font:600 .84rem 'DM Sans',sans-serif;color:rgba(14,27,48,.55);letter-spacing:.02em;margin-top:6px;}
+#itinSubtitle{font:400 .82rem 'DM Sans',sans-serif!important;color:rgba(14,27,48,.55)!important;}
+#itinAIResult{background:#fff!important;border:1px solid rgba(176,120,0,.18)!important;
+  border-radius:18px!important;padding:18px 18px 16px!important;font-size:.9rem!important;
+  line-height:1.75!important;box-shadow:0 6px 22px rgba(14,27,48,.06);}
+#itinAIResult strong{font-family:'Playfair Display',serif!important;font-size:1.06rem!important;
+  color:#0E1B30!important;margin:16px 0 6px!important;padding-bottom:5px;
+  border-bottom:1px solid rgba(176,120,0,.22);}
+#itinAIResult strong:first-child{margin-top:0!important;}
+.itin-end{margin-top:18px;padding-top:16px;border-top:1px solid rgba(176,120,0,.2);}
+.itin-end-hd{font:800 .64rem 'DM Sans',sans-serif;letter-spacing:.2em;text-transform:uppercase;
+  color:#B07800;margin-bottom:10px;}
+.itin-promo-card{display:flex;align-items:center;gap:4px;flex-wrap:wrap;text-decoration:none;
+  background:#FFFDF6;border:1px solid rgba(176,120,0,.24);border-radius:14px;
+  padding:12px 46px 12px 14px;margin-bottom:8px;position:relative;}
+.itin-promo-t{font:700 .92rem 'DM Sans',sans-serif;color:#0E1B30;width:100%;}
+.itin-promo-s{font:400 .78rem 'DM Sans',sans-serif;color:rgba(14,27,48,.55);width:100%;}
+.itin-promo-go{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#FF4D35;font-weight:800;}
+.itin-end-row{display:flex;gap:8px;margin-top:12px;}
+.itin-end-btn{flex:1;padding:12px 10px;border-radius:50px;border:none;cursor:pointer;
+  font:700 .86rem 'DM Sans',sans-serif;background:#FF4D35;color:#fff;-webkit-appearance:none;appearance:none;}
+.itin-end-btn.alt{background:#fff;color:#0E1B30;border:1.5px solid rgba(14,27,48,.16);}
+[data-theme="dark"] #itinPanel{background:#0E1B33!important;}
+[data-theme="dark"] #itinAIResult{background:rgba(255,255,255,.05)!important;color:rgba(255,255,255,.9)!important;}
+[data-theme="dark"] #itinAIResult strong{color:#fff!important;}
+[data-theme="dark"] .itin-promo-card{background:rgba(255,209,102,.07);border-color:rgba(255,209,102,.24);}
+[data-theme="dark"] .itin-promo-t{color:#fff;}
+[data-theme="dark"] .itin-end-btn.alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.24);}
+[data-theme="dark"] .about-tx{color:rgba(255,255,255,.8);}
+[data-theme="dark"] .about-box h3{color:#fff;}
+[data-theme="dark"] .about-x{background:rgba(255,255,255,.12);color:#fff;}
+[data-theme="dark"] .about-by{color:rgba(255,255,255,.5);border-top-color:rgba(255,255,255,.14);}
 .dato-box .dsub{margin:0 0 16px;font:400 .8rem 'DM Sans',sans-serif;color:rgba(14,27,48,.6);line-height:1.55;}
 [data-theme="dark"] .dato-box h3{color:#fff;}
 [data-theme="dark"] .dato-box .dsub{color:rgba(255,255,255,.6);}
@@ -3179,7 +3227,7 @@ body{padding-bottom:0;}
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.20s"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
         Miami Insiders <span class="hm-link-badge" style="background:linear-gradient(135deg,#f5a623,#f7c948);color:#7a4d00;animation-delay:.20s;"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" style="width:10px;height:10px;vertical-align:-1px"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
       </a>
-      <a href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="toggleHM();openInAppSheet(this.href,'Miami Magic Directory');return false;" class="hm-link" style="padding-left:48px;opacity:.85;">
+      <a href="https://miamimagicdirectory.com" rel="noopener" onclick="toggleHM();openInAppSheet(this.href,'Miami Magic Directory');return false;" class="hm-link" style="padding-left:48px;opacity:.85;">
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.21s"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg></div>
         Get Featured · $9.99/mo
       </a>
@@ -3313,7 +3361,7 @@ body{padding-bottom:0;}
       </div>
 
       <div class="hm-drawer-footer">
-        <a href="https://miamimagicdirectory.com" target="_blank" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" style="color:rgba(255,255,255,.18);font-size:.6rem;text-decoration:none;letter-spacing:2px;text-transform:uppercase;">Business Directory ↗</a>
+        <a href="https://miamimagicdirectory.com" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" style="color:rgba(255,255,255,.18);font-size:.6rem;text-decoration:none;letter-spacing:2px;text-transform:uppercase;">Business Directory ↗</a>
       </div>
     </div>
   </div>
@@ -3351,11 +3399,11 @@ body{padding-bottom:0;}
       <a href="#" onclick="go('sec-map');return false;" data-en="Map" data-es="Mapa">Map</a>
       <a href="#" onclick="go('sec-airports');return false;" data-en="Fly In" data-es="Vuela">Fly In</a>
       <a href="#" onclick="openSignup();return false;" class="nav-join" data-en="Join Free" data-es="&Uacute;nete Gratis">Join Free</a>
-      <a href="https://miamimagicdirectory.com" target="_blank" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" class="nav-web">Web ↗</a>
+      <a href="https://miamimagicdirectory.com" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" class="nav-web">Web ↗</a>
     </div>
     <!-- Fila 2 móvil: solo 3 links -->
     <div id="navLinksMob">
-      <a href="https://miamimagicdirectory.com" target="_blank" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" class="nav-web">Web ↗</a>
+      <a href="https://miamimagicdirectory.com" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" class="nav-web">Web ↗</a>
     </div>
   </nav>
 </header>
@@ -7447,7 +7495,7 @@ function openPrivacy(){
   document.getElementById('privBody').innerHTML=
     '<p class="priv-intro">'+P.intro+'</p>'
     +P.s.map(function(x){return '<h3 class="priv-h">'+x.h+'</h3><p class="priv-p">'+x.b+'</p>';}).join('')
-    +'<p class="priv-perma"><a href="privacy.html?lang='+(ES?'es':'en')+'" target="_blank" rel="noopener" onclick="openInAppSheet(this.href,\'Privacy\');return false;">'
+    +'<p class="priv-perma"><a href="privacy.html?lang='+(ES?'es':'en')+'" rel="noopener" onclick="openInAppSheet(this.href,\'Privacy\');return false;">'
       +(ES?'Ver esta política en una página independiente':'View this policy on its own page')+' \u2197</a></p>';
   ov.style.display='flex';
   document.body.style.overflow='hidden';
@@ -9404,15 +9452,18 @@ function mmTopMount(){
    con el nombre de quien lo mandó. Cierra el circuito de "Manda tu dato". */
 var MM_COMM={};      /* place_id -> [ {tip, author} ] */
 function mmCommFetch(){
-  return fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/mm_tips_public?select=place_id,tip,author&order=created_at.desc',{
+  return fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/mm_tips_public?select=place,tip,name&order=created_at.desc',{
     headers:{'apikey':'sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
              'Authorization':'Bearer sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF'}
   }).then(function(r){ return r.ok?r.json():[]; })
     .then(function(rows){
       MM_COMM={};
       (rows||[]).forEach(function(x){
-        if(!x||!x.place_id||!x.tip) return;
-        (MM_COMM[x.place_id]=MM_COMM[x.place_id]||[]).push({tip:x.tip,author:x.author||''});
+        if(!x||!x.place||!x.tip) return;
+        /* "place" guarda "id · Nombre": el id es lo que va antes del punto medio */
+        var pid=String(x.place).split('·')[0].trim();
+        if(!pid) return;
+        (MM_COMM[pid]=MM_COMM[pid]||[]).push({tip:x.tip,author:x.name||''});
       });
       return MM_COMM;
     }).catch(function(){ return MM_COMM; });
@@ -9476,8 +9527,10 @@ function mmDatoSend(){
              'apikey':'sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
              'Authorization':'Bearer sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
              'Prefer':'return=minimal'},
-    body:JSON.stringify({place_id:MM_DATO_PLACE.id,place_name:MM_DATO_PLACE.name,
-      tip:txt.slice(0,900),author:who.slice(0,60),email:mail.slice(0,120),
+    /* Columnas reales de la tabla mm_tips: place, tip, name, email, lang, approved.
+       El id del lugar va dentro de "place" para poder emparejarlo al publicarlo. */
+    body:JSON.stringify({place:(MM_DATO_PLACE.id+' · '+MM_DATO_PLACE.name).slice(0,160),
+      tip:txt.slice(0,900),name:who.slice(0,60),email:mail.slice(0,120),
       lang:(typeof lang!=='undefined'?lang:'')})
   }).then(function(r){
     if(!r.ok) throw new Error('bad');
@@ -9576,8 +9629,8 @@ function renderBiz(){
       +'<div class="biz-grid">'+rest.map(function(b){return bizCard(b,ES);}).join('')+'</div>';
   }
   out+='<div class="biz-note">'+(ES
-    ?'\u00bfTienes un negocio en Miami? <a href="https://www.miamimagicdirectory.com" target="_blank" rel="noopener" onclick="openInAppSheet(this.href,this.textContent);return false;">Aparece aqu\u00ed \u2192</a>'
-    :'Run a Miami business? <a href="https://www.miamimagicdirectory.com" target="_blank" rel="noopener" onclick="openInAppSheet(this.href,this.textContent);return false;">Get listed here \u2192</a>')
+    ?'\u00bfTienes un negocio en Miami? <a href="https://www.miamimagicdirectory.com" rel="noopener" onclick="openInAppSheet(this.href,this.textContent);return false;">Aparece aqu\u00ed \u2192</a>'
+    :'Run a Miami business? <a href="https://www.miamimagicdirectory.com" rel="noopener" onclick="openInAppSheet(this.href,this.textContent);return false;">Get listed here \u2192</a>')
     +'</div></section>';
   return out;
 }
@@ -12310,9 +12363,34 @@ function mmFootGo(id){
 }
 function mmFootAbout(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
-  if(typeof openAmigo==='function'){ openAmigo(); return; }
-  alert(ES?'Miami Magic — tu guía local de Miami.':'Miami Magic — your local Miami guide.');
+  var ov=document.getElementById('aboutOv');
+  if(!ov){
+    ov=document.createElement('div'); ov.id='aboutOv'; ov.className='dato-ov';
+    ov.onclick=function(e){ if(e.target===ov) mmAboutClose(); };
+    document.body.appendChild(ov);
+  }
+  var palm=(document.querySelector('.nl-palm')||{}).src||(document.getElementById('palmLogoSrc')||{src:''}).src||'';
+  ov.innerHTML='<div class="dato-box about-box">'
+    +'<button class="about-x" onclick="mmAboutClose()" aria-label="'+(ES?'Cerrar':'Close')+'">&times;</button>'
+    +(palm?'<img class="about-palm" src="'+palm+'" alt="">':'')
+    +'<div class="about-eyebrow">'+(ES?'Sobre la app':'About the app')+'</div>'
+    +'<h3>Miami Magic</h3>'
+    +'<p class="about-tx">'+(ES
+      ?'Una guía de Miami hecha en Miami, escrita a mano lugar por lugar: playas, mesas, museos, teatros, vida nocturna y los rincones que solo sabe quien vive aquí. Sin listas automáticas ni reseñas copiadas — cada ficha la revisamos nosotros.'
+      :'A Miami guide made in Miami, written by hand place by place: beaches, tables, museums, theaters, nightlife and the corners only locals know. No auto-generated lists, no copied reviews — every entry is reviewed by us.')+'</p>'
+    +'<p class="about-tx">'+(ES
+      ?'La app es gratis. Premium quita el límite de preguntas al asistente y ayuda a mantenerla viva.'
+      :'The app is free. Premium removes the limit on assistant questions and helps keep it alive.')+'</p>'
+    +'<div class="about-by">'+(ES?'Publicada por':'Published by')+' <b>Y &amp; Y Entertainment Corp</b> · Miami, FL</div>'
+    +'<div class="about-links">'
+      +'<a onclick="mmAboutClose();mmFootContact()">'+(ES?'Contacto':'Contact')+'</a>'
+      +'<a onclick="mmAboutClose();openPrivacy()">'+(ES?'Privacidad':'Privacy')+'</a>'
+      +'<a onclick="mmAboutClose();mmFootBiz()">'+(ES?'Para negocios':'For business')+'</a>'
+    +'</div>'
+  +'</div>';
+  ov.style.display='flex';
 }
+function mmAboutClose(){ var o=document.getElementById('aboutOv'); if(o) o.style.display='none'; }
 function mmFootContact(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   location.href='mailto:yyentertainment@outlook.com?subject='+encodeURIComponent(ES?'Miami Magic — Contacto':'Miami Magic — Contact');
@@ -13129,7 +13207,7 @@ document.addEventListener('DOMContentLoaded',function(){
     </span>
     <span class="bn-lbl" style="color:#FF4D35;font-weight:700;" data-en="Plan Trip" data-es="Planea">Plan Trip</span>
   </button>
-  <a class="bn-item" href="https://miamimagicdirectory.com" target="_blank" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" style="text-decoration:none;">
+  <a class="bn-item" href="https://miamimagicdirectory.com" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" style="text-decoration:none;">
     <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></span>
     <span class="bn-lbl" data-en="Web" data-es="Web">Web</span>
   </a>
@@ -13180,32 +13258,9 @@ document.addEventListener('DOMContentLoaded',function(){
       <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
         <div style="position:relative;width:54px;height:54px;">
           <!-- Palm SVG animada estilo logo Miami Magic -->
-          <svg viewBox="0 0 54 54" width="54" height="54" xmlns="http://www.w3.org/2000/svg" style="animation:palmThink 1.6s ease-in-out infinite;transform-origin:50% 85%;">
-            <style>
-              @keyframes palmThink{
-                0%,100%{transform:rotate(0deg) scale(1);}
-                20%{transform:rotate(-8deg) scale(1.04);}
-                50%{transform:rotate(6deg) scale(1.06);}
-                75%{transform:rotate(-4deg) scale(1.03);}
-              }
-            </style>
-            <!-- Tronco -->
-            <path d="M27 48 C25 42 24 36 26 28 C27 24 28 22 27 18" stroke="#c8913a" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <!-- Hojas izquierda -->
-            <path d="M26 22 C20 18 12 16 8 20" stroke="#00C9B1" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <path d="M26 24 C19 22 11 24 9 30" stroke="#00C9B1" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <path d="M26 20 C22 14 18 10 14 10" stroke="#00C9B1" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <!-- Hojas derecha -->
-            <path d="M27 22 C33 18 41 16 45 20" stroke="#FF4D35" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <path d="M27 24 C34 22 42 24 44 30" stroke="#FF4D35" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <path d="M27 20 C31 14 35 10 39 10" stroke="#FF4D35" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <!-- Hoja centro arriba -->
-            <path d="M27 18 C27 12 27 8 28 5" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <!-- Base / arena -->
-            <ellipse cx="27" cy="49" rx="9" ry="3" fill="#FFD166" opacity="0.35"/>
-          </svg>
+          <img id="itinPalm" src="" alt="" style="width:52px;height:74px;object-fit:contain;animation:palmSway 1.8s ease-in-out infinite;transform-origin:bottom center;">
         </div>
-        <div style="font-size:.8rem;color:#999;font-family:'DM Sans',sans-serif;font-weight:500;letter-spacing:.5px;">Luna is planning your trip…</div>
+        <div id="itinLoadTx" class="itin-load-tx" data-en="Luna is planning your trip…" data-es="Luna está armando tu viaje…">Luna is planning your trip…</div>
       </div>
     </div>
     <div id="itinAIResult" style="display:none;margin-top:14px;padding:16px;background:#fff8f5;border-radius:16px;border:1px solid rgba(255,77,53,.15);font-size:.84rem;line-height:1.8;color:#08172E;"></div>
@@ -13340,6 +13395,13 @@ function openItinPanel() {
   document.getElementById('itinPanel').style.display = 'block';
   document.body.style.overflow = 'hidden';
   setItinMode('ai');
+  /* la palma de carga usa el logo oficial de la app, no un dibujo generico */
+  try{
+    var _ip=document.getElementById('itinPalm');
+    var _src=(document.querySelector('.nl-palm')||{}).src
+          || (document.getElementById('palmLogoSrc')||{}).src || '';
+    if(_ip&&_src) _ip.src=_src;
+  }catch(e){}
   var res = document.getElementById('itinResult');
   if(res) res.style.display = 'none';
   var aiRes = document.getElementById('itinAIResult');
@@ -13356,7 +13418,7 @@ function openItinPanel() {
   document.getElementById('qStep2').style.display = 'none';
   document.getElementById('qStep3').style.display = 'none';
   itinData = { type:'', days:1, budget:'' };
-  document.getElementById('itinSubtitle').textContent = 'Plan your perfect Miami trip';
+  document.getElementById('itinSubtitle').textContent = ((typeof lang!=='undefined'&&lang==='es')?'Dinos cómo viajas y Luna arma el plan':'Tell us how you travel and Luna builds the plan');
 }
 
 function setItinMode(mode) {
@@ -13392,6 +13454,30 @@ function restartItinAI() {
   el = document.getElementById('itinAIBtn');     if(el) el.style.display='block';
 }
 
+/* Cierre del itinerario: lo que la app quiere promocionar — reservar,
+   moverse y seguir explorando. Antes solo habia un boton de "otro plan". */
+function mmItinPromo(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var car='#', tour='#';
+  try{ car=carLink(); }catch(e){}
+  try{ tour=klLink('miami'); }catch(e){}
+  var cta=function(u,t,sub){
+    return '<a class="itin-promo-card" href="'+u+'" rel="noopener" '
+      +'onclick="if(typeof openInAppSheet===\'function\'){openInAppSheet(this.href,\''+t.replace(/'/g,'')+'\');return false;}">'
+      +'<span class="itin-promo-t">'+t+'</span><span class="itin-promo-s">'+sub+'</span>'
+      +'<span class="itin-promo-go">→</span></a>';
+  };
+  return '<div class="itin-end">'
+    +'<div class="itin-end-hd">'+(ES?'Para completar tu viaje':'To complete your trip')+'</div>'
+    +cta(car, ES?'Renta un auto':'Rent a car', ES?'Miami se recorre en carro':'Miami runs on wheels')
+    +cta(tour, ES?'Tours y entradas':'Tours and tickets', ES?'Everglades, Key West, bahía':'Everglades, Key West, the bay')
+    +'<div class="itin-end-row">'
+      +'<button class="itin-end-btn" onclick="restartItinAI()">'+(ES?'Otro plan':'New plan')+'</button>'
+      +'<button class="itin-end-btn alt" onclick="if(typeof closeItin===\'function\')closeItin();go(\'sec-rest\')">'
+      +(ES?'Ver restaurantes':'Browse restaurants')+'</button>'
+    +'</div>'
+  +'</div>';
+}
 async function runItinAI() {
   var inp = document.getElementById('itinAIInput');
   var query = inp ? inp.value.trim() : '';
@@ -13405,7 +13491,7 @@ async function runItinAI() {
   if(elLoad) elLoad.style.display = 'block';
   if(elRes)  elRes.style.display  = 'none';
   if(elErr)  elErr.style.display  = 'none';
-  var sys = 'You are Luna, Miami Magic app expert planner. Create a detailed day-by-day itinerary in ' + (L==='es'?'Spanish':'English') + '. Format each day as "**Day 1 — Theme**" then time slots "9:00 AM — Activity — tip". Include real Miami spots (Versailles, KYU, Wynwood Walls, Vizcaya, PAMM, Ball & Chain, South Beach, Little Havana, Brickell). Under 350 words. Be specific and exciting.';
+  var sys = 'You are Luna, the Miami Magic planner. Write a day-by-day Miami itinerary in ' + (L==='es'?'Spanish':'English') + '. HARD LIMIT: under 320 words total, so it always fits. Per day: a **Day N** heading, then 3 or 4 lines max, each one place with a 6-word reason. Name real Miami places. No intro, no closing paragraph, no bullets, no markdown besides **bold** headings.';
   try {
     var resp = await fetch(MM_API+'/api/chat', {
       method:'POST',
@@ -13419,7 +13505,7 @@ async function runItinAI() {
       .replace(/\*\*([^*]+)\*\*/g, '<strong style="color:#08172E;display:block;margin:12px 0 3px;">$1</strong>')
       .replace(/\n/g, '<br>');
     if(elRes) {
-      elRes.innerHTML = html + '<div style="margin-top:14px;padding-top:12px;border-top:1px solid #f0ebe3;"><button onclick="restartItinAI()" style="padding:8px 18px;border-radius:50px;border:1.5px solid #e0dbd4;background:#fff;font-size:.75rem;color:#666;cursor:pointer;">↺ New itinerary</button></div>';
+      elRes.innerHTML = html + mmItinPromo();
       elRes.style.display = 'block';
     }
     try { localStorage.setItem('mmLastItin', text); } catch(e) {}
@@ -13876,7 +13962,7 @@ function restartItin() {
   document.getElementById('qStep1').style.display = 'block';
   document.getElementById('qStep2').style.display = 'none';
   document.getElementById('qStep3').style.display = 'none';
-  document.getElementById('itinSubtitle').textContent = 'Plan your perfect Miami trip';
+  document.getElementById('itinSubtitle').textContent = ((typeof lang!=='undefined'&&lang==='es')?'Dinos cómo viajas y Luna arma el plan':'Tell us how you travel and Luna builds the plan');
   document.getElementById('itinUpsell').style.display = 'none';
   itinData = { type:'', days:1, budget:'' };
 }
@@ -16559,6 +16645,7 @@ document.addEventListener('keydown', function(e) {
 
     // Show sheet first (so the UI never feels stuck while we decide)
     var sheet = document.getElementById('inAppSheet');
+    _sheetOpen = true;
     sheet.style.display = 'flex';
     requestAnimationFrame(function(){
       requestAnimationFrame(function(){
@@ -16586,6 +16673,8 @@ document.addEventListener('keydown', function(e) {
       return OWN_SITES.some(function(d){ return h===d || h.endsWith('.'+d); });
     }catch(e){ return false; }
   }
+  var _sheetTimer = null;
+  var _sheetOpen = false;
   function showFrame(url){
     var f = document.getElementById('inAppFrame');
     document.getElementById('inAppFallback').style.display = 'none';
@@ -16594,8 +16683,11 @@ document.addEventListener('keydown', function(e) {
     f.onload = function(){ f.dataset.ok = '1'; };
     f.src = url;
     // Red de seguridad: si en 6s no cargó (bloqueo o sin conexión), se enseña la ficha.
-    setTimeout(function(){
-      if(f.dataset.ok !== '1' && f.style.display !== 'none') showFallback();
+    // Solo si la hoja SIGUE abierta — antes saltaba después de cerrar y dejaba
+    // una ventana suelta montada para la próxima vez.
+    clearTimeout(_sheetTimer);
+    _sheetTimer = setTimeout(function(){
+      if(_sheetOpen && f.dataset.ok !== '1' && f.style.display !== 'none') showFallback();
     }, 6000);
   }
 
@@ -16605,12 +16697,18 @@ document.addEventListener('keydown', function(e) {
   }
 
   function closeInAppSheet(){
+    _sheetOpen = false;
+    clearTimeout(_sheetTimer);
     var panel = document.getElementById('inAppPanel');
     panel.style.transform = 'translateY(100%)';
     setTimeout(function(){
       var sheet = document.getElementById('inAppSheet');
       sheet.style.display = 'none';
-      document.getElementById('inAppFrame').src = '';
+      /* Se deja TODO en blanco: el iframe y la ficha de respaldo. Si no,
+         quedaba montada y reaparecía al abrir otro enlace. */
+      var f = document.getElementById('inAppFrame');
+      f.src = ''; f.style.display = 'none'; f.dataset.ok = '';
+      document.getElementById('inAppFallback').style.display = 'none';
       document.body.style.overflow = '';
     }, 350);
   }
@@ -17324,7 +17422,7 @@ function showInsiderModal(id){
         <div id="promoPerMoEl" style="font-family:'DM Sans',sans-serif;font-size:.7rem;color:var(--text2);">/ month · App + Web included</div>
       </div>
       <!-- CTA Button -->
-      <a href="https://miamimagicdirectory.com" target="_blank" rel="noopener" onclick="document.getElementById('insidersPromoModal').style.display='none';openInAppSheet(this.href,'Miami Magic Directory');return false;" style="display:block;background:linear-gradient(135deg,var(--coral),#c0392b);color:#fff;text-align:center;padding:14px;border-radius:30px;font-size:.9rem;font-weight:800;text-decoration:none;letter-spacing:.02em;box-shadow:0 4px 18px rgba(220,80,60,.35);font-family:'DM Sans',sans-serif;">
+      <a href="https://miamimagicdirectory.com" rel="noopener" onclick="document.getElementById('insidersPromoModal').style.display='none';openInAppSheet(this.href,'Miami Magic Directory');return false;" style="display:block;background:linear-gradient(135deg,var(--coral),#c0392b);color:#fff;text-align:center;padding:14px;border-radius:30px;font-size:.9rem;font-weight:800;text-decoration:none;letter-spacing:.02em;box-shadow:0 4px 18px rgba(220,80,60,.35);font-family:'DM Sans',sans-serif;">
         <span id="promoCtaEl">Get Featured on Miami Magic →</span>
       </a>
     </div>
