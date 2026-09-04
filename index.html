@@ -13629,9 +13629,10 @@ async function runItinAI() {
   if(elLoad) elLoad.style.display = 'block';
   if(elRes)  elRes.style.display  = 'none';
   if(elErr)  elErr.style.display  = 'none';
+  var resp = null;   /* fuera del try: si falla, el mensaje dice en qué punto */
   var sys = 'You are Luna, the Miami Magic planner. Write a day-by-day Miami itinerary in ' + (L==='es'?'Spanish':'English') + '. HARD LIMIT: under 320 words total, so it always fits. Per day: a **Day N** heading, then 3 or 4 lines max, each one place with a 6-word reason. Name real Miami places. No intro, no closing paragraph, no bullets, no markdown besides **bold** headings.';
   try {
-    var resp = await fetch(MM_API+'/api/chat', {
+    resp = await fetch(MM_API+'/api/chat', {
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({messages:[{role:'user',content:'Create itinerary for: '+query}], system:sys})
@@ -13650,7 +13651,15 @@ async function runItinAI() {
     try { mmSaveTrip(query, text); } catch(e) {}
     try { window._mmItinCur={title:query, text:text}; } catch(e) {}
   } catch(ex) {
-    if(elErr) { elErr.textContent = 'AI unavailable — check connection or try the Quick Quiz tab.'; elErr.style.display='block'; }
+    /* El motivo va en pantalla: sin esto era imposible saber si fallaba la red,
+       el servidor o la respuesta, sobre todo dentro de la app nativa. */
+    var why = resp ? ('HTTP '+resp.status) : ((ex && ex.message) ? ex.message : (L==='es'?'sin respuesta':'no response'));
+    if(elErr) {
+      elErr.textContent = (L==='es'
+        ? 'IA no disponible ahora mismo. Prueba el Quick Quiz. Detalle: '
+        : 'AI unavailable right now. Try the Quick Quiz. Detail: ') + why + ' · ' + (MM_API||'web');
+      elErr.style.display='block';
+    }
     if(elBtn) elBtn.style.display = 'block';
   }
   if(elLoad) elLoad.style.display = 'none';
