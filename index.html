@@ -1187,6 +1187,19 @@ section[id^="sec-"]{scroll-margin-top:84px;}
 .m-tip{background:#F0FDF9;border:1px solid rgba(0,201,177,.15);border-radius:10px;padding:9px 11px;margin-bottom:14px;}
 .m-tip-lbl{font-size:.63rem;font-weight:700;color:var(--teal);letter-spacing:.5px;margin-bottom:3px;}
 .m-tip-txt{font-size:.76rem;color:#444;line-height:1.6;}
+/* ── DATOS DE LA COMUNIDAD (aprobados en Supabase) ─────────────────── */
+.m-comm{margin:0 0 14px;}
+.m-comm-hd{font:800 .63rem 'DM Sans',sans-serif;letter-spacing:.5px;text-transform:uppercase;
+  color:#B07800;margin-bottom:7px;display:flex;align-items:center;gap:6px;}
+.m-comm-hd svg{width:13px;height:13px;}
+.m-comm-item{background:#FFFDF6;border:1px solid rgba(176,120,0,.2);border-radius:10px;
+  padding:9px 11px;margin-bottom:7px;}
+.m-comm-tx{font:400 .82rem/1.55 'DM Sans',sans-serif;color:#2A2A2A;}
+.m-comm-by{font:700 .68rem 'DM Sans',sans-serif;color:rgba(14,27,48,.5);margin-top:5px;}
+[data-theme="dark"] .m-comm-item{background:rgba(255,209,102,.07);border-color:rgba(255,209,102,.22);}
+[data-theme="dark"] .m-comm-tx{color:rgba(255,255,255,.86);}
+[data-theme="dark"] .m-comm-by{color:rgba(255,255,255,.5);}
+[data-theme="dark"] .m-comm-hd{color:#FFD166;}
 .m-btn{display:block;width:100%;padding:12px;background:linear-gradient(135deg,var(--coral),var(--coral2));color:#fff;border:none;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.88rem;font-weight:700;cursor:pointer;transition:all .22s;text-align:center;text-decoration:none;box-shadow:0 6px 18px rgba(255,77,53,.25);}
 .m-btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(255,77,53,.35);}
 /* FOOTER */
@@ -5666,6 +5679,7 @@ function openItemModal(obj,type,link,btnLabel){
   _currentFavItem = { id: obj.id, name: title, type: type, emoji: obj.emoji||'', obj: obj };
   updateFavBtn();
   try{ mmTrackVisit(obj.id, title, type); }catch(e){}
+  try{ mmCommRender(obj.id); }catch(e){}
   try{ renderSimilar(obj,type); }catch(e){}
   document.getElementById('modalOv').classList.add('open');
 }
@@ -9384,6 +9398,43 @@ function mmTopMount(){
    Requiere la tabla public.mm_tips en Supabase.
    NADA se publica solo: llega a la tabla y se revisa.
    ══════════════════════════════════════════════════════════ */
+/* ── Datos APROBADOS de la comunidad ───────────────────────────────────
+   Se leen una vez al arrancar desde la vista public.mm_tips_public
+   (solo status='approved') y se pintan dentro de la ficha del lugar,
+   con el nombre de quien lo mandó. Cierra el circuito de "Manda tu dato". */
+var MM_COMM={};      /* place_id -> [ {tip, author} ] */
+function mmCommFetch(){
+  return fetch('https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/mm_tips_public?select=place_id,tip,author&order=created_at.desc',{
+    headers:{'apikey':'sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF',
+             'Authorization':'Bearer sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF'}
+  }).then(function(r){ return r.ok?r.json():[]; })
+    .then(function(rows){
+      MM_COMM={};
+      (rows||[]).forEach(function(x){
+        if(!x||!x.place_id||!x.tip) return;
+        (MM_COMM[x.place_id]=MM_COMM[x.place_id]||[]).push({tip:x.tip,author:x.author||''});
+      });
+      return MM_COMM;
+    }).catch(function(){ return MM_COMM; });
+}
+function mmCommRender(id){
+  var box=document.getElementById('mComm'); if(!box) return;
+  var list=(MM_COMM[id]||[]).slice(0,3);
+  if(!list.length){ box.style.display='none'; box.innerHTML=''; return; }
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  box.innerHTML='<div class="m-comm-hd">'
+    +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.3-.6L3 21l1.7-5A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4z"/></svg>'
+    +(ES?'Datos de la comunidad':'From the community')+'</div>'
+    +list.map(function(t){
+      var who=(t.author||'').trim();
+      return '<div class="m-comm-item"><div class="m-comm-tx">'+mmEsc(t.tip)+'</div>'
+        +(who?'<div class="m-comm-by">'+(ES?'por ':'by ')+mmEsc(who)+'</div>':'')+'</div>';
+    }).join('');
+  box.style.display='block';
+}
+function mmEsc(t){ return String(t||'').replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+document.addEventListener('DOMContentLoaded',function(){ setTimeout(mmCommFetch,2200); });
 var MM_DATO_PLACE={id:'',name:''};
 function mmDatoOpen(id,name){
   MM_DATO_PLACE={id:id||'',name:name||''};
@@ -11128,6 +11179,7 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
         <div class="m-tip-txt" id="mTipTxt"></div>
       </div>
       <div class="m-tip-extra" id="mTipExtra" style="display:none"></div>
+      <div class="m-comm" id="mComm" style="display:none"></div>
       <div id="mSimilar"></div>
       <a class="m-btn" id="mBtn" href="#" target="_blank" rel="noopener" data-url="#" style="margin-top:4px;"></a>
       <button class="dato-cta" id="mDato" style="display:none" onclick="mmDatoOpen(window._mDatoId,window._mDatoName)">
@@ -11559,8 +11611,29 @@ function mmGoPremium(plan){
   mmPremiumCheckout(plan);
   return true;
 }
+/* ── APPLE · REGLA 3.1.1 ────────────────────────────────────────────────
+   Apple no permite vender suscripciones digitales dentro de una app de iOS
+   por fuera de su propio sistema de compras, ni enlazar al pago externo.
+   Mientras Premium no esté como compra in-app, dentro de la app nativa NO
+   se ofrece la venta: el cuadro invita a activarlo desde la web y el resto
+   de la app queda igual. En la web y en Android todo sigue como estaba. */
+function mmIsAppleApp(){
+  try{
+    if(location.protocol==='capacitor:'||location.protocol==='ionic:'){
+      return /iPad|iPhone|iPod|Mac/.test(navigator.platform||'')
+          || /iPhone|iPad|iPod/.test(navigator.userAgent||'');
+    }
+  }catch(e){}
+  return false;
+}
 var MM_STRIPE_LINK='https://buy.stripe.com/5kQbJ00W39TybWrbega3u02';
 function mmPremiumCheckout(plan){
+  if(mmIsAppleApp()){
+    var ES=(typeof lang!=='undefined'&&lang==='es');
+    alert(ES?'Premium se gestiona desde tu cuenta. Si ya eres Premium, inicia sesion y se activa solo.'
+            :'Premium is managed from your account. If you are already Premium, sign in and it unlocks automatically.');
+    return;
+  }
   var email='';
   try{ email=localStorage.getItem('mm_subscribed')||''; }catch(e){}
   try{ localStorage.setItem('mm_premium_pending','1'); }catch(e){}
@@ -16144,6 +16217,17 @@ function mmAiGate(boxId){
   if(box){
     var d=document.createElement('div');
     d.className='mm-ai-gate';
+    if(mmIsAppleApp()){
+      /* iOS: sin precio, sin boton de compra, sin enlace al pago externo */
+      d.innerHTML='<div class="mm-ai-gate-t">'+(ES?'Has usado tus 3 preguntas gratis':'You have used your 3 free questions')+'</div>'
+        +'<div class="mm-ai-gate-s">'+(ES
+          ?'Con Premium las preguntas son ilimitadas. Si ya eres Premium, entra con tu cuenta y se activa solo.'
+          :'Premium gives you unlimited questions. If you are already Premium, sign in and it unlocks automatically.')+'</div>'
+        +'<button class="mm-ai-gate-btn" onclick="'+(mmHasAccount()?'mmSyncPremium()':'openSignin()')+'">'
+        +(ES?(mmHasAccount()?'Ya soy Premium':'Entrar a mi cuenta'):(mmHasAccount()?'I am already Premium':'Sign in'))+'</button>';
+      box.appendChild(d); box.scrollTop=box.scrollHeight;
+      return false;
+    }
     d.innerHTML='<div class="mm-ai-gate-t">'+(ES?'Has usado tus 3 preguntas gratis':'You have used your 3 free questions')+'</div>'
       +'<div class="mm-ai-gate-s">'+(ES
         ?'Premium te da preguntas ilimitadas con la IA. Necesitas una cuenta para que tu suscripción quede guardada y la recuperes en cualquier dispositivo.'
