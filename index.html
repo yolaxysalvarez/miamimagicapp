@@ -11568,8 +11568,8 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
     <div class="acc-row" onclick="accToggle('hist')"><div class="acc-ico-wrap c-gold"><svg class="acc-ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg></div><div class="acc-row-label"><div class="acc-row-title" data-en="History" data-es="Historial">Historial</div><div class="acc-row-sub" data-en="Recent searches" data-es="Búsquedas recientes">Búsquedas recientes</div></div><span class="acc-chevron" id="acc-arr-hist">&#8250;</span></div>
     <div class="acc-toggle-section" id="acc-hist"><div id="acc-history-list"><p data-en="Your history will appear here." data-es="Tu historial aparecerá aquí.">Tu historial aparecerá aquí.</p></div></div>
     <div class="acc-row" style="opacity:.55;cursor:default;"><div class="acc-ico-wrap" style="background:rgba(139,92,246,.15);"><svg class="acc-ico" viewBox="0 0 24 24" style="stroke:#8B5CF6;"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><circle cx="12" cy="16" r="1.5" fill="#8B5CF6"/></svg></div><div class="acc-row-label"><div class="acc-row-title" data-en="My Bookings" data-es="Mis Reservas">Mis Reservas</div><div class="acc-row-sub" data-en="Restaurants &middot; Events &middot; Tours" data-es="Restaurantes &middot; Eventos &middot; Tours">Restaurantes &middot; Eventos &middot; Tours</div></div><span class="acc-badge-pill" style="background:#FFD166;color:#08172E;">SOON</span></div>
-    <div class="acc-section-lbl" style="margin-top:8px;">Premium</div><div class="acc-section-line"></div>
-    <div style="margin:8px 22px 4px;background:linear-gradient(135deg,#fff8f7,#fff3e8);border:1px solid rgba(255,77,53,.2);border-radius:18px;padding:18px;">
+    <div class="acc-section-lbl mm-apple-hide" style="margin-top:8px;">Premium</div><div class="acc-section-line mm-apple-hide"></div>
+    <div class="mm-apple-hide" style="margin:8px 22px 4px;background:linear-gradient(135deg,#fff8f7,#fff3e8);border:1px solid rgba(255,77,53,.2);border-radius:18px;padding:18px;">
       <div style="font-family:'DM Sans',sans-serif;font-size:.65rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#FF4D35;margin-bottom:6px;">&#10022; Miami Magic Premium</div>
       <div style="font-family:'DM Sans',sans-serif;font-size:.78rem;color:#666;margin-bottom:12px;line-height:1.6;" data-en="VIP itineraries &middot; Exclusive deals<br>Ad-free &middot; Early access" data-es="Itinerarios VIP &middot; Ofertas exclusivas<br>Sin anuncios &middot; Acceso anticipado">Itinerarios VIP &middot; Ofertas exclusivas<br>Sin anuncios &middot; Acceso anticipado</div>
       <a href="https://buy.stripe.com/5kQbJ00W39TybWrbega3u02" target="_blank" style="display:block;padding:11px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border-radius:50px;font-size:.8rem;font-weight:700;text-decoration:none;text-align:center;font-family:'DM Sans',sans-serif;" data-en="Unlock Premium &mdash; $4.99/mo &#8594;" data-es="Desbloquea Premium &mdash; $4.99/mes &#8594;">Unlock Premium &mdash; $4.99/mes &#8594;</a>
@@ -11669,7 +11669,7 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
         <button onclick="closeSignup()" style="padding:12px 36px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border:none;border-radius:50px;font-size:.9rem;font-weight:700;cursor:pointer">
           ¡Perfecto! →
         </button>
-        <div style="margin-top:18px;padding:14px;background:#F7F1E8;border:1px solid rgba(14,27,48,.1);border-radius:16px">
+        <div class="mm-apple-hide" style="margin-top:18px;padding:14px;background:#F7F1E8;border:1px solid rgba(14,27,48,.1);border-radius:16px">
           <div style="font-size:.75rem;font-weight:700;color:#FF4D35;margin-bottom:4px">✦ Miami Magic Premium</div>
           <div style="font-size:.75rem;color:rgba(14,27,48,.62);margin-bottom:10px">Itinerarios guardados · Ofertas exclusivas · Acceso VIP</div>
           <a href="https://buy.stripe.com/5kQbJ00W39TybWrbega3u02" target="_blank"
@@ -11804,6 +11804,13 @@ function mmIsAppleApp(){
   return false;
 }
 var MM_STRIPE_LINK='https://buy.stripe.com/5kQbJ00W39TybWrbega3u02';
+/* Un solo interruptor: dentro de la app de iOS el <body> lleva la clase
+   mm-apple y todo lo marcado .mm-apple-hide (tarjetas y botones de compra
+   de Premium) desaparece. En la web y en Android no cambia nada. */
+(function(){
+  function mark(){ try{ if(mmIsAppleApp()) document.body.classList.add('mm-apple'); }catch(e){} }
+  if(document.body) mark(); else document.addEventListener('DOMContentLoaded', mark);
+})();
 function mmPremiumCheckout(plan){
   if(mmIsAppleApp()){
     var ES=(typeof lang!=='undefined'&&lang==='es');
@@ -13465,7 +13472,7 @@ document.addEventListener('DOMContentLoaded',function(){
     <div id="itinActs" style="margin-top:22px"></div>
 
     <!-- Premium upsell -->
-    <div id="itinUpsell" style="margin-top:16px;background:linear-gradient(135deg,#FF4D35,#e03a24);border-radius:16px;padding:16px 18px;color:#fff;display:none">
+    <div id="itinUpsell" class="mm-apple-hide" style="margin-top:16px;background:linear-gradient(135deg,#FF4D35,#e03a24);border-radius:16px;padding:16px 18px;color:#fff;display:none">
       <div style="font-size:.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;opacity:.8">Miami Magic Premium</div>
       <div style="font-size:1rem;font-weight:700;margin:4px 0 6px">Save unlimited itineraries</div>
       <div style="font-size:.8rem;opacity:.9;margin-bottom:12px">+ Exclusive deals · Offline access · No ads</div>
@@ -15252,6 +15259,12 @@ function aiGenerateResponse(userMsg) {
 
   // Premium upsell
   if (intents.indexOf('premium') !== -1) {
+    if (typeof mmIsAppleApp === 'function' && mmIsAppleApp()) {
+      /* iOS: sin precio ni enlace de pago (Apple 3.1.1) */
+      return { type: 'text', text: L === 'es'
+        ? 'Premium se gestiona desde tu cuenta. Si ya eres Premium, inicia sesión y se activa solo.'
+        : 'Premium is managed from your account. If you are already Premium, sign in and it unlocks automatically.' };
+    }
     var html = L === 'es'
       ? '<strong>Miami Magic Premium</strong><br><br>'
         + '<div style="font-size:.8rem;color:#555;margin-bottom:12px">Itinerarios personalizados, ofertas exclusivas y acceso offline a toda la app.</div>'
@@ -16025,7 +16038,9 @@ function aiRenderBubble(role, content) {
   } else if (content.type === 'upgrade') {
     var upText = content.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     var t = AI_T[L];
-    bubble.innerHTML = upText + '<br><button class="ai-upgrade-pill" onclick="window.open(\'https://buy.stripe.com/5kQbJ00W39TybWrbega3u02\',\'_blank\')">' + t.upgradeBtn + '</button>';
+    bubble.innerHTML = (typeof mmIsAppleApp==='function' && mmIsAppleApp())
+      ? upText
+      : upText + '<br><button class="ai-upgrade-pill" onclick="window.open(\'https://buy.stripe.com/5kQbJ00W39TybWrbega3u02\',\'_blank\')">' + t.upgradeBtn + '</button>';
   } else if (content.type === 'text') {
     bubble.innerHTML = content.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
   } else if (content.type === 'raw') {
@@ -18998,6 +19013,9 @@ function showInsiderModal(id){
   #mmPrintBox .mmpr-body p{margin:0 0 4pt;}
   #mmPrintBox .mmpr-ft{margin-top:20pt;padding-top:6pt;border-top:1px solid #ccc;font-size:9pt;color:#666;}
 }
+
+/* Apple 3.1.1: dentro de la app de iOS no se muestra ninguna venta de Premium */
+body.mm-apple .mm-apple-hide{display:none !important;}
 </style>
 
 <script>
