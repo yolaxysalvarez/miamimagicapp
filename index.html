@@ -3227,7 +3227,7 @@ body{padding-bottom:0;}
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.20s"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
         Miami Insiders <span class="hm-link-badge" style="background:linear-gradient(135deg,#f5a623,#f7c948);color:#7a4d00;animation-delay:.20s;"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none" style="width:10px;height:10px;vertical-align:-1px"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
       </a>
-      <a href="https://miamimagicdirectory.com" rel="noopener" onclick="toggleHM();openInAppSheet(this.href,'Miami Magic Directory');return false;" class="hm-link" style="padding-left:48px;opacity:.85;">
+      <a href="https://miamimagicdirectory.com" rel="noopener" onclick="toggleHM();openInAppSheet(this.href,'Miami Magic Directory');return false;" class="hm-link mm-apple-hide" style="padding-left:48px;opacity:.85;">
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.21s"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg></div>
         Get Featured · $9.99/mo
       </a>
@@ -7752,8 +7752,9 @@ function mmEvMapDraw(){
   _evData=mmEventPoints();
   if(!_evMap){
     _evMap=L.map('evMap',{center:[25.7850,-80.1900],zoom:11,zoomControl:true,scrollWheelZoom:false});
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png',
-      {attribution:'&copy; <a href="https://carto.com/">CARTO</a>',maxZoom:19}).addTo(_evMap);
+    /* CARTO empezo a pedir llave (marca de agua "API KEY REQUIRED"); OSM no la pide */
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+      {attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19}).addTo(_evMap);
   }
   _evMarkers.forEach(function(m){ try{_evMap.removeLayer(m);}catch(e){} });
   _evMarkers=[];
@@ -13260,8 +13261,9 @@ function initMap(){
   }
   try{
     _map=L.map('miami-map',{center:[25.7900,-80.1800],zoom:12,zoomControl:true});
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
-      attribution:'&copy; <a href="https://carto.com/">CARTO</a>',maxZoom:19
+    /* CARTO empezo a pedir llave (marca de agua "API KEY REQUIRED"); OSM no la pide */
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+      attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19
     }).addTo(_map);
     _markerData=buildMapData();
     _markerData.forEach(function(d,i){
@@ -17619,6 +17621,8 @@ document.addEventListener('keydown', function(e) {
 <script>
 
 function showInsidersPromo(){
+  /* iOS: la membresia del directorio ($9.99/mes) no se ofrece dentro de la app (Apple 3.1.1) */
+  if(typeof mmIsAppleApp==='function' && mmIsAppleApp()) return;
   var palmEl = document.getElementById('insidersPromoPalm');
   var navPalm = document.querySelector('.nl-palm');
   if(palmEl && navPalm) palmEl.src = navPalm.src;
