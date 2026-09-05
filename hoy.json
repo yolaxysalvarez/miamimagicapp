@@ -1,0 +1,159 @@
+{
+ "updated": "2026-09-04",
+ "events": [
+  {
+   "name": "Juanes at Kaseya Center",
+   "name_es": "Juanes en el Kaseya Center",
+   "when": "8:00 PM · Downtown",
+   "when_es": "8:00 PM · Downtown",
+   "dates": [
+    "2026-09-04"
+   ]
+  },
+  {
+   "name": "Marlins vs Cubs & Mets",
+   "name_es": "Marlins vs Cubs y Mets",
+   "when": "loanDepot park",
+   "when_es": "loanDepot park",
+   "dates": [
+    "2026-09-04",
+    "2026-09-05",
+    "2026-09-06",
+    "2026-09-07"
+   ]
+  },
+  {
+   "name": "Inter Miami at home",
+   "name_es": "Inter Miami en casa",
+   "when": "7:30 PM · Miami Freedom Park",
+   "when_es": "7:30 PM · Miami Freedom Park",
+   "dates": [
+    "2026-09-05",
+    "2026-09-12"
+   ]
+  },
+  {
+   "name": "Inter Miami at home",
+   "name_es": "Inter Miami en casa",
+   "when": "7:00 PM · Miami Freedom Park",
+   "when_es": "7:00 PM · Miami Freedom Park",
+   "dates": [
+    "2026-09-20"
+   ]
+  },
+  {
+   "name": "Free art walk and museum day",
+   "name_es": "Art walk y museo gratis",
+   "when": "Wynwood · PAMM",
+   "when_es": "Wynwood · PAMM",
+   "dates": [
+    "2026-09-12"
+   ]
+  },
+  {
+   "name": "Rosalía — LUX Tour",
+   "name_es": "Rosalía — Gira LUX",
+   "when": "8:30 PM · Kaseya Center",
+   "when_es": "8:30 PM · Kaseya Center",
+   "dates": [
+    "2026-09-14",
+    "2026-09-16"
+   ]
+  },
+  {
+   "name": "11J — El día que el pueblo cantó",
+   "name_es": "11J — El día que el pueblo cantó",
+   "when": "8:30 PM · Teatro Trail",
+   "when_es": "8:30 PM · Teatro Trail",
+   "dates": [
+    "2026-09-17"
+   ]
+  },
+  {
+   "name": "Gorillaz at Kaseya Center",
+   "name_es": "Gorillaz en el Kaseya Center",
+   "when": "7:30 PM · Downtown",
+   "when_es": "7:30 PM · Downtown",
+   "dates": [
+    "2026-09-18"
+   ]
+  },
+  {
+   "name": "Soda Stereo at Kaseya Center",
+   "name_es": "Soda Stereo en el Kaseya Center",
+   "when": "8:00 PM · Downtown",
+   "when_es": "8:00 PM · Downtown",
+   "dates": [
+    "2026-09-20"
+   ]
+  },
+  {
+   "name": "Viernes Culturales on Calle Ocho",
+   "name_es": "Viernes Culturales en la Calle Ocho",
+   "when": "Evening · free",
+   "when_es": "Por la tarde · gratis",
+   "dates": [
+    "2026-09-25"
+   ]
+  },
+  {
+   "name": "Konpa with the symphony",
+   "name_es": "Konpa con sinfónica",
+   "when": "8:00 PM · Kaseya Center",
+   "when_es": "8:00 PM · Kaseya Center",
+   "dates": [
+    "2026-09-25"
+   ]
+  },
+  {
+   "name": "aespa — K-pop night",
+   "name_es": "aespa — noche de K-pop",
+   "when": "8:00 PM · Kaseya Center",
+   "when_es": "8:00 PM · Kaseya Center",
+   "dates": [
+    "2026-09-26"
+   ]
+  },
+  {
+   "name": "Dolphins vs Chiefs",
+   "name_es": "Dolphins vs Chiefs",
+   "when": "1:00 PM · Hard Rock Stadium",
+   "when_es": "1:00 PM · Hard Rock Stadium",
+   "dates": [
+    "2026-09-27"
+   ]
+  },
+  {
+   "name": "Oficialmente Gay 4 — Alexis Valdés",
+   "name_es": "Oficialmente Gay 4 — Alexis Valdés",
+   "when": "8:30 PM · Teatro Trail",
+   "when_es": "8:30 PM · Teatro Trail",
+   "start": "2026-09-04",
+   "end": "2026-09-20"
+  },
+  {
+   "name": "40th Hispanic Theatre Festival",
+   "name_es": "40.º Festival de Teatro Hispano",
+   "when": "Teatro Avante · 4 stages",
+   "when_es": "Teatro Avante · 4 salas",
+   "start": "2026-09-03",
+   "end": "2026-09-27"
+  },
+  {
+   "name": "Miami Spice — final month",
+   "name_es": "Miami Spice — último mes",
+   "when": "300+ restaurants",
+   "when_es": "300+ restaurantes",
+   "start": "2026-09-01",
+   "end": "2026-09-30"
+  },
+  {
+   "name": "Hispanic Heritage Month",
+   "name_es": "Mes de la Herencia Hispana",
+   "when": "Citywide",
+   "when_es": "Toda la ciudad",
+   "start": "2026-09-15",
+   "end": "2026-10-15"
+  }
+ ]
+}
