@@ -36,7 +36,7 @@
 <title>Miami Magic — Your Insider Miami Guide | Tu Guía Insider de Miami</title>
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.miamimagicapp.com/">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -19060,6 +19060,8 @@ function showInsiderModal(id){
 /* Apple 3.1.1: dentro de la app de iOS no se muestra ninguna venta de Premium */
 body.mm-apple .mm-apple-hide{display:none !important;}
 .su-palm{width:40px;height:56px;margin:0 auto 10px;background:linear-gradient(160deg,#FF4E35,#FFCF65);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain;}
+/* App nativa: sin rebote horizontal al arrastrar (el vertical no se toca) */
+html,body{overscroll-behavior-x:none;}
 </style>
 
 <script>
