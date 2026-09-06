@@ -12440,6 +12440,7 @@ function mmDeleteAccountRun(email){
     wipeLocal();
     try{ accApplyAvatar(); }catch(e){}
     try{ navSyncUser(); }catch(e){}
+    try{ mmNowRender(); }catch(e){}   /* el saludo del inicio deja de decir el nombre */
     try{ closeAccount(); }catch(e){}
     if(ttl) ttl.textContent=prev;
     setTimeout(function(){
@@ -12463,6 +12464,7 @@ function accLogout(){
     try{localStorage.removeItem('mm_subscribed');localStorage.removeItem('mm_name');localStorage.removeItem('mm_since');localStorage.removeItem('mm_avatar');}catch(e){}
     try{accApplyAvatar();}catch(e){}
     try{navSyncUser();}catch(e){}
+    try{mmNowRender();}catch(e){}
     closeAccount();
   }
 }
