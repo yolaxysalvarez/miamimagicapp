@@ -10737,6 +10737,7 @@ function updateHMLabels(){
 
 function toggleLang(){
   lang = lang==='en' ? 'es' : 'en';
+  try{ accLangPaint(lang); }catch(e){}
   activeFlt='all'; _dbCache=null; closeSearch(); build(); try{setTimeout(seaLoad,300);}catch(e){} if(window.__mmHideBoot) setTimeout(window.__mmHideBoot, 400); setTimeout(function(){socRenderRail();socApplyLang();amigoApplyLang();try{heroApplyLang();}catch(e){}try{accApplyLang();}catch(e){}if(document.getElementById('amigoFocusBar')&&document.getElementById('amigoFocusBar').style.display==='flex')amigoFocusBarFill();},400);
   var stat = document.getElementById('langToggleStat');
   if(stat) stat.textContent = lang==='es' ? 'ES ✓' : 'EN';
@@ -12321,15 +12322,25 @@ function accSyncDark(){
   dot.style.left=on?'':'3px';
   dot.style.right=on?'3px':'';
 }
-function accLang(l){
+function accLangPaint(l){
+  try{
   document.getElementById('lang-en').style.background=l==='en'?'#FF4D35':'transparent';
   document.getElementById('lang-en').style.color=l==='en'?'#fff':'#888';
   document.getElementById('lang-en').style.borderColor=l==='en'?'#FF4D35':'#eee';
   document.getElementById('lang-es').style.background=l==='es'?'#FF4D35':'transparent';
   document.getElementById('lang-es').style.color=l==='es'?'#fff':'#888';
   document.getElementById('lang-es').style.borderColor=l==='es'?'#FF4D35':'#eee';
-  lang=l;_dbCache=null;closeSearch();
+  }catch(e){}
+}
+function accLang(l){
+  accLangPaint(l);
   try{localStorage.setItem('mm_lang',l);}catch(e){}
+  /* Antes solo guardaba el idioma y la app seguía igual hasta reabrirla (en la
+     app nativa nunca se recarga, así que parecía que no cambiaba). Ahora aplica
+     el cambio al instante reutilizando toggleLang(). */
+  if(lang===l){ _dbCache=null; closeSearch(); return; }
+  lang = (l==='en') ? 'es' : 'en';
+  toggleLang();
 }
 function accEdit(){
   var n=prompt('Tu nombre:',document.getElementById('acc-data-name').textContent||'');
