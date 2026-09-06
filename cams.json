@@ -1,0 +1,20 @@
+{
+  "_como_usar": "Una entrada por cámara dentro de \"cams\". Solo se requiere id, name y yid (id del video en vivo de YouTube: lo que va después de watch?v=). Si prefieres que siga al canal aunque cambie el id, usa channel (el ID del canal, empieza por UC) en lugar de yid. area agrupa las cámaras por zona. featured: true marca cuál se ve grande. Guarda, sube a GitHub y listo: web, Android y iPhone la leen al abrir.",
+  "updated": "2026-09-06",
+  "cams": [
+    {
+      "id": "coral",
+      "name": "Coral City Camera",
+      "name_es": "Coral City Camera",
+      "area": "Miami",
+      "area_es": "Miami",
+      "sub": "Underwater urban reef · YouTube",
+      "sub_es": "Arrecife urbano bajo el agua · YouTube",
+      "yid": "7i8ARjIeM2k",
+      "photo": "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=1000&q=60&auto=format",
+      "credit": "Live feed courtesy of Coral City Camera · plays inside the app",
+      "credit_es": "Señal en directo cortesía de Coral City Camera · se reproduce dentro de la app",
+      "featured": true
+    }
+  ]
+}
