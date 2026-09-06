@@ -13,7 +13,8 @@
   real y YouTube lo acepta. La app abre esta página dentro de su propia hoja,
   así que el usuario nunca sale de Miami Magic.
 
-  Uso:  /cam.html?v=ID_DE_YOUTUBE&t=Nombre%20de%20la%20camara&lang=es
+  Uso:  /cam.html?v=ID_DE_YOUTUBE&t=Nombre&lang=es   (un video / directo concreto)
+        /cam.html?c=ID_DE_CANAL&t=Nombre&lang=es      (la emision en vivo actual de un canal)
 -->
 <style>
   :root{ --navy:#0E1B30; --navy2:#0B1526; --coral:#FF4D35; --cream:#FFF0E0; --teal:#00C9B1; }
@@ -71,8 +72,10 @@
     ? 'Su proveedor la tiene pausada en este momento. Vuelve a intentarlo más tarde.'
     : 'Its provider has it paused right now. Please try again later.';
 
+  var c = (q.get('c')||'').trim();          // canal: reproduce su emision en vivo actual
   var idOk = /^[A-Za-z0-9_-]{6,20}$/.test(v);
-  if(!idOk){ document.getElementById('err').style.display='flex'; return; }
+  var chOk = /^UC[A-Za-z0-9_-]{20,24}$/.test(c);
+  if(!idOk && !chOk){ document.getElementById('err').style.display='flex'; return; }
 
   var f = document.createElement('iframe');
   f.title = t || 'Live camera';
@@ -80,8 +83,10 @@
   f.setAttribute('allowfullscreen','');
   f.setAttribute('playsinline','');
   f.referrerPolicy = 'strict-origin-when-cross-origin';
-  f.src = 'https://www.youtube.com/embed/' + v +
-          '?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1' +
+  f.src = (chOk
+          ? 'https://www.youtube.com/embed/live_stream?channel=' + c
+          : 'https://www.youtube.com/embed/' + v) +
+          (chOk ? '&' : '?') + 'autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1' +
           '&origin=' + encodeURIComponent(location.origin);
   document.getElementById('stage').appendChild(f);
 })();
