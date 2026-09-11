@@ -3540,7 +3540,7 @@ body{padding-bottom:0;}
 <!-- Publish sheet -->
 <div class="soc-pub-ov" id="socPubOv" onclick="if(event.target===this)closePublish()">
   <div class="soc-pub">
-    <button class="soc-pub-x" onclick="closePublish()">&#10005;</button>
+    <button class="soc-pub-x" onclick="closePublish()"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     <div class="soc-pub-eye">Miami Social</div>
     <h3 class="soc-pub-tt" data-en="Your photo in Miami" data-es="Tu foto en Miami">Your photo in Miami</h3>
     <p class="soc-pub-sb" data-en="Pick your photo, we add the Miami Magic frame and you share it with <b>#MiamiMagic</b> — the best ones make the app&apos;s feed." data-es="Elige tu foto, le ponemos el marco Miami Magic y la compartes con <b>#MiamiMagic</b> — las mejores salen en el feed de la app.">Pick your photo, we add the Miami Magic frame and you share it with <b>#MiamiMagic</b> — the best ones make the app's feed.</p>
@@ -11760,7 +11760,7 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
         <span style="font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,.9);text-transform:uppercase;">Miami Magic</span>
       </div>
       <span style="font-family:'Playfair Display',serif;font-size:.95rem;font-weight:700;color:#FFD166;">Mi Perfil</span>
-      <button onclick="closeAccount()" style="background:rgba(255,255,255,.08);border:none;border-radius:50%;width:30px;height:30px;color:rgba(255,255,255,.7);font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;">&#10005;</button>
+      <button onclick="closeAccount()" style="background:rgba(255,255,255,.08);border:none;border-radius:50%;width:30px;height:30px;color:rgba(255,255,255,.7);font-size:.9rem;cursor:pointer;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
     <div style="height:2px;background:linear-gradient(90deg,transparent,rgba(255,209,102,.55),transparent);"></div>
     <button onclick="closeAccount();setTimeout(function(){go('sec-social');},250);" style="width:calc(100% - 44px);margin:16px 22px 0;display:flex;align-items:center;gap:12px;background:linear-gradient(150deg,#0E1B30,#080F1E);border:1px solid rgba(255,255,255,.12);border-left:3px solid #FF4D35;border-radius:16px;padding:14px 16px;cursor:pointer;text-align:left;">
@@ -13511,7 +13511,7 @@ function tourShow(){
   p.innerHTML='<div class="mmtour-card" style="--tp:'+t.ac+'">'
     +'<div class="mmtour-top">'
       +'<span class="mmtour-step">'+(ES?'Parada':'Stop')+' '+(_tourIdx+1)+'/'+t.stops.length+' · '+(ES?t.name_es:t.name)+'</span>'
-      +'<button class="mmtour-x" onclick="endTour()">&#10005;</button>'
+      +'<button class="mmtour-x" onclick="endTour()"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>'
     +'</div>'
     +'<div class="mmtour-bar"><div class="mmtour-fill" style="width:'+Math.round((_tourIdx+1)/t.stops.length*100)+'%"></div></div>'
     +ph
