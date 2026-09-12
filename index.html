@@ -14780,11 +14780,23 @@ function bnActive(el){
 <script>
 /* ── SEARCH NEARBY (bottom nav) ── */
 var _nearbyMarker=null;
+/* Aviso breve abajo del todo (sin librerías) */
+function mmNote(msg){
+  var t=document.getElementById('mmNote');
+  if(!t){ t=document.createElement('div'); t.id='mmNote';
+    t.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 96px);z-index:99999;max-width:86%;background:rgba(8,15,29,.94);color:#fff;font:600 .82rem "DM Sans",sans-serif;padding:12px 18px;border-radius:26px;box-shadow:0 8px 26px rgba(0,0,0,.35);text-align:center;opacity:0;transition:opacity .25s;';
+    document.body.appendChild(t); }
+  t.textContent=msg; t.style.opacity='1';
+  clearTimeout(t._h); t._h=setTimeout(function(){ t.style.opacity='0'; },3800);
+}
 function searchNearby(){
   go('sec-map');
+  var ES=(typeof lang!=='undefined'&&lang==='es');
   if(!navigator.geolocation){
+    mmNote(ES?'Tu dispositivo no permite ubicación.':'This device does not allow location.');
     return;
   }
+  mmNote(ES?'Buscando tu ubicación…':'Finding your location…');
   navigator.geolocation.getCurrentPosition(function(pos){
     var lat=pos.coords.latitude, lng=pos.coords.longitude;
     var apply=function(){
@@ -14808,9 +14820,15 @@ function searchNearby(){
         else if(tries>20){clearInterval(waitForMap);}
       },300);
     }
-  },function(){
-    /* permission denied or unavailable — user still lands on the map section */
-  });
+  },function(err){
+    /* Antes fallaba en silencio: el usuario llegaba al mapa sin saber por qué
+       no se centraba. Ahora se le dice, y el mapa queda utilizable igual. */
+    var ES=(typeof lang!=='undefined'&&lang==='es');
+    var m = (err && err.code===1)
+      ? (ES?'Activa la ubicación para Miami Magic en Ajustes para ver qué tienes cerca.':'Turn on location for Miami Magic in Settings to see what is near you.')
+      : (ES?'No pudimos obtener tu ubicación. El mapa sigue disponible.':'We could not get your location. The map is still available.');
+    mmNote(m);
+  },{enableHighAccuracy:true,timeout:10000,maximumAge:60000});
 }
 
 /* ── MODAL CONTROLS ── */
