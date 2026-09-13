@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Video · Miami Magic</title>
+<!--
+  Reproductor de video de Miami Magic (restaurantes, lugares, fichas).
+
+  Hermano de cam.html y existe por lo mismo: dentro de la app nativa el origen
+  es capacitor://localhost y YouTube lo rechaza con "Error 150 / 153". Pasarle
+  el dominio en el parámetro origin no sirve, porque YouTube valida el origen
+  real de la ventana. Sirviendo el reproductor desde www.miamimagicapp.com el
+  origen es un sitio de verdad y YouTube acepta.
+
+  cam.html se deja intacto: es para las cámaras en vivo y funciona.
+
+  Uso:  /video.html?v=ID_DE_YOUTUBE&t=Nombre&lang=es
+-->
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:#000;overflow:hidden;
+    font-family:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
+  #stage{position:fixed;inset:0;background:#000;}
+  #stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  #err{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;
+    justify-content:center;gap:14px;padding:24px;text-align:center;color:#FFF0E0;
+    background:linear-gradient(160deg,#0E1B30,#0B1526);}
+  #err b{font:700 1rem/1.3 sans-serif;}
+  #err span{font:500 .84rem/1.6 sans-serif;color:rgba(255,240,224,.7);max-width:300px;}
+  #err a{display:inline-block;background:#FF4D35;color:#fff;text-decoration:none;
+    border-radius:5px;padding:10px 18px;font:700 .8rem/1 sans-serif;letter-spacing:.04em;}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="err">
+    <b id="errT">El video no está disponible</b>
+    <span id="errS">Su dueño no permite reproducirlo aquí.</span>
+    <a id="errA" href="https://www.youtube.com" target="_blank" rel="noopener">Ver en YouTube</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var q  = new URLSearchParams(location.search);
+  var v  = (q.get('v')||'').trim();
+  var t  = (q.get('t')||'').trim();
+  var es = (q.get('lang')||'es').indexOf('es') === 0;
+
+  if(t) document.title = t + ' · Miami Magic';
+  document.getElementById('errT').textContent = es
+    ? 'El video no está disponible' : 'This video is unavailable';
+  document.getElementById('errS').textContent = es
+    ? 'Su dueño no permite reproducirlo aquí.'
+    : 'Its owner does not allow it to play here.';
+  document.getElementById('errA').textContent = es ? 'Ver en YouTube' : 'Watch on YouTube';
+
+  if(!/^[A-Za-z0-9_-]{6,20}$/.test(v)){
+    document.getElementById('err').style.display='flex';
+    return;
+  }
+  document.getElementById('errA').href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(v);
+
+  var f = document.createElement('iframe');
+  f.title = t || 'Video';
+  f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+  f.setAttribute('allowfullscreen','');
+  f.setAttribute('playsinline','');
+  f.referrerPolicy = 'strict-origin-when-cross-origin';
+  f.src = 'https://www.youtube.com/embed/' + v
+        + '?autoplay=1&playsinline=1&rel=0&modestbranding=1'
+        + '&origin=' + encodeURIComponent(location.origin);
+  document.getElementById('stage').appendChild(f);
+})();
+</script>
+</body>
+</html>

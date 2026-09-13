@@ -6096,18 +6096,24 @@ function mmPlayRestVideo(el){
     return;
   }
   el.dataset.on='1';
-  /* En la app nativa el origen es capacitor://localhost y YouTube lo rechaza
-     con "Error 150". Se declara el sitio real como origen y se usa el dominio
-     normal, que es el que acepta reproducir fuera de youtube.com. */
+  /* En la app nativa el origen real es capacitor://localhost y YouTube lo
+     rechaza con "Error 150 / 153". Pasarle el dominio en el parámetro origin
+     NO basta: YouTube valida el origen de la ventana, no el parámetro. Por eso
+     el reproductor se carga desde video.html de nuestro dominio, igual que
+     cam.html con las cámaras. En la web se sigue embebiendo directo. */
   var nativo=false;
   try{ nativo=(location.protocol==='capacitor:'||location.protocol==='ionic:'); }catch(e){}
-  var host = nativo ? 'https://www.youtube.com' : 'https://www.youtube-nocookie.com';
-  var origin='';
-  try{
-    if(nativo) origin='&origin='+encodeURIComponent('https://www.miamimagicapp.com');
-    else if(location.protocol==='http:'||location.protocol==='https:') origin='&origin='+encodeURIComponent(location.origin);
-  }catch(e){}
-  var src=host+'/embed/'+yid+'?autoplay=1&playsinline=1&rel=0&modestbranding=1'+origin;
+  var src;
+  if(nativo){
+    src='https://www.miamimagicapp.com/video.html?v='+encodeURIComponent(yid)
+       +'&lang='+(esLang?'es':'en');
+  }else{
+    var origin='';
+    try{
+      if(location.protocol==='http:'||location.protocol==='https:') origin='&origin='+encodeURIComponent(location.origin);
+    }catch(e){}
+    src='https://www.youtube-nocookie.com/embed/'+yid+'?autoplay=1&playsinline=1&rel=0&modestbranding=1'+origin;
+  }
   el.innerHTML='<iframe id="mmVidFrame" src="'+src+'" title="Video" frameborder="0" playsinline '
     +'allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen '
     +'referrerpolicy="strict-origin-when-cross-origin" '
