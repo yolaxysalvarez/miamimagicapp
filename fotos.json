@@ -1,0 +1,14 @@
+{
+  "_como_usar": "Este archivo manda sobre las fotos y los videos de la app, sin pasar por Apple. Regla: lo que NO esté aquí se lee de la copia que ya viene dentro del teléfono (no gasta datos). Lo que SÍ esté aquí se baja de miamimagicapp.com. Sube la foto nueva a la carpeta fotos/ del repo, agrégala abajo, cambia 'updated' a la fecha de hoy, y sube todo a GitHub. Se ve en iPhone, Android y web la próxima vez que se abra la app. IMPORTANTE: usa siempre un nombre de archivo NUEVO (mm-ci7-b.jpg, no mm-ci7.jpg) y cambia 'updated' cada vez, o los teléfonos seguirán mostrando la vieja desde su cache.",
+  "updated": "2026-09-13",
+
+  "_fotos": "Por ID de tarjeta. El ID es el mismo que usa la app (r12, b6, ci7, pl10, h14...). Sirve para cambiar QUÉ foto le toca a un lugar.",
+  "fotos": {
+  },
+
+  "_rutas": "Por nombre de archivo. Sirve para reemplazar una foto en cualquier parte de la app: galerías de restaurantes, transporte, aeropuertos, hoteles. Izquierda la vieja, derecha la nueva.",
+  "rutas": {
+  },
+
+  "_videos": "Los seis clips de dron que vinieron en el paquete se leen del teléfono y no se pueden cambiar desde aquí (pesan y se descargarían cada vez). Un clip NUEVO sí: súbelo a videos/ y ponlo en 'rutas' apuntando desde el viejo, o úsalo con un nombre que no exista en el paquete y se baja solo."
+}
