@@ -1,0 +1,63 @@
+{
+  "_como_usar": "Este archivo manda sobre la cartelera de la app, sin pasar por Apple. Lo que pongas aquí se suma o corrige lo que ya trae la app; lo que no toques se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez, por orden.",
+  "updated": "2026-09-13",
+
+  "_semana": "Eventos con fecha, los de 'Esta Semana'. Si el id ya existe en la app, lo reemplaza; si no existe, lo agrega. La app decide sola el orden y esconde lo que ya pasó: tú solo pones la fecha. Un evento de un día lleva 'd'. Uno que dura varios lleva 'd' y 'd2'.",
+  "semana": [
+  ],
+
+  "_mes": "Tarjetas grandes de 'Este Mes'. Mismo criterio: por id, reemplaza o agrega.",
+  "mes": [
+  ],
+
+  "_quitar": "Ids que hay que sacar de la app. Sirve para eventos cancelados o para datos que quedaron mal.",
+  "quitar_semana": [],
+  "quitar_mes": [],
+
+  "_ejemplo_semana": {
+    "id": "pon-un-id-unico",
+    "scope": "local",
+    "d": "2026-10-15",
+    "d2": "2026-10-17",
+    "name": "Nombre en inglés",
+    "name_es": "Nombre en español",
+    "venue": "Where · Neighborhood",
+    "venue_es": "Dónde · Barrio",
+    "time": "Fri 8:00 PM",
+    "time_es": "Vie 8:00 PM",
+    "price": "$$",
+    "price_es": "$$",
+    "type": "Concert",
+    "type_es": "Concierto",
+    "photo": "https://…  o  fotos/mm-loquesea.jpg",
+    "desc": "Two or three sentences in English.",
+    "desc_es": "Dos o tres frases en español.",
+    "tip": "Optional local tip.",
+    "tip_es": "Consejo de local, opcional.",
+    "tags": ["Music"],
+    "link": "https://sitio-oficial.com"
+  },
+
+  "_ejemplo_mes": {
+    "id": "pon-un-id-unico",
+    "photo": "https://…",
+    "type": "Music",
+    "type_es": "Música",
+    "ac": "#FF4D35",
+    "dTop": "OCT",
+    "dBig": "15",
+    "dBot": "→17",
+    "end": "2026-10-17",
+    "name": "Nombre en inglés",
+    "name_es": "Nombre en español",
+    "venue": "Where",
+    "venue_es": "Dónde",
+    "desc": "In English.",
+    "desc_es": "En español.",
+    "time": "Oct 15–17",
+    "time_es": "15–17 de oct",
+    "price": "$$",
+    "free": false,
+    "link": "https://sitio-oficial.com"
+  }
+}

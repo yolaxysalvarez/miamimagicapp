@@ -8065,6 +8065,79 @@ var MM_MONTH=[
   desc_es:'El estreno en el sur de la Florida abre la temporada 2026-27 de Broadway in Miami, coincidiendo con el Mes de la Herencia Hispana. Construido alrededor de la música y la memoria de los músicos cubanos que grabaron el disco.',
   time:'Sep 29 – Oct 4',time_es:'29 de sep – 4 de oct',price:'$$$',free:false,link:'https://www.arshtcenter.org/'}
 ];
+
+/* ── CARTELERA DESDE EL DOMINIO ────────────────────────────────────────────
+   Los eventos vivían dentro de este archivo, así que actualizar la cartelera
+   obligaba a compilar y pasar por Apple otra vez. Ahora se pueden añadir,
+   corregir o quitar desde /eventos.json, y lo ven iPhone, Android y web.
+
+   SOLO DATOS. El orden, el horizonte de días y qué se esconde por haber
+   pasado lo sigue decidiendo la app; el archivo nunca trae lógica.          */
+function mmAplicarEventos(d){
+  if(!d || typeof d!=='object') return false;
+  var tocado=false;
+  function fusiona(lista, entradas){
+    if(!lista || !entradas || !entradas.length) return;
+    for(var i=0;i<entradas.length;i++){
+      var e=entradas[i];
+      if(!e || typeof e!=='object' || !e.id) continue;
+      var puesto=false;
+      for(var j=0;j<lista.length;j++){
+        if(lista[j] && lista[j].id===e.id){ lista[j]=e; puesto=true; break; }
+      }
+      if(!puesto) lista.push(e);
+      tocado=true;
+    }
+  }
+  function quita(lista, ids){
+    if(!lista || !ids || !ids.length) return;
+    for(var i=lista.length-1;i>=0;i--){
+      if(lista[i] && ids.indexOf(lista[i].id)>=0){ lista.splice(i,1); tocado=true; }
+    }
+  }
+  try{
+    if(typeof D!=='undefined' && D && D.events){
+      fusiona(D.events, d.semana); quita(D.events, d.quitar_semana);
+    }
+    if(typeof MM_MONTH!=='undefined' && MM_MONTH){
+      fusiona(MM_MONTH, d.mes); quita(MM_MONTH, d.quitar_mes);
+    }
+  }catch(e){ return false; }
+  return tocado;
+}
+function mmRedibujarEventos(){
+  try{
+    var el=document.getElementById('juneTop'); if(!el) return;
+    var pw=document.getElementById('twxMainPanel'), pm=document.getElementById('twxMonthPanel');
+    var abW=!!(pw && pw.classList.contains('open'));
+    var abM=!!(pm && pm.classList.contains('open'));
+    el.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+renderEvMap();
+    try{ mmEventLayout(); }catch(e){}
+    try{ mmBizMount(); }catch(e){}
+    try{ mmTopMount(); }catch(e){}
+    /* si tenía una tanda abierta, se deja abierta */
+    if(abW){ var a=document.getElementById('twxMainPanel'), b=document.getElementById('twxMainBar');
+             if(a) a.classList.add('open'); if(b) b.classList.add('open'); }
+    if(abM){ var c=document.getElementById('twxMonthPanel'), f=document.getElementById('twxMonthBar');
+             if(c) c.classList.add('open'); if(f) f.classList.add('open'); }
+  }catch(e){}
+}
+(function(){
+  /* lo guardado de la última vez se aplica ya, antes del primer dibujado */
+  try{ var g=localStorage.getItem('mm_eventos'); if(g) mmAplicarEventos(JSON.parse(g)); }catch(e){}
+  function traer(){
+    var base=(typeof MM_API!=='undefined' && MM_API) ? MM_API : '';
+    fetch(base+'/eventos.json?t='+Date.now(),{cache:'no-store'})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if(!d) return;
+        try{ localStorage.setItem('mm_eventos',JSON.stringify(d)); }catch(e){}
+        if(mmAplicarEventos(d)) mmRedibujarEventos();
+      })['catch'](function(){});
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',traer);
+  else traer();
+})();
 var MM_PRIV={
  en:{title:'Privacy Policy',upd:'Last updated: August 1, 2026',
  intro:'Miami Magic is operated by Y &amp; Y Entertainment Corp. in Miami, Florida. This policy explains, in plain language, what the app collects, why, and what control you have. We do not sell your personal information.',
