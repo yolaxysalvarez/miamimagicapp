@@ -6114,6 +6114,7 @@ function mmPlayRestVideo(el){
     }catch(e){}
     src='https://www.youtube-nocookie.com/embed/'+yid+'?autoplay=1&playsinline=1&rel=0&modestbranding=1'+origin;
   }
+  if(el.__mmPoster==null) el.__mmPoster=el.innerHTML;   /* para poder volver a ella al cerrar */
   el.innerHTML='<iframe id="mmVidFrame" src="'+src+'" title="Video" frameborder="0" playsinline '
     +'allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen '
     +'referrerpolicy="strict-origin-when-cross-origin" '
@@ -6174,7 +6175,23 @@ function openConcertModal(id,link,btnLabel){
   updateFavBtn();
   document.getElementById('modalOv').classList.add('open');
 }
-function closeModal(){document.getElementById('modalOv').classList.remove('open');}
+/* Cerrar la ficha tiene que parar el video. El iframe seguía vivo detrás del
+   modal y el audio continuaba; se quita y se devuelve la portada, así que la
+   ficha queda lista para volver a reproducir con un toque. */
+function mmStopVideos(){
+  try{
+    var els=document.querySelectorAll('.mm-vid-wrap[data-on="1"]');
+    for(var i=0;i<els.length;i++){
+      var el=els[i];
+      el.innerHTML = (el.__mmPoster!=null) ? el.__mmPoster : '';
+      el.removeAttribute('data-on');
+      el.removeAttribute('data-esc');
+      el.style.cursor='pointer';
+      el.onclick=function(){ mmPlayRestVideo(this); };
+    }
+  }catch(e){}
+}
+function closeModal(){document.getElementById('modalOv').classList.remove('open');mmStopVideos();}
 /* Scroll anchor: opening a modal locks the page and closing it used to land the
    user hundreds of pixels away (she reported being thrown to the end of the app).
    One observer per overlay restores the exact position for EVERY modal. */
