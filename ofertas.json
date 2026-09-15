@@ -1,0 +1,22 @@
+{
+  "_como_usar": "Aquí van las ofertas de los socios con los que cierres acuerdo. Se ven dentro de la ficha correspondiente de la app, sin pasar por Apple. La clave es el id de la tarjeta: 'e1' es Cruceros desde PortMiami, 'e2' es Port Everglades. Sube el archivo a GitHub y aparece en iPhone, Android y web la próxima vez que se abra la app.",
+  "updated": "2026-09-14",
+
+  "_campos": "name / name_es es lo que se ve como enlace. desc / desc_es es una línea corta debajo, opcional. link es a dónde va. comision: true si cobras comisión por reserva — si alguna oferta lo lleva, la ficha muestra sola el aviso legal.",
+
+  "ofertas": {
+    "e1": [
+    ],
+    "e2": [
+    ]
+  },
+
+  "_ejemplo": {
+    "name": "Naviera o agencia · See departures",
+    "name_es": "Naviera o agencia · Ver salidas",
+    "desc": "3 to 5 nights to the Bahamas. Live availability and prices.",
+    "desc_es": "De 3 a 5 noches a Bahamas. Disponibilidad y precios en vivo.",
+    "link": "https://…",
+    "comision": true
+  }
+}

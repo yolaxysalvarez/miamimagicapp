@@ -2145,6 +2145,26 @@ footer h4{font-size:.72rem!important;margin-bottom:12px;}
 [data-theme="dark"] .mm-fsearch .fs-clear{background:rgba(255,255,255,.18);color:#fff;}
 body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
 @media(min-width:900px){.mm-fsearch{width:460px;padding:15px 16px 15px 20px;}}
+/* Desde tableta pequeña en adelante (iPad Air 11" mide 820, y es el que usa
+   Apple para revisar), no solo desde 900. */
+@media(min-width:740px){
+/* En iPad la píldora flotante quedaba suelta encima de las tarjetas y parecía
+   un fallo: 460px sueltos sobre una pantalla de 1024. En el teléfono no pasa
+   porque ocupa casi todo el ancho y se lee como cabecera. Se le pone detrás una
+   banda traslucida a todo el ancho para que se lea como barra de herramientas. */
+.mm-fsearch::before{content:'';position:absolute;z-index:-1;
+  /* la píldora lleva transform, así que un position:fixed aquí se mediría desde
+     ella y no desde la pantalla. Se ancla a la píldora y se hace más ancha que
+     el viewport para que llegue a los dos bordes. */
+  left:50%;transform:translateX(-50%);width:200vw;
+  top:calc(-12px - env(safe-area-inset-top,0px));
+  height:calc(78px + env(safe-area-inset-top,0px));
+  background:rgba(255,232,214,.88);
+  -webkit-backdrop-filter:saturate(1.15) blur(16px);backdrop-filter:saturate(1.15) blur(16px);
+  border-bottom:1px solid rgba(180,60,20,.10);pointer-events:none;}
+[data-theme="dark"] .mm-fsearch::before{background:rgba(9,21,40,.86);
+  border-bottom-color:rgba(255,255,255,.12);}
+}
 @media(prefers-reduced-motion:reduce){.mm-fsearch,.mm-fsearch::after{transition:none;}}
 
 .bottom-nav{
@@ -9831,6 +9851,48 @@ var MM_LUX=[
   link:'https://www.google.com/maps/search/beach+club+day+pass+Miami+Beach'}
 ];
 
+/* ── OFERTAS DE SOCIOS ─────────────────────────────────────────────────────
+   Las ofertas que ella vaya cerrando (cruceros hoy, lo que venga despues)
+   viven en /ofertas.json y se pintan dentro de la ficha. Solo DATOS: nombre,
+   que incluye y su enlace. Asi puede sumar socios sin pasar por Apple.
+   Si cobra comision, la ficha lo dice: es obligatorio en Estados Unidos.     */
+var MM_OFERTAS={};
+try{ var _of=localStorage.getItem('mm_ofertas'); if(_of) MM_OFERTAS=JSON.parse(_of)||{}; }catch(e){}
+function mmOfertasHTML(id){
+  var lista=MM_OFERTAS[id];
+  if(!lista || !lista.length) return '';
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var out='<div class="mw-tiplbl" style="margin-top:16px">'+(ES?'Ofertas y disponibilidad':'Offers and availability')+'</div>';
+  var hayCom=false;
+  for(var i=0;i<lista.length;i++){
+    var o=lista[i]; if(!o||!o.link||!o.name) continue;
+    if(o.comision) hayCom=true;
+    var nm=(ES&&o.name_es)?o.name_es:o.name;
+    var ds=(ES&&o.desc_es)?o.desc_es:(o.desc||'');
+    out+='<div style="margin-top:10px">'
+       + (typeof mmWebRow==='function' ? mmWebRow(o.link,nm) : '<a href="'+o.link+'" target="_blank" rel="noopener">'+nm+'</a>')
+       + (ds?'<div class="mw-notetx" style="margin:4px 0 0 2px;opacity:.8">'+ds+'</div>':'')
+       + '</div>';
+  }
+  if(hayCom) out+='<div class="mw-notetx" style="margin-top:12px;opacity:.65;font-size:.72rem">'
+    +(ES?'Miami Magic puede recibir una comisi\u00f3n por reservas hechas desde estos enlaces. El precio para ti no cambia.'
+        :'Miami Magic may earn a commission on bookings made through these links. Your price does not change.')+'</div>';
+  return out;
+}
+(function(){
+  function traer(){
+    var base=(typeof MM_API!=='undefined' && MM_API) ? MM_API : '';
+    fetch(base+'/ofertas.json?t='+Date.now(),{cache:'no-store'})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if(!d || !d.ofertas) return;
+        MM_OFERTAS=d.ofertas;
+        try{ localStorage.setItem('mm_ofertas',JSON.stringify(MM_OFERTAS)); }catch(e){}
+      })['catch'](function(){});
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',traer);
+  else traer();
+})();
 function waterLink(w){
   try{
     if(w.kl && typeof klLink==='function') return klLink(w.kl);
@@ -9858,6 +9920,9 @@ function openWaterModal(id){
      '<div class="mw-row">'+miSvg('pin',15)+'<span>'+(ES&&w.where_es?w.where_es:w.where)+'</span></div>'
     +'<div class="mw-row">'+miSvg('price',15)+'<span>'+(ES&&w.price_es?w.price_es:w.price)+'</span></div>'
     +'<div class="mw-row">'+miSvg('clock',15)+'<span>'+(ES&&w.when_es?w.when_es:w.when)+'</span></div>';
+  var ofEl=document.getElementById('mwOfertas');
+  if(ofEl){ var ofH=''; try{ ofH=mmOfertasHTML(w.id); }catch(e){}
+            ofEl.innerHTML=ofH; ofEl.style.display=ofH?'block':'none'; }
   document.getElementById('mwTipLbl').textContent=ES?'Tip de local':'Local tip';
   document.getElementById('mwTip').textContent=ES&&w.tip_es?w.tip_es:w.tip;
   // Nota contextual "antes de ir" — vive DENTRO del modal de las tarjetas a las que aplica
@@ -9884,9 +9949,14 @@ function openWaterModal(id){
   btn.href=waterLink(w);
   btn.style.display='none'; /* su regla: sin botones; fila de texto como la direcci\u00f3n */
   try{
-    var old=btn.parentNode.querySelector('.m-row-web'); if(old) old.parentNode.removeChild(old);
+    /* apunta al envoltorio .mw-web, no a la primera fila de enlace que aparezca:
+       con las ofertas dentro de la ficha, la primera ya no es la del sitio web. */
+    var old=btn.parentNode.querySelector('.mw-web'); if(old) old.parentNode.removeChild(old);
     var lk=waterLink(w);
-    if(lk && lk!=='#') btn.insertAdjacentHTML('beforebegin','<div class="mw-web">'+mmWebRow(lk,(w.kl?(ES?'Reservar':'Book'):(ES?'Sitio web':'Website')))+'</div>');
+    /* si la ficha dice a d\u00f3nde lleva, se respeta: "Sitio web" gen\u00e9rico hac\u00eda
+       creer que se ve\u00eda la oferta y se aterrizaba en la p\u00e1gina del puerto. */
+    var lbl=(ES&&w.linkLabel_es)?w.linkLabel_es:(w.linkLabel||(w.kl?(ES?'Reservar':'Book'):(ES?'Sitio web':'Website')));
+    if(lk && lk!=='#') btn.insertAdjacentHTML('beforebegin','<div class="mw-web">'+mmWebRow(lk,lbl)+'</div>');
   }catch(e){}
   document.getElementById('mwOv').style.display='flex';
   try{ mmTrackVisit(w.id, nm, 'water'); }catch(e){}
@@ -10763,16 +10833,17 @@ document.addEventListener('DOMContentLoaded',function(){ setTimeout(mmNowRender,
 setInterval(function(){ try{mmNowRender();}catch(e){} }, 30*60*1000);
 
 var MM_ESC=[
- {id:'e1',name:'3-Night Bahamas Cruise',name_es:'Crucero de 3 Noches a Bahamas',cat:'Cruise',cat_es:'Crucero',ac:'#0B6FA4',
+ {id:'e1',name:'Cruises from PortMiami',name_es:'Cruceros desde PortMiami',cat:'Cruise',cat_es:'Crucero',ac:'#0B6FA4',
   ico:'<path d="M3 18.5h18l-2 3H5z"/><path d="M4.8 18.5L6 12.5h12l1.2 6"/><path d="M8 12.5V8h8v4.5"/><rect x="9.5" y="9" width="2" height="2"/><rect x="13" y="9" width="2" height="2"/><path d="M12 8V4.5"/>',
   photo:'https://images.unsplash.com/photo-1548574505-5e239809ee19?w=900&q=60&auto=format',
   where:'PortMiami · Dodge Island',where_es:'PortMiami · Dodge Island',
-  price:'From ~$300 per person',price_es:'Desde ~$300 por persona',
-  when:'Weekend departures year-round',when_es:'Salidas de fin de semana todo el año',
-  desc:'The easiest cruise on earth: three or four nights to Nassau and a private island, leaving from the second-busiest cruise port in the world — twenty minutes from South Beach. Royal Caribbean, Carnival, MSC and Norwegian all sail these.',
-  desc_es:'El crucero más fácil del mundo: tres o cuatro noches a Nassau y una isla privada, saliendo del segundo puerto de cruceros más activo del planeta — a veinte minutos de South Beach. Royal Caribbean, Carnival, MSC y Norwegian hacen esta ruta.',
-  tip:'The advertised fare is the cabin only. Port fees, taxes, gratuities and drinks land on top and can add 40–60%. Ask for the total per person before you put down a deposit — and an interior cabin on a short sailing is the best value in cruising.',
-  tip_es:'La tarifa que anuncian es solo el camarote. Impuestos portuarios, propinas y bebidas se suman aparte y pueden agregar un 40–60%. Pide el total por persona antes de dar depósito — y un camarote interior en un viaje corto es la mejor relación precio-valor que existe.',
+  price:'3 to 5 nights from ~$300 pp · a week from ~$700 pp',price_es:'De 3 a 5 noches desde ~$300 p/p · una semana desde ~$700 p/p',
+  when:'Departures every day of the year',when_es:'Salidas todos los días del año',
+  desc:'Twenty minutes from South Beach sits the second-busiest cruise port on earth, and three kinds of trip leave from it. Three to five nights to the Bahamas — Nassau and the private islands the lines own: CocoCay, Half Moon Cay, Celebration Key, Great Stirrup Cay, Ocean Cay. Six to eight nights through the Caribbean — Grand Turk, Amber Cove, Grand Cayman, Ocho Rios, San Juan, Aruba. And long crossings to the Panama Canal, ten to twenty days. Royal Caribbean, Carnival, MSC, Norwegian and Virgin all sail from here.',
+  desc_es:'A veinte minutos de South Beach está el segundo puerto de cruceros más activo del planeta, y de ahí salen tres tipos de viaje. De tres a cinco noches a Bahamas — Nassau y las islas privadas de cada naviera: CocoCay, Half Moon Cay, Celebration Key, Great Stirrup Cay, Ocean Cay. De seis a ocho noches por el Caribe — Gran Turca, Amber Cove, Gran Caimán, Ocho Ríos, San Juan, Aruba. Y travesías largas al Canal de Panamá, de diez a veinte días. Royal Caribbean, Carnival, MSC, Norwegian y Virgin salen todas de aquí.',
+  tip:'The advertised fare is always the cabin only. Port fees, taxes, gratuities and drinks land on top and can add 40–60%. Ask for the total per person before you put down a deposit — and an interior cabin on a short sailing is the best value in cruising.',
+  tip_es:'La tarifa que anuncian es siempre solo el camarote. Impuestos portuarios, propinas y bebidas se suman aparte y pueden agregar un 40–60%. Pide el total por persona antes de dar depósito — y un camarote interior en un viaje corto es la mejor relación precio-valor que existe.',
+  linkLabel:'Official PortMiami page',linkLabel_es:'P\u00e1gina oficial de PortMiami',
   link:'https://www.miamidade.gov/portmiami/cruise.page'},
  {id:'e2',name:'Cruises from Port Everglades',name_es:'Cruceros desde Port Everglades',cat:'Cruise',cat_es:'Crucero',ac:'#00A9CE',
   ico:'<path d="M3 18.5h18l-2 3H5z"/><path d="M5 18.5V10h14v8.5"/><path d="M8.5 10V6.5h7V10"/><path d="M12 6.5V3.5"/><rect x="9.5" y="12.5" width="2" height="2"/><rect x="13" y="12.5" width="2" height="2"/>',
@@ -10784,6 +10855,7 @@ var MM_ESC=[
   desc_es:'El tercer puerto de cruceros más grande del mundo, y a menudo la mejor opción: filas más cortas que en Miami, parqueo más fácil, e itinerarios a Nassau, Bimini, Key West y CocoCay. Celebrity, Princess y Holland America basan barcos aquí.',
   tip:'It is 30 miles from Miami, so add an hour of driving and check whether your fare includes port parking — a week of it costs more than the ride from Miami. Same-day flights out of FLL are the classic mistake; give yourself a night.',
   tip_es:'Está a 48 km de Miami, así que suma una hora de manejo y revisa si tu tarifa incluye parqueo en el puerto — una semana cuesta más que el viaje desde Miami. Los vuelos el mismo día desde FLL son el error clásico; date una noche.',
+  linkLabel:'Official Port Everglades page',linkLabel_es:'P\u00e1gina oficial de Port Everglades',
   link:'https://www.porteverglades.net/cruise/'},
  {id:'e3',name:'Balearia Ferry to Bimini',name_es:'Ferry Balearia a Bimini',cat:'Ferry',cat_es:'Ferry',ac:'#00C9B1',
   ico:'<path d="M3 19h18l-2 2.5H5z"/><path d="M4.5 19L6 13.5h12L19.5 19"/><path d="M7.5 13.5v-4h9v4"/><path d="M12 9.5V6"/><path d="M9.5 6h5"/>',
@@ -12086,6 +12158,7 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
       <div class="mw-name" id="mwName"></div>
       <div class="mw-desc" id="mwDesc"></div>
       <div id="mwRows"></div>
+      <div id="mwOfertas" style="display:none"></div>
       <div class="mw-tipbox"><div class="mw-tiplbl" id="mwTipLbl"></div><div class="mw-tiptxt" id="mwTip"></div></div>
       <div class="mw-notebox" id="mwNote" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;margin-top:2px;opacity:.85"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.6"/></svg><div><div class="mw-notelbl" id="mwNoteLbl"></div><div class="mw-notetx" id="mwNoteTx"></div></div></div>
       <a class="mw-btn" id="mwBtn" href="#" target="_blank" rel="noopener"></a>
@@ -13245,7 +13318,23 @@ function mmFootBiz(){
   if(typeof openInAppSheet==='function') openInAppSheet(u,'Miami Magic Directory');
   else window.open(u,'_blank','noopener');
 }
-function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');document.querySelectorAll('#navSignin [data-en], .hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en], #itinLoadTx').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, comida':'Search beaches, food';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}try{if(window.MM_CAMS)mmCamsRender();}catch(e){}try{setTimeout(function(){if(window.mmTickerBuild)window.mmTickerBuild();},650);}catch(e){}}
+/* El planificador se escribió entero en inglés fijo y quedó fuera de
+   heroApplyLang, así que en español seguía saliendo en inglés. Usa el mismo
+   mecanismo data-en/data-es del resto de la app. */
+function itinApplyLang(){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  try{
+    document.querySelectorAll('#itinModeAI,#itinModeQuiz,#itinAIMode [data-en],#advFilters [data-en],#itinQuiz [data-en],#itinResult [data-en],#itinModeQuiz [data-en]').forEach(function(el){
+      var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');
+      if(v!=null) el.innerHTML=v;
+    });
+    var ta=document.getElementById('itinAIInput');
+    if(ta) ta.placeholder=ES
+      ? 'Ej.: 3 d\u00edas en Miami, en pareja, nos gusta la playa, comer bien y algo de noche. Presupuesto medio.'
+      : 'E.g.: 3 days in Miami, couple, love beaches, good food and some nightlife. Mid budget.';
+  }catch(e){}
+}
+function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');try{itinApplyLang();}catch(e){}document.querySelectorAll('#navSignin [data-en], .hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en], #itinLoadTx').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, comida':'Search beaches, food';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}try{if(window.MM_CAMS)mmCamsRender();}catch(e){}try{setTimeout(function(){if(window.mmTickerBuild)window.mmTickerBuild();},650);}catch(e){}}
 function socApplyLang(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   document.querySelectorAll('#sec-social [data-en], #socPubOv [data-en]').forEach(function(el){
@@ -14079,22 +14168,22 @@ document.addEventListener('DOMContentLoaded',function(){
 
   <!-- ── MODE TOGGLE ── -->
   <div style="padding:14px 22px 0;display:flex;gap:8px;">
-    <button id="itinModeAI" onclick="setItinMode('ai')" style="flex:1;padding:10px;border-radius:50px;border:none;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;font-size:.8rem;font-weight:700;cursor:pointer;">✦ Ask AI</button>
-    <button id="itinModeQuiz" onclick="setItinMode('quiz')" style="flex:1;padding:10px;border-radius:50px;border:1.5px solid #e0dbd4;background:#fff;color:#666;font-size:.8rem;font-weight:600;cursor:pointer;"><span style="display:inline-flex;align-items:center;gap:6px;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><rect x="4" y="3.5" width="16" height="17" rx="3"/><path d="M8.5 8.5h7M8.5 12h7M8.5 15.5h4"/></svg> Quick Quiz</span></button>
+    <button id="itinModeAI" onclick="setItinMode('ai')" style="flex:1;padding:10px;border-radius:50px;border:none;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;font-size:.8rem;font-weight:700;cursor:pointer;" data-en="✦ Ask AI" data-es="✦ Pregúntale a Luna">✦ Ask AI</button>
+    <button id="itinModeQuiz" onclick="setItinMode('quiz')" style="flex:1;padding:10px;border-radius:50px;border:1.5px solid #e0dbd4;background:#fff;color:#666;font-size:.8rem;font-weight:600;cursor:pointer;"><span style="display:inline-flex;align-items:center;gap:6px;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><rect x="4" y="3.5" width="16" height="17" rx="3"/><path d="M8.5 8.5h7M8.5 12h7M8.5 15.5h4"/></svg> <span data-en="Quick Quiz" data-es="Test rápido">Quick Quiz</span></span></button>
   </div>
 
   <!-- ── AI FREE TEXT MODE ── -->
   <div id="itinAIMode" style="padding:22px">
-    <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#08172E;margin-bottom:3px;">Tell me about your trip</div>
-    <div style="font-size:.74rem;color:#999;margin-bottom:11px;">Days, vibe, budget — be specific</div>
+    <div style="font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:#08172E;margin-bottom:3px;" data-en="Tell me about your trip" data-es="Cuéntame de tu viaje">Tell me about your trip</div>
+    <div style="font-size:.74rem;color:#999;margin-bottom:11px;" data-en="Days, vibe, budget — be specific" data-es="Días, plan y presupuesto — sé concreta">Days, vibe, budget — be specific</div>
     <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px;">
-      <button onclick="itinAISugg(this)" style="padding:9px 15px;border-radius:50px;border:1.5px solid #d8d0c4;background:#fff;font-size:.85rem;font-weight:600;color:#333;cursor:pointer;">3 days, beach &amp; nightlife</button>
-      <button onclick="itinAISugg(this)" style="padding:9px 15px;border-radius:50px;border:1.5px solid #d8d0c4;background:#fff;font-size:.85rem;font-weight:600;color:#333;cursor:pointer;">Family trip, 4 days, kids</button>
-      <button onclick="itinAISugg(this)" style="padding:9px 15px;border-radius:50px;border:1.5px solid #d8d0c4;background:#fff;font-size:.85rem;font-weight:600;color:#333;cursor:pointer;">Romantic weekend, luxury</button>
-      <button onclick="itinAISugg(this)" style="padding:9px 15px;border-radius:50px;border:1.5px solid #d8d0c4;background:#fff;font-size:.85rem;font-weight:600;color:#333;cursor:pointer;">Solo foodie, 2 days, budget</button>
+      <button onclick="itinAISugg(this)" style="padding:9px 15px;border-radius:50px;border:1.5px solid #d8d0c4;background:#fff;font-size:.85rem;font-weight:600;color:#333;cursor:pointer;" data-en="3 days, beach &amp; nightlife" data-es="3 días, playa y noche">3 days, beach &amp; nightlife</button>
+      <button onclick="itinAISugg(this)" style="padding:9px 15px;border-radius:50px;border:1.5px solid #d8d0c4;background:#fff;font-size:.85rem;font-weight:600;color:#333;cursor:pointer;" data-en="Family trip, 4 days, kids" data-es="En familia, 4 días, con niños">Family trip, 4 days, kids</button>
+      <button onclick="itinAISugg(this)" style="padding:9px 15px;border-radius:50px;border:1.5px solid #d8d0c4;background:#fff;font-size:.85rem;font-weight:600;color:#333;cursor:pointer;" data-en="Romantic weekend, luxury" data-es="Fin de semana romántico, de lujo">Romantic weekend, luxury</button>
+      <button onclick="itinAISugg(this)" style="padding:9px 15px;border-radius:50px;border:1.5px solid #d8d0c4;background:#fff;font-size:.85rem;font-weight:600;color:#333;cursor:pointer;" data-en="Solo foodie, 2 days, budget" data-es="Sola y comiendo, 2 días, económico">Solo foodie, 2 days, budget</button>
     </div>
     <textarea id="itinAIInput" rows="4" placeholder="E.g.: 3 days in Miami, couple, love beaches, good food and some nightlife. Mid budget." style="width:100%;border:1.5px solid #e0dbd4;border-radius:16px;padding:12px 14px;font-size:.85rem;font-family:'DM Sans',sans-serif;outline:none;resize:none;box-sizing:border-box;line-height:1.5;color:#08172E;" onfocus="this.style.borderColor='#FF4D35'" onblur="this.style.borderColor='#e0dbd4'"></textarea>
-    <button onclick="runItinAI()" id="itinAIBtn" style="margin-top:10px;width:100%;padding:13px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border:none;border-radius:50px;font-size:.88rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;">✦ Generate My Itinerary</button>
+    <button onclick="runItinAI()" id="itinAIBtn" style="margin-top:10px;width:100%;padding:13px;background:linear-gradient(135deg,#FF4D35,#e03a24);color:#fff;border:none;border-radius:50px;font-size:.88rem;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;" data-en="✦ Generate My Itinerary" data-es="✦ Arma mi itinerario">✦ Generate My Itinerary</button>
     <div id="itinAILoading" style="display:none;text-align:center;padding:22px 0;">
       <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
         <div style="position:relative;width:54px;height:54px;">
@@ -14111,23 +14200,23 @@ document.addEventListener('DOMContentLoaded',function(){
   <!-- ── ADVANCED FILTERS (inside hss) ── -->
   <div id="advFilters" style="display:none;padding:8px 16px 4px;gap:6px;flex-wrap:wrap;align-items:center;">
     <select id="fltCat" onchange="applyAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #e0dbd4;font-size:.72rem;font-family:'DM Sans',sans-serif;background:#fff;color:#444;outline:none;cursor:pointer;">
-      <option value="">All categories</option>
-      <option value="rest">Restaurants</option>
-      <option value="beach">Beaches</option>
-      <option value="museum">Museums</option>
-      <option value="night">Nightlife</option>
-      <option value="hotel">Hotels</option>
-      <option value="park">Parks</option>
+      <option value="" data-en="All categories" data-es="Todas las categorías">All categories</option>
+      <option value="rest" data-en="Restaurants" data-es="Restaurantes">Restaurants</option>
+      <option value="beach" data-en="Beaches" data-es="Playas">Beaches</option>
+      <option value="museum" data-en="Museums" data-es="Museos">Museums</option>
+      <option value="night" data-en="Nightlife" data-es="Vida nocturna">Nightlife</option>
+      <option value="hotel" data-en="Hotels" data-es="Hoteles">Hotels</option>
+      <option value="park" data-en="Parks" data-es="Parques">Parks</option>
     </select>
     <select id="fltPrice" onchange="applyAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #e0dbd4;font-size:.72rem;font-family:'DM Sans',sans-serif;background:#fff;color:#444;outline:none;cursor:pointer;">
-      <option value="">Any price</option>
-      <option value="$">$ Budget</option>
-      <option value="$$">$$ Mid-range</option>
-      <option value="$$$">$$$ Upscale</option>
-      <option value="$$$$">$$$$ Luxury</option>
+      <option value="" data-en="Any price" data-es="Cualquier precio">Any price</option>
+      <option value="$" data-en="$ Budget" data-es="$ Económico">$ Budget</option>
+      <option value="$$" data-en="$$ Mid-range" data-es="$$ Medio">$$ Mid-range</option>
+      <option value="$$$" data-en="$$$ Upscale" data-es="$$$ Alto">$$$ Upscale</option>
+      <option value="$$$$" data-en="$$$$ Luxury" data-es="$$$$ Lujo">$$$$ Luxury</option>
     </select>
     <select id="fltZone" onchange="applyAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #e0dbd4;font-size:.72rem;font-family:'DM Sans',sans-serif;background:#fff;color:#444;outline:none;cursor:pointer;">
-      <option value="">All Miami</option>
+      <option value="" data-en="All Miami" data-es="Todo Miami">All Miami</option>
       <option value="south beach">South Beach</option>
       <option value="wynwood">Wynwood</option>
       <option value="brickell">Brickell</option>
@@ -14137,7 +14226,7 @@ document.addEventListener('DOMContentLoaded',function(){
       <option value="design district">Design District</option>
       <option value="kendall">Kendall</option>
     </select>
-    <button onclick="clearAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #FF4D35;background:#fff;font-size:.7rem;color:#FF4D35;font-weight:600;cursor:pointer;">× Clear</button>
+    <button onclick="clearAdvFilters()" style="padding:5px 10px;border-radius:50px;border:1.5px solid #FF4D35;background:#fff;font-size:.7rem;color:#FF4D35;font-weight:600;cursor:pointer;" data-en="× Clear" data-es="× Limpiar">× Clear</button>
   </div>
 
   <!-- ── QUIZ STEP ── -->
@@ -14145,25 +14234,25 @@ document.addEventListener('DOMContentLoaded',function(){
 
     <!-- Step 1: Type -->
     <div class="itin-step" id="qStep1">
-      <div class="iq-prog"><i class="on"></i><i></i><i></i></div><div class="itin-q">What kind of trip?</div>
+      <div class="iq-prog"><i class="on"></i><i></i><i></i></div><div class="itin-q" data-en="What kind of trip?" data-es="¿Qué tipo de viaje?">What kind of trip?</div>
       <div class="itin-opts">
-        <button class="iq-btn iq-tile" onclick="itinSelect(1,'romantic')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M12 20.5C6.5 16.5 3 13 3 9.3 3 6.4 5.2 4.5 7.7 4.5c1.7 0 3.2.9 4.3 2.4 1.1-1.5 2.6-2.4 4.3-2.4 2.5 0 4.7 1.9 4.7 4.8 0 3.7-3.5 7.2-9 11.2z"/></svg></span><span class="iq-lb">Romantic</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'family')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><circle cx="8" cy="7" r="2.6"/><circle cx="16.5" cy="8.2" r="2.1"/><path d="M3.5 20c0-3.4 2-5.6 4.5-5.6S12.5 16.6 12.5 20"/><path d="M13.5 20c0-2.8 1.4-4.6 3-4.6s3 1.8 3 4.6"/></svg></span><span class="iq-lb">Family</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'friends')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M8 4.5 6 12a3.4 3.4 0 0 0 6.8 0L11 4.5H8z"/><path d="M16 4.5l-2 7.5a3.4 3.4 0 0 0 6.8 0l-1.8-7.5H16z" transform="translate(-2.5,0)"/><path d="M9.4 15.5V20M7.5 20h4"/></svg></span><span class="iq-lb">Friends</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'solo')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M8 8V6a4 4 0 0 1 8 0v2"/><rect x="5.5" y="8" width="13" height="12" rx="3.2"/><path d="M5.5 13h13"/><path d="M12 13v2.4"/></svg></span><span class="iq-lb">Solo</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'foodie')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M8 4v7M6 4v3.5a2 2 0 0 0 4 0V4"/><path d="M16.5 4c-1.4 1-2 2.8-2 4.6 0 1.9.8 2.9 2 2.9V20"/><path d="M8 13v7"/></svg></span><span class="iq-lb">Foodie</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'beach')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M12 4a8.5 8.5 0 0 1 8.5 8.5H3.5A8.5 8.5 0 0 1 12 4z"/><path d="M12 12.5V20"/><path d="M9 20h6"/></svg></span><span class="iq-lb">Beach</span></button>
+        <button class="iq-btn iq-tile" onclick="itinSelect(1,'romantic')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M12 20.5C6.5 16.5 3 13 3 9.3 3 6.4 5.2 4.5 7.7 4.5c1.7 0 3.2.9 4.3 2.4 1.1-1.5 2.6-2.4 4.3-2.4 2.5 0 4.7 1.9 4.7 4.8 0 3.7-3.5 7.2-9 11.2z"/></svg></span><span class="iq-lb" data-en="Romantic" data-es="Romántico">Romantic</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'family')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><circle cx="8" cy="7" r="2.6"/><circle cx="16.5" cy="8.2" r="2.1"/><path d="M3.5 20c0-3.4 2-5.6 4.5-5.6S12.5 16.6 12.5 20"/><path d="M13.5 20c0-2.8 1.4-4.6 3-4.6s3 1.8 3 4.6"/></svg></span><span class="iq-lb" data-en="Family" data-es="En familia">Family</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'friends')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M8 4.5 6 12a3.4 3.4 0 0 0 6.8 0L11 4.5H8z"/><path d="M16 4.5l-2 7.5a3.4 3.4 0 0 0 6.8 0l-1.8-7.5H16z" transform="translate(-2.5,0)"/><path d="M9.4 15.5V20M7.5 20h4"/></svg></span><span class="iq-lb" data-en="Friends" data-es="Con amigos">Friends</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'solo')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M8 8V6a4 4 0 0 1 8 0v2"/><rect x="5.5" y="8" width="13" height="12" rx="3.2"/><path d="M5.5 13h13"/><path d="M12 13v2.4"/></svg></span><span class="iq-lb" data-en="Solo" data-es="Solo">Solo</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'foodie')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M8 4v7M6 4v3.5a2 2 0 0 0 4 0V4"/><path d="M16.5 4c-1.4 1-2 2.8-2 4.6 0 1.9.8 2.9 2 2.9V20"/><path d="M8 13v7"/></svg></span><span class="iq-lb" data-en="Foodie" data-es="Gastronómico">Foodie</span></button><button class="iq-btn iq-tile" onclick="itinSelect(1,'beach')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M12 4a8.5 8.5 0 0 1 8.5 8.5H3.5A8.5 8.5 0 0 1 12 4z"/><path d="M12 12.5V20"/><path d="M9 20h6"/></svg></span><span class="iq-lb" data-en="Beach" data-es="De playa">Beach</span></button>
       </div>
     </div>
 
     <!-- Step 2: Days -->
     <div class="itin-step" id="qStep2" style="display:none">
-      <div class="iq-prog"><i class="on"></i><i class="on"></i><i></i></div><div class="itin-q">How many days?</div>
+      <div class="iq-prog"><i class="on"></i><i class="on"></i><i></i></div><div class="itin-q" data-en="How many days?" data-es="¿Cuántos días?">How many days?</div>
       <div class="itin-opts">
-        <button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'1')"><span class="iq-ico"><b>1</b></span><span class="iq-lb">day</span></button><button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'2')"><span class="iq-ico"><b>2</b></span><span class="iq-lb">days</span></button><button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'3')"><span class="iq-ico"><b>3</b></span><span class="iq-lb">days</span></button><button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'5')"><span class="iq-ico"><b>4–5</b></span><span class="iq-lb">days</span></button><button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'7')"><span class="iq-ico"><b>7</b></span><span class="iq-lb">week</span></button>
+        <button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'1')"><span class="iq-ico"><b>1</b></span><span class="iq-lb" data-en="day" data-es="día">day</span></button><button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'2')"><span class="iq-ico"><b>2</b></span><span class="iq-lb" data-en="days" data-es="días">days</span></button><button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'3')"><span class="iq-ico"><b>3</b></span><span class="iq-lb" data-en="days" data-es="días">days</span></button><button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'5')"><span class="iq-ico"><b>4–5</b></span><span class="iq-lb" data-en="days" data-es="días">days</span></button><button class="iq-btn iq-tile iq-num" onclick="itinSelect(2,'7')"><span class="iq-ico"><b>7</b></span><span class="iq-lb" data-en="week" data-es="semana">week</span></button>
       </div>
     </div>
 
     <!-- Step 3: Budget -->
     <div class="itin-step" id="qStep3" style="display:none">
-      <div class="iq-prog"><i class="on"></i><i class="on"></i><i class="on"></i></div><div class="itin-q">What's your vibe?</div>
+      <div class="iq-prog"><i class="on"></i><i class="on"></i><i class="on"></i></div><div class="itin-q" data-en="What's your vibe?" data-es="¿Qué presupuesto?">What's your vibe?</div>
       <div class="itin-opts">
-        <button class="iq-btn iq-tile" onclick="itinSelect(3,'budget')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><circle cx="12" cy="12" r="8.3"/><path d="M12 7.5v9M14.6 9.3c-.5-.9-1.5-1.4-2.6-1.4-1.6 0-2.8.9-2.8 2.2 0 2.9 5.6 1.5 5.6 4.3 0 1.3-1.2 2.2-2.8 2.2-1.2 0-2.2-.6-2.7-1.5"/></svg></span><span class="iq-lb">Budget-friendly</span></button><button class="iq-btn iq-tile" onclick="itinSelect(3,'mid')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M4 8h10M18 8h2M4 16h2M10 16h10"/><circle cx="16" cy="8" r="2.2"/><circle cx="8" cy="16" r="2.2"/></svg></span><span class="iq-lb">Mix it up</span></button><button class="iq-btn iq-tile" onclick="itinSelect(3,'luxury')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M6 4h12l3 5-9 11L3 9l3-5z"/><path d="M3 9h18M9.5 9 12 20l2.5-11M9 4l-1 5M15 4l1 5"/></svg></span><span class="iq-lb">Splurge</span></button>
+        <button class="iq-btn iq-tile" onclick="itinSelect(3,'budget')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><circle cx="12" cy="12" r="8.3"/><path d="M12 7.5v9M14.6 9.3c-.5-.9-1.5-1.4-2.6-1.4-1.6 0-2.8.9-2.8 2.2 0 2.9 5.6 1.5 5.6 4.3 0 1.3-1.2 2.2-2.8 2.2-1.2 0-2.2-.6-2.7-1.5"/></svg></span><span class="iq-lb" data-en="Budget-friendly" data-es="Económico">Budget-friendly</span></button><button class="iq-btn iq-tile" onclick="itinSelect(3,'mid')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M4 8h10M18 8h2M4 16h2M10 16h10"/><circle cx="16" cy="8" r="2.2"/><circle cx="8" cy="16" r="2.2"/></svg></span><span class="iq-lb" data-en="Mix it up" data-es="Equilibrado">Mix it up</span></button><button class="iq-btn iq-tile" onclick="itinSelect(3,'luxury')"><span class="iq-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px"><path d="M6 4h12l3 5-9 11L3 9l3-5z"/><path d="M3 9h18M9.5 9 12 20l2.5-11M9 4l-1 5M15 4l1 5"/></svg></span><span class="iq-lb" data-en="Splurge" data-es="Sin límite">Splurge</span></button>
       </div>
     </div>
 
@@ -14280,6 +14369,7 @@ function openItinPanel() {
 }
 
 function setItinMode(mode) {
+  try{ itinApplyLang(); }catch(e){}
   var ai  = document.getElementById('itinAIMode');
   var qz  = document.getElementById('itinQuiz');
   var bAI = document.getElementById('itinModeAI');
