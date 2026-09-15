@@ -10428,8 +10428,14 @@ document.addEventListener('click',function(e){
    (Capacitor) esto abre el navegador interno del sistema \u2014 el mismo que usan
    Instagram o Tripadvisor \u2014 que se cierra con un gesto y nunca saca al
    usuario. En la web, abre el sitio en una pesta\u00f1a. */
+var _mmWebLast={u:'',t:0};
 function mmOpenWeb(url){
   if(!url) return;
+  /* red de seguridad: si un enlace llega dos veces (el interceptor global y
+     el onclick de la propia tarjeta), no se abren dos ventanas. */
+  var ahora=Date.now();
+  if(url===_mmWebLast.u && (ahora-_mmWebLast.t)<900) return;
+  _mmWebLast={u:url,t:ahora};
   try{
     var C=window.Capacitor;
     if(C && C.Plugins && C.Plugins.Browser && C.Plugins.Browser.open){
@@ -10438,6 +10444,7 @@ function mmOpenWeb(url){
   }catch(e){}
   try{ window.open(url,'_blank','noopener'); }catch(e){ location.href=url; }
 }
+
 /* ══ ACCESOS DIRECTOS del ícono (manifest shortcuts) — /?go=week|map|livecams|ask ══ */
 document.addEventListener('DOMContentLoaded',function(){
   var g='';
@@ -17709,6 +17716,12 @@ document.addEventListener('keydown', function(e) {
 
   function openInAppSheet(url, label, desc, tip, photo){
     if(!url || url==='#'){ return; }
+    /* Sitio de terceros: va directo al navegador interno del sistema.
+       Antes entraba en la hoja de iframe, casi todos bloquean ser embebidos,
+       saltaba la pantalla de respaldo y su boton terminaba sacando al usuario
+       de la app. Tres pasos para acabar fuera. Con mmOpenWeb es uno y se
+       queda dentro. La hoja con iframe se reserva para nuestros dominios. */
+    try{ if(!isOwnSite(url)){ mmOpenWeb(url); return; } }catch(e){}
     _sheetUrl = url;
 
     // Reset state
