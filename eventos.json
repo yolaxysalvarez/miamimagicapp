@@ -4,6 +4,56 @@
   "_verificado": "Cartelera del 24 de septiembre al 17 de octubre de 2026. Cada evento verificado el 15 de septiembre en fuente oficial: kaseyacenter.com/calendar, miamidolphins.com, intermiamicf.com, arshtcenter.org, ihtfmiami.org y miamiandbeaches.com.",
   "semana": [
     {
+      "id": "spice26",
+      "scope": "local",
+      "d": "2026-08-01",
+      "d2": "2026-10-31",
+      "name": "Miami Spice Restaurant Months",
+      "name_es": "Miami Spice — Meses Gastronómicos",
+      "venue": "Restaurants citywide",
+      "venue_es": "Restaurantes en toda la ciudad",
+      "time": "Extended through Oct 31",
+      "time_es": "Extendido hasta el 31 de octubre",
+      "price": "$40 brunch and lunch · $50 or $65 dinner · Reserve from $95",
+      "price_es": "$40 almuerzo y brunch · $50 o $65 cena · Reserve desde $95",
+      "type": "Food",
+      "type_es": "Gastronomía",
+      "photo": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format",
+      "desc": "It was ending on 30 September and the tourism bureau extended it: select restaurants keep their Spice menus through October. Three-course prix-fixe at $40 brunch and lunch, $50 or $65 dinner, plus a new Reserve tier from $95. Twenty-fifth edition.",
+      "desc_es": "Iba a terminar el 30 de septiembre y el buró de turismo lo extendió: los restaurantes que quieran mantienen sus menús Spice durante octubre. Tres tiempos a precio fijo, $40 almuerzo y brunch, $50 o $65 cena, más un nivel nuevo Reserve desde $95. Es la edición veinticinco.",
+      "tip": "Not every restaurant extends. Check the official list before booking, and if the Spice menu is not on the table, ask for it — they are required to show it.",
+      "tip_es": "No todos los restaurantes se extienden. Revisa la lista oficial antes de reservar, y si el menú Spice no está en la mesa, pídelo: están obligados a mostrarlo.",
+      "tags": [
+        "Food"
+      ],
+      "link": "https://www.miamiandbeaches.com/deals/spice-restaurant-months"
+    },
+    {
+      "id": "parking1-26",
+      "scope": "local",
+      "d": "2026-08-01",
+      "d2": "2026-10-31",
+      "name": "$1 parking in Miami Beach",
+      "name_es": "Parqueo a $1 en Miami Beach",
+      "venue": "Miami Beach · lots, garages and street",
+      "venue_es": "Miami Beach · lotes, garajes y calle",
+      "time": "Through Oct 31",
+      "time_es": "Hasta el 31 de octubre",
+      "price": "$1 an hour",
+      "price_es": "$1 la hora",
+      "type": "Deal",
+      "type_es": "Ganga",
+      "photo": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format",
+      "desc": "One dollar an hour in municipal lots, garages and street spaces, through the ParkMobile app. Three discounted hours per session, up to 45 hours over the promotion.",
+      "desc_es": "Un dólar la hora en lotes municipales, garajes y espacios de calle, a través de la app ParkMobile. Tres horas con descuento por sesión, hasta 45 horas durante toda la promoción.",
+      "tip": "This is the cheapest parking in Miami Beach all year. It pairs with dinner: park for three hours for three dollars.",
+      "tip_es": "Es el parqueo más barato de Miami Beach en todo el año. Combina con la cena: tres horas por tres dólares.",
+      "tags": [
+        "Deal"
+      ],
+      "link": "https://www.miamiandbeaches.com/deals/spice-restaurant-months"
+    },
+    {
       "id": "ihtf-hamlet",
       "scope": "local",
       "d": "2026-09-24",
@@ -186,6 +236,28 @@
     }
   ],
   "mes": [
+    {
+      "id": "ms1",
+      "photo": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format",
+      "type": "Food",
+      "type_es": "Gastronomía",
+      "ac": "#FF4D35",
+      "dTop": "OCT",
+      "dBig": "1–31",
+      "dBot": "MÁS",
+      "end": "2026-10-31",
+      "name": "Miami Spice extended into October",
+      "name_es": "Miami Spice se extiende a octubre",
+      "venue": "Restaurants citywide",
+      "venue_es": "Restaurantes en toda la ciudad",
+      "desc": "It was due to end on 30 September. Select restaurants are keeping their Spice menus through October: $40 brunch and lunch, $50 or $65 dinner, plus a new Reserve tier from $95. Check the official list, because not every restaurant extends.",
+      "desc_es": "Iba a terminar el 30 de septiembre. Los restaurantes que quieran mantienen sus menús Spice durante octubre: $40 almuerzo y brunch, $50 o $65 cena, y un nivel nuevo Reserve desde $95. Revisa la lista oficial, porque no todos se extienden.",
+      "time": "Through Oct 31",
+      "time_es": "Hasta el 31 de octubre",
+      "price": "$40–95",
+      "free": false,
+      "link": "https://www.miamiandbeaches.com/deals/spice-restaurant-months"
+    },
     {
       "id": "oc1",
       "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
