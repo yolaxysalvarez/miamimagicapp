@@ -848,6 +848,16 @@ body.dark-mode .rcat-lbl{color:rgba(255,255,255,.55);}
 .ev-stat-chip{position:absolute;top:13px;left:13px;z-index:3;font:800 .6rem 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#08172E;background:rgba(255,209,102,.94);border-radius:3px;padding:4px 10px;backdrop-filter:blur(4px);}
 .ev-cardh .rcardh-metarow{flex-direction:column;align-items:flex-start;gap:3px;}
 .ev-cardh .ev-cost{color:rgba(255,255,255,.62);}
+/* La tarjeta del calendario anual lleva una línea que las demás no tienen,
+   la de la fecha, y su caja de texto se quedaba en 134px cuando necesitaba
+   hasta 216. Por eso la descripción se partía contra el borde de abajo.
+   Se le quita alto a la foto y se le da al texto, manteniendo los 385px
+   de la tarjeta para que la fila siga pareja. */
+.ev-cardh .rcardh-photo{height:168px!important;}
+.ev-cardh .rcardh-info{height:auto!important;min-height:217px!important;justify-content:flex-start;}
+.ev-cardh .rcardh-name{-webkit-line-clamp:2;}
+.ev-cardh .rcardh-desc{-webkit-line-clamp:3;}
+.ev-cardh .rcardh-fade{height:168px!important;}
 .m-hi{margin:0 0 14px;padding:0;list-style:none;}
 .m-hi li{position:relative;padding-left:17px;margin-bottom:6px;font:500 .8rem/1.55 'DM Sans',sans-serif;color:#444;}
 .m-hi li:last-child{margin-bottom:0;}
@@ -6743,6 +6753,22 @@ function renderRestCards(list){
 }
 
 /* ===== PROTOTYPE: horizontal card, full-bleed photo fading into text zone ===== */
+/* El carrusel del inicio enseñaba siempre los ocho primeros de la lista, así
+   que la app parecía la misma todos los días aunque tuviera 96 restaurantes.
+   Ahora la ventana avanza un día por vez: cada jornada salen ocho distintos y
+   en doce días han pasado todos. No es aleatorio a propósito — dentro del
+   mismo día el orden no cambia, para que no se mueva bajo el dedo. */
+function mmRotarDia(lista, cuantos){
+  try{
+    if(!lista || lista.length<=cuantos) return lista||[];
+    var d=new Date();
+    var dia=Math.floor((d - new Date(d.getFullYear(),0,0))/86400000);
+    var ini=(dia*cuantos)%lista.length;
+    var out=[];
+    for(var i=0;i<cuantos;i++) out.push(lista[(ini+i)%lista.length]);
+    return out;
+  }catch(e){ return lista.slice(0,cuantos); }
+}
 function renderRestCardsHorizontal(list){
   var L = typeof lang !== 'undefined' ? lang : 'en';
   return list.map(function(r){
@@ -7034,7 +7060,7 @@ function renderRest(){
   const filt=D.restaurants;
   var filtZ=zoneFilter(filt);
   if(!filtZ.length) return '<section class="sec fade" id="sec-rest">'+sHdr('rest')+emptyZone()+'</section>';
-  var preview=renderRestCardsHorizontal(filtZ.slice(0,8));
+  var preview=renderRestCardsHorizontal(mmRotarDia(filtZ,8));
   var all=renderRestCards(filtZ);
   var verTodos=filtZ.length>3?'<div class="ver-todos-wrap"><button class="ver-todos-btn" onclick="toggleFullGrid(\'rest-full\',\'rest-hrow\',this)">'+n('See all','Ver todos')+' ('+filtZ.length+') →</button></div>':'';
   return '<section class="sec fade" id="sec-rest">'+sHdr('rest')+buildPromo()+'<div class="h-row" id="rest-hrow">'+preview+'</div>'+verTodos+'<div class="full-grid-rest" id="rest-full">'+all+'</div></section>';
@@ -10112,6 +10138,39 @@ function mmSeaTVStart(){
   if(_mmSeaTimer){ clearInterval(_mmSeaTimer); _mmSeaTimer=null; }
   mmSeaTVPaint();
 }
+
+/* ── REFRESCO DE LO QUE CAMBIA CON LA HORA ─────────────────────────────────
+   La franja marina se calculaba una sola vez al abrir y no se volvía a tocar:
+   si la app quedaba abierta, o se volvía a ella al rato, seguía mostrando el
+   sol, la marea y el oleaje de horas antes. En el teléfono es lo normal —
+   volver a la app no recarga la página — así que el dato envejecía sin aviso.
+   Ahora todo lo vivo se rehace cada cuarto de hora y, sobre todo, en cuanto
+   la app vuelve al frente.                                                  */
+(function(){
+  var _ult = 0;
+  function refrescar(motivo){
+    var ahora = Date.now();
+    if(ahora - _ult < 60000) return;      /* nunca más de una vez por minuto */
+    _ult = ahora;
+    try{ if(typeof seaLoad==='function') seaLoad(); }catch(e){}
+    try{ if(typeof mmNowRender==='function') mmNowRender(); }catch(e){}
+    try{ if(typeof mmTickerBuild==='function') mmTickerBuild(); }catch(e){}
+    try{ if(typeof wxLoad==='function') wxLoad(); }catch(e){}
+  }
+  setInterval(function(){ refrescar('reloj'); }, 900000);            /* 15 min */
+  document.addEventListener('visibilitychange', function(){
+    if(!document.hidden) refrescar('vuelve al frente');
+  });
+  window.addEventListener('focus', function(){ refrescar('foco'); });
+  try{
+    /* en la app nativa, el evento propio de Capacitor */
+    if(window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App){
+      window.Capacitor.Plugins.App.addListener('appStateChange', function(st){
+        if(st && st.isActive) refrescar('capacitor');
+      });
+    }
+  }catch(e){}
+})();
 function seaLoad(){
   var el=document.getElementById('seaStrip')||document.createElement('div');
   var ES=(typeof lang!=='undefined'&&lang==='es');
@@ -10119,7 +10178,7 @@ function seaLoad(){
     +'&current=wave_height,wind_wave_height&timezone=America/New_York';
   var sky='https://api.open-meteo.com/v1/forecast?latitude=25.77&longitude=-80.19'
     +'&current=windspeed_10m&daily=sunrise,sunset,precipitation_probability_max'
-    +'&windspeed_unit=mph&timezone=America/New_York&forecast_days=1';
+    +'&windspeed_unit=mph&timezone=America/New_York&forecast_days=2';
   function hhmm(iso){
     try{
       var d=new Date(iso), h=d.getHours(), m=d.getMinutes();
@@ -10154,8 +10213,26 @@ function seaLoad(){
       push(pacc,'rain', ES?'LLUVIA':'RAIN', pr+'%', rsub);
     }catch(e){}
     try{
-      push('#FFD166','sun', ES?'ATARDECER':'SUNSET', hhmm(s.daily.sunset[0]),
-        (ES?'amanece ':'sunrise ')+hhmm(s.daily.sunrise[0])+(ES?' · hora dorada ~30 min antes':' · golden hour ~30 min before'));
+      /* Esto anunciaba el atardecer a todas horas, también a las once de la
+         noche, cuando ya había pasado. Ahora mira el reloj: antes de que
+         caiga el sol habla del atardecer; después, del amanecer de mañana. */
+      var ahora=new Date();
+      var puesta=new Date(s.daily.sunset[0]);
+      var salida=new Date(s.daily.sunrise[0]);
+      if(ahora < salida){
+        push('#FFD166','sun', ES?'AMANECE':'SUNRISE', hhmm(s.daily.sunrise[0]),
+          (ES?'se pone ':'sets ')+hhmm(s.daily.sunset[0]));
+      } else if(ahora < puesta){
+        var falta=Math.round((puesta-ahora)/60000);
+        var sub = falta<=90
+          ? (ES?('hora dorada en ~'+Math.max(0,falta-30)+' min'):('golden hour in ~'+Math.max(0,falta-30)+' min'))
+          : (ES?'hora dorada ~30 min antes':'golden hour ~30 min before');
+        push('#FFD166','sun', ES?'ATARDECER':'SUNSET', hhmm(s.daily.sunset[0]), sub);
+      } else {
+        var manana = (s.daily.sunrise[1]||s.daily.sunrise[0]);
+        push('#FFD166','sun', ES?'AMANECE MAÑANA':'SUNRISE TOMORROW', hhmm(manana),
+          (ES?'el sol se puso a las ':'sun set at ')+hhmm(s.daily.sunset[0]));
+      }
     }catch(e){}
     if(wv!=null){
       var ftv=wv*3.28084;
@@ -11484,7 +11561,7 @@ function attachListeners(){
       var filtered=zoneFilter(activeFlt==='all'?D.restaurants:D.restaurants.filter(function(r){return r.filter===activeFlt;}));
       var hrow=document.getElementById('rest-hrow');
       var full=document.getElementById('rest-full');
-      if(hrow) hrow.innerHTML=renderRestCards(filtered.slice(0,8));
+      if(hrow) hrow.innerHTML=renderRestCards(mmRotarDia(filtered,8));
       if(full) full.innerHTML=renderRestCards(filtered);
       // Update ver todos count
       var vt=document.querySelector('.ver-todos-btn');
