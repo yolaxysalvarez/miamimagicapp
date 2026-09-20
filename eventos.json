@@ -348,5 +348,8 @@
     }
   ],
   "quitar_semana": [],
-  "quitar_mes": []
+  "quitar_mes": [],
+  "_anuales": "Calendario anual, el de 'Eventos imperdibles'. Mismo criterio: por id (ae1, ae2...) reemplaza o agrega. Campos: id, d, d2, month, name, name_es, venue, venue_es, desc, desc_es.",
+  "anuales": [],
+  "quitar_anuales": []
 }

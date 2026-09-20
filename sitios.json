@@ -1,0 +1,34 @@
+{
+  "_como_usar": "Este archivo corrige las fichas de la app sin pasar por Apple: restaurantes, hoteles, vida nocturna, playas, museos, lugares y teatros. Corrige POR CAMPOS: lo que pongas sustituye solo ese campo de esa ficha, el resto se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
+  "updated": "2026-09-17",
+
+  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo).",
+
+  "restaurantes": {
+    "r16": { "photo_url": "https://youtu.be/7miwoX4qiDg" },
+    "r99": { "photo_url": "https://youtu.be/4XOSsAGfTeM" },
+    "r76": { "photo_url": "https://youtu.be/H3_xFwbRCCs" },
+    "r17": { "photo_url": "https://youtu.be/KwmdPgm_azI" },
+    "r101": { "photo_url": "https://youtu.be/CnK5f6k62Fk" },
+    "r34": { "photo_url": "https://youtu.be/cMcjduVQ_Lw" },
+    "r61": { "photo_url": "https://youtu.be/HpNgTQxfH6E" },
+    "r78": { "photo_url": "https://youtu.be/PY2xL1rdRDw" }
+  },
+
+  "hoteles": {},
+  "noche": {},
+  "playas": {},
+  "museos": {},
+  "lugares": {},
+  "teatros": {},
+
+  "_ejemplo": {
+    "restaurantes": {
+      "r34": {
+        "photo_url": "https://youtu.be/ID_DEL_VIDEO",
+        "hrs": "Mon–Thu 4–10 PM · Fri–Sat 4–11 PM · Sun 4–10 PM",
+        "price": "$$$"
+      }
+    }
+  }
+}

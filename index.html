@@ -8122,6 +8122,9 @@ function mmAplicarEventos(d){
     if(typeof MM_MONTH!=='undefined' && MM_MONTH){
       fusiona(MM_MONTH, d.mes); quita(MM_MONTH, d.quitar_mes);
     }
+    if(typeof MM_ANUAL!=='undefined' && MM_ANUAL){
+      fusiona(MM_ANUAL, d.anuales); quita(MM_ANUAL, d.quitar_anuales);
+    }
   }catch(e){ return false; }
   return tocado;
 }
@@ -8132,6 +8135,7 @@ function mmRedibujarEventos(){
     var abW=!!(pw && pw.classList.contains('open'));
     var abM=!!(pm && pm.classList.contains('open'));
     el.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+renderEvMap();
+    try{ if(typeof renderEvents==='function') renderEvents(); }catch(e){}
     try{ mmEventLayout(); }catch(e){}
     try{ mmBizMount(); }catch(e){}
     try{ mmTopMount(); }catch(e){}
@@ -8153,6 +8157,66 @@ function mmRedibujarEventos(){
         if(!d) return;
         try{ localStorage.setItem('mm_eventos',JSON.stringify(d)); }catch(e){}
         if(mmAplicarEventos(d)) mmRedibujarEventos();
+      })['catch'](function(){});
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',traer);
+  else traer();
+})();
+
+/* ── FICHAS DESDE EL DOMINIO ───────────────────────────────────────────────
+   Los restaurantes, hoteles y demás fichas vivían solo dentro de este
+   archivo, así que añadir el video de YouTube de un local, corregir un
+   horario o cambiar un precio obligaba a compilar y pasar por Apple.
+   Ahora se puede desde /sitios.json.
+
+   Es una corrección por CAMPOS, no un reemplazo: lo que pongas sustituye
+   solo ese campo de esa ficha y el resto se queda como está. Solo DATOS.  */
+var MM_SITIOS_MAPA = {
+  restaurantes: 'restaurants', hoteles: 'hotels', noche: 'nightlife',
+  playas: 'beaches', museos: 'museums', lugares: 'places', teatros: 'theaters'
+};
+function mmAplicarSitios(d){
+  if(!d || typeof d!=='object' || typeof D==='undefined' || !D) return false;
+  var tocado=false;
+  for(var clave in MM_SITIOS_MAPA){
+    if(!d[clave] || typeof d[clave]!=='object') continue;
+    var lista=D[MM_SITIOS_MAPA[clave]];
+    if(!lista || !lista.length) continue;
+    for(var id in d[clave]){
+      var campos=d[clave][id];
+      if(!campos || typeof campos!=='object') continue;
+      for(var i=0;i<lista.length;i++){
+        if(lista[i] && lista[i].id===id){
+          for(var k in campos){
+            if(k==='id') continue;                 /* el id no se toca */
+            lista[i][k]=campos[k];
+          }
+          tocado=true; break;
+        }
+      }
+    }
+  }
+  return tocado;
+}
+function mmRedibujarSitios(){
+  /* se redibuja solo lo que esté montado; cada uno falla solo si no existe */
+  var fns=['renderRest','renderRestCards','renderRestCardsHorizontal','renderHotels',
+           'renderNight','renderBeach','renderMuseum','renderPlace','renderTheater',
+           'renderExploreGrid','renderAll'];
+  for(var i=0;i<fns.length;i++){
+    try{ if(typeof window[fns[i]]==='function') window[fns[i]](); }catch(e){}
+  }
+}
+(function(){
+  try{ var g=localStorage.getItem('mm_sitios'); if(g) mmAplicarSitios(JSON.parse(g)); }catch(e){}
+  function traer(){
+    var base=(typeof MM_API!=='undefined' && MM_API) ? MM_API : '';
+    fetch(base+'/sitios.json?t='+Date.now(),{cache:'no-store'})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if(!d) return;
+        try{ localStorage.setItem('mm_sitios',JSON.stringify(d)); }catch(e){}
+        if(mmAplicarSitios(d)) mmRedibujarSitios();
       })['catch'](function(){});
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',traer);
@@ -8650,12 +8714,10 @@ function twxOpen(url, title){
   window.open(url, '_blank', 'noopener');
 }
 
-function renderEvents(){
-  var L = typeof lang !== 'undefined' ? lang : 'en';
-  var title = L === 'es' ? 'Calendario de Miami' : 'Miami Events Calendar';
-  var sub = L === 'es' ? 'Eventos anuales imperdibles' : 'Annual events you cannot miss';
-
-  var annualEvents = [
+/* El calendario anual vivía DENTRO de renderEvents, así que se reconstruía en
+   cada dibujado y no había forma de corregirlo sin compilar. Ahora es global
+   y se puede actualizar desde /eventos.json, igual que el resto. */
+var MM_ANUAL = [
     {id:'ae1',d:'2027-01-15',d2:'2027-01-17',month:'JAN',name:'Art Deco Weekend',name_es:'Art Deco Weekend',venue:'Ocean Drive · South Beach',type:'Culture',
      img:'https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=500&q=72',
      desc:'Free festival celebrating Miami Beach Art Deco architecture. Tours, live music, vintage cars on Ocean Drive.',desc_es:'Festival gratuito celebrando la arquitectura Art Deco de Miami Beach.',when:'Jan 15–17, 2027 · 50th edition',when_es:'15–17 Ene, 2027 · 50ª edición',cost:'Free',cost_es:'Gratis',stat:'50,000+ visitors',stat_es:'50,000+ visitantes',
@@ -8728,7 +8790,14 @@ function renderEvents(){
      hi:['Galleries from 40+ countries at the Miami Beach Convention Center','Satellite fairs: Untitled on the sand, NADA, Design Miami, Scope','The whole city turns into an art fair for one week'],hi_es:['Galerías de más de 40 países en el Miami Beach Convention Center','Ferias satélite: Untitled en la arena, NADA, Design Miami, Scope','La ciudad entera se convierte en una feria de arte durante una semana'],
      tip:'You can do Art Week for almost nothing: gallery openings in Wynwood and the Design District are free all week, with drinks included. Buy one ticket to the main fair and spend the rest outside it.',tip_es:'Puedes vivir el Art Week casi sin gastar: las inauguraciones de galerías en Wynwood y el Design District son gratis toda la semana, con trago incluido. Compra una entrada a la feria principal y dedica el resto a lo de afuera.',
      link:'https://www.artbasel.com/miami-beach'},
-  ];
+  ];;
+
+function renderEvents(){
+  var L = typeof lang !== 'undefined' ? lang : 'en';
+  var title = L === 'es' ? 'Calendario de Miami' : 'Miami Events Calendar';
+  var sub = L === 'es' ? 'Eventos anuales imperdibles' : 'Annual events you cannot miss';
+
+  var annualEvents = MM_ANUAL;
   window.annualEvents = annualEvents;
 
   var cards = annualEvents.map(function(e){
