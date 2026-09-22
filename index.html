@@ -6213,6 +6213,12 @@ function openItemModal(obj,type,link,btnLabel){
       if(_mi){ _mi.style.backgroundImage='url('+((typeof mmMedia==='function')?mmMedia(obj.cover):obj.cover)+')';
                _mi.style.backgroundSize='cover'; _mi.style.backgroundPosition='center';
                _mi.innerHTML='<div class="modal-img-ov"></div>'; }
+    } else if(obj.hero){
+      /* foto de portada del negocio (la tarjeta sigue usando su logo) */
+      var _mh=document.getElementById('mImg');
+      if(_mh){ _mh.style.backgroundImage='url('+((typeof mmMedia==='function')?mmMedia(obj.hero):obj.hero)+')';
+               _mh.style.backgroundSize='cover'; _mh.style.backgroundRepeat='no-repeat';
+               _mh.style.backgroundPosition=obj.hero_pos||'center'; _mh.innerHTML='<div class="modal-img-ov"></div>'; }
     } else if(_isLogo){
       /* logo transparente centrado sobre navy con un brillo dorado y coral */
       var _ml=document.getElementById('mImg');
