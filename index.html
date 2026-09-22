@@ -2540,23 +2540,32 @@ body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
 .bz-grid{display:grid;grid-template-columns:1fr;gap:10px;}
 @media(min-width:700px){.bz-grid{grid-template-columns:repeat(2,1fr);}}
 @media(min-width:1100px){.bz-grid{grid-template-columns:repeat(3,1fr);}}
-.bzb{display:flex;align-items:center;gap:14px;padding:16px;border-radius:14px;cursor:pointer;background:#fff;border:1px solid rgba(14,27,48,.09);box-shadow:0 10px 26px -18px rgba(14,27,48,.35);transition:border-color .2s,transform .2s;}
+
+.bzb{position:relative;display:flex;align-items:center;gap:16px;padding:18px;border-radius:18px;cursor:pointer;overflow:hidden;
+  background:rgba(255,255,255,.42);-webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);
+  border:1px solid rgba(255,255,255,.85);box-shadow:0 14px 34px -22px rgba(14,27,48,.45),inset 0 1px 0 rgba(255,255,255,.9);
+  transition:transform .2s,box-shadow .2s;}
+.bzb::before{content:'';position:absolute;left:-40px;top:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(255,209,102,.28),rgba(255,209,102,0) 68%);pointer-events:none;}
 .bzb:active{transform:scale(.99);}
-@media(hover:hover){.bzb:hover{border-color:rgba(14,27,48,.22);}}
-.bzb-ic{width:46px;height:46px;flex-shrink:0;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#0E1B30;color:#FFD166;}
+@media(hover:hover){.bzb:hover{box-shadow:0 18px 40px -22px rgba(14,27,48,.55),inset 0 1px 0 rgba(255,255,255,.9);}}
+.bzb-ic{position:relative;width:50px;height:50px;flex-shrink:0;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1px solid rgba(212,160,23,.55);color:#0E1B30;background:rgba(255,255,255,.35);}
 .bzb-ic svg{width:21px;height:21px;}
+.bzb-logo{width:66px;height:66px;border:none;background:var(--lg) center/contain no-repeat;}
 .bzb-tx{flex:1;min-width:0;display:flex;flex-direction:column;}
-.bzb-tag{font:400 .82rem 'Bebas Neue',sans-serif;letter-spacing:.13em;color:color-mix(in srgb,var(--bz-ac,#00806F) 60%,#0B1526);}
-.bzb-name{margin:2px 0 3px;font:600 1.06rem/1.25 'Playfair Display',serif;color:#0E1B30;}
-.bzb-desc{font:400 .78rem/1.45 'DM Sans',sans-serif;font-style:normal;color:rgba(14,27,48,.62);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
-.bzb-addr{margin-top:5px;font:600 .7rem 'DM Sans',sans-serif;color:rgba(14,27,48,.45);}
-.bzb-go{color:rgba(14,27,48,.3);flex-shrink:0;}
-[data-theme="dark"] .bzb{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);}
-[data-theme="dark"] .bzb-ic{background:rgba(255,209,102,.1);border:1px solid rgba(255,209,102,.3);}
-[data-theme="dark"] .bzb-tag{color:var(--bz-ac,#00C9B1);}
+.bzb-tag{font:400 .84rem 'Bebas Neue',sans-serif;letter-spacing:.14em;color:#B07800;}
+.bzb-name{margin:2px 0 4px;font:600 1.12rem/1.25 'Playfair Display',serif;color:#0E1B30;}
+.bzb-desc{font:400 .8rem/1.5 'DM Sans',sans-serif;font-style:normal;color:rgba(14,27,48,.66);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.bzb-addr{margin-top:7px;padding-top:7px;border-top:1px solid rgba(14,27,48,.08);font:600 .7rem 'DM Sans',sans-serif;letter-spacing:.02em;color:rgba(14,27,48,.5);}
+.bzb-go{color:rgba(14,27,48,.32);flex-shrink:0;}
+[data-theme="dark"] .bzb{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);box-shadow:0 14px 34px -22px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.12);}
+[data-theme="dark"] .bzb-ic{color:#FFD166;background:rgba(255,255,255,.04);border-color:rgba(255,209,102,.4);}
+[data-theme="dark"] .bzb-logo{background:var(--lgd,var(--lg)) center/contain no-repeat;border:none;}
+[data-theme="dark"] .bzb-tag{color:#FFD166;}
 [data-theme="dark"] .bzb-name{color:#fff;}
-[data-theme="dark"] .bzb-desc{color:rgba(255,255,255,.62);}
-[data-theme="dark"] .bzb-addr,[data-theme="dark"] .bzb-go{color:rgba(255,255,255,.4);}
+[data-theme="dark"] .bzb-desc{color:rgba(255,255,255,.64);}
+[data-theme="dark"] .bzb-addr{border-color:rgba(255,255,255,.1);}
+[data-theme="dark"] .bzb-addr,[data-theme="dark"] .bzb-go{color:rgba(255,255,255,.42);}
+
 @media(min-width:900px){.bz-rail>*{flex-basis:320px;height:420px;}}
 /* ficha abierta de una propiedad */
 .mm-lst-price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:4px 0 12px;border-bottom:1px solid rgba(14,27,48,.1);}
@@ -3373,6 +3382,10 @@ body{padding-bottom:0;}
       <a href="#" onclick="go('sec-water');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-teal"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.14s"><path d="M3 18h18l-2 3H5z"/><path d="M4.5 18l1.5-5.5h12L19.5 18"/><path d="M12 3v9"/><path d="M12 3l5 6.5H12z"/></svg></div>
         <span data-en="Boating and Fishing" data-es="Botes y Pesca">Botes y Pesca</span>
+      </a>
+      <a href="#" id="hm-biz" onclick="go('sec-biz');toggleHM();return false;" class="hm-link hm-biz-off">
+        <div class="hm-ico-wrap c-gold"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.145s"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-5h6v5"/><path d="M9 10h.01M15 10h.01M9 13h.01M15 13h.01"/></svg></div>
+        <span data-en="Miami Business" data-es="Negocios de Miami">Negocios de Miami</span>
       </a>
       <a href="#" onclick="goWeek();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-teal"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.15s"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
@@ -5855,6 +5868,7 @@ document.addEventListener('click',function(e){
 function setModalImg(bg,emoji,photoId){
   const mi=document.getElementById('mImg');
   mi.className='modal-img '+bg;
+  mi.style.backgroundColor=''; mi.style.backgroundRepeat='';
   var photoUrl=photoId?sPhoto(photoId):'';
   if(photoUrl){
     mi.style.backgroundImage='url('+photoUrl+')';
@@ -6052,6 +6066,27 @@ function mmGalOpen(i){
 }
 function mmGalClose(){ var b=document.getElementById('mmGalView'); if(b) b.classList.remove('on'); }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') mmGalClose(); });
+function mmBizContactRows(o){
+  /* Instagram (mensaje directo), teléfono y email como filas de texto */
+  var ES=(typeof lang!=='undefined'&&lang==='es'), out='';
+  var go='<svg class="m-row-go" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>';
+  var ic=function(p){ return '<svg class="m-row-webico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+p+'</svg>'; };
+  var trk="try{mmTrack('biz_contact','"+o.id+"')}catch(e){}";
+  if(o.ig){
+    var u=String(o.ig).replace(/^@/,'');
+    out+='<a class="m-row mm-ag-row" href="https://ig.me/m/'+u+'" target="_blank" rel="noopener" data-native="1" onclick="event.stopPropagation();'+trk+'">'
+      +ic('<path d="M4 5h16v11H8l-4 4z"/>')+'<span class="m-row-webtx">'+(ES?'Env\u00edanos un mensaje':'Send a message')+' <i>\u00b7 Instagram @'+u+'</i></span>'+go+'</a>';
+  }
+  if(o.phone){
+    out+='<a class="m-row mm-ag-row" href="tel:'+String(o.phone).replace(/[^\d+]/g,'')+'" data-native="1" onclick="event.stopPropagation();'+trk+'">'
+      +ic('<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>')+'<span class="m-row-webtx">'+(ES?'Llamar':'Call')+' <i>\u00b7 '+o.phone+'</i></span>'+go+'</a>';
+  }
+  if(o.email){
+    out+='<a class="m-row mm-ag-row" href="mailto:'+o.email+'" data-native="1" onclick="event.stopPropagation();'+trk+'">'
+      +ic('<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>')+'<span class="m-row-webtx">Email <i>\u00b7 '+o.email+'</i></span>'+go+'</a>';
+  }
+  return out;
+}
 function mmBizAgentCard(o){
   /* "Ofrecido por": el realtor vive dentro de la propiedad, después de las
      fotos. Filas de texto (nunca botones): web dentro de la app, mensaje
@@ -6155,25 +6190,35 @@ function openItemModal(obj,type,link,btnLabel){
   } else if(type==='biz'){
     cat=n(obj.type,obj.type_es)||(lang==='es'?'Negocio':'Business');
     title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
-    if(obj.cover || obj.dm){
+    if(obj.cover){
       /* propiedad: precio, zona (nunca la dirección), lo que incluye,
          galería y la fila de mensaje. Sin botón y sin Google Maps. */
       rows=mmBizListingRows(obj);
       link=''; btnLabel='';
     } else {
-    rows=mmAddrRow(obj.addr)
+    /* negocio / profesional: filas de texto, nunca botones */
+    rows=(obj.addr?mmAddrRow(obj.addr):'')
       +(obj.hrs?'<div class="m-row"> '+obj.hrs+'</div>':'')
-      +(obj.phone?'<div class="m-row"> '+obj.phone+'</div>':'')
-      +(obj.ig?'<div class="m-row"> @'+String(obj.ig).replace(/^@/,'')+'</div>':'');
-    link=link||obj.book||obj.web||('https://www.google.com/maps/search/'+encodeURIComponent(obj.name+' Miami'));
-    btnLabel=btnLabel||(obj.book?(lang==='es'?'Reservar \u2192':'Book \u2192'):(obj.web?(lang==='es'?'Visitar sitio \u2192':'Visit website \u2192'):t.mapsBtn));
+      +mmBizContactRows(obj);
+    if(obj.photos && obj.photos.length){
+      rows+=mmGalleryRow({photos:obj.photos.map(function(u){ return (typeof mmMedia==='function')?mmMedia(u):u; })});
     }
+    link=link||obj.book||obj.web||'';
+    btnLabel=btnLabel||(obj.book?(lang==='es'?'Reservar \u2192':'Book \u2192'):(lang==='es'?'Sitio web':'Website'));
+    }
+    var _isLogo=!!(obj.logo && !obj.cover);
     setModalImg(obj.bg||'bg-gold', obj.ini||obj.name.charAt(0), obj.id);
     if(obj.cover){
       var _mi=document.getElementById('mImg');
       if(_mi){ _mi.style.backgroundImage='url('+((typeof mmMedia==='function')?mmMedia(obj.cover):obj.cover)+')';
                _mi.style.backgroundSize='cover'; _mi.style.backgroundPosition='center';
                _mi.innerHTML='<div class="modal-img-ov"></div>'; }
+    } else if(_isLogo){
+      /* logo transparente centrado sobre navy con un brillo dorado y coral */
+      var _ml=document.getElementById('mImg');
+      if(_ml){ _ml.style.backgroundImage='url('+(obj.logo_dark||obj.logo)+'),radial-gradient(circle at 78% 18%,rgba(255,209,102,.30),rgba(255,209,102,0) 52%),radial-gradient(circle at 12% 100%,rgba(255,77,53,.22),rgba(255,77,53,0) 48%),linear-gradient(160deg,#14253F,#0B1526)';
+               _ml.style.backgroundSize='auto 70%,cover,cover,cover'; _ml.style.backgroundRepeat='no-repeat';
+               _ml.style.backgroundPosition='34% center,center,center,center'; _ml.innerHTML=''; }
     }
   } else if(type==='place'){
     cat=lang==='es'?'Lugar':'Landmark'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
@@ -10785,7 +10830,9 @@ function bizCard(b,ES){
   }
   /* NEGOCIO / PROFESIONAL */
   return '<div class="bzb"'+tap+'>'
-    +'<span class="bzb-ic">'+bizIco(b.cat)+'</span>'
+    +(b.logo
+        ?'<span class="bzb-ic bzb-logo" style="--lg:url(\''+b.logo+'\');--lgd:url(\''+(b.logo_dark||b.logo)+'\')"></span>'
+        :'<span class="bzb-ic">'+bizIco(b.cat)+'</span>')
     +'<span class="bzb-tx"><span class="bzb-tag" style="--bz-ac:'+m.ac+'">'+tx('type')+'</span>'
     +'<b class="bzb-name">'+tx('name')+'</b>'
     +'<i class="bzb-desc">'+tx('desc')+'</i>'
@@ -10819,6 +10866,8 @@ function renderBiz(){
 function mmBizMount(){
   var el=document.getElementById('bizTop'); if(!el) return;
   try{ el.innerHTML=renderBiz(); }catch(e){ el.innerHTML=''; }
+  /* la fila del menú ☰ solo existe cuando la sección existe */
+  try{ var h=document.getElementById('hm-biz'); if(h) h.classList.toggle('hm-biz-off',!document.getElementById('sec-biz')); }catch(e){}
 }
 
 /* Idioma restaurado al abrir: sincroniza las etiquetas del toggle con el lang guardado */
@@ -20287,6 +20336,7 @@ body.mm-apple .mm-apple-hide{display:none !important;}
    Dentro de la app de iOS no se enlaza ni se menciona. */
 body.mm-apple a[href*="miamimagicdirectory"]{display:none !important;}
 body.mm-apple .biz-note{display:none !important;}
+#hm-biz.hm-biz-off{display:none !important;}
 .su-palm{width:40px;height:56px;margin:0 auto 10px;background:linear-gradient(160deg,#FF4E35,#FFCF65);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain;}
 /* App nativa: sin rebote horizontal al arrastrar (el vertical no se toca) */
 html,body{overscroll-behavior-x:none;}
