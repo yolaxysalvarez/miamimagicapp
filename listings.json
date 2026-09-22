@@ -1,0 +1,41 @@
+{
+  "updated": "2026-09-22",
+  "listings": [
+    {
+      "id": "bz2",
+      "cat": "realestate",
+      "top": true,
+      "active": true,
+      "name": "Efficiency for Rent",
+      "name_es": "Efficiency en renta",
+      "type": "For Rent",
+      "type_es": "En renta",
+      "desc": "Private efficiency with its own entrance and bathroom, kitchenette, air conditioning and parking. Internet and all utilities included.",
+      "desc_es": "Efficiency independiente con entrada y baño privados, kitchenette, aire acondicionado y parqueo. Internet y todos los servicios incluidos.",
+      "price": "$1,300/mo",
+      "price_es": "$1,300/mes",
+      "pnote2": "All utilities included",
+      "pnote2_es": "Todos los servicios incluidos",
+      "zone": "South Miami Heights",
+      "avail": "Available now",
+      "avail_es": "Disponible ya",
+      "feats": ["Private entrance", "Private bathroom", "Kitchenette", "Air conditioning", "Parking", "Internet included"],
+      "feats_es": ["Entrada privada", "Baño privado", "Kitchenette", "Aire acondicionado", "Parqueo", "Internet incluido"],
+      "cover": "fotos/mm-renta-smh-01.jpg",
+      "photos": [
+        "fotos/mm-renta-smh-01.jpg",
+        "fotos/mm-renta-smh-02.jpg",
+        "fotos/mm-renta-smh-03.jpg",
+        "fotos/mm-renta-smh-04.jpg",
+        "fotos/mm-renta-smh-05.jpg",
+        "fotos/mm-renta-smh-06.jpg",
+        "fotos/mm-renta-smh-07.jpg"
+      ],
+      "dm": "miamimagicapp",
+      "dmnote": "Message us for more photos, details, or to schedule a showing.",
+      "dmnote_es": "Escríbenos para más fotos, detalles o para coordinar una visita.",
+      "ini": "E",
+      "bg": "bg-gold"
+    }
+  ]
+}

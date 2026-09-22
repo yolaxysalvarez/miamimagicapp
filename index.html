@@ -2457,6 +2457,99 @@ body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
 [data-theme="dark"] .biz-sub{color:#FFD166;}
 [data-theme="dark"] .biz-sub.t2{color:#00C9B1;}
 [data-theme="dark"] .biz-note{color:rgba(255,255,255,.5);}
+.biz-card.biz-ph{flex-direction:column;gap:0;padding:0;overflow:hidden;}
+.biz-re-rail .biz-card.biz-ph{min-width:272px;max-width:300px;}
+.biz-ph-img{position:relative;width:100%;height:158px;background-size:cover;background-position:center;background-color:#E9DFD2;}
+.biz-price{position:absolute;left:10px;bottom:10px;background:#FF4D35;color:#fff;font:800 .82rem 'DM Sans',sans-serif;padding:5px 11px;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.25);}
+.biz-ph-cred{position:absolute;right:9px;bottom:9px;color:rgba(255,255,255,.85);font:600 .56rem 'DM Sans',sans-serif;letter-spacing:.04em;text-shadow:0 1px 3px rgba(0,0,0,.6);}
+.biz-card.biz-ph .biz-tx{padding:12px 14px 14px;}
+.biz-card.biz-ph .biz-type{margin:0 0 6px;}
+.mm-lst-price{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+.mm-lst-price b{font:800 1.18rem 'DM Sans',sans-serif;color:#FF4D35;}
+.mm-lst-price span{font-size:.84rem;opacity:.75;}
+.mm-lst-zone{display:flex;align-items:center;gap:7px;}
+.mm-lst-feats{list-style:none;margin:8px 0 10px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:7px 12px;}
+.mm-lst-feats li{display:flex;align-items:center;gap:7px;font:500 .86rem 'DM Sans',sans-serif;}
+.mm-lst-feats li svg{flex-shrink:0;color:#00806F;}
+[data-theme="dark"] .mm-lst-feats li svg{color:#00C9B1;}
+.mm-lst-dm{margin-top:6px;display:flex;align-items:center;gap:7px;color:var(--teal,#00C9B1);text-decoration:none;font-weight:600;}
+.mm-lst-dm .m-row-webtx{border-bottom:1px solid rgba(0,201,177,.45);padding-bottom:1px;}
+.mm-lst-dm .m-row-webtx i{font-style:normal;font-weight:500;opacity:.75;}
+.mm-lst-dmnote{font-size:.8rem;opacity:.7;margin-top:-2px;}
+/* ══ NEGOCIOS DE MIAMI — PREMIUM ══ */
+.bzs{display:flex;align-items:center;gap:12px;margin:22px 2px 12px;font-family:'Bebas Neue',sans-serif;}
+.bzs span{font-size:1.08rem;letter-spacing:.16em;color:#B07800;}
+.bzs i{flex:1;height:1px;background:linear-gradient(90deg,rgba(176,120,0,.45),rgba(176,120,0,0));}
+.bzs em{font-style:normal;font-size:.95rem;letter-spacing:.1em;color:rgba(14,27,48,.35);}
+.bzs.t2 span{color:#00806F;} .bzs.t2 i{background:linear-gradient(90deg,rgba(0,128,111,.45),rgba(0,128,111,0));}
+[data-theme="dark"] .bzs span{color:#FFD166;} [data-theme="dark"] .bzs i{background:linear-gradient(90deg,rgba(255,209,102,.4),rgba(255,209,102,0));}
+[data-theme="dark"] .bzs.t2 span{color:#00C9B1;} [data-theme="dark"] .bzs.t2 i{background:linear-gradient(90deg,rgba(0,201,177,.4),rgba(0,201,177,0));}
+[data-theme="dark"] .bzs em{color:rgba(255,255,255,.35);}
+.bz-rail{display:flex;gap:14px;overflow-x:auto;padding:2px 2px 14px;scroll-snap-type:x mandatory;scrollbar-width:none;}
+.bz-rail::-webkit-scrollbar{display:none;}
+.bz-rail>*{flex:0 0 295px;height:395px;scroll-snap-align:start;}
+/* propiedad */
+.bzp{position:relative;border-radius:18px;overflow:hidden;cursor:pointer;background:#0B1526;box-shadow:0 14px 34px -18px rgba(9,21,40,.55);isolation:isolate;transition:transform .22s cubic-bezier(.34,1.3,.64,1);}
+.bzp:active{transform:scale(.985);}
+.bzp-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:-2;transition:transform .6s ease;}
+@media(hover:hover){.bzp:hover .bzp-bg{transform:scale(1.04);}}
+.bzp::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,15,30,.34) 0%,rgba(6,15,30,0) 24%,rgba(6,15,30,0) 38%,rgba(6,15,30,.78) 66%,rgba(6,15,30,.97) 100%);}
+.bzp-top{position:absolute;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:center;}
+.bzp-count{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border-radius:4px;background:rgba(9,21,40,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:#fff;font:600 .72rem 'DM Sans',sans-serif;}
+.bzp-cred{color:rgba(255,255,255,.78);font:600 .58rem 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;text-shadow:0 1px 4px rgba(0,0,0,.6);}
+.bzp-body{position:absolute;left:0;right:0;bottom:0;padding:0 18px 18px;color:#fff;}
+.bzp-tag{display:block;padding-left:10px;border-left:3px solid #FF4D35;font:400 .9rem 'Bebas Neue',sans-serif;letter-spacing:.14em;color:#FF8A73;line-height:1.1;}
+.bzp-name{display:block;margin:9px 0 10px;font:600 1.42rem/1.15 'Playfair Display',serif;color:#fff;}
+.bzp-price{display:flex;align-items:baseline;gap:4px;white-space:nowrap;}
+.bzp-note{margin-top:4px;font:500 .76rem 'DM Sans',sans-serif;color:rgba(255,255,255,.7);}
+.bzp-price em{font:700 1.9rem/1 'Playfair Display',serif;font-style:normal;color:#fff;letter-spacing:-.01em;}
+.bzp-price small{font:500 .76rem 'DM Sans',sans-serif;color:rgba(255,255,255,.7);}
+.bzp-meta{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-top:13px;padding-top:12px;border-top:1px solid rgba(255,255,255,.16);font:600 .74rem 'DM Sans',sans-serif;color:rgba(255,255,255,.86);}
+.bzp-live{width:6px;height:6px;border-radius:50%;background:#00C9B1;margin-right:2px;}
+.bzp-sep{color:rgba(255,255,255,.35);}
+/* profesional de bienes raíces */
+.bza{position:relative;display:flex;flex-direction:column;padding:22px 20px 18px;border-radius:18px;cursor:pointer;overflow:hidden;background:linear-gradient(160deg,#12213A,#0B1526);border:1px solid rgba(255,209,102,.22);box-shadow:0 14px 34px -18px rgba(9,21,40,.55);color:#fff;transition:transform .22s cubic-bezier(.34,1.3,.64,1),border-color .22s;}
+.bza::before{content:'';position:absolute;top:-80px;right:-80px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,209,102,.16),rgba(255,209,102,0) 70%);pointer-events:none;}
+.bza:active{transform:scale(.985);}
+@media(hover:hover){.bza:hover{border-color:rgba(255,209,102,.5);}}
+.bza-mono{width:58px;height:58px;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,209,102,.55);font:600 1.7rem 'Playfair Display',serif;color:#FFD166;margin-bottom:auto;}
+.bza-tag{margin-top:22px;font:400 .9rem 'Bebas Neue',sans-serif;letter-spacing:.14em;color:#FFD166;}
+.bza-name{display:block;margin:6px 0 10px;font:600 1.34rem/1.2 'Playfair Display',serif;color:#fff;}
+.bza-desc{margin:0;font:400 .82rem/1.55 'DM Sans',sans-serif;color:rgba(255,255,255,.68);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;}
+.bza-foot{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,.12);font:600 .72rem 'DM Sans',sans-serif;color:rgba(255,255,255,.55);}
+.bza-go{display:inline-flex;align-items:center;gap:5px;color:#FFD166;}
+/* negocios y profesionales */
+.bz-grid{display:grid;grid-template-columns:1fr;gap:10px;}
+@media(min-width:700px){.bz-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1100px){.bz-grid{grid-template-columns:repeat(3,1fr);}}
+.bzb{display:flex;align-items:center;gap:14px;padding:16px;border-radius:14px;cursor:pointer;background:#fff;border:1px solid rgba(14,27,48,.09);box-shadow:0 10px 26px -18px rgba(14,27,48,.35);transition:border-color .2s,transform .2s;}
+.bzb:active{transform:scale(.99);}
+@media(hover:hover){.bzb:hover{border-color:rgba(14,27,48,.22);}}
+.bzb-ic{width:46px;height:46px;flex-shrink:0;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#0E1B30;color:#FFD166;}
+.bzb-ic svg{width:21px;height:21px;}
+.bzb-tx{flex:1;min-width:0;display:flex;flex-direction:column;}
+.bzb-tag{font:400 .82rem 'Bebas Neue',sans-serif;letter-spacing:.13em;color:color-mix(in srgb,var(--bz-ac,#00806F) 60%,#0B1526);}
+.bzb-name{margin:2px 0 3px;font:600 1.06rem/1.25 'Playfair Display',serif;color:#0E1B30;}
+.bzb-desc{font:400 .78rem/1.45 'DM Sans',sans-serif;font-style:normal;color:rgba(14,27,48,.62);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.bzb-addr{margin-top:5px;font:600 .7rem 'DM Sans',sans-serif;color:rgba(14,27,48,.45);}
+.bzb-go{color:rgba(14,27,48,.3);flex-shrink:0;}
+[data-theme="dark"] .bzb{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);}
+[data-theme="dark"] .bzb-ic{background:rgba(255,209,102,.1);border:1px solid rgba(255,209,102,.3);}
+[data-theme="dark"] .bzb-tag{color:var(--bz-ac,#00C9B1);}
+[data-theme="dark"] .bzb-name{color:#fff;}
+[data-theme="dark"] .bzb-desc{color:rgba(255,255,255,.62);}
+[data-theme="dark"] .bzb-addr,[data-theme="dark"] .bzb-go{color:rgba(255,255,255,.4);}
+@media(min-width:900px){.bz-rail>*{flex-basis:320px;height:420px;}}
+/* ficha abierta de una propiedad */
+.mm-lst-price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:4px 0 12px;border-bottom:1px solid rgba(14,27,48,.1);}
+.mm-lst-price b{font:700 1.9rem/1 'Playfair Display',serif;color:#0E1B30;letter-spacing:-.01em;}
+.mm-lst-price span{font:500 .82rem 'DM Sans',sans-serif;opacity:.7;}
+[data-theme="dark"] .mm-lst-price{border-color:rgba(255,255,255,.12);}
+[data-theme="dark"] .mm-lst-price b{color:#fff;}
+.mm-lst-zone{padding-top:12px;font-weight:600;}
+.mm-lst-feats{margin:12px 0 14px;padding:14px 0;border-top:1px solid rgba(14,27,48,.1);border-bottom:1px solid rgba(14,27,48,.1);gap:10px 14px;}
+[data-theme="dark"] .mm-lst-feats{border-color:rgba(255,255,255,.12);}
+
 
 /* ══ MIAMI AHORA — smart hero card (flotante, sin caja) ══
    Fondo por defecto de la app = crema (#FFF0E0) → tinta navy;
@@ -5941,6 +6034,32 @@ function mmGalOpen(i){
 }
 function mmGalClose(){ var b=document.getElementById('mmGalView'); if(b) b.classList.remove('on'); }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') mmGalClose(); });
+function mmBizListingRows(o){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var ck='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>';
+  var pin='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
+  var out='';
+  if(o.price) out+='<div class="m-row mm-lst-price"><b>'+(ES?(o.price_es||o.price):o.price)+'</b>'
+    +(o.pnote2?'<span>'+(ES?(o.pnote2_es||o.pnote2):o.pnote2)+'</span>':'')+'</div>';
+  if(o.zone) out+='<div class="m-row mm-lst-zone">'+pin+'<span>'+o.zone+(o.avail?' \u00b7 '+(ES?(o.avail_es||o.avail):o.avail):'')+'</span></div>';
+  var f=(ES?(o.feats_es||o.feats):o.feats)||[];
+  if(f.length) out+='<ul class="mm-lst-feats">'+f.map(function(x){ return '<li>'+ck+'<span>'+x+'</span></li>'; }).join('')+'</ul>';
+  if(o.photos && o.photos.length){
+    out+=mmGalleryRow({photos:o.photos.map(function(u){ return (typeof mmMedia==='function')?mmMedia(u):u; })});
+  }
+  if(o.dm){
+    var u=String(o.dm).replace(/^@/,'');
+    /* data-native: el mensaje directo solo existe dentro de Instagram */
+    out+='<a class="m-row mm-lst-dm" href="https://ig.me/m/'+u+'" target="_blank" rel="noopener" data-native="1"'
+      +' onclick="event.stopPropagation();try{mmTrack(\'biz_dm\',\''+o.id+'\')}catch(e){}">'
+      +'<svg class="m-row-webico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg>'
+      +'<span class="m-row-webtx">'+(ES?'Env\u00edanos un mensaje':'Send us a message')+' <i>\u00b7 Instagram @'+u+'</i></span>'
+      +'<svg class="m-row-go" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>'
+      +'</a>';
+    if(o.dmnote) out+='<div class="m-row mm-lst-dmnote">'+(ES?(o.dmnote_es||o.dmnote):o.dmnote)+'</div>';
+  }
+  return out;
+}
 function openItemModal(obj,type,link,btnLabel){
   MM_GAL=[];
   const t=T(); let cat,title,desc,rows='',upHtml='',tipHtml='';
@@ -5977,14 +6096,27 @@ function openItemModal(obj,type,link,btnLabel){
     link=link||obj.link; btnLabel=btnLabel||t.gamesBtn; setModalImg(obj.bg,obj.emoji,obj.id);
   } else if(type==='biz'){
     cat=n(obj.type,obj.type_es)||(lang==='es'?'Negocio':'Business');
-    title=obj.name; desc=n(obj.desc,obj.desc_es);
+    title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
+    if(obj.cover || obj.dm){
+      /* propiedad: precio, zona (nunca la dirección), lo que incluye,
+         galería y la fila de mensaje. Sin botón y sin Google Maps. */
+      rows=mmBizListingRows(obj);
+      link=''; btnLabel='';
+    } else {
     rows=mmAddrRow(obj.addr)
       +(obj.hrs?'<div class="m-row"> '+obj.hrs+'</div>':'')
       +(obj.phone?'<div class="m-row"> '+obj.phone+'</div>':'')
       +(obj.ig?'<div class="m-row"> @'+String(obj.ig).replace(/^@/,'')+'</div>':'');
     link=link||obj.book||obj.web||('https://www.google.com/maps/search/'+encodeURIComponent(obj.name+' Miami'));
     btnLabel=btnLabel||(obj.book?(lang==='es'?'Reservar \u2192':'Book \u2192'):(obj.web?(lang==='es'?'Visitar sitio \u2192':'Visit website \u2192'):t.mapsBtn));
+    }
     setModalImg(obj.bg||'bg-gold', obj.ini||obj.name.charAt(0), obj.id);
+    if(obj.cover){
+      var _mi=document.getElementById('mImg');
+      if(_mi){ _mi.style.backgroundImage='url('+((typeof mmMedia==='function')?mmMedia(obj.cover):obj.cover)+')';
+               _mi.style.backgroundSize='cover'; _mi.style.backgroundPosition='center';
+               _mi.innerHTML='<div class="modal-img-ov"></div>'; }
+    }
   } else if(type==='place'){
     cat=lang==='es'?'Lugar':'Landmark'; title=n(obj.name,obj.name_es); desc=n(obj.desc,obj.desc_es);
     rows=mmAddrRow(obj.addr);
@@ -6370,7 +6502,8 @@ function openFavById(id){
 
 // ── SHARE ──
 function mmShareUrl(id,type){
-  var base=location.origin+location.pathname;
+  /* En la app nativa location.origin es capacitor://localhost: se comparte siempre el dominio real. */
+  var base=(typeof MM_API!=='undefined'&&MM_API)?(MM_API+'/'):(location.origin+location.pathname);
   return base+'?item='+encodeURIComponent(id)+'&type='+encodeURIComponent(type||'');
 }
 function mmShare(opts){
@@ -6424,7 +6557,7 @@ function shareItem(){
 function mmFindItem(id){
   var pools=[];
   try{ Object.keys(D).forEach(function(k){ if(Array.isArray(D[k])) pools.push(D[k]); }); }catch(e){}
-  ['MM_CINE','MM_WATER','MM_LUX','MM_ESC'].forEach(function(n){ try{ if(Array.isArray(window[n])) pools.push(window[n]); }catch(e){} });
+  ['MM_CINE','MM_WATER','MM_LUX','MM_ESC','MM_DIR'].forEach(function(n){ try{ if(Array.isArray(window[n])) pools.push(window[n]); }catch(e){} });
   for(var i=0;i<pools.length;i++){ var f=pools[i].find(function(x){return x&&x.id===id;}); if(f) return f; }
   return null;
 }
@@ -6435,7 +6568,8 @@ document.addEventListener('DOMContentLoaded',function(){
   setTimeout(function(){
     try{
       if(/^tr\d+$/.test(id)&&typeof trOpen==='function'){ trOpen(parseInt(id.slice(2),10)); }
-      else { var obj=mmFindItem(id); if(obj) openItemModal(obj,type||'rest'); }
+      else { var obj=mmFindItem(id); if(obj) openItemModal(obj,type||'rest');
+             else if(type==='biz') window._mmPendingBiz=id; }
     }catch(e){}
     try{ history.replaceState(null,'',location.pathname); }catch(e){}
   },1500);
@@ -10491,6 +10625,58 @@ var MM_DIR=[
    pnote:'First listing of the Miami Magic business community.',
    pnote_es:'Primera ficha de la comunidad de negocios de Miami Magic.',ini:'Y'}
 ];
+/* ══ LISTINGS DESDE EL DOMINIO — /listings.json ══
+   Las fichas de Negocios / Bienes Raíces viven en /listings.json (raíz del
+   repo) y la app lo lee al abrir, igual que eventos.json o sitios.json.
+   Mismo id que una ficha empaquetada = la corrige campo por campo;
+   "active": false = la apaga sin borrarla.
+   Campos de propiedad: cover, photos [..], price/price_es, pnote2/pnote2_es,
+   zone (zona, NUNCA la dirección), feats/feats_es, avail/avail_es,
+   dm (usuario de Instagram), dmnote/dmnote_es, top (va primero).       */
+var MM_DIR_BASE=MM_DIR.slice(0);
+function mmDirApply(d){
+  if(!d || !Array.isArray(d.listings)) return false;
+  var map={}, orden=[];
+  MM_DIR_BASE.forEach(function(b){ map[b.id]=b; orden.push(b.id); });
+  d.listings.forEach(function(l){
+    if(!l || !l.id) return;
+    if(l.active===false){ delete map[l.id]; return; }
+    var base=map[l.id]||{}, o={};
+    for(var k in base) o[k]=base[k];
+    for(var k2 in l) o[k2]=l[k2];
+    if(!map[l.id]) orden.push(l.id);
+    map[l.id]=o;
+  });
+  var out=[];
+  orden.forEach(function(id){ if(map[id]) out.push(map[id]); });
+  out.sort(function(a,b){ return (b.top?1:0)-(a.top?1:0); });
+  MM_DIR=out;
+  return true;
+}
+(function(){
+  try{ var g=localStorage.getItem('mm_listings'); if(g) mmDirApply(JSON.parse(g)); }catch(e){}
+  function traer(){
+    var base=(typeof MM_API!=='undefined' && MM_API) ? MM_API : '';
+    fetch(base+'/listings.json?t='+Date.now(),{cache:'no-store'})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if(!d) return;
+        var viejo=''; try{ viejo=localStorage.getItem('mm_listings')||''; }catch(e){}
+        var nuevo=JSON.stringify(d);
+        try{ localStorage.setItem('mm_listings',nuevo); }catch(e){}
+        if(mmDirApply(d) && nuevo!==viejo){
+          try{ mmBizMount(); var s=document.getElementById('sec-biz'); if(s) s.classList.add('vis'); }catch(e){}
+        }
+        if(window._mmPendingBiz){
+          var b=MM_DIR.find(function(x){ return x.id===window._mmPendingBiz; });
+          window._mmPendingBiz=null;
+          if(b) try{ openItemModal(b,'biz'); }catch(e){}
+        }
+      })['catch'](function(){});
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',traer);
+  else traer();
+})();
 function bizIco(k){var m=MM_BIZ_META[k]||MM_BIZ_META.business;
   return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+m.ico+'</svg>';}
 function bizTint(hex,a){try{var x=hex.replace('#','');
@@ -10504,32 +10690,67 @@ function mmBizOpen(id){
 }
 function bizCard(b,ES){
   var m=MM_BIZ_META[b.cat]||MM_BIZ_META.business;
-  var dark=(document.documentElement.getAttribute('data-theme')==='dark');
-  var ac=dark?(m.acd||m.ac):m.ac;
-  return '<div class="biz-card" onclick="mmBizOpen(\''+b.id+'\')">'
-    +'<span class="biz-ic" style="color:'+ac+';background:'+bizTint(ac,.13)+';border-color:'+bizTint(ac,.4)+'">'+bizIco(b.cat)+'</span>'
-    +'<span class="biz-tx"><b>'+b.name+'</b>'
-    +'<span class="biz-type" style="color:'+ac+';background:'+bizTint(ac,.13)+'">'+(ES?(b.type_es||b.type):b.type)+'</span>'
-    +'<i>'+(ES?(b.desc_es||b.desc):b.desc)+'</i>'
-    +(b.addr?'<span class="biz-addr">'+b.addr+'</span>':'')
-    +'</span></div>';
+  var tx=function(k){ return ES?(b[k+'_es']||b[k]||''):(b[k]||''); };
+  var go='<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>';
+  var tap=' role="button" tabindex="0" onclick="mmBizOpen(\''+b.id+'\')" onkeydown="if(event.key===\'Enter\')mmBizOpen(\''+b.id+'\')"';
+  if(b.cover){
+    /* PROPIEDAD — foto a sangre, la información corre sobre la imagen */
+    var cv=(typeof mmMedia==='function')?mmMedia(b.cover):b.cover;
+    var pr=tx('price'), cut=pr.indexOf('/');
+    var prBig=cut>0?pr.slice(0,cut):pr, prSm=cut>0?pr.slice(cut):'';
+    var f=(ES?(b.feats_es||b.feats):b.feats)||[];
+    var meta=[tx('avail')].concat(f.slice(0,2)).filter(Boolean);
+    var nf=(b.photos&&b.photos.length)||0;
+    return '<div class="bzp"'+tap+'>'
+      +'<div class="bzp-bg" style="background-image:url(\''+cv+'\')"></div>'
+      +'<div class="bzp-top">'
+        +(nf>1?'<span class="bzp-count"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>'+nf+'</span>':'<span></span>')
+        +'<span class="bzp-cred">\u00a9 Miami Magic</span>'
+      +'</div>'
+      +'<div class="bzp-body">'
+        +'<span class="bzp-tag">'+tx('type')+(b.zone?' \u00b7 '+b.zone:'')+'</span>'
+        +'<b class="bzp-name">'+tx('name')+'</b>'
+        +(pr?'<div class="bzp-price"><em>'+prBig+'</em><small>'+prSm+'</small></div>':'')
+        +(b.pnote2?'<div class="bzp-note">'+tx('pnote2')+'</div>':'')
+        +(meta.length?'<div class="bzp-meta"><i class="bzp-live"></i>'+meta.join('<span class="bzp-sep">\u00b7</span>')+'</div>':'')
+      +'</div></div>';
+  }
+  if(b.cat==='realestate'){
+    /* PROFESIONAL DE BIENES RAÍCES — tarjeta editorial navy */
+    return '<div class="bza"'+tap+'>'
+      +'<div class="bza-mono">'+(b.ini||tx('name').charAt(0))+'</div>'
+      +'<span class="bza-tag">'+tx('type')+'</span>'
+      +'<b class="bza-name">'+tx('name')+'</b>'
+      +'<p class="bza-desc">'+tx('desc')+'</p>'
+      +'<div class="bza-foot"><span>'+(b.addr||'Miami')+'</span><span class="bza-go">'+(ES?'Ver ficha':'View profile')+go+'</span></div>'
+      +'</div>';
+  }
+  /* NEGOCIO / PROFESIONAL */
+  return '<div class="bzb"'+tap+'>'
+    +'<span class="bzb-ic">'+bizIco(b.cat)+'</span>'
+    +'<span class="bzb-tx"><span class="bzb-tag" style="--bz-ac:'+m.ac+'">'+tx('type')+'</span>'
+    +'<b class="bzb-name">'+tx('name')+'</b>'
+    +'<i class="bzb-desc">'+tx('desc')+'</i>'
+    +(b.addr?'<span class="bzb-addr">'+b.addr+'</span>':'')
+    +'</span><span class="bzb-go">'+go+'</span></div>';
 }
 function renderBiz(){
   if(!MM_DIR || MM_DIR.length<2) return '';
   var ES=(typeof lang!=='undefined'&&lang==='es');
   var re=MM_DIR.filter(function(b){return b.cat==='realestate';});
   var rest=MM_DIR.filter(function(b){return b.cat!=='realestate';});
+  var sub=function(t,n,cls){ return '<div class="bzs'+(cls?' '+cls:'')+'"><span>'+t+'</span><i></i><em>'+(n<10?'0':'')+n+'</em></div>'; };
   var out='<section class="sec fade" id="sec-biz">'
     +'<div class="sec-hd"><div class="sec-tt"><small><span class="eyebrow-dot-mini"></span>'
     +(ES?'De confianza \u00b7 y en tu idioma':'Trusted \u00b7 in your language')+'</small>'
     +(ES?'Negocios de Miami':'Miami Business')+'</div></div>';
   if(re.length){
-    out+='<div class="biz-sub">'+bizIco('realestate')+(ES?'Bienes Ra\u00edces':'Real Estate')+'</div>'
-      +'<div class="biz-re-rail">'+re.map(function(b){return bizCard(b,ES);}).join('')+'</div>';
+    out+=sub(ES?'Bienes Ra\u00edces':'Real Estate',re.length,'')
+      +'<div class="bz-rail">'+re.map(function(b){return bizCard(b,ES);}).join('')+'</div>';
   }
   if(rest.length){
-    out+='<div class="biz-sub t2">'+bizIco('business')+(ES?'Negocios y Profesionales':'Business & Professionals')+'</div>'
-      +'<div class="biz-grid">'+rest.map(function(b){return bizCard(b,ES);}).join('')+'</div>';
+    out+=sub(ES?'Negocios y Profesionales':'Business & Professionals',rest.length,'t2')
+      +'<div class="bz-grid">'+rest.map(function(b){return bizCard(b,ES);}).join('')+'</div>';
   }
   out+='<div class="biz-note">'+(ES
     ?'\u00bfTienes un negocio en Miami? <a href="https://www.miamimagicdirectory.com" rel="noopener" onclick="openInAppSheet(this.href,this.textContent);return false;">Aparece aqu\u00ed \u2192</a>'
