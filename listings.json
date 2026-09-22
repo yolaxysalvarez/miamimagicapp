@@ -19,8 +19,22 @@
       "zone": "South Miami Heights",
       "avail": "Available now",
       "avail_es": "Disponible ya",
-      "feats": ["Private entrance", "Private bathroom", "Kitchenette", "Air conditioning", "Parking", "Internet included"],
-      "feats_es": ["Entrada privada", "Baño privado", "Kitchenette", "Aire acondicionado", "Parqueo", "Internet incluido"],
+      "feats": [
+        "Private entrance",
+        "Private bathroom",
+        "Kitchenette",
+        "Air conditioning",
+        "Parking",
+        "Internet included"
+      ],
+      "feats_es": [
+        "Entrada privada",
+        "Baño privado",
+        "Kitchenette",
+        "Aire acondicionado",
+        "Parqueo",
+        "Internet incluido"
+      ],
       "cover": "fotos/mm-renta-smh-01.jpg",
       "photos": [
         "fotos/mm-renta-smh-01.jpg",
@@ -35,7 +49,21 @@
       "dmnote": "Message us for more photos, details, or to schedule a showing.",
       "dmnote_es": "Escríbenos para más fotos, detalles o para coordinar una visita.",
       "ini": "E",
-      "bg": "bg-gold"
+      "bg": "bg-gold",
+      "agent": {
+        "name": "Yolaxys Alvarez",
+        "ini": "Y",
+        "title": "Realtor · Residential & Commercial",
+        "title_es": "Realtor · Residencial y Comercial",
+        "co": "Partnership Realty",
+        "dm": "miamimagicapp",
+        "web": "",
+        "photo": "fotos/mm-agent-yoly.jpg"
+      }
+    },
+    {
+      "id": "bz1",
+      "active": false
     }
   ]
 }

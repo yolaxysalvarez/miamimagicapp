@@ -2476,6 +2476,24 @@ body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
 .mm-lst-dm .m-row-webtx{border-bottom:1px solid rgba(0,201,177,.45);padding-bottom:1px;}
 .mm-lst-dm .m-row-webtx i{font-style:normal;font-weight:500;opacity:.75;}
 .mm-lst-dmnote{font-size:.8rem;opacity:.7;margin-top:-2px;}
+/* ofrecido por (realtor dentro de la propiedad) */
+.mm-ag{margin:16px 0 4px;padding:16px;border-radius:14px;background:rgba(14,27,48,.04);border:1px solid rgba(14,27,48,.08);}
+[data-theme="dark"] .mm-ag{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);}
+.mm-ag-hd{display:flex;align-items:center;gap:13px;margin-bottom:6px;}
+.mm-ag-mono{width:50px;height:50px;flex-shrink:0;border-radius:11px;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#12213A,#0B1526);border:1px solid rgba(255,209,102,.5);font:600 1.45rem 'Playfair Display',serif;color:#FFD166;}
+.mm-ag-photo{background-size:cover;background-position:center;border-radius:50%;width:56px;height:56px;border:2px solid #FFD166;box-shadow:0 4px 12px rgba(9,21,40,.25);}
+.mm-ag-who{display:flex;flex-direction:column;min-width:0;}
+.mm-ag-lbl{font:400 .78rem 'Bebas Neue',sans-serif;letter-spacing:.14em;color:#B07800;}
+[data-theme="dark"] .mm-ag-lbl{color:#FFD166;}
+.mm-ag-who b{font:600 1.08rem/1.2 'Playfair Display',serif;color:#0E1B30;}
+[data-theme="dark"] .mm-ag-who b{color:#fff;}
+.mm-ag-who i{font:500 .76rem 'DM Sans',sans-serif;font-style:normal;color:rgba(14,27,48,.6);margin-top:2px;}
+[data-theme="dark"] .mm-ag-who i{color:rgba(255,255,255,.6);}
+.mm-ag-row{display:flex;align-items:center;gap:7px;padding:9px 0 0;color:var(--teal,#00C9B1);text-decoration:none;font-weight:600;}
+.mm-ag-row .m-row-webtx{border-bottom:1px solid rgba(0,201,177,.45);padding-bottom:1px;}
+.mm-ag-row .m-row-webtx i{font-style:normal;font-weight:500;opacity:.75;}
+.mm-ag-note{margin-top:10px;font:400 .78rem/1.5 'DM Sans',sans-serif;color:rgba(14,27,48,.6);}
+[data-theme="dark"] .mm-ag-note{color:rgba(255,255,255,.55);}
 /* ══ NEGOCIOS DE MIAMI — PREMIUM ══ */
 .bzs{display:flex;align-items:center;gap:12px;margin:22px 2px 12px;font-family:'Bebas Neue',sans-serif;}
 .bzs span{font-size:1.08rem;letter-spacing:.16em;color:#B07800;}
@@ -6034,6 +6052,45 @@ function mmGalOpen(i){
 }
 function mmGalClose(){ var b=document.getElementById('mmGalView'); if(b) b.classList.remove('on'); }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') mmGalClose(); });
+function mmBizAgentCard(o){
+  /* "Ofrecido por": el realtor vive dentro de la propiedad, después de las
+     fotos. Filas de texto (nunca botones): web dentro de la app, mensaje
+     por Instagram, llamada. Cada una solo si el realtor la da. */
+  var a=o.agent||{}, ES=(typeof lang!=='undefined'&&lang==='es');
+  var t=function(k){ return ES?(a[k+'_es']||a[k]||''):(a[k]||''); };
+  var go='<svg class="m-row-go" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></svg>';
+  var ic=function(p){ return '<svg class="m-row-webico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+p+'</svg>'; };
+  var trk="try{mmTrack('biz_agent','"+o.id+"')}catch(e){}";
+  var out='<div class="mm-ag"><div class="mm-ag-hd">'
+    +(a.photo
+        ?'<span class="mm-ag-mono mm-ag-photo" style="background-image:url(\''+((typeof mmMedia==='function')?mmMedia(a.photo):a.photo)+'\')"></span>'
+        :'<span class="mm-ag-mono">'+(a.ini||String(a.name||'').charAt(0))+'</span>')
+    +'<span class="mm-ag-who"><span class="mm-ag-lbl">'+(ES?'Ofrecido por':'Listed by')+'</span>'
+    +'<b>'+(a.name||'')+'</b>'
+    +((t('title')||a.co)?'<i>'+[t('title'),a.co].filter(Boolean).join(' \u00b7 ')+'</i>':'')
+    +'</span></div>';
+  if(a.web){
+    var dom=''; try{ dom=new URL(a.web).hostname.replace(/^www\./,''); }catch(e){}
+    out+='<a class="m-row mm-ag-row" href="'+a.web+'" target="_blank" rel="noopener" onclick="event.preventDefault();event.stopPropagation();'+trk+'mmOpenWeb(this.href)">'
+      +ic('<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>')
+      +'<span class="m-row-webtx">'+(ES?'Sitio web':'Website')+(dom?' <i>\u00b7 '+dom+'</i>':'')+'</span>'+go+'</a>';
+  }
+  var dm=a.dm||o.dm;
+  if(dm){
+    var u=String(dm).replace(/^@/,'');
+    out+='<a class="m-row mm-ag-row" href="https://ig.me/m/'+u+'" target="_blank" rel="noopener" data-native="1" onclick="event.stopPropagation();'+trk+'">'
+      +ic('<path d="M4 5h16v11H8l-4 4z"/>')
+      +'<span class="m-row-webtx">'+(ES?'Env\u00edanos un mensaje':'Send a message')+' <i>\u00b7 Instagram @'+u+'</i></span>'+go+'</a>';
+  }
+  if(a.phone){
+    var tel=String(a.phone).replace(/[^\d+]/g,'');
+    out+='<a class="m-row mm-ag-row" href="tel:'+tel+'" data-native="1" onclick="event.stopPropagation();'+trk+'">'
+      +ic('<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>')
+      +'<span class="m-row-webtx">'+(ES?'Llamar':'Call')+' <i>\u00b7 '+a.phone+'</i></span>'+go+'</a>';
+  }
+  if(o.dmnote) out+='<div class="mm-ag-note">'+(ES?(o.dmnote_es||o.dmnote):o.dmnote)+'</div>';
+  return out+'</div>';
+}
 function mmBizListingRows(o){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   var ck='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>';
@@ -6047,7 +6104,8 @@ function mmBizListingRows(o){
   if(o.photos && o.photos.length){
     out+=mmGalleryRow({photos:o.photos.map(function(u){ return (typeof mmMedia==='function')?mmMedia(u):u; })});
   }
-  if(o.dm){
+  if(o.agent){ out+=mmBizAgentCard(o); }
+  if(o.dm && !o.agent){
     var u=String(o.dm).replace(/^@/,'');
     /* data-native: el mensaje directo solo existe dentro de Instagram */
     out+='<a class="m-row mm-lst-dm" href="https://ig.me/m/'+u+'" target="_blank" rel="noopener" data-native="1"'
@@ -10617,10 +10675,10 @@ var MM_BIZ_META={
     ico:'<circle cx="12" cy="8" r="3.4"/><path d="M5.5 20c.8-3.4 3.4-5.3 6.5-5.3s5.7 1.9 6.5 5.3"/>'}
 };
 var MM_DIR=[
-  {id:'bz1',cat:'realestate',name:'Yolaxys Alvarez \u2014 Commercial Real Estate',
-   type:'Commercial Co-Broker',type_es:'Corredora Comercial Asociada',
-   desc:'Commercial real estate co-brokerage across Miami-Dade \u2014 offices, retail and medical spaces. Bilingual EN/ES service, affiliated with Partnership Realty.',
-   desc_es:'Corretaje de bienes ra\u00edces comerciales en Miami-Dade \u2014 oficinas, locales y espacios m\u00e9dicos. Atenci\u00f3n biling\u00fce, afiliada a Partnership Realty.',
+  {id:'bz1',cat:'realestate',name:'Yolaxys Alvarez \u2014 Realtor',
+   type:'Realtor \u00b7 Residential & Commercial',type_es:'Realtor \u00b7 Residencial y Comercial',
+   desc:'Residential and commercial real estate across Miami-Dade \u2014 homes, rentals, offices and retail. Bilingual EN/ES service with Partnership Realty.',
+   desc_es:'Bienes ra\u00edces residenciales y comerciales en Miami-Dade \u2014 casas, rentas, oficinas y locales. Atenci\u00f3n biling\u00fce con Partnership Realty.',
    addr:'Miami, FL',hrs:'',phone:'',web:'https://www.miamimagicapp.com',ig:'miamimagicapp',
    pnote:'First listing of the Miami Magic business community.',
    pnote_es:'Primera ficha de la comunidad de negocios de Miami Magic.',ini:'Y'}
@@ -10735,7 +10793,7 @@ function bizCard(b,ES){
     +'</span><span class="bzb-go">'+go+'</span></div>';
 }
 function renderBiz(){
-  if(!MM_DIR || MM_DIR.length<2) return '';
+  if(!MM_DIR || MM_DIR.length<1) return '';
   var ES=(typeof lang!=='undefined'&&lang==='es');
   var re=MM_DIR.filter(function(b){return b.cat==='realestate';});
   var rest=MM_DIR.filter(function(b){return b.cat!=='realestate';});
