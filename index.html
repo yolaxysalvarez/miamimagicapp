@@ -2496,7 +2496,8 @@ body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
 /* palma sola, centrada, encima de Fly Over Miami */
 .hero-body .hero-palm.hero-palm-top{display:block;margin:-62px auto 24px!important;width:30px!important;height:45px!important;position:relative;z-index:2;animation:up .8s .1s both;
   /* dorado de la portada (el mismo del 14 y de las líneas): no deslumbra y hace familia */
-  filter:brightness(0) invert(82%) sepia(55%) saturate(500%) hue-rotate(336deg) brightness(102%) drop-shadow(0 2px 8px rgba(0,0,0,.4));opacity:.95;}
+  /* blanca, como la palma del botón central: la marca se distingue sola */
+  filter:drop-shadow(0 2px 8px rgba(0,0,0,.45));opacity:1;}
 /* en la web de escritorio la palma ya está en el logo de la barra: aquí saldría doble */
 @media(min-width:900px){ .hero-body .hero-palm.hero-palm-top{display:none!important;} }
 /* el clima: mismo tamaño que 300+ Lugares · Cámaras · Joyas, en su propia letra (Playfair cursiva) */
@@ -2521,7 +2522,7 @@ body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
 @media(max-width:899px){
   .hero-body .hero-eyebrow-pill{margin-bottom:48px!important;}
   .hero-body .hero-brand.hb-greet{margin-bottom:48px!important;}
-  .hero-body .hero-line{margin-top:0!important;margin-bottom:46px!important;}
+  .hero-body .hero-line{margin-top:0!important;margin-bottom:74px!important;}
   .hero-body .hero-search{margin-top:0!important;margin-bottom:32px!important;}
   .hero-body .hero-btns-row{margin-top:0!important;}
 }
@@ -7121,6 +7122,18 @@ function renderRestCards(list){
    Ahora la ventana avanza un día por vez: cada jornada salen ocho distintos y
    en doce días han pasado todos. No es aleatorio a propósito — dentro del
    mismo día el orden no cambia, para que no se mueva bajo el dedo. */
+/* v1.4: el riel empieza cada día por una tarjeta distinta, sin perder ninguna */
+function mmRotarDiaTodo(lista, cab){
+  /* rota solo dentro de los primeros "cab" (la selección curada), así el riel
+     nunca abre con un hotel de aeropuerto; el resto sigue detrás, sin perderse */
+  try{
+    if(!lista || lista.length<3) return lista||[];
+    var head=Math.min(cab||lista.length, lista.length);
+    var d=new Date(), dia=Math.floor((d - new Date(d.getFullYear(),0,0))/86400000);
+    var off=(dia*3)%head;
+    return lista.slice(off,head).concat(lista.slice(0,off), lista.slice(head));
+  }catch(e){ return lista; }
+}
 function mmRotarDia(lista, cuantos){
   try{
     if(!lista || lista.length<=cuantos) return lista||[];
@@ -7465,7 +7478,7 @@ function renderBeach(){
   };
   var verTodos='<div class="ver-todos-wrap"><button class="ver-todos-btn" onclick="toggleFullGrid(\'beach-full\',\'beach-hrow\',this)">'+n('See all','Ver todos')+' ('+items.length+') →</button></div>';
   var full='<div class="full-grid-beach" id="beach-full">'+items.map(mkCard).join('')+'</div>';
-  return '<section class="sec fade" id="sec-beach">'+sHdr('beach')+'<div class="h-row" id="beach-hrow">'+items.map(mkCardH).join('')+'</div>'+verTodos+full+'</section>';
+  return '<section class="sec fade" id="sec-beach">'+sHdr('beach')+'<div class="h-row" id="beach-hrow">'+mmRotarDiaTodo(items).map(mkCardH).join('')+'</div>'+verTodos+full+'</section>';
 }
 
 
@@ -7900,7 +7913,7 @@ function renderHotels(){
     +'</div>';
   }
   window.hotelCardOuter=hotelCard; window.hotelCardHOuter=hotelCardH;
-  var preview = hotelList;
+  var preview = mmRotarDiaTodo(hotelList, 24);
   var rest    = hotelList;
   window._hotelTotal = hotelList.length;
   var totalLbl = L==='es' ? 'Ver todos ('+hotelList.length+') →' : 'See all '+hotelList.length+' hotels →';
