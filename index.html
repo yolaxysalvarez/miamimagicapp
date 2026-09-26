@@ -12638,6 +12638,15 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
     'Museum':'#8B5CF6','Culture':'#FF4D35','Art':'#ec4899',
     'Theater':'#8B5CF6','Sports':'#FFD166','Shopping':'#00C9B1'
   };
+  /* v1.4: las etiquetas del scroll de la portada siguen el idioma activo */
+  var HP_ES={'Dining':'Restaurante','Beach':'Playa','Nightlife':'Noche','Museum':'Museo','Parks':'Parque','Culture':'Cultura',
+    'Art':'Arte','Theater':'Teatro','Sports':'Deportes','Shopping':'Compras','TODAY':'HOY','TOMORROW':'MAÑANA','WALKING TOUR':'TOUR A PIE','LIVE':'EN VIVO'};
+  window.mmHpCat=function(c){
+    var ES=(typeof lang!=='undefined'&&lang==='es'); if(!c) return '';
+    if(ES) return HP_ES[c]||c;
+    for(var k in HP_ES){ if(HP_ES[k]===c) return k; } return c;
+  };
+  window.mmHpRebuild=function(){ try{ buildPreview(); }catch(e){} };
   function buildPreview(){
     var track=document.getElementById('hpTrack');
     if(!track)return;
@@ -12712,7 +12721,7 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
       return '<div class="hp-card" onclick="'+clickFn+'" style="flex:0 0 '+sz.w+'px;height:'+sz.h+'px;">'
         +'<div class="hp-card-bg" style="'+bgStyle+'opacity:.82;"></div>'
         +'<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(4,10,24,.9) 0%,transparent 55%);"></div>'
-        +'<span class="hp-card-cat" style="border-color:'+accentClr+'33;">'+hpIco(d.icoK)+d.cat+'</span>'
+        +'<span class="hp-card-cat" style="border-color:'+accentClr+'33;">'+hpIco(d.icoK)+mmHpCat(d.cat)+'</span>'
         +(d.noFav?'':(function(){var fv=typeof isFav==='function'&&isFav(d.id);var sn=(d.name||'').replace(/'/g,'`');
            return '<button class=\"hp-fav'+(fv?' faved':'')+'\" onclick=\"event.stopPropagation();addFavFromCard(&quot;'+d.id+'&quot;,&quot;'+sn+'&quot;,&quot;'+d.mType+'&quot;,this)\">'+(fv?'♥':'♡')+'</button>';})())
         +'<div class="hp-card-label">'+((d.name||'').split(',')[0])+'</div>'
@@ -14116,7 +14125,7 @@ function itinApplyLang(){
       : 'E.g.: 3 days in Miami, couple, love beaches, good food and some nightlife. Mid budget.';
   }catch(e){}
 }
-function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');try{itinApplyLang();}catch(e){}document.querySelectorAll('#navSignin [data-en], .hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en], #itinLoadTx').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, comida':'Search beaches, food';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}try{if(window.MM_CAMS)mmCamsRender();}catch(e){}try{setTimeout(function(){if(window.mmTickerBuild)window.mmTickerBuild();},650);}catch(e){}}
+function heroApplyLang(){var ES=(typeof lang!=='undefined'&&lang==='es');try{if(window.mmHpRebuild)window.mmHpRebuild();}catch(e){}try{itinApplyLang();}catch(e){}document.querySelectorAll('#navSignin [data-en], .hero-body [data-en], #navLinks [data-en], #hmDrawer [data-en], #sec-livecams [data-en], #fAffDisc, #bottomNav [data-en], #amigoChips [data-en], #amigoHead [data-en], #itinLoadTx').forEach(function(el){var v=ES?el.getAttribute('data-es'):el.getAttribute('data-en');if(v!=null)el.innerHTML=v;});var hs=document.getElementById('heroSearchInp');if(hs)hs.placeholder=ES?'Busca playas, comida':'Search beaches, food';try{mmFsApplyLang();}catch(e){}try{mmNowRender();}catch(e){}try{setTimeout(mmcamMedia,60);}catch(e){}try{if(window.MM_CAMS)mmCamsRender();}catch(e){}try{setTimeout(function(){if(window.mmTickerBuild)window.mmTickerBuild();},650);}catch(e){}}
 function socApplyLang(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
   document.querySelectorAll('#sec-social [data-en], #socPubOv [data-en]').forEach(function(el){
