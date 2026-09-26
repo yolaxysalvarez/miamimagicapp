@@ -1,33 +1,117 @@
 {
-  "_como_usar": "Este archivo corrige las fichas de la app sin pasar por Apple: restaurantes, hoteles, vida nocturna, playas, museos, lugares y teatros. Corrige POR CAMPOS: lo que pongas sustituye solo ese campo de esa ficha, el resto se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
-  "updated": "2026-09-17",
-
-  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo).",
-
-  "restaurantes": {
-    "r16": { "photo_url": "https://youtu.be/7miwoX4qiDg" },
-    "r99": { "photo_url": "https://youtu.be/4XOSsAGfTeM" },
-    "r76": { "photo_url": "https://youtu.be/H3_xFwbRCCs" },
-    "r17": { "photo_url": "https://youtu.be/KwmdPgm_azI" },
-    "r101": { "photo_url": "https://youtu.be/CnK5f6k62Fk" },
-    "r34": { "photo_url": "https://youtu.be/cMcjduVQ_Lw" },
-    "r61": { "photo_url": "https://youtu.be/HpNgTQxfH6E" },
-    "r78": { "photo_url": "https://youtu.be/PY2xL1rdRDw" }
+  "_como_usar": "Este archivo cambia los lugares de la guía sin pasar por Apple. Funciona por id: si el id YA EXISTE, corrige solo los campos que pongas y el resto se queda igual; si el id es NUEVO y lleva \"name\", AÑADE el lugar a su sección; \"active\": false lo quita de la guía sin borrarlo de aquí. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
+  "updated": "2026-09-26",
+  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs y hrs_es (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo). Solo para lugares nuevos: zone (little-havana, brickell, south-beach…), photo (fotos/….jpg para la tarjeta) y top (true = sale primero).",
+  "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
+  "_app": {
+    "ios": "1.3",
+    "_nota": "La última versión aprobada por Apple. Cuando aprueben una nueva, pon aquí su número y quien tenga una anterior verá el aviso de Actualizar."
   },
-
+  "restaurantes": {
+    "r16": {
+      "photo_url": "https://youtu.be/7miwoX4qiDg"
+    },
+    "r99": {
+      "photo_url": "https://youtu.be/4XOSsAGfTeM"
+    },
+    "r76": {
+      "photo_url": "https://youtu.be/H3_xFwbRCCs"
+    },
+    "r17": {
+      "photo_url": "https://youtu.be/KwmdPgm_azI"
+    },
+    "r101": {
+      "photo_url": "https://youtu.be/CnK5f6k62Fk"
+    },
+    "r34": {
+      "photo_url": "https://youtu.be/cMcjduVQ_Lw"
+    },
+    "r61": {
+      "photo_url": "https://youtu.be/HpNgTQxfH6E"
+    },
+    "r78": {
+      "photo_url": "https://youtu.be/PY2xL1rdRDw"
+    },
+    "r102": {
+      "name": "Casa Juancho",
+      "cat": "Spanish",
+      "cat_es": "Español",
+      "filter": "mediterranean",
+      "bg": "bg-red",
+      "badge": "Paella & Live Music",
+      "badge_es": "Paella y música en vivo",
+      "rating": 4.1,
+      "rev": "557",
+      "price": "$$$",
+      "occ": "Celebrations · Groups",
+      "occ_es": "Celebraciones · Grupos",
+      "tags": [
+        "Spanish",
+        "Paella",
+        "Live Music"
+      ],
+      "desc": "A Little Havana classic for four decades: a Spanish hacienda with wooden beams, stained glass and guitarists who stroll from table to table. Seafood paella, tapas like gambas al ajillo and jamón serrano, crema catalana, and a Wine Spectator Award of Excellence cellar every year since 1996, with more than 450 Spanish wines. Made for celebrations and big groups.",
+      "desc_es": "Un clásico de la Pequeña Habana desde hace cuatro décadas: una hacienda española con vigas de madera, vitrales y guitarristas que recorren las mesas. Paella de mariscos, tapas como gambas al ajillo y jamón serrano, crema catalana y una bodega con el Premio de Excelencia de Wine Spectator cada año desde 1996, con más de 450 vinos españoles. Ideal para celebraciones y grupos grandes.",
+      "addr": "2436 SW 8th St, Little Havana",
+      "hrs": "Tue–Thu 12–10 PM · Fri–Sat 12–11 PM · Sun 12–10 PM · Closed Mon",
+      "pro": false,
+      "link": "https://casajuancho.com/",
+      "zone": "little-havana",
+      "hrs_es": "Mar–Jue 12–10 PM · Vie–Sáb 12–11 PM · Dom 12–10 PM · Cerrado lun"
+    }
+  },
   "hoteles": {},
   "noche": {},
   "playas": {},
   "museos": {},
   "lugares": {},
   "teatros": {},
-
+  "parques": {},
+  "compras": {},
+  "cafes": {},
+  "ninos": {},
+  "galerias": {},
+  "excursiones": {},
+  "conciertos": {},
+  "estadios": {},
+  "botes": {},
+  "lujo": {},
+  "cruceros": {},
+  "cines": {},
+  "aeropuertos": {},
   "_ejemplo": {
-    "restaurantes": {
-      "r34": {
-        "photo_url": "https://youtu.be/ID_DEL_VIDEO",
-        "hrs": "Mon–Thu 4–10 PM · Fri–Sat 4–11 PM · Sun 4–10 PM",
-        "price": "$$$"
+    "corregir": {
+      "restaurantes": {
+        "r34": {
+          "photo_url": "https://youtu.be/ID_DEL_VIDEO",
+          "hrs": "Mon–Thu 4–10 PM · Fri–Sat 4–11 PM · Sun 4–10 PM",
+          "price": "$$$"
+        }
+      }
+    },
+    "anadir": {
+      "restaurantes": {
+        "r103": {
+          "name": "Nombre del restaurante",
+          "cat": "Spanish",
+          "cat_es": "Español",
+          "filter": "mediterranean",
+          "price": "$$",
+          "addr": "Calle, Barrio",
+          "hrs": "…",
+          "desc": "…",
+          "desc_es": "…",
+          "link": "https://…",
+          "zone": "little-havana",
+          "photo": "fotos/mm-nombre-1.jpg"
+        }
+      }
+    },
+    "apagar": {
+      "restaurantes": {
+        "r34": {
+          "active": false
+        }
       }
     }
   }

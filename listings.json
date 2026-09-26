@@ -1,6 +1,39 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-26",
   "listings": [
+    {
+      "id": "bz1",
+      "cat": "realestate",
+      "active": true,
+      "top": true,
+      "name": "Yolaxys Alvarez",
+      "ini": "Y",
+      "photo": "fotos/mm-agent-yoly.jpg",
+      "type": "Realtor · Residential & Commercial",
+      "type_es": "Realtor · Residencial y Comercial",
+      "co": "Partnership Realty",
+      "desc": "Residential and commercial real estate across Miami-Dade and Monroe: homes, rentals, offices, retail and medical space. Bilingual English and Spanish service, from the first showing to the keys.",
+      "desc_es": "Bienes raíces residenciales y comerciales en Miami-Dade y Monroe: casas, rentas, oficinas, locales y espacios médicos. Atención bilingüe en español e inglés, desde la primera visita hasta la entrega de llaves.",
+      "addr": "",
+      "ig": "miamimagicapp",
+      "web": "",
+      "cv": [
+        "2023–today | Realtor · Partnership Realty",
+        "2021–2023 | Realtor · Coldwell Banker",
+        "License | Florida Sales Associate · active",
+        "Areas | Miami-Dade and Monroe",
+        "Languages | Spanish and English"
+      ],
+      "cv_es": [
+        "2023–hoy | Realtor · Partnership Realty",
+        "2021–2023 | Realtor · Coldwell Banker",
+        "Licencia | Florida Sales Associate · activa",
+        "Zonas | Miami-Dade y Monroe",
+        "Idiomas | Español e inglés"
+      ],
+      "pnote": "",
+      "pnote_es": ""
+    },
     {
       "id": "bz2",
       "cat": "realestate",
@@ -59,11 +92,8 @@
         "dm": "miamimagicapp",
         "web": "",
         "photo": "fotos/mm-agent-yoly.jpg"
-      }
-    },
-    {
-      "id": "bz1",
-      "active": false
+      },
+      "agent_id": "bz1"
     },
     {
       "id": "yy1",
@@ -72,8 +102,8 @@
       "name": "YY Entertainment",
       "type": "Photography & Video",
       "type_es": "Fotografía y Video",
-      "desc": "Photo and video production in Miami: portraits, real estate, events and content for social media. Led by Yoel R. Marín: 25+ years in media as editor, camera operator, director, producer and writer, and winner of more than 10 Emmy Awards.",
-      "desc_es": "Producción de foto y video en Miami: retratos, bienes raíces, eventos y contenido para redes. Al frente, Yoel R. Marín: más de 25 años en los medios como editor, camarógrafo, director, productor y escritor, y más de 10 premios Emmy.",
+      "desc": "Photo and video production in Miami: portraits, real estate, events and content for social media. Led by Yoel Rivero Marín: 25+ years in media as editor, camera operator, director, producer and writer, and winner of more than 10 Emmy Awards.",
+      "desc_es": "Producción de foto y video en Miami: retratos, bienes raíces, eventos y contenido para redes. Al frente, Yoel Rivero Marín: más de 25 años en los medios como editor, camarógrafo, director, productor y escritor, y más de 10 premios Emmy.",
       "addr": "Miami, FL",
       "ig": "yoelrmarin",
       "email": "yyentertainment@outlook.com",
