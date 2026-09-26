@@ -8153,7 +8153,20 @@ function renderJune(){
         +'</button>'
       +'</div>'
     +'</div>';
-  }).join('');
+  });
+  /* v1.4: arriba lo puntual por fecha; una línea fina anuncia cuándo empieza
+     "lo que sigue en curso" y "lo de cada semana", para que el salto de fechas
+     no parezca un desorden. */
+  (function(){
+    var out='', prev=null;
+    var lbl={1:(ES?'En curso este mes':'Ongoing this month'), 2:(ES?'Cada semana · siempre en Miami':'Every week · always in Miami')};
+    list.forEach(function(e,i){
+      var t=twxTier(e);
+      if(prev!==null && t!==prev && lbl[t]) out+='<div class="twx-div"><span></span><b>'+lbl[t]+'</b><span></span></div>';
+      out+=cards[i]; prev=t;
+    });
+    cards=out;
+  })();
 
   // ── barra maestra estilo acordeón premium (como las otras secciones) ──
   var heroBg = 'fotos/mm-week-brickell.jpg';   /* AdobeStock 259445495 */
@@ -8934,6 +8947,8 @@ function renderMonth(){
   var now=new Date(); now.setHours(0,0,0,0);
   var items=(MM_MONTH||[]).filter(function(e){
     try{ var p=e.end.split('-'); return new Date(+p[0],+p[1]-1,+p[2]) >= now; }catch(x){ return true; }
+  }).sort(function(a,b){ return String(a.end||'').localeCompare(String(b.end||'')); })   /* v1.4: por fecha */
+  .filter(function(){ return true;
   });
   var annCount=0;
   try{
@@ -20527,6 +20542,8 @@ function showInsiderModal(id){
 .twx-weekly{color:rgba(11,21,38,.76);}
 .twx-pill{color:rgba(11,21,38,.88);border-color:rgba(14,27,48,.2);}
 .twx-soon{color:#8F6300;border-color:rgba(143,99,0,.5);}
+/* v1.4: el chip HOY / TODAY siempre blanco sobre coral (la regla de arriba lo teñía de dorado) */
+.twx-soon.twx-soon-now{color:#fff!important;background:var(--coral,#FF4D35)!important;border-color:var(--coral,#FF4D35)!important;font-size:.8rem;letter-spacing:.12em;padding:4px 10px 3px;text-shadow:0 1px 2px rgba(0,0,0,.25);}
 .twx-tip{color:rgba(11,21,38,.88);}
 .twx-tip-lbl{color:#00695B;}
 .evs-head span{color:rgba(11,21,38,.72);}
@@ -20614,6 +20631,27 @@ body.mm-apple .mm-apple-hide{display:none !important;}
 body.mm-apple a[href*="miamimagicdirectory"]{display:none !important;}
 body.mm-apple .biz-note{display:none !important;}
 #hm-biz.hm-biz-off{display:none !important;}
+/* v1.4: contraste de la categoría y el día en las tarjetas de eventos. El color del
+   evento (teal, coral, dorado) se conserva como acento, pero fundido con navy para
+   que la letra se lea sobre el fondo crema; en oscuro, fundido con blanco. */
+#sec-june .twx-type,#sec-month .twx-type{color:color-mix(in srgb,var(--twx-ac) 42%,#0E1B30)!important;font-size:.64rem!important;letter-spacing:.17em!important;
+  display:inline-flex!important;align-items:center;gap:7px;}
+#sec-june .twx-type::before,#sec-month .twx-type::before{content:'';width:8px;height:2px;border-radius:2px;background:var(--twx-ac);flex-shrink:0;}
+#sec-june .twx-dow,#sec-month .twx-dow{color:color-mix(in srgb,var(--twx-ac) 42%,#0E1B30)!important;font-weight:700!important;}
+[data-theme="dark"] #sec-june .twx-type,[data-theme="dark"] #sec-month .twx-type,
+[data-theme="dark"] #sec-june .twx-dow,[data-theme="dark"] #sec-month .twx-dow{color:color-mix(in srgb,var(--twx-ac) 70%,#fff)!important;}
+/* v1.4: la etiqueta LOCAL / MUNDIAL bajo el chip HOY de los eventos, con más presencia */
+#sec-june .twx-badge{font-size:.66rem!important;letter-spacing:.14em!important;padding:4px 10px!important;
+  color:#0E1B30!important;background:rgba(14,27,48,.06)!important;border:1px solid rgba(14,27,48,.22)!important;}
+[data-theme="dark"] #sec-june .twx-badge{color:#fff!important;background:rgba(255,255,255,.08)!important;border-color:rgba(255,255,255,.3)!important;}
+/* v1.4: la franja HOY — el texto tras la etiqueta coral, en Playfair y a todo color */
+.mq-item{color:#0E1B30!important;font:600 1.02rem/1 'Playfair Display',serif!important;letter-spacing:0!important;}
+.mq-n{font-size:1.25rem!important;margin-right:2px;}
+[data-theme="dark"] .mq-item{color:#fff!important;}
+.twx-div{display:flex;align-items:center;gap:10px;margin:18px 4px 10px;}
+.twx-div span{flex:1;height:1px;background:linear-gradient(90deg,rgba(255,209,102,0),rgba(255,209,102,.7),rgba(255,209,102,0));}
+.twx-div b{font:400 .82rem 'Bebas Neue',sans-serif;letter-spacing:.16em;color:#B07800;white-space:nowrap;}
+[data-theme="dark"] .twx-div b{color:#FFD166;}
 #mmUpd{position:fixed;left:50%;transform:translateX(-50%);top:calc(env(safe-area-inset-top,0px) + 10px);z-index:99990;display:flex;align-items:center;gap:10px;
   width:min(440px,calc(100% - 24px));box-sizing:border-box;padding:10px 10px 10px 14px;border-radius:14px;background:rgba(11,21,38,.86);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);
   border:1px solid rgba(255,209,102,.3);box-shadow:0 12px 30px -12px rgba(0,0,0,.5);color:#fff;font:500 .8rem 'DM Sans',sans-serif;animation:mmUpdIn .45s cubic-bezier(.34,1.3,.64,1);}
