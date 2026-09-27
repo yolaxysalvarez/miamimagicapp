@@ -2516,7 +2516,8 @@ body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
    texto sobre foto necesita un degradado oscuro debajo, no solo sombra) ══ */
 .hero-body{position:relative;}
 .hero-body::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:radial-gradient(ellipse 78% 46% at 50% 36%,rgba(8,15,29,.62) 0%,rgba(8,15,29,.38) 45%,rgba(8,15,29,0) 100%);}
+  /* closest-side: el velo llega a cero ANTES del borde de la caja, así nunca se ve un corte cuadrado */
+  inset:-40px -24px;background:radial-gradient(closest-side,rgba(8,15,29,.58) 0%,rgba(8,15,29,.34) 55%,rgba(8,15,29,0) 100%);}
 .hero-body>*{position:relative;z-index:1;}
 /* ══ v1.4 · aire en la portada: cada bloque respira por separado ══ */
 @media(max-width:899px){
