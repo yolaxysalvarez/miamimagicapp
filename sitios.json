@@ -4,7 +4,7 @@
   "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs y hrs_es (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo). Solo para lugares nuevos: zone (little-havana, brickell, south-beach…), photo (fotos/….jpg para la tarjeta) y top (true = sale primero).",
   "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
   "_app": {
-    "ios": "1.3",
+    "ios": "1.4",
     "_nota": "La última versión aprobada por Apple. Cuando aprueben una nueva, pon aquí su número y quien tenga una anterior verá el aviso de Actualizar."
   },
   "restaurantes": {
