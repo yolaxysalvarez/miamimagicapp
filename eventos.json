@@ -236,6 +236,31 @@
       "link": "https://www.charlesfdodgecitycenter.com/"
     },
     {
+      "id": "arsht-chucho85",
+      "scope": "local",
+      "d": "2026-10-03",
+      "name": "Chucho Valdés · 85th Birthday Celebration",
+      "name_es": "Chucho Valdés · Celebración de sus 85 años",
+      "venue": "Knight Concert Hall · Adrienne Arsht Center",
+      "venue_es": "Knight Concert Hall · Adrienne Arsht Center",
+      "time": "Sat · 8:00 PM · 90 min · Ages 10+",
+      "time_es": "Sáb · 8:00 PM · 90 min · Desde 10 años",
+      "price": "$53–158",
+      "price_es": "$53–158",
+      "type": "Concert · Afro-Cuban jazz",
+      "type_es": "Concierto · Jazz afrocubano",
+      "photo": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=900&q=60&auto=format",
+      "desc": "The master of Afro-Cuban jazz comes home to Miami to celebrate his 85th birthday, with special guests Joe Lovano on saxophone and Terence Blanchard on trumpet. Seven Grammys, seven Latin Grammys and sixty years of career, on one stage.",
+      "desc_es": "El maestro del jazz afrocubano vuelve a casa, a Miami, para celebrar sus 85 años, con dos invitados de lujo: Joe Lovano en el saxo y Terence Blanchard en la trompeta. Siete Grammy, siete Latin Grammy y sesenta años de carrera en un mismo escenario.",
+      "tip": "VIP packages add a post-show meet and greet with Chucho, a photo and a signed poster.",
+      "tip_es": "Los paquetes VIP incluyen saludo con Chucho después del concierto, foto profesional y póster firmado.",
+      "tags": [
+        "Music",
+        "Culture"
+      ],
+      "link": "https://www.arshtcenter.org/tickets/2026-2027/live-at-knight/chucho-valdes-85th-birthday-celebration/"
+    },
+    {
       "id": "k-donomar",
       "scope": "local",
       "d": "2026-10-04",
@@ -1496,6 +1521,28 @@
       "price": "$$",
       "free": false,
       "link": "https://www.kaseyacenter.com/calendar"
+    },
+    {
+      "id": "oc7",
+      "photo": "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=900&q=60&auto=format",
+      "type": "Music",
+      "type_es": "Música",
+      "ac": "#FFD166",
+      "dTop": "OCT",
+      "dBig": "3",
+      "dBot": "SÁB",
+      "end": "2026-10-03",
+      "name": "Chucho Valdés turns 85",
+      "name_es": "Chucho Valdés cumple 85",
+      "venue": "Adrienne Arsht Center",
+      "venue_es": "Adrienne Arsht Center",
+      "desc": "The master of Afro-Cuban jazz celebrates at home, with Joe Lovano and Terence Blanchard as guests.",
+      "desc_es": "El maestro del jazz afrocubano lo celebra en casa, con Joe Lovano y Terence Blanchard de invitados.",
+      "time": "Oct 3 · 8 PM",
+      "time_es": "3 de oct · 8 PM",
+      "price": "$53–158",
+      "free": false,
+      "link": "https://www.arshtcenter.org/tickets/2026-2027/live-at-knight/chucho-valdes-85th-birthday-celebration/"
     }
   ],
   "quitar_semana": [],
