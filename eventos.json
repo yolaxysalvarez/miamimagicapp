@@ -762,7 +762,7 @@
    "price_es": "$",
    "type": "Festival · Nature",
    "type_es": "Festival · Naturaleza",
-   "photo": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=900&q=60&auto=format",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-ev-orquideas.jpg",
    "desc": "Three days of rare blooms and growers from around the world, outdoors, for nearly 30 years. Friday has a separate early-entry ticket from 9 AM.",
    "desc_es": "Tres días de orquídeas raras y cultivadores de todo el mundo, al aire libre, desde hace casi 30 años. El viernes hay una entrada aparte desde las 9 AM.",
    "tags": [
@@ -831,7 +831,7 @@
    "price_es": "$$",
    "type": "Halloween · 21+",
    "type_es": "Halloween · +21",
-   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-ev-halloween.jpg",
    "desc": "Zoo Miami's Halloween party for adults only.",
    "desc_es": "La fiesta de Halloween de Zoo Miami, solo para adultos.",
    "tags": [
@@ -986,7 +986,7 @@
    "price_es": "$$",
    "type": "Concert · Soul pop",
    "type_es": "Concierto · Soul pop",
-   "photo": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=900&q=60&auto=format",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-ev-teddy.jpg",
    "desc": "The voice behind \"Lose Control\", on his first arena tour.",
    "desc_es": "La voz de \"Lose Control\", en su primera gira de arenas.",
    "tags": [
@@ -1030,7 +1030,7 @@
    "price_es": "$$$",
    "type": "Concert · Latin pop",
    "type_es": "Concierto · Pop latino",
-   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-ev-chayanne.jpg",
    "desc": "The eternal Chayanne, back in Miami with a show made for dancing.",
    "desc_es": "El eterno Chayanne, de vuelta en Miami con un show hecho para bailar.",
    "tags": [
@@ -1096,7 +1096,7 @@
    "price_es": "Incluido con la entrada",
    "type": "Halloween · Family",
    "type_es": "Halloween · Familia",
-   "photo": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=900&q=60&auto=format",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-ev-halloween.jpg",
    "desc": "Trick-or-treating for kids 12 and under, costume contests, magic shows and the animals getting their own Halloween treats.",
    "desc_es": "Truco o trato para niños de hasta 12 años, concurso de disfraces, magia y los animales recibiendo sus propios premios de Halloween.",
    "tags": [
@@ -1231,7 +1231,7 @@
    "price_es": "$$$",
    "type": "Concert · Pop",
    "type_es": "Concierto · Pop",
-   "photo": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=900&q=60&auto=format",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-ev-sheeran.jpg",
    "desc": "Two intimate nights, a rarity for an artist who fills stadiums. Songs from \"Play\" plus every hit.",
    "desc_es": "Dos noches íntimas, algo raro en un artista que llena estadios. Canciones de \"Play\" y todos los éxitos.",
    "tags": [
@@ -1907,7 +1907,7 @@
   },
   {
    "id": "oc9",
-   "photo": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=900&q=60&auto=format",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-ev-orquideas.jpg",
    "type": "Nature",
    "type_es": "Naturaleza",
    "ac": "#00C9B1",
