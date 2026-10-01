@@ -4476,7 +4476,7 @@ events:[
   /* ═══════════════════════════════════════════════════════════════
      ESTA SEMANA EN MIAMI — motor auto-actualizable
      · Eventos con fecha: d:'YYYY-MM-DD' (+ d2 opcional para rangos).
-       Se muestran solo si caen entre HOY y HOY+10 días. Al pasar la
+       Se muestran solo si caen entre HOY y el domingo (v1.5). Al pasar la
        fecha desaparecen SOLOS — no hay que borrarlos.
      · Eventos semanales: wk: 0=Dom 1=Lun ... 6=Sáb. Siempre muestran
        su próxima ocurrencia.
@@ -7929,7 +7929,10 @@ function renderHotels(){
   return html;
 }
 
-function renderJune(){
+function renderJune(MODE){
+  /* v1.5 (su regla, oct 2026): sin argumento = ESTA SEMANA, de hoy al domingo.
+     Con {upTo: fecha} = la lista completa del MES (la usa renderMonth). */
+  if(!MODE || typeof MODE!=='object' || !MODE.upTo) MODE=null;
   var L = typeof lang !== 'undefined' ? lang : 'en';
   var ES = (L==='es');
   var now = new Date(); now.setHours(0,0,0,0);
@@ -7964,12 +7967,17 @@ function renderJune(){
   }
 
   // ── motor auto-actualizable: calcula fecha vigente de cada evento ──
-  var HORIZON = 10; // días hacia adelante
+  /* v1.5: Esta Semana va de LUNES a DOMINGO. Cada día se caen solos los
+     eventos que ya pasaron; el domingo queda solo lo del domingo y el lunes
+     entra la semana nueva completa. (Antes: 10 días corridos.) */
+  var HORIZON = MODE ? Math.max(0, Math.round((MODE.upTo - now)/86400000))
+                     : ((7 - now.getDay()) % 7);   // días que faltan para el domingo
   var list = [];
   (D.events||[]).forEach(function(e){
     var d, isWeekly = (typeof e.wk === 'number'), isMonthly = !!(e.mo && typeof e.mo.wk === 'number');
     // a weekly run can have a last date: after it, the event retires itself
     if(e.until){ try{ if(parseD(e.until) < now) return; }catch(x){} }
+    if(MODE && (isWeekly || isMonthly)) return;   /* el mes lista fechas, no la rutina de cada semana */
     if(isMonthly){
       d = nextMonthly(e.mo.n, e.mo.wk);
       if(!d) return;
@@ -7980,6 +7988,8 @@ function renderJune(){
     else if(isWeekly){
       d = nextWeekday(e.wk);
       if(e.until){ try{ if(d > parseD(e.until)) return; }catch(x){} }
+      var limW = new Date(now); limW.setDate(limW.getDate()+HORIZON);
+      if(d > limW) return;                         /* v1.5: cae después del domingo */
     }
     else if(e.d){
       d = parseD(e.d);
@@ -8103,8 +8113,10 @@ function renderJune(){
   });
 
   var sunday = new Date(now); sunday.setDate(now.getDate() + ((7 - now.getDay())%7 || 7) - 1 + 1);
-  var weekEnd = new Date(now); weekEnd.setDate(now.getDate()+HORIZON);   /* v1.4: la etiqueta dice el mismo rango que la lista (antes decía 7 días y mostraba 10) */
-  var dateRange = now.getDate()+' '+months[now.getMonth()]+' – '+weekEnd.getDate()+' '+months[weekEnd.getMonth()];
+  var weekEnd = new Date(now); weekEnd.setDate(now.getDate()+HORIZON);   /* v1.5: de hoy al domingo — la etiqueta y la lista dicen lo mismo */
+  var dateRange = HORIZON===0
+    ? (ES?'HOY ':'TODAY ')+now.getDate()+' '+months[now.getMonth()]          /* v1.5: el domingo la semana es solo hoy */
+    : now.getDate()+' '+months[now.getMonth()]+' – '+weekEnd.getDate()+' '+months[weekEnd.getMonth()];
 
   var sectionTitle = ES ? 'Esta Semana en Miami' : 'This Week in Miami';
   var sectionSub   = ES ? 'Se actualiza automáticamente cada semana' : 'Updates automatically every week';
@@ -8131,7 +8143,7 @@ function renderJune(){
     var dateTop = e._weekly ? e._dow : e._dow;
     var dateBig = e._range ? '<span style="font-size:1.02rem;letter-spacing:.02em">'+e._range.split(' ')[0]+'</span>' : e._day;
     var dateBot = e._range ? e._range.split(' ').pop() : e._mon;
-    var cid = 'twx-'+e.id;
+    var cid = (MODE ? 'twm-' : 'twx-')+e.id;
     var photo = e.photo ? '<div class="twx-photo"><img loading="lazy" src="'+e.photo+'" alt="" onerror="this.parentNode.style.display=\'none\'"><div class="twx-photo-fade"></div></div>' : '';
     var actionAttr = 'onclick="event.stopPropagation();twxOpen(\''+esc(e.link)+'\',\''+esc(name)+'\')"';
     return '<div class="twx-card" id="'+cid+'" style="--twx-ac:'+ac+'" onclick="twxToggle(\''+cid+'\')">'
@@ -8174,6 +8186,35 @@ function renderJune(){
       +'</div>'
     +'</div>';
   });
+  if(MODE){
+    /* Lista del mes: por fecha, con una línea fina al empezar cada semana
+       ("Esta semana", "Del 5 al 11 de oct"…). Lo largo que ya está en curso
+       (Miami Spice, etc.) va al final, como en Esta Semana. */
+    var mon0 = function(d){ var x=new Date(d); x.setHours(0,0,0,0); x.setDate(x.getDate()-((x.getDay()+6)%7)); return x; };
+    var thisMon = mon0(now).getTime();
+    var MLONG = ES ? ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+                   : ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var wkLbl = function(m){
+      if(m.getTime()===thisMon) return ES?'Esta semana':'This week';
+      var s2=new Date(m); s2.setDate(s2.getDate()+6);
+      if(ES) return s2.getMonth()===m.getMonth() ? 'Del '+m.getDate()+' al '+s2.getDate()+' de '+MLONG[m.getMonth()]
+                                                  : 'Del '+m.getDate()+' de '+MLONG[m.getMonth()]+' al '+s2.getDate()+' de '+MLONG[s2.getMonth()];
+      return s2.getMonth()===m.getMonth() ? MLONG[m.getMonth()]+' '+m.getDate()+'–'+s2.getDate()
+                                          : MLONG[m.getMonth()]+' '+m.getDate()+' – '+MLONG[s2.getMonth()]+' '+s2.getDate();
+    };
+    var outM='', prevW=null, prevT=null;
+    list.forEach(function(e,i){
+      var t=twxTier(e);
+      if(t===0){
+        var w=mon0(e._date).getTime();
+        if(w!==prevW){ outM+='<div class="twx-div"><span></span><b>'+wkLbl(new Date(w))+'</b><span></span></div>'; prevW=w; }
+      } else if(prevT!==t){
+        outM+='<div class="twx-div"><span></span><b>'+(ES?'En curso todo el mes':'Running all month')+'</b><span></span></div>';
+      }
+      prevT=t; outM+=cards[i];
+    });
+    return { html: outM, count: list.length };
+  }
   /* v1.4: arriba lo puntual por fecha; una línea fina anuncia cuándo empieza
      "lo que sigue en curso" y "lo de cada semana", para que el salto de fechas
      no parezca un desorden. */
@@ -8665,7 +8706,7 @@ function mmRedibujarSitios(){
 /* ══ AVISO DE VERSIÓN NUEVA (solo app de iPhone) ══
    En /sitios.json: "_app": { "ios": "1.5" } → cuando Apple apruebe una versión,
    se pone aquí su número y quien tenga una anterior ve el aviso.            */
-var MM_APP_VERSION='1.4';
+var MM_APP_VERSION='1.5';
 function mmVerMayor(a,b){
   var x=String(a).split('.'), y=String(b).split('.');
   for(var i=0;i<Math.max(x.length,y.length);i++){ var p=+x[i]||0, q=+y[i]||0; if(p!==q) return p>q; }
@@ -8975,7 +9016,17 @@ function renderMonth(){
     var MOx=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
     annCount=(window.annualEvents||[]).filter(function(a){return a.month===MOx[now.getMonth()];}).length;
   }catch(x){}
-  if(!items.length && !annCount) return '';
+  /* v1.5 (su regla, oct 2026): Este Mes = TODO el mes. Arriba, lo imprescindible
+     (las tarjetas grandes de eventos.json "mes"); debajo, cada evento del mes
+     por semanas. Se cuelan al final los primeros días del mes siguiente cuando
+     caen en la misma semana (lunes a domingo), para que no haya hueco. */
+  var monthAll={html:'',count:0};
+  try{
+    var lastDay=new Date(now.getFullYear(), now.getMonth()+1, 0);
+    var upTo=new Date(lastDay); upTo.setDate(upTo.getDate()+((7-upTo.getDay())%7));
+    var r=renderJune({upTo:upTo}); if(r && typeof r==='object') monthAll=r;
+  }catch(x){}
+  if(!items.length && !annCount && !monthAll.count) return '';
   function esc(s){ return (s||'').replace(/'/g,"\\'"); }
   var cards=items.map(function(e){
     var cid='mcard-'+e.id;
@@ -9084,12 +9135,15 @@ function renderMonth(){
             +'<span class="tw-bar-title">'+title+'</span>'
             +'<span class="tw-bar-desc">'+(ES?'Temporadas, tradiciones y lo que define el mes en la ciudad':'Seasons, traditions and what defines the month in the city')+'</span>'
           +'</div>'
-          +'<div class="tw-bar-when">'+range+' &middot; '+(annCount||items.length)+(ES?' en cartelera':' on now')+'</div>'
+          +'<div class="tw-bar-when">'+range+' &middot; '+(monthAll.count||items.length)+(ES?' eventos':' events')+'</div>'
           +'<div class="tw-bar-meta">'
           +'<span class="tw-bar-cta">'+(ES?'Explorar':'Explore')+'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></div>'
         +'</div>'
       +'</div>'
-      +'<div class="tw-panel" id="twxMonthPanel"><div class="twx-list">'+cards+'</div>'+evStrip('month')+'</div>'
+      +'<div class="tw-panel" id="twxMonthPanel"><div class="twx-list">'
+        +(cards?'<div class="twx-div twm-head"><span></span><b>'+(ES?'Lo imprescindible del mes':'This month\'s must-sees')+'</b><span></span></div>'+cards:'')
+        +(monthAll.html?'<div class="twx-div twm-head"><span></span><b>'+(ES?'Todo el mes, semana a semana':'The whole month, week by week')+'</b><span></span></div>'+monthAll.html:'')
+      +'</div>'+evStrip('month')+'</div>'
     +'</div>'
   +'</section>';
 }
@@ -20680,6 +20734,11 @@ body.mm-apple .biz-note{display:none !important;}
 .twx-div{display:flex;align-items:center;gap:10px;margin:18px 4px 10px;}
 .twx-div span{flex:1;height:1px;background:linear-gradient(90deg,rgba(255,209,102,0),rgba(255,209,102,.7),rgba(255,209,102,0));}
 .twx-div b{font:400 .82rem 'Bebas Neue',sans-serif;letter-spacing:.16em;color:#B07800;white-space:nowrap;}
+/* v1.5 · Este Mes: los dos bloques ("Lo imprescindible" / "Todo el mes") se anuncian más grandes que las semanas */
+.twx-div.twm-head{margin:22px 4px 12px;}
+.twx-div.twm-head b{font-size:1.02rem;letter-spacing:.2em;color:#0B1526;}
+[data-theme="dark"] .twx-div.twm-head b{color:#FFF6E6;}
+.twx-div.twm-head span{height:2px;background:linear-gradient(90deg,rgba(201,160,64,0),rgba(201,160,64,.9),rgba(201,160,64,0));}
 [data-theme="dark"] .twx-div b{color:#FFD166;}
 #mmUpd{position:fixed;left:50%;transform:translateX(-50%);top:calc(env(safe-area-inset-top,0px) + 10px);z-index:99990;display:flex;align-items:center;gap:10px;
   width:min(440px,calc(100% - 24px));box-sizing:border-box;padding:10px 10px 10px 14px;border-radius:14px;background:rgba(11,21,38,.86);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);
