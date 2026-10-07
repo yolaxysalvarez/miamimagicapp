@@ -3,6 +3,31 @@
  "updated": "2026-10-06",
  "semana": [
   {
+   "id": "rutaterror26",
+   "scope": "local",
+   "d": "2026-10-06",
+   "d2": "2026-11-01",
+   "name": "The Horror Route · Miami's Halloween radar",
+   "name_es": "La Ruta del Terror · el radar de Halloween",
+   "venue": "15 stops across Miami",
+   "venue_es": "15 paradas por todo Miami",
+   "time": "Live map until Nov 1",
+   "time_es": "Mapa en vivo hasta el 1 de noviembre",
+   "price": "Free",
+   "price_es": "Gratis",
+   "free": true,
+   "type": "Halloween",
+   "type_es": "Halloween",
+   "photo": "https://www.miamimagicapp.com/fotos/terror-portada.jpg",
+   "desc": "Every Halloween plan in Miami on one live map, in five levels of fear: from pumpkin patches for the kids to the haunted houses. A ghost roams the stops open each day, and on the night of the 31st it runs the full route, live.",
+   "desc_es": "Todo el Halloween de Miami en un mapa en vivo, en cinco niveles de miedo: de las calabazas para ir con los niños a las casas embrujadas. Un fantasma ronda las paradas abiertas cada día y la noche del 31 hace el recorrido completo, en vivo.",
+   "tags": [
+    "Halloween",
+    "Family"
+   ],
+   "link": "https://www.miamimagicapp.com/terror.html"
+  },
+  {
    "id": "spice26",
    "scope": "local",
    "d": "2026-08-01",
@@ -2320,6 +2345,29 @@
  ],
  "mes": [
   {
+   "id": "rutaterror26",
+   "photo": "https://www.miamimagicapp.com/fotos/terror-portada.jpg",
+   "type": "Halloween",
+   "type_es": "Halloween",
+   "ac": "#FF4D35",
+   "dTop": "OCT",
+   "dBig": "6–31",
+   "dBot": "→1 NOV",
+   "end": "2026-11-01",
+   "name": "The Horror Route",
+   "name_es": "La Ruta del Terror",
+   "venue": "15 stops on a live map",
+   "venue_es": "15 paradas en un mapa en vivo",
+   "desc": "Every Halloween plan in Miami on one live map, in five levels of fear: from pumpkin patches for the kids to the haunted houses. A ghost roams the stops open each day, and on the night of the 31st it runs the full route, live.",
+   "desc_es": "Todo el Halloween de Miami en un mapa en vivo, en cinco niveles de miedo: de las calabazas para ir con los niños a las casas embrujadas. Un fantasma ronda las paradas abiertas cada día y la noche del 31 hace el recorrido completo, en vivo.",
+   "time": "Live until Nov 1",
+   "time_es": "En vivo hasta el 1 de noviembre",
+   "price": "Free",
+   "price_es": "Gratis",
+   "free": true,
+   "link": "https://www.miamimagicapp.com/terror.html"
+  },
+  {
    "id": "ms1",
    "photo": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format",
    "type": "Food",
@@ -2831,6 +2879,6 @@
  "_anuales": "Calendario anual, el de 'Eventos imperdibles'. Mismo criterio: por id (ae1, ae2...) reemplaza o agrega. Campos: id, d, d2, month, name, name_es, venue, venue_es, desc, desc_es.",
  "anuales": [],
  "quitar_anuales": [],
- "_verificado": "Cartelera del 26 de septiembre al 31 de diciembre de 2026. Conciertos verificados el 26 de septiembre en la web oficial de cada sede o en su vendedor oficial: kaseyacenter.com (todos los del Kaseya), hardrockstadium.com (Karol G), casino.hardrock.com/hollywood y Ticketmaster (Hard Rock Live), amerantbankarena.com y su boletería (Amerant), pompanobeacharts.org/AXS (Pompano), fillmoremb.com. Precios en $ / $$ / $$$: orientativos, siempre en el vendedor oficial. · Actualización del 1 de octubre de 2026 (eventos de octubre que no son conciertos), verificada en las webs oficiales: miamicarnival.org, redlandorchidfestival.com, sobeseafoodfest.com, zoomiami.org, iiipoints.com, kaseyacenter.com y miamiandbeaches.com (calendario oficial de turismo). Halloween en la calle y otros eventos sin fecha oficial confirmada quedan fuera. · Actualización del 5 de octubre de 2026: Live En La Playa, Lincoln Road Farmers Market y Ocean Drive Promenade Music Series verificados en el calendario oficial de la ciudad (events.miamibeachfl.gov); Inter Miami vs D.C. United (sáb 10 oct, 7:30 PM, Nu Stadium) confirmado en Ticketmaster. · Boots & Blooms (jue 8 oct) verificado en fairchildgarden.org; Orchids in October (10–11 oct) en Miami Living Magazine. · 6 oct 2026: Salsa Fest (miamibeachbandshell.com), Teatro Real y Ghostbusters (arshtcenter.org), Zombie Run (pinecrest-fl.gov), Billboard Latin Music Week (Billboard/Miami New Times), Miami Fashion Week (miamifashionweek.com), Berry Farm y Pumpkin Patch de Coral Gables (Miami on the Cheap); Trick-or-Treat on the Mile y Día de Muertos de Coral Gables con aviso de confirmar horario. · 6 oct 2026 (Ruta del Terror): Horrorland, House of Horror y Sounds of Screams (Miami New Times, 23 sep 2026); Deering Estate (South Florida Family Life); Miami Haunts (MiamiHauntedHouses.com); HalloWYN (Eventbrite); Lincoln Road, Hialeah Cares, Moss Center, Cutler Bay, MIM y W Rooftop (The Miami Guide / Mommy Poppins 2026).",
+ "_verificado": "Cartelera del 26 de septiembre al 31 de diciembre de 2026. Conciertos verificados el 26 de septiembre en la web oficial de cada sede o en su vendedor oficial: kaseyacenter.com (todos los del Kaseya), hardrockstadium.com (Karol G), casino.hardrock.com/hollywood y Ticketmaster (Hard Rock Live), amerantbankarena.com y su boletería (Amerant), pompanobeacharts.org/AXS (Pompano), fillmoremb.com. Precios en $ / $$ / $$$: orientativos, siempre en el vendedor oficial. · Actualización del 1 de octubre de 2026 (eventos de octubre que no son conciertos), verificada en las webs oficiales: miamicarnival.org, redlandorchidfestival.com, sobeseafoodfest.com, zoomiami.org, iiipoints.com, kaseyacenter.com y miamiandbeaches.com (calendario oficial de turismo). Halloween en la calle y otros eventos sin fecha oficial confirmada quedan fuera. · Actualización del 5 de octubre de 2026: Live En La Playa, Lincoln Road Farmers Market y Ocean Drive Promenade Music Series verificados en el calendario oficial de la ciudad (events.miamibeachfl.gov); Inter Miami vs D.C. United (sáb 10 oct, 7:30 PM, Nu Stadium) confirmado en Ticketmaster. · Boots & Blooms (jue 8 oct) verificado en fairchildgarden.org; Orchids in October (10–11 oct) en Miami Living Magazine. · 6 oct 2026: Salsa Fest (miamibeachbandshell.com), Teatro Real y Ghostbusters (arshtcenter.org), Zombie Run (pinecrest-fl.gov), Billboard Latin Music Week (Billboard/Miami New Times), Miami Fashion Week (miamifashionweek.com), Berry Farm y Pumpkin Patch de Coral Gables (Miami on the Cheap); Trick-or-Treat on the Mile y Día de Muertos de Coral Gables con aviso de confirmar horario. · 6 oct 2026 (Ruta del Terror): Horrorland, House of Horror y Sounds of Screams (Miami New Times, 23 sep 2026); Deering Estate (South Florida Family Life); Miami Haunts (MiamiHauntedHouses.com); HalloWYN (Eventbrite); Lincoln Road, Hialeah Cares, Moss Center, Cutler Bay, MIM y W Rooftop (The Miami Guide / Mommy Poppins 2026). · 6 oct 2026: La Ruta del Terror (rutaterror26) enlaza a /terror.html, que lee las 15 paradas de este mismo archivo.",
  "_campos": "Cada concierto lleva: d (fecha), d2 (si son dos noches), name, venue con la distancia desde Miami cuando está fuera, time/time_es, price, type, desc/desc_es, link al vendedor oficial. Para quitar uno, pon su id en quitar_semana. La app enseña solo los próximos 10 días en Esta Semana; el resto aparece cuando le toca."
 }
