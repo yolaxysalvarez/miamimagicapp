@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo cambia los lugares de la guía sin pasar por Apple. Funciona por id: si el id YA EXISTE, corrige solo los campos que pongas y el resto se queda igual; si el id es NUEVO y lleva \"name\", AÑADE el lugar a su sección; \"active\": false lo quita de la guía sin borrarlo de aquí. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
- "updated": "2026-10-05",
+ "updated": "2026-10-08",
  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs y hrs_es (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo). Solo para lugares nuevos: zone (little-havana, brickell, south-beach…), photo (fotos/….jpg para la tarjeta) y top (true = sale primero).",
  "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
  "_app": {
@@ -87,19 +87,170 @@
    "zone": "downtown"
   }
  },
- "hoteles": {},
+ "hoteles": {
+  "h29": {
+   "photo": "fotos/mm-mb-hotel-victor.jpg"
+  },
+  "h21": {
+   "photo": "fotos/mm-mb-national-fuente.jpg"
+  },
+  "h33": {
+   "photo": "fotos/mm-mb-sagamore-ritz-carlton.jpg"
+  },
+  "h9": {
+   "photo": "fotos/mm-mb-betsy.jpg"
+  },
+  "h74": {
+   "photo": "fotos/mm-mb-crest.jpg"
+  },
+  "h101": {
+   "name": "Cardozo South Beach",
+   "cat": "Art Deco · Ocean Drive",
+   "addr": "1300 Ocean Dr, South Beach",
+   "rating": 4.1,
+   "rev": 1026,
+   "photo": "fotos/mm-mb-cardozo.jpg",
+   "desc": "A classic Art Deco hotel on Ocean Drive, owned by Gloria and Emilio Estefan, with the beach right across the street and a restaurant terrace under pink awnings.",
+   "desc_es": "Un clásico Art Deco de Ocean Drive, propiedad de Gloria y Emilio Estefan, con la playa enfrente y una terraza de restaurante bajo toldos rosados.",
+   "pnote": "Ocean Drive has no self-parking at most hotels: plan on valet or a nearby public garage.",
+   "pnote_es": "En Ocean Drive casi ningún hotel tiene parqueo propio: cuenta con valet o un garaje público cercano.",
+   "price": "",
+   "stars": ""
+  },
+  "h102": {
+   "name": "Cavalier South Beach",
+   "cat": "Art Deco · Boutique · Ocean Drive",
+   "addr": "1320 Ocean Dr, South Beach",
+   "rating": 4.0,
+   "rev": 1114,
+   "photo": "fotos/mm-mb-cavalier.jpg",
+   "desc": "A small, renovated Art Deco hotel on Ocean Drive with one of the most ornate façades on the strip, across from the beach.",
+   "desc_es": "Un pequeño hotel Art Deco renovado en Ocean Drive, con una de las fachadas más ornamentadas de la avenida, frente a la playa.",
+   "price": "",
+   "stars": ""
+  },
+  "h103": {
+   "name": "Leslie Hotel Ocean Drive",
+   "cat": "Art Deco · Ocean Drive",
+   "addr": "1244 Ocean Dr, South Beach",
+   "rating": 4.2,
+   "rev": 784,
+   "photo": "fotos/mm-mb-leslie.jpg",
+   "desc": "The yellow-and-white Art Deco icon of Ocean Drive, in the heart of South Beach, across from Lummus Park and the sand.",
+   "desc_es": "El ícono Art Deco amarillo y blanco de Ocean Drive, en el corazón de South Beach, frente a Lummus Park y la arena.",
+   "price": "",
+   "stars": ""
+  },
+  "h104": {
+   "name": "Royal Palm South Beach Miami",
+   "cat": "Resort · Tribute Portfolio · Collins Ave",
+   "addr": "1545 Collins Ave, South Beach",
+   "rating": 3.9,
+   "rev": 4022,
+   "photo": "fotos/mm-mb-royal-palm.jpg",
+   "desc": "A recently renovated beachfront resort on Collins Avenue that includes the historic St. Moritz tower, with pool and direct access to the beach.",
+   "desc_es": "Un resort frente al mar en Collins Avenue, renovado recientemente, que incluye la histórica torre St. Moritz, con piscina y acceso directo a la playa.",
+   "price": "",
+   "stars": ""
+  },
+  "h105": {
+   "name": "Uma House by Yurbban South Beach",
+   "cat": "Boutique · Rooftop pool",
+   "addr": "1775 James Ave, South Beach",
+   "rating": 4.3,
+   "rev": 1472,
+   "photo": "fotos/mm-mb-uma-house.jpg",
+   "desc": "A calm, design-forward boutique hotel a few blocks from the beach, with a rooftop pool and bar and bikes for guests.",
+   "desc_es": "Un hotel boutique sereno y de diseño a pocas cuadras de la playa, con piscina y bar en la azotea y bicicletas para los huéspedes.",
+   "price": "",
+   "stars": ""
+  },
+  "h106": {
+   "name": "Dolce by Wyndham Miami Beach",
+   "cat": "New · Rooftop pool",
+   "addr": "1745 James Ave, South Beach",
+   "rating": 4.8,
+   "rev": 176,
+   "photo": "fotos/mm-mb-dolce.jpg",
+   "desc": "A brand-new hotel steps from Collins Avenue, with balconies, a rooftop pool and a short walk to the beach.",
+   "desc_es": "Un hotel nuevo a pasos de Collins Avenue, con balcones, piscina en la azotea y la playa a una caminata corta.",
+   "price": "",
+   "stars": ""
+  },
+  "h107": {
+   "name": "The Claremont Hotel, South Beach",
+   "cat": "Art Deco · Collins Ave",
+   "addr": "1700 Collins Ave, South Beach",
+   "rating": 3.4,
+   "rev": 254,
+   "photo": "fotos/mm-mb-claremont.jpg",
+   "desc": "An Art Deco hotel at Collins Avenue and 17th Street, next to the Dorset, a short walk from the beach and Lincoln Road.",
+   "desc_es": "Un hotel Art Deco en Collins Avenue y la calle 17, junto al Dorset, a poca distancia de la playa y de Lincoln Road.",
+   "pnote": "Recent reviews are mixed on maintenance: read the latest ones before booking.",
+   "pnote_es": "Las reseñas recientes son dispares sobre el mantenimiento: lee las más nuevas antes de reservar.",
+   "price": "",
+   "stars": ""
+  },
+  "h6": {
+   "photo": "fotos/mm-mb-loews.jpg"
+  },
+  "h89": {
+   "photo": "fotos/mm-mb-ritz-carlton.jpg"
+  }
+ },
  "noche": {},
- "playas": {},
+ "playas": {
+  "b11": {
+   "photo": "fotos/mm-hobie-island.jpg"
+  },
+  "b16": {
+   "photo": "fotos/mm-oleta-kayak.jpg"
+  },
+  "b14": {
+   "photo": "fotos/mm-hollywood-beach.jpg"
+  },
+  "b1": {
+   "photo": "fotos/mm-mb-playa-lincoln.jpg"
+  },
+  "b13": {
+   "photo": "fotos/mm-mb-salvavidas-13st.jpg"
+  }
+ },
  "museos": {},
- "lugares": {},
+ "lugares": {
+  "pl1": {
+   "photo": "fotos/mm-mb-art-deco-letrero.jpg"
+  }
+ },
  "teatros": {},
  "parques": {},
  "compras": {},
  "cafes": {},
  "ninos": {},
  "galerias": {},
- "excursiones": {},
- "conciertos": {},
+ "excursiones": {
+  "dt-schnebly": {
+   "name": "Schnebly Redland's Winery & Brewery",
+   "name_es": "Schnebly Redland's Winery & Brewery",
+   "dist": "50 min",
+   "duration": "3–5 hrs",
+   "desc": "In the farm country of the Redland, a winery that makes its wines from tropical fruit instead of grapes, lychee, coconut and avocado among them, with its own brewery next door, tastings, a restaurant and live music on weekends.",
+   "desc_es": "En la zona agrícola del Redland, una bodega que hace sus vinos con frutas tropicales en lugar de uvas, entre ellas lichi, coco y aguacate, con su propia cervecería al lado, catas, restaurante y música en vivo los fines de semana.",
+   "addr": "30205 SW 217th Ave, Homestead, FL 33030",
+   "hrs": "Mon–Thu 12–5 PM · Fri–Sat 11 AM–midnight · Sun 11 AM–8 PM",
+   "hrs_es": "Lun–Jue 12–5 PM · Vie–Sáb 11 AM–medianoche · Dom 11 AM–8 PM",
+   "rating": 4.7,
+   "link": "https://www.schneblywinery.com/",
+   "pnote": "Pair it with the Redland's fruit stands and farms for a full day south of Miami. Designate a driver: it's a long drive back.",
+   "pnote_es": "Combínalo con los puestos de frutas y las fincas del Redland para un día completo al sur de Miami. Lleva conductor designado: el regreso es largo.",
+   "photo": "fotos/mm-schnebly-fuente.jpg"
+  }
+ },
+ "conciertos": {
+  "c3": {
+   "photo": "fotos/mm-mb-fillmore.jpg"
+  }
+ },
  "estadios": {},
  "botes": {},
  "lujo": {},
