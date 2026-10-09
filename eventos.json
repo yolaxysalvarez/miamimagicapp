@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo manda sobre la cartelera de la app, sin pasar por Apple. Lo que pongas aquí se suma o corrige lo que ya trae la app; lo que no toques se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia \"updated\" cada vez.",
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "semana": [
   {
    "id": "rutaterror26",
@@ -2569,6 +2569,148 @@
     "Nightlife"
    ],
    "link": "https://www.exploretock.com/faenatheatermiamibeach/event/622263/the-veil-memento-mori-general-admission"
+  },
+  {
+   "id": "wyn-artwalk1010",
+   "scope": "local",
+   "d": "2026-10-10",
+   "name": "Wynwood Art Walk",
+   "name_es": "Wynwood Art Walk",
+   "venue": "Wynwood · NW 2nd Ave & 25th St area",
+   "venue_es": "Wynwood · zona de NW 2nd Ave y la calle 25",
+   "time": "Sat · 5–10 PM",
+   "time_es": "Sáb · 5–10 PM",
+   "price": "Free",
+   "price_es": "Gratis",
+   "free": true,
+   "type": "Art · Night out",
+   "type_es": "Arte · Salida nocturna",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-pl2.jpg",
+   "desc": "Every second Saturday Wynwood opens its doors: free entry to Wynwood Walls from 5 to 10 PM, galleries open late, and the Museum of Graffiti's show \"Who Authorized This?\" from 7 to 10 PM. RSVP on Eventbrite.",
+   "desc_es": "Cada segundo sábado Wynwood abre sus puertas: entrada gratis a Wynwood Walls de 5 a 10 PM, galerías abiertas hasta tarde y la muestra \"Who Authorized This?\" del Museum of Graffiti de 7 a 10 PM. Se confirma por Eventbrite.",
+   "tags": [
+    "Art",
+    "Culture"
+   ],
+   "link": "https://wynwoodmiami.com/experience/art-walk/"
+  },
+  {
+   "id": "mdd-arttour1010",
+   "scope": "local",
+   "d": "2026-10-10",
+   "name": "Design District Public Art Tour",
+   "name_es": "Recorrido de arte público del Design District",
+   "venue": "Palm Court · Miami Design District",
+   "venue_es": "Palm Court · Miami Design District",
+   "time": "Sat · 11 AM–12 PM",
+   "time_es": "Sáb · 11 AM–12 PM",
+   "price": "RSVP",
+   "price_es": "Con reserva",
+   "type": "Art · Walking tour",
+   "type_es": "Arte · Recorrido a pie",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-pl6.jpg",
+   "desc": "A guided walk through the neighborhood's art and architecture: Buckminster Fuller's Fly's Eye Dome, Virgil Abloh's \"Dollar a Gallon\" and Criola's \"Interdimensional Portal\", among other works.",
+   "desc_es": "Un recorrido guiado por el arte y la arquitectura del barrio: la cúpula Fly's Eye de Buckminster Fuller, \"Dollar a Gallon\" de Virgil Abloh y el \"Interdimensional Portal\" de Criola, entre otras obras.",
+   "tags": [
+    "Art",
+    "Culture"
+   ],
+   "link": "https://www.miamidesigndistrict.com/event/public-art-tour/"
+  },
+  {
+   "id": "mdd-sidsingh1010",
+   "scope": "local",
+   "d": "2026-10-10",
+   "name": "Stray Thoughts · Sid Singh",
+   "name_es": "Stray Thoughts · Sid Singh",
+   "venue": "Dále Zine · 50 NE 40th St, Design District",
+   "venue_es": "Dále Zine · 50 NE 40th St, Design District",
+   "time": "Sat · 6–9 PM",
+   "time_es": "Sáb · 6–9 PM",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Art · Opening night",
+   "type_es": "Arte · Inauguración",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-pl6.jpg",
+   "desc": "Opening reception for a new exhibition of photographs by Sid Singh from Ladakh, India: nomadic communities, wildlife and life at the edge of the Himalaya.",
+   "desc_es": "Inauguración de una muestra de fotografías de Sid Singh en Ladakh, India: comunidades nómadas, fauna y la vida en el borde del Himalaya.",
+   "tags": [
+    "Art",
+    "Culture"
+   ],
+   "link": "https://www.miamidesigndistrict.com/event/stray-thoughts-by-sid-singh-opening-reception/"
+  },
+  {
+   "id": "mdd-manolobridal26",
+   "scope": "local",
+   "d": "2026-10-10",
+   "d2": "2026-10-11",
+   "name": "Happy Isles + Manolo Blahnik Bridal Event",
+   "name_es": "Novias: Happy Isles + Manolo Blahnik",
+   "venue": "Manolo Blahnik · 140 NE 39th St, Design District",
+   "venue_es": "Manolo Blahnik · 140 NE 39th St, Design District",
+   "time": "Sat by appointment · Sun 12–6 PM",
+   "time_es": "Sáb con cita · Dom 12–6 PM",
+   "price": "Free entry Sun",
+   "price_es": "Domingo abierto al público",
+   "type": "Fashion · Bridal",
+   "type_es": "Moda · Novias",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-pl6.jpg",
+   "desc": "Curated vintage bridal looks from Happy Isles with Manolo Blahnik's bridal shoes. Saturday is semi-private shopping by appointment; on Sunday the Happy Isles suite on the top floor of the Manolo Blahnik boutique opens to everyone.",
+   "desc_es": "Vestidos de novia vintage seleccionados por Happy Isles con los zapatos de novia de Manolo Blahnik. El sábado son citas semiprivadas; el domingo la suite de Happy Isles, en el último piso de la tienda de Manolo Blahnik, abre para todo el público.",
+   "tags": [
+    "Fashion",
+    "Shopping"
+   ],
+   "link": "https://www.miamidesigndistrict.com/event/happy-isles-manolo-blahnik-bridal-event/"
+  },
+  {
+   "id": "mdd-shoescure26",
+   "scope": "local",
+   "d": "2026-10-10",
+   "d2": "2026-10-17",
+   "name": "Shoes for a Cure: Shop for a Cause",
+   "name_es": "Shoes for a Cure: compra por una causa",
+   "venue": "Miami Design District · participating boutiques",
+   "venue_es": "Miami Design District · tiendas participantes",
+   "time": "Oct 10–17 · in-store events",
+   "time_es": "10 al 17 oct · eventos en tienda",
+   "price": "Free entry",
+   "price_es": "Entrada libre",
+   "free": true,
+   "type": "Fashion · Charity",
+   "type_es": "Moda · Causa benéfica",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-pl6.jpg",
+   "desc": "Third Miami edition: a week of in-store events whose shopping supports breast cancer research and care at Sylvester Comprehensive Cancer Center. Veronica Beard opens on Oct 10 (11 AM–2 PM); Carolina Herrera, Manolo Blahnik, Balmain and Sevan Bıçakçı on Oct 15 (5–7 PM); Kirna Zabête on Oct 16; Alexander Wang, Zadig & Voltaire, Blu Scarpa and Birkenstock on Oct 17.",
+   "desc_es": "Tercera edición en Miami: una semana de eventos en las tiendas cuyas compras apoyan la investigación y el tratamiento del cáncer de mama en el Sylvester Comprehensive Cancer Center. Abre Veronica Beard el 10 de octubre (11 AM–2 PM); Carolina Herrera, Manolo Blahnik, Balmain y Sevan Bıçakçı el 15 (5–7 PM); Kirna Zabête el 16; Alexander Wang, Zadig & Voltaire, Blu Scarpa y Birkenstock el 17.",
+   "tags": [
+    "Fashion",
+    "Shopping"
+   ],
+   "link": "https://www.miamidesigndistrict.com/event/shoes-for-a-cure-shop-for-a-cause/"
+  },
+  {
+   "id": "mdd-oktoberfest26",
+   "scope": "local",
+   "d": "2026-10-09",
+   "d2": "2026-10-18",
+   "name": "Oktoberfest at Michael's Genuine",
+   "name_es": "Oktoberfest en Michael's Genuine",
+   "venue": "Michael's Genuine · 130 NE 40th St, Design District",
+   "venue_es": "Michael's Genuine · 130 NE 40th St, Design District",
+   "time": "Through Oct 18 · lunch Mon–Sat, dinner daily",
+   "time_es": "Hasta el 18 oct · almuerzo lun a sáb, cena todos los días",
+   "price": "Menu prices",
+   "price_es": "Precios de carta",
+   "type": "Food · Seasonal menu",
+   "type_es": "Comida · Menú de temporada",
+   "photo": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=60&auto=format",
+   "desc": "Chef Michael Schwartz's limited Bavarian menu: wood-baked spätzle, pretzel tart and slow-roasted pork knuckle, paired with Märzen lagers and rotating seasonal German beers. Reserve on OpenTable.",
+   "desc_es": "El menú bávaro de temporada del chef Michael Schwartz: spätzle al horno de leña, tarta de pretzel y codillo de cerdo asado lento, con cervezas Märzen y alemanas de temporada. Se reserva por OpenTable.",
+   "tags": [
+    "Food"
+   ],
+   "link": "https://www.miamidesigndistrict.com/event/celebrate-oktoberfest-at-michaels-genuine/"
   }
  ],
  "mes": [
