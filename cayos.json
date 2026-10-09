@@ -552,7 +552,11 @@
     "swim",
     "photo"
    ],
-   "photo": "https://images.unsplash.com/photo-1591071019908-6f91e98bc18e?w=760&q=72&auto=format&fit=crop"
+   "photo": "fotos/mm-dt7.jpg",
+   "photos": [
+    "fotos/mm-dt7.jpg",
+    "fotos/mm-dt7b.jpg"
+   ]
   },
   {
    "id": "ky-hemingway",
@@ -578,7 +582,7 @@
    "perks": [
     "photo"
    ],
-   "photo": "https://images.unsplash.com/photo-1709304225457-dc3f846cb2ed?w=760&q=72&auto=format&fit=crop"
+   "photo": "fotos/mm-keys-kw-scooter.jpg"
   },
   {
    "id": "ky-southernmost",
