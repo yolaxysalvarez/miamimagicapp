@@ -167,14 +167,13 @@
    "rating": 3.9,
    "rev": 4022,
    "photo": "fotos/mm-mb-royal-palm.jpg",
-   "desc": "A recently renovated beachfront resort on Collins Avenue that includes the historic St. Moritz tower, with pool and direct access to the beach.",
-   "desc_es": "Un resort frente al mar en Collins Avenue, renovado recientemente, que incluye la histórica torre St. Moritz, con piscina y acceso directo a la playa.",
+   "desc": "A beachfront resort on Collins Avenue, part of the Tribute Portfolio collection, with a pool and direct access to the beach.",
+   "desc_es": "Un resort frente al mar en Collins Avenue, de la colección Tribute Portfolio, con piscina y acceso directo a la playa.",
    "price": "",
    "stars": "",
    "photos": [
     "fotos/mm-mb-royal-palm.jpg",
-    "fotos/mm-mb-royal-palm-02.jpg",
-    "fotos/mm-mb-st-moritz.jpg"
+    "fotos/mm-mb-royal-palm-02.jpg"
    ]
   },
   "h105": {
@@ -228,7 +227,8 @@
    "photo": "fotos/mm-mb-loews.jpg",
    "photos": [
     "fotos/mm-mb-loews.jpg",
-    "fotos/mm-mb-loews-letrero.jpg"
+    "fotos/mm-mb-loews-letrero.jpg",
+    "fotos/mm-mb-st-moritz.jpg"
    ]
   },
   "h89": {
