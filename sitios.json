@@ -89,16 +89,35 @@
  },
  "hoteles": {
   "h29": {
-   "photo": "fotos/mm-mb-hotel-victor.jpg"
+   "photo": "fotos/mm-mb-hotel-victor.jpg",
+   "photos": [
+    "fotos/mm-mb-hotel-victor.jpg",
+    "fotos/mm-mb-hotel-victor-02.jpg",
+    "fotos/mm-mb-hotel-victor-03.jpg",
+    "fotos/mm-mb-hotel-victor-04.jpg"
+   ]
   },
   "h21": {
-   "photo": "fotos/mm-mb-national-fuente.jpg"
+   "photo": "fotos/mm-mb-national-fuente.jpg",
+   "photos": [
+    "fotos/mm-mb-national-fuente.jpg",
+    "fotos/mm-mb-delano-national.jpg",
+    "fotos/mm-mb-ritz-plaza-delano-national.jpg",
+    "fotos/mm-mb-ritz-delano-national.jpg"
+   ]
   },
   "h33": {
-   "photo": "fotos/mm-mb-sagamore-ritz-carlton.jpg"
+   "photo": "fotos/mm-mb-sagamore-ritz-carlton.jpg",
+   "photos": [
+    "fotos/mm-mb-sagamore-ritz-carlton.jpg"
+   ]
   },
   "h9": {
-   "photo": "fotos/mm-mb-betsy.jpg"
+   "photo": "fotos/mm-mb-betsy.jpg",
+   "photos": [
+    "fotos/mm-mb-betsy.jpg",
+    "fotos/mm-mb-betsy-ross-esquina.jpg"
+   ]
   },
   "h74": {
    "photo": "fotos/mm-mb-crest.jpg"
@@ -151,7 +170,12 @@
    "desc": "A recently renovated beachfront resort on Collins Avenue that includes the historic St. Moritz tower, with pool and direct access to the beach.",
    "desc_es": "Un resort frente al mar en Collins Avenue, renovado recientemente, que incluye la histórica torre St. Moritz, con piscina y acceso directo a la playa.",
    "price": "",
-   "stars": ""
+   "stars": "",
+   "photos": [
+    "fotos/mm-mb-royal-palm.jpg",
+    "fotos/mm-mb-royal-palm-02.jpg",
+    "fotos/mm-mb-st-moritz.jpg"
+   ]
   },
   "h105": {
    "name": "Uma House by Yurbban South Beach",
@@ -163,7 +187,12 @@
    "desc": "A calm, design-forward boutique hotel a few blocks from the beach, with a rooftop pool and bar and bikes for guests.",
    "desc_es": "Un hotel boutique sereno y de diseño a pocas cuadras de la playa, con piscina y bar en la azotea y bicicletas para los huéspedes.",
    "price": "",
-   "stars": ""
+   "stars": "",
+   "photos": [
+    "fotos/mm-mb-uma-house.jpg",
+    "fotos/mm-mb-uma-house-entrada.jpg",
+    "fotos/mm-mb-uma-house-bicis.jpg"
+   ]
   },
   "h106": {
    "name": "Dolce by Wyndham Miami Beach",
@@ -189,13 +218,25 @@
    "pnote": "Recent reviews are mixed on maintenance: read the latest ones before booking.",
    "pnote_es": "Las reseñas recientes son dispares sobre el mantenimiento: lee las más nuevas antes de reservar.",
    "price": "",
-   "stars": ""
+   "stars": "",
+   "photos": [
+    "fotos/mm-mb-claremont.jpg",
+    "fotos/mm-mb-claremont-dorset.jpg"
+   ]
   },
   "h6": {
-   "photo": "fotos/mm-mb-loews.jpg"
+   "photo": "fotos/mm-mb-loews.jpg",
+   "photos": [
+    "fotos/mm-mb-loews.jpg",
+    "fotos/mm-mb-loews-letrero.jpg"
+   ]
   },
   "h89": {
-   "photo": "fotos/mm-mb-ritz-carlton.jpg"
+   "photo": "fotos/mm-mb-ritz-carlton.jpg",
+   "photos": [
+    "fotos/mm-mb-ritz-carlton.jpg",
+    "fotos/mm-mb-ritz-delano-national.jpg"
+   ]
   }
  },
  "noche": {},
@@ -220,6 +261,9 @@
  "lugares": {
   "pl1": {
    "photo": "fotos/mm-mb-art-deco-letrero.jpg"
+  },
+  "pl8": {
+   "photo": "fotos/mm-bayside-aerea.jpg"
   }
  },
  "teatros": {},
@@ -248,7 +292,11 @@
  },
  "conciertos": {
   "c3": {
-   "photo": "fotos/mm-mb-fillmore.jpg"
+   "photo": "fotos/mm-mb-fillmore.jpg",
+   "photos": [
+    "fotos/mm-mb-fillmore.jpg",
+    "fotos/mm-mb-fillmore-letrero.jpg"
+   ]
   }
  },
  "estadios": {},
