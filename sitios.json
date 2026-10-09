@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo cambia los lugares de la guía sin pasar por Apple. Funciona por id: si el id YA EXISTE, corrige solo los campos que pongas y el resto se queda igual; si el id es NUEVO y lleva \"name\", AÑADE el lugar a su sección; \"active\": false lo quita de la guía sin borrarlo de aquí. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs y hrs_es (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo). Solo para lugares nuevos: zone (little-havana, brickell, south-beach…), photo (fotos/….jpg para la tarjeta) y top (true = sale primero).",
  "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
  "_app": {
@@ -129,8 +129,8 @@
    "rating": 4.1,
    "rev": 1026,
    "photo": "fotos/mm-mb-cardozo.jpg",
-   "desc": "A classic Art Deco hotel on Ocean Drive, owned by Gloria and Emilio Estefan, with the beach right across the street and a restaurant terrace under pink awnings.",
-   "desc_es": "Un clásico Art Deco de Ocean Drive, propiedad de Gloria y Emilio Estefan, con la playa enfrente y una terraza de restaurante bajo toldos rosados.",
+   "desc": "A classic Art Deco hotel on Ocean Drive, owned by Gloria and Emilio Estefan, with the beach right across the street. Its restaurant, Call Me Cuban, comes from the team behind Yuca and serves breakfast and dinner on the terrace.",
+   "desc_es": "Un clásico Art Deco de Ocean Drive, propiedad de Gloria y Emilio Estefan, con la playa enfrente. Su restaurante, Call Me Cuban, es del equipo de Yuca y sirve desayuno y cena en la terraza.",
    "pnote": "Ocean Drive has no self-parking at most hotels: plan on valet or a nearby public garage.",
    "pnote_es": "En Ocean Drive casi ningún hotel tiene parqueo propio: cuenta con valet o un garaje público cercano.",
    "price": "",
