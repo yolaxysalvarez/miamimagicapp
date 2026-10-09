@@ -7932,8 +7932,11 @@ function renderHotels(){
     +'</div>';
   }
   window.hotelCardOuter=hotelCard; window.hotelCardHOuter=hotelCardH;
-  var preview = mmRotarDiaTodo(hotelList, 24);
-  var rest    = hotelList;
+  /* v1.6: primero los hoteles con foto real (la suya); dentro de cada grupo se mantiene el orden */
+  var mmOwnFirst=function(arr){ return arr.map(function(h,i){return [h,i];}).sort(function(a,b){
+      var fa=sPhoto(a[0].id)?0:1, fb=sPhoto(b[0].id)?0:1; return (fa-fb)||(a[1]-b[1]); }).map(function(x){return x[0];}); };
+  var preview = mmOwnFirst(mmRotarDiaTodo(hotelList, 24));
+  var rest    = mmOwnFirst(hotelList);
   window._hotelTotal = hotelList.length;
   var totalLbl = L==='es' ? 'Ver todos ('+hotelList.length+') →' : 'See all '+hotelList.length+' hotels →';
   html+='<div class="h-row" id="hotels-preview">';
@@ -11972,7 +11975,7 @@ if(typeof window.renderSecretSpots==='undefined') window.renderSecretSpots=funct
    (con el rótulo "Foto de la zona"), elegida siempre igual por su id. */
 var MM_AREA_FOTOS={
   'South Beach':['fotos/mm-mb-calle-01.jpg','fotos/mm-mb-calle-02.jpg','fotos/mm-mb-calle-03.jpg','fotos/mm-mb-ocean-drive-parque.jpg','fotos/mm-mb-art-deco-letrero-02.jpg','fotos/mm-mb-playa-lincoln.jpg','fotos/mm-mb-salvavidas-17st.jpg','fotos/mm-mb-edificio-washington.jpg','fotos/mm-mb-ritz-plaza-delano-national.jpg','fotos/mm-mb-salvavidas-13st.jpg'],
-  'Brickell':['fotos/mm-brickell-metromover.jpg','fotos/mm-metrorail-brickell.jpg','fotos/mm-week-brickell.jpg','fotos/mm-pl10.jpg'],
+  'Brickell':['fotos/mm-week-brickell.jpg','fotos/mm-pl10.jpg'],
   'Downtown':['fotos/mm-bayside-aerea.jpg','fotos/mm-downtown-freedom-tower.jpg','fotos/mm-rio-miami-puente.jpg','fotos/mm-macarthur-rosa.jpg'],
   'Coconut Grove':['fotos/mm-pl7.jpg'], 'Wynwood':['fotos/mm-pl2.jpg'], 'Design District':['fotos/mm-pl6.jpg'],
   'Hollywood Beach':['fotos/mm-hollywood-beach.jpg'], 'Miami Airport':['fotos/mm-airport-mia.jpg'], 'Doral':['fotos/mm-airport-mia.jpg'],
