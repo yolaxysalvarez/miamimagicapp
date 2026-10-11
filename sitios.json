@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo cambia los lugares de la guía sin pasar por Apple. Funciona por id: si el id YA EXISTE, corrige solo los campos que pongas y el resto se queda igual; si el id es NUEVO y lleva \"name\", AÑADE el lugar a su sección; \"active\": false lo quita de la guía sin borrarlo de aquí. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
- "updated": "2026-10-09",
+ "updated": "2026-10-10",
  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs y hrs_es (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo). Solo para lugares nuevos: zone (little-havana, brickell, south-beach…), photo (fotos/….jpg para la tarjeta) y top (true = sale primero).",
  "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
  "_app": {
@@ -239,7 +239,85 @@
    ]
   }
  },
- "noche": {},
+ "noche": {
+  "n2": {
+   "hrs": "Mon–Wed 11 AM – 1 AM · Thu & Sun until 2 AM · Fri–Sat until 3 AM",
+   "hrs_es": "Lun–Mié 11 AM – 1 AM · Jue y Dom hasta 2 AM · Vie–Sáb hasta 3 AM"
+  },
+  "n6": {
+   "hrs": "Daily 5–11 PM",
+   "hrs_es": "Todos los días 5–11 PM"
+  },
+  "n7": {
+   "hrs": "Wed–Sat 10 PM – 5 AM",
+   "hrs_es": "Mié–Sáb 10 PM – 5 AM"
+  },
+  "n9": {
+   "desc": "Miami's legendary underground techno church — a raw downtown warehouse club with a rooftop terrace and the city's most respected sound system. Where global electronic music legends play marathon sets from midnight to Monday morning. A true Miami institution.",
+   "desc_es": "La legendaria catedral underground de techno de Miami — club en un almacén del centro, con terraza y el mejor sistema de sonido de la ciudad. Leyendas del electrónico tocan maratones hasta el lunes. Una institución.",
+   "hrs": "Fri–Sun 11 PM – 11 AM",
+   "hrs_es": "Vie–Dom 11 PM – 11 AM"
+  },
+  "n10": {
+   "hrs": "Mon–Wed & Sun 4 PM – 2 AM · Thu–Sat 4 PM – 3 AM",
+   "hrs_es": "Lun–Mié y Dom 4 PM – 2 AM · Jue–Sáb 4 PM – 3 AM"
+  },
+  "n21": {
+   "hrs": "Thu 4 PM – 1 AM · Fri 4 PM – 3 AM · Sat 12 PM – 3 AM · Sun 12 PM – 1 AM · Closed Mon–Wed",
+   "hrs_es": "Jue 4 PM – 1 AM · Vie 4 PM – 3 AM · Sáb 12 PM – 3 AM · Dom 12 PM – 1 AM · Cierra Lun–Mié"
+  },
+  "n11": {
+   "desc": "Little Havana's beloved live music institution — a Cuban social club where local and international Latin artists perform every Friday and Saturday night in an intimate wood-paneled room. Authentic son cubano, timba, trova, and salsa. No tourists, all locals, all music, all soul.",
+   "desc_es": "La querida institución musical de Little Havana — club social cubano donde artistas locales e internacionales tocan los viernes y sábados por la noche. Son cubano, timba, trova y salsa auténticos. Sin turistas, solo locales y alma.",
+   "hrs": "Fri & Sat 8 PM – 2 AM",
+   "hrs_es": "Vie y Sáb 8 PM – 2 AM"
+  },
+  "n15": {
+   "active": false
+  },
+  "n16": {
+   "hrs": "Mon–Thu 11 AM – 1 AM · Fri–Sun 11 AM – 2 AM",
+   "hrs_es": "Lun–Jue 11 AM – 1 AM · Vie–Dom 11 AM – 2 AM"
+  },
+  "n17": {
+   "active": false
+  },
+  "n19": {
+   "link": "https://www.lagniappehouse.com"
+  },
+  "n26": {
+   "link": "https://riverhousebar.com"
+  },
+  "n27": {
+   "hrs": "Tue–Wed 12 PM – 12 AM · Thu–Fri 12 PM – 1 AM · Sat 11:30 AM – 1 AM · Sun 11:30 AM – 12 AM · Closed Mon",
+   "hrs_es": "Mar–Mié 12 PM – 12 AM · Jue–Vie 12 PM – 1 AM · Sáb 11:30 AM – 1 AM · Dom 11:30 AM – 12 AM · Cierra lunes"
+  },
+  "n28": {
+   "hrs": "Fri–Sun 11 PM – 5 AM",
+   "hrs_es": "Vie–Dom 11 PM – 5 AM"
+  },
+  "n30": {
+   "hrs": "Thu–Sun from 9 PM, usually until 5 AM",
+   "hrs_es": "Jue–Dom desde las 9 PM, normalmente hasta las 5 AM",
+   "link": "https://www.mode.miami"
+  },
+  "n31": {
+   "link": "https://www.instagram.com/domicile.miami/"
+  },
+  "n32": {
+   "link": "https://www.instagram.com/madradiomiami/"
+  },
+  "n33": {
+   "desc": "A small room on NE 79th Street that feels like a house party thrown by friends with very good taste in DJs. Drag shows, themed nights and pop-ups mean it is never quite the same twice. Open Wednesday through Saturday.",
+   "desc_es": "Una sala pequeña en la NE 79th Street que se siente como una fiesta en casa de amigos con muy buen gusto para los DJs. Shows de drag, noches temáticas y pop-ups hacen que nunca sea igual dos veces. De miércoles a sábado.",
+   "hrs": "Wed 8 PM – 12 AM · Thu–Fri 8 PM – 3 AM · Sat 10 PM – 3 AM · Closed Sun–Tue",
+   "hrs_es": "Mié 8 PM – 12 AM · Jue–Vie 8 PM – 3 AM · Sáb 10 PM – 3 AM · Cierra Dom–Mar",
+   "link": "https://www.supernatural305.com"
+  },
+  "n34": {
+   "active": false
+  }
+ },
  "playas": {
   "b11": {
    "photo": "fotos/mm-hobie-island.jpg"
@@ -260,7 +338,29 @@
    "photo": "fotos/mm-mb-ocean-drive-parque.jpg"
   }
  },
- "museos": {},
+ "museos": {
+  "m3": {
+   "hrs": "Wed–Sun 12–5 PM · Closed Mon–Tue",
+   "hrs_es": "Mié–Dom 12–5 PM · Cierra Lun–Mar",
+   "fee": "Adults $15",
+   "fee_es": "Adultos $15"
+  },
+  "m6": {
+   "hrs": "Wed–Sun 11 AM – 6 PM · Closed Mon–Tue",
+   "hrs_es": "Mié–Dom 11 AM – 6 PM · Cierra Lun–Mar"
+  },
+  "m9": {
+   "link": "https://www.superblue.com/miami"
+  },
+  "m10": {
+   "link": "https://paradoxmuseum.com/miami"
+  },
+  "m11": {
+   "desc": "Nearly 200 feet above Bayside Marketplace, in an air-conditioned capsule, with Biscayne Bay on one side and the Downtown skyline on the other. The ride lasts about 12–15 minutes — go near sunset.",
+   "desc_es": "Casi 60 metros sobre Bayside Marketplace, en cápsula con aire acondicionado, con la Bahía de Biscayne de un lado y el skyline del Downtown del otro. El paseo dura unos 12–15 minutos — ve cerca del atardecer.",
+   "link": "https://skyviewsmiami.com"
+  }
+ },
  "lugares": {
   "pl1": {
    "photo": "fotos/mm-mb-art-deco-letrero.jpg"
@@ -300,9 +400,18 @@
     "fotos/mm-mb-fillmore.jpg",
     "fotos/mm-mb-fillmore-letrero.jpg"
    ]
+  },
+  "c1": {
+   "desc": "Miami's premier indoor arena hosting the world's biggest acts — Taylor Swift, Bad Bunny, Coldplay, Shakira.",
+   "desc_es": "La principal arena de Miami. Bad Bunny, Shakira, Coldplay.",
+   "cap": "19,600"
   }
  },
- "estadios": {},
+ "estadios": {
+  "s1": {
+   "active": false
+  }
+ },
  "botes": {},
  "lujo": {},
  "cruceros": {},
