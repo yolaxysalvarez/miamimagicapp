@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo cambia los lugares de la guía sin pasar por Apple. Funciona por id: si el id YA EXISTE, corrige solo los campos que pongas y el resto se queda igual; si el id es NUEVO y lleva \"name\", AÑADE el lugar a su sección; \"active\": false lo quita de la guía sin borrarlo de aquí. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
- "updated": "2026-10-10",
+ "updated": "2026-10-12",
  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs y hrs_es (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo). Solo para lugares nuevos: zone (little-havana, brickell, south-beach…), photo (fotos/….jpg para la tarjeta) y top (true = sale primero).",
  "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
  "_app": {
@@ -85,6 +85,35 @@
    "pro": false,
    "link": "https://gisellemiami.com/",
    "zone": "downtown"
+  },
+  "r104": {
+   "name": "CalaMillor",
+   "cat": "Spanish · Mediterranean",
+   "cat_es": "Español · Mediterráneo",
+   "filter": "mediterranean",
+   "bg": "bg-amber",
+   "badge": "Mallorcan Bakery & Tapas",
+   "badge_es": "Panadería mallorquina y tapas",
+   "price": "$$$",
+   "occ": "Brunch · Family · Friends",
+   "occ_es": "Brunch · Familia · Amigos",
+   "tags": [
+    "Spanish",
+    "Tapas",
+    "Bakery",
+    "Paella"
+   ],
+   "addr": "4000 SW 57th Ave, Coral Gables",
+   "hrs": "Sun–Thu 8 AM–9 PM · Fri–Sat 8 AM–10 PM",
+   "hrs_es": "Dom–Jue 8 AM–9 PM · Vie–Sáb 8 AM–10 PM",
+   "pro": false,
+   "link": "https://calamillormiami.com/",
+   "zone": "coral-gables",
+   "photo": "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=500&q=72",
+   "desc": "A Spanish bakery and restaurant from a Mallorcan baking family, named after a cove in Mallorca. Mornings belong to the ensaimadas, filled with whipped cream or crème brûlée; later come croquetas, patatas bravas, grilled octopus, gambas al ajillo, tortilla and jamón ibérico, plus a market of Spanish oils, cheeses, cured meats and wine.",
+   "desc_es": "Una panadería y restaurante español de una familia de panaderos mallorquines, con el nombre de una cala de Mallorca. Las mañanas son de las ensaimadas, rellenas de nata o de crema quemada; después llegan las croquetas, las patatas bravas, el pulpo a la parrilla, las gambas al ajillo, la tortilla y el jamón ibérico, además de un mercado de aceites, quesos, embutidos y vinos españoles.",
+   "pnote": "Monday is paella night, from 6 PM. Happy hour runs Mon–Fri 3:30–6 PM, and there is a weekday executive lunch menu (11 AM–4 PM). It sits at Bird Road and 57th Avenue, in the old Allen's Drugs building.",
+   "pnote_es": "El lunes es noche de paella, desde las 6 PM. Hay happy hour de lunes a viernes de 3:30 a 6 PM y menú ejecutivo al mediodía entre semana (11 AM–4 PM). Está en Bird Road y la 57 Avenida, en el antiguo edificio de Allen's Drugs."
   }
  },
  "hoteles": {
