@@ -271,6 +271,18 @@
     "fotos/mm-mb-ritz-carlton.jpg",
     "fotos/mm-mb-ritz-delano-national.jpg"
    ]
+  },
+  "h108": {
+   "name": "Eden Roc Miami Beach",
+   "cat": "Iconic · Oceanfront · Luxury",
+   "addr": "4525 Collins Ave, Mid-Beach",
+   "link": "https://www.edenrochotelmiami.com/",
+   "desc": "The mid-century landmark Morris Lapidus designed right next door to the Fontainebleau, on the sand in Mid-Beach. Three oceanfront pools, a full spa, Ocean Social on the beach and Nobu Miami under the same roof.",
+   "desc_es": "El clásico de mediados de siglo que Morris Lapidus diseñó justo al lado del Fontainebleau, sobre la arena de Mid-Beach. Tres piscinas frente al mar, spa completo, Ocean Social en la playa y Nobu Miami bajo el mismo techo.",
+   "pnote": "Nobu Hotel shares the property, and one of the pools is reserved for Nobu guests: check which side your room is on when you book.",
+   "pnote_es": "El hotel Nobu comparte la propiedad y una de las piscinas es solo para sus huéspedes: al reservar, confirma de qué lado queda tu habitación.",
+   "price": "",
+   "stars": ""
   }
  },
  "noche": {
