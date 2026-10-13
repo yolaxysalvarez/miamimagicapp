@@ -21,7 +21,12 @@
    "photo_url": "https://youtu.be/KwmdPgm_azI"
   },
   "r101": {
-   "photo_url": "https://youtu.be/CnK5f6k62Fk"
+   "photo_url": "https://youtu.be/CnK5f6k62Fk",
+   "photo": "fotos/mm-elia-salon.jpg",
+   "photos": [
+    "fotos/mm-elia-salon.jpg",
+    "fotos/mm-elia-entrada.jpg"
+   ]
   },
   "r34": {
    "photo_url": "https://youtu.be/cMcjduVQ_Lw"
