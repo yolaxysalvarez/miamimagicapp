@@ -21020,6 +21020,8 @@ input[type="number"],input[type="password"],textarea,select{font-size:16px !impo
 #sec-keys .ky-hero-tt{font:700 1.7rem/1.1 'Playfair Display',serif;text-shadow:0 2px 14px rgba(0,0,0,.35);}
 #sec-keys .ky-hero-sb{font:500 .86rem/1.4 'DM Sans',sans-serif;color:rgba(255,255,255,.88);margin-top:5px;}
 #sec-keys .ky-hero-sb b{color:var(--gold);font-weight:700;}
+#sec-keys .ky-hero-play{position:absolute;right:14px;top:14px;z-index:3;display:inline-flex;align-items:center;gap:7px;padding:8px 14px 8px 11px;border:0;border-radius:999px;background:rgba(255,255,255,.94);color:#0E1B30;font:700 .74rem 'DM Sans',sans-serif;letter-spacing:.02em;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.22);}
+#sec-keys .ky-hero-play svg{color:#FF4D35;}
 #sec-keys .ky-hero-line,.ky-line{position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,#5FE0D2,#00C9B1,#0F6E78);}
 .ky-plate{position:absolute;top:12px;left:12px;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:44px;padding:5px 9px 4px;line-height:1;background:var(--ky-green);border:1px solid rgba(255,209,102,.55);border-radius:4px;box-shadow:0 3px 10px rgba(0,0,0,.28);}
 .ky-plate i{font:400 .62rem 'Bebas Neue',sans-serif;font-style:normal;letter-spacing:.16em;color:#E9F4F2;}
@@ -21167,12 +21169,29 @@ function renderKeys(){
       +'<div class="ky-hero-ph" style="background-image:url(\''+kyM(h.photo)+'\')"></div>'+vid
       +'<div class="ky-hero-sc"></div>'
       +'<span class="ky-plate ky-plate-row"><i>MILE</i><b>127</b><i>→</i><b>0</b></span>'
+      +(kyYid(h.youtube)?'<button type="button" class="ky-hero-play" aria-label="'+(es?'Mira el video de los Cayos':'Watch the Keys film')+'" onclick="event.stopPropagation();mmKeysFilm(this)">'
+        +'<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>'
+        +(es?'Mira los Cayos':'Watch the Keys')+'</button>':'')
       +'<div class="ky-hero-tx"><div class="ky-hero-eb">Upper · Middle · Lower Keys</div>'
       +'<div class="ky-hero-tt">'+(es?'La vida en los Cayos':'Life in the Keys')+'</div>'
       +'<div class="ky-hero-sb">'+(es?'<b>'+cats.length+'</b> mundos, <b>'+it.length+'</b> lugares verificados, de Key Largo a Key West.':'<b>'+cats.length+'</b> worlds, <b>'+it.length+'</b> verified places, from Key Largo to Key West.')+'</div></div>'
       +'<div class="ky-hero-line"></div></div>'
     +'<div class="h-row" id="keys-hrow">'+cards+'</div>'
   +'</section>';
+}
+
+/* video de YouTube de la portada de los Cayos (cayos.json → hero.youtube) */
+function kyYid(u){ if(!u) return ''; var m=String(u).match(/(?:youtu\.be\/|v=|embed\/)([A-Za-z0-9_-]{6,})/); return m?m[1]:''; }
+function mmKeysFilm(btn){
+  try{
+    var hero=btn.closest('.ky-hero'); var yid=kyYid((MM_KEYS.hero||{}).youtube);
+    if(!hero||!yid) return;
+    var v=hero.querySelector('video'); if(v){ try{ v.pause(); }catch(e){} }
+    hero.removeAttribute('onclick'); hero.onclick=null; hero.removeAttribute('role');
+    hero.style.height=Math.round(hero.offsetWidth*9/16)+'px';
+    hero.dataset.yid=yid;
+    mmPlayRestVideo(hero);
+  }catch(e){}
 }
 
 /* ── el mundo de una categoría ── */

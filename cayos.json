@@ -3,7 +3,8 @@
  "hero": {
   "photo": "fotos/mm-keys-muelle-garzas.jpg",
   "video": "videos/mm-keys-video-reefhouse-letrero.mp4",
-  "poster": "videos/mm-keys-video-reefhouse-letrero.jpg"
+  "poster": "videos/mm-keys-video-reefhouse-letrero.jpg",
+  "youtube": "https://youtu.be/pFGfHQmOZPU"
  },
  "_anuncios": "Banda de los Cayos. Pagados: paid true + until AAAA-MM-DD; salen primero con PATROCINADO y se retiran solos. Destino: item (id de ficha), cat (id de categoría) o link.",
  "anuncios": [
