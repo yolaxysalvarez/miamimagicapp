@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aparta la fecha · Miami Magic</title>
+<meta name="description" content="Lo más grande de los próximos dos meses en Miami: fechas, lugares y entradas oficiales, para planear con tiempo.">
+<link rel="canonical" href="https://www.miamimagicapp.com/proximos.html">
+<meta property="og:title" content="Aparta la fecha · Miami Magic">
+<meta property="og:description" content="Lo más grande de los próximos dos meses en Miami, para planear con tiempo.">
+<meta property="og:image" content="https://www.miamimagicapp.com/og-share.jpg">
+<meta property="og:url" content="https://www.miamimagicapp.com/proximos.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBF5EA">
+<link rel="icon" href="/miami-magic-icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,700;0,900;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF5EA; --card:#FFFFFF; --ink:#0E1B30; --mut:#6B6F7B; --line:rgba(14,27,48,.09);
+  --coral:#FF4D35; --gold:#C48E30; --teal:#128474; --navy:#0E1B30;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,sans-serif;line-height:1.5;min-height:100vh;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(900px 520px at 100% -10%,rgba(255,77,53,.10),transparent 60%),radial-gradient(700px 480px at -10% 20%,rgba(196,142,48,.12),transparent 60%)}
+a{color:inherit}
+.wrap{position:relative;z-index:1;width:min(760px,100%);margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;z-index:20;padding:calc(env(safe-area-inset-top) + 12px) 0 12px;background:rgba(251,245,234,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none}
+.brand img{width:28px;height:28px;border-radius:7px}
+.brand b{font-family:"Playfair Display",serif;font-weight:900;font-size:19px}
+.lang{appearance:none;-webkit-appearance:none;background:#fff;border:1px solid var(--line);color:var(--ink);height:44px;min-width:44px;padding:0 14px;border-radius:22px;font:700 13px "DM Sans",sans-serif;letter-spacing:.08em;cursor:pointer}
+.hero{padding:34px 0 10px}
+.kick{font-family:"Bebas Neue",sans-serif;letter-spacing:.26em;font-size:16px;color:var(--coral);display:flex;align-items:center;gap:10px}
+.kick::before{content:"";width:26px;height:3px;background:var(--gold);border-radius:2px}
+h1{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(44px,11vw,72px);line-height:.98;letter-spacing:-.01em;margin:10px 0 0}
+h1 em{font-style:italic;font-weight:700;color:var(--gold)}
+.sub{margin-top:14px;font-size:17px;color:var(--mut);max-width:34em}
+.list{display:flex;flex-direction:column;gap:16px;padding:26px 0 30px}
+.ev{display:grid;grid-template-columns:96px minmax(0,1fr);gap:18px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 10px 30px -18px rgba(14,27,48,.35);position:relative;overflow:hidden}
+.ev::after{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--ac,var(--coral))}
+.dt{align-self:start;min-height:122px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:16px;background:color-mix(in srgb,var(--ac,#FF4D35) 10%,#fff);padding:12px 6px;text-align:center}
+.dt .m{font-family:"Bebas Neue",sans-serif;letter-spacing:.2em;font-size:16px;color:var(--ac,var(--coral))}
+.dt .d{font-family:"Playfair Display",serif;font-weight:900;font-size:30px;line-height:1;color:var(--gold);margin:4px 0}
+.dt .w{font-size:11px;font-weight:700;letter-spacing:.12em;color:var(--mut);text-transform:uppercase}
+.type{font-family:"Bebas Neue",sans-serif;letter-spacing:.2em;font-size:14px;color:var(--teal)}
+.name{font-family:"Playfair Display",serif;font-weight:700;font-size:23px;line-height:1.18;margin:2px 0 4px}
+.venue{font-size:15px;color:var(--mut)}
+.desc{font-size:15.5px;margin-top:10px}
+.when{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px;font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--ink)}
+.count{display:inline-block;white-space:nowrap;background:var(--ink);color:#fff;border-radius:999px;padding:3px 11px;font-size:12px;font-weight:700;letter-spacing:.06em}
+.rows{margin-top:12px;border-top:1px solid var(--line)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:15px;cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;width:100%;text-align:left;color:var(--ink);font-family:inherit}
+.row>span:last-child{color:var(--coral);font-weight:700;white-space:nowrap;flex:none;padding-left:4px}
+.row .l{flex:none}
+.row .lw{flex:1 1 auto;min-width:0}.row .lw>span{overflow-wrap:anywhere}.dom{color:var(--coral);font-weight:700}
+.row svg{width:18px;height:18px;flex:none;margin-right:10px;stroke:var(--gold)}
+.row .l{display:flex;align-items:center}
+.empty{padding:40px 0;color:var(--mut);text-align:center}
+.keyshead{display:flex;align-items:center;gap:14px;margin:22px 0 2px}
+.keyshead .mm{background:#10563C;color:#fff;border:3px solid #fff;outline:2px solid #10563C;border-radius:8px;padding:8px 10px;font-family:"Bebas Neue",sans-serif;letter-spacing:.12em;font-size:17px;line-height:1;white-space:nowrap;flex:none}
+.keyshead .kk{font-family:"Bebas Neue",sans-serif;letter-spacing:.24em;font-size:15px;color:#10563C}
+.keyshead .kt{font-family:"Playfair Display",serif;font-weight:700;font-size:26px;line-height:1.1}
+.foot{padding:10px 0 calc(env(safe-area-inset-bottom) + 40px);text-align:center;color:var(--mut);font-size:13px}
+.foot b{font-family:"Playfair Display",serif;color:var(--ink);font-size:16px}
+.foot i{display:block;font-family:"Playfair Display",serif;color:var(--coral);font-size:16px;margin-top:4px}
+@media (max-width:420px){.ev{grid-template-columns:78px minmax(0,1fr);gap:14px;padding:16px}.dt .d{font-size:26px}.name{font-size:21px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><img src="/miami-magic-icon-192.png" alt=""><b>Miami Magic</b></a>
+  <button class="lang" id="lang" type="button" aria-label="Language">EN</button>
+</div></header>
+<main class="wrap">
+  <section class="hero">
+    <div class="kick" id="kick">PRÓXIMOS DOS MESES</div>
+    <h1 id="h1">Aparta<br><em>la fecha</em></h1>
+    <p class="sub" id="sub">Lo más grande que viene a Miami. Estas entradas se agotan con semanas de anticipación: aquí tienes fecha, lugar y el vendedor oficial para planear con tiempo.</p>
+  </section>
+  <section class="list" id="list"></section>
+  <footer class="foot"><b>Miami Magic</b> · miamimagicapp.com<i>Donde vive Miami.</i></footer>
+</main>
+<script>
+/* Las fichas salen de eventos.json → "proximos". Si el archivo no carga, usa esta copia.
+   Regla: un evento sale de aquí cuando ya empezó su mes (entonces va en «Este Mes») o cuando terminó. */
+var FALL=[
+ {id:"px-nascar",d:"2026-11-06",d2:"2026-11-08",ac:"#E8333A",
+  type:"Motorsport",type_es:"Automovilismo",
+  name:"NASCAR Championship Weekend",name_es:"NASCAR Championship Weekend",
+  venue:"Homestead-Miami Speedway · Homestead",venue_es:"Homestead-Miami Speedway · Homestead",
+  desc:"The NASCAR season ends in Miami: Truck Series title Friday (7:30 PM), O'Reilly Auto Parts Series Saturday (5 PM) and the Cup Series Championship on Sunday (3 PM).",
+  desc_es:"La temporada de NASCAR termina en Miami: el título de la Truck Series el viernes (7:30 PM), la O'Reilly Auto Parts Series el sábado (5 PM) y el campeonato de la Cup Series el domingo (3 PM).",
+  link:"https://www.homesteadmiamispeedway.com/events/champ/",calt:"15:00"},
+ {id:"px-polo",d:"2026-11-12",d2:"2026-11-15",ac:"#128474",
+  type:"Sport · Beach",type_es:"Deporte · Playa",
+  name:"Beach Polo World Cup",name_es:"Beach Polo World Cup",
+  venue:"Collins Park beach · 21st–22nd St & Collins Ave",venue_es:"Playa de Collins Park · calles 21–22 y Collins Ave",
+  desc:"Polo on the sand of Miami Beach: eight international teams, players from more than 10 countries and over 120 horses. Daily times to be announced.",
+  desc_es:"Polo sobre la arena de Miami Beach: ocho equipos internacionales, jugadores de más de 10 países y más de 120 caballos. Los horarios por día se anuncian pronto.",
+  link:"https://www.eventbrite.com/e/world-polo-league-beach-polo-world-cup-miami-beach-2026-tickets-1520314935899"},
+ {id:"px-bookfair",d:"2026-11-15",d2:"2026-11-22",ac:"#C48E30",
+  type:"Books · Culture",type_es:"Libros · Cultura",
+  name:"Miami Book Fair",name_es:"Feria del Libro de Miami",
+  venue:"Miami Dade College · Wolfson Campus, Downtown",venue_es:"Miami Dade College · Wolfson Campus, Downtown",
+  desc:"Nearly 500 authors in English, Spanish and Haitian Creole, with Margaret Atwood, Colson Whitehead and Edwidge Danticat. The Street Fair runs Nov 20–22.",
+  desc_es:"Casi 500 autores en inglés, español y criollo haitiano, con Margaret Atwood, Colson Whitehead y Edwidge Danticat. La feria en la calle es del 20 al 22.",
+  link:"https://miamibookfair.com/"},
+ {id:"px-vicecity",d:"2026-11-18",ac:"#FF4D35",
+  type:"NBA · One night only",type_es:"NBA · Solo una noche",
+  name:"A Night in Vice City: HEAT vs Bucks",name_es:"Una noche en Vice City: HEAT vs Bucks",
+  venue:"Kaseya Center · Downtown",venue_es:"Kaseya Center · Downtown",
+  desc:"The night before GTA VI comes out, the HEAT play as \"Vice City\": special uniforms and court, in-arena activities and exclusive merch. Tip-off 7 PM, live on ESPN.",
+  desc_es:"La noche antes de que salga GTA VI, el HEAT juega como «Vice City»: uniformes y cancha especiales, actividades en la arena y mercancía exclusiva. Salto inicial 7 PM, en vivo por ESPN.",
+  link:"https://www.heat.com/vicecity",calt:"19:00"},
+ {id:"px-artbasel",d:"2026-12-04",d2:"2026-12-06",ac:"#0E1B30",
+  type:"Art",type_es:"Arte",
+  name:"Art Basel Miami Beach",name_es:"Art Basel Miami Beach",
+  venue:"Miami Beach Convention Center",venue_es:"Miami Beach Convention Center",
+  desc:"The biggest art week in the Americas: 272 exhibitors at the convention center. Public days Friday to Sunday, 11 AM–6 PM, and the whole city hosts parallel fairs.",
+  desc_es:"La semana de arte más grande de las Américas: 272 expositores en el centro de convenciones. Días abiertos al público de viernes a domingo, de 11 AM a 6 PM, y toda la ciudad se llena de ferias paralelas.",
+  link:"https://www.artbasel.com/miami-beach"},
+ {id:"px-powerboats",zone:"keys",d:"2026-11-01",d2:"2026-11-08",ac:"#10563C",
+  type:"Offshore racing",type_es:"Carreras offshore",
+  name:"Race World Offshore: Key West World Championship",name_es:"Race World Offshore: campeonato mundial en Key West",
+  venue:"Truman Waterfront Park & Race Village · Key West",venue_es:"Truman Waterfront Park y Race Village · Key West",
+  desc:"The season finale of offshore powerboat racing, on a course of more than 4 miles per lap through Key West Harbor. Watch from the Race Village, Mallory Square, Fort Zachary Taylor or Sunset Pier.",
+  desc_es:"La gran final de las lanchas offshore, en un circuito de más de 4 millas por vuelta dentro del puerto de Key West. Se ve desde el Race Village, Mallory Square, Fort Zachary Taylor o Sunset Pier.",
+  link:"https://raceworldoffshore.com/key-west-schedule/"},
+ {id:"px-kwfilm",zone:"keys",d:"2026-11-11",d2:"2026-11-15",ac:"#10563C",
+  type:"Film",type_es:"Cine",
+  name:"Key West Film Festival",name_es:"Festival de Cine de Key West",
+  venue:"Historic theaters & outdoor screens · Key West",venue_es:"Teatros históricos y pantallas al aire libre · Key West",
+  desc:"Five days of screenings in Key West's historic theaters and under the stars, one of the most charming film festivals in Florida.",
+  desc_es:"Cinco días de películas en los teatros históricos de Key West y bajo las estrellas, uno de los festivales de cine con más encanto de la Florida.",
+  link:"https://kwfilmfest.com/"},
+ {id:"px-sugarloaf",zone:"keys",d:"2026-11-12",d2:"2026-11-14",ac:"#10563C",
+  type:"Fishing tournament",type_es:"Torneo de pesca",
+  name:"Sugarloaf Showdown",name_es:"Sugarloaf Showdown",
+  venue:"Sugarloaf Key · Lower Keys",venue_es:"Sugarloaf Key · Cayos Bajos",
+  desc:"The Lower Keys Guides Association's catch-and-release flats tournament: bonefish, permit and barracuda, in fly, spin and youth divisions. Rules meeting Thursday, two days of fishing and the awards on Saturday. The auction benefits the Guides Trust Foundation.",
+  desc_es:"El torneo de pesca de captura y suelta de la Asociación de Guías de los Cayos Bajos: macabí, palometa y barracuda, en modalidad fly, spinning y juvenil. Reunión de reglas el jueves, dos días de pesca y premiación el sábado. La subasta beneficia a la Guides Trust Foundation.",
+  link:"https://sugarloafshowdown.com/"}
+];
+var lang=(function(){try{var q=new URLSearchParams(location.search).get('lang');if(q==='en'||q==='es')return q;var s=localStorage.getItem('mm_lang');if(s==='en'||s==='es')return s;}catch(e){}return (navigator.language||'es').slice(0,2)==='en'?'en':'es';})();
+function T(es,en){return lang==='es'?es:en}
+function F(o,k){return (lang==='es'?(o[k+'_es']||o[k]):(o[k]||o[k+'_es']))||''}
+function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function day(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
+var MO_ES=['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'], MO_EN=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+var DW_ES=['dom','lun','mar','mié','jue','vie','sáb'], DW_EN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+var EVS=FALL.slice();
+var ICAL='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>';
+var ITIX='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2.5"/></svg>';
+var ISHR='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>';
+function host(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(e){return u}}
+function render(){
+  document.documentElement.lang=lang;
+  document.getElementById('lang').textContent=lang==='es'?'EN':'ES';
+  document.getElementById('kick').textContent=T('PRÓXIMOS DOS MESES','THE NEXT TWO MONTHS');
+  document.getElementById('h1').innerHTML=T('Aparta<br><em>la fecha</em>','Save<br><em>the date</em>');
+  document.getElementById('sub').textContent=T('Lo más grande que viene a Miami. Estas entradas se agotan con semanas de anticipación: aquí tienes fecha, lugar y el vendedor oficial para planear con tiempo.','The biggest things coming to Miami. These sell out weeks ahead: here are the dates, the place and the official seller, so you can plan in time.');
+  var now=new Date(); now.setHours(0,0,0,0);
+  var monthEnd=new Date(now.getFullYear(),now.getMonth()+1,0);
+  var show=EVS.filter(function(e){var s=day(e.d), f=day(e.d2||e.d); return f>=now && s>monthEnd;})
+              .sort(function(a,b){return a.d.localeCompare(b.d)});
+  var L=document.getElementById('list');
+  if(!show.length){L.innerHTML='<p class="empty">'+T('Pronto, lo próximo en grande.','Big things coming soon.')+'</p>';return;}
+  var mia=show.filter(function(e){return e.zone!=='keys'}).slice(0,6), kys=show.filter(function(e){return e.zone==='keys'}).slice(0,4);
+  var MO=lang==='es'?MO_ES:MO_EN, DW=lang==='es'?DW_ES:DW_EN;
+  function card(e){
+    var s=day(e.d), f=e.d2?day(e.d2):null;
+    var big=f?(s.getMonth()===f.getMonth()?s.getDate()+'–'+f.getDate():s.getDate()+'+'):String(s.getDate());
+    var wk=f?(DW[s.getDay()]+' – '+DW[f.getDay()]):DW[s.getDay()];
+    var dd=Math.round((s-now)/864e5);
+    var count=dd===1?T('es mañana','tomorrow'):T('faltan '+dd+' días','in '+dd+' days');
+    var when=f?(lang==='es'?s.getDate()+' '+MO[s.getMonth()].toLowerCase()+' – '+f.getDate()+' '+MO[f.getMonth()].toLowerCase():MO[s.getMonth()].charAt(0)+MO[s.getMonth()].slice(1).toLowerCase()+' '+s.getDate()+' – '+(s.getMonth()===f.getMonth()?'':MO[f.getMonth()].charAt(0)+MO[f.getMonth()].slice(1).toLowerCase()+' ')+f.getDate())
+                :(lang==='es'?DW[s.getDay()]+' '+s.getDate()+' '+MO[s.getMonth()].toLowerCase():DW[s.getDay()]+', '+MO[s.getMonth()].charAt(0)+MO[s.getMonth()].slice(1).toLowerCase()+' '+s.getDate());
+    return '<article class="ev" style="--ac:'+esc(e.ac||'#FF4D35')+'" id="'+esc(e.id)+'">'
+      +'<div class="dt"><span class="m">'+MO[s.getMonth()]+'</span><span class="d">'+big+'</span><span class="w">'+wk+'</span></div>'
+      +'<div><div class="type">'+esc(F(e,'type'))+'</div><h2 class="name">'+esc(F(e,'name'))+'</h2><div class="venue">'+esc(F(e,'venue'))+'</div>'
+      +'<p class="desc">'+esc(F(e,'desc'))+'</p>'
+      +'<div class="when">'+esc(when)+' <span class="count">'+esc(count)+'</span></div>'
+      +'<div class="rows">'
+        +'<a class="row" href="'+esc(e.link)+'" rel="noopener"><span class="l lw">'+ITIX+'<span>'+T('Entradas oficiales','Official tickets')+' · <b class="dom">'+esc(host(e.link))+'</b></span></span><span>↗</span></a>'
+        +'<button class="row" type="button" onclick="ics(\''+esc(e.id)+'\')"><span class="l">'+ICAL+T('Agregar a mi calendario','Add to my calendar')+'</span><span>+</span></button>'
+        +'<button class="row" type="button" onclick="share(\''+esc(e.id)+'\')"><span class="l">'+ISHR+T('Compartir','Share')+'</span><span>↗</span></button>'
+      +'</div></div></article>';
+  }
+  L.innerHTML=mia.map(card).join('')
+    +(kys.length?'<div class="keyshead"><span class="mm">MM 0–106</span><div><div class="kk">'+T('Y EN LOS CAYOS','AND IN THE KEYS')+'</div><div class="kt">'+T('De Key Largo a Key West','From Key Largo to Key West')+'</div></div></div>'+kys.map(card).join(''):'');
+}
+function find(id){for(var i=0;i<EVS.length;i++)if(EVS[i].id===id)return EVS[i];return null}
+function ics(id){
+  var e=find(id); if(!e) return;
+  var s=e.d.replace(/-/g,''), f=(e.d2||e.d), fe=day(f); fe.setDate(fe.getDate()+1);
+  var end=fe.getFullYear()+String(fe.getMonth()+1).padStart(2,'0')+String(fe.getDate()).padStart(2,'0');
+  var txt=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Miami Magic//Aparta la fecha//ES','BEGIN:VEVENT',
+    'UID:'+e.id+'@miamimagicapp.com','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').split('.')[0]+'Z',
+    'DTSTART;VALUE=DATE:'+s,'DTEND;VALUE=DATE:'+end,
+    'SUMMARY:'+F(e,'name').replace(/[,;]/g,' '),'LOCATION:'+F(e,'venue').replace(/[,;]/g,' '),
+    'DESCRIPTION:'+(F(e,'desc')+' '+e.link).replace(/[,;]/g,' '),'URL:'+e.link,'END:VEVENT','END:VCALENDAR'].join('\r\n');
+  var a=document.createElement('a'); a.href='data:text/calendar;charset=utf-8,'+encodeURIComponent(txt); a.download=e.id+'.ics';
+  document.body.appendChild(a); a.click(); a.remove();
+}
+function share(id){
+  var e=find(id); if(!e) return;
+  var url='https://www.miamimagicapp.com/proximos.html#'+e.id, t=F(e,'name')+' · Miami Magic';
+  if(navigator.share){navigator.share({title:t,text:F(e,'name')+' — '+F(e,'venue'),url:url}).catch(function(){});}
+  else{try{navigator.clipboard.writeText(url);alert(T('Enlace copiado','Link copied'));}catch(x){prompt('',url);}}
+}
+document.getElementById('lang').onclick=function(){lang=lang==='es'?'en':'es';try{localStorage.setItem('mm_lang',lang)}catch(e){}render()};
+render();
+fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(j){
+  if(j&&Array.isArray(j.proximos)&&j.proximos.length){EVS=j.proximos;render();}
+  if(location.hash){var el=document.getElementById(location.hash.slice(1));if(el)el.scrollIntoView({behavior:'smooth',block:'center'});}
+}).catch(function(){});
+</script>
+</body>
+</html>
