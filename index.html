@@ -5796,10 +5796,17 @@ function mmCloseStories(){
   _mmStOpen=false;
 }
 
-function renderDrones(){
-  var L=typeof lang!=='undefined'?lang:'en';
-  var e=L==='es';
-  var clips=[
+/* ══ SOBREVUELA MIAMI — lista de clips ══
+   Vive fuera de renderDrones() para que /sitios.json pueda corregir,
+   AÑADIR ("drones": {"<id>": {"t":..,"t_es":..,"loc":..,"d":..,"d_es":..,"dur":"0:15"}})
+   o apagar ("active": false) clips sin pasar por Apple. El video va en
+   /videos/mm-drone-<id>.mp4 y su portada en /videos/mm-drone-<id>.jpg (id numérico). */
+var MM_DRONES=[
+    {id:'1016261003',dur:'0:24',
+      t:'Seaplane over South Beach',t_es:'Hidroavión sobre South Beach',
+      loc:'South Pointe · Miami Beach',
+      d:'A seaplane skims the Atlantic and sweeps over South Pointe, with the downtown skyline waiting across the bay.',
+      d_es:'Un hidroavión roza el Atlántico y sobrevuela South Pointe, con el skyline del downtown esperando al otro lado de la bahía.'},
     {id:'197587233',dur:'0:12',
       t:'The Metromover Ride',t_es:'El vuelo del Metromover',
       loc:'Downtown Miami',
@@ -5815,6 +5822,16 @@ function renderDrones(){
       loc:'South Beach · Miami Beach',
       d:'Turquoise water, white sand, blue umbrellas and the iconic lifeguard tower — the postcard, in motion.',
       d_es:'Agua turquesa, arena blanca, sombrillas azules y la icónica torre de salvavidas — la postal, en movimiento.'},
+    {id:'1016261005',dur:'0:20',
+      t:'South Pointe Park from Above',t_es:'South Pointe Park desde arriba',
+      loc:'South Pointe · Miami Beach',
+      d:'Straight down over the palms, the baywalk and the rock jetty where Miami Beach meets the channel.',
+      d_es:'En picada sobre las palmas, el paseo y la escollera de rocas donde Miami Beach se encuentra con el canal.'},
+    {id:'1016261001',dur:'0:19',
+      t:'The Port and the Bay',t_es:'El puerto y la bahía',
+      loc:'PortMiami · Biscayne Bay',
+      d:'Cranes and cargo ships at PortMiami, yachts at the South Beach marina and the downtown skyline — the whole bay in one sweep.',
+      d_es:'Grúas y barcos de carga en PortMiami, yates en la marina de South Beach y el skyline del downtown — toda la bahía de una sola pasada.'},
     {id:'351654942',dur:'0:09',
       t:'Brickell by Night',t_es:'Brickell de noche',
       loc:'Brickell',
@@ -5825,6 +5842,11 @@ function renderDrones(){
       loc:'Biscayne Bay',
       d:'Golden hour over a marina full of yachts, with the downtown skyline and causeway bridges behind.',
       d_es:'Hora dorada sobre una marina llena de yates, con el skyline del downtown y los puentes de la bahía al fondo.'},
+    {id:'1016261004',dur:'0:16',
+      t:'The Causeway and the Skyline',t_es:'El puente y el skyline',
+      loc:'Rickenbacker Causeway · Brickell',
+      d:'Traffic gliding over the bay on the Rickenbacker Causeway, with the towers of Brickell lined up behind it.',
+      d_es:'El tráfico deslizándose sobre la bahía por el Rickenbacker Causeway, con las torres de Brickell alineadas detrás.'},
     {id:'294601032',dur:'0:28',
       t:'Downtown at Dusk',t_es:'Downtown al anochecer',
       loc:'Downtown · Bayfront Park',
@@ -5834,8 +5856,22 @@ function renderDrones(){
       t:'The Miami River',t_es:'El Río Miami',
       loc:'Brickell · Miami River',
       d:'The river winding between Brickell\'s glass towers — drawbridge, yachts, and the ancient Miami Circle in view.',
-      d_es:'El río serpenteando entre las torres de cristal de Brickell — puente levadizo, yates y el milenario Miami Circle a la vista.'}
-  ];
+      d_es:'El río serpenteando entre las torres de cristal de Brickell — puente levadizo, yates y el milenario Miami Circle a la vista.'},
+    {id:'1016261006',dur:'0:22',
+      t:'Downtown from the Bay',t_es:'Downtown desde la bahía',
+      loc:'Biscayne Bay · Downtown',
+      d:'From the port bridge out to open water, the whole downtown waterfront rises from Biscayne Bay.',
+      d_es:'Del puente del puerto hacia mar abierto, todo el frente marítimo del downtown se levanta sobre la Bahía de Biscayne.'},
+    {id:'1016261002',dur:'0:22',
+      t:'Stiltsville',t_es:'Stiltsville, casas sobre el mar',
+      loc:'Biscayne National Park',
+      d:'The wooden houses on stilts that have stood in the shallows of Biscayne Bay since the 1930s, a mile off Cape Florida.',
+      d_es:'Las casas de madera sobre pilotes que se levantan en los bajos de la Bahía de Biscayne desde los años 30, a una milla de Cape Florida.'}
+];
+function renderDrones(){
+  var L=typeof lang!=='undefined'?lang:'en';
+  var e=L==='es';
+  var clips=MM_DRONES;
   window._mmDroneClips=clips;
   var sub=e?'La Ciudad Mágica como nunca la has visto — filmada desde el aire, en alta definición.':'The Magic City like you\'ve never seen it — filmed from the sky, in high definition.';
   var chips='<div class="drone-stats">'
@@ -8692,7 +8728,8 @@ var MM_SITIOS_EXTRA = {
   lujo:       function(){ return (typeof MM_LUX!=='undefined')?MM_LUX:null; },
   cruceros:   function(){ return (typeof MM_ESC!=='undefined')?MM_ESC:null; },
   cines:      function(){ return (typeof MM_CINE!=='undefined')?MM_CINE:null; },
-  aeropuertos:function(){ return (typeof MM_AIRPORTS!=='undefined')?MM_AIRPORTS:null; }
+  aeropuertos:function(){ return (typeof MM_AIRPORTS!=='undefined')?MM_AIRPORTS:null; },
+  drones:     function(){ return (typeof MM_DRONES!=='undefined')?MM_DRONES:null; }
 };
 /* ══ /sitios.json v1.4 — CORREGIR, AÑADIR y APAGAR lugares de la guía ══
    Por sección y por id:
@@ -8729,7 +8766,7 @@ function mmAplicarSitios(d){
       }
       if(pos>-1){
         for(var k in campos){ if(k==='id'||k==='top'||k==='zone'||k==='photo') continue; lista[pos][k]=campos[k]; }
-      } else if(campos.name){
+      } else if(campos.name || (clave==='drones' && campos.t)){
         var nuevo={id:id};
         if(MM_SITIOS_MAPA[clave]) for(var b in MM_SITIOS_BASE) nuevo[b]=(MM_SITIOS_BASE[b] instanceof Array)?[]:MM_SITIOS_BASE[b];
         for(var k2 in campos){ if(k2==='top'||k2==='zone'||k2==='photo') continue; nuevo[k2]=campos[k2]; }
