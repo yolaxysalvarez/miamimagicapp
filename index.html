@@ -3352,6 +3352,32 @@ body{padding-bottom:0;}
 
 
 
+
+/* ── APARTA LA FECHA · franja del Inicio ── */
+.sdx{margin:18px 16px 6px;padding:18px 0 14px;border-radius:22px;background:linear-gradient(160deg,#FFFBF2 0%,#FFF3DC 100%);border:1px solid rgba(196,142,48,.45);box-shadow:0 10px 30px rgba(196,142,48,.16);position:relative;overflow:hidden}
+.sdx::before{content:"";position:absolute;inset:5px;border:1px solid rgba(196,142,48,.18);border-radius:18px;pointer-events:none}
+.sdx-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:0 18px 12px}
+.sdx-eye{font-family:'Bebas Neue',sans-serif;letter-spacing:.22em;font-size:.82rem;color:#B07A1E;display:flex;align-items:center;gap:8px}
+.sdx-line{width:22px;height:2px;background:#C48E30;border-radius:2px}
+.sdx-tt{font-family:'Playfair Display',serif;font-weight:800;font-size:1.32rem;color:#0E1B33;line-height:1.15;margin-top:3px}
+.sdx-tt i{color:#C48E30;font-weight:700}
+.sdx-all{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.82rem;color:#B07A1E;white-space:nowrap;cursor:pointer;padding:6px 0}
+.sdx-rail{display:flex;gap:10px;overflow-x:auto;padding:2px 18px 6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.sdx-rail::-webkit-scrollbar{display:none}
+.sdx-card{flex:0 0 138px;scroll-snap-align:start;background:#fff;border-radius:16px;padding:10px 11px 11px;box-shadow:0 3px 12px rgba(14,27,51,.08);cursor:pointer;display:flex;flex-direction:column;gap:7px;min-height:150px}
+.sdx-date{border-radius:11px;background:var(--sdx-ac);color:#fff;padding:7px 9px 6px;display:flex;flex-direction:column;line-height:1}
+.sdx-mo{font-family:'Bebas Neue',sans-serif;letter-spacing:.14em;font-size:.78rem;opacity:.92}
+.sdx-dy{font-family:'Playfair Display',serif;font-weight:800;font-size:1.28rem;margin-top:2px;white-space:nowrap}
+.sdx-keys{align-self:flex-start;font-family:'Bebas Neue',sans-serif;letter-spacing:.12em;font-size:.7rem;color:#fff;background:#10563C;border:1.5px solid #fff;outline:1px solid #10563C;border-radius:5px;padding:2px 6px 1px}
+.sdx-name{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.84rem;color:#0E1B33;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.sdx-left{margin-top:auto;font-family:'DM Sans',sans-serif;font-size:.76rem;color:#6B6375}
+.sdx-left b{color:#C48E30;font-family:'Bebas Neue',sans-serif;font-size:1.05rem;letter-spacing:.04em;font-weight:400}
+.sdx-foot{padding:6px 18px 0;font-family:'DM Sans',sans-serif;font-size:.72rem;color:#8A7A60}
+[data-theme="dark"] .sdx{background:linear-gradient(160deg,#1c1a16 0%,#231d12 100%);border-color:rgba(196,142,48,.5)}
+[data-theme="dark"] .sdx-tt{color:#F3EBDD}
+[data-theme="dark"] .sdx-card{background:#262219}
+[data-theme="dark"] .sdx-name{color:#F3EBDD}
+[data-theme="dark"] .sdx-left,[data-theme="dark"] .sdx-foot{color:#B9AE99}
 </style>
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#FF4D35">
@@ -8660,6 +8686,7 @@ function mmAplicarEventos(d){
     if(typeof D!=='undefined' && D && D.events){
       fusiona(D.events, d.semana); quita(D.events, d.quitar_semana);
     }
+    if(Array.isArray(d.proximos)){ MM_PROXIMOS=d.proximos; tocado=true; }
     if(typeof MM_MONTH!=='undefined' && MM_MONTH){
       fusiona(MM_MONTH, d.mes); quita(MM_MONTH, d.quitar_mes);
     }
@@ -8669,13 +8696,55 @@ function mmAplicarEventos(d){
   }catch(e){ return false; }
   return tocado;
 }
+/* ══ APARTA LA FECHA · franja del Inicio ══
+   Lee la lista "proximos" de /eventos.json (la misma de /proximos.html).
+   Sale sola con lo que aún no ha terminado, ordenado por fecha; los de los
+   Cayos ("zone":"keys") llevan su placa verde. Sin eventos → no se pinta.  */
+var MM_PROXIMOS=[];
+function mmSaveDateRender(){
+  var el=document.getElementById('mmSaveDate'); if(!el) return;
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  var hoy=new Date(); hoy.setHours(0,0,0,0);
+  function fd(s){ var p=String(s||'').split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
+  var MO=ES?['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC']:['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  var items=(MM_PROXIMOS||[]).filter(function(e){ try{ return e && e.d && fd(e.d2||e.d)>=hoy; }catch(x){ return false; } })
+    .sort(function(a,b){ return String(a.d).localeCompare(String(b.d)); }).slice(0,10);
+  if(!items.length){ el.innerHTML=''; return; }
+  var URL='https://www.miamimagicapp.com/proximos.html';
+  function esc(s){ return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
+  function h(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
+  var tt=ES?'Aparta la fecha':'Save the date';
+  var cards=items.map(function(e){
+    var a=fd(e.d), b=fd(e.d2||e.d);
+    var dias=Math.round((a-hoy)/86400000);
+    var cuenta = dias<=0 ? (ES?'¡Ya empezó!':'Happening now') : dias===1 ? (ES?'Mañana':'Tomorrow') : (ES?'en <b>'+dias+'</b> días':'in <b>'+dias+'</b> days');
+    var mes=MO[a.getMonth()], dia=String(a.getDate());
+    if(+b!==+a){ dia += (b.getMonth()===a.getMonth()) ? '–'+b.getDate() : ''; if(b.getMonth()!==a.getMonth()) mes += '→'+MO[b.getMonth()]; }
+    var name=ES&&e.name_es?e.name_es:e.name;
+    var keys=e.zone==='keys';
+    return '<div class="sdx-card" role="button" tabindex="0" onclick="twxOpen(\''+esc(URL+'#'+e.id)+'\',\''+esc(tt)+'\')">'
+      +'<div class="sdx-date" style="--sdx-ac:'+h(e.ac||'#C48E30')+'"><span class="sdx-mo">'+mes+'</span><span class="sdx-dy">'+dia+'</span></div>'
+      +(keys?'<span class="sdx-keys">'+(ES?'LOS CAYOS':'THE KEYS')+'</span>':'')
+      +'<div class="sdx-name">'+h(name)+'</div>'
+      +'<div class="sdx-left">'+cuenta+'</div>'
+    +'</div>';
+  }).join('');
+  el.innerHTML='<section class="sdx" aria-label="'+h(tt)+'">'
+    +'<div class="sdx-hd"><div><div class="sdx-eye"><span class="sdx-line"></span>'+(ES?'APARTA LA FECHA':'SAVE THE DATE')+'</div>'
+    +'<div class="sdx-tt">'+(ES?'Lo que viene a <i>Miami</i>':'Coming to <i>Miami</i>')+'</div></div>'
+    +'<span class="sdx-all" role="button" tabindex="0" onclick="twxOpen(\''+esc(URL)+'\',\''+esc(tt)+'\')">'+(ES?'Ver todo':'See all')+' <span aria-hidden="true">↗</span></span></div>'
+    +'<div class="sdx-rail">'+cards+'</div>'
+    +'<div class="sdx-foot">'+(ES?'Fechas, lugar y entradas oficiales · toca para ver más':'Dates, venue and official tickets · tap to see more')+'</div>'
+  +'</section>';
+}
 function mmRedibujarEventos(){
   try{
     var el=document.getElementById('juneTop'); if(!el) return;
     var pw=document.getElementById('twxMainPanel'), pm=document.getElementById('twxMonthPanel');
     var abW=!!(pw && pw.classList.contains('open'));
     var abM=!!(pm && pm.classList.contains('open'));
-    el.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+renderEvMap();
+    el.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+'<div id="mmSaveDate"></div>'+renderEvMap();
+    try{ mmSaveDateRender(); }catch(e){}
     try{ if(typeof renderEvents==='function'){
       var _h=renderEvents(), _old=document.getElementById('sec-events');
       /* v1.6: el calendario anual vive en Home (debajo de Lujo): se repinta con los datos nuevos */
@@ -12087,7 +12156,7 @@ function build(){
   // zone bar
   var juneTopEl=document.getElementById('juneTop');
   if(juneTopEl){
-    juneTopEl.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+renderEvMap();
+    juneTopEl.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+'<div id="mmSaveDate"></div>'+renderEvMap(); try{ mmSaveDateRender(); }catch(e){}
     try{ mmEventLayout(); }catch(e){}
     try{ mmBizMount(); }catch(e){}
     try{ mmTopMount(); }catch(e){}
@@ -12098,7 +12167,7 @@ function build(){
         if(window.annualEvents && window.annualEvents.length){
           try{
             var wasOpen=(document.getElementById('twxMonthPanel')||{classList:{contains:function(){return false;}}}).classList.contains('open');
-            juneTopEl.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+renderEvMap();
+            juneTopEl.innerHTML=renderEvViewBar()+renderJune()+renderMonth()+'<div id="mmSaveDate"></div>'+renderEvMap(); try{ mmSaveDateRender(); }catch(e){}
             try{ mmEventLayout(); }catch(e){}
             if(wasOpen){ var p=document.getElementById('twxMonthPanel'), b=document.getElementById('twxMonthBar');
               if(p){p.classList.add('open');} if(b){b.classList.add('open');} }
