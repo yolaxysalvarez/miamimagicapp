@@ -32,6 +32,12 @@ a{color:inherit}
 .brand{display:flex;align-items:center;gap:9px;text-decoration:none}
 .brand img{width:28px;height:28px;border-radius:7px}
 .brand b{font-family:"Playfair Display",serif;font-weight:900;font-size:19px}
+.tools{display:flex;gap:10px;align-items:center}
+/* mismo ✕ de la app (Cuenta, Miami Social): círculo gris translúcido + X en SVG, nunca un símbolo Unicode */
+.close{appearance:none;-webkit-appearance:none;border:none;background:rgba(120,120,130,.18);color:var(--ink);width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;position:relative}
+.close::after{content:"";position:absolute;inset:-4px}
+.close svg{width:14px;height:14px}
+.inapp .close{display:none}
 .lang{appearance:none;-webkit-appearance:none;background:#fff;border:1px solid var(--line);color:var(--ink);height:44px;min-width:44px;padding:0 14px;border-radius:22px;font:700 13px "DM Sans",sans-serif;letter-spacing:.08em;cursor:pointer}
 .hero{padding:34px 0 10px}
 .kick{font-family:"Bebas Neue",sans-serif;letter-spacing:.26em;font-size:16px;color:var(--coral);display:flex;align-items:center;gap:10px}
@@ -73,7 +79,7 @@ h1 em{font-style:italic;font-weight:700;color:var(--gold)}
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="/"><img src="/miami-magic-icon-192.png" alt=""><b>Miami Magic</b></a>
-  <button class="lang" id="lang" type="button" aria-label="Language">EN</button>
+  <div class="tools"><button class="close" id="close" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
 </div></header>
 <main class="wrap">
   <section class="hero">
@@ -159,10 +165,10 @@ var ISHR='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap
 function host(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(e){return u}}
 function render(){
   document.documentElement.lang=lang;
-  document.getElementById('lang').textContent=lang==='es'?'EN':'ES';
+  try{document.getElementById('close').setAttribute('aria-label',lang==='es'?'Cerrar':'Close')}catch(e){}
   document.getElementById('kick').textContent=T('PRÓXIMOS DOS MESES','THE NEXT TWO MONTHS');
   document.getElementById('h1').innerHTML=T('Aparta<br><em>la fecha</em>','Save<br><em>the date</em>');
-  document.getElementById('sub').textContent=T('Lo más grande que viene a Miami. Estas entradas se agotan con semanas de anticipación: aquí tienes fecha, lugar y el vendedor oficial para planear con tiempo.','The biggest things coming to Miami. These sell out weeks ahead: here are the dates, the place and the official seller, so you can plan in time.');
+  document.getElementById('sub').textContent=T('Lo más grande que llega a Miami y a los Cayos. Estas entradas se agotan con semanas de anticipación: aquí tienes fecha, lugar y el vendedor oficial para planear con tiempo.','The biggest things coming to Miami and the Keys. These sell out weeks ahead: here are the dates, the place and the official seller, so you can plan in time.');
   var now=new Date(); now.setHours(0,0,0,0);
   var monthEnd=new Date(now.getFullYear(),now.getMonth()+1,0);
   var show=EVS.filter(function(e){var s=day(e.d), f=day(e.d2||e.d); return f>=now && s>monthEnd;})
@@ -179,7 +185,7 @@ function render(){
     var count=dd===1?T('es mañana','tomorrow'):T('faltan '+dd+' días','in '+dd+' days');
     var when=f?(lang==='es'?s.getDate()+' '+MO[s.getMonth()].toLowerCase()+' – '+f.getDate()+' '+MO[f.getMonth()].toLowerCase():MO[s.getMonth()].charAt(0)+MO[s.getMonth()].slice(1).toLowerCase()+' '+s.getDate()+' – '+(s.getMonth()===f.getMonth()?'':MO[f.getMonth()].charAt(0)+MO[f.getMonth()].slice(1).toLowerCase()+' ')+f.getDate())
                 :(lang==='es'?DW[s.getDay()]+' '+s.getDate()+' '+MO[s.getMonth()].toLowerCase():DW[s.getDay()]+', '+MO[s.getMonth()].charAt(0)+MO[s.getMonth()].slice(1).toLowerCase()+' '+s.getDate());
-    return '<article class="ev" style="--ac:'+esc(e.ac||'#FF4D35')+'" id="'+esc(e.id)+'">'
+    return '<article class="ev" style="--ac:'+(e.zone==='keys'?'#10563C':'#FF4D35')+'" id="'+esc(e.id)+'">'
       +'<div class="dt"><span class="m">'+MO[s.getMonth()]+'</span><span class="d">'+big+'</span><span class="w">'+wk+'</span></div>'
       +'<div><div class="type">'+esc(F(e,'type'))+'</div><h2 class="name">'+esc(F(e,'name'))+'</h2><div class="venue">'+esc(F(e,'venue'))+'</div>'
       +'<p class="desc">'+esc(F(e,'desc'))+'</p>'
@@ -212,7 +218,14 @@ function share(id){
   if(navigator.share){navigator.share({title:t,text:F(e,'name')+' — '+F(e,'venue'),url:url}).catch(function(){});}
   else{try{navigator.clipboard.writeText(url);alert(T('Enlace copiado','Link copied'));}catch(x){prompt('',url);}}
 }
-document.getElementById('lang').onclick=function(){lang=lang==='es'?'en':'es';try{localStorage.setItem('mm_lang',lang)}catch(e){}render()};
+/* el ✕ solo sale si hay a dónde volver (web); dentro del navegador de la app manda el "OK" de Apple */
+try{ if(/[?&]inapp=1/.test(location.search) || (history.length<2 && !window.opener)) document.documentElement.classList.add('inapp'); }catch(e){}
+document.getElementById('close').onclick=function(){
+  /* abierta en pestaña nueva: se cierra; si no, vuelve a donde estaba o al Inicio */
+  try{ window.close(); }catch(e){}
+  setTimeout(function(){ history.back(); },180);
+};
+/* sin botón de idioma: la página habla el idioma de la app (?lang= o mm_lang) */
 render();
 fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(j){
   if(j&&Array.isArray(j.proximos)&&j.proximos.length){EVS=j.proximos;render();}

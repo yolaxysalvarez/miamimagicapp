@@ -3354,7 +3354,7 @@ body{padding-bottom:0;}
 
 
 /* ── APARTA LA FECHA · franja del Inicio ── */
-.sdx{margin:18px 16px 6px;padding:18px 0 14px;border-radius:22px;background:linear-gradient(160deg,#FFFBF2 0%,#FFF3DC 100%);border:1px solid rgba(196,142,48,.45);box-shadow:0 10px 30px rgba(196,142,48,.16);position:relative;overflow:hidden}
+.sdx{margin:6px 0 4px;padding:18px 0 14px;border-radius:22px;background:linear-gradient(160deg,#FFFBF2 0%,#FFF3DC 100%);border:1px solid rgba(196,142,48,.45);box-shadow:0 10px 30px rgba(196,142,48,.16);position:relative;overflow:hidden}
 .sdx::before{content:"";position:absolute;inset:5px;border:1px solid rgba(196,142,48,.18);border-radius:18px;pointer-events:none}
 .sdx-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:0 18px 12px}
 .sdx-eye{font-family:'Bebas Neue',sans-serif;letter-spacing:.22em;font-size:.82rem;color:#B07A1E;display:flex;align-items:center;gap:8px}
@@ -8723,19 +8723,19 @@ function mmSaveDateRender(){
     var name=ES&&e.name_es?e.name_es:e.name;
     var keys=e.zone==='keys';
     return '<div class="sdx-card" role="button" tabindex="0" onclick="twxOpen(\''+esc(URL+'#'+e.id)+'\',\''+esc(tt)+'\')">'
-      +'<div class="sdx-date" style="--sdx-ac:'+h(e.ac||'#C48E30')+'"><span class="sdx-mo">'+mes+'</span><span class="sdx-dy">'+dia+'</span></div>'
+      +'<div class="sdx-date" style="--sdx-ac:'+(keys?'#10563C':'#FF4D35')+'"><span class="sdx-mo">'+mes+'</span><span class="sdx-dy">'+dia+'</span></div>'
       +(keys?'<span class="sdx-keys">'+(ES?'LOS CAYOS':'THE KEYS')+'</span>':'')
       +'<div class="sdx-name">'+h(name)+'</div>'
       +'<div class="sdx-left">'+cuenta+'</div>'
     +'</div>';
   }).join('');
-  el.innerHTML='<section class="sdx" aria-label="'+h(tt)+'">'
+  el.innerHTML='<div class="tw-wrap sdx-wrap"><section class="sdx" aria-label="'+h(tt)+'">'
     +'<div class="sdx-hd"><div><div class="sdx-eye"><span class="sdx-line"></span>'+(ES?'APARTA LA FECHA':'SAVE THE DATE')+'</div>'
-    +'<div class="sdx-tt">'+(ES?'Lo que viene a <i>Miami</i>':'Coming to <i>Miami</i>')+'</div></div>'
+    +'<div class="sdx-tt">'+(ES?'Próximamente en <i>Miami</i> y <i>los Cayos</i>':'Coming to <i>Miami</i> and <i>the Keys</i>')+'</div></div>'
     +'<span class="sdx-all" role="button" tabindex="0" onclick="twxOpen(\''+esc(URL)+'\',\''+esc(tt)+'\')">'+(ES?'Ver todo':'See all')+' <span aria-hidden="true">↗</span></span></div>'
     +'<div class="sdx-rail">'+cards+'</div>'
     +'<div class="sdx-foot">'+(ES?'Fechas, lugar y entradas oficiales · toca para ver más':'Dates, venue and official tickets · tap to see more')+'</div>'
-  +'</section>';
+  +'</section></div>';
 }
 function mmRedibujarEventos(){
   try{
@@ -9417,6 +9417,18 @@ function twxOpen(url, title){
   /* Los eventos se abrían con window.open y eso, dentro de la app, manda al
      usuario a Safari. Pasan por mmOpenWeb como todo lo demás: navegador
      interno, un toque, y se cierra volviendo justo donde estaba. */
+  /* páginas propias (proximos.html, terror.html…) en la web: misma pestaña,
+     sin ventanas nuevas; su botón ✕ vuelve justo a donde estaba */
+  try{
+    var esApp=!!(window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.Browser);
+    var m=String(url||'').match(/^https?:\/\/(?:www\.)?miamimagicapp\.com(\/[^?#]*\.html(?:[?#].*)?)$/i);
+    var _lg=(typeof lang!=='undefined'&&lang==='es')?'es':'en';
+    function _q(u,extra){ return u.replace(/^([^#?]*)(\?[^#]*)?(#.*)?$/,function(_,p,q,h){ return p+(q?q+'&':'?')+extra+(h||''); }); }
+    if(m) url=_q(url,'lang='+_lg);
+    if(!esApp && m && location.protocol.indexOf('http')===0){ location.href=_q(m[1],'lang='+_lg); return; }
+  }catch(e){}
+  /* dentro de la app: el navegador de Apple ya trae su "OK"; la página esconde su ✕ */
+  try{ if(esApp && m){ url=url.replace(/^([^#?]*)(\?[^#]*)?(#.*)?$/,function(_,p,q,h){ return p+(q?q+'&':'?')+'inapp=1'+(h||''); }); } }catch(e){}
   try{ if(typeof mmOpenWeb==='function'){ mmOpenWeb(url); return; } }catch(e){}
   window.open(url, '_blank', 'noopener');
 }
