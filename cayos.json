@@ -1,5 +1,5 @@
 {
- "_v": "2026-10-08",
+ "_v": "2026-10-17",
  "hero": {
   "photo": "fotos/mm-keys-muelle-garzas.jpg",
   "video": "videos/mm-keys-video-reefhouse-letrero.mp4",
@@ -408,8 +408,9 @@
    "perks": [
     "sunset"
    ],
-   "photo": "fotos/mm-keys-tiki-bote.jpg",
+   "photo": "fotos/mm-keys-tiki-atardecer.jpg",
    "photos": [
+    "fotos/mm-keys-tiki-atardecer.jpg",
     "fotos/mm-keys-tiki-bote.jpg"
    ]
   },
@@ -638,6 +639,7 @@
    "photos": [
     "fotos/mm-keys-kw-atardecer-catamaran.jpg",
     "fotos/mm-keys-kw-atardecer-naranja.jpg",
+    "fotos/mm-keys-kw-marina-atardecer.jpg",
     "fotos/mm-keys-kw-catamaran.jpg",
     "fotos/mm-keys-kw-glass-bottom.jpg",
     "fotos/mm-keys-kw-sunset-key-01.jpg",
