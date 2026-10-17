@@ -3354,6 +3354,16 @@ body{padding-bottom:0;}
 
 
 /* ── APARTA LA FECHA · franja del Inicio ── */
+.sdx-hd{cursor:pointer}
+.sdx-all svg{width:13px;height:13px;vertical-align:-2px;transition:transform .25s}
+.sdx-all.open svg{transform:rotate(180deg)}
+.sdx-panel.open{margin:12px 0 16px;border-radius:18px}
+.sdx-panel .twx-list{padding:0}
+@media(max-width:900px){#sec-savedate.sdx-wrap{padding-left:14px;padding-right:14px}}
+.sdx-share{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:10px;font:700 .78rem 'DM Sans',sans-serif;color:#B07A1E;cursor:pointer;padding:6px 0}
+.sdx-share svg{width:15px;height:15px}
+[data-theme="dark"] .sdx-share{color:#D9B26A}
+
 .sdx{margin:6px 0 4px;padding:18px 0 14px;border-radius:22px;background:linear-gradient(160deg,#FFFBF2 0%,#FFF3DC 100%);border:1px solid rgba(196,142,48,.45);box-shadow:0 10px 30px rgba(196,142,48,.16);position:relative;overflow:hidden}
 .sdx::before{content:"";position:absolute;inset:5px;border:1px solid rgba(196,142,48,.18);border-radius:18px;pointer-events:none}
 .sdx-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:0 18px 12px}
@@ -8707,35 +8717,95 @@ function mmSaveDateRender(){
   var hoy=new Date(); hoy.setHours(0,0,0,0);
   function fd(s){ var p=String(s||'').split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
   var MO=ES?['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC']:['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  var DW=ES?['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB']:['SUN','MON','TUE','WED','THU','FRI','SAT'];
+  var MOL=ES?['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   var items=(MM_PROXIMOS||[]).filter(function(e){ try{ return e && e.d && fd(e.d2||e.d)>=hoy; }catch(x){ return false; } })
     .sort(function(a,b){ return String(a.d).localeCompare(String(b.d)); }).slice(0,10);
+  var abierto=!!(document.getElementById('twxSavePanel')||{classList:{contains:function(){return false}}}).classList.contains('open');
   if(!items.length){ el.innerHTML=''; return; }
-  var URL='https://www.miamimagicapp.com/proximos.html';
+  var PURL='https://www.miamimagicapp.com/proximos.html';
   function esc(s){ return String(s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
   function h(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
+  function F(e,k){ return (ES&&e[k+'_es'])?e[k+'_es']:(e[k]||''); }
   var tt=ES?'Aparta la fecha':'Save the date';
-  var cards=items.map(function(e){
-    var a=fd(e.d), b=fd(e.d2||e.d);
+  var titulo=ES?'No te lo <i>pierdas</i>':'Don\'t <i>miss</i>';
+  var mini=[], full=[];
+  items.forEach(function(e){
+    var a=fd(e.d), b=fd(e.d2||e.d), varios=(+b!==+a);
     var dias=Math.round((a-hoy)/86400000);
     var cuenta = dias<=0 ? (ES?'¡Ya empezó!':'Happening now') : dias===1 ? (ES?'Mañana':'Tomorrow') : (ES?'en <b>'+dias+'</b> días':'in <b>'+dias+'</b> days');
     var mes=MO[a.getMonth()], dia=String(a.getDate());
-    if(+b!==+a){ dia += (b.getMonth()===a.getMonth()) ? '–'+b.getDate() : ''; if(b.getMonth()!==a.getMonth()) mes += '→'+MO[b.getMonth()]; }
-    var name=ES&&e.name_es?e.name_es:e.name;
-    var keys=e.zone==='keys';
-    return '<div class="sdx-card" role="button" tabindex="0" onclick="twxOpen(\''+esc(URL+'#'+e.id)+'\',\''+esc(tt)+'\')">'
-      +'<div class="sdx-date" style="--sdx-ac:'+(keys?'#10563C':'#FF4D35')+'"><span class="sdx-mo">'+mes+'</span><span class="sdx-dy">'+dia+'</span></div>'
+    if(varios){ dia += (b.getMonth()===a.getMonth()) ? '–'+b.getDate() : ''; if(b.getMonth()!==a.getMonth()) mes += '→'+MO[b.getMonth()]; }
+    var keys=e.zone==='keys', ac=keys?'#10563C':'#FF4D35', cid='mcard-sd-'+e.id;
+    var name=F(e,'name');
+    mini.push('<div class="sdx-card" role="button" tabindex="0" onclick="event.stopPropagation();mmSaveOpen(\''+esc(cid)+'\')">'
+      +'<div class="sdx-date" style="--sdx-ac:'+ac+'"><span class="sdx-mo">'+mes+'</span><span class="sdx-dy">'+dia+'</span></div>'
       +(keys?'<span class="sdx-keys">'+(ES?'LOS CAYOS':'THE KEYS')+'</span>':'')
       +'<div class="sdx-name">'+h(name)+'</div>'
       +'<div class="sdx-left">'+cuenta+'</div>'
-    +'</div>';
-  }).join('');
-  el.innerHTML='<div class="tw-wrap sdx-wrap"><section class="sdx" aria-label="'+h(tt)+'">'
-    +'<div class="sdx-hd"><div><div class="sdx-eye"><span class="sdx-line"></span>'+(ES?'APARTA LA FECHA':'SAVE THE DATE')+'</div>'
-    +'<div class="sdx-tt">'+(ES?'Próximamente en <i>Miami</i> y <i>los Cayos</i>':'Coming to <i>Miami</i> and <i>the Keys</i>')+'</div></div>'
-    +'<span class="sdx-all" role="button" tabindex="0" onclick="twxOpen(\''+esc(URL)+'\',\''+esc(tt)+'\')">'+(ES?'Ver todo':'See all')+' <span aria-hidden="true">↗</span></span></div>'
-    +'<div class="sdx-rail">'+cards+'</div>'
-    +'<div class="sdx-foot">'+(ES?'Fechas, lugar y entradas oficiales · toca para ver más':'Dates, venue and official tickets · tap to see more')+'</div>'
-  +'</section></div>';
+    +'</div>');
+    /* tarjeta completa: el mismo formato de "Este Mes" (twx-card) */
+    var rango=varios? (a.getDate()+(a.getMonth()!==b.getMonth()?' '+MOL[a.getMonth()]:'')+' – '+b.getDate()+' '+MOL[b.getMonth()]) : (a.getDate()+' '+MOL[a.getMonth()]);
+    if(!ES) rango=varios? (MOL[a.getMonth()]+' '+a.getDate()+' – '+(a.getMonth()!==b.getMonth()?MOL[b.getMonth()]+' ':'')+b.getDate()) : (MOL[a.getMonth()]+' '+a.getDate());
+    var falta = dias<=0 ? (ES?'En curso':'On now') : dias===1 ? (ES?'Mañana':'Tomorrow') : (ES?'Faltan '+dias+' días':dias+' days to go');
+    var dBot=varios? DW[a.getDay()]+'–'+DW[b.getDay()] : DW[a.getDay()];
+    full.push('<div class="twx-card" id="'+cid+'" style="--twx-ac:'+ac+'" onclick="twxToggle(\''+cid+'\')">'
+      +'<div class="twx-head">'
+        +'<div class="twx-date"><span class="twx-dow">'+mes+'</span><span class="twx-day" style="font-size:1.05rem">'+dia+'</span><span class="twx-mon">'+dBot+'</span></div>'
+        +'<div class="twx-meta">'
+          +'<div class="twx-type">'+h(F(e,'type'))+(keys?' · '+(ES?'Los Cayos':'The Keys'):'')+'</div>'
+          +'<div class="twx-name">'+h(name)+'</div>'
+          +'<div class="twx-venue">'+h(F(e,'venue'))+'</div>'
+        +'</div>'
+        +'<div class="twx-side">'
+          +'<span class="twx-badge">'+falta+'</span>'
+          +'<span class="twx-chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>'
+        +'</div>'
+      +'</div>'
+      +'<div class="twx-body">'
+        +'<p class="twx-desc">'+h(F(e,'desc'))+'</p>'
+        +'<div class="twx-row"><span class="twx-pill">'+rango+'</span><span class="twx-pill">'+falta+'</span></div>'
+        +(e.link?'<button class="twx-cta" onclick="event.stopPropagation();twxOpen(\''+esc(e.link)+'\',\''+esc(name)+'\')">'+(ES?'Entradas oficiales':'Official tickets')
+          +' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></button>':'')
+        +'<span class="sdx-share" role="button" tabindex="0" onclick="event.stopPropagation();mmShare({title:\''+esc(name)+'\',url:\''+esc(PURL+'#'+e.id)+'\',id:\''+esc(e.id)+'\'})">'
+          +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>'+(ES?'Compartir':'Share')+'</span>'
+      +'</div>'
+    +'</div>');
+  });
+  var nM=items.filter(function(e){return e.zone!=='keys'}).length, nK=items.length-nM;
+  var meta=(ES?(nM+' en Miami'+(nK?' · '+nK+' en los Cayos':'')):(nM+' in Miami'+(nK?' · '+nK+' in the Keys':'')));
+  el.innerHTML='<section class="tw-wrap sdx-wrap" id="sec-savedate"><div class="sdx" aria-label="'+h(tt)+'">'
+    +'<div class="sdx-hd" role="button" tabindex="0" onclick="mmSaveSection()"><div><div class="sdx-eye"><span class="sdx-line"></span>'+(ES?'APARTA LA FECHA':'SAVE THE DATE')+'</div>'
+    +'<div class="sdx-tt">'+titulo+'</div></div>'
+    +'<span class="sdx-all" id="twxSaveBar">'+(ES?'Explorar':'Explore')+' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></div>'
+    +'<div class="sdx-rail">'+mini.join('')+'</div>'
+    +'<div class="sdx-foot">'+meta+' · '+(ES?'fechas, lugar y entradas oficiales':'dates, venue and official tickets')+'</div>'
+    +'</div>'
+    +'<div class="tw-panel sdx-panel'+(abierto?' open':'')+'" id="twxSavePanel">'
+      +'<div class="twx-sticky"><b>'+(ES?'Aparta la fecha':'Save the date')+'</b><i>'+meta+'</i><button type="button" onclick="event.stopPropagation();mmSaveSection(true)">'+(ES?'Cerrar':'Close')+'</button></div>'
+      +'<div class="twx-list">'+full.join('')+'</div>'
+      +evStrip('savedate')
+    +'</div>'
+  +'</section>';
+  if(abierto){ var bb=document.getElementById('twxSaveBar'); if(bb) bb.classList.add('open'); }
+}
+/* abre / cierra el panel, igual que Esta Semana y Este Mes */
+function mmSaveSection(volver){
+  var p=document.getElementById('twxSavePanel'), b=document.getElementById('twxSaveBar');
+  if(!p) return;
+  var open=p.classList.toggle('open');
+  if(b) b.classList.toggle('open',open);
+  if(!open && volver){ var s=document.getElementById('sec-savedate'); if(s) s.scrollIntoView({behavior:'smooth',block:'start'}); }
+}
+/* tocar una mini-tarjeta: abre el panel y despliega ese evento */
+function mmSaveOpen(cid){
+  var p=document.getElementById('twxSavePanel'); if(!p) return;
+  if(!p.classList.contains('open')) mmSaveSection();
+  setTimeout(function(){
+    var c=document.getElementById(cid); if(!c) return;
+    if(!c.classList.contains('open')) twxToggle(cid);
+    c.scrollIntoView({behavior:'smooth',block:'center'});
+  },60);
 }
 function mmRedibujarEventos(){
   try{
@@ -9397,6 +9467,7 @@ document.addEventListener('click',function(e){
   // acordeones grandes: tocar fuera los cierra
   [['twxMainPanel','sec-june','twxSection'],
    ['twxMonthPanel','sec-june','twxMonthSection'],
+   ['twxSavePanel','sec-savedate','mmSaveSection'],
    ['mmcamPanel','sec-livecams','mmcamSection'],
    ['mttPanel','sec-mtt','mttToggle']].forEach(function(cfg){
     var p=document.getElementById(cfg[0]);
