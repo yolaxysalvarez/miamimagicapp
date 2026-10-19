@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo manda sobre la cartelera de la app, sin pasar por Apple. Lo que pongas aquí se suma o corrige lo que ya trae la app; lo que no toques se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia \"updated\" cada vez.",
- "updated": "2026-10-16",
+ "updated": "2026-10-19",
  "semana": [
   {
    "id": "rutaterror26",
@@ -3100,6 +3100,71 @@
    "desc_es": "Uno de los planes familiares más curiosos de los Cayos: perezosos rescatados, un capibara, cabras y aves que cuida la granja del Sheriff. Se agradecen donaciones de frutas y verduras.",
    "link": "https://www.keysso.net/farm",
    "venue_es": "5501 College Rd · Stock Island, Key West"
+  },
+  {
+   "id": "immsym-celestia26",
+   "scope": "local",
+   "d": "2026-10-24",
+   "name": "Immersive Symphony · Celestia",
+   "name_es": "Immersive Symphony · Celestia",
+   "venue": "Temple Emanu-El · 1701 Washington Ave, Miami Beach",
+   "venue_es": "Temple Emanu-El · 1701 Washington Ave, Miami Beach",
+   "time": "Sat · 7:30 PM",
+   "time_es": "Sáb · 7:30 PM",
+   "price": "From $35",
+   "price_es": "Desde $35",
+   "type": "Classical · Immersive",
+   "type_es": "Clásica · Inmersiva",
+   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "desc": "A live orchestra plays the film music of Hans Zimmer and Ludwig Göransson while projections cover the sanctuary's dome. About 75 minutes. The series continues into November with Queen and ABBA programs.",
+   "desc_es": "Una orquesta en vivo interpreta la música de cine de Hans Zimmer y Ludwig Göransson mientras las proyecciones cubren la cúpula del templo. Unos 75 minutos. La serie sigue en noviembre con programas de Queen y ABBA.",
+   "tags": [
+    "Music",
+    "Culture"
+   ],
+   "link": "https://feverup.com/m/781896"
+  },
+  {
+   "id": "ky-motetrivia1019",
+   "scope": "keys",
+   "d": "2026-10-19",
+   "name": "Trivia Night with Mote Marine Lab",
+   "name_es": "Noche de trivia con Mote Marine Lab",
+   "venue": "Florida Keys Brewing Co. · 81611 Old Hwy, Islamorada",
+   "venue_es": "Florida Keys Brewing Co. · 81611 Old Hwy, Islamorada",
+   "time": "Mon · 7:30–9:30 PM",
+   "time_es": "Lun · 7:30–9:30 PM",
+   "price": "Free to play",
+   "price_es": "Gratis para jugar",
+   "free": true,
+   "type": "Trivia · Ocean",
+   "type_es": "Trivia · Océano",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-keys-kw-snorkel-01.jpg",
+   "desc": "Coral-themed trivia over local craft beer, with prizes. Donations support Mote's coral reef restoration work in the Keys.",
+   "desc_es": "Trivia sobre corales con cerveza artesanal local y premios. Las donaciones apoyan la restauración de arrecifes de Mote en los Cayos.",
+   "link": "https://events.keysweekly.com/trivia-night-with-mote-marine-lab-muzx3q7n"
+  },
+  {
+   "id": "canes-pitt26",
+   "scope": "local",
+   "d": "2026-10-24",
+   "name": "Hurricanes vs Pittsburgh",
+   "name_es": "Hurricanes vs Pittsburgh",
+   "venue": "Hard Rock Stadium · Miami Gardens",
+   "venue_es": "Hard Rock Stadium · Miami Gardens",
+   "time": "Sat · 12 PM · ABC or ESPN",
+   "time_es": "Sáb · 12 PM · ABC o ESPN",
+   "price": "$$",
+   "price_es": "$$",
+   "type": "College Football",
+   "type_es": "Fútbol Americano Universitario",
+   "photo": "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=900&q=60&auto=format",
+   "desc": "The No. 3 Hurricanes host Pitt in an ACC game, with the team's first daytime kickoff of the season.",
+   "desc_es": "Los Hurricanes, número 3 del país, reciben a Pitt en partido de la ACC, en su primer juego de día de la temporada.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://miamihurricanes.com/"
   }
  ],
  "mes": [
