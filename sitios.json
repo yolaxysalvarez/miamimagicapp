@@ -540,5 +540,55 @@
     }
    }
   }
+ },
+ "drones": {
+  "1025261001": {
+   "dur": "0:05",
+   "t": "The Overseas Highway",
+   "t_es": "La Overseas Highway",
+   "loc": "Florida Keys",
+   "d": "The road that floats on the sea: the Overseas Highway and its bridges, from midday blue to a golden sunset.",
+   "d_es": "La carretera que flota sobre el mar: la Overseas Highway y sus puentes, del azul del mediodía a un atardecer dorado."
+  },
+  "1025261002": {
+   "dur": "0:04",
+   "t": "Key West from the Sky",
+   "t_es": "Key West desde el cielo",
+   "loc": "Key West",
+   "d": "The whole island at the end of the road, then low over Old Town's tin roofs and its lighthouse.",
+   "d_es": "La isla entera al final de la carretera y luego, bajito, sobre los techos de Old Town y su faro."
+  },
+  "1025261003": {
+   "dur": "0:10",
+   "t": "Sails, Boats and Resorts",
+   "t_es": "Velas, botes y resorts",
+   "loc": "Florida Keys",
+   "d": "A schooner on turquoise water, a boat cutting the flats, resort pools and island waterfronts.",
+   "d_es": "Una goleta sobre agua turquesa, un bote cortando los bajos, piscinas de resort y orillas isleñas."
+  },
+  "1025261004": {
+   "dur": "0:08",
+   "t": "Mangroves and Canals",
+   "t_es": "Manglares y canales",
+   "loc": "Florida Keys",
+   "d": "Kayaks between mangrove islands, then the bridges, canals and homes where life runs by boat.",
+   "d_es": "Kayaks entre islas de manglar y después los puentes, canales y casas donde la vida se mueve en bote."
+  },
+  "1025261005": {
+   "dur": "0:06",
+   "t": "Marina on the Bay",
+   "t_es": "Marina sobre la bahía",
+   "loc": "Florida Keys",
+   "d": "Morning light on a working marina, the docks full and the bay opening behind it.",
+   "d_es": "Luz de mañana sobre una marina con los muelles llenos y la bahía abriéndose detrás."
+  },
+  "1025261006": {
+   "dur": "0:10",
+   "t": "Lagoon and Jetty",
+   "t_es": "Laguna y escollera",
+   "loc": "Florida Keys",
+   "d": "A long rock jetty into calm water, then a sheltered lagoon of clear green water.",
+   "d_es": "Una larga escollera de piedra sobre agua en calma y luego una laguna protegida de agua verde y clara."
+  }
  }
 }
