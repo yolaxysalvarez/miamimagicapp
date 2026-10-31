@@ -3388,6 +3388,9 @@ body{padding-bottom:0;}
 [data-theme="dark"] .sdx-card{background:#262219}
 [data-theme="dark"] .sdx-name{color:#F3EBDD}
 [data-theme="dark"] .sdx-left,[data-theme="dark"] .sdx-foot{color:#B9AE99}
+.mm-found{outline:3px solid rgba(255,77,53,.95);outline-offset:-3px;animation:mmFound 2.6s ease forwards}
+@keyframes mmFound{0%,55%{outline-color:rgba(255,77,53,.95)}100%{outline-color:rgba(255,77,53,0)}}
+@media (prefers-reduced-motion:reduce){.mm-found{animation:none}}
 </style>
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#FF4D35">
@@ -5731,14 +5734,60 @@ function pickResult(idx){
   _lastQuery='';
   closeSearch();
   var siEl=document.getElementById('sInp');if(siEl)siEl.value='';
+  /* Al cerrar la ficha, el usuario queda frente a la MISMA tarjeta que
+     buscó: se despliega su sección si estaba recogida, se lleva la
+     tarjeta a la vista (también dentro de los carriles horizontales) y
+     se marca un momento con un borde coral al volver. */
+  if(typeof MM_DEFERRED!=='undefined' && typeof mmExpandSection==='function'
+     && MM_DEFERRED.some(function(x){return x.id===item.sec;})) mmExpandSection(item.sec);
   const sec=document.getElementById(item.sec);
-  if(sec) sec.scrollIntoView({behavior:'smooth',block:'start'});
+  var card=mmFindCard(sec, item.type==='show'?item.parentId:item.id);
+  window._mmFoundCard=card||null;
+  if(card) card.scrollIntoView({behavior:'auto',block:'center',inline:'center'});
+  else if(sec) sec.scrollIntoView({behavior:'smooth',block:'start'});
   setTimeout(()=>{
     if(item.type==='show') openConcertModal(item.parentId,item.link,item.btn);
     else if(item.type==='concert') openConcertModal(item.id,item.link,item.btn);
     else openItemModal(item.obj,item.type,item.link,item.btn);
-  },450);
+  },card?260:450);
 }
+function mmFindCard(root,id){
+  if(!id) return null;
+  var scope=root||document, k=String(id).replace(/["'\\]/g,'');
+  var els=scope.querySelectorAll('[onclick*="\''+k+'\'"],[onclick*=\'"'+k+'"\']');
+  var hidden=null;
+  for(var i=0;i<els.length;i++){
+    var el=els[i];
+    if(el.tagName==='BUTTON') continue;
+    if(el.offsetParent===null && getComputedStyle(el).position!=='fixed'){ if(!hidden) hidden=el; continue; }
+    return el;
+  }
+  /* La tarjeta existe pero está en la lista completa ("Ver todos"), que
+     está recogida: se abre la lista para poder llevar al usuario a ella. */
+  if(hidden){
+    var full=hidden.closest('[id$="-full"]');
+    var btn=full&&scope.querySelector('.ver-todos-btn[onclick*="'+full.id+'"]');
+    if(btn && full.offsetParent===null){ btn.click(); }
+    if(hidden.offsetParent!==null) return hidden;
+  }
+  return null;
+}
+(function(){
+  function hook(){
+    var ov=document.getElementById('modalOv'); if(!ov) return;
+    new MutationObserver(function(){
+      if(ov.classList.contains('open')) return;
+      var c=window._mmFoundCard; if(!c) return;
+      window._mmFoundCard=null;
+      setTimeout(function(){
+        if(document.body.contains(c)) c.scrollIntoView({behavior:'auto',block:'center',inline:'nearest'});
+        c.classList.remove('mm-found');void c.offsetWidth;c.classList.add('mm-found');
+        setTimeout(function(){c.classList.remove('mm-found');},2600);
+      },230);
+    }).observe(ov,{attributes:true,attributeFilter:['class']});
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hook); else hook();
+})();
 
 function searchKey(e){
   if(e.key==='Escape')closeSearch();
