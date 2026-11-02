@@ -11,8 +11,8 @@
    "name_es": "Real estate esta semana · Miami en cifras",
    "venue": "Prices, news and what they mean for you",
    "venue_es": "Precios, noticias y qué significan para ti",
-   "time": "New every Monday",
-   "time_es": "Nuevo cada lunes",
+   "time": "Week of Nov 2–8",
+   "time_es": "Semana del 2 al 8 de noviembre",
    "price": "Free",
    "price_es": "Gratis",
    "free": true,
@@ -3696,6 +3696,52 @@
    "link": "https://sugarloafshowdown.com/"
   },
   {
+   "id": "nightgarden26",
+   "scope": "local",
+   "d": "2026-11-13",
+   "d2": "2027-01-03",
+   "name": "NightGarden at Fairchild",
+   "name_es": "NightGarden en Fairchild",
+   "venue": "Fairchild Tropical Botanic Garden · Coral Gables",
+   "venue_es": "Fairchild Tropical Botanic Garden · Coral Gables",
+   "time": "Select nights · timed entry",
+   "time_es": "Noches seleccionadas · entrada por horario",
+   "price": "From $38 · kids 3 and under free",
+   "price_es": "Desde $38 · menores de 3 gratis",
+   "type": "Holidays · Lights",
+   "type_es": "Navidad · Luces",
+   "desc": "The garden after dark for the holidays: lit paths, interactive light installations, the laser show, Archimedes the talking tree, holiday movie nights, food trucks and, this season, an outdoor ice rink (separate ticket). The walk takes about an hour.",
+   "desc_es": "El jardín de noche por las fiestas: senderos iluminados, instalaciones de luz interactivas, el show de láser, Archimedes el árbol que habla, noches de películas navideñas, food trucks y, esta temporada, una pista de hielo al aire libre (entrada aparte). El recorrido dura cerca de una hora.",
+   "tags": [
+    "Family",
+    "Holidays"
+   ],
+   "link": "https://feverup.com/m/803732"
+  },
+  {
+   "id": "wonderland26",
+   "scope": "local",
+   "d": "2026-11-12",
+   "d2": "2027-01-03",
+   "name": "Christmas Wonderland",
+   "name_es": "Christmas Wonderland",
+   "venue": "Tropical Park · Westchester",
+   "venue_es": "Tropical Park · Westchester",
+   "time": "Opens Thu Nov 12 · evenings",
+   "time_es": "Abre el jueves 12 de nov · por la noche",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Holidays · Family",
+   "type_es": "Navidad · Familia",
+   "desc": "Miami's holiday theme park at Tropical Park: nearly 40 rides, light displays, live shows, holiday food and themed nights all season.",
+   "desc_es": "El parque navideño de Miami en Tropical Park: cerca de 40 atracciones, luces, shows en vivo, comida de temporada y noches temáticas toda la temporada.",
+   "tags": [
+    "Family",
+    "Holidays"
+   ],
+   "link": "https://miamiwonderland.com/tickets/"
+  },
+  {
    "id": "usher-cb26",
    "scope": "world",
    "d": "2026-12-03",
@@ -4659,6 +4705,36 @@
    "desc": "Key West counts down with its own drops at midnight: the red high heel at Bourbon St. Pub, the conch shell at Sloppy Joe's and the pirate wench from the mast at Schooner Wharf.",
    "desc_es": "Key West recibe el año con sus propias bajadas a medianoche: el tacón rojo en Bourbon St. Pub, el caracol en Sloppy Joe's y la pirata que baja del mástil en Schooner Wharf.",
    "link": "https://visitfloridakeys.com/plan-your-trip/plan-book/events/holidays-in-the-keys"
+  },
+  {
+   "id": "px-nightgarden",
+   "d": "2026-11-13",
+   "d2": "2027-01-03",
+   "ac": "#128474",
+   "type": "Holidays · Lights",
+   "type_es": "Navidad · Luces",
+   "name": "NightGarden at Fairchild",
+   "name_es": "NightGarden en Fairchild",
+   "venue": "Fairchild Tropical Botanic Garden · Coral Gables",
+   "venue_es": "Fairchild Tropical Botanic Garden · Coral Gables",
+   "desc": "The garden lit up for the holidays on select nights, with a laser show, movie nights and an outdoor ice rink. Timed entry; book ahead.",
+   "desc_es": "El jardín iluminado por las fiestas en noches seleccionadas, con show de láser, noches de cine y pista de hielo al aire libre. Entrada por horario; reserva con tiempo.",
+   "link": "https://feverup.com/m/803732"
+  },
+  {
+   "id": "px-wonderland",
+   "d": "2026-11-12",
+   "d2": "2027-01-03",
+   "ac": "#E8333A",
+   "type": "Holidays · Family",
+   "type_es": "Navidad · Familia",
+   "name": "Christmas Wonderland",
+   "name_es": "Christmas Wonderland",
+   "venue": "Tropical Park · Westchester",
+   "venue_es": "Tropical Park · Westchester",
+   "desc": "The holiday theme park opens Thursday, Nov 12: nearly 40 rides, lights, shows and themed nights through the season.",
+   "desc_es": "El parque navideño abre el jueves 12 de noviembre: cerca de 40 atracciones, luces, shows y noches temáticas toda la temporada.",
+   "link": "https://miamiwonderland.com/tickets/"
   }
  ],
  "_proximos": "Aparta la fecha: lo más grande de los próximos dos meses. Lo lee /proximos.html (la tarjeta 'apartafecha' de mes lleva ahí). Cada evento sale solo cuando empieza su mes o cuando termina; entonces va en 'mes'. Máximo 6 de Miami y 4 de los Cayos (los de los Cayos llevan \"zone\":\"keys\")."
