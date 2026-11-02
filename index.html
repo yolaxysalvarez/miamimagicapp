@@ -1718,6 +1718,44 @@ footer h4{font-size:.72rem!important;margin-bottom:12px;}
   .hp-card { border-radius: 13px !important; }
 }
 @media(min-width:900px){ .hero-preview{display:none!important;} }
+/* v1.8 · las puertas: nombre de sección grande y el dato vivo con el número en dorado */
+.hp-card-cat.hp-fig{text-transform:none;letter-spacing:.02em;font-size:.66rem;padding:3px 9px;background:rgba(6,12,26,.55);border-color:rgba(255,209,102,.28);display:inline-flex;align-items:center;gap:4px;}
+.hp-card-cat.hp-fig b{color:#FFD166;font-weight:800;font-size:.74rem;letter-spacing:0;}
+.hp-card-cat.hp-fig svg{color:#FFD166;margin-right:1px!important;}
+.hp-live{width:6px;height:6px;border-radius:50%;background:#FF3B30;box-shadow:0 0 0 3px rgba(255,59,48,.25);display:inline-block;animation:hpLive 1.6s ease-in-out infinite;}
+@keyframes hpLive{50%{opacity:.35}}
+.hp-card-label.hp-sec-name{font-family:'Playfair Display',serif;font-size:1.02rem;font-weight:700;letter-spacing:.005em;padding:26px 11px 9px;text-shadow:0 1px 8px rgba(0,0,0,.45);}
+/* v1.8 · Esta Semana: pestañas finas + franja de Real Estate */
+.twx-tabs{display:flex;gap:18px;padding:14px 18px 0;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid rgba(255,255,255,.08);}
+.twx-tabs::-webkit-scrollbar{display:none}
+.twx-tab{flex:0 0 auto;background:none;border:none;padding:6px 0 9px;font:600 .82rem 'DM Sans',sans-serif;letter-spacing:.02em;color:rgba(255,255,255,.55);border-bottom:2px solid transparent;cursor:pointer;min-height:36px;}
+.twx-tab.on{color:#FFD166;border-bottom-color:#FFD166;}
+:root:not([data-theme="dark"]) .twx-tabs{border-bottom-color:rgba(14,27,48,.1);}
+:root:not([data-theme="dark"]) .twx-tab{color:rgba(14,27,48,.5);}
+:root:not([data-theme="dark"]) .twx-tab.on{color:#B5822A;border-bottom-color:#B5822A;}
+#twxMainPanel[data-f="ev"] .twx-list>.twx-keys,#twxMainPanel[data-f="ev"] .twx-list>.twx-re{display:none;}
+#twxMainPanel[data-f="keys"] .twx-list>:not(.twx-keys){display:none;}
+#twxMainPanel[data-f="re"] .twx-list>:not(.twx-re){display:none;}
+.twx-re{position:relative;border-radius:18px;overflow:hidden;margin:0 0 14px;cursor:pointer;background:#0E1B30;box-shadow:0 14px 34px -20px rgba(14,27,48,.7);}
+.twx-re-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.32;}
+.twx-re::after{content:"";position:absolute;inset:0;background:linear-gradient(160deg,rgba(14,27,48,.35),rgba(10,19,34,.92) 70%);}
+.twx-re-in{position:relative;z-index:1;padding:16px 16px 14px;color:#fff;}
+.twx-re-hd{display:flex;justify-content:space-between;align-items:center;gap:8px;}
+.twx-re .twx-re-k{font:1rem/1 'Bebas Neue',sans-serif!important;letter-spacing:.1em!important;color:#7FE0D2;white-space:nowrap;}
+.twx-re .twx-re-new{letter-spacing:.06em!important;font-size:.6rem!important;}
+.twx-re-new{font:600 .62rem 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#0E1B30;background:#FFD166;border-radius:50px;padding:3px 8px;white-space:nowrap;}
+.twx-re-t{font:700 1.45rem/1.1 'Playfair Display',serif;margin-top:4px;display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.twx-re-t .twx-re-new{font-family:'DM Sans',sans-serif;font-weight:700;}
+.twx-re-t em{color:#FFD166;font-style:italic;}
+.twx-re-figs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px;}
+.twx-re-figs:empty{display:none;}
+.twx-re-f{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:9px 8px 8px;}
+.twx-re-f b{display:block;font:900 1.2rem/1 'Playfair Display',serif;color:#FFD166;font-variant-numeric:lining-nums;}
+.twx-re-f span{display:block;font:500 .64rem/1.25 'DM Sans',sans-serif;color:rgba(255,255,255,.78);margin-top:5px;}
+.twx-re-src{font:400 .62rem 'DM Sans',sans-serif;color:rgba(255,255,255,.55);margin-top:8px;}
+.twx-re-src:empty{display:none;}
+.twx-re-go{margin-top:10px;font:600 .8rem 'DM Sans',sans-serif;color:#fff;border-top:1px solid rgba(255,255,255,.12);padding-top:10px;}
+.twx-re-go span{color:#FFD166;}
 /* ══ HERO REDESIGN ══ */
 .hero-eyebrow-pill {
   display: inline-flex;
@@ -3519,9 +3557,13 @@ body{padding-bottom:0;}
         <div class="hm-ico-wrap c-teal"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.15s"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
         <span data-en="This Week" data-es="Esta Semana">Esta Semana</span>
       </a>
+      <a href="#" onclick="toggleHM();mmReOpen();return false;" class="hm-link" >
+        <div class="hm-ico-wrap c-gold"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.16s"><path d="M4 11.5 12 5l8 6.5"/><path d="M6 10v9.5h12V10"/><path d="M10 19.5v-5h4v5"/></svg></div>
+        <span>Real Estate</span> <span class="hm-link-badge hm-badge-gold" data-en="NEW" data-es="NUEVO">NUEVO</span>
+      </a>
       <a href="#" onclick="go('sec-events');toggleHM();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-coral"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.17s"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><circle cx="12" cy="16" r="1.5" fill="currentColor"/></svg></div>
-        Events <span class="hm-link-badge hm-badge-coral" style="animation-delay:.38s">10</span>
+        <span data-en="Events" data-es="Eventos">Eventos</span> <span class="hm-link-badge hm-badge-coral" style="animation-delay:.38s">10</span>
       </a>
       <a href="#" onclick="toggleHM();var el=document.getElementById('sec-insiders');if(el){el.scrollIntoView({behavior:'smooth'});setTimeout(function(){if(!document.getElementById('miPanel').classList.contains('open'))miToggle();},400);}return false;" class="hm-link" style="background:linear-gradient(135deg,rgba(220,80,60,.12),rgba(220,80,60,.05));border-left:3px solid var(--coral);">
         <div class="hm-ico-wrap"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.20s"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
@@ -8263,13 +8305,18 @@ function renderJune(MODE){
     return a._date - b._date;
   });
 
+  /* v1.8 · el informe de Real Estate no es un evento: sale de la lista y
+     va en su propia franja arriba de Esta Semana (en el mes no aparece). */
+  function twxIsRE(e){ return e && (e.type==='Real Estate' || /^realestate/.test(String(e.id||''))); }
+  var reList = MODE ? [] : list.filter(twxIsRE);
+  list = list.filter(function(e){ return !twxIsRE(e); });
   var sunday = new Date(now); sunday.setDate(now.getDate() + ((7 - now.getDay())%7 || 7) - 1 + 1);
   var weekEnd = new Date(now); weekEnd.setDate(now.getDate()+HORIZON);   /* v1.5: de hoy al domingo — la etiqueta y la lista dicen lo mismo */
   var dateRange = HORIZON===0
     ? (ES?'HOY ':'TODAY ')+now.getDate()+' '+months[now.getMonth()]          /* v1.5: el domingo la semana es solo hoy */
     : now.getDate()+' '+months[now.getMonth()]+' – '+weekEnd.getDate()+' '+months[weekEnd.getMonth()];
 
-  var sectionTitle = ES ? 'Esta Semana en Miami' : 'This Week in Miami';
+  var sectionTitle = ES ? 'Esta Semana' : 'This Week';   /* v1.8: ya no es solo Miami — también los Cayos y real estate */
   var sectionSub   = ES ? 'Se actualiza automáticamente cada semana' : 'Updates automatically every week';
   var lblLocal = ES ? 'Local' : 'Local';
   var lblWorld = ES ? 'Mundial' : 'World';
@@ -8392,14 +8439,41 @@ function renderJune(MODE){
       if(prev!==null && t!==prev && lbl[t]) out+='<div class="twx-div"><span></span><b>'+lbl[t]+'</b><span></span></div>';
       out+=cards[i]; prev=t;
     });
-    cards=out+kyBlock();
+    cards=reBlock()+out+kyBlock();
   })();
+  function reBlock(){
+    if(!reList.length) return '';
+    var e=reList[0], wk='';
+    try{ var a=parseD(e.d), b=parseD(e.d2||e.d);
+      wk = a.getMonth()===b.getMonth() ? a.getDate()+'–'+b.getDate()+' '+months[b.getMonth()]
+                                       : a.getDate()+' '+months[a.getMonth()]+' – '+b.getDate()+' '+months[b.getMonth()];
+    }catch(x){}
+    return '<div class="twx-re" role="button" tabindex="0" onclick="event.stopPropagation();mmReOpen()">'
+      +'<div class="twx-re-bg" style="background-image:url(\''+(e.photo||'fotos/mm-week-brickell.jpg')+'\')"></div>'
+      +'<div class="twx-re-in">'
+        +'<div class="twx-re-hd"><span class="twx-re-k">Real Estate'+(wk?' · '+wk:'')+'</span></div>'
+        +'<div class="twx-re-t"><span>'+(ES?'Miami en <em>cifras</em>':'Miami in <em>numbers</em>')+'</span><span class="twx-re-new">'+(ES?'Cada lunes':'Every Monday')+'</span></div>'
+        +'<div class="twx-re-figs" id="twxReFigs"></div>'
+        +'<div class="twx-re-src" id="twxReSrc"></div>'
+        +'<div class="twx-re-go">'+(ES?'Las noticias de la semana, con sus fuentes':'This week\'s news, with every source')+' <span>&rarr;</span></div>'
+      +'</div></div>';
+  }
+  function twxTabs(){
+    /* pestañas finas (texto, no botones grandes); solo si hay más de un tipo */
+    if(!reList.length && !kyCount) return '';
+    var t=[['all',ES?'Todo':'All'],['ev',ES?'Eventos':'Events']];
+    if(kyCount) t.push(['keys',ES?'Los Cayos':'The Keys']);
+    if(reList.length) t.push(['re','Real Estate']);
+    return '<div class="twx-tabs" role="tablist">'+t.map(function(x,i){
+      return '<button type="button" role="tab" class="twx-tab'+(i===0?' on':'')+'" aria-selected="'+(i===0)+'" onclick="event.stopPropagation();twxFilt(this,\''+x[0]+'\')">'+x[1]+'</button>';
+    }).join('')+'</div>';
+  }
 
   // ── barra maestra estilo acordeón premium (como las otras secciones) ──
   var heroBg = 'fotos/mm-week-brickell.jpg';   /* AdobeStock 259445495 */
   window._mmWeekCount = list.length;   /* v1.4: la portada lo muestra junto a la palma */
   try{ setTimeout(function(){ if(typeof mmHeroTop==='function') mmHeroTop(); },0); }catch(e){}
-  var eyebrow = ES ? 'Local + Mundial' : 'Local + World';  /* el conteo ya vive en la línea de fechas — no se repite */
+  var eyebrow = ES ? 'Miami · Los Cayos' : 'Miami · The Keys';  /* v1.8: dice dónde, no qué; el conteo vive en la línea de fechas */
   return '<section class="sec fade tw-wrap" id="sec-june">'
     +'<div class="tw-bar-wrap" style="--tw-accent:#FFD166;--tw-accent-border:rgba(255,209,102,.22);">'
       +'<div class="tw-bar" id="twxMainBar" onclick="twxSection()">'
@@ -8409,14 +8483,15 @@ function renderJune(MODE){
           +'<div class="tw-bar-label">'
             +'<span class="tw-bar-eyebrow" style="color:#FFD166">'+eyebrow+'</span>'
             +'<span class="tw-bar-title">'+sectionTitle+'</span>'
-            +'<span class="tw-bar-desc">'+(ES?'Conciertos, deportes y cultura — la agenda curada de la semana':'Concerts, sports and culture — the week\'s curated agenda')+'</span>'
+            +'<span class="tw-bar-desc">'+(ES?'Eventos, los Cayos y real estate — lo que pasa esta semana':'Events, the Keys and real estate — what\'s happening this week')+'</span>'
           +'</div>'
-          +'<div class="tw-bar-when">'+dateRange+' &middot; '+list.length+(ES?' eventos':' events')+'</div>'
+          +'<div class="tw-bar-when">'+dateRange+' &middot; '+list.length+(ES?' eventos':' events')+(reList.length?' &middot; Real Estate':'')+'</div>'
           +'<div class="tw-bar-meta">'
           +'<span class="tw-bar-cta">'+(ES?'Explorar':'Explore')+'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></div>'
         +'</div>'
       +'</div>'
       +'<div class="tw-panel" id="twxMainPanel">'
+        +twxTabs()
         +'<div class="twx-list" style="padding:14px 12px 16px">'+cards+'</div>'
         +'<div style="padding:0 12px">'+evStrip('week')+'</div>'
         +'<div onclick="go(\'sec-events\')" style="margin:0 12px 16px;padding:13px;text-align:center;border:1px dashed rgba(14,27,48,.22);border-radius:13px;font:700 .76rem \'DM Sans\',sans-serif;color:#B07800;cursor:pointer;">'
@@ -9394,8 +9469,9 @@ function renderMonth(){
     }).join('');
   }catch(e){}
 
-  var eyebrow=ES?'PARA RESIDENTES · Y TURISTAS QUE VUELVEN':'FOR LOCALS · AND RETURNING VISITORS';
-  var title=ES?'Este Mes en Miami':'This Month in Miami';
+  var eyebrow=ES?'Miami · Los Cayos':'Miami · The Keys';   /* v1.8 */
+  var title=ES?'Este Mes':'This Month';
+  window._mmMonthCount=(monthAll&&monthAll.count)||items.length;
   /* El mes se calculaba a mano y se quedaba viejo. Ahora sale del reloj. */
   var MMES=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
   var MMEN=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -9408,7 +9484,7 @@ function renderMonth(){
         +'<div class="tw-bar-overlay"></div>'
         +'<div class="tw-bar-body">'
           +'<div class="tw-bar-label">'
-            +'<span class="tw-bar-eyebrow" style="color:#00C9B1">'+eyebrow+'</span>'
+            +'<span class="tw-bar-eyebrow" style="color:#FFD166">'+eyebrow+'</span>'
             +'<span class="tw-bar-title">'+title+'</span>'
             +'<span class="tw-bar-desc">'+(ES?'Temporadas, tradiciones y lo que define el mes en la ciudad':'Seasons, traditions and what defines the month in the city')+'</span>'
           +'</div>'
@@ -9486,6 +9562,12 @@ function twxStickySync(){
       }
     });
   }catch(e){}
+}
+function twxFilt(btn,f){
+  var p=document.getElementById('twxMainPanel'); if(!p) return;
+  p.setAttribute('data-f',f);
+  p.querySelectorAll('.twx-tab').forEach(function(b){ var on=(b===btn); b.classList.toggle('on',on); b.setAttribute('aria-selected',on); });
+  if(f==='re') setTimeout(mmReFill,0);
 }
 function twxSection(){
   var p = document.getElementById('twxMainPanel');
@@ -13038,51 +13120,29 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
   function buildPreview(){
     var track=document.getElementById('hpTrack');
     if(!track)return;
-    var items=[];
-    try{
-      if(typeof D!=='undefined'){
-        // Mix multiple categories with intentional ordering for variety
-        var rests=(D.restaurants||[]).filter(function(r,i){return i<4;}).map(function(r){return {name:r.name,cat:'Dining',id:r.id,arrName:'restaurants',mType:'rest',icoK:'food',c:'#FF4D35'};});
-        var beaches=(D.beaches||[]).filter(function(b,i){return i<3;}).map(function(b){return {name:b.name,cat:'Beach',id:b.id,arrName:'beaches',mType:'beach',icoK:'beach',c:'#00C9B1'};});
-        var nights=(D.nightlife||[]).filter(function(n,i){return i<2;}).map(function(n){return {name:n.name,cat:'Nightlife',id:n.id,arrName:'nightlife',mType:'night',icoK:'night',c:'#FFD166'};});
-        var museums=(D.museums||[]).filter(function(m,i){return i<2;}).map(function(m){return {name:m.name,cat:'Museum',id:m.id,arrName:'museums',mType:'museum',icoK:'culture',c:'#8B5CF6'};});
-        // Eventos vivos (mismo motor de fechas que Esta Semana)
-        var _now=new Date(); _now.setHours(0,0,0,0);
-        var _mE=(lang==='es');
-        var _mons=_mE?['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC']:['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
-        var _evOpen="go('sec-june');setTimeout(function(){var p=document.getElementById('twxMainPanel');if(p&&!p.classList.contains('open'))twxSection();},600);";
-        var events=[];
-        (D.events||[]).forEach(function(e){
-          var d;
-          if(typeof e.wk==='number'){ d=new Date(_now); d.setDate(d.getDate()+((e.wk-d.getDay()+7)%7)); }
-          else if(e.d){ var p=e.d.split('-'); d=new Date(+p[0],+p[1]-1,+p[2]);
-            var p2=(e.d2||e.d).split('-'); var d2=new Date(+p2[0],+p2[1]-1,+p2[2]);
-            if(d2<_now) return; if(d<_now)d=new Date(_now);
-            var lim=new Date(_now); lim.setDate(lim.getDate()+10); if(d>lim) return; }
-          else return;
-          var diff=Math.round((d-_now)/86400000);
-          var when=diff===0?(_mE?'HOY':'TODAY'):diff===1?(_mE?'MAÑANA':'TOMORROW'):(_mons[d.getMonth()]+' '+d.getDate());
-          events.push({name:(_mE&&e.name_es)?e.name_es:e.name,cat:when,photo:e.photo,onclick:_evOpen,noFav:true,icoK:'events',c:'#FF4D35',_d:d,_dated:!!e.d});
-        });
-        events.sort(function(a,b){return (b._dated-a._dated)||(a._d-b._d);});
-        events=events.slice(0,3);
-        var parks=(D.parks||[]).filter(function(p,i){return i<2;}).map(function(p){return {name:p.name,cat:'Parks',id:p.id,arrName:'parks',mType:'place',icoK:'park',c:'#10b981'};});
-        // Interleave for visual variety
-        var all=[rests,beaches,nights,museums,events,parks];
-        var maxL=Math.max.apply(null,all.map(function(a){return a.length;}));
-        for(var i=0;i<maxL;i++){
-          all.forEach(function(arr){if(arr[i])items.push(arr[i]);});
-        }
-        // cards vivas al frente: EN VIVO + tour del día
-        var _tours=[['sobe',_mE?'South Beach y Art Deco':'South Beach and Art Deco','https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=500&q=60&auto=format'],
-                    ['havana',_mE?'Paseo La Pequeña Habana':'Little Havana Walk','https://images.unsplash.com/photo-1571061125816-a1a4b57a7d95?w=500&q=60&auto=format'],
-                    ['wynwood',_mE?'Arte Urbano Wynwood':'Wynwood Street Art','https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=500&q=60&auto=format']];
-        var _t=_tours[new Date().getDate()%3];
-        items.unshift({name:_t[1],cat:_mE?'TOUR A PIE':'WALKING TOUR',photo:_t[2],onclick:"startTour('"+_t[0]+"');",noFav:true,icoK:'walk',c:'#00C9B1'});
-        items.unshift({name:_mE?'Cámara en vivo de Miami':'Miami live cams',cat:_mE?'EN VIVO':'LIVE',photo:'https://images.unsplash.com/photo-1506966953602-c20cc11f75e3?w=500&q=60&auto=format',
-          onclick:"go('sec-livecams');setTimeout(function(){var p=document.getElementById('mmcamPanel');if(p&&!p.classList.contains('open'))mmcamSection();},600);",noFav:true,icoK:'cam',c:'#FF3B30'});
-      }
-    }catch(e){}
+    /* v1.8 · la tira de la portada ya no muestra lugares sueltos: son las
+       PUERTAS de la app. Cada tarjeta es una sección, con su foto real y un
+       dato vivo (el número va en dorado). Lo demás vive en "Explorar más".
+       Fly Over Miami no va aquí: ya tiene su propio espacio en Home. */
+    var _mE=(typeof lang!=='undefined'&&lang==='es');
+    var _week="go('sec-june');setTimeout(function(){var p=document.getElementById('twxMainPanel');if(p&&!p.classList.contains('open'))twxSection();},600);";
+    var _month="go('sec-month');setTimeout(function(){var p=document.getElementById('twxMonthPanel');if(p&&!p.classList.contains('open'))twxMonthSection();},600);";
+    var _cams="go('sec-livecams');setTimeout(function(){var p=document.getElementById('mmcamPanel');if(p&&!p.classList.contains('open'))mmcamSection();},600);";
+    var items=[
+      {k:'week',  name:_mE?'Esta Semana':'This Week',          photo:'fotos/mm-mb-fillmore-letrero.jpg', onclick:_week,  icoK:'events'},
+      {k:'re',    name:'Real Estate',                          photo:'fotos/mm-week-brickell.jpg',       onclick:"mmReOpen();", icoK:'home'},
+      {k:'keys',  name:_mE?'Los Cayos':'The Keys',             photo:'fotos/mm-keys-tiki-atardecer.jpg', onclick:"go('sec-keys');", icoK:'sun'},
+      {k:'cams',  name:_mE?'Cámaras en vivo':'Live cams',      photo:'fotos/mm-mb-salvavidas-17st.jpg',  onclick:_cams,  icoK:'cam'},
+      {k:'rest',  name:_mE?'Restaurantes':'Restaurants',       photo:'fotos/mm-rusty-1.jpg',             onclick:"go('sec-rest');", icoK:'food'},
+      {k:'beach', name:_mE?'Playas':'Beaches',                 photo:'fotos/mm-mb-playa-lincoln.jpg',    onclick:"go('sec-beach');", icoK:'beach'},
+      {k:'month', name:_mE?'Este Mes':'This Month',            photo:'fotos/mm-month-night.jpg',         onclick:_month, icoK:'events'},
+      {k:'night', name:_mE?'Vida nocturna':'Nightlife',        photo:'fotos/mm-n9.jpg',                  onclick:"go('sec-night');", icoK:'night'},
+      {k:'tours', name:_mE?'Tours a pie':'Walking tours',      photo:'fotos/mm-mb-art-deco-letrero.jpg', onclick:"go('sec-map');", icoK:'walk'},
+      {k:'museum',name:_mE?'Museos y arte':'Museums & art',    photo:'fotos/mm-vizcaya-1.jpg',           onclick:"go('sec-museum');", icoK:'culture'},
+      {k:'hotels',name:_mE?'Hoteles':'Hotels',                 photo:'fotos/mm-eden-roc.jpg',            onclick:"go('sec-hotels');", icoK:'bed'},
+      {k:'biz',   name:_mE?'Negocios de Miami':'Miami business', photo:'fotos/mm-grazianos-mercado.jpg', onclick:"go('sec-biz');", icoK:'shop'}
+    ];
+    items.forEach(function(it){ it.noFav=true; it.c='#FFD166'; });
     var HP_ICO={
       food:'<path d=\"M8 4v7M6 4v3.5a2 2 0 0 0 4 0V4\"/><path d=\"M16.5 4c-1.4 1-2 2.8-2 4.6 0 1.9.8 2.9 2 2.9V20\"/><path d=\"M8 13v7\"/>',
       beach:'<path d=\"M12 4a8.5 8.5 0 0 1 8.5 8.5H3.5A8.5 8.5 0 0 1 12 4z\"/><path d=\"M12 12.5V20\"/><path d=\"M9 20h6\"/>',
@@ -13091,6 +13151,10 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
       events:'<path d=\"M4 8a2 2 0 0 0 0 8v3h16v-3a2 2 0 0 1 0-8V5H4v3z\"/><path d=\"M14 5v14\" stroke-dasharray=\"2.5 2.5\"/>',
       park:'<path d=\"M12 3.5 6.8 11h3l-4 6h12.4l-4-6h3L12 3.5z\"/><path d=\"M12 17v3.5\"/>',
       cam:'<rect x=\"3\" y=\"7\" width=\"13\" height=\"11\" rx=\"2.5\"/><path d=\"M16 11l5-3v9l-5-3\"/>',
+      home:'<path d=\"M4 11.5 12 5l8 6.5\"/><path d=\"M6 10v9.5h12V10\"/><path d=\"M10 19.5v-5h4v5\"/>',
+      sun:'<circle cx=\"12\" cy=\"13\" r=\"4\"/><path d=\"M3 20h18\"/><path d=\"M12 4v2M5.6 6.6l1.4 1.4M18.4 6.6 17 8M3 13h2M19 13h2\"/>',
+      bed:'<path d=\"M3 18V7\"/><path d=\"M3 14h18v4\"/><path d=\"M21 14v-2.5a2.5 2.5 0 0 0-2.5-2.5H11v5\"/><circle cx=\"7\" cy=\"11\" r=\"1.8\"/>',
+      shop:'<path d=\"M5 8h14l-1 12H6L5 8z\"/><path d=\"M9 8V6.5a3 3 0 0 1 6 0V8\"/>',
       walk:'<circle cx=\"13\" cy=\"5\" r=\"1.8\"/><path d=\"M10.5 21l1.6-5.5L10 13l.8-4.5 3.2-.8 2.5 3 2.5 1\"/><path d=\"M10.8 8.5 8 10.5l-1 3.5\"/>'
     };
     function hpIco(k){ return HP_ICO[k]?'<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"width:11px;height:11px;vertical-align:-1.5px;margin-right:4px\">'+HP_ICO[k]+'</svg>':''; }
@@ -13109,34 +13173,98 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
       return '<div class="hp-card" onclick="'+clickFn+'" style="flex:0 0 '+sz.w+'px;height:'+sz.h+'px;">'
         +'<div class="hp-card-bg" style="'+bgStyle+'opacity:.82;"></div>'
         +'<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(4,10,24,.9) 0%,transparent 55%);"></div>'
-        +'<span class="hp-card-cat" style="border-color:'+accentClr+'33;">'+hpIco(d.icoK)+mmHpCat(d.cat)+'</span>'
+        +(d.k?'<span class="hp-card-cat hp-fig" data-hpk="'+d.k+'" data-ico="'+d.icoK+'">'+hpIco(d.icoK)+mmHpFig(d.k)+'</span>'
+             :'<span class="hp-card-cat" style="border-color:'+accentClr+'33;">'+hpIco(d.icoK)+mmHpCat(d.cat)+'</span>')
         +(d.noFav?'':(function(){var fv=typeof isFav==='function'&&isFav(d.id);var sn=(d.name||'').replace(/'/g,'`');
            return '<button class=\"hp-fav'+(fv?' faved':'')+'\" onclick=\"event.stopPropagation();addFavFromCard(&quot;'+d.id+'&quot;,&quot;'+sn+'&quot;,&quot;'+d.mType+'&quot;,this)\">'+(fv?'♥':'♡')+'</button>';})())
-        +'<div class="hp-card-label">'+((d.name||'').split(',')[0])+'</div>'
+        +'<div class="hp-card-label'+(d.k?' hp-sec-name':'')+'">'+((d.name||'').split(',')[0])+'</div>'
         +'</div>';
     }).join('');
 
-    // Scroll: two alternating speeds for visual rhythm
-    var pos=0;
-    var totalW=items.length*(185+10); // avg width+gap
-    var paused=false;
-    track.addEventListener('mouseenter',function(){paused=true;});
-    track.addEventListener('mouseleave',function(){paused=false;});
-    function tick(){
-      if(!paused){
-        pos+=0.42;
-        if(pos>=totalW) pos=0;
-        track.style.transform='translateX(-'+pos+'px)';
-      }
-      requestAnimationFrame(tick);
+    // Scroll continuo: mide la tira de verdad (un tercio = una vuelta) y
+    // usa un solo bucle aunque la tira se reconstruya (cambio de idioma).
+    window._hpTotal=Math.max(1,track.scrollWidth/3);
+    if(!window._hpLoop){
+      window._hpLoop=true; window._hpPos=0; window._hpPaused=false;
+      track.addEventListener('mouseenter',function(){window._hpPaused=true;});
+      track.addEventListener('mouseleave',function(){window._hpPaused=false;});
+      (function tick(){
+        var t=document.getElementById('hpTrack');
+        if(t&&!window._hpPaused){
+          window._hpPos+=0.42;
+          if(window._hpPos>=window._hpTotal) window._hpPos=0;
+          t.style.transform='translateX(-'+window._hpPos+'px)';
+        }
+        requestAnimationFrame(tick);
+      })();
     }
-    requestAnimationFrame(tick);
   }
   if(document.readyState==='loading'){
     document.addEventListener('DOMContentLoaded',buildPreview);
   } else {
     setTimeout(buildPreview,200);
   }
+})();
+
+/* ══ v1.8 · datos vivos de las puertas de la portada + Real Estate ══ */
+var MM_RE=null;
+try{ var _reG=localStorage.getItem('mm_re'); if(_reG) MM_RE=JSON.parse(_reG); }catch(e){}
+function mmHpFig(k){
+  var ES=(typeof lang!=='undefined'&&lang==='es');
+  function n(v,es,en){ return (v>0)?'<b>'+v+'</b> '+(ES?es:en):''; }
+  var out='';
+  try{
+    if(k==='week')  out=n(window._mmWeekCount||0,'eventos','events');
+    if(k==='month') out=n(window._mmMonthCount||0,'eventos','events');
+    if(k==='re'){
+      var c=MM_RE&&MM_RE.cifras&&MM_RE.cifras[0];
+      out=c?'<b>'+c.v+'</b> '+(ES?'precio mediano':'median price'):(ES?'Nuevo cada lunes':'New every Monday');
+    }
+    if(k==='keys')  out=n((typeof kyItems==='function'&&typeof kyActive==='function')?kyItems().filter(kyActive).length:0,'fichas','picks');
+    if(k==='cams')  out='<i class="hp-live"></i>'+(ES?'EN VIVO':'LIVE');
+    if(k==='rest')  out=n((D.restaurants||[]).length,'lugares','places');
+    if(k==='beach') out=n((D.beaches||[]).length,'playas','beaches');
+    if(k==='night') out=n((D.nightlife||[]).length,'lugares','places');
+    if(k==='tours') out=n((typeof MM_TOURS!=='undefined'?MM_TOURS:[]).length,'rutas','routes');
+    if(k==='museum')out=n((D.museums||[]).length,'museos','museums');
+    if(k==='hotels')out=n((D.hotels||[]).length,'hoteles','hotels');
+    if(k==='biz')   out=n((typeof MM_DIR!=='undefined'&&MM_DIR?MM_DIR:[]).length,'negocios','businesses');
+  }catch(e){}
+  return out||(ES?'Explora':'Explore');
+}
+function mmHpFigs(){
+  try{
+    document.querySelectorAll('#hpTrack [data-hpk]').forEach(function(el){
+      var svg=el.querySelector('svg'); var h=mmHpFig(el.getAttribute('data-hpk'));
+      el.innerHTML=(svg?svg.outerHTML:'')+h;
+    });
+  }catch(e){}
+}
+function mmReUrl(){ return 'https://www.miamimagicapp.com/realestate.html'; }
+function mmReOpen(){ try{ if(typeof mmTrack==='function') mmTrack('re_open','home'); }catch(e){} twxOpen(mmReUrl(), 'Real Estate'); }
+function mmReFill(){
+  /* las cifras del informe dentro de Esta Semana */
+  try{
+    var box=document.getElementById('twxReFigs'); if(!box||!MM_RE||!MM_RE.cifras) return;
+    var ES=(typeof lang!=='undefined'&&lang==='es');
+    box.innerHTML=MM_RE.cifras.slice(0,3).map(function(c){
+      var l=(ES&&c.l_es?c.l_es:c.l).split(',')[0].replace(/\s*\(.*?\)\s*/g,'');
+      return '<div class="twx-re-f"><b>'+c.v+'</b><span>'+l+'</span></div>';
+    }).join('');
+    var src=document.getElementById('twxReSrc');
+    if(src) src.textContent=(ES?(MM_RE.cifras_mes_es||''):(MM_RE.cifras_mes||''))+(MM_RE.cifras_fuente?' · '+MM_RE.cifras_fuente:'');
+  }catch(e){}
+}
+(function(){
+  function traer(){
+    var base=(typeof MM_API!=='undefined' && MM_API) ? MM_API : '';
+    fetch(base+'/realestate.json?t='+Date.now(),{cache:'no-store'})
+      .then(function(r){ return r.ok?r.json():null; })
+      .then(function(d){ if(!d) return; MM_RE=d; try{ localStorage.setItem('mm_re',JSON.stringify(d)); }catch(e){} mmReFill(); mmHpFigs(); })
+      .catch(function(){});
+  }
+  function arrancar(){ traer(); [800,2500,6000].forEach(function(t){ setTimeout(function(){ mmHpFigs(); mmReFill(); },t); }); }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',arrancar); else arrancar();
 })();
 </script>
 

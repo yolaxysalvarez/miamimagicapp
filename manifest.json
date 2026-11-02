@@ -19,7 +19,7 @@
   ],
   "shortcuts": [
     {
-      "name": "This Week in Miami",
+      "name": "This Week",
       "short_name": "This Week",
       "description": "Events happening this week",
       "url": "/?go=week",

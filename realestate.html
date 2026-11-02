@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Real Estate esta semana · Miami Magic</title>
+<meta name="description" content="Lo que mueve el real estate de Miami esta semana: las cifras del mercado, las noticias y qué significan para ti.">
+<link rel="canonical" href="https://www.miamimagicapp.com/realestate.html">
+<meta property="og:title" content="Real Estate esta semana · Miami Magic">
+<meta property="og:description" content="Las cifras y las noticias del real estate de Miami, cada semana.">
+<meta property="og:image" content="https://www.miamimagicapp.com/fotos/mm-week-brickell.jpg">
+<meta property="og:url" content="https://www.miamimagicapp.com/realestate.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBF5EA">
+<link rel="icon" href="/miami-magic-icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,700;0,900;1,600;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FBF5EA; --card:#FFFFFF; --ink:#0E1B30; --mut:#5F6370; --line:rgba(14,27,48,.09);
+  --coral:#FF4D35; --gold:#B5822A; --teal:#0F6E62; --navy:#0E1B30;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,sans-serif;line-height:1.5;min-height:100vh;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(900px 520px at 100% -10%,rgba(18,132,116,.10),transparent 60%),radial-gradient(700px 480px at -10% 20%,rgba(196,142,48,.12),transparent 60%)}
+a{color:inherit}
+.wrap{position:relative;z-index:1;width:min(760px,100%);margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;z-index:20;padding:calc(env(safe-area-inset-top) + 12px) 0 12px;background:rgba(251,245,234,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none}
+.brand img{width:28px;height:28px;border-radius:7px}
+.brand b{font-family:"Playfair Display",serif;font-weight:900;font-size:19px}
+.close{appearance:none;-webkit-appearance:none;border:none;background:rgba(120,120,130,.18);color:var(--ink);width:36px;height:36px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;position:relative}
+.close::after{content:"";position:absolute;inset:-4px}
+.close svg{width:14px;height:14px}
+.inapp .close{display:none}
+.cover{margin:20px 0 0;border-radius:24px;overflow:hidden;aspect-ratio:16/8;background:#dfe7ea;box-shadow:0 14px 34px -20px rgba(14,27,48,.5)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.hero{padding:26px 0 6px}
+.kick{font-family:"Bebas Neue",sans-serif;letter-spacing:.26em;font-size:16px;color:var(--teal);display:flex;align-items:center;gap:10px}
+.kick::before{content:"";width:26px;height:3px;background:var(--gold);border-radius:2px}
+h1{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(42px,11vw,68px);line-height:.98;letter-spacing:-.01em;margin:10px 0 0}
+h1 em{font-style:italic;font-weight:700;color:var(--gold)}
+.sub{margin-top:14px;font-size:17px;color:var(--mut);max-width:34em}
+.h2{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;column-gap:12px;row-gap:2px;margin:30px 0 12px}
+.h2 b{font-family:"Bebas Neue",sans-serif;letter-spacing:.16em;font-size:16px;color:var(--ink);text-transform:uppercase;white-space:nowrap}
+.h2 span{font-size:13px;color:var(--mut);white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.st{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 14px 16px;box-shadow:0 10px 30px -20px rgba(14,27,48,.35)}
+.st .v{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(26px,7vw,36px);line-height:1;color:var(--gold)}
+.st .l{font-size:13.5px;margin-top:8px;line-height:1.3}
+.st .n{font-size:12px;color:var(--teal);font-weight:700;margin-top:6px}
+.src{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding:10px 2px;font-size:13.5px;color:var(--mut);text-decoration:none;border-bottom:1px solid var(--line)}
+.src>span:last-child{color:var(--coral);font-weight:700}
+.list{display:flex;flex-direction:column;gap:16px}
+.nw{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px 20px 8px;box-shadow:0 10px 30px -18px rgba(14,27,48,.35);position:relative;overflow:hidden}
+.nw::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--teal)}
+.tag{font-family:"Bebas Neue",sans-serif;letter-spacing:.16em;font-size:14px;color:var(--teal);text-transform:uppercase}
+.nt{font-family:"Playfair Display",serif;font-weight:700;font-size:22px;line-height:1.2;margin:2px 0 8px}
+.nd{font-size:15.5px}
+.nd b{color:var(--gold)}
+.rows{margin-top:12px;border-top:1px solid var(--line)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:15px;cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;width:100%;text-align:left;color:var(--ink);font-family:inherit}
+.row:last-child{border-bottom:0}
+.row>span:last-child{color:var(--coral);font-weight:700;white-space:nowrap;flex:none;padding-left:4px}
+.row .l{display:flex;align-items:center;flex:1 1 auto;min-width:0}
+.row .l>span{overflow-wrap:anywhere}
+.row svg{width:18px;height:18px;flex:none;margin-right:10px;stroke:var(--gold)}
+.dom{color:var(--coral);font-weight:700}
+.ag{margin-top:30px;background:var(--navy);color:#fff;border-radius:24px;padding:22px 20px 8px;box-shadow:0 18px 40px -22px rgba(14,27,48,.7)}
+.ag .hd{display:flex;align-items:center;gap:16px}
+.ag img{width:76px;height:76px;border-radius:50%;object-fit:cover;object-position:50% 30%;border:2px solid #E4C27A;padding:3px;background:var(--navy);flex:none}
+.ag .k{font-family:"Bebas Neue",sans-serif;letter-spacing:.14em;font-size:13px;color:#E4C27A;text-transform:uppercase}
+.ag .nm{font-family:"Playfair Display",serif;font-weight:700;font-size:23px;line-height:1.15}
+.ag .tt{font-size:13.5px;color:rgba(255,255,255,.78)}
+.ag .fr{margin-top:14px;font-size:15.5px;color:rgba(255,255,255,.92)}
+.ag .rows{border-top-color:rgba(255,255,255,.14)}
+.ag .row{color:#fff;border-bottom-color:rgba(255,255,255,.14)}
+.ag .row svg{stroke:#E4C27A}
+.ag .row>span:last-child{color:#F6B9A9}
+.ag .lic{font-size:12px;color:rgba(255,255,255,.6);padding:10px 0 12px}
+.empty{padding:40px 0;color:var(--mut);text-align:center}
+.foot{padding:30px 0 calc(env(safe-area-inset-bottom) + 40px);text-align:center;color:var(--mut);font-size:13px}
+.foot b{font-family:"Playfair Display",serif;color:var(--ink);font-size:16px}
+.foot i{display:block;font-family:"Playfair Display",serif;color:var(--coral);font-size:16px;margin-top:4px}
+@media (max-width:420px){.stats{gap:8px}.st{padding:14px 10px 12px;border-radius:16px}.st .l{font-size:12.5px}.nt{font-size:20px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><img src="/miami-magic-icon-192.png" alt=""><b>Miami Magic</b></a>
+  <button class="close" id="close" type="button" aria-label="Cerrar"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div></header>
+<main class="wrap" id="main">
+  <p class="empty">…</p>
+</main>
+<script>
+var lang=(function(){try{var q=new URLSearchParams(location.search).get('lang');if(q==='en'||q==='es')return q;var s=localStorage.getItem('mm_lang');if(s==='en'||s==='es')return s;}catch(e){}return (navigator.language||'es').slice(0,2)==='en'?'en':'es';})();
+function T(es,en){return lang==='es'?es:en}
+function F(o,k){return (lang==='es'?(o[k+'_es']||o[k]):(o[k]||o[k+'_es']))||''}
+function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+/* cifras y montos en dorado dentro del texto */
+function gold(s){return esc(s).replace(/(\$[\d.,]+(?:\s?(?:millones|million|K|M))?|\d+(?:[.,]\d+)?%)/g,'<b>$1</b>')}
+function host(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(e){return u}}
+var MO_ES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'], MO_EN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function day(s){var p=String(s).split('-');return new Date(+p[0],+p[1]-1,+p[2])}
+function rango(a,b){var s=day(a),f=day(b||a);
+  if(lang==='es') return 'SEMANA DEL '+s.getDate()+(s.getMonth()===f.getMonth()?'':' '+MO_ES[s.getMonth()].toUpperCase())+' AL '+f.getDate()+' '+MO_ES[f.getMonth()].toUpperCase();
+  return 'WEEK OF '+MO_EN[s.getMonth()].toUpperCase()+' '+s.getDate()+'–'+(s.getMonth()===f.getMonth()?'':MO_EN[f.getMonth()].toUpperCase()+' ')+f.getDate();}
+var ILINK='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg>';
+var IPHONE='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>';
+var IDM='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg>';
+var ISHR='<svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M8 8l4-4 4 4"/><path d="M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg>';
+var D=null;
+function render(){
+  document.documentElement.lang=lang;
+  try{document.getElementById('close').setAttribute('aria-label',T('Cerrar','Close'))}catch(e){}
+  var M=document.getElementById('main');
+  if(!D){M.innerHTML='<p class="empty">'+T('Pronto, el real estate de esta semana.','This week\'s real estate, coming soon.')+'</p>';return;}
+  var h='';
+  if(D.cover) h+='<div class="cover"><img src="'+esc(D.cover)+'" alt=""></div>';
+  h+='<section class="hero"><div class="kick">'+esc(rango(D.semana,D.semana_fin))+'</div>'
+    +'<h1>'+T('Real estate<br><em>esta semana</em>','Real estate<br><em>this week</em>')+'</h1>'
+    +'<p class="sub">'+esc(F(D,'intro'))+'</p></section>';
+  if(D.cifras&&D.cifras.length){
+    h+='<div class="h2"><b>'+T('EL MERCADO EN CIFRAS','THE MARKET IN NUMBERS')+'</b><span>'+esc(F(D,'cifras_mes'))+'</span></div><div class="stats">'
+      +D.cifras.map(function(c){return '<div class="st"><div class="v">'+esc(c.v)+'</div><div class="l">'+esc(F(c,'l'))+'</div>'+(c.n?'<div class="n">'+esc(F(c,'n'))+'</div>':'')+'</div>'}).join('')+'</div>';
+    if(D.cifras_url) h+='<a class="src" href="'+esc(D.cifras_url)+'" rel="noopener"><span>'+T('Fuente','Source')+' · '+esc(D.cifras_fuente||host(D.cifras_url))+'</span><span>↗</span></a>';
+  }
+  if(D.noticias&&D.noticias.length){
+    h+='<div class="h2"><b>'+T('LAS NOTICIAS','THE NEWS')+'</b><span>'+D.noticias.length+' '+T('de esta semana','this week')+'</span></div><div class="list">'
+      +D.noticias.map(function(n){return '<article class="nw" id="'+esc(n.id)+'"><div class="tag">'+esc(F(n,'tag'))+'</div><h2 class="nt">'+esc(F(n,'title'))+'</h2><p class="nd">'+gold(F(n,'desc'))+'</p>'
+        +'<div class="rows"><a class="row" href="'+esc(n.url)+'" rel="noopener"><span class="l">'+ILINK+'<span>'+T('Leer la fuente','Read the source')+' · <b class="dom">'+esc(n.fuente||host(n.url))+'</b></span></span><span>↗</span></a>'
+        +'<button class="row" type="button" onclick="share(\''+esc(n.id)+'\')"><span class="l">'+ISHR+'<span>'+T('Compartir','Share')+'</span></span><span>↗</span></button></div></article>'}).join('')+'</div>';
+  }
+  var a=D.agente;
+  if(a&&a.activo){
+    h+='<section class="ag"><div class="hd">'+(a.foto?'<img src="'+esc(a.foto)+'" alt="'+esc(a.nombre)+'">':'')
+      +'<div><div class="k">'+T('TU AGENTE EN MIAMI MAGIC','YOUR AGENT ON MIAMI MAGIC')+'</div><div class="nm">'+esc(a.nombre)+'</div><div class="tt">'+esc(F(a,'titulo'))+'<br>'+esc(a.oficina)+'</div></div></div>'
+      +'<p class="fr">'+esc(F(a,'frase'))+'</p><div class="rows">'
+      +(a.telefono?'<a class="row" href="tel:'+esc(a.telefono)+'"><span class="l">'+IPHONE+'<span>'+T('Llamar','Call')+' · '+esc(a.telefono_txt||a.telefono)+'</span></span><span>↗</span></a>':'')
+      +(a.ig?'<a class="row" href="https://ig.me/m/'+esc(a.ig)+'" rel="noopener"><span class="l">'+IDM+'<span>'+T('Mensaje directo','Direct message')+' · @'+esc(a.ig)+'</span></span><span>↗</span></a>':'')
+      +'</div><div class="lic">'+esc(a.oficina)+(a.licencia?' · Lic. '+esc(a.licencia):'')+'</div></section>';
+  }
+  h+='<footer class="foot"><b>Miami Magic</b> · miamimagicapp.com<i>'+T('Donde vive Miami.','Where Miami lives.')+'</i></footer>';
+  M.innerHTML=h;
+  if(location.hash){var el=document.getElementById(location.hash.slice(1));if(el)el.scrollIntoView({block:'center'});}
+}
+function share(id){
+  var n=null;(D&&D.noticias||[]).forEach(function(x){if(x.id===id)n=x});
+  var url='https://www.miamimagicapp.com/realestate.html'+(n?'#'+n.id:''), t=(n?F(n,'title'):T('Real estate esta semana','Real estate this week'))+' · Miami Magic';
+  if(navigator.share){navigator.share({title:t,text:t,url:url}).catch(function(){});}
+  else{try{navigator.clipboard.writeText(url);alert(T('Enlace copiado','Link copied'));}catch(x){prompt('',url);}}
+}
+try{ if(/[?&]inapp=1/.test(location.search) || (history.length<2 && !window.opener)) document.documentElement.classList.add('inapp'); }catch(e){}
+document.getElementById('close').onclick=function(){ try{ window.close(); }catch(e){} setTimeout(function(){ history.back(); },180); };
+fetch('/realestate.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(j){D=j;render();}).catch(function(){render();});
+</script>
+</body>
+</html>
