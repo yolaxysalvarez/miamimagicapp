@@ -1762,7 +1762,7 @@ html.mm-evs-lock .mm-fsearch,html.mm-evs-lock .mm-fnav,html.mm-evs-lock #mmFloat
 #mmEvSheet.open .evs-box{transform:none}
 .evs-grab{position:absolute;top:8px;left:50%;width:44px;height:5px;margin-left:-22px;border-radius:3px;background:rgba(255,255,255,.75);z-index:3}
 .evs-hero{position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,var(--evs-ac),#0E1B30);overflow:hidden}
-.evs-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.evs-hero img,.evs-hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .evs-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,12,24,.35),transparent 35%,transparent 60%,rgba(5,12,24,.45))}
 .evs-hero.evs-nophoto{aspect-ratio:16/7}
 .evs-date{position:absolute;left:16px;bottom:16px;z-index:2;display:flex;flex-direction:column;align-items:center;min-width:72px;padding:9px 12px 8px;border-radius:16px;
@@ -1822,8 +1822,15 @@ html.mm-evs-lock .mm-fsearch,html.mm-evs-lock .mm-fnav,html.mm-evs-lock #mmFloat
 :root:not([data-theme="dark"]) .twx-tab.on{color:#fff;}
 /* Real estate: se distingue del resto con Miami en movimiento detrás y un filo dorado */
 .twx-re{border:1.5px solid rgba(255,209,102,.55);box-shadow:0 18px 40px -22px rgba(14,27,48,.75),0 0 0 4px rgba(255,209,102,.12);}
-.twx-re-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;pointer-events:none}
-.twx-re::after{background:linear-gradient(160deg,rgba(14,27,48,.25),rgba(10,19,34,.86) 72%)!important;}
+.twx-re-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:1;pointer-events:none}
+/* el video se ve limpio arriba, sin filtro; solo la parte de abajo se oscurece para leer las cifras */
+.twx-re::after{background:linear-gradient(180deg,rgba(10,19,34,0) 0%,rgba(10,19,34,0) 34%,rgba(10,19,34,.55) 52%,rgba(10,19,34,.86) 70%,rgba(10,19,34,.92) 100%)!important;}
+.twx-re-bg{opacity:1!important}
+.twx-re .twx-re-in{padding-top:168px}
+.twx-re .twx-re-hd{position:absolute;top:14px;left:14px;padding:9px 14px;border-radius:999px;background:rgba(10,19,34,.45);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.3)}
+.twx-re .twx-re-k{color:#fff!important}
+.twx-re .twx-re-t{text-shadow:0 2px 14px rgba(0,0,0,.45)}
 @media (prefers-reduced-motion:reduce){.twx-re-vid{display:none}}
 
 /* ══ HERO REDESIGN ══ */
@@ -8413,7 +8420,7 @@ function renderJune(MODE){
     var dateBig = e._range ? '<span style="font-size:1.02rem;letter-spacing:.02em">'+e._range.split(' ')[0]+'</span>' : e._day;
     var dateBot = e._range ? e._range.split(' ').pop() : e._mon;
     var cid = (MODE ? 'twm-' : 'twx-')+e.id;
-    var photo = e.photo ? '<div class="twx-photo"><img loading="lazy" src="'+e.photo+'" alt="" onerror="this.parentNode.style.display=\'none\'"><div class="twx-photo-fade"></div></div>' : '';
+    var photo = mmEvPhoto(e.photo);
     var actionAttr = 'onclick="event.stopPropagation();twxOpen(\''+esc(e.link)+'\',\''+esc(name)+'\')"';
     return '<div class="twx-card" id="'+cid+'" style="--twx-ac:'+ac+'" onclick="twxToggle(\''+cid+'\')">'
       +'<div class="twx-head">'
@@ -9467,7 +9474,7 @@ function renderMonth(){
     var badge=e.free?(ES?'GRATIS':'FREE'):(e.price||'');
     var lblTix=ES?'Tickets e info':'Tickets & info';
     var lblInfo=ES?'Más info':'More info';
-    var photo=e.photo?'<div class="twx-photo"><img loading="lazy" src="'+e.photo+'" alt="" onerror="this.parentNode.style.display=\'none\'"><div class="twx-photo-fade"></div></div>':'';
+    var photo=mmEvPhoto(e.photo);
     return '<div class="twx-card" id="'+cid+'" style="--twx-ac:'+e.ac+'" onclick="twxToggle(\''+cid+'\')">'
       +'<div class="twx-head">'
         +'<div class="twx-date"><span class="twx-dow">'+e.dTop+'</span><span class="twx-day" style="font-size:1.05rem">'+e.dBig+'</span><span class="twx-mon">'+e.dBot+'</span></div>'
@@ -9521,7 +9528,7 @@ function renderMonth(){
       var free=/free|gratis/i.test(cost);
       var cid='mcard-'+a.id;
       var lbl=ES?'Más info':'More info';
-      var photo=a.img?'<div class="twx-photo"><img loading="lazy" src="'+a.img+'" alt="" onerror="this.parentNode.style.display=\'none\'"><div class="twx-photo-fade"></div></div>':'';
+      var photo=mmEvPhoto(a.img);
       return '<div class="twx-card" id="'+cid+'" style="--twx-ac:#C9A227" onclick="twxToggle(\''+cid+'\')">'
         +'<div class="twx-head">'
           +'<div class="twx-date"><span class="twx-dow">'+(ES?'CADA':'EVERY')+'</span><span class="twx-day" style="font-size:1.05rem">'+(ES?'AÑO':'YEAR')+'</span><span class="twx-mon">'+thisMo+'</span></div>'
@@ -9693,6 +9700,15 @@ document.addEventListener('click',function(e){
    compartir con enlace directo (?ev=ID). Antes se estiraba dentro de la lista
    y empujaba todo hacia abajo. La hoja se arma con la misma tarjeta, así sirve
    igual para Esta Semana, Este Mes, Lo imprescindible y Aparta la fecha. */
+
+/* v1.8 · Evento sin foto propia → la foto genérica de Miami (palmas al atardecer).
+   Si la foto del evento falla al cargar, también cae en la genérica. */
+var MM_EV_GENERIC='fotos/mm-generic-palmas.jpg', MM_EV_GENERIC_VID='videos/mm-generic-miami.mp4';
+function mmEvPhoto(src){
+  var g=!src, u=src||MM_EV_GENERIC;
+  return '<div class="twx-photo'+(g?' twx-gen':'')+'"><img loading="lazy" src="'+u+'" alt="" onerror="mmEvPhotoErr(this)"><div class="twx-photo-fade"></div></div>';
+}
+function mmEvPhotoErr(img){ if(img.dataset.g) { img.parentNode.style.display='none'; return; } img.dataset.g='1'; img.parentNode.classList.add('twx-gen'); img.src=MM_EV_GENERIC; }
 function twxToggle(id){ mmEvOpen(id); }
 function mmEvOpen(id){
   var c=document.getElementById(id); if(!c) return;
@@ -9701,7 +9717,7 @@ function mmEvOpen(id){
   function tx(sel){ var e=q(sel); return e?e.textContent.replace(/\s+/g,' ').trim():''; }
   function hs(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
   var ac=(c.style.getPropertyValue('--twx-ac')||'#00C9B1').trim();
-  var img=q('.twx-photo img'), photo=img?img.getAttribute('src'):'';
+  var img=q('.twx-photo img'), photo=img?img.getAttribute('src'):'', gen=!!q('.twx-photo.twx-gen');
   var name=tx('.twx-name'), venue=tx('.twx-venue'), type=tx('.twx-type');
   var dow=tx('.twx-dow'), day=tx('.twx-day'), mon=tx('.twx-mon');
   var desc=q('.twx-desc')?q('.twx-desc').innerHTML:'';
@@ -9730,6 +9746,7 @@ function mmEvOpen(id){
   sh.innerHTML='<div class="evs-box" style="--evs-ac:'+hs(ac)+'" aria-label="'+hs(name)+'">'
     +'<div class="evs-grab" aria-hidden="true"></div>'
     +'<div class="evs-hero'+(photo?'':' evs-nophoto')+'">'+(photo?'<img src="'+hs(photo)+'" alt="">':'')
+      +(gen?'<video class="evs-vid" src="'+MM_EV_GENERIC_VID+'" poster="'+MM_EV_GENERIC+'" autoplay muted loop playsinline aria-hidden="true"></video>':'')
       +'<div class="evs-date"><span>'+hs(dow)+'</span><b>'+hs(day)+'</b><span>'+hs(mon)+'</span></div>'
       +(soon?'<span class="evs-soon">'+hs(soon)+'</span>':'')
       +'<div class="evs-tools"><button type="button" class="evs-ib" aria-label="'+(ES?'Compartir':'Share')+'" onclick="mmEvShare()">'+ic('share')+'</button>'
@@ -9751,6 +9768,7 @@ function mmEvOpen(id){
 function mmEvClose(){
   var sh=document.getElementById('mmEvSheet'); if(!sh||!sh.classList.contains('open')) return;
   sh.classList.remove('open'); document.documentElement.classList.remove('mm-evs-lock');
+  try{ var v=sh.querySelector('video'); if(v) v.pause(); }catch(e){}
 }
 function mmEvTickets(){ var e=window._mmEv; if(e&&e.link) twxOpen(e.link,e.name); }
 function mmEvShare(){
