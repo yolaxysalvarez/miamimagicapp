@@ -37,7 +37,7 @@ a{color:inherit}
 .close svg{width:14px;height:14px}
 .inapp .close{display:none}
 .cover{margin:20px 0 0;border-radius:24px;overflow:hidden;aspect-ratio:16/8;background:#dfe7ea;box-shadow:0 14px 34px -20px rgba(14,27,48,.5)}
-.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.cover img,.cover video{width:100%;height:100%;object-fit:cover;display:block}
 .hero{padding:26px 0 6px}
 .kick{font-family:"Bebas Neue",sans-serif;letter-spacing:.26em;font-size:16px;color:var(--teal);display:flex;align-items:center;gap:10px}
 .kick::before{content:"";width:26px;height:3px;background:var(--gold);border-radius:2px}
@@ -120,7 +120,9 @@ function render(){
   var M=document.getElementById('main');
   if(!D){M.innerHTML='<p class="empty">'+T('Pronto, el real estate de esta semana.','This week\'s real estate, coming soon.')+'</p>';return;}
   var h='';
-  if(D.cover) h+='<div class="cover"><img src="'+esc(D.cover)+'" alt=""></div>';
+  /* Miami en movimiento arriba (el mismo vuelo de la app); la foto queda de póster */
+  if(D.cover_video) h+='<div class="cover"><video src="'+esc(D.cover_video)+'" poster="'+esc(D.cover||'')+'" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video></div>';
+  else if(D.cover) h+='<div class="cover"><img src="'+esc(D.cover)+'" alt=""></div>';
   h+='<section class="hero"><div class="kick">'+esc(rango(D.semana,D.semana_fin))+'</div>'
     +'<h1>'+T('Real estate<br><em>esta semana</em>','Real estate<br><em>this week</em>')+'</h1>'
     +'<p class="sub">'+esc(F(D,'intro'))+'</p></section>';
