@@ -13296,7 +13296,8 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
        Fly Over Miami no va aquí: ya tiene su propio espacio en Home. */
     var _mE=(typeof lang!=='undefined'&&lang==='es');
     var _week="go('sec-june');setTimeout(function(){var p=document.getElementById('twxMainPanel');if(p&&!p.classList.contains('open'))twxSection();},600);";
-    var _month="go('sec-month');setTimeout(function(){var p=document.getElementById('twxMonthPanel');if(p&&!p.classList.contains('open'))twxMonthSection();},600);";
+    /* Este Mes vive dentro del bloque de Esta Semana (sec-month queda oculta), así que se entra por sec-june */
+    var _month="go(document.getElementById('sec-month')&&document.getElementById('sec-month').style.display==='none'?'sec-june':'sec-month');setTimeout(function(){var p=document.getElementById('twxMonthPanel');if(p&&!p.classList.contains('open'))twxMonthSection();var b=document.getElementById('twxMonthBar');if(b)b.scrollIntoView({behavior:'smooth',block:'start'});},600);";
     var _cams="go('sec-livecams');setTimeout(function(){var p=document.getElementById('mmcamPanel');if(p&&!p.classList.contains('open'))mmcamSection();},600);";
     var items=[
       {k:'week',  name:_mE?'Esta Semana':'This Week',          photo:'fotos/mm-mb-fillmore-letrero.jpg', onclick:_week,  icoK:'events'},
