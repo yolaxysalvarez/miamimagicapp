@@ -33,20 +33,21 @@
    "d2": "2026-11-08",
    "name": "NASCAR Championship Weekend",
    "name_es": "NASCAR Championship Weekend",
-   "venue": "Homestead-Miami Speedway · Homestead (40 min from Miami)",
-   "venue_es": "Homestead-Miami Speedway · Homestead (40 min de Miami)",
+   "venue": "Homestead-Miami Speedway · 1 Ralph Sanchez Speedway Blvd, Homestead",
+   "venue_es": "Homestead-Miami Speedway · 1 Ralph Sanchez Speedway Blvd, Homestead",
    "time": "Fri 7:30 PM · Sat 5 PM · Sun 3 PM",
    "time_es": "Vie 7:30 PM · sáb 5 PM · dom 3 PM",
    "price": "$$",
    "price_es": "$$",
    "type": "Sports · Motorsport",
    "type_es": "Deportes · Automovilismo",
-   "desc": "The NASCAR season ends in Miami: the Truck Series title on Friday, the O'Reilly Auto Parts Series on Saturday and the Cup Series Championship on Sunday.",
-   "desc_es": "La temporada de NASCAR termina en Miami: el título de la Truck Series el viernes, la O'Reilly Auto Parts Series el sábado y el campeonato de la Cup Series el domingo.",
+   "desc": "The NASCAR season ends in Miami: the Craftsman Truck Series title on Friday, the O'Reilly Auto Parts Series on Saturday and the Cup Series Championship on Sunday. The Cup title is decided on points, so the champion doesn't have to win the race. The Midway fan zone is outside the main gates.",
+   "desc_es": "La temporada de NASCAR termina en Miami: el título de la Craftsman Truck Series el viernes, la O'Reilly Auto Parts Series el sábado y el campeonato de la Cup Series el domingo. El título de la Cup se decide por puntos, así que el campeón no tiene que ganar la carrera. La zona de fans (Midway) está afuera de las puertas principales.",
    "tags": [
     "Sports"
    ],
-   "link": "https://www.homesteadmiamispeedway.com/events/champ/"
+   "link": "https://www.homesteadmiamispeedway.com/events/champ/",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-nascar-homestead.jpg"
   },
   {
    "id": "ky-raceworld26",
