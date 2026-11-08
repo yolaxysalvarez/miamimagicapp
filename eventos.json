@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo manda sobre la cartelera de la app, sin pasar por Apple. Lo que pongas aquí se suma o corrige lo que ya trae la app; lo que no toques se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia \"updated\" cada vez.",
- "updated": "2026-11-02",
+ "updated": "2026-11-08",
  "semana": [
   {
    "id": "realestate-semana",
@@ -3826,6 +3826,290 @@
     "Outdoors"
    ],
    "link": "https://deeringestate.org/?p=40268"
+  },
+  {
+   "id": "zoolights26",
+   "scope": "local",
+   "d": "2026-11-27",
+   "d2": "2026-12-30",
+   "name": "Zoo Lights Miami",
+   "name_es": "Zoo Lights Miami",
+   "venue": "Zoo Miami · 12400 SW 152nd St",
+   "venue_es": "Zoo Miami · 12400 SW 152nd St",
+   "time": "Select nights from Fri Nov 27",
+   "time_es": "Noches seleccionadas desde el vie 27 de nov",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Holidays · Lights",
+   "type_es": "Navidad · Luces",
+   "desc": "Zoo Miami after dark for the holidays: more than a million lights, a giant LED tree, carolers and visits from Santa.",
+   "desc_es": "Zoo Miami de noche por las fiestas: más de un millón de luces, un árbol gigante de LED, villancicos y la visita de Santa.",
+   "tags": [
+    "Family"
+   ],
+   "link": "https://www.zoomiami.org/"
+  },
+  {
+   "id": "berrywinter26",
+   "scope": "local",
+   "d": "2026-11-27",
+   "d2": "2027-01-03",
+   "name": "Winter Festival at The Berry Farm",
+   "name_es": "Navidad en The Berry Farm",
+   "venue": "The Berry Farm · 13720 SW 216 St, Redland",
+   "venue_es": "The Berry Farm · 13720 SW 216 St, Redland",
+   "time": "From Fri Nov 27",
+   "time_es": "Desde el vie 27 de nov",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Holidays · Family",
+   "type_es": "Navidad · Familia",
+   "desc": "The Redland farm goes festive: daytime hayrides and holiday decor, and at night Christmas movies on the lawn, snowfall and Santa.",
+   "desc_es": "La granja del Redland se viste de fiesta: paseos en carreta y decoración de día, y de noche películas navideñas en el césped, nieve y Santa.",
+   "tags": [
+    "Family"
+   ],
+   "link": "https://www.showpass.com/6th-annual-winter-festival-landing-page"
+  },
+  {
+   "id": "turkeytrot26",
+   "scope": "local",
+   "d": "2026-11-26",
+   "name": "Life Time Turkey Trot Miami",
+   "name_es": "Turkey Trot de Thanksgiving",
+   "venue": "Tropical Park · 7900 SW 40th St",
+   "venue_es": "Tropical Park · 7900 SW 40th St",
+   "time": "Thanksgiving morning",
+   "time_es": "Jue · mañana de Thanksgiving",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Sports · Running",
+   "type_es": "Deportes · Carrera",
+   "desc": "Miami's Thanksgiving-morning run: 5K, 10K and a kids race at Tropical Park.",
+   "desc_es": "La carrera de la mañana de Thanksgiving en Miami: 5K, 10K y carrera de niños en Tropical Park.",
+   "tags": [
+    "Sports",
+    "Family"
+   ],
+   "link": "https://www.letsdothis.com/us/e/2026-life-time-turkey-trot-miami-5k10k-kids-race-261396"
+  },
+  {
+   "id": "fil-jackwhite26",
+   "scope": "world",
+   "d": "2026-11-17",
+   "d2": "2026-11-18",
+   "name": "Jack White",
+   "name_es": "Jack White",
+   "venue": "The Fillmore Miami Beach",
+   "venue_es": "The Fillmore Miami Beach",
+   "time": "Tue & Wed · 8:00 PM",
+   "time_es": "Mar y mié · 8:00 PM",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Concert · Rock",
+   "type_es": "Concierto · Rock",
+   "desc": "Two nights of Jack White at the Fillmore, with Cat Power opening.",
+   "desc_es": "Dos noches de Jack White en el Fillmore, con Cat Power de invitada.",
+   "tags": [
+    "Music"
+   ],
+   "link": "https://www.fillmoremb.com/"
+  },
+  {
+   "id": "hrl-sting26",
+   "scope": "world",
+   "d": "2026-11-25",
+   "name": "Sting · STING 3.0 Tour",
+   "name_es": "Sting · STING 3.0 Tour",
+   "venue": "Hard Rock Live · Hollywood (35 min from Miami)",
+   "venue_es": "Hard Rock Live · Hollywood (35 min de Miami)",
+   "time": "Wed · 8:00 PM",
+   "time_es": "Mié · 8:00 PM",
+   "price": "From $95",
+   "price_es": "Desde $95",
+   "type": "Concert · Rock",
+   "type_es": "Concierto · Rock",
+   "desc": "Sting in trio format on the eve of Thanksgiving, with the hits that span his career.",
+   "desc_es": "Sting en formato de trío la víspera de Thanksgiving, con los éxitos de toda su carrera.",
+   "tags": [
+    "Music"
+   ],
+   "link": "https://www.myhrl.com/"
+  },
+  {
+   "id": "fil-aitana26",
+   "scope": "world",
+   "d": "2026-11-29",
+   "name": "Aitana · Cuarto Azul World Tour",
+   "name_es": "Aitana · Cuarto Azul World Tour",
+   "venue": "The Fillmore Miami Beach",
+   "venue_es": "The Fillmore Miami Beach",
+   "time": "Sun · 8:00 PM",
+   "time_es": "Dom · 8:00 PM",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Concert · Pop",
+   "type_es": "Concierto · Pop",
+   "desc": "The Spanish pop star brings her Cuarto Azul tour to Miami Beach.",
+   "desc_es": "La estrella del pop español trae su gira Cuarto Azul a Miami Beach.",
+   "tags": [
+    "Music"
+   ],
+   "link": "https://www.fillmoremb.com/"
+  },
+  {
+   "id": "nfl-jets26",
+   "scope": "local",
+   "d": "2026-11-29",
+   "name": "Miami Dolphins vs New York Jets",
+   "name_es": "Dolphins vs Jets",
+   "venue": "Hard Rock Stadium · Miami Gardens",
+   "venue_es": "Hard Rock Stadium · Miami Gardens",
+   "time": "Sun · 1:00 PM",
+   "time_es": "Dom · 1:00 PM",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Sports · NFL",
+   "type_es": "Deportes · NFL",
+   "desc": "Division rivals at home the Sunday after Thanksgiving. Kickoff time may change with the NFL's flexible scheduling.",
+   "desc_es": "Rivales de división en casa el domingo después de Thanksgiving. La hora puede cambiar por el calendario flexible de la NFL.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://www.miamidolphins.com/tickets/"
+  },
+  {
+   "id": "e1miami26",
+   "scope": "world",
+   "d": "2026-11-13",
+   "d2": "2026-11-14",
+   "name": "E1 Miami GP",
+   "name_es": "E1 Miami GP",
+   "venue": "Miami Seaplane Base · Watson Island",
+   "venue_es": "Miami Seaplane Base · Watson Island",
+   "time": "Fri & Sat · races from 10:30 AM",
+   "time_es": "Vie y sáb · carreras desde las 10:30 AM",
+   "price": "Hospitality from $950",
+   "price_es": "Hospitalidad desde $950",
+   "type": "Sports · Powerboats",
+   "type_es": "Deportes · Lanchas",
+   "desc": "The electric raceboat championship closes its season on Biscayne Bay with a double race weekend.",
+   "desc_es": "El campeonato de lanchas eléctricas cierra su temporada en la bahía de Biscayne con doble carrera.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://tickets.e1series.com/miami/"
+  },
+  {
+   "id": "fgo-lucia26",
+   "scope": "local",
+   "d": "2026-11-14",
+   "d2": "2026-11-17",
+   "name": "Lucia di Lammermoor · Florida Grand Opera",
+   "name_es": "Lucia di Lammermoor · Ópera de Florida",
+   "venue": "Adrienne Arsht Center · Downtown",
+   "venue_es": "Adrienne Arsht Center · Downtown",
+   "time": "Sat 14 · 7 PM · Sun 15 · 3 PM · Tue 17 · 8 PM",
+   "time_es": "Sáb 14 · 7 PM · dom 15 · 3 PM · mar 17 · 8 PM",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Culture · Opera",
+   "type_es": "Cultura · Ópera",
+   "desc": "Donizetti's bel canto masterpiece opens Florida Grand Opera's all-Italian season.",
+   "desc_es": "La obra maestra del bel canto de Donizetti abre la temporada italiana de la Ópera de Florida.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.arshtcenter.org/subscription-series/florida-grand-opera/florida-grand-opera-2026-27/"
+  },
+  {
+   "id": "arsht-carnage26",
+   "scope": "local",
+   "d": "2026-11-05",
+   "d2": "2026-11-22",
+   "name": "God of Carnage",
+   "name_es": "God of Carnage",
+   "venue": "Adrienne Arsht Center · Downtown",
+   "venue_es": "Adrienne Arsht Center · Downtown",
+   "time": "Select days through Nov 22",
+   "time_es": "Funciones hasta el 22 de nov",
+   "price": "From $67",
+   "price_es": "Desde $67",
+   "type": "Culture · Theater",
+   "type_es": "Cultura · Teatro",
+   "desc": "Zoetic Stage brings Yasmina Reza's comedy about two couples whose polite meeting falls apart.",
+   "desc_es": "Zoetic Stage presenta la comedia de Yasmina Reza sobre dos parejas cuya reunión cortés se desmorona.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.arshtcenter.org/tickets/2026-2027/theater-up-close/god-of-carnage/"
+  },
+  {
+   "id": "artbasel26",
+   "scope": "world",
+   "d": "2026-12-04",
+   "d2": "2026-12-06",
+   "name": "Art Basel Miami Beach",
+   "name_es": "Art Basel Miami Beach",
+   "venue": "Miami Beach Convention Center",
+   "venue_es": "Miami Beach Convention Center",
+   "time": "Fri–Sun · 11 AM–6 PM",
+   "time_es": "Vie a dom · 11 AM–6 PM",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Culture · Art",
+   "type_es": "Cultura · Arte",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-mb-art-deco-letrero.jpg",
+   "desc": "The biggest art week in the Americas. Public days Friday to Sunday, and the whole city fills with parallel fairs.",
+   "desc_es": "La semana de arte más grande de las Américas. Días abiertos al público de viernes a domingo, y toda la ciudad se llena de ferias paralelas.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.artbasel.com/miami-beach"
+  },
+  {
+   "id": "ky-tourdekeys26",
+   "scope": "keys",
+   "d": "2026-11-21",
+   "name": "Tour de Keys",
+   "name_es": "Tour de Keys",
+   "venue": "Key Largo & Marathon → Key West · finish at 245 Front St",
+   "venue_es": "De Key Largo y Marathon a Key West · llegada en 245 Front St",
+   "time": "Sat · all day along the Overseas Highway",
+   "time_es": "Sáb · todo el día por la Overseas Highway",
+   "price": "Rider registration",
+   "price_es": "Inscripción de ciclistas",
+   "type": "Sports · Cycling",
+   "type_es": "Deportes · Ciclismo",
+   "desc": "Charity ride for MARC: 100 miles from Key Largo or 50 from Marathon, finishing in Key West. Spectators can cheer riders along the Overseas Highway.",
+   "desc_es": "Recorrido en bicicleta a beneficio de MARC: 100 millas desde Key Largo o 50 desde Marathon, con llegada en Key West. El público puede animar a los ciclistas a lo largo de la Overseas Highway.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://tourdekeys.donordrive.com/"
+  },
+  {
+   "id": "ky-turkeytrot26",
+   "scope": "keys",
+   "d": "2026-11-26",
+   "name": "Southernmost Turkey Trot 5K",
+   "name_es": "Southernmost Turkey Trot 5K",
+   "venue": "Southernmost Point Buoy · Key West",
+   "venue_es": "Boya del Southernmost Point · Key West",
+   "time": "Thanksgiving · 5K at 8:00 AM",
+   "time_es": "Thanksgiving · 5K a las 8:00 AM",
+   "price": "Registration",
+   "price_es": "Inscripción",
+   "type": "Sports · Running",
+   "type_es": "Deportes · Carrera",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-keys-southernmost-point.jpg",
+   "desc": "Thanksgiving-morning 5K run/walk that starts and finishes at the Southernmost Point buoy, plus a 1-mile Rooster Romp.",
+   "desc_es": "Carrera o caminata de 5K la mañana de Thanksgiving, con salida y llegada en la boya del punto más al sur, y una milla para los más chicos.",
+   "tags": [
+    "Sports",
+    "Family"
+   ],
+   "link": "https://runsignup.com/Race/FL/KeyWest/SouthernmostTurkeyTrot"
   }
  ],
  "mes": [
