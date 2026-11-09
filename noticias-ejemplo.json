@@ -1,0 +1,451 @@
+{
+ "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias.",
+ "updated": "2026-11-08",
+ "ultima_hora": {
+  "activa": true,
+  "nota": "ejemplo-portada",
+  "es": "EJEMPLO DE ÚLTIMA HORA · así se ve el titular cuando hay una noticia urgente",
+  "en": "BREAKING SAMPLE · this is how an urgent headline looks",
+  "desde": "2026-11-08T10:00:00-05:00",
+  "hasta": ""
+ },
+ "cifras": [
+  {
+   "k": "gas",
+   "es": "Gasolina en Miami-Dade",
+   "en": "Gas in Miami-Dade",
+   "v": "$3.09 (ej.)",
+   "fuente": "AAA",
+   "fecha": ""
+  },
+  {
+   "k": "hipoteca",
+   "es": "Hipoteca a 30 años",
+   "en": "30-year mortgage",
+   "v": "6.2% (ej.)",
+   "fuente": "Freddie Mac",
+   "fecha": ""
+  },
+  {
+   "k": "casa",
+   "es": "Casa, precio medio",
+   "en": "Median home price",
+   "v": "$650K (ej.)",
+   "fuente": "Miami Realtors",
+   "fecha": ""
+  },
+  {
+   "k": "renta",
+   "es": "Renta promedio",
+   "en": "Average rent",
+   "v": "$2,800 (ej.)",
+   "fuente": "",
+   "fecha": ""
+  },
+  {
+   "k": "cruceros",
+   "es": "Cruceros en el puerto",
+   "en": "Cruise ships in port",
+   "v": "3 (ej.)",
+   "v_en": "",
+   "fuente": "PortMiami",
+   "fecha": ""
+  }
+ ],
+ "videos": [],
+ "notas": [
+  {
+   "id": "ejemplo-portada",
+   "scope": "miami",
+   "tema": "ciudad",
+   "hamaca": false,
+   "destacada": true,
+   "fecha": "2026-11-08",
+   "foto": "mm-downtown-freedom-tower.jpg",
+   "es": {
+    "titulo": "EJEMPLO · Titular de la nota principal, cómo te toca",
+    "bajada": "EJEMPLO DE DISEÑO · La bajada explica en una línea por qué esta noticia le importa a quien vive en Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido."
+    ],
+    "toca": [
+     "Qué cambia para ti.",
+     "Desde cuándo.",
+     "Qué puedes hacer."
+    ]
+   },
+   "en": {
+    "titulo": "SAMPLE · Lead story headline, how it affects you",
+    "bajada": "DESIGN SAMPLE · One line on why this matters to people who live in Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where."
+    ],
+    "toca": [
+     "What changes for you.",
+     "Since when.",
+     "What you can do."
+    ]
+   },
+   "fuentes": [
+    {
+     "n": "Fuente oficial (ejemplo)",
+     "u": "https://www.miamidade.gov"
+    }
+   ]
+  },
+  {
+   "id": "ejemplo-2",
+   "scope": "miami",
+   "tema": "calle",
+   "hamaca": false,
+   "destacada": false,
+   "fecha": "2026-11-08",
+   "foto": "mm-brickell-metromover.jpg",
+   "es": {
+    "titulo": "EJEMPLO · Titular de una nota de Tu calle",
+    "bajada": "EJEMPLO DE DISEÑO · La bajada explica en una línea por qué esta noticia le importa a quien vive en Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido."
+    ],
+    "toca": [
+     "Qué cambia para ti.",
+     "Desde cuándo.",
+     "Qué puedes hacer."
+    ]
+   },
+   "en": {
+    "titulo": "SAMPLE · A Your street headline",
+    "bajada": "DESIGN SAMPLE · One line on why this matters to people who live in Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where."
+    ],
+    "toca": [
+     "What changes for you.",
+     "Since when.",
+     "What you can do."
+    ]
+   },
+   "fuentes": [
+    {
+     "n": "Fuente oficial (ejemplo)",
+     "u": "https://www.miamidade.gov"
+    }
+   ]
+  },
+  {
+   "id": "ejemplo-3",
+   "scope": "miami",
+   "tema": "casa",
+   "hamaca": false,
+   "destacada": false,
+   "fecha": "2026-11-08",
+   "foto": "mm-bayside-aerea.jpg",
+   "es": {
+    "titulo": "EJEMPLO · Titular de una nota de Tu casa",
+    "bajada": "EJEMPLO DE DISEÑO · La bajada explica en una línea por qué esta noticia le importa a quien vive en Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido."
+    ],
+    "toca": [
+     "Qué cambia para ti.",
+     "Desde cuándo.",
+     "Qué puedes hacer."
+    ]
+   },
+   "en": {
+    "titulo": "SAMPLE · A Your home headline",
+    "bajada": "DESIGN SAMPLE · One line on why this matters to people who live in Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where."
+    ],
+    "toca": [
+     "What changes for you.",
+     "Since when.",
+     "What you can do."
+    ]
+   },
+   "fuentes": [
+    {
+     "n": "Fuente oficial (ejemplo)",
+     "u": "https://www.miamidade.gov"
+    }
+   ]
+  },
+  {
+   "id": "ejemplo-4",
+   "scope": "miami",
+   "tema": "barrio",
+   "hamaca": false,
+   "destacada": false,
+   "fecha": "2026-11-08",
+   "foto": "mm-mb-calle-01.jpg",
+   "es": {
+    "titulo": "EJEMPLO · Titular de una nota de Tu barrio",
+    "bajada": "EJEMPLO DE DISEÑO · La bajada explica en una línea por qué esta noticia le importa a quien vive en Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido."
+    ],
+    "toca": [
+     "Qué cambia para ti.",
+     "Desde cuándo.",
+     "Qué puedes hacer."
+    ]
+   },
+   "en": {
+    "titulo": "SAMPLE · A neighborhood headline",
+    "bajada": "DESIGN SAMPLE · One line on why this matters to people who live in Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where."
+    ],
+    "toca": [
+     "What changes for you.",
+     "Since when.",
+     "What you can do."
+    ]
+   },
+   "fuentes": [
+    {
+     "n": "Fuente oficial (ejemplo)",
+     "u": "https://www.miamidade.gov"
+    }
+   ]
+  },
+  {
+   "id": "ejemplo-5",
+   "scope": "miami",
+   "tema": "bolsillo",
+   "hamaca": false,
+   "destacada": false,
+   "fecha": "2026-11-08",
+   "foto": "mm-macarthur-palmas.jpg",
+   "es": {
+    "titulo": "EJEMPLO · Titular de una nota de Tu bolsillo",
+    "bajada": "EJEMPLO DE DISEÑO · La bajada explica en una línea por qué esta noticia le importa a quien vive en Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido."
+    ],
+    "toca": [
+     "Qué cambia para ti.",
+     "Desde cuándo.",
+     "Qué puedes hacer."
+    ]
+   },
+   "en": {
+    "titulo": "SAMPLE · A Your wallet headline",
+    "bajada": "DESIGN SAMPLE · One line on why this matters to people who live in Miami.",
+    "etiqueta": null,
+    "cuerpo": [
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where."
+    ],
+    "toca": [
+     "What changes for you.",
+     "Since when.",
+     "What you can do."
+    ]
+   },
+   "fuentes": [
+    {
+     "n": "Fuente oficial (ejemplo)",
+     "u": "https://www.miamidade.gov"
+    }
+   ]
+  },
+  {
+   "id": "ejemplo-h1",
+   "scope": "miami",
+   "tema": "",
+   "hamaca": true,
+   "destacada": false,
+   "fecha": "2026-11-07",
+   "foto": "mm-keys-kw-atardecer-naranja.jpg",
+   "es": {
+    "titulo": "EJEMPLO · Un plan de temporada sin prisa",
+    "bajada": "EJEMPLO DE DISEÑO · La bajada explica en una línea por qué esta noticia le importa a quien vive en Miami.",
+    "etiqueta": "DE TEMPORADA",
+    "cuerpo": [
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido."
+    ],
+    "toca": [
+     "Qué cambia para ti.",
+     "Desde cuándo.",
+     "Qué puedes hacer."
+    ]
+   },
+   "en": {
+    "titulo": "SAMPLE · An unhurried seasonal plan",
+    "bajada": "DESIGN SAMPLE · One line on why this matters to people who live in Miami.",
+    "etiqueta": "DE TEMPORADA",
+    "cuerpo": [
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where."
+    ],
+    "toca": [
+     "What changes for you.",
+     "Since when.",
+     "What you can do."
+    ]
+   },
+   "fuentes": [
+    {
+     "n": "Fuente oficial (ejemplo)",
+     "u": "https://www.miamidade.gov"
+    }
+   ]
+  },
+  {
+   "id": "ejemplo-h2",
+   "scope": "miami",
+   "tema": "",
+   "hamaca": true,
+   "destacada": false,
+   "fecha": "2026-11-07",
+   "foto": "mm-keys-tiki-atardecer.jpg",
+   "es": {
+    "titulo": "EJEMPLO · Una tradición de Miami",
+    "bajada": "EJEMPLO DE DISEÑO · La bajada explica en una línea por qué esta noticia le importa a quien vive en Miami.",
+    "etiqueta": "TRADICIÓN",
+    "cuerpo": [
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido."
+    ],
+    "toca": [
+     "Qué cambia para ti.",
+     "Desde cuándo.",
+     "Qué puedes hacer."
+    ]
+   },
+   "en": {
+    "titulo": "SAMPLE · A Miami tradition",
+    "bajada": "DESIGN SAMPLE · One line on why this matters to people who live in Miami.",
+    "etiqueta": "TRADICIÓN",
+    "cuerpo": [
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where."
+    ],
+    "toca": [
+     "What changes for you.",
+     "Since when.",
+     "What you can do."
+    ]
+   },
+   "fuentes": [
+    {
+     "n": "Fuente oficial (ejemplo)",
+     "u": "https://www.miamidade.gov"
+    }
+   ]
+  },
+  {
+   "id": "ejemplo-h3",
+   "scope": "miami",
+   "tema": "",
+   "hamaca": true,
+   "destacada": false,
+   "fecha": "2026-11-07",
+   "foto": "mm-hollywood-beach.jpg",
+   "es": {
+    "titulo": "EJEMPLO · Un domingo de playa",
+    "bajada": "EJEMPLO DE DISEÑO · La bajada explica en una línea por qué esta noticia le importa a quien vive en Miami.",
+    "etiqueta": "FIN DE SEMANA",
+    "cuerpo": [
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido.",
+     "EJEMPLO. Primer párrafo: qué pasó, con la fecha y el lugar. Lo esencial va primero, sin rodeos, en dos o tres líneas que se leen rápido."
+    ],
+    "toca": [
+     "Qué cambia para ti.",
+     "Desde cuándo.",
+     "Qué puedes hacer."
+    ]
+   },
+   "en": {
+    "titulo": "SAMPLE · A beach Sunday",
+    "bajada": "DESIGN SAMPLE · One line on why this matters to people who live in Miami.",
+    "etiqueta": "FIN DE SEMANA",
+    "cuerpo": [
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where.",
+     "SAMPLE. First paragraph: what happened, when and where."
+    ],
+    "toca": [
+     "What changes for you.",
+     "Since when.",
+     "What you can do."
+    ]
+   },
+   "fuentes": [
+    {
+     "n": "Fuente oficial (ejemplo)",
+     "u": "https://www.miamidade.gov"
+    }
+   ]
+  }
+ ],
+ "updated_at": "2026-11-08T11:40:00-05:00"
+}
