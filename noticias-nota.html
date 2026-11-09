@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Miami Magic News</title>
+<meta name="description" content="Miami Magic News · Lo que mueve a Miami.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Miami Magic News">
+<meta property="og:image" content="https://www.miamimagicapp.com/og-share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFFDF9">
+<link rel="icon" href="/miami-magic-icon-192.png">
+<link rel="apple-touch-icon" href="/miami-magic-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFDF9;--paper:#FFF8EF;--card:#FFF2E2;--ink:#0E1B30;--ink2:#2B3A52;--mut:#4A5568;--line:rgba(14,27,48,.10);--coral:#FF4D35;--coral-d:#C93A25;--gold:#C9963C;--teal:#12806E;--keys:#10563C;
+--pf:'Playfair Display',Georgia,serif;--bb:'Bebas Neue',Impact,sans-serif;--dm:'DM Sans',system-ui,-apple-system,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--dm);font-size:17px;line-height:1.5}
+a{color:var(--coral-d);text-decoration:none}
+a:hover{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-color:rgba(201,150,60,.85)}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--coral);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.col{max-width:720px;margin:0 auto}
+/* encabezado */
+.hdr{position:sticky;top:0;z-index:20;background:rgba(255,253,249,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.hdr:after{content:"";display:block;height:2px;background:linear-gradient(90deg,#FF4D35 0%,#FFB347 40%,rgba(201,150,60,.22) 100%)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:11px;box-shadow:0 6px 12px -8px rgba(201,58,37,.65)}
+.brand b{font-family:var(--pf);font-weight:900;font-size:27px;letter-spacing:-.01em;white-space:nowrap}
+.brand .news{display:inline-flex;padding:5px 9px 3px;border-radius:7px;background:linear-gradient(135deg,#FF6A4D,#FF4D35);color:#fff;font-family:var(--bb);font-size:19px;letter-spacing:.18em;line-height:1;transform:rotate(-3deg)}
+.lng{display:flex;gap:2px;border:1px solid rgba(14,27,48,.2);border-radius:999px;padding:3px;background:#fff}
+.lng button{border:0;background:none;padding:6px 13px;border-radius:999px;font-weight:700;font-size:15px;color:var(--ink)}
+.lng button.on{background:var(--ink);color:#FFF8EF}
+.bar{height:3px;background:linear-gradient(90deg,#FF4D35,#FFB347);width:0;transition:width .1s linear}
+/* nota */
+article{padding:44px 0 20px}
+.crumb{font-family:var(--bb);font-size:19px;letter-spacing:.16em;color:var(--mut)}
+.crumb a{color:var(--ink);text-decoration:underline;text-decoration-color:rgba(201,150,60,.7);text-decoration-thickness:1.5px;text-underline-offset:4px}
+.crumb .sc{color:var(--coral-d)}.crumb .sc.ky{color:var(--keys)}
+.sol{display:inline-block;width:.54em;height:.54em;margin:0 .012em;border-radius:50%;vertical-align:-.02em;background:linear-gradient(180deg,#FFC24D 0%,#FF8A3D 55%,#FF4D35 100%)}
+.hmw{font-family:var(--pf);font-weight:900;letter-spacing:0;text-transform:none;color:var(--ink);white-space:nowrap}.hmw em{font-weight:700;color:var(--coral-d)}
+.crumb .hmw{font-size:20px}
+h1{font-family:var(--pf);font-weight:900;font-size:52px;line-height:1.06;letter-spacing:-.01em;margin:16px 0 14px}
+.bajada{font-family:var(--pf);font-style:italic;font-weight:700;font-size:23px;line-height:1.35;color:var(--ink2)}
+.by{display:flex;align-items:center;gap:14px;margin:26px 0 28px;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.av{flex:none;width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#FFC24D,#FF4D35);color:#fff;font-family:var(--dm);font-weight:700;font-size:21px;display:flex;align-items:center;justify-content:center}
+.by b{display:block;font-size:17px}
+.by span{font-size:15px;color:var(--mut)}
+.hero{position:relative;border-radius:12px;overflow:hidden;margin:0 auto 10px;max-width:1000px;background:#EADFCF;aspect-ratio:16/9}
+.hero img{width:100%;height:100%;object-fit:cover}
+.wm{position:absolute;right:16px;bottom:14px;font-family:var(--bb);font-size:18px;letter-spacing:.06em;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.6);border-left:4px solid var(--coral);padding-left:8px}
+.cap{max-width:1000px;margin:0 auto 34px;font-size:15px;color:var(--mut)}
+.body p{font-size:20px;line-height:1.65;margin-bottom:22px;color:#18253B}
+.b1 p:first-child:first-letter{float:left;font-family:var(--pf);font-weight:900;font-size:76px;line-height:.86;padding:6px 10px 0 0;color:var(--coral-d)}
+.toca{margin:34px 0;padding:24px 26px;border-radius:12px;background:#FFF4DC;border:1px solid #E9BE78}
+.toca b{display:block;font-family:var(--bb);font-weight:400;font-size:20px;letter-spacing:.18em;color:#8A5A12;margin-bottom:10px}
+.toca li{list-style:none;display:flex;gap:14px;font-size:19px;line-height:1.45;margin-bottom:10px}
+.toca li i{flex:none;font-style:normal;font-family:var(--pf);font-weight:900;color:var(--coral-d)}
+.src{margin:36px 0 26px;padding-top:18px;border-top:2px solid var(--ink)}
+.src h5,.op h5,.rel h5{font-family:var(--bb);font-weight:400;font-size:20px;letter-spacing:.16em;margin-bottom:12px}
+.src li{list-style:none;font-size:17px;margin-bottom:8px;padding-left:16px;position:relative}
+.src li:before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.upd{font-size:15px;color:var(--mut);margin-bottom:24px}
+.share{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:40px}
+.share span{font-family:var(--bb);font-size:18px;letter-spacing:.16em;margin-right:6px}
+.share a,.share button{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 18px;border-radius:999px;border:1px solid rgba(14,27,48,.2);background:#fff;color:var(--ink);font-weight:700;font-size:15px}
+.share a:hover{text-decoration:none;border-color:var(--gold)}
+.op{padding:28px;border-radius:12px;background:var(--paper);border:1px solid rgba(201,150,60,.3);margin-bottom:28px}
+.op h5{font-family:var(--pf);font-weight:700;font-size:28px;letter-spacing:0;margin-bottom:16px}
+.op .list{margin-bottom:18px}
+.op .c{padding:14px 0;border-bottom:1px solid var(--line)}
+.op .c b{font-size:16px}.op .c span{font-size:14px;color:var(--mut);margin-left:8px}
+.op .c p{font-size:17px;margin-top:4px}
+.op form{display:flex;flex-direction:column;gap:12px}
+.op .row{display:flex;gap:12px}
+.op input,.op textarea{width:100%;border-radius:10px;border:1px solid rgba(14,27,48,.22);padding:14px 16px;font:500 17px var(--dm);background:#fff;color:var(--ink)}
+.op textarea{min-height:110px;resize:vertical}
+.op button{align-self:flex-start;height:50px;padding:0 26px;border-radius:10px;border:0;background:var(--ink);color:#fff;font-weight:700;font-size:17px}
+.op small{font-size:14px;color:var(--mut)}
+.op .ok{display:none;font-family:var(--pf);font-weight:700;font-size:19px}
+.rel{margin-bottom:28px}
+.rel a.app{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 22px;border-radius:12px;background:#fff;border:1px solid rgba(14,27,48,.08);box-shadow:0 9px 17px -14px rgba(14,27,48,.55);color:var(--ink);font-family:var(--pf);font-weight:700;font-size:20px;position:relative;overflow:hidden}
+.rel a.app:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--coral)}
+.rel a.app em{font-style:normal;font-family:var(--bb);font-size:17px;letter-spacing:.14em;color:var(--coral-d)}
+.nl{border-radius:12px;padding:28px;margin-bottom:44px;background:linear-gradient(140deg,#FFF6EC,#FFEBDC 60%,#FFE3D3);display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+.nl b{font-family:var(--pf);font-weight:700;font-size:26px}.nl b em{color:var(--coral-d)}
+.nl form{display:flex;gap:10px;flex:1 1 320px;max-width:420px}
+.nl input{flex:1;height:50px;border-radius:10px;border:1px solid rgba(14,27,48,.22);padding:0 16px;font:500 17px var(--dm)}
+.nl button{height:50px;padding:0 20px;border-radius:10px;border:0;background:linear-gradient(135deg,#D9442D,#C93A25);color:#fff;font-weight:700}
+.nl p{flex-basis:100%;font-size:15px;color:var(--mut)}
+.nf{padding:120px 0;text-align:center}
+.nf b{display:block;font-family:var(--pf);font-weight:900;font-size:40px;margin-bottom:10px}
+footer{border-top:1px solid rgba(201,150,60,.35);background:#fff;padding:22px 0 34px;font-size:15px;color:var(--mut)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media (max-width:760px){
+  .wrap{padding:0 18px}
+  .brand b{font-size:22px}.brand .news{font-size:14px;padding:4px 7px 2px}.brand{gap:9px}.brand img{width:34px;height:34px;border-radius:9px}
+  article{padding-top:28px}
+  h1{font-size:34px}.bajada{font-size:20px}
+  .body p{font-size:18px}.b1 p:first-child:first-letter{font-size:62px}
+  .hero{border-radius:0;margin:0 -18px 10px}
+  .op{padding:20px}.op .row{flex-direction:column}
+  .nl form{flex-direction:column;max-width:none}
+}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="/noticias" id="home"><img src="/miami-magic-icon-192.png" alt=""><b>Miami Magic</b><span class="news">NEWS</span></a>
+    <span class="lng"><button data-l="es">ES</button><button data-l="en">EN</button></span>
+  </div>
+  <div class="bar" id="bar"></div>
+</header>
+
+<main class="wrap" id="main"></main>
+
+<footer><div class="wrap"><span>© <span id="yr">2026</span> Miami Magic · YY Entertainment</span><span><a href="mailto:contacto@miamimagicapp.com?subject=Correcci%C3%B3n" id="fc" style="text-decoration:underline;text-underline-offset:3px">Correcciones</a> · contacto@miamimagicapp.com</span></div></footer>
+
+<script>
+(function(){
+'use strict';
+var SB='https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/',SBK='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
+var H={apikey:SBK,Authorization:'Bearer '+SBK};
+var Q=new URLSearchParams(location.search), PM=location.pathname.match(/^\/(noticias|news)\/([a-z0-9\-_]+)/i), ID=(Q.get('id')||(PM&&PM[2])||'').replace(/[^a-z0-9\-_]/gi,'');
+if(PM&&PM[1]==='news'&&!Q.get('lang'))Q.set('lang','en');
+var L=(Q.get('lang')||(function(){try{return localStorage.getItem('mm_lang')}catch(e){return null}})()||((navigator.language||'es').slice(0,2)==='en'?'en':'es'));if(L!=='en')L='es';
+var DEMO=Q.get('demo')==='1', N=null;
+var SC={miami:['MIAMI','MIAMI'],cayos:['LOS CAYOS','THE KEYS'],florida:['FLORIDA','FLORIDA'],usa:['EE. UU.','USA'],internacional:['INTERNACIONAL','INTERNATIONAL']};
+var TE={casa:['TU CASA','YOUR HOME'],bolsillo:['TU BOLSILLO','YOUR WALLET'],calle:['TU CALLE','YOUR STREET'],barrio:['TU BARRIO','YOUR NEIGHBORHOOD'],ciudad:['TU CIUDAD','YOUR CITY'],curioso:['MIAMI CURIOSO','CURIOUS MIAMI']};
+var T={es:{toca:'LO QUE TE TOCA',fuentes:'FUENTES',comp:'COMPARTIR',copiar:'Copiar enlace',copiado:'¡Copiado!',op:'¿Y tú qué opinas?',nombre:'Tu nombre',correo:'Tu correo (no se publica)',opinion:'Tu opinión',pub:'Publicar opinión',rev:'Las opiniones se revisan antes de publicarse. Sé respetuoso.',opOk:'¡Gracias! Tu opinión aparece cuando la revisemos.',opErr:'No se pudo enviar. Intenta de nuevo.',opBad:'Escribe tu nombre y tu opinión, por favor.',enApp:'EN LA APP',ver:'VER →',nlT:'Miami Magic <em>News</em>, en tu correo.',sus:'Suscribirme',nlOk:'¡Listo! Te escribimos el próximo jueves.',nlBad:'Revisa el correo, por favor.',por:'Por',ed:'Editora · productora con un Emmy',min:'min',act:'Actualizada',nf:'No encontramos esta nota',nf2:'Puede que haya cambiado de dirección.',volver:'Volver a Miami Magic News →',corr:'Correcciones',de:'de',meses:['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'],foto:'Foto'},
+       en:{toca:'WHAT IT MEANS FOR YOU',fuentes:'SOURCES',comp:'SHARE',copiar:'Copy link',copiado:'Copied!',op:'What do you think?',nombre:'Your name',correo:'Your email (not published)',opinion:'Your opinion',pub:'Post opinion',rev:'Opinions are reviewed before they appear. Be respectful.',opOk:'Thank you! Your opinion appears once we review it.',opErr:'Couldn\'t send it. Please try again.',opBad:'Please write your name and your opinion.',enApp:'IN THE APP',ver:'SEE →',nlT:'Miami Magic <em>News</em>, in your inbox.',sus:'Subscribe',nlOk:'You\'re in! See you next Thursday.',nlBad:'Please check your email.',por:'By',ed:'Editor · Emmy-winning producer',min:'min read',act:'Updated',nf:'We couldn\'t find this story',nf2:'It may have moved.',volver:'Back to Miami Magic News →',corr:'Corrections',de:'',meses:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],foto:'Photo'}};
+function t(k){return T[L][k]}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function F(k){var x=(N&&(N[L]||N.es))||{};return x[k]!=null&&x[k]!==''?x[k]:((N&&N.es)||{})[k]}
+function fd(s){if(!s)return'';var d=new Date(s.length<=10?s+'T12:00:00':s);if(isNaN(d))return'';return L==='en'?t('meses')[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear():d.getDate()+' '+t('meses')[d.getMonth()]+' '+d.getFullYear()}
+function img(){var f=N.foto||'';return f?(/^https?:|^\//.test(f)?f:'/fotos/'+f):''}
+function url(){return 'https://www.miamimagicapp.com'+(L==='en'?'/news/':'/noticias/')+encodeURIComponent(ID)}
+function meta(name,val,prop){var s=prop?'meta[property="'+name+'"]':'meta[name="'+name+'"]';var m=document.querySelector(s);if(!m){m=document.createElement('meta');m.setAttribute(prop?'property':'name',name);document.head.appendChild(m)}m.setAttribute('content',val)}
+
+function render(){
+  document.documentElement.lang=L;
+  document.querySelectorAll('.lng button').forEach(function(b){b.classList.toggle('on',b.dataset.l===L)});
+  document.getElementById('home').href='/noticias'+(L==='en'?'?lang=en':'');
+  document.getElementById('fc').textContent=t('corr');
+  var m=document.getElementById('main');
+  if(!N){m.innerHTML='<div class="nf"><b>'+t('nf')+'</b><p>'+t('nf2')+'</p><p style="margin-top:18px"><a href="/noticias">'+t('volver')+'</a></p></div>';return}
+  var ti=F('titulo'),ba=F('bajada')||'',cu=F('cuerpo')||[],to=F('toca')||[],w=cu.join(' ').split(/\s+/).length,mn=Math.max(2,Math.round(w/200));
+  document.title=ti+' · Miami Magic News';
+  meta('description',ba);meta('og:title',ti,1);meta('og:description',ba,1);meta('og:url',url(),1);if(img())meta('og:image',(/^https?:/.test(img())?'':'https://www.miamimagicapp.com')+img(),1);
+  var sc=SC[N.scope||'miami']||SC.miami, te=N.hamaca?['<span class="hmw">Hamaca <em>M<span class="sol" role="img" aria-label="o"></span>od</em></span>','<span class="hmw">Hammock <em>M<span class="sol" role="img" aria-label="o"></span>od</em></span>']:(TE[N.tema]||['','']), i=L==='en'?1:0;
+  var h='<article><div class="col"><div class="crumb"><a href="/noticias'+(L==='en'?'?lang=en':'')+'">MIAMI MAGIC NEWS</a> · '+(N.hamaca?te[i]:'<span class="sc'+(N.scope==='cayos'?' ky':'')+'">'+sc[i]+'</span>'+(te[i]?' · '+te[i]:''))+'</div>'
+   +'<h1>'+esc(ti)+'</h1>'+(ba?'<p class="bajada">'+esc(ba)+'</p>':'')
+   +'<div class="by"><span class="av">'+esc((N.autor||'Yolaxys Alvarez').charAt(0))+'</span><div><b>'+t('por')+' '+esc(N.autor||'Yolaxys Alvarez')+'</b><span>'+(N.autor&&N.autor!=='Yolaxys Alvarez'?'':t('ed')+' · ')+fd(N.fecha)+' · '+mn+' '+t('min')+'</span></div></div></div>';
+  if(img())h+='<figure><div class="hero"><img src="'+esc(img())+'" alt="'+esc(N.foto_alt||'')+'">'+(N.foto_mm!==false?'<span class="wm">MIAMI MAGIC</span>':'')+'</div>'+(N.foto_credito||N.foto_pie?'<figcaption class="cap">'+esc(N.foto_pie||'')+(N.foto_credito?' · '+t('foto')+': '+esc(N.foto_credito):'')+'</figcaption>':'<div style="height:24px"></div>')+'</figure>';
+  h+='<div class="col"><div class="body b1">';
+  var at=Math.min(2,cu.length);
+  cu.forEach(function(p,k){h+='<p>'+esc(p)+'</p>';if(k===at-1&&to.length)h+='</div><div class="toca"><b>'+t('toca')+'</b><ul>'+to.map(function(x,j){return '<li><i>'+(j+1)+'</i><span>'+esc(x)+'</span></li>'}).join('')+'</ul></div><div class="body">'});
+  h+='</div>';
+  if(N.fuentes&&N.fuentes.length)h+='<div class="src"><h5>'+t('fuentes')+'</h5><ul>'+N.fuentes.map(function(f){return '<li>'+(f.u?'<a href="'+esc(f.u)+'" target="_blank" rel="noopener">'+esc(f.n)+'</a>':esc(f.n))+'</li>'}).join('')+'</ul></div>';
+  if(N.actualizada)h+='<p class="upd">'+t('act')+' '+fd(N.actualizada)+(F('nota_act')?' · '+esc(F('nota_act')):'')+'</p>';
+  var u=encodeURIComponent(url()),tt=encodeURIComponent(ti);
+  h+='<div class="share"><span>'+t('comp')+'</span><a href="https://wa.me/?text='+tt+'%20'+u+'" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.facebook.com/sharer/sharer.php?u='+u+'" target="_blank" rel="noopener">Facebook</a><a href="mailto:?subject='+tt+'&body='+u+'">Email</a><button id="cp">'+t('copiar')+'</button></div>';
+  if(N.app&&N.app.u)h+='<div class="rel"><h5>'+t('enApp')+'</h5><a class="app" href="'+esc(N.app.u)+'">'+esc(N.app[L]||N.app.es||'')+'<em>'+t('ver')+'</em></a></div>';
+  if(N.opiniones!==false)h+='<section class="op"><h5>'+t('op')+'</h5><div class="list" id="opL"></div><form id="opF" novalidate><div class="row"><input id="opN" maxlength="60" placeholder="'+t('nombre')+'" autocomplete="name"><input id="opE" type="email" maxlength="160" placeholder="'+t('correo')+'" autocomplete="email"></div><textarea id="opT" maxlength="1200" placeholder="'+t('opinion')+'"></textarea><button id="opB">'+t('pub')+'</button><small>'+t('rev')+'</small><p class="ok" id="opOk"></p></form></section>';
+  h+='<section class="nl"><b>'+t('nlT')+'</b><form id="nlF" novalidate><input id="nlE" type="email" placeholder="nombre@correo.com" autocomplete="email"><button>'+t('sus')+'</button></form><p id="nlOk" style="display:none"></p></section></div></article>';
+  m.innerHTML=h;
+  // eventos
+  var cp=document.getElementById('cp');cp.onclick=function(){(navigator.clipboard?navigator.clipboard.writeText(url()):Promise.reject()).then(function(){cp.textContent=t('copiado')}).catch(function(){prompt('',url())})};
+  var of=document.getElementById('opF');
+  if(of){loadOps();of.onsubmit=function(e){e.preventDefault();var n=document.getElementById('opN').value.trim(),x=document.getElementById('opT').value.trim(),em=document.getElementById('opE').value.trim(),ok=document.getElementById('opOk'),b=document.getElementById('opB');
+    if(n.length<2||x.length<3){ok.style.display='block';ok.textContent=t('opBad');return}
+    b.disabled=true;
+    fetch(SB+'mm_opiniones',{method:'POST',headers:Object.assign({'Content-Type':'application/json',Prefer:'return=minimal'},H),body:JSON.stringify({nota:ID,name:n.slice(0,60),email:em.slice(0,160)||null,texto:x.slice(0,1200),lang:L})})
+     .then(function(r){if(!r.ok)throw 0;ok.style.display='block';ok.textContent=t('opOk');of.querySelectorAll('input,textarea').forEach(function(i){i.value=''});b.style.display='none'})
+     .catch(function(){ok.style.display='block';ok.textContent=t('opErr');b.disabled=false})}}
+  document.getElementById('nlF').onsubmit=function(e){e.preventDefault();var em=document.getElementById('nlE').value.trim(),ok=document.getElementById('nlOk');ok.style.display='block';
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){ok.textContent=t('nlBad');return}
+    fetch(SB+'mm_news_subs',{method:'POST',headers:Object.assign({'Content-Type':'application/json',Prefer:'return=minimal'},H),body:JSON.stringify({email:em.toLowerCase().slice(0,160),lang:L,origen:ID})})
+     .then(function(r){if(!r.ok&&r.status!==409)throw 0;ok.textContent=t('nlOk');document.getElementById('nlF').style.display='none'}).catch(function(){ok.textContent=t('opErr')})};
+}
+function loadOps(){
+  if(DEMO)return;
+  fetch(SB+'mm_opiniones?select=name,texto,created_at&approved=eq.true&nota=eq.'+encodeURIComponent(ID)+'&order=created_at.desc&limit=50',{headers:H}).then(function(r){return r.ok?r.json():[]}).then(function(a){
+    var l=document.getElementById('opL');if(!l||!a.length)return;
+    l.innerHTML=a.map(function(c){return '<div class="c"><b>'+esc(c.name)+'</b><span>'+fd(c.created_at)+'</span><p>'+esc(c.texto)+'</p></div>'}).join('')}).catch(function(){});
+}
+function setLang(l){L=l;try{localStorage.setItem('mm_lang',l)}catch(e){}var u=new URL(location.href);if(l==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u);render()}
+document.querySelectorAll('.lng button').forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
+addEventListener('scroll',function(){var a=document.querySelector('article');if(!a)return;var h=a.offsetHeight-innerHeight,p=h>0?Math.min(1,Math.max(0,scrollY/h)):0;document.getElementById('bar').style.width=(p*100)+'%'},{passive:true});
+document.getElementById('yr').textContent=new Date().getFullYear();
+fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){N=(j.notas||[]).filter(function(n){return n.id===ID})[0]||null;render()}).catch(function(){render()});
+})();
+</script>
+</body>
+</html>

@@ -11778,6 +11778,7 @@ document.addEventListener('DOMContentLoaded',function(){
       else if(g==='livecams'){ go('sec-livecams');
         setTimeout(function(){ var p=document.getElementById('mmcamPanel'); if(p&&!p.classList.contains('open')) mmcamSection(); },700); }
       else if(g==='ask'){ openAmigo(); }
+      else if(/^[a-z]+$/.test(g) && document.getElementById('sec-'+g)){ go('sec-'+g); }
     }catch(e){}
     try{ history.replaceState(null,'',location.pathname); }catch(e){}
   },1200);

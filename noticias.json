@@ -1,0 +1,21 @@
+{
+  "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias.",
+  "updated": "2026-11-08",
+  "ultima_hora": {
+    "activa": false,
+    "nota": "",
+    "es": "",
+    "en": "",
+    "desde": "",
+    "hasta": ""
+  },
+  "cifras": [
+    { "k": "gas", "es": "Gasolina en Miami-Dade", "en": "Gas in Miami-Dade", "v": "", "fuente": "AAA", "fecha": "" },
+    { "k": "hipoteca", "es": "Hipoteca a 30 años", "en": "30-year mortgage", "v": "", "fuente": "Freddie Mac", "fecha": "" },
+    { "k": "casa", "es": "Casa, precio medio", "en": "Median home price", "v": "", "fuente": "Miami Realtors", "fecha": "" },
+    { "k": "renta", "es": "Renta promedio", "en": "Average rent", "v": "", "fuente": "", "fecha": "" },
+    { "k": "cruceros", "es": "Cruceros en el puerto", "en": "Cruise ships in port", "v": "", "v_en": "", "fuente": "PortMiami", "fecha": "" }
+  ],
+  "videos": [],
+  "notas": []
+}
