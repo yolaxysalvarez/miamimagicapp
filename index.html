@@ -3487,22 +3487,29 @@ body{padding-bottom:0;}
 .sdx-tt{font-family:'Playfair Display',serif;font-weight:800;font-size:1.32rem;color:#0E1B33;line-height:1.15;margin-top:3px}
 .sdx-tt i{color:#C48E30;font-weight:700}
 .sdx-all{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.82rem;color:#B07A1E;white-space:nowrap;cursor:pointer;padding:6px 0}
-.sdx-rail{display:flex;gap:10px;overflow-x:auto;padding:2px 18px 6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
-.sdx-rail::-webkit-scrollbar{display:none}
-.sdx-card{flex:0 0 138px;scroll-snap-align:start;background:#fff;border-radius:16px;padding:10px 11px 11px;box-shadow:0 3px 12px rgba(14,27,51,.08);cursor:pointer;display:flex;flex-direction:column;gap:7px;min-height:150px}
-.sdx-date{border-radius:11px;background:var(--sdx-ac);color:#fff;padding:7px 9px 6px;display:flex;flex-direction:column;line-height:1}
-.sdx-mo{font-family:'Bebas Neue',sans-serif;letter-spacing:.14em;font-size:.78rem;opacity:.92}
-.sdx-dy{font-family:'Playfair Display',serif;font-weight:800;font-size:1.28rem;margin-top:2px;white-space:nowrap}
-.sdx-keys{align-self:flex-start;font-family:'Bebas Neue',sans-serif;letter-spacing:.12em;font-size:.7rem;color:#fff;background:#10563C;border:1.5px solid #fff;outline:1px solid #10563C;border-radius:5px;padding:2px 6px 1px}
-.sdx-name{font-family:'DM Sans',sans-serif;font-weight:700;font-size:.84rem;color:#0E1B33;line-height:1.25;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.sdx-left{margin-top:auto;font-family:'DM Sans',sans-serif;font-size:.76rem;color:#6B6375}
-.sdx-left b{color:#C48E30;font-family:'Bebas Neue',sans-serif;font-size:1.05rem;letter-spacing:.04em;font-weight:400}
-.sdx-foot{padding:6px 18px 0;font-family:'DM Sans',sans-serif;font-size:.72rem;color:#8A7A60}
+.sdx-list{padding:0 18px}
+.sdx-row{display:grid;grid-template-columns:62px minmax(0,1fr) auto;gap:14px;align-items:center;padding:13px 0 13px 12px;border-top:1px solid rgba(196,142,48,.28);border-left:3px solid var(--sdx-ac);margin-top:-1px;cursor:pointer}
+.sdx-row:first-child{border-top-color:transparent}
+.sdx-row:nth-child(n+5){display:none}
+.sdx-when{display:flex;flex-direction:column;line-height:1}
+.sdx-mo{font-family:'Bebas Neue',sans-serif;letter-spacing:.14em;font-size:.86rem;color:var(--sdx-ac)}
+.sdx-dy{font-family:'Playfair Display',serif;font-weight:800;font-size:1.42rem;color:#0E1B33;margin-top:3px;white-space:nowrap;letter-spacing:-.01em}
+.sdx-what{display:flex;flex-direction:column;min-width:0}
+.sdx-k{font-family:'Bebas Neue',sans-serif;letter-spacing:.18em;font-size:.76rem;color:var(--sdx-ac);line-height:1.1}
+.sdx-name{font-family:'Playfair Display',serif;font-weight:700;font-size:1.02rem;color:#0E1B33;line-height:1.2;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sdx-venue{font-family:'DM Sans',sans-serif;font-size:.82rem;color:#5E5648;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sdx-cnt{display:flex;flex-direction:column;align-items:center;line-height:1;min-width:44px}
+.sdx-cnt b{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:1.7rem;color:#B07A1E;letter-spacing:.02em}
+.sdx-cnt span{font-family:'Bebas Neue',sans-serif;font-size:.7rem;letter-spacing:.18em;color:#8A7A60;margin-top:1px}
+.sdx-cnt .sdx-now{font-size:.95rem;color:#C93A25;letter-spacing:.14em}
+.sdx-foot>span:first-child{white-space:nowrap}
+.sdx-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 18px;padding:11px 0 0;border-top:1px solid rgba(196,142,48,.28);font-family:'DM Sans',sans-serif;font-size:.8rem;color:#8A7A60}
+.sdx-more{font-family:'Bebas Neue',sans-serif;font-size:.92rem;letter-spacing:.15em;color:#0E1B33;border-bottom:2px solid #C48E30;padding-bottom:1px;white-space:nowrap;cursor:pointer}
+@media(min-width:760px){.sdx-list{display:grid;grid-template-columns:1fr 1fr;column-gap:26px}.sdx-row:nth-child(n+5){display:grid}.sdx-row:nth-child(n+7){display:none}.sdx-row:nth-child(2){border-top-color:transparent}}
 [data-theme="dark"] .sdx{background:linear-gradient(160deg,#1c1a16 0%,#231d12 100%);border-color:rgba(196,142,48,.5)}
 [data-theme="dark"] .sdx-tt{color:#F3EBDD}
-[data-theme="dark"] .sdx-card{background:#262219}
-[data-theme="dark"] .sdx-name{color:#F3EBDD}
-[data-theme="dark"] .sdx-left,[data-theme="dark"] .sdx-foot{color:#B9AE99}
+[data-theme="dark"] .sdx-name,[data-theme="dark"] .sdx-dy,[data-theme="dark"] .sdx-more{color:#F3EBDD}[data-theme="dark"] .sdx-cnt b{color:#E3B45C}
+[data-theme="dark"] .sdx-venue,[data-theme="dark"] .sdx-foot,[data-theme="dark"] .sdx-cnt span{color:#B9AE99}[data-theme="dark"] .sdx-row[style*="#10563C"]{--sdx-ac:#5FD3A0!important}
 .mm-found{outline:3px solid rgba(255,77,53,.95);outline-offset:-3px;animation:mmFound 2.6s ease forwards}
 @keyframes mmFound{0%,55%{outline-color:rgba(255,77,53,.95)}100%{outline-color:rgba(255,77,53,0)}}
 @media (prefers-reduced-motion:reduce){.mm-found{animation:none}}
@@ -9205,11 +9212,11 @@ function mmSaveDateRender(){
     if(varios){ dia += (b.getMonth()===a.getMonth()) ? '–'+b.getDate() : ''; if(b.getMonth()!==a.getMonth()) mes += '→'+MO[b.getMonth()]; }
     var keys=e.zone==='keys', ac=keys?'#10563C':'#FF4D35', cid='mcard-sd-'+e.id;
     var name=F(e,'name');
-    mini.push('<div class="sdx-card" role="button" tabindex="0" onclick="event.stopPropagation();mmSaveOpen(\''+esc(cid)+'\')">'
-      +'<div class="sdx-date" style="--sdx-ac:'+ac+'"><span class="sdx-mo">'+mes+'</span><span class="sdx-dy">'+dia+'</span></div>'
-      +(keys?'<span class="sdx-keys">'+(ES?'LOS CAYOS':'THE KEYS')+'</span>':'')
-      +'<div class="sdx-name">'+h(name)+'</div>'
-      +'<div class="sdx-left">'+cuenta+'</div>'
+    var cnt = dias<=0 ? '<span class="sdx-now">'+(ES?'YA':'NOW')+'</span>' : '<b>'+dias+'</b><span>'+(dias===1?(ES?'DÍA':'DAY'):(ES?'DÍAS':'DAYS'))+'</span>';
+    mini.push('<div class="sdx-row" style="--sdx-ac:'+ac+'" role="button" tabindex="0" onclick="event.stopPropagation();mmSaveOpen(\''+esc(cid)+'\')">'
+      +'<div class="sdx-when"><span class="sdx-mo">'+mes+'</span><span class="sdx-dy">'+dia+'</span></div>'
+      +'<div class="sdx-what"><span class="sdx-k">'+(keys?(ES?'LOS CAYOS':'THE KEYS'):'MIAMI')+'</span><span class="sdx-name">'+h(name)+'</span><span class="sdx-venue">'+h(F(e,'venue'))+'</span></div>'
+      +'<div class="sdx-cnt" aria-label="'+(ES?'Faltan '+dias+' días':dias+' days to go')+'">'+cnt+'</div>'
     +'</div>');
     /* tarjeta completa: el mismo formato de "Este Mes" (twx-card) */
     var rango=varios? (a.getDate()+(a.getMonth()!==b.getMonth()?' '+MOL[a.getMonth()]:'')+' – '+b.getDate()+' '+MOL[b.getMonth()]) : (a.getDate()+' '+MOL[a.getMonth()]);
@@ -9245,8 +9252,8 @@ function mmSaveDateRender(){
     +'<div class="sdx-hd" role="button" tabindex="0" onclick="mmSaveSection()"><div><div class="sdx-eye"><span class="sdx-line"></span>'+(ES?'APARTA LA FECHA':'SAVE THE DATE')+'</div>'
     +'<div class="sdx-tt">'+titulo+'</div></div>'
     +'<span class="sdx-all" id="twxSaveBar">'+(ES?'Explorar':'Explore')+' <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></div>'
-    +'<div class="sdx-rail">'+mini.join('')+'</div>'
-    +'<div class="sdx-foot">'+meta+' · '+(ES?'fechas, lugar y entradas oficiales':'dates, venue and official tickets')+'</div>'
+    +'<div class="sdx-list">'+mini.join('')+'</div>'
+    +'<div class="sdx-foot"><span>'+meta+'</span>'+(items.length>4?'<span class="sdx-more" role="button" tabindex="0" onclick="event.stopPropagation();mmSaveSection()">'+(ES?'VER LAS '+items.length:'SEE ALL '+items.length)+' →</span>':'')+'</div>'
     +'</div>'
     +'<div class="tw-panel sdx-panel'+(abierto?' open':'')+'" id="twxSavePanel">'
       +'<div class="twx-sticky"><b>'+(ES?'Aparta la fecha':'Save the date')+'</b><i>'+meta+'</i><button type="button" onclick="event.stopPropagation();mmSaveSection(true)">'+(ES?'Cerrar':'Close')+'</button></div>'
