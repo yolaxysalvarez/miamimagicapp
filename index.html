@@ -4129,7 +4129,7 @@ html body .twx-pill{font-size:.78rem!important}
   function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
   function F(n,l){return n[l]||n.es||{}}
   function img(n){var f=(L()==='en'&&n.foto_en)||n.foto||'';return /^https?:|^\//.test(f)?f:BASE+'/fotos/'+f}
-  function url(n,l){return BASE+(l==='en'?'/news/':'/noticias/')+encodeURIComponent(n.id)+(NAT?'?lang='+l:'')}
+  function url(n,l){return BASE+(l==='en'?'/news/':'/noticias/')+encodeURIComponent(n.id)+(NAT?'?lang='+l+'&src=app':'')}
   function eb(n,l){var i=l==='en'?1:0,cc=(n.tema==='casa'&&!n.hamaca&&!n.muelle),a=n.hamaca?'HAMACA MOOD':n.muelle?(i?'THE DOCK':'EL MUELLE'):cc?'CASA & COAST':n.scope==='cayos'?(i?'THE KEYS':'LOS CAYOS'):'MIAMI',b=(n.hamaca||n.muelle||cc)?(F(n,l).etiqueta||''):((TEMA[n.tema]||[])[i]||'');return esc(a)+(b?' · <u>'+esc(b)+'</u>':'')}
   function render(){
     var el=document.getElementById('sec-news');if(!el||!DATA)return;
@@ -4141,7 +4141,7 @@ html body .twx-pill{font-size:.78rem!important}
     el.innerHTML='<div class="mmn-card"><div class="mmn-mh"><b>Miami Magic <em>News</em></b><span><i></i>'+fecha+'</span></div><div class="mmn-body">'
       +'<a class="mmn-ld" href="'+esc(url(a,l))+'"><span class="mmn-ph'+(a.foto_fit==='contain'?' fit':'')+'"'+(a.foto_bg?' style="background:'+esc(a.foto_bg)+'"':'')+'><img src="'+esc(img(a))+'" alt="'+esc(a.foto_alt||'')+'" loading="lazy">'+(a.foto_mm!==false?'<span class="mmn-wm">MIAMI MAGIC</span>':'')+'</span><span class="mmn-tx"><span class="mmn-eb">'+eb(a,l)+'</span><h3>'+esc(F(a,l).titulo||a.es.titulo)+'</h3></span></a>'
       +'<div class="mmn-list">'+top.slice(1).map(function(n){return '<a class="mmn-it" href="'+esc(url(n,l))+'"><span><span class="mmn-eb">'+eb(n,l)+'</span><h4>'+esc(F(n,l).titulo||n.es.titulo)+'</h4></span><img src="'+esc(img(n))+'" alt="" loading="lazy"></a>'}).join('')+'</div></div>'
-      +'<div class="mmn-ft"><a href="'+esc(BASE+(l==='en'?'/news':'/noticias')+(NAT?'?lang='+l:''))+'">'+(l==='en'?'SEE ALL THE NEWS':'VER TODAS LAS NOTICIAS')+' →</a><span>'+top.length+(l==='en'?' OF ':' DE ')+all.length+'</span></div></div>';
+      +'<div class="mmn-ft"><a href="'+esc(BASE+(l==='en'?'/news':'/noticias')+(NAT?'?lang='+l+'&src=app':''))+'">'+(l==='en'?'SEE ALL THE NEWS':'VER TODAS LAS NOTICIAS')+' →</a><span>'+top.length+(l==='en'?' OF ':' DE ')+all.length+'</span></div></div>';
     el.style.display='';LAST=l;try{renderCC(all,l)}catch(e){}
     window.mmNewsTop=top.map(function(n){return {id:n.id,img:img(n),en:(n.en&&n.en.titulo)||n.es.titulo,es:n.es.titulo}});
     var cd=top.concat(all).filter(function(n){return n.foto&&n.foto_fit!=='contain'})[0];
@@ -4160,12 +4160,12 @@ html body .twx-pill{font-size:.78rem!important}
       +(f?'<div class="mmn-body"><a class="mmn-ld" href="'+esc(url(f,l))+'"><span class="mmn-ph'+(f.foto_fit==='contain'?' fit':'')+'"'+(f.foto_bg?' style="background:'+esc(f.foto_bg)+'"':'')+'><img src="'+esc(img(f))+'" alt="'+esc(f.foto_alt||'')+'" loading="lazy">'+(f.foto_mm!==false?'<span class="mmn-wm">MIAMI MAGIC</span>':'')+'</span><span class="mmn-tx"><span class="mmn-eb">'+k(f)+'</span><h3>'+esc(F(f,l).titulo||f.es.titulo)+'</h3></span></a>'
         +'<div class="mmn-list">'+top.slice(1).map(function(n){return '<a class="mmn-it" href="'+esc(url(n,l))+'"><span><span class="mmn-eb">'+k(n)+'</span><h4>'+esc(F(n,l).titulo||n.es.titulo)+'</h4></span><img src="'+esc(img(n))+'" alt="" loading="lazy"'+(n.foto_bg?' style="background:'+esc(n.foto_bg)+'"':'')+'></a>'}).join('')+'</div></div>'
        :'<div class="mmcc-e">'+(l==='en'?'Stories arrive very soon.':'Las notas llegan muy pronto.')+'</div>')
-      +'<div class="mmn-ft"><a href="'+esc(BASE+(l==='en'?'/news':'/noticias')+'?s=casa'+(NAT?'&lang='+l:''))+'">'+(l==='en'?'ALL OF CASA & COAST':'TODO CASA & COAST')+' →</a><span>'+top.length+(l==='en'?' OF ':' DE ')+a.length+'</span></div></div>';
+      +'<div class="mmn-ft"><a href="'+esc(BASE+(l==='en'?'/news':'/noticias')+'?s=casa'+(NAT?'&lang='+l+'&src=app':''))+'">'+(l==='en'?'ALL OF CASA & COAST':'TODO CASA & COAST')+' →</a><span>'+top.length+(l==='en'?' OF ':' DE ')+a.length+'</span></div></div>';
     el.style.display='';
   }
   document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('#sec-cc .mmcc-sel button');if(!b)return;CCS=b.dataset.cc;try{if(typeof mmTrack==='function')mmTrack('cc_scope',CCS)}catch(x){}render()});
   var KEY='';
-  window.mmNewsOpen=function(id){var l=L(),u=BASE+(l==='en'?'/news':'/noticias')+(id?'/'+encodeURIComponent(id):'')+(NAT?'?lang='+l:'');try{if(typeof mmTrack==='function')mmTrack('news_open',id||'portada')}catch(e){}if(NAT&&typeof mmOpenWeb==='function')mmOpenWeb(u);else location.href=u};
+  window.mmNewsOpen=function(id){var l=L(),u=BASE+(l==='en'?'/news':'/noticias')+(id?'/'+encodeURIComponent(id):'')+(NAT?'?lang='+l+'&src=app':'');try{if(typeof mmTrack==='function')mmTrack('news_open',id||'portada')}catch(e){}if(NAT&&typeof mmOpenWeb==='function')mmOpenWeb(u);else location.href=u};
   var NICO='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/></svg>';
   window.mmNewsRows=function(){var l=L();return ((DATA&&DATA.notas)||[]).filter(function(n){return n&&n.id&&n.es&&n.es.titulo}).map(function(n){var f=F(n,l);return {name:f.titulo||n.es.titulo,grp:'Miami Magic News',type:'news',kw:[f.titulo,f.bajada,f.etiqueta,(f.toca||[]).join(' '),n.es.titulo,n.scope==='cayos'?'cayos keys':'',n.muelle?'pesca botes fishing boats muelle':'',n.hamaca?'hamaca plan paseo':''].join(' ').toLowerCase(),sub:eb(n,l).replace(/<[^>]+>/g,''),badge:'NEWS',btn:l==='en'?'Read →':'Leer →',emoji:NICO,bg:'',news:n.id}})};
   window.mmNewsTick=function(){var l=L();return (window.mmNewsTop||[]).map(function(n){return {tgEN:'NEWS',tgES:'NEWS',en:n.en,es:n.es,act:"mmNewsOpen('"+n.id.replace(/[^a-z0-9-]/gi,'')+"')"}})};

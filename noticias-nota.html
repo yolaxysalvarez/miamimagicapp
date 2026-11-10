@@ -137,6 +137,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 }
 .fsoc{display:inline-flex;gap:10px;align-items:center}.fsoc a{width:36px;height:36px;border-radius:50%;border:1px solid rgba(14,27,48,.2);display:grid;place-items:center;background:#fff}
 </style>
+<script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
+<style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band{display:none!important}</style>
 </head>
 <body>
 <header class="hdr">

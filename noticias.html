@@ -499,6 +499,8 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 @media(max-width:900px){.ag-l{grid-template-columns:1fr}}
 @media(max-width:760px){.ag{padding:20px 16px 18px;margin:0 0 44px}.ag-t{font-size:38px}.ag-tabs{gap:18px}.ag-tabs button{font-size:18px}.ag-r{grid-template-columns:62px minmax(0,1fr);gap:12px;padding:13px 0}.ag-d b{font-size:29px}.ag-d b.rg{font-size:19px}.ag-x h4{font-size:18px}.ag-f a{font-size:17px}}
 </style>
+<script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
+<style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band{display:none!important}</style>
 </head>
 <body>
 
