@@ -53,13 +53,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .brk-t{flex:1;min-width:0;overflow:hidden;font-weight:700;font-size:17px;color:#fff;-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 95%,transparent);mask-image:linear-gradient(90deg,transparent,#000 3%,#000 95%,transparent)}
 .brk-t span{display:inline-flex;white-space:nowrap;width:max-content;animation:mmscroll 22s linear infinite}
 .brk-t b{padding-right:80px;font-weight:700}
+.brk-t.fit{-webkit-mask-image:none;mask-image:none}.brk-t.fit span{animation:none}.brk-t.fit b+b{display:none}
 .brk-ago{flex:none;font-size:15px;opacity:.9}
 .brk-go{flex:none;font-size:18px;color:#fff;border-bottom:1.5px solid rgba(255,255,255,.8)}
 .brk-x{flex:none;width:26px;height:26px;border:0;border-radius:50%;background:rgba(255,255,255,.2);color:#fff;font-size:17px;line-height:1}
 
 /* ── encabezado: la cabecera de Miami Magic News ── */
 .hdr{background:linear-gradient(180deg,#fff,#FFFCF7)}
-.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:16px;padding-bottom:10px}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:10px}
 .mast{flex:none;display:flex;align-items:center;gap:14px}
 .mast img{flex:none;width:56px;height:56px;border-radius:15px;box-shadow:0 8px 16px -10px rgba(201,58,37,.75)}
 .mt{display:flex;flex-direction:column;min-width:0}
@@ -74,7 +75,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .lng{display:flex;gap:2px;border:1px solid rgba(14,27,48,.2);border-radius:999px;padding:3px;background:#fff}
 .lng button{border:0;background:none;padding:6px 13px;border-radius:999px;font-weight:700;font-size:15px;color:var(--ink)}
 .lng button.on{background:linear-gradient(135deg,#D9442D,#C93A25);color:#fff;box-shadow:0 3px 8px -4px rgba(201,58,37,.7)}
-.dl{background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;font-size:15px;white-space:nowrap}
+.dl{display:inline-flex;align-items:center;gap:7px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;font-size:15px;white-space:nowrap}
 
 /* ── la línea de datos: el tiempo y Miami en cifras ── */
 .info{position:relative;z-index:25;background:var(--paper);border-bottom:1px solid var(--line)}
@@ -90,7 +91,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .wxb .ch{transition:transform .25s}
 .wxb[aria-expanded=true] .ch{transform:rotate(180deg)}
 .cf-lab{flex:none;display:flex;align-items:center;height:26px;padding-left:18px;border-left:1px solid rgba(14,27,48,.14);font-family:var(--bb);font-size:17px;letter-spacing:.16em;color:var(--ink);white-space:nowrap}
-.cf-r{flex:1;min-width:0;height:100%;overflow:hidden;display:flex;align-items:center;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent)}
+.cf-r{flex:1;min-width:0;height:100%;margin-left:8px;overflow:hidden;display:flex;align-items:center;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent)}
 .cf-r>div{display:flex;align-items:center;width:max-content;animation:mmscroll 60s linear infinite}
 .cf-r:hover>div{animation-play-state:paused}
 .cf-i{display:inline-flex;align-items:center;gap:9px;padding:0 24px;white-space:nowrap;font-size:16px;color:var(--ink2)}
@@ -121,7 +122,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .tab.on{border-bottom-color:currentColor}
 .tabs .hm-pill{margin-left:8px}
 .navr{display:flex;align-items:center;gap:12px;flex:none}
-.navr .div{width:1px;height:26px;background:rgba(14,27,48,.15)}
+.navr .div{display:none}
 .hm-pill{display:flex;align-items:center;gap:9px;padding:6px 17px;border-radius:999px;background:#FFE9DF;border:1px solid rgba(201,58,37,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
 .hm-pill b{font-family:var(--pf);font-weight:900;font-size:19px;white-space:nowrap}
 .hm-pill b em,.hm-t em{font-weight:700;color:var(--coral-d)}
@@ -147,17 +148,32 @@ main.wrap{padding-top:4px;padding-bottom:40px}
 .tema.on span.d{color:rgba(255,248,239,.75)}
 
 /* ── nota principal ── */
-.lead{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:36px;align-items:center;margin-bottom:56px}
+.lead{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:36px;align-items:start;margin-bottom:56px}
 .ph{position:relative;display:block;border-radius:12px;overflow:hidden;background:#EADFCF}
 .ph img{width:100%;height:100%;object-fit:cover}
-.wm{position:absolute;right:16px;bottom:14px;font-family:var(--bb);font-size:18px;letter-spacing:.06em;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.6);border-left:4px solid var(--coral);padding-left:8px}
+.wm{position:absolute;right:14px;bottom:12px;font-family:var(--bb);font-size:14px;line-height:1;letter-spacing:.1em;color:#fff;opacity:.92;text-shadow:0 1px 3px rgba(0,0,0,.55);border-left:3px solid var(--coral);padding-left:6px}
+@media(max-width:640px){.wm{right:10px;bottom:9px;font-size:11.5px;border-left-width:2px;padding-left:5px}}
 .lead .ph{aspect-ratio:16/10}
+@media(min-width:761px){.lead{align-items:stretch}.lead>a{position:relative;display:block;min-height:440px}.lead>a .ph{position:absolute;inset:0;aspect-ratio:auto}}
+@media(min-width:761px) and (max-width:1020px){.lead{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:24px}.lead h2{font-size:31px}.lead p{font-size:17px}}
+.lead.hb{margin-bottom:22px}
+.xb{display:grid;grid-template-columns:176px minmax(0,1fr) auto;gap:24px;align-items:center;padding:14px 26px 14px 14px;border-radius:14px;margin:0 0 56px;background:linear-gradient(90deg,#E6F1E9 0%,#F4F9F3 60%,#FBFCF7 100%);border:1px solid rgba(16,86,60,.16);box-shadow:0 14px 30px -26px rgba(16,86,60,.6)}
+.xb.mi{background:linear-gradient(90deg,#FFE9DD 0%,#FFF4EA 60%,#FFFBF3 100%);border-color:rgba(232,98,58,.2);box-shadow:0 14px 30px -26px rgba(232,98,58,.6)}
+.xb .ph{aspect-ratio:16/10;border-radius:9px}.xb .eb{font-size:17px}
+.xb b{display:block;font-family:var(--pf);font-weight:700;font-size:25px;line-height:1.15;margin-top:4px;color:var(--ink)}
+.xb .go{font-family:var(--bb);font-size:17px;letter-spacing:.16em;white-space:nowrap;color:var(--keys)}.xb.mi .go{color:var(--coral-d)}
+@media(max-width:760px){.xb{grid-template-columns:108px minmax(0,1fr);gap:14px;padding:10px 14px 10px 10px;margin-bottom:40px}.xb .go{display:none}.xb b{font-size:18px}.xb .eb{font-size:15px}}
+.ph.fit{background:#FFF6EA}.ph.fit img{object-fit:contain}
+.card.wide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:32px;align-items:center}.card.wide .ph{aspect-ratio:16/10}.card.wide h4{font-size:32px;line-height:1.12;margin:10px 0}.card.wide p{font-size:18px;color:var(--ink2);margin-bottom:10px}.grid4.one{grid-template-columns:1fr}
+@media(max-width:760px){.card.wide{grid-template-columns:1fr;gap:12px}.card.wide h4{font-size:24px}}
 .eb{font-family:var(--bb);font-size:20px;letter-spacing:.18em;color:var(--teal)}
 .eb .lg{color:var(--coral-d)}.eb .lg.ky{color:var(--keys)}
 .lead h2{font-family:var(--pf);font-weight:900;font-size:42px;line-height:1.08;margin:12px 0}
 .lead p{font-size:19px;color:var(--ink2)}
+.nm{color:var(--coral-d);font-weight:700}
+.lk{color:var(--coral-d);font-weight:700;text-decoration:underline;text-decoration-color:rgba(201,150,60,.7);text-decoration-thickness:1.5px;text-underline-offset:3px}
 .toca{margin-top:16px;background:#FFF4DC;border:1px solid #E9BE78;border-radius:10px;padding:16px 20px}
-.toca b{display:block;font-family:var(--bb);font-weight:400;font-size:18px;letter-spacing:.18em;color:#8A5A12;margin-bottom:6px}
+.toca>b{display:block;font-family:var(--bb);font-weight:400;font-size:18px;letter-spacing:.18em;color:#8A5A12;margin-bottom:6px}
 .toca li{list-style:none;display:flex;gap:10px;font-size:17px;line-height:1.45}
 .toca li i{font-style:normal;color:var(--coral-d);font-weight:700}
 .meta{display:block;margin-top:14px;font-size:16px;color:var(--mut)}
@@ -167,6 +183,8 @@ main.wrap{padding-top:4px;padding-bottom:40px}
 .sh h3{font-family:var(--bb);font-weight:400;font-size:30px;letter-spacing:.1em}
 .sh span,.sh a{font-size:16px;color:var(--mut)}
 .sh a{color:var(--coral-d);font-weight:700}
+.sh h3.smi{color:var(--coral-d)}.sh h3.scy{color:var(--keys)}
+.sh .vt{border:0;background:none;font-family:var(--bb);font-size:18px;letter-spacing:.14em;color:var(--mut);padding:4px 0}.sh .vt:hover{color:var(--ink)}
 .grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-bottom:64px}
 .card{display:flex;flex-direction:column;gap:12px}
 .card .ph{aspect-ratio:4/3;border-radius:10px}
@@ -181,11 +199,96 @@ main.wrap{padding-top:4px;padding-bottom:40px}
 .empty{grid-column:1/-1;padding:40px;border-radius:12px;background:var(--paper);border:1px dashed rgba(201,150,60,.5);text-align:center;color:var(--mut);font-size:18px}
 .empty b{display:block;font-family:var(--pf);font-weight:700;font-size:26px;color:var(--ink);margin-bottom:6px}
 
+/* ── El Muelle / The Dock ── */
+.dkw{font-family:var(--pf);font-weight:900;color:var(--ink);white-space:nowrap;letter-spacing:0;text-transform:none}
+.dkw em{font-weight:700;color:#0B5C7A}
+.pil{display:inline-block;width:.13em;height:.74em;margin:0 .03em;border-radius:.05em .05em .02em .02em;vertical-align:-.02em;background:linear-gradient(180deg,transparent 0 16%,#E4CC97 16% 25%,transparent 25% 100%),linear-gradient(90deg,#6A4A2D 0%,#B08856 48%,#76532F 100%)}
+.ringw{display:inline-block;filter:drop-shadow(0 0 .025em rgba(11,92,122,.85));vertical-align:-.02em;margin:0 .015em}
+.ring{display:block;width:.5em;height:.5em;border-radius:50%;background:conic-gradient(#FF4D35 0 45deg,#fff 0 90deg,#FF4D35 0 135deg,#fff 0 180deg,#FF4D35 0 225deg,#fff 0 270deg,#FF4D35 0 315deg,#fff 0 360deg);-webkit-mask:radial-gradient(circle,transparent 44%,#000 47%);mask:radial-gradient(circle,transparent 44%,#000 47%)}
+.dk-pill{display:flex;align-items:center;padding:6px 17px;border-radius:999px;background:#E1EFF4;border:1px solid rgba(11,92,122,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.dk-pill b{font-family:var(--pf);font-weight:900;font-size:19px;white-space:nowrap}
+.dk-pill.on{background:#fff;border-color:#0B5C7A}
+.tabs .dk-pill{margin-left:8px}
+.dk{position:relative;margin:56px 0 64px;display:grid;grid-template-columns:250px minmax(0,1fr);border-radius:18px;overflow:hidden;background:#F5FAFB;box-shadow:0 18px 40px -30px rgba(11,60,80,.55);border:1px solid rgba(11,92,122,.12)}
+.dk-post{position:relative;background:linear-gradient(180deg,#EEF7F9 0%,#D4EAF0 55%,#B6D8E2 100%);padding:26px 20px 26px;display:flex;flex-direction:column;align-items:center;gap:20px;min-height:600px;overflow:hidden}
+.dk-post .dk-vt{position:relative;width:100%;flex:1;min-height:330px;font-size:72px;line-height:1}
+.dk-post .dk-vt>.dkw{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-90deg)}
+.dk-post .dk-wv{position:absolute;left:0;right:0;bottom:0;height:90px;opacity:.55}
+.dk-cond{position:relative;z-index:1;width:100%;display:flex;flex-direction:column;gap:8px}
+.dk-cond span{display:flex;justify-content:space-between;align-items:baseline;background:rgba(255,255,255,.72);border-radius:9px;padding:8px 12px;font-family:var(--bb);font-size:16px;letter-spacing:.14em;color:#0B5C7A}
+.dk-cond b{font-family:var(--pf);font-weight:900;font-size:21px;letter-spacing:0;color:var(--coral-d)}
+.dk-app{position:relative;z-index:1;text-align:center;font-family:var(--bb);font-size:15px;letter-spacing:.12em;color:#0B5C7A;border-bottom:2px solid #0B5C7A;padding-bottom:2px}
+.dk-main{padding:28px 32px 22px}
+.dk-hd{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;border-bottom:2px solid #0B5C7A;padding-bottom:12px}
+.dk-hd p{font-size:18px;color:var(--ink2);max-width:560px}
+.dk-more{font-family:var(--bb);font-size:18px;letter-spacing:.16em;color:#0B5C7A;background:none;border:0;border-bottom:2px solid #0B5C7A;padding:0 0 2px;white-space:nowrap}
+.dk-it{display:grid;grid-template-columns:190px minmax(0,1fr);gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid rgba(11,92,122,.16)}
+.dk-it:last-child{border-bottom:0}
+.dk-one .dk-it{grid-template-columns:1fr;gap:16px;border:0}.dk-one .dk-it .ph{aspect-ratio:16/8}.dk-one .dk-it h4{font-size:34px}
+.dk-it .ph{display:block;position:relative;aspect-ratio:4/3;border-radius:10px;overflow:hidden;background:#D4EAF0}
+.dk-it .ph img{width:100%;height:100%;object-fit:cover}
+.dk-it .k{font-family:var(--bb);font-size:16px;letter-spacing:.18em;color:#0B5C7A}
+.dk-it h4{font-family:var(--pf);font-weight:900;font-size:25px;line-height:1.15;margin:4px 0 6px}
+.dk-it .meta{font-size:15px;color:var(--ink2)}
+/* portada: cuando la nota principal lleva un gráfico, se muestra entero y centrado, sin bandas */
+@media(min-width:761px){.lead>a:has(.ph.fit){min-height:0;align-self:center}.lead>a .ph.fit{position:relative;inset:auto;aspect-ratio:16/9}}
+/* ── Casa & Coast ── */
+.ccw{font-family:var(--pf);font-weight:900;color:var(--ink);white-space:nowrap;letter-spacing:0;text-transform:none}
+.ccw .em{display:inline-block;width:.74em;height:.74em;margin:0 .16em;vertical-align:-.1em}
+.eb .ccw{font-size:1.05em}
+.cc{position:relative;margin:0 0 64px;padding:36px 40px 26px;border-radius:18px;background:linear-gradient(180deg,#FFFFFF 0%,#FBF4E6 100%);border:1px solid rgba(201,150,60,.4);box-shadow:0 18px 40px -30px rgba(14,27,48,.5)}
+.cc-hd{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px 38px;align-items:end;padding-bottom:20px;border-bottom:2px solid var(--ink)}
+.cc-t{font-size:60px;line-height:1}.cc-t .em{width:.66em;height:.66em;margin:0 .2em;vertical-align:-.04em}
+.cc-hd p{font-size:18px;color:var(--ink2);max-width:520px;padding-bottom:4px}
+.cc-r{display:flex;flex-direction:column;align-items:flex-end;gap:14px;padding-bottom:4px}
+.cc-sel{display:flex;gap:24px}
+.cc-sel button{white-space:nowrap;font-family:var(--bb);font-size:21px;letter-spacing:.16em;line-height:1.1;background:none;border:0;border-bottom:3px solid transparent;padding:12px 2px 1px;color:var(--mut)}
+.cc-sel button.on{color:var(--coral-d);border-bottom-color:var(--coral-d)}
+.cc-sel button[data-cc=cayos].on{color:var(--keys);border-bottom-color:var(--keys)}
+.cc-more{font-family:var(--bb);font-size:18px;letter-spacing:.16em;color:var(--ink);background:none;border:0;border-bottom:2px solid var(--gold);padding:0 0 2px;white-space:nowrap}
+.cc-b{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:36px;margin-top:26px;align-items:start}
+.cc-f .ph{aspect-ratio:16/9;background:#0E1B30}
+.cc-f .k,.cc-it .k{font-family:var(--bb);font-size:16px;letter-spacing:.18em;color:#8F6217}
+.cc-f .k{display:block;margin-top:16px}
+.cc-f h3{font-family:var(--pf);font-weight:900;font-size:32px;line-height:1.12;margin:4px 0 8px}
+.cc-f p{font-size:18px;color:var(--ink2);margin-bottom:8px}
+.cc-f .meta,.cc-it .meta{font-size:15px;color:var(--ink2)}
+.cc-b.one{grid-template-columns:1fr}
+.cc-b.one .cc-f{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:36px;align-items:center}
+.cc-b.one .cc-f .k{margin-top:0}.cc-b.one .cc-f h3{font-size:36px}
+.cc-it{display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;align-items:center;padding:15px 0;border-bottom:1px solid rgba(201,150,60,.38)}
+.cc-it:first-child{padding-top:0}.cc-it:last-child{border-bottom:0;padding-bottom:0}
+.cc-it.x{display:none}
+.cc-it .ph{aspect-ratio:16/9;border-radius:8px;background:#0E1B30}
+.cc-it h4{font-family:var(--pf);font-weight:900;font-size:21px;line-height:1.18;margin:3px 0 4px}
+.cc-ft{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:22px;padding-top:14px;border-top:1px solid rgba(201,150,60,.38)}
+.cc-ft small{font-size:15px;color:var(--mut)}
+.cc-mb{font-family:var(--bb);font-size:19px;letter-spacing:.16em;color:var(--ink);background:none;border:1.5px solid rgba(14,27,48,.28);border-radius:999px;padding:11px 26px 8px;white-space:nowrap;transition:background .15s,color .15s}
+.cc-mb:hover{background:var(--ink);color:#fff}
+@media(max-width:1020px){.cc-hd{grid-template-columns:minmax(0,1fr) auto}.cc-hd p{grid-column:1/-1;grid-row:2;max-width:none}.cc-t{font-size:52px}}
+@media(max-width:760px){
+  .cc{padding:24px 18px 20px;margin-bottom:48px}
+  .cc-hd{grid-template-columns:1fr;gap:12px;padding-bottom:14px}.cc-hd p{grid-row:auto;font-size:17px;padding:0}
+  .cc-t{font-size:42px}
+  .cc-r{flex-direction:row;justify-content:space-between;align-items:flex-end;width:100%;padding:0}
+  .cc-sel{gap:16px}.cc-sel button{font-size:18px;letter-spacing:.13em;padding:14px 3px 3px;min-width:48px}.cc-more{font-size:15px;letter-spacing:.12em}
+  .cc-b,.cc-b.one .cc-f{grid-template-columns:1fr;gap:20px;margin-top:20px}.cc-b.one .cc-f{margin-top:0;gap:0}
+  .cc-b.one .cc-f .k{margin-top:16px}
+  .cc-f h3,.cc-b.one .cc-f h3{font-size:26px}.cc-f p{font-size:17px}
+  .cc-it{grid-template-columns:118px minmax(0,1fr);gap:14px;padding:13px 0}.cc-it h4{font-size:18.5px}
+  .cc-ft{flex-direction:column-reverse;align-items:stretch;text-align:center;gap:14px}.cc-mb{align-self:center}
+}
 /* ── hamaca mood ── */
 .hm{position:relative;overflow:hidden;border-radius:14px;padding:46px 46px 42px;margin-bottom:64px;background:linear-gradient(135deg,#FFE3D3 0%,#FFEDE2 45%,#FFF6EC 100%);box-shadow:0 12px 25px -18px rgba(201,58,37,.55)}
 .hm-g{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,.95fr);gap:32px;align-items:stretch}
 .hm-a{display:flex;flex-direction:column;gap:16px;justify-content:center}
 .hm-t{font-family:var(--pf);font-weight:900;font-size:56px;line-height:.95}
+.hm-t em{position:relative;display:inline-block;padding-bottom:.16em}
+.hm-t em::after{content:"";position:absolute;left:.04em;right:.02em;bottom:-.04em;height:.2em;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 24' preserveAspectRatio='none'%3E%3Cpath d='M3 3 Q100 30 197 3' fill='none' stroke='%23C9963C' stroke-width='2.2' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3Cpath d='M22 8.5 Q100 26 178 8.5' fill='none' stroke='%23C9963C' stroke-opacity='.45' stroke-width='1.2' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+.hm-t .sol{background:radial-gradient(circle at 36% 30%,#FFE3A1 0%,#FFC24D 26%,#FF8A3D 62%,#FF4D35 100%);box-shadow:0 0 .16em rgba(255,150,70,.6),0 0 .46em rgba(255,194,77,.38)}
+.dk-vt .dkw em{position:relative;display:inline-block;padding-bottom:.14em}
+.dk-vt .dkw em::after{content:"";position:absolute;left:.02em;right:.02em;bottom:-.02em;height:.14em;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 16' preserveAspectRatio='none'%3E%3Cpath d='M2 6 q12.25 -6 24.5 0 t24.5 0 t24.5 0 t24.5 0 t24.5 0 t24.5 0 t24.5 0 t24.5 0' fill='none' stroke='%231F7FA0' stroke-width='2' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3Cpath d='M26 13 q12.25 -5 24.5 0 t24.5 0 t24.5 0 t24.5 0 t24.5 0 t24.5 0' fill='none' stroke='%231F7FA0' stroke-opacity='.4' stroke-width='1.2' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") no-repeat center/100% 100%}
+.dk-vt .pil{box-shadow:.012em .02em .03em rgba(60,40,20,.35);background:linear-gradient(180deg,rgba(255,255,255,.35) 0 5%,transparent 5% 16%,#EAD6A6 16% 20.5%,#C9A768 20.5% 22%,#EAD6A6 22% 26%,transparent 26% 100%),linear-gradient(90deg,#5E3F25 0%,#B58C59 42%,#C79F6C 52%,#6E4C2B 100%)}
 .hm-a p{font-size:19px;color:var(--ink2)}
 .hm-more{align-self:flex-start;font-family:var(--bb);font-size:20px;letter-spacing:.16em;color:var(--coral-d);border-bottom:2px solid var(--coral-d);padding-bottom:3px;background:none;border-top:0;border-left:0;border-right:0}
 .hm-big{position:relative;display:block;min-height:380px;border-radius:12px;overflow:hidden;box-shadow:0 11px 20px -13px rgba(14,27,48,.6);background:#E8D7C6}
@@ -203,7 +306,7 @@ main.wrap{padding-top:4px;padding-bottom:40px}
 .waves{position:absolute;left:0;bottom:0;width:100%;height:140px;opacity:.5}
 
 /* ── desde la app ── */
-.apps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:64px}
+.apps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-bottom:64px}
 .app{position:relative;display:flex;flex-direction:column;gap:12px;padding:24px 24px 20px;border-radius:12px;background:#fff;border:1px solid rgba(14,27,48,.08);box-shadow:0 9px 17px -14px rgba(14,27,48,.55);overflow:hidden}
 .app:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--c)}
 .app .hd{display:flex;align-items:center;gap:12px}
@@ -254,7 +357,9 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 
 /* ── teléfono ── */
 @media (max-width:1240px){.dl{display:none}}
-@media (max-width:1000px){
+@media (min-width:1081px){.hdr-in{gap:12px}.mast{gap:12px}.navr{gap:10px}.hm-pill,.dk-pill{padding-left:13px;padding-right:13px}.lng button{padding-left:9px;padding-right:9px}.dl{padding-left:11px;padding-right:11px}.hm-pill,.dk-pill{padding-left:11px;padding-right:11px}}
+@media (max-width:370px){.tab{font-size:15px!important}.hm-pill b,.dk-pill b{font-size:13.5px!important}}
+@media (max-width:1080px){
   .hdr-in{flex-wrap:wrap;row-gap:4px}
   .navr{order:2;margin-left:auto}.navr .div{display:none}
   .tabs{order:3;width:100%;margin-left:0;gap:6px;border-top:1px solid var(--line);padding-top:4px}
@@ -277,7 +382,11 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
   .hz{height:8px}.hz:before{top:4px}.hz:after{display:none}
   .tabs{justify-content:space-between}
   .tab{font-size:19px;padding:7px 4px 5px}
-  .tabs .hm-pill{margin-left:0}
+  .tabs .hm-pill,.tabs .dk-pill{margin-left:0}
+  .tabs{overflow-x:auto;scrollbar-width:none;gap:2px}.tabs::-webkit-scrollbar{display:none}.tabs>*{flex:none}
+  .tab{font-size:16px;letter-spacing:.07em;padding:7px 2px 5px}
+  .hm-pill,.dk-pill{padding:7px 2px 5px;background:none;border:0;border-bottom:2px solid transparent;border-radius:0;box-shadow:none}.hm-pill b,.dk-pill b{font-size:14.5px}
+  .hm-pill.on,.dk-pill.on{background:none;border-bottom-color:currentColor}.hm-pill.on{color:var(--coral-d)}.dk-pill.on{color:#0B5C7A}
   .lng{padding:2px}.lng button{padding:5px 9px;font-size:13px}
   .info-in{height:42px}
   .wxb{height:32px;margin-right:10px;padding:0 10px 0 8px;gap:6px}.wxb svg.wi{width:20px;height:20px}.wxb b{font-size:16px}.wxb .wl{display:none}
@@ -290,6 +399,7 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
   .wx-d:last-child{border-bottom:0}
   .wx-d .dd{width:62px;text-align:left}
   .hm-pill{padding:5px 13px}.hm-pill b{font-size:16.5px}
+  .dk-pill{padding:5px 12px}.dk-pill b{font-size:16.5px}
   .brk{margin-top:12px;gap:10px;padding:8px 8px 8px 12px}.brk-ago,.brk-sep{display:none}.brk-l{font-size:17px}.brk-t{font-size:15px}.brk-go{font-size:16px}
   .temas{grid-auto-columns:max-content;gap:8px;margin:14px -16px 24px;padding:0 16px 4px}
   .tema{flex-direction:row;align-items:center;gap:9px;padding:7px 14px 7px 7px;border-radius:999px}
@@ -300,16 +410,103 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
   .grid4,.vids{grid-template-columns:1fr}
   .apps{grid-template-columns:1fr 1fr;gap:12px}.app{padding:16px 14px 14px;gap:8px}.app .hd{flex-direction:column;align-items:flex-start;gap:8px}.app .ic{width:38px;height:38px}.app .hd b{font-size:17px}.app h4{font-size:17px}.app .go{font-size:15px}
   .sh{flex-wrap:wrap}.sh h3{font-size:26px;white-space:nowrap}
+  .dk-one .dk-it h4{font-size:26px}.band .l b{font-size:22px}.band .l b em{display:block}
   .hm{padding:30px 22px}.hm-g{grid-template-columns:1fr}.hm-t{font-size:46px}.hm-big{min-height:300px}
+  .dk{grid-template-columns:1fr}.dk-post{min-height:0;flex-direction:row;flex-wrap:wrap;justify-content:space-between;padding:22px 20px}.dk-post .dk-vt{min-height:0;width:auto;font-size:46px;flex:none}.dk-post .dk-vt>.dkw{position:static;transform:none}.dk-cond{flex-direction:row;flex-wrap:wrap}.dk-cond span{flex:1 1 28%;flex-direction:column;align-items:flex-start;gap:4px;padding:8px 10px}.dk-cond b{font-size:18px;white-space:nowrap}.dk-post .dk-wv{height:50px}.dk-main{padding:20px 18px}.dk-hd{flex-direction:column;align-items:flex-start}.dk-it{grid-template-columns:120px minmax(0,1fr);gap:14px}.dk-it h4{font-size:20px}
   .nl{padding:32px 22px 0}.nl-a h3{font-size:34px}.nl-sp{margin:30px -22px 0;padding:16px 22px}
   .band{padding:26px 22px}
   .ft{grid-template-columns:1fr}
   .fb{flex-direction:column}
 }
+.mb{display:flex;justify-content:center;margin:-36px 0 64px}
+.mb button,.dk-mb{font-family:var(--bb);font-size:19px;letter-spacing:.16em;color:var(--ink);background:none;border:1.5px solid rgba(14,27,48,.28);border-radius:999px;padding:11px 26px 8px;transition:background .15s,color .15s}
+.mb button:hover{background:var(--ink);color:#fff}
+.dk-mb{display:block;margin:14px auto 0;color:#0B5C7A;border-color:rgba(11,92,122,.4)}.dk-mb:hover{background:#0B5C7A;color:#fff}
+.dk-it.x{display:none}
+.hm-pg{display:none}
+@media(min-width:761px){
+  .hm-s a{display:none}.hm-s a.on{display:flex}
+  .hm-s.dn a.on{animation:hmDn .38s cubic-bezier(.2,.7,.2,1) both}.hm-s.up a.on{animation:hmUp .38s cubic-bezier(.2,.7,.2,1) both}
+  .hm-s a.on+a.on{animation-delay:.05s}
+  .hm-pg{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:2px;font-family:var(--bb);font-size:17px;letter-spacing:.18em;color:var(--coral-d)}
+  .hm-pg button{width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(201,58,37,.4);background:rgba(255,255,255,.6);color:var(--coral-d);display:grid;place-items:center;transition:background .15s,color .15s}
+  .hm-pg button:hover:not(:disabled){background:var(--coral-d);color:#fff}
+  .hm-pg button:disabled{opacity:.3;cursor:default}
+}
+@keyframes hmDn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes hmUp{from{opacity:0;transform:translateY(-26px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hm-s a.on{animation:none!important}}
+@media(max-width:760px){
+  .mb{margin:-8px 0 48px}
+  .hm-s{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -22px;padding:2px 22px 10px;scrollbar-width:none;justify-content:flex-start}
+  .hm-s::-webkit-scrollbar,#dkList.sw::-webkit-scrollbar{display:none}
+  .hm-s a{flex:0 0 82%;scroll-snap-align:center}
+  #dkList.sw{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:14px -18px 0;padding:0 18px 8px;scrollbar-width:none}
+  #dkList.sw .dk-it,#dkList.sw .dk-it.x{display:flex;flex-direction:column;align-items:stretch;gap:10px;flex:0 0 78%;scroll-snap-align:center;padding:0;border:0}
+  #dkList.sw .dk-it .ph{aspect-ratio:16/10}
+  .dk-mb{display:none}
+  .dk{grid-template-columns:minmax(0,1fr)}.dk-main,.dk-post{min-width:0}
+}
+.sb{width:38px;height:38px;border-radius:50%;border:1px solid rgba(14,27,48,.2);background:#fff;color:var(--ink);display:grid;place-items:center;flex:none}
+.sb:hover{background:var(--ink);color:#fff}
+.sx{position:fixed;inset:0;z-index:300;background:rgba(14,27,48,.5);backdrop-filter:blur(3px);display:none}
+.sx.on{display:block}
+.sx-p{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(760px,100%);max-height:100%;display:flex;flex-direction:column;background:#FFFCF7;border-radius:0 0 18px 18px;box-shadow:0 30px 60px -30px rgba(14,27,48,.7);animation:sxIn .22s ease both}
+@keyframes sxIn{from{transform:translate(-50%,-14px);opacity:0}to{transform:translate(-50%,0);opacity:1}}
+.sx-h{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:2px solid var(--ink)}
+.sx-h svg{flex:none;color:var(--coral-d)}
+.sx-h input{flex:1;min-width:0;border:0;background:none;outline:0;font-family:var(--pf);font-weight:700;font-size:24px;color:var(--ink)}
+.sx-h input::placeholder{color:rgba(14,27,48,.35)}
+.sx-h input::-webkit-search-cancel-button{display:none}
+.sx-h button{border:0;background:none;font-family:var(--bb);font-size:17px;letter-spacing:.16em;color:var(--mut);padding:6px 2px}
+.sx-n{font-family:var(--bb);font-size:15px;letter-spacing:.18em;color:var(--mut);padding:12px 20px 4px}
+.sx-r{overflow-y:auto;padding:0 20px 14px;overscroll-behavior:contain}
+.sx-r a{display:grid;grid-template-columns:84px minmax(0,1fr);gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(14,27,48,.1)}
+.sx-r a:last-child{border-bottom:0}
+.sx-r img{width:84px;height:64px;border-radius:8px;object-fit:cover;background:#EEE6DA}
+.sx-r .eb{font-size:14px}
+.sx-r b{display:block;font-family:var(--pf);font-weight:700;font-size:18px;line-height:1.22;margin-top:2px}
+.sx-r mark{background:rgba(255,194,77,.5);color:inherit;border-radius:2px;padding:0 1px}
+.sx-e{padding:8px 0 2px;font-size:17px;color:var(--ink2)}
+@media(max-width:760px){.sb{width:32px;height:32px}.navr{gap:8px}.lng button.on{display:none}.lng button{padding:5px 8px}.sx-p{border-radius:0;height:100%}.sx-h input{font-size:20px}.sx-r b{font-size:16.5px}}
+@media(min-width:761px) and (max-width:1380px){.navr{gap:8px}.navr .div{display:none}.sb{width:34px;height:34px}.dl{padding-left:12px;padding-right:12px;font-size:14px}.tab{padding-left:8px;padding-right:8px}}
+/* ── agenda ── */
+.ag{margin:8px 0 60px;padding:26px 30px 22px;border-radius:6px;background:#FFFDF8;border-top:4px double var(--ink);border-bottom:1px solid rgba(14,27,48,.25)}
+.ag-h{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid rgba(14,27,48,.18)}
+.ag-t{font-family:var(--pf);font-weight:900;font-style:italic;font-size:46px;line-height:1;letter-spacing:-.01em;color:var(--ink)}
+.ag-t:after{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--coral);margin-left:8px;vertical-align:baseline}
+.ag-tabs{display:flex;gap:22px}
+.ag-tabs button{border:0;background:none;padding:4px 0 5px;font-family:var(--bb);font-size:20px;letter-spacing:.16em;color:var(--mut);border-bottom:3px solid transparent}
+.ag-tabs button.on{color:var(--ink);border-bottom-color:var(--coral)}
+.ag-l{display:grid;grid-template-columns:1fr 1fr;column-gap:44px}
+.ag-r{display:grid;grid-template-columns:74px minmax(0,1fr);gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid rgba(14,27,48,.12)}
+.ag-d{text-align:center;border-right:1px solid rgba(14,27,48,.18);padding-right:14px;line-height:1}
+.ag-d i{display:block;font-style:normal;font-family:var(--bb);font-size:15px;letter-spacing:.18em;color:var(--coral-d)}
+.ag-d b{display:block;font-family:var(--pf);font-weight:900;font-size:34px;color:var(--ink);margin:3px 0 2px;white-space:nowrap}
+.ag-d b.rg{font-size:23px;margin:6px 0 5px}
+.ag-d i.w{font-size:12.5px;letter-spacing:.08em;white-space:nowrap}
+.ag-d u{display:block;text-decoration:none;font-family:var(--bb);font-size:14px;letter-spacing:.2em;color:var(--mut)}
+.ag-x .k{display:block;font-family:var(--bb);font-size:14.5px;letter-spacing:.16em;color:var(--teal)}
+.ag-x .k em{font-style:normal;color:#1E7A46;margin-right:8px}
+.ag-x h4{font-family:var(--pf);font-weight:700;font-size:20px;line-height:1.2;margin:2px 0 3px}
+.ag-x p{font-size:15px;color:var(--ink2);line-height:1.35}
+.ag-x p b{font-weight:700;color:var(--ink)}
+.ag-e{grid-column:1/-1;padding:18px 0;font-size:17px;color:var(--ink2)}
+.ag-f{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:16px}
+.ag-mb{font-family:var(--bb);font-size:18px;letter-spacing:.16em;color:var(--ink);background:none;border:1.5px solid rgba(14,27,48,.28);border-radius:999px;padding:9px 22px 6px}
+.ag-mb:hover{background:var(--ink);color:#fff}
+.ag-f a{font-family:var(--bb);font-size:19px;letter-spacing:.16em;color:var(--coral-d);border-bottom:2px solid currentColor;padding-bottom:2px;margin-left:auto}
+@media(max-width:900px){.ag-l{grid-template-columns:1fr}}
+@media(max-width:760px){.ag{padding:20px 16px 18px;margin:0 0 44px}.ag-t{font-size:38px}.ag-tabs{gap:18px}.ag-tabs button{font-size:18px}.ag-r{grid-template-columns:62px minmax(0,1fr);gap:12px;padding:13px 0}.ag-d b{font-size:29px}.ag-d b.rg{font-size:19px}.ag-x h4{font-size:18px}.ag-f a{font-size:17px}}
 </style>
 </head>
 <body>
 
+<div class="sx" id="sx" role="dialog" aria-modal="true" aria-label="Buscar"><div class="sx-p">
+  <div class="sx-h"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13.2 13.2L18 18"/></svg><input id="sxQ" type="search" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"><button type="button" id="sxX"></button></div>
+  <div class="sx-n" id="sxN"></div>
+  <div class="sx-r" id="sxR"></div>
+</div></div>
 <header class="hdr">
   <div class="wrap hdr-in">
     <a class="mast" href="/noticias" id="home" aria-label="Miami Magic News">
@@ -320,11 +517,13 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
       <button class="tab on" data-s="miami" aria-pressed="true">MIAMI</button>
       <button class="tab" data-s="cayos" data-t="cayos" aria-pressed="false">LOS CAYOS</button>
       <button class="hm-pill" id="hmPill" aria-pressed="false"><b><span data-t="hamaca">Hamaca</span> <em>M<span class="sol" role="img" aria-label="o"></span>od</em></b></button>
+      <button class="dk-pill" id="dkPill" aria-pressed="false"><b id="dkPillW"></b></button>
     </nav>
     <div class="navr">
       <span class="div"></span>
+      <button class="sb" id="sb" type="button" aria-label="Buscar"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13.2 13.2L18 18"/></svg></button>
       <span class="lng"><button data-l="es">ES</button><button data-l="en">EN</button></span>
-      <a class="dl" href="https://www.miamimagicdirectory.com/descargar" data-t="descarga">Descarga la app</a>
+      <a class="dl" href="https://www.miamimagicdirectory.com/descargar" aria-label="Descarga la app de Miami Magic"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 7L8 10.5 11.5 7M3 13.5h10"/></svg><span data-t="descarga">La app</span></a>
     </div>
   </div>
   <div class="wrap"><div class="hz"></div></div>
@@ -357,8 +556,22 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 
   <div class="sh"><h3 data-t="mas">MÁS DE LA SEMANA</h3></div>
   <div class="grid4" id="mas"></div>
+  <div class="mb" id="masBtn" style="display:none"><button type="button"></button></div>
+  <div id="otros"></div>
 
   <div id="vidBox"></div>
+
+  <section class="ag" id="ag" aria-label="Agenda" style="display:none">
+    <div class="ag-h">
+      <h3 class="ag-t"><span id="agT">Agenda</span></h3>
+      <div class="ag-tabs" role="tablist">
+        <button type="button" class="on" data-ag="sem" role="tab" aria-selected="true"></button>
+        <button type="button" data-ag="prox" role="tab" aria-selected="false"></button>
+      </div>
+    </div>
+    <div class="ag-l" id="agL"></div>
+    <div class="ag-f"><button type="button" class="ag-mb" id="agMb" style="display:none"></button><a id="agGo" href="/?go=week"></a></div>
+  </section>
 
   <section class="hm" id="hm" aria-label="Hamaca Mood">
     <svg class="waves" viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 C 200 60, 400 120, 600 90 S 1000 60, 1200 92" fill="none" stroke="#F7B9A0" stroke-width="2"/><path d="M0 112 C 220 84, 420 140, 620 112 S 1010 84, 1200 114" fill="none" stroke="#F9CDB9" stroke-width="2"/></svg>
@@ -373,6 +586,33 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
     </div>
   </section>
 
+  <section class="dk" id="dk" aria-label="El Muelle">
+    <div class="dk-post">
+      <div class="dk-vt" id="dkVt"></div>
+      <div class="dk-cond" id="dkCond"></div>
+      <a class="dk-app" href="https://www.miamimagicapp.com/?go=water" data-t="dkapp">BOTES Y PESCA EN LA APP →</a>
+      <svg class="dk-wv" viewBox="0 0 300 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 50 28, 100 52, 150 40 S 250 28, 300 40 V90 H0z" fill="#9CCBD8"/><path d="M0 58 C 60 46, 110 70, 160 58 S 250 46, 300 58 V90 H0z" fill="#7FB9CB"/></svg>
+    </div>
+    <div class="dk-main">
+      <div class="dk-hd"><p data-t="dkdesc">Para pescadores, dueños de botes y amantes del mar, de Miami a los Cayos: reglas, consejos, lugares, eventos y viajes por mar.</p><button class="dk-more" id="dkMore" data-t="dkmore">TODO EL MUELLE →</button></div>
+      <div id="dkList"></div>
+      <button type="button" class="dk-mb" id="dkMb" style="display:none"></button>
+    </div>
+  </section>
+
+  <section class="cc" id="cc" aria-label="Casa &amp; Coast" style="display:none">
+    <div class="cc-hd">
+      <h2 class="cc-t" id="ccT"></h2>
+      <p data-t="ccdesc"></p>
+      <div class="cc-r">
+        <div class="cc-sel" id="ccSel" role="tablist"><button type="button" data-cc="miami" role="tab">MIAMI</button><button type="button" data-cc="cayos" role="tab" data-t="cayos">LOS CAYOS</button></div>
+        <button class="cc-more" id="ccMore" data-t="ccmore"></button>
+      </div>
+    </div>
+    <div class="cc-b" id="ccB"></div>
+    <div class="cc-ft"><small data-t="ccnota"></small><button type="button" class="cc-mb" id="ccMb" style="display:none"></button></div>
+  </section>
+
   <div class="sh"><h3 data-t="desde">DESDE LA APP</h3><span data-t="desde2">Las noticias de cada sección</span></div>
   <div class="apps" id="apps"></div>
 
@@ -382,7 +622,7 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
         <span class="k" data-t="correo">EN TU CORREO</span>
         <h3 data-h="nltit">Miami Magic <em>News</em>, en tu correo.</h3>
         <ul>
-          <li><i></i><span data-t="nl1">Lo que te toca de la semana, en cinco minutos</span></li>
+          <li><i></i><span data-t="nl1">Lo que hay que saber de la semana, en cinco minutos</span></li>
           <li><i></i><span data-t="nl2">La cartelera de Miami y los Cayos</span></li>
           <li><i></i><span data-t="nl3">Un plan para el fin de semana, de Hamaca Mood</span></li>
         </ul>
@@ -406,18 +646,18 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 <footer>
   <div class="wrap ft">
     <div>
-      <a class="logo" href="/"><img src="/miami-magic-icon-192.png" alt="" style="width:40px;height:40px;border-radius:10px"><span><b style="font-size:26px">MIAMI MAGIC</b><em data-t="slogan">Donde vive Miami.</em></span></a>
+      <a class="logo" href="/"><img src="/miami-magic-icon-192.png" alt="" style="width:40px;height:40px;border-radius:10px"><span><b style="font-size:26px">MIAMI MAGIC</b><em data-t="slogan" style="margin-left:10px">Donde vive Miami.</em></span></a>
       <div class="soc">
         <a href="https://instagram.com/miamimagicapp" aria-label="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E1B30" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="#0E1B30"/></svg></a>
         <a href="https://www.youtube.com/@MiamiMagicApp" aria-label="YouTube" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E1B30" stroke-width="1.6" stroke-linejoin="round"><path d="M3.5 8.5c0-1.7 1.3-3 3-3.1C8.6 5.2 10.3 5 12 5s3.4.2 5.5.4c1.7.1 3 1.4 3 3.1v7c0 1.7-1.3 3-3 3.1-2.1.2-3.8.4-5.5.4s-3.4-.2-5.5-.4c-1.7-.1-3-1.4-3-3.1z"/><path d="M10.2 9.3l4.6 2.7-4.6 2.7z" fill="#0E1B30"/></svg></a>
         <a href="https://www.facebook.com/share/1E15LuCgQr/" aria-label="Facebook" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E1B30" stroke-width="1.6" stroke-linejoin="round"><path d="M14.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H9v3h2.5V21"/></svg></a>
       </div>
     </div>
-    <div><h5>MIAMI MAGIC NEWS</h5><a class="l" href="#" data-sc="miami">Miami</a><a class="l" href="#" data-sc="cayos" data-t="cayosT">Los Cayos</a><a class="l" href="#" data-sc="hamaca"><span class="hmw" style="font-weight:700"><span data-t="hamaca">Hamaca</span> <em>M<span class="sol" role="img" aria-label="o"></span>od</em></span></a></div>
+    <div><h5>MIAMI MAGIC NEWS</h5><a class="l" href="#" data-sc="miami">Miami</a><a class="l" href="#" data-sc="cayos" data-t="cayosT">Los Cayos</a><a class="l" href="#" data-sc="muelle" id="dkFoot"></a><a class="l" href="#" data-sc="casa" id="ccFoot"></a><a class="l" href="#" data-sc="hamaca"><span class="hmw" style="font-weight:700"><span data-t="hamaca">Hamaca</span> <em>M<span class="sol" role="img" aria-label="o"></span>od</em></span></a></div>
     <div><h5 data-t="redaccion">LA REDACCIÓN</h5><a class="l" href="mailto:contacto@miamimagicapp.com?subject=C%C3%B3mo%20trabajan" data-t="comotrab">Cómo trabajamos</a><a class="l" href="mailto:contacto@miamimagicapp.com?subject=Correcci%C3%B3n" data-t="correc">Correcciones</a><a class="l" href="mailto:contacto@miamimagicapp.com?subject=Noticia" data-t="envia">Envíanos una noticia</a><a class="l" href="mailto:contacto@miamimagicapp.com?subject=Patrocinio%20Miami%20Magic%20News" data-t="anun">Anúnciate con nosotros</a></div>
     <div><h5>MIAMI MAGIC</h5><a class="l" href="/" data-t="laapp">La app</a><a class="l" href="https://www.miamimagicdirectory.com" data-t="directorio">El directorio</a><a class="l" href="/privacy.html" data-t="privacidad">Privacidad</a><a class="l" href="/privacy.html" data-t="terminos">Términos</a></div>
   </div>
-  <div class="wrap fb"><span data-h="firma">Edita <b>Yolaxys Alvarez</b>, productora con un Emmy y veinte años en televisión en español</span><span>© <span id="yr">2026</span> Miami Magic · YY Entertainment</span><span data-t="fotos">Fotos © Miami Magic salvo que se indique · contacto@miamimagicapp.com</span></div>
+  <div class="wrap fb"><span data-h="firma"><b>Yolaxys Alvarez</b> · editora, productora y fundadora de Miami Magic</span><span>© <span id="yr">2026</span> Miami Magic · YY Entertainment</span><span data-t="fotos">Fotos © Miami Magic salvo que se indique · contacto@miamimagicapp.com</span></div>
 </footer>
 
 <script>
@@ -426,32 +666,38 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 var SB='https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/', SBK='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
 var Q=new URLSearchParams(location.search);
 if(/^\/news\/?$/.test(location.pathname)&&!Q.get('lang'))Q.set('lang','en');
-var L=(Q.get('lang')||(function(){try{return localStorage.getItem('mm_lang')}catch(e){return null}})()||((navigator.language||'es').slice(0,2)==='en'?'en':'es'));
+var L=(Q.get('lang')||(function(){try{return localStorage.getItem('mm_lang')}catch(e){return null}})()||((navigator.language||'es').slice(0,2)==='en'?'en':'es'));try{if(!localStorage.getItem('mm_lang'))localStorage.setItem('mm_lang',L==='en'?'en':'es')}catch(e){}
 if(L!=='en')L='es';
 var DEMO=Q.get('demo')==='1';
-var ST={scope:Q.get('s')||'miami',tema:Q.get('t')||'todo',hamaca:Q.get('s')==='hamaca'};
-if(ST.hamaca)ST.scope='miami';
+var ST={scope:Q.get('s')||'miami',tema:Q.get('t')||'todo',hamaca:Q.get('s')==='hamaca',muelle:Q.get('s')==='muelle',casa:Q.get('s')==='casa'};
+function SEC(){return ST.hamaca||ST.muelle||ST.casa}
+function isCC(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle}
+if(SEC())ST.scope='miami';
 var DATA={notas:[],videos:[],cifras:[],ultima_hora:null}, EVS=[];
 
 var T={
- es:{ultima:'ÚLTIMA HORA',leer:'LEER',slogan:'Donde vive Miami.',guia:'LA GUÍA',semana:'ESTA SEMANA',descarga:'Descarga la app',cayos:'LOS CAYOS',usa:'EE. UU.',intl:'INTERNACIONAL',hamaca:'Hamaca',tiempo:'EL TIEMPO EN MIAMI',prox5:'Próximos 5 días',cifras:'MIAMI EN CIFRAS',cifras2:'Lo que mueve tu bolsillo',mas:'MÁS DE LA SEMANA',hmdesc:'Lo ligero de la temporada: planes, tradiciones y esas cosas de Miami que se disfrutan sin prisa.',hmmore:'TODO HAMACA MOOD →',desde:'DESDE LA APP',desde2:'Las noticias de cada sección',correo:'EN TU CORREO',nl1:'Lo que te toca de la semana, en cinco minutos',nl2:'La cartelera de Miami y los Cayos',nl3:'Un plan para el fin de semana, de Hamaca Mood',tucorreo:'Tu correo',suscribir:'Suscribirme',nlnote:'Gratis, en español o en inglés. Te das de baja cuando quieras.',presentado:'Presentado por',tunegocio:'TU NEGOCIO AQUÍ',patro:'PATROCINADO',vas2:'Restaurantes, hoteles, playas, eventos y los Cayos, en la app.',cayosT:'Los Cayos',flT:'Florida · EE. UU. · Internacional',redaccion:'LA REDACCIÓN',comotrab:'Cómo trabajamos',correc:'Correcciones',envia:'Envíanos una noticia',anun:'Anúnciate con nosotros',laapp:'La app',directorio:'El directorio',privacidad:'Privacidad',terminos:'Términos',fotos:'Fotos © Miami Magic salvo que se indique · contacto@miamimagicapp.com',
-  lema:'Lo que mueve a <em>Miami.</em>',firma:'Edita <b>Yolaxys Alvarez</b>, productora con un Emmy y veinte años en televisión en español',nltit:'Miami Magic <em>News</em>, en tu correo.',vas:'¿Vas a salir? <em>Donde vive Miami.</em>',
+ es:{ultima:'ÚLTIMA HORA',leer:'LEER',slogan:'Donde vive Miami.',guia:'LA GUÍA',semana:'ESTA SEMANA',descarga:'La app',cayos:'LOS CAYOS',usa:'EE. UU.',intl:'INTERNACIONAL',hamaca:'Hamaca',tiempo:'EL TIEMPO EN MIAMI',prox5:'Próximos 5 días',cifras:'MIAMI EN CIFRAS',cifras2:'Lo que mueve tu bolsillo',mas:'MÁS DE LA SEMANA',hmdesc:'Lo ligero de la temporada: planes, tradiciones y esas cosas de Miami que se disfrutan sin prisa.',hmmore:'TODO HAMACA MOOD →',desde:'DESDE LA APP',desde2:'Las noticias de cada sección',correo:'EN TU CORREO',nl1:'Lo que hay que saber de la semana, en cinco minutos',nl2:'La cartelera de Miami y los Cayos',nl3:'Un plan para el fin de semana, de Hamaca Mood',tucorreo:'Tu correo',suscribir:'Suscribirme',nlnote:'Gratis, en español o en inglés. Te das de baja cuando quieras.',presentado:'Presentado por',tunegocio:'TU NEGOCIO AQUÍ',patro:'PATROCINADO',vas2:'Restaurantes, hoteles, playas, eventos y los Cayos, en la app.',cayosT:'Los Cayos',flT:'Florida · EE. UU. · Internacional',redaccion:'LA REDACCIÓN',comotrab:'Cómo trabajamos',correc:'Correcciones',envia:'Envíanos una noticia',anun:'Anúnciate con nosotros',laapp:'La app',directorio:'El directorio',privacidad:'Privacidad',terminos:'Términos',fotos:'Fotos © Miami Magic salvo que se indique · contacto@miamimagicapp.com',
+  lema:'Lo que mueve a <em>Miami.</em>',firma:'<b>Yolaxys Alvarez</b> · editora, productora y fundadora de Miami Magic',nltit:'Miami Magic <em>News</em>, en tu correo.',vas:'¿Vas a salir? <em>Donde vive Miami.</em>',
   live:'EN VIVO · ACTUALIZADO',min:'min de lectura',lluvia:'lluvia',hace:'Hace',mins:'min',horas:'h',
   mar:'El mar hoy',atard:'Atardecer',hur1:'Temporada de huracanes',hurFalta:'faltan',hurTermina:'días',hurPre:'empieza en',
-  vacioT:'Muy pronto',vacio:'Aquí van a aparecer las noticias de esta sección.',vacioH:'Las historias de Hamaca Mood llegan esta temporada.',
+  vacioT:'Muy pronto',vacio:'Aquí van a aparecer las noticias de esta sección.',vacioH:'Las historias de Hamaca Mood llegan esta temporada.',vacioM:'Las historias de El Muelle llegan esta temporada.',dkapp:'BOTES Y PESCA EN LA APP →',dkdesc:'Para pescadores, dueños de botes y amantes del mar, de Miami a los Cayos: reglas, consejos, lugares, eventos y viajes por mar.',dkmore:'TODO EL MUELLE →',vacioC:'Las notas de Casa & Coast llegan muy pronto.',ccdesc:'Comprar, alquilar, asegurar y cuidar tu casa, de Miami a los Cayos: leyes, impuestos, ayudas y lo que se construye.',ccmore:'TODO CASA & COAST →',ccnota:'La editora de Miami Magic es agente inmobiliaria con licencia en Florida, con Partnership Realty.',agua:'AGUA',olas:'OLAS',viento:'VIENTO',
   nlOk:'¡Listo! Te escribimos el próximo jueves.',nlBad:'Revisa el correo, por favor.',nlErr:'No se pudo guardar. Intenta de nuevo.',enviando:'Enviando…',
   verApp:'VER EN LA APP →',days:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],months:['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE'],
   dayFull:['DOMINGO','LUNES','MARTES','MIÉRCOLES','JUEVES','VIERNES','SÁBADO'],de:'DE'},
- en:{ultima:'BREAKING',leer:'READ',slogan:'Where Miami lives.',guia:'THE GUIDE',semana:'THIS WEEK',descarga:'Get the app',cayos:'THE KEYS',usa:'USA',intl:'INTERNATIONAL',hamaca:'Hammock',tiempo:'MIAMI WEATHER',prox5:'Next 5 days',cifras:'MIAMI BY THE NUMBERS',cifras2:'What moves your wallet',mas:'MORE THIS WEEK',hmdesc:'The lighter side of the season: plans, traditions and the Miami things best enjoyed slowly.',hmmore:'ALL OF HAMMOCK MOOD →',desde:'FROM THE APP',desde2:'News from every section',correo:'IN YOUR INBOX',nl1:'What it means for you this week, in five minutes',nl2:'What\'s on in Miami and the Keys',nl3:'A weekend plan from Hammock Mood',tucorreo:'Your email',suscribir:'Subscribe',nlnote:'Free, in English or Spanish. Unsubscribe anytime.',presentado:'Presented by',tunegocio:'YOUR BUSINESS HERE',patro:'SPONSORED',vas2:'Restaurants, hotels, beaches, events and the Keys, in the app.',cayosT:'The Keys',flT:'Florida · USA · International',redaccion:'THE NEWSROOM',comotrab:'How we work',correc:'Corrections',envia:'Send us a story',anun:'Advertise with us',laapp:'The app',directorio:'The directory',privacidad:'Privacy',terminos:'Terms',fotos:'Photos © Miami Magic unless noted · contacto@miamimagicapp.com',
-  lema:'What moves <em>Miami.</em>',firma:'Edited by <b>Yolaxys Alvarez</b>, Emmy-winning producer with twenty years in Spanish-language television',nltit:'Miami Magic <em>News</em>, in your inbox.',vas:'Heading out? <em>Where Miami lives.</em>',
+ en:{ultima:'BREAKING',leer:'READ',slogan:'Where Miami lives.',guia:'THE GUIDE',semana:'THIS WEEK',descarga:'App',cayos:'THE KEYS',usa:'USA',intl:'INTERNATIONAL',hamaca:'Hammock',tiempo:'MIAMI WEATHER',prox5:'Next 5 days',cifras:'MIAMI BY THE NUMBERS',cifras2:'What moves your wallet',mas:'MORE THIS WEEK',hmdesc:'The lighter side of the season: plans, traditions and the Miami things best enjoyed slowly.',hmmore:'ALL OF HAMMOCK MOOD →',desde:'FROM THE APP',desde2:'News from every section',correo:'IN YOUR INBOX',nl1:'What you need to know this week, in five minutes',nl2:'What\'s on in Miami and the Keys',nl3:'A weekend plan from Hammock Mood',tucorreo:'Your email',suscribir:'Subscribe',nlnote:'Free, in English or Spanish. Unsubscribe anytime.',presentado:'Presented by',tunegocio:'YOUR BUSINESS HERE',patro:'SPONSORED',vas2:'Restaurants, hotels, beaches, events and the Keys, in the app.',cayosT:'The Keys',flT:'Florida · USA · International',redaccion:'THE NEWSROOM',comotrab:'How we work',correc:'Corrections',envia:'Send us a story',anun:'Advertise with us',laapp:'The app',directorio:'The directory',privacidad:'Privacy',terminos:'Terms',fotos:'Photos © Miami Magic unless noted · contacto@miamimagicapp.com',
+  lema:'What moves <em>Miami.</em>',firma:'<b>Yolaxys Alvarez</b> · editor, producer and founder of Miami Magic',nltit:'Miami Magic <em>News</em>, in your inbox.',vas:'Heading out? <em>Where Miami lives.</em>',
   live:'LIVE · UPDATED',min:'min read',lluvia:'rain',hace:'',mins:'min ago',horas:'h ago',
   mar:'The ocean today',atard:'Sunset',hur1:'Hurricane season',hurFalta:'',hurTermina:'days left',hurPre:'starts in',
-  vacioT:'Coming soon',vacio:'This section\'s stories will show up here.',vacioH:'Hammock Mood stories arrive this season.',
+  vacioT:'Coming soon',vacio:'This section\'s stories will show up here.',vacioH:'Hammock Mood stories arrive this season.',vacioM:'Stories from The Dock arrive this season.',dkapp:'BOATING & FISHING IN THE APP →',dkdesc:'For anglers, boat owners and sea lovers, from Miami to the Keys: rules, tips, spots, events and trips by sea.',dkmore:'ALL OF THE DOCK →',vacioC:'Casa & Coast stories arrive very soon.',ccdesc:'Buying, renting, insuring and looking after your home, from Miami to the Keys: laws, taxes, aid programs and what is being built.',ccmore:'ALL OF CASA & COAST →',ccnota:'The editor of Miami Magic is a licensed Florida real estate sales associate with Partnership Realty.',agua:'WATER',olas:'WAVES',viento:'WIND',
   nlOk:'You\'re in! See you next Thursday.',nlBad:'Please check your email.',nlErr:'Couldn\'t save it. Please try again.',enviando:'Sending…',
   verApp:'SEE IT IN THE APP →',days:['SUN','MON','TUE','WED','THU','FRI','SAT'],months:['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'],
   dayFull:['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'],de:''}
 };
 function t(k){return (T[L]&&T[L][k])||T.es[k]||k}
+function hn(s){var K=[];s=String(s).replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,function(m,t,u){K.push([t,u]);return '\u0001'+(K.length-1)+'\u0001'});return hn0(s).replace(/\u0001(\d+)\u0001/g,function(m,i){var k=K[i];return '<a class="lk" href="'+esc(k[1])+'" target="_blank" rel="noopener">'+esc(k[0])+'</a>'})}
+function hn0(s){return esc(s).replace(/(\$\d+(?:[.,]\d+)*(?:\s(?:millones|million))?|\d+(?:[.,]\d+)?%)/g,'<b class="nm">$1</b>')
+  .replace(/\b([A-Za-z0-9-]+\.(?:gov|com|org))\b/g,function(m,d){return '<a class="lk" href="https://www.'+d.toLowerCase()+'" target="_blank" rel="noopener">'+d+'</a>'})
+  .replace(/\b((?:1-)?\d{3}-\d{3}-\d{4})\b/g,'<a class="lk" href="tel:$1">$1</a>')}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function F(o,k){if(!o)return'';var x=o[L]||o.es||{};return k?(x[k]||((o.es||{})[k])||''):x}
 function sv(b,w){return '<svg width="'+(w||30)+'" height="'+(w||30)+'" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+b+'</svg>'}
@@ -465,7 +711,7 @@ var TEMAS=[
  {k:'ciudad',es:['Tu ciudad','Lo que decide el condado'],en:['Your city','What the county decides'],ic:sv('<path d="M4 27h24"/><path d="M7 27V16h4.5v11M13.5 27V8l2.5-3 2.5 3v19M20.5 27V13H25v14"/>')},
  {k:'curioso',es:['Miami curioso','Historia y lo que se habla'],en:['Curious Miami','History and the talk of the town'],ic:sv('<circle cx="14" cy="14" r="8"/><path d="M20 20l7.5 7.5"/><path d="M14 10.5v.2M14 13.5v4"/>')}
 ];
-var TEMA_EB={casa:['TU CASA','YOUR HOME'],bolsillo:['TU BOLSILLO','YOUR WALLET'],calle:['TU CALLE','YOUR STREET'],barrio:['TU BARRIO','YOUR NEIGHBORHOOD'],ciudad:['TU CIUDAD','YOUR CITY'],curioso:['MIAMI CURIOSO','CURIOUS MIAMI']};
+var TEMA_EB={casa:['TU CASA','YOUR HOME'],bolsillo:['TU BOLSILLO','YOUR WALLET'],calle:['TU CALLE','YOUR STREET'],barrio:['TU BARRIO','YOUR NEIGHBORHOOD'],ciudad:['TU CIUDAD','YOUR CITY'],curioso:['MIAMI CURIOSO','CURIOUS MIAMI'],deporte:['DEPORTE','SPORTS'],cultura:['CULTURA','CULTURE'],mar:['EL MAR','THE SEA'],ruta:['EN RUTA','ON THE ROAD'],ciencia:['CIENCIA','SCIENCE'],historia:['HISTORIA','HISTORY']};
 function ai(b){return '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+b+'</svg>'}
 var APPS=[
  {c:'#FF4D35',t:'#C93A25',es:['RESTAURANTES','Lo que abre y lo que cierra esta semana'],en:['RESTAURANTS','What opens and closes this week'],u:'/?go=rest',ic:ai('<path d="M7 3v8a2 2 0 0 0 2 2v8M5 3v5M9 3v5M16 21V3c2.5 1.5 3.5 4 3.5 7.5H16"/>')},
@@ -473,44 +719,89 @@ var APPS=[
  {c:'#1A9FD8',t:'#0B6A96',es:['PLAYAS','El estado del agua y las banderas'],en:['BEACHES','Water conditions and flags'],u:'/?go=beach',ic:ai('<path d="M12 3a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8zM12 11v9"/><path d="M3 21c2 0 2-1 4.5-1s2.5 1 4.5 1 2-1 4.5-1 2.5 1 4.5 1"/>')},
  {c:'#10563C',t:'#10563C',es:['LOS CAYOS','Lo que pasa milla a milla'],en:['THE KEYS','What\'s happening mile by mile'],u:'/?go=keys',ic:ai('<rect x="6" y="3" width="12" height="11" rx="2"/><path d="M12 14v7M9 7h6M10 10h4"/>')},
  {c:'#0E1B30',t:'#0E1B30',es:['REAL ESTATE','El mercado de la semana, explicado'],en:['REAL ESTATE','This week\'s market, explained'],u:'/realestate.html',ic:ai('<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 17l2.5-2.5 2 2L16 14"/>')},
+ {c:'#4E9A3A',t:'#3A7526',es:['PARQUES','Dónde respirar verde esta semana'],en:['PARKS','Where to breathe green this week'],u:'/?go=parks',ic:ai('<path d="M12 3l5 7h-3l4 6H6l4-6H7z"/><path d="M12 16v5"/>')},
+ {c:'#1F7FA0',t:'#0B5C7A',es:['BOTES Y PESCA','Charters, marinas y el mar de hoy'],en:['BOATS & FISHING','Charters, marinas and today\'s sea'],u:'/?go=water',ic:ai('<path d="M3 17h18l-2 3H5z"/><path d="M5 17l2-6h10l2 6"/><path d="M12 11V4l5 4"/>')},
+ {c:'#E07A1F',t:'#A9530C',es:['TRANSPORTE','Tarifas, rutas y horarios'],en:['TRANSIT','Fares, routes and schedules'],u:'/?go=transport',ic:ai('<rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 11h14M8 21l2-4M16 21l-2-4"/><circle cx="9" cy="14" r=".6"/><circle cx="15" cy="14" r=".6"/>')},
+ {c:'#A8324A',t:'#8C2038',es:['ARTE Y MUSEOS','Lo que abre y lo que es gratis'],en:['ART & MUSEUMS','What opens and what\'s free'],u:'/?go=art',ic:ai('<path d="M3 9l9-5 9 5"/><path d="M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 20h18"/>')},
+ {c:'#3F51B5',t:'#2F3E96',es:['ESTADIOS','Partidos y conciertos que llegan'],en:['STADIUMS','Games and concerts coming to town'],u:'/?go=stad',ic:ai('<ellipse cx="12" cy="12" rx="9" ry="6"/><ellipse cx="12" cy="12" rx="4.5" ry="2.6"/><path d="M12 6v3.4M12 14.6V18"/>')},
+ {c:'#E0A21A',t:'#8F6306',es:['NIÑOS Y FAMILIA','Planes para salir con los niños'],en:['KIDS & FAMILY','Plans for a day out with the kids'],u:'/?go=kids',ic:ai('<circle cx="12" cy="9" r="6"/><path d="M10.5 16.500l1.500-1.500 1.500 1.500zM12 16.500V21"/>')},
  {c:'#8B5CF6',t:'#6A3FCF',es:['EVENTOS','Lo que viene y conviene apartar'],en:['EVENTS','What\'s coming and worth saving the date'],u:'/?go=week',ic:ai('<path d="M4 8a2 2 0 0 0 0 4v5h16v-5a2 2 0 0 1 0-4V5H4z"/><path d="M14 5v12" stroke-dasharray="2 2"/>')}
 ];
 
 /* ── fotos y enlaces ── */
-function img(n){return n?(/^https?:|^\//.test(n.foto||'')?n.foto:'/fotos/'+(n.foto||'')):''}
+function img(n){if(!n)return '';var f=(L==='en'&&n.foto_en)||n.foto||'';return /^https?:|^\//.test(f)?f:'/fotos/'+f}
 function href(n){return (L==='en'?'/news/':'/noticias/')+encodeURIComponent(n.id)}
 function mins(n){var c=F(n).cuerpo||[];var w=c.join(' ').split(/\s+/).length;return Math.max(2,Math.round(w/200))}
 var SCL={miami:['MIAMI','MIAMI'],cayos:['LOS CAYOS','THE KEYS'],florida:['FLORIDA','FLORIDA'],usa:['EE. UU.','USA'],internacional:['INTERNACIONAL','INTERNATIONAL']};
 function hmw(){return '<span class="hmw">'+(L==='en'?'Hammock':'Hamaca')+' <em>M<span class="sol" role="img" aria-label="o"></span>od</em></span>'}
-function eb(n){var i=L==='en'?1:0;if(n.hamaca)return hmw();var sc=n.scope||'miami',te=(TEMA_EB[n.tema]||['',''])[i];return '<span class="lg'+(sc==='cayos'?' ky':'')+'">'+esc((SCL[sc]||SCL.miami)[i])+'</span>'+(te?' · '+esc(te):'')}
-function ph(n,cls){var s=img(n);return '<span class="ph '+(cls||'')+'">'+(s?'<img src="'+esc(s)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy">':'')+(n.foto_mm!==false&&s?'<span class="wm">MIAMI MAGIC</span>':'')+'</span>'}
+function dkw(){return L==='en'?'<span class="dkw">The <em>D<span class="ringw"><span class="ring" role="img" aria-label="o"></span></span>ck</em></span>':'<span class="dkw">El <em>Mue<span class="pil" role="img" aria-label="l"></span><span class="pil" role="img" aria-label="l"></span>e</em></span>'}
+function ccw(){return '<span class="ccw" role="img" aria-label="Casa &amp; Coast">Casa<svg class="em" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span>'}
+function eb(n){var i=L==='en'?1:0;if(n.hamaca)return hmw();if(n.muelle)return dkw();if(isCC(n))return ccw();var sc=n.scope||'miami',te=(TEMA_EB[n.tema]||['',''])[i];return '<span class="lg'+(sc==='cayos'?' ky':'')+'">'+esc((SCL[sc]||SCL.miami)[i])+'</span>'+(te?' · '+esc(te):'')}
+function ph(n,cls){var s=img(n);return '<span class="ph '+(cls||'')+(n.foto_fit==='contain'?' fit':'')+'"'+(n.foto_bg?' style="background:'+esc(n.foto_bg)+'"':'')+'>'+(s?'<img src="'+esc(s)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy"'+(n.foto_pos?' style="object-position:'+esc(n.foto_pos)+'"':'')+'>':'')+(n.foto_mm!==false&&s?'<span class="wm">MIAMI MAGIC</span>':'')+'</span>'}
 
 /* ── filtrar ── */
 function list(){
   var a=(DATA.notas||[]).slice().sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
   if(ST.hamaca)return a.filter(function(n){return n.hamaca});
-  a=a.filter(function(n){var sc=n.scope||'miami';return !n.hamaca&&(ST.scope==='cayos'?sc==='cayos':sc!=='cayos')});
+  if(ST.muelle)return a.filter(function(n){return n.muelle});
+  if(ST.casa)return a.filter(isCC);
+  a=a.filter(function(n){var sc=n.scope||'miami';return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)&&(ST.scope==='cayos'?sc==='cayos':sc!=='cayos')});
   if(ST.tema!=='todo')a=a.filter(function(n){return n.tema===ST.tema});
   return a;
 }
+function otros(){
+  var a=(DATA.notas||[]).slice().sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')}).filter(function(n){return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)});
+  var grp=[];
+  if(SEC()){grp.push(['miami',a.filter(function(n){return (n.scope||'miami')!=='cayos'})]);grp.push(['cayos',a.filter(function(n){return n.scope==='cayos'})])}
+  else if(ST.scope==='cayos')grp.push(['miami',a.filter(function(n){return (n.scope||'miami')!=='cayos'})]);
+  else grp.push(['cayos',a.filter(function(n){return n.scope==='cayos'})]);
+  return grp.filter(function(g){return g[1].length});
+}
+function renderCc(){
+  var all=(DATA.notas||[]).filter(isCC).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  var sec=document.getElementById('cc');sec.style.display=all.length?'':'none';
+  document.getElementById('ccT').innerHTML=ccw();document.getElementById('ccFoot').innerHTML=ccw().replace('class="ccw"','class="ccw" style="font-weight:700"');
+  if(ST._ccSc!==ST.scope){ST._ccSc=ST.scope;ST.ccS=ST.scope==='cayos'?'cayos':'miami';ST.ccN=3}
+  document.querySelectorAll('#ccSel button').forEach(function(b){var on=b.dataset.cc===ST.ccS;b.classList.toggle('on',on);b.setAttribute('aria-selected',on?'true':'false')});
+  var a=all.filter(function(n){return ST.ccS==='cayos'?n.scope==='cayos':n.scope!=='cayos'}),b=document.getElementById('ccB'),mb=document.getElementById('ccMb');
+  function k(n){return esc(F(n,'etiqueta')||(L==='en'?'YOUR HOME':'TU CASA'))}
+  if(!a.length){b.className='cc-b one';b.innerHTML=empty(t('vacioC'));mb.style.display='none';return}
+  var n0=a[0],f0=F(n0),r=a.slice(1,13);
+  b.className='cc-b'+(r.length?'':' one');
+  b.innerHTML='<article class="cc-f"><a href="'+href(n0)+'" aria-label="'+esc(f0.titulo)+'">'+ph(n0)+'</a><div><span class="k">'+k(n0)+'</span><h3><a class="hl" href="'+href(n0)+'">'+esc(f0.titulo)+'</a></h3><p>'+esc(f0.bajada||'')+'</p><span class="meta">'+mins(n0)+' '+t('min')+'</span></div></article>'
+   +(r.length?'<div class="cc-l">'+r.map(function(n,i){var f=F(n);return '<article class="cc-it'+(i>=ST.ccN?' x':'')+'"><a class="ph'+(n.foto_fit==='contain'?' fit':'')+'" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'"'+(n.foto_bg?' style="background:'+esc(n.foto_bg)+'"':'')+'>'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+k(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join('')+'</div>':'');
+  mb.style.display=r.length>ST.ccN?'':'none';mb.textContent=(L==='en'?'MORE FROM CASA & COAST':'MÁS DE CASA & COAST')+' ('+(r.length-ST.ccN)+')';
+}
+document.getElementById('ccSel').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;ST.ccS=b.dataset.cc;ST.ccN=3;renderCc()});
+document.getElementById('ccMb').onclick=function(){ST.ccN=12;renderCc()};
+document.getElementById('ccMore').onclick=function(){ST.casa=true;ST.hamaca=false;ST.muelle=false;render();scrollTo({top:0,behavior:'smooth'})};
+function cardW(n){var f=F(n);return '<article class="card wide"><a href="'+href(n)+'">'+ph(n)+'</a><div><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><p>'+esc(f.bajada||'')+'</p><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}
+function card(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}
 function empty(msg){return '<div class="empty"><b>'+t('vacioT')+'</b>'+(msg||t('vacio'))+'</div>'}
 
 function render(){
+  try{setTimeout(renderAg,0)}catch(e){}
   document.documentElement.lang=L;
   document.querySelectorAll('[data-t]').forEach(function(e){e.textContent=t(e.getAttribute('data-t'))});
   document.querySelectorAll('[data-h]').forEach(function(e){e.innerHTML=t(e.getAttribute('data-h'))});
   document.querySelectorAll('.lng button').forEach(function(b){b.classList.toggle('on',b.dataset.l===L)});
-  document.querySelectorAll('.tab').forEach(function(b){var on=!ST.hamaca&&b.dataset.s===ST.scope;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
+  document.querySelectorAll('.tab').forEach(function(b){var on=!SEC()&&b.dataset.s===ST.scope;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
   document.getElementById('hmPill').classList.toggle('on',ST.hamaca);document.getElementById('hmPill').setAttribute('aria-pressed',ST.hamaca?'true':'false');
+  var dp=document.getElementById('dkPill');dp.classList.toggle('on',ST.muelle);dp.setAttribute('aria-pressed',ST.muelle?'true':'false');document.getElementById('dkPillW').innerHTML=dkw();document.getElementById('dkFoot').innerHTML=dkw().replace('class="dkw"','class="dkw" style="font-weight:700"');document.getElementById('dkVt').innerHTML=dkw();
   var a=list(), lead=a.filter(function(n){return n.destacada})[0]||a[0], rest=a.filter(function(n){return n!==lead});
+  var og=(!SEC()&&lead)?otros()[0]:null, XB=og?og[1][0]:null, xky=og&&og[0]==='cayos';
   var lb=document.getElementById('leadBox');
   if(lead){var f=F(lead);
-    lb.innerHTML='<article class="lead"><a href="'+href(lead)+'">'+ph(lead)+'</a><div><span class="eb">'+eb(lead)+'</span><h2><a href="'+href(lead)+'">'+esc(f.titulo)+'</a></h2><p>'+esc(f.bajada||'')+'</p>'
-     +((f.toca&&f.toca.length)?'<div class="toca"><b>'+(L==='en'?'WHAT IT MEANS FOR YOU':'LO QUE TE TOCA')+'</b><ul>'+f.toca.slice(0,3).map(function(x,i){return '<li><i>'+(i+1)+'</i><span>'+esc(x)+'</span></li>'}).join('')+'</ul></div>':'')
-     +'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>';
-  } else lb.innerHTML='<div class="lead" style="grid-template-columns:1fr">'+empty(ST.hamaca?t('vacioH'):'')+'</div>';
-  document.getElementById('mas').innerHTML=rest.length?rest.slice(0,8).map(function(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}).join(''):'';
+    lb.innerHTML='<article class="lead'+(XB?' hb':'')+'"><a href="'+href(lead)+'">'+ph(lead)+'</a><div><span class="eb">'+eb(lead)+'</span><h2><a href="'+href(lead)+'">'+esc(f.titulo)+'</a></h2><p>'+esc(f.bajada||'')+'</p>'
+     +((f.toca&&f.toca.length)?'<div class="toca"><b>'+(L==='en'?'TAKE NOTE':'TOMA NOTA')+'</b><ul>'+f.toca.slice(0,3).map(function(x,i){return '<li><i>'+(i+1)+'</i><span>'+hn(x)+'</span></li>'}).join('')+'</ul></div>':'')
+     +'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>'
+     +(XB?'<a class="xb'+(xky?'':' mi')+'" href="'+href(XB)+'">'+ph(XB)+'<span><span class="eb"><span class="lg'+(xky?' ky':'')+'">'+(xky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI')+'</span></span><b>'+esc(F(XB).titulo)+'</b></span><span class="go">'+(L==='en'?'READ →':'LEER →')+'</span></a>':'');
+  } else lb.innerHTML='<div class="lead" style="grid-template-columns:1fr">'+empty(ST.hamaca?t('vacioH'):ST.muelle?t('vacioM'):ST.casa?t('vacioC'):'')+'</div>';
+  var vk=(ST.hamaca?'h':ST.muelle?'m':ST.casa?'c':ST.scope)+'|'+ST.tema;if(ST._vk!==vk){ST._vk=vk;ST.masN=8}
+  document.getElementById('mas').innerHTML=rest.length?rest.slice(0,ST.masN).map(function(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}).join(''):'';
   document.getElementById('mas').previousElementSibling.style.display=rest.length?'':'none';document.getElementById('mas').style.display=rest.length?'':'none';
+  var mb=document.getElementById('masBtn');mb.style.display=rest.length>ST.masN?'':'none';mb.firstChild.textContent=(L==='en'?'MORE NEWS':'MÁS NOTICIAS')+' ('+(rest.length-ST.masN)+')';
+  document.getElementById('otros').innerHTML=otros().map(function(g){return [g[0],g[1].filter(function(n){return n!==XB})]}).filter(function(g){return g[1].length}).map(function(g){var k=g[0],ky=k==='cayos';return '<div class="sh"><h3 class="'+(ky?'scy':'smi')+'">'+(ky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI')+'</h3><button class="vt" data-go="'+k+'">'+(L==='en'?'SEE ALL →':'VER TODO →')+'</button></div>'+(g[1].length===1?'<div class="grid4 one">'+cardW(g[1][0])+'</div>':'<div class="grid4">'+g[1].slice(0,8).map(card).join('')+'</div>')}).join('');
   // videos
   var v=(DATA.videos||[]).slice(0,3), vb=document.getElementById('vidBox');
   vb.innerHTML=v.length?'<div class="sh"><h3>'+(L==='en'?'ON VIDEO':'EN VIDEO')+'</h3><span>YouTube · Facebook · Instagram</span></div><div class="vids">'+v.map(function(x){return '<a class="vid" href="'+esc(x.url)+'" target="_blank" rel="noopener"><span class="ph">'+(x.thumb?'<img src="'+esc(x.thumb)+'" alt="" loading="lazy">':'')+'<span class="play"><svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="27" fill="rgba(14,27,48,.55)" stroke="#fff" stroke-width="2"/><path d="M23 18l15 10-15 10z" fill="#fff"/></svg></span></span><span class="pl">'+esc((x.plataforma||'').toUpperCase())+'</span><b class="hl">'+esc((x[L]||x.es||''))+'</b></a>'}).join('')+'</div>':'';
@@ -518,10 +809,17 @@ function render(){
   var h=(DATA.notas||[]).filter(function(n){return n.hamaca}).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
   var hb=document.getElementById('hmBig'), hs=document.getElementById('hmS');
   hb.style.gridColumn=h[0]?'':'span 2';
-  if(h[0]){var f0=F(h[0]);hb.innerHTML='<a class="hm-big" href="'+href(h[0])+'">'+(img(h[0])?'<img src="'+esc(img(h[0]))+'" alt="" loading="lazy">':'')+'<span class="sh2"></span><span class="tx"><span class="k">'+esc(F(h[0],'etiqueta')||(L==='en'?'IN SEASON':'DE TEMPORADA'))+'</span><b>'+esc(f0.titulo)+'</b></span><span class="wm">MIAMI MAGIC</span></a>';
-    hs.innerHTML=h.slice(1,3).map(function(n){return '<a href="'+href(n)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'<span><span class="k">'+esc(F(n,'etiqueta')||'HAMACA MOOD')+'</span><b class="hl">'+esc(F(n,'titulo'))+'</b></span></a>'}).join('');
+  if(h[0]){var f0=F(h[0]);hb.innerHTML='<a class="hm-big" href="'+href(h[0])+'">'+(img(h[0])?'<img src="'+esc(img(h[0]))+'" alt="" loading="lazy">':'')+'<span class="sh2"></span><span class="tx"><span class="k">'+esc(F(h[0],'etiqueta')||(L==='en'?'IN SEASON':'DE TEMPORADA'))+'</span><b>'+esc(f0.titulo)+'</b></span>'+(h[0].foto_mm!==false?'<span class="wm">MIAMI MAGIC</span>':'')+'</a>';
+    var hr=h.slice(1,13),hpN=Math.max(1,Math.ceil(hr.length/2));ST.hmP=Math.min(ST.hmP||0,hpN-1);
+    hs.innerHTML=hr.map(function(n,i){return '<a'+(Math.floor(i/2)===ST.hmP?' class="on"':'')+' href="'+href(n)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'<span><span class="k">'+esc(F(n,'etiqueta')||'HAMACA MOOD')+'</span><b class="hl">'+esc(F(n,'titulo'))+'</b></span></a>'}).join('')+(hpN>1?'<div class="hm-pg"><button type="button" data-d="-1" aria-label="'+(L==='en'?'Previous':'Anteriores')+'"'+(ST.hmP===0?' disabled':'')+'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5l5-5 5 5"/></svg></button><span>'+(ST.hmP+1)+' / '+hpN+'</span><button type="button" data-d="1" aria-label="'+(L==='en'?'Next':'Siguientes')+'"'+(ST.hmP>=hpN-1?' disabled':'')+'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5l5 5 5-5"/></svg></button></div>':'');
   } else {hb.innerHTML='<div class="empty" style="height:100%;display:flex;flex-direction:column;justify-content:center"><b>'+t('vacioT')+'</b>'+t('vacioH')+'</div>';hs.innerHTML='';}
   document.getElementById('hmMore').style.display=h.length>3?'':'none';
+  // el muelle
+  var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=4;dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
+  document.getElementById('dkMore').style.display=mu.length>4?'':'none';
+  var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'MORE FROM THE DOCK':'MÁS DE EL MUELLE')+' ('+(mu.length-ST.dkN)+')';
+  renderDk();renderCc();
   // apps
   document.getElementById('apps').innerHTML=APPS.map(function(x){var v=x[L]||x.es;return '<a class="app" style="--c:'+x.c+';--t:'+x.t+'" href="'+x.u+'"><span class="hd"><span class="ic">'+x.ic+'</span><b>'+v[0]+'</b></span><h4 class="hl">'+v[1]+'</h4><span class="go">'+t('verApp')+'</span></a>'}).join('');
   renderLive(); renderBreaking(); renderCifras(); renderWx();
@@ -533,19 +831,21 @@ function renderLive(){
   var m=t('months')[d.getMonth()].slice(0,3);
   var s=t('days')[d.getDay()]+' '+(L==='en'?m+' '+d.getDate():d.getDate()+' '+m);
   var hh=up&&!isNaN(up)?up.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/New_York'}):'';
-  document.getElementById('liveT').textContent=s+' · '+(L==='en'?'LIVE':'EN VIVO')+(hh?' '+hh.toUpperCase():'');
+  var hoy=up&&!isNaN(up)&&up.toLocaleDateString('en-CA',{timeZone:'America/New_York'})===d.toLocaleDateString('en-CA',{timeZone:'America/New_York'});
+  document.getElementById('liveT').textContent=s+(hh&&hoy?' · '+(L==='en'?'UPDATED ':'ACTUALIZADO ')+hh.toUpperCase():'');
 }
 
 /* ── última hora ── */
 function renderBreaking(){
   var u=DATA.ultima_hora, el=document.getElementById('brk');
   var closed=false;try{closed=sessionStorage.getItem('mm_brk')===(u&&(u.desde||u.es))}catch(e){}
-  if(!u||!u.activa||!(u[L]||u.es)||closed||(u.hasta&&new Date(u.hasta)<new Date())){el.classList.remove('on');return}
+  if(!u||!u.activa||!(u[L]||u.es)||closed||(u.hasta&&new Date(u.hasta)<new Date())||(!u.hasta&&u.desde&&Date.now()-new Date(u.desde)>864e5)){el.classList.remove('on');return}
   var txt=esc(u[L]||u.es), link=u.nota?href({id:u.nota}):'#';
   document.querySelector('#brkT span').innerHTML='<b>'+txt+'</b><b>'+txt+'</b>';
   document.getElementById('brkT').href=link;document.getElementById('brkGo').href=link;
   if(u.desde){var m=Math.max(1,Math.round((Date.now()-new Date(u.desde))/60000));document.getElementById('brkAgo').textContent=m<60?(L==='en'?m+' min ago':'Hace '+m+' min'):(L==='en'?Math.round(m/60)+' h ago':'Hace '+Math.round(m/60)+' h')}
   el.classList.add('on');
+  var bt=document.getElementById('brkT'),b1=bt.querySelector('b');bt.classList.remove('fit');if(b1&&b1.offsetWidth-80<=bt.clientWidth)bt.classList.add('fit');
 }
 document.getElementById('brkX').onclick=function(){var u=DATA.ultima_hora;try{sessionStorage.setItem('mm_brk',u&&(u.desde||u.es))}catch(e){}document.getElementById('brk').classList.remove('on')};
 
@@ -590,7 +890,13 @@ function wxIcon(c){
   var storm='<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5B6B82" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 15h10a4 4 0 0 0 0-8 5 5 0 0 0-9.6 1.5A3.3 3.3 0 0 0 7 15z"/><path d="M12.5 15l-2 4h3l-2 4" stroke="#E0A526"/></svg>';
   if(c<=1)return sun; if(c<=48)return cloud; if(c>=95)return storm; return rain;
 }
-var WX=null, WXC=null;
+var WX=null, WXC=null, DK={};
+var DIRS={es:['N','NE','E','SE','S','SO','O','NO'],en:['N','NE','E','SE','S','SW','W','NW']};
+function renderDk(){var el=document.getElementById('dkCond');if(!el)return;var r=[];
+  if(DK.sea!=null)r.push([t('agua'),Math.round(DK.sea)+'°F']);
+  if(DK.wave!=null)r.push([t('olas'),(Math.round(DK.wave*3.281*2)/2)+' ft']);
+  if(DK.wind!=null)r.push([t('viento'),Math.round(DK.wind)+' mph'+(DK.dir!=null?' '+DIRS[L][Math.round(DK.dir/45)%8]:'')]);
+  el.innerHTML=r.map(function(x){return '<span>'+x[0]+' <b>'+x[1]+'</b></span>'}).join('')}
 function renderWx(){
   var now=document.getElementById('wxNow');
   if(WXC){now.innerHTML=wxIcon(WXC.c).replace('<svg ','<svg class="wi" ')+'<b>'+Math.round(WXC.t)+'°</b>'}
@@ -604,20 +910,86 @@ function renderWx(){
   document.getElementById('wx').innerHTML=h;
 }
 function loadWx(){
-  fetch('https://api.open-meteo.com/v1/forecast?latitude=25.77&longitude=-80.19&current=temperature_2m,weather_code&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunset&temperature_unit=fahrenheit&timezone=America/New_York&forecast_days=5')
-   .then(function(r){return r.json()}).then(function(j){WX=j.daily;if(j.current&&j.current.temperature_2m!=null)WXC={t:j.current.temperature_2m,c:j.current.weather_code};
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=25.77&longitude=-80.19&current=temperature_2m,weather_code,wind_speed_10m,wind_direction_10m&wind_speed_unit=mph&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunset&temperature_unit=fahrenheit&timezone=America/New_York&forecast_days=5')
+   .then(function(r){return r.json()}).then(function(j){WX=j.daily;if(j.current&&j.current.temperature_2m!=null)WXC={t:j.current.temperature_2m,c:j.current.weather_code};if(j.current&&j.current.wind_speed_10m!=null){DK.wind=j.current.wind_speed_10m;DK.dir=j.current.wind_direction_10m;renderDk()}
      if(WX&&WX.sunset&&WX.sunset[0]){var p=WX.sunset[0].split('T')[1].split(':');var hh=+p[0],mm=p[1];CF.sunset=((hh%12)||12)+':'+mm+' '+(hh>=12?'PM':'AM')}
      renderWx();renderCifras()}).catch(function(){});
-  fetch('https://marine-api.open-meteo.com/v1/marine?latitude=25.77&longitude=-80.13&current=sea_surface_temperature&temperature_unit=fahrenheit&timezone=America/New_York')
-   .then(function(r){return r.json()}).then(function(j){if(j.current&&j.current.sea_surface_temperature!=null){CF.sea=j.current.sea_surface_temperature;renderCifras()}}).catch(function(){});
+  fetch('https://marine-api.open-meteo.com/v1/marine?latitude=25.77&longitude=-80.13&current=sea_surface_temperature,wave_height&temperature_unit=fahrenheit&timezone=America/New_York')
+   .then(function(r){return r.json()}).then(function(j){if(j.current&&j.current.sea_surface_temperature!=null){CF.sea=j.current.sea_surface_temperature;DK.sea=CF.sea;renderCifras()}if(j.current&&j.current.wave_height!=null){DK.wave=j.current.wave_height}renderDk()}).catch(function(){});
 }
 
 /* ── eventos ── */
-function setLang(l){L=l;try{localStorage.setItem('mm_lang',l)}catch(e){}var u=new URL(location.href);if(l==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u);render()}
+function setLang(l){setTimeout(renderAg,0);L=l;try{localStorage.setItem('mm_lang',l)}catch(e){}var u=new URL(location.href);if(l==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u);render()}
 document.querySelectorAll('.lng button').forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
-document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;ST.scope=b.dataset.s;ST.hamaca=false;ST.tema='todo';render();if(scrollY>200)scrollTo({top:0,behavior:'smooth'})});
-document.getElementById('hmPill').onclick=document.getElementById('hmMore').onclick=function(){ST.hamaca=true;render();scrollTo({top:0,behavior:'smooth'})};
-document.querySelectorAll('[data-sc]').forEach(function(a){a.onclick=function(e){e.preventDefault();var s=a.dataset.sc;if(s==='hamaca'){ST.hamaca=true}else{ST.scope=s;ST.hamaca=false;ST.tema='todo'}render();scrollTo({top:0,behavior:'smooth'})}});
+document.getElementById('otros').addEventListener('click',function(e){var b=e.target.closest('.vt');if(!b)return;ST.scope=b.dataset.go;ST.hamaca=false;ST.muelle=false;ST.casa=false;ST.tema='todo';render();scrollTo({top:0,behavior:'smooth'})});
+document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;ST.scope=b.dataset.s;ST.hamaca=false;ST.muelle=false;ST.casa=false;ST.tema='todo';render();if(scrollY>200)scrollTo({top:0,behavior:'smooth'})});
+document.getElementById('hmS').addEventListener('click',function(e){var b=e.target.closest('.hm-pg button');if(!b||b.disabled)return;var d=+b.dataset.d;ST.hmP=(ST.hmP||0)+d;render();var hs=document.getElementById('hmS');hs.classList.remove('dn','up');void hs.offsetWidth;hs.classList.add(d>0?'dn':'up');var nb=hs.querySelector('.hm-pg button[data-d="'+d+'"]');if(nb&&!nb.disabled)nb.focus()});
+/* ── agenda: lee el mismo eventos.json de la app ── */
+var AGD=null,AGS={tab:'sem',n:6};
+function agDate(x){var p=String(x||'').split('-');return p.length===3?new Date(+p[0],+p[1]-1,+p[2]):null}
+function agList(){
+  if(!AGD)return [];
+  var t0=new Date();t0.setHours(0,0,0,0);var t7=new Date(t0);t7.setDate(t7.getDate()+6);var t90=new Date(t0);t90.setDate(t90.getDate()+100);
+  var quit={};(AGD.quitar_semana||[]).forEach(function(i){quit[i]=1});
+  var all=(AGD.semana||[]).concat(AGD.proximos||[]),seen={},out=[];
+  all.forEach(function(e){
+    if(!e||!e.d||!e.name||quit[e.id]||e.id==='realestate-semana'||e.type==='Real Estate')return;
+    var a=agDate(e.d),b=agDate(e.d2||e.d);if(!a||!b||b<t0)return;
+    var k=(e.name||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,22)+'|'+e.d;if(seen[k])return;seen[k]=1;
+    var inWeek=a<=t7;
+    if(AGS.tab==='sem'?!inWeek:(inWeek||a>t90))return;
+    out.push({e:e,a:a,b:b,s:a<t0?t0:a,o:(a<t0&&b>t0)?1:0});
+  });
+  out.sort(function(x,y){return x.o-y.o||x.s-y.s||x.b-y.b||(x.e.name<y.e.name?-1:1)});
+  return out;
+}
+function renderAg(){
+  var box=document.getElementById('ag');if(!box)return;
+  var en=L==='en',show=AGD&&!SEC();
+  box.style.display=show?'':'none';if(!show)return;
+  var DW=en?['SUN','MON','TUE','WED','THU','FRI','SAT']:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
+  document.getElementById('agT').textContent=en?'What’s On':'Agenda';
+  var tb=box.querySelectorAll('.ag-tabs button');tb[0].textContent=en?'THIS WEEK':'ESTA SEMANA';tb[1].textContent=en?'COMING UP':'LO QUE VIENE';
+  for(var i=0;i<tb.length;i++){var on=tb[i].dataset.ag===AGS.tab;tb[i].classList.toggle('on',on);tb[i].setAttribute('aria-selected',on)}
+  var li=agList(),t0=new Date();t0.setHours(0,0,0,0);
+  document.getElementById('agL').innerHTML=li.length?li.slice(0,AGS.n).map(function(o){
+    var e=o.e,multi=o.b>o.a,same=o.a.getMonth()===o.b.getMonth(),lng=multi&&o.a>t0&&(o.b-o.a)>8*864e5;
+    var dw=lng?(en?'FROM':'DESDE'):multi?(o.a<=t0?(en?'UNTIL':'HASTA'):DW[o.a.getDay()]+'–'+DW[o.b.getDay()]):DW[o.a.getDay()];
+    var dn=lng?o.a.getDate():multi?(o.a<=t0?o.b.getDate():o.a.getDate()+'–'+o.b.getDate()):o.a.getDate();
+    var mo=lng?MO[o.a.getMonth()]:multi&&o.a>t0&&!same?MO[o.a.getMonth()]+'–'+MO[o.b.getMonth()]:MO[(multi&&o.a<=t0?o.b:o.a).getMonth()];
+    var ky=e.scope==='keys'||e.zone==='keys',ty=(en?e.type:(e.type_es||e.type))||'',ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,''),pr=(en?e.price:(e.price_es||e.price))||'';
+    return '<a class="ag-r" href="/?ev='+encodeURIComponent(e.id)+'"><span class="ag-d"><i'+(dw.length>5?' class="w"':'')+'>'+esc(dw)+'</i><b'+(String(dn).length>2?' class="rg"':'')+'>'+esc(dn)+'</b><u>'+esc(mo)+'</u></span><span class="ag-x"><span class="k">'+(ky?'<em>'+(en?'THE KEYS':'LOS CAYOS')+'</em>':'')+esc(ty.toUpperCase())+'</span><h4>'+esc(en?e.name:(e.name_es||e.name))+'</h4><p>'+esc(ve)+(tm?' · <b>'+esc(tm)+'</b>':'')+(pr&&!/^\$+$/.test(pr)&&!/enlace|link/i.test(pr)?' · '+esc(pr):'')+'</p></span></a>'}).join(''):'<p class="ag-e">'+(en?'Nothing on the calendar for these days yet.':'Todavía no hay nada en el calendario para estos días.')+'</p>';
+  var mb=document.getElementById('agMb');mb.style.display=li.length>AGS.n?'':'none';mb.textContent=(en?'MORE':'MÁS')+' ('+(li.length-AGS.n)+')';
+  document.getElementById('agGo').textContent=(en?'FULL LISTINGS IN THE APP':'LA CARTELERA COMPLETA EN LA APP')+' →';
+}
+document.querySelector('.ag-tabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;AGS.tab=b.dataset.ag;AGS.n=6;renderAg()});
+document.getElementById('agMb').onclick=function(){AGS.n+=6;renderAg()};
+/* ── buscador ── */
+function sxNorm(x){return String(x||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/\[([^\]]+)\]\([^)]+\)/g,'$1')}
+function sxStem(w){return w.length>4?w.replace(/(es|s)$/,''):w}
+function sxSec(n){if(n.hamaca)return 'HAMACA MOOD';if(n.muelle)return L==='en'?'THE DOCK':'EL MUELLE';if(isCC(n))return 'CASA & COAST';return n.scope==='cayos'?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI'}
+function sxMark(tx,toks){var out=esc(tx);toks.forEach(function(k){if(k.length<3)return;var m=sxNorm(tx),re=[],i=0;while((i=m.indexOf(k,i))>-1){re.push(i);i+=k.length}if(!re.length)return;var o='',p=0;re.forEach(function(a){var e=a+k.length;while(e<tx.length&&/[a-záéíóúñü]/i.test(tx.charAt(e)))e++;if(a<p)return;o+=esc(tx.slice(p,a))+'<mark>'+esc(tx.slice(a,e))+'</mark>';p=e});out=o+esc(tx.slice(p));tx=null});return out}
+function sxRow(n,toks){var f=F(n);return '<a href="'+href(n)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'<span></span>')+'<span><span class="eb">'+esc(sxSec(n))+(f.etiqueta?' · '+esc(f.etiqueta):'')+'</span><b>'+(toks&&toks.length?sxMark(f.titulo||'',toks.slice(0,1)):esc(f.titulo||''))+'</b></span></a>'}
+function sxRun(){
+  var q=sxNorm(document.getElementById('sxQ').value).trim(), toks=q.split(/\s+/).filter(Boolean).map(sxStem), N=document.getElementById('sxN'), R=document.getElementById('sxR');
+  var all=(DATA.notas||[]).slice().sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  if(!toks.length){N.textContent=L==='en'?'LATEST':'LO MÁS RECIENTE';R.innerHTML=all.slice(0,5).map(function(n){return sxRow(n)}).join('');return}
+  var hit=[];all.forEach(function(n){var f=F(n),ti=sxNorm(f.titulo),ba=sxNorm(f.bajada)+' '+sxNorm(f.etiqueta)+' '+sxNorm(sxSec(n)),bo=sxNorm((f.cuerpo||[]).join(' ')+' '+(f.toca||[]).join(' ')),sc=0,ok=toks.every(function(k){if(ti.indexOf(k)>-1){sc+=5;return true}if(ba.indexOf(k)>-1){sc+=3;return true}if(bo.indexOf(k)>-1){sc+=1;return true}return false});if(ok)hit.push([sc,n])});
+  hit.sort(function(a,b){return b[0]-a[0]});
+  if(hit.length){N.textContent=hit.length+' '+(L==='en'?(hit.length===1?'RESULT':'RESULTS'):(hit.length===1?'RESULTADO':'RESULTADOS'));R.innerHTML=hit.slice(0,30).map(function(h){return sxRow(h[1],toks)}).join('')}
+  else{N.textContent=L==='en'?'NO RESULTS':'SIN RESULTADOS';R.innerHTML='<p class="sx-e">'+(L==='en'?'Nothing found for that search. Try another word, or read the latest:':'No encontramos nada con esa búsqueda. Prueba con otra palabra, o lee lo más reciente:')+'</p>'+all.slice(0,4).map(function(n){return sxRow(n)}).join('')}
+}
+function sxOpen(){var x=document.getElementById('sx'),q=document.getElementById('sxQ');q.placeholder=L==='en'?'Search Miami Magic News':'Buscar en Miami Magic News';document.getElementById('sxX').textContent=L==='en'?'CLOSE':'CERRAR';document.getElementById('sb').setAttribute('aria-label',L==='en'?'Search':'Buscar');x.classList.add('on');document.body.style.overflow='hidden';q.value='';sxRun();setTimeout(function(){q.focus()},30)}
+function sxClose(){document.getElementById('sx').classList.remove('on');document.body.style.overflow='';document.getElementById('sb').focus()}
+document.getElementById('sb').onclick=sxOpen;document.getElementById('sxX').onclick=sxClose;
+document.getElementById('sxQ').addEventListener('input',sxRun);
+document.getElementById('sx').addEventListener('click',function(e){if(e.target===this)sxClose()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.getElementById('sx').classList.contains('on'))sxClose();if(e.key==='/'&&!/INPUT|TEXTAREA/.test((document.activeElement||{}).tagName||'')&&!document.getElementById('sx').classList.contains('on')){e.preventDefault();sxOpen()}});
+document.getElementById('masBtn').onclick=function(){ST.masN+=8;render()};
+document.getElementById('dkMb').onclick=function(){ST.dkN+=4;render()};
+document.getElementById('hmPill').onclick=document.getElementById('hmMore').onclick=function(){ST.hamaca=true;ST.muelle=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
+document.getElementById('dkPill').onclick=document.getElementById('dkMore').onclick=function(){ST.muelle=true;ST.hamaca=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
+document.querySelectorAll('[data-sc]').forEach(function(a){a.onclick=function(e){e.preventDefault();var s=a.dataset.sc;if(s==='hamaca'){ST.hamaca=true;ST.muelle=false;ST.casa=false}else if(s==='muelle'){ST.muelle=true;ST.hamaca=false;ST.casa=false}else if(s==='casa'){ST.casa=true;ST.hamaca=false;ST.muelle=false}else{ST.scope=s;ST.hamaca=false;ST.muelle=false;ST.casa=false;ST.tema='todo'}render();scrollTo({top:0,behavior:'smooth'})}});
 /* ── pronóstico desplegable ── */
 var wxb=document.getElementById('wxb'), wxp=document.getElementById('wxp');
 function wxOpen(o){var c=wxp.querySelector('.wxp-card'),w=wxp.querySelector('.wrap');wxp.hidden=!o;if(o)c.style.marginLeft=innerWidth>760?Math.max(0,wxb.getBoundingClientRect().left-w.getBoundingClientRect().left-parseFloat(getComputedStyle(w).paddingLeft)-24)+'px':'';wxb.setAttribute('aria-expanded',o?'true':'false')}
@@ -642,8 +1014,8 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 
 /* ── cargar ── */
 render();
-fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;render()}).catch(function(){});
-fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);renderCifras()}).catch(function(){});
+fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});return !n.fecha||n.fecha<=h}catch(e){return true}});render()}).catch(function(){});
+fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg()}).catch(function(){});
 loadWx();
 })();
 </script>
