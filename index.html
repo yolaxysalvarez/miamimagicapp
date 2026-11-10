@@ -9184,7 +9184,9 @@ function mmSaveDateRender(){
   var MO=ES?['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC']:['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
   var DW=ES?['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB']:['SUN','MON','TUE','WED','THU','FRI','SAT'];
   var MOL=ES?['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var items=(MM_PROXIMOS||[]).filter(function(e){ try{ return e && e.d && fd(e.d2||e.d)>=hoy; }catch(x){ return false; } })
+  /* solo lo que empieza despues de este mes: lo del mes en curso ya vive en la Agenda */
+  var finMes=new Date(hoy.getFullYear(),hoy.getMonth()+1,0);
+  var items=(MM_PROXIMOS||[]).filter(function(e){ try{ return e && e.d && fd(e.d)>finMes; }catch(x){ return false; } })
     .sort(function(a,b){ return String(a.d).localeCompare(String(b.d)); }).slice(0,10);
   var abierto=!!(document.getElementById('twxSavePanel')||{classList:{contains:function(){return false}}}).classList.contains('open');
   if(!items.length){ el.innerHTML=''; return; }
