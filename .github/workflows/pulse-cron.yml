@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Llamar a /api/send-pulse
         run: |
-          curl -sS -X POST "https://www.miamimagicapp.com/api/send-pulse" \
+          curl -sS --fail-with-body -X POST "https://www.miamimagicapp.com/api/send-pulse" \
             -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
             -w "\nHTTP %{http_code}\n"
