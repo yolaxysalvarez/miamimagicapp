@@ -74,10 +74,10 @@
         "toca": [
           "Antes de pagar con cripto, pregunta por las comisiones y por el tipo de cambio que te aplican. El anuncio no los detalla.",
           "Usar Bitcoin para pagar puede tener efecto en tu declaración de impuestos federales. Consúltalo con tu contador.",
-          "Las facturas de este año ya salieron. Según la ley de Florida, pagar en noviembre da un 4% de descuento, sea cual sea el método."
+          "Las facturas de este año ya salieron. La ley de Florida da un 4% de descuento a quien paga en noviembre, sea cual sea el método."
         ],
         "cuerpo": [
-          "Los dueños de propiedades de Miami-Dade pueden pagar sus impuestos con Bitcoin desde el 9 de noviembre, tanto en línea como en persona, anunció el recaudador de impuestos del condado, Dariel Fernandez.",
+          "Los dueños de propiedades de Miami-Dade pueden pagar sus impuestos con Bitcoin desde el 9 de noviembre, tanto en línea como en persona, [anunció el recaudador de impuestos del condado](https://www.mdctaxcollector.gov/blog/a-new-way-to-pay-miami-dade-tax-collector-dariel-fernandez-now-accepting-bitcoin-payments-for-online-property-taxes), Dariel Fernandez.",
           "## Cómo funciona",
           "Según la oficina del recaudador, en línea la opción aparece al momento de pagar y en persona hay que pedirla en la ventanilla. El sistema, explica el anuncio, permite conectar una cuenta de una casa de cambio de criptomonedas o una billetera digital compatible y autorizar el pago, que se convierte a dólares antes de llegar a la oficina.",
           "## Lo que dice el condado",
@@ -93,10 +93,10 @@
         "toca": [
           "Before paying with crypto, ask about fees and the exchange rate you'll get. The announcement doesn't spell them out.",
           "Using Bitcoin to pay can affect your federal tax return. Check with your accountant.",
-          "This year's bills are already out. Under Florida law, paying in November earns a 4% discount, whatever the method."
+          "This year's bills are already out. Florida law gives a 4% discount to anyone who pays in November, whatever the method."
         ],
         "cuerpo": [
-          "Miami-Dade property owners have been able to pay their taxes with Bitcoin since Nov. 9, both online and in person, county Tax Collector Dariel Fernandez announced.",
+          "Miami-Dade property owners have been able to pay their taxes with Bitcoin since Nov. 9, both online and in person, [county Tax Collector Dariel Fernandez announced](https://www.mdctaxcollector.gov/blog/a-new-way-to-pay-miami-dade-tax-collector-dariel-fernandez-now-accepting-bitcoin-payments-for-online-property-taxes).",
           "## How it works",
           "According to the Tax Collector's Office, the option appears at checkout online and has to be requested at the counter in person. The system, the announcement says, lets users connect a supported cryptocurrency exchange account or digital wallet and authorize the payment, which is converted into U.S. dollars before it reaches the office.",
           "## What the county says",
@@ -139,10 +139,10 @@
           "El pronóstico se actualiza varias veces al día en [weather.gov/mfl](https://www.weather.gov/mfl/)."
         ],
         "cuerpo": [
-          "La noche del viernes 13 de noviembre Miami baja a 60 grados, según el pronóstico del Servicio Nacional de Meteorología. Las madrugadas de esta semana han rondado los 77.",
-          "El frente entra el viernes con viento del noroeste de 10 a 14 millas por hora y ráfagas de hasta 20. Antes de que pase, el jueves trae nubes y posibles tormentas en la tarde.",
-          "El sábado es el día más fresco: cielo despejado y una máxima de 71. Quien tenga planes al aire libre esa noche, con 61 grados, va a necesitar abrigo.",
-          "Dura poco. El domingo la máxima sube a 76 y el lunes vuelve a 78, con brisa y algo de lluvia."
+          "La noche del viernes 13 de noviembre Miami baja a 60 grados, según el [pronóstico del Servicio Nacional de Meteorología](https://forecast.weather.gov/MapClick.php?lat=25.7743&lon=-80.1937). Las madrugadas de esta semana han rondado los 77.",
+          "Ese mismo pronóstico sitúa la entrada del frente el viernes, con viento del noroeste de 10 a 14 millas por hora y ráfagas de hasta 20. Antes de que pase, el jueves trae nubes y posibles tormentas en la tarde.",
+          "El sábado se perfila como el día más fresco: cielo despejado y una máxima prevista de 71. Quien tenga planes al aire libre esa noche, con 61 grados, va a necesitar abrigo.",
+          "Dura poco. Para el domingo, el Servicio Meteorológico prevé una máxima de 76, y el lunes vuelve a 78, con brisa y algo de lluvia."
         ]
       },
       "en": {
@@ -155,10 +155,10 @@
           "The forecast is updated several times a day at [weather.gov/mfl](https://www.weather.gov/mfl/)."
         ],
         "cuerpo": [
-          "On the night of Friday, Nov. 13, Miami drops to 60 degrees, according to the National Weather Service forecast. Early mornings this week have hovered around 77.",
-          "The front moves in Friday with northwest wind of 10 to 14 mph and gusts up to 20. Before it passes, Thursday brings clouds and possible afternoon storms.",
-          "Saturday is the coolest day: clear skies and a high of 71. Anyone with outdoor plans that night, at 61 degrees, will need a jacket.",
-          "It doesn't last. Sunday's high climbs to 76 and Monday is back to 78, with a breeze and some rain."
+          "On the night of Friday, Nov. 13, Miami drops to 60 degrees, according to the [National Weather Service forecast](https://forecast.weather.gov/MapClick.php?lat=25.7743&lon=-80.1937). Early mornings this week have hovered around 77.",
+          "The same forecast has the front moving in Friday, with northwest wind of 10 to 14 mph and gusts up to 20. Before it passes, Thursday brings clouds and possible afternoon storms.",
+          "Saturday is shaping up as the coolest day: clear skies and a forecast high of 71. Anyone with outdoor plans that night, at 61 degrees, will need a jacket.",
+          "It doesn't last. The Weather Service expects Sunday's high to climb to 76, and Monday is back to 78, with a breeze and some rain."
         ]
       },
       "fuentes": [
@@ -187,19 +187,19 @@
         "bajada": "La Comisión vota el martes 17 una ordenanza con límites de velocidad, permisos, seguro y multas.",
         "toca": [
           "La votación final es el martes 17 de noviembre, en la Comisión del Condado. Hasta entonces la ordenanza no está en vigor.",
-          "El peatón siempre tiene el paso: el robot debe cederlo en todo momento.",
+          "La ordenanza le da siempre el paso al peatón: el robot debe cederlo en todo momento.",
           "El texto completo está en el [registro legislativo del condado](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026)."
         ],
         "cuerpo": [
-          "El martes 17 de noviembre, la Comisión de Miami-Dade vota en segunda lectura la ordenanza que les pone reglas a los robots de reparto. El condado reconoce en el propio texto que cada vez hay más robots en sus aceras y cruces peatonales.",
+          "El martes 17 de noviembre, la Comisión de Miami-Dade vota en segunda lectura la [ordenanza](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) que les pone reglas a los robots de reparto. El condado reconoce en el propio texto que cada vez hay más robots en sus aceras y cruces peatonales.",
           "## ¿A qué velocidad podrán ir?",
-          "A un máximo de 8 millas por hora en la acera, 6 en las zonas de mucho peatón y 10 al cruzar la calle. Los operadores tendrán que controlar esos límites a distancia, con tecnología que delimita por dónde y cómo se mueve cada robot.",
+          "El texto fija un máximo de 8 millas por hora en la acera, 6 en las zonas de mucho peatón y 10 al cruzar la calle. Los operadores tendrán que controlar esos límites a distancia, con tecnología que delimita por dónde y cómo se mueve cada robot.",
           "## ¿Qué deben llevar?",
-          "Luz blanca al frente y roja atrás, y una alerta sonora que se oiga a 15 pies. Cada robot tendrá un número de identificación único.",
+          "La ordenanza pide luz blanca al frente y roja atrás, y una alerta sonora que se oiga a 15 pies. Cada robot tendrá un número de identificación único.",
           "## ¿Quién responde si pasa algo?",
-          "La empresa. Necesita un permiso, renovable cada año, y un seguro de responsabilidad de al menos $100,000. Debe reportar al condado en 24 horas cualquier incidente con daños o heridos, y retirar en 6 horas un robot averiado. Operar sin seguro costaría $500 de multa, y cada día cuenta como una infracción aparte.",
+          "La empresa. La propuesta le exige un permiso, renovable cada año, y un seguro de responsabilidad de al menos $100,000. Tendrá que reportar al condado en 24 horas cualquier incidente con daños o heridos, y retirar en 6 horas un robot averiado. Operar sin seguro costaría $500 de multa, y cada día contaría como una infracción aparte.",
           "## ¿Aplica en todas las ciudades?",
-          "Sí, en todo el condado, pero cada municipio puede aprobar reglas propias, más estrictas o más flexibles. El condado podrá también limitar horarios y cantidad de robots en zonas concretas.",
+          "Sí, en todo el condado, aunque el texto deja que cada municipio apruebe reglas propias, más estrictas o más flexibles. El condado podrá también limitar horarios y cantidad de robots en zonas concretas.",
           "La propuesta es de la comisionada Micky Steinberg. El Comité de Transporte la aprobó con cambios el 14 de octubre."
         ]
       },
@@ -208,19 +208,19 @@
         "bajada": "The Commission votes Tuesday, Nov. 17, on an ordinance with speed limits, permits, insurance and fines.",
         "toca": [
           "The final vote is Tuesday, Nov. 17, at the County Commission. Until then the ordinance is not in effect.",
-          "Pedestrians always have the right of way: the robot must yield at all times.",
+          "The ordinance always gives pedestrians the right of way: the robot must yield at all times.",
           "The full text is in the [county's legislative record](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026)."
         ],
         "cuerpo": [
-          "On Tuesday, Nov. 17, the Miami-Dade Commission takes a second-reading vote on the ordinance that would regulate delivery robots. The county acknowledges in the text itself that more and more of these devices are on its sidewalks and crosswalks.",
+          "On Tuesday, Nov. 17, the Miami-Dade Commission takes a second-reading vote on the [ordinance](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) that would regulate delivery robots. The county acknowledges in the text itself that more and more of these devices are on its sidewalks and crosswalks.",
           "## How fast could they go?",
-          "A maximum of 8 mph on sidewalks, 6 in high-pedestrian areas and 10 in crosswalks. Operators would have to enforce those limits remotely, with technology that restricts where and how each robot moves.",
+          "The text sets a maximum of 8 mph on sidewalks, 6 in high-pedestrian areas and 10 in crosswalks. Operators would have to enforce those limits remotely, with technology that restricts where and how each robot moves.",
           "## What must they carry?",
-          "A white light in front and a red one in back, and an audible alert that can be heard 15 feet away. Each device would have a unique identification number.",
+          "The ordinance calls for a white light in front and a red one in back, and an audible alert that can be heard 15 feet away. Each device would have a unique identification number.",
           "## Who answers if something happens?",
-          "The company. It needs a permit, renewable each year, and liability insurance of at least $100,000. It must report any incident involving damage or injury to the county within 24 hours, and remove a broken-down robot within 6 hours. Operating without insurance would cost a $500 fine, and each day counts as a separate violation.",
+          "The company. The proposal requires a permit, renewable each year, and liability insurance of at least $100,000. It would have to report any incident involving damage or injury to the county within 24 hours, and remove a broken-down robot within 6 hours. Operating without insurance would cost a $500 fine, and each day would count as a separate violation.",
           "## Does it apply in every city?",
-          "Yes, countywide, but each municipality may adopt its own rules, stricter or looser. The county could also limit hours and the number of robots in specific areas.",
+          "Yes, countywide, though the text lets each municipality adopt its own rules, stricter or looser. The county could also limit hours and the number of robots in specific areas.",
           "The proposal comes from Commissioner Micky Steinberg. The Transportation Committee approved it with changes on Oct. 14."
         ]
       },
@@ -251,9 +251,9 @@
           "Si no eres ciudadano, revisa la carta del Mercado de Seguros, que te llega por correo y a tu cuenta en CuidadoDeSalud.gov: desde 2027 solo recibes ayuda para pagar el seguro si eres residente permanente, entrante cubano o haitiano, o migrante COFA."
         ],
         "cuerpo": [
-          "La inscripción para los seguros médicos de Obamacare de 2027 está abierta hasta el 15 de enero en CuidadoDeSalud.gov, con primas un 10.4% más caras de promedio en Florida y tres aseguradoras menos.",
-          "Molina deja el mercado individual de Florida, Cigna sale del Mercado en todo el país y los planes de Sunshine Health se cierran. Siguen 12 compañías, entre ellas Florida Blue, AvMed, Ambetter, Oscar y UnitedHealthcare; con el código postal, la página muestra las que venden en cada zona.",
-          "El cambio más grande es para los inmigrantes. Desde 2027, la ayuda para pagar el seguro queda solo para residentes permanentes, entrantes cubanos o haitianos y migrantes COFA. Las demás personas con estatus legal pueden comprar un plan, pero sin esa ayuda. Quienes no tengan su estatus verificado recibirán una carta del Mercado por correo y en su cuenta en línea. La línea gratuita 1-800-318-2596 atiende en español."
+          "La inscripción para los seguros médicos de Obamacare de 2027 está abierta hasta el 15 de enero en [CuidadoDeSalud.gov](https://www.cuidadodesalud.gov/es/). De acuerdo con [HealthInsurance.org](https://www.healthinsurance.org/aca-marketplace/florida/), las primas en Florida suben un 10.4% de promedio y el mercado pierde tres aseguradoras.",
+          "El mismo análisis detalla que Molina deja el mercado individual de Florida, Cigna sale del Mercado en todo el país y los planes de Sunshine Health se cierran. Siguen 12 compañías, entre ellas Florida Blue, AvMed, Ambetter, Oscar y UnitedHealthcare; con el código postal, la página del gobierno muestra las que venden en cada zona.",
+          "El cambio más grande es para los inmigrantes. La [guía de CMS](https://www.cms.gov/files/document/guidance-noncitizen-eligibility-aptc-csr-plan-year-2027.pdf), la agencia federal que administra el programa, deja desde 2027 la ayuda para pagar el seguro solo para residentes permanentes, entrantes cubanos o haitianos y migrantes COFA. Las demás personas con estatus legal pueden comprar un plan, pero sin esa ayuda. Quienes no tengan su estatus verificado recibirán una carta del Mercado por correo y en su cuenta en línea. La línea gratuita 1-800-318-2596 atiende en español."
         ]
       },
       "en": {
@@ -265,9 +265,9 @@
           "If you're not a citizen, check the letter from the Health Insurance Marketplace, sent by mail and to your HealthCare.gov account: starting in 2027, you get help paying for coverage only if you're a green card holder, a Cuban or Haitian entrant, or a COFA migrant."
         ],
         "cuerpo": [
-          "Enrollment for 2027 Obamacare health plans is open through Jan. 15 at HealthCare.gov, with premiums up an average of 10.4% in Florida and three fewer insurers.",
-          "Molina is leaving Florida's individual market, Cigna is exiting the Marketplace nationwide and Sunshine Health's plans are closing. Twelve companies remain, including Florida Blue, AvMed, Ambetter, Oscar and UnitedHealthcare; with a ZIP code, the site shows which ones sell in each area.",
-          "The biggest change is for immigrants. Starting in 2027, help paying for coverage is limited to green card holders, Cuban or Haitian entrants and COFA migrants. Other lawfully present people can buy a plan, but without that help. Those whose status hasn't been verified will get a letter from the Marketplace by mail and in their online account. The free line, 1-800-318-2596, offers help in Spanish."
+          "Enrollment for 2027 Obamacare health plans is open through Jan. 15 at [HealthCare.gov](https://www.healthcare.gov/). According to [HealthInsurance.org](https://www.healthinsurance.org/aca-marketplace/florida/), premiums in Florida rise an average of 10.4% and the market loses three insurers.",
+          "The same analysis says Molina is leaving Florida's individual market, Cigna is exiting the Marketplace nationwide and Sunshine Health's plans are closing. Twelve companies remain, including Florida Blue, AvMed, Ambetter, Oscar and UnitedHealthcare; with a ZIP code, the government site shows which ones sell in each area.",
+          "The biggest change is for immigrants. [Guidance from CMS](https://www.cms.gov/files/document/guidance-noncitizen-eligibility-aptc-csr-plan-year-2027.pdf), the federal agency that runs the program, limits help paying for coverage starting in 2027 to green card holders, Cuban or Haitian entrants and COFA migrants. Other lawfully present people can buy a plan, but without that help. Those whose status hasn't been verified will get a letter from the Marketplace by mail and in their online account. The free line, 1-800-318-2596, offers help in Spanish."
         ]
       },
       "fuentes": [
@@ -310,8 +310,8 @@
           "Puedes opinar: la Comisión de Servicio Público de Florida recibe comentarios del público en floridapsc.com antes de decidir."
         ],
         "cuerpo": [
-          "FPL pidió el 30 de octubre a la Comisión de Servicio Público de Florida cobrar en 2027 un cargo de $3.48 al mes por los costos del huracán Isaías, compensado casi por completo con un descuento de unos $3.00 en el combustible. En una factura típica de 1,000 kWh, la diferencia sería de 48 centavos más al mes, y la factura de enero quedaría en $141.87.",
-          "El descuento sale del gas natural con el que FPL produce la mayor parte de su corriente, que le costó menos de lo previsto. El cambio aplica solo a los clientes de FPL; en Miami-Dade quedan fuera, por ejemplo, quienes reciben la corriente de la ciudad de Homestead.",
+          "FPL pidió el 30 de octubre a la Comisión de Servicio Público de Florida cobrar en 2027 un cargo de $3.48 al mes por los costos del huracán Isaías, compensado casi por completo con un descuento de unos $3.00 en el combustible, [según reportó NBC Miami](https://www.nbcmiami.com/news/local/fpl-says-what-customers-could-pay-for-electricity-in-2027-lower-rate-but-a-new-charge/). En una factura típica de 1,000 kWh, la diferencia sería de 48 centavos más al mes, y la factura de enero quedaría en $141.87, según las cifras de la empresa.",
+          "FPL atribuye el descuento al gas natural con el que produce la mayor parte de su corriente, que le costó menos de lo previsto. El cambio aplica solo a sus clientes; en Miami-Dade quedan fuera, por ejemplo, quienes reciben la corriente de la ciudad de Homestead.",
           "La Comisión todavía tiene que aprobarlo y no ha fijado fecha para decidir. Si lo aprueba, se verá en la factura de enero."
         ]
       },
@@ -324,8 +324,8 @@
           "You can weigh in: the Florida Public Service Commission takes public comments at floridapsc.com before it decides."
         ],
         "cuerpo": [
-          "On Oct. 30, FPL asked the Florida Public Service Commission to charge $3.48 a month in 2027 for Hurricane Isaias costs, almost entirely offset by a fuel credit of about $3.00. On a typical 1,000 kWh bill, the difference would be 48 cents more a month, and the January bill would come to $141.87.",
-          "The credit comes from the natural gas FPL burns to make most of its electricity, which cost less than projected. The change applies only to FPL customers; in Miami-Dade, for example, those served by the City of Homestead's utility aren't included.",
+          "On Oct. 30, FPL asked the Florida Public Service Commission to charge $3.48 a month in 2027 for Hurricane Isaias costs, almost entirely offset by a fuel credit of about $3.00, [NBC Miami reported](https://www.nbcmiami.com/news/local/fpl-says-what-customers-could-pay-for-electricity-in-2027-lower-rate-but-a-new-charge/). On a typical 1,000 kWh bill, the difference would be 48 cents more a month, and the January bill would come to $141.87, according to the company's figures.",
+          "FPL attributes the credit to the natural gas it burns to make most of its electricity, which cost less than projected. The change applies only to its customers; in Miami-Dade, for example, those served by the City of Homestead's utility aren't included.",
           "The Commission still has to approve it and hasn't set a date to decide. If it does, the change will show up on the January bill."
         ]
       },
@@ -366,9 +366,9 @@
           "¿Vives en una zona baja de Miami Beach? Pide el parqueo gratis temporal de la ciudad. En la ciudad de Miami, reporta las inundaciones al 311."
         ],
         "cuerpo": [
-          "Las mareas reales vuelven a Miami del 23 al 26 de noviembre, y la más alta caerá el jueves 26, Día de Acción de Gracias, a las 10:04 de la mañana y a las 10:10 de la noche, según las predicciones de la estación de Virginia Key. El agua se nota desde hora y media antes y tarda unas dos horas en bajar.",
-          "Son las mareas más altas del año y llegan con la alineación de la Luna y el Sol. En las zonas bajas, como partes de Miami Beach, el agua del mar sube por los desagües aunque no llueva.",
-          "Miami Beach envía avisos de tránsito a quien escriba MBTraffic al 888777 y ofrece hasta $20,000 para proteger casas en terrenos bajos. En la ciudad de Miami, además del 311, las inundaciones se reportan al 305-468-5900."
+          "Las mareas reales vuelven a Miami del 23 al 26 de noviembre, y la más alta caerá el jueves 26, Día de Acción de Gracias, a las 10:04 de la mañana y a las 10:10 de la noche, según las predicciones para la estación de Virginia Key que publica la [ciudad de Miami Beach](https://www.miamibeachfl.gov/flood-awareness/kingtides/). La ciudad advierte que el agua se nota desde hora y media antes y tarda unas dos horas en bajar.",
+          "La ciudad explica que son las mareas más altas del año y que llegan con la alineación de la Luna y el Sol. En las zonas bajas, como partes de Miami Beach, el agua del mar sube por los desagües aunque no llueva.",
+          "Miami Beach envía avisos de tránsito a quien escriba MBTraffic al 888777 y ofrece hasta $20,000 para proteger casas en terrenos bajos. En la [ciudad de Miami](https://www.miami.gov/kingtide), además del 311, las inundaciones se reportan al 305-468-5900."
         ]
       },
       "en": {
@@ -380,9 +380,9 @@
           "Live in a low-lying part of Miami Beach? Sign up for the city's free temporary parking. In the City of Miami, report flooding to 311."
         ],
         "cuerpo": [
-          "King tides return to Miami from Nov. 23 to 26, and the highest will come on Thursday the 26th, Thanksgiving Day, at 10:04 a.m. and 10:10 p.m., according to predictions for the Virginia Key station. The water shows up about an hour and a half earlier and takes around two hours to recede.",
-          "They are the year's highest tides and arrive when the Moon and Sun line up. In low-lying areas, such as parts of Miami Beach, seawater pushes up through the drains even without rain.",
-          "Miami Beach sends traffic alerts to anyone who texts MBTraffic to 888777 and offers up to $20,000 to protect homes on low ground. In the City of Miami, besides 311, flooding can be reported at 305-468-5900."
+          "King tides return to Miami from Nov. 23 to 26, and the highest will come on Thursday the 26th, Thanksgiving Day, at 10:04 a.m. and 10:10 p.m., according to predictions for the Virginia Key station published by the [City of Miami Beach](https://www.miamibeachfl.gov/flood-awareness/kingtides/). The city warns that the water shows up about an hour and a half earlier and takes around two hours to recede.",
+          "The city explains that they are the year's highest tides and arrive when the Moon and Sun line up. In low-lying areas, such as parts of Miami Beach, seawater pushes up through the drains even without rain.",
+          "Miami Beach sends traffic alerts to anyone who texts MBTraffic to 888777 and offers up to $20,000 to protect homes on low ground. In the [City of Miami](https://www.miami.gov/kingtide), besides 311, flooding can be reported at 305-468-5900."
         ]
       },
       "fuentes": [
@@ -418,10 +418,10 @@
           "El boleto de Tri-Rail para el partido cuesta $10 ida y vuelta e incluye $10 de crédito para comida y bebida, que se canjea en Guest Services, junto a la sección 101."
         ],
         "cuerpo": [
-          "Inter Miami abre los playoffs de la MLS el sábado 21 de noviembre a las 6:00 de la tarde en Nu Stadium, contra Columbus Crew. Terminó la temporada regular segundo en la Conferencia Este; Columbus llegó séptimo.",
+          "Inter Miami abre los playoffs de la MLS el sábado 21 de noviembre a las 6:00 de la tarde en Nu Stadium, contra Columbus Crew, [anunció el club](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Terminó la temporada regular segundo en la Conferencia Este; Columbus llegó séptimo, según la [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
           "La serie es al mejor de tres partidos. El segundo se juega el viernes 27 en Columbus, Ohio, y si hace falta un tercero, vuelve a Miami el miércoles 2 de diciembre, con hora por confirmar. Quien gane dos avanza a las semifinales del Este.",
           "Será el primer partido de playoffs en Nu Stadium. El estadio abrió en abril sobre el antiguo campo de golf Melreese, junto al aeropuerto, y tiene capacidad para 26,700 personas.",
-          "Llegar pide planificación, y el club empuja el transporte público. Metrorail y Tri-Rail paran en el Miami Intermodal Center, la estación del aeropuerto, y desde allí se camina hasta el estadio por el puente peatonal sobre el canal. Después de algunos partidos, Tri-Rail agrega un tren de regreso cerca de las 10:00 de la noche."
+          "Llegar pide planificación, y el club [empuja el transporte público](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail y Tri-Rail paran en el Miami Intermodal Center, la estación del aeropuerto, y desde allí se camina hasta el estadio por el puente peatonal sobre el canal. El club añade que, después de algunos partidos, Tri-Rail agrega un tren de regreso cerca de las 10:00 de la noche."
         ]
       },
       "en": {
@@ -433,10 +433,10 @@
           "The game-day Tri-Rail ticket is $10 round trip and includes a $10 food and drink credit, redeemable at Guest Services near Section 101."
         ],
         "cuerpo": [
-          "Inter Miami opens the MLS playoffs on Saturday, Nov. 21, at 6 p.m. at Nu Stadium against the Columbus Crew. Miami finished the regular season second in the Eastern Conference; Columbus finished seventh.",
+          "Inter Miami opens the MLS playoffs on Saturday, Nov. 21, at 6 p.m. at Nu Stadium against the Columbus Crew, [the club announced](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Miami finished the regular season second in the Eastern Conference; Columbus finished seventh, according to [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
           "The series is best of three. Game 2 is Friday, Nov. 27, in Columbus, Ohio, and if a third game is needed, it returns to Miami on Wednesday, Dec. 2, time to be announced. The first team to two wins advances to the East semifinals.",
           "It will be the first playoff game at Nu Stadium. The stadium opened in April on the former Melreese golf course next to the airport and holds 26,700 people.",
-          "Getting there takes planning, and the club is pushing public transit. Metrorail and Tri-Rail stop at the Miami Intermodal Center, the airport station, and from there fans walk to the stadium across the pedestrian bridge over the canal. After some games, Tri-Rail adds a return train around 10 p.m."
+          "Getting there takes planning, and the club is [pushing public transit](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail and Tri-Rail stop at the Miami Intermodal Center, the airport station, and from there fans walk to the stadium across the pedestrian bridge over the canal. The club adds that after some games, Tri-Rail runs a return train around 10 p.m."
         ]
       },
       "fuentes": [
@@ -479,10 +479,10 @@
           "El Metromover es gratis y la parada Park West queda a una cuadra de la arena. Desde el Metrorail se cambia en Government Center. [Rutas en la app](https://www.miamimagicapp.com/?go=transport)."
         ],
         "cuerpo": [
-          "El miércoles 18 de noviembre el HEAT no sale a la cancha como HEAT. Contra los Bucks de Milwaukee, en el Kaseya Center, el equipo juega como Vice City, la Miami del videojuego Grand Theft Auto, la víspera del lanzamiento de GTA VI, el jueves 19.",
-          "La alianza con Rockstar Games trae el uniforme Vice City Edition de la temporada 2026-27 y una cancha hecha para ese único partido. Ese día sale a la venta una camiseta Nike x Cactus Jack con el parche del juego, y dentro de la arena dos puestos de comida toman nombres de GTA: Burger Shot, en las secciones 105, 120, 308 y 324, y Cluckin' Bell, en la 325.",
+          "El miércoles 18 de noviembre el HEAT no sale a la cancha como HEAT. Contra los Bucks de Milwaukee, en el Kaseya Center, el equipo juega como Vice City, la Miami del videojuego Grand Theft Auto, la víspera del lanzamiento de GTA VI, el jueves 19, [anunció el equipo](https://www.nba.com/heat/vicecity).",
+          "El equipo detalla que la alianza con Rockstar Games trae el uniforme Vice City Edition de la temporada 2026-27 y una cancha hecha para ese único partido. Ese día sale a la venta una camiseta Nike x Cactus Jack con el parche del juego, y dentro de la arena dos puestos de comida toman nombres de GTA: Burger Shot, en las secciones 105, 120, 308 y 324, y Cluckin' Bell, en la 325.",
           "En la cancha hay otra historia. Es el primer partido de Giannis Antetokounmpo contra Milwaukee desde que los Bucks lo cambiaron a Miami en junio, después de 13 temporadas allá.",
-          "La colección Vice City de Court Culture ya se vende en la tienda del equipo y en miamiheatstore.com, desde $45 la camiseta corta hasta $168 la chaqueta bomber."
+          "La colección Vice City de Court Culture ya se vende, informa el equipo, en su tienda y en miamiheatstore.com, desde $45 la camiseta corta hasta $168 la chaqueta bomber."
         ]
       },
       "en": {
@@ -494,10 +494,10 @@
           "Metromover is free, and the Park West stop is a block from the arena. From Metrorail, transfer at Government Center. [Routes in the app](https://www.miamimagicapp.com/?go=transport)."
         ],
         "cuerpo": [
-          "On Wednesday, Nov. 18, the HEAT won't take the court as the HEAT. Against the Milwaukee Bucks at Kaseya Center, the team plays as Vice City, the Grand Theft Auto version of Miami, on the eve of the GTA VI launch on Thursday, Nov. 19.",
-          "The partnership with Rockstar Games brings the 2026-27 Vice City Edition uniform and a court built for that one game. A Nike x Cactus Jack jersey with the game's patch goes on sale that day, and inside the arena two food stands take GTA names: Burger Shot, in Sections 105, 120, 308 and 324, and Cluckin' Bell, in Section 325.",
+          "On Wednesday, Nov. 18, the HEAT won't take the court as the HEAT. Against the Milwaukee Bucks at Kaseya Center, the team plays as Vice City, the Grand Theft Auto version of Miami, on the eve of the GTA VI launch on Thursday, Nov. 19, [the team announced](https://www.nba.com/heat/vicecity).",
+          "The team says the partnership with Rockstar Games brings the 2026-27 Vice City Edition uniform and a court built for that one game. A Nike x Cactus Jack jersey with the game's patch goes on sale that day, and inside the arena two food stands take GTA names: Burger Shot, in Sections 105, 120, 308 and 324, and Cluckin' Bell, in Section 325.",
           "There's another story on the court. It's Giannis Antetokounmpo's first game against Milwaukee since the Bucks traded him to Miami in June, after 13 seasons there.",
-          "The Court Culture Vice City collection is already on sale at the team store and miamiheatstore.com, from $45 for the crop tee to $168 for the bomber jacket."
+          "The Court Culture Vice City collection is already on sale, the team says, at its store and miamiheatstore.com, from $45 for the crop tee to $168 for the bomber jacket."
         ]
       },
       "fuentes": [
@@ -568,11 +568,11 @@
           "Art Basel: del 4 al 6 de diciembre, de 11:00 AM a 6:00 PM, en el Miami Beach Convention Center, 1901 Convention Center Dr. Boletos en [artbasel.com](https://www.artbasel.com/miami-beach)."
         ],
         "cuerpo": [
-          "La obra gratis más grande de la semana del arte va a estar medio enterrada en la arena. Del 1 al 6 de diciembre, detrás del hotel Faena, Christopher Joshua Benton instala A Lore Supreme: una esfera de espejos de 27 pies de alto y 44 de ancho, con más de 7,000 facetas que se mueven con el viento y bocinas con música y conversaciones grabadas en Miami.",
+          "La obra gratis más grande de la semana del arte va a estar medio enterrada en la arena. Del 1 al 6 de diciembre, detrás del hotel Faena, Christopher Joshua Benton instala A Lore Supreme, reportó [The Art Newspaper](https://www.theartnewspaper.com/2026/10/20/faena-art-miami-beach-christopher-joshua-benton-marinella-senatore): una esfera de espejos de 27 pies de alto y 44 de ancho, con más de 7,000 facetas que se mueven con el viento y bocinas con música y conversaciones grabadas en Miami.",
           "Al atardecer hay presentaciones, con Major Lazer al frente del cartel. A unos pasos, dentro de la Faena Cathedral, Marinella Senatore enciende An Expanded Baroque Crown, una instalación de luz que se recorre por dentro, con lecturas, poesía y baile organizados junto a O, Miami.",
-          "Más al sur, en Collins Park, Public Art Fund y The Bass ponen seis mesas de ping-pong diseñadas por artistas. Between Tides se juega: las paletas y las pelotas se prestan gratis en el lugar, y el lunes 30 de noviembre, de 4:00 a 6:00 PM, hay torneo abierto.",
-          "La feria, con 272 galerías de más de 40 países, abre al público del 4 al 6 en el centro de convenciones. Art Basel anunció también una obra nueva de James Turrell al aire libre y sin costo.",
-          "El año pasado, en esa misma arena, Es Devlin levantó Library of Us, un triángulo de 2,500 libros sobre un espejo de agua. Al cerrar, los libros se repartieron entre bibliotecas y escuelas de la ciudad."
+          "Más al sur, en Collins Park, Public Art Fund y The Bass ponen seis mesas de ping-pong diseñadas por artistas. Between Tides se juega: la [ficha del evento](https://www.artrabbit.com/events/between-tides) indica que las paletas y las pelotas se prestan gratis en el lugar, y el lunes 30 de noviembre, de 4:00 a 6:00 PM, hay torneo abierto.",
+          "La feria, que reúne 272 galerías de más de 40 países, de acuerdo con [Artsy](https://www.artsy.net/article/artsy-editorial-art-basel-miami-beach-announces-272-exhibitors-2026-edition), abre al público del 4 al 6 en el centro de convenciones. Art Basel anunció también una obra nueva de James Turrell al aire libre y sin costo.",
+          "El año pasado, en esa misma arena, Es Devlin levantó Library of Us, un triángulo de 2,500 libros sobre un espejo de agua. Al cerrar, contó [My Modern Met](https://mymodernmet.com/library-of-us-faena-art-es-devlin), los libros se repartieron entre bibliotecas y escuelas de la ciudad."
         ]
       },
       "en": {
@@ -584,11 +584,11 @@
           "Art Basel: Dec. 4-6, 11 a.m. to 6 p.m., at the Miami Beach Convention Center, 1901 Convention Center Drive. Tickets at [artbasel.com](https://www.artbasel.com/miami-beach)."
         ],
         "cuerpo": [
-          "The biggest free work of art week will be half buried in the sand. From Dec. 1 to 6, behind the Faena Hotel, Christopher Joshua Benton installs A Lore Supreme: a mirrored sphere 27 feet tall and 44 feet wide, with more than 7,000 facets that move in the wind and speakers playing music and conversations recorded in Miami.",
+          "The biggest free work of art week will be half buried in the sand. From Dec. 1 to 6, behind the Faena Hotel, Christopher Joshua Benton installs A Lore Supreme, [The Art Newspaper reported](https://www.theartnewspaper.com/2026/10/20/faena-art-miami-beach-christopher-joshua-benton-marinella-senatore): a mirrored sphere 27 feet tall and 44 feet wide, with more than 7,000 facets that move in the wind and speakers playing music and conversations recorded in Miami.",
           "There are sunset performances, with Major Lazer topping the bill. A few steps away, inside the Faena Cathedral, Marinella Senatore lights An Expanded Baroque Crown, a walk-in light installation with readings, poetry and dance organized with O, Miami.",
-          "Farther south, in Collins Park, Public Art Fund and The Bass set up six artist-designed ping-pong tables. Between Tides is meant to be played: paddles and balls are lent free on site, and on Monday, Nov. 30, from 4 to 6 p.m., there's an open tournament.",
-          "The fair, with 272 galleries from more than 40 countries, opens to the public Dec. 4-6 at the convention center. Art Basel has also announced a new outdoor work by James Turrell, free to the public.",
-          "Last year, on the same sand, Es Devlin built Library of Us, a triangle of 2,500 books over a reflecting pool. When it closed, the books went to the city's libraries and schools."
+          "Farther south, in Collins Park, Public Art Fund and The Bass set up six artist-designed ping-pong tables. Between Tides is meant to be played: the [event listing](https://www.artrabbit.com/events/between-tides) says paddles and balls are lent free on site, and on Monday, Nov. 30, from 4 to 6 p.m., there's an open tournament.",
+          "The fair, which brings together 272 galleries from more than 40 countries, per [Artsy](https://www.artsy.net/article/artsy-editorial-art-basel-miami-beach-announces-272-exhibitors-2026-edition), opens to the public Dec. 4-6 at the convention center. Art Basel has also announced a new outdoor work by James Turrell, free to the public.",
+          "Last year, on the same sand, Es Devlin built Library of Us, a triangle of 2,500 books over a reflecting pool. When it closed, [My Modern Met](https://mymodernmet.com/library-of-us-faena-art-es-devlin) reported, the books went to the city's libraries and schools."
         ]
       },
       "fuentes": [
@@ -635,9 +635,9 @@
           "¿Compraste casa este año? Pide el homestead antes del 1 de marzo de 2027 en la página del tasador de propiedades de Miami-Dade."
         ],
         "cuerpo": [
-          "Los tasadores de propiedad de Miami-Dade y Broward confirmaron esta semana que quienes ya tienen homestead no tendrán que hacer ningún trámite para recibir la exención ampliada que aprobó Florida el 3 de noviembre. La Enmienda 3 obtuvo el 62% de los votos, dos puntos más del mínimo exigido.",
-          "La exención para la vivienda principal, hoy de $50,000 en los impuestos no escolares, sube a $150,000 el 1 de enero de 2027 y a $250,000 en 2028. El primer descuento llegará en la factura de noviembre de 2027. Para los alquileres y las segundas viviendas, el aumento anual del valor tasado queda limitado al 5%. Quien no sea residente de Florida el 31 de diciembre de 2026 recibirá la exención nueva a partir de su quinto año con homestead. Hasta entonces le corresponde la exención actual. A partir de 2029, la cifra se ajustará cada año con la inflación.",
-          "El costo lo asume el condado: Miami-Dade calcula que dejará de recibir unos $386 millones desde octubre de 2027 y cerca de $697 millones al año desde 2028, dinero que hoy paga bomberos, transporte, parques y bibliotecas. Todavía no ha dicho qué recortará."
+          "Los tasadores de propiedad de Miami-Dade y Broward [confirmaron esta semana](https://www.cbsnews.com/miami/news/amendment-3-homestead-exemption-no-action-needed-deadlines-broward-miami-dade/) que quienes ya tienen homestead no tendrán que hacer ningún trámite para recibir la exención ampliada que aprobó Florida el 3 de noviembre. La Enmienda 3 obtuvo el 62% de los votos, dos puntos más del mínimo exigido, según [WGCU](https://www.wgcu.org/2026-11-04/florida-gives-a-resounding-yes-to-property-tax-amendment-governments-will-loses-billions).",
+          "Como detalla el [boletín del Departamento de Ingresos de Florida](https://floridarevenue.com/property/Documents/PTO_BUL_26-21.pdf), la exención para la vivienda principal, hoy de $50,000 en los impuestos no escolares, sube a $150,000 el 1 de enero de 2027 y a $250,000 en 2028. El primer descuento llegará en la factura de noviembre de 2027. Para los alquileres y las segundas viviendas, el aumento anual del valor tasado queda limitado al 5%. Quien no sea residente de Florida el 31 de diciembre de 2026 recibirá la exención nueva a partir de su quinto año con homestead. Hasta entonces le corresponde la exención actual. A partir de 2029, la cifra se ajustará cada año con la inflación.",
+          "El costo lo asume el condado: [Miami-Dade calcula](https://www.miamidade.gov/global/government/mayor/amendment-three/home.page) que dejará de recibir unos $386 millones desde octubre de 2027 y cerca de $697 millones al año desde 2028, dinero que hoy paga bomberos, transporte, parques y bibliotecas. Todavía no ha dicho qué recortará."
         ]
       },
       "en": {
@@ -649,9 +649,9 @@
           "Bought a home this year? File for homestead by March 1, 2027, on the Miami-Dade Property Appraiser's website."
         ],
         "cuerpo": [
-          "Miami-Dade and Broward property appraisers confirmed this week that homeowners who already have homestead won't need to do anything to receive the expanded exemption Florida approved on Nov. 3. Amendment 3 won 62% of the vote, two points above the required minimum.",
-          "The exemption on a primary residence, now $50,000 for non-school taxes, rises to $150,000 on Jan. 1, 2027, and to $250,000 in 2028. The first discount will show up on the November 2027 bill. For rentals and second homes, the annual increase in assessed value is capped at 5%. Anyone who isn't a Florida resident on Dec. 31, 2026, will get the new exemption starting in their fifth year of homestead. Until then they get the current exemption. After 2028, the amount will adjust each year for inflation.",
-          "The county absorbs the cost: Miami-Dade estimates it will lose about $386 million starting in October 2027 and close to $697 million a year from 2028, money that now pays for fire rescue, transit, parks and libraries. It hasn't said yet what it will cut."
+          "Miami-Dade and Broward property appraisers [confirmed this week](https://www.cbsnews.com/miami/news/amendment-3-homestead-exemption-no-action-needed-deadlines-broward-miami-dade/) that homeowners who already have homestead won't need to do anything to receive the expanded exemption Florida approved on Nov. 3. Amendment 3 won 62% of the vote, two points above the required minimum, according to [WGCU](https://www.wgcu.org/2026-11-04/florida-gives-a-resounding-yes-to-property-tax-amendment-governments-will-loses-billions).",
+          "As a [Florida Department of Revenue bulletin](https://floridarevenue.com/property/Documents/PTO_BUL_26-21.pdf) lays out, the exemption on a primary residence, now $50,000 for non-school taxes, rises to $150,000 on Jan. 1, 2027, and to $250,000 in 2028. The first discount will show up on the November 2027 bill. For rentals and second homes, the annual increase in assessed value is capped at 5%. Anyone who isn't a Florida resident on Dec. 31, 2026, will get the new exemption starting in their fifth year of homestead. Until then they get the current exemption. After 2028, the amount will adjust each year for inflation.",
+          "The county absorbs the cost: [Miami-Dade estimates](https://www.miamidade.gov/global/government/mayor/amendment-three/home.page) it will lose about $386 million starting in October 2027 and close to $697 million a year from 2028, money that now pays for fire rescue, transit, parks and libraries. It hasn't said yet what it will cut."
         ]
       },
       "fuentes": [
@@ -707,13 +707,13 @@
           "Las cifras son de septiembre. El próximo informe mensual traerá las de octubre."
         ],
         "cuerpo": [
-          "Miami-Dade superó en nueve meses su récord anual de ventas de más de $30 millones: fueron 24 hasta septiembre, frente a las 21 de todo 2025, según el último informe de la asociación MIAMI REALTORS®. Debajo de esa cifra, el mercado se mueve a dos velocidades.",
+          "Miami-Dade superó en nueve meses su récord anual de ventas de más de $30 millones: fueron 24 hasta septiembre, frente a las 21 de todo 2025, según el [último informe de la asociación MIAMI REALTORS®](https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/). Debajo de esa cifra, el mercado se mueve a dos velocidades.",
           "## Casas",
-          "La mediana de venta de una casa unifamiliar llegó en septiembre a $692,000, un 4.06% más que un año antes. Hay 5.1 meses de inventario, lo que la asociación considera mercado de vendedor. Se cerraron 824 ventas, un 4.7% menos.",
+          "La asociación reporta que la mediana de venta de una casa unifamiliar llegó en septiembre a $692,000, un 4.06% más que un año antes. Hay 5.1 meses de inventario, lo que considera mercado de vendedor. Se cerraron 824 ventas, un 4.7% menos.",
           "## Condominios",
-          "La mediana quedó en $417,090, un 0.69% menos, con 12.3 meses de inventario: mercado de comprador. Las ventas subieron un 1%, a 909. Se considera equilibrado un mercado con entre seis y nueve meses de oferta.",
+          "La mediana quedó en $417,090, un 0.69% menos, con 12.3 meses de inventario, lo que la asociación califica de mercado de comprador. Las ventas subieron un 1%, a 909. Para la asociación, un mercado está equilibrado con entre seis y nueve meses de oferta.",
           "## El dinero",
-          "El 38.3% de las ventas cerradas en septiembre se pagó al contado. Entre los condominios fue casi la mitad, el 49.4%. Las tasas hipotecarias estaban en 7.46% el 13 de octubre, casi 0.6 puntos más que al comenzar septiembre, de acuerdo con la asociación.",
+          "El informe indica que el 38.3% de las ventas cerradas en septiembre se pagó al contado. Entre los condominios fue casi la mitad, el 49.4%. Las tasas hipotecarias estaban en 7.46% el 13 de octubre, casi 0.6 puntos más que al comenzar septiembre, de acuerdo con la asociación.",
           "En total se vendieron 1,733 viviendas, un 2% menos que en septiembre de 2025."
         ]
       },
@@ -727,13 +727,13 @@
           "The figures are for September. The next monthly report will bring October's."
         ],
         "cuerpo": [
-          "Miami-Dade beat its annual record for sales above $30 million in just nine months: 24 through September, against 21 in all of 2025, according to the latest report from the MIAMI REALTORS® association. Beneath that number, the market is moving at two speeds.",
+          "Miami-Dade beat its annual record for sales above $30 million in just nine months: 24 through September, against 21 in all of 2025, according to the [latest report from the MIAMI REALTORS® association](https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/). Beneath that number, the market is moving at two speeds.",
           "## Houses",
-          "The median sale price of a single-family home reached $692,000 in September, up 4.06% from a year earlier. There are 5.1 months of inventory, which the association considers a seller's market. Closed sales totaled 824, down 4.7%.",
+          "The association reports that the median sale price of a single-family home reached $692,000 in September, up 4.06% from a year earlier. There are 5.1 months of inventory, which it considers a seller's market. Closed sales totaled 824, down 4.7%.",
           "## Condos",
-          "The median came in at $417,090, down 0.69%, with 12.3 months of inventory: a buyer's market. Sales rose 1%, to 909. A market with six to nine months of supply is considered balanced.",
+          "The median came in at $417,090, down 0.69%, with 12.3 months of inventory, which the association calls a buyer's market. Sales rose 1%, to 909. The association considers a market with six to nine months of supply balanced.",
           "## The money",
-          "Cash paid for 38.3% of closed sales in September. Among condos it was nearly half, 49.4%. Mortgage rates stood at 7.46% on Oct. 13, almost 0.6 percentage points higher than at the start of September, according to the association.",
+          "The report shows cash paid for 38.3% of closed sales in September. Among condos it was nearly half, 49.4%. Mortgage rates stood at 7.46% on Oct. 13, almost 0.6 percentage points higher than at the start of September, according to the association.",
           "In all, 1,733 homes sold, 2% fewer than in September 2025."
         ]
       },
@@ -765,17 +765,17 @@
           "¿Dudas sobre el trámite? Unidad de Recertificación de Miami-Dade: 786-315-2373."
         ],
         "cuerpo": [
-          "Los edificios construidos en 1996 cumplen este año la edad en que Miami-Dade exige revisar su estructura y su sistema eléctrico. A los condominios y cooperativas de tres pisos o más que están a menos de tres millas de la costa les toca antes: a los 25 años, es decir, a los que se levantaron en 2001. En 2027 será el turno de los de 1997 y 2002.",
+          "Los edificios construidos en 1996 cumplen este año la edad en que Miami-Dade exige revisar su estructura y su sistema eléctrico, según las [reglas de recertificación del condado](https://www.miamidade.gov/global/economy/building/recertification.page). A los condominios y cooperativas de tres pisos o más que están a menos de tres millas de la costa les toca antes: a los 25 años, es decir, a los que se levantaron en 2001. En 2027 será el turno de los de 1997 y 2002.",
           "## ¿Qué es la recertificación?",
-          "Una inspección obligatoria en la que un ingeniero o arquitecto con licencia de Florida certifica que el edificio es seguro, en lo estructural y en lo eléctrico, para seguir habitado. Después de la primera, se repite cada 10 años. El condado la exige desde 1975 y endureció las reglas en 2022, tras el derrumbe de Surfside.",
+          "El condado la define como una inspección obligatoria en la que un ingeniero o arquitecto con licencia de Florida certifica que el edificio es seguro, en lo estructural y en lo eléctrico, para seguir habitado. Después de la primera, se repite cada 10 años. La exige desde 1975 y endureció las reglas en 2022, tras el derrumbe de Surfside.",
           "## ¿Cuánto tiempo hay para cumplir?",
-          "Noventa días desde la fecha del aviso que recibe el dueño o la asociación. El ingeniero o arquitecto puede pedir por escrito una prórroga de hasta 60 días, siempre que certifique que el edificio puede seguir ocupado mientras tanto.",
+          "El condado da noventa días desde la fecha del aviso que recibe el dueño o la asociación. El ingeniero o arquitecto puede pedir por escrito una prórroga de hasta 60 días, siempre que certifique que el edificio puede seguir ocupado mientras tanto.",
           "## ¿Y si el informe dice que hay que reparar?",
           "El edificio no queda recertificado hasta que las reparaciones se hagan con sus permisos. Ese costo lo paga la asociación, y es el origen de muchas cuotas especiales. Por eso conviene preguntar antes de comprar o alquilar en un edificio que se acerca a los 25 o 30 años.",
           "## ¿Qué pasa si el edificio no cumple?",
-          "El condado emite una citación sin más aviso, con una multa inicial de $510. Si no se corrige ni se paga a tiempo, las penalidades pueden acumularse hasta $10,000 por infracción y terminar en un gravamen sobre la propiedad. Entregar el informe pasados los 90 días cuesta $465.31 adicionales a la tarifa de revisión, de $413.61.",
+          "El condado advierte que emite una citación sin más aviso, con una multa inicial de $510. Si no se corrige ni se paga a tiempo, las penalidades pueden acumularse hasta $10,000 por infracción y terminar en un gravamen sobre la propiedad. Entregar el informe pasados los 90 días cuesta $465.31 adicionales a la tarifa de revisión, de $413.61.",
           "## ¿Y el estudio de reservas?",
-          "Es otra obligación, estatal y solo para condominios de tres pisos o más. El estudio de reservas de integridad estructural (SIRS, por sus siglas en inglés) calcula cuánto debe ahorrar la asociación para el techo, la estructura, la plomería, la electricidad, la impermeabilización, las ventanas y la protección contra incendios, y se repite al menos cada 10 años. Las asociaciones que tenían una inspección estructural pendiente para este año podían hacer las dos cosas a la vez, con fecha límite del 31 de diciembre de 2026. Los presupuestos aprobados desde 2025 ya no pueden renunciar a esas reservas.",
+          "Es otra obligación, estatal y solo para condominios de tres pisos o más. El [Departamento de Regulación Profesional de Florida (DBPR)](https://condos.myfloridalicense.com/inspections/) explica que el estudio de reservas de integridad estructural (SIRS, por sus siglas en inglés) calcula cuánto debe ahorrar la asociación para el techo, la estructura, la plomería, la electricidad, la impermeabilización, las ventanas y la protección contra incendios, y se repite al menos cada 10 años. Las asociaciones que tenían una inspección estructural pendiente para este año podían hacer las dos cosas a la vez, con fecha límite del 31 de diciembre de 2026. Los presupuestos aprobados desde 2025 ya no pueden renunciar a esas reservas.",
           "## ¿A quién no le toca?",
           "A las casas unifamiliares, los dúplex y los edificios pequeños, de 2,000 pies cuadrados o menos y con capacidad para 10 personas o menos. Los edificios de 1982 o anteriores que ya pasaron su primera inspección siguen con su calendario de cada 10 años."
         ]
@@ -789,17 +789,17 @@
           "Questions about the process? Miami-Dade Recertification Unit: 786-315-2373."
         ],
         "cuerpo": [
-          "Buildings completed in 1996 reach this year the age at which Miami-Dade requires a review of their structure and electrical system. Condominiums and co-ops three stories or taller within three miles of the coast are due sooner: at 25 years, meaning those built in 2001. In 2027 it will be the turn of buildings from 1997 and 2002.",
+          "Buildings completed in 1996 reach this year the age at which Miami-Dade requires a review of their structure and electrical system, under the [county's recertification rules](https://www.miamidade.gov/global/economy/building/recertification.page). Condominiums and co-ops three stories or taller within three miles of the coast are due sooner: at 25 years, meaning those built in 2001. In 2027 it will be the turn of buildings from 1997 and 2002.",
           "## What is recertification?",
-          "A mandatory inspection in which a Florida-licensed engineer or architect certifies that the building is structurally and electrically safe for continued occupancy. After the first one, it is repeated every 10 years. The county has required it since 1975 and tightened the rules in 2022, after the Surfside collapse.",
+          "The county defines it as a mandatory inspection in which a Florida-licensed engineer or architect certifies that the building is structurally and electrically safe for continued occupancy. After the first one, it is repeated every 10 years. The county has required it since 1975 and tightened the rules in 2022, after the Surfside collapse.",
           "## How long is there to comply?",
-          "Ninety days from the date of the notice sent to the owner or association. The engineer or architect can request in writing an extension of up to 60 days, provided they certify that the building can remain occupied in the meantime.",
+          "The county sets a deadline of 90 days from the date of the notice sent to the owner or association. The engineer or architect can request in writing an extension of up to 60 days, provided they certify that the building can remain occupied in the meantime.",
           "## What if the report calls for repairs?",
           "The building is not recertified until the repairs are done with the proper permits. The association pays that cost, and it is the source of many special assessments. That is why it pays to ask before buying or renting in a building approaching 25 or 30 years.",
           "## What happens if the building doesn't comply?",
-          "The county issues a citation without further notice, with an initial penalty of $510. If the violation isn't corrected and paid on time, penalties can accumulate up to $10,000 per violation and end in a lien on the property. Filing the report after the 90 days costs an extra $465.31 on top of the $413.61 review fee.",
+          "The county warns that it issues a citation without further notice, with an initial penalty of $510. If the violation isn't corrected and paid on time, penalties can accumulate up to $10,000 per violation and end in a lien on the property. Filing the report after the 90 days costs an extra $465.31 on top of the $413.61 review fee.",
           "## What about the reserve study?",
-          "That is a separate, statewide requirement, and only for condominiums three stories or taller. The structural integrity reserve study (SIRS) works out how much the association must save for the roof, structure, plumbing, electrical, waterproofing, windows and fire protection, and it is repeated at least every 10 years. Associations with a structural inspection due this year could do both at once, with a Dec. 31, 2026, deadline. Budgets adopted since 2025 can no longer waive those reserves.",
+          "That is a separate, statewide requirement, and only for condominiums three stories or taller. The [Florida Department of Business and Professional Regulation (DBPR)](https://condos.myfloridalicense.com/inspections/) explains that the structural integrity reserve study (SIRS) works out how much the association must save for the roof, structure, plumbing, electrical, waterproofing, windows and fire protection, and it is repeated at least every 10 years. Associations with a structural inspection due this year could do both at once, with a Dec. 31, 2026, deadline. Budgets adopted since 2025 can no longer waive those reserves.",
           "## Who is exempt?",
           "Single-family homes, duplexes and small buildings of 2,000 square feet or less with an occupant load of 10 or fewer. Buildings from 1982 or earlier that already had their first inspection stay on their every-10-years schedule."
         ]
@@ -839,9 +839,9 @@
           "¿Dudas? Departamento de Recursos Ambientales del condado: DERM@miamidade.gov."
         ],
         "cuerpo": [
-          "Desde el 1 de noviembre vuelve a estar permitido fertilizar césped y jardines en Miami-Dade. La prohibición de usar productos con nitrógeno o fósforo rige cada año del 15 de mayo al 31 de octubre, la temporada de lluvias, cuando el agua arrastra esos nutrientes hasta los canales y, de ahí, a la bahía de Biscayne.",
+          "Desde el 1 de noviembre vuelve a estar permitido fertilizar césped y jardines en Miami-Dade. Las [reglas del condado](https://www.miamidade.gov/global/service.page?Mduid_service=ser1620843942468395) prohíben cada año, del 15 de mayo al 31 de octubre, usar productos con nitrógeno o fósforo: es la temporada de lluvias, cuando el agua arrastra esos nutrientes hasta los canales y, de ahí, a la bahía de Biscayne.",
           "Que se pueda no significa sin límite. La ordenanza del condado permite como máximo una libra de nitrógeno por cada 1,000 pies cuadrados en cada aplicación de fertilizante sólido, media libra si es líquido, y no más de cuatro libras al año. Se aplica en todo el condado, también dentro de las ciudades, que pueden sumar restricciones propias.",
-          "El motivo está en el agua. El informe anual del condado sobre la salud de la bahía, publicado en mayo, concluyó que todas sus zonas siguen en condición regular o mala, con exceso de nutrientes y bacterias sobre todo en el norte. Hubo mejoras puntuales: el agua se aclaró en varias áreas y los pastos marinos alcanzaron en algunas su mayor cobertura desde 2018.",
+          "El motivo está en el agua. El [informe anual del condado sobre la salud de la bahía](https://www.miamidade.gov/global/release.page?Mduid_release=rel1779205495911473), publicado en mayo, concluyó que todas sus zonas siguen en condición regular o mala, con exceso de nutrientes y bacterias sobre todo en el norte. El mismo informe registró mejoras puntuales: el agua se aclaró en varias áreas y los pastos marinos alcanzaron en algunas su mayor cobertura desde 2018.",
           "El fertilizante no es el único culpable. El condado señala también los desechos de perros que nadie recoge, la basura en calles y canales, los tanques sépticos con fugas y las grasas que se van por el fregadero.",
           "Quedan fuera de estas reglas las fincas agrícolas y ciertos campos deportivos; a los huertos y campos de golf se les aplica solo una parte. Quien fertiliza por oficio necesita capacitación y certificación del estado."
         ]
@@ -857,9 +857,9 @@
           "Questions? County Department of Environmental Resources Management: DERM@miamidade.gov."
         ],
         "cuerpo": [
-          "Since Nov. 1, fertilizing lawns and gardens is allowed again in Miami-Dade. The ban on products containing nitrogen or phosphorus runs every year from May 15 through Oct. 31, the rainy season, when water carries those nutrients into canals and, from there, into Biscayne Bay.",
+          "Since Nov. 1, fertilizing lawns and gardens is allowed again in Miami-Dade. [County rules](https://www.miamidade.gov/global/service.page?Mduid_service=ser1620843942468395) ban products containing nitrogen or phosphorus every year from May 15 through Oct. 31, the rainy season, when water carries those nutrients into canals and, from there, into Biscayne Bay.",
           "Allowed doesn't mean unlimited. The county ordinance permits at most 1 pound of nitrogen per 1,000 square feet in each application of solid fertilizer, half a pound if liquid, and no more than 4 pounds a year. It applies countywide, including inside cities, which may add restrictions of their own.",
-          "The reason is in the water. The county's annual report on the bay's health, released in May, found that every region remains in fair or poor condition, with excess nutrients and bacteria especially in the north. There were localized gains: water clarity improved in several areas, and seagrass reached its highest coverage since 2018 in some.",
+          "The reason is in the water. The [county's annual report on the bay's health](https://www.miamidade.gov/global/release.page?Mduid_release=rel1779205495911473), released in May, found that every region remains in fair or poor condition, with excess nutrients and bacteria especially in the north. The same report noted localized gains: water clarity improved in several areas, and seagrass reached its highest coverage since 2018 in some.",
           "Fertilizer isn't the only culprit. The county also points to uncollected dog waste, trash in streets and canals, leaky septic tanks and grease poured down the sink.",
           "Farms and certain athletic fields are exempt; only part of the rules apply to food gardens and golf courses. Anyone who applies fertilizer for a living needs state training and certification."
         ]
@@ -896,10 +896,10 @@
           "Los horarios, las tarifas y las rutas que más se usan están en la [sección de transporte de Miami Magic](https://www.miamimagicapp.com/?go=transport). Para alertas en tiempo real, la app GO Miami-Dade Transit."
         ],
         "cuerpo": [
-          "Desde el 1 de enero, viajar en Metrorail o en Metrobus costará $2.75, 50 centavos más que ahora. Es la primera subida del pasaje en 13 años, y el condado calcula que le dejará unos $9.2 millones.",
-          "Con ese dinero, Miami-Dade salva 13 rutas de autobús que estaban en riesgo, entre ellas las nocturnas, que usan cada día más de 4,000 personas, muchas de turnos tardíos. Aun así, algunas rutas de poco uso tendrán menos servicio.",
-          "El Metromover sigue gratis. Recorre Downtown, Brickell y Omni con 21 estaciones, de 5:30 de la mañana a 10 de la noche, y pasa cada 90 segundos en hora pico. El condado ya estudia cobrarlo, pero no hay decisión.",
-          "Más al sur, Metro Express corre desde octubre del año pasado por el South Dade TransitWay: autobuses eléctricos entre la estación Dadeland South del Metrorail y el park-and-ride de la SW 344 St, con 14 estaciones con aire acondicionado.",
+          "Desde el 1 de enero, viajar en Metrorail o en Metrobus costará $2.75, 50 centavos más que ahora. Es la primera subida del pasaje en 13 años, y el condado calcula que le dejará unos $9.2 millones, [informó WLRN](https://www.wlrn.org/business/2026-10-06/miami-dade-county-approves-first-metrorail-and-metrobus-fare-increase-in-13-years).",
+          "Con ese dinero, explicó el condado, Miami-Dade salva 13 rutas de autobús que estaban en riesgo, entre ellas las nocturnas, que usan cada día más de 4,000 personas, muchas de turnos tardíos. Aun así, algunas rutas de poco uso tendrán menos servicio.",
+          "El Metromover sigue gratis. Según la [página del condado](https://www.miamidade.gov/sites/global/transportation/metromover.page), recorre Downtown, Brickell y Omni con 21 estaciones, de 5:30 de la mañana a 10 de la noche, y pasa cada 90 segundos en hora pico. El condado ya estudia cobrarlo, pero no hay decisión.",
+          "Más al sur, [Metro Express](https://www.miamidade.gov/global/transportation/metro-express-bus-rapid-transit-service.page) corre desde octubre del año pasado por el South Dade TransitWay: autobuses eléctricos entre la estación Dadeland South del Metrorail y el park-and-ride de la SW 344 St, con 14 estaciones con aire acondicionado.",
           "Para salir del condado, Tri-Rail une la estación del aeropuerto con Fort Lauderdale y West Palm Beach, y Brightline sale de MiamiCentral, en el downtown, hacia Orlando."
         ]
       },
@@ -912,10 +912,10 @@
           "Schedules, fares and the most-used routes are in the [Miami Magic transportation section](https://www.miamimagicapp.com/?go=transport). For real-time alerts, use the GO Miami-Dade Transit app."
         ],
         "cuerpo": [
-          "Starting Jan. 1, a Metrorail or Metrobus ride will cost $2.75, 50 cents more than today. It's the first fare increase in 13 years, and the county expects it to bring in about $9.2 million.",
-          "With that money, Miami-Dade saves 13 bus routes that were at risk, including late-night routes used by more than 4,000 people a day, many of them late-shift workers. Even so, some low-ridership routes will see reduced service.",
-          "Metromover is still free. It loops through Downtown, Brickell and Omni with 21 stations, from 5:30 a.m. to 10 p.m., every 90 seconds at rush hour. The county is studying charging for it, but no decision has been made.",
-          "Farther south, Metro Express has run since October of last year on the South Dade TransitWay: electric buses between the Dadeland South Metrorail station and the SW 344 St park-and-ride, with 14 air-conditioned stations.",
+          "Starting Jan. 1, a Metrorail or Metrobus ride will cost $2.75, 50 cents more than today. It's the first fare increase in 13 years, and the county expects it to bring in about $9.2 million, [WLRN reported](https://www.wlrn.org/business/2026-10-06/miami-dade-county-approves-first-metrorail-and-metrobus-fare-increase-in-13-years).",
+          "With that money, the county said, Miami-Dade saves 13 bus routes that were at risk, including late-night routes used by more than 4,000 people a day, many of them late-shift workers. Even so, some low-ridership routes will see reduced service.",
+          "Metromover is still free. The [county's page](https://www.miamidade.gov/sites/global/transportation/metromover.page) says it loops through Downtown, Brickell and Omni with 21 stations, from 5:30 a.m. to 10 p.m., every 90 seconds at rush hour. The county is studying charging for it, but no decision has been made.",
+          "Farther south, [Metro Express](https://www.miamidade.gov/global/transportation/metro-express-bus-rapid-transit-service.page) has run since October of last year on the South Dade TransitWay: electric buses between the Dadeland South Metrorail station and the SW 344 St park-and-ride, with 14 air-conditioned stations.",
           "To leave the county, Tri-Rail links the airport station with Fort Lauderdale and West Palm Beach, and Brightline runs from MiamiCentral, downtown, to Orlando."
         ]
       },
@@ -977,14 +977,14 @@
           "En aguas estatales, las más cercanas a la costa, la pesca la sigue regulando la FWC."
         ],
         "cuerpo": [
-          "A partir del 19 de enero de 2027 queda prohibido anclar en las áreas de preservación, de conservación y de restauración del Santuario Marino Nacional de los Cayos de Florida, los tramos de arrecife con más protección. Quien salga en bote tendrá que amarrarse a las boyas; ese mismo día empieza la obligación de boyas propias para las embarcaciones grandes.",
+          "A partir del 19 de enero de 2027 queda prohibido anclar en las áreas de preservación, de conservación y de restauración del Santuario Marino Nacional de los Cayos de Florida, los tramos de arrecife con más protección, según las [nuevas reglas de la NOAA](https://floridakeys.noaa.gov/blueprint/). Quien salga en bote tendrá que amarrarse a las boyas; ese mismo día empieza la obligación de boyas propias para las embarcaciones grandes.",
           "## ¿De dónde sale la regla?",
           "Del Restoration Blueprint, el plan con el que la NOAA rehízo las normas del santuario después de 13 años de consultas. Se publicó en enero de 2025 y dio dos años de plazo para el anclaje. El área protegida pasó de 3,800 a 4,539 millas cuadradas y sumó 37 zonas: 20 para aves que anidan, tortugas y pastos marinos, y 15 para restaurar coral.",
           "## ¿Se cierra la pesca?",
-          "No. Sigue abierta en el 95% del santuario, y el plan eliminó cinco zonas restringidas, entre ellas Rock Key y French Reef.",
+          "No. La NOAA asegura en sus [preguntas frecuentes](https://floridakeys.noaa.gov/blueprint/faqs.html) que sigue abierta en el 95% del santuario, y el plan eliminó cinco zonas restringidas, entre ellas Rock Key y French Reef.",
           "## ¿Y los cruceros?",
-          "Ya no pueden descargar nada dentro del santuario, salvo agua de enfriamiento.",
-          "Bajo esas aguas está parte de la única barrera de coral del territorio continental de Estados Unidos. Y hay con qué repoblarla: en agosto, científicos de 12 organizaciones lograron más de 1.5 millones de embriones de coral en los Cayos."
+          "El reglamento les prohíbe descargar nada dentro del santuario, salvo agua de enfriamiento.",
+          "Bajo esas aguas está parte de la única barrera de coral del territorio continental de Estados Unidos. Y hay con qué repoblarla: en agosto, científicos de 12 organizaciones lograron más de 1.5 millones de embriones de coral en los Cayos, [informó la Universidad de Miami](https://news.miami.edu/rosenstiel/stories/2026/08/floridas-leading-coral-experts-unite-in-historic-effort-to-restore-floridas-coral-reef.html)."
         ]
       },
       "en": {
@@ -996,14 +996,14 @@
           "In state waters, the ones closest to shore, fishing is still regulated by the FWC."
         ],
         "cuerpo": [
-          "On Jan. 19, 2027, the ban on anchoring takes effect in the preservation, conservation and restoration areas of Florida Keys National Marine Sanctuary, the most protected stretches of reef. Boaters will have to tie up to mooring buoys; the same day, large vessels must begin using their own designated buoys.",
+          "On Jan. 19, 2027, the ban on anchoring takes effect in the preservation, conservation and restoration areas of Florida Keys National Marine Sanctuary, the most protected stretches of reef, under [NOAA's new rules](https://floridakeys.noaa.gov/blueprint/). Boaters will have to tie up to mooring buoys; the same day, large vessels must begin using their own designated buoys.",
           "## Where does the rule come from?",
           "From the Restoration Blueprint, the plan NOAA used to rewrite the sanctuary's rules after 13 years of consultation. It was published in January 2025 and gave anchoring a two-year grace period. The protected area went from 3,800 to 4,539 square miles and added 37 zones: 20 for nesting birds, sea turtles and seagrass, and 15 for coral restoration.",
           "## Is fishing closing?",
-          "No. It stays open in 95% of the sanctuary, and the plan eliminated five restricted zones, among them Rock Key and French Reef.",
+          "No. NOAA says in its [FAQ](https://floridakeys.noaa.gov/blueprint/faqs.html) that it stays open in 95% of the sanctuary, and the plan eliminated five restricted zones, among them Rock Key and French Reef.",
           "## And cruise ships?",
-          "They can no longer discharge anything inside the sanctuary other than cooling water.",
-          "Beneath those waters lies part of the only coral barrier reef in the continental United States. And there's something to restock it with: in August, scientists from 12 organizations produced more than 1.5 million coral embryos in the Keys."
+          "The rules bar them from discharging anything inside the sanctuary other than cooling water.",
+          "Beneath those waters lies part of the only coral barrier reef in the continental United States. And there's something to restock it with: in August, scientists from 12 organizations produced more than 1.5 million coral embryos in the Keys, [the University of Miami reported](https://news.miami.edu/rosenstiel/stories/2026/08/floridas-leading-coral-experts-unite-in-historic-effort-to-restore-floridas-coral-reef.html)."
         ]
       },
       "fuentes": [
@@ -1050,8 +1050,8 @@
         ],
         "cuerpo": [
           "A partir del miércoles 25 de noviembre, víspera de Thanksgiving, Key West entra en Navidad a su manera. Ese día, a las 6:00 de la tarde, se enciende en el puerto histórico un árbol gigante hecho de boyas de pesca, y una hora después otro levantado con trampas de langosta.",
-          "Con ellos se prende también el Harbor Walk of Lights, que este año cumple 21 ediciones: palmas, barcos, tiendas y bares iluminados a lo largo del puerto, desde Lazy Way Lane hasta la terminal del ferry en Grinnell Street. Queda encendido hasta la noche de Año Nuevo.",
-          "El calendario del mes, publicado por la Cámara de Comercio de Key West, es largo. Lo esencial cabe en cuatro noches: el encendido del árbol de la ciudad el lunes 30 de noviembre en Bayview Park, el desfile del sábado 5 de diciembre por Truman y Duval, el encendido de la menorá el domingo 6 y el desfile de botes iluminados del sábado 12 en el puerto.",
+          "Con ellos se prende también el Harbor Walk of Lights, que este año cumple 21 ediciones según la Cámara de Comercio: palmas, barcos, tiendas y bares iluminados a lo largo del puerto, desde Lazy Way Lane hasta la terminal del ferry en Grinnell Street. Queda encendido hasta la noche de Año Nuevo.",
+          "El [calendario del mes, publicado por la Cámara de Comercio de Key West](https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che), es largo. Lo esencial cabe en cuatro noches: el encendido del árbol de la ciudad el lunes 30 de noviembre en Bayview Park, el desfile del sábado 5 de diciembre por Truman y Duval, el encendido de la menorá el domingo 6 y el desfile de botes iluminados del sábado 12 en el puerto.",
           "Entre una fecha y otra hay mercados de artesanos, conciertos y una versión local de El Cascanueces, del 3 al 7 de diciembre en el Tennessee Williams Theatre, con unos 200 vecinos en escena. Del 7 al 27 de diciembre, el Conch Tour Train y el Old Town Trolley hacen recorridos nocturnos para ver las casas iluminadas.",
           "Varios eventos son gratuitos. Otros piden un juguete o una donación para organizaciones de la isla."
         ]
@@ -1068,8 +1068,8 @@
         ],
         "cuerpo": [
           "Starting Wednesday, Nov. 25, Thanksgiving eve, Key West does Christmas its own way. That day at 6 p.m., a giant tree made of fishing buoys is lit at the historic seaport, and an hour later another one built from lobster traps.",
-          "With them comes the Harbor Walk of Lights, in its 21st year: palms, ships, shops and bars lit up along the seaport, from Lazy Way Lane to the ferry terminal at Grinnell Street. It stays on through New Year's Eve.",
-          "The month's calendar, published by the Key West Chamber of Commerce, is long. The essentials fit in four nights: the city tree lighting on Monday, Nov. 30, at Bayview Park; the parade on Saturday, Dec. 5, along Truman and Duval; the menorah lighting on Sunday, Dec. 6; and the lighted boat parade on Saturday, Dec. 12, at the seaport.",
+          "With them comes the Harbor Walk of Lights, in its 21st year according to the Chamber of Commerce: palms, ships, shops and bars lit up along the seaport, from Lazy Way Lane to the ferry terminal at Grinnell Street. It stays on through New Year's Eve.",
+          "The [month's calendar, published by the Key West Chamber of Commerce](https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che), is long. The essentials fit in four nights: the city tree lighting on Monday, Nov. 30, at Bayview Park; the parade on Saturday, Dec. 5, along Truman and Duval; the menorah lighting on Sunday, Dec. 6; and the lighted boat parade on Saturday, Dec. 12, at the seaport.",
           "In between there are artisan markets, concerts and a local version of The Nutcracker, Dec. 3-7 at the Tennessee Williams Theatre, with some 200 residents on stage. From Dec. 7 to 27, the Conch Tour Train and the Old Town Trolley run nighttime tours of the decorated houses.",
           "Several events are free. Others ask for a toy or a donation for island organizations."
         ]
@@ -1103,8 +1103,8 @@
         ],
         "cuerpo": [
           "Hay un momento, saliendo de Marathon rumbo al sur, en que la tierra se acaba y empieza el cielo. La carretera se estira sobre el agua, el turquesa aparece por los dos lados y uno entiende por qué tanta gente maneja horas solo para estar ahí. Ese momento tiene nombre: Seven Mile Bridge.",
-          "El puente, que cruza el canal Moser entre las millas 40 y 47 de la Overseas Highway, está en obras. El Departamento de Transporte de Florida (FDOT) empezó a rehabilitarlo el 2 de marzo, con $17.7 millones y un calendario que llega al verano de 2029.",
-          "Lo están reparando y reforzando, y le repintan las líneas de la vía para alargarle la vida. No es solo cuestión de paisaje: por aquí pasan los residentes, los visitantes y cada entrega que llega a los Lower Keys y a Key West.",
+          "El puente, que cruza el canal Moser entre las millas 40 y 47 de la Overseas Highway, está en obras. El Departamento de Transporte de Florida (FDOT) empezó a rehabilitarlo el 2 de marzo, con $17.7 millones y un calendario que llega al verano de 2029, según la [ficha del proyecto](https://www.fdotmiamidade.com/project/352/446231-1-52-01).",
+          "El FDOT explica que lo están reparando y reforzando, y que le repintan las líneas de la vía para alargarle la vida. No es solo cuestión de paisaje: por aquí pasan los residentes, los visitantes y cada entrega que llega a los Lower Keys y a Key West.",
           "La escapada de fin de semana sigue intacta. Quien cruce de noche entre semana solo tiene que calcular unos minutos de más.",
           "Y al llegar a la mitad, con el mar abierto a los dos lados, vale la pena respirar y mirar alrededor. Ahí empiezan de verdad los Cayos."
         ]
@@ -1119,8 +1119,8 @@
         ],
         "cuerpo": [
           "There's a moment, leaving Marathon heading south, when the land runs out and the sky begins. The road stretches over the water, turquoise appears on both sides, and you understand why so many people drive for hours just to be there. That moment has a name: Seven Mile Bridge.",
-          "The bridge, which crosses Moser Channel between mile markers 40 and 47 of the Overseas Highway, is under construction. The Florida Department of Transportation (FDOT) began rehabilitating it on March 2, with $17.7 million and a schedule that runs to summer 2029.",
-          "Crews are repairing and strengthening it, and restriping the roadway to extend its life. It's not just about the view: residents, visitors and every delivery bound for the Lower Keys and Key West pass through here.",
+          "The bridge, which crosses Moser Channel between mile markers 40 and 47 of the Overseas Highway, is under construction. The Florida Department of Transportation (FDOT) began rehabilitating it on March 2, with $17.7 million and a schedule that runs to summer 2029, according to the [project page](https://www.fdotmiamidade.com/project/352/446231-1-52-01).",
+          "FDOT says crews are repairing and strengthening it, and restriping the roadway to extend its life. It's not just about the view: residents, visitors and every delivery bound for the Lower Keys and Key West pass through here.",
           "The weekend getaway is untouched. Anyone crossing at night during the week only needs to allow a few extra minutes.",
           "And at the midpoint, with open sea on both sides, it's worth taking a breath and looking around. That's where the Keys truly begin."
         ]
@@ -1148,17 +1148,17 @@
         "titulo": "El arrecife de Florida tiene quien lo cuide: ciencia, corales y una noche de agosto que hizo historia",
         "bajada": "Una universidad recibe casi $1.25 millones para averiguar qué corales aguantan el calor, y hay más de 100,000 larvas creciendo en laboratorios.",
         "toca": [
-          "Queda apenas el 1% de los corales cuerno de alce y cuerno de ciervo que hubo en el arrecife de Florida.",
+          "Según la universidad, queda apenas el 1% de los corales cuerno de alce y cuerno de ciervo que hubo en el arrecife de Florida.",
           "El estudio de FAU va hasta 2030, en nueve sitios de los Upper Keys, los Lower Keys y Broward.",
           "Las larvas nacidas en agosto vuelven al mar en unos dos años."
         ],
         "cuerpo": [
-          "La noticia más reciente para el arrecife llegó el 4 de noviembre: Florida Atlantic University (FAU) recibió casi $1.25 millones de la Agencia de Protección Ambiental (EPA) y del Departamento de Protección Ambiental de Florida para estudiar qué hace que un coral resista mejor el calor. Pondrá a prueba 100 genotipos de cinco especies y replantará los más fuertes.",
+          "La noticia más reciente para el arrecife llegó el 4 de noviembre: Florida Atlantic University (FAU) [anunció](https://www.fau.edu/news/2026/advance-coral-reef-restoration-in-florida/index.php) que recibió casi $1.25 millones de la Agencia de Protección Ambiental (EPA) y del Departamento de Protección Ambiental de Florida para estudiar qué hace que un coral resista mejor el calor. Pondrá a prueba 100 genotipos de cinco especies y replantará los más fuertes.",
           "Hace falta. Según la universidad, en algunos sitios más del 90% de los corales sembrados muere en el primer año, y nadie sabe todavía predecir cuáles van a sobrevivir.",
           "## La noche en que el coral se reprodujo",
-          "El coral desova una sola vez al año, en una ventana corta que marcan la luna y el agua. Pasadas las 10 de la noche, las colonias liberan a la vez millones de paquetes de óvulos y esperma. Tras décadas de declive están tan dispersas que esos paquetes ya casi no se encuentran en el mar: quedan menos de 150 corales cuerno de alce y unos 300 cuerno de ciervo genéticamente únicos.",
+          "El coral desova una sola vez al año, en una ventana corta que marcan la luna y el agua. Pasadas las 10 de la noche, las colonias liberan a la vez millones de paquetes de óvulos y esperma. Tras décadas de declive están tan dispersas que esos paquetes ya casi no se encuentran en el mar: la [Universidad de Miami](https://news.miami.edu/rosenstiel/stories/2026/08/floridas-leading-coral-experts-unite-in-historic-effort-to-restore-floridas-coral-reef.html) calcula que quedan menos de 150 corales cuerno de alce y unos 300 cuerno de ciervo genéticamente únicos.",
           "Por eso, la primera semana de agosto, 12 organizaciones se unieron en un proyecto financiado por la NOAA y encabezado por la Universidad de Miami. Los buzos recogieron los gametos en viveros frente a Key Largo y los llevaron a un laboratorio temporal en el parque John Pennekamp, donde los científicos eligieron los cruces con más posibilidades de resistir.",
-          "En siete noches lograron 116 cruces y más de 1.5 millones de embriones, de los que salieron más de 61,000 larvas de cuerno de alce y 47,000 de cuerno de ciervo. «Lo que hicimos en unas pocas semanas nunca habría ocurrido sin intervención humana», dijo Celia Leto, del Mote Marine Laboratory, en el comunicado de la universidad.",
+          "En siete noches, detalla la universidad, lograron 116 cruces y más de 1.5 millones de embriones, de los que salieron más de 61,000 larvas de cuerno de alce y 47,000 de cuerno de ciervo. «Lo que hicimos en unas pocas semanas nunca habría ocurrido sin intervención humana», dijo Celia Leto, del Mote Marine Laboratory, en el comunicado.",
           "## ¿Qué sigue?",
           "Las larvas crecen en laboratorios de la Universidad de Miami, Mote, The Florida Aquarium, The Reef Institute y la Smithsonian Marine Station. Después pasan a los viveros y de ahí al arrecife, incluidos los sitios de Mission: Iconic Reefs en el santuario marino de los Cayos.",
           "La próxima vez que hagas snorkel en los Cayos, mira de cerca: quizá ese coral tenga una historia que empezó una noche de agosto."
@@ -1168,17 +1168,17 @@
         "titulo": "Florida's reef has people looking out for it: science, corals and an August night that made history",
         "bajada": "A university gets nearly $1.25 million to learn which corals can take the heat, and more than 100,000 larvae are growing in labs.",
         "toca": [
-          "Just 1% of the elkhorn and staghorn corals that once lived on Florida's Coral Reef remain.",
+          "According to the university, just 1% of the elkhorn and staghorn corals that once lived on Florida's Coral Reef remain.",
           "FAU's study runs through 2030, at nine sites across the Upper Keys, Lower Keys and Broward.",
           "The larvae born in August return to the sea in about two years."
         ],
         "cuerpo": [
-          "The latest news for the reef came Nov. 4: Florida Atlantic University (FAU) received nearly $1.25 million from the Environmental Protection Agency (EPA) and the Florida Department of Environmental Protection to study what makes a coral better at withstanding heat. It will test 100 genotypes from five species and replant the strongest.",
+          "The latest news for the reef came Nov. 4: Florida Atlantic University (FAU) [announced](https://www.fau.edu/news/2026/advance-coral-reef-restoration-in-florida/index.php) it received nearly $1.25 million from the Environmental Protection Agency (EPA) and the Florida Department of Environmental Protection to study what makes a coral better at withstanding heat. It will test 100 genotypes from five species and replant the strongest.",
           "It's needed. According to the university, at some sites more than 90% of planted corals die in the first year, and no one can yet predict which will survive.",
           "## The night the coral spawned",
-          "Coral spawns once a year, in a short window set by the moon and the water. Just after 10 p.m., colonies release millions of egg and sperm bundles at once. After decades of decline they're so scattered that the bundles rarely find each other in the sea: fewer than 150 genetically unique elkhorn corals and about 300 staghorn remain.",
+          "Coral spawns once a year, in a short window set by the moon and the water. Just after 10 p.m., colonies release millions of egg and sperm bundles at once. After decades of decline they're so scattered that the bundles rarely find each other in the sea: the [University of Miami](https://news.miami.edu/rosenstiel/stories/2026/08/floridas-leading-coral-experts-unite-in-historic-effort-to-restore-floridas-coral-reef.html) estimates that fewer than 150 genetically unique elkhorn corals and about 300 staghorn remain.",
           "So in the first week of August, 12 organizations joined forces in a NOAA-funded project led by the University of Miami. Divers collected the gametes at nurseries off Key Largo and rushed them to a temporary lab at John Pennekamp park, where scientists chose the crosses most likely to hold up.",
-          "In seven nights they made 116 crosses and more than 1.5 million embryos, which yielded more than 61,000 elkhorn larvae and 47,000 staghorn. \"What we have done over a few weeks would have never happened without human intervention,\" Celia Leto of Mote Marine Laboratory said in the university's statement.",
+          "In seven nights, the university says, they made 116 crosses and more than 1.5 million embryos, which yielded more than 61,000 elkhorn larvae and 47,000 staghorn. \"What we have done over a few weeks would have never happened without human intervention,\" Celia Leto of Mote Marine Laboratory said in the statement.",
           "## What's next?",
           "The larvae are growing in labs at the University of Miami, Mote, The Florida Aquarium, The Reef Institute and the Smithsonian Marine Station. Then they move to the nurseries and from there to the reef, including the Mission: Iconic Reefs sites in the Keys marine sanctuary.",
           "Next time you snorkel in the Keys, look closely: that coral may have a story that began on an August night."
@@ -1216,11 +1216,11 @@
           "El faro se ve en el horizonte desde la costa de Islamorada, a unas 4 millas mar adentro."
         ],
         "cuerpo": [
-          "Este sábado 14 de noviembre Islamorada se viste de gala por su faro. La cena benéfica anual Reignite the Light se celebra en Founders Park para seguir recaudando fondos para restaurar el faro de Alligator Reef, según reportó Keys Weekly. Esa sola noche ha llegado a reunir unos $225,000.",
+          "Este sábado 14 de noviembre Islamorada se viste de gala por su faro. La cena benéfica anual Reignite the Light se celebra en Founders Park para seguir recaudando fondos para restaurar el faro de Alligator Reef, [reportó Keys Weekly](https://keysweekly.com/42/after-years-of-fundraising-work-may-soon-begin-on-alligator-reef-lighthouse/). Esa sola noche ha llegado a reunir unos $225,000, añade el semanario.",
           "No se hace en invierno, cuando llegan los snowbirds, por una razón sencilla. «Es un evento de los locales, porque el faro representa a los locales», dijo al semanario Lorie LaLonde, presidenta de la fundación que lo cuida.",
           "## Un gigante en medio del mar",
           "El faro se encendió por primera vez en 1873 y dejó de operar en 2014. Está en el Registro Nacional de Lugares Históricos, rodeado de corales que cada año visitan decenas de miles de navegantes, buzos y nadadores. Según Keys Weekly, mide 136 pies y debe su nombre al USS Alligator, una goleta de la Marina que naufragó en ese arrecife en 1822.",
-          "Un estudio de ingeniería de 2010 le dio entre 15 y 25 años de vida. En 2019 la organización local Friends of the Pool pidió hacerse cargo de él, y en 2021 el Departamento del Interior se lo adjudicó. Así nació Save Alligator Lighthouse.",
+          "Un estudio de ingeniería de 2010 le dio entre 15 y 25 años de vida, recuerda la [fundación](https://www.savealligatorlighthouse.org/about/). En 2019 la organización local Friends of the Pool pidió hacerse cargo de él, y en 2021 el Departamento del Interior se lo adjudicó. Así nació Save Alligator Lighthouse.",
           "## Lo que viene",
           "De acuerdo con Keys Weekly, la convocatoria para las empresas interesadas en la primera fase cerró en septiembre y ahora toca elegir contratista. Esa fase, de unos $500,000, reconstruye la plataforma de llegada, una pasarela y la escalera hasta las antiguas habitaciones del guardián, y pone una barrera para que nadie suba a lanzarse al agua.",
           "El proyecto completo costará entre $6 y $8 millones. Rob Dixon, uno de sus fundadores, le dijo al semanario que ya han reunido cerca de $1 millón, además de $550,000 en subvenciones del Consejo de Desarrollo Turístico de Monroe. Para él, el faro es «la Estatua de la Libertad de Islamorada».",
@@ -1238,11 +1238,11 @@
           "The lighthouse is visible on the horizon from the Islamorada shore, about 4 miles out to sea."
         ],
         "cuerpo": [
-          "This Saturday, Nov. 14, Islamorada dresses up for its lighthouse. The annual Reignite the Light benefit dinner takes place at Founders Park to keep raising money to restore Alligator Reef Lighthouse, Keys Weekly reported. That single night has raised about $225,000.",
+          "This Saturday, Nov. 14, Islamorada dresses up for its lighthouse. The annual Reignite the Light benefit dinner takes place at Founders Park to keep raising money to restore Alligator Reef Lighthouse, [Keys Weekly reported](https://keysweekly.com/42/after-years-of-fundraising-work-may-soon-begin-on-alligator-reef-lighthouse/). That single night has raised about $225,000, the weekly adds.",
           "It isn't held in winter, when the snowbirds arrive, for a simple reason. \"This is a locals' event. It's geared toward the locals because the lighthouse represents the locals,\" Lorie LaLonde, president of the foundation that looks after it, told the weekly.",
           "## A giant in the middle of the sea",
           "The lighthouse was first lit in 1873 and was last operational in 2014. It is on the National Register of Historic Places, surrounded by corals visited each year by tens of thousands of boaters, divers and swimmers. According to Keys Weekly, it stands 136 feet tall and is named for the USS Alligator, a Navy schooner that wrecked on the reef in 1822.",
-          "A 2010 engineering study gave it 15 to 25 years. In 2019 the local nonprofit Friends of the Pool applied to take it over, and in 2021 the Department of the Interior awarded it the lighthouse. That's how Save Alligator Lighthouse was born.",
+          "A 2010 engineering study gave it 15 to 25 years, the [foundation](https://www.savealligatorlighthouse.org/about/) notes. In 2019 the local nonprofit Friends of the Pool applied to take it over, and in 2021 the Department of the Interior awarded it the lighthouse. That's how Save Alligator Lighthouse was born.",
           "## What's next",
           "According to Keys Weekly, the call for companies interested in the first phase closed in September, and choosing a contractor comes next. That phase, about $500,000, rebuilds the landing platform, a walkway and the stairway up to the old keeper's quarters, and adds a barrier to keep people from climbing up to jump into the water.",
           "The full project will cost between $6 million and $8 million. Rob Dixon, one of its founders, told the weekly they have raised roughly $1 million, plus $550,000 in grants from the Monroe County Tourist Development Council. To him, the lighthouse is \"Islamorada's Statue of Liberty.\"",
@@ -1292,18 +1292,18 @@
           "Cómo funciona el sistema, en [monroecounty-fl.gov/rogo](https://www.monroecounty-fl.gov/rogo)."
         ],
         "cuerpo": [
-          "El estado le puso reparos al plan de vivienda de Monroe. El Departamento de Comercio de Florida objetó que el reparto de los nuevos permisos no reservaba ninguno para vivienda asequible, y el personal del condado propuso corregirlo y llevar la adopción a la reunión del 17 de noviembre. Esto es lo que está en juego.",
+          "El estado le puso reparos al plan de vivienda de Monroe. El Departamento de Comercio de Florida objetó que el reparto de los nuevos permisos no reservaba ninguno para vivienda asequible, y el personal del condado propuso corregirlo y llevar la adopción a la reunión del 17 de noviembre, según un [memorando del condado](https://monroecountyfl.primegov.com/viewer/preview?id=0&type=8&uid=c80b26bf-0a62-4ead-a281-8bfea8f3fe37). Esto es lo que está en juego.",
           "## 1. ¿Qué son estos permisos?",
           "En los Cayos no se construye libremente. El estado limita cuántas viviendas nuevas pueden levantarse para que la evacuación ante un huracán siga siendo posible a tiempo. El sistema que reparte esos permisos por puntos se llama ROGO.",
           "## 2. ¿Cuántos hay?",
-          "A la zona no incorporada del condado le tocan 657, repartidos en diez años y a razón de uno por parcela edificable. Los primeros 219 corresponden al tramo que va hasta el 31 de diciembre de 2027.",
+          "A la zona no incorporada del condado le tocan 657, repartidos en diez años y a razón de uno por parcela edificable, indica el [informe del personal](https://monroecountyfl.primegov.com/viewer/preview?id=0&type=8&uid=38120536-ae51-4a85-910a-1875853bcea3). Los primeros 219 corresponden al tramo que va hasta el 31 de diciembre de 2027.",
           "## 3. La gran novedad",
           "Nace una categoría: la vivienda de mercado para trabajadores. Es para quienes obtienen al menos el 70% de sus ingresos trabajando en Monroe, y la propiedad queda atada a ese uso por 99 años. La idea es que quien sostiene los Cayos pueda vivir en ellos.",
           "El condado ya tenía otra categoría para trabajadores, con 300 permisos y una condición: quien viva en esas unidades debe evacuar en la primera fase, 48 horas antes de un huracán mayor.",
           "## 4. El reparo del estado",
-          "El plan original no asignaba ninguno de los 657 permisos a vivienda asequible, y la ley exige darle prioridad. El estado pidió, además, reglas más claras para garantizar que esas casas las ocupen de verdad trabajadores locales.",
+          "Según el memorando, el plan original no asignaba ninguno de los 657 permisos a vivienda asequible, y la ley exige darle prioridad. El estado pidió, además, reglas más claras para garantizar que esas casas las ocupen de verdad trabajadores locales.",
           "## 5. El ajuste",
-          "El personal del condado propone que el 5% de los permisos, 33 en total, sea solo para vivienda asequible con restricción en la escritura. Se suman a otros 214 permisos para vivienda asequible de trabajadores que ya estaban previstos. Así, de las 871 unidades disponibles en diez años, el 28% sería asequible.",
+          "El personal del condado propone que el 5% de los permisos, 33 en total, sea solo para vivienda asequible con restricción en la escritura. Se suman a otros 214 permisos para vivienda asequible de trabajadores que ya estaban previstos. Con eso, calcula el condado, de las 871 unidades disponibles en diez años el 28% sería asequible.",
           "Detrás de cada cóctel al atardecer, cada tour de snorkel y cada plato de pescado fresco hay alguien que trabaja en los Cayos. Este plan busca que también pueda quedarse a vivir allí."
         ]
       },
@@ -1316,18 +1316,18 @@
           "How the system works, at [monroecounty-fl.gov/rogo](https://www.monroecounty-fl.gov/rogo)."
         ],
         "cuerpo": [
-          "The state pushed back on Monroe County's housing plan. The Florida Department of Commerce objected that the schedule for the new permits set none aside for affordable housing, and county staff proposed fixing it and moving adoption to the Nov. 17 meeting. Here's what's at stake.",
+          "The state pushed back on Monroe County's housing plan. The Florida Department of Commerce objected that the schedule for the new permits set none aside for affordable housing, and county staff proposed fixing it and moving adoption to the Nov. 17 meeting, according to a [county memo](https://monroecountyfl.primegov.com/viewer/preview?id=0&type=8&uid=c80b26bf-0a62-4ead-a281-8bfea8f3fe37). Here's what's at stake.",
           "## 1. What are these permits?",
           "In the Keys, you can't build freely. The state limits how many new homes can go up so that a hurricane evacuation remains possible in time. The points-based system that hands out those permits is called ROGO.",
           "## 2. How many are there?",
-          "Unincorporated Monroe County gets 657, spread over 10 years at one per buildable parcel. The first 219 belong to the period that runs through Dec. 31, 2027.",
+          "Unincorporated Monroe County gets 657, spread over 10 years at one per buildable parcel, the [staff report](https://monroecountyfl.primegov.com/viewer/preview?id=0&type=8&uid=38120536-ae51-4a85-910a-1875853bcea3) says. The first 219 belong to the period that runs through Dec. 31, 2027.",
           "## 3. The big change",
           "A new category is born: market-rate workforce housing. It's for people who earn at least 70% of their income working in Monroe, and the property stays tied to that use for 99 years. The idea is that those who keep the Keys running can live there.",
           "The county already had another category for workers, with 300 permits and one condition: whoever lives in those units must evacuate in the first phase, 48 hours ahead of a major hurricane.",
           "## 4. The state's objection",
-          "The original plan assigned none of the 657 permits to affordable housing, and the law requires prioritizing it. The state also asked for clearer rules to ensure those homes are truly occupied by local workers.",
+          "According to the memo, the original plan assigned none of the 657 permits to affordable housing, and the law requires prioritizing it. The state also asked for clearer rules to ensure those homes are truly occupied by local workers.",
           "## 5. The fix",
-          "County staff propose that 5% of the permits, 33 in all, be used only for deed-restricted affordable housing. They join 214 other permits for affordable workforce housing already planned. That way, of the 871 units available over 10 years, 28% would be affordable.",
+          "County staff propose that 5% of the permits, 33 in all, be used only for deed-restricted affordable housing. They join 214 other permits for affordable workforce housing already planned. With that, the county calculates, 28% of the 871 units available over 10 years would be affordable.",
           "Behind every sunset cocktail, every snorkel tour and every plate of fresh fish, there's someone who works in the Keys. This plan aims to let them stay and live there too."
         ]
       },
@@ -1373,14 +1373,14 @@
           "Los alquileres ilegales se denuncian al 1-855-422-4540."
         ],
         "cuerpo": [
-          "La casa con muelle no viene con permiso para alquilarla por semanas. En la zona no incorporada del condado de Monroe, la norma llama alquiler vacacional a todo arrendamiento de menos de 28 días, y en buena parte de los barrios residenciales está prohibido.",
+          "La casa con muelle no viene con permiso para alquilarla por semanas. En la zona no incorporada del condado de Monroe, la [norma del condado](https://www.monroecounty-fl.gov/701/Special-Vacation-Rental-Program) llama alquiler vacacional a todo arrendamiento de menos de 28 días, y en buena parte de los barrios residenciales está prohibido.",
           "## Dónde no",
           "En los distritos IS, IS-M y URM, que son las subdivisiones residenciales y las de casas móviles, es ilegal alquilar por menos de 28 días. La excepción son las comunidades cerradas con acceso controlado y una asociación que regule esos alquileres. Tampoco se puede anunciar: la publicidad debe reflejar la estadía mínima de 28 días y tarifas mensuales.",
           "## Dónde sí, y con qué",
-          "Donde la zonificación lo admite hacen falta dos cosas. La primera es un permiso especial anual por cada vivienda, cuya solicitud cuesta $1,040 tanto la primera vez como en cada renovación. La segunda, un administrador con licencia del condado, que cuesta $340. Cada año toca, además, la inspección de seguridad contra incendios: $125 por una habitación, $250 por dos o tres y $400 por cuatro o más.",
+          "Donde la zonificación lo admite, el condado pide dos cosas. La primera es un permiso especial anual por cada vivienda, cuya solicitud cuesta $1,040 tanto la primera vez como en cada renovación. La segunda, un administrador con licencia del condado, que cuesta $340. Cada año toca, además, la inspección de seguridad contra incendios: $125 por una habitación, $250 por dos o tres y $400 por cuatro o más.",
           "El permiso no se hereda con la casa. Cuando la propiedad cambia de dueño, el nuevo tiene que sacar el suyo.",
           "## Key West, más estrecho",
-          "El código de Key West usa el mismo corte, menos de 28 días, y añade algo: basta con anunciar la vivienda para estancias cortas para que cuente como alquiler transitorio, aunque no llegue a alquilarse. Ese uso solo cabe en cinco distritos de zonificación (HRCC-1, HRCC-3, HCT, HNC-1 y HNC-3) y existe un tope a las licencias nuevas. La propia ciudad advierte que convertir una vivienda a ese uso resulta «muy difícil, si no imposible»."
+          "El código de Key West usa el mismo corte, menos de 28 días, y añade algo: basta con anunciar la vivienda para estancias cortas para que cuente como alquiler transitorio, aunque no llegue a alquilarse. Ese uso solo cabe en cinco distritos de zonificación (HRCC-1, HRCC-3, HCT, HNC-1 y HNC-3) y existe un tope a las licencias nuevas. La [propia ciudad](https://www.cityofkeywest-fl.gov/FAQ.aspx?QID=207) advierte que convertir una vivienda a ese uso resulta «muy difícil, si no imposible»."
         ]
       },
       "en": {
@@ -1393,14 +1393,14 @@
           "Illegal rentals can be reported at 1-855-422-4540."
         ],
         "cuerpo": [
-          "The house with a dock doesn't come with permission to rent it by the week. In unincorporated Monroe County, the code treats any tenancy of less than 28 days as a vacation rental, and in much of the residential area it is prohibited.",
+          "The house with a dock doesn't come with permission to rent it by the week. In unincorporated Monroe County, the [county's code](https://www.monroecounty-fl.gov/701/Special-Vacation-Rental-Program) treats any tenancy of less than 28 days as a vacation rental, and in much of the residential area it is prohibited.",
           "## Where you can't",
           "In the IS, IS-M and URM districts, which are the residential and mobile-home subdivisions, renting for under 28 days is unlawful. The exception is gated communities with controlled access and an association that regulates those rentals. Advertising is covered too: listings must reflect the 28-day minimum stay and monthly rates.",
           "## Where you can, and what it takes",
-          "Where zoning allows it, two things are required. One is a special vacation rental permit for each dwelling, with a $1,040 application fee due both the first time and at every yearly renewal. The other is a manager licensed by the county, at $340. A fire and life safety inspection is also due every year: $125 for one bedroom, $250 for two or three and $400 for four or more.",
+          "Where zoning allows it, the county requires two things. One is a special vacation rental permit for each dwelling, with a $1,040 application fee due both the first time and at every yearly renewal. The other is a manager licensed by the county, at $340. A fire and life safety inspection is also due every year: $125 for one bedroom, $250 for two or three and $400 for four or more.",
           "The permit doesn't come with the house. When the property changes hands, the new owner has to get their own.",
           "## Key West, tighter still",
-          "Key West's code uses the same cutoff, less than 28 days, and adds something: simply advertising a home for short stays makes it a transient rental, even if it is never actually rented. That use fits in only five zoning districts (HRCC-1, HRCC-3, HCT, HNC-1 and HNC-3) and there is a cap on new licenses. The city itself warns that converting a home to that use is \"very difficult, if not impossible.\""
+          "Key West's code uses the same cutoff, less than 28 days, and adds something: simply advertising a home for short stays makes it a transient rental, even if it is never actually rented. That use fits in only five zoning districts (HRCC-1, HRCC-3, HCT, HNC-1 and HNC-3) and there is a cap on new licenses. The [city itself](https://www.cityofkeywest-fl.gov/FAQ.aspx?QID=207) warns that converting a home to that use is \"very difficult, if not impossible.\""
         ]
       },
       "fuentes": [
@@ -1441,13 +1441,13 @@
           "El código del condado prevé una inspección cuando la propiedad cambia de dueño (sección 122-6). Pregunta por ella."
         ],
         "cuerpo": [
-          "Un cuarto con aire acondicionado debajo de la casa parece un regalo. En los Cayos puede ser una infracción heredada: el condado de Monroe advierte que quien compra una vivienda con espacio habitable por debajo de la cota de inundación se expone a gastos grandes e imprevistos.",
+          "Un cuarto con aire acondicionado debajo de la casa parece un regalo. En los Cayos puede ser una infracción heredada: el [condado de Monroe advierte](https://www.monroecounty-fl.gov/692/Building-Responsibly-Requirements) que quien compra una vivienda con espacio habitable por debajo de la cota de inundación se expone a gastos grandes e imprevistos.",
           "## Qué va arriba",
           "El código de construcción de Florida fija el piso más bajo al menos un pie por encima de la cota de inundación base, que es la altura a la que se espera que llegue el agua en la inundación de referencia. En Monroe, toda estructura levantada después del 31 de diciembre de 1974 debe tener ese piso a la altura de la cota o por encima.",
           "## Qué se permite abajo",
           "Solo tres usos: acceso al edificio, estacionamiento y almacenaje limitado. El condado lo explica con ejemplos, como cortadoras de césped, rastrillos y carretillas. Quedan fuera los muebles, los bancos de trabajo, las neveras y los congeladores, y en general todo lo que se dañe con agua salada.",
           "## La regla del 50%",
-          "Una reforma que cueste la mitad o más del valor de mercado de la estructura obliga a ponerla al día con las normas actuales, lo que incluye elevarla. Lo mismo vale cuando el gasto viene de reparar un daño, como el de un huracán.",
+          "Una reforma que cueste la mitad o más del valor de mercado de la estructura obliga, según el condado, a ponerla al día con las normas actuales, lo que incluye elevarla. Lo mismo vale cuando el gasto viene de reparar un daño, como el de un huracán.",
           "Al nuevo dueño, el condado puede exigirle que corrija a su costo lo que se construyó sin permiso."
         ]
       },
@@ -1461,13 +1461,13 @@
           "County code provides for an inspection when a property changes hands (Section 122-6). Ask about it."
         ],
         "cuerpo": [
-          "An air-conditioned room under the house looks like a bonus. In the Keys it can be an inherited violation: Monroe County warns that anyone buying a home with habitable space below the base flood elevation may face significant, unforeseen expenses.",
+          "An air-conditioned room under the house looks like a bonus. In the Keys it can be an inherited violation: [Monroe County warns](https://www.monroecounty-fl.gov/692/Building-Responsibly-Requirements) that anyone buying a home with habitable space below the base flood elevation may face significant, unforeseen expenses.",
           "## What goes upstairs",
           "The Florida Building Code sets the lowest floor at least one foot above the base flood elevation, the height floodwater is expected to reach in the base flood. In Monroe, any structure built after Dec. 31, 1974, must have that floor at or above the elevation.",
           "## What's allowed below",
           "Three uses only: building access, parking and limited storage. The county explains it with examples such as lawnmowers, rakes and wheelbarrows. Furniture, workbenches, refrigerators and freezers are out, along with anything else saltwater would damage.",
           "## The 50% rule",
-          "An improvement costing half or more of the structure's market value triggers current standards, including elevating the building. The same applies when the cost comes from repairing damage, such as a hurricane's.",
+          "An improvement costing half or more of the structure's market value, the county says, triggers current standards, including elevating the building. The same applies when the cost comes from repairing damage, such as a hurricane's.",
           "The county can require a new owner to fix, at their own expense, whatever was built without a permit."
         ]
       },
@@ -1501,9 +1501,9 @@
           "Conviene visitar el barrio en días de marea alta antes de decidir. En noviembre los hay."
         ],
         "cuerpo": [
-          "La estación de bombeo de Twin Lakes, en Key Largo, tenía previsto su arranque el 5 de noviembre, según el último parte del condado de Monroe, que avisó de posibles ajustes durante las pruebas. El condado no ha publicado todavía el resultado.",
+          "La estación de bombeo de Twin Lakes, en Key Largo, tenía previsto su arranque el 5 de noviembre, según el [último parte del condado de Monroe](https://www.monroecounty-fl.gov/1282/Twin-Lakes), que avisó de posibles ajustes durante las pruebas. El condado no ha publicado todavía el resultado.",
           "## Qué se construyó",
-          "Es un proyecto piloto frente a la subida del mar. Eleva las calles hasta una cota objetivo de 13 pulgadas (NAVD 88) y añade un sistema de «bombeo y tratamiento» del agua de lluvia, con una estación de bombas elevada, generador de emergencia y pozos de inyección para el agua ya tratada. La obra empezó el 15 de julio de 2024 y en septiembre iba por el 96%. Quedaban solo remates en Shaw Drive, Crane Street y Adams Drive.",
+          "El condado lo describe como un proyecto piloto frente a la subida del mar. Eleva las calles hasta una cota objetivo de 13 pulgadas (NAVD 88) y añade un sistema de «bombeo y tratamiento» del agua de lluvia, con una estación de bombas elevada, generador de emergencia y pozos de inyección para el agua ya tratada. La obra empezó el 15 de julio de 2024 y en septiembre iba por el 96%, según sus reportes. Quedaban solo remates en Shaw Drive, Crane Street y Adams Drive.",
           "## Quién paga",
           "Parte de la construcción se cubre con dos subvenciones estatales: una del programa Resilient Florida, del Departamento de Protección Ambiental, y otra de la agencia estatal de manejo de emergencias. El funcionamiento y el mantenimiento los pagan los vecinos con una tasa especial, que este año se cobró aunque el sistema aún no opera.",
           "El condado responde que ese dinero no se pierde, porque se acumula para cuando las bombas trabajen, y que la tasa podrá subir o bajar cuando se conozca el costo real de operar el sistema.",
@@ -1520,9 +1520,9 @@
           "It pays to visit the neighborhood on a high-tide day before deciding. November has some."
         ],
         "cuerpo": [
-          "The pump station at Twin Lakes, in Key Largo, was scheduled to start up Nov. 5, according to Monroe County's latest update, which warned that troubleshooting might be needed during testing. The county has not yet posted the outcome.",
+          "The pump station at Twin Lakes, in Key Largo, was scheduled to start up Nov. 5, according to [Monroe County's latest update](https://www.monroecounty-fl.gov/1282/Twin-Lakes), which warned that troubleshooting might be needed during testing. The county has not yet posted the outcome.",
           "## What was built",
-          "It is a pilot project for sea level rise. It raises the roads to a target elevation of 13 inches (NAVD 88) and adds a \"pump and treat\" stormwater system, with an elevated pump station, a backup generator and injection wells for the treated water. Work began July 15, 2024, and stood at 96% in September. Only punch-list items remained on Shaw Drive, Crane Street and Adams Drive.",
+          "The county describes it as a pilot project for sea level rise. It raises the roads to a target elevation of 13 inches (NAVD 88) and adds a \"pump and treat\" stormwater system, with an elevated pump station, a backup generator and injection wells for the treated water. Work began July 15, 2024, and stood at 96% in September, according to its reports. Only punch-list items remained on Shaw Drive, Crane Street and Adams Drive.",
           "## Who pays",
           "Part of the construction is covered by two state grants: one from the Resilient Florida program of the Department of Environmental Protection and one from the state's emergency management agency. Operation and maintenance are paid by residents through a special assessment, which was billed this year even though the system isn't running yet.",
           "The county's answer is that the money isn't lost, because it accumulates for when the pumps are working, and that the assessment may go up or down once the real cost of running the system is known.",
@@ -1559,11 +1559,11 @@
           "Los vecinos pueden opinar sobre un proyecto por email al secretario de la comisión, hasta las 10 a. m. del lunes anterior a la reunión, o en persona."
         ],
         "cuerpo": [
-          "Pintar la fachada, levantar una cerca o colgar un letrero en el distrito histórico de Key West requiere antes un documento: el certificado de adecuación, que confirma que la obra respeta las guías de diseño del distrito.",
+          "Pintar la fachada, levantar una cerca o colgar un letrero en el distrito histórico de Key West requiere antes un documento: el [certificado de adecuación](https://www.cityofkeywest-fl.gov/604/Certificate-of-Appropriateness-COA), que confirma que la obra respeta las guías de diseño del distrito.",
           "## Qué cubre",
           "El código de la ciudad lo exige para construir cualquier estructura, cerca, terraza o letrero, y para pintar, repintar, reparar, alterar, remodelar o demoler el exterior de lo que ya existe. Alcanza también al jardín y al lote.",
           "## Quién decide",
-          "Cerca del 95% de las solicitudes las aprueba directamente el personal de preservación histórica. Los proyectos grandes, o los que no encajan en las guías, pasan a la Comisión de Revisión Arquitectónica Histórica, conocida como HARC, que admite un máximo de 10 proyectos mayores nuevos en cada agenda mensual. Antes de presentarlos hay que reunirse con el personal.",
+          "La ciudad calcula que cerca del 95% de las solicitudes las aprueba directamente el personal de preservación histórica. Los proyectos grandes, o los que no encajan en las guías, pasan a la [Comisión de Revisión Arquitectónica Histórica](https://www.cityofkeywest-fl.gov/427/Historic-Architectural-Review-Commission), conocida como HARC, que admite un máximo de 10 proyectos mayores nuevos en cada agenda mensual. Antes de presentarlos hay que reunirse con el personal.",
           "## Por qué importa",
           "El distrito histórico de Key West figura en el Registro Nacional de Lugares Históricos desde marzo de 1971. Esa disciplina explica que Old Town se conserve como se ve. Para quien compra significa otra cosa: el calendario de una reforma no depende solo del contratista."
         ]
@@ -1578,11 +1578,11 @@
           "Neighbors can comment on a project by email to the commission clerk, by 10 a.m. the Monday before the meeting, or in person."
         ],
         "cuerpo": [
-          "Painting the facade, putting up a fence or hanging a sign in Key West's historic district first requires a document: the Certificate of Appropriateness, which confirms the work follows the district's design guidelines.",
+          "Painting the facade, putting up a fence or hanging a sign in Key West's historic district first requires a document: the [Certificate of Appropriateness](https://www.cityofkeywest-fl.gov/604/Certificate-of-Appropriateness-COA), which confirms the work follows the district's design guidelines.",
           "## What it covers",
           "City code requires it to build any structure, fence, deck or sign, and to paint, repaint, repair, alter, remodel or demolish the exterior of what already exists. It reaches the landscaping and the lot as well.",
           "## Who decides",
-          "About 95% of applications are approved directly by historic preservation staff. Large projects, or those that don't fit the guidelines, go to the Historic Architectural Review Commission, known as HARC, which takes a maximum of 10 new major projects on each monthly agenda. A pre-application meeting with staff comes first.",
+          "The city puts at about 95% the share of applications approved directly by historic preservation staff. Large projects, or those that don't fit the guidelines, go to the [Historic Architectural Review Commission](https://www.cityofkeywest-fl.gov/427/Historic-Architectural-Review-Commission), known as HARC, which takes a maximum of 10 new major projects on each monthly agenda. A pre-application meeting with staff comes first.",
           "## Why it matters",
           "The Key West Historic District has been on the National Register of Historic Places since March 1971. That discipline explains why Old Town still looks the way it does. For a buyer it means something else: a renovation's timeline doesn't depend on the contractor alone."
         ]
@@ -1624,7 +1624,7 @@
           "La resolución y sus documentos están en el [registro de la Comisión](https://keywestcity.granicusideas.com/meetings/2179-city-commission-on-2026-07-01-9-00-am/agenda_items/6a3c3cdf7d796529fc00094c-22-26-5576-reaffirming-the-citys-longstanding-one)."
         ],
         "cuerpo": [
-          "Key West ya no tiene el Outer Mole. La Marina de Estados Unidos, dueña del muelle, dio por terminado este año el arrendamiento de la ciudad, que en 2023 lo había extendido por cinco años más. La respuesta de la Comisión fue reafirmar su política de un solo barco y pedirle a la Marina que la respete.",
+          "Key West ya no tiene el Outer Mole. La Marina de Estados Unidos, dueña del muelle, dio por terminado este año el arrendamiento de la ciudad, que en 2023 lo había extendido por cinco años más, según consta en la [resolución de la Comisión](https://keywestcity.granicusideas.com/meetings/2179-city-commission-on-2026-07-01-9-00-am/agenda_items/6a3c3cdf7d796529fc00094c-22-26-5576-reaffirming-the-citys-longstanding-one). La respuesta de la Comisión fue reafirmar su política de un solo barco y pedirle a la Marina que la respete.",
           "## ¿Qué es el Outer Mole?",
           "Es el muelle exterior de la base naval, uno de los puntos donde históricamente atracaron los grandes cruceros. La ciudad lo administraba por contrato con la Marina, y todavía en febrero adjudicó $796,571 para reparar su rompeolas.",
           "## ¿Qué es la política de un solo barco?",
@@ -1645,7 +1645,7 @@
           "The resolution and its documents are in the [Commission record](https://keywestcity.granicusideas.com/meetings/2179-city-commission-on-2026-07-01-9-00-am/agenda_items/6a3c3cdf7d796529fc00094c-22-26-5576-reaffirming-the-citys-longstanding-one)."
         ],
         "cuerpo": [
-          "Key West no longer has the Outer Mole. The U.S. Navy, which owns the pier, terminated the city's lease this year; in 2023 the city had extended it for five more years. The Commission's answer was to reaffirm its One Ship Policy and ask the Navy to respect it.",
+          "Key West no longer has the Outer Mole. The U.S. Navy, which owns the pier, terminated the city's lease this year; in 2023 the city had extended it for five more years, as the [Commission's resolution](https://keywestcity.granicusideas.com/meetings/2179-city-commission-on-2026-07-01-9-00-am/agenda_items/6a3c3cdf7d796529fc00094c-22-26-5576-reaffirming-the-citys-longstanding-one) records. The Commission's answer was to reaffirm its One Ship Policy and ask the Navy to respect it.",
           "## What is the Outer Mole?",
           "It's the outer pier of the naval base, one of the places where large cruise ships historically docked. The city ran it under a contract with the Navy, and as recently as February awarded $796,571 to repair its seawall.",
           "## What is the One Ship Policy?",
@@ -1694,10 +1694,10 @@
           "Dudas sobre las obras: FDOT, 305-927-1479, o en [fdotmiamidade.com](https://www.fdotmiamidade.com/project/371/447756-1-52-01-construction)."
         ],
         "cuerpo": [
-          "El Departamento de Transporte de Florida (FDOT) programó para el 3 de noviembre el inicio de la rehabilitación de dos puentes de la Overseas Highway en los Lower Keys: el de Kemp Channel y el de North Pine Channel.",
-          "El primero está cerca de la milla 23.5, entre Cudjoe Key y Summerland Key, y cuesta $1.03 millones. El segundo, cerca de la milla 29.3, entre Little Torch Key y Big Pine Key, cuesta $979,000.",
+          "El Departamento de Transporte de Florida (FDOT) programó para el 3 de noviembre el inicio de la rehabilitación de dos puentes de la Overseas Highway en los Lower Keys: el de [Kemp Channel](https://www.fdotmiamidade.com/project/371/447756-1-52-01-construction) y el de North Pine Channel.",
+          "El primero está cerca de la milla 23.5, entre Cudjoe Key y Summerland Key, y cuesta $1.03 millones, según el FDOT. El segundo, cerca de la milla 29.3, entre Little Torch Key y Big Pine Key, cuesta $979,000.",
           "En los dos se repara el concreto dañado y agrietado, se refuerzan los soportes y los cimientos y se instalan sistemas contra la corrosión, clave en estructuras que viven rodeadas de mar. Deben quedar listos en el invierno de 2027.",
-          "Mientras unos empiezan, otro termina. El Long Key Bridge, en la milla 64, completó el 19 de octubre una rehabilitación de $4.7 millones que había empezado en febrero de 2023: concreto reparado, juntas de expansión nuevas y dos estructuras permanentes de soporte para sus pilares.",
+          "Mientras unos empiezan, otro termina. El [Long Key Bridge](https://www.fdotmiamidade.com/project/197/441964-1-52-01), en la milla 64, completó el 19 de octubre una rehabilitación de $4.7 millones que había empezado en febrero de 2023, informó el FDOT: concreto reparado, juntas de expansión nuevas y dos estructuras permanentes de soporte para sus pilares.",
           "Son puentes que unen islas, familias y escapadas de fin de semana. Cuidarlos es cuidar el camino que lleva de Miami a los Cayos."
         ]
       },
@@ -1711,10 +1711,10 @@
           "Questions about the work: FDOT, 305-927-1479, or at [fdotmiamidade.com](https://www.fdotmiamidade.com/project/371/447756-1-52-01-construction)."
         ],
         "cuerpo": [
-          "The Florida Department of Transportation (FDOT) scheduled Nov. 3 as the start of rehabilitation on two Overseas Highway bridges in the Lower Keys: Kemp Channel and North Pine Channel.",
-          "The first is near mile marker 23.5, between Cudjoe Key and Summerland Key, and costs $1.03 million. The second, near mile marker 29.3 between Little Torch Key and Big Pine Key, costs $979,000.",
+          "The Florida Department of Transportation (FDOT) scheduled Nov. 3 as the start of rehabilitation on two Overseas Highway bridges in the Lower Keys: [Kemp Channel](https://www.fdotmiamidade.com/project/371/447756-1-52-01-construction) and North Pine Channel.",
+          "The first is near mile marker 23.5, between Cudjoe Key and Summerland Key, and costs $1.03 million, according to FDOT. The second, near mile marker 29.3 between Little Torch Key and Big Pine Key, costs $979,000.",
           "At both, crews repair damaged and cracked concrete, strengthen the supports and foundations and add corrosion protection systems, essential for structures that live surrounded by sea. They are due to be finished in winter 2027.",
-          "As some begin, another ends. Long Key Bridge, at mile marker 64, completed on Oct. 19 a $4.7 million rehabilitation that had started in February 2023: repaired concrete, new expansion joints and two permanent support structures for its piers.",
+          "As some begin, another ends. [Long Key Bridge](https://www.fdotmiamidade.com/project/197/441964-1-52-01), at mile marker 64, completed on Oct. 19 a $4.7 million rehabilitation that had started in February 2023, FDOT reported: repaired concrete, new expansion joints and two permanent support structures for its piers.",
           "These are bridges that connect islands, families and weekend getaways. Caring for them is caring for the road that leads from Miami to the Keys."
         ]
       },
@@ -1755,8 +1755,8 @@
           "En bote, revisa la marea antes de salir: con la marea alta queda menos espacio bajo los puentes fijos. Cerca de las casas, navega despacio para no levantar olas que empujen el agua hacia los patios."
         ],
         "cuerpo": [
-          "El Servicio Meteorológico Nacional en Key West prevé para el 25 y 26 de noviembre las mareas más altas que quedan del año en los Cayos, tras las inundaciones de finales de octubre.",
-          "El 28 de octubre, el medidor de Key West llegó a unos 2.4 pies sobre la marea alta media, por encima del nivel de alerta de 2.1, y el de Vaca Key, en Marathon, a 2.37. Parte de Card Sound Road quedó bajo el agua. En los Cayos, la piedra caliza deja que el mar suba desde abajo, y en el lado de la bahía de los Cayos de arriba el agua tarda más en bajar.",
+          "El [Servicio Meteorológico Nacional en Key West](https://www.weather.gov/key/coastal_flooding) prevé para el 25 y 26 de noviembre las mareas más altas que quedan del año en los Cayos, tras las inundaciones de finales de octubre.",
+          "El 28 de octubre, el medidor de Key West llegó a unos 2.4 pies sobre la marea alta media, por encima del nivel de alerta de 2.1, y el de Vaca Key, en Marathon, a 2.37, [reportó Weatherboy](https://weatherboy.com/king-tides-push-major-saltwater-flooding-into-florida-keys-streets/). Parte de Card Sound Road quedó bajo el agua. En los Cayos, explica el Servicio Meteorológico, la piedra caliza deja que el mar suba desde abajo, y en el lado de la bahía de los Cayos de arriba el agua tarda más en bajar.",
           "Las inundaciones se pueden reportar en la página del Servicio Meteorológico en Key West o al 305-295-1316."
         ]
       },
@@ -1771,8 +1771,8 @@
           "By boat, check the tide before leaving: high tide leaves less clearance under fixed bridges. Near homes, go slow so your wake doesn't push water into yards."
         ],
         "cuerpo": [
-          "The National Weather Service in Key West expects the highest tides left this year in the Keys on Nov. 25 and 26, following flooding in late October.",
-          "On Oct. 28, the Key West gauge reached about 2.4 feet above mean higher high water, above the 2.1-foot alert level, and the Vaca Key gauge in Marathon hit 2.37. Part of Card Sound Road went under water. In the Keys, the limestone lets the sea rise from below, and on the bay side of the Upper Keys the water takes longer to recede.",
+          "The [National Weather Service in Key West](https://www.weather.gov/key/coastal_flooding) expects the highest tides left this year in the Keys on Nov. 25 and 26, following flooding in late October.",
+          "On Oct. 28, the Key West gauge reached about 2.4 feet above mean higher high water, above the 2.1-foot alert level, and the Vaca Key gauge in Marathon hit 2.37, [Weatherboy reported](https://weatherboy.com/king-tides-push-major-saltwater-flooding-into-florida-keys-streets/). Part of Card Sound Road went under water. In the Keys, the Weather Service explains, the limestone lets the sea rise from below, and on the bay side of the Upper Keys the water takes longer to recede.",
           "Flooding can be reported on the National Weather Service Key West page or at 305-295-1316."
         ]
       },
@@ -1824,11 +1824,11 @@
           "Información del parque en [nps.gov/drto](https://www.nps.gov/drto/planyourvisit/basicinfo.htm)."
         ],
         "cuerpo": [
-          "Para ir a Dry Tortugas hay que planear. Al 9 de noviembre, el ferry que sale de Key West estaba agotado todos los días hasta el 29, y su operador advierte que el viaje se vende con semanas de anticipación.",
+          "Para ir a Dry Tortugas hay que planear. Al 9 de noviembre, el ferry que sale de Key West estaba agotado todos los días hasta el 29, y [su operador advierte](https://www.drytortugas.com/day-trip-ferry-tickets/) que el viaje se vende con semanas de anticipación.",
           "## ¿Qué es Dry Tortugas?",
-          "Siete islas de arena y coral a casi 70 millas al oeste de Key West, rodeadas de arrecifes, aves, vida marina y naufragios. En el centro está el Fuerte Jefferson, uno de los fuertes de ladrillo del siglo XIX más grandes del país. No hay carretera: se llega en barco o en hidroavión.",
+          "Siete islas de arena y coral a casi 70 millas al oeste de Key West, rodeadas de arrecifes, aves, vida marina y naufragios. En el centro está el Fuerte Jefferson, que el [Servicio de Parques Nacionales](https://www.nps.gov/drto/planyourvisit/basicinfo.htm) cuenta entre los fuertes de ladrillo del siglo XIX más grandes del país. No hay carretera: se llega en barco o en hidroavión.",
           "## El día, hora por hora",
-          "A las 7:00 AM es el registro en Key West, a las 7:30 se aborda y a las 8:00 zarpa el ferry. Llega al Fuerte Jefferson a las 10:30. A las 11:00 empieza el recorrido guiado de 45 minutos, y el almuerzo se sirve de 11:00 AM a 1:00 PM. El resto es playa, snorkel y fuerte, hasta las 3:00 PM. A las 5:30 estás de vuelta en Key West.",
+          "Según el horario del operador, a las 7:00 AM es el registro en Key West, a las 7:30 se aborda y a las 8:00 zarpa el ferry. Llega al Fuerte Jefferson a las 10:30. A las 11:00 empieza el recorrido guiado de 45 minutos, y el almuerzo se sirve de 11:00 AM a 1:00 PM. El resto es playa, snorkel y fuerte, hasta las 3:00 PM. A las 5:30 estás de vuelta en Key West.",
           "## En la mochila",
           "Traje de baño, toalla, protector solar, sombrero, gafas de sol, zapatos cómodos para caminar y una muda de ropa. En el viaje de regreso hay duchas de agua dulce a bordo para quitarse la sal.",
           "Hay pocos lugares tan cerca de Miami que se sientan tan lejos del mundo."
@@ -1845,11 +1845,11 @@
           "Park information at [nps.gov/drto](https://www.nps.gov/drto/planyourvisit/basicinfo.htm)."
         ],
         "cuerpo": [
-          "Getting to Dry Tortugas takes planning. As of Nov. 9, the ferry out of Key West was sold out every day through the 29th, and its operator warns the trip sells out weeks in advance.",
+          "Getting to Dry Tortugas takes planning. As of Nov. 9, the ferry out of Key West was sold out every day through the 29th, and [its operator warns](https://www.drytortugas.com/day-trip-ferry-tickets/) the trip sells out weeks in advance.",
           "## What is Dry Tortugas?",
-          "Seven islands of sand and coral almost 70 miles west of Key West, surrounded by reefs, birds, marine life and shipwrecks. At the center is Fort Jefferson, one of the nation's largest 1800s masonry forts. There's no road: you arrive by boat or seaplane.",
+          "Seven islands of sand and coral almost 70 miles west of Key West, surrounded by reefs, birds, marine life and shipwrecks. At the center is Fort Jefferson, which the [National Park Service](https://www.nps.gov/drto/planyourvisit/basicinfo.htm) counts among the nation's largest 1800s masonry forts. There's no road: you arrive by boat or seaplane.",
           "## The day, hour by hour",
-          "Check-in in Key West is at 7 a.m., boarding at 7:30 and departure at 8. The ferry reaches Fort Jefferson at 10:30. The 45-minute guided tour starts at 11, and lunch is served from 11 a.m. to 1 p.m. The rest is beach, snorkeling and fort, until 3 p.m. By 5:30 you're back in Key West.",
+          "Per the operator's schedule, check-in in Key West is at 7 a.m., boarding at 7:30 and departure at 8. The ferry reaches Fort Jefferson at 10:30. The 45-minute guided tour starts at 11, and lunch is served from 11 a.m. to 1 p.m. The rest is beach, snorkeling and fort, until 3 p.m. By 5:30 you're back in Key West.",
           "## In your bag",
           "Bathing suit, towel, sunscreen, hat, sunglasses, sturdy walking shoes and a change of clothes. On the ride back there are freshwater rinses on board to wash off the salt.",
           "Few places this close to Miami feel this far from the world."
@@ -2525,8 +2525,8 @@
           "Para caminar despacio, los jardines. En NightGarden, los senderos de Fairchild se llenan de luz, hay instalaciones que responden al visitante, un show de láser, Archimedes, el árbol que habla, noches de películas navideñas y, esta temporada, una pista de hielo al aire libre. El recorrido toma cerca de una hora.",
           "En [Pinecrest Gardens](https://www.pinecrestgardens.org/Arts-Events/Events-Calendar/Nights-of-Lights), Nights of Lights convierte el jardín en un paseo nocturno: luces que flotan sobre el lago, esferas encendidas que cuelgan de los árboles, un túnel iluminado y el árbol de Navidad, con música en vivo y cuentos para los niños. Ese jardín fue el Parrot Jungle original, abierto en 1936.",
           "Cuando Parrot Jungle se mudó a Watson Island en 2002, pasó a llamarse Jungle Island, y allí está Luminosa: cerca de milla y media de linternas inspiradas en los barrios de Miami, del 25 de noviembre al 10 de enero. El mismo parque, dos jardines encendidos.",
-          "Durante casi cuatro décadas, Tropical Park en diciembre fue Santa's Enchanted Forest. Desde 2023 ese lugar lo ocupa Christmas Wonderland, con más de 50 atracciones, una milla de luces que bailan con la música y una noria de 230 pies. Este año le rinde homenaje con Santa's Enchanted Forest Memory Lane, que trae de vuelta piezas originales y fotos clásicas como la de Surfin' Santa.",
-          "En Redland, Berry Farm cambia las calabazas por paseos en carreta, películas en el césped, nieve de mentira y la visita de Santa. Y en Zoo Miami, Zoo Lights reparte más de un millón de luces entre los animales, con un árbol de LED de 26 pies y villancicos, del 27 de noviembre al 30 de diciembre."
+          "Durante casi cuatro décadas, Tropical Park en diciembre fue Santa's Enchanted Forest. Desde 2023 ese lugar lo ocupa Christmas Wonderland, que según su [comunicado](https://www.prnewswire.com/news-releases/christmas-wonderland-returns-to-tropical-park-nov-12-with-a-mile-of-synchronized-music-and-lighting-spectacular-the-230-foot-america-250-wheel-and-a-new-classic-european-style-christmas-market-302926863.html) tiene más de 50 atracciones, una milla de luces que bailan con la música y una noria de 230 pies. Este año le rinde homenaje con Santa's Enchanted Forest Memory Lane, que trae de vuelta piezas originales y fotos clásicas como la de Surfin' Santa.",
+          "En Redland, Berry Farm cambia las calabazas por paseos en carreta, películas en el césped, nieve de mentira y la visita de Santa. Y en Zoo Miami, Zoo Lights reparte, según el zoo, más de un millón de luces entre los animales, con un árbol de LED de 26 pies y villancicos, del 27 de noviembre al 30 de diciembre."
         ]
       },
       "en": {
@@ -2546,8 +2546,8 @@
           "For a slow walk, there are the gardens. At NightGarden, Fairchild's paths fill with light, with interactive installations, a laser show, Archimedes the talking tree, holiday movie nights and, this season, an outdoor ice rink. The walk takes about an hour.",
           "At [Pinecrest Gardens](https://www.pinecrestgardens.org/Arts-Events/Events-Calendar/Nights-of-Lights), Nights of Lights turns the garden into a night stroll: lights floating over the lake, glowing spheres hanging from the trees, a lit tunnel and the Christmas tree, with live music and storytime for kids. That garden was the original Parrot Jungle, opened in 1936.",
           "When Parrot Jungle moved to Watson Island in 2002, it became Jungle Island, and that's where Luminosa glows: about a mile and a half of lanterns inspired by Miami's neighborhoods, from Nov. 25 to Jan. 10. The same park, two gardens lit up.",
-          "For almost four decades, Tropical Park in December meant Santa's Enchanted Forest. Since 2023 the spot has belonged to Christmas Wonderland, with more than 50 rides, a mile of lights synchronized to music and a 230-foot wheel. This year it pays tribute with Santa's Enchanted Forest Memory Lane, bringing back original set pieces and classic photo spots like Surfin' Santa.",
-          "In Redland, The Berry Farm trades pumpkins for hayrides, movies on the lawn, make-believe snow and a visit from Santa. And at Zoo Miami, Zoo Lights spreads more than a million lights among the animals, with a 26-foot LED tree and carolers, from Nov. 27 to Dec. 30."
+          "For almost four decades, Tropical Park in December meant Santa's Enchanted Forest. Since 2023 the spot has belonged to Christmas Wonderland, which its [press release](https://www.prnewswire.com/news-releases/christmas-wonderland-returns-to-tropical-park-nov-12-with-a-mile-of-synchronized-music-and-lighting-spectacular-the-230-foot-america-250-wheel-and-a-new-classic-european-style-christmas-market-302926863.html) says has more than 50 rides, a mile of lights synchronized to music and a 230-foot wheel. This year it pays tribute with Santa's Enchanted Forest Memory Lane, bringing back original set pieces and classic photo spots like Surfin' Santa.",
+          "In Redland, The Berry Farm trades pumpkins for hayrides, movies on the lawn, make-believe snow and a visit from Santa. And at Zoo Miami, Zoo Lights spreads, the zoo says, more than a million lights among the animals, with a 26-foot LED tree and carolers, from Nov. 27 to Dec. 30."
         ]
       },
       "galeria": [
@@ -2635,13 +2635,13 @@
           "Es ilegal acosar, alimentar, molestar o hacerle daño a un manatí."
         ],
         "cuerpo": [
-          "Noviembre es el Mes de Concientización sobre el Manatí en Florida, y no por capricho del calendario: es cuando estos animales empiezan a moverse hacia aguas más cálidas. La Comisión de Pesca y Vida Silvestre (FWC) pidió este mes a quienes salen en bote o en moto acuática que bajen la velocidad y miren bien el agua.",
+          "Noviembre es el Mes de Concientización sobre el Manatí en Florida, y no por capricho del calendario: es cuando estos animales empiezan a moverse hacia aguas más cálidas. La Comisión de Pesca y Vida Silvestre (FWC) [pidió este mes](https://myfwc.com/news/all-news/manatee-awareness-1126/) a quienes salen en bote o en moto acuática que bajen la velocidad y miren bien el agua.",
           "Los manatíes necesitan calor para pasar el invierno. Cuando el agua baja de 68 grados buscan refugio en manantiales, en las descargas de las plantas eléctricas y en otros sitios templados, explicó Ashley LaVere, coordinadora del programa de manatíes de la FWC. En ese camino es más probable toparse con ellos.",
           "## Cómo verlos a tiempo",
           "Aunque un adulto es grande, cuesta distinguirlo. La FWC recomienda que alguien a bordo vaya pendiente del agua: un hocico, un lomo, una cola o una aleta que asoma, o las «huellas» que deja el manatí al nadar, unos círculos en la superficie. Las gafas polarizadas ayudan a ver a través del reflejo.",
           "## Las zonas de protección",
-          "Son tramos donde hay que reducir la velocidad o no entrar, y están marcados con letreros en el agua. Los golpes de embarcaciones son una de las mayores amenazas para el manatí, y los agentes de la FWC patrullan esas zonas.",
-          "En Miami-Dade, varias son de temporada. Del 15 de noviembre al 30 de abril pasan a velocidad lenta tramos donde el resto del año se permite navegar a 30 o 35 millas por hora, y hay áreas en las que durante esos meses no se puede entrar.",
+          "Son tramos donde hay que reducir la velocidad o no entrar, y están marcados con letreros en el agua. La FWC señala los golpes de embarcaciones como una de las mayores amenazas para el manatí, y sus agentes patrullan esas zonas.",
+          "En Miami-Dade, varias son de temporada. De acuerdo con los [mapas de la FWC](https://myfwc.com/media/7311/miamidadempz-maps.pdf), del 15 de noviembre al 30 de abril pasan a velocidad lenta tramos donde el resto del año se permite navegar a 30 o 35 millas por hora, y hay áreas en las que durante esos meses no se puede entrar.",
           "## Si vas a verlos desde tierra",
           "Lleva binoculares y guarda distancia. Molestarlos en un refugio de agua tibia puede empujarlos hacia agua fría, y ese frío los puede matar."
         ]
@@ -2656,13 +2656,13 @@
           "It is illegal to harass, feed, disturb or harm a manatee."
         ],
         "cuerpo": [
-          "November is Manatee Awareness Month in Florida, and not by accident of the calendar: it's when these animals begin moving toward warmer waters. This month the Florida Fish and Wildlife Conservation Commission (FWC) asked boaters and personal watercraft users to slow down and watch the water closely.",
+          "November is Manatee Awareness Month in Florida, and not by accident of the calendar: it's when these animals begin moving toward warmer waters. This month the Florida Fish and Wildlife Conservation Commission (FWC) [asked](https://myfwc.com/news/all-news/manatee-awareness-1126/) boaters and personal watercraft users to slow down and watch the water closely.",
           "Manatees need warmth to get through winter. When the water drops below 68 degrees they seek refuge at springs, power plant discharge areas and other warm sites, said Ashley LaVere, the FWC's manatee management program coordinator. Along the way, encounters are more likely.",
           "## How to spot them in time",
           "Even though an adult is large, it's hard to make out. The FWC recommends having someone on board watch the water: a snout, a back, a tail or a flipper breaking the surface, or the \"footprints\" a manatee leaves as it swims, circles on the water. Polarized glasses help cut the glare.",
           "## The protection zones",
-          "They are stretches where you must reduce speed or stay out, and they're marked with signs on the water. Boat strikes are one of the biggest threats to manatees, and FWC officers patrol those zones.",
-          "In Miami-Dade, several are seasonal. From Nov. 15 through April 30, stretches where boats may run at 30 or 35 mph the rest of the year become slow-speed zones, and there are areas that can't be entered during those months.",
+          "They are stretches where you must reduce speed or stay out, and they're marked with signs on the water. The FWC calls boat strikes one of the biggest threats to manatees, and its officers patrol those zones.",
+          "In Miami-Dade, several are seasonal. According to [FWC maps](https://myfwc.com/media/7311/miamidadempz-maps.pdf), from Nov. 15 through April 30, stretches where boats may run at 30 or 35 mph the rest of the year become slow-speed zones, and there are areas that can't be entered during those months.",
           "## If you're watching from shore",
           "Bring binoculars and keep your distance. Disturbing them at a warm-water refuge can push them into cold water, and that cold can kill them."
         ]
@@ -2776,8 +2776,8 @@
         "cuerpo": [
           "A partir del viernes 11 de diciembre, los Cayos sacan a navegar sus adornos de Navidad. En dos noches seguidas hay cuatro desfiles de botes cubiertos de luces, de Key Largo a Key West, y tres caen el mismo sábado.",
           "El primero es el de Duck Key. Hawks Cay Resort y el Duck Key Fishing Club organizan el recorrido por los canales del cayo, que arranca al anochecer del viernes. Se ve desde la marina del resort, donde hay fiesta con música en vivo. Conviene llegar temprano para encontrar sitio en el paseo.",
-          "El sábado 12 hay que decidirse. En Key Largo los botes forman fila a las 6:30 de la tarde. En Marathon, el desfile de Boot Key Harbor cumple 30 ediciones. Y en Key West, el del Historic Seaport sale a las 8:00 de la noche; la Cámara de Comercio de la isla recomienda llegar antes para caminar el Harbor Walk of Lights.",
-          "Quien prefiera verlo desde el agua tiene reglas. Los organizadores de Key Largo advierten a los botes espectadores que no anclen sobre pastos marinos, fondo duro ni coral, y que mantengan una velocidad segura de noche para no golpear tortugas, manatíes o delfines. Dañar esos hábitats o a una especie protegida puede costar hasta $25,000 de multa civil, además de sanciones penales.",
+          "El sábado 12 hay que decidirse. En Key Largo los botes forman fila a las 6:30 de la tarde. En Marathon, el desfile de Boot Key Harbor cumple 30 ediciones, según la [Cámara de Comercio de Marathon](https://floridakeysmarathon.com/event/30th-annual-boot-key-harbor-christmas-boat-parade/). Y en Key West, el del Historic Seaport sale a las 8:00 de la noche; la Cámara de Comercio de la isla recomienda llegar antes para caminar el Harbor Walk of Lights.",
+          "Quien prefiera verlo desde el agua tiene reglas. Los [organizadores de Key Largo](https://www.keylargoboatparade.com/important-information/) advierten a los botes espectadores que no anclen sobre pastos marinos, fondo duro ni coral, y que mantengan una velocidad segura de noche para no golpear tortugas, manatíes o delfines. Según los mismos organizadores, dañar esos hábitats o a una especie protegida puede costar hasta $25,000 de multa civil, además de sanciones penales.",
           "Un choque con una tortuga o un manatí se reporta de inmediato a la línea de la FWC: 888-404-3922."
         ]
       },
@@ -2795,8 +2795,8 @@
         "cuerpo": [
           "Starting Friday, Dec. 11, the Keys take their Christmas decorations out on the water. On two consecutive nights there are four parades of boats covered in lights, from Key Largo to Key West, and three fall on the same Saturday.",
           "First up is Duck Key. Hawks Cay Resort and the Duck Key Fishing Club run the procession through the key's waterways, starting at dusk on Friday. You watch from the resort marina, where there's a party with live music. Come early to get a spot on the promenade.",
-          "On Saturday, Dec. 12, you have to choose. In Key Largo, boats line up at 6:30 p.m. In Marathon, the Boot Key Harbor parade marks its 30th year. And in Key West, the Historic Seaport parade starts at 8 p.m.; the island's Chamber of Commerce recommends arriving early to stroll the Harbor Walk of Lights.",
-          "Those who'd rather watch from the water have rules. Key Largo organizers warn spectator vessels not to anchor on seagrass, hardbottom or coral, and to keep a safe speed at night to avoid striking sea turtles, manatees or dolphins. Damaging those habitats or harming a protected species can bring a civil fine of up to $25,000, plus criminal penalties.",
+          "On Saturday, Dec. 12, you have to choose. In Key Largo, boats line up at 6:30 p.m. In Marathon, the Boot Key Harbor parade marks its 30th year, according to the [Marathon Chamber of Commerce](https://floridakeysmarathon.com/event/30th-annual-boot-key-harbor-christmas-boat-parade/). And in Key West, the Historic Seaport parade starts at 8 p.m.; the island's Chamber of Commerce recommends arriving early to stroll the Harbor Walk of Lights.",
+          "Those who'd rather watch from the water have rules. [Key Largo organizers](https://www.keylargoboatparade.com/important-information/) warn spectator vessels not to anchor on seagrass, hardbottom or coral, and to keep a safe speed at night to avoid striking sea turtles, manatees or dolphins. The same organizers note that damaging those habitats or harming a protected species can bring a civil fine of up to $25,000, plus criminal penalties.",
           "A collision with a sea turtle or manatee must be reported immediately to the FWC hotline: 888-404-3922."
         ]
       },
@@ -2979,9 +2979,9 @@
           "Charters, botes y lugares para pescar en Miami y los Cayos, en [Botes y Pesca de Miami Magic](https://www.miamimagicapp.com/?go=water)."
         ],
         "cuerpo": [
-          "Desde el 28 de octubre, un bote recreativo puede traer a tierra como máximo dos abadejos (gag) o meros negros (black grouper) en total, sin importar cuántas personas vayan a bordo. La regla de FWC aplica en las aguas estatales del Atlántico, que incluyen todas las del condado Monroe: los Cayos también.",
+          "Desde el 28 de octubre, un bote recreativo puede traer a tierra como máximo dos abadejos (gag) o meros negros (black grouper) en total, sin importar cuántas personas vayan a bordo. La [regla de FWC](https://myfwc.com/news/all-news/grouper-regs-1026/) aplica en las aguas estatales del Atlántico, que incluyen todas las del condado Monroe: los Cayos también.",
           "El límite por persona no cambia: uno al día. Lo que sí cambia en los barcos de alquiler es que el capitán y la tripulación ya no pueden quedarse con su propia cuota.",
-          "Con el róbalo hay que mirar el calendario, y el mapa. De Miami-Dade a Palm Beach, la temporada para llevárselo cierra el 15 de diciembre y no reabre hasta el 1 de febrero. Mientras esté abierta, se puede conservar uno por persona al día, de entre 28 y 32 pulgadas, y solo con anzuelo y línea.",
+          "Con el róbalo hay que mirar el calendario, y el mapa. De Miami-Dade a Palm Beach, según las [reglas de la FWC](https://myfwc.com/fishing/saltwater/recreational/snook/), la temporada para llevárselo cierra el 15 de diciembre y no reabre hasta el 1 de febrero. Mientras esté abierta, se puede conservar uno por persona al día, de entre 28 y 32 pulgadas, y solo con anzuelo y línea.",
           "En los Cayos el cierre llega dos semanas antes. Desde la línea entre Miami-Dade y Monroe hacia el sur, el róbalo no se puede llevar del 1 de diciembre al último día de febrero, y la talla permitida va de 28 a 33 pulgadas.",
           "El róbalo debe llegar entero a tierra. En los charters, el capitán y la tripulación tampoco pueden quedarse con uno."
         ]
@@ -2996,9 +2996,9 @@
           "Charters, boats and fishing spots in Miami and the Keys are in [Miami Magic's Boating & Fishing](https://www.miamimagicapp.com/?go=water)."
         ],
         "cuerpo": [
-          "Since Oct. 28, a recreational boat can bring ashore no more than two gag or black grouper combined, no matter how many people are aboard. The FWC rule applies in Atlantic state waters, which include all waters of Monroe County: the Keys too.",
+          "Since Oct. 28, a recreational boat can bring ashore no more than two gag or black grouper combined, no matter how many people are aboard. The [FWC rule](https://myfwc.com/news/all-news/grouper-regs-1026/) applies in Atlantic state waters, which include all waters of Monroe County: the Keys too.",
           "The individual limit doesn't change: one per person per day. What does change on for-hire boats is that the captain and crew can no longer keep their own bag limit.",
-          "With snook, watch the calendar, and the map. From Miami-Dade to Palm Beach, the harvest season closes Dec. 15 and doesn't reopen until Feb. 1. While it's open, you may keep one per person per day, between 28 and 32 inches, and only with hook and line.",
+          "With snook, watch the calendar, and the map. From Miami-Dade to Palm Beach, under [FWC rules](https://myfwc.com/fishing/saltwater/recreational/snook/), the harvest season closes Dec. 15 and doesn't reopen until Feb. 1. While it's open, you may keep one per person per day, between 28 and 32 inches, and only with hook and line.",
           "In the Keys the closure comes two weeks earlier. From the Miami-Dade/Monroe county line south, snook can't be kept from Dec. 1 through the last day of February, and the slot runs from 28 to 33 inches.",
           "Snook must be landed whole. On charters, the captain and crew can't keep one either."
         ]
@@ -3058,12 +3058,12 @@
           "La calcomanía Florida Freedom Boater se pide en cualquier oficina del Tax Collector de Miami-Dade al registrar o renovar el bote, con el formulario HSMV 87191."
         ],
         "cuerpo": [
-          "Desde el 1 de julio de 2025, un agente no puede detener ni abordar un bote en Florida solo para revisarle el equipo de seguridad: necesita causa probable de que se está violando una norma. Eso fue lo que cambió la Boater Freedom Act (SB 1388). El requisito de educación quedó intacto.",
-          "Florida no tiene «licencia de bote». Lo que exige la Comisión de Pesca y Vida Silvestre (FWC) a toda persona nacida a partir del 1 de enero de 1988 es haber aprobado un curso de seguridad y llevar la tarjeta que lo acredita para operar una embarcación con motor de 10 caballos de fuerza o más. La tarjeta no vence.",
+          "Desde el 1 de julio de 2025, un agente no puede detener ni abordar un bote en Florida solo para revisarle el equipo de seguridad: necesita causa probable de que se está violando una norma. Eso fue lo que cambió la [Boater Freedom Act (SB 1388)](https://www.flgov.com/eog/node/5785), según la Oficina del Gobernador. El requisito de educación quedó intacto.",
+          "Florida no tiene «licencia de bote». Lo que exige la [Comisión de Pesca y Vida Silvestre (FWC)](https://myfwc.com/boating/safety-education/faqs/) a toda persona nacida a partir del 1 de enero de 1988 es haber aprobado un curso de seguridad y llevar la tarjeta que lo acredita para operar una embarcación con motor de 10 caballos de fuerza o más. La tarjeta no vence.",
           "## Quién queda exento",
           "Los capitanes con licencia de la Guardia Costera; quien navega en un lago o estanque privado; quien va acompañado por un adulto con tarjeta, o exento, que responda por el bote; el visitante de otro estado que traiga la constancia de un curso aprobado por NASBLA y su identificación, y quien compró la embarcación hace menos de 90 días y lleva a bordo el contrato de venta.",
           "## La calcomanía",
-          "La misma ley ordenó crear una calcomanía de inspección de seguridad, ligada al registro del bote y válida por cinco años. Se obtiene firmando una declaración de que la embarcación lleva el equipo exigido, y también pueden pedirla kayaks, canoas y otras embarcaciones sin motor.",
+          "De acuerdo con el [análisis del Senado](https://flsenate.gov/Session/Bill/2025/1388/Analyses/2025s01388.fp.PDF), la misma ley ordenó crear una calcomanía de inspección de seguridad, ligada al registro del bote y válida por cinco años. Se obtiene firmando una declaración de que la embarcación lleva el equipo exigido, y también pueden pedirla kayaks, canoas y otras embarcaciones sin motor.",
           "Las faltas por equipo de seguridad pasaron a ser secundarias: el agente las puede sancionar si detuvo el bote por otro motivo. Las zonas de manatí, las de velocidad mínima y las de pastos marinos siguen como estaban."
         ]
       },
@@ -3077,12 +3077,12 @@
           "The Florida Freedom Boater decal is available at any Miami-Dade Tax Collector office when you register or renew a vessel, with form HSMV 87191."
         ],
         "cuerpo": [
-          "Since July 1, 2025, an officer can't stop or board a boat in Florida just to check its safety equipment: there has to be probable cause that a rule is being broken. That is what the Boater Freedom Act (SB 1388) changed. The education requirement was left untouched.",
-          "Florida has no \"boating license.\" What the Fish and Wildlife Conservation Commission (FWC) requires of anyone born on or after Jan. 1, 1988, is to pass a safety course and carry the card that proves it in order to operate a vessel with a motor of 10 horsepower or more. The card never expires.",
+          "Since July 1, 2025, an officer can't stop or board a boat in Florida just to check its safety equipment: there has to be probable cause that a rule is being broken. That is what the [Boater Freedom Act (SB 1388)](https://www.flgov.com/eog/node/5785) changed, according to the Governor's Office. The education requirement was left untouched.",
+          "Florida has no \"boating license.\" What the [Fish and Wildlife Conservation Commission (FWC)](https://myfwc.com/boating/safety-education/faqs/) requires of anyone born on or after Jan. 1, 1988, is to pass a safety course and carry the card that proves it in order to operate a vessel with a motor of 10 horsepower or more. The card never expires.",
           "## Who is exempt",
           "Captains licensed by the Coast Guard; anyone on a private lake or pond; an operator accompanied by an adult who holds the card, or is exempt, and takes responsibility for the boat; an out-of-state visitor carrying proof of a NASBLA-approved course and a photo ID; and anyone who bought the vessel less than 90 days ago and has the bill of sale aboard.",
           "## The decal",
-          "The same law ordered a safety inspection decal, tied to vessel registration and valid for five years. Boaters get it by signing a statement that the vessel carries the required equipment; kayaks, canoes and other non-motorized craft can request it too.",
+          "According to the [Senate analysis](https://flsenate.gov/Session/Bill/2025/1388/Analyses/2025s01388.fp.PDF), the same law ordered a safety inspection decal, tied to vessel registration and valid for five years. Boaters get it by signing a statement that the vessel carries the required equipment; kayaks, canoes and other non-motorized craft can request it too.",
           "Safety-equipment violations became secondary offenses: an officer can cite them after stopping the boat for another reason. Manatee zones, wake-speed zones and seagrass protections stay as they were."
         ]
       },
@@ -3130,12 +3130,12 @@
           "No hace falta en un charter ni con un guía con licencia, y tampoco la necesitan los menores de 16 años."
         ],
         "cuerpo": [
-          "Pescar una rabirrubia o un mero desde un bote privado en Florida pide algo más que la licencia de agua salada: la designación State Reef Fish Angler. Es gratuita, y la Comisión de Pesca y Vida Silvestre (FWC) la exige a todo el que pesque, intente pescar o lleve a bordo alguna de 13 especies de arrecife. Vale igual para quien pesca con caña que para quien bucea con arpón.",
+          "Pescar una rabirrubia o un mero desde un bote privado en Florida pide algo más que la licencia de agua salada: la designación State Reef Fish Angler. Es gratuita, y la [Comisión de Pesca y Vida Silvestre (FWC)](https://myfwc.com/fishing/saltwater/recreational/state-reef-fish-survey/) la exige a todo el que pesque, intente pescar o lleve a bordo alguna de 13 especies de arrecife. Vale igual para quien pesca con caña que para quien bucea con arpón.",
           "La lista: pargo criollo (mutton), rabirrubia (yellowtail), pargo rojo y vermilion snapper; pez perro (hogfish); los meros gag, rojo y negro; greater y lesser amberjack, banded rudderfish y almaco jack, y el cochino (gray triggerfish).",
           "## Los que no pagan licencia, pero sí deben anotarse",
           "Aquí está la sorpresa. Los residentes de 65 años o más, quienes tienen licencia de por vida o de varios años y los residentes con licencia por discapacidad total están exentos de pagar, pero no de este trámite.",
           "## Para qué sirve",
-          "Con ese registro, la FWC elige al azar a quién enviarle por correo una encuesta sobre sus salidas. De las respuestas sale el estimado de cuántos viajes de pesca de arrecife se hacen en Florida cada mes. La encuesta es estatal desde julio de 2020; antes cubría solo el Golfo."
+          "La FWC explica que con ese registro elige al azar a quién enviarle por correo una encuesta sobre sus salidas. De las respuestas sale el estimado de cuántos viajes de pesca de arrecife se hacen en Florida cada mes. La encuesta es estatal desde julio de 2020; antes cubría solo el Golfo."
         ]
       },
       "en": {
@@ -3148,12 +3148,12 @@
           "It isn't needed on a charter or with a licensed guide, and anglers under 16 don't need it either."
         ],
         "cuerpo": [
-          "Fishing for a yellowtail or a grouper from a private boat in Florida takes more than a saltwater license: it takes the State Reef Fish Angler designation. It's free, and the Fish and Wildlife Conservation Commission (FWC) requires it of anyone who harvests, tries to harvest or has aboard any of 13 reef species. It applies to hook-and-line anglers and spearfishing divers alike.",
+          "Fishing for a yellowtail or a grouper from a private boat in Florida takes more than a saltwater license: it takes the State Reef Fish Angler designation. It's free, and the [Fish and Wildlife Conservation Commission (FWC)](https://myfwc.com/fishing/saltwater/recreational/state-reef-fish-survey/) requires it of anyone who harvests, tries to harvest or has aboard any of 13 reef species. It applies to hook-and-line anglers and spearfishing divers alike.",
           "The list: mutton, yellowtail, red and vermilion snapper; hogfish; gag, red and black grouper; greater and lesser amberjack, banded rudderfish and almaco jack; and gray triggerfish.",
           "## Exempt from the license, not from signing up",
           "Here's the surprise. Residents 65 and older, holders of lifetime or multi-year licenses and residents with a total-disability license don't pay for a license, but they still have to sign up.",
           "## What it's for",
-          "FWC uses the registry to pick anglers at random and mail them a survey about their trips. The answers produce the estimate of how many reef-fishing trips are made in Florida each month. The survey has been statewide since July 2020; before that it covered only the Gulf."
+          "The FWC explains that it uses the registry to pick anglers at random and mail them a survey about their trips. The answers produce the estimate of how many reef-fishing trips are made in Florida each month. The survey has been statewide since July 2020; before that it covered only the Gulf."
         ]
       },
       "fuentes": [
@@ -3186,7 +3186,7 @@
           "Otros teléfonos: Crandon, 305-361-1281 · Matheson Hammock, 305-665-5475 · Black Point, 305-258-4092 · Pelican Harbor, 305-754-9330 · Homestead Bayfront, 305-230-3033."
         ],
         "cuerpo": [
-          "Una sola tarifa rige en las seis marinas de Miami-Dade: $20 por lanzar el bote de lunes a jueves y $30 de viernes a domingo y en feriados, más impuesto. El viernes ya se cobra como fin de semana. Los precios están vigentes desde el 1 de octubre de 2025.",
+          "Una sola tarifa rige en las seis marinas de Miami-Dade: $20 por lanzar el bote de lunes a jueves y $30 de viernes a domingo y en feriados, más impuesto. El viernes ya se cobra como fin de semana. Los precios están vigentes desde el 1 de octubre de 2025, según la [tabla de tarifas del condado](https://www.miamidade.gov/parks/library/marina-fees.pdf).",
           "## Las que no cierran",
           "En Haulover, al norte, las rampas y el estacionamiento de remolques de Bill Bird Marina abren las 24 horas. También la rampa de Crandon, en el 4000 de Crandon Boulevard, Key Biscayne, y la de Black Point, en el sur del condado, sobre la Bahía de Biscayne. En Black Point, además, un espigón de milla y media permite pescar desde la orilla.",
           "## La que cierra con el sol",
@@ -3204,7 +3204,7 @@
           "Other numbers: Crandon, 305-361-1281 · Matheson Hammock, 305-665-5475 · Black Point, 305-258-4092 · Pelican Harbor, 305-754-9330 · Homestead Bayfront, 305-230-3033."
         ],
         "cuerpo": [
-          "One rate applies at all six Miami-Dade marinas: $20 to launch Monday through Thursday and $30 Friday through Sunday and on holidays, plus tax. Friday is already charged as a weekend. The prices have been in effect since Oct. 1, 2025.",
+          "One rate applies at all six Miami-Dade marinas: $20 to launch Monday through Thursday and $30 Friday through Sunday and on holidays, plus tax. Friday is already charged as a weekend. The prices have been in effect since Oct. 1, 2025, according to the [county's fee schedule](https://www.miamidade.gov/parks/library/marina-fees.pdf).",
           "## The ones that never close",
           "At Haulover, to the north, the ramps and trailer parking at Bill Bird Marina are open 24 hours. So is the ramp at Crandon, at 4000 Crandon Blvd. on Key Biscayne, and the one at Black Point, in the south of the county, on Biscayne Bay. Black Point also has a jetty a mile and a half long for fishing from shore.",
           "## The one that closes with the sun",
@@ -3270,9 +3270,9 @@
           "Inscripción y resultados en vivo en [islamoradasailfishtournament.com](https://www.islamoradasailfishtournament.com/)."
         ],
         "cuerpo": [
-          "El sábado 5 de diciembre, a las 8:30 de la mañana, caen las líneas al agua frente a Islamorada. Arranca así la edición 63 del Islamorada Sailfish Tournament, con dos días de pesca y dos divisiones: profesional y no profesional, esta última para quien no haya cobrado por pescar en el último año.",
+          "El sábado 5 de diciembre, a las 8:30 de la mañana, caen las líneas al agua frente a Islamorada. Arranca así la edición 63 del [Islamorada Sailfish Tournament](https://www.islamoradasailfishtournament.com/content.php?id=1062), con dos días de pesca y dos divisiones: profesional y no profesional, esta última para quien no haya cobrado por pescar en el último año.",
           "Las reglas admiten línea de hasta 20 libras y un máximo de seis en el agua. Hay trofeos para los tres primeros equipos de cada división, para el que más peces marque y para los mejores pescadores: hombre, mujer y junior. El año pasado se repartieron más de $100,000 en efectivo, según los organizadores.",
-          "El torneo es la principal recaudación de la Islamorada Charter Boat Association, una organización sin fines de lucro.",
+          "Los organizadores lo presentan como la principal recaudación de la Islamorada Charter Boat Association, una organización sin fines de lucro.",
           "## Lo que viene después",
           "La copa se decide en enero. El torneo del Islamorada Fishing Club se pesca el miércoles 20 de enero de 2027, y el Presidential Sailfish Tournament de Cheeca Lodge, el 23 y 24 de enero."
         ]
@@ -3287,9 +3287,9 @@
           "Registration and live scoring at [islamoradasailfishtournament.com](https://www.islamoradasailfishtournament.com/)."
         ],
         "cuerpo": [
-          "At 8:30 a.m. on Saturday, Dec. 5, the lines go in off Islamorada. That starts the 63rd Islamorada Sailfish Tournament, with two days of fishing and two divisions: pro and non-pro, the latter for anglers who haven't been paid to fish in the past year.",
+          "At 8:30 a.m. on Saturday, Dec. 5, the lines go in off Islamorada. That starts the 63rd [Islamorada Sailfish Tournament](https://www.islamoradasailfishtournament.com/content.php?id=1062), with two days of fishing and two divisions: pro and non-pro, the latter for anglers who haven't been paid to fish in the past year.",
           "The rules allow line of up to 20-pound test and no more than six lines in the water. There are trophies for the top three teams in each division, for the team that tags the most fish and for the top anglers: male, female and junior. Last year more than $100,000 in cash was awarded, according to the organizers.",
-          "The tournament is the main fundraiser for the Islamorada Charter Boat Association, a nonprofit.",
+          "The organizers describe it as the main fundraiser for the Islamorada Charter Boat Association, a nonprofit.",
           "## What comes next",
           "The cup is decided in January. The Islamorada Fishing Club's tournament is fished Wednesday, Jan. 20, 2027, and the Cheeca Lodge Presidential Sailfish Tournament on Jan. 23 and 24."
         ]
@@ -3572,10 +3572,10 @@
         ],
         "cuerpo": [
           "Quien lleva veinte años en su casa y quien compró la de al lado el año pasado no pagan lo mismo, aunque las dos valgan igual. La diferencia la hace Save Our Homes, el beneficio que acompaña a la exención homestead en Florida.",
-          "Funciona así: el primer año con homestead, el valor de tasación es igual al de mercado. Desde el segundo, la tasación no puede subir más de 3% al año o lo que marque la inflación, lo que sea menor. En 2025 el tope fue de 2.9%. Si el mercado sube más rápido, la brecha entre lo que vale la casa y lo que se usa para cobrar el impuesto crece cada año.",
+          "Así lo explica el [Tasador de Miami-Dade](https://www.miamidadepa.gov/pa/benefit/save-our-homes.page): el primer año con homestead, el valor de tasación es igual al de mercado. Desde el segundo, la tasación no puede subir más de 3% al año o lo que marque la inflación, lo que sea menor. En 2025 el tope fue de 2.9%. Si el mercado sube más rápido, la brecha entre lo que vale la casa y lo que se usa para cobrar el impuesto crece cada año.",
           "Los votantes lo aprobaron en 1992 y rige desde 1995.",
           "## Mudarse sin perderlo",
-          "Desde 2008 existe la portabilidad: esa diferencia acumulada se puede transferir a otra vivienda con homestead en cualquier parte de Florida, hasta un máximo de $500,000. No es automática; hay que pedirla.",
+          "Desde 2008 existe la [portabilidad](https://www.miamidadepa.gov/pa/benefit/portability.page): esa diferencia acumulada se puede transferir a otra vivienda con homestead en cualquier parte de Florida, hasta un máximo de $500,000. No es automática; hay que pedirla.",
           "## Lo que la hace perder",
           "El beneficio va atado al homestead, y el Tasador de Miami-Dade advierte que alquilar la propiedad lo pone en riesgo."
         ]
@@ -3591,10 +3591,10 @@
         ],
         "cuerpo": [
           "Someone who has owned their house for twenty years and someone who bought the one next door last year don't pay the same, even if both are worth the same. The difference is Save Our Homes, the benefit that comes with Florida's homestead exemption.",
-          "It works like this: in the first year with homestead, the assessed value equals market value. From the second year on, the assessment can't rise more than 3% a year or the rate of inflation, whichever is lower. In 2025 the cap was 2.9%. If the market rises faster, the gap between what the house is worth and what is used to calculate the tax grows every year.",
+          "Here's how the [Miami-Dade Property Appraiser](https://www.miamidadepa.gov/pa/benefit/save-our-homes.page) explains it: in the first year with homestead, the assessed value equals market value. From the second year on, the assessment can't rise more than 3% a year or the rate of inflation, whichever is lower. In 2025 the cap was 2.9%. If the market rises faster, the gap between what the house is worth and what is used to calculate the tax grows every year.",
           "Voters approved it in 1992 and it has been in effect since 1995.",
           "## Moving without losing it",
-          "Portability has existed since 2008: that accumulated difference can be transferred to another homesteaded property anywhere in Florida, up to a maximum of $500,000. It isn't automatic; you have to apply.",
+          "[Portability](https://www.miamidadepa.gov/pa/benefit/portability.page) has existed since 2008: that accumulated difference can be transferred to another homesteaded property anywhere in Florida, up to a maximum of $500,000. It isn't automatic; you have to apply.",
           "## What puts it at risk",
           "The benefit is tied to the homestead, and the Miami-Dade Property Appraiser warns that renting out the property jeopardizes it."
         ]
@@ -3641,13 +3641,13 @@
           "Los programas del condado están en [miamidade.gov](https://www.miamidade.gov/global/housing/homeownership.page)."
         ],
         "cuerpo": [
-          "Florida le presta a quien compra su primera casa hasta el 5% del monto de la hipoteca, con un mínimo de $10,000 y un máximo de $35,000, para el pago inicial y los gastos de cierre. El programa se llama Hometown Heroes, y no es un regalo.",
+          "Según [Florida Housing](https://www.floridahousing.org/live-local-act/hometown-heroes-program), el estado le presta a quien compra su primera casa hasta el 5% del monto de la hipoteca, con un mínimo de $10,000 y un máximo de $35,000, para el pago inicial y los gastos de cierre. El programa se llama Hometown Heroes, y no es un regalo.",
           "## Quién entra",
           "En 2026 está limitado a quienes trabajan a tiempo completo para un empleador de Florida como personal de salud, personal escolar, primeros respondedores, empleados de seguridad pública o de tribunales y trabajadores de cuidado infantil. También a militares en servicio o en la reserva y a veteranos con empleo a tiempo completo en el estado. Hay límites de ingreso y de préstamo.",
           "## Cómo se devuelve",
           "La ayuda es una segunda hipoteca al 0%, sin cuotas, a 30 años. Se paga completa cuando se vende la casa, se refinancia la primera hipoteca, se traspasa la escritura o el dueño deja de vivir en ella. Florida Housing lo dice sin rodeos: el préstamo no se perdona.",
           "## Lo que ofrece el condado",
-          "El Homebuyer Loan Program de Miami-Dade presta hasta $100,000 al 1% de interés en las zonas que el condado define como vulnerables y hasta $80,000 al 2% en el resto, a 30 años, para hogares que ganen hasta el 140% del ingreso medio del área. Solo se puede usar una vez por familia, y la casa no se puede alquilar. Hay además un programa de pago inicial de hasta $35,000 al 0%."
+          "El [Homebuyer Loan Program de Miami-Dade](https://www.miamidade.gov/global/housing/homeownership.page) presta, según el condado, hasta $100,000 al 1% de interés en las zonas que el condado define como vulnerables y hasta $80,000 al 2% en el resto, a 30 años, para hogares que ganen hasta el 140% del ingreso medio del área. Solo se puede usar una vez por familia, y la casa no se puede alquilar. Hay además un programa de pago inicial de hasta $35,000 al 0%."
         ]
       },
       "en": {
@@ -3660,13 +3660,13 @@
           "The county's programs are at [miamidade.gov](https://www.miamidade.gov/global/housing/homeownership.page)."
         ],
         "cuerpo": [
-          "Florida lends first-time buyers up to 5% of the mortgage amount, with a minimum of $10,000 and a maximum of $35,000, for the down payment and closing costs. The program is called Hometown Heroes, and it isn't a gift.",
+          "According to [Florida Housing](https://www.floridahousing.org/live-local-act/hometown-heroes-program), the state lends first-time buyers up to 5% of the mortgage amount, with a minimum of $10,000 and a maximum of $35,000, for the down payment and closing costs. The program is called Hometown Heroes, and it isn't a gift.",
           "## Who qualifies",
           "In 2026 it is limited to people who work full time for a Florida-based employer as health care workers, school staff, first responders, public safety or court employees and child care workers. It also covers service members and reservists, and veterans employed full time in the state. Income and loan limits apply.",
           "## How it's repaid",
           "The help is a second mortgage at 0%, with no monthly payments, over 30 years. It comes due in full when the home is sold, the first mortgage is refinanced, the deed is transferred or the owner stops living there. Florida Housing puts it plainly: the loan is not forgivable.",
           "## What the county offers",
-          "Miami-Dade's Homebuyer Loan Program lends up to $100,000 at 1% interest in areas the county defines as vulnerable and up to $80,000 at 2% elsewhere, over 30 years, to households earning up to 140% of the area median income. It can be used only once per family, and the home can't be rented out. There is also a down payment program of up to $35,000 at 0%."
+          "[Miami-Dade's Homebuyer Loan Program](https://www.miamidade.gov/global/housing/homeownership.page), the county says, lends up to $100,000 at 1% interest in areas the county defines as vulnerable and up to $80,000 at 2% elsewhere, over 30 years, to households earning up to 140% of the area median income. It can be used only once per family, and the home can't be rented out. There is also a down payment program of up to $35,000 at 0%."
         ]
       },
       "fuentes": [
@@ -3707,7 +3707,7 @@
           "Las quejas por depósitos se presentan ante el Departamento de Agricultura y Servicios al Consumidor (FDACS)."
         ],
         "cuerpo": [
-          "El dueño no puede entrar a reparar cuando quiera. La ley de Florida le exige avisar con 24 horas y hacerlo entre las 7:30 de la mañana y las 8 de la noche, salvo emergencia o para proteger la propiedad.",
+          "El dueño no puede entrar a reparar cuando quiera. La ley de Florida, tal como la resume el [Departamento de Agricultura y Servicios al Consumidor](https://www.fdacs.gov/Consumer-resources/landlord-tenant-law-in-florida), le exige avisar con 24 horas y hacerlo entre las 7:30 de la mañana y las 8 de la noche, salvo emergencia o para proteger la propiedad.",
           "## El depósito",
           "Al terminar el contrato, si el dueño no va a reclamar nada, tiene 15 días para devolver el depósito. Si piensa quedarse con una parte, dispone de 30 días para decir por escrito cuánto y por qué; si no lo hace en ese plazo, pierde el derecho a reclamar. El inquilino tiene entonces 15 días para objetar por escrito.",
           "## Si te atrasas con la renta",
@@ -3727,7 +3727,7 @@
           "Deposit complaints are filed with the Department of Agriculture and Consumer Services (FDACS)."
         ],
         "cuerpo": [
-          "A landlord can't come in to make repairs whenever they like. Florida law requires 24 hours' notice and entry between 7:30 a.m. and 8 p.m., except in an emergency or to protect the property.",
+          "A landlord can't come in to make repairs whenever they like. Florida law, as summarized by the [Department of Agriculture and Consumer Services](https://www.fdacs.gov/Consumer-resources/landlord-tenant-law-in-florida), requires 24 hours' notice and entry between 7:30 a.m. and 8 p.m., except in an emergency or to protect the property.",
           "## The deposit",
           "When the lease ends, a landlord who isn't making a claim has 15 days to return the deposit. One who plans to keep part of it has 30 days to say in writing how much and why; miss that deadline and the right to make a claim is lost. The tenant then has 15 days to object in writing.",
           "## If you fall behind on rent",
@@ -3771,9 +3771,9 @@
           "Las pólizas de dueños de unidades de condominio están exentas por ley."
         ],
         "cuerpo": [
-          "A partir del 1 de enero de 2027, toda póliza de Citizens que cubra viento, nueva o renovada, exigirá que la vivienda tenga también seguro de inundación, sin importar cuánto valga ni si está dentro o fuera de una zona inundable. Citizens, la aseguradora estatal de último recurso, no vende esa cobertura: hay que contratarla aparte.",
+          "A partir del 1 de enero de 2027, según [Citizens](https://www.citizensfla.com/-/20230822-flood-insurance-requirements-for-coverage-limit), toda póliza de Citizens que cubra viento, nueva o renovada, exigirá que la vivienda tenga también seguro de inundación, sin importar cuánto valga ni si está dentro o fuera de una zona inundable. Citizens, la aseguradora estatal de último recurso, no vende esa cobertura: hay que contratarla aparte.",
           "## La escalera",
-          "El requisito entró por etapas, según el costo de reemplazo de la vivienda: $600,000 o más desde enero de 2024, $500,000 desde 2025 y $400,000 desde 2026. En 2027 desaparece el umbral, y entran también las pólizas de contenido de inquilinos.",
+          "La aseguradora explica que el requisito entró por etapas, según el costo de reemplazo de la vivienda: $600,000 o más desde enero de 2024, $500,000 desde 2025 y $400,000 desde 2026. En 2027 desaparece el umbral, y entran también las pólizas de contenido de inquilinos.",
           "Quien ya vivía en una zona especial de riesgo de inundación tenía la obligación desde antes.",
           "## Lo que pasa si no lo tienes",
           "Citizens avisa por carta o correo electrónico a quien reciba una no renovación solo por este motivo, con lo que debe hacer para volver a ser elegible."
@@ -3789,9 +3789,9 @@
           "Condominium unit-owner policies are exempt under Florida law."
         ],
         "cuerpo": [
-          "Starting Jan. 1, 2027, every Citizens policy with wind coverage, new or renewing, will require the home to carry flood insurance as well, regardless of its value and whether or not it sits in a flood zone. Citizens, the state's insurer of last resort, doesn't sell that coverage: it has to be bought separately.",
+          "Starting Jan. 1, 2027, according to [Citizens](https://www.citizensfla.com/-/20230822-flood-insurance-requirements-for-coverage-limit), every Citizens policy with wind coverage, new or renewing, will require the home to carry flood insurance as well, regardless of its value and whether or not it sits in a flood zone. Citizens, the state's insurer of last resort, doesn't sell that coverage: it has to be bought separately.",
           "## The ladder",
-          "The requirement was phased in by the home's replacement cost: $600,000 or more starting January 2024, $500,000 in 2025 and $400,000 in 2026. In 2027 the threshold disappears, and tenant contents policies are included too.",
+          "The insurer explains that the requirement was phased in by the home's replacement cost: $600,000 or more starting January 2024, $500,000 in 2025 and $400,000 in 2026. In 2027 the threshold disappears, and tenant contents policies are included too.",
           "Homes in a Special Flood Hazard Area were already required to have it.",
           "## What happens if you don't have it",
           "Citizens notifies by letter or email anyone who receives a nonrenewal solely for this reason, with the steps needed to become eligible again."
@@ -3833,11 +3833,11 @@
         "cuerpo": [
           "Dos casas en la misma cuadra pueden caer en zonas de inundación distintas, y eso cambia el precio del seguro y, a veces, si es obligatorio. Por eso el mapa se consulta por dirección, no por barrio ni por código postal.",
           "## Cuál mapa vale",
-          "Los mapas de FEMA que hoy se usan para fijar las tarifas son los vigentes. Los preliminares, publicados el 25 de febrero de 2021, todavía pueden cambiar mientras la agencia responde a los comentarios recibidos, y el condado aclara que no están en vigor. Las dos versiones se pueden consultar.",
+          "Los mapas de FEMA que hoy se usan para fijar las tarifas son los vigentes. Los preliminares, publicados el 25 de febrero de 2021, todavía pueden cambiar mientras la agencia responde a los comentarios recibidos, y el [condado aclara](https://www.miamidade.gov/global/economy/building/flood-protection/flood-zone-maps.page) que no están en vigor. Las dos versiones se pueden consultar.",
           "## Cómo leerlo",
-          "La zona A es de riesgo alto: hay al menos una posibilidad entre cuatro de inundación durante una hipoteca de 30 años. La AE va de riesgo moderado a alto. En ambas rige la obligación de tener seguro.",
+          "Según el condado, la zona A es de riesgo alto: hay al menos una posibilidad entre cuatro de inundación durante una hipoteca de 30 años. La AE va de riesgo moderado a alto. En ambas rige la obligación de tener seguro.",
           "## El descuento",
-          "Miami-Dade subió de la clase 5 a la clase 3 en el sistema de calificación del programa federal de seguro de inundación. El resultado es un 35% de descuento para residentes y negocios del área no incorporada, en la mayoría de las pólizas emitidas o renovadas a partir del 1 de abril de 2024."
+          "Miami-Dade subió de la clase 5 a la clase 3 en el sistema de calificación del programa federal de seguro de inundación. El resultado, informa el condado, es un 35% de descuento para residentes y negocios del área no incorporada, en la mayoría de las pólizas emitidas o renovadas a partir del 1 de abril de 2024."
         ]
       },
       "en": {
@@ -3852,11 +3852,11 @@
         "cuerpo": [
           "Two houses on the same block can fall in different flood zones, and that changes the price of insurance and sometimes whether it's required. That's why the map is checked by address, not by neighborhood or ZIP code.",
           "## Which map counts",
-          "The FEMA maps used today to set rates are the effective ones. The preliminary maps, published Feb. 25, 2021, may still change as the agency addresses the comments it received, and the county states they are not currently effective. Both versions can be viewed.",
+          "The FEMA maps used today to set rates are the effective ones. The preliminary maps, published Feb. 25, 2021, may still change as the agency addresses the comments it received, and the [county states](https://www.miamidade.gov/global/economy/building/flood-protection/flood-zone-maps.page) they are not currently effective. Both versions can be viewed.",
           "## How to read it",
-          "Zone A is high risk: there is at least a one-in-four chance of flooding over a 30-year mortgage. Zone AE ranges from moderate to high risk. Mandatory insurance applies in both.",
+          "According to the county, Zone A is high risk: there is at least a one-in-four chance of flooding over a 30-year mortgage. Zone AE ranges from moderate to high risk. Mandatory insurance applies in both.",
           "## The discount",
-          "Miami-Dade moved from Class 5 to Class 3 in the rating system of the federal flood insurance program. The result is a 35% discount for residents and businesses in the unincorporated area, on most policies issued or renewed on or after April 1, 2024."
+          "Miami-Dade moved from Class 5 to Class 3 in the rating system of the federal flood insurance program. The result, the county says, is a 35% discount for residents and businesses in the unincorporated area, on most policies issued or renewed on or after April 1, 2024."
         ]
       },
       "fuentes": [
@@ -3893,7 +3893,7 @@
           "Está en el downtown, sobre Biscayne Boulevard."
         ],
         "cuerpo": [
-          "Desde lejos parece que se va a caer. El Waldorf Astoria Miami está compuesto por nueve cubos apilados de forma desigual, uno sobre otro, hasta sumar 100 pisos y 1,049 pies. Cuando se termine, en 2028 según el promotor, será el primer «supertall» del estado.",
+          "Desde lejos parece que se va a caer. El Waldorf Astoria Miami está compuesto por nueve cubos apilados de forma desigual, uno sobre otro, hasta sumar 100 pisos y 1,049 pies. Cuando se termine, en 2028 según el promotor, será el primer «supertall» del estado, [informó WLRN](https://www.wlrn.org/business/2026-11-09/miami-waldorf-astoria-supertall-building-condo).",
           "El diseño es del arquitecto uruguayo-canadiense Carlos Ott y de la firma Sieger Suarez. El promotor es PMG, que participó en el Steinway Tower de Nueva York.",
           "## Qué hay adentro",
           "Los tres primeros cubos serán un hotel de 205 habitaciones, con buena parte del primero dedicada a estacionamiento. Habrá un restaurante en el piso 5 y un salón de baile en la parte baja. Los seis cubos superiores quedan para uso privado, según contó PMG a WLRN, que recorrió la obra y subió hasta el piso 80.",
@@ -3911,7 +3911,7 @@
           "It's downtown, on Biscayne Boulevard."
         ],
         "cuerpo": [
-          "From a distance it looks like it's about to fall. The Waldorf Astoria Miami is made of nine cubes stacked unevenly, one on top of another, adding up to 100 stories and 1,049 feet. When it's finished, in 2028 according to the developer, it will be the state's first supertall.",
+          "From a distance it looks like it's about to fall. The Waldorf Astoria Miami is made of nine cubes stacked unevenly, one on top of another, adding up to 100 stories and 1,049 feet. When it's finished, in 2028 according to the developer, it will be the state's first supertall, [WLRN reported](https://www.wlrn.org/business/2026-11-09/miami-waldorf-astoria-supertall-building-condo).",
           "The design is by Uruguayan-Canadian architect Carlos Ott and the firm Sieger Suarez. The developer is PMG, which co-developed New York's Steinway Tower.",
           "## What's inside",
           "The first three cubes will be a 205-room hotel, with much of the first given over to parking. There will be a restaurant on the 5th floor and a ballroom on a lower level. The top six cubes are for private use, PMG told WLRN, which toured the site and went up to the 80th floor.",
