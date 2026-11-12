@@ -775,6 +775,26 @@ body:not(.home) .split{display:block;margin-bottom:0}
 .ul a>i,.fz-c .n u,.hist .yr,.hist-l b,.tv-l .no,.sp-sun b,.dk-cond b,.ag-d b,.ag-days button b{font-family:var(--dm);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 .hist .yr{letter-spacing:-.04em}
 .fz-t .q0{font-style:normal;display:inline-block;transform:skewX(-11deg);margin-right:.02em}
+@media(min-width:1021px){
+ body.home .top{grid-template-columns:minmax(0,1fr) 288px;gap:40px}
+ body.home .top .lead{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);grid-template-rows:auto auto auto auto 1fr auto;column-gap:34px;row-gap:0;align-items:start}
+ body.home .top .lead>div{display:contents}
+ body.home .top .lead>div>*{grid-column:1}
+ body.home .top .lead>div>.eb{grid-row:1}
+ body.home .top .lead>div>h2{grid-row:2;font-size:35px;line-height:1.09;margin:12px 0 14px}
+ body.home .top .lead>div>p{grid-row:3;font-size:17.5px}
+ body.home .top .lead>div>.rd{grid-row:4}
+ body.home .top .lead>div>.meta{grid-row:5;margin-top:10px}
+ body.home .top .lead>a:first-child{grid-column:2;grid-row:1/span 5;align-self:stretch;position:relative;display:block;min-height:400px}
+ body.home .top .lead>a:first-child .ph{position:absolute;inset:0;aspect-ratio:auto;height:100%}
+ body.home .top .lead>div>.toca{grid-column:1/-1;grid-row:6;margin-top:28px}
+ body.home .top .lead>div>.toca ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+ body.home .top .lead>div>.toca li{font-size:16px}
+ body.home .ul a{grid-template-columns:26px minmax(0,1fr);gap:10px;padding:12px 0}
+ body.home .ul a>i{font-size:23px}
+ body.home .ul .eb{font-size:14.5px}
+ body.home .ul b{font-size:16.5px;line-height:1.25}
+}
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
@@ -1101,7 +1121,7 @@ function render(){
   if(lead){var f=F(lead);
     lb.innerHTML='<article class="lead'+(XB?' hb':'')+'"><a href="'+href(lead)+'">'+ph(lead)+'</a><div><span class="eb">'+eb(lead)+'</span><h2><a href="'+href(lead)+'">'+esc(f.titulo)+'</a></h2><p>'+esc(f.bajada||'')+'</p>'
      +((f.toca&&f.toca.length)?'<div class="toca"><b>'+(L==='en'?'TAKE NOTE':'TOMA NOTA')+'</b><ul>'+f.toca.slice(0,3).map(function(x,i){return '<li><i>'+(i+1)+'</i><span>'+hn(x)+'</span></li>'}).join('')+'</ul></div>':'')
-     +'<a class="lkl rd" href="'+href(lead)+'">'+(L==='en'?'READ THE FULL STORY':'LEER LA NOTA COMPLETA')+' →</a>'+'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>'
+     +'<a class="lkl rd" href="'+href(lead)+'">'+(L==='en'?'READ THE FULL STORY':'LEER LA NOTA COMPLETA')+' →</a>'+'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes.length>1)?' · '+lead.fuentes.length+(L==='en'?' sources':' fuentes'):(lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>'
      +(XB?'<a class="xb'+(xky?'':' mi')+'" href="'+href(XB)+'">'+ph(XB)+'<span><span class="eb"><span class="lg'+(xky?' ky':'')+'">'+(xky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI')+'</span></span><b>'+esc(F(XB).titulo)+'</b></span><span class="go">'+(L==='en'?'READ →':'LEER →')+'</span></a>':'');
   } else lb.innerHTML='<div class="lead" style="grid-template-columns:1fr">'+empty(ST.hamaca?t('vacioH'):ST.muelle?t('vacioM'):ST.casa?t('vacioC'):'')+'</div>';
   var vk=(ST.hamaca?'h':ST.muelle?'m':ST.casa?'c':ST.scope)+'|'+ST.tema;if(ST._vk!==vk){ST._vk=vk;ST.masN=8}
