@@ -1270,7 +1270,7 @@ function railNav(box,id){box.querySelectorAll('.rail-nav button').forEach(functi
 var PLAY='<svg width="76" height="76" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="rgba(14,27,48,.55)" stroke="#fff" stroke-width="2"/><path d="M23 18l15 10-15 10z" fill="#fff"/></svg>';
 function renderPt(){
   var en=L==='en',hm=HOME(),fz=document.getElementById('pzF'),tv=document.getElementById('tv'),ms=document.getElementById('mesa'),db=document.getElementById('datoBox'),ho=document.getElementById('hot'),ap=document.getElementById('apps'),sp=document.getElementById('split');
-  var more=APPS.map(function(x){var v=x[L]||x.es;return '<a href="'+x.u+'">'+v[0]+'</a>'}).join('');
+  var more=APPS.filter(function(x){return !/go=(rest|hotels)$/.test(x.u)}).map(function(x){var v=x[L]||x.es;return '<a href="'+x.u+'">'+v[0]+'</a>'}).join('');
   document.getElementById('appsH').lastElementChild.textContent=en?'Places from the guide, one from each section':'Lugares de la guía, uno de cada sección';
   if(!PT){fz.innerHTML='';tv.style.display='none';ms.style.display='none';ho.style.display='none';db.innerHTML='';sp.classList.add('solo');
     ap.className='apps-m';ap.innerHTML='<span>'+(en?'Sections of the app:':'Secciones de la app:')+'</span>'+more;return}
