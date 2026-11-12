@@ -126,7 +126,7 @@
         "toca": [
           "El 17 de noviembre hay audiencia en la demanda de dos residentes que piden una votación pública, de acuerdo con WLRN.",
           "El plan que el condado autorizó negociar no incluye mamíferos marinos y conserva la cúpula de Buckminster Fuller.",
-          "Las fotos de esta nota son de noviembre de 2022, cuando el parque todavía presentaba delfines."
+          "El parque está cerrado al público. Las fotos de esta nota son de noviembre de 2022, cuando todavía presentaba delfines."
         ],
         "cuerpo": [
           "El contrato que debe decidir el futuro del Miami Seaquarium no se votó. Un comité de cuatro comisionados de Miami-Dade lo aplazó el 10 de noviembre por tres votos contra uno, [según reportó la emisora pública WLRN](https://www.wlrn.org/environment/2026-11-10/miami-dade-puts-the-brakes-on-seaquarium-makeover-deal-commissioners-agreed-to-defer-it), después de que el documento de 249 páginas se hiciera público la noche antes de la audiencia.",
@@ -144,7 +144,7 @@
         "toca": [
           "A hearing is set for Nov. 17 in the lawsuit by two residents seeking a public vote, according to WLRN.",
           "The plan the county authorized for negotiation has no marine mammals and keeps the Buckminster Fuller dome.",
-          "The photos in this story are from November 2022, when the park still had dolphin shows."
+          "The park is closed to the public. The photos in this story are from November 2022, when it still had dolphin shows."
         ],
         "cuerpo": [
           "The lease that is meant to decide the future of the Miami Seaquarium did not get a vote. A committee of four Miami-Dade commissioners deferred it on Nov. 10 by a 3-1 vote, [public radio station WLRN reported](https://www.wlrn.org/environment/2026-11-10/miami-dade-puts-the-brakes-on-seaquarium-makeover-deal-commissioners-agreed-to-defer-it), after the 249-page document was made public the night before the hearing.",
@@ -1263,6 +1263,61 @@
       "foto_alt": "Un gallo camina junto a una casa de madera en Key West",
       "foto_pie": "Un gallo junto a una casa de madera de Key West, hacia 2010.",
       "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010."
+    },
+    {
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "id": "key-west-island-hopper-autobus",
+      "scope": "cayos",
+      "tema": "ruta",
+      "es": {
+        "etiqueta": "EN RUTA",
+        "titulo": "Key West cambia su autobús el 30 de noviembre: un circuito por toda la isla cada 40 minutos",
+        "bajada": "El Island Hopper circulará en los dos sentidos entre Key West y Stock Island y será gratis la primera semana, según The Key West Citizen.",
+        "toca": [
+          "Gratis hasta el 6 de diciembre. Después, $2 el viaje y $25 el pase de 31 días, de acuerdo con el diario.",
+          "Key West Rides y el Workforce Express terminan el 29 de noviembre.",
+          "Hay taller público el 19 de noviembre, de 5 a 6:30 p.m., en Bernstein Park, Stock Island."
+        ],
+        "cuerpo": [
+          "Key West estrena servicio de autobús el lunes 30 de noviembre. El Island Hopper, que la ciudad [presenta en su página](https://www.cityofkeywest-fl.gov/1291/Coming-Soon-Island-Hopper) como una ruta fija entre Key West y Stock Island, saldrá en dos sentidos, uno a favor y otro en contra de las manecillas del reloj.",
+          "Los detalles los adelantó [The Key West Citizen](https://www.keysnews.com/news/local/the-island-hopper-arrives-nov-30-it-s-a-good-start/article_869e4b32-eb68-433f-a122-0c5b16ec9d9f.html): un autobús cada 40 minutos, los siete días, con la primera salida a las 6 a.m. y las últimas vueltas poco después de las 7:30 p.m. El recorrido pasa por el hospital y el college, North Roosevelt, White Street, el Historic Seaport, Old Town y Higgs Beach.",
+          "La Comisión aprobó el 5 de noviembre, por 7 votos a 0, que la primera semana sea gratis, añade el diario."
+        ]
+      },
+      "en": {
+        "etiqueta": "ON THE ROAD",
+        "titulo": "Key West changes its bus on Nov. 30: a loop around the whole island every 40 minutes",
+        "bajada": "The Island Hopper will run in both directions between Key West and Stock Island and will be free the first week, according to The Key West Citizen.",
+        "toca": [
+          "Free through Dec. 6. After that, $2 a ride and $25 for a 31-day pass, the newspaper says.",
+          "Key West Rides and the Workforce Express end Nov. 29.",
+          "A public workshop is set for Nov. 19, 5 to 6:30 p.m., at Bernstein Park, Stock Island."
+        ],
+        "cuerpo": [
+          "Key West starts a different bus service on Monday, Nov. 30. The Island Hopper, which the city [describes on its page](https://www.cityofkeywest-fl.gov/1291/Coming-Soon-Island-Hopper) as a fixed route between Key West and Stock Island, will run in two directions, clockwise and counterclockwise.",
+          "The details came from [The Key West Citizen](https://www.keysnews.com/news/local/the-island-hopper-arrives-nov-30-it-s-a-good-start/article_869e4b32-eb68-433f-a122-0c5b16ec9d9f.html): a bus every 40 minutes, seven days a week, with the first departure at 6 a.m. and the last loops shortly after 7:30 p.m. The route passes the hospital and the college, North Roosevelt, White Street, the Historic Seaport, Old Town and Higgs Beach.",
+          "The Commission voted 7-0 on Nov. 5 to make the first week free, the newspaper adds."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Ciudad de Key West · Island Hopper",
+          "u": "https://www.cityofkeywest-fl.gov/1291/Coming-Soon-Island-Hopper"
+        },
+        {
+          "n": "The Key West Citizen · columna del 11 de noviembre de 2026",
+          "u": "https://www.keysnews.com/news/local/the-island-hopper-arrives-nov-30-it-s-a-good-start/article_869e4b32-eb68-433f-a122-0c5b16ec9d9f.html"
+        }
+      ],
+      "foto": "mm-keys-kw-old-town-aereo.jpg",
+      "foto_pos": "50% 40%",
+      "foto_alt": "Calles y techos de Old Town, en Key West, vistos desde el aire",
+      "foto_pie": "Las calles de Old Town, en Key West, desde el aire.",
+      "foto_pie_en": "The streets of Old Town, Key West, from the air."
     },
     {
       "id": "cayos-santuario-anclaje-2027",
