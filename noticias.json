@@ -2965,10 +2965,9 @@
       "destacada": false,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-dk-marina-pilotes.jpg",
-      "foto_alt": "Botes amarrados entre los pilotes de una marina de Miami, con el agua quieta",
-      "foto_pie": "Botes entre los pilotes de una marina de Miami.",
-      "foto_pie_en": "Boats among the pilings of a Miami marina.",
+      "foto": "mm-dk-haulover-escollera.jpg",
+      "foto_pie": "Pescadores en la escollera de Haulover.",
+      "foto_pie_en": "Anglers on the Haulover jetty.",
       "es": {
         "etiqueta": "LAS REGLAS",
         "titulo": "Mero y róbalo: las dos reglas que cambian la pesca este fin de año",
@@ -3033,7 +3032,8 @@
           "n": "FWC · Snook harvest closure",
           "u": "https://myfwc.com/news/all-news/snook-1124/"
         }
-      ]
+      ],
+      "foto_alt": "Pescadores con sus cañas en la escollera de Haulover, junto a la playa"
     },
     {
       "id": "carnet-bote-boater-freedom-act",
