@@ -111,6 +111,79 @@
       ]
     },
     {
+      "id": "seaquarium-arrendamiento-aplazado",
+      "scope": "miami",
+      "tema": "ciudad",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "es": {
+        "etiqueta": "VIRGINIA KEY",
+        "titulo": "El Seaquarium se queda en pausa: los comisionados aplazan el contrato de 99 años y el reloj corre hasta fin de año",
+        "bajada": "Un comité de Miami-Dade pospuso el 10 de noviembre el arrendamiento con el desarrollador David Martin, según reportó WLRN. El documento, de 249 páginas, se hizo público la noche anterior.",
+        "toca": [
+          "El 17 de noviembre hay audiencia en la demanda de dos residentes que piden una votación pública, de acuerdo con WLRN.",
+          "El plan que el condado autorizó negociar no incluye mamíferos marinos y conserva la cúpula de Buckminster Fuller.",
+          "Las fotos de esta nota son de noviembre de 2022, cuando el parque todavía presentaba delfines."
+        ],
+        "cuerpo": [
+          "El contrato que debe decidir el futuro del Miami Seaquarium no se votó. Un comité de cuatro comisionados de Miami-Dade lo aplazó el 10 de noviembre por tres votos contra uno, [según reportó la emisora pública WLRN](https://www.wlrn.org/environment/2026-11-10/miami-dade-puts-the-brakes-on-seaquarium-makeover-deal-commissioners-agreed-to-defer-it), después de que el documento de 249 páginas se hiciera público la noche antes de la audiencia.",
+          "## Qué se negocia",
+          "La Comisión [autorizó en diciembre de 2025](https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2025/252179.pdf) traspasar el arrendamiento a Resilient Aquarium LLC, una empresa de David Martin afiliada a Terra, y negociar uno nuevo. Esa resolución describe un acuario acreditado sin mamíferos marinos, una marina con villa de pescadores, un paseo público junto a la bahía y la conservación de la cúpula de Buckminster Fuller, con una inversión mínima de $100 millones y al menos $10 millones en obras de uso público.",
+          "El contrato vigente vence en 2044. La propuesta lo llevaría a 99 años, con una renta garantizada de $1.1 millones al año, más un porcentaje de los ingresos.",
+          "## Por qué se frenó",
+          "De acuerdo con WLRN, varios comisionados objetaron que el acuerdo pidiera saltarse el mes de aviso público y las dos tasaciones que exigen las reglas del condado. El abogado del desarrollador, Gene Stearns, dijo en la audiencia que los acreedores que hoy pagan las cuentas de la propiedad pusieron como límite el fin de año, y que la demora puede hundir el proyecto."
+        ]
+      },
+      "en": {
+        "etiqueta": "VIRGINIA KEY",
+        "titulo": "The Seaquarium is on hold: commissioners defer the 99-year lease as a year-end clock runs",
+        "bajada": "A Miami-Dade committee put off the lease with developer David Martin on Nov. 10, WLRN reported. The 249-page document was made public the night before.",
+        "toca": [
+          "A hearing is set for Nov. 17 in the lawsuit by two residents seeking a public vote, according to WLRN.",
+          "The plan the county authorized for negotiation has no marine mammals and keeps the Buckminster Fuller dome.",
+          "The photos in this story are from November 2022, when the park still had dolphin shows."
+        ],
+        "cuerpo": [
+          "The lease that is meant to decide the future of the Miami Seaquarium did not get a vote. A committee of four Miami-Dade commissioners deferred it on Nov. 10 by a 3-1 vote, [public radio station WLRN reported](https://www.wlrn.org/environment/2026-11-10/miami-dade-puts-the-brakes-on-seaquarium-makeover-deal-commissioners-agreed-to-defer-it), after the 249-page document was made public the night before the hearing.",
+          "## What is being negotiated",
+          "The Commission [authorized in December 2025](https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2025/252179.pdf) the transfer of the lease to Resilient Aquarium LLC, a David Martin company affiliated with Terra, and the negotiation of a new one. That resolution describes an accredited aquarium with no marine mammals, a marina with a fisherman's village, a public baywalk and the preservation of the Buckminster Fuller dome, with a minimum investment of $100 million and at least $10 million in public-use improvements.",
+          "The current lease expires in 2044. The proposal would stretch it to 99 years, with guaranteed rent of $1.1 million a year plus a percentage of revenue.",
+          "## Why it stalled",
+          "According to WLRN, several commissioners objected that the deal asked to skip the month of public notice and the two appraisals county rules require. The developer's attorney, Gene Stearns, told the hearing that the creditors now paying the property's bills set a year-end limit, and that the delay could sink the project."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Comisión de Miami-Dade · resolución del 2 de diciembre de 2025 sobre el arrendamiento del Seaquarium",
+          "u": "https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2025/252179.pdf"
+        },
+        {
+          "n": "WLRN · audiencia del comité del 10 de noviembre de 2026",
+          "u": "https://www.wlrn.org/environment/2026-11-10/miami-dade-puts-the-brakes-on-seaquarium-makeover-deal-commissioners-agreed-to-defer-it"
+        }
+      ],
+      "foto": "mm-seaquarium-entrada-tiburon.jpg",
+      "foto_pos": "50% 62%",
+      "foto_alt": "La mandíbula de tiburón gigante que enmarca un letrero del Miami Seaquarium",
+      "foto_pie": "La mandíbula de tiburón del Miami Seaquarium, en noviembre de 2022.",
+      "foto_pie_en": "The shark jaw at the Miami Seaquarium, in November 2022.",
+      "galeria": [
+        {
+          "f": "mm-seaquarium-delfin-salto.jpg",
+          "es": "Un delfín salta en el estadio del Seaquarium, en noviembre de 2022.",
+          "en": "A dolphin leaps at the Seaquarium stadium, in November 2022."
+        },
+        {
+          "f": "mm-seaquarium-estadio-delfines.jpg",
+          "es": "El estadio de delfines, bajo sus toldos blancos.",
+          "en": "The dolphin stadium, under its white canopies."
+        }
+      ]
+    },
+    {
       "id": "impuestos-propiedad-bitcoin-miami-dade",
       "scope": "miami",
       "tema": "bolsillo",
@@ -1133,6 +1206,63 @@
           "u": "https://www.myfloridalicense.com/wl11.asp"
         }
       ]
+    },
+    {
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "id": "key-west-gallinas-sin-destino",
+      "scope": "cayos",
+      "tema": "ciudad",
+      "es": {
+        "etiqueta": "KEY WEST",
+        "titulo": "Key West no tiene adónde mandar sus gallinas: se acabó el programa que reubicó a 25,000 en 17 años",
+        "bajada": "El Key West Wildlife Center dejó de recibirlas por la gripe aviar, según The Key West Citizen. La ciudad espera recomendaciones en diciembre o enero.",
+        "toca": [
+          "Darles de comer a las gallinas es ilegal en Key West por ordenanza de la ciudad.",
+          "La ciudad prevé un taller público a comienzos de diciembre, de acuerdo con el diario.",
+          "Si ves un ave enferma o herida, no la toques: avisa al Key West Wildlife Center."
+        ],
+        "cuerpo": [
+          "Las gallinas que andan sueltas por Key West ya no tienen destino fuera de la isla. El Key West Wildlife Center cerró el programa con el que, durante 17 años, recibió aves atrapadas o heridas y las envió a tierra firme: unas 25,000 en total, [según reportó The Key West Citizen](https://www.keysnews.com/news/local/walking-on-eggshells-city-of-key-west-looks-for-solution-for-chickens-that-have-grown/article_d52cd9f8-6904-4684-81b0-8eb2c904d1b4.html).",
+          "## Por qué se acabó",
+          "El director del centro, citado por el diario, sostiene que la decisión no fue suya, sino una indicación de la FWC y del Departamento de Agricultura de Estados Unidos, que inspeccionan la instalación, ante el avance de la gripe aviar. La Comisión de la ciudad votó 7-0 el 1 de octubre para sacar a las gallinas del contrato con el centro, que es de $7,500 al mes. El mismo director señaló que Key West no ha registrado ningún caso de gripe aviar.",
+          "## Lo que viene",
+          "El administrador de la ciudad, Brian L. Barroso, dijo a los comisionados el 5 de noviembre que las recomendaciones llegarán en diciembre o enero y que cualquier plan estará fuera del presupuesto, recoge el Citizen. Entre las ideas que se oyeron: un terreno municipal con agua y corriente para alojarlas y un programa piloto para controlar su reproducción."
+        ]
+      },
+      "en": {
+        "etiqueta": "KEY WEST",
+        "titulo": "Key West has nowhere to send its chickens: the program that relocated 25,000 in 17 years is over",
+        "bajada": "The Key West Wildlife Center stopped taking them because of avian flu, The Key West Citizen reports. The city expects recommendations in December or January.",
+        "toca": [
+          "Feeding the chickens is illegal in Key West under a city ordinance.",
+          "The city plans a public workshop in early December, according to the newspaper.",
+          "If you see a sick or injured bird, don't touch it: call the Key West Wildlife Center."
+        ],
+        "cuerpo": [
+          "The chickens that roam Key West no longer have a destination off the island. The Key West Wildlife Center has ended the program through which, for 17 years, it took in trapped or injured birds and sent them to the mainland: about 25,000 in all, [The Key West Citizen reported](https://www.keysnews.com/news/local/walking-on-eggshells-city-of-key-west-looks-for-solution-for-chickens-that-have-grown/article_d52cd9f8-6904-4684-81b0-8eb2c904d1b4.html).",
+          "## Why it ended",
+          "The center's director, quoted by the newspaper, says the decision wasn't his but guidance from FWC and the U.S. Department of Agriculture, which inspect the facility, as avian flu spreads. The City Commission voted 7-0 on Oct. 1 to remove chickens from its contract with the center, which is $7,500 a month. The same director noted that Key West has not recorded a case of avian flu.",
+          "## What comes next",
+          "City Manager Brian L. Barroso told commissioners on Nov. 5 that recommendations will come in December or January and that any plan will be unbudgeted, the Citizen reports. Among the ideas raised: a city-owned site with water and power to hold the birds, and a pilot program to control their reproduction."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "The Key West Citizen · reunión de la Comisión del 5 de noviembre de 2026",
+          "u": "https://www.keysnews.com/news/local/walking-on-eggshells-city-of-key-west-looks-for-solution-for-chickens-that-have-grown/article_d52cd9f8-6904-4684-81b0-8eb2c904d1b4.html"
+        }
+      ],
+      "foto": "mm-kw-gallo-casa-archivo.jpg",
+      "foto_mm": false,
+      "foto_credito": "Dale McDonald Collection / Florida Keys History Center, Monroe County Public Library (CC BY 2.0)",
+      "foto_pos": "50% 70%",
+      "foto_alt": "Un gallo camina junto a una casa de madera en Key West",
+      "foto_pie": "Un gallo junto a una casa de madera de Key West, hacia 2010.",
+      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010."
     },
     {
       "id": "cayos-santuario-anclaje-2027",
