@@ -300,7 +300,7 @@
           "El 4% de descuento por pagar en noviembre aplica con cualquier método, de acuerdo con la ley de Florida."
         ],
         "cuerpo": [
-          "Que Miami-Dade guardara Bitcoin posiblemente nunca estuvo en el plan. Desde el 9 de noviembre se puede pagar con cripto el impuesto de la casa, sí, pero a la oficina del recaudador le llegan dólares: el monto completo de la factura y ni una fracción de Bitcoin.",
+          "Que Miami-Dade guardara Bitcoin posiblemente nunca estuvo en el plan. Desde el 9 de noviembre se puede pagar con cripto el impuesto de la casa, sí, pero a la oficina del recaudador le llegan dólares: el monto completo de la factura y ni un satoshi, la fracción más pequeña de un Bitcoin.",
           "La diferencia importa. Para el dueño no es entregarle Bitcoin al gobierno, es vender una parte del suyo al precio de ese instante para cubrir la cuenta, con todo lo que eso trae: el tipo de cambio del momento, una posible comisión y un aviso al IRS. Para quien ya tiene cripto y quiere usarla, es una puerta más. Para quien no, nada cambia.",
           "## Cuánto Bitcoin hace falta",
           "::btc",
@@ -328,7 +328,7 @@
           "The 4% discount for paying in November applies with any method, under Florida law."
         ],
         "cuerpo": [
-          "Miami-Dade holding Bitcoin was possibly never in the plan. Since Nov. 9 you can pay your property tax with crypto, yes, but what reaches the tax collector's office is dollars: the full amount of the bill and not a fraction of a Bitcoin.",
+          "Miami-Dade holding Bitcoin was possibly never in the plan. Since Nov. 9 you can pay your property tax with crypto, yes, but what reaches the tax collector's office is dollars: the full amount of the bill and not one satoshi, the smallest fraction of a Bitcoin.",
           "The difference matters. For the owner it isn't handing Bitcoin to the government, it's selling part of their own at that instant's price to cover the bill, with everything that brings: the exchange rate of the moment, a possible fee and a note to the IRS. For those who already hold crypto and want to use it, it's one more door. For everyone else, nothing changes.",
           "## How much Bitcoin it takes",
           "::btc",
@@ -374,6 +374,64 @@
         "en": "CoinDesk reference, Nov. 12, 7:15 a.m."
       },
       "tambien": 3
+    },
+    {
+      "id": "impuestos-propiedad-descuento-noviembre",
+      "scope": "miami",
+      "tema": "bolsillo",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-casa-jardin-lirios.jpg",
+      "foto_alt": "Lirios rosados entre los troncos de unas palmas, frente a una casa",
+      "foto_pie": "El jardín de una casa en Miami.",
+      "foto_pie_en": "The garden of a Miami home.",
+      "es": {
+        "etiqueta": "IMPUESTOS",
+        "titulo": "El 4% que se va con noviembre: el descuento del impuesto de la casa baja un punto cada mes",
+        "bajada": "Pagar antes del lunes 30 rebaja la factura un 4%. En diciembre el descuento es del 3%, en enero del 2% y en febrero del 1%.",
+        "toca": [
+          "Hasta el 30 de noviembre: 4% de descuento. Diciembre, 3%. Enero, 2%. Febrero, 1%. En marzo se paga completo.",
+          "Por correo cuenta la fecha del matasellos; en línea, por teléfono o en persona, el día en que se hace el pago.",
+          "El plazo no se alarga si la factura no te llegó: se puede consultar y pagar en la página del recaudador."
+        ],
+        "cuerpo": [
+          "Noviembre es el mes más barato para pagar el impuesto de la casa, y se acaba el lunes 30. Quien pague hasta ese día se ahorra el 4% de la factura; en una cuenta de $5,000, son $200.",
+          "El descuento está en la ley de Florida y baja un punto cada mes: 3% en diciembre, 2% en enero y 1% en febrero. En marzo ya se paga el monto completo, y el impuesto tiene que estar saldado antes del 1 de abril, [indica la oficina del recaudador de Miami-Dade](https://www.mdctaxcollector.gov/discounts-for-early-payment).",
+          "## Cualquier forma de pago vale",
+          "El descuento es el mismo con cheque, tarjeta o transferencia. Lo que cambia es el costo de cada método: la tarjeta en línea lleva un cargo del 2.50% que se come buena parte del ahorro, y el cheque electrónico es gratis.",
+          "Desde este mes también se puede pagar con Bitcoin, aunque al condado le llegan dólares. Cómo funciona y qué implica está en [esta otra nota](https://www.miamimagicapp.com/noticias/impuestos-propiedad-bitcoin-miami-dade)."
+        ]
+      },
+      "en": {
+        "etiqueta": "TAXES",
+        "titulo": "The 4% that leaves with November: the property tax discount drops a point every month",
+        "bajada": "Paying by Monday the 30th cuts the bill by 4%. In December the discount is 3%, in January 2% and in February 1%.",
+        "toca": [
+          "Through Nov. 30: 4% discount. December, 3%. January, 2%. February, 1%. In March you pay in full.",
+          "By mail, the postmark date counts; online, by phone or in person, the day the payment is made.",
+          "The deadline isn't extended if the bill never reached you: you can look it up and pay on the tax collector's site."
+        ],
+        "cuerpo": [
+          "November is the cheapest month to pay your property tax, and it ends on Monday the 30th. Anyone who pays by that day saves 4% of the bill; on a $5,000 bill, that's $200.",
+          "The discount is written into Florida law and drops a point each month: 3% in December, 2% in January and 1% in February. In March the full amount is due, and the tax must be paid before April 1, [the Miami-Dade Tax Collector's office says](https://www.mdctaxcollector.gov/discounts-for-early-payment).",
+          "## Any payment method works",
+          "The discount is the same by check, card or transfer. What changes is the cost of each method: paying by card online carries a 2.50% charge that eats much of the savings, and eChecks are free.",
+          "Since this month you can also pay with Bitcoin, though the county receives dollars. How it works and what it involves is in [this other story](https://www.miamimagicapp.com/noticias/impuestos-propiedad-bitcoin-miami-dade)."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Recaudador de Impuestos de Miami-Dade · Descuentos por pago anticipado",
+          "u": "https://www.mdctaxcollector.gov/discounts-for-early-payment"
+        },
+        {
+          "n": "Estatutos de Florida · Sección 197.162",
+          "u": "https://www.flsenate.gov/Laws/Statutes/2026/0197.162"
+        }
+      ]
     },
     {
       "id": "frente-frio-miami-noviembre",
