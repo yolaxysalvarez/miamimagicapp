@@ -678,6 +678,67 @@
       "foto_bg": "#0E1B30"
     },
     {
+      "id": "obamacare-2027-plazo-15-enero",
+      "scope": "florida",
+      "tema": "bolsillo",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-obamacare-2027-plazo.jpg",
+      "foto_en": "mm-obamacare-2027-plazo-en.jpg",
+      "foto_mm": false,
+      "foto_fit": "contain",
+      "foto_bg": "#0E1B30",
+      "foto_alt": "Gráfico: una hoja de calendario con el 15 de enero de 2027, último día para inscribirse en Obamacare",
+      "foto_pie": "El 15 de enero de 2027 cierra la inscripción en el Mercado de Seguros.",
+      "foto_pie_en": "Marketplace enrollment closes Jan. 15, 2027.",
+      "es": {
+        "etiqueta": "SEGURO MÉDICO",
+        "titulo": "Obamacare tiene dos fechas, no una: la del 15 de enero te deja sin seguro todo enero",
+        "bajada": "Quien escoge plan después del 15 de diciembre todavía entra, pero la cobertura empieza el 1 de febrero. Pasado el 15 de enero, solo queda la inscripción especial.",
+        "toca": [
+          "Hasta el 15 de diciembre: el seguro empieza el 1 de enero.",
+          "Del 16 de diciembre al 15 de enero: empieza el 1 de febrero.",
+          "Después del 15 de enero: solo con un cambio de vida que califique, como perder otro seguro, casarte, tener un hijo o mudarte."
+        ],
+        "cuerpo": [
+          "El plazo de Obamacare que casi todos recuerdan es el 15 de enero, el día en que cierra la inscripción. El que decide cuándo empiezas a estar cubierto es otro, y llega un mes antes.",
+          "Así funciona el calendario del Mercado de Seguros: el plan que se escoge hasta el 15 de diciembre arranca el 1 de enero; el que se escoge entre el 16 de diciembre y el 15 de enero [arranca el 1 de febrero](https://obamacarefacts.com/open-enrollment-2027-dates-and-deadlines/). En los dos casos hay que pagar la primera prima para que la cobertura se active.",
+          "## Si se pasa el 15 de enero",
+          "Dejar pasar la fecha no abre ninguna puerta por sí solo. Fuera de plazo solo se entra con una inscripción especial, que exige un cambio de vida: perder otro seguro, casarse, tener un hijo o mudarse, entre otros. La ventana suele ser de 60 días desde ese cambio. Medicaid y el seguro infantil CHIP aceptan solicitudes todo el año.",
+          "Qué sube, qué aseguradoras se van y qué cambia para los inmigrantes en 2027 está en [esta otra nota](https://www.miamimagicapp.com/noticias/obamacare-2027-florida). La inscripción se hace en [CuidadoDeSalud.gov](https://www.cuidadodesalud.gov/es/)."
+        ]
+      },
+      "en": {
+        "etiqueta": "HEALTH INSURANCE",
+        "titulo": "Obamacare has two dates, not one: the Jan. 15 one leaves you uninsured for all of January",
+        "bajada": "Anyone who picks a plan after Dec. 15 still gets in, but coverage starts Feb. 1. After Jan. 15, only special enrollment is left.",
+        "toca": [
+          "Through Dec. 15: coverage starts Jan. 1.",
+          "Dec. 16 to Jan. 15: it starts Feb. 1.",
+          "After Jan. 15: only with a qualifying life change, such as losing other coverage, getting married, having a baby or moving."
+        ],
+        "cuerpo": [
+          "The Obamacare deadline almost everyone remembers is Jan. 15, the day enrollment closes. The one that decides when your coverage begins is a different date, and it comes a month earlier.",
+          "This is how the Marketplace calendar works: a plan chosen by Dec. 15 starts Jan. 1; one chosen between Dec. 16 and Jan. 15 [starts Feb. 1](https://obamacarefacts.com/open-enrollment-2027-dates-and-deadlines/). In both cases the first premium has to be paid for coverage to kick in.",
+          "## If Jan. 15 goes by",
+          "Missing the date doesn't open any door on its own. Outside the window, the only way in is a special enrollment period, which requires a life change: losing other coverage, getting married, having a baby or moving, among others. The window is usually 60 days from that change. Medicaid and the children's program CHIP take applications year-round.",
+          "What goes up, which insurers are leaving and what changes for immigrants in 2027 is in [this other story](https://www.miamimagicapp.com/noticias/obamacare-2027-florida). Enrollment is at [HealthCare.gov](https://www.healthcare.gov/)."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "CuidadoDeSalud.gov",
+          "u": "https://www.cuidadodesalud.gov/es/"
+        },
+        {
+          "n": "ObamaCare Facts · Fechas y plazos de la inscripción de 2027",
+          "u": "https://obamacarefacts.com/open-enrollment-2027-dates-and-deadlines/"
+        }
+      ]
+    },
+    {
       "id": "fpl-cargo-huracan-2027",
       "scope": "florida",
       "tema": "bolsillo",
@@ -1594,6 +1655,7 @@
           "En aguas estatales, las más cercanas a la costa, la pesca la sigue regulando la FWC."
         ],
         "cuerpo": [
+          "El arrecife de los Cayos es la única barrera de coral viva del territorio continental de Estados Unidos, y un ancla mal tirada puede romper en segundos lo que tardó siglos en crecer. Con esa cuenta en la mano, el santuario le pone fecha al final de una costumbre.",
           "A partir del 19 de enero de 2027 queda prohibido anclar en las áreas de preservación, de conservación y de restauración del Santuario Marino Nacional de los Cayos de Florida, los tramos de arrecife con más protección, según las [nuevas reglas de la NOAA](https://floridakeys.noaa.gov/blueprint/). Quien salga en bote tendrá que amarrarse a las boyas; ese mismo día empieza la obligación de boyas propias para las embarcaciones grandes.",
           "## ¿De dónde sale la regla?",
           "Del Restoration Blueprint, el plan con el que la NOAA rehízo las normas del santuario después de 13 años de consultas. Se publicó en enero de 2025 y dio dos años de plazo para el anclaje. El área protegida pasó de 3,800 a 4,539 millas cuadradas y sumó 37 zonas: 20 para aves que anidan, tortugas y pastos marinos, y 15 para restaurar coral.",
@@ -1613,6 +1675,7 @@
           "In state waters, the ones closest to shore, fishing is still regulated by the FWC."
         ],
         "cuerpo": [
+          "The Keys reef is the only living coral barrier reef in the continental United States, and one badly dropped anchor can break in seconds what took centuries to grow. With that math in hand, the sanctuary is putting an end date on an old habit.",
           "On Jan. 19, 2027, the ban on anchoring takes effect in the preservation, conservation and restoration areas of Florida Keys National Marine Sanctuary, the most protected stretches of reef, under [NOAA's new rules](https://floridakeys.noaa.gov/blueprint/). Boaters will have to tie up to mooring buoys; the same day, large vessels must begin using their own designated buoys.",
           "## Where does the rule come from?",
           "From the Restoration Blueprint, the plan NOAA used to rewrite the sanctuary's rules after 13 years of consultation. It was published in January 2025 and gave anchoring a two-year grace period. The protected area went from 3,800 to 4,539 square miles and added 37 zones: 20 for nesting birds, sea turtles and seagrass, and 15 for coral restoration.",
