@@ -774,7 +774,20 @@ body:not(.home) .split{display:block;margin-bottom:0}
 .split.solo{display:block}
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
-<style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}</style>
+<style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
+:root{--bg:#FFFFFF;--paper:#F8F7F4;--card:#F3F1EC;--ink:#0A1120;--ink2:#1D2839;--mut:#434B59;--line:rgba(10,17,32,.13)}
+body{background:#fff;text-rendering:optimizeLegibility}
+.toca{background:#fff;border:0;border-top:3px solid var(--gold);border-bottom:1px solid var(--line);border-radius:0;padding-left:2px;padding-right:2px}
+.hdr{background:#fff}
+.info{background:#fff;border-top:1px solid var(--line)}
+.news{background:#E8391F;box-shadow:none;border-radius:5px;transform:rotate(-2deg)}
+.lema{color:var(--ink)}
+.mast img{box-shadow:none}
+@media(min-width:1201px){.hm-pill,.dk-pill,.cc-pill{background:#fff;box-shadow:none;border-width:1.5px}.hm-pill{border-color:rgba(201,58,37,.5)}.dk-pill{border-color:rgba(11,92,122,.5)}.cc-pill{border-color:rgba(160,112,30,.6)}}
+.ag{background:#fff}
+.ph.fit{background:#F3F1EC}
+.fz-c{box-shadow:0 10px 18px -16px rgba(10,17,32,.45)}
+</style>
 </head>
 <body>
 
