@@ -1164,7 +1164,7 @@ function list(){
   var a=(DATA.notas||[]).slice().sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
   if(ST.hamaca)return a.filter(function(n){return n.hamaca});
   if(ST.muelle)return a.filter(function(n){return n.muelle});
-  if(ST.casa)return a.filter(isCC);
+  if(ST.casa)return a.filter(function(n){return isCC(n)||n.cc});
   a=a.filter(function(n){var sc=n.scope||'miami';return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)&&(ST.scope==='cayos'?sc==='cayos':sc!=='cayos')});
   if(ST.tema!=='todo')a=a.filter(function(n){return n.tema===ST.tema});
   return a;
@@ -1178,7 +1178,7 @@ function otros(){
   return grp.filter(function(g){return g[1].length});
 }
 function renderCc(){
-  var all=(DATA.notas||[]).filter(isCC).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  var all=(DATA.notas||[]).filter(function(n){return isCC(n)||n.cc}).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
   var sec=document.getElementById('cc');sec.style.display=all.length?'':'none';
   document.getElementById('ccT').innerHTML=ccw();document.getElementById('ccFoot').innerHTML=ccw().replace('class="ccw"','class="ccw" style="font-weight:700"');
   if(ST._ccSc!==ST.scope){ST._ccSc=ST.scope;ST.ccS=ST.scope==='cayos'?'cayos':'miami';ST.ccN=3}
