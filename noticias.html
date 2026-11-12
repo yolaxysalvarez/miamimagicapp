@@ -842,6 +842,20 @@ body:not(.home) .split{display:block;margin-bottom:0}
 }
 @media(max-width:1020px){.hm{padding:0}.dk-post{padding-left:0;padding-right:0}.dk-main{padding-left:0;padding-right:0}.cc{padding-left:0;padding-right:0}.hm-s a{background:none;box-shadow:none;padding:8px 0}}
 @media(max-width:760px){.hist .bd{margin-top:-26px}.hm-s{margin:0 -16px;padding:2px 16px 10px}.fz-r{grid-auto-columns:64%;padding-right:16px}.fz-c{padding:14px 16px 4px}}
+/* cabeceras paralelas de El Muelle y Casa & Coast */
+#dkMore,#ccMore{display:none!important}
+@media(min-width:1021px){
+ .pair .dk-post{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:0 20px;min-height:74px;padding:14px 0 6px}
+ .pair .dk-post .dk-vt{font-size:46px}
+ .pair .dk-cond{justify-self:end}
+ .pair .dk-hd{display:block;border-bottom:1px solid var(--line);padding-bottom:16px}
+ .pair .dk-hd p{font-size:16.5px;min-height:3.05em;margin:0}
+ .pair .cc{padding:0}
+ .pair .cc-hd{grid-template-columns:auto minmax(0,1fr);align-items:center;gap:0 20px;padding:14px 0 16px}
+ .pair .cc-t{font-size:46px;min-height:54px;display:flex;align-items:center;grid-column:1;grid-row:1}
+ .pair .cc-r{grid-column:2;grid-row:1;justify-self:end;align-self:center}
+ .pair .cc-hd p{grid-column:1/-1;grid-row:2;font-size:16.5px;min-height:3.05em;margin:6px 0 0;max-width:none}
+}
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
@@ -1143,10 +1157,10 @@ function renderCc(){
   b.className='cc-b'+(r.length?'':' one');
   b.innerHTML='<article class="cc-f"><a href="'+href(n0)+'" aria-label="'+esc(f0.titulo)+'">'+ph(n0)+'</a><div><span class="k">'+k(n0)+'</span><h3><a class="hl" href="'+href(n0)+'">'+esc(f0.titulo)+'</a></h3><p>'+esc(f0.bajada||'')+'</p><span class="meta">'+mins(n0)+' '+t('min')+'</span></div></article>'
    +(r.length?'<div class="cc-l">'+r.map(function(n,i){var f=F(n);return '<article class="cc-it'+(i>=ST.ccN?' x':'')+'"><a class="ph'+(n.foto_fit==='contain'?' fit':'')+'" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'"'+(n.foto_bg?' style="background:'+esc(n.foto_bg)+'"':'')+'>'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+k(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join('')+'</div>':'');
-  mb.style.display=r.length>ST.ccN?'':'none';mb.textContent=(L==='en'?'MORE FROM CASA & COAST':'MÁS DE CASA & COAST')+' ('+(r.length-ST.ccN)+')';
+  mb.style.display=r.length>ST.ccN?'':'none';mb.textContent=(L==='en'?'ALL CASA & COAST':'TODO CASA & COAST')+' →';
 }
 document.getElementById('ccSel').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;ST.ccS=b.dataset.cc;ST.ccN=3;renderCc()});
-document.getElementById('ccMb').onclick=function(){ST.ccN=12;renderCc()};
+document.getElementById('ccMb').onclick=function(){document.getElementById('ccMore').onclick()};
 document.getElementById('ccPill').onclick=document.getElementById('ccMore').onclick=function(){ST.casa=true;ST.hamaca=false;ST.muelle=false;render();scrollTo({top:0,behavior:'smooth'})};
 function cardW(n){var f=F(n);return '<article class="card wide"><a href="'+href(n)+'">'+ph(n)+'</a><div><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><p>'+esc(f.bajada||'')+'</p><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}
 function card(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}
@@ -1168,7 +1182,7 @@ function render(){
   if(lead){var f=F(lead);
     lb.innerHTML='<article class="lead'+(XB?' hb':'')+'"><a href="'+href(lead)+'">'+ph(lead)+'</a><div><span class="eb">'+eb(lead)+'</span><h2><a href="'+href(lead)+'">'+esc(f.titulo)+'</a></h2><p>'+esc(f.bajada||'')+'</p>'
      +((f.toca&&f.toca.length)?'<div class="toca"><b>'+(L==='en'?'TAKE NOTE':'TOMA NOTA')+'</b><ul>'+f.toca.slice(0,3).map(function(x,i){return '<li><i>'+(i+1)+'</i><span>'+hn(x)+'</span></li>'}).join('')+'</ul></div>':'')
-     +'<a class="lkl rd" href="'+href(lead)+'">'+(L==='en'?'READ THE FULL STORY':'LEER LA NOTA COMPLETA')+' →</a>'+'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes.length>1)?' · '+lead.fuentes.length+(L==='en'?' sources':' fuentes'):(lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>'
+     +'<a class="lkl rd" href="'+href(lead)+'">'+(L==='en'?'ALL':'TODO')+' →</a>'+'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes.length>1)?' · '+lead.fuentes.length+(L==='en'?' sources':' fuentes'):(lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>'
      +(XB?'<a class="xb'+(xky?'':' mi')+'" href="'+href(XB)+'">'+ph(XB)+'<span><span class="eb"><span class="lg'+(xky?' ky':'')+'">'+(xky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI')+'</span></span><b>'+esc(F(XB).titulo)+'</b></span><span class="go">'+(L==='en'?'READ →':'LEER →')+'</span></a>':'');
   } else lb.innerHTML='<div class="lead" style="grid-template-columns:1fr">'+empty(ST.hamaca?t('vacioH'):ST.muelle?t('vacioM'):ST.casa?t('vacioC'):'')+'</div>';
   var vk=(ST.hamaca?'h':ST.muelle?'m':ST.casa?'c':ST.scope)+'|'+ST.tema;if(ST._vk!==vk){ST._vk=vk;ST.masN=8}
@@ -1191,7 +1205,7 @@ function render(){
   var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
   var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=4;dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
   document.getElementById('dkMore').style.display=mu.length>4?'':'none';
-  var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'MORE FROM THE DOCK':'MÁS DE EL MUELLE')+' ('+(mu.length-ST.dkN)+')';
+  var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'ALL THE DOCK':'TODO EL MUELLE')+' →';
   renderDk();renderCc();
   renderLive(); renderBreaking(); renderCifras(); renderWx(); renderPt();
 }
@@ -1483,7 +1497,7 @@ document.getElementById('sxQ').addEventListener('input',sxRun);
 document.getElementById('sx').addEventListener('click',function(e){if(e.target===this)sxClose()});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.getElementById('sx').classList.contains('on'))sxClose();if(e.key==='/'&&!/INPUT|TEXTAREA/.test((document.activeElement||{}).tagName||'')&&!document.getElementById('sx').classList.contains('on')){e.preventDefault();sxOpen()}});
 document.getElementById('masBtn').onclick=function(){ST.masN+=8;render()};
-document.getElementById('dkMb').onclick=function(){ST.dkN+=4;render()};
+document.getElementById('dkMb').onclick=function(){document.getElementById('dkMore').onclick()};
 document.getElementById('hmPill').onclick=document.getElementById('hmMore').onclick=function(){ST.hamaca=true;ST.muelle=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
 document.getElementById('dkPill').onclick=document.getElementById('dkMore').onclick=function(){ST.muelle=true;ST.hamaca=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
 document.querySelectorAll('[data-sc]').forEach(function(a){a.onclick=function(e){e.preventDefault();var s=a.dataset.sc;if(s==='hamaca'){ST.hamaca=true;ST.muelle=false;ST.casa=false}else if(s==='muelle'){ST.muelle=true;ST.hamaca=false;ST.casa=false}else if(s==='casa'){ST.casa=true;ST.hamaca=false;ST.muelle=false}else{ST.scope=s;ST.hamaca=false;ST.muelle=false;ST.casa=false;ST.tema='todo'}render();scrollTo({top:0,behavior:'smooth'})}});
