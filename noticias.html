@@ -865,6 +865,12 @@ body.sp-cc #cc{display:none!important}
 .sp-cc .sp-t .ccw .em{width:.66em;height:.66em;margin:0 .2em;vertical-align:-.04em}
 .sp-dis{display:block;max-width:300px;font-size:14.5px;line-height:1.45;color:var(--mut);text-align:right}
 @media(max-width:760px){.sp .sp-h{padding:22px 0 20px}.sp-dis{text-align:left;max-width:none}}
+.sp .sp-h{overflow:hidden;padding:26px 0 24px}
+.sp-h .sp-bg{position:absolute;right:0;top:0;width:62%;height:100%;object-fit:cover;opacity:.42;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 60%);mask-image:linear-gradient(90deg,transparent 0%,#000 60%);pointer-events:none}
+.sp-h .sp-t{font-size:76px}
+.sp-h .sp-x{background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:12px 16px 12px;border-radius:6px;margin-right:16px}
+.sp-dis{color:var(--ink2)}
+@media(max-width:760px){.sp-h .sp-x{margin-right:0;background:none;padding:0;backdrop-filter:none;-webkit-backdrop-filter:none}.sp-h .sp-bg{width:100%;opacity:.22;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 90%);mask-image:linear-gradient(180deg,#000 0%,transparent 90%)}.sp-h .sp-t{font-size:52px}}
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
@@ -1166,10 +1172,10 @@ function renderCc(){
   b.className='cc-b'+(r.length?'':' one');
   b.innerHTML='<article class="cc-f"><a href="'+href(n0)+'" aria-label="'+esc(f0.titulo)+'">'+ph(n0)+'</a><div><span class="k">'+k(n0)+'</span><h3><a class="hl" href="'+href(n0)+'">'+esc(f0.titulo)+'</a></h3><p>'+esc(f0.bajada||'')+'</p><span class="meta">'+mins(n0)+' '+t('min')+'</span></div></article>'
    +(r.length?'<div class="cc-l">'+r.map(function(n,i){var f=F(n);return '<article class="cc-it'+(i>=ST.ccN?' x':'')+'"><a class="ph'+(n.foto_fit==='contain'?' fit':'')+'" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'"'+(n.foto_bg?' style="background:'+esc(n.foto_bg)+'"':'')+'>'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+k(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join('')+'</div>':'');
-  mb.style.display=r.length>ST.ccN?'':'none';mb.textContent=(L==='en'?'ALL CASA & COAST':'TODO CASA & COAST')+' →';
+  mb.style.display=r.length>ST.ccN?'':'none';mb.textContent=(L==='en'?'ALL CASA & COAST':'TODO CASA & COAST')+' ↓';
 }
 document.getElementById('ccSel').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;ST.ccS=b.dataset.cc;ST.ccN=3;renderCc()});
-document.getElementById('ccMb').onclick=function(){document.getElementById('ccMore').onclick()};
+document.getElementById('ccMb').onclick=function(){ST.ccN=99;renderCc()};
 document.getElementById('ccPill').onclick=document.getElementById('ccMore').onclick=function(){ST.casa=true;ST.hamaca=false;ST.muelle=false;render();scrollTo({top:0,behavior:'smooth'})};
 function cardW(n){var f=F(n);return '<article class="card wide"><a href="'+href(n)+'">'+ph(n)+'</a><div><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><p>'+esc(f.bajada||'')+'</p><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}
 function card(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}
@@ -1214,7 +1220,7 @@ function render(){
   var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
   var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=4;dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
   document.getElementById('dkMore').style.display=mu.length>4?'':'none';
-  var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'ALL THE DOCK':'TODO EL MUELLE')+' →';
+  var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'ALL THE DOCK':'TODO EL MUELLE')+' ↓';
   renderDk();renderCc();
   renderLive(); renderBreaking(); renderCifras(); renderWx(); renderPt();
 }
@@ -1326,7 +1332,7 @@ function renderSp(lead,rest){
   if(!on){mas.className='grid4';return}
   var nm=hm?'HAMACA MOOD':cc?'CASA & COAST':(en?'THE DOCK':'EL MUELLE'),k=function(n){return '<span class="sp-k">'+esc(F(n,'etiqueta')||nm)+'</span>'},rd=function(n){return '<a class="lkl" href="'+href(n)+'">'+(en?'READ MORE':'LEER MÁS')+' →</a>'};
   var tot=(lead?1:0)+rest.length;
-  var head='<header class="sp-h">'+(dk?'<svg class="wv" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26 C 50 14, 100 38, 150 26 S 250 14, 300 26 V60 H0z" fill="#9CCBD8"/><path d="M0 42 C 60 30, 110 54, 160 42 S 250 30, 300 42 V60 H0z" fill="#7FB9CB"/></svg>':'')
+  var head='<header class="sp-h"><img class="sp-bg" src="/fotos/'+(hm?'mm-kb-crandon-cocoteros.jpg':cc?'mm-keys-canal-casas-palmas.jpg':'mm-marina-miami-pilotes-reflejo.jpg')+'" alt="">'+(dk?'<svg class="wv" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26 C 50 14, 100 38, 150 26 S 250 14, 300 26 V60 H0z" fill="#9CCBD8"/><path d="M0 42 C 60 30, 110 54, 160 42 S 250 30, 300 42 V60 H0z" fill="#7FB9CB"/></svg>':'')
    +'<div><h1 class="sp-t'+(hm?' hm-t':'')+'">'+(hm?(en?'Hammock':'Hamaca')+' <em>M<span class="sol" role="img" aria-label="o"></span>od</em>':cc?ccw():dkw())+'</h1><p>'+t(hm?'hmdesc':cc?'ccdesc':'dkdesc')+'</p><span class="sp-n">'+tot+' '+(en?(tot===1?'STORY':'STORIES'):(tot===1?'HISTORIA':'HISTORIAS'))+'</span></div>'
    +'<div class="sp-x">'+(dk?'<div class="dk-cond" id="spCond"></div><a class="lkl" href="/?go=water">'+(en?'BOATS AND FISHING IN THE APP':'BOTES Y PESCA EN LA APP')+' →</a>':cc?'<small class="sp-dis">'+t('ccnota')+'</small>':'<span class="sp-sun" id="spSun"></span>')+'</div></header>';
   var lb=document.getElementById('leadBox');lb.innerHTML=head+lb.innerHTML;
@@ -1506,7 +1512,7 @@ document.getElementById('sxQ').addEventListener('input',sxRun);
 document.getElementById('sx').addEventListener('click',function(e){if(e.target===this)sxClose()});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.getElementById('sx').classList.contains('on'))sxClose();if(e.key==='/'&&!/INPUT|TEXTAREA/.test((document.activeElement||{}).tagName||'')&&!document.getElementById('sx').classList.contains('on')){e.preventDefault();sxOpen()}});
 document.getElementById('masBtn').onclick=function(){ST.masN+=8;render()};
-document.getElementById('dkMb').onclick=function(){document.getElementById('dkMore').onclick()};
+document.getElementById('dkMb').onclick=function(){ST.dkN=99;render()};
 document.getElementById('hmPill').onclick=document.getElementById('hmMore').onclick=function(){ST.hamaca=true;ST.muelle=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
 document.getElementById('dkPill').onclick=document.getElementById('dkMore').onclick=function(){ST.muelle=true;ST.hamaca=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
 document.querySelectorAll('[data-sc]').forEach(function(a){a.onclick=function(e){e.preventDefault();var s=a.dataset.sc;if(s==='hamaca'){ST.hamaca=true;ST.muelle=false;ST.casa=false}else if(s==='muelle'){ST.muelle=true;ST.hamaca=false;ST.casa=false}else if(s==='casa'){ST.casa=true;ST.hamaca=false;ST.muelle=false}else{ST.scope=s;ST.hamaca=false;ST.muelle=false;ST.casa=false;ST.tema='todo'}render();scrollTo({top:0,behavior:'smooth'})}});
