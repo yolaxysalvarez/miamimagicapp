@@ -1,0 +1,520 @@
+{
+ "_como_usar": "Extras de la portada de Miami Magic News. fechas: lo que vence (d = fecha AAAA-MM-DD, d2 = fin si es un rango, id = la nota que lo explica). videos: yid = el código del video de YouTube. mesa: restaurantes; patrocinado:true los pone primero con la etiqueta PATROCINADO. datos: Miami curioso, cada uno enlazado a su nota.",
+ "updated": "2026-11-11",
+ "canal": "https://www.youtube.com/@MiamiMagicApp",
+ "fechas": [
+  {
+   "d": "2026-11-15",
+   "es": "Empiezan las zonas de velocidad lenta de temporada para proteger a los manatíes",
+   "en": "Seasonal slow-speed manatee zones begin",
+   "id": "manaties-noviembre-botes-despacio",
+   "k_es": "EN EL AGUA",
+   "k_en": "ON THE WATER"
+  },
+  {
+   "d": "2026-11-17",
+   "es": "La Comisión de Miami-Dade vota las reglas para los robots de reparto",
+   "en": "Miami-Dade Commission votes on delivery robot rules",
+   "id": "robots-delivery-aceras-ordenanza",
+   "k_es": "TU CALLE",
+   "k_en": "YOUR STREET"
+  },
+  {
+   "d": "2026-11-23",
+   "d2": "2026-11-26",
+   "es": "Mareas reales: el agua más alta llega el Día de Acción de Gracias",
+   "en": "King tides: the highest water arrives on Thanksgiving Day",
+   "id": "mareas-reales-thanksgiving",
+   "k_es": "TU CALLE",
+   "k_en": "YOUR STREET"
+  },
+  {
+   "d": "2026-11-30",
+   "es": "Último día del 4% de descuento en los impuestos de propiedad",
+   "en": "Last day for the 4% discount on property taxes",
+   "id": "impuestos-propiedad-bitcoin-miami-dade",
+   "k_es": "TU BOLSILLO",
+   "k_en": "YOUR WALLET"
+  },
+  {
+   "d": "2026-12-01",
+   "es": "En los Cayos, el róbalo deja de poder llevarse hasta marzo",
+   "en": "In the Keys, snook harvest closes until March",
+   "id": "mero-roballo-reglas-atlantico",
+   "k_es": "PESCA",
+   "k_en": "FISHING"
+  },
+  {
+   "d": "2026-12-15",
+   "es": "Obamacare: plazo para tener seguro desde el 1 de enero",
+   "en": "Obamacare: deadline for coverage starting Jan. 1",
+   "id": "obamacare-2027-florida",
+   "k_es": "TU BOLSILLO",
+   "k_en": "YOUR WALLET"
+  },
+  {
+   "d": "2026-12-31",
+   "es": "Enmienda 3: fecha de residencia en Florida que cuenta para la exención nueva",
+   "en": "Amendment 3: the Florida residency date that counts for the new exemption",
+   "id": "enmienda-3-impuesto-casa",
+   "k_es": "TU CASA",
+   "k_en": "YOUR HOME"
+  },
+  {
+   "d": "2027-01-01",
+   "es": "El pasaje de Metrorail y Metrobus sube a $2.75",
+   "en": "Metrorail and Metrobus fare rises to $2.75",
+   "id": "pasaje-metrorail-metrobus-2027",
+   "k_es": "TU BOLSILLO",
+   "k_en": "YOUR WALLET"
+  },
+  {
+   "d": "2027-01-01",
+   "es": "Citizens exige seguro de inundación en toda póliza que cubra viento",
+   "en": "Citizens requires flood insurance on every policy that covers wind",
+   "id": "citizens-seguro-inundacion-2027",
+   "k_es": "TU CASA",
+   "k_en": "YOUR HOME"
+  },
+  {
+   "d": "2027-01-15",
+   "es": "Cierra la inscripción de Obamacare para 2027",
+   "en": "Obamacare enrollment for 2027 closes",
+   "id": "obamacare-2027-florida",
+   "k_es": "TU BOLSILLO",
+   "k_en": "YOUR WALLET"
+  },
+  {
+   "d": "2027-01-19",
+   "es": "Los Cayos: empieza la prohibición de anclar sobre los arrecifes más protegidos",
+   "en": "The Keys: anchoring ban over the most protected reefs begins",
+   "id": "cayos-santuario-anclaje-2027",
+   "k_es": "LOS CAYOS",
+   "k_en": "THE KEYS"
+  },
+  {
+   "d": "2027-03-01",
+   "es": "Vence el plazo para pedir el homestead y la portabilidad",
+   "en": "Deadline to file for homestead and portability",
+   "id": "save-our-homes-portabilidad",
+   "k_es": "TU CASA",
+   "k_en": "YOUR HOME"
+  },
+  {
+   "d": "2027-03-31",
+   "es": "Cierra la temporada de langosta espinosa",
+   "en": "Spiny lobster season closes",
+   "id": "langosta-cayos-guia-temporada",
+   "k_es": "PESCA",
+   "k_en": "FISHING"
+  }
+ ],
+ "videos": [
+  {
+   "yid": "1JKm9baoKrM",
+   "es": "Parque Estatal Bill Baggs",
+   "en": "Bill Baggs Cape Florida State Park",
+   "k_es": "PARQUE",
+   "k_en": "PARK",
+   "item": "b15",
+   "type": "beach"
+  },
+  {
+   "yid": "BwjDTSORb_Y",
+   "es": "Museo Vizcaya",
+   "en": "Vizcaya Museum",
+   "k_es": "MUSEO",
+   "k_en": "MUSEUM",
+   "item": "pl4",
+   "type": "place"
+  },
+  {
+   "yid": "0ZnZXE8mSfA",
+   "es": "Coyo Taco",
+   "en": "Coyo Taco",
+   "k_es": "RESTAURANTE · MEXICANO",
+   "k_en": "RESTAURANT · MEXICAN",
+   "item": "r11",
+   "type": "rest"
+  },
+  {
+   "yid": "OrTWNT0PbZQ",
+   "es": "Echate Pa Lla",
+   "en": "Echate Pa Lla",
+   "k_es": "RESTAURANTE · ESPAÑOL",
+   "k_en": "RESTAURANT · SPANISH",
+   "item": "r31",
+   "type": "rest"
+  },
+  {
+   "yid": "2QHD4BLekY4",
+   "es": "Habibi Miami",
+   "en": "Habibi Miami",
+   "k_es": "RESTAURANTE · ÁRABE",
+   "k_en": "RESTAURANT · MIDDLE EASTERN",
+   "item": "r32",
+   "type": "rest"
+  },
+  {
+   "yid": "7rjEqC-TrCw",
+   "es": "Tutto Pasta",
+   "en": "Tutto Pasta",
+   "k_es": "RESTAURANTE · ITALIANO",
+   "k_en": "RESTAURANT · ITALIAN",
+   "item": "r36",
+   "type": "rest"
+  },
+  {
+   "yid": "KFro8bRbV5k",
+   "es": "Rusty Pelican",
+   "en": "Rusty Pelican",
+   "k_es": "RESTAURANTE · MARISCOS",
+   "k_en": "RESTAURANT · SEAFOOD",
+   "item": "r37",
+   "type": "rest"
+  },
+  {
+   "yid": "KZWRBCmRwjE",
+   "es": "Casadonna",
+   "en": "Casadonna",
+   "k_es": "RESTAURANTE · ITALIANO · MEDITERRÁNEO",
+   "k_en": "RESTAURANT · ITALIAN · MEDITERRANEAN",
+   "item": "r38",
+   "type": "rest"
+  },
+  {
+   "yid": "PCYw1_LD-Jk",
+   "es": "Ocean Social",
+   "en": "Ocean Social",
+   "k_es": "RESTAURANTE · AMERICANO MODERNO",
+   "k_en": "RESTAURANT · NEW AMERICAN",
+   "item": "r39",
+   "type": "rest"
+  },
+  {
+   "yid": "vwuUaPLiLbM",
+   "es": "La Birra Bar Wynwood",
+   "en": "La Birra Bar Wynwood",
+   "k_es": "RESTAURANTE · ARGENTINO · CERVEZA ARTESANAL",
+   "k_en": "RESTAURANT · ARGENTINE · CRAFT BEER",
+   "item": "r40",
+   "type": "rest"
+  },
+  {
+   "yid": "Vp6KtwfhPVU",
+   "es": "Abiaka",
+   "en": "Abiaka",
+   "k_es": "RESTAURANTE · NATIVO AMERICANO",
+   "k_en": "RESTAURANT · NATIVE AMERICAN · FLORIDA",
+   "item": "r43",
+   "type": "rest"
+  },
+  {
+   "yid": "iiMnTgNSZlA",
+   "es": "Calle Dragones",
+   "en": "Calle Dragones",
+   "k_es": "RESTAURANTE · FUSIÓN ASIÁTICA",
+   "k_en": "RESTAURANT · ASIAN FUSION · COCKTAIL BAR",
+   "item": "r44",
+   "type": "rest"
+  },
+  {
+   "yid": "kn4jTV2pRXU",
+   "es": "Neme Gastro Bar",
+   "en": "Neme Gastro Bar",
+   "k_es": "RESTAURANTE · VENEZOLANO · LATINO",
+   "k_en": "RESTAURANT · VENEZUELAN · LATIN",
+   "item": "r45",
+   "type": "rest"
+  },
+  {
+   "yid": "mu-XK8sEcWo",
+   "es": "Ockap Caviar and Cuisine",
+   "en": "Ockap Caviar and Cuisine",
+   "k_es": "RESTAURANTE · ALTA COCINA · CAVIAR",
+   "k_en": "RESTAURANT · FINE DINING · CAVIAR",
+   "item": "r08",
+   "type": "rest"
+  },
+  {
+   "yid": "jCnTjUJavzM",
+   "es": "Toro Toro",
+   "en": "Toro Toro",
+   "k_es": "RESTAURANTE · ASADOR PANLATINO",
+   "k_en": "RESTAURANT · PAN-LATIN STEAKHOUSE",
+   "item": "r10",
+   "type": "rest"
+  },
+  {
+   "yid": "Qofs2E0TfEI",
+   "es": "Altamura Trattoria e Forno",
+   "en": "Altamura Trattoria e Forno",
+   "k_es": "RESTAURANTE · ITALIANO",
+   "k_en": "RESTAURANT · ITALIAN",
+   "item": "r13",
+   "type": "rest"
+  },
+  {
+   "yid": "pL_XuNaATaw",
+   "es": "Double Knot Miami",
+   "en": "Double Knot Miami",
+   "k_es": "RESTAURANTE · IZAKAYA JAPONÉS",
+   "k_en": "RESTAURANT · JAPANESE IZAKAYA",
+   "item": "r14",
+   "type": "rest"
+  },
+  {
+   "yid": "tXjt_0WlL7E",
+   "es": "Old Cutler Inn",
+   "en": "Old Cutler Inn",
+   "k_es": "RESTAURANTE · AMERICANO · A LA LEÑA",
+   "k_en": "RESTAURANT · AMERICAN · WOOD-FIRED",
+   "item": "r15",
+   "type": "rest"
+  },
+  {
+   "yid": "bfOYw8BVqx0",
+   "es": "Mottai Miami",
+   "en": "Mottai Miami",
+   "k_es": "RESTAURANTE · JAPONÉS · CONTEMPORÁNEO",
+   "k_en": "RESTAURANT · JAPANESE · CONTEMPORARY",
+   "item": "r23",
+   "type": "rest"
+  },
+  {
+   "yid": "bw7zbEqBprc",
+   "es": "Lira Beirut Eatery",
+   "en": "Lira Beirut Eatery",
+   "k_es": "RESTAURANTE · LIBANÉS",
+   "k_en": "RESTAURANT · LEBANESE",
+   "item": "r24",
+   "type": "rest"
+  },
+  {
+   "yid": "oevLqFJznX0",
+   "es": "Charlatam",
+   "en": "Charlatam",
+   "k_es": "RESTAURANTE · LATINO · PARA COMPARTIR",
+   "k_en": "RESTAURANT · LATIN · SHARED PLATES",
+   "item": "r27",
+   "type": "rest"
+  },
+  {
+   "yid": "kovQ9WDHV98",
+   "es": "CHŌ Funky Asian Bistro",
+   "en": "CHŌ Funky Asian Bistro",
+   "k_es": "RESTAURANTE · PAN-ASIÁTICO",
+   "k_en": "RESTAURANT · PAN-ASIAN",
+   "item": "r29",
+   "type": "rest"
+  },
+  {
+   "yid": "ExyV5C0q2eY",
+   "es": "Baires Grill Doral",
+   "en": "Baires Grill Doral",
+   "k_es": "RESTAURANTE · PARRILLA ARGENTINA",
+   "k_en": "RESTAURANT · ARGENTINE STEAKHOUSE",
+   "item": "r30",
+   "type": "rest"
+  }
+ ],
+ "mesa": [
+  {
+   "id": "r11",
+   "name": "Coyo Taco",
+   "cat": "Mexican",
+   "cat_es": "Mexicano",
+   "addr": "2300 NW 2nd Ave, Wynwood",
+   "yid": "0ZnZXE8mSfA",
+   "foto": "fotos/mm-coyo-1.jpg"
+  },
+  {
+   "id": "r31",
+   "name": "Echate Pa Lla",
+   "cat": "Spanish",
+   "cat_es": "Español",
+   "addr": "7835 NW 107th Ave Ste 3-06, Doral",
+   "yid": "OrTWNT0PbZQ",
+   "foto": "fotos/mm-echate-1.jpg"
+  },
+  {
+   "id": "r32",
+   "name": "Habibi Miami",
+   "cat": "Middle Eastern",
+   "cat_es": "Árabe",
+   "addr": "452 NW North River Dr",
+   "yid": "2QHD4BLekY4",
+   "foto": "fotos/mm-habibi-1.jpg"
+  },
+  {
+   "id": "r36",
+   "name": "Tutto Pasta",
+   "cat": "Italian",
+   "cat_es": "Italiano",
+   "addr": "1751 SW 3rd Ave, Brickell",
+   "yid": "7rjEqC-TrCw",
+   "foto": "fotos/mm-tutto-1.jpg"
+  },
+  {
+   "id": "r37",
+   "name": "Rusty Pelican",
+   "cat": "Seafood",
+   "cat_es": "Mariscos",
+   "addr": "3201 Rickenbacker Causeway, Key Biscayne",
+   "yid": "KFro8bRbV5k",
+   "foto": "fotos/mm-rusty-1.jpg"
+  },
+  {
+   "id": "r38",
+   "name": "Casadonna",
+   "cat": "Italian · Mediterranean",
+   "cat_es": "Italiano · Mediterráneo",
+   "addr": "1737 N Bayshore Dr, Edgewater",
+   "yid": "KZWRBCmRwjE"
+  },
+  {
+   "id": "r39",
+   "name": "Ocean Social",
+   "cat": "New American",
+   "cat_es": "Americano Moderno",
+   "addr": "4525 Collins Ave, Miami Beach (Eden Roc)",
+   "yid": "PCYw1_LD-Jk",
+   "foto": "fotos/mm-oceansocial-1.jpg"
+  },
+  {
+   "id": "r40",
+   "name": "La Birra Bar Wynwood",
+   "cat": "Argentine · Craft Beer",
+   "cat_es": "Argentino · Cerveza Artesanal",
+   "addr": "250 NW 24th St, Wynwood",
+   "yid": "vwuUaPLiLbM"
+  },
+  {
+   "id": "r43",
+   "name": "Abiaka",
+   "cat": "Native American · Florida",
+   "cat_es": "Nativo Americano",
+   "addr": "1 Seminole Way, Hollywood (Seminole Hard Rock)",
+   "yid": "Vp6KtwfhPVU"
+  },
+  {
+   "id": "r44",
+   "name": "Calle Dragones",
+   "cat": "Asian Fusion · Cocktail Bar",
+   "cat_es": "Fusión Asiática",
+   "addr": "1036 SW 8th St, Little Havana",
+   "yid": "iiMnTgNSZlA"
+  },
+  {
+   "id": "r45",
+   "name": "Neme Gastro Bar",
+   "cat": "Venezuelan · Latin",
+   "cat_es": "Venezolano · Latino",
+   "addr": "1252 SW 22nd St, The Roads",
+   "yid": "kn4jTV2pRXU",
+   "foto": "fotos/mm-neme-1.jpg"
+  },
+  {
+   "id": "r08",
+   "name": "Ockap Caviar and Cuisine",
+   "cat": "Fine Dining · Caviar",
+   "cat_es": "Alta Cocina · Caviar",
+   "addr": "1060 Brickell Ave, Brickell",
+   "yid": "mu-XK8sEcWo"
+  },
+  {
+   "id": "r10",
+   "name": "Toro Toro",
+   "cat": "Pan-Latin Steakhouse",
+   "cat_es": "Asador Panlatino",
+   "addr": "100 Chopin Plaza, Downtown",
+   "yid": "jCnTjUJavzM"
+  },
+  {
+   "id": "r13",
+   "name": "Altamura Trattoria e Forno",
+   "cat": "Italian",
+   "cat_es": "Italiano",
+   "addr": "7835 NW 107th Ave, Doral",
+   "yid": "Qofs2E0TfEI"
+  },
+  {
+   "id": "r14",
+   "name": "Double Knot Miami",
+   "cat": "Japanese Izakaya",
+   "cat_es": "Izakaya Japonés",
+   "addr": "2550 NW 2nd Ave, Wynwood",
+   "yid": "pL_XuNaATaw"
+  },
+  {
+   "id": "r15",
+   "name": "Old Cutler Inn",
+   "cat": "American · Wood-Fired",
+   "cat_es": "Americano · A la Leña",
+   "addr": "16800 Old Cutler Rd, Palmetto Bay",
+   "yid": "tXjt_0WlL7E"
+  },
+  {
+   "id": "r23",
+   "name": "Mottai Miami",
+   "cat": "Japanese · Contemporary",
+   "cat_es": "Japonés · Contemporáneo",
+   "addr": "2881 Ponce de Leon Blvd, Coral Gables",
+   "yid": "bfOYw8BVqx0"
+  },
+  {
+   "id": "r24",
+   "name": "Lira Beirut Eatery",
+   "cat": "Lebanese",
+   "cat_es": "Libanés",
+   "addr": "2000 NW 2nd Ave, Wynwood",
+   "yid": "bw7zbEqBprc"
+  },
+  {
+   "id": "r27",
+   "name": "Charlatam",
+   "cat": "Latin · Shared Plates",
+   "cat_es": "Latino · Para Compartir",
+   "addr": "2525 SW 3rd Ave, Brickell",
+   "yid": "oevLqFJznX0"
+  },
+  {
+   "id": "r29",
+   "name": "CHŌ Funky Asian Bistro",
+   "cat": "Pan-Asian",
+   "cat_es": "Pan-Asiático",
+   "addr": "1209 17th St, South Beach",
+   "yid": "kovQ9WDHV98"
+  },
+  {
+   "id": "r30",
+   "name": "Baires Grill Doral",
+   "cat": "Argentine Steakhouse",
+   "cat_es": "Parrilla Argentina",
+   "addr": "8551 NW 53rd St, Doral",
+   "yid": "ExyV5C0q2eY"
+  }
+ ],
+ "datos": [
+  {
+   "es": "El faro de Cape Florida, en la punta sur de Key Biscayne, se levanta desde 1825.",
+   "en": "The Cape Florida lighthouse, at the southern tip of Key Biscayne, has stood since 1825.",
+   "id": "key-biscayne-sin-prisa"
+  },
+  {
+   "es": "El faro de Alligator Reef se encendió por primera vez en 1873, en medio del mar, frente a Islamorada.",
+   "en": "Alligator Reef Lighthouse was first lit in 1873, out at sea off Islamorada.",
+   "id": "alligator-reef-faro-islamorada"
+  },
+  {
+   "es": "Dry Tortugas son siete islas de arena y coral a casi 70 millas al oeste de Key West. No hay carretera.",
+   "en": "Dry Tortugas is seven islands of sand and coral almost 70 miles west of Key West. There is no road.",
+   "id": "dry-tortugas-escapada-ferry"
+  },
+  {
+   "es": "Cuando Parrot Jungle se mudó a Watson Island, en 2002, pasó a llamarse Jungle Island.",
+   "en": "When Parrot Jungle moved to Watson Island in 2002, it became Jungle Island.",
+   "id": "luces-navidad-miami-2026"
+  }
+ ]
+}
