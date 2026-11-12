@@ -501,7 +501,7 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 
 /* ── portada: apertura, dúo, video, mesa, dato ── */
 body.home #masH,body.home #mas,body.home #masBtn,body.home #otros{display:none!important}
-body:not(.home) #pz,body:not(.home) #duo,body:not(.home) #datoBox,body:not(.home) #tv,body:not(.home) #mesa{display:none!important}
+body:not(.home) #pz,body:not(.home) #duo,body:not(.home) #datoBox,body:not(.home) #tv,body:not(.home) #mesa,body:not(.home) #hot{display:none!important}
 .pz{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:44px;margin:0 0 60px;align-items:start}
 .pz.solo{grid-template-columns:1fr}
 .fz{border-top:4px double var(--ink);border-bottom:1px solid rgba(14,27,48,.25);background:#FFFDF8;border-radius:6px;padding:22px 26px 18px}
@@ -596,6 +596,16 @@ body:not(.home) #pz,body:not(.home) #duo,body:not(.home) #datoBox,body:not(.home
 .ms-f{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:18px;font-size:15.5px;color:var(--mut)}
 .ms-f a.go{font-family:var(--bb);font-size:18px;letter-spacing:.16em;color:var(--coral-d);border-bottom:2px solid currentColor;padding-bottom:2px}
 @media(max-width:760px){.cc-hd{grid-template-columns:minmax(0,1fr)!important}.cc-r{flex-wrap:wrap;row-gap:6px}}
+.ht{margin:-22px 0 60px}
+.ht .sh{margin-bottom:8px}
+.ht-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.ht-c{display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+.ht-c:hover{text-decoration:none}.ht-c:hover b{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-color:rgba(201,150,60,.85)}
+.ht-c .ph{aspect-ratio:4/3;border-radius:8px}
+.ht-c b{display:block;font-family:var(--pf);font-weight:700;font-size:19px;line-height:1.2}
+.ht-c .ad{display:block;font-size:15px;color:var(--mut);margin-top:3px}
+@media(max-width:1020px){.ht-g{grid-template-columns:1fr;gap:0}}
+@media(max-width:760px){.ht{margin:-8px 0 44px}.ht-c{grid-template-columns:96px minmax(0,1fr);gap:12px}.ht-c b{font-size:18px}}
 /* desde la app, en una tira */
 .apps{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:56px}
 .app{flex-direction:row;align-items:center;gap:10px;padding:8px 18px 8px 8px;border-radius:999px;box-shadow:none}
@@ -693,6 +703,7 @@ body:not(.home) #pz,body:not(.home) #duo,body:not(.home) #datoBox,body:not(.home
   </section>
 
   <section class="ms" id="mesa" aria-label="La Mesa" style="display:none"></section>
+  <section class="ht" id="hot" aria-label="Hoteles" style="display:none"></section>
 
   <section class="hm" id="hm" aria-label="Hamaca Mood">
     <svg class="waves" viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 C 200 60, 400 120, 600 90 S 1000 60, 1200 92" fill="none" stroke="#F7B9A0" stroke-width="2"/><path d="M0 112 C 220 84, 420 140, 620 112 S 1010 84, 1200 114" fill="none" stroke="#F9CDB9" stroke-width="2"/></svg>
@@ -1069,7 +1080,7 @@ function ytImg(id){return '<img src="'+ytT(id)+'" alt="" loading="lazy" onerror=
 var PLAY='<svg width="76" height="76" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="rgba(14,27,48,.55)" stroke="#fff" stroke-width="2"/><path d="M23 18l15 10-15 10z" fill="#fff"/></svg>',PLAYS='<svg width="26" height="26" viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="27" fill="rgba(14,27,48,.7)" stroke="#fff" stroke-width="3"/><path d="M23 18l15 10-15 10z" fill="#fff"/></svg>';
 function renderPt(){
   var en=L==='en',hm=HOME(),pz=document.getElementById('pz'),fz=document.getElementById('pzF'),tv=document.getElementById('tv'),ms=document.getElementById('mesa'),db=document.getElementById('datoBox');
-  if(!PT){fz.innerHTML='';pz.classList.add('solo');tv.style.display='none';ms.style.display='none';db.innerHTML='';return}
+  if(!PT){fz.innerHTML='';pz.classList.add('solo');tv.style.display='none';ms.style.display='none';document.getElementById('hot').style.display='none';db.innerHTML='';return}
   var ids={};(DATA.notas||[]).forEach(function(n){ids[n.id]=n});
   /* que no se te pase */
   var t0=nyDay(),pd=function(x){var a=String(x||'').split('-');return new Date(+a[0],+a[1]-1,+a[2])},MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
@@ -1106,6 +1117,12 @@ function renderPt(){
      +'<div class="ms-f"><span class="adv">'+(en?'Your restaurant at La Mesa: ':'Tu restaurante en La Mesa: ')+'<a href="mailto:contacto@miamimagicapp.com?subject=La%20Mesa">contacto@miamimagicapp.com</a></span><a class="go" href="/?go=rest">'+(en?'ALL RESTAURANTS IN THE APP →':'TODOS LOS RESTAURANTES EN LA APP →')+'</a></div>';
     ms.querySelectorAll('.ms-nav button').forEach(function(b){b.onclick=function(){var r=document.getElementById('msR');r.scrollBy({left:(+b.dataset.d)*r.clientWidth,behavior:'smooth'})}});
   } else ms.style.display='none';
+  /* hoteles */
+  var hs=(PT.hoteles||[]).filter(function(x){return x&&x.id&&x.name&&x.foto&&x.activo!==false}),ho=document.getElementById('hot');
+  if(hs.length&&hm){var h0=doy()%hs.length,hv=hs.slice(h0).concat(hs.slice(0,h0)).slice(0,3);
+    ho.style.display='';
+    ho.innerHTML='<div class="sh"><h3>'+(en?'WHERE TO STAY':'DÓNDE QUEDARSE')+'</h3><a href="/?go=hotels">'+(en?'Hotels in the app →':'Hoteles en la app →')+'</a></div><div class="ht-g">'+hv.map(function(x){return '<a class="ht-c" href="/?item='+encodeURIComponent(x.id)+'&type=hotel"><span class="ph"><img src="'+esc(/^https?:|^\//.test(x.foto)?x.foto:'/'+x.foto)+'" alt="" loading="lazy"></span><span><b>'+esc(x.name)+'</b><span class="ad">'+esc(x.addr||'')+'</span></span></a>'}).join('')+'</div>';
+  } else ho.style.display='none';
 }
 document.getElementById('duo').addEventListener('click',function(e){var b=e.target.closest('.vt');if(!b)return;if(b.dataset.go==='all'){ST.all=true}else{ST.scope=b.dataset.go}ST.hamaca=false;ST.muelle=false;ST.casa=false;ST.tema='todo';render();scrollTo({top:0,behavior:'smooth'})});
 fetch('/portada.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){PT=j;renderPt()}).catch(function(){});

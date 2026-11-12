@@ -1,5 +1,5 @@
 {
- "_como_usar": "Extras de la portada de Miami Magic News. fechas: lo que vence (d = fecha AAAA-MM-DD, d2 = fin si es un rango, id = la nota que lo explica). videos: yid = el código del video de YouTube. mesa: restaurantes; patrocinado:true los pone primero con la etiqueta PATROCINADO. datos: Miami curioso, cada uno enlazado a su nota.",
+ "_como_usar": "Extras de la portada de Miami Magic News. fechas: lo que vence (d = fecha AAAA-MM-DD, d2 = fin si es un rango, id = la nota que lo explica). videos: yid = el código del video de YouTube. mesa: restaurantes; patrocinado:true los pone primero con la etiqueta PATROCINADO. datos: Miami curioso, cada uno enlazado a su nota. hoteles: hoteles de la app con foto propia; rotan cada día.",
  "updated": "2026-11-11",
  "canal": "https://www.youtube.com/@MiamiMagicApp",
  "fechas": [
@@ -515,6 +515,98 @@
    "es": "Cuando Parrot Jungle se mudó a Watson Island, en 2002, pasó a llamarse Jungle Island.",
    "en": "When Parrot Jungle moved to Watson Island in 2002, it became Jungle Island.",
    "id": "luces-navidad-miami-2026"
+  }
+ ],
+ "hoteles": [
+  {
+   "id": "h29",
+   "name": "Hotel Victor South Beach",
+   "addr": "1144 Ocean Dr, South Beach",
+   "foto": "fotos/mm-mb-hotel-victor.jpg"
+  },
+  {
+   "id": "h21",
+   "name": "The National Hotel Miami Beach",
+   "addr": "1677 Collins Ave, South Beach",
+   "foto": "fotos/mm-mb-national-fuente.jpg"
+  },
+  {
+   "id": "h33",
+   "name": "Sagamore Hotel",
+   "addr": "1671 Collins Ave, South Beach",
+   "foto": "fotos/mm-mb-sagamore-ritz-carlton.jpg"
+  },
+  {
+   "id": "h9",
+   "name": "The Betsy - South Beach",
+   "addr": "1440 Ocean Dr, South Beach",
+   "foto": "fotos/mm-mb-betsy.jpg"
+  },
+  {
+   "id": "h74",
+   "name": "Crest Hotel Suites",
+   "addr": "1670 James Ave, South Beach",
+   "foto": "fotos/mm-mb-crest.jpg"
+  },
+  {
+   "id": "h101",
+   "name": "Cardozo South Beach",
+   "addr": "1300 Ocean Dr, South Beach",
+   "foto": "fotos/mm-mb-cardozo.jpg"
+  },
+  {
+   "id": "h102",
+   "name": "Cavalier South Beach",
+   "addr": "1320 Ocean Dr, South Beach",
+   "foto": "fotos/mm-mb-cavalier.jpg"
+  },
+  {
+   "id": "h103",
+   "name": "Leslie Hotel Ocean Drive",
+   "addr": "1244 Ocean Dr, South Beach",
+   "foto": "fotos/mm-mb-leslie.jpg"
+  },
+  {
+   "id": "h104",
+   "name": "Royal Palm South Beach Miami",
+   "addr": "1545 Collins Ave, South Beach",
+   "foto": "fotos/mm-mb-royal-palm.jpg"
+  },
+  {
+   "id": "h105",
+   "name": "Uma House by Yurbban South Beach",
+   "addr": "1775 James Ave, South Beach",
+   "foto": "fotos/mm-mb-uma-house.jpg"
+  },
+  {
+   "id": "h106",
+   "name": "Dolce by Wyndham Miami Beach",
+   "addr": "1745 James Ave, South Beach",
+   "foto": "fotos/mm-mb-dolce.jpg"
+  },
+  {
+   "id": "h107",
+   "name": "The Claremont Hotel, South Beach",
+   "addr": "1700 Collins Ave, South Beach",
+   "foto": "fotos/mm-mb-claremont.jpg"
+  },
+  {
+   "id": "h6",
+   "name": "Loews Miami Beach Hotel",
+   "addr": "1601 Collins Ave, South Beach",
+   "foto": "fotos/mm-mb-loews.jpg"
+  },
+  {
+   "id": "h89",
+   "name": "Ritz-Carlton South Beach",
+   "addr": "1 Lincoln Rd, South Beach",
+   "foto": "fotos/mm-mb-ritz-carlton.jpg"
+  },
+  {
+   "id": "h108",
+   "name": "Eden Roc Miami Beach",
+   "addr": "4525 Collins Ave, Mid-Beach",
+   "foto": "fotos/mm-eden-roc.jpg"
   }
  ]
 }
