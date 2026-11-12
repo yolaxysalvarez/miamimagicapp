@@ -798,6 +798,50 @@ body:not(.home) .split{display:block;margin-bottom:0}
  body.home .ul b{font-size:16.5px;line-height:1.22}
  body.home .ul a>i{font-size:26px}
 }
+/* pasada premium: secciones sin cajas, logos con color vivo */
+.hm-pill b em,.hm-t em,.hmw em{color:#E8391F}
+.dkw em{color:#0E7FA8}
+.fz-h{border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:0}
+.fz-t{font-size:30px}
+.fz-r{gap:0;grid-auto-columns:20%;padding:0}
+.fz-c{background:none;border:0;border-left:1px solid var(--line);border-radius:0;box-shadow:none;padding:16px 20px 4px;overflow:visible}
+.fz-c:first-child{border-left:0;padding-left:0}
+.fz-c:hover{transform:none}.fz-c:hover b{color:var(--coral-d)}
+.fz-c .d{background:none;color:var(--coral-d);padding:0;font-size:15.5px;letter-spacing:.16em}
+.fz-c .d>*:last-child{color:var(--mut)}
+.fz-c .n{padding:10px 0 0;gap:6px}
+.fz-c .n u{font-size:30px;line-height:1}
+.fz-c b{padding:8px 0 0;font-size:17px;line-height:1.24}
+.fz-c .go{padding:12px 0 6px}
+.hist .k{font-size:28px}
+.hist .ks{display:block;font-family:var(--bb);font-size:15px;letter-spacing:.16em;color:rgba(255,255,255,.78);margin:5px 0 8px}
+.hist-l{border-top:2px solid var(--ink);margin-top:22px}
+.hist-l::before{content:attr(data-h);display:block;font-family:var(--bb);font-size:15px;letter-spacing:.2em;color:var(--mut);padding:10px 0 0}
+.hm{background:none;box-shadow:none;border-radius:0;overflow:visible}
+.hm .waves{display:none}
+.hm-big{box-shadow:none}
+.hm-pg button{width:36px;height:36px;border:1px solid var(--line);background:none}
+.dk{background:none;border:0;border-top:2px solid #0E7FA8;box-shadow:none;border-radius:0;overflow:visible}
+.dk-post{background:none}.dk-post .dk-wv{display:none}
+.dk-cond span{background:none;border-radius:0;border-left:1px solid var(--line);color:var(--mut)}
+.dk-cond span:first-child{border-left:0;padding-left:0}
+.dk-cond b{color:#0E7FA8}
+.dk-hd{border-bottom:1px solid var(--line)}
+.dk-more,.dk-app{color:#0B5C7A}
+.cc{background:none;border:0;border-top:2px solid var(--gold);box-shadow:none;border-radius:0}
+.cc-hd{border-bottom:1px solid var(--line)}
+.cc-ft{border-top:0}
+.dk-mb,.cc-mb{border:0;border-bottom:2px solid currentColor;border-radius:0;padding:0 0 2px;font-size:17px;background:none}
+.dk-mb:hover,.cc-mb:hover{background:none;color:var(--coral-d)}
+.dk-mb{margin:18px 0 0}
+.pair .dk,.pair .cc,.dk,.cc{border-radius:0!important}
+@media(min-width:1021px){
+ .hm-g>.hm-a{border-top:2px solid #E8391F;border-bottom:1px solid var(--line)}
+ .pair .dk-post{padding:20px 0 14px}.pair .dk-main{padding:0}
+ .pair .cc{padding:20px 0 0}
+}
+@media(max-width:1020px){.hm{padding:0}.dk-post{padding-left:0;padding-right:0}.dk-main{padding-left:0;padding-right:0}.cc{padding-left:0;padding-right:0}.hm-s a{background:none;box-shadow:none;padding:8px 0}}
+@media(max-width:760px){.hist .bd{margin-top:-26px}.hm-s{margin:0 -16px;padding:2px 16px 10px}.fz-r{grid-auto-columns:64%;padding-right:16px}.fz-c{padding:14px 16px 4px}}
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
@@ -1328,7 +1372,7 @@ function renderPt(){
   /* miami de antes */
   var ds=(PT.historia||[]).filter(function(x){return x&&x.a&&ids[x.id]}),dd=ds.length?ds[doy()%ds.length]:null;
   sp.classList.toggle('solo',!dd);
-  db.innerHTML=dd?(function(){var n=ids[dd.id],s=img(n);return '<a class="hist" href="'+href(n)+'"><span class="im">'+(s?'<img src="'+esc(s)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy">':'')+'</span><span class="bd"><span class="k">'+(en?'Miami, back then':'Miami de antes')+'</span><span class="yr">'+esc(dd.a)+'</span><p>'+esc(en?(dd.en||dd.es):dd.es)+'</p><span class="go">'+(en?'THE STORY TODAY →':'LA HISTORIA DE HOY →')+'</span></span></a><div class="hist-l">'+ds.filter(function(x){return x!==dd}).sort(function(a,b){return a.a<b.a?-1:1}).map(function(x){var tx=en?(x.en||x.es):x.es,c=tx.split(/\. /)[0];return '<a href="'+href(ids[x.id])+'"><b>'+esc(x.a)+'</b><span>'+esc(c.replace(/\.$/,''))+'.</span></a>'}).join('')+'</div>'})():'';
+  db.innerHTML=dd?(function(){var n=ids[dd.id],s=img(n);return '<a class="hist" href="'+href(n)+'"><span class="im">'+(s?'<img src="'+esc(s)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy">':'')+'</span><span class="bd"><span class="k">'+(en?'Miami, back then':'Miami de antes')+'</span><span class="ks">'+(en?'THE HISTORY OF MIAMI AND THE KEYS, ONE YEAR AT A TIME':'LA HISTORIA DE MIAMI Y LOS CAYOS, UN AÑO A LA VEZ')+'</span><span class="yr">'+esc(dd.a)+'</span><p>'+esc(en?(dd.en||dd.es):dd.es)+'</p><span class="go">'+(en?'THE STORY TODAY →':'LA HISTORIA DE HOY →')+'</span></span></a><div class="hist-l" data-h="'+(en?'OTHER YEARS':'OTROS AÑOS')+'">'+ds.filter(function(x){return x!==dd}).sort(function(a,b){return a.a<b.a?-1:1}).map(function(x){var tx=en?(x.en||x.es):x.es,c=tx.split(/\. /)[0];return '<a href="'+href(ids[x.id])+'"><b>'+esc(x.a)+'</b><span>'+esc(c.replace(/\.$/,''))+'.</span></a>'}).join('')+'</div>'})():'';
   /* video */
   var vs=PT.videos||[];
   if(vs.length&&hm){var st=(doy()*3)%vs.length,vv=[];for(var i=0;i<Math.min(5,vs.length);i++)vv.push(vs[(st+i)%vs.length]);
