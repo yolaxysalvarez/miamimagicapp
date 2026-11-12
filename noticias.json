@@ -55,12 +55,68 @@
   "videos": [],
   "notas": [
     {
-      "id": "impuestos-propiedad-bitcoin-miami-dade",
+      "id": "enmienda-3-condado-presupuesto",
       "scope": "miami",
       "tema": "bolsillo",
       "hamaca": false,
       "muelle": false,
       "destacada": true,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-downtown-freedom-tower.jpg",
+      "foto_alt": "El centro de Miami visto desde lejos, con el Kaseya Center y la Freedom Tower entre los edificios",
+      "foto_pie": "El centro de Miami, con el Kaseya Center y la Freedom Tower.",
+      "foto_pie_en": "Downtown Miami, with the Kaseya Center and the Freedom Tower.",
+      "es": {
+        "etiqueta": "IMPUESTOS",
+        "titulo": "La otra cara de la Enmienda 3: Miami-Dade calcula que dejará de recibir $386 millones en el primer año",
+        "bajada": "La cifra sube a casi $697 millones al año desde octubre de 2028, según el condado. Con esos impuestos se pagan hoy bomberos, transporte, parques y bibliotecas.",
+        "toca": [
+          "La factura de impuestos de este año no cambia. El condado sitúa la primera caída de ingresos en octubre de 2027.",
+          "El propio condado advierte que sus cifras son estimados, calculados con las tasas de impuestos actuales.",
+          "¿Alquilas? La enmienda no trae una rebaja directa para los inquilinos, explica la página del condado."
+        ],
+        "cuerpo": [
+          "Miami-Dade dejará de recibir unos $385.8 millones en impuestos a la propiedad a partir de octubre de 2027, y cerca de $696.7 millones al año desde octubre de 2028, cuando la exención de la vivienda principal llegue a $250,000. Son los [cálculos que el propio condado publicó](https://www.miamidade.gov/global/government/mayor/amendment-three/home.page) sobre la Enmienda 3, aprobada en Florida el 3 de noviembre y en vigor desde el 1 de enero de 2027.",
+          "## Qué se paga hoy con ese dinero",
+          "La página del condado desglosa cuánto aportan los impuestos a la propiedad a cada servicio. A Bomberos, $743.7 millones, que sostienen 73 estaciones y 2,533 bomberos. A transporte y obras públicas, $407.1 millones, con los que funcionan el Metrorail, el Metromover y parte de 74 rutas de autobús. Los 308 parques reciben $130.8 millones y las 50 bibliotecas, $128.5 millones.",
+          "La lista sigue con $66.4 millones para servicios comunitarios, entre ellos 700,000 comidas para personas mayores que no pueden salir de casa, y $31 millones para Servicios para Animales, con sus dos refugios.",
+          "## Lo que falta por saber",
+          "En esa página el condado no detalla qué servicios ajustaría ni en cuánto. Sí aclara que la pérdida está calculada con las tasas de hoy y que podría crecer en los años siguientes si la exención vuelve a subir."
+        ]
+      },
+      "en": {
+        "etiqueta": "TAXES",
+        "titulo": "The other side of Amendment 3: Miami-Dade estimates it will take in $386 million less in the first year",
+        "bajada": "The figure climbs to nearly $697 million a year starting in October 2028, the county says. Those taxes now pay for fire rescue, transit, parks and libraries.",
+        "toca": [
+          "This year's tax bill doesn't change. The county places the first drop in revenue in October 2027.",
+          "The county itself notes that its figures are estimates, calculated at current tax rates.",
+          "Renting? The amendment brings no direct tax cut for renters, the county's page explains."
+        ],
+        "cuerpo": [
+          "Miami-Dade will take in about $385.8 million less in property taxes starting in October 2027, and close to $696.7 million less each year from October 2028, when the exemption on a primary residence reaches $250,000. Those are the [estimates the county itself published](https://www.miamidade.gov/global/government/mayor/amendment-three/home.page) on Amendment 3, approved in Florida on Nov. 3 and in effect from Jan. 1, 2027.",
+          "## What that money pays for today",
+          "The county's page breaks down how much property taxes contribute to each service. Fire Rescue gets $743.7 million, which supports 73 stations and 2,533 firefighters. Transportation and public works gets $407.1 million, which keeps Metrorail, Metromover and part of 74 bus routes running. The 308 parks receive $130.8 million and the 50 libraries, $128.5 million.",
+          "The list continues with $66.4 million for community services, including 700,000 meals for homebound seniors, and $31 million for Animal Services and its two shelters.",
+          "## What isn't known yet",
+          "On that page the county doesn't spell out which services it would adjust or by how much. It does note that the loss is calculated at today's rates and could grow in later years if the exemption rises again."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Condado de Miami-Dade · La Enmienda 3 y los servicios del condado",
+          "u": "https://www.miamidade.gov/global/government/mayor/amendment-three/home.page"
+        }
+      ]
+    },
+    {
+      "id": "impuestos-propiedad-bitcoin-miami-dade",
+      "scope": "miami",
+      "tema": "bolsillo",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
       "foto": "mm-miami-skyline-atardecer-macarthur.jpg",
@@ -955,6 +1011,126 @@
         {
           "n": "Miami-Dade County · Metro Express",
           "u": "https://www.miamidade.gov/global/transportation/metro-express-bus-rapid-transit-service.page"
+        }
+      ]
+    },
+    {
+      "hamaca": false,
+      "muelle": true,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "id": "anclaje-prolongado-permiso-fwc",
+      "scope": "cayos",
+      "tema": "mar",
+      "foto": "mm-keys-canal-veleros.jpg",
+      "foto_alt": "Veleros amarrados en un canal de los Cayos bajo un cielo nublado",
+      "foto_pie": "Veleros en un canal de los Cayos.",
+      "foto_pie_en": "Sailboats in a Keys canal.",
+      "es": {
+        "etiqueta": "LAS REGLAS",
+        "titulo": "¿Tu bote lleva 14 días anclado? En Florida ya necesita un permiso, y es gratis",
+        "bajada": "La FWC exige un permiso de anclaje prolongado a toda embarcación que pase 14 días o más anclada en un período de 30. Se saca en línea.",
+        "toca": [
+          "El permiso es electrónico y gratuito. Se pide en el formulario en línea de la FWC, con los datos del bote y del dueño.",
+          "No tenerlo es una infracción no penal, según la agencia.",
+          "Con tres citaciones o más en 24 meses, la FWC puede retirar la embarcación y disponer de ella."
+        ],
+        "cuerpo": [
+          "Una embarcación que pase 14 días o más anclada en aguas de Florida dentro de cualquier período de 30 días necesita un permiso de anclaje prolongado, [recuerda la Comisión de Conservación de Pesca y Vida Silvestre de Florida](https://myfwc.com/boating/lt-anchoring-permit/) (FWC). La regla está vigente desde el 1 de enero de 2026 y pesa sobre todo en los Cayos, donde muchos botes pasan temporadas enteras fondeados.",
+          "## Cómo se saca",
+          "El trámite se hace en el [formulario en línea de la FWC](https://app.myfwc.com/crossdoi/ltanchoringpermit/), que pide los datos de la embarcación y de quien la registra. La agencia indica que el permiso es electrónico y no cuesta nada.",
+          "## Qué pasa si no lo tienes",
+          "La FWC lo trata como una infracción no penal, bajo la [sección 327.4111 de los Estatutos de Florida](https://www.flsenate.gov/Laws/Statutes/2026/0327.4111). El riesgo crece con la reincidencia: el dueño que acumule tres citaciones o más en 24 meses se expone a que la agencia retire el bote como embarcación que constituye una molestia pública."
+        ]
+      },
+      "en": {
+        "etiqueta": "THE RULES",
+        "titulo": "Has your boat been anchored for 14 days? In Florida it now needs a permit, and it's free",
+        "bajada": "FWC requires a long-term anchoring permit for any vessel anchored 14 days or more within a 30-day period. You get it online.",
+        "toca": [
+          "The permit is electronic and free. Apply through FWC's online form with the vessel's and the owner's information.",
+          "Not having one is a noncriminal violation, the agency says.",
+          "With three or more citations in 24 months, FWC can remove the vessel and dispose of it."
+        ],
+        "cuerpo": [
+          "A vessel anchored in Florida waters for 14 days or more within any 30-day period needs a long-term anchoring permit, [the Florida Fish and Wildlife Conservation Commission reminds boaters](https://myfwc.com/boating/lt-anchoring-permit/). The rule has been in effect since Jan. 1, 2026, and it weighs most in the Keys, where many boats spend whole seasons at anchor.",
+          "## How to get it",
+          "The application is [FWC's online form](https://app.myfwc.com/crossdoi/ltanchoringpermit/), which asks for information about the vessel and the person registering it. The agency says the permit is electronic and costs nothing.",
+          "## What happens without it",
+          "FWC treats it as a noncriminal violation under [section 327.4111 of the Florida Statutes](https://www.flsenate.gov/Laws/Statutes/2026/0327.4111). The risk grows with repeat offenses: an owner with three or more citations in 24 months can have the boat removed by the agency as a public nuisance vessel."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "FWC · Permiso de anclaje prolongado",
+          "u": "https://myfwc.com/boating/lt-anchoring-permit/"
+        },
+        {
+          "n": "Estatutos de Florida · Sección 327.4111",
+          "u": "https://www.flsenate.gov/Laws/Statutes/2026/0327.4111"
+        }
+      ]
+    },
+    {
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "id": "cayos-alquiler-vacacional-estafa-alerta",
+      "scope": "cayos",
+      "tema": "casa",
+      "foto": "mm-keys-canal-casas-palmas.jpg",
+      "foto_alt": "Casas y botes a lo largo de un canal en los Cayos de Florida",
+      "foto_pie": "Casas junto a un canal en los Cayos.",
+      "foto_pie_en": "Homes along a canal in the Keys.",
+      "es": {
+        "etiqueta": "ALERTA",
+        "titulo": "Pagó $1,440 por una casa en Big Pine Key que nadie le alquilaba: cómo comprobar un alquiler antes de enviar dinero",
+        "bajada": "La Oficina del Sheriff de Monroe arrestó a un hombre de Nueva York por un anuncio falso de alquiler vacacional, según reportó Local 10. La visitante lo descubrió al llegar a la puerta.",
+        "toca": [
+          "Busca la licencia del alquiler en el portal del Departamento de Regulación Profesional de Florida (DBPR) antes de pagar.",
+          "Desconfía si te piden transferencia bancaria. Paga dentro de la plataforma o con tarjeta de crédito.",
+          "Si ya pagaste y sospechas, llama a tu banco ese mismo día y repórtalo a la Oficina del Sheriff de Monroe."
+        ],
+        "cuerpo": [
+          "Un hombre de 28 años de la ciudad de Nueva York enfrenta cargos graves en los Cayos por lo que los agentes describen como un esquema fraudulento de alquileres vacacionales, [informó Local 10](https://www.local10.com/news/local/2026/11/11/nyc-man-arrested-for-fraudulent-vacation-rental-scheme-in-florida-keys-deputies-say/) el 11 de noviembre, citando a la Oficina del Sheriff del Condado de Monroe.",
+          "## Qué pasó",
+          "De acuerdo con [el recuento de Tampa Free Press](https://www.tampafp.com/fake-florida-keys-rental-leads-to-more-jail-time-for-new-york-man-who-was-in-texas-jail/), una viajera envió $1,440 por transferencia para reservar una casa en Big Pine Key anunciada en internet, y supo que el anuncio era falso cuando llegó a la propiedad. El caso es de 2024. Los detectives, añade el medio, siguieron durante meses transferencias, cargos de tarjeta y correos electrónicos hasta dar con el acusado, que fue trasladado a la cárcel de Monroe el 10 de noviembre. Los cargos son hurto mayor y fraude; un cargo no equivale a una condena.",
+          "## Cómo comprobarlo tú",
+          "En Florida, los alquileres vacacionales operan con licencia estatal, y cualquiera puede buscarla por nombre o dirección en el [portal de licencias del DBPR](https://www.myfloridalicense.com/wl11.asp). Si la dirección del anuncio no aparece, conviene preguntar antes de pagar."
+        ]
+      },
+      "en": {
+        "etiqueta": "ALERT",
+        "titulo": "She paid $1,440 for a Big Pine Key house no one was renting to her: how to check a rental before sending money",
+        "bajada": "The Monroe County Sheriff's Office arrested a New York man over a fake vacation rental listing, Local 10 reported. The visitor found out at the front door.",
+        "toca": [
+          "Look up the rental's license on the Florida Department of Business and Professional Regulation (DBPR) portal before you pay.",
+          "Be wary if you're asked for a wire transfer. Pay inside the platform or by credit card.",
+          "If you already paid and something feels off, call your bank that same day and report it to the Monroe County Sheriff's Office."
+        ],
+        "cuerpo": [
+          "A 28-year-old man from New York City faces felony charges in the Keys over what deputies describe as a fraudulent vacation rental scheme, [Local 10 reported](https://www.local10.com/news/local/2026/11/11/nyc-man-arrested-for-fraudulent-vacation-rental-scheme-in-florida-keys-deputies-say/) on Nov. 11, citing the Monroe County Sheriff's Office.",
+          "## What happened",
+          "According to [Tampa Free Press's account](https://www.tampafp.com/fake-florida-keys-rental-leads-to-more-jail-time-for-new-york-man-who-was-in-texas-jail/), a traveler wired $1,440 to book a Big Pine Key house advertised online, and learned the listing was fake when she arrived at the property. The case dates to 2024. Detectives, the outlet adds, spent months tracing transfers, card charges and email accounts to reach the suspect, who was brought to the Monroe County jail on Nov. 10. The charges are grand theft and fraud; a charge is not a conviction.",
+          "## How to check for yourself",
+          "In Florida, vacation rentals operate under a state license, and anyone can search for it by name or address on the [DBPR license portal](https://www.myfloridalicense.com/wl11.asp). If the address in the listing doesn't show up, it's worth asking before you pay."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Local 10 · arresto anunciado por la Oficina del Sheriff de Monroe, 11 de noviembre de 2026",
+          "u": "https://www.local10.com/news/local/2026/11/11/nyc-man-arrested-for-fraudulent-vacation-rental-scheme-in-florida-keys-deputies-say/"
+        },
+        {
+          "n": "Tampa Free Press · detalles del caso",
+          "u": "https://www.tampafp.com/fake-florida-keys-rental-leads-to-more-jail-time-for-new-york-man-who-was-in-texas-jail/"
+        },
+        {
+          "n": "DBPR · búsqueda de licencias",
+          "u": "https://www.myfloridalicense.com/wl11.asp"
         }
       ]
     },
