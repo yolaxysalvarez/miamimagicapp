@@ -871,6 +871,23 @@ body.sp-cc #cc{display:none!important}
 .sp-h .sp-x{background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:12px 16px 12px;border-radius:6px;margin-right:16px}
 .sp-dis{color:var(--ink2)}
 @media(max-width:760px){.sp-h .sp-x{margin-right:0;background:none;padding:0;backdrop-filter:none;-webkit-backdrop-filter:none}.sp-h .sp-bg{width:100%;opacity:.22;-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 90%);mask-image:linear-gradient(180deg,#000 0%,transparent 90%)}.sp-h .sp-t{font-size:52px}}
+/* especial de portada */
+#esp:empty{display:none}
+.esp{position:relative;display:block;margin:0 0 52px;border-radius:12px;overflow:hidden;color:#fff;background:#0A1120}
+.esp:hover{text-decoration:none}
+.esp>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.esp:hover>img{transform:scale(1.02)}
+.esp::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,32,.96) 0%,rgba(10,17,32,.9) 40%,rgba(10,17,32,.3) 62%,rgba(10,17,32,0) 76%)}
+.esp-in{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:0;padding:34px 40px 34px;min-height:330px;max-width:620px;justify-content:center}
+.esp-c{display:flex;align-items:baseline;gap:10px;margin-bottom:10px}
+.esp-c u{text-decoration:none;font-family:var(--dm);font-weight:700;font-size:64px;line-height:.9;letter-spacing:-.03em;color:#FFC24D}
+.esp-c i{font-style:normal;font-family:var(--bb);font-size:17px;letter-spacing:.2em;color:#FFD9A0}
+.esp-k{font-family:var(--bb);font-size:17px;letter-spacing:.2em;color:#fff;border-top:1px solid rgba(255,255,255,.35);padding-top:10px}
+.esp b{display:block;font-family:var(--pf);font-weight:900;font-size:34px;line-height:1.1;margin:8px 0 10px}
+.esp-p{font-size:16.5px;line-height:1.45;color:rgba(255,255,255,.9)}
+.esp-go{margin-top:16px;font-family:var(--bb);font-size:16px;letter-spacing:.16em;color:#FFD9A0;border-bottom:1.5px solid currentColor;padding-bottom:1px}
+.esp-pie{position:absolute;z-index:1;right:14px;bottom:10px;font-size:14.5px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+@media(max-width:760px){.esp{margin-bottom:44px}.esp::after{background:linear-gradient(180deg,rgba(10,17,32,.25) 0%,rgba(10,17,32,.9) 52%,rgba(10,17,32,.96) 100%)}.esp-in{padding:150px 20px 44px;min-height:0;max-width:none;justify-content:flex-end}.esp b{font-size:27px}.esp-c u{font-size:52px}.esp-pie{right:auto;left:20px}}
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
@@ -944,6 +961,7 @@ body{background:#fff;text-rendering:optimizeLegibility}
   <div class="top" id="top"><div id="leadBox"></div><section class="ul" id="pzU"></section></div>
 
   <section class="fz" id="pzF" aria-label="Que no se te pase"></section>
+  <div id="esp"></div>
   <div class="duo" id="duo"></div>
 
   <div class="sh" id="masH"><h3 data-t="mas">MÁS DE LA SEMANA</h3></div>
@@ -1253,6 +1271,7 @@ document.getElementById('brkX').onclick=function(){var u=DATA.ultima_hora;try{se
 var CF={sea:null,sunset:null};
 function ci(b){return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E1B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+b+'</svg>'}
 var CI={
+ art:ci('<rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M4 15.5l4.5-4.5 4 4 2.5-2.5 5 5"/><circle cx="15.5" cy="8.5" r="1.2"/>'),
  sea:ci('<path d="M2 15c2 0 2-1.5 4.5-1.5S9 15 11 15s2-1.5 4.5-1.5S18 15 20 15"/><path d="M2 19c2 0 2-1.5 4.5-1.5S9 19 11 19s2-1.5 4.5-1.5S18 19 20 19"/><path d="M12 4v6M9.5 7.5L12 10l2.5-2.5"/>'),
  sunset:ci('<path d="M3 17h18"/><path d="M7 17a5 5 0 0 1 10 0"/><path d="M12 7v2M5.5 10.5l1.4 1.4M18.5 10.5l-1.4 1.4"/>'),
  game:ci('<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 2.6 14.6 0 17M12 3.5c-2.6 2.4-2.6 14.6 0 17"/>'),
@@ -1271,6 +1290,7 @@ function renderCifras(){
   var now=new Date(),y=now.getFullYear(),s=new Date(y,5,1),e=new Date(y,10,30,23,59);
   if(now>=s&&now<=e){var dl=Math.ceil((e-now)/864e5);it.push(['hur',t('hur1'),L==='en'?dl+' '+t('hurTermina'):t('hurFalta')+' '+dl+' '+t('hurTermina')])}
   else{var ns=now>e?new Date(y+1,5,1):s;var dd=Math.ceil((ns-now)/864e5);it.push(['hur',t('hur1'),t('hurPre')+' '+dd+(L==='en'?' days':' días')])}
+  var E=PT&&PT.especial;if(E&&E.d){var ed=Math.ceil((new Date(E.d+'T00:00')-nyDay())/864e5),eo=nyDay()>new Date(E.d2+'T23:59');if(!eo)it.unshift(['art',L==='en'?E.c_en:E.c_es,ed>0?(L==='en'?'in '+ed+(ed===1?' day':' days'):'en '+ed+(ed===1?' día':' días')):(L==='en'?'this week':'esta semana')])}
   (DATA.cifras||[]).forEach(function(c){if(c.v)it.push([c.k,c[L]||c.es,(L==='en'&&c.v_en)?c.v_en:c.v])});
   var row=it.map(function(x){return '<span class="cf-i">'+(CI[x[0]]||'')+esc(x[1])+' <b>'+esc(x[2])+'</b></span><span class="cf-dot"></span>'}).join('');
   document.getElementById('cf').innerHTML=row+row;
@@ -1390,6 +1410,9 @@ function renderPt(){
   if(!PT){fz.innerHTML='';tv.style.display='none';ms.style.display='none';ho.style.display='none';db.innerHTML='';sp.classList.add('solo');
     ap.className='apps-m';ap.innerHTML='<span>'+(en?'Sections of the app:':'Secciones de la app:')+'</span>'+more;return}
   var ids={};(DATA.notas||[]).forEach(function(n){ids[n.id]=n});
+  (function(){var E=PT.especial,bx=document.getElementById('esp'),n=E&&ids[E.id];if(!hm||!n||nyDay()>new Date(E.d2+'T23:59')){bx.innerHTML='';return}
+    var dd=Math.ceil((new Date(E.d+'T00:00')-nyDay())/864e5),f=F(n);
+    bx.innerHTML='<a class="esp" href="'+href(n)+'"><img src="'+ptF(E.foto)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy"'+(E.pos?' style="object-position:'+esc(E.pos)+'"':'')+'><span class="esp-in"><span class="esp-c">'+(dd>0?'<u>'+dd+'</u><i>'+(en?(dd===1?'DAY TO GO':'DAYS TO GO'):(dd===1?'DÍA FALTA':'DÍAS FALTAN'))+'</i>':'<i>'+(en?'THIS WEEK':'ESTA SEMANA')+'</i>')+'</span><span class="esp-k">'+esc(en?E.k_en:E.k_es)+'</span><b>'+esc(f.titulo)+'</b><span class="esp-p">'+esc(f.bajada||'')+'</span><span class="esp-go">'+(en?'WHAT TO SEE →':'QUÉ SE VE →')+'</span></span><span class="esp-pie">'+esc(en?E.pie_en:E.pie_es)+'</span></a>'})();try{renderCifras()}catch(e){}
   var appL=function(u,tx){return '<a class="lkl" href="'+u+'">'+tx+' →</a>'};
   /* que no se te pase */
   var t0=nyDay(),pd=function(x){var a=String(x||'').split('-');return new Date(+a[0],+a[1]-1,+a[2])},MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];

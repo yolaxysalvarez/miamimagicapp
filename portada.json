@@ -787,5 +787,18 @@
       "en": "Key West's historic district is listed on the National Register of Historic Places.",
       "id": "key-west-old-town-harc-permiso"
     }
-  ]
+  ],
+  "especial": {
+    "id": "art-basel-arte-gratis-playa",
+    "d": "2026-12-01",
+    "d2": "2026-12-06",
+    "k_es": "SEMANA DEL ARTE · MIAMI BEACH · 1–6 DIC",
+    "k_en": "ART WEEK · MIAMI BEACH · DEC. 1–6",
+    "c_es": "Semana del arte",
+    "c_en": "Art week",
+    "foto": "fotos/mm-artbasel-library-of-us.jpg",
+    "pos": "70% 36%",
+    "pie_es": "Library of Us, Faena Beach, 2025",
+    "pie_en": "Library of Us, Faena Beach, 2025"
+  }
 }
