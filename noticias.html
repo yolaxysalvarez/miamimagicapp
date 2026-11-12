@@ -1428,6 +1428,7 @@ render();
 fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});return !n.fecha||n.fecha<=h}catch(e){return true}});render()}).catch(function(){});
 fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg()}).catch(function(){});
 loadWx();
+setInterval(function(){if(!document.hidden){try{loadWx()}catch(e){}}},18e5); /* el cintillo se refresca cada 30 minutos con la página abierta */
 })();
 </script>
 </body>
