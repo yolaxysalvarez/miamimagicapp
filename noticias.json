@@ -168,7 +168,8 @@
         }
       ],
       "foto_fit": "contain",
-      "foto_bg": "#0E1B30"
+      "foto_bg": "#0E1B30",
+      "ultima": 1
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
@@ -229,7 +230,8 @@
           "n": "Condado de Miami-Dade · Ordenanza sobre dispositivos de reparto, expediente 261932",
           "u": "https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026"
         }
-      ]
+      ],
+      "ultima": 3
     },
     {
       "id": "obamacare-2027-florida",
@@ -682,7 +684,8 @@
         "en": "Miami's housing market, in the app"
       },
       "foto_mm": true,
-      "foto_pie_en": "Rain lilies in the garden of a Miami-Dade home."
+      "foto_pie_en": "Rain lilies in the garden of a Miami-Dade home.",
+      "ultima": 6
     },
     {
       "id": "mercado-miami-dade-dos-velocidades",
@@ -1079,7 +1082,8 @@
           "n": "Key West Chamber of Commerce · Key West Holiday Fest, comunicado del 4 de noviembre de 2026",
           "u": "https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che"
         }
-      ]
+      ],
+      "ultima": 5
     },
     {
       "id": "seven-mile-bridge-rehabilitacion",
@@ -2494,7 +2498,8 @@
           "n": "Christmas Wonderland Miami · preguntas frecuentes",
           "u": "https://miamiwonderland.com/faqs/"
         }
-      ]
+      ],
+      "ultima": 4
     },
     {
       "id": "luces-navidad-miami-2026",
@@ -2680,7 +2685,8 @@
           "n": "FWC · Mapas de las zonas de protección del manatí en Miami-Dade",
           "u": "https://myfwc.com/media/7311/miamidadempz-maps.pdf"
         }
-      ]
+      ],
+      "ultima": 2
     },
     {
       "id": "oleta-river-kayak-pesca-norte",
