@@ -165,7 +165,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 .btc-n{font-size:14.5px;color:var(--mut);margin:10px 0 0;line-height:1.45}
 .hmw em,.hm-pill b em{color:#E8391F}.dkw em{color:#0E7FA8}
 </style>
-<script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
+<script>
+function HOYNY(){var h;try{h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'})}catch(e){h=new Date().toISOString().slice(0,10)}try{if(/[?&]vista=viernes/.test(location.search))sessionStorage.setItem('mmVista','1');if(sessionStorage.getItem('mmVista')==='1'&&h<'2026-11-13')h='2026-11-13'}catch(e){}return h}
+/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
 :root{--bg:#FFFFFF;--paper:#F8F7F4;--card:#F3F1EC;--ink:#0A1120;--ink2:#1D2839;--mut:#434B59;--line:rgba(10,17,32,.13)}
 body{background:#fff;text-rendering:optimizeLegibility}
@@ -271,7 +273,7 @@ function render(){
      .then(function(r){if(!r.ok&&r.status!==409)throw 0;ok.textContent=t('nlOk');document.getElementById('nlF').style.display='none'}).catch(function(){ok.textContent=t('opErr')})};
 }
 var ALL=[],EVD=null;
-function hoy(){try{return new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'})}catch(e){return new Date().toISOString().slice(0,10)}}
+function hoy(){try{return HOYNY()}catch(e){return new Date().toISOString().slice(0,10)}}
 function pub(n){return n&&n.id&&!n.programada&&(DEMO||!n.fecha||n.fecha<=hoy())}
 function isCCn(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle}
 function secOf(n){return n.hamaca?'hamaca':n.muelle?'muelle':isCCn(n)?'casa':(n.scope==='cayos'?'cayos':'miami')}
@@ -316,7 +318,7 @@ document.querySelectorAll('.lng button').forEach(function(b){b.onclick=function(
 addEventListener('scroll',function(){var a=document.querySelector('article');if(!a)return;var h=a.offsetHeight-innerHeight,p=h>0?Math.min(1,Math.max(0,scrollY/h)):0;document.getElementById('bar').style.width=(p*100)+'%'},{passive:true});
 document.getElementById('yr').textContent=new Date().getFullYear();
 fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVD=j;renderMas()}).catch(function(){});
-fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){ALL=j.notas||[];N=(j.notas||[]).filter(function(n){return n.id===ID})[0]||null;if(N&&!DEMO&&!(function(n){try{var h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});return !n.fecha||n.fecha<=h}catch(e){return true}})(N))N=null;render()}).catch(function(){render()});
+fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){ALL=j.notas||[];N=(j.notas||[]).filter(function(n){return n.id===ID})[0]||null;if(N&&!DEMO&&!(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}})(N))N=null;render()}).catch(function(){render()});
 })();
 </script>
 </body>
