@@ -3126,8 +3126,8 @@
       "destacada": false,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-dk-haulover-inlet.jpg",
-      "foto_alt": "Botes navegando por el canal de Haulover, en Miami",
+      "foto": "mm-dk-haulover-inlet-canal.jpg",
+      "foto_alt": "Un bote cruza el canal de Haulover, en Miami, junto a la escollera",
       "foto_pie": "Botes en el canal de Haulover.",
       "foto_pie_en": "Boats in Haulover Inlet.",
       "es": {
@@ -3186,7 +3186,8 @@
           "u": "https://myfwc.com/media/7311/miamidadempz-maps.pdf"
         }
       ],
-      "ultima": 2
+      "ultima": 2,
+      "foto_pos": "60% 90%"
     },
     {
       "id": "oleta-river-kayak-pesca-norte",
@@ -3197,11 +3198,11 @@
       "destacada": false,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-oleta-kayak.jpg",
-      "foto_pos": "50% 38%",
-      "foto_alt": "La proa de un kayak rojo frente a la playa de arena de Oleta River State Park",
-      "foto_pie": "La laguna de Oleta River State Park, vista desde un kayak.",
-      "foto_pie_en": "The lagoon at Oleta River State Park, seen from a kayak.",
+      "foto": "mm-oleta-playa-kayaks.jpg",
+      "foto_pos": "50% 40%",
+      "foto_alt": "Kayaks y sombrillas en la playa de arena de Oleta River State Park, vistos desde el agua",
+      "foto_pie": "La playa de Oleta River State Park, vista desde un kayak.",
+      "foto_pie_en": "The beach at Oleta River State Park, seen from a kayak.",
       "es": {
         "etiqueta": "LUGARES",
         "titulo": "Oleta: remar entre mangles y pescar desde el muelle sin salir de la ciudad",
