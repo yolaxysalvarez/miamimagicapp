@@ -209,6 +209,7 @@ main.wrap{padding-top:4px;padding-bottom:40px}
 .dk-pill b{font-family:var(--pf);font-weight:900;font-size:19px;white-space:nowrap}
 .dk-pill.on{background:#fff;border-color:#0B5C7A}
 .tabs .dk-pill{margin-left:8px}
+.cc-pill{background:#FBF1DC;border-color:rgba(201,150,60,.55)}.cc-pill.on{background:#fff;border-color:#8A5A12}.cc-pill .ccw .em{width:.8em;height:.8em;vertical-align:-.1em;margin:0 .12em}
 .dk{position:relative;margin:56px 0 64px;display:grid;grid-template-columns:250px minmax(0,1fr);border-radius:18px;overflow:hidden;background:#F5FAFB;box-shadow:0 18px 40px -30px rgba(11,60,80,.55);border:1px solid rgba(11,92,122,.12)}
 .dk-post{position:relative;background:linear-gradient(180deg,#EEF7F9 0%,#D4EAF0 55%,#B6D8E2 100%);padding:26px 20px 26px;display:flex;flex-direction:column;align-items:center;gap:20px;min-height:600px;overflow:hidden}
 .dk-post .dk-vt{position:relative;width:100%;flex:1;min-height:330px;font-size:72px;line-height:1}
@@ -357,9 +358,9 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 
 /* ── teléfono ── */
 @media (max-width:1240px){.dl{display:none}}
-@media (min-width:1081px){.hdr-in{gap:12px}.mast{gap:12px}.navr{gap:10px}.hm-pill,.dk-pill{padding-left:13px;padding-right:13px}.lng button{padding-left:9px;padding-right:9px}.dl{padding-left:11px;padding-right:11px}.hm-pill,.dk-pill{padding-left:11px;padding-right:11px}}
+@media (min-width:1201px){.hdr-in{gap:12px}.mast{gap:12px}.navr{gap:10px}.hm-pill,.dk-pill{padding-left:13px;padding-right:13px}.lng button{padding-left:9px;padding-right:9px}.dl{padding-left:11px;padding-right:11px}.hm-pill,.dk-pill{padding-left:11px;padding-right:11px}}
 @media (max-width:370px){.tab{font-size:15px!important}.hm-pill b,.dk-pill b{font-size:13.5px!important}}
-@media (max-width:1080px){
+@media (max-width:1200px){
   .hdr-in{flex-wrap:wrap;row-gap:4px}
   .navr{order:2;margin-left:auto}.navr .div{display:none}
   .tabs{order:3;width:100%;margin-left:0;gap:6px;border-top:1px solid var(--line);padding-top:4px}
@@ -386,7 +387,7 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
   .tabs{overflow-x:auto;scrollbar-width:none;gap:2px}.tabs::-webkit-scrollbar{display:none}.tabs>*{flex:none}
   .tab{font-size:16px;letter-spacing:.07em;padding:7px 2px 5px}
   .hm-pill,.dk-pill{padding:7px 2px 5px;background:none;border:0;border-bottom:2px solid transparent;border-radius:0;box-shadow:none}.hm-pill b,.dk-pill b{font-size:14.5px}
-  .hm-pill.on,.dk-pill.on{background:none;border-bottom-color:currentColor}.hm-pill.on{color:var(--coral-d)}.dk-pill.on{color:#0B5C7A}
+  .hm-pill.on,.dk-pill.on{background:none;border-bottom-color:currentColor}.hm-pill.on{color:var(--coral-d)}.dk-pill.on{color:#0B5C7A}.cc-pill.on{color:#8A5A12}
   .lng{padding:2px}.lng button{padding:5px 9px;font-size:13px}
   .info-in{height:42px}
   .wxb{height:32px;margin-right:10px;padding:0 10px 0 8px;gap:6px}.wxb svg.wi{width:20px;height:20px}.wxb b{font-size:16px}.wxb .wl{display:none}
@@ -793,6 +794,7 @@ body:not(.home) .split{display:block;margin-bottom:0}
       <button class="tab" data-s="cayos" data-t="cayos" aria-pressed="false">LOS CAYOS</button>
       <button class="hm-pill" id="hmPill" aria-pressed="false"><b><span data-t="hamaca">Hamaca</span> <em>M<span class="sol" role="img" aria-label="o"></span>od</em></b></button>
       <button class="dk-pill" id="dkPill" aria-pressed="false"><b id="dkPillW"></b></button>
+      <button class="dk-pill cc-pill" id="ccPill" aria-pressed="false" aria-label="Casa &amp; Coast"><b id="ccPillW"></b></button>
     </nav>
     <div class="navr">
       <span class="div"></span>
@@ -1062,7 +1064,7 @@ function renderCc(){
 }
 document.getElementById('ccSel').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;ST.ccS=b.dataset.cc;ST.ccN=3;renderCc()});
 document.getElementById('ccMb').onclick=function(){ST.ccN=12;renderCc()};
-document.getElementById('ccMore').onclick=function(){ST.casa=true;ST.hamaca=false;ST.muelle=false;render();scrollTo({top:0,behavior:'smooth'})};
+document.getElementById('ccPill').onclick=document.getElementById('ccMore').onclick=function(){ST.casa=true;ST.hamaca=false;ST.muelle=false;render();scrollTo({top:0,behavior:'smooth'})};
 function cardW(n){var f=F(n);return '<article class="card wide"><a href="'+href(n)+'">'+ph(n)+'</a><div><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><p>'+esc(f.bajada||'')+'</p><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}
 function card(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}
 function empty(msg){return '<div class="empty"><b>'+t('vacioT')+'</b>'+(msg||t('vacio'))+'</div>'}
@@ -1075,6 +1077,7 @@ function render(){
   document.querySelectorAll('.lng button').forEach(function(b){b.classList.toggle('on',b.dataset.l===L)});
   document.querySelectorAll('.tab').forEach(function(b){var on=!SEC()&&b.dataset.s===ST.scope;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on?'true':'false')});
   document.getElementById('hmPill').classList.toggle('on',ST.hamaca);document.getElementById('hmPill').setAttribute('aria-pressed',ST.hamaca?'true':'false');
+  var cp=document.getElementById('ccPill');cp.classList.toggle('on',!!ST.casa);cp.setAttribute('aria-pressed',ST.casa?'true':'false');document.getElementById('ccPillW').innerHTML=ccw();
   var dp=document.getElementById('dkPill');dp.classList.toggle('on',ST.muelle);dp.setAttribute('aria-pressed',ST.muelle?'true':'false');document.getElementById('dkPillW').innerHTML=dkw();document.getElementById('dkFoot').innerHTML=dkw().replace('class="dkw"','class="dkw" style="font-weight:700"');document.getElementById('dkVt').innerHTML=dkw();
   var a=list(), lead=a.filter(function(n){return n.destacada})[0]||a[0], rest=a.filter(function(n){return n!==lead});
   var og=(!SEC()&&!HOME()&&lead)?otros()[0]:null, XB=og?og[1][0]:null, xky=og&&og[0]==='cayos';
