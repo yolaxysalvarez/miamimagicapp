@@ -571,23 +571,23 @@ body:not(.home) #pzU,body:not(.home) #pzF,body:not(.home) #duo,body:not(.home) #
  body.home .top .lead>div>p{font-size:17.5px}
 }
 /* que no se te pase */
-.fz{margin:0 0 56px}.fz:empty{display:none}
-.fz-h{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:22px;align-items:end;padding-bottom:12px;border-bottom:4px double var(--ink);margin-bottom:20px}
-.fz-t{font-family:var(--pf);font-weight:900;font-style:italic;font-size:42px;line-height:1;letter-spacing:-.01em}
+.fz{margin:0 0 48px}.fz:empty{display:none}
+.fz-h{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:22px;align-items:end;padding-bottom:10px;border-bottom:4px double var(--ink);margin-bottom:16px}
+.fz-t{font-family:var(--pf);font-weight:900;font-style:italic;font-size:34px;line-height:1;letter-spacing:-.01em}
 .fz-t:after{content:'';display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--gold);margin-left:7px}
 .fz-h p{font-size:16px;color:var(--mut);padding-bottom:3px}
-.fz-r{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 66px)/4);gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px 10px}
+.fz-r{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 72px)/5);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px 10px}
 .fz-r::-webkit-scrollbar{display:none}
 .fz-c{scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;border:1px solid rgba(14,27,48,.12);border-radius:10px;overflow:hidden;color:var(--ink);box-shadow:0 10px 18px -16px rgba(14,27,48,.6);transition:transform .18s}
 .fz-c:hover{text-decoration:none;transform:translateY(-3px)}
-.fz-c .d{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 14px 6px;background:#0E1B30;color:#fff;font-family:var(--bb);font-size:17px;letter-spacing:.16em}
+.fz-c .d{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 12px 4px;background:#0E1B30;color:#fff;font-family:var(--bb);font-size:16px;letter-spacing:.14em}
 .fz-c .d em{font-style:normal;color:#FFD9A0;font-size:14.5px}
-.fz-c .n{display:flex;align-items:baseline;gap:8px;padding:14px 14px 0}
-.fz-c .n u{text-decoration:none;font-family:var(--pf);font-weight:900;font-size:54px;line-height:.9;color:var(--gold)}
-.fz-c .n u.w{font-family:var(--bb);font-weight:400;font-size:34px;letter-spacing:.08em;color:var(--coral-d);line-height:1.2}
+.fz-c .n{display:flex;align-items:baseline;gap:7px;padding:10px 12px 0}
+.fz-c .n u{text-decoration:none;font-family:var(--pf);font-weight:900;font-size:36px;line-height:.95;color:var(--gold)}
+.fz-c .n u.w{font-family:var(--bb);font-weight:400;font-size:26px;letter-spacing:.08em;color:var(--coral-d);line-height:1.2}
 .fz-c .n i{font-style:normal;font-family:var(--bb);font-size:16px;letter-spacing:.18em;color:var(--mut)}
-.fz-c b{display:block;font-family:var(--pf);font-weight:700;font-size:19px;line-height:1.22;padding:10px 14px 0}
-.fz-c .go{margin-top:auto;padding:12px 14px 12px;font-family:var(--bb);font-size:15.5px;letter-spacing:.16em;color:var(--coral-d)}
+.fz-c b{display:block;font-family:var(--pf);font-weight:700;font-size:16.5px;line-height:1.25;padding:6px 12px 0}
+.fz-c .go{margin-top:auto;padding:9px 12px 9px;font-family:var(--bb);font-size:14.5px;letter-spacing:.16em;color:var(--coral-d)}
 /* miami | cayos */
 .duo{display:grid;grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);gap:48px;margin-bottom:56px;align-items:start}
 .duo.one{grid-template-columns:1fr}
@@ -753,15 +753,15 @@ body:not(.home) .split{display:block;margin-bottom:0}
 @media(max-width:760px){.cc-hd{grid-template-columns:minmax(0,1fr)!important}.cc-r{flex-wrap:wrap;row-gap:6px}}
 @media(max-width:1020px){
  .top{display:block}.ul{margin-bottom:44px}
- .fz-r{grid-auto-columns:calc((100% - 44px)/3)}
+ .fz-r{grid-auto-columns:calc((100% - 36px)/3)}
  .duo{grid-template-columns:minmax(0,1fr);gap:40px}.split{grid-template-columns:minmax(0,1fr);gap:36px}
  .tv-g{grid-template-columns:1fr}.tv-l{border-left:0;border-top:1px solid rgba(255,255,255,.12)}
  .ms-r{grid-auto-columns:calc((100% - 44px)/3)}.ht-g{grid-template-columns:1fr;gap:0}
  .apps{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:760px){
- .fz{margin-bottom:44px}.fz-h{grid-template-columns:1fr;gap:6px}.fz-h .rail-nav{display:none}.fz-t{font-size:34px}
- .fz-r{grid-auto-columns:74%;gap:14px;margin-right:-16px;padding-right:16px}
+ .fz{margin-bottom:44px}.fz-h{grid-template-columns:1fr;gap:6px}.fz-h .rail-nav{display:none}.fz-t{font-size:29px}
+ .fz-r{grid-auto-columns:62%;gap:12px;margin-right:-16px;padding-right:16px}
  .ul b{font-size:18px}.duo{margin-bottom:44px}.db h4,.dc.ky .db h4{font-size:24px}.db p{font-size:16.5px}.rw{grid-template-columns:104px minmax(0,1fr);gap:12px}.rw b{font-size:18px}
  .tv{margin:0 -16px 44px;border-radius:0}.tv-h{padding:18px 16px}.tv-h h3{font-size:28px}.tv-sub{font-size:15.5px;padding:8px 14px 5px}.tv-m{padding:16px}
  .tv-p .tx{left:14px;right:14px;bottom:12px}.tv-p .tx b{font-size:21px}.tv-p .tx span{font-size:14.5px}.tv-p .pl svg{width:56px;height:56px}
@@ -1280,7 +1280,7 @@ function renderPt(){
   var t0=nyDay(),pd=function(x){var a=String(x||'').split('-');return new Date(+a[0],+a[1]-1,+a[2])},MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
   var fs=(PT.fechas||[]).filter(function(f){return f&&f.d&&ids[f.id]&&pd(f.d2||f.d)>=t0}).sort(function(a,b){return a.d<b.d?-1:a.d>b.d?1:0});
   fz.innerHTML=fs.length?'<div class="fz-h"><h3 class="fz-t">'+(en?'Before It’s Due':'Que no se te pase')+'</h3><p>'+(en?'Dates that are coming, and the story that explains each one.':'Fechas que vienen, y la nota que explica cada una.')+'</p>'+navB(en)+'</div><div class="fz-r" id="fzR">'
-   +fs.map(function(f){var a=pd(f.d),n=Math.round((a-t0)/864e5),on=n<=0,dt=a.getDate()+' '+MO[a.getMonth()]+(f.d2?'–'+pd(f.d2).getDate()+(pd(f.d2).getMonth()!==a.getMonth()?' '+MO[pd(f.d2).getMonth()]:''):'')+(a.getFullYear()!==t0.getFullYear()?' '+a.getFullYear():'');
+   +fs.map(function(f){var a=pd(f.d),n=Math.round((a-t0)/864e5),on=n<=0,dt=(f.d2&&pd(f.d2).getMonth()===a.getMonth()?a.getDate()+'–'+pd(f.d2).getDate()+' '+MO[a.getMonth()]:a.getDate()+' '+MO[a.getMonth()]+(f.d2?' – '+pd(f.d2).getDate()+' '+MO[pd(f.d2).getMonth()]:''))+(a.getFullYear()!==t0.getFullYear()?' '+a.getFullYear():'');
      return '<a class="fz-c" href="'+href(ids[f.id])+'"><span class="d"><span>'+esc(dt)+'</span><em>'+esc(en?(f.k_en||''):(f.k_es||''))+'</em></span><span class="n">'+(on?'<u class="w">'+(f.d2&&n<0?(en?'UNDER WAY':'YA EMPEZÓ'):(en?'TODAY':'HOY'))+'</u>':n===1?'<u class="w">'+(en?'TOMORROW':'MAÑANA')+'</u>':'<u>'+n+'</u><i>'+(en?'DAYS LEFT':'DÍAS')+'</i>')+'</span><b>'+esc(en?(f.en||f.es):f.es)+'</b><span class="go">'+(en?'READ THE STORY →':'LEER LA NOTA →')+'</span></a>'}).join('')+'</div>':'';
   railNav(fz,'fzR');
   /* miami de antes */
