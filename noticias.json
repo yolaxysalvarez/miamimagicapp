@@ -69,44 +69,78 @@
       "foto_pie_en": "Downtown Miami, with the Kaseya Center and the Freedom Tower.",
       "es": {
         "etiqueta": "IMPUESTOS",
-        "titulo": "La otra cara de la Enmienda 3: Miami-Dade calcula que dejará de recibir $386 millones en el primer año",
-        "bajada": "La cifra sube a casi $697 millones al año desde octubre de 2028, según el condado. Con esos impuestos se pagan hoy bomberos, transporte, parques y bibliotecas.",
+        "titulo": "Enmienda 3: el dueño de casa celebra, el condado calcula $386 millones menos y las dos cuentas se discuten",
+        "bajada": "El dueño de casa pagará menos. El condado dice cuánto dejará de recibir, el gobernador sostiene que hay de dónde recortar y los analistas avisan que la cuenta puede pasar a inquilinos y negocios.",
         "toca": [
-          "La factura de impuestos de este año no cambia. El condado sitúa la primera caída de ingresos en octubre de 2027.",
-          "El propio condado advierte que sus cifras son estimados, calculados con las tasas de impuestos actuales.",
-          "¿Alquilas? La enmienda no trae una rebaja directa para los inquilinos, explica la página del condado."
+          "La factura de este año no cambia. El condado sitúa la primera caída de ingresos en octubre de 2027.",
+          "El ahorro medio de una vivienda principal en Florida: unos $1,035 en 2027 y $2,085 en 2028, calcula Florida TaxWatch con la tasa promedio del estado.",
+          "Todas las cifras suponen que las tasas no cambian. Si el condado o tu ciudad suben la tasa, el ahorro se reduce."
         ],
         "cuerpo": [
-          "Miami-Dade dejará de recibir unos $385.8 millones en impuestos a la propiedad a partir de octubre de 2027, y cerca de $696.7 millones al año desde octubre de 2028, cuando la exención de la vivienda principal llegue a $250,000. Son los [cálculos que el propio condado publicó](https://www.miamidade.gov/global/government/mayor/amendment-three/home.page) sobre la Enmienda 3, aprobada en Florida el 3 de noviembre y en vigor desde el 1 de enero de 2027.",
-          "## Qué se paga hoy con ese dinero",
-          "La página del condado desglosa cuánto aportan los impuestos a la propiedad a cada servicio. A Bomberos, $743.7 millones, que sostienen 73 estaciones y 2,533 bomberos. A transporte y obras públicas, $407.1 millones, con los que funcionan el Metrorail, el Metromover y parte de 74 rutas de autobús. Los 308 parques reciben $130.8 millones y las 50 bibliotecas, $128.5 millones.",
-          "La lista sigue con $66.4 millones para servicios comunitarios, entre ellos 700,000 comidas para personas mayores que no pueden salir de casa, y $31 millones para Servicios para Animales, con sus dos refugios.",
-          "## Lo que falta por saber",
-          "En esa página el condado no detalla qué servicios ajustaría ni en cuánto. Sí aclara que la pérdida está calculada con las tasas de hoy y que podría crecer en los años siguientes si la exención vuelve a subir."
+          "Para quien es dueño de su casa, la Enmienda 3 es una rebaja. Para el condado, un hueco de $385.8 millones. Las dos cosas se dicen de la misma medida, que el 3 de noviembre pasó con el 62% de los votos, dos puntos por encima del mínimo, [según CBS Miami](https://www.cbsnews.com/miami/news/desantis-special-session-amendment-3-property-tax-implement-before-january/). Y las dos cuentas son estimados que todavía se discuten.",
+          "## Lo que gana el dueño de casa",
+          "La exención de la vivienda principal sube a $150,000 en 2027 y a $250,000 en 2028 para los impuestos que no son escolares. La oficina del gobernador [estima](https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-hosts-miami-roundtable-support-amendment-3-property-tax) que un propietario promedio de Miami-Dade, con una casa valorada en $250,000 o más, ahorraría unos $2,500 al año cuando la medida esté completa.",
+          "## Los mayores, en el centro del argumento",
+          "Quienes la impulsaron hablan sobre todo de los dueños con ingreso fijo. Casi el 30% de los propietarios de 65 años o más en Florida gasta al menos el 30% de lo que gana en vivienda, de acuerdo con datos estatales [citados por CBS12](https://cbs12.com/news/florida/amendment-3-backers-say-tax-relief-could-help-florida-homeowners-stay-put-florida-news-amendment-3-news-local-news-homeowners). Ese canal recogió en septiembre el caso de Michele Krchov, viuda de un veterano en Palm Beach Gardens, que contó que con una factura de más de $4,000 al año no podía quedarse en la casa donde vive desde 1994.",
+          "## Lo que dice el condado",
+          "Miami-Dade [publicó su cálculo](https://www.miamidade.gov/global/government/mayor/amendment-three/home.page) antes de la votación: unos $385.8 millones menos desde octubre de 2027 y cerca de $696.7 millones al año desde octubre de 2028. En la misma página desglosa lo que hoy pagan esos impuestos: $743.7 millones para Bomberos, $407.1 millones para transporte y obras públicas, $130.8 millones para los parques y $128.5 millones para las bibliotecas. No detalla qué ajustaría ni en cuánto, y aclara que son estimados hechos con las tasas actuales.",
+          "## Lo que se le cuestiona a esa cuenta",
+          "El gobernador Ron DeSantis defendió la enmienda en Miami el 21 de octubre con otro cálculo: los gobiernos locales, dijo, recaudan casi el doble que hace siete años, de unos $32,000 millones en 2019 a más de $60,000 millones, muy por encima de la inflación y del aumento de población. Su oficina cita una revisión estatal según la cual el fondo general de Miami-Dade creció cerca de un 67% desde el año fiscal 2021, y que identifica casi $140 millones en posibles recortes. En el mismo acto, la sheriff del condado, Rosie Cordero-Stutz, sostuvo que bajar impuestos y cuidar la seguridad pública no compiten, y contó que su oficina redujo $12 millones al año en tecnología sin tocar servicios.",
+          "## Lo que advierten los críticos",
+          "Florida TaxWatch, que recomendó votar no, [señala](https://floridataxwatch.org/the-florida-taxpayers-guide-for-the-2026-constitutional-amendments/) que la enmienda no trae ayuda para los gobiernos locales y que la carga puede desplazarse hacia las propiedades sin exención, es decir, inquilinos y pequeños negocios, o reaparecer como tasas más altas, cargos y nuevas contribuciones. Entre quienes expresaron reparos, el análisis menciona a las asociaciones estatales de sheriffs, bomberos, condados y ciudades. Los defensores responden que la medida también baja del 10% al 5% el tope anual de aumento del valor tasado de alquileres y comercios.",
+          "## Lo que viene",
+          "DeSantis quiere una sesión especial antes de dejar el cargo para fijar cómo se aplica y limitar que los gobiernos locales compensen con otros impuestos y cargos. Los próximos líderes de la Legislatura no tienen prisa: el senador Jim Boyd, que presidirá el Senado, dijo que el asunto puede esperar a enero y que el gobernador electo, Byron Donalds, debe opinar, [reportó el Tallahassee Democrat](https://www.tallahassee.com/story/news/state/2026/11/12/desantis-pushes-florida-property-tax-session-before-exit/92711190007/) este jueves. Donalds asume el 5 de enero, cuatro días después de que la enmienda entre en vigor."
         ]
       },
       "en": {
         "etiqueta": "TAXES",
-        "titulo": "The other side of Amendment 3: Miami-Dade estimates it will take in $386 million less in the first year",
-        "bajada": "The figure climbs to nearly $697 million a year starting in October 2028, the county says. Those taxes now pay for fire rescue, transit, parks and libraries.",
+        "titulo": "Amendment 3: homeowners celebrate, the county counts $386 million less and both sets of numbers are in dispute",
+        "bajada": "Homeowners will pay less. The county says how much it will stop taking in, the governor argues there is room to cut, and analysts warn the bill could shift to renters and businesses.",
         "toca": [
-          "This year's tax bill doesn't change. The county places the first drop in revenue in October 2027.",
-          "The county itself notes that its figures are estimates, calculated at current tax rates.",
-          "Renting? The amendment brings no direct tax cut for renters, the county's page explains."
+          "This year's bill doesn't change. The county places the first drop in revenue in October 2027.",
+          "Average savings for a primary residence in Florida: about $1,035 in 2027 and $2,085 in 2028, Florida TaxWatch calculates at the statewide average rate.",
+          "Every figure assumes tax rates stay the same. If the county or your city raises its rate, the savings shrink."
         ],
         "cuerpo": [
-          "Miami-Dade will take in about $385.8 million less in property taxes starting in October 2027, and close to $696.7 million less each year from October 2028, when the exemption on a primary residence reaches $250,000. Those are the [estimates the county itself published](https://www.miamidade.gov/global/government/mayor/amendment-three/home.page) on Amendment 3, approved in Florida on Nov. 3 and in effect from Jan. 1, 2027.",
-          "## What that money pays for today",
-          "The county's page breaks down how much property taxes contribute to each service. Fire Rescue gets $743.7 million, which supports 73 stations and 2,533 firefighters. Transportation and public works gets $407.1 million, which keeps Metrorail, Metromover and part of 74 bus routes running. The 308 parks receive $130.8 million and the 50 libraries, $128.5 million.",
-          "The list continues with $66.4 million for community services, including 700,000 meals for homebound seniors, and $31 million for Animal Services and its two shelters.",
-          "## What isn't known yet",
-          "On that page the county doesn't spell out which services it would adjust or by how much. It does note that the loss is calculated at today's rates and could grow in later years if the exemption rises again."
+          "For anyone who owns their home, Amendment 3 is a tax cut. For the county, it is a $385.8 million gap. Both are said of the same measure, which passed on Nov. 3 with 62% of the vote, two points above the minimum, [according to CBS Miami](https://www.cbsnews.com/miami/news/desantis-special-session-amendment-3-property-tax-implement-before-january/). And both calculations are estimates still in dispute.",
+          "## What homeowners gain",
+          "The exemption on a primary residence rises to $150,000 in 2027 and $250,000 in 2028 for non-school taxes. The governor's office [estimates](https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-hosts-miami-roundtable-support-amendment-3-property-tax) that an average Miami-Dade homeowner, with a home assessed at $250,000 or more, would save about $2,500 a year once the measure is fully in place.",
+          "## Older owners, at the center of the argument",
+          "Its backers talk mostly about owners on fixed incomes. Nearly 30% of Florida homeowners 65 and older spend at least 30% of their income on housing, according to state data [cited by CBS12](https://cbs12.com/news/florida/amendment-3-backers-say-tax-relief-could-help-florida-homeowners-stay-put-florida-news-amendment-3-news-local-news-homeowners). In September the station told the story of Michele Krchov, a veteran's widow in Palm Beach Gardens, who said that with a bill of more than $4,000 a year she could not stay in the house where she has lived since 1994.",
+          "## What the county says",
+          "Miami-Dade [published its math](https://www.miamidade.gov/global/government/mayor/amendment-three/home.page) before the vote: about $385.8 million less starting in October 2027 and close to $696.7 million a year from October 2028. The same page breaks down what those taxes pay for today: $743.7 million for Fire Rescue, $407.1 million for transportation and public works, $130.8 million for parks and $128.5 million for libraries. It doesn't spell out what it would adjust or by how much, and it notes that these are estimates made at current rates.",
+          "## What is questioned about that math",
+          "Gov. Ron DeSantis made the case for the amendment in Miami on Oct. 21 with a different calculation: local governments, he said, take in almost twice what they did seven years ago, from about $32 billion in 2019 to more than $60 billion, far above inflation and population growth. His office cites a state review that found Miami-Dade's general fund grew nearly 67% since fiscal year 2021 and identified almost $140 million in potential reductions. At the same event, county Sheriff Rosie Cordero-Stutz said tax relief and public safety are not competing priorities, and that her office cut $12 million a year in technology costs without reducing services.",
+          "## What critics warn",
+          "Florida TaxWatch, which recommended a no vote, [notes](https://floridataxwatch.org/the-florida-taxpayers-guide-for-the-2026-constitutional-amendments/) that the amendment includes no help for local governments and that the burden can shift to property without the exemption, meaning renters and small businesses, or return as higher rates, fees and new assessments. Among those raising concerns, the analysis names the state associations of sheriffs, firefighters, counties and cities. Supporters answer that the measure also lowers the annual cap on assessed-value increases for rentals and commercial property from 10% to 5%.",
+          "## What comes next",
+          "DeSantis wants a special session before he leaves office to set how it is applied and to limit local governments from making up the money with other taxes and fees. The Legislature's incoming leaders are in no hurry: Sen. Jim Boyd, who will preside over the Senate, said the matter can wait until January and that Gov.-elect Byron Donalds should have a say, [the Tallahassee Democrat reported](https://www.tallahassee.com/story/news/state/2026/11/12/desantis-pushes-florida-property-tax-session-before-exit/92711190007/) Thursday. Donalds takes office Jan. 5, four days after the amendment takes effect."
         ]
       },
       "fuentes": [
         {
           "n": "Condado de Miami-Dade · La Enmienda 3 y los servicios del condado",
           "u": "https://www.miamidade.gov/global/government/mayor/amendment-three/home.page"
+        },
+        {
+          "n": "Oficina del Gobernador · mesa redonda en Miami, 21 de octubre de 2026",
+          "u": "https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-hosts-miami-roundtable-support-amendment-3-property-tax"
+        },
+        {
+          "n": "Florida TaxWatch · guía de las enmiendas de 2026",
+          "u": "https://floridataxwatch.org/the-florida-taxpayers-guide-for-the-2026-constitutional-amendments/"
+        },
+        {
+          "n": "CBS12 · propietarios mayores y la Enmienda 3, septiembre de 2026",
+          "u": "https://cbs12.com/news/florida/amendment-3-backers-say-tax-relief-could-help-florida-homeowners-stay-put-florida-news-amendment-3-news-local-news-homeowners"
+        },
+        {
+          "n": "CBS Miami · resultado y sesión especial",
+          "u": "https://www.cbsnews.com/miami/news/desantis-special-session-amendment-3-property-tax-implement-before-january/"
+        },
+        {
+          "n": "Tallahassee Democrat · la sesión especial, 12 de noviembre de 2026",
+          "u": "https://www.tallahassee.com/story/news/state/2026/11/12/desantis-pushes-florida-property-tax-session-before-exit/92711190007/"
         }
       ]
     },
@@ -204,40 +238,50 @@
       "foto_pie_en": "Miami at sunset, from the MacArthur Causeway.",
       "es": {
         "etiqueta": "IMPUESTOS",
-        "titulo": "Miami-Dade ya acepta Bitcoin para los impuestos de la casa, pero el condado dice que solo recibe dólares",
-        "bajada": "Desde el 9 de noviembre se puede pagar con criptomonedas, en línea o en persona, según anunció el recaudador. Su oficina asegura que el pago se convierte a dólares antes de llegarle.",
+        "titulo": "Pagar los impuestos de la casa con Bitcoin en Miami-Dade: el condado no se queda con tu cripto y el IRS lo trata como una venta",
+        "bajada": "La opción funciona desde el 9 de noviembre, en línea o en persona. Lo que confunde: no es guardar valor en el condado, es vender Bitcoin al precio del momento para cubrir la factura.",
         "toca": [
-          "Antes de pagar con cripto, pregunta por las comisiones y por el tipo de cambio que te aplican. El anuncio no los detalla.",
-          "Usar Bitcoin para pagar puede tener efecto en tu declaración de impuestos federales. Consúltalo con tu contador.",
-          "Las facturas de este año ya salieron. La ley de Florida da un 4% de descuento a quien paga en noviembre, sea cual sea el método."
+          "Pregunta por la comisión y por el tipo de cambio antes de autorizar el pago. La oficina no los ha detallado.",
+          "Guarda el comprobante con la fecha y el precio de conversión. Tu contador lo va a necesitar.",
+          "El 4% de descuento por pagar en noviembre aplica con cualquier método, de acuerdo con la ley de Florida."
         ],
         "cuerpo": [
-          "Los dueños de propiedades de Miami-Dade pueden pagar sus impuestos con Bitcoin desde el 9 de noviembre, tanto en línea como en persona, [anunció el recaudador de impuestos del condado](https://www.mdctaxcollector.gov/blog/a-new-way-to-pay-miami-dade-tax-collector-dariel-fernandez-now-accepting-bitcoin-payments-for-online-property-taxes), Dariel Fernandez.",
+          "Pagar con Bitcoin los impuestos de la casa no significa que Miami-Dade reciba Bitcoin. El pago se convierte a dólares en el momento, y a la oficina le llega el monto completo de la factura, [explicó el recaudador del condado](https://www.mdctaxcollector.gov/blog/a-new-way-to-pay-miami-dade-tax-collector-dariel-fernandez-now-accepting-bitcoin-payments-for-online-property-taxes), Dariel Fernandez, al anunciar la opción el 9 de noviembre. Para el dueño, eso equivale a vender una parte de su cripto al precio de ese instante.",
+          "## Cuánto Bitcoin hace falta",
+          "::btc",
           "## Cómo funciona",
-          "Según la oficina del recaudador, en línea la opción aparece al momento de pagar y en persona hay que pedirla en la ventanilla. El sistema, explica el anuncio, permite conectar una cuenta de una casa de cambio de criptomonedas o una billetera digital compatible y autorizar el pago, que se convierte a dólares antes de llegar a la oficina.",
-          "## Lo que dice el condado",
-          "La oficina asegura que no guarda, invierte ni administra criptomonedas, y que recibe en dólares el monto completo del impuesto, sin importar cómo se mueva el precio del Bitcoin. De acuerdo con el comunicado, es opcional y las formas de pago de siempre siguen disponibles.",
-          "«El gobierno debe ir al ritmo de los tiempos y de las necesidades de la gente», dijo Fernandez al anunciarlo.",
-          "El comunicado no precisa si el servicio cobra comisión ni qué empresa procesa la conversión."
+          "En línea, la opción aparece al momento de pagar; en persona hay que pedirla en la ventanilla. El sistema, indica el anuncio, conecta una cuenta de una casa de cambio o una billetera digital compatible y un tercero hace la conversión. La oficina asegura que no guarda, invierte ni administra criptomonedas, y que las formas de pago de siempre siguen disponibles.",
+          "«El gobierno debe ir al ritmo de los tiempos y de las necesidades de la gente», dijo Fernandez.",
+          "## Lo que queda sin responder",
+          "La oficina no ha dicho qué empresa procesa la conversión ni si el pago con Bitcoin lleva comisión, [apuntó Bitcoin Magazine](https://bitcoinmagazine.com/news/miami-dade-takes-bitcoin-property-taxes). Como referencia, la misma publicación recuerda que pagar en línea con tarjeta tiene un cargo no reembolsable del 2.50% y que el cheque electrónico es gratis.",
+          "## Lo que dice el IRS",
+          "Para el Servicio de Impuestos Internos, los activos digitales son propiedad, no moneda. Quien paga algo con ellos tiene que calcular si ganó o perdió frente a lo que le costaron y reportarlo en su declaración federal, [indica la agencia](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions). En la práctica, un Bitcoin comprado más barato que el precio del día del pago puede generar un impuesto aparte.",
+          "## No es el único lugar",
+          "Colorado acepta criptomonedas para impuestos estatales desde 2022 y Detroit anunció una opción parecida, en ambos casos con conversión a dólares, según el recuento de Bitcoin Magazine. Fernandez, elegido en 2024, formó parte antes del grupo de trabajo sobre criptomonedas del condado."
         ]
       },
       "en": {
         "etiqueta": "TAXES",
-        "titulo": "Miami-Dade now takes Bitcoin for property taxes, but the county says it only receives dollars",
-        "bajada": "Since Nov. 9, owners can pay with cryptocurrency online or in person, the Tax Collector announced. His office says the payment is converted into dollars before it arrives.",
+        "titulo": "Paying property taxes with Bitcoin in Miami-Dade: the county doesn't keep your crypto and the IRS treats it as a sale",
+        "bajada": "The option has worked since Nov. 9, online or in person. The confusing part: it isn't storing value with the county, it's selling Bitcoin at that moment's price to cover the bill.",
         "toca": [
-          "Before paying with crypto, ask about fees and the exchange rate you'll get. The announcement doesn't spell them out.",
-          "Using Bitcoin to pay can affect your federal tax return. Check with your accountant.",
-          "This year's bills are already out. Florida law gives a 4% discount to anyone who pays in November, whatever the method."
+          "Ask about the fee and the exchange rate before you authorize the payment. The office hasn't spelled them out.",
+          "Keep the receipt with the date and the conversion price. Your accountant will need it.",
+          "The 4% discount for paying in November applies with any method, under Florida law."
         ],
         "cuerpo": [
-          "Miami-Dade property owners have been able to pay their taxes with Bitcoin since Nov. 9, both online and in person, [county Tax Collector Dariel Fernandez announced](https://www.mdctaxcollector.gov/blog/a-new-way-to-pay-miami-dade-tax-collector-dariel-fernandez-now-accepting-bitcoin-payments-for-online-property-taxes).",
+          "Paying property taxes with Bitcoin doesn't mean Miami-Dade receives Bitcoin. The payment is converted into dollars on the spot, and the office gets the full amount of the bill, [county Tax Collector Dariel Fernandez explained](https://www.mdctaxcollector.gov/blog/a-new-way-to-pay-miami-dade-tax-collector-dariel-fernandez-now-accepting-bitcoin-payments-for-online-property-taxes) when he announced the option on Nov. 9. For the owner, that amounts to selling part of their crypto at that instant's price.",
+          "## How much Bitcoin it takes",
+          "::btc",
           "## How it works",
-          "According to the Tax Collector's Office, the option appears at checkout online and has to be requested at the counter in person. The system, the announcement says, lets users connect a supported cryptocurrency exchange account or digital wallet and authorize the payment, which is converted into U.S. dollars before it reaches the office.",
-          "## What the county says",
-          "The office says it does not hold, invest in or manage cryptocurrency, and that it receives the full amount of tax owed in dollars, however Bitcoin's price moves. According to the release, it is optional, and the usual payment methods remain available.",
-          "\"Government must keep up with the times and the needs of the people we serve,\" Fernandez said in announcing it.",
-          "The release doesn't say whether the service charges a fee or which company handles the conversion."
+          "Online, the option appears at checkout; in person, it has to be requested at the counter. The system, the announcement says, connects a supported exchange account or digital wallet, and a third party handles the conversion. The office says it does not hold, invest in or manage cryptocurrency, and that the usual payment methods remain available.",
+          "\"Government must keep up with the times and the needs of the people we serve,\" Fernandez said.",
+          "## What remains unanswered",
+          "The office hasn't said which company processes the conversion or whether paying with Bitcoin carries a fee, [Bitcoin Magazine noted](https://bitcoinmagazine.com/news/miami-dade-takes-bitcoin-property-taxes). For reference, the same publication points out that paying online by card carries a nonrefundable 2.50% charge and that eChecks are free.",
+          "## What the IRS says",
+          "To the Internal Revenue Service, digital assets are property, not currency. Anyone who pays for something with them has to work out whether they gained or lost against what the assets cost and report it on their federal return, [the agency states](https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions). In practice, Bitcoin bought for less than its price on the day of payment can trigger a separate tax.",
+          "## Not the only place",
+          "Colorado has accepted cryptocurrency for state taxes since 2022 and Detroit announced a similar option, both with conversion into dollars, according to Bitcoin Magazine's rundown. Fernandez, elected in 2024, previously served on the county's cryptocurrency task force."
         ]
       },
       "fuentes": [
@@ -248,8 +292,25 @@
         {
           "n": "Estatutos de Florida · Sección 197.162, descuentos por pago anticipado",
           "u": "https://www.flsenate.gov/Laws/Statutes/2026/0197.162"
+        },
+        {
+          "n": "IRS · preguntas frecuentes sobre transacciones con activos digitales",
+          "u": "https://www.irs.gov/individuals/international-taxpayers/frequently-asked-questions-on-digital-asset-transactions"
+        },
+        {
+          "n": "Bitcoin Magazine · detalles del anuncio y otros gobiernos",
+          "u": "https://bitcoinmagazine.com/news/miami-dade-takes-bitcoin-property-taxes"
+        },
+        {
+          "n": "CoinDesk · precio del Bitcoin",
+          "u": "https://www.coindesk.com/price/bitcoin"
         }
-      ]
+      ],
+      "btc": {
+        "p": 73500,
+        "es": "referencia de CoinDesk, 12 de noviembre, 7:15 a.m.",
+        "en": "CoinDesk reference, Nov. 12, 7:15 a.m."
+      }
     },
     {
       "id": "frente-frio-miami-noviembre",
@@ -1224,7 +1285,7 @@
       "tema": "ciudad",
       "es": {
         "etiqueta": "KEY WEST",
-        "titulo": "Key West no tiene adónde mandar sus gallinas: se acabó el programa que reubicó a 25,000 en 17 años",
+        "titulo": "Key West no sabe qué hacer con sus gallos icónicos: se acabó el programa que reubicó a 25,000 en 17 años",
         "bajada": "El Key West Wildlife Center dejó de recibirlas por la gripe aviar, según The Key West Citizen. La ciudad espera recomendaciones en diciembre o enero.",
         "toca": [
           "Darles de comer a las gallinas es ilegal en Key West por ordenanza de la ciudad.",
@@ -1235,13 +1296,18 @@
           "Las gallinas que andan sueltas por Key West ya no tienen destino fuera de la isla. El Key West Wildlife Center cerró el programa con el que, durante 17 años, recibió aves atrapadas o heridas y las envió a tierra firme: unas 25,000 en total, [según reportó The Key West Citizen](https://www.keysnews.com/news/local/walking-on-eggshells-city-of-key-west-looks-for-solution-for-chickens-that-have-grown/article_d52cd9f8-6904-4684-81b0-8eb2c904d1b4.html).",
           "## Por qué se acabó",
           "El director del centro, citado por el diario, sostiene que la decisión no fue suya, sino una indicación de la FWC y del Departamento de Agricultura de Estados Unidos, que inspeccionan la instalación, ante el avance de la gripe aviar. La Comisión de la ciudad votó 7-0 el 1 de octubre para sacar a las gallinas del contrato con el centro, que es de $7,500 al mes. El mismo director señaló que Key West no ha registrado ningún caso de gripe aviar.",
+          "## Por qué son un símbolo",
+          "En Key West están en todas partes, como le dijo a CBS News un comisionado de la ciudad, y hay tiendas enteras dedicadas a ellos. Miami tiene su propia versión: gallos sueltos en La Pequeña Habana, Little Haiti, Wynwood y hasta el downtown, y decenas de esculturas de seis pies en la Calle Ocho, diseñadas por el artista Pedro Damián y colocadas a partir de 2002, [según contó la agencia AP](https://www.wlrn.org/arts-culture/2025-06-03/miami-roosters-cultural-symbol-chickens). Muchos vecinos los adoptaron como mascota del barrio.",
+          "## Cómo llegaron y se quedaron",
+          "Corey Malcolm, historiador principal del Florida Keys History Center, [lo resumió para CBS News](https://www.cbsnews.com/news/feral-chickens-rule-the-roost-key-west-florida) en 2024: los primeros colonos trajeron gallinas en la década de 1820, la migración cubana de la década de 1860 sumó la tradición de las peleas de gallos, y después de la Segunda Guerra Mundial, con el supermercado a mano, muchas familias soltaron las suyas en una isla sin depredadores. Florida prohibió las peleas en 1986 y más gallos quedaron libres; el huracán Georges, en 1998, terminó de repartirlos por la isla.",
+          "No todos dan esa historia por cerrada. Mark Hedden, director de Florida Keys Audubon, [escribió en Keys Weekly](https://keysweekly.com/?p=79232) que hay poca documentación de un origen único y que lo más probable es que vinieran de varias partes.",
           "## Lo que viene",
           "El administrador de la ciudad, Brian L. Barroso, dijo a los comisionados el 5 de noviembre que las recomendaciones llegarán en diciembre o enero y que cualquier plan estará fuera del presupuesto, recoge el Citizen. Entre las ideas que se oyeron: un terreno municipal con agua y corriente para alojarlas y un programa piloto para controlar su reproducción."
         ]
       },
       "en": {
         "etiqueta": "KEY WEST",
-        "titulo": "Key West has nowhere to send its chickens: the program that relocated 25,000 in 17 years is over",
+        "titulo": "Key West doesn't know what to do with its iconic roosters: the program that relocated 25,000 in 17 years is over",
         "bajada": "The Key West Wildlife Center stopped taking them because of avian flu, The Key West Citizen reports. The city expects recommendations in December or January.",
         "toca": [
           "Feeding the chickens is illegal in Key West under a city ordinance.",
@@ -1252,6 +1318,11 @@
           "The chickens that roam Key West no longer have a destination off the island. The Key West Wildlife Center has ended the program through which, for 17 years, it took in trapped or injured birds and sent them to the mainland: about 25,000 in all, [The Key West Citizen reported](https://www.keysnews.com/news/local/walking-on-eggshells-city-of-key-west-looks-for-solution-for-chickens-that-have-grown/article_d52cd9f8-6904-4684-81b0-8eb2c904d1b4.html).",
           "## Why it ended",
           "The center's director, quoted by the newspaper, says the decision wasn't his but guidance from FWC and the U.S. Department of Agriculture, which inspect the facility, as avian flu spreads. The City Commission voted 7-0 on Oct. 1 to remove chickens from its contract with the center, which is $7,500 a month. The same director noted that Key West has not recorded a case of avian flu.",
+          "## Why they are a symbol",
+          "In Key West they are everywhere, as a city commissioner told CBS News, and whole shops are devoted to them. Miami has its own version: roosters loose in Little Havana, Little Haiti, Wynwood and even downtown, and dozens of 6-foot sculptures along Calle Ocho, designed by artist Pedro Damián and installed starting in 2002, [The Associated Press reported](https://www.wlrn.org/arts-culture/2025-06-03/miami-roosters-cultural-symbol-chickens). Many residents adopted them as the neighborhood mascot.",
+          "## How they came and stayed",
+          "Corey Malcolm, lead historian at the Florida Keys History Center, [summed it up for CBS News](https://www.cbsnews.com/news/feral-chickens-rule-the-roost-key-west-florida) in 2024: the first settlers brought chickens in the 1820s, the Cuban migration of the 1860s added the cockfighting tradition, and after World War II, with supermarkets at hand, many families let theirs loose on an island with no predators. Florida banned cockfighting in 1986 and more roosters went free; Hurricane Georges, in 1998, finished spreading them across the island.",
+          "Not everyone considers that history settled. Mark Hedden, director of Florida Keys Audubon, [wrote in Keys Weekly](https://keysweekly.com/?p=79232) that there is little documentation of a single origin and that they most likely came from several places.",
           "## What comes next",
           "City Manager Brian L. Barroso told commissioners on Nov. 5 that recommendations will come in December or January and that any plan will be unbudgeted, the Citizen reports. Among the ideas raised: a city-owned site with water and power to hold the birds, and a pilot program to control their reproduction."
         ]
@@ -1260,6 +1331,18 @@
         {
           "n": "The Key West Citizen · reunión de la Comisión del 5 de noviembre de 2026",
           "u": "https://www.keysnews.com/news/local/walking-on-eggshells-city-of-key-west-looks-for-solution-for-chickens-that-have-grown/article_d52cd9f8-6904-4684-81b0-8eb2c904d1b4.html"
+        },
+        {
+          "n": "CBS News · historia de las gallinas de Key West, 2024",
+          "u": "https://www.cbsnews.com/news/feral-chickens-rule-the-roost-key-west-florida"
+        },
+        {
+          "n": "AP vía WLRN · los gallos de Miami, 2025",
+          "u": "https://www.wlrn.org/arts-culture/2025-06-03/miami-roosters-cultural-symbol-chickens"
+        },
+        {
+          "n": "Keys Weekly · Mark Hedden, 2024",
+          "u": "https://keysweekly.com/?p=79232"
         }
       ],
       "foto": "mm-kw-gallo-casa-archivo.jpg",

@@ -772,6 +772,9 @@ body:not(.home) .split{display:block;margin-bottom:0}
  .apps{grid-template-columns:1fr;gap:26px}.af.big{grid-column:auto;min-height:320px;padding:20px}.af.big b{font-size:25px}.apps-m{margin-bottom:44px}
 }
 .split.solo{display:block}
+.ul a>i,.fz-c .n u,.hist .yr,.hist-l b,.tv-l .no,.sp-sun b,.dk-cond b,.ag-d b,.ag-days button b{font-family:var(--dm);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.hist .yr{letter-spacing:-.04em}
+.fz-t .q0{font-style:normal;display:inline-block;transform:skewX(-11deg);margin-right:.02em}
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
@@ -1292,7 +1295,7 @@ function renderPt(){
   /* que no se te pase */
   var t0=nyDay(),pd=function(x){var a=String(x||'').split('-');return new Date(+a[0],+a[1]-1,+a[2])},MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
   var fs=(PT.fechas||[]).filter(function(f){return f&&f.d&&ids[f.id]&&pd(f.d2||f.d)>=t0}).sort(function(a,b){return a.d<b.d?-1:a.d>b.d?1:0});
-  fz.innerHTML=fs.length?'<div class="fz-h"><h3 class="fz-t">'+(en?'Before It’s Due':'Que no se te pase')+'</h3><p>'+(en?'Dates that are coming, and the story that explains each one.':'Fechas que vienen, y la nota que explica cada una.')+'</p>'+navB(en)+'</div><div class="fz-r" id="fzR">'
+  fz.innerHTML=fs.length?'<div class="fz-h"><h3 class="fz-t">'+(en?'Before It’s Due':'<span class="q0">Q</span>ue no se te pase')+'</h3><p>'+(en?'Dates that are coming, and the story that explains each one.':'Fechas que vienen, y la nota que explica cada una.')+'</p>'+navB(en)+'</div><div class="fz-r" id="fzR">'
    +fs.map(function(f){var a=pd(f.d),n=Math.round((a-t0)/864e5),on=n<=0,dt=(f.d2&&pd(f.d2).getMonth()===a.getMonth()?a.getDate()+'–'+pd(f.d2).getDate()+' '+MO[a.getMonth()]:a.getDate()+' '+MO[a.getMonth()]+(f.d2?' – '+pd(f.d2).getDate()+' '+MO[pd(f.d2).getMonth()]:''))+(a.getFullYear()!==t0.getFullYear()?' '+a.getFullYear():'');
      return '<a class="fz-c" href="'+href(ids[f.id])+'"><span class="d"><span>'+esc(dt)+'</span><em>'+esc(en?(f.k_en||''):(f.k_es||''))+'</em></span><span class="n">'+(on?'<u class="w">'+(f.d2&&n<0?(en?'UNDER WAY':'YA EMPEZÓ'):(en?'TODAY':'HOY'))+'</u>':n===1?'<u class="w">'+(en?'TOMORROW':'MAÑANA')+'</u>':'<u>'+n+'</u><i>'+(en?'DAYS LEFT':'DÍAS')+'</i>')+'</span><b>'+esc(en?(f.en||f.es):f.es)+'</b><span class="go">'+(en?'READ THE STORY →':'LEER LA NOTA →')+'</span></a>'}).join('')+'</div>':'';
   railNav(fz,'fzR');
