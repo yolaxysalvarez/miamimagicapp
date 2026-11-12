@@ -448,18 +448,24 @@
       "autor": "Yolaxys Alvarez",
       "foto": "mm-robot-reparto-miami-beach.jpg",
       "foto_alt": "Un robot de reparto blanco y verde espera en una esquina de Miami Beach con el semáforo peatonal en rojo",
-      "foto_pie": "Un robot de reparto espera para cruzar cerca de Lincoln Road, en Miami Beach.",
-      "foto_pie_en": "A delivery robot waits to cross near Lincoln Road in Miami Beach.",
+      "foto_pie": "Un robot de Serve Robotics espera para cruzar cerca de Lincoln Road, en Miami Beach.",
+      "foto_pie_en": "A Serve Robotics robot waits to cross near Lincoln Road in Miami Beach.",
       "es": {
         "titulo": "Los robots de delivery ya ruedan por las aceras de Miami-Dade, y el condado está por ponerles reglas",
-        "bajada": "La Comisión vota el martes 17 una ordenanza con límites de velocidad, permisos, seguro y multas.",
+        "bajada": "Son de Serve y Coco, ya pasan de cien y dividen opiniones. La Comisión vota el martes 17 de noviembre una ordenanza con límites de velocidad, permisos, seguro y multas.",
         "toca": [
           "La votación final es el martes 17 de noviembre, en la Comisión del Condado. Hasta entonces la ordenanza no está en vigor.",
           "La ordenanza le da siempre el paso al peatón: el robot debe cederlo en todo momento.",
           "El texto completo está en el [registro legislativo del condado](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026)."
         ],
         "cuerpo": [
-          "El martes 17 de noviembre, la Comisión de Miami-Dade vota en segunda lectura la [ordenanza](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) que les pone reglas a los robots de reparto. El condado reconoce en el propio texto que cada vez hay más robots en sus aceras y cruces peatonales.",
+          "Esperan el semáforo en rojo como un peatón más, con su banderita en alto, y ya son parte del paisaje de Brickell, Wynwood y South Beach. A los robots de reparto les llegan ahora las reglas: la Comisión de Miami-Dade tiene en agenda para el martes 17 de noviembre la votación final de la [ordenanza](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) que los regula. El propio texto reconoce que cada vez hay más en las aceras y cruces peatonales del condado.",
+          "## ¿De quién son?",
+          "De dos empresas de California, sobre todo. Serve Robotics [anunció en febrero de 2025](https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-expands-miami-metro-offering-autonomous-delivery) su llegada a Brickell y Miami Beach, con pedidos de Uber Eats y de locales como Shake Shack y Mister O1. Coco Robotics [arrancó en abril de ese año](https://www.nasdaq.com/press-release/coco-robotics-expands-uber-eats-partnership-miami-2025-04-02) en Wynwood y el downtown, también con Uber Eats, y en noviembre [sumó a DoorDash](https://about.doordash.com/en-us/news/doordash-coco-expand-partnership).",
+          "## ¿Cómo los ha recibido la gente?",
+          "Con opiniones divididas. El gerente de un restaurante le dijo a [CBS Miami](https://www.cbsnews.com/miami/news/self-driving-robots-food-delivery-service-miami-south-florida/), en diciembre de 2025, que recibía más de cien pedidos diarios por esa vía. Entre los vecinos que entrevistó el canal, unos los prefieren a un enjambre de bicicletas de reparto y otros se quejan de que les quitan espacio en la acera.",
+          "## ¿Van a llegar a más barrios?",
+          "Las dos empresas hablan de crecer, sin dar nombres de barrios. Serve dijo al llegar que ampliaría su presencia en Miami, [recogió Refresh Miami](https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/). Coco informó en abril de 2026 que su flota activa en la ciudad [pasaba de 100 robots](https://www.cocodelivery.com/blog/coco-robotics-unveils-largest-multi-brand-campaign-on-autonomous-miami-delivery-fleet-across-f1-window), repartidos entre South Beach, Wynwood, Brickell y el downtown. Con la ordenanza, cada empresa necesitaría un permiso del condado, que podría limitar cuántos robots circulan en cada zona.",
           "## ¿A qué velocidad podrán ir?",
           "El texto fija un máximo de 8 millas por hora en la acera, 6 en las zonas de mucho peatón y 10 al cruzar la calle. Los operadores tendrán que controlar esos límites a distancia, con tecnología que delimita por dónde y cómo se mueve cada robot.",
           "## ¿Qué deben llevar?",
@@ -473,14 +479,20 @@
       },
       "en": {
         "titulo": "Delivery robots already roll down Miami-Dade sidewalks, and the county is about to set rules",
-        "bajada": "The Commission votes Tuesday, Nov. 17, on an ordinance with speed limits, permits, insurance and fines.",
+        "bajada": "They belong to Serve and Coco, there are already more than a hundred and opinions are split. The Commission votes Tuesday, Nov. 17, on an ordinance with speed limits, permits, insurance and fines.",
         "toca": [
           "The final vote is Tuesday, Nov. 17, at the County Commission. Until then the ordinance is not in effect.",
           "The ordinance always gives pedestrians the right of way: the robot must yield at all times.",
           "The full text is in the [county's legislative record](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026)."
         ],
         "cuerpo": [
-          "On Tuesday, Nov. 17, the Miami-Dade Commission takes a second-reading vote on the [ordinance](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) that would regulate delivery robots. The county acknowledges in the text itself that more and more of these devices are on its sidewalks and crosswalks.",
+          "They wait at the red light like any other pedestrian, little flag held high, and they are already part of the scenery in Brickell, Wynwood and South Beach. Now the rules are catching up with delivery robots: the Miami-Dade Commission has the final vote on the [ordinance](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) that regulates them on its agenda for Tuesday, Nov. 17. The text itself acknowledges that more and more of them are on the county's sidewalks and crosswalks.",
+          "## Who owns them?",
+          "Two California companies, mostly. Serve Robotics [announced in February 2025](https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-expands-miami-metro-offering-autonomous-delivery) its arrival in Brickell and Miami Beach, with Uber Eats orders and restaurants such as Shake Shack and Mister O1. Coco Robotics [started that April](https://www.nasdaq.com/press-release/coco-robotics-expands-uber-eats-partnership-miami-2025-04-02) in Wynwood and downtown, also with Uber Eats, and in November [added DoorDash](https://about.doordash.com/en-us/news/doordash-coco-expand-partnership).",
+          "## How have people taken to them?",
+          "Opinions are split. A restaurant manager told [CBS Miami](https://www.cbsnews.com/miami/news/self-driving-robots-food-delivery-service-miami-south-florida/) in December 2025 that he was getting more than a hundred orders a day that way. Among the residents the station interviewed, some prefer them to a swarm of delivery bikes and others complain that they take up sidewalk space.",
+          "## Are they coming to more neighborhoods?",
+          "Both companies talk about growing, without naming neighborhoods. Serve said on arrival that it would expand its Miami footprint, [Refresh Miami reported](https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/). Coco said in April 2026 that its active fleet in the city [topped 100 robots](https://www.cocodelivery.com/blog/coco-robotics-unveils-largest-multi-brand-campaign-on-autonomous-miami-delivery-fleet-across-f1-window), spread across South Beach, Wynwood, Brickell and downtown. Under the ordinance, each company would need a county permit, and the county could limit how many robots operate in each area.",
           "## How fast could they go?",
           "The text sets a maximum of 8 mph on sidewalks, 6 in high-pedestrian areas and 10 in crosswalks. Operators would have to enforce those limits remotely, with technology that restricts where and how each robot moves.",
           "## What must they carry?",
@@ -496,6 +508,30 @@
         {
           "n": "Condado de Miami-Dade · Ordenanza sobre dispositivos de reparto, expediente 261932",
           "u": "https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026"
+        },
+        {
+          "n": "Serve Robotics · Llegada al área de Miami, 19 de febrero de 2025",
+          "u": "https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-expands-miami-metro-offering-autonomous-delivery"
+        },
+        {
+          "n": "Coco Robotics · Lanzamiento con Uber Eats en Miami, 2 de abril de 2025",
+          "u": "https://www.nasdaq.com/press-release/coco-robotics-expands-uber-eats-partnership-miami-2025-04-02"
+        },
+        {
+          "n": "DoorDash · Alianza con Coco en Miami, 13 de noviembre de 2025",
+          "u": "https://about.doordash.com/en-us/news/doordash-coco-expand-partnership"
+        },
+        {
+          "n": "Coco Robotics · Flota en Miami, abril de 2026",
+          "u": "https://www.cocodelivery.com/blog/coco-robotics-unveils-largest-multi-brand-campaign-on-autonomous-miami-delivery-fleet-across-f1-window"
+        },
+        {
+          "n": "CBS Miami · Reacciones de vecinos y comercios, 1 de diciembre de 2025",
+          "u": "https://www.cbsnews.com/miami/news/self-driving-robots-food-delivery-service-miami-south-florida/"
+        },
+        {
+          "n": "Refresh Miami · Más robots de reparto en camino, 19 de febrero de 2025",
+          "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
       "ultima": 3
@@ -3080,7 +3116,7 @@
       "es": {
         "etiqueta": "EN EL AGUA",
         "titulo": "Noviembre pone a los manatíes en movimiento, y a los botes les toca ir despacio",
-        "bajada": "Cuando el agua baja de 68 grados, los manatíes salen a buscar calor y se cruzan con más embarcaciones.",
+        "bajada": "En 2025 los botes mataron al menos a 98 manatíes en Florida. Cuando el agua baja de 68 grados, salen a buscar calor y se cruzan con más embarcaciones.",
         "toca": [
           "Manatí herido, enfermo, en apuros o muerto: llama a la línea Wildlife Alert de la FWC, 888-404-3922. No intentes tocarlo.",
           "Los mapas de las zonas de protección están en [MyFWC.com/MPZ](https://myfwc.com/wildlifehabitats/wildlife/manatee/data-and-maps/).",
@@ -3091,8 +3127,12 @@
           "Los manatíes necesitan calor para pasar el invierno. Cuando el agua baja de 68 grados buscan refugio en manantiales, en las descargas de las plantas eléctricas y en otros sitios templados, explicó Ashley LaVere, coordinadora del programa de manatíes de la FWC. En ese camino es más probable toparse con ellos.",
           "## Cómo verlos a tiempo",
           "Aunque un adulto es grande, cuesta distinguirlo. La FWC recomienda que alguien a bordo vaya pendiente del agua: un hocico, un lomo, una cola o una aleta que asoma, o las «huellas» que deja el manatí al nadar, unos círculos en la superficie. Las gafas polarizadas ayudan a ver a través del reflejo.",
-          "## Las zonas de protección",
-          "Son tramos donde hay que reducir la velocidad o no entrar, y están marcados con letreros en el agua. La FWC señala los golpes de embarcaciones como una de las mayores amenazas para el manatí, y sus agentes patrullan esas zonas.",
+          "## Cuántos mueren por botes",
+          "En 2025 murieron 632 manatíes en Florida, y 98 de ellos por golpes de embarcaciones, [según el balance de la FWC](https://myfwc.com/research/manatee/rescue-mortality-response/statistics/mortality/2025/review/). Es uno de cada cuatro casos en los que se pudo determinar la causa, y la agencia aclara que es un mínimo, porque no todos los cuerpos se examinan a fondo. Ese año también se rescataron vivos 33 manatíes heridos por botes, la cifra más alta que se ha registrado.",
+          "No es un problema reciente. Desde 1976, los choques con embarcaciones suman cerca del 25% de todas las muertes documentadas, de acuerdo con el [plan de manejo del manatí](https://www.nrc.gov/docs/ML1432/ML14328A280.pdf) que la FWC publicó en 2007.",
+          "## De dónde salen las zonas",
+          "La base es una ley de 1978, la Florida Manatee Sanctuary Act, que declaró todas las aguas del estado «refugio y santuario» del manatí y permitió regular la velocidad de los botes donde ellos viven. En octubre de 1989, el gobernador y el gabinete ordenaron planes de protección en 13 condados que consideraron de mayor riesgo. Dade estaba en la lista, recoge el mismo plan.",
+          "Las zonas de temporada responden al frío: son tramos por donde los manatíes pasan o se concentran solo en los meses de invierno. Antes de crear o cambiar una, el estado avisa al condado, que puede formar un comité local con ambientalistas y usuarios del agua para revisar la propuesta durante unos 60 días, [explica Save the Manatee Club](https://savethemanatee.org/establishing-manatee-boating-zone-rules/). Hoy 18 condados tienen estas reglas.",
           "En Miami-Dade, varias son de temporada. De acuerdo con los [mapas de la FWC](https://myfwc.com/media/7311/miamidadempz-maps.pdf), del 15 de noviembre al 30 de abril pasan a velocidad lenta tramos donde el resto del año se permite navegar a 30 o 35 millas por hora, y hay áreas en las que durante esos meses no se puede entrar.",
           "## Si vas a verlos desde tierra",
           "Lleva binoculares y guarda distancia. Molestarlos en un refugio de agua tibia puede empujarlos hacia agua fría, y ese frío los puede matar."
@@ -3101,7 +3141,7 @@
       "en": {
         "etiqueta": "ON THE WATER",
         "titulo": "November puts manatees on the move, and boats need to slow down",
-        "bajada": "When the water drops below 68 degrees, manatees go looking for warmth and cross paths with more vessels.",
+        "bajada": "In 2025 boats killed at least 98 manatees in Florida. When the water drops below 68 degrees, they go looking for warmth and cross paths with more vessels.",
         "toca": [
           "Injured, sick, distressed or dead manatee: call the FWC Wildlife Alert Hotline, 888-404-3922. Don't try to handle it.",
           "Maps of the protection zones are at [MyFWC.com/MPZ](https://myfwc.com/wildlifehabitats/wildlife/manatee/data-and-maps/).",
@@ -3112,8 +3152,12 @@
           "Manatees need warmth to get through winter. When the water drops below 68 degrees they seek refuge at springs, power plant discharge areas and other warm sites, said Ashley LaVere, the FWC's manatee management program coordinator. Along the way, encounters are more likely.",
           "## How to spot them in time",
           "Even though an adult is large, it's hard to make out. The FWC recommends having someone on board watch the water: a snout, a back, a tail or a flipper breaking the surface, or the \"footprints\" a manatee leaves as it swims, circles on the water. Polarized glasses help cut the glare.",
-          "## The protection zones",
-          "They are stretches where you must reduce speed or stay out, and they're marked with signs on the water. The FWC calls boat strikes one of the biggest threats to manatees, and its officers patrol those zones.",
+          "## How many are killed by boats",
+          "In 2025, 632 manatees died in Florida, 98 of them from watercraft strikes, [according to the FWC's year-end review](https://myfwc.com/research/manatee/rescue-mortality-response/statistics/mortality/2025/review/). That is one in four of the cases where a cause could be determined, and the agency notes it is a minimum, because not every carcass gets a full examination. That year, 33 manatees injured by boats were also rescued alive, the highest number on record.",
+          "It is not a recent problem. Since 1976, collisions with watercraft have accounted for about 25% of all documented deaths, according to the [manatee management plan](https://www.nrc.gov/docs/ML1432/ML14328A280.pdf) the FWC published in 2007.",
+          "## Where the zones come from",
+          "The foundation is a 1978 law, the Florida Manatee Sanctuary Act, which declared all state waters a \"refuge and sanctuary\" for manatees and allowed boat speeds to be regulated where they live. In October 1989, the governor and Cabinet ordered protection plans in 13 counties they considered higher risk. Dade was on the list, the same plan notes.",
+          "The seasonal zones follow the cold: they are stretches where manatees travel or gather only in the winter months. Before creating or changing one, the state notifies the county, which can form a local committee of environmentalists and waterway users to review the proposal over about 60 days, [Save the Manatee Club explains](https://savethemanatee.org/establishing-manatee-boating-zone-rules/). Today 18 counties have these rules.",
           "In Miami-Dade, several are seasonal. According to [FWC maps](https://myfwc.com/media/7311/miamidadempz-maps.pdf), from Nov. 15 through April 30, stretches where boats may run at 30 or 35 mph the rest of the year become slow-speed zones, and there are areas that can't be entered during those months.",
           "## If you're watching from shore",
           "Bring binoculars and keep your distance. Disturbing them at a warm-water refuge can push them into cold water, and that cold can kill them."
@@ -3131,6 +3175,18 @@
         {
           "n": "FWC · Mapas de las zonas de protección del manatí en Miami-Dade",
           "u": "https://myfwc.com/media/7311/miamidadempz-maps.pdf"
+        },
+        {
+          "n": "FWC · Balance de mortalidad de manatíes de 2025",
+          "u": "https://myfwc.com/research/manatee/rescue-mortality-response/statistics/mortality/2025/review/"
+        },
+        {
+          "n": "FWC · Plan de Manejo del Manatí de Florida, 2007",
+          "u": "https://www.nrc.gov/docs/ML1432/ML14328A280.pdf"
+        },
+        {
+          "n": "Save the Manatee Club · Cómo se establecen las zonas para botes",
+          "u": "https://savethemanatee.org/establishing-manatee-boating-zone-rules/"
         }
       ],
       "ultima": 2,
