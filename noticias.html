@@ -776,24 +776,22 @@ body:not(.home) .split{display:block;margin-bottom:0}
 .hist .yr{letter-spacing:-.04em}
 .fz-t .q0{font-style:normal;display:inline-block;transform:skewX(-11deg);margin-right:.02em}
 @media(min-width:1021px){
- body.home .top{grid-template-columns:minmax(0,1fr) 288px;gap:40px}
- body.home .top .lead{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);grid-template-rows:auto auto auto auto 1fr auto;column-gap:34px;row-gap:0;align-items:start}
+ body.home .top{grid-template-columns:minmax(0,1fr);gap:0;margin-bottom:52px}
+ body.home .top .lead{grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);grid-template-rows:auto auto auto auto 1fr auto;column-gap:44px;row-gap:0;align-items:start}
  body.home .top .lead>div{display:contents}
  body.home .top .lead>div>*{grid-column:1}
- body.home .top .lead>div>.eb{grid-row:1}
- body.home .top .lead>div>h2{grid-row:2;font-size:35px;line-height:1.09;margin:12px 0 14px}
- body.home .top .lead>div>p{grid-row:3;font-size:17.5px}
- body.home .top .lead>div>.rd{grid-row:4}
- body.home .top .lead>div>.meta{grid-row:5;margin-top:10px}
- body.home .top .lead>a:first-child{grid-column:2;grid-row:1/span 5;align-self:stretch;position:relative;display:block;min-height:400px}
+ body.home .top .lead>div>.eb{grid-row:1;margin-top:6px}
+ body.home .top .lead>div>h2{grid-row:2;font-size:44px;line-height:1.06;margin:14px 0 16px}
+ body.home .top .lead>div>p{grid-row:3;font-size:19px}
+ body.home .top .lead>div>.rd{grid-row:4;margin-top:18px}
+ body.home .top .lead>div>.meta{grid-row:5;margin-top:12px}
+ body.home .top .lead>a:first-child{grid-column:2;grid-row:1/span 5;align-self:stretch;position:relative;display:block;min-height:430px}
  body.home .top .lead>a:first-child .ph{position:absolute;inset:0;aspect-ratio:auto;height:100%}
- body.home .top .lead>div>.toca{grid-column:1/-1;grid-row:6;margin-top:28px}
- body.home .top .lead>div>.toca ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
- body.home .top .lead>div>.toca li{font-size:16px}
- body.home .ul a{grid-template-columns:26px minmax(0,1fr);gap:10px;padding:12px 0}
- body.home .ul a>i{font-size:23px}
- body.home .ul .eb{font-size:14.5px}
- body.home .ul b{font-size:16.5px;line-height:1.25}
+ body.home .top .lead>div>.toca{grid-column:1/-1;grid-row:6;margin-top:30px}
+ body.home .top .lead>div>.toca ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px}
+ body.home .top .ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:40px;margin-top:40px}
+ body.home .top .ul .sh{grid-column:1/-1}
+ body.home .top .ul a{align-content:start}
 }
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
