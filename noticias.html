@@ -856,6 +856,15 @@ body:not(.home) .split{display:block;margin-bottom:0}
  .pair .cc-r{grid-column:2;grid-row:1;justify-self:end;align-self:center}
  .pair .cc-hd p{grid-column:1/-1;grid-row:2;font-size:16.5px;min-height:3.05em;margin:6px 0 0;max-width:none}
 }
+/* páginas de sección: cabecera editorial, sin caja */
+body.sp-cc #cc{display:none!important}
+.sp .sp-h{background:none!important;border-radius:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:30px 0 28px;overflow:visible}
+.sp-hm .sp-h{border-top-color:#E8391F}.sp-dk .sp-h{border-top-color:#0E7FA8}.sp-cc .sp-h{border-top-color:var(--gold)}
+.sp .sp-h .wv{display:none}
+.sp-cc .sp-n{color:#8A5A12}.sp-cc .sp-k{color:#8A5A12}
+.sp-cc .sp-t .ccw .em{width:.66em;height:.66em;margin:0 .2em;vertical-align:-.04em}
+.sp-dis{display:block;max-width:300px;font-size:14.5px;line-height:1.45;color:var(--mut);text-align:right}
+@media(max-width:760px){.sp .sp-h{padding:22px 0 20px}.sp-dis{text-align:left;max-width:none}}
 </style>
 <script>/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
@@ -1182,7 +1191,7 @@ function render(){
   if(lead){var f=F(lead);
     lb.innerHTML='<article class="lead'+(XB?' hb':'')+'"><a href="'+href(lead)+'">'+ph(lead)+'</a><div><span class="eb">'+eb(lead)+'</span><h2><a href="'+href(lead)+'">'+esc(f.titulo)+'</a></h2><p>'+esc(f.bajada||'')+'</p>'
      +((f.toca&&f.toca.length)?'<div class="toca"><b>'+(L==='en'?'TAKE NOTE':'TOMA NOTA')+'</b><ul>'+f.toca.slice(0,3).map(function(x,i){return '<li><i>'+(i+1)+'</i><span>'+hn(x)+'</span></li>'}).join('')+'</ul></div>':'')
-     +'<a class="lkl rd" href="'+href(lead)+'">'+(L==='en'?'ALL':'TODO')+' →</a>'+'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes.length>1)?' · '+lead.fuentes.length+(L==='en'?' sources':' fuentes'):(lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>'
+     +'<a class="lkl rd" href="'+href(lead)+'">'+(HOME()?(L==='en'?'ALL':'TODO'):(L==='en'?'READ MORE':'LEER MÁS'))+' →</a>'+'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes.length>1)?' · '+lead.fuentes.length+(L==='en'?' sources':' fuentes'):(lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>'
      +(XB?'<a class="xb'+(xky?'':' mi')+'" href="'+href(XB)+'">'+ph(XB)+'<span><span class="eb"><span class="lg'+(xky?' ky':'')+'">'+(xky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI')+'</span></span><b>'+esc(F(XB).titulo)+'</b></span><span class="go">'+(L==='en'?'READ →':'LEER →')+'</span></a>':'');
   } else lb.innerHTML='<div class="lead" style="grid-template-columns:1fr">'+empty(ST.hamaca?t('vacioH'):ST.muelle?t('vacioM'):ST.casa?t('vacioC'):'')+'</div>';
   var vk=(ST.hamaca?'h':ST.muelle?'m':ST.casa?'c':ST.scope)+'|'+ST.tema;if(ST._vk!==vk){ST._vk=vk;ST.masN=8}
@@ -1312,14 +1321,14 @@ document.getElementById('hmS').addEventListener('click',function(e){var b=e.targ
 /* ── páginas de sección: Hamaca Mood y El Muelle ── */
 function spSync(){var c=document.getElementById('spCond'),d=document.getElementById('dkCond');if(c&&d)c.innerHTML=d.innerHTML;var u=document.getElementById('spSun');if(u)u.innerHTML=CF.sunset?(L==='en'?'TODAY THE SUN SETS AT':'HOY EL SOL CAE A LAS')+'<b>'+esc(CF.sunset)+'</b>':''}
 function renderSp(lead,rest){
-  var hm=ST.hamaca,dk=ST.muelle,on=hm||dk,en=L==='en',b=document.body,mas=document.getElementById('mas');
-  b.classList.toggle('sp',!!on);b.classList.toggle('sp-hm',!!hm);b.classList.toggle('sp-dk',!!dk);
+  var hm=ST.hamaca,dk=ST.muelle,cc=ST.casa,on=hm||dk||cc,en=L==='en',b=document.body,mas=document.getElementById('mas');
+  b.classList.toggle('sp',!!on);b.classList.toggle('sp-hm',!!hm);b.classList.toggle('sp-dk',!!dk);b.classList.toggle('sp-cc',!!cc);
   if(!on){mas.className='grid4';return}
-  var nm=hm?'HAMACA MOOD':(en?'THE DOCK':'EL MUELLE'),k=function(n){return '<span class="sp-k">'+esc(F(n,'etiqueta')||nm)+'</span>'},rd=function(n){return '<a class="lkl" href="'+href(n)+'">'+(en?'READ MORE':'LEER MÁS')+' →</a>'};
+  var nm=hm?'HAMACA MOOD':cc?'CASA & COAST':(en?'THE DOCK':'EL MUELLE'),k=function(n){return '<span class="sp-k">'+esc(F(n,'etiqueta')||nm)+'</span>'},rd=function(n){return '<a class="lkl" href="'+href(n)+'">'+(en?'READ MORE':'LEER MÁS')+' →</a>'};
   var tot=(lead?1:0)+rest.length;
   var head='<header class="sp-h">'+(dk?'<svg class="wv" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26 C 50 14, 100 38, 150 26 S 250 14, 300 26 V60 H0z" fill="#9CCBD8"/><path d="M0 42 C 60 30, 110 54, 160 42 S 250 30, 300 42 V60 H0z" fill="#7FB9CB"/></svg>':'')
-   +'<div><h1 class="sp-t'+(hm?' hm-t':'')+'">'+(hm?(en?'Hammock':'Hamaca')+' <em>M<span class="sol" role="img" aria-label="o"></span>od</em>':dkw())+'</h1><p>'+t(hm?'hmdesc':'dkdesc')+'</p><span class="sp-n">'+tot+' '+(en?(tot===1?'STORY':'STORIES'):(tot===1?'HISTORIA':'HISTORIAS'))+'</span></div>'
-   +'<div class="sp-x">'+(dk?'<div class="dk-cond" id="spCond"></div><a class="lkl" href="/?go=water">'+(en?'BOATS AND FISHING IN THE APP':'BOTES Y PESCA EN LA APP')+' →</a>':'<span class="sp-sun" id="spSun"></span>')+'</div></header>';
+   +'<div><h1 class="sp-t'+(hm?' hm-t':'')+'">'+(hm?(en?'Hammock':'Hamaca')+' <em>M<span class="sol" role="img" aria-label="o"></span>od</em>':cc?ccw():dkw())+'</h1><p>'+t(hm?'hmdesc':cc?'ccdesc':'dkdesc')+'</p><span class="sp-n">'+tot+' '+(en?(tot===1?'STORY':'STORIES'):(tot===1?'HISTORIA':'HISTORIAS'))+'</span></div>'
+   +'<div class="sp-x">'+(dk?'<div class="dk-cond" id="spCond"></div><a class="lkl" href="/?go=water">'+(en?'BOATS AND FISHING IN THE APP':'BOTES Y PESCA EN LA APP')+' →</a>':cc?'<small class="sp-dis">'+t('ccnota')+'</small>':'<span class="sp-sun" id="spSun"></span>')+'</div></header>';
   var lb=document.getElementById('leadBox');lb.innerHTML=head+lb.innerHTML;
   if(lead){var e=lb.querySelector('.lead .eb');if(e)e.outerHTML=k(lead)}
   var big=function(n){var f=F(n);return '<article class="sp-b"><a href="'+href(n)+'">'+ph(n)+'</a>'+k(n)+'<h3><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h3><p>'+esc(f.bajada||'')+'</p>'+rd(n)+'</article>'};
