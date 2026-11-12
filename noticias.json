@@ -241,7 +241,8 @@
           "es": "El estadio de delfines, bajo sus toldos blancos.",
           "en": "The dolphin stadium, under its white canopies."
         }
-      ]
+      ],
+      "tambien": 1
     },
     {
       "id": "impuestos-propiedad-bitcoin-miami-dade",
@@ -330,7 +331,8 @@
         "p": 73500,
         "es": "referencia de CoinDesk, 12 de noviembre, 7:15 a.m.",
         "en": "CoinDesk reference, Nov. 12, 7:15 a.m."
-      }
+      },
+      "tambien": 3
     },
     {
       "id": "frente-frio-miami-noviembre",
@@ -1397,7 +1399,8 @@
       "foto_pos": "50% 70%",
       "foto_alt": "Un gallo camina junto a una casa de madera en Key West",
       "foto_pie": "Un gallo junto a una casa de madera de Key West, hacia 2010.",
-      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010."
+      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010.",
+      "tambien": 2
     },
     {
       "hamaca": false,
