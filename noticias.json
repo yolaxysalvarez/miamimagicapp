@@ -60,7 +60,7 @@
       "tema": "bolsillo",
       "hamaca": false,
       "muelle": false,
-      "destacada": true,
+      "destacada": false,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
       "foto": "mm-downtown-freedom-tower.jpg",
@@ -179,7 +179,8 @@
         "u": "/realestate.html",
         "es": "El mercado de casas en Miami, en la app",
         "en": "Miami's housing market, in the app"
-      }
+      },
+      "tambien": 1
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -283,7 +284,7 @@
           "en": "The dolphin stadium, under its white canopies."
         }
       ],
-      "tambien": 1
+      "tambien": 2
     },
     {
       "id": "impuestos-propiedad-bitcoin-miami-dade",
@@ -446,7 +447,7 @@
       "scope": "miami",
       "tema": "ciudad",
       "hamaca": false,
-      "destacada": false,
+      "destacada": true,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
       "foto": "mm-frente-frio-minimas.jpg",
@@ -1603,8 +1604,7 @@
       "foto_pos": "50% 70%",
       "foto_alt": "Un gallo camina junto a una casa de madera en Key West",
       "foto_pie": "Un gallo junto a una casa de madera de Key West, hacia 2010.",
-      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010.",
-      "tambien": 2
+      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010."
     },
     {
       "id": "key-west-oyster-fest-ostras",
