@@ -283,8 +283,7 @@
           "es": "El estadio de delfines, bajo sus toldos blancos.",
           "en": "The dolphin stadium, under its white canopies."
         }
-      ],
-      "tambien": 2
+      ]
     },
     {
       "id": "impuestos-propiedad-bitcoin-miami-dade",
@@ -381,8 +380,7 @@
         "p": 73500,
         "es": "referencia de CoinDesk, 12 de noviembre, 7:15 a.m.",
         "en": "CoinDesk reference, Nov. 12, 7:15 a.m."
-      },
-      "tambien": 3
+      }
     },
     {
       "id": "impuestos-propiedad-descuento-noviembre",
@@ -540,7 +538,6 @@
       "foto_alt": "Torres de oficinas de cristal en Brickell, iluminadas de noche",
       "foto_pie": "Torres de oficinas en Brickell, de noche.",
       "foto_pie_en": "Office towers in Brickell at night.",
-      "ultima": 2,
       "es": {
         "etiqueta": "TECNOLOGÍA",
         "titulo": "La caída mundial de Microsoft dejó sin correo hasta a la ciudad de Miami Beach: qué pasa con los mensajes que no llegaron",
@@ -626,7 +623,8 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-13T09:40:00-05:00"
+      "actualizada": "2026-11-13T09:40:00-05:00",
+      "ultima": 1
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
@@ -642,7 +640,6 @@
       "foto_alt": "El puente del MacArthur Causeway iluminado de rosa sobre la bahía de Biscayne al anochecer",
       "foto_pie": "La bahía de Biscayne junto al MacArthur Causeway, la zona donde se corre el E1.",
       "foto_pie_en": "Biscayne Bay beside the MacArthur Causeway, the area where E1 races.",
-      "ultima": 1,
       "es": {
         "etiqueta": "EVENTOS",
         "titulo": "El equipo de Tom Brady contra el de Will Smith, en botes eléctricos y frente al downtown: el mundial E1 se decide en Miami",
@@ -702,7 +699,8 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-13T09:20:00-05:00"
+      "actualizada": "2026-11-13T09:20:00-05:00",
+      "ultima": 2
     },
     {
       "id": "beach-polo-world-cup-miami-beach-2026",
@@ -717,7 +715,6 @@
       "foto_alt": "La playa de Miami Beach con los edificios de Collins Avenue al fondo",
       "foto_pie": "La playa de Miami Beach, donde se monta la cancha de polo.",
       "foto_pie_en": "Miami Beach's shoreline, where the polo field is set up.",
-      "ultima": 3,
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "Caballos sobre la arena de South Beach: el polo de playa ya se juega y el domingo corona campeón",
@@ -765,7 +762,8 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-13T09:30:00-05:00"
+      "actualizada": "2026-11-13T09:30:00-05:00",
+      "ultima": 3
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
@@ -863,7 +861,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "obamacare-2027-florida",
@@ -1613,6 +1611,69 @@
       ]
     },
     {
+      "id": "key-west-oyster-fest-ostras",
+      "scope": "cayos",
+      "tema": "cultura",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-kw-sunset-key-01.jpg",
+      "foto_alt": "El sol entre nubes sobre el agua de Key West, con Sunset Key al fondo",
+      "foto_pie": "Key West al caer la tarde, con Sunset Key al fondo.",
+      "foto_pie_en": "Key West at dusk, with Sunset Key in the distance.",
+      "es": {
+        "etiqueta": "KEY WEST",
+        "titulo": "Ostras sin límite frente al muelle: Key West estrena su Oyster Fest este sábado, y cada concha vuelve al mar",
+        "bajada": "El sábado 14 de noviembre, de 5 a 10 de la noche, el Historic Seaport se llena de ostras, música en vivo y una docena de cocinas de la isla. El chef Norman Van Aken regresa como invitado.",
+        "toca": [
+          "Sábado 14 de noviembre, de 5:00 a 10:00 PM, frente a Half Shell Raw Bar, en el Historic Seaport de Key West. La hora VIP es de 5:00 a 6:00.",
+          "Las entradas se venden en Eventbrite: busca «Key West Oyster Fest».",
+          "Viernes 13: bienvenida con Van Aken en The Marker Key West Harbor Resort. Sábado: fiesta después del festival en el Green Parrot, de 10:00 PM a 2:00 AM. Domingo 15: brunch en Half Shell, de 9:00 AM a mediodía."
+        ],
+        "cuerpo": [
+          "La primera edición del [Key West Oyster Fest](https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest) ya se asoma por el viejo puerto. Un cuchillo corto, un giro de muñeca y la concha se abre: el sábado ese gesto se va a repetir miles de veces en la rotonda del estacionamiento frente a Half Shell Raw Bar, con ostras a discreción y el agua a dos pasos.",
+          "## Lo que trae la entrada",
+          "Ostras ilimitadas, barra abierta hasta las 8 de la noche y música en vivo de The Farm Boys, una banda de country de pantano del sur de Florida. Sirven granjeros de ostras de la región y una docena de restaurantes de la isla, entre ellos Half Shell, Schooner Wharf, Square Grouper, Café Marquesa y Casa Marina. Lo organizan Half Shell Raw Bar y Everglades Oysters.",
+          "## El cocinero que vuelve a casa",
+          "El invitado es Norman Van Aken, el chef al que se le atribuye la «New World Cuisine», que empezó a cocinar en esta isla. Para él es un regreso: «Se me metió en el ADN. Se convirtió en mis raíces, en mi identidad», [dijo sobre Key West](https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html). El domingo, en el brunch de cierre, recibe el primer premio Culinary Legacy de Key West y el condado de Monroe.",
+          "## Las conchas no van a la basura",
+          "Todas las que salgan del festival se recogen y se reciclan. Los organizadores explican que pueden servir para restaurar arrecifes de ostras, crear hábitat, mejorar la calidad del agua y proteger la orilla. Es el mismo programa que Half Shell empezó este año con Everglades Oysters: lo que sale del mar, vuelve al mar."
+        ]
+      },
+      "en": {
+        "etiqueta": "KEY WEST",
+        "titulo": "Unlimited oysters by the docks: Key West debuts its Oyster Fest this Saturday, and every shell goes back to the sea",
+        "bajada": "On Saturday, Nov. 14, from 5 to 10 p.m., the Historic Seaport fills with oysters, live music and a dozen of the island's kitchens. Chef Norman Van Aken returns as the guest.",
+        "toca": [
+          "Saturday, Nov. 14, 5 to 10 p.m., in front of Half Shell Raw Bar at Key West's Historic Seaport. VIP hour is 5 to 6.",
+          "Tickets are sold on Eventbrite: search \"Key West Oyster Fest.\"",
+          "Friday the 13th: welcome party with Van Aken at The Marker Key West Harbor Resort. Saturday: after-party at the Green Parrot, 10 p.m. to 2 a.m. Sunday the 15th: brunch at Half Shell, 9 a.m. to noon."
+        ],
+        "cuerpo": [
+          "The first edition of the [Key West Oyster Fest](https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest) is already peeking over the old seaport. A short knife, a twist of the wrist and the shell pops open: on Saturday that move will be repeated thousands of times in the parking circle in front of Half Shell Raw Bar, with all the oysters you want and the water two steps away.",
+          "## What the ticket brings",
+          "Unlimited oysters, an open bar until 8 p.m. and live music from The Farm Boys, a swamp country band from South Florida. Regional oyster farmers and a dozen island restaurants are serving, among them Half Shell, Schooner Wharf, Square Grouper, Café Marquesa and Casa Marina. Half Shell Raw Bar and Everglades Oysters are the organizers.",
+          "## The cook who comes home",
+          "The guest is Norman Van Aken, the chef credited with \"New World Cuisine,\" who started cooking on this island. For him it's a homecoming: \"It entered my DNA. It became my roots. It became my identity,\" [he said of Key West](https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html). On Sunday, at the closing brunch, he receives the first Key West & Monroe County Culinary Legacy Award.",
+          "## The shells don't go in the trash",
+          "Every one that leaves the festival is collected and recycled. Organizers say they can be used to restore oyster reefs, create habitat, improve water quality and protect the shoreline. It's the same program Half Shell started this year with Everglades Oysters: what comes out of the sea goes back to the sea."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Consejo de Desarrollo Turístico de Monroe · Key West Oyster Fest",
+          "u": "https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest"
+        },
+        {
+          "n": "The Key West Citizen · 12 de noviembre de 2026",
+          "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
+        }
+      ],
+      "ultima": 4
+    },
+    {
       "hamaca": false,
       "muelle": true,
       "destacada": false,
@@ -1764,8 +1825,7 @@
           "n": "National Association of Realtors · cifras del FBI de 2025",
           "u": "https://www.nar.realtor/magazine/real-estate-news/online-real-estate-fraud-climbed-to-275m-in-2025-fbi-says"
         }
-      ],
-      "ultima": 8
+      ]
     },
     {
       "hamaca": false,
@@ -1842,69 +1902,8 @@
       "foto_pos": "50% 70%",
       "foto_alt": "Un gallo camina junto a una casa de madera en Key West",
       "foto_pie": "Un gallo junto a una casa de madera de Key West, hacia 2010.",
-      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010."
-    },
-    {
-      "id": "key-west-oyster-fest-ostras",
-      "scope": "cayos",
-      "tema": "cultura",
-      "hamaca": false,
-      "muelle": false,
-      "destacada": false,
-      "fecha": "2026-11-13",
-      "autor": "Yolaxys Alvarez",
-      "foto": "mm-keys-kw-sunset-key-01.jpg",
-      "foto_alt": "El sol entre nubes sobre el agua de Key West, con Sunset Key al fondo",
-      "foto_pie": "Key West al caer la tarde, con Sunset Key al fondo.",
-      "foto_pie_en": "Key West at dusk, with Sunset Key in the distance.",
-      "es": {
-        "etiqueta": "KEY WEST",
-        "titulo": "Ostras sin límite frente al muelle: Key West estrena su Oyster Fest este sábado, y cada concha vuelve al mar",
-        "bajada": "El sábado 14 de noviembre, de 5 a 10 de la noche, el Historic Seaport se llena de ostras, música en vivo y una docena de cocinas de la isla. El chef Norman Van Aken regresa como invitado.",
-        "toca": [
-          "Sábado 14 de noviembre, de 5:00 a 10:00 PM, frente a Half Shell Raw Bar, en el Historic Seaport de Key West. La hora VIP es de 5:00 a 6:00.",
-          "Las entradas se venden en Eventbrite: busca «Key West Oyster Fest».",
-          "Viernes 13: bienvenida con Van Aken en The Marker Key West Harbor Resort. Sábado: fiesta después del festival en el Green Parrot, de 10:00 PM a 2:00 AM. Domingo 15: brunch en Half Shell, de 9:00 AM a mediodía."
-        ],
-        "cuerpo": [
-          "La primera edición del [Key West Oyster Fest](https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest) ya se asoma por el viejo puerto. Un cuchillo corto, un giro de muñeca y la concha se abre: el sábado ese gesto se va a repetir miles de veces en la rotonda del estacionamiento frente a Half Shell Raw Bar, con ostras a discreción y el agua a dos pasos.",
-          "## Lo que trae la entrada",
-          "Ostras ilimitadas, barra abierta hasta las 8 de la noche y música en vivo de The Farm Boys, una banda de country de pantano del sur de Florida. Sirven granjeros de ostras de la región y una docena de restaurantes de la isla, entre ellos Half Shell, Schooner Wharf, Square Grouper, Café Marquesa y Casa Marina. Lo organizan Half Shell Raw Bar y Everglades Oysters.",
-          "## El cocinero que vuelve a casa",
-          "El invitado es Norman Van Aken, el chef al que se le atribuye la «New World Cuisine», que empezó a cocinar en esta isla. Para él es un regreso: «Se me metió en el ADN. Se convirtió en mis raíces, en mi identidad», [dijo sobre Key West](https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html). El domingo, en el brunch de cierre, recibe el primer premio Culinary Legacy de Key West y el condado de Monroe.",
-          "## Las conchas no van a la basura",
-          "Todas las que salgan del festival se recogen y se reciclan. Los organizadores explican que pueden servir para restaurar arrecifes de ostras, crear hábitat, mejorar la calidad del agua y proteger la orilla. Es el mismo programa que Half Shell empezó este año con Everglades Oysters: lo que sale del mar, vuelve al mar."
-        ]
-      },
-      "en": {
-        "etiqueta": "KEY WEST",
-        "titulo": "Unlimited oysters by the docks: Key West debuts its Oyster Fest this Saturday, and every shell goes back to the sea",
-        "bajada": "On Saturday, Nov. 14, from 5 to 10 p.m., the Historic Seaport fills with oysters, live music and a dozen of the island's kitchens. Chef Norman Van Aken returns as the guest.",
-        "toca": [
-          "Saturday, Nov. 14, 5 to 10 p.m., in front of Half Shell Raw Bar at Key West's Historic Seaport. VIP hour is 5 to 6.",
-          "Tickets are sold on Eventbrite: search \"Key West Oyster Fest.\"",
-          "Friday the 13th: welcome party with Van Aken at The Marker Key West Harbor Resort. Saturday: after-party at the Green Parrot, 10 p.m. to 2 a.m. Sunday the 15th: brunch at Half Shell, 9 a.m. to noon."
-        ],
-        "cuerpo": [
-          "The first edition of the [Key West Oyster Fest](https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest) is already peeking over the old seaport. A short knife, a twist of the wrist and the shell pops open: on Saturday that move will be repeated thousands of times in the parking circle in front of Half Shell Raw Bar, with all the oysters you want and the water two steps away.",
-          "## What the ticket brings",
-          "Unlimited oysters, an open bar until 8 p.m. and live music from The Farm Boys, a swamp country band from South Florida. Regional oyster farmers and a dozen island restaurants are serving, among them Half Shell, Schooner Wharf, Square Grouper, Café Marquesa and Casa Marina. Half Shell Raw Bar and Everglades Oysters are the organizers.",
-          "## The cook who comes home",
-          "The guest is Norman Van Aken, the chef credited with \"New World Cuisine,\" who started cooking on this island. For him it's a homecoming: \"It entered my DNA. It became my roots. It became my identity,\" [he said of Key West](https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html). On Sunday, at the closing brunch, he receives the first Key West & Monroe County Culinary Legacy Award.",
-          "## The shells don't go in the trash",
-          "Every one that leaves the festival is collected and recycled. Organizers say they can be used to restore oyster reefs, create habitat, improve water quality and protect the shoreline. It's the same program Half Shell started this year with Everglades Oysters: what comes out of the sea goes back to the sea."
-        ]
-      },
-      "fuentes": [
-        {
-          "n": "Consejo de Desarrollo Turístico de Monroe · Key West Oyster Fest",
-          "u": "https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest"
-        },
-        {
-          "n": "The Key West Citizen · 12 de noviembre de 2026",
-          "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
-        }
-      ]
+      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010.",
+      "tambien": 3
     },
     {
       "hamaca": false,
@@ -2097,8 +2096,7 @@
           "n": "Key West Chamber of Commerce · Key West Holiday Fest, comunicado del 4 de noviembre de 2026",
           "u": "https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che"
         }
-      ],
-      "ultima": 7
+      ]
     },
     {
       "id": "seven-mile-bridge-rehabilitacion",
@@ -3528,7 +3526,7 @@
           "u": "https://miamiwonderland.com/faqs/"
         }
       ],
-      "ultima": 6
+      "ultima": 5
     },
     {
       "id": "luces-navidad-miami-2026",
@@ -3735,8 +3733,8 @@
           "u": "https://savethemanatee.org/establishing-manatee-boating-zone-rules/"
         }
       ],
-      "ultima": 4,
-      "foto_pos": "60% 90%"
+      "foto_pos": "60% 90%",
+      "tambien": 2
     },
     {
       "id": "oleta-river-kayak-pesca-norte",
