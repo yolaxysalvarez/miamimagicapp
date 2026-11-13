@@ -707,11 +707,11 @@
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "Caballos sobre la arena de South Beach: el polo de playa ya se juega y el domingo corona campeón",
-        "bajada": "El Beach Polo World Cup disputa cuatro partidos por día, de viernes a domingo, junto a Collins Park. La premiación es el domingo 15 por la tarde.",
+        "bajada": "El Beach Polo World Cup disputa cuatro partidos por día, de viernes a domingo, junto a Collins Park, con entrada general gratis. La premiación es el domingo 15 por la tarde.",
         "toca": [
           "Dónde: en la arena, a la altura de las calles 21 y 22 y Collins Avenue, junto a Collins Park.",
           "Viernes 13: partidos a la 1:00, 2:15, 3:30 y 4:30 PM. Sábado 14 y domingo 15: a las 12:30, 1:15, 2:30 y 4:00 PM.",
-          "Entradas y carpas VIP, en [la página del torneo](https://miamibeachpolo.com/)."
+          "La entrada general es gratis, según anunciaron los organizadores en sus redes; las carpas VIP son de pago y se reservan en [la página del torneo](https://miamibeachpolo.com/)."
         ],
         "cuerpo": [
           "Cascos sobre arena en vez de césped, y el Atlántico a unos pasos. El Beach Polo World Cup se juega a partir de este viernes 13 de noviembre en Miami Beach, con cuatro partidos por día hasta el domingo, [según el programa oficial](https://miamibeachpolo.com/schedule).",
@@ -725,11 +725,11 @@
       "en": {
         "etiqueta": "SPORTS",
         "titulo": "Horses on the sand of South Beach: beach polo is underway and a champion is crowned Sunday",
-        "bajada": "The Beach Polo World Cup plays four matches a day, Friday through Sunday, beside Collins Park. The awards ceremony is Sunday, Nov. 15, in the afternoon.",
+        "bajada": "The Beach Polo World Cup plays four matches a day, Friday through Sunday, beside Collins Park, with free general admission. The awards ceremony is Sunday, Nov. 15, in the afternoon.",
         "toca": [
           "Where: on the sand at 21st and 22nd streets and Collins Avenue, beside Collins Park.",
           "Friday, Nov. 13: matches at 1, 2:15, 3:30 and 4:30 p.m. Saturday, Nov. 14, and Sunday, Nov. 15: at 12:30, 1:15, 2:30 and 4 p.m.",
-          "Tickets and VIP tents, on [the tournament's website](https://miamibeachpolo.com/)."
+          "General admission is free, organizers announced on social media; VIP tents are paid and booked on [the tournament's website](https://miamibeachpolo.com/)."
         ],
         "cuerpo": [
           "Hooves on sand instead of grass, with the Atlantic a few steps away. The Beach Polo World Cup is played starting this Friday, Nov. 13, in Miami Beach, with four matches a day through Sunday, [according to the official schedule](https://miamibeachpolo.com/schedule).",
@@ -751,7 +751,7 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-13T09:20:00-05:00"
+      "actualizada": "2026-11-13T09:30:00-05:00"
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
