@@ -528,6 +528,85 @@
       "ultima": 1
     },
     {
+      "id": "microsoft-365-caida-mundial-outlook",
+      "scope": "miami",
+      "tema": "ciudad",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-brickell-metromover.jpg",
+      "foto_mm": false,
+      "foto_alt": "Torres de oficinas de cristal en Brickell, iluminadas de noche",
+      "foto_pie": "Torres de oficinas en Brickell, de noche.",
+      "foto_pie_en": "Office towers in Brickell at night.",
+      "ultima": 1,
+      "es": {
+        "etiqueta": "TECNOLOGÍA",
+        "titulo": "Si Outlook no te abre hoy, no es tu internet: la caída de Microsoft es mundial y va por su segundo día",
+        "bajada": "El correo de Outlook, Teams y otros servicios de Microsoft 365 fallan desde el jueves. La empresa habla de una recuperación por fases y dice que no ve señales de un ataque.",
+        "toca": [
+          "Un correo que no llega puede estar retrasado: Microsoft informa que la entrega mejora por fases.",
+          "Para algo urgente, mejor el teléfono. Los servicios no urgentes del condado de Miami-Dade se piden en el 311.",
+          "El estado del servicio se sigue en [status.cloud.microsoft](https://status.cloud.microsoft/) y en la cuenta @MSFT365Status."
+        ],
+        "cuerpo": [
+          "Si esta mañana Outlook no abre, Teams no conecta o el correo de la oficina llega con horas de retraso, no es tu internet ni tu computadora. La caída de Microsoft 365 es mundial, empezó el jueves 12 de noviembre y este viernes va por su segundo día.",
+          "## Qué dice Microsoft",
+          "En su [parte más reciente](https://x.com/MSFT365Status/status/2121213845490336163), la empresa habla de un progreso alentador: la disponibilidad del servicio y la entrega de correo mejoran en una parte cada vez mayor de su infraestructura, aunque algunos usuarios pueden seguir con fallos intermitentes.",
+          "Sobre la causa, [explicó](https://x.com/MSFT365Status/status/2121002505911857577) que un proceso central de los servidores afectados se satura y les hace perder capacidad. También asegura que [no tiene indicios de actividad maliciosa](https://wsvn.com/news/us-world/microsoft-outage-disrupts-global-services/). El incidente quedó registrado con el código EX1550543.",
+          "## Qué está fallando",
+          "Sobre todo Exchange Online, que es el correo que hay detrás de Outlook. La lista de servicios afectados que publicó Microsoft incluye además Teams, SharePoint, Copilot, Planner, To Do, Intune y Defender.",
+          "## Y en Miami",
+          "Le toca a todo el que trabaja, estudia o hace trámites con una cuenta de Outlook o de Microsoft 365: oficinas, bufetes, consultorios, agencias. Quien espere un correo de alguno de ellos, sea una cita, un contrato o una respuesta, puede recibirlo tarde.",
+          "Hasta la publicación de esta nota, Miami Magic News no había localizado un aviso oficial de interrupciones del condado de Miami-Dade ni de las escuelas públicas.",
+          "## El tamaño del problema",
+          "Microsoft dijo en enero que tiene más de 450 millones de suscripciones comerciales de pago de Microsoft 365. Fuera de Estados Unidos, la policía británica dejó de recibir denuncias por internet, el gobierno de Japón volvió al teléfono y Air India desvió su correo a otro sistema, [según el recuento de la agencia AP](https://wsvn.com/news/us-world/microsoft-outage-disrupts-global-services/)."
+        ]
+      },
+      "en": {
+        "etiqueta": "TECH",
+        "titulo": "If Outlook won't open today, it's not your Wi-Fi: Microsoft's outage is global and in its second day",
+        "bajada": "Outlook email, Teams and other Microsoft 365 services have been failing since Thursday. The company describes a phased recovery and says it sees no sign of an attack.",
+        "toca": [
+          "An email that hasn't arrived may be delayed: Microsoft says delivery is improving in phases.",
+          "For anything urgent, pick up the phone. Miami-Dade County's non-emergency services are requested at 311.",
+          "Service status is posted at [status.cloud.microsoft](https://status.cloud.microsoft/) and on the @MSFT365Status account."
+        ],
+        "cuerpo": [
+          "If Outlook won't open this morning, Teams won't connect or office email is arriving hours late, it's not your Wi-Fi or your computer. The Microsoft 365 outage is global, began Thursday, Nov. 12, and is in its second day this Friday.",
+          "## What Microsoft says",
+          "In its [most recent update](https://x.com/MSFT365Status/status/2121213845490336163), the company describes encouraging progress: service availability and email delivery are improving across a growing portion of its infrastructure, though some users may still see intermittent issues.",
+          "As for the cause, it [explained](https://x.com/MSFT365Status/status/2121002505911857577) that a core process on the affected servers becomes overwhelmed, causing them to lose capacity. It also says it has [no indication of malicious activity](https://wsvn.com/news/us-world/microsoft-outage-disrupts-global-services/). The incident is logged as EX1550543.",
+          "## What's failing",
+          "Mainly Exchange Online, the email service behind Outlook. The list of affected services Microsoft published also includes Teams, SharePoint, Copilot, Planner, To Do, Intune and Defender.",
+          "## And in Miami",
+          "It touches anyone who works, studies or handles paperwork through an Outlook or Microsoft 365 account: offices, law firms, medical practices, agencies. Anyone waiting on an email from one of them, whether an appointment, a contract or a reply, may get it late.",
+          "As of publication, Miami Magic News had not located an official notice of disruptions from Miami-Dade County or the public schools.",
+          "## The size of the problem",
+          "Microsoft said in January that it has more than 450 million paid commercial Microsoft 365 subscriptions. Outside the United States, British police stopped receiving online crime reports, Japan's government went back to the telephone and Air India rerouted its email to another system, [according to The Associated Press's tally](https://wsvn.com/news/us-world/microsoft-outage-disrupts-global-services/)."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Microsoft 365 Status · parte de recuperación",
+          "u": "https://x.com/MSFT365Status/status/2121213845490336163"
+        },
+        {
+          "n": "Microsoft 365 Status · aviso inicial (EX1550543)",
+          "u": "https://x.com/MSFT365Status/status/2120938282204688468"
+        },
+        {
+          "n": "Microsoft · página de estado del servicio",
+          "u": "https://status.cloud.microsoft/"
+        },
+        {
+          "n": "Associated Press · recuento mundial de la interrupción",
+          "u": "https://wsvn.com/news/us-world/microsoft-outage-disrupts-global-services/"
+        }
+      ]
+    },
+    {
       "id": "robots-delivery-aceras-ordenanza",
       "scope": "miami",
       "tema": "calle",
