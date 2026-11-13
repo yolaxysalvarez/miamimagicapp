@@ -2,12 +2,12 @@
   "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES).",
   "updated": "2026-11-08",
   "ultima_hora": {
-    "activa": false,
-    "nota": "",
-    "es": "",
-    "en": "",
-    "desde": "",
-    "hasta": ""
+    "activa": true,
+    "nota": "e1-miami-gp-botes-electricos-final",
+    "es": "El mundial de botes eléctricos E1 se decide hoy y mañana en la bahía de Biscayne: el equipo de Tom Brady llega líder y el de Will Smith lo persigue",
+    "en": "The E1 electric raceboat world title is decided today and tomorrow on Biscayne Bay: Tom Brady's team leads and Will Smith's is chasing",
+    "desde": "2026-11-13T09:15:00-05:00",
+    "hasta": "2026-11-13T23:59:00-05:00"
   },
   "cifras": [
     {
@@ -540,7 +540,7 @@
       "foto_alt": "Torres de oficinas de cristal en Brickell, iluminadas de noche",
       "foto_pie": "Torres de oficinas en Brickell, de noche.",
       "foto_pie_en": "Office towers in Brickell at night.",
-      "ultima": 1,
+      "ultima": 2,
       "es": {
         "etiqueta": "TECNOLOGÍA",
         "titulo": "La caída mundial de Microsoft dejó sin correo hasta a la ciudad de Miami Beach: qué pasa con los mensajes que no llegaron",
@@ -609,6 +609,78 @@
         {
           "n": "Fox Business · actualización del 13 de noviembre",
           "u": "https://www.foxbusiness.com/technology/microsoft-outlook-returns-some-millions-users-face-second-day-outages"
+        }
+      ]
+    },
+    {
+      "id": "e1-miami-gp-botes-electricos-final",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "muelle": true,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-macarthur-rosa.jpg",
+      "foto_mm": false,
+      "foto_alt": "El puente del MacArthur Causeway iluminado de rosa sobre la bahía de Biscayne al anochecer",
+      "foto_pie": "La bahía de Biscayne junto al MacArthur Causeway, la zona donde se corre el E1.",
+      "foto_pie_en": "Biscayne Bay beside the MacArthur Causeway, the area where E1 races.",
+      "ultima": 1,
+      "es": {
+        "etiqueta": "EVENTOS",
+        "titulo": "El equipo de Tom Brady contra el de Will Smith, en botes eléctricos y frente al downtown: el mundial E1 se decide en Miami",
+        "bajada": "La bahía de Biscayne cierra la temporada del campeonato de botes eléctricos con dos carreras en dos días, viernes 13 y sábado 14 de noviembre. El sábado sale el campeón.",
+        "toca": [
+          "Dónde: bahía de Biscayne, con base en el Miami Seaplane Base de Watson Island, 1000 MacArthur Causeway.",
+          "Las entradas son de hospitalidad y se venden en [la taquilla oficial](https://tickets.e1series.com/miami/). Las carreras se transmiten gratis por DAZN.",
+          "El título se define el sábado 14."
+        ],
+        "cuerpo": [
+          "Se levantan sobre el agua con unas alas sumergidas, corren con motor eléctrico y doblan las boyas con los rascacielos del downtown de fondo. Los botes del mundial E1 cierran su temporada en la bahía de Biscayne, y por primera vez lo hacen con dos carreras de campeonato en días seguidos.",
+          "## Lo que está en juego",
+          "El equipo de Tom Brady llega líder con 157 puntos y puede llevarse su tercer título consecutivo, después de ganar en 2024 y 2025. Lo persigue Westbrook Racing, el equipo de Will Smith, con 117, [según la clasificación previa a la final](https://www.dazn.com/en-US/news/motorsport/e1-miami-2026-preview-tom-brady-will-smith-how-to-watch-free-dazn-t3r/1b51pdrwvy7jk1uc27z0ynrtip). Detrás vienen el del DJ Steve Aoki, con 86, y el de LeBron James, con 84.",
+          "## Famosos en el muelle, pilotos en el agua",
+          "Brady y Smith son los dueños; los que corren son otros. Cada equipo lleva un piloto y una piloto: por el líder compiten la finlandesa Emma Kimiläinen y el británico Sam Coleman. Entre los demás propietarios del campeonato figuran Rafael Nadal, Marc Anthony, Didier Drogba y Virat Kohli.",
+          "## Por qué Miami",
+          "La bahía de Biscayne recibe competencias internacionales de botes de carrera desde la década de 1950, recordó la organización al anunciar que la final sería aquí."
+        ]
+      },
+      "en": {
+        "etiqueta": "EVENTS",
+        "titulo": "Tom Brady's team vs. Will Smith's, in electric raceboats off downtown: the E1 world title is decided in Miami",
+        "bajada": "Biscayne Bay closes the electric raceboat championship season with two races in two days, Friday, Nov. 13, and Saturday, Nov. 14. The champion is crowned Saturday.",
+        "toca": [
+          "Where: Biscayne Bay, based at the Miami Seaplane Base on Watson Island, 1000 MacArthur Causeway.",
+          "Tickets are hospitality packages sold through [the official box office](https://tickets.e1series.com/miami/). The races stream free on DAZN.",
+          "The title is decided Saturday, Nov. 14."
+        ],
+        "cuerpo": [
+          "They rise above the water on submerged wings, run on electric power and round the buoys with downtown's skyscrapers behind them. The boats of the E1 world championship close their season on Biscayne Bay, and for the first time they do it with two championship races on consecutive days.",
+          "## What's at stake",
+          "Tom Brady's team arrives as the leader with 157 points and could take its third straight title, after winning in 2024 and 2025. Chasing it is Westbrook Racing, Will Smith's team, with 117, [according to the standings before the finale](https://www.dazn.com/en-US/news/motorsport/e1-miami-2026-preview-tom-brady-will-smith-how-to-watch-free-dazn-t3r/1b51pdrwvy7jk1uc27z0ynrtip). Behind them are DJ Steve Aoki's team, with 86, and LeBron James', with 84.",
+          "## Celebrities on the dock, pilots on the water",
+          "Brady and Smith are the owners; others do the racing. Each team fields one male and one female pilot: the leader's are Finland's Emma Kimiläinen and Britain's Sam Coleman. The championship's other owners include Rafael Nadal, Marc Anthony, Didier Drogba and Virat Kohli.",
+          "## Why Miami",
+          "Biscayne Bay has hosted international powerboat competitions since the 1950s, organizers noted when they announced the finale would be here."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "E1 Series · calendario 2026",
+          "u": "https://mediacentre.e1series.com/mediacentre/press-release/308_E1-reveals-calendar-for-2026-season"
+        },
+        {
+          "n": "DAZN · previa de la final de Miami",
+          "u": "https://www.dazn.com/en-US/news/motorsport/e1-miami-2026-preview-tom-brady-will-smith-how-to-watch-free-dazn-t3r/1b51pdrwvy7jk1uc27z0ynrtip"
+        },
+        {
+          "n": "E1 Miami GP · entradas",
+          "u": "https://tickets.e1series.com/miami/"
+        },
+        {
+          "n": "WSVN · sede y formato del fin de semana",
+          "u": "https://wsvn.com/entertainment/deco-drive/e1-electric-raceboat-championship-miami/"
         }
       ]
     },
@@ -708,7 +780,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "obamacare-2027-florida",
@@ -1610,7 +1682,7 @@
           "u": "https://www.nar.realtor/magazine/real-estate-news/online-real-estate-fraud-climbed-to-275m-in-2025-fbi-says"
         }
       ],
-      "ultima": 6
+      "ultima": 7
     },
     {
       "hamaca": false,
@@ -1943,7 +2015,7 @@
           "u": "https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che"
         }
       ],
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "seven-mile-bridge-rehabilitacion",
@@ -3373,7 +3445,7 @@
           "u": "https://miamiwonderland.com/faqs/"
         }
       ],
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "luces-navidad-miami-2026",
@@ -3580,7 +3652,7 @@
           "u": "https://savethemanatee.org/establishing-manatee-boating-zone-rules/"
         }
       ],
-      "ultima": 2,
+      "ultima": 3,
       "foto_pos": "60% 90%"
     },
     {
