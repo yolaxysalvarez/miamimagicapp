@@ -551,7 +551,7 @@
           "El estado del servicio se sigue en [status.cloud.microsoft](https://status.cloud.microsoft/) y en la cuenta @MSFT365Status. Nadie tiene que pedirte la contraseña para «arreglar» tu cuenta."
         ],
         "cuerpo": [
-          "El jueves 12 de noviembre por la tarde, la ciudad de Miami Beach [avisó en sus redes](https://x.com/MiamiBeachNews/status/2120963615784411403) de que su personal no podía recibir correos por un tiempo. El problema no estaba en la alcaldía: Microsoft 365, el servicio que hay detrás de Outlook y Teams, sufría una caída mundial que se va restableciendo por fases.",
+          "El jueves 12 de noviembre por la tarde, la ciudad de Miami Beach [avisó en sus redes](https://x.com/MiamiBeachNews/status/2120963615784411403) de que su personal estaba «temporalmente no disponible por correo electrónico». El problema no estaba en la alcaldía: Microsoft 365, el servicio que hay detrás de Outlook y Teams, sufría una caída mundial que se va restableciendo por fases.",
           "## Qué pasa con los correos atrasados",
           "Microsoft informó de que amplió a 48 horas el plazo para entregar los mensajes que quedaron en espera mientras se recupera el servicio. Eso da margen para que un correo enviado el jueves por la tarde todavía llegue a su destino. Lo normal, pasado cierto tiempo, es que el sistema lo devuelva al remitente.",
           "## Qué dice Microsoft",
@@ -573,7 +573,7 @@
           "Service status is posted at [status.cloud.microsoft](https://status.cloud.microsoft/) and on the @MSFT365Status account. No one needs to ask for your password to \"fix\" your account."
         ],
         "cuerpo": [
-          "On the afternoon of Thursday, Nov. 12, the City of Miami Beach [announced on social media](https://x.com/MiamiBeachNews/status/2120963615784411403) that its staff could not receive email for a time. The problem wasn't at City Hall: Microsoft 365, the service behind Outlook and Teams, was suffering a global outage that is being restored in phases.",
+          "On the afternoon of Thursday, Nov. 12, the City of Miami Beach [announced on social media](https://x.com/MiamiBeachNews/status/2120963615784411403) that its staff was temporarily unavailable by email. The problem wasn't at City Hall: Microsoft 365, the service behind Outlook and Teams, was suffering a global outage that is being restored in phases.",
           "## What happens to delayed emails",
           "Microsoft said it extended to 48 hours the window to deliver messages left waiting while service recovers. That leaves room for an email sent Thursday afternoon to still reach its destination. Normally, after a certain time, the system returns it to the sender.",
           "## What Microsoft says",
