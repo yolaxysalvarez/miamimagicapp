@@ -44,6 +44,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 article{padding:44px 0 20px}
 .crumb{font-family:var(--bb);font-size:19px;letter-spacing:.16em;color:var(--mut)}
 .crumb a{color:var(--ink);text-decoration:underline;text-decoration-color:rgba(201,150,60,.7);text-decoration-thickness:1.5px;text-underline-offset:4px}
+.dev{display:flex;align-items:center;flex-wrap:wrap;gap:8px 14px;margin:14px 0 -4px}.dev span{display:inline-flex;align-items:center;gap:8px;padding:4px 12px 3px;border-radius:999px;background:var(--coral);color:#fff;font-family:var(--bb);font-size:17px;letter-spacing:.14em;line-height:1.3}.dev span i{width:8px;height:8px;border-radius:50%;background:#fff;animation:devp 1.4s ease-in-out infinite}.dev em{font-style:normal;font-size:14.5px;color:var(--mut)}
+@keyframes devp{0%,100%{opacity:1}50%{opacity:.35}}
+.upd{display:flex;align-items:center;gap:9px;margin:26px 0 0;padding-top:14px;border-top:1px solid var(--line);font-size:14.5px;color:var(--mut)}.upd i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--coral);animation:devp 1.4s ease-in-out infinite}
 .crumb .sc{color:var(--coral-d)}.crumb .sc.ky{color:var(--keys)}
 .ccw{font-family:var(--pf);font-weight:900;color:var(--ink);white-space:nowrap;letter-spacing:0;text-transform:none}.ccw .em{display:inline-block;width:.74em;height:.74em;margin:0 .16em;vertical-align:-.1em}.crumb .ccw{font-size:20px}
 .dkw{font-family:var(--pf);font-weight:900;color:var(--ink);white-space:nowrap;letter-spacing:0;text-transform:none}.dkw em{font-weight:700;color:#0B5C7A}
@@ -219,6 +222,11 @@ function img(){var f=(L==='en'&&N.foto_en)||N.foto||'';return f?(/^https?:|^\//.
 function url(){return 'https://www.miamimagicapp.com'+(L==='en'?'/news/':'/noticias/')+encodeURIComponent(ID)}
 function meta(name,val,prop){var s=prop?'meta[property="'+name+'"]':'meta[name="'+name+'"]';var m=document.querySelector(s);if(!m){m=document.createElement('meta');m.setAttribute(prop?'property':'name',name);document.head.appendChild(m)}m.setAttribute('content',val)}
 
+function upd(){var d=new Date(N.actualizada),m=Math.round((Date.now()-d)/60000),en=L==='en',hr='';try{hr=d.toLocaleTimeString(en?'en-US':'es-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})}catch(e){}
+  if(isNaN(m))return '';if(m<1)m=1;
+  if(m<60)return (en?'Updated '+m+' min ago':'Actualizado hace '+m+' min')+(hr?' · '+hr:'');
+  if(m<1440){var h=Math.round(m/60);return (en?'Updated '+h+(h===1?' hour':' hours')+' ago':'Actualizado hace '+h+(h===1?' hora':' horas'))+(hr?' · '+hr:'')}
+  return (en?'Updated ':'Actualizado el ')+fd(N.actualizada.slice(0,10))+(hr?' · '+hr:'')}
 function render(){
   document.documentElement.lang=L;
   document.querySelectorAll('.lng button').forEach(function(b){b.classList.toggle('on',b.dataset.l===L)});
@@ -231,6 +239,7 @@ function render(){
   meta('description',ba);meta('og:title',ti,1);meta('og:description',ba,1);meta('og:url',url(),1);if(img())meta('og:image',(/^https?:/.test(img())?'':'https://www.miamimagicapp.com')+img(),1);
   var sc=SC[N.scope||'miami']||SC.miami, CC=(N.tema==='casa'&&!N.hamaca&&!N.muelle), te=CC?['<span class="ccw" role="img" aria-label="Casa &amp; Coast">Casa<svg class="em" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span>','<span class="ccw" role="img" aria-label="Casa &amp; Coast">Casa<svg class="em" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span>']:N.muelle?['<span class="dkw">El <em>Mue<span class="pil"></span><span class="pil"></span>e</em></span>','<span class="dkw">The <em>D<span class="ringw"><span class="ring"></span></span>ck</em></span>']:N.hamaca?['<span class="hmw">Hamaca <em>M<span class="sol" role="img" aria-label="o"></span>od</em></span>','<span class="hmw">Hammock <em>M<span class="sol" role="img" aria-label="o"></span>od</em></span>']:(TE[N.tema]||['','']), i=L==='en'?1:0;
   var h='<article><div class="col"><div class="crumb"><a href="/noticias'+(L==='en'?'?lang=en':'')+'">MIAMI MAGIC NEWS</a> · '+((N.hamaca||N.muelle||CC)?te[i]:'<span class="sc'+(N.scope==='cayos'?' ky':'')+'">'+sc[i]+'</span>'+(te[i]?' · '+te[i]:''))+'</div>'
+   +(N.desarrollo?'<div class="dev"><span><i></i>'+(L==='en'?'DEVELOPING STORY':'NOTICIA EN DESARROLLO')+'</span>'+(N.actualizada?'<em>'+upd()+'</em>':'')+'</div>':'')
    +'<h1>'+esc(ti)+'</h1>'+(ba?'<p class="bajada">'+esc(ba)+'</p>':'')
    +'<div class="by">'+(!N.autor||N.autor==='Yolaxys Alvarez'?'<img class="av" src="/fotos/mm-yoly-autora.jpg" alt="Yolaxys Alvarez" width="48" height="48">':'<span class="av">'+esc(N.autor.charAt(0))+'</span>')+'<div><b>'+t('por')+' '+esc(N.autor||'Yolaxys Alvarez')+'</b><span>'+(N.autor&&N.autor!=='Yolaxys Alvarez'?'':t('ed')+'<br>')+fd(N.fecha)+' · '+mn+' '+t('min')+'</span></div></div></div>';
   if(img())h+='<figure><div class="hero'+(N.foto_ratio?' tall" style="aspect-ratio:'+esc(N.foto_ratio):'')+'"><img src="'+esc(img())+'" alt="'+esc(N.foto_alt||'')+'"'+(N.foto_pos?' style="object-position:'+esc(N.foto_pos)+'"':'')+'>'+(N.foto_mm!==false?'<span class="wm">MIAMI MAGIC</span>':'')+'</div>'+(N.foto_credito||N.foto_pie?'<figcaption class="cap">'+esc((L==='en'&&N.foto_pie_en)||N.foto_pie||'')+(N.foto_credito?' · '+t('foto')+': '+esc(N.foto_credito):'')+'</figcaption>':'<div style="height:24px"></div>')+'</figure>';
@@ -238,6 +247,7 @@ function render(){
   var at=Math.min(2,cu.length);if(at>1&&cu[at-1].slice(0,3)==='## ')at--;
   cu.forEach(function(p,k){h+=(p==='::btc'?btcT():p.slice(0,3)==='## '?'<h3 class="q">'+esc(p.slice(3))+'</h3>':'<p>'+hn(p)+'</p>');if(k===at-1&&to.length)h+='</div><div class="toca"><b>'+t('toca')+'</b><ul>'+to.map(function(x,j){return '<li><i>'+(j+1)+'</i><span>'+hn(x)+'</span></li>'}).join('')+'</ul></div><div class="body">'});
   h+='</div>';
+  if(N.actualizada)h+='<p class="upd">'+(N.desarrollo?'<i></i>':'')+upd()+(N.desarrollo?(L==='en'?' — This story is developing and will be updated.':' — Esta noticia está en desarrollo y se seguirá actualizando.'):'')+'</p>';
   if(N.galeria&&N.galeria.length){h+='<div class="gal">'+N.galeria.map(function(g){var src=/^https?:|^\//.test(g.f)?g.f:'/fotos/'+g.f;var cap=(g[L]||g.es||'');return '<figure><span class="gi"><img src="'+esc(src)+'" alt="'+esc(cap)+'" loading="lazy">'+(g.mm===false?'':'<span class="wm">MIAMI MAGIC</span>')+'</span>'+(cap?'<figcaption>'+esc(cap)+'</figcaption>':'')+'</figure>'}).join('')+'</div>'}
   if(N.fuentes&&N.fuentes.length)h+='<div class="src"><h5>'+t('fuentes')+'</h5><ul>'+N.fuentes.map(function(f){return '<li>'+(f.u?'<a href="'+esc(f.u)+'" target="_blank" rel="noopener">'+esc(f.n)+'</a>':esc(f.n))+'</li>'}).join('')+'</ul></div>';
   if(N.actualizada)h+='<p class="upd">'+t('act')+' '+fd(N.actualizada)+(F('nota_act')?' · '+esc(F('nota_act')):'')+'</p>';

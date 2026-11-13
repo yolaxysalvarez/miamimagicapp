@@ -96,6 +96,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .cf-r:hover>div{animation-play-state:paused}
 @media(max-width:760px){.cf-r>div{animation-duration:34s}.cf-r{-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 14%,#000 92%,transparent)}}
 html,body{overflow-x:clip}
+.dv{display:inline-flex;align-items:center;gap:6px;margin-left:10px;padding:2px 8px 1px;border-radius:999px;background:rgba(255,77,53,.1);color:#C93A25;font-family:'Bebas Neue',sans-serif;font-size:14.5px;letter-spacing:.12em;line-height:1.35;white-space:nowrap;vertical-align:middle}.dv i{width:6px;height:6px;border-radius:50%;background:#FF4D35;animation:mmpulse 1.4s ease-in-out infinite}
 .cf-i{display:inline-flex;align-items:center;gap:9px;padding:0 24px;white-space:nowrap;font-size:16px;color:var(--ink2)}
 .cf-i b{color:var(--coral-d);font-size:17px}
 .cf-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex:none}
@@ -1160,7 +1161,8 @@ var SCL={miami:['MIAMI','MIAMI'],cayos:['LOS CAYOS','THE KEYS'],florida:['FLORID
 function hmw(){return '<span class="hmw">'+(L==='en'?'Hammock':'Hamaca')+' <em>M<span class="sol" role="img" aria-label="o"></span>od</em></span>'}
 function dkw(){return L==='en'?'<span class="dkw">The <em>D<span class="ringw"><span class="ring" role="img" aria-label="o"></span></span>ck</em></span>':'<span class="dkw">El <em>Mue<span class="pil" role="img" aria-label="l"></span><span class="pil" role="img" aria-label="l"></span>e</em></span>'}
 function ccw(){return '<span class="ccw" role="img" aria-label="Casa &amp; Coast">Casa<svg class="em" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span>'}
-function eb(n){var i=L==='en'?1:0;if(n.hamaca)return hmw();if(n.muelle)return dkw();if(isCC(n))return ccw();var sc=n.scope||'miami',te=(TEMA_EB[n.tema]||['',''])[i];return '<span class="lg'+(sc==='cayos'?' ky':'')+'">'+esc((SCL[sc]||SCL.miami)[i])+'</span>'+(te?' · '+esc(te):'')}
+function eb(n){var x=eb0(n);return n.desarrollo?x+'<span class="dv"><i></i>'+(L==='en'?'DEVELOPING':'EN DESARROLLO')+'</span>':x}
+function eb0(n){var i=L==='en'?1:0;if(n.hamaca)return hmw();if(n.muelle)return dkw();if(isCC(n))return ccw();var sc=n.scope||'miami',te=(TEMA_EB[n.tema]||['',''])[i];return '<span class="lg'+(sc==='cayos'?' ky':'')+'">'+esc((SCL[sc]||SCL.miami)[i])+'</span>'+(te?' · '+esc(te):'')}
 function ph(n,cls){var s=img(n);return '<span class="ph '+(cls||'')+(n.foto_fit==='contain'?' fit':'')+'"'+(n.foto_bg?' style="background:'+esc(n.foto_bg)+'"':'')+'>'+(s?'<img src="'+esc(s)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy"'+(n.foto_pos?' style="object-position:'+esc(n.foto_pos)+'"':'')+'>':'')+(n.foto_mm!==false&&s?'<span class="wm">MIAMI MAGIC</span>':'')+'</span>'}
 
 /* ── filtrar ── */

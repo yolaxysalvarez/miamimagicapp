@@ -610,7 +610,9 @@
           "n": "Fox Business · actualización del 13 de noviembre",
           "u": "https://www.foxbusiness.com/technology/microsoft-outlook-returns-some-millions-users-face-second-day-outages"
         }
-      ]
+      ],
+      "desarrollo": true,
+      "actualizada": "2026-11-13T09:20:00-05:00"
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
@@ -643,7 +645,8 @@
           "## Famosos en el muelle, pilotos en el agua",
           "Brady y Smith son los dueños; los que corren son otros. Cada equipo lleva un piloto y una piloto: por el líder compiten la finlandesa Emma Kimiläinen y el británico Sam Coleman. Entre los demás propietarios del campeonato figuran Rafael Nadal, Marc Anthony, Didier Drogba y Virat Kohli.",
           "## Por qué Miami",
-          "La bahía de Biscayne recibe competencias internacionales de botes de carrera desde la década de 1950, recordó la organización al anunciar que la final sería aquí."
+          "La bahía de Biscayne recibe competencias internacionales de botes de carrera desde la década de 1950, recordó la organización al anunciar que la final sería aquí.",
+          "Esta nota se actualizará con el resultado de cada carrera."
         ]
       },
       "en": {
@@ -662,7 +665,8 @@
           "## Celebrities on the dock, pilots on the water",
           "Brady and Smith are the owners; others do the racing. Each team fields one male and one female pilot: the leader's are Finland's Emma Kimiläinen and Britain's Sam Coleman. The championship's other owners include Rafael Nadal, Marc Anthony, Didier Drogba and Virat Kohli.",
           "## Why Miami",
-          "Biscayne Bay has hosted international powerboat competitions since the 1950s, organizers noted when they announced the finale would be here."
+          "Biscayne Bay has hosted international powerboat competitions since the 1950s, organizers noted when they announced the finale would be here.",
+          "This story will be updated with each race's result."
         ]
       },
       "fuentes": [
@@ -682,7 +686,72 @@
           "n": "WSVN · sede y formato del fin de semana",
           "u": "https://wsvn.com/entertainment/deco-drive/e1-electric-raceboat-championship-miami/"
         }
-      ]
+      ],
+      "desarrollo": true,
+      "actualizada": "2026-11-13T09:20:00-05:00"
+    },
+    {
+      "id": "beach-polo-world-cup-miami-beach-2026",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-mb-playa-edificios.jpg",
+      "foto_mm": false,
+      "foto_alt": "La playa de Miami Beach con los edificios de Collins Avenue al fondo",
+      "foto_pie": "La playa de Miami Beach, donde se monta la cancha de polo.",
+      "foto_pie_en": "Miami Beach's shoreline, where the polo field is set up.",
+      "ultima": 3,
+      "es": {
+        "etiqueta": "DEPORTES",
+        "titulo": "Caballos sobre la arena de South Beach: el polo de playa ya se juega y el domingo corona campeón",
+        "bajada": "El Beach Polo World Cup disputa cuatro partidos por día, de viernes a domingo, junto a Collins Park. La premiación es el domingo 15 por la tarde.",
+        "toca": [
+          "Dónde: en la arena, a la altura de las calles 21 y 22 y Collins Avenue, junto a Collins Park.",
+          "Viernes 13: partidos a la 1:00, 2:15, 3:30 y 4:30 PM. Sábado 14 y domingo 15: a las 12:30, 1:15, 2:30 y 4:00 PM.",
+          "Entradas y carpas VIP, en [la página del torneo](https://miamibeachpolo.com/)."
+        ],
+        "cuerpo": [
+          "Cascos sobre arena en vez de césped, y el Atlántico a unos pasos. El Beach Polo World Cup se juega a partir de este viernes 13 de noviembre en Miami Beach, con cuatro partidos por día hasta el domingo, [según el programa oficial](https://miamibeachpolo.com/schedule).",
+          "## Lo que viene",
+          "El sorteo de los partidos se hizo el jueves en la noche, en la presentación de los equipos. El sábado, a las 2:00 PM, hay un partido de celebridades, y el domingo, a la misma hora, uno benéfico.",
+          "## Cuándo hay campeón",
+          "El domingo 15. Después del último partido, a las 4:45 PM, se entregan los premios, entre ellos el de jugador más valioso y el del mejor caballo.",
+          "Esta nota se actualizará con los resultados de cada jornada."
+        ]
+      },
+      "en": {
+        "etiqueta": "SPORTS",
+        "titulo": "Horses on the sand of South Beach: beach polo is underway and a champion is crowned Sunday",
+        "bajada": "The Beach Polo World Cup plays four matches a day, Friday through Sunday, beside Collins Park. The awards ceremony is Sunday, Nov. 15, in the afternoon.",
+        "toca": [
+          "Where: on the sand at 21st and 22nd streets and Collins Avenue, beside Collins Park.",
+          "Friday, Nov. 13: matches at 1, 2:15, 3:30 and 4:30 p.m. Saturday, Nov. 14, and Sunday, Nov. 15: at 12:30, 1:15, 2:30 and 4 p.m.",
+          "Tickets and VIP tents, on [the tournament's website](https://miamibeachpolo.com/)."
+        ],
+        "cuerpo": [
+          "Hooves on sand instead of grass, with the Atlantic a few steps away. The Beach Polo World Cup is played starting this Friday, Nov. 13, in Miami Beach, with four matches a day through Sunday, [according to the official schedule](https://miamibeachpolo.com/schedule).",
+          "## What's ahead",
+          "The match draw was held Thursday night at the team presentation. On Saturday at 2 p.m. there is a celebrity match, and on Sunday at the same hour, a charity one.",
+          "## When there's a champion",
+          "Sunday, Nov. 15. After the last match, at 4:45 p.m., the awards are presented, including most valuable player and best playing pony.",
+          "This story will be updated with each day's results."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "World Polo League Beach Polo World Cup · programa oficial",
+          "u": "https://miamibeachpolo.com/schedule"
+        },
+        {
+          "n": "Beach Polo World Cup · sitio del torneo",
+          "u": "https://miamibeachpolo.com/"
+        }
+      ],
+      "desarrollo": true,
+      "actualizada": "2026-11-13T09:20:00-05:00"
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
@@ -780,7 +849,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "obamacare-2027-florida",
@@ -1682,7 +1751,7 @@
           "u": "https://www.nar.realtor/magazine/real-estate-news/online-real-estate-fraud-climbed-to-275m-in-2025-fbi-says"
         }
       ],
-      "ultima": 7
+      "ultima": 8
     },
     {
       "hamaca": false,
@@ -2015,7 +2084,7 @@
           "u": "https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che"
         }
       ],
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "seven-mile-bridge-rehabilitacion",
@@ -3445,7 +3514,7 @@
           "u": "https://miamiwonderland.com/faqs/"
         }
       ],
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "luces-navidad-miami-2026",
@@ -3652,7 +3721,7 @@
           "u": "https://savethemanatee.org/establishing-manatee-boating-zone-rules/"
         }
       ],
-      "ultima": 3,
+      "ultima": 4,
       "foto_pos": "60% 90%"
     },
     {
