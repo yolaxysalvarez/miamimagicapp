@@ -4,8 +4,8 @@
   "ultima_hora": {
     "activa": true,
     "nota": "faa-parada-nacional-vuelos-13-noviembre",
-    "es": "Sigue la parada de vuelos en todo EE. UU.: Seguridad Nacional dice que, por ahora, es una falla de telecomunicaciones y no un ataque",
-    "en": "U.S. flights remain grounded: Homeland Security says that, for now, it is a telecommunication outage, not an attack",
+    "es": "La FAA ya no registra la parada nacional de vuelos: MIA, FLL y Key West, sin restricciones a las 6:15 PM",
+    "en": "The FAA no longer lists the nationwide ground stop: MIA, FLL and Key West show no restrictions at 6:15 p.m.",
     "desde": "2026-11-13T16:30:00-05:00",
     "hasta": "2026-11-14T06:00:00-05:00"
   },
@@ -14,21 +14,31 @@
       "k": "avion",
       "faa": true,
       "primero": true,
-      "es": "Vuelos retrasados en MIA · 5:45 PM",
-      "en": "Delayed flights at MIA · 5:45 p.m.",
-      "v": "416",
-      "fuente": "FlightAware vía Miami Herald",
-      "fecha": "2026-11-13"
+      "es": "MIA · FAA 6:15 PM",
+      "en": "MIA · FAA 6:15 p.m.",
+      "v": "Sin restricciones",
+      "v_en": "No restrictions",
+      "fuente": "FAA NAS Status"
     },
     {
       "k": "avion",
       "faa": true,
       "primero": true,
-      "es": "Vuelos retrasados en FLL · 5:45 PM",
-      "en": "Delayed flights at FLL · 5:45 p.m.",
-      "v": "320",
-      "fuente": "FlightAware vía Miami Herald",
-      "fecha": "2026-11-13"
+      "es": "FLL · FAA 6:15 PM",
+      "en": "FLL · FAA 6:15 p.m.",
+      "v": "Sin restricciones",
+      "v_en": "No restrictions",
+      "fuente": "FAA NAS Status"
+    },
+    {
+      "k": "avion",
+      "faa": true,
+      "primero": true,
+      "es": "Key West · FAA 6:15 PM",
+      "en": "Key West · FAA 6:15 p.m.",
+      "v": "Sin restricciones",
+      "v_en": "No restrictions",
+      "fuente": "FAA NAS Status"
     },
     {
       "k": "gas",
@@ -216,85 +226,55 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-13T18:20:00-05:00",
+      "actualizada": "2026-11-13T18:25:00-05:00",
       "es": {
         "etiqueta": "ÚLTIMA HORA",
-        "titulo": "La FAA detiene todas las salidas de vuelos en Estados Unidos, de Miami a Key West",
-        "bajada": "La parada sigue hasta nuevo aviso. Seguridad Nacional dice que, por ahora, no hay indicios de ataque: es una falla de telecomunicaciones. Unos 7,000 vuelos afectados.",
+        "titulo": "La FAA ya no registra la parada nacional de vuelos: Miami, Fort Lauderdale y Key West, sin restricciones a las 6:15 PM",
+        "bajada": "La orden detuvo todas las salidas del país desde las 3:54 PM. El sistema oficial de la FAA ya no la muestra, aunque la agencia no ha emitido un anuncio formal.",
         "toca": [
-          "Antes de salir hacia el aeropuerto, revisa el estado de tu vuelo con tu aerolínea.",
-          "Los vuelos que salen de MIA y FLL están detenidos hasta que la FAA levante la orden.",
-          "Estado de vuelos: [Aeropuerto de Miami](https://www.miami-airport.com/flight_status.asp) y [Aeropuerto de Fort Lauderdale](https://www.broward.org/airport)."
+          "Antes de ir al aeropuerto, confirma tu vuelo con la aerolínea: aunque se reanuden las salidas, quedan retrasos acumulados.",
+          "Estado de vuelos: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) y [Key West](https://eyw.com/).",
+          "El estado oficial de cada aeropuerto se consulta en [nasstatus.faa.gov](https://nasstatus.faa.gov/)."
         ],
         "cuerpo": [
-          "Ningún avión despega en este momento de un aeropuerto de Estados Unidos. La Administración Federal de Aviación (FAA) ordenó este viernes 13 de noviembre, a las 3:54 PM, una parada en tierra de todos los vuelos de salida del país, incluidos los de Miami, Fort Lauderdale y Key West.",
-          "## Actualización · 6:20 PM",
-          "En el sur de Florida, el último conteo de FlightAware, de las 5:45 PM, sumaba 416 vuelos retrasados en el Aeropuerto Internacional de Miami y 320 en el de Fort Lauderdale, [según el Miami Herald](https://www.miamiherald.com/living/travel/article318070075.html). Las cifras cambian cada pocos minutos mientras siga la parada.",
-          "## Actualización · 6:10 PM",
-          "La parada sigue vigente. El aviso de la FAA a las aerolíneas fija su vigencia hasta las 11:30 PM, aunque eso no garantiza que los vuelos se reanuden a esa hora, [según el seguimiento en vivo de Yahoo News](https://www.yahoo.com/news/us/articles/faa-orders-nationwide-groundstop-us-211917033.html).",
-          "El secretario de Seguridad Nacional, Markwayne Mullin, dijo frente a la Casa Blanca que por ahora «no hay indicios» de que se trate de un ataque y que, hasta el momento, es «una falla de telecomunicaciones». Aclaró, sin embargo, que no descartan nada mientras buscan la causa de fondo.",
-          "Cerca de 7,000 vuelos se habían retrasado o cancelado en el país, según la agencia Reuters. Es la primera parada nacional desde enero de 2023, [recordó PBS](https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems).",
-          "## Qué dice la orden",
-          "El aviso del Centro de Comando de la FAA a los operadores, [citado por varios medios](https://www.wbay.com/2026/11/13/faa-all-us-airports-ground-stopped/), indica que «todo el tráfico de salida debe permanecer detenido en tierra hasta nuevo aviso», por «circunstancias extraordinarias y por razones de seguridad». Los vuelos internacionales que vienen hacia Estados Unidos se manejan caso por caso.",
-          "En inglés, la FAA habla de «safety», que se refiere a la seguridad de las operaciones. El aviso no menciona una amenaza ni un ataque.",
-          "## Qué la provocó",
-          "El secretario de Transporte, Sean Duffy, escribió en X que la orden se dio tras un problema de comunicaciones que afecta a todos los centros de control de rutas aéreas del país, y que los técnicos de la FAA lo están investigando, [según recoge Gizmodo](https://gizmodo.com/faa-issues-nationwide-ground-stop-due-to-extraordinary-circumstances-2000839944). La FAA no ha precisado qué falló ni cuánto durará la parada.",
-          "Esta nota se actualizará en cuanto la FAA dé más información o levante la orden."
+          "## Actualización · 6:25 PM",
+          "El [sistema oficial de estado del espacio aéreo de la FAA](https://nasstatus.faa.gov/), actualizado a las 6:15 PM, ya no muestra la parada nacional. A esa hora no registraba ninguna restricción en el Aeropuerto Internacional de Miami, en el de Fort Lauderdale ni en el de Key West. La FAA todavía no ha publicado un anuncio formal de que la levantó.",
+          "Las aerolíneas seguirán con retrasos y cancelaciones durante la noche mientras recolocan aviones y tripulaciones.",
+          "## Qué pasó",
+          "La FAA ordenó a las 3:54 PM de este viernes 13 de noviembre que ningún vuelo despegara de un aeropuerto de Estados Unidos, por «circunstancias extraordinarias y por razones de seguridad». Los aviones que estaban en el aire siguieron hasta su destino.",
+          "El secretario de Transporte, Sean Duffy, [atribuyó la orden](https://x.com/SecDuffy/status/2121351591106072679) a un problema de comunicaciones que afectó a todos los centros de control de rutas aéreas del país, y dijo que los técnicos de la FAA lo estaban investigando. La causa exacta no se ha informado.",
+          "En inglés, la FAA habló de «safety», que se refiere a la seguridad de las operaciones. Ninguna autoridad ha hablado de un ataque.",
+          "Esta nota se actualizará en cuanto la FAA dé más información."
         ]
       },
       "en": {
         "etiqueta": "BREAKING",
-        "titulo": "FAA halts all flight departures in the U.S., from Miami to Key West",
-        "bajada": "The ground stop remains until further notice. Homeland Security says there is no indication of an attack so far: it is a telecommunication outage. About 7,000 flights affected.",
+        "titulo": "The FAA no longer lists the nationwide ground stop: Miami, Fort Lauderdale and Key West show no restrictions at 6:15 p.m.",
+        "bajada": "The order halted every departure in the country starting at 3:54 p.m. The FAA's official system no longer shows it, though the agency has not issued a formal announcement.",
         "toca": [
-          "Before heading to the airport, check your flight status with your airline.",
-          "Departures from MIA and FLL are on hold until the FAA lifts the order.",
-          "Flight status: [Miami International](https://www.miami-airport.com/flight_status.asp) and [Fort Lauderdale-Hollywood International](https://www.broward.org/airport)."
+          "Before heading to the airport, confirm your flight with your airline: even as departures resume, delays have piled up.",
+          "Flight status: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) and [Key West](https://eyw.com/).",
+          "Each airport's official status is posted at [nasstatus.faa.gov](https://nasstatus.faa.gov/)."
         ],
         "cuerpo": [
-          "No plane is taking off from a U.S. airport right now. The Federal Aviation Administration (FAA) ordered a ground stop of all departing flights nationwide at 3:54 p.m. this Friday, Nov. 13, including at Miami, Fort Lauderdale and Key West.",
-          "## Update · 6:20 p.m.",
-          "In South Florida, FlightAware's latest count, as of 5:45 p.m., showed 416 delayed flights at Miami International Airport and 320 at Fort Lauderdale, [according to the Miami Herald](https://www.miamiherald.com/living/travel/article318070075.html). The numbers change every few minutes while the ground stop continues.",
-          "## Update · 6:10 p.m.",
-          "The ground stop remains in effect. The FAA's advisory to airlines lists it as running until 11:30 p.m., though that does not guarantee flights will resume at that time, [according to Yahoo News' live coverage](https://www.yahoo.com/news/us/articles/faa-orders-nationwide-groundstop-us-211917033.html).",
-          "Homeland Security Secretary Markwayne Mullin said outside the White House that so far there is \"no prior indication\" of an attack and that, for now, it is \"a telecommunication outage.\" He added, however, that officials are not ruling anything out as they look for the root cause.",
-          "Nearly 7,000 U.S. flights had been delayed or canceled, according to Reuters. It is the first nationwide ground stop since January 2023, [PBS noted](https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems).",
-          "## What the order says",
-          "The FAA Command Center's notice to operators, [cited by several outlets](https://www.wbay.com/2026/11/13/faa-all-us-airports-ground-stopped/), states that \"all departing traffic should remain ground stopped until further notice,\" \"due to extraordinary circumstances and for reasons of safety.\" International flights inbound to the U.S. are being handled case by case.",
-          "The FAA's word is \"safety,\" which refers to operational safety. The notice does not mention a threat or an attack.",
-          "## What caused it",
-          "Transportation Secretary Sean Duffy wrote on X that the order followed a communications issue affecting all of the country's Air Route Traffic Control Centers, and that FAA technicians are investigating, [as reported by Gizmodo](https://gizmodo.com/faa-issues-nationwide-ground-stop-due-to-extraordinary-circumstances-2000839944). The FAA has not specified what failed or how long the stop will last.",
-          "This story will be updated as soon as the FAA releases more information or lifts the order."
+          "## Update · 6:25 p.m.",
+          "The [FAA's official National Airspace System status page](https://nasstatus.faa.gov/), updated at 6:15 p.m., no longer shows the nationwide ground stop. At that time it listed no restrictions at Miami International, Fort Lauderdale-Hollywood International or Key West International. The FAA has not yet issued a formal announcement that it was lifted.",
+          "Airlines will keep running delays and cancellations through the night as they reposition aircraft and crews.",
+          "## What happened",
+          "At 3:54 p.m. this Friday, Nov. 13, the FAA ordered that no flight take off from any U.S. airport, \"due to extraordinary circumstances and for reasons of safety.\" Planes already in the air continued to their destinations.",
+          "Transportation Secretary Sean Duffy [attributed the order](https://x.com/SecDuffy/status/2121351591106072679) to a communications issue affecting all of the country's Air Route Traffic Control Centers and said FAA technicians were investigating. The exact cause has not been reported.",
+          "The FAA's word was \"safety,\" which refers to operational safety. No authority has spoken of an attack.",
+          "This story will be updated as soon as the FAA releases more information."
         ]
       },
       "fuentes": [
         {
-          "n": "Miami Herald · retrasos en MIA y FLL (FlightAware, 5:45 PM)",
-          "u": "https://www.miamiherald.com/living/travel/article318070075.html"
+          "n": "FAA · estado oficial del espacio aéreo (actualizado 6:15 PM)",
+          "u": "https://nasstatus.faa.gov/"
         },
         {
-          "n": "Yahoo News · seguimiento en vivo (aviso de la FAA, Mullin, Reuters)",
-          "u": "https://www.yahoo.com/news/us/articles/faa-orders-nationwide-groundstop-us-211917033.html"
-        },
-        {
-          "n": "PBS NewsHour · primera parada nacional desde 2023",
-          "u": "https://www.pbs.org/newshour/nation/faa-grounds-all-flights-at-u-s-airports-due-to-air-traffic-control-communications-problems"
-        },
-        {
-          "n": "Gizmodo · hora de la orden y declaración del secretario de Transporte",
-          "u": "https://gizmodo.com/faa-issues-nationwide-ground-stop-due-to-extraordinary-circumstances-2000839944"
-        },
-        {
-          "n": "Aviso de la FAA a operadores, citado por WBAY",
-          "u": "https://www.wbay.com/2026/11/13/faa-all-us-airports-ground-stopped/"
-        },
-        {
-          "n": "CNN · parada nacional de la FAA",
-          "u": "https://www.cnn.com/2026/11/13/us/faa-nationwide-ground-stop"
-        },
-        {
-          "n": "Flightradar24 · aviso en X",
-          "u": "https://x.com/flightradar24/status/2121347654714077605"
+          "n": "Secretario de Transporte Sean Duffy · mensaje en X",
+          "u": "https://x.com/SecDuffy/status/2121351591106072679"
         },
         {
           "n": "Aeropuerto Internacional de Miami · estado de vuelos",
@@ -303,6 +283,10 @@
         {
           "n": "Aeropuerto de Fort Lauderdale",
           "u": "https://www.broward.org/airport"
+        },
+        {
+          "n": "Aeropuerto Internacional de Key West",
+          "u": "https://eyw.com/"
         }
       ],
       "ambos": true
