@@ -11,6 +11,26 @@
   },
   "cifras": [
     {
+      "k": "avion",
+      "faa": true,
+      "primero": true,
+      "es": "Vuelos retrasados en MIA · 5:45 PM",
+      "en": "Delayed flights at MIA · 5:45 p.m.",
+      "v": "416",
+      "fuente": "FlightAware vía Miami Herald",
+      "fecha": "2026-11-13"
+    },
+    {
+      "k": "avion",
+      "faa": true,
+      "primero": true,
+      "es": "Vuelos retrasados en FLL · 5:45 PM",
+      "en": "Delayed flights at FLL · 5:45 p.m.",
+      "v": "320",
+      "fuente": "FlightAware vía Miami Herald",
+      "fecha": "2026-11-13"
+    },
+    {
       "k": "gas",
       "es": "Gasolina en Miami-Dade",
       "en": "Gas in Miami-Dade",
@@ -196,7 +216,7 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-13T18:10:00-05:00",
+      "actualizada": "2026-11-13T18:20:00-05:00",
       "es": {
         "etiqueta": "ÚLTIMA HORA",
         "titulo": "La FAA detiene todas las salidas de vuelos en Estados Unidos, de Miami a Key West",
@@ -208,6 +228,8 @@
         ],
         "cuerpo": [
           "Ningún avión despega en este momento de un aeropuerto de Estados Unidos. La Administración Federal de Aviación (FAA) ordenó este viernes 13 de noviembre, a las 3:54 PM, una parada en tierra de todos los vuelos de salida del país, incluidos los de Miami, Fort Lauderdale y Key West.",
+          "## Actualización · 6:20 PM",
+          "En el sur de Florida, el último conteo de FlightAware, de las 5:45 PM, sumaba 416 vuelos retrasados en el Aeropuerto Internacional de Miami y 320 en el de Fort Lauderdale, [según el Miami Herald](https://www.miamiherald.com/living/travel/article318070075.html). Las cifras cambian cada pocos minutos mientras siga la parada.",
           "## Actualización · 6:10 PM",
           "La parada sigue vigente. El aviso de la FAA a las aerolíneas fija su vigencia hasta las 11:30 PM, aunque eso no garantiza que los vuelos se reanuden a esa hora, [según el seguimiento en vivo de Yahoo News](https://www.yahoo.com/news/us/articles/faa-orders-nationwide-groundstop-us-211917033.html).",
           "El secretario de Seguridad Nacional, Markwayne Mullin, dijo frente a la Casa Blanca que por ahora «no hay indicios» de que se trate de un ataque y que, hasta el momento, es «una falla de telecomunicaciones». Aclaró, sin embargo, que no descartan nada mientras buscan la causa de fondo.",
@@ -231,6 +253,8 @@
         ],
         "cuerpo": [
           "No plane is taking off from a U.S. airport right now. The Federal Aviation Administration (FAA) ordered a ground stop of all departing flights nationwide at 3:54 p.m. this Friday, Nov. 13, including at Miami, Fort Lauderdale and Key West.",
+          "## Update · 6:20 p.m.",
+          "In South Florida, FlightAware's latest count, as of 5:45 p.m., showed 416 delayed flights at Miami International Airport and 320 at Fort Lauderdale, [according to the Miami Herald](https://www.miamiherald.com/living/travel/article318070075.html). The numbers change every few minutes while the ground stop continues.",
           "## Update · 6:10 p.m.",
           "The ground stop remains in effect. The FAA's advisory to airlines lists it as running until 11:30 p.m., though that does not guarantee flights will resume at that time, [according to Yahoo News' live coverage](https://www.yahoo.com/news/us/articles/faa-orders-nationwide-groundstop-us-211917033.html).",
           "Homeland Security Secretary Markwayne Mullin said outside the White House that so far there is \"no prior indication\" of an attack and that, for now, it is \"a telecommunication outage.\" He added, however, that officials are not ruling anything out as they look for the root cause.",
@@ -244,6 +268,10 @@
         ]
       },
       "fuentes": [
+        {
+          "n": "Miami Herald · retrasos en MIA y FLL (FlightAware, 5:45 PM)",
+          "u": "https://www.miamiherald.com/living/travel/article318070075.html"
+        },
         {
           "n": "Yahoo News · seguimiento en vivo (aviso de la FAA, Mullin, Reuters)",
           "u": "https://www.yahoo.com/news/us/articles/faa-orders-nationwide-groundstop-us-211917033.html"

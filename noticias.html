@@ -1286,6 +1286,7 @@ var CI={
  hipoteca:ci('<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 15.5h6M12 12.5v6"/>'),
  casa:ci('<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/>'),
  renta:ci('<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l2 2M15 8l2 2"/>'),
+ avion:ci('<path d="M10.5 21l1.5-1.5V15l7 2.5v-2L12 11V5.5a1.5 1.5 0 0 0-3 0V11L2 15.5v2L9 15v4.5L10.5 21z" transform="translate(1.5 -1)"/>'),
  cruceros:ci('<path d="M3 15h18l-2.5 5H5.5z"/><path d="M6 15V9h12v6M9 9V6h6v3"/>')
 };
 function renderCifras(){
@@ -1297,7 +1298,7 @@ function renderCifras(){
   if(now>=s&&now<=e){var dl=Math.ceil((e-now)/864e5);it.push(['hur',t('hur1'),L==='en'?dl+' '+t('hurTermina'):t('hurFalta')+' '+dl+' '+t('hurTermina')])}
   else{var ns=now>e?new Date(y+1,5,1):s;var dd=Math.ceil((ns-now)/864e5);it.push(['hur',t('hur1'),t('hurPre')+' '+dd+(L==='en'?' days':' días')])}
   var E=PT&&PT.especial;if(E&&E.d){var ed=Math.ceil((new Date(E.d+'T00:00')-nyDay())/864e5),eo=nyDay()>new Date(E.d2+'T23:59');if(!eo)it.unshift(['art',L==='en'?E.c_en:E.c_es,ed>0?(L==='en'?'in '+ed+(ed===1?' day':' days'):'en '+ed+(ed===1?' día':' días')):(L==='en'?'this week':'esta semana')])}
-  (DATA.cifras||[]).forEach(function(c){if(c.v)it.push([c.k,c[L]||c.es,(L==='en'&&c.v_en)?c.v_en:c.v])});
+  var top=[];(DATA.cifras||[]).forEach(function(c){if(!c.v)return;var r=[c.k,c[L]||c.es,(L==='en'&&c.v_en)?c.v_en:c.v];if(c.primero)top.push(r);else it.push(r)});it=top.concat(it);
   var row=it.map(function(x){return '<span class="cf-i">'+(CI[x[0]]||'')+esc(x[1])+' <b>'+esc(x[2])+'</b></span><span class="cf-dot"></span>'}).join('');
   document.getElementById('cf').innerHTML=row+row;
 }
