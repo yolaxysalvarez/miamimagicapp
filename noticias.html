@@ -94,6 +94,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .cf-r{flex:1;min-width:0;height:100%;margin-left:8px;overflow:hidden;display:flex;align-items:center;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent)}
 .cf-r>div{display:flex;align-items:center;width:max-content;animation:mmscroll 60s linear infinite}
 .cf-r:hover>div{animation-play-state:paused}
+@media(max-width:760px){.cf-r>div{animation-duration:34s}}
 .cf-i{display:inline-flex;align-items:center;gap:9px;padding:0 24px;white-space:nowrap;font-size:16px;color:var(--ink2)}
 .cf-i b{color:var(--coral-d);font-size:17px}
 .cf-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex:none}
@@ -890,7 +891,7 @@ body.sp-cc #cc{display:none!important}
 @media(max-width:760px){.esp{margin-bottom:44px}.esp::after{background:linear-gradient(180deg,rgba(10,17,32,.25) 0%,rgba(10,17,32,.9) 52%,rgba(10,17,32,.96) 100%)}.esp-in{padding:150px 20px 44px;min-height:0;max-width:none;justify-content:flex-end}.esp b{font-size:27px}.esp-c u{font-size:52px}.esp-pie{right:auto;left:20px}}
 </style>
 <script>
-function HOYNY(){var h;try{h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'})}catch(e){h=new Date().toISOString().slice(0,10)}try{if(/[?&]vista=viernes/.test(location.search))sessionStorage.setItem('mmVista','1');if(sessionStorage.getItem('mmVista')==='1'&&h<'2026-11-13')h='2026-11-13'}catch(e){}return h}
+function HOYNY(){var h;try{h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'})}catch(e){h=new Date().toISOString().slice(0,10)}return h}
 /* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
 :root{--bg:#FFFFFF;--paper:#F8F7F4;--card:#F3F1EC;--ink:#0A1120;--ink2:#1D2839;--mut:#434B59;--line:rgba(10,17,32,.13)}
