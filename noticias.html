@@ -1382,7 +1382,7 @@ function renderSp(lead,rest){
 /* ── portada: apertura, fechas, dúo, video, historia, mesa, hoteles, app ── */
 var PT=null,TVS={i:0,play:false};
 function nyDay(){try{var p=HOYNY().split('-');return new Date(+p[0],+p[1]-1,+p[2])}catch(e){var d=new Date();d.setHours(0,0,0,0);return d}}
-function doy(){var d=nyDay();return Math.round((d-new Date(d.getFullYear(),0,1))/864e5)}
+function doy(){var d=nyDay(),b=String((PT&&PT.rota_desde)||'2026-11-13').split('-'),n=Math.round((new Date(d.getFullYear(),d.getMonth(),d.getDate())-new Date(+b[0],+b[1]-1,+b[2]))/864e5);return n>=0?n:Math.round((d-new Date(d.getFullYear(),0,1))/864e5)}
 function rowS(n){var f=F(n);return '<a class="rw" href="'+href(n)+'">'+ph(n)+'<span><span class="eb">'+eb(n)+'</span><b class="hl">'+esc(f.titulo)+'</b></span></a>'}
 function colB(tt,cls,arr,go){if(!arr.length)return '';var n=arr[0],f=F(n);
   return '<div class="dc '+cls+'"><div class="sh"><h3 class="'+(cls==='ky'?'scy':'smi')+'">'+tt+'</h3><button class="vt" data-go="'+go+'">'+(L==='en'?'SEE ALL →':'VER TODO →')+'</button></div>'

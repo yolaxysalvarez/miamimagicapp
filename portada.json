@@ -1,5 +1,5 @@
 {
-  "_como_usar": "Extras de la portada de Miami Magic News. fechas: lo que vence (d = fecha AAAA-MM-DD, d2 = fin si es un rango, id = la nota que lo explica). videos: yid = el código del video de YouTube. mesa: restaurantes; patrocinado:true los pone primero con la etiqueta PATROCINADO. historia: Miami de antes (a = año), cada entrada enlazada a la nota donde se cuenta. hoteles: hoteles de la app con foto propia; rotan cada día. app: fichas de la app por categoría (rotan cada día); cada una lleva foto propia y un texto corto antes del enlace.",
+  "_como_usar": "Extras de la portada de Miami Magic News. fechas: lo que vence (d = fecha AAAA-MM-DD, d2 = fin si es un rango, id = la nota que lo explica). videos: yid = el código del video de YouTube. mesa: restaurantes; patrocinado:true los pone primero con la etiqueta PATROCINADO. historia: Miami de antes (a = año), cada entrada enlazada a la nota donde se cuenta. hoteles: hoteles de la app con foto propia; rotan cada día. app: fichas de la app por categoría (rotan cada día); cada una lleva foto propia y un texto corto antes del enlace. rota_desde: día desde el que se cuenta la rotación; ese día cada sección abre con el primero de su lista, así que el orden de cada lista es el orden de prioridad.",
   "updated": "2026-11-11",
   "canal": "https://www.youtube.com/@MiamiMagicApp",
   "fechas": [
@@ -119,15 +119,6 @@
   ],
   "videos": [
     {
-      "yid": "1JKm9baoKrM",
-      "es": "Parque Estatal Bill Baggs",
-      "en": "Bill Baggs Cape Florida State Park",
-      "k_es": "PARQUE",
-      "k_en": "PARK",
-      "item": "b15",
-      "type": "beach"
-    },
-    {
       "yid": "BwjDTSORb_Y",
       "es": "Museo Vizcaya",
       "en": "Vizcaya Museum",
@@ -137,40 +128,13 @@
       "type": "place"
     },
     {
-      "yid": "0ZnZXE8mSfA",
-      "es": "Coyo Taco",
-      "en": "Coyo Taco",
-      "k_es": "RESTAURANTE · MEXICANO",
-      "k_en": "RESTAURANT · MEXICAN",
-      "item": "r11",
-      "type": "rest"
-    },
-    {
-      "yid": "OrTWNT0PbZQ",
-      "es": "Echate Pa Lla",
-      "en": "Echate Pa Lla",
-      "k_es": "RESTAURANTE · ESPAÑOL",
-      "k_en": "RESTAURANT · SPANISH",
-      "item": "r31",
-      "type": "rest"
-    },
-    {
-      "yid": "2QHD4BLekY4",
-      "es": "Habibi Miami",
-      "en": "Habibi Miami",
-      "k_es": "RESTAURANTE · ÁRABE",
-      "k_en": "RESTAURANT · MIDDLE EASTERN",
-      "item": "r32",
-      "type": "rest"
-    },
-    {
-      "yid": "7rjEqC-TrCw",
-      "es": "Tutto Pasta",
-      "en": "Tutto Pasta",
-      "k_es": "RESTAURANTE · ITALIANO",
-      "k_en": "RESTAURANT · ITALIAN",
-      "item": "r36",
-      "type": "rest"
+      "yid": "1JKm9baoKrM",
+      "es": "Parque Estatal Bill Baggs",
+      "en": "Bill Baggs Cape Florida State Park",
+      "k_es": "PARQUE",
+      "k_en": "PARK",
+      "item": "b15",
+      "type": "beach"
     },
     {
       "yid": "KFro8bRbV5k",
@@ -191,6 +155,33 @@
       "type": "rest"
     },
     {
+      "yid": "jCnTjUJavzM",
+      "es": "Toro Toro",
+      "en": "Toro Toro",
+      "k_es": "RESTAURANTE · ASADOR PANLATINO",
+      "k_en": "RESTAURANT · PAN-LATIN STEAKHOUSE",
+      "item": "r10",
+      "type": "rest"
+    },
+    {
+      "yid": "0ZnZXE8mSfA",
+      "es": "Coyo Taco",
+      "en": "Coyo Taco",
+      "k_es": "RESTAURANTE · MEXICANO",
+      "k_en": "RESTAURANT · MEXICAN",
+      "item": "r11",
+      "type": "rest"
+    },
+    {
+      "yid": "pL_XuNaATaw",
+      "es": "Double Knot Miami",
+      "en": "Double Knot Miami",
+      "k_es": "RESTAURANTE · IZAKAYA JAPONÉS",
+      "k_en": "RESTAURANT · JAPANESE IZAKAYA",
+      "item": "r14",
+      "type": "rest"
+    },
+    {
       "yid": "PCYw1_LD-Jk",
       "es": "Ocean Social",
       "en": "Ocean Social",
@@ -200,12 +191,30 @@
       "type": "rest"
     },
     {
-      "yid": "vwuUaPLiLbM",
-      "es": "La Birra Bar Wynwood",
-      "en": "La Birra Bar Wynwood",
-      "k_es": "RESTAURANTE · ARGENTINO · CERVEZA ARTESANAL",
-      "k_en": "RESTAURANT · ARGENTINE · CRAFT BEER",
-      "item": "r40",
+      "yid": "2QHD4BLekY4",
+      "es": "Habibi Miami",
+      "en": "Habibi Miami",
+      "k_es": "RESTAURANTE · ÁRABE",
+      "k_en": "RESTAURANT · MIDDLE EASTERN",
+      "item": "r32",
+      "type": "rest"
+    },
+    {
+      "yid": "tXjt_0WlL7E",
+      "es": "Old Cutler Inn",
+      "en": "Old Cutler Inn",
+      "k_es": "RESTAURANTE · AMERICANO · A LA LEÑA",
+      "k_en": "RESTAURANT · AMERICAN · WOOD-FIRED",
+      "item": "r15",
+      "type": "rest"
+    },
+    {
+      "yid": "7rjEqC-TrCw",
+      "es": "Tutto Pasta",
+      "en": "Tutto Pasta",
+      "k_es": "RESTAURANTE · ITALIANO",
+      "k_en": "RESTAURANT · ITALIAN",
+      "item": "r36",
       "type": "rest"
     },
     {
@@ -227,6 +236,33 @@
       "type": "rest"
     },
     {
+      "yid": "Qofs2E0TfEI",
+      "es": "Altamura Trattoria e Forno",
+      "en": "Altamura Trattoria e Forno",
+      "k_es": "RESTAURANTE · ITALIANO",
+      "k_en": "RESTAURANT · ITALIAN",
+      "item": "r13",
+      "type": "rest"
+    },
+    {
+      "yid": "OrTWNT0PbZQ",
+      "es": "Echate Pa Lla",
+      "en": "Echate Pa Lla",
+      "k_es": "RESTAURANTE · ESPAÑOL",
+      "k_en": "RESTAURANT · SPANISH",
+      "item": "r31",
+      "type": "rest"
+    },
+    {
+      "yid": "vwuUaPLiLbM",
+      "es": "La Birra Bar Wynwood",
+      "en": "La Birra Bar Wynwood",
+      "k_es": "RESTAURANTE · ARGENTINO · CERVEZA ARTESANAL",
+      "k_en": "RESTAURANT · ARGENTINE · CRAFT BEER",
+      "item": "r40",
+      "type": "rest"
+    },
+    {
       "yid": "kn4jTV2pRXU",
       "es": "Neme Gastro Bar",
       "en": "Neme Gastro Bar",
@@ -242,42 +278,6 @@
       "k_es": "RESTAURANTE · ALTA COCINA · CAVIAR",
       "k_en": "RESTAURANT · FINE DINING · CAVIAR",
       "item": "r08",
-      "type": "rest"
-    },
-    {
-      "yid": "jCnTjUJavzM",
-      "es": "Toro Toro",
-      "en": "Toro Toro",
-      "k_es": "RESTAURANTE · ASADOR PANLATINO",
-      "k_en": "RESTAURANT · PAN-LATIN STEAKHOUSE",
-      "item": "r10",
-      "type": "rest"
-    },
-    {
-      "yid": "Qofs2E0TfEI",
-      "es": "Altamura Trattoria e Forno",
-      "en": "Altamura Trattoria e Forno",
-      "k_es": "RESTAURANTE · ITALIANO",
-      "k_en": "RESTAURANT · ITALIAN",
-      "item": "r13",
-      "type": "rest"
-    },
-    {
-      "yid": "pL_XuNaATaw",
-      "es": "Double Knot Miami",
-      "en": "Double Knot Miami",
-      "k_es": "RESTAURANTE · IZAKAYA JAPONÉS",
-      "k_en": "RESTAURANT · JAPANESE IZAKAYA",
-      "item": "r14",
-      "type": "rest"
-    },
-    {
-      "yid": "tXjt_0WlL7E",
-      "es": "Old Cutler Inn",
-      "en": "Old Cutler Inn",
-      "k_es": "RESTAURANTE · AMERICANO · A LA LEÑA",
-      "k_en": "RESTAURANT · AMERICAN · WOOD-FIRED",
-      "item": "r15",
       "type": "rest"
     },
     {
@@ -328,46 +328,6 @@
   ],
   "mesa": [
     {
-      "id": "r11",
-      "name": "Coyo Taco",
-      "cat": "Mexican",
-      "cat_es": "Mexicano",
-      "addr": "2300 NW 2nd Ave, Wynwood",
-      "yid": "0ZnZXE8mSfA",
-      "foto": "fotos/mm-coyo-1.jpg"
-    },
-    {
-      "id": "r31",
-      "name": "Echate Pa Lla",
-      "cat": "Spanish",
-      "cat_es": "Español",
-      "addr": "7835 NW 107th Ave Ste 3-06, Doral",
-      "yid": "OrTWNT0PbZQ",
-      "foto": "fotos/mm-echate-1.jpg",
-      "es": "Restaurante español en Doral con tablao flamenco en vivo los fines de semana: cocina mediterránea del chef Antonio Puertas centrada en arroces y paellas, con terraza y estacionamiento gratis.",
-      "en": "A Spanish restaurant in Doral with a live flamenco tablao on weekends: Mediterranean cooking by chef Antonio Puertas built around rice dishes and paella, with a terrace and free parking."
-    },
-    {
-      "id": "r32",
-      "name": "Habibi Miami",
-      "cat": "Middle Eastern",
-      "cat_es": "Árabe",
-      "addr": "452 NW North River Dr",
-      "yid": "2QHD4BLekY4",
-      "foto": "fotos/mm-habibi-1.jpg",
-      "es": "Cocina libanesa, hookah y entretenimiento en vivo.",
-      "en": "Lebanese cuisine, hookah and live entertainment."
-    },
-    {
-      "id": "r36",
-      "name": "Tutto Pasta",
-      "cat": "Italian",
-      "cat_es": "Italiano",
-      "addr": "1751 SW 3rd Ave, Brickell",
-      "yid": "7rjEqC-TrCw",
-      "foto": "fotos/mm-tutto-1.jpg"
-    },
-    {
       "id": "r37",
       "name": "Rusty Pelican",
       "cat": "Seafood",
@@ -389,6 +349,35 @@
       "en": "A Mediterranean restaurant in Edgewater, with Italian cooking and bay views."
     },
     {
+      "id": "r10",
+      "name": "Toro Toro",
+      "cat": "Pan-Latin Steakhouse",
+      "cat_es": "Asador Panlatino",
+      "addr": "100 Chopin Plaza, Downtown",
+      "yid": "jCnTjUJavzM",
+      "es": "El asador panlatino del chef Richard Sandoval dentro del InterContinental, un clásico de Downtown desde hace más de una década.",
+      "en": "Chef Richard Sandoval's Pan-Latin steakhouse inside the InterContinental, a downtown fixture for more than a decade."
+    },
+    {
+      "id": "r11",
+      "name": "Coyo Taco",
+      "cat": "Mexican",
+      "cat_es": "Mexicano",
+      "addr": "2300 NW 2nd Ave, Wynwood",
+      "yid": "0ZnZXE8mSfA",
+      "foto": "fotos/mm-coyo-1.jpg"
+    },
+    {
+      "id": "r14",
+      "name": "Double Knot Miami",
+      "cat": "Japanese Izakaya",
+      "cat_es": "Izakaya Japonés",
+      "addr": "2550 NW 2nd Ave, Wynwood",
+      "yid": "pL_XuNaATaw",
+      "es": "El chef Michael Schulson trajo su izakaya de Filadelfia a Wynwood en 2025. Dos niveles: salón de cócteles arriba, barra de sushi y parrilla robata abajo, más oscura.",
+      "en": "Chef Michael Schulson brought his Philadelphia izakaya to Wynwood in 2025. Two levels: a cocktail lounge upstairs, a darker sushi bar and robata grill downstairs."
+    },
+    {
       "id": "r39",
       "name": "Ocean Social",
       "cat": "New American",
@@ -400,14 +389,34 @@
       "en": "American cooking with ocean views, on the beach at the Eden Roc."
     },
     {
-      "id": "r40",
-      "name": "La Birra Bar Wynwood",
-      "cat": "Argentine · Craft Beer",
-      "cat_es": "Argentino · Cerveza Artesanal",
-      "addr": "250 NW 24th St, Wynwood",
-      "yid": "vwuUaPLiLbM",
-      "es": "Hamburguesas y cerveza artesanal en un ambiente animado.",
-      "en": "Burgers and craft beer in a lively room."
+      "id": "r32",
+      "name": "Habibi Miami",
+      "cat": "Middle Eastern",
+      "cat_es": "Árabe",
+      "addr": "452 NW North River Dr",
+      "yid": "2QHD4BLekY4",
+      "foto": "fotos/mm-habibi-1.jpg",
+      "es": "Cocina libanesa, hookah y entretenimiento en vivo.",
+      "en": "Lebanese cuisine, hookah and live entertainment."
+    },
+    {
+      "id": "r15",
+      "name": "Old Cutler Inn",
+      "cat": "American · Wood-Fired",
+      "cat_es": "Americano · A la Leña",
+      "addr": "16800 Old Cutler Rd, Palmetto Bay",
+      "yid": "tXjt_0WlL7E",
+      "es": "El renacer de Snowden's, punto de encuentro de Palmetto Bay fundado en los años 20, reabierto frente al Deering Estate.",
+      "en": "The revival of Snowden's, a Palmetto Bay gathering place founded in the 1920s, reopened across the street from the Deering Estate."
+    },
+    {
+      "id": "r36",
+      "name": "Tutto Pasta",
+      "cat": "Italian",
+      "cat_es": "Italiano",
+      "addr": "1751 SW 3rd Ave, Brickell",
+      "yid": "7rjEqC-TrCw",
+      "foto": "fotos/mm-tutto-1.jpg"
     },
     {
       "id": "r43",
@@ -428,6 +437,37 @@
       "en": "An Asian fusion cocktail bar hidden in Little Havana, with creative cocktails and small plates."
     },
     {
+      "id": "r13",
+      "name": "Altamura Trattoria e Forno",
+      "cat": "Italian",
+      "cat_es": "Italiano",
+      "addr": "7835 NW 107th Ave, Doral",
+      "yid": "Qofs2E0TfEI",
+      "es": "Un proyecto de los chefs Elisabetta Callegaro y Massimo Tundo, matrimonio que se hizo de seguidores en Dal Plin del Design District antes de abrir aquí.",
+      "en": "A husband-and-wife project from chefs Elisabetta Callegaro and Massimo Tundo, who built a following at Dal Plin in the Design District before opening here."
+    },
+    {
+      "id": "r31",
+      "name": "Echate Pa Lla",
+      "cat": "Spanish",
+      "cat_es": "Español",
+      "addr": "7835 NW 107th Ave Ste 3-06, Doral",
+      "yid": "OrTWNT0PbZQ",
+      "foto": "fotos/mm-echate-1.jpg",
+      "es": "Restaurante español en Doral con tablao flamenco en vivo los fines de semana: cocina mediterránea del chef Antonio Puertas centrada en arroces y paellas, con terraza y estacionamiento gratis.",
+      "en": "A Spanish restaurant in Doral with a live flamenco tablao on weekends: Mediterranean cooking by chef Antonio Puertas built around rice dishes and paella, with a terrace and free parking."
+    },
+    {
+      "id": "r40",
+      "name": "La Birra Bar Wynwood",
+      "cat": "Argentine · Craft Beer",
+      "cat_es": "Argentino · Cerveza Artesanal",
+      "addr": "250 NW 24th St, Wynwood",
+      "yid": "vwuUaPLiLbM",
+      "es": "Hamburguesas y cerveza artesanal en un ambiente animado.",
+      "en": "Burgers and craft beer in a lively room."
+    },
+    {
       "id": "r45",
       "name": "Neme Gastro Bar",
       "cat": "Venezuelan · Latin",
@@ -445,46 +485,6 @@
       "yid": "mu-XK8sEcWo",
       "es": "Un comedor de Brickell donde el caviar es la base de la comida y no un adorno: al menos diez gramos de Osetra en cada tiempo, veinte en las pastas y los platos fuertes.",
       "en": "A Brickell dining room where caviar is the foundation of the meal rather than a garnish: at least ten grams of Osetra on every course, twenty on the pastas and mains."
-    },
-    {
-      "id": "r10",
-      "name": "Toro Toro",
-      "cat": "Pan-Latin Steakhouse",
-      "cat_es": "Asador Panlatino",
-      "addr": "100 Chopin Plaza, Downtown",
-      "yid": "jCnTjUJavzM",
-      "es": "El asador panlatino del chef Richard Sandoval dentro del InterContinental, un clásico de Downtown desde hace más de una década.",
-      "en": "Chef Richard Sandoval's Pan-Latin steakhouse inside the InterContinental, a downtown fixture for more than a decade."
-    },
-    {
-      "id": "r13",
-      "name": "Altamura Trattoria e Forno",
-      "cat": "Italian",
-      "cat_es": "Italiano",
-      "addr": "7835 NW 107th Ave, Doral",
-      "yid": "Qofs2E0TfEI",
-      "es": "Un proyecto de los chefs Elisabetta Callegaro y Massimo Tundo, matrimonio que se hizo de seguidores en Dal Plin del Design District antes de abrir aquí.",
-      "en": "A husband-and-wife project from chefs Elisabetta Callegaro and Massimo Tundo, who built a following at Dal Plin in the Design District before opening here."
-    },
-    {
-      "id": "r14",
-      "name": "Double Knot Miami",
-      "cat": "Japanese Izakaya",
-      "cat_es": "Izakaya Japonés",
-      "addr": "2550 NW 2nd Ave, Wynwood",
-      "yid": "pL_XuNaATaw",
-      "es": "El chef Michael Schulson trajo su izakaya de Filadelfia a Wynwood en 2025. Dos niveles: salón de cócteles arriba, barra de sushi y parrilla robata abajo, más oscura.",
-      "en": "Chef Michael Schulson brought his Philadelphia izakaya to Wynwood in 2025. Two levels: a cocktail lounge upstairs, a darker sushi bar and robata grill downstairs."
-    },
-    {
-      "id": "r15",
-      "name": "Old Cutler Inn",
-      "cat": "American · Wood-Fired",
-      "cat_es": "Americano · A la Leña",
-      "addr": "16800 Old Cutler Rd, Palmetto Bay",
-      "yid": "tXjt_0WlL7E",
-      "es": "El renacer de Snowden's, punto de encuentro de Palmetto Bay fundado en los años 20, reabierto frente al Deering Estate.",
-      "en": "The revival of Snowden's, a Palmetto Bay gathering place founded in the 1920s, reopened across the street from the Deering Estate."
     },
     {
       "id": "r23",
@@ -539,12 +539,36 @@
   ],
   "hoteles": [
     {
-      "id": "h29",
-      "name": "Hotel Victor South Beach",
-      "addr": "1144 Ocean Dr, South Beach",
-      "foto": "fotos/mm-mb-hotel-victor.jpg",
-      "es": "Un hotel Art Deco de 1936 en Ocean Drive, restaurado con un aire contemporáneo, frente a la playa. Piscina con terraza, el Spa V y Café Americano.",
-      "en": "An Art Deco hotel from 1936 on Ocean Drive, restored with a contemporary look, facing the beach. Pool and sundeck, Spa V and Café Americano."
+      "id": "h89",
+      "name": "Ritz-Carlton South Beach",
+      "addr": "1 Lincoln Rd, South Beach",
+      "foto": "fotos/mm-mb-ritz-carlton.jpg",
+      "es": "Frente al mar al final de Lincoln Road, reabierto en 2020 tras una renovación de 90 millones de dólares. Sus restaurantes y bares son de José Andrés Group: Zaytinya, DiLido Beach Bar y Lapidus Bar, con música en vivo.",
+      "en": "Oceanfront at the foot of Lincoln Road, reopened in 2020 after a $90 million renovation. Its restaurants and bars are by José Andrés Group: Zaytinya, DiLido Beach Bar and Lapidus Bar, with live music."
+    },
+    {
+      "id": "h6",
+      "name": "Loews Miami Beach Hotel",
+      "addr": "1601 Collins Ave, South Beach",
+      "foto": "fotos/mm-mb-loews.jpg",
+      "es": "En South Beach, incluye el edificio St. Moritz restaurado, donde están Rao's Miami Beach y el Sea Spa.",
+      "en": "In South Beach, it includes the restored St. Moritz building, home to Rao's Miami Beach and Sea Spa."
+    },
+    {
+      "id": "h108",
+      "name": "Eden Roc Miami Beach",
+      "addr": "4525 Collins Ave, Mid-Beach",
+      "foto": "fotos/mm-eden-roc.jpg",
+      "es": "El hotel de mediados de siglo que Morris Lapidus diseñó al lado del Fontainebleau, sobre la arena de Mid-Beach. Tres piscinas frente al mar, spa, Ocean Social en la playa y Nobu Miami bajo el mismo techo.",
+      "en": "The midcentury hotel Morris Lapidus designed next door to the Fontainebleau, on the sand in Mid-Beach. Three oceanfront pools, a spa, Ocean Social on the beach and Nobu Miami under the same roof."
+    },
+    {
+      "id": "h104",
+      "name": "Royal Palm South Beach Miami",
+      "addr": "1545 Collins Ave, South Beach",
+      "foto": "fotos/mm-mb-royal-palm.jpg",
+      "es": "Reabrió en el verano de 2026 tras una renovación de más de 100 millones de dólares: tres torres en Collins Avenue frente a la playa, con Paloma Club de cocina latina costera, Mixed Company con cócteles de ron y Compass Rose, un mostrador de café de inspiración cubana.",
+      "en": "Reopened in summer 2026 after a renovation of more than $100 million: three towers on Collins Avenue facing the beach, with Paloma Club for coastal Latin cooking, Mixed Company for rum cocktails and Compass Rose, a Cuban-inspired coffee counter."
     },
     {
       "id": "h33",
@@ -555,14 +579,6 @@
       "en": "A South Beach hotel with contemporary art throughout. The pool is a social scene and gallery in one."
     },
     {
-      "id": "h74",
-      "name": "Crest Hotel Suites",
-      "addr": "1670 James Ave, South Beach",
-      "foto": "fotos/mm-mb-crest.jpg",
-      "es": "Hotel todo-suites asequible con kitchenettes y piscina pequeña en South Beach.",
-      "en": "Affordable all-suite hotel with kitchenettes and small pool in South Beach."
-    },
-    {
       "id": "h101",
       "name": "Cardozo South Beach",
       "addr": "1300 Ocean Dr, South Beach",
@@ -571,12 +587,20 @@
       "en": "A classic Art Deco hotel on Ocean Drive, owned by Gloria and Emilio Estefan, with the beach right across the street. Its restaurant, Call Me Cuban, is from the Yuca team and serves breakfast and dinner on the terrace."
     },
     {
-      "id": "h104",
-      "name": "Royal Palm South Beach Miami",
-      "addr": "1545 Collins Ave, South Beach",
-      "foto": "fotos/mm-mb-royal-palm.jpg",
-      "es": "Reabrió en el verano de 2026 tras una renovación de más de 100 millones de dólares: tres torres en Collins Avenue frente a la playa, con Paloma Club de cocina latina costera, Mixed Company con cócteles de ron y Compass Rose, un mostrador de café de inspiración cubana.",
-      "en": "Reopened in summer 2026 after a renovation of more than $100 million: three towers on Collins Avenue facing the beach, with Paloma Club for coastal Latin cooking, Mixed Company for rum cocktails and Compass Rose, a Cuban-inspired coffee counter."
+      "id": "h29",
+      "name": "Hotel Victor South Beach",
+      "addr": "1144 Ocean Dr, South Beach",
+      "foto": "fotos/mm-mb-hotel-victor.jpg",
+      "es": "Un hotel Art Deco de 1936 en Ocean Drive, restaurado con un aire contemporáneo, frente a la playa. Piscina con terraza, el Spa V y Café Americano.",
+      "en": "An Art Deco hotel from 1936 on Ocean Drive, restored with a contemporary look, facing the beach. Pool and sundeck, Spa V and Café Americano."
+    },
+    {
+      "id": "h74",
+      "name": "Crest Hotel Suites",
+      "addr": "1670 James Ave, South Beach",
+      "foto": "fotos/mm-mb-crest.jpg",
+      "es": "Hotel todo-suites asequible con kitchenettes y piscina pequeña en South Beach.",
+      "en": "Affordable all-suite hotel with kitchenettes and small pool in South Beach."
     },
     {
       "id": "h105",
@@ -601,30 +625,6 @@
       "foto": "fotos/mm-mb-claremont.jpg",
       "es": "Un hotel Art Deco en Collins Avenue y la calle 17, junto al Dorset, a poca distancia de la playa y de Lincoln Road.",
       "en": "An Art Deco hotel at Collins Avenue and 17th Street, next to the Dorset, a short walk from the beach and Lincoln Road."
-    },
-    {
-      "id": "h6",
-      "name": "Loews Miami Beach Hotel",
-      "addr": "1601 Collins Ave, South Beach",
-      "foto": "fotos/mm-mb-loews.jpg",
-      "es": "En South Beach, incluye el edificio St. Moritz restaurado, donde están Rao's Miami Beach y el Sea Spa.",
-      "en": "In South Beach, it includes the restored St. Moritz building, home to Rao's Miami Beach and Sea Spa."
-    },
-    {
-      "id": "h89",
-      "name": "Ritz-Carlton South Beach",
-      "addr": "1 Lincoln Rd, South Beach",
-      "foto": "fotos/mm-mb-ritz-carlton.jpg",
-      "es": "Frente al mar al final de Lincoln Road, reabierto en 2020 tras una renovación de 90 millones de dólares. Sus restaurantes y bares son de José Andrés Group: Zaytinya, DiLido Beach Bar y Lapidus Bar, con música en vivo.",
-      "en": "Oceanfront at the foot of Lincoln Road, reopened in 2020 after a $90 million renovation. Its restaurants and bars are by José Andrés Group: Zaytinya, DiLido Beach Bar and Lapidus Bar, with live music."
-    },
-    {
-      "id": "h108",
-      "name": "Eden Roc Miami Beach",
-      "addr": "4525 Collins Ave, Mid-Beach",
-      "foto": "fotos/mm-eden-roc.jpg",
-      "es": "El hotel de mediados de siglo que Morris Lapidus diseñó al lado del Fontainebleau, sobre la arena de Mid-Beach. Tres piscinas frente al mar, spa, Ocean Social en la playa y Nobu Miami bajo el mismo techo.",
-      "en": "The midcentury hotel Morris Lapidus designed next door to the Fontainebleau, on the sand in Mid-Beach. Three oceanfront pools, a spa, Ocean Social on the beach and Nobu Miami under the same roof."
     }
   ],
   "app": [
@@ -635,19 +635,19 @@
       "go": "beach",
       "items": [
         {
-          "id": "b11",
-          "name": "Hobie Beach",
-          "foto": "fotos/mm-hobie-island.jpg",
-          "es": "Kayak, paddle, windsurf y kitesurf en las aguas tranquilas de la Bahía Biscayne. Acepta perros.",
-          "en": "Kayaking, paddleboarding, windsurfing and kitesurfing on Biscayne Bay's calm waters. Dog-friendly."
-        },
-        {
           "id": "b13",
           "name": "Lummus Park Beach",
           "name_es": "Playa Lummus Park",
           "foto": "fotos/mm-mb-salvavidas-13st.jpg",
           "es": "La franja verde que separa Ocean Drive de la arena: palmeras, paseo pavimentado, canchas de voleibol, área de juegos y nidos de tortuga marina acordonados en temporada.",
           "en": "The green strip that separates Ocean Drive from the sand: palms, a paved promenade, volleyball nets, a playground and roped-off sea-turtle nests in season."
+        },
+        {
+          "id": "b11",
+          "name": "Hobie Beach",
+          "foto": "fotos/mm-hobie-island.jpg",
+          "es": "Kayak, paddle, windsurf y kitesurf en las aguas tranquilas de la Bahía Biscayne. Acepta perros.",
+          "en": "Kayaking, paddleboarding, windsurfing and kitesurfing on Biscayne Bay's calm waters. Dog-friendly."
         },
         {
           "id": "b14",
@@ -681,19 +681,19 @@
       "go": "place",
       "items": [
         {
-          "id": "pl1",
-          "name": "South Beach",
-          "foto": "fotos/mm-mb-art-deco-letrero.jpg",
-          "es": "El distrito histórico Art Deco, Ocean Drive con sus neones, el paseo peatonal de Lincoln Road y el cruce de moda, música y cultura.",
-          "en": "The Art Deco Historic District, neon-lit Ocean Drive, the Lincoln Road pedestrian mall, and the meeting point of fashion, music and culture."
-        },
-        {
           "id": "pl4",
           "name": "Vizcaya Museum",
           "name_es": "Museo Vizcaya",
           "foto": "fotos/mm-vizcaya-1.jpg",
           "es": "Una villa de estilo renacentista italiano de 1916 que el industrial James Deering construyó sobre la Bahía Biscayne, con 34 salones de antigüedades europeas y jardines formales.",
           "en": "A 1916 Italian Renaissance-style villa built by industrialist James Deering on Biscayne Bay, with 34 rooms of European antiques and formal gardens."
+        },
+        {
+          "id": "pl1",
+          "name": "South Beach",
+          "foto": "fotos/mm-mb-art-deco-letrero.jpg",
+          "es": "El distrito histórico Art Deco, Ocean Drive con sus neones, el paseo peatonal de Lincoln Road y el cruce de moda, música y cultura.",
+          "en": "The Art Deco Historic District, neon-lit Ocean Drive, the Lincoln Road pedestrian mall, and the meeting point of fashion, music and culture."
         },
         {
           "id": "pl8",
@@ -800,5 +800,6 @@
     "pos": "70% 36%",
     "pie_es": "Library of Us, Faena Beach, 2025",
     "pie_en": "Library of Us, Faena Beach, 2025"
-  }
+  },
+  "rota_desde": "2026-11-13"
 }
