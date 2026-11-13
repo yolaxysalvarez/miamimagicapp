@@ -547,7 +547,7 @@
         "bajada": "Outlook y Teams fallan desde el jueves y Microsoft informa que el servicio se va restableciendo por fases. La empresa amplió a 48 horas el plazo para entregar los correos atrasados.",
         "toca": [
           "Si algo es urgente, mejor el teléfono. Los servicios no urgentes del condado de Miami-Dade se piden en el 311.",
-          "Si al remitente le llega un aviso de que su correo no se pudo entregar, ese mensaje hay que enviarlo otra vez.",
+          "No hace falta reenviar el mismo correo una y otra vez: cuando el servicio se ponga al día, pueden llegar duplicados. Solo si al remitente le llega un aviso de que no se pudo entregar, hay que mandarlo de nuevo.",
           "El estado del servicio se sigue en [status.cloud.microsoft](https://status.cloud.microsoft/) y en la cuenta @MSFT365Status. Nadie tiene que pedirte la contraseña para «arreglar» tu cuenta."
         ],
         "cuerpo": [
@@ -555,8 +555,11 @@
           "## Qué pasa con los correos atrasados",
           "Microsoft informó de que amplió a 48 horas el plazo para entregar los mensajes que quedaron en espera mientras se recupera el servicio. Eso da margen para que un correo enviado el jueves por la tarde todavía llegue a su destino. Lo normal, pasado cierto tiempo, es que el sistema lo devuelva al remitente.",
           "## Qué dice Microsoft",
-          "La empresa describe una recuperación gradual: la disponibilidad y la entrega de correo [mejoran en una parte cada vez mayor de su infraestructura](https://x.com/MSFT365Status/status/2121213845490336163), aunque algunos usuarios pueden seguir con fallos intermitentes.",
+          "La empresa describe una recuperación gradual: la disponibilidad y la entrega de correo [mejoran en una parte cada vez mayor de su infraestructura](https://x.com/MSFT365Status/status/2121213845490336163), aunque algunos usuarios pueden seguir con fallos intermitentes o con el correo atrasado. No ha dado una hora para el restablecimiento total.",
           "Sobre la causa, [explicó](https://x.com/MSFT365Status/status/2121002505911857577) que un proceso central de los servidores afectados se satura y les hace perder capacidad, sin haber precisado todavía el origen. También sostiene que [no tiene evidencia de actividad maliciosa](https://www.foxbusiness.com/technology/microsoft-outlook-returns-some-millions-users-face-second-day-outages); es decir, no lo trata como un ataque. El incidente quedó registrado con el código EX1550543.",
+          "## No fue solo Miami Beach",
+          "El aviso de la ciudad salió a las 2:35 PM. Esa misma mañana Miami Beach había tenido otro problema, este sin relación con Microsoft: una [caída regional de internet](https://x.com/MiamiBeachNews/status/2120878421978849380) que afectó teléfonos y servicios en línea, y que [dio por resuelta](https://x.com/MiamiBeachNews/status/2120935384226082937) a las 12:42 PM.",
+          "En el resto de Florida, el condado de St. Lucie y el Village of Wellington también [reportaron fallos en su correo](https://www.wpbf.com/article/microsoft-365-outage-st-lucie-county-wellington-disrupts-email-service-florida-government/74417378). Cerca de 130,000 usuarios llegaron a avisar de problemas con Outlook en el rastreador Downdetector.",
           "## Qué falló",
           "Sobre todo Exchange Online, que es el correo que hay detrás de Outlook. La lista de servicios afectados que publicó Microsoft incluye además Teams, SharePoint, Copilot, Planner, To Do, Intune y Defender. En Miami le toca a todo el que trabaja, estudia o hace trámites con una de esas cuentas: oficinas, bufetes, consultorios, agencias.",
           "## El tamaño del problema",
@@ -569,7 +572,7 @@
         "bajada": "Outlook and Teams have been failing since Thursday, and Microsoft reports service is being restored in phases. The company extended to 48 hours the window to deliver delayed emails.",
         "toca": [
           "If it's urgent, pick up the phone. Miami-Dade County's non-emergency services are requested at 311.",
-          "If the sender gets a notice that their email could not be delivered, that message needs to be sent again.",
+          "There's no need to resend the same email over and over: once service catches up, duplicates may arrive. Only if the sender gets a notice that it could not be delivered does it need to be sent again.",
           "Service status is posted at [status.cloud.microsoft](https://status.cloud.microsoft/) and on the @MSFT365Status account. No one needs to ask for your password to \"fix\" your account."
         ],
         "cuerpo": [
@@ -577,8 +580,11 @@
           "## What happens to delayed emails",
           "Microsoft said it extended to 48 hours the window to deliver messages left waiting while service recovers. That leaves room for an email sent Thursday afternoon to still reach its destination. Normally, after a certain time, the system returns it to the sender.",
           "## What Microsoft says",
-          "The company describes a gradual recovery: availability and email delivery [are improving across a growing portion of its infrastructure](https://x.com/MSFT365Status/status/2121213845490336163), though some users may still see intermittent issues.",
+          "The company describes a gradual recovery: availability and email delivery [are improving across a growing portion of its infrastructure](https://x.com/MSFT365Status/status/2121213845490336163), though some users may still see intermittent issues or delayed email. It has not given a time for full restoration.",
           "As for the cause, it [explained](https://x.com/MSFT365Status/status/2121002505911857577) that a core process on the affected servers becomes overwhelmed, causing them to lose capacity, without yet specifying the origin. It also maintains that it [has no evidence of malicious activity](https://www.foxbusiness.com/technology/microsoft-outlook-returns-some-millions-users-face-second-day-outages); in other words, it is not treating this as an attack. The incident is logged as EX1550543.",
+          "## It wasn't only Miami Beach",
+          "The city's notice went out at 2:35 p.m. That same morning Miami Beach had a different problem, unrelated to Microsoft: a [regional internet outage](https://x.com/MiamiBeachNews/status/2120878421978849380) that affected phones and online services, which it [declared resolved](https://x.com/MiamiBeachNews/status/2120935384226082937) at 12:42 p.m.",
+          "Elsewhere in Florida, St. Lucie County and the Village of Wellington also [reported email failures](https://www.wpbf.com/article/microsoft-365-outage-st-lucie-county-wellington-disrupts-email-service-florida-government/74417378). Nearly 130,000 users reported Outlook problems on the tracker Downdetector at one point.",
           "## What failed",
           "Mainly Exchange Online, the email service behind Outlook. The list of affected services Microsoft published also includes Teams, SharePoint, Copilot, Planner, To Do, Intune and Defender. In Miami it touches anyone who works, studies or handles paperwork through one of those accounts: offices, law firms, medical practices, agencies.",
           "## The size of the problem",
@@ -589,6 +595,14 @@
         {
           "n": "Ciudad de Miami Beach · aviso sobre el correo, 12 de noviembre de 2026",
           "u": "https://x.com/MiamiBeachNews/status/2120963615784411403"
+        },
+        {
+          "n": "WPBF · gobiernos locales de Florida afectados",
+          "u": "https://www.wpbf.com/article/microsoft-365-outage-st-lucie-county-wellington-disrupts-email-service-florida-government/74417378"
+        },
+        {
+          "n": "Ciudad de Miami Beach · caída regional de internet, 12 de noviembre",
+          "u": "https://x.com/MiamiBeachNews/status/2120878421978849380"
         },
         {
           "n": "Microsoft 365 Status · parte de recuperación",
@@ -612,7 +626,7 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-13T09:20:00-05:00"
+      "actualizada": "2026-11-13T09:40:00-05:00"
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
