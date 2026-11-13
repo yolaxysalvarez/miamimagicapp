@@ -1387,10 +1387,12 @@
         ],
         "cuerpo": [
           "Una embarcación que pase 14 días o más anclada en aguas de Florida dentro de cualquier período de 30 días necesita un permiso de anclaje prolongado, [recuerda la Comisión de Conservación de Pesca y Vida Silvestre de Florida](https://myfwc.com/boating/lt-anchoring-permit/) (FWC). La regla está vigente desde el 1 de enero de 2026 y pesa sobre todo en los Cayos, donde muchos botes pasan temporadas enteras fondeados.",
-          "## Cómo se saca",
-          "El trámite se hace en el [formulario en línea de la FWC](https://app.myfwc.com/crossdoi/ltanchoringpermit/), que pide los datos de la embarcación y de quien la registra. La agencia indica que el permiso es electrónico y no cuesta nada.",
-          "## Qué pasa si no lo tienes",
-          "La FWC lo trata como una infracción no penal, bajo la [sección 327.4111 de los Estatutos de Florida](https://www.flsenate.gov/Laws/Statutes/2026/0327.4111). El riesgo crece con la reincidencia: el dueño que acumule tres citaciones o más en 24 meses se expone a que la agencia retire el bote como embarcación que constituye una molestia pública."
+          "## A quién le toca, y a quién no",
+          "La ley cuenta los días de una forma precisa: 14 o más, dentro de 30, anclado a menos de una milla náutica del mismo punto. Moverse unos metros no reinicia la cuenta. Quedan fuera los botes amarrados a un muelle, público o privado, o a una boya de amarre autorizada, y tampoco lo necesitan los barcos de pesca comercial, los de obra o dragado en su sitio de trabajo, ni los del gobierno en tareas de policía, bomberos o rescate, [según el texto aprobado](https://www.flsenate.gov/Session/Bill/2025/164/BillText/er/HTML). Un bote de pesca recreativa está exento mientras sus ocupantes tengan las líneas o las redes en el agua.",
+          "## Lo que pide el formulario",
+          "El [formulario en línea de la FWC](https://app.myfwc.com/crossdoi/ltanchoringpermit/) pide nombre, dirección, teléfono, correo y fecha de nacimiento de quien lo solicita; marca, modelo, año y número de casco del bote, y el lugar donde va a estar anclado. Cada permiso cubre una sola embarcación y vence al año. Quien cambie de fondeadero tiene que actualizarlo.",
+          "## Lo que cuesta no tenerlo",
+          "El permiso es gratis; la multa, no. La ley fija hasta $100 por la primera vez, hasta $250 por la segunda y hasta $500 de la tercera en adelante. No presentarse a la audiencia o no pagar también cuenta como infracción en firme. Y el permiso se puede revocar si el bote queda abandonado, está en riesgo de quedarlo o incumple las reglas sanitarias."
         ]
       },
       "en": {
@@ -1404,10 +1406,12 @@
         ],
         "cuerpo": [
           "A vessel anchored in Florida waters for 14 days or more within any 30-day period needs a long-term anchoring permit, [the Florida Fish and Wildlife Conservation Commission reminds boaters](https://myfwc.com/boating/lt-anchoring-permit/). The rule has been in effect since Jan. 1, 2026, and it weighs most in the Keys, where many boats spend whole seasons at anchor.",
-          "## How to get it",
-          "The application is [FWC's online form](https://app.myfwc.com/crossdoi/ltanchoringpermit/), which asks for information about the vessel and the person registering it. The agency says the permit is electronic and costs nothing.",
-          "## What happens without it",
-          "FWC treats it as a noncriminal violation under [section 327.4111 of the Florida Statutes](https://www.flsenate.gov/Laws/Statutes/2026/0327.4111). The risk grows with repeat offenses: an owner with three or more citations in 24 months can have the boat removed by the agency as a public nuisance vessel."
+          "## Who needs it, and who doesn't",
+          "The law counts the days precisely: 14 or more, within 30, anchored within one nautical mile of the same point. Moving a few yards doesn't reset the clock. Boats tied to a dock, public or private, or to a permitted mooring buoy are left out, and commercial fishing vessels, construction or dredging vessels on an active job site, and government boats on police, fire or rescue duty don't need one either, [under the enacted text](https://www.flsenate.gov/Session/Bill/2025/164/BillText/er/HTML). A recreational fishing boat is exempt while its occupants are tending lines or nets.",
+          "## What the form asks for",
+          "[FWC's online form](https://app.myfwc.com/crossdoi/ltanchoringpermit/) asks for the applicant's name, address, phone, email and date of birth; the boat's make, model, year and hull number, and the place where it will be anchored. Each permit covers a single vessel and expires after a year. Anyone who changes anchorage has to update it.",
+          "## What it costs not to have it",
+          "The permit is free; the fine isn't. The law sets up to $100 for a first offense, up to $250 for a second and up to $500 from the third on. Failing to appear at the hearing or failing to pay also counts as a standing violation. And the permit can be revoked if the boat becomes derelict, is at risk of becoming derelict or breaks marine sanitation rules."
         ]
       },
       "fuentes": [
@@ -1418,6 +1422,10 @@
         {
           "n": "Estatutos de Florida · Sección 327.4111",
           "u": "https://www.flsenate.gov/Laws/Statutes/2026/0327.4111"
+        },
+        {
+          "n": "Senado de Florida · Ley de 2025 sobre anclaje prolongado (SB 164, texto aprobado)",
+          "u": "https://www.flsenate.gov/Session/Bill/2025/164/BillText/er/HTML"
         }
       ]
     },
