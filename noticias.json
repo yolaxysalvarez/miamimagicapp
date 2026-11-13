@@ -1101,42 +1101,50 @@
       "foto_pie_en": "Brickell's towers, seen from across the bay.",
       "es": {
         "etiqueta": "EL MERCADO",
-        "titulo": "Miami-Dade, a dos velocidades: las casas las manda quien vende y los condominios, quien compra",
-        "bajada": "Arriba hay récord: 24 ventas de más de $30 millones en nueve meses. Abajo, las casas escasean y a los condominios les sobra inventario.",
+        "titulo": "En Miami-Dade, quien vende una casa pone las condiciones; quien compra un condominio, también",
+        "bajada": "El mismo condado, dos mercados: 5.1 meses de casas en venta contra 12.3 de condominios. Y arriba del todo, un récord de mansiones de más de $30 millones.",
         "toca": [
           "Con 12.3 meses de inventario, quien compra un condominio tiene de dónde elegir y margen para negociar.",
           "Son medianas de todo el condado. Cada barrio y cada edificio tienen su propio número.",
           "Las cifras son de septiembre. El próximo informe mensual traerá las de octubre."
         ],
         "cuerpo": [
-          "Miami-Dade superó en nueve meses su récord anual de ventas de más de $30 millones: fueron 24 hasta septiembre, frente a las 21 de todo 2025, según el [último informe de la asociación MIAMI REALTORS®](https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/). Debajo de esa cifra, el mercado se mueve a dos velocidades.",
-          "## Casas",
-          "La asociación reporta que la mediana de venta de una casa unifamiliar llegó en septiembre a $692,000, un 4.06% más que un año antes. Hay 5.1 meses de inventario, lo que considera mercado de vendedor. Se cerraron 824 ventas, un 4.7% menos.",
-          "## Condominios",
-          "La mediana quedó en $417,090, un 0.69% menos, con 12.3 meses de inventario, lo que la asociación califica de mercado de comprador. Las ventas subieron un 1%, a 909. Para la asociación, un mercado está equilibrado con entre seis y nueve meses de oferta.",
-          "## El dinero",
-          "El informe indica que el 38.3% de las ventas cerradas en septiembre se pagó al contado. Entre los condominios fue casi la mitad, el 49.4%. Las tasas hipotecarias estaban en 7.46% el 13 de octubre, casi 0.6 puntos más que al comenzar septiembre, de acuerdo con la asociación.",
-          "En total se vendieron 1,733 viviendas, un 2% menos que en septiembre de 2025."
+          "Dos carteles de «Se vende» en la misma avenida de Miami-Dade pueden contar historias opuestas. El de la casa con patio no dura: hay pocas y el dueño escoge entre ofertas. El del apartamento del piso 14 lleva meses ahí, y el que llega a verlo se da el lujo de regatear.",
+          "Así sale retratado el condado en las [cifras de septiembre de MIAMI REALTORS®](https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/), las más recientes que ha publicado la asociación.",
+          "## La casa: poca oferta, precio arriba",
+          "La mediana de venta de una casa unifamiliar llegó a $692,000, un 4.06% más que un año antes. Quedan 5.1 meses de inventario, es decir, lo que tardaría en venderse todo lo que hay en el mercado si no entrara una casa más. Se cerraron 824 ventas, un 4.7% menos.",
+          "## El condominio: de sobra para escoger",
+          "Aquí la cuenta se da vuelta: 12.3 meses de inventario, más del doble que en las casas, y una mediana de $417,090, un 0.69% por debajo de la de hace un año. Aun así se vendió un poco más: 909 unidades, un 1% de aumento.",
+          "La vara de la asociación es sencilla: entre seis y nueve meses de oferta el mercado está equilibrado; por debajo manda quien vende y por encima, quien compra.",
+          "## Allá arriba, otra liga",
+          "Mientras tanto, el lujo va por su carril. En nueve meses el condado rompió su récord anual de ventas de más de $30 millones: 24 hasta septiembre, contra las 21 de todo 2025.",
+          "## Con qué se paga",
+          "El 38.3% de las ventas de septiembre se cerró al contado, sin hipoteca. En los condominios fue casi la mitad: el 49.4%. Para quien sí necesita préstamo, la asociación sitúa las tasas en 7.46% al 13 de octubre, casi 0.6 puntos más que al comenzar septiembre.",
+          "En total cambiaron de dueño 1,733 viviendas, un 2% menos que en septiembre de 2025."
         ]
       },
       "en": {
         "etiqueta": "THE MARKET",
-        "titulo": "Miami-Dade at two speeds: sellers rule in houses, buyers in condos",
-        "bajada": "At the top there's a record: 24 sales above $30 million in nine months. Below it, houses are scarce and condos have inventory to spare.",
+        "titulo": "In Miami-Dade, the house seller sets the terms. So does the condo buyer",
+        "bajada": "One county, two markets: 5.1 months of houses for sale against 12.3 of condos. And at the very top, a record for mansions above $30 million.",
         "toca": [
           "With 12.3 months of inventory, condo buyers have plenty to choose from and room to negotiate.",
           "These are countywide medians. Every neighborhood and every building has its own number.",
           "The figures are for September. The next monthly report will bring October's."
         ],
         "cuerpo": [
-          "Miami-Dade beat its annual record for sales above $30 million in just nine months: 24 through September, against 21 in all of 2025, according to the [latest report from the MIAMI REALTORS® association](https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/). Beneath that number, the market is moving at two speeds.",
-          "## Houses",
-          "The association reports that the median sale price of a single-family home reached $692,000 in September, up 4.06% from a year earlier. There are 5.1 months of inventory, which it considers a seller's market. Closed sales totaled 824, down 4.7%.",
-          "## Condos",
-          "The median came in at $417,090, down 0.69%, with 12.3 months of inventory, which the association calls a buyer's market. Sales rose 1%, to 909. The association considers a market with six to nine months of supply balanced.",
-          "## The money",
-          "The report shows cash paid for 38.3% of closed sales in September. Among condos it was nearly half, 49.4%. Mortgage rates stood at 7.46% on Oct. 13, almost 0.6 percentage points higher than at the start of September, according to the association.",
-          "In all, 1,733 homes sold, 2% fewer than in September 2025."
+          "Two \"For Sale\" signs on the same Miami-Dade avenue can tell opposite stories. The one in front of the house with a yard doesn't last: there are few of them, and the owner picks among offers. The one for the 14th-floor apartment has been up for months, and whoever comes to see it can afford to haggle.",
+          "That's the county's portrait in [MIAMI REALTORS® figures for September](https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/), the most recent the association has published.",
+          "## The house: short supply, higher price",
+          "The median sale price of a single-family home reached $692,000, up 4.06% from a year earlier. There are 5.1 months of inventory left, meaning how long it would take to sell everything on the market if not one more house were listed. Closed sales totaled 824, down 4.7%.",
+          "## The condo: plenty to choose from",
+          "Here the math flips: 12.3 months of inventory, more than double that of houses, and a median of $417,090, 0.69% below a year ago. Even so, a few more sold: 909 units, a 1% increase.",
+          "The association's yardstick is simple: six to nine months of supply is a balanced market; below that the seller is in charge, and above it, the buyer.",
+          "## Up top, another league",
+          "Meanwhile, luxury runs in its own lane. In nine months the county broke its annual record for sales above $30 million: 24 through September, against 21 in all of 2025.",
+          "## How it gets paid",
+          "Cash, with no mortgage, closed 38.3% of September's sales. Among condos it was nearly half: 49.4%. For those who do need a loan, the association puts mortgage rates at 7.46% as of Oct. 13, almost 0.6 percentage points higher than at the start of September.",
+          "In all, 1,733 homes changed hands, 2% fewer than in September 2025."
         ]
       },
       "fuentes": [
