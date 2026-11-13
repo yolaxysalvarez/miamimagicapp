@@ -94,7 +94,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 .cf-r{flex:1;min-width:0;height:100%;margin-left:8px;overflow:hidden;display:flex;align-items:center;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 94%,transparent)}
 .cf-r>div{display:flex;align-items:center;width:max-content;animation:mmscroll 60s linear infinite}
 .cf-r:hover>div{animation-play-state:paused}
-@media(max-width:760px){.cf-r>div{animation-duration:34s}}
+@media(max-width:760px){.cf-r>div{animation-duration:34s}.cf-r{-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 14%,#000 92%,transparent)}}
+html,body{overflow-x:clip}
 .cf-i{display:inline-flex;align-items:center;gap:9px;padding:0 24px;white-space:nowrap;font-size:16px;color:var(--ink2)}
 .cf-i b{color:var(--coral-d);font-size:17px}
 .cf-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex:none}
@@ -443,7 +444,7 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
   .hm-s{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -22px;padding:2px 22px 10px;scrollbar-width:none;justify-content:flex-start}
   .hm-s::-webkit-scrollbar,#dkList.sw::-webkit-scrollbar{display:none}
   .hm-s a{flex:0 0 82%;scroll-snap-align:center}
-  #dkList.sw{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:14px -18px 0;padding:0 18px 8px;scrollbar-width:none}
+  #dkList.sw{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:14px -16px 0;padding:0 16px 8px;scrollbar-width:none}
   #dkList.sw .dk-it,#dkList.sw .dk-it.x{display:flex;flex-direction:column;align-items:stretch;gap:10px;flex:0 0 78%;scroll-snap-align:center;padding:0;border:0}
   #dkList.sw .dk-it .ph{aspect-ratio:16/10}
   .dk-mb{display:none}

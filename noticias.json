@@ -450,9 +450,9 @@
       "destacada": true,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-frente-frio-minimas.jpg",
+      "foto": "mm-frente-frio-brickell.jpg",
       "foto_mm": false,
-      "foto_alt": "Gráfico de las temperaturas mínimas en Miami del 9 al 15 de noviembre: de 77 grados a 60 el viernes 13",
+      "foto_alt": "Gráfico de las temperaturas mínimas en Miami del 9 al 15 de noviembre sobre una vista aérea de Brickell: de 77 grados a 60 el viernes 13",
       "foto_pie": "Mínimas previstas en Miami del 9 al 15 de noviembre, según el Servicio Nacional de Meteorología.",
       "foto_pie_en": "Forecast lows in Miami from Nov. 9 to 15, according to the National Weather Service.",
       "es": {
@@ -525,8 +525,6 @@
           "u": "https://www.mlb.com/marlins/ballpark/events/entertainment-sports/choque-de-gigantes"
         }
       ],
-      "foto_fit": "contain",
-      "foto_bg": "#0E1B30",
       "ultima": 1
     },
     {
