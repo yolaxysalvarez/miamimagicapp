@@ -4,8 +4,8 @@
   "ultima_hora": {
     "activa": true,
     "nota": "faa-parada-nacional-vuelos-13-noviembre",
-    "es": "La FAA ya no registra la parada nacional de vuelos: MIA, FLL y Key West, sin restricciones a las 6:15 PM",
-    "en": "The FAA no longer lists the nationwide ground stop: MIA, FLL and Key West show no restrictions at 6:15 p.m.",
+    "es": "Parada nacional de vuelos: el aviso de la FAA la mantiene hasta las 11:30 PM y la atribuye a una falla de equipos",
+    "en": "Nationwide ground stop: FAA advisory keeps it until 11:30 p.m. and cites an equipment outage",
     "desde": "2026-11-13T16:30:00-05:00",
     "hasta": "2026-11-14T06:00:00-05:00"
   },
@@ -14,31 +14,11 @@
       "k": "avion",
       "faa": true,
       "primero": true,
-      "es": "MIA · FAA 6:15 PM",
-      "en": "MIA · FAA 6:15 p.m.",
-      "v": "Sin restricciones",
-      "v_en": "No restrictions",
-      "fuente": "FAA NAS Status"
-    },
-    {
-      "k": "avion",
-      "faa": true,
-      "primero": true,
-      "es": "FLL · FAA 6:15 PM",
-      "en": "FLL · FAA 6:15 p.m.",
-      "v": "Sin restricciones",
-      "v_en": "No restrictions",
-      "fuente": "FAA NAS Status"
-    },
-    {
-      "k": "avion",
-      "faa": true,
-      "primero": true,
-      "es": "Key West · FAA 6:15 PM",
-      "en": "Key West · FAA 6:15 p.m.",
-      "v": "Sin restricciones",
-      "v_en": "No restrictions",
-      "fuente": "FAA NAS Status"
+      "es": "Parada nacional de vuelos · FAA",
+      "en": "Nationwide ground stop · FAA",
+      "v": "hasta 11:30 PM",
+      "v_en": "until 11:30 p.m.",
+      "fuente": "FAA Advisory 111"
     },
     {
       "k": "gas",
@@ -226,50 +206,54 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-13T18:25:00-05:00",
+      "actualizada": "2026-11-13T18:45:00-05:00",
       "es": {
         "etiqueta": "ÚLTIMA HORA",
-        "titulo": "La FAA ya no registra la parada nacional de vuelos: Miami, Fort Lauderdale y Key West, sin restricciones a las 6:15 PM",
-        "bajada": "La orden detuvo todas las salidas del país desde las 3:54 PM. El sistema oficial de la FAA ya no la muestra, aunque la agencia no ha emitido un anuncio formal.",
+        "titulo": "Parada nacional de vuelos: el aviso de la FAA la mantiene hasta las 11:30 PM y la atribuye a una falla de equipos",
+        "bajada": "La orden detuvo a las 3:54 PM todas las salidas del país, de Miami a Key West. La FAA no ha emitido un comunicado sobre la causa ni sobre cuándo se reanudan los vuelos.",
         "toca": [
-          "Antes de ir al aeropuerto, confirma tu vuelo con la aerolínea: aunque se reanuden las salidas, quedan retrasos acumulados.",
+          "Antes de ir al aeropuerto, confirma tu vuelo con la aerolínea.",
           "Estado de vuelos: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) y [Key West](https://eyw.com/).",
-          "El estado oficial de cada aeropuerto se consulta en [nasstatus.faa.gov](https://nasstatus.faa.gov/)."
+          "Aviso oficial de la FAA: [Advisory 111](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093)."
         ],
         "cuerpo": [
-          "## Actualización · 6:25 PM",
-          "El [sistema oficial de estado del espacio aéreo de la FAA](https://nasstatus.faa.gov/), actualizado a las 6:15 PM, ya no muestra la parada nacional. A esa hora no registraba ninguna restricción en el Aeropuerto Internacional de Miami, en el de Fort Lauderdale ni en el de Key West. La FAA todavía no ha publicado un anuncio formal de que la levantó.",
-          "Las aerolíneas seguirán con retrasos y cancelaciones durante la noche mientras recolocan aviones y tripulaciones.",
+          "## Actualización · 6:45 PM",
+          "El [aviso oficial número 111 del Centro de Comando de la FAA](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093) fija la parada nacional hasta las 11:30 PM y anota como motivo «equipo / falla». Repite que «todo el tráfico de salida debe permanecer detenido en tierra hasta nuevo aviso».",
+          "A las 6:15 PM, la [página de estado del espacio aéreo de la FAA](https://nasstatus.faa.gov/) no mostraba la parada ni restricciones en Miami, Fort Lauderdale o Key West. Como el aviso sigue vigente y la agencia no ha anunciado que la levantara, la parada debe darse por activa hasta que la FAA diga lo contrario.",
           "## Qué pasó",
-          "La FAA ordenó a las 3:54 PM de este viernes 13 de noviembre que ningún vuelo despegara de un aeropuerto de Estados Unidos, por «circunstancias extraordinarias y por razones de seguridad». Los aviones que estaban en el aire siguieron hasta su destino.",
-          "El secretario de Transporte, Sean Duffy, [atribuyó la orden](https://x.com/SecDuffy/status/2121351591106072679) a un problema de comunicaciones que afectó a todos los centros de control de rutas aéreas del país, y dijo que los técnicos de la FAA lo estaban investigando. La causa exacta no se ha informado.",
-          "En inglés, la FAA habló de «safety», que se refiere a la seguridad de las operaciones. Ninguna autoridad ha hablado de un ataque.",
-          "Esta nota se actualizará en cuanto la FAA dé más información."
+          "La FAA ordenó a las 3:54 PM de este viernes 13 de noviembre que ningún vuelo despegara de un aeropuerto de Estados Unidos, por «circunstancias extraordinarias y por razones de seguridad». Los aviones que estaban en el aire siguieron hasta su destino, y los vuelos internacionales hacia el país se manejan caso por caso.",
+          "El secretario de Transporte, Sean Duffy, [atribuyó la orden](https://x.com/SecDuffy/status/2121351591106072679) a un problema de comunicaciones que afectó a todos los centros de control de rutas aéreas del país, y dijo que los técnicos de la FAA lo estaban investigando.",
+          "En inglés, la FAA habla de «safety», que se refiere a la seguridad de las operaciones. Ninguna autoridad ha hablado de un ataque.",
+          "Esta nota se actualizará en cuanto la FAA emita un comunicado."
         ]
       },
       "en": {
         "etiqueta": "BREAKING",
-        "titulo": "The FAA no longer lists the nationwide ground stop: Miami, Fort Lauderdale and Key West show no restrictions at 6:15 p.m.",
-        "bajada": "The order halted every departure in the country starting at 3:54 p.m. The FAA's official system no longer shows it, though the agency has not issued a formal announcement.",
+        "titulo": "Nationwide ground stop: FAA advisory keeps it in place until 11:30 p.m. and cites an equipment outage",
+        "bajada": "The order halted every departure in the country at 3:54 p.m., from Miami to Key West. The FAA has not issued a statement on the cause or on when flights will resume.",
         "toca": [
-          "Before heading to the airport, confirm your flight with your airline: even as departures resume, delays have piled up.",
+          "Before heading to the airport, confirm your flight with your airline.",
           "Flight status: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) and [Key West](https://eyw.com/).",
-          "Each airport's official status is posted at [nasstatus.faa.gov](https://nasstatus.faa.gov/)."
+          "Official FAA notice: [Advisory 111](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093)."
         ],
         "cuerpo": [
-          "## Update · 6:25 p.m.",
-          "The [FAA's official National Airspace System status page](https://nasstatus.faa.gov/), updated at 6:15 p.m., no longer shows the nationwide ground stop. At that time it listed no restrictions at Miami International, Fort Lauderdale-Hollywood International or Key West International. The FAA has not yet issued a formal announcement that it was lifted.",
-          "Airlines will keep running delays and cancellations through the night as they reposition aircraft and crews.",
+          "## Update · 6:45 p.m.",
+          "The [FAA Command Center's official Advisory 111](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093) sets the nationwide ground stop until 11:30 p.m. and lists the reason as \"equipment / outage.\" It repeats that \"all departing traffic should remain ground stopped until further notice.\"",
+          "At 6:15 p.m., the [FAA's National Airspace System status page](https://nasstatus.faa.gov/) did not show the ground stop or any restrictions at Miami, Fort Lauderdale or Key West. Because the advisory remains in effect and the agency has not announced that it was lifted, the ground stop should be considered active until the FAA says otherwise.",
           "## What happened",
-          "At 3:54 p.m. this Friday, Nov. 13, the FAA ordered that no flight take off from any U.S. airport, \"due to extraordinary circumstances and for reasons of safety.\" Planes already in the air continued to their destinations.",
-          "Transportation Secretary Sean Duffy [attributed the order](https://x.com/SecDuffy/status/2121351591106072679) to a communications issue affecting all of the country's Air Route Traffic Control Centers and said FAA technicians were investigating. The exact cause has not been reported.",
-          "The FAA's word was \"safety,\" which refers to operational safety. No authority has spoken of an attack.",
-          "This story will be updated as soon as the FAA releases more information."
+          "At 3:54 p.m. this Friday, Nov. 13, the FAA ordered that no flight take off from any U.S. airport, \"due to extraordinary circumstances and for reasons of safety.\" Planes already in the air continued to their destinations, and international flights inbound to the U.S. are handled case by case.",
+          "Transportation Secretary Sean Duffy [attributed the order](https://x.com/SecDuffy/status/2121351591106072679) to a communications issue affecting all of the country's Air Route Traffic Control Centers and said FAA technicians were investigating.",
+          "The FAA's word is \"safety,\" which refers to operational safety. No authority has spoken of an attack.",
+          "This story will be updated as soon as the FAA issues a statement."
         ]
       },
       "fuentes": [
         {
-          "n": "FAA · estado oficial del espacio aéreo (actualizado 6:15 PM)",
+          "n": "FAA · Advisory 111 del Centro de Comando (parada nacional)",
+          "u": "https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093"
+        },
+        {
+          "n": "FAA · estado oficial del espacio aéreo",
           "u": "https://nasstatus.faa.gov/"
         },
         {
@@ -277,7 +261,7 @@
           "u": "https://x.com/SecDuffy/status/2121351591106072679"
         },
         {
-          "n": "Aeropuerto Internacional de Miami · estado de vuelos",
+          "n": "Aeropuerto Internacional de Miami",
           "u": "https://www.miami-airport.com/flight_status.asp"
         },
         {
