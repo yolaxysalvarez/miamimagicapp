@@ -3824,6 +3824,7 @@ body{padding-bottom:0;}
       <a href="#" onclick="go('sec-rest');return false;" data-en="Dining" data-es="Comer">Dining</a>
       <a href="#" onclick="go('sec-map');return false;" data-en="Map" data-es="Mapa">Map</a>
       <a href="#" onclick="go('sec-transport');return false;" data-en="Fly In" data-es="Vuela">Fly In</a>
+      <a href="/noticias" onclick="if(window.mmNewsOpen){mmNewsOpen('');return false}" data-en="News" data-es="News">News</a>
       <a href="#" onclick="openSignup();return false;" class="nav-join" data-en="Join Free" data-es="&Uacute;nete Gratis">Join Free</a>
       <a href="https://miamimagicdirectory.com" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" class="nav-web">Web ↗</a>
     </div>
@@ -4180,7 +4181,7 @@ html body .twx-pill{font-size:.78rem!important}
     if(!NAT)return;var a=e.target.closest&&e.target.closest('#sec-news a,#sec-cc a');if(!a)return;
     e.preventDefault();e.stopPropagation();if(typeof mmOpenWeb==='function')mmOpenWeb(a.href);
   },true);
-  function load(){fetch(BASE+'/noticias.json?t='+Date.now()).then(function(r){return r.ok?r.json():null}).then(function(j){if(j&&j.notas){j.notas=j.notas.filter(function(n){try{var h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});return !n.fecha||n.fecha<=h}catch(e){return true}});DATA=j;render()}}).catch(function(){})}
+  function load(){fetch(BASE+'/noticias.json?t='+Date.now()).then(function(r){return r.ok?r.json():null}).then(function(j){if(j&&j.notas){j.notas=j.notas.filter(function(n){try{var h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'});try{if(/[?&]vista=viernes/.test(location.search))sessionStorage.setItem('mmVista','1');if(sessionStorage.getItem('mmVista')==='1'&&h<'2026-11-13')h='2026-11-13'}catch(x){}return !n.fecha||n.fecha<=h}catch(e){return true}});DATA=j;render()}}).catch(function(){})}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load);else load();
   setInterval(function(){if(DATA&&!document.hidden&&L()!==LAST)render()},1200);
   window.mmNewsRender=render;
@@ -15871,6 +15872,14 @@ document.addEventListener('DOMContentLoaded',function(){
   };
 })();
 </script>
+<a id="mmBackNews" href="/noticias" style="display:none" aria-label="Miami Magic News">&larr; <b>Miami Magic <em>News</em></b></a>
+<style>
+#mmBackNews{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(126px + env(safe-area-inset-bottom,0px));z-index:1200;align-items:center;gap:8px;padding:9px 16px 8px;border-radius:999px;background:rgba(253,248,240,.94);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(14,27,48,.12);box-shadow:0 10px 26px -12px rgba(14,27,48,.55);color:#0E1B30;text-decoration:none;font:500 .92rem/1 'DM Sans',sans-serif;white-space:nowrap}
+#mmBackNews b{font:900 1rem/1 'Playfair Display',serif}#mmBackNews em{font-style:italic;font-weight:700;color:#C93A25}
+@media(min-width:900px){#mmBackNews{left:22px;transform:none;top:18px;bottom:auto}}
+@media(max-width:520px){.bottom-nav{padding:10px 8px;gap:0;max-width:calc(100vw - 16px)}.bottom-nav .bn-item{padding:6px 8px}.bottom-nav .bn-lbl{letter-spacing:.02em}}
+</style>
+<script>(function(){try{if(location.protocol==='capacitor:'||location.protocol==='ionic:')return;var r=document.referrer||'',fn=/[?&]from=news/.test(location.search);try{if(fn||/^https?:\/\/[^/]+\/(noticias|news)(\/|\?|$)/.test(r))sessionStorage.setItem('mmFromNews',/\/news(\/|\?|$)/.test(r)?'en':'es')}catch(e){}var v=null;try{v=sessionStorage.getItem('mmFromNews')}catch(e){}if(!v)return;var a=document.getElementById('mmBackNews');a.href=(v==='en'?'/news':'/noticias');a.style.display='inline-flex';a.addEventListener('click',function(e){if(r&&/\/(noticias|news)(\/|\?|$)/.test(r)&&history.length>1){e.preventDefault();history.back()}})}catch(e){}})();</script>
 <nav class="bottom-nav" id="bottomNav">
   <button class="bn-item active" onclick="window.scrollTo({top:0,behavior:'smooth'});bnActive(this)">
     <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/><path d="M9 21V12h6v9"/></svg></span>
@@ -15879,6 +15888,10 @@ document.addEventListener('DOMContentLoaded',function(){
   <button class="bn-item" onclick="searchNearby();bnActive(this)">
     <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
     <span class="bn-lbl" data-en="Nearby" data-es="Cerca">Nearby</span>
+  </button>
+  <button class="bn-item" id="bnNews" onclick="if(window.mmNewsOpen)mmNewsOpen('')" aria-label="Miami Magic News">
+    <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/></svg></span>
+    <span class="bn-lbl" data-en="News" data-es="News">News</span>
   </button>
   <!-- AI CENTER BUTTON -->
   <button class="bn-item bn-ai" onclick="openItinPanel();bnActive(this)">
