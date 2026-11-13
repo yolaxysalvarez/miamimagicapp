@@ -3,11 +3,11 @@
   "updated": "2026-11-08",
   "ultima_hora": {
     "activa": true,
-    "nota": "e1-miami-gp-botes-electricos-final",
-    "es": "El mundial de botes eléctricos E1 se decide hoy y mañana en la bahía de Biscayne: el equipo de Tom Brady llega líder y el de Will Smith lo persigue",
-    "en": "The E1 electric raceboat world title is decided today and tomorrow on Biscayne Bay: Tom Brady's team leads and Will Smith's is chasing",
-    "desde": "2026-11-13T09:15:00-05:00",
-    "hasta": "2026-11-13T23:59:00-05:00"
+    "nota": "faa-parada-nacional-vuelos-13-noviembre",
+    "es": "La FAA detiene todas las salidas de vuelos en Estados Unidos hasta nuevo aviso, también en Miami y Fort Lauderdale",
+    "en": "The FAA halts all flight departures in the U.S. until further notice, including Miami and Fort Lauderdale",
+    "desde": "2026-11-13T16:30:00-05:00",
+    "hasta": "2026-11-14T06:00:00-05:00"
   },
   "cifras": [
     {
@@ -181,6 +181,83 @@
         "en": "Miami's housing market, in the app"
       },
       "tambien": 1
+    },
+    {
+      "id": "faa-parada-nacional-vuelos-13-noviembre",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-13",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-airport-mia.jpg",
+      "foto_mm": false,
+      "foto_alt": "Aeropuerto Internacional de Miami",
+      "foto_pie": "Aeropuerto Internacional de Miami.",
+      "foto_pie_en": "Miami International Airport.",
+      "ultima": 1,
+      "desarrollo": true,
+      "actualizada": "2026-11-13T16:30:00-05:00",
+      "es": {
+        "etiqueta": "ÚLTIMA HORA",
+        "titulo": "La FAA detiene todas las salidas de vuelos en Estados Unidos, también en Miami y Fort Lauderdale",
+        "bajada": "La orden rige hasta nuevo aviso y la agencia la atribuye a «circunstancias extraordinarias» y «razones de seguridad operacional». No ha explicado la causa.",
+        "toca": [
+          "Antes de salir hacia el aeropuerto, revisa el estado de tu vuelo con tu aerolínea.",
+          "Los vuelos que salen de MIA y FLL están detenidos hasta que la FAA levante la orden.",
+          "Estado de vuelos: [Aeropuerto de Miami](https://www.miami-airport.com/flight_status.asp) y [Aeropuerto de Fort Lauderdale](https://www.broward.org/airport)."
+        ],
+        "cuerpo": [
+          "Ningún avión despega en este momento de un aeropuerto de Estados Unidos. La Administración Federal de Aviación (FAA) ordenó este viernes 13 de noviembre, poco antes de las 4:00 PM, una parada en tierra de todos los vuelos de salida del país, incluidos los de Miami y Fort Lauderdale.",
+          "## Qué dice la orden",
+          "El aviso del Centro de Comando de la FAA a los operadores, [citado por varios medios](https://www.wbay.com/2026/11/13/faa-all-us-airports-ground-stopped/), indica que «todo el tráfico de salida debe permanecer detenido en tierra hasta nuevo aviso», por «circunstancias extraordinarias y por razones de seguridad». Los vuelos internacionales que vienen hacia Estados Unidos se manejan caso por caso.",
+          "En inglés, la FAA habla de «safety», que se refiere a la seguridad de las operaciones. El aviso no menciona una amenaza ni un ataque.",
+          "## Lo que no se sabe todavía",
+          "La agencia no ha explicado la causa ni ha dicho cuánto durará la orden. Algunos reportes hablan de fallas en las frecuencias de comunicación en partes del país, y el rastreador [Flightradar24 la relacionó con una falla de equipos de la FAA](https://x.com/flightradar24/status/2121347654714077605), pero la FAA no lo ha confirmado.",
+          "Esta nota se actualizará en cuanto la FAA dé más información o levante la orden."
+        ]
+      },
+      "en": {
+        "etiqueta": "BREAKING",
+        "titulo": "FAA halts all flight departures in the U.S., including Miami and Fort Lauderdale",
+        "bajada": "The order is in effect until further notice, and the agency cites \"extraordinary circumstances\" and \"reasons of safety.\" It has not explained the cause.",
+        "toca": [
+          "Before heading to the airport, check your flight status with your airline.",
+          "Departures from MIA and FLL are on hold until the FAA lifts the order.",
+          "Flight status: [Miami International](https://www.miami-airport.com/flight_status.asp) and [Fort Lauderdale-Hollywood International](https://www.broward.org/airport)."
+        ],
+        "cuerpo": [
+          "No plane is taking off from a U.S. airport right now. The Federal Aviation Administration (FAA) ordered a ground stop of all departing flights nationwide shortly before 4 p.m. this Friday, Nov. 13, including at Miami and Fort Lauderdale.",
+          "## What the order says",
+          "The FAA Command Center's notice to operators, [cited by several outlets](https://www.wbay.com/2026/11/13/faa-all-us-airports-ground-stopped/), states that \"all departing traffic should remain ground stopped until further notice,\" \"due to extraordinary circumstances and for reasons of safety.\" International flights inbound to the U.S. are being handled case by case.",
+          "The FAA's word is \"safety,\" which refers to operational safety. The notice does not mention a threat or an attack.",
+          "## What isn't known yet",
+          "The agency has not explained the cause or said how long the order will last. Some reports point to communication frequency outages in parts of the country, and the tracker [Flightradar24 linked it to an FAA equipment outage](https://x.com/flightradar24/status/2121347654714077605), but the FAA has not confirmed that.",
+          "This story will be updated as soon as the FAA releases more information or lifts the order."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Aviso de la FAA a operadores, citado por WBAY",
+          "u": "https://www.wbay.com/2026/11/13/faa-all-us-airports-ground-stopped/"
+        },
+        {
+          "n": "CNN · parada nacional de la FAA",
+          "u": "https://www.cnn.com/2026/11/13/us/faa-nationwide-ground-stop"
+        },
+        {
+          "n": "Flightradar24 · aviso en X",
+          "u": "https://x.com/flightradar24/status/2121347654714077605"
+        },
+        {
+          "n": "Aeropuerto Internacional de Miami · estado de vuelos",
+          "u": "https://www.miami-airport.com/flight_status.asp"
+        },
+        {
+          "n": "Aeropuerto de Fort Lauderdale",
+          "u": "https://www.broward.org/airport"
+        }
+      ]
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -626,7 +703,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-13T09:40:00-05:00",
-      "ultima": 1
+      "ultima": 2
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
@@ -702,7 +779,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-13T09:20:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "beach-polo-world-cup-miami-beach-2026",
@@ -765,7 +842,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-13T09:30:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
@@ -863,7 +940,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "obamacare-2027-florida",
@@ -1673,7 +1750,7 @@
           "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
         }
       ],
-      "ultima": 4
+      "ultima": 5
     },
     {
       "hamaca": false,
@@ -3528,7 +3605,7 @@
           "u": "https://miamiwonderland.com/faqs/"
         }
       ],
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "luces-navidad-miami-2026",
