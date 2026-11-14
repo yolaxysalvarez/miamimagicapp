@@ -482,6 +482,8 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 .ag-tabs{display:flex;gap:22px}
 .ag-tabs button{border:0;background:none;padding:4px 0 5px;font-family:var(--bb);font-size:20px;letter-spacing:.16em;color:var(--mut);border-bottom:3px solid transparent}
 .ag-tabs button.on{color:var(--ink);border-bottom-color:var(--coral)}
+.ag-tabs button.kt{color:var(--keys)}.ag-tabs button.kt.on{color:var(--keys);border-bottom-color:var(--keys)}
+.ag-r.ky{background:linear-gradient(90deg,rgba(16,86,60,.07),rgba(16,86,60,0) 70%);box-shadow:inset 3px 0 0 var(--keys);padding-left:12px}.ag-r.ky .ag-d i,.ag-r.ky .ag-d u{color:var(--keys)}.ag-r.ky .ag-d{border-right-color:rgba(16,86,60,.35)}
 .ag-l{display:grid;grid-template-columns:1fr 1fr;column-gap:44px}
 .ag-r{display:grid;grid-template-columns:74px minmax(0,1fr);gap:16px;align-items:center;padding:15px 0;border-bottom:1px solid rgba(14,27,48,.12)}
 .ag-d{text-align:center;border-right:1px solid rgba(14,27,48,.18);padding-right:14px;line-height:1}
@@ -491,7 +493,7 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 .ag-d i.w{font-size:12.5px;letter-spacing:.08em;white-space:nowrap}
 .ag-d u{display:block;text-decoration:none;font-family:var(--bb);font-size:14px;letter-spacing:.2em;color:var(--mut)}
 .ag-x .k{display:block;font-family:var(--bb);font-size:14.5px;letter-spacing:.16em;color:var(--teal)}
-.ag-x .k em{font-style:normal;color:#1E7A46;margin-right:8px}
+.ag-x .k em{font-style:normal;color:var(--keys);font-weight:700}
 .ag-x h4{font-family:var(--pf);font-weight:700;font-size:20px;line-height:1.2;margin:2px 0 3px}
 .ag-x p{font-size:15px;color:var(--ink2);line-height:1.35}
 .ag-x p b{font-weight:700;color:var(--ink)}
@@ -909,6 +911,40 @@ body{background:#fff;text-rendering:optimizeLegibility}
 .ph.fit{background:#F3F1EC}
 .fz-c{box-shadow:0 10px 18px -16px rgba(10,17,32,.45)}
 </style>
+<style>
+/* ── ficha del evento (Agenda): se amplía dentro de News, sin salir ── */
+.evs{position:fixed;inset:0;z-index:90;display:none;align-items:flex-end;justify-content:center;background:rgba(10,17,32,.55);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.evs.on{display:flex}
+.evs-c{position:relative;width:100%;max-width:620px;max-height:92vh;overflow-y:auto;background:var(--bg);border-radius:22px 22px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.25);animation:evsUp .28s cubic-bezier(.2,.8,.2,1)}
+@keyframes evsUp{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
+@media(min-width:700px){.evs{align-items:center}.evs-c{border-radius:22px}}
+.evs-im{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:22px 22px 0 0;background:var(--card)}
+.evs-x{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--ink);font-size:20px;line-height:38px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.18);cursor:pointer}
+.evs-b{padding:22px 24px 28px}
+.evs-k{padding-right:48px;font-family:var(--bb);font-size:16px;letter-spacing:.16em;color:var(--teal)}
+
+.evs-b h3{font-family:var(--pf);font-weight:900;font-size:27px;line-height:1.15;margin:6px 0 16px;color:var(--ink)}
+.evs-m{border-top:1px solid var(--line);margin-bottom:16px}
+.evs-m div{display:grid;grid-template-columns:86px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:16px;color:var(--ink2);line-height:1.35}
+.evs-m span{font-family:var(--bb);font-size:15px;letter-spacing:.14em;color:var(--mut);padding-top:2px}
+.evs-m b{font-weight:600;color:var(--ink)}
+.evs-p{font-size:17px;line-height:1.55;color:var(--ink2);margin:0 0 18px}
+.evs-a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-top:1px solid var(--line);font-size:16px;font-weight:600;color:var(--ink);text-decoration:none;background:none;border-left:0;border-right:0;border-bottom:0;width:100%;text-align:left;cursor:pointer;font-family:inherit}
+.evs-a:last-child{border-bottom:1px solid var(--line)}
+.evs-a i{font-style:normal;color:var(--gold);font-weight:700}
+.evs-a small{font-weight:400;color:var(--mut)}
+.evs-lb{font-family:var(--pf);font-weight:900;font-style:italic;font-size:24px;line-height:1;color:var(--ink);padding-bottom:12px;margin:0 52px 18px 0;border-bottom:1px solid rgba(14,27,48,.18)}
+.evs-lb i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--coral);margin-left:5px;vertical-align:2px}
+.evs-hd{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:center;margin-bottom:18px}
+.evs-hd .ag-d{min-width:70px}
+.evs-hd .evs-k{padding-right:0}
+.evs-hd h3{margin:4px 0 0}
+.evs-b.ky .evs-lb i{background:var(--keys)}
+.evs-b.ky .ag-d i,.evs-b.ky .ag-d u{color:var(--keys)}
+.evs-b.ky .ag-d{border-right-color:rgba(16,86,60,.35)}
+.evs-b.ky .evs-hd{box-shadow:inset 3px 0 0 var(--keys);padding-left:12px}
+.evs-k em{font-style:normal;color:var(--keys);font-weight:700}
+</style>
 </head>
 <body>
 
@@ -977,12 +1013,14 @@ body{background:#fff;text-rendering:optimizeLegibility}
   <section class="tv" id="tv" aria-label="Video" style="display:none"></section>
 
   <div class="split" id="split">
+<div class="evs" id="evs" role="dialog" aria-modal="true" aria-labelledby="evsT"><div class="evs-c"><button type="button" class="evs-x" id="evsX" aria-label="Cerrar">✕</button><div id="evsB"></div></div></div>
   <section class="ag" id="ag" aria-label="Agenda" style="display:none">
     <div class="ag-h">
       <h3 class="ag-t"><span id="agT">Agenda</span></h3>
       <div class="ag-tabs" role="tablist">
         <button type="button" class="on" data-ag="sem" role="tab" aria-selected="true"></button>
         <button type="button" data-ag="prox" role="tab" aria-selected="false"></button>
+        <button type="button" data-ag="keys" class="kt" role="tab" aria-selected="false"></button>
       </div>
     </div>
     <div class="ag-days" id="agDays"></div>
@@ -1482,10 +1520,11 @@ function agList(){
   var all=(AGD.semana||[]).concat(AGD.proximos||[]),seen={},out=[];
   all.forEach(function(e){
     if(!e||!e.d||!e.name||quit[e.id]||e.id==='realestate-semana'||e.type==='Real Estate')return;
+    var isK=e.scope==='keys'||e.zone==='keys';if(AGS.tab==='keys'&&!isK)return;
     var a=agDate(e.d),b=agDate(e.d2||e.d);if(!a||!b||b<t0)return;
     var k=(e.name||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,22)+'|'+e.d;if(seen[k])return;seen[k]=1;
     var inWeek=a<=t7;
-    if(AGS.tab==='sem'?!inWeek:(inWeek||a>t90))return;
+    if(AGS.tab==='keys'?a>t90:(AGS.tab==='sem'?!inWeek:(inWeek||a>t90)))return;
     if(AGS.tab==='sem'&&AGS.day>=0&&!AGS.cnt){var dx=new Date(t0);dx.setDate(dx.getDate()+AGS.day);if(a>dx||b<dx)return}
     out.push({e:e,a:a,b:b,s:a<t0?t0:a,o:(a<t0&&b>t0)?1:0});
   });
@@ -1498,7 +1537,7 @@ function renderAg(){
   box.style.display=show?'':'none';if(!show)return;
   var DW=en?['SUN','MON','TUE','WED','THU','FRI','SAT']:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
   document.getElementById('agT').textContent=en?'What’s On':'Agenda';
-  var tb=box.querySelectorAll('.ag-tabs button');tb[0].textContent=en?'THIS WEEK':'ESTA SEMANA';tb[1].textContent=en?'COMING UP':'LO QUE VIENE';
+  var tb=box.querySelectorAll('.ag-tabs button');tb[0].textContent=en?'THIS WEEK':'ESTA SEMANA';tb[1].textContent=en?'COMING UP':'LO QUE VIENE';if(tb[2])tb[2].textContent=en?'THE KEYS':'LOS CAYOS';
   for(var i=0;i<tb.length;i++){var on=tb[i].dataset.ag===AGS.tab;tb[i].classList.toggle('on',on);tb[i].setAttribute('aria-selected',on)}
   var t0=new Date();t0.setHours(0,0,0,0);
   var dz=document.getElementById('agDays');
@@ -1513,10 +1552,38 @@ function renderAg(){
     var dn=lng?o.a.getDate():multi?(o.a<=t0?o.b.getDate():o.a.getDate()+'–'+o.b.getDate()):o.a.getDate();
     var mo=lng?MO[o.a.getMonth()]:multi&&o.a>t0&&!same?MO[o.a.getMonth()]+'–'+MO[o.b.getMonth()]:MO[(multi&&o.a<=t0?o.b:o.a).getMonth()];
     var ky=e.scope==='keys'||e.zone==='keys',ty=(en?e.type:(e.type_es||e.type))||'',ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,''),pr=(en?e.price:(e.price_es||e.price))||'';
-    return '<a class="ag-r" href="/?ev='+encodeURIComponent(e.id)+'"><span class="ag-d"><i'+(dw.length>5?' class="w"':'')+'>'+esc(dw)+'</i><b'+(String(dn).length>2?' class="rg"':'')+'>'+esc(dn)+'</b><u>'+esc(mo)+'</u></span><span class="ag-x"><span class="k">'+(ky?'<em>'+(en?'THE KEYS':'LOS CAYOS')+'</em>':'')+esc(ty.toUpperCase())+'</span><h4>'+esc(en?e.name:(e.name_es||e.name))+'</h4><p>'+esc(ve)+(tm?' · <b>'+esc(tm)+'</b>':'')+(pr&&!/^\$+$/.test(pr)&&!/enlace|link/i.test(pr)?' · '+esc(pr):'')+'</p></span></a>'}).join(''):'<p class="ag-e">'+(en?'Nothing on the calendar for these days yet.':'Todavía no hay nada en el calendario para estos días.')+'</p>';
+    return '<a class="ag-r'+(ky?' ky':'')+'" data-ev="'+esc(e.id)+'" href="/noticias?ev='+encodeURIComponent(e.id)+'"><span class="ag-d"><i'+(dw.length>5?' class="w"':'')+'>'+esc(dw)+'</i><b'+(String(dn).length>2?' class="rg"':'')+'>'+esc(dn)+'</b><u>'+esc(mo)+'</u></span><span class="ag-x"><span class="k">'+(ky&&AGS.tab!=='keys'?'<em>'+(en?'THE KEYS':'LOS CAYOS')+'</em> · ':'')+esc(ty.toUpperCase())+'</span><h4>'+esc(en?e.name:(e.name_es||e.name))+'</h4><p>'+esc(ve)+(tm?' · <b>'+esc(tm)+'</b>':'')+(pr&&!/^\$+$/.test(pr)&&!/enlace|link/i.test(pr)?' · '+esc(pr):'')+'</p></span></a>'}).join(''):'<p class="ag-e">'+(en?'Nothing on the calendar for these days yet.':'Todavía no hay nada en el calendario para estos días.')+'</p>';
   var mb=document.getElementById('agMb');mb.style.display=li.length>AGS.n?'':'none';mb.textContent=(en?'MORE':'MÁS')+' ('+(li.length-AGS.n)+')';
   document.getElementById('agGo').textContent=(en?'FULL LISTINGS IN THE APP':'LA CARTELERA COMPLETA EN LA APP')+' →';
 }
+/* ── ficha del evento: se amplía aquí mismo, con su enlace oficial ── */
+function evFind(id){if(!AGD)return null;var a=(AGD.semana||[]).concat(AGD.proximos||[],AGD.mes||[]);for(var i=0;i<a.length;i++)if(a[i]&&a[i].id===id)return a[i];return null}
+function evWhen(e,en){var a=agDate(e.d),b=agDate(e.d2||e.d);if(!a)return '';var D=en?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['domingo','lunes','martes','miércoles','jueves','viernes','sábado'],M=en?['January','February','March','April','May','June','July','August','September','October','November','December']:['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+ function one(x){return en?D[x.getDay()]+', '+M[x.getMonth()]+' '+x.getDate():D[x.getDay()]+' '+x.getDate()+' de '+M[x.getMonth()]}
+ var t=b>a?(en?one(a)+' – '+one(b):'Del '+one(a)+' al '+one(b)):one(a);return en?t:t.charAt(0).toUpperCase()+t.slice(1)}
+function evDom(u){try{return new URL(u).hostname.replace(/^www\./,'')}catch(x){return ''}}
+var EVLAST=null;
+function evOpen(id,push){var e=evFind(id);if(!e)return false;var en=L==='en';
+ var ky=e.scope==='keys'||e.zone==='keys',ty=(en?e.type:(e.type_es||e.type))||'',ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,''),pr=(en?e.price:(e.price_es||e.price))||'',ds=(en?e.desc:(e.desc_es||e.desc))||'',nm=(en?e.name:(e.name_es||e.name))||'';
+ var A=agDate(e.d),B=agDate(e.d2||e.d),DW=en?['SUN','MON','TUE','WED','THU','FRI','SAT']:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'],mu=A&&B&&B>A;
+ var dw=A?(mu?DW[A.getDay()]+'–'+DW[B.getDay()]:DW[A.getDay()]):'',dn=A?(mu?A.getDate()+'–'+B.getDate():A.getDate()):'',mo=A?(mu&&A.getMonth()!==B.getMonth()?MO[A.getMonth()]+'–'+MO[B.getMonth()]:MO[A.getMonth()]):'';
+ var h='<div class="evs-b'+(ky?' ky':'')+'"><div class="evs-lb">'+(en?'What’s On':'Agenda')+'<i></i></div><div class="evs-hd">'+(A?'<span class="ag-d"><i'+(dw.length>5?' class="w"':'')+'>'+esc(dw)+'</i><b'+(String(dn).length>2?' class="rg"':'')+'>'+esc(dn)+'</b><u>'+esc(mo)+'</u></span>':'')+'<div><div class="evs-k">'+(ky?'<em>'+(en?'THE KEYS':'LOS CAYOS')+'</em> · ':'')+esc(ty.toUpperCase())+'</div><h3 id="evsT">'+esc(nm)+'</h3></div></div><div class="evs-m">'
+  +'<div><span>'+(en?'WHEN':'CUÁNDO')+'</span><p><b>'+esc(evWhen(e,en))+'</b>'+(tm?'<br>'+esc(tm):'')+'</p></div>'
+  +(ve?'<div><span>'+(en?'WHERE':'DÓNDE')+'</span><p>'+esc(ve)+'</p></div>':'')
+  +(pr&&pr!=='See link'?'<div><span>'+(en?'PRICE':'PRECIO')+'</span><p>'+esc(pr)+'</p></div>':'')
+  +'</div>'+(ds?'<p class="evs-p">'+esc(ds)+'</p>':'')
+  +(e.link?'<a class="evs-a" href="'+esc(e.link)+'" rel="noopener"><span>'+(en?'Tickets & details':'Entradas y detalles')+' <small>· '+esc(evDom(e.link))+'</small></span><i>↗</i></a>':'')
+  +'<button type="button" class="evs-a" id="evsS"><span>'+(en?'Share':'Compartir')+'</span><i>↗</i></button></div>';
+ document.getElementById('evsB').innerHTML=h;var m=document.getElementById('evs');m.classList.add('on');document.body.style.overflow='hidden';EVLAST=document.activeElement;
+ document.getElementById('evsX').setAttribute('aria-label',en?'Close':'Cerrar');document.getElementById('evsX').focus();
+ if(push!==false){try{history.replaceState(null,'','?ev='+encodeURIComponent(id))}catch(x){}}
+ document.getElementById('evsS').onclick=function(){var u='https://www.miamimagicapp.com/'+(en?'news':'noticias')+'?ev='+encodeURIComponent(id);if(navigator.share){navigator.share({title:nm,text:evWhen(e,en)+(ve?' · '+ve:''),url:u}).catch(function(){})}else{try{navigator.clipboard.writeText(u);this.querySelector('span').textContent=en?'Link copied':'Enlace copiado'}catch(x){}}};
+ return true}
+function evClose(){var m=document.getElementById('evs');if(!m.classList.contains('on'))return;m.classList.remove('on');document.body.style.overflow='';try{history.replaceState(null,'',location.pathname)}catch(x){}if(EVLAST&&EVLAST.focus)EVLAST.focus()}
+document.getElementById('evsX').onclick=evClose;
+document.getElementById('evs').addEventListener('click',function(e){if(e.target===this)evClose()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')evClose()});
+document.getElementById('agL').addEventListener('click',function(e){var a=e.target.closest('.ag-r');if(!a||!a.dataset.ev)return;if(evOpen(a.dataset.ev))e.preventDefault()});
 document.querySelector('.ag-tabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;AGS.tab=b.dataset.ag;AGS.n=6;renderAg()});
 document.getElementById('agMb').onclick=function(){AGS.n+=6;renderAg()};
 document.getElementById('agDays').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;AGS.day=+b.dataset.d;AGS.n=6;renderAg()});
@@ -1571,7 +1638,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 /* ── cargar ── */
 render();
 fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}});render()}).catch(function(){});
-fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg()}).catch(function(){});
+fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg();try{var q=new URLSearchParams(location.search).get('ev');if(q){var ag=document.getElementById('ag');if(ag)ag.scrollIntoView();evOpen(q,false)}}catch(x){}}).catch(function(){});
 loadWx();
 setInterval(function(){if(!document.hidden){try{loadWx()}catch(e){}}},18e5); /* el cintillo se refresca cada 30 minutos con la página abierta */
 })();
