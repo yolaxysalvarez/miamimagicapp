@@ -4,8 +4,8 @@
   "ultima_hora": {
     "activa": true,
     "nota": "faa-parada-nacional-vuelos-13-noviembre",
-    "es": "La FAA cancela la parada nacional de vuelos tras más de cuatro horas en tierra",
-    "en": "FAA cancels the nationwide ground stop after more than four hours",
+    "es": "La FAA cancela la parada nacional de vuelos; Duffy la atribuye a una falla en la red antigua",
+    "en": "FAA cancels the nationwide ground stop; Duffy blames a failure in the legacy network",
     "desde": "2026-11-13T16:30:00-05:00",
     "hasta": "2026-11-14T06:00:00-05:00"
   },
@@ -16,8 +16,8 @@
       "primero": true,
       "es": "Parada nacional de vuelos · FAA",
       "en": "Nationwide ground stop · FAA",
-      "v": "cancelada 8:19 PM",
-      "v_en": "cancelled 8:19 p.m.",
+      "v": "cancelada · falla en red antigua",
+      "v_en": "cancelled · legacy network failure",
       "fuente": "FAA Advisory 005"
     },
     {
@@ -206,17 +206,19 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-13T20:19:00-05:00",
+      "actualizada": "2026-11-13T20:45:00-05:00",
       "es": {
         "etiqueta": "ÚLTIMA HORA",
-        "titulo": "La FAA cancela la parada nacional de vuelos tras más de cuatro horas en tierra",
-        "bajada": "El Centro de Comando de la FAA dio por cancelada la orden a las 8:19 PM. Había detenido desde las 3:54 PM todas las salidas del país, de Miami a Key West.",
+        "titulo": "La FAA cancela la parada nacional de vuelos; Duffy la atribuye a una falla en la red antigua",
+        "bajada": "El Centro de Comando de la FAA dio por cancelada la orden a las 8:19 PM, tras detener desde las 3:54 PM todas las salidas del país, de Miami a Key West. En la Casa Blanca, el secretario de Transporte explicó que lo que falló fue la red antigua y no los equipos nuevos.",
         "toca": [
           "Antes de ir al aeropuerto, confirma tu vuelo con la aerolínea.",
           "Estado de vuelos: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) y [Key West](https://eyw.com/).",
           "Aviso oficial de la FAA: [Advisory 005, cancelación](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)."
         ],
         "cuerpo": [
+          "## Actualización · 8:45 PM",
+          "En una [rueda de prensa en la Casa Blanca](https://www.whitehouse.gov/live/) junto al secretario de Seguridad Nacional, Markwayne Mullin, el secretario de Transporte, Sean Duffy, atribuyó la parada a un problema en la red antigua del sistema, que se cayó. Según explicó, los equipos nuevos que han instalado no fallaron, y con un cambio en los conmutadores lograron devolver la conexión a los centros de control de aproximación (TRACON) y de ruta.",
           "## Actualización · 8:19 PM",
           "«La parada nacional del Centro de Comando de la FAA ha sido cancelada», dice el [aviso oficial 005 de la agencia](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), enviado a las 8:19 PM para todos los aeropuertos y todas las instalaciones. La FAA no ha explicado todavía la causa en un comunicado.",
           "## Antes · 6:45 PM",
@@ -231,14 +233,16 @@
       },
       "en": {
         "etiqueta": "BREAKING",
-        "titulo": "FAA cancels the nationwide ground stop after more than four hours",
-        "bajada": "The FAA Command Center cancelled the order at 8:19 p.m. It had halted every departure in the country since 3:54 p.m., from Miami to Key West.",
+        "titulo": "FAA cancels the nationwide ground stop; Duffy blames a failure in the legacy network",
+        "bajada": "The FAA Command Center cancelled the order at 8:19 p.m., after halting every departure in the country since 3:54 p.m., from Miami to Key West. At the White House, the Transportation secretary said the failure was in the legacy network, not the new equipment.",
         "toca": [
           "Before heading to the airport, confirm your flight with your airline.",
           "Flight status: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) and [Key West](https://eyw.com/).",
           "Official FAA notice: [Advisory 005, cancellation](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)."
         ],
         "cuerpo": [
+          "## Update · 8:45 p.m.",
+          "At a [White House press briefing](https://www.whitehouse.gov/live/) alongside Homeland Security Secretary Markwayne Mullin, Transportation Secretary Sean Duffy attributed the ground stop to a problem in the system's legacy network, which went down. According to Duffy, the new equipment they have installed did not fail, and a switchover brought the approach control (TRACON) and en route centers back online.",
           "## Update · 8:19 p.m.",
           "\"The FAA Command Center nationwide ground stop has been cancelled,\" reads the [agency's official Advisory 005](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), sent at 8:19 p.m. for all airports and all facilities. The FAA has not yet explained the cause in a statement.",
           "## Earlier · 6:45 p.m.",
@@ -255,6 +259,10 @@
         {
           "n": "FAA · Advisory 005 del Centro de Comando (cancelación de la parada nacional)",
           "u": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5"
+        },
+        {
+          "n": "Casa Blanca · rueda de prensa de los secretarios Duffy y Mullin",
+          "u": "https://www.whitehouse.gov/live/"
         },
         {
           "n": "FAA · Advisory 111 del Centro de Comando (parada nacional)",
