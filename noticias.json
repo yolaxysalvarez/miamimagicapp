@@ -4,8 +4,8 @@
   "ultima_hora": {
     "activa": true,
     "nota": "faa-parada-nacional-vuelos-13-noviembre",
-    "es": "La FAA cancela la parada nacional de vuelos; Duffy la atribuye a una falla en la red antigua",
-    "en": "FAA cancels the nationwide ground stop; Duffy blames a failure in the legacy network",
+    "es": "«Un problema de la red antigua»: Duffy explica la caída que dejó a todo el país en tierra",
+    "en": "\"A legacy network problem\": Duffy explains the outage that grounded the whole country",
     "desde": "2026-11-13T16:30:00-05:00",
     "hasta": "2026-11-14T06:00:00-05:00"
   },
@@ -16,8 +16,8 @@
       "primero": true,
       "es": "Parada nacional de vuelos · FAA",
       "en": "Nationwide ground stop · FAA",
-      "v": "cancelada · falla en red antigua",
-      "v_en": "cancelled · legacy network failure",
+      "v": "cancelada · falla en red de los años 80",
+      "v_en": "cancelled · 1980s network failure",
       "fuente": "FAA Advisory 005"
     },
     {
@@ -206,19 +206,21 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-13T20:45:00-05:00",
+      "actualizada": "2026-11-13T21:55:00-05:00",
       "es": {
         "etiqueta": "ÚLTIMA HORA",
-        "titulo": "La FAA cancela la parada nacional de vuelos; Duffy la atribuye a una falla en la red antigua",
-        "bajada": "El Centro de Comando de la FAA dio por cancelada la orden a las 8:19 PM, tras detener desde las 3:54 PM todas las salidas del país, de Miami a Key West. En la Casa Blanca, el secretario de Transporte explicó que lo que falló fue la red antigua y no los equipos nuevos.",
+        "titulo": "«Un problema de la red antigua»: Duffy explica la caída que dejó a todo el país en tierra",
+        "bajada": "La FAA canceló la parada nacional a las 8:19 PM. En la Casa Blanca, el secretario de Transporte culpó a equipos de los años 80 que se sobrecargaron, y el de Seguridad Nacional dijo que no hay evidencia de un ciberataque.",
         "toca": [
           "Antes de ir al aeropuerto, confirma tu vuelo con la aerolínea.",
           "Estado de vuelos: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) y [Key West](https://eyw.com/).",
           "Aviso oficial de la FAA: [Advisory 005, cancelación](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)."
         ],
         "cuerpo": [
-          "## Actualización · 8:45 PM",
-          "En una [rueda de prensa en la Casa Blanca](https://www.whitehouse.gov/live/) junto al secretario de Seguridad Nacional, Markwayne Mullin, el secretario de Transporte, Sean Duffy, atribuyó la parada a un problema en la red antigua del sistema, que se cayó. Según explicó, los equipos nuevos que han instalado no fallaron, y con un cambio en los conmutadores lograron devolver la conexión a los centros de control de aproximación (TRACON) y de ruta.",
+          "## Actualización · 9:55 PM",
+          "«Nuestra solución nos da una buena indicación de que fue un problema de la red antigua que se cayó», dijo el secretario de Transporte, Sean Duffy, en la [rueda de prensa en la Casa Blanca](https://www.youtube.com/watch?v=Mh2q-y0wIu8). Según explicó, el sistema analógico de los centros de control, con conmutadores, enrutadores y líneas de cobre de los años 80, se sobrecargó de datos; los centros que ya pasaron a tecnología digital no fallaron.",
+          "El secretario de Seguridad Nacional, Markwayne Mullin, afirmó que han visto «cero evidencia» de un ciberataque y que todo apunta a una falla técnica, aunque la investigación sigue abierta.",
+          "Duffy también descartó que la nueva herramienta SMART de la FAA tuviera algo que ver: afirmó que no está conectada a los sistemas de control de tráfico. Sobre los vuelos, adelantó que la recuperación tomará tiempo y que las aerolíneas empezarán a mover los aviones pendientes esta noche, si hay tripulaciones, o desde el sábado por la mañana.",
           "## Actualización · 8:19 PM",
           "«La parada nacional del Centro de Comando de la FAA ha sido cancelada», dice el [aviso oficial 005 de la agencia](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), enviado a las 8:19 PM para todos los aeropuertos y todas las instalaciones. La FAA no ha explicado todavía la causa en un comunicado.",
           "## Antes · 6:45 PM",
@@ -233,16 +235,18 @@
       },
       "en": {
         "etiqueta": "BREAKING",
-        "titulo": "FAA cancels the nationwide ground stop; Duffy blames a failure in the legacy network",
-        "bajada": "The FAA Command Center cancelled the order at 8:19 p.m., after halting every departure in the country since 3:54 p.m., from Miami to Key West. At the White House, the Transportation secretary said the failure was in the legacy network, not the new equipment.",
+        "titulo": "\"A legacy network problem\": Duffy explains the outage that grounded the whole country",
+        "bajada": "The FAA cancelled the nationwide ground stop at 8:19 p.m. At the White House, the Transportation secretary blamed 1980s equipment that became overloaded, and the Homeland Security secretary said there is no evidence of a cyberattack.",
         "toca": [
           "Before heading to the airport, confirm your flight with your airline.",
           "Flight status: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) and [Key West](https://eyw.com/).",
           "Official FAA notice: [Advisory 005, cancellation](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)."
         ],
         "cuerpo": [
-          "## Update · 8:45 p.m.",
-          "At a [White House press briefing](https://www.whitehouse.gov/live/) alongside Homeland Security Secretary Markwayne Mullin, Transportation Secretary Sean Duffy attributed the ground stop to a problem in the system's legacy network, which went down. According to Duffy, the new equipment they have installed did not fail, and a switchover brought the approach control (TRACON) and en route centers back online.",
+          "## Update · 9:55 p.m.",
+          "\"Our fix gives us a pretty good indication that it was a legacy network problem that went down,\" Transportation Secretary Sean Duffy said at the [White House press briefing](https://www.youtube.com/watch?v=Mh2q-y0wIu8). He explained that the analog system at the control centers, with 1980s switches, routers and copper lines, became overloaded with data; centers already upgraded to digital did not fail.",
+          "Homeland Security Secretary Markwayne Mullin said they have seen \"zero evidence\" of a cyberattack and that everything points to a technical failure, though the investigation remains open.",
+          "Duffy also ruled out any role for the FAA's new SMART tool, saying it is not connected to the air traffic control systems. He said recovery will take time and that airlines will start moving stranded aircraft tonight if crews are available, or from Saturday morning.",
           "## Update · 8:19 p.m.",
           "\"The FAA Command Center nationwide ground stop has been cancelled,\" reads the [agency's official Advisory 005](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), sent at 8:19 p.m. for all airports and all facilities. The FAA has not yet explained the cause in a statement.",
           "## Earlier · 6:45 p.m.",
@@ -261,8 +265,8 @@
           "u": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5"
         },
         {
-          "n": "Casa Blanca · rueda de prensa de los secretarios Duffy y Mullin",
-          "u": "https://www.whitehouse.gov/live/"
+          "n": "Casa Blanca · rueda de prensa de Duffy y Mullin (video oficial)",
+          "u": "https://www.youtube.com/watch?v=Mh2q-y0wIu8"
         },
         {
           "n": "FAA · Advisory 111 del Centro de Comando (parada nacional)",
