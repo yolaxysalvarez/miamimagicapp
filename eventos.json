@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo manda sobre la cartelera de la app, sin pasar por Apple. Lo que pongas aquí se suma o corrige lo que ya trae la app; lo que no toques se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia \"updated\" cada vez.",
- "updated": "2026-11-08",
+ "updated": "2026-11-13",
  "semana": [
   {
    "id": "realestate-semana",
@@ -4110,6 +4110,28 @@
     "Family"
    ],
    "link": "https://runsignup.com/Race/FL/KeyWest/SouthernmostTurkeyTrot"
+  },
+  {
+   "id": "mswts-lincoln26",
+   "scope": "local",
+   "d": "2026-12-02",
+   "name": "Miami Swim Week® The Shows · Lincoln Road Fashion Show",
+   "name_es": "Miami Swim Week® The Shows · Desfile en Lincoln Road",
+   "venue": "Lincoln Road × Drexel Ave · Miami Beach",
+   "venue_es": "Lincoln Road y Drexel Ave · Miami Beach",
+   "time": "Wed · 4:00–8:00 PM",
+   "time_es": "Miér · 4:00 a 8:00 PM",
+   "price": "RSVP",
+   "price_es": "Con RSVP",
+   "type": "Fashion · Block party",
+   "type_es": "Moda · Fiesta en la calle",
+   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "desc": "Runway shows, live music and art on Lincoln Road, with Miami Swim Week's resident DJ Vito Lee and guest DJ Aeonvfluxx. Bring a new, unwrapped toy for the holiday toy drive.",
+   "desc_es": "Pasarela, música en vivo y arte en plena Lincoln Road, con el DJ residente de Miami Swim Week, Vito Lee, y el invitado Aeonvfluxx. Lleva un juguete nuevo, sin envolver, para la colecta navideña.",
+   "tags": [
+    "Fashion"
+   ],
+   "link": "https://therumor.com/p/679995"
   }
  ],
  "mes": [

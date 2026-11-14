@@ -785,7 +785,8 @@
         "toca": [
           "Dónde: bahía de Biscayne, con base en el Miami Seaplane Base de Watson Island, 1000 MacArthur Causeway.",
           "Las entradas son de hospitalidad y se venden en [la taquilla oficial](https://tickets.e1series.com/miami/). Las carreras se transmiten gratis por DAZN.",
-          "El título se define el sábado 14."
+          "El título se define el sábado 14.",
+          "¿Te vas de crucero este fin de semana? [PortMiami avisa](https://www.facebook.com/PortMiami) que puede haber tráfico a la entrada del túnel del puerto por el E1, y pide llegar a la hora de embarque asignada."
         ],
         "cuerpo": [
           "Se levantan sobre el agua con unas alas sumergidas, corren con motor eléctrico y doblan las boyas con los rascacielos del downtown de fondo. Los botes del mundial E1 cierran su temporada en la bahía de Biscayne, y por primera vez lo hacen con dos carreras de campeonato en días seguidos.",
@@ -805,7 +806,8 @@
         "toca": [
           "Where: Biscayne Bay, based at the Miami Seaplane Base on Watson Island, 1000 MacArthur Causeway.",
           "Tickets are hospitality packages sold through [the official box office](https://tickets.e1series.com/miami/). The races stream free on DAZN.",
-          "The title is decided Saturday, Nov. 14."
+          "The title is decided Saturday, Nov. 14.",
+          "Taking a cruise this weekend? [PortMiami warns](https://www.facebook.com/PortMiami) of possible traffic entering the PortMiami Tunnel because of the E1 Miami Grand Prix, and asks passengers to stick to their assigned embarkation time."
         ],
         "cuerpo": [
           "They rise above the water on submerged wings, run on electric power and round the buoys with downtown's skyscrapers behind them. The boats of the E1 world championship close their season on Biscayne Bay, and for the first time they do it with two championship races on consecutive days.",
@@ -834,10 +836,14 @@
         {
           "n": "WSVN · sede y formato del fin de semana",
           "u": "https://wsvn.com/entertainment/deco-drive/e1-electric-raceboat-championship-miami/"
+        },
+        {
+          "n": "PortMiami · aviso de tráfico por el E1",
+          "u": "https://www.facebook.com/PortMiami"
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-13T09:20:00-05:00",
+      "actualizada": "2026-11-13T23:05:00-05:00",
       "ultima": 3
     },
     {
