@@ -23,6 +23,8 @@ body{background:var(--bg);color:var(--ink);font-family:var(--dm);font-size:17px;
 a{color:var(--coral-d);text-decoration:none}
 a:hover{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-color:rgba(201,150,60,.85)}
 img{display:block;max-width:100%}
+.gfx{margin:26px 0 30px}.gfx img{width:100%;height:auto;border-radius:14px;border:1px solid #E8E1D6}.gfx figcaption{font-size:13px;color:#5A6577;margin-top:8px;line-height:1.4}
+
 button{font:inherit;cursor:pointer}
 a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--coral);outline-offset:3px}
 .wrap{max-width:1200px;margin:0 auto;padding:0 40px}
@@ -218,6 +220,7 @@ function hn0(s){return esc(s).replace(/(\$\d+(?:[.,]\d+)*(?:\s(?:millones|millio
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function F(k){var x=(N&&(N[L]||N.es))||{};return x[k]!=null&&x[k]!==''?x[k]:((N&&N.es)||{})[k]}
 function fd(s){if(!s)return'';var d=new Date(s.length<=10?s+'T12:00:00':s);if(isNaN(d))return'';return L==='en'?t('meses')[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear():d.getDate()+' '+t('meses')[d.getMonth()]+' '+d.getFullYear()}
+function gfx(v){var a=v.split('|'),src=/^https?:|^\//.test(a[0])?a[0]:'/fotos/'+a[0];return '</div><figure class="gfx"><img src="'+esc(src)+'" alt="'+esc(a[1]||'')+'" loading="lazy">'+(a[1]?'<figcaption>'+esc(a[1])+'</figcaption>':'')+'</figure><div class="body">'}
 function img(){var f=(L==='en'&&N.foto_en)||N.foto||'';return f?(/^https?:|^\//.test(f)?f:'/fotos/'+f):''}
 function url(){return 'https://www.miamimagicapp.com'+(L==='en'?'/news/':'/noticias/')+encodeURIComponent(ID)}
 function meta(name,val,prop){var s=prop?'meta[property="'+name+'"]':'meta[name="'+name+'"]';var m=document.querySelector(s);if(!m){m=document.createElement('meta');m.setAttribute(prop?'property':'name',name);document.head.appendChild(m)}m.setAttribute('content',val)}
@@ -245,7 +248,7 @@ function render(){
   if(img())h+='<figure><div class="hero'+(N.foto_ratio?' tall" style="aspect-ratio:'+esc(N.foto_ratio):'')+'"><img src="'+esc(img())+'" alt="'+esc(N.foto_alt||'')+'"'+(N.foto_pos?' style="object-position:'+esc(N.foto_pos)+'"':'')+'>'+(N.foto_mm!==false?'<span class="wm">MIAMI MAGIC</span>':'')+'</div>'+(N.foto_credito||N.foto_pie?'<figcaption class="cap">'+esc((L==='en'&&N.foto_pie_en)||N.foto_pie||'')+(N.foto_credito?' · '+t('foto')+': '+esc(N.foto_credito):'')+'</figcaption>':'<div style="height:24px"></div>')+'</figure>';
   h+='<div class="col"><div class="body b1">';
   var at=Math.min(2,cu.length);if(at>1&&cu[at-1].slice(0,3)==='## ')at--;
-  cu.forEach(function(p,k){h+=(p==='::btc'?btcT():p.slice(0,3)==='## '?'<h3 class="q">'+esc(p.slice(3))+'</h3>':'<p>'+hn(p)+'</p>');if(k===at-1&&to.length)h+='</div><div class="toca"><b>'+t('toca')+'</b><ul>'+to.map(function(x,j){return '<li><i>'+(j+1)+'</i><span>'+hn(x)+'</span></li>'}).join('')+'</ul></div><div class="body">'});
+  cu.forEach(function(p,k){h+=(p==='::btc'?btcT():p.slice(0,6)==='::img '?gfx(p.slice(6)):p.slice(0,3)==='## '?'<h3 class="q">'+esc(p.slice(3))+'</h3>':'<p>'+hn(p)+'</p>');if(k===at-1&&to.length)h+='</div><div class="toca"><b>'+t('toca')+'</b><ul>'+to.map(function(x,j){return '<li><i>'+(j+1)+'</i><span>'+hn(x)+'</span></li>'}).join('')+'</ul></div><div class="body">'});
   h+='</div>';
   if(N.actualizada)h+='<p class="upd">'+(N.desarrollo?'<i></i>':'')+upd()+(N.desarrollo?(L==='en'?' — This story is developing and will be updated.':' — Esta noticia está en desarrollo y se seguirá actualizando.'):'')+'</p>';
   if(N.galeria&&N.galeria.length){h+='<div class="gal">'+N.galeria.map(function(g){var src=/^https?:|^\//.test(g.f)?g.f:'/fotos/'+g.f;var cap=(g[L]||g.es||'');return '<figure><span class="gi"><img src="'+esc(src)+'" alt="'+esc(cap)+'" loading="lazy">'+(g.mm===false?'':'<span class="wm">MIAMI MAGIC</span>')+'</span>'+(cap?'<figcaption>'+esc(cap)+'</figcaption>':'')+'</figure>'}).join('')+'</div>'}

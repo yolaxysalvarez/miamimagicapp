@@ -206,26 +206,33 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-13T21:55:00-05:00",
+      "actualizada": "2026-11-13T22:20:00-05:00",
       "es": {
         "etiqueta": "ÚLTIMA HORA",
         "titulo": "«Un problema de la red antigua»: Duffy explica la caída que dejó a todo el país en tierra",
         "bajada": "La FAA canceló la parada nacional a las 8:19 PM. En la Casa Blanca, el secretario de Transporte culpó a equipos de los años 80 que se sobrecargaron, y el de Seguridad Nacional dijo que no hay evidencia de un ciberataque.",
         "toca": [
           "Antes de ir al aeropuerto, confirma tu vuelo con la aerolínea.",
-          "Estado de vuelos: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) y [Key West](https://eyw.com/).",
+          "Estado de vuelos: [Miami](https://www.miami-airport.com/flight-info.asp), [Fort Lauderdale](https://www.broward.org/airport) y [Key West](https://eyw.com/).",
           "Aviso oficial de la FAA: [Advisory 005, cancelación](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)."
         ],
         "cuerpo": [
+          "## Actualización · 10:20 PM: los aeropuertos del sur de Florida",
+          "Los vuelos ya empiezan a salir, pero con muchas cancelaciones. El [Aeropuerto Internacional de Miami](https://www.miami-airport.com/) avisa en su página que la parada nacional se levantó y que las aerolíneas trabajan para retomar sus horarios. En un [comunicado](https://news.miami-airport.com/mia-statement-about-the-faa-system-outage/) anterior, MIA pidió con insistencia no ir al aeropuerto sin antes confirmar el vuelo directamente con la aerolínea.",
+          "En Fort Lauderdale, la lista de alertas de la [página oficial del aeropuerto](https://www.broward.org/airport) marcaba a las 10:15 PM 144 vuelos cancelados y 23 retrasados, la mayoría de JetBlue, Azul, Delta, United, Frontier y Southwest.",
+          "El [Aeropuerto Internacional de Key West](https://eyw.com/) no ha publicado ningún aviso sobre la parada ni sobre sus vuelos de esta noche.",
           "## Actualización · 9:55 PM",
-          "«Nuestra solución nos da una buena indicación de que fue un problema de la red antigua que se cayó», dijo el secretario de Transporte, Sean Duffy, en la [rueda de prensa en la Casa Blanca](https://www.youtube.com/watch?v=Mh2q-y0wIu8). Según explicó, el sistema analógico de los centros de control, con conmutadores, enrutadores y líneas de cobre de los años 80, se sobrecargó de datos; los centros que ya pasaron a tecnología digital no fallaron.",
-          "El secretario de Seguridad Nacional, Markwayne Mullin, afirmó que han visto «cero evidencia» de un ciberataque y que todo apunta a una falla técnica, aunque la investigación sigue abierta.",
-          "Duffy también descartó que la nueva herramienta SMART de la FAA tuviera algo que ver: afirmó que no está conectada a los sistemas de control de tráfico. Sobre los vuelos, adelantó que la recuperación tomará tiempo y que las aerolíneas empezarán a mover los aviones pendientes esta noche, si hay tripulaciones, o desde el sábado por la mañana.",
+          "«Nuestra solución nos da una buena indicación de que fue un problema de la red antigua que se cayó», dijo el secretario de Transporte, Sean Duffy, en la [rueda de prensa en la Casa Blanca](https://www.youtube.com/watch?v=Mh2q-y0wIu8). «Todo el equipo nuevo que instalamos, nada de eso se cayó».",
+          "Duffy describió el origen sin rodeos: «Tenemos conmutadores viejos, viejos, enrutadores viejos. Usamos líneas de cobre de los años 80. Es un sistema viejo que se cayó, y se cayó en todas partes. Se sobrecargó».",
+          "Según explicó, los centros de control que ya pasaron a tecnología digital no tuvieron el problema, aunque no precisó cuáles. De acuerdo con el [tablero oficial de modernización de la FAA](https://modernskies.faa.gov), hasta el 15 de octubre se habían reemplazado 3.508 de las 5.170 conexiones de telecomunicaciones previstas, un 68%, y se habían instalado 220 de las 450 centralitas de voz digitales.",
+          "::img mm-faa-modernizacion-es.jpg|Avance de la modernización del control de tráfico aéreo, según la FAA (datos al 15 de octubre de 2026).",
+          "El secretario de Seguridad Nacional, Markwayne Mullin, afirmó que han visto «cero evidencia» de un ciberataque. «Parece que esto fue de origen mecánico. Sin embargo, seguimos investigando, así que no vamos a descartarlo», matizó.",
+          "Tampoco fue la nueva herramienta de inteligencia artificial de la FAA, de acuerdo con Duffy. El sistema SMART, explicó, solo le sugiere rutas a un controlador, que decide si las acepta, y no está conectado a los sistemas de tráfico: «No hay manera posible de que SMART haya afectado lo que pasó hoy».",
+          "Durante la parada, la comunicación y el radar funcionaron a ratos, no se apagaron del todo. «Es un riesgo que no estamos dispuestos a tolerar», dijo Duffy. Más de 3.500 aviones aterrizaron sin incidentes, y los vuelos médicos y de trasplantes de órganos siguieron operando.",
+          "Sobre la recuperación, el secretario advirtió que «no se va a resolver de la noche a la mañana». Las aerolíneas moverán esta noche los aviones que puedan, si tienen tripulaciones, y el resto desde el sábado por la mañana. Para el Día de Acción de Gracias, Duffy dijo esperar que el sistema esté operando con normalidad.",
+          "Ambos secretarios aprovecharon para pedirle al Congreso 50.000 millones de dólares de emergencia para modernizar el control de tráfico aéreo.",
           "## Actualización · 8:19 PM",
           "«La parada nacional del Centro de Comando de la FAA ha sido cancelada», dice el [aviso oficial 005 de la agencia](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), enviado a las 8:19 PM para todos los aeropuertos y todas las instalaciones. La FAA no ha explicado todavía la causa en un comunicado.",
-          "## Antes · 6:45 PM",
-          "El [aviso oficial número 111 del Centro de Comando de la FAA](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093) fija la parada nacional hasta las 11:30 PM y anota como motivo «equipo / falla». Repite que «todo el tráfico de salida debe permanecer detenido en tierra hasta nuevo aviso».",
-          "A las 6:15 PM, la [página de estado del espacio aéreo de la FAA](https://nasstatus.faa.gov/) no mostraba la parada ni restricciones en Miami, Fort Lauderdale o Key West. Como el aviso sigue vigente y la agencia no ha anunciado que la levantara, la parada debe darse por activa hasta que la FAA diga lo contrario.",
           "## Qué pasó",
           "La FAA ordenó a las 3:54 PM de este viernes 13 de noviembre que ningún vuelo despegara de un aeropuerto de Estados Unidos, por «circunstancias extraordinarias y por razones de seguridad». Los aviones que estaban en el aire siguieron hasta su destino, y los vuelos internacionales hacia el país se manejan caso por caso.",
           "El secretario de Transporte, Sean Duffy, [atribuyó la orden](https://x.com/SecDuffy/status/2121351591106072679) a un problema de comunicaciones que afectó a todos los centros de control de rutas aéreas del país, y dijo que los técnicos de la FAA lo estaban investigando.",
@@ -239,19 +246,26 @@
         "bajada": "The FAA cancelled the nationwide ground stop at 8:19 p.m. At the White House, the Transportation secretary blamed 1980s equipment that became overloaded, and the Homeland Security secretary said there is no evidence of a cyberattack.",
         "toca": [
           "Before heading to the airport, confirm your flight with your airline.",
-          "Flight status: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) and [Key West](https://eyw.com/).",
+          "Flight status: [Miami](https://www.miami-airport.com/flight-info.asp), [Fort Lauderdale](https://www.broward.org/airport) and [Key West](https://eyw.com/).",
           "Official FAA notice: [Advisory 005, cancellation](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)."
         ],
         "cuerpo": [
+          "## Update · 10:20 p.m.: South Florida airports",
+          "Flights are starting to depart, but with many cancellations. [Miami International Airport](https://www.miami-airport.com/) says on its website that the nationwide ground stop has been lifted and airlines are working to resume normal schedules. In an earlier [statement](https://news.miami-airport.com/mia-statement-about-the-faa-system-outage/), MIA strongly urged passengers not to come to the airport until they have confirmed directly with their airline.",
+          "In Fort Lauderdale, the flight alerts list on the [airport's official website](https://www.broward.org/airport) showed 144 canceled and 23 delayed flights at 10:15 p.m., mostly JetBlue, Azul, Delta, United, Frontier and Southwest.",
+          "[Key West International Airport](https://eyw.com/) has not posted any notice about the ground stop or its flights tonight.",
           "## Update · 9:55 p.m.",
-          "\"Our fix gives us a pretty good indication that it was a legacy network problem that went down,\" Transportation Secretary Sean Duffy said at the [White House press briefing](https://www.youtube.com/watch?v=Mh2q-y0wIu8). He explained that the analog system at the control centers, with 1980s switches, routers and copper lines, became overloaded with data; centers already upgraded to digital did not fail.",
-          "Homeland Security Secretary Markwayne Mullin said they have seen \"zero evidence\" of a cyberattack and that everything points to a technical failure, though the investigation remains open.",
-          "Duffy also ruled out any role for the FAA's new SMART tool, saying it is not connected to the air traffic control systems. He said recovery will take time and that airlines will start moving stranded aircraft tonight if crews are available, or from Saturday morning.",
+          "\"Our fix gives us a pretty good indication that it was a legacy network problem that went down,\" Transportation Secretary Sean Duffy said at the [White House press briefing](https://www.youtube.com/watch?v=Mh2q-y0wIu8). \"All of the new equipment that we put in, none of that went down.\"",
+          "Duffy was blunt about the cause: \"We have old, old switches, old routers. We use 1980s little copper lines. It's an old system that went down and went down everywhere. It got overloaded.\"",
+          "He said control centers already upgraded to digital did not experience the problem, though he did not say which ones. According to the [FAA's official modernization dashboard](https://modernskies.faa.gov), as of Oct. 15 the agency had replaced 3,508 of 5,170 planned telecommunications connections, or 68%, and installed 220 of 450 digital voice switches.",
+          "::img mm-faa-modernizacion-en.jpg|Progress on air traffic control modernization, according to the FAA (data as of Oct. 15, 2026).",
+          "Homeland Security Secretary Markwayne Mullin said they have seen \"zero evidence\" of a cyberattack. \"It appears that this was mechanically driven. However, we're still looking, so we're not going to rule that out,\" he added.",
+          "Nor was it the FAA's new artificial intelligence tool, according to Duffy. The SMART system, he explained, only suggests routes to a controller, who decides whether to accept them, and it is not connected to the traffic systems: \"There's no possible way SMART would have impacted what happened today.\"",
+          "During the stop, communications and radar were intermittent rather than completely down. \"That's a risk that we're unwilling to tolerate,\" Duffy said. More than 3,500 aircraft landed safely, and medical and organ transplant flights kept operating.",
+          "On recovery, the secretary warned that \"this is not going to get done overnight.\" Airlines will move what aircraft they can tonight if crews are available, and the rest from Saturday morning. Duffy said he expects the system to be operating normally by Thanksgiving.",
+          "Both secretaries used the briefing to ask Congress for $50 billion in emergency funding to modernize air traffic control.",
           "## Update · 8:19 p.m.",
           "\"The FAA Command Center nationwide ground stop has been cancelled,\" reads the [agency's official Advisory 005](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), sent at 8:19 p.m. for all airports and all facilities. The FAA has not yet explained the cause in a statement.",
-          "## Earlier · 6:45 p.m.",
-          "The [FAA Command Center's official Advisory 111](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093) sets the nationwide ground stop until 11:30 p.m. and lists the reason as \"equipment / outage.\" It repeats that \"all departing traffic should remain ground stopped until further notice.\"",
-          "At 6:15 p.m., the [FAA's National Airspace System status page](https://nasstatus.faa.gov/) did not show the ground stop or any restrictions at Miami, Fort Lauderdale or Key West. Because the advisory remains in effect and the agency has not announced that it was lifted, the ground stop should be considered active until the FAA says otherwise.",
           "## What happened",
           "At 3:54 p.m. this Friday, Nov. 13, the FAA ordered that no flight take off from any U.S. airport, \"due to extraordinary circumstances and for reasons of safety.\" Planes already in the air continued to their destinations, and international flights inbound to the U.S. are handled case by case.",
           "Transportation Secretary Sean Duffy [attributed the order](https://x.com/SecDuffy/status/2121351591106072679) to a communications issue affecting all of the country's Air Route Traffic Control Centers and said FAA technicians were investigating.",
@@ -269,6 +283,14 @@
           "u": "https://www.youtube.com/watch?v=Mh2q-y0wIu8"
         },
         {
+          "n": "FAA · Modern Skies, tablero oficial de modernización",
+          "u": "https://modernskies.faa.gov"
+        },
+        {
+          "n": "Aeropuerto Internacional de Miami · comunicado sobre la falla de la FAA",
+          "u": "https://news.miami-airport.com/mia-statement-about-the-faa-system-outage/"
+        },
+        {
           "n": "FAA · Advisory 111 del Centro de Comando (parada nacional)",
           "u": "https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093"
         },
@@ -282,7 +304,7 @@
         },
         {
           "n": "Aeropuerto Internacional de Miami",
-          "u": "https://www.miami-airport.com/flight_status.asp"
+          "u": "https://www.miami-airport.com/flight-info.asp"
         },
         {
           "n": "Aeropuerto de Fort Lauderdale",
