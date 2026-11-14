@@ -4,8 +4,8 @@
   "ultima_hora": {
     "activa": true,
     "nota": "faa-parada-nacional-vuelos-13-noviembre",
-    "es": "Parada nacional de vuelos: el aviso de la FAA la mantiene hasta las 11:30 PM y la atribuye a una falla de equipos",
-    "en": "Nationwide ground stop: FAA advisory keeps it until 11:30 p.m. and cites an equipment outage",
+    "es": "La FAA cancela la parada nacional de vuelos tras más de cuatro horas en tierra",
+    "en": "FAA cancels the nationwide ground stop after more than four hours",
     "desde": "2026-11-13T16:30:00-05:00",
     "hasta": "2026-11-14T06:00:00-05:00"
   },
@@ -16,9 +16,9 @@
       "primero": true,
       "es": "Parada nacional de vuelos · FAA",
       "en": "Nationwide ground stop · FAA",
-      "v": "hasta 11:30 PM",
-      "v_en": "until 11:30 p.m.",
-      "fuente": "FAA Advisory 111"
+      "v": "cancelada 8:19 PM",
+      "v_en": "cancelled 8:19 p.m.",
+      "fuente": "FAA Advisory 005"
     },
     {
       "k": "gas",
@@ -206,18 +206,20 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-13T18:45:00-05:00",
+      "actualizada": "2026-11-13T20:19:00-05:00",
       "es": {
         "etiqueta": "ÚLTIMA HORA",
-        "titulo": "Parada nacional de vuelos: el aviso de la FAA la mantiene hasta las 11:30 PM y la atribuye a una falla de equipos",
-        "bajada": "La orden detuvo a las 3:54 PM todas las salidas del país, de Miami a Key West. La FAA no ha emitido un comunicado sobre la causa ni sobre cuándo se reanudan los vuelos.",
+        "titulo": "La FAA cancela la parada nacional de vuelos tras más de cuatro horas en tierra",
+        "bajada": "El Centro de Comando de la FAA dio por cancelada la orden a las 8:19 PM. Había detenido desde las 3:54 PM todas las salidas del país, de Miami a Key West.",
         "toca": [
           "Antes de ir al aeropuerto, confirma tu vuelo con la aerolínea.",
           "Estado de vuelos: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) y [Key West](https://eyw.com/).",
-          "Aviso oficial de la FAA: [Advisory 111](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093)."
+          "Aviso oficial de la FAA: [Advisory 005, cancelación](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)."
         ],
         "cuerpo": [
-          "## Actualización · 6:45 PM",
+          "## Actualización · 8:19 PM",
+          "«La parada nacional del Centro de Comando de la FAA ha sido cancelada», dice el [aviso oficial 005 de la agencia](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), enviado a las 8:19 PM para todos los aeropuertos y todas las instalaciones. La FAA no ha explicado todavía la causa en un comunicado.",
+          "## Antes · 6:45 PM",
           "El [aviso oficial número 111 del Centro de Comando de la FAA](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093) fija la parada nacional hasta las 11:30 PM y anota como motivo «equipo / falla». Repite que «todo el tráfico de salida debe permanecer detenido en tierra hasta nuevo aviso».",
           "A las 6:15 PM, la [página de estado del espacio aéreo de la FAA](https://nasstatus.faa.gov/) no mostraba la parada ni restricciones en Miami, Fort Lauderdale o Key West. Como el aviso sigue vigente y la agencia no ha anunciado que la levantara, la parada debe darse por activa hasta que la FAA diga lo contrario.",
           "## Qué pasó",
@@ -229,15 +231,17 @@
       },
       "en": {
         "etiqueta": "BREAKING",
-        "titulo": "Nationwide ground stop: FAA advisory keeps it in place until 11:30 p.m. and cites an equipment outage",
-        "bajada": "The order halted every departure in the country at 3:54 p.m., from Miami to Key West. The FAA has not issued a statement on the cause or on when flights will resume.",
+        "titulo": "FAA cancels the nationwide ground stop after more than four hours",
+        "bajada": "The FAA Command Center cancelled the order at 8:19 p.m. It had halted every departure in the country since 3:54 p.m., from Miami to Key West.",
         "toca": [
           "Before heading to the airport, confirm your flight with your airline.",
           "Flight status: [Miami](https://www.miami-airport.com/flight_status.asp), [Fort Lauderdale](https://www.broward.org/airport) and [Key West](https://eyw.com/).",
-          "Official FAA notice: [Advisory 111](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093)."
+          "Official FAA notice: [Advisory 005, cancellation](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5)."
         ],
         "cuerpo": [
-          "## Update · 6:45 p.m.",
+          "## Update · 8:19 p.m.",
+          "\"The FAA Command Center nationwide ground stop has been cancelled,\" reads the [agency's official Advisory 005](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), sent at 8:19 p.m. for all airports and all facilities. The FAA has not yet explained the cause in a statement.",
+          "## Earlier · 6:45 p.m.",
           "The [FAA Command Center's official Advisory 111](https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093) sets the nationwide ground stop until 11:30 p.m. and lists the reason as \"equipment / outage.\" It repeats that \"all departing traffic should remain ground stopped until further notice.\"",
           "At 6:15 p.m., the [FAA's National Airspace System status page](https://nasstatus.faa.gov/) did not show the ground stop or any restrictions at Miami, Fort Lauderdale or Key West. Because the advisory remains in effect and the agency has not announced that it was lifted, the ground stop should be considered active until the FAA says otherwise.",
           "## What happened",
@@ -248,6 +252,10 @@
         ]
       },
       "fuentes": [
+        {
+          "n": "FAA · Advisory 005 del Centro de Comando (cancelación de la parada nacional)",
+          "u": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5"
+        },
         {
           "n": "FAA · Advisory 111 del Centro de Comando (parada nacional)",
           "u": "https://www.fly.faa.gov/ois/oisedit/adv_oisedit_dis?number=111&day=11132026&gdp=-1&gstop=196093"
