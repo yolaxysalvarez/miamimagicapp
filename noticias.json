@@ -197,7 +197,7 @@
       "scope": "miami",
       "tema": "calle",
       "hamaca": false,
-      "destacada": true,
+      "destacada": false,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
       "foto": "mm-airport-mia.jpg",
@@ -315,7 +315,8 @@
           "u": "https://eyw.com/"
         }
       ],
-      "ambos": true
+      "ambos": true,
+      "ultima": 1
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -580,7 +581,7 @@
       "scope": "miami",
       "tema": "ciudad",
       "hamaca": false,
-      "destacada": false,
+      "destacada": true,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
       "foto": "mm-frente-frio-brickell-2.jpg",
@@ -660,7 +661,7 @@
           "u": "https://www.mlb.com/marlins/ballpark/events/entertainment-sports/choque-de-gigantes"
         }
       ],
-      "ultima": 1
+      "ambos": true
     },
     {
       "id": "microsoft-365-caida-mundial-outlook",
