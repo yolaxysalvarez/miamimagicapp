@@ -204,7 +204,7 @@
       "foto_alt": "Avión comercial en vuelo",
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
-      "desarrollo": true,
+      "desarrollo": false,
       "actualizada": "2026-11-13T22:20:00-05:00",
       "es": {
         "etiqueta": "ÚLTIMA HORA",
@@ -315,7 +315,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 3
+      "ultima": 2
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -661,7 +661,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 2
+      "ultima": 8
     },
     {
       "id": "microsoft-365-caida-mundial-outlook",
@@ -760,9 +760,9 @@
           "u": "https://www.foxbusiness.com/technology/microsoft-outlook-returns-some-millions-users-face-second-day-outages"
         }
       ],
-      "desarrollo": true,
+      "desarrollo": false,
       "actualizada": "2026-11-13T09:40:00-05:00",
-      "ultima": 4
+      "ultima": 3
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
@@ -886,7 +886,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-13T09:30:00-05:00",
-      "ultima": 5
+      "ultima": 4
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
@@ -984,7 +984,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "ultima": 8
+      "ultima": 7
     },
     {
       "id": "obamacare-2027-florida",
@@ -1794,7 +1794,7 @@
           "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
         }
       ],
-      "ultima": 6
+      "ultima": 5
     },
     {
       "hamaca": false,
@@ -3648,7 +3648,7 @@
           "u": "https://miamiwonderland.com/faqs/"
         }
       ],
-      "ultima": 7
+      "ultima": 6
     },
     {
       "id": "luces-navidad-miami-2026",
