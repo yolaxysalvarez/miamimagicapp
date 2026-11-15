@@ -11,16 +11,6 @@
   },
   "cifras": [
     {
-      "k": "avion",
-      "faa": true,
-      "primero": true,
-      "es": "Parada nacional de vuelos · FAA",
-      "en": "Nationwide ground stop · FAA",
-      "v": "cancelada · falla en red de los años 80",
-      "v_en": "cancelled · 1980s network failure",
-      "fuente": "FAA Advisory 005"
-    },
-    {
       "k": "gas",
       "es": "Gasolina en Miami-Dade",
       "en": "Gas in Miami-Dade",
