@@ -7,7 +7,7 @@
     "es": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
     "en": "UPS and Copa planes collide on a taxiway at Miami International Airport",
     "desde": "2026-11-15T01:05:00-05:00",
-    "hasta": "2026-11-15T02:05:00-05:00"
+    "hasta": "2026-11-15T02:15:00-05:00"
   },
   "cifras": [
     {
@@ -5151,7 +5151,7 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-15T01:05:00-05:00",
+      "actualizada": "2026-11-15T01:15:00-05:00",
       "ultima": 1,
       "es": {
         "etiqueta": "ÚLTIMA HORA",
@@ -5163,11 +5163,11 @@
           "Estado de vuelos: [página oficial de MIA](https://www.miami-airport.com/flight-info.asp)."
         ],
         "cuerpo": [
-          "## Actualización · 1:05 AM",
+          "## Actualización · 1:15 AM",
           "Un Boeing 767 de carga de UPS y un Boeing 737 de Copa Airlines se tocaron alrededor de las 9:15 PM del sábado en el cruce de dos calles de rodaje del Aeropuerto Internacional de Miami, según el director de comunicaciones de MIA, Greg Chin.",
           "De acuerdo con la FAA, la punta del ala del avión de Copa, que rodaba hacia su puerta tras llegar de Ciudad de Panamá con el vuelo 427, golpeó la nariz del carguero de UPS, que se dirigía a despegar hacia Bogotá con el vuelo 358. La agencia afirma que los controladores habían indicado a la tripulación de UPS que cediera el paso al Copa, y anunció que investiga lo ocurrido.",
           "Bomberos de Miami-Dade atendieron en el lugar a dos personas con heridas leves, que no necesitaron traslado al hospital, según el aeropuerto. UPS aseguró en un comunicado que su tripulación está a salvo y que colaborará con las autoridades.",
-          "El choque llega un día después de la parada nacional de la FAA, cuyos retrasos y cancelaciones todavía se sienten en MIA."
+          "El choque llega un día después de la parada nacional de la FAA, y MIA todavía no recupera su ritmo. A la 1:15 AM, el [tablero oficial de vuelos del aeropuerto](https://webvids.miami-airport.com/webfids/) mostraba 27 vuelos con una hora nueva más tarde de la programada (20 llegadas y 7 salidas) y 25 cancelados (15 llegadas y 10 salidas), entre los de la noche del sábado y la mañana del domingo."
         ]
       },
       "en": {
@@ -5180,11 +5180,11 @@
           "Flight status: [MIA's official page](https://www.miami-airport.com/flight-info.asp)."
         ],
         "cuerpo": [
-          "## Update · 1:05 a.m.",
+          "## Update · 1:15 a.m.",
           "A UPS Boeing 767 cargo plane and a Copa Airlines Boeing 737 made contact at about 9:15 p.m. Saturday at the intersection of two taxiways at Miami International Airport, according to MIA communications director Greg Chin.",
           "According to the FAA, the wingtip of the Copa jet, taxiing to its gate after arriving from Panama City as Flight 427, struck the nose of the UPS plane, which was taxiing for departure to Bogotá as Flight 358. The agency says controllers had instructed the UPS crew to give way to the Copa flight, and it is investigating.",
           "Miami-Dade Fire Rescue treated two people at the scene for minor injuries; neither needed hospital transport, the airport said. UPS said in a statement that its crew is safe and that it will work with authorities.",
-          "The collision comes a day after the FAA's nationwide ground stop, whose delays and cancellations are still being felt at MIA."
+          "The collision comes a day after the FAA's nationwide ground stop, and MIA has yet to get back to its normal pace. At 1:15 a.m., the [airport's official flight board](https://webvids.miami-airport.com/webfids/) showed 27 flights rescheduled to a later time (20 arrivals and 7 departures) and 25 canceled (15 arrivals and 10 departures), among those from Saturday night through Sunday morning."
         ]
       },
       "fuentes": [
@@ -5195,6 +5195,10 @@
         {
           "n": "Aeropuerto Internacional de Miami · Greg Chin, director de comunicaciones",
           "u": "https://www.miami-airport.com/"
+        },
+        {
+          "n": "Aeropuerto Internacional de Miami · tablero oficial de vuelos (1:15 AM)",
+          "u": "https://webvids.miami-airport.com/webfids/"
         },
         {
           "n": "UPS · comunicado",
