@@ -2,7 +2,7 @@
   "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES).",
   "updated": "2026-11-08",
   "ultima_hora": {
-    "activa": true,
+    "activa": false,
     "nota": "mia-colision-ups-copa-calle-rodaje",
     "es": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
     "en": "UPS and Copa planes collide on a taxiway at Miami International Airport",
