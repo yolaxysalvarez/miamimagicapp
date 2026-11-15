@@ -189,8 +189,7 @@
         "u": "/realestate.html",
         "es": "El mercado de casas en Miami, en la app",
         "en": "Miami's housing market, in the app"
-      },
-      "tambien": 1
+      }
     },
     {
       "id": "faa-parada-nacional-vuelos-13-noviembre",
@@ -2026,8 +2025,7 @@
       "foto_pos": "50% 70%",
       "foto_alt": "Un gallo camina junto a una casa de madera en Key West",
       "foto_pie": "Un gallo junto a una casa de madera de Key West, hacia 2010.",
-      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010.",
-      "tambien": 3
+      "foto_pie_en": "A rooster beside a wooden house in Key West, around 2010."
     },
     {
       "hamaca": false,
@@ -3858,7 +3856,7 @@
         }
       ],
       "foto_pos": "60% 90%",
-      "tambien": 2
+      "tambien": 3
     },
     {
       "id": "oleta-river-kayak-pesca-norte",
@@ -5189,6 +5187,108 @@
         {
           "n": "Copa Airlines · comunicado",
           "u": "https://www.copaair.com/"
+        }
+      ]
+    },
+    {
+      "id": "miami-book-fair-2026-abre-fiesta",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-15",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-artbasel-library-libros.jpg",
+      "foto_mm": false,
+      "foto_alt": "Libros",
+      "foto_pie": "Imagen de archivo.",
+      "foto_pie_en": "File photo.",
+      "tambien": 1,
+      "es": {
+        "etiqueta": "CULTURA",
+        "titulo": "La Feria del Libro abre hoy con fiesta gratis en la calle: ocho días de autores en el downtown",
+        "bajada": "La edición 43 de la Miami Book Fair arranca este domingo en el campus Wolfson de Miami Dade College con una fiesta de música de Miami, de 4 a 9 PM y con entrada libre.",
+        "toca": [
+          "Hoy: fiesta de apertura, de 4 a 9 PM, en el campus Wolfson de MDC, en el downtown. Es gratis.",
+          "La feria sigue hasta el domingo 22, con la Feria de la Calle del viernes 20 al domingo 22.",
+          "Programa y entradas de las charlas: [miamibookfair.com](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/)."
+        ],
+        "cuerpo": [
+          "«Lee todo el día, baila toda la noche». Con ese lema, la [Miami Book Fair](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/) abre su edición 43 con una fiesta dedicada a la música de baile que ha marcado a Miami por generaciones, en el campus Wolfson de Miami Dade College.",
+          "De aquí al 22 de noviembre pasarán por el downtown cerca de 500 autores, con programación en inglés, español y criollo haitiano, según [Miami Dade College](https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/), que organiza la feria. Margaret Atwood y Colson Whitehead encabezan el cartel de esta edición.",
+          "El último fin de semana, del viernes 20 al domingo 22, los libros salen a las calles que rodean el campus con la tradicional Feria de la Calle."
+        ]
+      },
+      "en": {
+        "etiqueta": "CULTURE",
+        "titulo": "Miami Book Fair opens today with a free street party: eight days of authors downtown",
+        "bajada": "The 43rd Miami Book Fair kicks off Sunday at Miami Dade College's Wolfson Campus with a party celebrating Miami's music, 4 to 9 p.m., free.",
+        "toca": [
+          "Today: opening party, 4 to 9 p.m., at MDC's Wolfson Campus downtown. Free.",
+          "The fair runs through Sunday the 22nd, with the Street Fair Friday the 20th through Sunday the 22nd.",
+          "Program and tickets for author talks: [miamibookfair.com](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/)."
+        ],
+        "cuerpo": [
+          "\"Read all day, dance all night.\" Under that motto, the [Miami Book Fair](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/) opens its 43rd edition with a party celebrating the dance music that has shaped Miami for generations, at Miami Dade College's Wolfson Campus.",
+          "Through Nov. 22, nearly 500 authors will come downtown, with programming in English, Spanish and Haitian Creole, according to [Miami Dade College](https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/), which organizes the fair. Margaret Atwood and Colson Whitehead headline this year.",
+          "On the final weekend, Friday the 20th through Sunday the 22nd, books take over the streets around campus for the traditional Street Fair."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Miami Book Fair · fiesta de apertura 2026",
+          "u": "https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/"
+        },
+        {
+          "n": "Miami Dade College · programa de la Miami Book Fair 2026",
+          "u": "https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/"
+        }
+      ]
+    },
+    {
+      "id": "key-west-artisan-market-higgs-15-noviembre",
+      "scope": "cayos",
+      "tema": "cultura",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-15",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-kw-sunset-key-01.jpg",
+      "foto_mm": false,
+      "foto_alt": "El sol entre nubes sobre el agua de Key West",
+      "foto_pie": "Key West al caer la tarde.",
+      "foto_pie_en": "Key West at dusk.",
+      "tambien": 2,
+      "es": {
+        "etiqueta": "LOS CAYOS",
+        "titulo": "Domingo de mercado frente al mar: artesanos de Key West en Higgs Beach hasta las 2 PM",
+        "bajada": "El Key West Artisan Market vuelve hoy a Higgs Beach, de 10 AM a 2 PM, y esta vez acompaña al Key West Sailing Center.",
+        "toca": [
+          "Dónde: estacionamiento del Key West Wildlife Center, en el Sonny McCoy Indigenous Park, 1801 White Street.",
+          "Horario: de 10 AM a 2 PM."
+        ],
+        "cuerpo": [
+          "El mercado de artesanos de Key West abre su domingo frente al Atlántico, en Higgs Beach, con la edición dedicada al Key West Sailing Center, según la [Cámara de Comercio de Key West](https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15).",
+          "Es uno de los mercados de temporada de la isla: se arma algunos domingos de noviembre a abril, con artesanos locales y una organización sin fines de lucro como invitada en cada edición. Queda a pasos del White Street Pier y de la playa."
+        ]
+      },
+      "en": {
+        "etiqueta": "THE KEYS",
+        "titulo": "A seaside market Sunday: Key West artisans at Higgs Beach until 2 p.m.",
+        "bajada": "The Key West Artisan Market returns to Higgs Beach today, 10 a.m. to 2 p.m., this time featuring the Key West Sailing Center.",
+        "toca": [
+          "Where: the Key West Wildlife Center parking lot at Sonny McCoy Indigenous Park, 1801 White Street.",
+          "Hours: 10 a.m. to 2 p.m."
+        ],
+        "cuerpo": [
+          "Key West's artisan market sets up by the Atlantic at Higgs Beach today, in an edition featuring the Key West Sailing Center, according to the [Key West Chamber of Commerce](https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15).",
+          "It is one of the island's seasonal markets, held select Sundays from November through April, with local artisans and a nonprofit guest each time. It sits steps from the White Street Pier and the beach."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Cámara de Comercio de Key West · Artisan Market del 15 de noviembre",
+          "u": "https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15"
         }
       ]
     }
