@@ -305,7 +305,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -651,7 +651,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "microsoft-365-caida-mundial-outlook",
@@ -752,7 +752,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-13T09:40:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
@@ -816,6 +816,59 @@
       "actualizada": "2026-11-15T09:00:00-05:00"
     },
     {
+      "id": "dolphins-colts-24-22-indianapolis",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "ultima": 1,
+      "fecha": "2026-11-15",
+      "autor": "Yolaxys Alvarez",
+      "fuentes": [
+        {
+          "n": "Indianapolis Colts · resumen oficial del partido",
+          "u": "https://www.colts.com/news/colts-snap-five-game-losing-streak-with-win-over-dolphins"
+        },
+        {
+          "n": "NFL · resultados de la semana 10",
+          "u": "https://www.nfl.com/schedules/2026/by-week/week-10"
+        },
+        {
+          "n": "NFL · jugadas del partido",
+          "u": "https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-15T16:45:00-05:00",
+      "es": {
+        "etiqueta": "DEPORTES",
+        "titulo": "A dos puntos y sin patada: los Dolphins caen 24-22 en Indianápolis",
+        "bajada": "Miami se acercó a dos en el último cuarto, pero una captura lo sacó del alcance de un gol de campo y el partido terminó con el balón perdido en cuarta oportunidad.",
+        "toca": [
+          "Con esta derrota los Dolphins quedan 1-8 y los Colts 3-7, según la NFL."
+        ],
+        "cuerpo": [
+          "Los Colts ganaron 24-22 en el Lucas Oil Stadium y cortaron una racha de cinco derrotas, según el [resumen oficial del equipo](https://www.colts.com/news/colts-snap-five-game-losing-streak-with-win-over-dolphins). Los Dolphins llegaron a ponerse a dos puntos en el último cuarto. Una captura del linebacker novato CJ Allen los empujó fuera de distancia para patear, y la entrega del balón en cuarta oportunidad cerró el partido.",
+          "La jugada que más pesó llegó en el tercer cuarto: el mariscal Kyle McCord perdió el balón en una captura y el tackle Adetomiwa Adebawore lo recuperó dentro de la zona de anotación. Fue el primer touchdown de la defensa de Indianápolis en la temporada.",
+          "Por Miami, el esquinero Chris Johnson devolvió una intercepción de Daniel Jones 59 yardas hasta las diagonales, y Zane Gonzalez metió un gol de campo de 53, como muestran las [jugadas oficiales de la NFL](https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg)."
+        ]
+      },
+      "en": {
+        "etiqueta": "SPORTS",
+        "titulo": "Two points short, out of kicking range: Dolphins fall 24-22 in Indianapolis",
+        "bajada": "Miami pulled within two in the fourth quarter, but a sack pushed it out of field-goal range and the game ended on a turnover on downs.",
+        "toca": [
+          "The loss drops the Dolphins to 1-8; the Colts are 3-7, per the NFL."
+        ],
+        "cuerpo": [
+          "The Colts won 24-22 at Lucas Oil Stadium, snapping a five-game losing streak, according to the [team's official recap](https://www.colts.com/news/colts-snap-five-game-losing-streak-with-win-over-dolphins). The Dolphins pulled within two in the fourth quarter. A sack by rookie linebacker CJ Allen pushed them out of kicking range, and a turnover on downs ended the game.",
+          "The play that mattered most came in the third quarter: quarterback Kyle McCord lost the ball on a sack and defensive tackle Adetomiwa Adebawore recovered it in the end zone. It was the Indianapolis defense's first touchdown of the season.",
+          "For Miami, cornerback Chris Johnson returned a Daniel Jones interception 59 yards for a touchdown, and Zane Gonzalez hit a 53-yard field goal, as the [NFL's official highlights](https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg) show."
+        ]
+      }
+    },
+    {
       "id": "beach-polo-world-cup-miami-beach-2026",
       "scope": "miami",
       "tema": "deporte",
@@ -876,7 +929,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-13T09:30:00-05:00",
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
@@ -974,7 +1027,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "obamacare-2027-florida",
@@ -1784,7 +1837,7 @@
           "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
         }
       ],
-      "ultima": 5
+      "ultima": 6
     },
     {
       "hamaca": false,
@@ -3638,7 +3691,7 @@
           "u": "https://miamiwonderland.com/faqs/"
         }
       ],
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "luces-navidad-miami-2026",
@@ -5120,7 +5173,7 @@
       "foto_pie_en": "File photo.",
       "desarrollo": true,
       "actualizada": "2026-11-15T01:25:00-05:00",
-      "ultima": 1,
+      "ultima": 2,
       "es": {
         "etiqueta": "ÚLTIMA HORA",
         "titulo": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
