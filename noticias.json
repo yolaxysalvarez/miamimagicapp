@@ -316,7 +316,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -581,7 +581,7 @@
       "scope": "miami",
       "tema": "ciudad",
       "hamaca": false,
-      "destacada": true,
+      "destacada": false,
       "fecha": "2026-11-13",
       "autor": "Yolaxys Alvarez",
       "foto": "mm-frente-frio-brickell-2.jpg",
@@ -661,7 +661,8 @@
           "u": "https://www.mlb.com/marlins/ballpark/events/entertainment-sports/choque-de-gigantes"
         }
       ],
-      "ambos": true
+      "ambos": true,
+      "ultima": 2
     },
     {
       "id": "microsoft-365-caida-mundial-outlook",
@@ -762,7 +763,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-13T09:40:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
@@ -770,8 +771,8 @@
       "tema": "deporte",
       "hamaca": false,
       "muelle": true,
-      "destacada": false,
-      "fecha": "2026-11-13",
+      "destacada": true,
+      "fecha": "2026-11-15",
       "autor": "Yolaxys Alvarez",
       "foto": "mm-macarthur-rosa.jpg",
       "foto_mm": false,
@@ -779,72 +780,51 @@
       "foto_pie": "La bahía de Biscayne junto al MacArthur Causeway, la zona donde se corre el E1.",
       "foto_pie_en": "Biscayne Bay beside the MacArthur Causeway, the area where E1 races.",
       "es": {
-        "etiqueta": "EVENTOS",
-        "titulo": "El equipo de Tom Brady contra el de Will Smith, en botes eléctricos y frente al downtown: el mundial E1 se decide en Miami",
-        "bajada": "La bahía de Biscayne cierra la temporada del campeonato de botes eléctricos con dos carreras en dos días, viernes 13 y sábado 14 de noviembre. El sábado sale el campeón.",
+        "etiqueta": "DEPORTES",
+        "titulo": "Tres seguidos y en casa: el equipo de Tom Brady se corona otra vez en la bahía de Miami",
+        "bajada": "El Team Brady ganó su tercer título consecutivo del mundial de botes eléctricos E1 en la final de la bahía de Biscayne. El Team Monaco terminó segundo y el equipo de Will Smith se quedó sin el subcampeonato.",
         "toca": [
-          "Dónde: bahía de Biscayne, con base en el Miami Seaplane Base de Watson Island, 1000 MacArthur Causeway.",
-          "Las entradas son de hospitalidad y se venden en [la taquilla oficial](https://tickets.e1series.com/miami/). Las carreras se transmiten gratis por DAZN.",
-          "El título se define el sábado 14.",
-          "¿Te vas de crucero este fin de semana? [PortMiami avisa](https://www.facebook.com/PortMiami) que puede haber tráfico a la entrada del túnel del puerto por el E1, y pide llegar a la hora de embarque asignada."
+          "Brady, sobre ganar el título en Miami: «Terminarlo aquí, en mi casa, es algo que nunca olvidaré».",
+          "Según la E1, los equipos toman ahora el descanso de invierno y vuelven a Europa a principios de año para las pruebas de la próxima temporada."
         ],
         "cuerpo": [
-          "Se levantan sobre el agua con unas alas sumergidas, corren con motor eléctrico y doblan las boyas con los rascacielos del downtown de fondo. Los botes del mundial E1 cierran su temporada en la bahía de Biscayne, y por primera vez lo hacen con dos carreras de campeonato en días seguidos.",
-          "## Lo que está en juego",
-          "El equipo de Tom Brady llega líder con 157 puntos y puede llevarse su tercer título consecutivo, después de ganar en 2024 y 2025. Lo persigue Westbrook Racing, el equipo de Will Smith, con 117, [según la clasificación previa a la final](https://www.dazn.com/en-US/news/motorsport/e1-miami-2026-preview-tom-brady-will-smith-how-to-watch-free-dazn-t3r/1b51pdrwvy7jk1uc27z0ynrtip). Detrás vienen el del DJ Steve Aoki, con 86, y el de LeBron James, con 84.",
-          "## Famosos en el muelle, pilotos en el agua",
-          "Brady y Smith son los dueños; los que corren son otros. Cada equipo lleva un piloto y una piloto: por el líder compiten la finlandesa Emma Kimiläinen y el británico Sam Coleman. Entre los demás propietarios del campeonato figuran Rafael Nadal, Marc Anthony, Didier Drogba y Virat Kohli.",
-          "## Por qué Miami",
-          "La bahía de Biscayne recibe competencias internacionales de botes de carrera desde la década de 1950, recordó la organización al anunciar que la final sería aquí.",
-          "Esta nota se actualizará con el resultado de cada carrera."
+          "«¡Tres campeonatos seguidos! No podría estar más orgulloso de este equipo», celebró Tom Brady después de que sus pilotos ganaran las dos finales de la última jornada en la bahía de Biscayne, según el comunicado de la [E1](https://www.e1series.com/).",
+          "El fin de semana no empezó bien para el líder. En la primera carrera de Miami el equipo no llegó a las finales, terminó último en la repesca y vio cómo el Westbrook de Will Smith le recortaba distancia. El sábado volvió a pasar por la repesca, pero esta vez Sam Coleman tomó la punta desde la salida para ganar la primera final, y la finlandesa Emma Kimiläinen remató la segunda.",
+          "«No puedo ni explicar lo que se siente. No han sido los días más fáciles aquí en Miami», dijo Kimiläinen al bajarse del bote.",
+          "## El resto del podio",
+          "El Team Monaco, debutante este año, terminó segundo en la clasificación: subió desde el noveno puesto con tres podios en las tres últimas carreras, de acuerdo con la E1. El equipo de Will Smith, que llegó al sábado como segundo, perdió ese lugar en las finales.",
+          "«Miami fue el escenario perfecto en Estados Unidos para el equipo de la leyenda del Super Bowl», dijo Jamie Copas, director ejecutivo de la E1."
         ]
       },
       "en": {
-        "etiqueta": "EVENTS",
-        "titulo": "Tom Brady's team vs. Will Smith's, in electric raceboats off downtown: the E1 world title is decided in Miami",
-        "bajada": "Biscayne Bay closes the electric raceboat championship season with two races in two days, Friday, Nov. 13, and Saturday, Nov. 14. The champion is crowned Saturday.",
+        "etiqueta": "SPORTS",
+        "titulo": "Three in a row, at home: Tom Brady's team is crowned again on Biscayne Bay",
+        "bajada": "Team Brady won its third straight E1 electric raceboat world title at the Biscayne Bay finale. Team Monaco finished second, and Will Smith's team slipped out of the runner-up spot.",
         "toca": [
-          "Where: Biscayne Bay, based at the Miami Seaplane Base on Watson Island, 1000 MacArthur Causeway.",
-          "Tickets are hospitality packages sold through [the official box office](https://tickets.e1series.com/miami/). The races stream free on DAZN.",
-          "The title is decided Saturday, Nov. 14.",
-          "Taking a cruise this weekend? [PortMiami warns](https://www.facebook.com/PortMiami) of possible traffic entering the PortMiami Tunnel because of the E1 Miami Grand Prix, and asks passengers to stick to their assigned embarkation time."
+          "Brady on winning the title in Miami: \"To finish it off here in Miami, my home, is something I'll never forget.\"",
+          "According to E1, teams now take a winter break and return to Europe early next year for testing ahead of next season."
         ],
         "cuerpo": [
-          "They rise above the water on submerged wings, run on electric power and round the buoys with downtown's skyscrapers behind them. The boats of the E1 world championship close their season on Biscayne Bay, and for the first time they do it with two championship races on consecutive days.",
-          "## What's at stake",
-          "Tom Brady's team arrives as the leader with 157 points and could take its third straight title, after winning in 2024 and 2025. Chasing it is Westbrook Racing, Will Smith's team, with 117, [according to the standings before the finale](https://www.dazn.com/en-US/news/motorsport/e1-miami-2026-preview-tom-brady-will-smith-how-to-watch-free-dazn-t3r/1b51pdrwvy7jk1uc27z0ynrtip). Behind them are DJ Steve Aoki's team, with 86, and LeBron James', with 84.",
-          "## Celebrities on the dock, pilots on the water",
-          "Brady and Smith are the owners; others do the racing. Each team fields one male and one female pilot: the leader's are Finland's Emma Kimiläinen and Britain's Sam Coleman. The championship's other owners include Rafael Nadal, Marc Anthony, Didier Drogba and Virat Kohli.",
-          "## Why Miami",
-          "Biscayne Bay has hosted international powerboat competitions since the 1950s, organizers noted when they announced the finale would be here.",
-          "This story will be updated with each race's result."
+          "\"Three straight Championships! I couldn't be prouder of this team,\" Tom Brady said after his pilots won both finals on the last day of racing on Biscayne Bay, according to an [E1](https://www.e1series.com/) statement.",
+          "The weekend started rough for the leaders. In the first Miami round the team missed the Finals, finished last in the Race Off and watched Will Smith's Westbrook close the gap. On Saturday it went through the Race Off again, but this time Sam Coleman led from the start to win the first final, and Finland's Emma Kimiläinen sealed the second.",
+          "\"I can't even explain how it feels. It's not been the easiest couple of days here in Miami,\" Kimiläinen said as she stepped off the boat.",
+          "## The rest of the podium",
+          "Team Monaco, new this year, finished second in the standings, climbing from ninth with three podiums in the last three races, according to E1. Will Smith's team, second heading into Saturday, lost that spot in the Finals.",
+          "\"Miami was the perfect US backdrop for the Super Bowl legend's team,\" said E1 CEO Jamie Copas."
         ]
       },
       "fuentes": [
         {
+          "n": "E1 Series · comunicado del campeonato 2026",
+          "u": "https://www.e1series.com/"
+        },
+        {
           "n": "E1 Series · calendario 2026",
           "u": "https://mediacentre.e1series.com/mediacentre/press-release/308_E1-reveals-calendar-for-2026-season"
-        },
-        {
-          "n": "DAZN · previa de la final de Miami",
-          "u": "https://www.dazn.com/en-US/news/motorsport/e1-miami-2026-preview-tom-brady-will-smith-how-to-watch-free-dazn-t3r/1b51pdrwvy7jk1uc27z0ynrtip"
-        },
-        {
-          "n": "E1 Miami GP · entradas",
-          "u": "https://tickets.e1series.com/miami/"
-        },
-        {
-          "n": "WSVN · sede y formato del fin de semana",
-          "u": "https://wsvn.com/entertainment/deco-drive/e1-electric-raceboat-championship-miami/"
-        },
-        {
-          "n": "PortMiami · aviso de tráfico por el E1",
-          "u": "https://www.facebook.com/PortMiami"
         }
       ],
-      "desarrollo": true,
-      "actualizada": "2026-11-13T23:05:00-05:00",
-      "ultima": 4
+      "desarrollo": false,
+      "actualizada": "2026-11-15T09:00:00-05:00"
     },
     {
       "id": "beach-polo-world-cup-miami-beach-2026",
