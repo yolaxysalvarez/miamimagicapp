@@ -7,7 +7,7 @@
     "es": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
     "en": "UPS and Copa planes collide on a taxiway at Miami International Airport",
     "desde": "2026-11-15T01:05:00-05:00",
-    "hasta": "2026-11-15T02:15:00-05:00"
+    "hasta": "2026-11-15T02:25:00-05:00"
   },
   "cifras": [
     {
@@ -5151,19 +5151,20 @@
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
       "desarrollo": true,
-      "actualizada": "2026-11-15T01:15:00-05:00",
+      "actualizada": "2026-11-15T01:25:00-05:00",
       "ultima": 1,
       "es": {
         "etiqueta": "ÚLTIMA HORA",
         "titulo": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
-        "bajada": "La punta del ala del Copa que llegaba de Panamá golpeó la nariz del carguero que salía hacia Bogotá. Dos personas recibieron atención por heridas leves y la FAA investiga.",
+        "bajada": "La punta del ala del Copa que llegaba de Panamá golpeó la nariz del carguero que salía hacia Bogotá. Los 166 pasajeros ya bajaron, dos personas recibieron atención por heridas leves y la FAA investiga.",
         "toca": [
           "El aeropuerto informó que los vuelos se desviaron por otras calles de rodaje y que las operaciones no se vieron afectadas.",
           "Si vuelas desde MIA, confirma tu vuelo con la aerolínea antes de salir: siguen los retrasos por la parada nacional del viernes.",
           "Estado de vuelos: [página oficial de MIA](https://www.miami-airport.com/flight-info.asp)."
         ],
         "cuerpo": [
-          "## Actualización · 1:15 AM",
+          "## Actualización · 1:25 AM",
+          "Los 166 pasajeros y los seis tripulantes del vuelo de Copa ya bajaron del avión, que fue remolcado de vuelta a la terminal, informó la aerolínea. «La seguridad de nuestros pasajeros y tripulantes es nuestra máxima prioridad, y cooperaremos con las autoridades en la investigación», añadió Copa, que lamentó las molestias que el incidente pueda causar a sus clientes.",
           "Un Boeing 767 de carga de UPS y un Boeing 737 de Copa Airlines se tocaron alrededor de las 9:15 PM del sábado en el cruce de dos calles de rodaje del Aeropuerto Internacional de Miami, según el director de comunicaciones de MIA, Greg Chin.",
           "De acuerdo con la FAA, la punta del ala del avión de Copa, que rodaba hacia su puerta tras llegar de Ciudad de Panamá con el vuelo 427, golpeó la nariz del carguero de UPS, que se dirigía a despegar hacia Bogotá con el vuelo 358. La agencia afirma que los controladores habían indicado a la tripulación de UPS que cediera el paso al Copa, y anunció que investiga lo ocurrido.",
           "Bomberos de Miami-Dade atendieron en el lugar a dos personas con heridas leves, que no necesitaron traslado al hospital, según el aeropuerto. UPS aseguró en un comunicado que su tripulación está a salvo y que colaborará con las autoridades.",
@@ -5173,14 +5174,15 @@
       "en": {
         "etiqueta": "BREAKING",
         "titulo": "UPS and Copa planes collide on a taxiway at Miami International Airport",
-        "bajada": "The wingtip of the Copa jet arriving from Panama struck the nose of the cargo plane heading to Bogotá. Two people were treated for minor injuries, and the FAA is investigating.",
+        "bajada": "The wingtip of the Copa jet arriving from Panama struck the nose of the cargo plane heading to Bogotá. All 166 passengers are off the plane, two people were treated for minor injuries, and the FAA is investigating.",
         "toca": [
           "The airport said flights were routed to other taxiways and operations were not affected.",
           "Flying out of MIA? Confirm your flight with your airline before you leave: delays from Friday's nationwide ground stop continue.",
           "Flight status: [MIA's official page](https://www.miami-airport.com/flight-info.asp)."
         ],
         "cuerpo": [
-          "## Update · 1:15 a.m.",
+          "## Update · 1:25 a.m.",
+          "All 166 passengers and six crew members of the Copa flight have disembarked, and the plane was towed back to the terminal, the airline said. \"The safety of our passengers and crew is our top priority, and we will cooperate with authorities as they investigate,\" Copa added, saying it regrets the disruption the incident may cause its passengers.",
           "A UPS Boeing 767 cargo plane and a Copa Airlines Boeing 737 made contact at about 9:15 p.m. Saturday at the intersection of two taxiways at Miami International Airport, according to MIA communications director Greg Chin.",
           "According to the FAA, the wingtip of the Copa jet, taxiing to its gate after arriving from Panama City as Flight 427, struck the nose of the UPS plane, which was taxiing for departure to Bogotá as Flight 358. The agency says controllers had instructed the UPS crew to give way to the Copa flight, and it is investigating.",
           "Miami-Dade Fire Rescue treated two people at the scene for minor injuries; neither needed hospital transport, the airport said. UPS said in a statement that its crew is safe and that it will work with authorities.",
@@ -5203,6 +5205,10 @@
         {
           "n": "UPS · comunicado",
           "u": "https://about.ups.com/us/en/newsroom.html"
+        },
+        {
+          "n": "Copa Airlines · comunicado",
+          "u": "https://www.copaair.com/"
         }
       ]
     }
