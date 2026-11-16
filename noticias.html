@@ -899,6 +899,8 @@ body.sp-cc #cc{display:none!important}
 @media(max-width:760px){.esp{margin-bottom:44px}.esp::after{background:linear-gradient(180deg,rgba(10,17,32,.25) 0%,rgba(10,17,32,.9) 52%,rgba(10,17,32,.96) 100%)}.esp-in{padding:150px 20px 44px;min-height:0;max-width:none;justify-content:flex-end}.esp b{font-size:27px}.esp-c u{font-size:52px}.esp-pie{right:auto;left:20px}}
 </style>
 <script>
+/* 'vence': fecha del evento; pasada esa fecha la nota baja detrás de lo vigente (sigue en el archivo) */
+function FK(n){var f=(n&&n.fecha)||'';return (n&&n.vence&&n.vence<HOYNY()?'0':'1')+f}
 function HOYNY(){var h;try{h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'})}catch(e){h=new Date().toISOString().slice(0,10)}return h}
 /* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
@@ -1214,7 +1216,7 @@ function ph(n,cls){var s=img(n);return '<span class="ph '+(cls||'')+(n.foto_fit=
 
 /* ── filtrar ── */
 function list(){
-  var a=(DATA.notas||[]).slice().sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  var a=(DATA.notas||[]).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))});
   if(ST.hamaca)return a.filter(function(n){return n.hamaca});
   if(ST.muelle)return a.filter(function(n){return n.muelle});
   if(ST.casa)return a.filter(function(n){return isCC(n)||n.cc});
@@ -1224,7 +1226,7 @@ function list(){
   return a;
 }
 function otros(){
-  var a=(DATA.notas||[]).slice().sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')}).filter(function(n){return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)});
+  var a=(DATA.notas||[]).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))}).filter(function(n){return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)});
   var grp=[];
   if(ST.ky)grp.push(['miami',a.filter(function(n){return (n.scope||'miami')!=='cayos'})]);
   else if(SEC()){grp.push(['miami',a.filter(function(n){return (n.scope||'miami')!=='cayos'})]);grp.push(['cayos',a.filter(function(n){return n.scope==='cayos'||n.ambos})])}
@@ -1233,7 +1235,7 @@ function otros(){
   return grp.filter(function(g){return g[1].length});
 }
 function renderCc(){
-  var all=(DATA.notas||[]).filter(function(n){return isCC(n)||n.cc}).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  var all=(DATA.notas||[]).filter(function(n){return isCC(n)||n.cc}).sort(function(x,y){return FK(y).localeCompare(FK(x))});
   var sec=document.getElementById('cc');sec.style.display=all.length?'':'none';
   document.getElementById('ccT').innerHTML=ccw();document.getElementById('ccFoot').innerHTML=ccw().replace('class="ccw"','class="ccw" style="font-weight:700"');
   if(ST._ccSc!==ST.scope){ST._ccSc=ST.scope;ST.ccS=ST.scope==='cayos'?'cayos':'miami';ST.ccN=3}
@@ -1281,7 +1283,7 @@ function render(){
   renderHome(lead,rest);
   renderSp(lead,rest);
   // hamaca
-  var h=(DATA.notas||[]).filter(function(n){return n.hamaca}).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  var h=(DATA.notas||[]).filter(function(n){return n.hamaca}).sort(function(x,y){return FK(y).localeCompare(FK(x))});
   var hb=document.getElementById('hmBig'), hs=document.getElementById('hmS');
   hb.style.gridColumn=h[0]?'':'span 2';
   if(h[0]){var f0=F(h[0]);hb.innerHTML='<a class="hm-big" href="'+href(h[0])+'">'+(img(h[0])?'<img src="'+esc(img(h[0]))+'" alt="" loading="lazy">':'')+'<span class="sh2"></span><span class="tx"><span class="k">'+esc(F(h[0],'etiqueta')||(L==='en'?'IN SEASON':'DE TEMPORADA'))+'</span><b>'+esc(f0.titulo)+'</b></span>'+(h[0].foto_mm!==false?'<span class="wm">MIAMI MAGIC</span>':'')+'</a>';
@@ -1290,7 +1292,7 @@ function render(){
   } else {hb.innerHTML='<div class="empty" style="height:100%;display:flex;flex-direction:column;justify-content:center"><b>'+t('vacioT')+'</b>'+t('vacioH')+'</div>';hs.innerHTML='';}
   document.getElementById('hmMore').style.display=h.length>3?'':'none';
   // el muelle
-  var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return FK(y).localeCompare(FK(x))});
   var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=4;dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
   document.getElementById('dkMore').style.display=mu.length>4?'':'none';
   var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'ALL THE DOCK':'TODO EL MUELLE')+' ↓';
@@ -1606,7 +1608,7 @@ function sxMark(tx,toks){var out=esc(tx);toks.forEach(function(k){if(k.length<3)
 function sxRow(n,toks){var f=F(n);return '<a href="'+href(n)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'<span></span>')+'<span><span class="eb">'+esc(sxSec(n))+(f.etiqueta?' · '+esc(f.etiqueta):'')+'</span><b>'+(toks&&toks.length?sxMark(f.titulo||'',toks.slice(0,1)):esc(f.titulo||''))+'</b></span></a>'}
 function sxRun(){
   var q=sxNorm(document.getElementById('sxQ').value).trim(), toks=q.split(/\s+/).filter(Boolean).map(sxStem), N=document.getElementById('sxN'), R=document.getElementById('sxR');
-  var all=(DATA.notas||[]).slice().sort(function(x,y){return (y.fecha||'').localeCompare(x.fecha||'')});
+  var all=(DATA.notas||[]).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))});
   if(!toks.length){N.textContent=L==='en'?'LATEST':'LO MÁS RECIENTE';R.innerHTML=all.slice(0,5).map(function(n){return sxRow(n)}).join('');return}
   var hit=[];all.forEach(function(n){var f=F(n),ti=sxNorm(f.titulo),ba=sxNorm(f.bajada)+' '+sxNorm(f.etiqueta)+' '+sxNorm(sxSec(n)),bo=sxNorm((f.cuerpo||[]).join(' ')+' '+(f.toca||[]).join(' ')),sc=0,ok=toks.every(function(k){if(ti.indexOf(k)>-1){sc+=5;return true}if(ba.indexOf(k)>-1){sc+=3;return true}if(bo.indexOf(k)>-1){sc+=1;return true}return false});if(ok)hit.push([sc,n])});
   hit.sort(function(a,b){return b[0]-a[0]});

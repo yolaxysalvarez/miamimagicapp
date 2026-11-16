@@ -1,5 +1,5 @@
 {
-  "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES).",
+  "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES). vence: fecha del evento (AAAA-MM-DD); pasada esa fecha la nota baja detrás de lo vigente en portada y secciones, y sigue en el archivo.",
   "updated": "2026-11-08",
   "ultima_hora": {
     "activa": false,
@@ -195,7 +195,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:30:00-05:00",
-      "ultima": 1
+      "ultima": 3
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -277,7 +277,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 2
+      "ultima": 1
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -337,7 +337,7 @@
         ]
       },
       "actualizada": "2026-11-16T12:25:00-05:00",
-      "ultima": 3
+      "ultima": 2
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -497,7 +497,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 4
+      "ultima": 7
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -921,7 +921,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 7
+      "ultima": 4
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -1179,7 +1179,8 @@
           "n": "Estatutos de Florida · Sección 197.162",
           "u": "https://www.flsenate.gov/Laws/Statutes/2026/0197.162"
         }
-      ]
+      ],
+      "tambien": 3
     },
     {
       "id": "frente-frio-miami-noviembre",
@@ -1266,7 +1267,8 @@
           "u": "https://www.mlb.com/marlins/ballpark/events/entertainment-sports/choque-de-gigantes"
         }
       ],
-      "ambos": true
+      "ambos": true,
+      "vence": "2026-11-15"
     },
     {
       "id": "microsoft-365-caida-mundial-outlook",
@@ -1427,8 +1429,7 @@
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-15T09:00:00-05:00",
-      "ultima": 9
+      "actualizada": "2026-11-15T09:00:00-05:00"
     },
     {
       "id": "dolphins-colts-24-22-indianapolis",
@@ -1481,7 +1482,6 @@
           "For Miami, cornerback Chris Johnson returned a Daniel Jones interception 59 yards for a touchdown, and Zane Gonzalez hit a 53-yard field goal, as the [NFL's official highlights](https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg) show."
         ]
       },
-      "ultima": 8,
       "foto": "mm-hard-rock-stadium-techo.jpg",
       "foto_pos": "center 55%",
       "foto_mm": false,
@@ -1549,7 +1549,8 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-13T09:30:00-05:00"
+      "actualizada": "2026-11-13T09:30:00-05:00",
+      "vence": "2026-11-15"
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
@@ -1647,8 +1648,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "tambien": 2,
-      "ultima": 10
+      "tambien": 1
     },
     {
       "id": "obamacare-2027-florida",
@@ -2008,7 +2008,7 @@
         }
       ],
       "foto_mm": false,
-      "tambien": 3
+      "tambien": 2
     },
     {
       "id": "art-basel-arte-gratis-playa",
@@ -2458,7 +2458,8 @@
           "n": "The Key West Citizen · 12 de noviembre de 2026",
           "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
         }
-      ]
+      ],
+      "vence": "2026-11-14"
     },
     {
       "hamaca": false,
@@ -5849,8 +5850,7 @@
           "n": "Copa Airlines · comunicado",
           "u": "https://www.copaair.com/"
         }
-      ],
-      "ultima": 11
+      ]
     },
     {
       "id": "miami-book-fair-2026-abre-fiesta",
@@ -5904,8 +5904,7 @@
           "n": "Miami Dade College · programa de la Miami Book Fair 2026",
           "u": "https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/"
         }
-      ],
-      "tambien": 1
+      ]
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -5951,7 +5950,8 @@
           "n": "Cámara de Comercio de Key West · Artisan Market del 15 de noviembre",
           "u": "https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15"
         }
-      ]
+      ],
+      "vence": "2026-11-15"
     }
   ],
   "updated_at": "2026-11-12T06:00:00-05:00"
