@@ -293,8 +293,8 @@
           "Farther east, the Red Road bridge over Snapper Creek is under repair: the county is rehabilitating it from [November 2026 to April 2027](https://www.pinecrest-fl.gov/Government/Communications-Division/News/Miami-Dade-County-Red-Rd.Snapper-Creek-Bridge-Project-Update), and the Village warned that pedestrian routes may be adjusted for safety."
         ]
       },
-      "ultima": 2,
-      "foto_pos": "center 70%"
+      "foto_pos": "center 70%",
+      "ultima": 2
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -636,7 +636,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 7
+      "ultima": 4
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -981,8 +981,7 @@
           "u": "https://www.mlb.com/marlins/ballpark/events/entertainment-sports/choque-de-gigantes"
         }
       ],
-      "ambos": true,
-      "ultima": 13
+      "ambos": true
     },
     {
       "id": "microsoft-365-caida-mundial-outlook",
@@ -1082,8 +1081,7 @@
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-13T09:40:00-05:00",
-      "ultima": 8
+      "actualizada": "2026-11-13T09:40:00-05:00"
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
@@ -1145,7 +1143,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-15T09:00:00-05:00",
-      "ultima": 4
+      "ultima": 6
     },
     {
       "id": "dolphins-colts-24-22-indianapolis",
@@ -1154,7 +1152,6 @@
       "hamaca": false,
       "muelle": false,
       "destacada": false,
-      "ultima": 5,
       "fecha": "2026-11-15",
       "autor": "Yolaxys Alvarez",
       "fuentes": [
@@ -1198,7 +1195,8 @@
           "The play that mattered most came in the third quarter: quarterback Kyle McCord lost the ball on a sack and defensive tackle Adetomiwa Adebawore recovered it in the end zone. It was the Indianapolis defense's first touchdown of the season.",
           "For Miami, cornerback Chris Johnson returned a Daniel Jones interception 59 yards for a touchdown, and Zane Gonzalez hit a 53-yard field goal, as the [NFL's official highlights](https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg) show."
         ]
-      }
+      },
+      "ultima": 5
     },
     {
       "id": "beach-polo-world-cup-miami-beach-2026",
@@ -1359,7 +1357,8 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "ultima": 12
+      "ultima": 7,
+      "tambien": 2
     },
     {
       "id": "obamacare-2027-florida",
@@ -1718,7 +1717,8 @@
           "u": "https://www.gtaboom.com/gta-6s-miami-heat-vice-city-night-now-has-a-tip-time-a-trailer-and-a-giannis-twist-841d"
         }
       ],
-      "foto_mm": false
+      "foto_mm": false,
+      "tambien": 3
     },
     {
       "id": "art-basel-arte-gratis-playa",
@@ -2168,8 +2168,7 @@
           "n": "The Key West Citizen · 12 de noviembre de 2026",
           "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
         }
-      ],
-      "ultima": 10
+      ]
     },
     {
       "hamaca": false,
@@ -4022,8 +4021,7 @@
           "n": "Christmas Wonderland Miami · preguntas frecuentes",
           "u": "https://miamiwonderland.com/faqs/"
         }
-      ],
-      "ultima": 11
+      ]
     },
     {
       "id": "luces-navidad-miami-2026",
@@ -4230,8 +4228,7 @@
           "u": "https://savethemanatee.org/establishing-manatee-boating-zone-rules/"
         }
       ],
-      "foto_pos": "60% 90%",
-      "tambien": 3
+      "foto_pos": "60% 90%"
     },
     {
       "id": "oleta-river-kayak-pesca-norte",
@@ -5505,7 +5502,6 @@
       "foto_pie_en": "File photo.",
       "desarrollo": true,
       "actualizada": "2026-11-15T01:25:00-05:00",
-      "ultima": 6,
       "es": {
         "etiqueta": "ÚLTIMA HORA",
         "titulo": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
@@ -5563,7 +5559,8 @@
           "n": "Copa Airlines · comunicado",
           "u": "https://www.copaair.com/"
         }
-      ]
+      ],
+      "ultima": 8
     },
     {
       "id": "miami-book-fair-2026-abre-fiesta",
@@ -5578,7 +5575,6 @@
       "foto_alt": "Libros",
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
-      "tambien": 1,
       "es": {
         "etiqueta": "CULTURA",
         "titulo": "La Feria del Libro abre hoy con fiesta gratis en la calle: ocho días de autores en el downtown",
@@ -5618,7 +5614,8 @@
           "n": "Miami Dade College · programa de la Miami Book Fair 2026",
           "u": "https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/"
         }
-      ]
+      ],
+      "tambien": 1
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -5633,7 +5630,6 @@
       "foto_alt": "El sol entre nubes sobre el agua de Key West",
       "foto_pie": "Key West al caer la tarde.",
       "foto_pie_en": "Key West at dusk.",
-      "tambien": 2,
       "es": {
         "etiqueta": "LOS CAYOS",
         "titulo": "Domingo de mercado frente al mar: artesanos de Key West en Higgs Beach hasta las 2 PM",
