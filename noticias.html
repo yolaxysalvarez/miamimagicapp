@@ -526,7 +526,8 @@ body.sp #masH,body.sp #masBtn,body.sp-hm #hm,body.sp-dk #dk{display:none!importa
 .sp-sun b{font-family:var(--pf);font-weight:900;font-size:40px;letter-spacing:0;color:var(--gold);line-height:1.05}
 .sp-sun:empty{display:none}
 .ph:empty,a:has(>.ph:empty):not(:has(h3,h4,b,span:not(.ph))){display:none}
-html.mm-wait main.wrap{opacity:0}main.wrap{transition:opacity .28s ease}
+html.mm-wait main.wrap{opacity:0}
+html.ag-only main.wrap>*:not(#split){display:none!important}html.ag-only #split{display:block!important}html.ag-only #split>*:not(#ag):not(#evs){display:none!important}html.ag-only #ag{margin-top:6px}.ag-back{display:none}html.ag-only .ag-back{display:inline-block;margin:4px 0 18px;font-family:var(--bb);font-size:15px;letter-spacing:.16em;color:var(--coral-d);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}main.wrap{transition:opacity .28s ease}
 .kyw{font-family:var(--pf);font-weight:900}.kyw em{font-style:italic;color:#0E7A63}
 .sp-k{display:block;font-family:var(--bb);font-size:17px;letter-spacing:.18em;color:var(--coral-d)}
 .sp-dk .sp-k{color:#0B5C7A}
@@ -1018,6 +1019,7 @@ body{background:#fff;text-rendering:optimizeLegibility}
   <div class="split" id="split">
 <div class="evs" id="evs" role="dialog" aria-modal="true" aria-labelledby="evsT"><div class="evs-c"><button type="button" class="evs-x" id="evsX" aria-label="Cerrar">✕</button><div id="evsB"></div></div></div>
   <section class="ag" id="ag" aria-label="Agenda" style="display:none">
+    <a class="ag-back" href="#" id="agBack">← TODO NEWS</a>
     <div class="ag-h">
       <h3 class="ag-t"><span id="agT">Agenda</span></h3>
       <div class="ag-tabs" role="tablist">
@@ -1136,7 +1138,9 @@ if(L!=='en')L='es';
 var DEMO=Q.get('demo')==='1';
 var ST={scope:Q.get('s')||'miami',tema:Q.get('t')||'todo',hamaca:Q.get('s')==='hamaca',muelle:Q.get('s')==='muelle',casa:Q.get('s')==='casa',ky:Q.get('s')==='cayos'};
 function SEC(){return ST.hamaca||ST.muelle||ST.casa||ST.ky}
-var WAIT=(location.hash==='#ag'||!!Q.get('s'))&&!Q.get('ev');if(WAIT){document.documentElement.classList.add('mm-wait');setTimeout(function(){document.documentElement.classList.remove('mm-wait')},3000)}
+var AGO=location.hash==='#ag'&&!Q.get('ev');if(AGO)document.documentElement.classList.add('ag-only');
+var WAIT=!!Q.get('s')&&!Q.get('ev');if(WAIT){document.documentElement.classList.add('mm-wait');setTimeout(function(){document.documentElement.classList.remove('mm-wait')},3000)}
+document.addEventListener('click',function(e){if(!document.documentElement.classList.contains('ag-only'))return;if(e.target.closest&&e.target.closest('.tab,.vt,[data-sc],#hmPill,#dkPill,#ccPill,.hdr a,.ag-back')){document.documentElement.classList.remove('ag-only');try{history.replaceState(null,'',location.pathname+location.search)}catch(x){}if(e.target.closest('.ag-back')){e.preventDefault();window.scrollTo(0,0)}}},true);
 function unwait(){if(!WAIT)return;requestAnimationFrame(function(){document.documentElement.classList.remove('mm-wait')})}
 function HOME(){return !SEC()&&ST.scope==='miami'&&ST.tema==='todo'&&!ST.all}
 function isCC(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle}
@@ -1543,7 +1547,7 @@ function renderAg(){
   var en=L==='en',show=AGD&&!SEC();
   box.style.display=show?'':'none';if(!show)return;
   var DW=en?['SUN','MON','TUE','WED','THU','FRI','SAT']:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
-  document.getElementById('agT').textContent=en?'What’s On':'Agenda';
+  document.getElementById('agT').textContent=en?'What’s On':'Agenda';var ab=document.getElementById('agBack');if(ab)ab.textContent=en?'← ALL NEWS':'← TODO NEWS';
   var tb=box.querySelectorAll('.ag-tabs button');tb[0].textContent=en?'THIS WEEK':'ESTA SEMANA';tb[1].textContent=en?'COMING UP':'LO QUE VIENE';if(tb[2])tb[2].textContent=en?'THE KEYS':'LOS CAYOS';
   for(var i=0;i<tb.length;i++){var on=tb[i].dataset.ag===AGS.tab;tb[i].classList.toggle('on',on);tb[i].setAttribute('aria-selected',on)}
   var t0=new Date();t0.setHours(0,0,0,0);
@@ -1644,8 +1648,8 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 
 /* ── cargar ── */
 render();
-fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}});render();if(location.hash!=='#ag')unwait()}).catch(function(){unwait()});
-fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg();try{if(location.hash==='#ag'&&!new URLSearchParams(location.search).get('ev')){var a0=document.getElementById('ag');if(a0&&a0.style.display!=='none'){var go=function(){var y=a0.getBoundingClientRect().top+window.scrollY-70;window.scrollTo(0,y)};setTimeout(go,60);setTimeout(function(){go();unwait()},450);setTimeout(go,1200)}else unwait()}}catch(x){}try{var q=new URLSearchParams(location.search).get('ev');if(q){var ag=document.getElementById('ag');if(ag)ag.scrollIntoView();evOpen(q,false)}}catch(x){}}).catch(function(){});
+fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}});render();unwait()}).catch(function(){unwait()});
+fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg();try{if(AGO){var a0=document.getElementById('ag');if(!a0||a0.style.display==='none')document.documentElement.classList.remove('ag-only');window.scrollTo(0,0)}}catch(x){}try{var q=new URLSearchParams(location.search).get('ev');if(q){var ag=document.getElementById('ag');if(ag)ag.scrollIntoView();evOpen(q,false)}}catch(x){}}).catch(function(){});
 loadWx();
 setInterval(function(){if(!document.hidden){try{loadWx()}catch(e){}}},18e5); /* el cintillo se refresca cada 30 minutos con la página abierta */
 })();
