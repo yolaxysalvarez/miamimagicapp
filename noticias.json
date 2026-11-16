@@ -132,7 +132,8 @@
           "## The box and the poster",
           "Digitally, it’s sold on the PlayStation and Xbox stores, and pre-orders can [pre-load](https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25). The physical box [holds a code](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions), not a disc, and includes a poster: on one side, the cover collage; on the other, the woman in a bikini who also appears in that collage. Purchases made before Nov. 20 include the Vintage Vice City Pack."
         ]
-      }
+      },
+      "foto_pos": "center 32%"
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -222,10 +223,10 @@
       "destacada": false,
       "fecha": "2026-11-16",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-canal-puente-baranda.jpg",
-      "foto_alt": "Un canal de Miami visto desde la baranda de un puente, con un sendero verde en la orilla",
-      "foto_pie": "Foto de archivo: un canal de Miami visto desde un puente.",
-      "foto_pie_en": "Archive photo: a Miami canal seen from a bridge.",
+      "foto": "mm-larry-penny-camino-atardecer.jpg",
+      "foto_alt": "Un sendero asfaltado entre árboles al atardecer en el sur de Miami-Dade",
+      "foto_pie": "Foto de archivo: un sendero en el sur de Miami-Dade.",
+      "foto_pie_en": "Archive photo: a path in South Miami-Dade.",
       "fuentes": [
         {
           "n": "Miami-Dade County · Memorando del acuerdo con Pinecrest (expediente 261879)",
@@ -294,7 +295,8 @@
           "Correction: An earlier version of this story placed the bridge at SW 62nd Avenue. According to the county, it is at SW 67th Avenue."
         ]
       },
-      "ultima": 2
+      "ultima": 2,
+      "foto_pos": "center 70%"
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
