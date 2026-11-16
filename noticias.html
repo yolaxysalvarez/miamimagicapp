@@ -1638,7 +1638,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 /* ── cargar ── */
 render();
 fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}});render()}).catch(function(){});
-fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg();try{var q=new URLSearchParams(location.search).get('ev');if(q){var ag=document.getElementById('ag');if(ag)ag.scrollIntoView();evOpen(q,false)}}catch(x){}}).catch(function(){});
+fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg();try{if(location.hash==='#ag'&&!new URLSearchParams(location.search).get('ev')){var a0=document.getElementById('ag');if(a0&&a0.style.display!=='none'){var go=function(){var y=a0.getBoundingClientRect().top+window.scrollY-70;window.scrollTo({top:y,behavior:'smooth'})};setTimeout(go,120);setTimeout(go,900)}}}catch(x){}try{var q=new URLSearchParams(location.search).get('ev');if(q){var ag=document.getElementById('ag');if(ag)ag.scrollIntoView();evOpen(q,false)}}catch(x){}}).catch(function(){});
 loadWx();
 setInterval(function(){if(!document.hidden){try{loadWx()}catch(e){}}},18e5); /* el cintillo se refresca cada 30 minutos con la página abierta */
 })();
