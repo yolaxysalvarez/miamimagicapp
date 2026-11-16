@@ -55,6 +55,88 @@
   "videos": [],
   "notas": [
     {
+      "id": "control-renta-florida-boleta-2028",
+      "scope": "florida",
+      "tema": "casa",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-16",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-mb-edificio-washington.jpg",
+      "foto_alt": "Edificio residencial moderno con palmas en Miami Beach",
+      "foto_pie": "Foto de archivo: un edificio residencial en Miami Beach.",
+      "foto_pie_en": "Archive photo: a residential building in Miami Beach.",
+      "fuentes": [
+        {
+          "n": "WLRN · Campaña Floridians for Fair Rent, 12 de noviembre",
+          "u": "https://www.wlrn.org/government-politics/2026-11-12/florida-progressive-rent-control-measure-2028-ballot"
+        },
+        {
+          "n": "Ballotpedia · Resultado de la ordenanza de Orange County (2022)",
+          "u": "https://ballotpedia.org/Orange_County,_Florida,_Rent_Stabilization_Ordinance,_Limit_Rent_Increases_for_Certain_Residential_Units_Measure_%28November_2022%29"
+        },
+        {
+          "n": "NBER · Estudio de Stanford sobre el control de renta en San Francisco",
+          "u": "https://www.nber.org/papers/w24181"
+        },
+        {
+          "n": "Fortune · La demanda de los Realtors y la Asociación de Apartamentos (2022)",
+          "u": "https://www.fortune.com/2022/08/20/florida-landlords-try-to-halt-rent-control-initiative"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "CONTROL DE RENTA",
+        "titulo": "Un tope de 3% al año para la renta: arranca la campaña para llevar el control de alquileres a la boleta de 2028",
+        "bajada": "Tres grupos de inquilinos presentan esta semana su enmienda ante el Estado. Para llegar a votarse necesitan casi 900.000 firmas, y para aprobarse, el 60% de los votos.",
+        "toca": [
+          "Hoy no cambia nada: en Florida la renta sigue sin tope.",
+          "El límite solo aplicaría a los grandes caseros corporativos, no a los dueños pequeños.",
+          "Necesitan 891.589 firmas verificadas antes de febrero de 2028."
+        ],
+        "cuerpo": [
+          "La renta podría tener techo en toda Florida, pero la decisión no sería de ningún gobierno sino de los votantes. La campaña Floridians for Fair Rent presenta esta semana ante la División de Elecciones el texto de una enmienda a la Constitución estatal, y [según contó WLRN](https://www.wlrn.org/government-politics/2026-11-12/florida-progressive-rent-control-measure-2028-ballot), espera la aprobación del Estado en enero. Solo entonces puede salir a buscar firmas.",
+          "## Qué propone",
+          "Que la renta no suba más del 3% al año, o de la inflación, la cifra que sea menor. El tope se aplicaría solo a los inquilinos de caseros corporativos con grandes carteras de alquiler. La campaña todavía no ha dicho a partir de cuántas viviendas se considera grande a un casero, ni cómo se tratarían los edificios nuevos.",
+          "Tampoco bajaría las rentas actuales: el límite frena las subidas futuras.",
+          "## Por qué la boleta",
+          "Es la única puerta que queda. La Legislatura prohibió que condados y ciudades aprueben su propio control de renta, una decisión que en la práctica anuló el tope de un año que Orange County había aprobado en las urnas [con el 59% de los votos](https://ballotpedia.org/Orange_County,_Florida,_Rent_Stabilization_Ordinance,_Limit_Rent_Increases_for_Certain_Residential_Units_Measure_%28November_2022%29). Una enmienda constitucional pasa por encima de esa ley.",
+          "## Quién está detrás y quién se opone",
+          "La impulsan Florida Rising, el Miami Workers Center y el Community Justice Project. «La crisis de la renta en Florida ha sido una de las peores del país», dijo Ivanna Gonzalez, de Florida Rising. Según los organizadores, cerca de 800.000 floridanos pagan más de la mitad de lo que ganan en alquiler.",
+          "Del otro lado han estado Florida Realtors y la Florida Apartment Association, que [demandaron a Orange County](https://www.fortune.com/2022/08/20/florida-landlords-try-to-halt-rent-control-initiative) para frenar su ordenanza con el argumento de que la ley estatal solo permitía controlar la renta en una emergencia de vivienda, y llevaron el caso hasta la Corte Suprema de Estados Unidos, que no lo quiso ver. Muchos economistas advierten además de un efecto secundario: un [estudio de Stanford](https://www.nber.org/papers/w24181) sobre San Francisco encontró que los inquilinos protegidos se quedaban más años en su casa, pero que los dueños afectados redujeron en un 15% la oferta de vivienda en alquiler.",
+          "## El camino hasta 2028",
+          "Las firmas tienen que venir repartidas en al menos 14 de los 27 distritos del Congreso, antes de febrero de 2028. Con las reglas de la ley HB 1205, de 2025, un voluntario no puede recoger más de 25 firmas sin registrarse como recolector, así que la campaña pide a los votantes que soliciten la petición por correo en su sitio web; quien la recibe tiene tres días para devolverla.",
+          "Si llega a la boleta, necesitará el 60% de los votos para entrar en la Constitución."
+        ]
+      },
+      "en": {
+        "etiqueta": "RENT CONTROL",
+        "titulo": "A 3% yearly cap on rent: a campaign launches to put rent control on Florida's 2028 ballot",
+        "bajada": "Three tenant groups are filing their amendment with the state this week. To reach the ballot they need nearly 900,000 signatures, and to pass, 60% of the vote.",
+        "toca": [
+          "Nothing changes today: rent in Florida still has no cap.",
+          "The cap would apply only to large corporate landlords, not small owners.",
+          "They need 891,589 verified signatures by February 2028."
+        ],
+        "cuerpo": [
+          "Rent could get a ceiling across all of Florida, but the decision would belong to voters, not any government. The Floridians for Fair Rent campaign is filing the text of a state constitutional amendment with the Division of Elections this week, and, [as WLRN reported](https://www.wlrn.org/government-politics/2026-11-12/florida-progressive-rent-control-measure-2028-ballot), expects state approval in January. Only then can it start collecting signatures.",
+          "## What it proposes",
+          "Rent could not rise more than 3% a year, or the rate of inflation, whichever is lower. The cap would cover only tenants of corporate landlords with large rental portfolios. The campaign has not said how many units make a landlord large, or how new buildings would be treated.",
+          "Nor would it lower current rents: the cap limits future increases.",
+          "## Why the ballot",
+          "It is the only door left. The Legislature barred counties and cities from passing their own rent control, a move that effectively voided the one-year cap Orange County voters approved [with 59% of the vote](https://ballotpedia.org/Orange_County,_Florida,_Rent_Stabilization_Ordinance,_Limit_Rent_Increases_for_Certain_Residential_Units_Measure_%28November_2022%29). A constitutional amendment overrides that law.",
+          "## Who is behind it, and who opposes it",
+          "It is backed by Florida Rising, the Miami Workers Center and the Community Justice Project. \"The rent crisis in Florida has been one of the worst in the entire country,\" said Ivanna Gonzalez of Florida Rising. Organizers say close to 800,000 Floridians spend more than half their income on rent.",
+          "On the other side have been Florida Realtors and the Florida Apartment Association, which [sued Orange County](https://www.fortune.com/2022/08/20/florida-landlords-try-to-halt-rent-control-initiative) to stop its ordinance, arguing state law allowed rent control only in a housing emergency, and took the case to the U.S. Supreme Court, which declined to hear it. Many economists also warn of a side effect: a [Stanford study](https://www.nber.org/papers/w24181) of San Francisco found protected tenants stayed in their homes longer, but affected landlords cut the supply of rental housing by 15%.",
+          "## The road to 2028",
+          "The signatures must be spread across at least 14 of Florida's 27 congressional districts, by February 2028. Under HB 1205, a 2025 law, a volunteer cannot collect more than 25 signatures without registering as a circulator, so the campaign is asking voters to request the petition by mail on its website; those who receive it have three days to return it.",
+          "If it reaches the ballot, it will need 60% of the vote to enter the Constitution."
+        ]
+      },
+      "actualizada": "2026-11-16T13:00:00-05:00",
+      "ultima": 1
+    },
+    {
       "id": "heat-rockets-16-noviembre-previa",
       "scope": "miami",
       "tema": "deporte",
@@ -112,7 +194,7 @@
         ]
       },
       "actualizada": "2026-11-16T12:25:00-05:00",
-      "ultima": 1
+      "ultima": 2
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -272,7 +354,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -354,7 +436,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -429,7 +511,7 @@
           "She died in 2003, and Miami said goodbye by the thousands. The city hasn't forgotten: on Oct. 21, what would have been her 101st birthday, it unveiled Plaza Azúcar, a park with a statue of her at 650 Beacom Boulevard in Little Havana. Construction starts in January 2027, Commissioner Ralph Rosado, who is behind the project, told [Diario Las Américas](https://www.diariolasamericas.com/cultura/miami-anuncia-un-parque-dedicado-celia-cruz-la-pequena-habana-n5404049)."
         ]
       },
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -696,7 +778,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -1203,7 +1285,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-15T09:00:00-05:00",
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "dolphins-colts-24-22-indianapolis",
@@ -1256,7 +1338,7 @@
           "For Miami, cornerback Chris Johnson returned a Daniel Jones interception 59 yards for a touchdown, and Zane Gonzalez hit a 53-yard field goal, as the [NFL's official highlights](https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg) show."
         ]
       },
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "beach-polo-world-cup-miami-beach-2026",
@@ -1417,7 +1499,7 @@
         }
       ],
       "tambien": 2,
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "obamacare-2027-florida",
@@ -5619,7 +5701,7 @@
           "u": "https://www.copaair.com/"
         }
       ],
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "miami-book-fair-2026-abre-fiesta",
