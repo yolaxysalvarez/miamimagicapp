@@ -1,6 +1,6 @@
 {
   "_como_usar": "Extras de la portada de Miami Magic News. fechas: lo que vence (d = fecha AAAA-MM-DD, d2 = fin si es un rango, id = la nota que lo explica). videos: yid = el código del video de YouTube. mesa: restaurantes; patrocinado:true los pone primero con la etiqueta PATROCINADO. historia: Miami de antes (a = año), cada entrada enlazada a la nota donde se cuenta. hoteles: hoteles de la app con foto propia; rotan cada día. app: fichas de la app por categoría (rotan cada día); cada una lleva foto propia y un texto corto antes del enlace. rota_desde: día desde el que se cuenta la rotación; ese día cada sección abre con el primero de su lista, así que el orden de cada lista es el orden de prioridad.",
-  "updated": "2026-11-11",
+  "updated": "2026-11-16",
   "canal": "https://www.youtube.com/@MiamiMagicApp",
   "fechas": [
     {
@@ -197,6 +197,15 @@
       "k_es": "RESTAURANTE · ÁRABE",
       "k_en": "RESTAURANT · MIDDLE EASTERN",
       "item": "r32",
+      "type": "rest"
+    },
+    {
+      "yid": "UH-Rg0I2wjo",
+      "es": "CalaMillor",
+      "en": "CalaMillor",
+      "k_es": "RESTAURANTE · ESPAÑOL · MEDITERRÁNEO",
+      "k_en": "RESTAURANT · SPANISH · MEDITERRANEAN",
+      "item": "r104",
       "type": "rest"
     },
     {
