@@ -4241,6 +4241,90 @@
     "Sports"
    ],
    "link": "https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew"
+  },
+  {
+   "id": "heat-hou-1116",
+   "scope": "local",
+   "d": "2026-11-16",
+   "name": "HEAT vs Houston Rockets",
+   "name_es": "HEAT vs Houston Rockets",
+   "venue": "Kaseya Center · Downtown",
+   "venue_es": "Kaseya Center · Downtown",
+   "time": "Mon · 7:30 PM",
+   "time_es": "Lun · 7:30 PM",
+   "price": "$$$",
+   "price_es": "$$$",
+   "type": "Sports · NBA",
+   "type_es": "Deportes · NBA",
+   "desc": "The HEAT host Houston at Kaseya Center. Doors open at 6:30 PM.",
+   "desc_es": "El HEAT recibe a Houston en el Kaseya Center. Las puertas abren a las 6:30 PM.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://www.nba.com/heat/game/0022600249-rockets-vs-heat-miami-fl-11-16-2026"
+  },
+  {
+   "id": "heat-okc-1122",
+   "scope": "local",
+   "d": "2026-11-22",
+   "name": "HEAT vs Oklahoma City Thunder",
+   "name_es": "HEAT vs Oklahoma City Thunder",
+   "venue": "Kaseya Center · Downtown",
+   "venue_es": "Kaseya Center · Downtown",
+   "time": "Sun · 6:00 PM",
+   "time_es": "Dom · 6:00 PM",
+   "price": "$$$",
+   "price_es": "$$$",
+   "type": "Sports · NBA",
+   "type_es": "Deportes · NBA",
+   "desc": "Sunday evening at Kaseya Center against Oklahoma City. Doors open at 4:30 PM.",
+   "desc_es": "Domingo en la noche en el Kaseya Center contra Oklahoma City. Las puertas abren a las 4:30 PM.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://www.nba.com/heat/game/0022600281"
+  },
+  {
+   "id": "fil-chynonacho26",
+   "scope": "local",
+   "d": "2026-11-20",
+   "name": "Chyno y Nacho",
+   "name_es": "Chyno y Nacho",
+   "venue": "The Fillmore Miami Beach · 1700 Washington Ave",
+   "venue_es": "The Fillmore Miami Beach · 1700 Washington Ave",
+   "time": "Fri · 8:00 PM",
+   "time_es": "Vie · 8:00 PM",
+   "price": "$$$",
+   "price_es": "$$$",
+   "type": "Concert · Latin",
+   "type_es": "Concierto · Latino",
+   "desc": "The Venezuelan duo brings its tropical pop and reggaeton hits to the Fillmore.",
+   "desc_es": "El dúo venezolano trae al Fillmore sus éxitos de pop tropical y reguetón.",
+   "tags": [
+    "Music"
+   ],
+   "link": "https://www.livenation.com/event/vvG1VZ_GUmjBFM/chyno-y-nacho"
+  },
+  {
+   "id": "ky-t2t-bigpine26",
+   "scope": "keys",
+   "d": "2026-11-21",
+   "name": "Tunnel to Towers 5K Run & Walk",
+   "name_es": "Carrera y caminata 5K Tunnel to Towers",
+   "venue": "Big Pine Key Community Park · 31009 Atlantis Dr",
+   "venue_es": "Big Pine Key Community Park · 31009 Atlantis Dr",
+   "time": "Sat · morning",
+   "time_es": "Sáb · en la mañana",
+   "price": "Registration",
+   "price_es": "Inscripción",
+   "type": "Sports · Running",
+   "type_es": "Deportes · Carrera",
+   "desc": "A 5K run and walk honoring first responders and military families, open to all paces and ages. Packet pickup is Friday at the park.",
+   "desc_es": "Una carrera y caminata de 5K en honor a los socorristas y las familias de militares, abierta a todas las edades y ritmos. Los paquetes se recogen el viernes en el parque.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://runwalkbigpinekey.t2t.org"
   }
  ],
  "mes": [
