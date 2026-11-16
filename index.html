@@ -4151,6 +4151,7 @@ html body .twx-pill{font-size:.78rem!important}
       +'<div class="mmn-list">'+top.slice(1).map(function(n){return '<a class="mmn-it" href="'+esc(url(n,l))+'"><span><span class="mmn-eb">'+eb(n,l)+'</span><h4>'+esc(F(n,l).titulo||n.es.titulo)+'</h4></span><img src="'+esc(img(n))+'" alt="" loading="lazy"></a>'}).join('')+'</div></div>'
       +'<div class="mmn-ft"><a href="'+esc(BASE+(l==='en'?'/news':'/noticias')+(NAT?'?lang='+l+'&src=app':''))+'">'+(l==='en'?'SEE ALL THE NEWS':'VER TODAS LAS NOTICIAS')+' →</a><span>'+top.length+(l==='en'?' OF ':' DE ')+all.length+'</span></div></div>';
     el.style.display='';LAST=l;try{renderCC(all,l)}catch(e){}
+    window.mmNewsAll=all;window.mmNewsImg=img;try{if(window.mmDoorBuild)window.mmDoorBuild()}catch(e){}
     window.mmNewsTop=top.map(function(n){return {id:n.id,img:img(n),en:(n.en&&n.en.titulo)||n.es.titulo,es:n.es.titulo}});
     var cd=top.concat(all).filter(function(n){return n.foto&&n.foto_fit!=='contain'})[0];
     window.mmNewsCard=cd?{id:cd.id,img:img(cd),en:(cd.en&&cd.en.titulo)||cd.es.titulo,es:cd.es.titulo}:null;
@@ -4174,6 +4175,7 @@ html body .twx-pill{font-size:.78rem!important}
   document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('#sec-cc .mmcc-sel button');if(!b)return;CCS=b.dataset.cc;try{if(typeof mmTrack==='function')mmTrack('cc_scope',CCS)}catch(x){}render()});
   var KEY='';
   window.mmNewsOpen=function(id){var l=L(),u=BASE+(l==='en'?'/news':'/noticias')+(id?'/'+encodeURIComponent(id):'')+(NAT?'?lang='+l+'&src=app':'');try{if(typeof mmTrack==='function')mmTrack('news_open',id||'portada')}catch(e){}if(NAT&&typeof mmOpenWeb==='function')mmOpenWeb(u);else location.href=u};
+  window.mmNewsGo=function(sec){var l=L(),ag=(sec==='agenda'),q=[];if(sec&&!ag)q.push('s='+encodeURIComponent(sec));if(NAT){q.push('lang='+l);q.push('src=app')}var u=BASE+(l==='en'?'/news':'/noticias')+(q.length?'?'+q.join('&'):'')+(ag?'#ag':'');try{if(typeof mmTrack==='function')mmTrack('news_sec',sec||'portada')}catch(e){}if(NAT&&typeof mmOpenWeb==='function')mmOpenWeb(u);else location.href=u};
   var NICO='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/></svg>';
   window.mmNewsRows=function(){var l=L();return ((DATA&&DATA.notas)||[]).filter(function(n){return n&&n.id&&n.es&&n.es.titulo}).map(function(n){var f=F(n,l);return {name:f.titulo||n.es.titulo,grp:'Miami Magic News',type:'news',kw:[f.titulo,f.bajada,f.etiqueta,(f.toca||[]).join(' '),n.es.titulo,n.scope==='cayos'?'cayos keys':'',n.muelle?'pesca botes fishing boats muelle':'',n.hamaca?'hamaca plan paseo':''].join(' ').toLowerCase(),sub:eb(n,l).replace(/<[^>]+>/g,''),badge:'NEWS',btn:l==='en'?'Read →':'Leer →',emoji:NICO,bg:'',news:n.id}})};
   window.mmNewsTick=function(){var l=L();return (window.mmNewsTop||[]).map(function(n){return {tgEN:'NEWS',tgES:'NEWS',en:n.en,es:n.es,act:"mmNewsOpen('"+n.id.replace(/[^a-z0-9-]/gi,'')+"')"}})};
@@ -9409,7 +9411,7 @@ function mmRedibujarSitios(){
 /* ══ AVISO DE VERSIÓN NUEVA (solo app de iPhone) ══
    En /sitios.json: "_app": { "ios": "1.5" } → cuando Apple apruebe una versión,
    se pone aquí su número y quien tenga una anterior ve el aviso.            */
-var MM_APP_VERSION='1.9';
+var MM_APP_VERSION='2.0';
 function mmVerMayor(a,b){
   var x=String(a).split('.'), y=String(b).split('.');
   for(var i=0;i<Math.max(x.length,y.length);i++){ var p=+x[i]||0, q=+y[i]||0; if(p!==q) return p>q; }
@@ -13568,13 +13570,12 @@ if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(function(){ 
     var _month="go(document.getElementById('sec-month')&&document.getElementById('sec-month').style.display==='none'?'sec-june':'sec-month');setTimeout(function(){var p=document.getElementById('twxMonthPanel');if(p&&!p.classList.contains('open'))twxMonthSection();var b=document.getElementById('twxMonthBar');if(b)b.scrollIntoView({behavior:'smooth',block:'start'});},600);";
     var _cams="go('sec-livecams');setTimeout(function(){var p=document.getElementById('mmcamPanel');if(p&&!p.classList.contains('open'))mmcamSection();},600);";
     var items=[
-      {k:'week',  name:_mE?'Esta Semana':'This Week',          photo:'fotos/mm-mb-fillmore-letrero.jpg', onclick:_week,  icoK:'events'},
-      {k:'re',    name:'Real Estate',                          photo:'fotos/mm-week-brickell.jpg',       onclick:"mmReOpen();", icoK:'home'},
+      {k:'week',  name:_mE?'Agenda':'What\u2019s On',            photo:'fotos/mm-mb-fillmore-letrero.jpg', onclick:"mmNewsGo('agenda');",  icoK:'events'},
+      {k:'re',    name:'Casa & Coast',                         photo:'fotos/mm-week-brickell.jpg',       onclick:"mmNewsGo('casa');", icoK:'home'},
       {k:'keys',  name:_mE?'Los Cayos':'The Keys',             photo:'fotos/mm-keys-tiki-atardecer.jpg', onclick:"go('sec-keys');", icoK:'sun'},
       {k:'cams',  name:_mE?'Cámaras en vivo':'Live cams',      photo:'fotos/mm-mb-salvavidas-17st.jpg',  onclick:_cams,  icoK:'cam'},
       {k:'rest',  name:_mE?'Restaurantes':'Restaurants',       photo:'fotos/mm-rusty-1.jpg',             onclick:"go('sec-rest');", icoK:'food'},
       {k:'beach', name:_mE?'Playas':'Beaches',                 photo:'fotos/mm-mb-playa-lincoln.jpg',    onclick:"go('sec-beach');", icoK:'beach'},
-      {k:'month', name:_mE?'Este Mes':'This Month',            photo:'fotos/mm-month-night.jpg',         onclick:_month, icoK:'events'},
       {k:'night', name:_mE?'Vida nocturna':'Nightlife',        photo:'fotos/mm-n9.jpg',                  onclick:"go('sec-night');", icoK:'night'},
       {k:'tours', name:_mE?'Tours a pie':'Walking tours',      photo:'fotos/mm-mb-art-deco-letrero.jpg', onclick:"go('sec-map');", icoK:'walk'},
       {k:'museum',name:_mE?'Museos y arte':'Museums & art',    photo:'fotos/mm-vizcaya-1.jpg',           onclick:"go('sec-museum');", icoK:'culture'},
@@ -13661,7 +13662,8 @@ function mmHpFig(k){
     if(k==='month') out=n(window._mmMonthCount||0,'eventos','events');
     if(k==='re'){
       var c=MM_RE&&MM_RE.cifras&&MM_RE.cifras[0];
-      out=c?'<b>'+c.v+'</b> '+(ES?'precio mediano':'median price'):(ES?'Cada lunes':'Every Monday');
+      var _cc=(window.mmNewsAll||[]).filter(function(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle}).length;
+      out=_cc?'<b>'+_cc+'</b> '+(ES?'notas':'stories'):(c?'<b>'+c.v+'</b> '+(ES?'precio mediano':'median price'):'News');
     }
     if(k==='keys')  out=n((typeof kyItems==='function'&&typeof kyActive==='function')?kyItems().filter(kyActive).length:0,'fichas','picks');
     if(k==='cams')  out='<i class="hp-live"></i>'+(ES?'EN VIVO':'LIVE');
@@ -15889,10 +15891,6 @@ document.addEventListener('DOMContentLoaded',function(){
     <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
     <span class="bn-lbl" data-en="Nearby" data-es="Cerca">Nearby</span>
   </button>
-  <button class="bn-item" id="bnNews" onclick="if(window.mmNewsOpen)mmNewsOpen('')" aria-label="Miami Magic News">
-    <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/></svg></span>
-    <span class="bn-lbl" data-en="News" data-es="News">News</span>
-  </button>
   <!-- AI CENTER BUTTON -->
   <button class="bn-item bn-ai" onclick="openItinPanel();bnActive(this)">
     <span class="bn-ai-inner">
@@ -15900,10 +15898,10 @@ document.addEventListener('DOMContentLoaded',function(){
     </span>
     <span class="bn-lbl" style="color:#FF4D35;font-weight:700;" data-en="Plan Trip" data-es="Planea">Plan Trip</span>
   </button>
-  <a class="bn-item" href="https://miamimagicdirectory.com" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" style="text-decoration:none;">
-    <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></span>
-    <span class="bn-lbl" data-en="Web" data-es="Web">Web</span>
-  </a>
+  <button class="bn-item" id="bnNews" onclick="if(window.mmNewsOpen)mmNewsOpen('')" aria-label="Miami Magic News">
+    <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h13v14H6a2 2 0 0 1-2-2V5z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h4"/></svg></span>
+    <span class="bn-lbl" data-en="News" data-es="News">News</span>
+  </button>
   <button class="bn-item" onclick="openAccount();bnActive(this)">
     <span class="bn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
     <span class="bn-lbl" data-en="Account" data-es="Cuenta">Account</span>
@@ -22259,6 +22257,146 @@ function kyRenderSimilar(obj){
     setTimeout(function(){ try{ mmKeysOpen(k); }catch(e){} try{ history.replaceState(null,'',location.pathname); }catch(e){} },1300);
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&_kyCat&&!document.getElementById('modalOv').classList.contains('open')) mmKeysClose(); });
+})();
+</script>
+<!-- ══ v2.0 · Home: Portada → puerta a News → Cómo moverse ══ -->
+<style id="mm20-css">
+#heroTicker,#sec-june,#juneTop,#sec-month,#sec-savedate,#sec-news,#sec-cc{display:none!important}
+#mmDoor{margin:0;padding:18px 16px 16px;background:linear-gradient(180deg,#FDF8F1 0%,#F7ECDD 100%);border-top:1px solid rgba(201,150,46,.38);border-bottom:1px solid rgba(201,150,46,.38);position:relative}
+#mmDoor a,#mmDoor button{text-decoration:none!important;-webkit-tap-highlight-color:transparent}
+#mmDoor .dr-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+#mmDoor .dr-brand{font:700 1.02rem 'Playfair Display',serif;color:#0E1B30;display:flex;align-items:center;gap:8px;letter-spacing:.005em}
+#mmDoor .dr-brand b{font:400 .78rem 'Bebas Neue',sans-serif;letter-spacing:.16em;color:#fff;background:#E23A22;padding:4px 8px 2px;border-radius:4px;transform:rotate(-3deg);display:inline-block;box-shadow:0 2px 6px rgba(226,58,34,.28)}
+#mmDoor .dr-dots{display:flex;gap:5px;align-items:center}
+#mmDoor .dr-dots i{display:block;width:20px;height:3px;border-radius:2px;background:rgba(14,27,48,.14);overflow:hidden;position:relative}
+#mmDoor .dr-dots i:after{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:#C9962E;border-radius:2px}
+#mmDoor .dr-dots i.done:after{width:100%}
+#mmDoor .dr-dots i.on:after{width:100%;transition:width var(--drT,5.2s) linear}
+#mmDoor .dr-stage{position:relative;min-height:116px}
+#mmDoor .dr-card{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:10px 14px 10px 10px;box-shadow:0 1px 0 rgba(201,150,46,.25),0 10px 24px rgba(14,27,48,.09);min-height:116px;box-sizing:border-box;transition:opacity .42s ease,transform .42s ease}
+#mmDoor .dr-card.out{opacity:0;transform:translateY(8px)}
+#mmDoor .dr-ph{width:96px;height:96px;border-radius:11px;background:#EADCC8 center/cover no-repeat;display:block}
+#mmDoor .dr-tx{display:block;min-width:0}
+#mmDoor .dr-k{display:block;font:400 .86rem 'Bebas Neue',sans-serif;letter-spacing:.16em;color:#C4331C;line-height:1.1}
+#mmDoor .dr-k.ky{color:#0B7F71}
+#mmDoor .dr-k em{font-style:normal;color:#9A7420}
+#mmDoor .dr-t{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font:700 1.07rem/1.2 'Playfair Display',serif;color:#0E1B30;margin-top:4px}
+#mmDoor .dr-go{display:block;font:700 .74rem 'DM Sans',sans-serif;letter-spacing:.1em;color:#C4331C;margin-top:7px}
+#mmDoor .dr-idx{display:grid;grid-template-columns:repeat(3,1fr);margin-top:14px;border-top:1px solid rgba(201,150,46,.4)}
+#mmDoor .dr-idx button{appearance:none;background:none;border:0;border-bottom:1px solid rgba(201,150,46,.28);border-right:1px solid rgba(201,150,46,.28);padding:11px 4px 9px;font:400 .86rem 'Bebas Neue',sans-serif;letter-spacing:.09em;white-space:nowrap;text-transform:uppercase;color:#0E1B30;cursor:pointer;min-height:44px}
+#mmDoor .dr-idx button:nth-child(3n){border-right:0}
+#mmDoor .dr-idx button:nth-last-child(-n+3){border-bottom:0}
+#mmDoor .dr-idx button b{font-weight:400;color:#C4331C}
+#mmDoor .dr-idx button.ky{color:#0B7F71}
+@media (min-width:900px){#mmDoor{max-width:760px;margin:22px auto;border:1px solid rgba(201,150,46,.38);border-radius:20px}}
+@media (prefers-reduced-motion:reduce){#mmDoor .dr-card{transition:none}#mmDoor .dr-dots i.on:after{transition:none}}
+/* barra flotante de 5: Planea al centro */
+#bottomNav .bn-item{flex:1 1 0}
+</style>
+<script>
+/* v2.0 · la "puerta" a Miami Magic News: una banda bajo la portada, estilo cartel
+   (el mensaje aparece y cambia, no corre). Lee las mismas notas que News. */
+(function(){
+  var T=5200,idx=0,timer=null,items=[],paused=false;
+  function ES(){try{return typeof lang!=='undefined'&&lang==='es'}catch(e){return false}}
+  function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function tt(n){var es=ES();return (es?(n.es&&n.es.titulo):(n.en&&n.en.titulo))||(n.es&&n.es.titulo)||''}
+  function pick(all){
+    var es=ES(),out=[],used={};
+    function add(n,k,ky){if(!n||used[n.id]||!n.foto)return;used[n.id]=1;out.push({id:n.id,k:k,ky:!!ky,t:tt(n),img:window.mmNewsImg?window.mmNewsImg(n):''})}
+    var srt=all.slice().sort(function(a,b){return (b.actualizada||b.fecha||'').localeCompare(a.actualizada||a.fecha||'')});
+    function first(f,any){for(var i=0;i<srt.length;i++)if(f(srt[i])&&!used[srt[i].id]&&(any||fresh(srt[i])))return srt[i];return null}
+    var cc=function(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle};
+    add(all.filter(function(n){return n.destacada})[0]||srt[0],(es?'HOY':'TODAY'));
+    add(first(function(n){return n.scope==='cayos'&&!n.hamaca&&!n.muelle&&!cc(n)}),(es?'LOS CAYOS':'THE KEYS'),true);
+    add(first(function(n){return n.tema==='deporte'}),(es?'DEPORTES':'SPORTS'));
+    add(first(cc),'CASA & COAST');
+    add(first(function(n){return n.hamaca},true),(es?'HAMACA MOOD':'HAMMOCK MOOD'));
+    return out.slice(0,5);
+  }
+  function card(it){
+    var es=ES();
+    return '<a class="dr-card out" href="#" data-news="'+esc(it.id)+'"><span class="dr-ph" style="background-image:url(&quot;'+esc(it.img)+'&quot;)"></span><span class="dr-tx"><span class="dr-k'+(it.ky?' ky':'')+'">'+esc(it.k)+'</span><span class="dr-t">'+esc(it.t)+'</span><span class="dr-go">'+(es?'LEER EN NEWS':'READ IN NEWS')+' →</span></span></a>';
+  }
+  function show(i,instant){
+    var st=document.getElementById('drStage'),d=document.getElementById('drDots');if(!st||!items.length)return;
+    idx=(i+items.length)%items.length;
+    var old=st.firstElementChild;
+    function put(){st.innerHTML=card(items[idx]);var c=st.firstElementChild;requestAnimationFrame(function(){requestAnimationFrame(function(){c.classList.remove('out')})})}
+    if(old&&!instant){old.classList.add('out');setTimeout(put,300)}else put();
+    if(d){[].forEach.call(d.children,function(e,k){e.className=k<idx?'done':''});var cur=d.children[idx];if(cur){void cur.offsetWidth;requestAnimationFrame(function(){requestAnimationFrame(function(){cur.className='on'})})}}
+  }
+  function loop(){clearInterval(timer);if(items.length<2)return;timer=setInterval(function(){if(!paused&&!document.hidden)show(idx+1)},T)}
+  /* Tu Miami baja a después de Explorar más. #app se vuelve a pintar con build(),
+     así que se guarda el nodo y se recoloca cada vez que la lista cambia. */
+  var SOC=null,obs=null;
+  function placeSoc(){
+    try{
+      SOC=SOC||document.getElementById('sec-social');if(!SOC)return;
+      var ex=document.getElementById('sec-explore');if(!ex)return;
+      if(ex.nextElementSibling!==SOC)ex.parentNode.insertBefore(SOC,ex.nextSibling);
+      if(!obs&&window.MutationObserver){var app=document.getElementById('app');if(app){obs=new MutationObserver(function(){var e=document.getElementById('sec-explore');if(e&&e.nextElementSibling!==SOC)placeSoc()});obs.observe(app,{childList:true})}}
+    }catch(e){}
+  }
+  function fresh(n){try{var d=new Date(Date.now()-4*864e5),z=function(x){return (x<10?'0':'')+x};return (n.fecha||'')>=d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate())}catch(e){return true}}
+  window.mmDoorBuild=function(){
+    try{
+      var home=document.getElementById('home');if(!home)return;
+      var all=window.mmNewsAll||[];if(!all.length)return;
+      items=pick(all);if(!items.length)return;
+      var es=ES(),d=document.getElementById('mmDoor');
+      if(!d){d=document.createElement('section');d.id='mmDoor';d.setAttribute('aria-label','Miami Magic News');home.parentNode.insertBefore(d,home.nextSibling);
+        d.addEventListener('click',function(e){var a=e.target.closest('[data-news]');if(a){e.preventDefault();if(window.mmNewsOpen)mmNewsOpen(a.getAttribute('data-news'));return}var b=e.target.closest('[data-sec]');if(b){e.preventDefault();if(window.mmNewsGo)mmNewsGo(b.getAttribute('data-sec'))}});
+        d.addEventListener('touchstart',function(){paused=true},{passive:true});d.addEventListener('touchend',function(){setTimeout(function(){paused=false},2500)},{passive:true});
+      }
+      d.style.setProperty('--drT',(T/1000)+'s');
+      d.innerHTML='<div class="dr-top"><span class="dr-brand">Miami Magic <b>NEWS</b></span><span class="dr-dots" id="drDots" aria-hidden="true">'+items.map(function(){return '<i></i>'}).join('')+'</span></div>'
+        +'<div class="dr-stage" id="drStage" aria-live="off"></div>'
+        +'<div class="dr-idx" role="navigation" aria-label="'+(es?'Secciones de News':'News sections')+'">'
+        +'<button type="button" data-sec="agenda">'+(es?'Agenda':'What’s On')+'</button>'
+        +'<button type="button" data-sec="casa">Casa <b>&amp;</b> Coast</button>'
+        +'<button type="button" data-sec="hamaca">'+(es?'Hamaca Mood':'Hammock Mood')+'</button>'
+        +'<button type="button" data-sec="muelle">'+(es?'El Muelle':'The Dock')+'</button>'
+        +'<button type="button" class="ky" data-sec="cayos">'+(es?'Los Cayos':'The Keys')+'</button>'
+        +'<button type="button" data-sec="">'+(es?'Todo News':'All News')+' <b>→</b></button></div>';
+      show(0,true);loop();
+      placeSoc();
+    }catch(e){}
+  };
+  /* eventos y agenda viven en News: cualquier entrada vieja a esas secciones abre la Agenda */
+  try{
+    var _go=window.go;
+    if(typeof _go==='function')window.go=function(id){
+      if(id==='sec-june'||id==='sec-month'||id==='sec-savedate'||id==='sec-events'){if(window.mmNewsGo){mmNewsGo('agenda');return}}
+      return _go.apply(this,arguments);
+    };
+  }catch(e){}
+  /* el widget abre la ficha del lugar del día: miamimagic://ficha?mt=beach&id=b15 */
+  window.mmOpenFicha=function(mt,id){
+    try{
+      mt=String(mt||'').replace(/[^a-z]/g,'');id=String(id||'').replace(/[^A-Za-z0-9_-]/g,'');if(!id)return false;
+      var o=null;
+      if(mt==='keys'){if(typeof kyFind==='function')o=kyFind(id)}
+      else{var A={beach:'beaches',place:'places',park:'parks',rest:'restaurants',museum:'museums',hotel:'hotels',night:'nightlife'}[mt];
+        if(A&&typeof D!=='undefined'&&D[A])o=D[A].filter(function(x){return x.id===id})[0]}
+      if(o&&typeof openItemModal==='function'){openItemModal(o,mt);try{if(typeof mmTrack==='function')mmTrack('widget_open',id)}catch(e){}return true}
+    }catch(e){}
+    return false;
+  };
+  function fromUrl(u){try{var m=/^miamimagic:\/\/ficha\/?\?(.*)$/.exec(String(u||''));if(!m)return;var q=new URLSearchParams(m[1]),n=0;
+    (function go(){if(window.mmOpenFicha(q.get('mt'),q.get('id'))||++n>12)return;setTimeout(go,500)})()}catch(e){}}
+  try{var CA=window.Capacitor&&window.Capacitor.Plugins&&window.Capacitor.Plugins.App;
+    if(CA){CA.addListener('appUrlOpen',function(e){fromUrl(e&&e.url)});if(CA.getLaunchUrl)CA.getLaunchUrl().then(function(r){fromUrl(r&&r.url)}).catch(function(){})}}catch(e){}
+  /* fotos de la portada sin pasar por Apple: sitios.json → "_app".portada = ["fotos/a.jpg", …] */
+  try{
+    var _av=window.mmAvisoVersion;
+    window.mmAvisoVersion=function(d){
+      try{var ph=d&&d._app&&d._app.portada;if(ph&&ph.length){var B=(location.protocol==='capacitor:'||location.protocol==='ionic:')?'https://www.miamimagicapp.com/':'';
+        var put=function(){var sl=document.querySelectorAll('.hero-bg .hr-slide');if(!sl.length)return false;[].forEach.call(sl,function(e,i){var f=String(ph[i%ph.length]||'');if(/^[\w\/.-]+\.(jpg|jpeg|png|webp)$/i.test(f))e.style.backgroundImage='url('+B+f+')'});return true};
+        if(!put())setTimeout(put,2500)}}catch(e){}
+      if(typeof _av==='function')return _av.apply(this,arguments);
+    };
+  }catch(e){}
 })();
 </script>
 </body>

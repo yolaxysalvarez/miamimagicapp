@@ -5,7 +5,8 @@
  "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
  "_app": {
   "ios": "1.9",
-  "_nota": "La última versión aprobada por Apple. Cuando aprueben una nueva, pon aquí su número y quien tenga una anterior verá el aviso de Actualizar."
+  "_nota": "La última versión aprobada por Apple. Cuando aprueben una nueva, pon aquí su número y quien tenga una anterior verá el aviso de Actualizar.",
+  "_portada_nota": "Para cambiar las fotos de la portada de la app sin versión nueva de Apple, añade aquí \"portada\": [\"fotos/a.jpg\",\"fotos/b.jpg\", …] (hasta 5). Sin esa lista, la app usa las suyas."
  },
  "restaurantes": {
   "r16": {
