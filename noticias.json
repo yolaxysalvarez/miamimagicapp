@@ -55,6 +55,72 @@
   "videos": [],
   "notas": [
     {
+      "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
+      "scope": "cayos",
+      "tema": "calle",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-16",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-canal-casas-botes.jpg",
+      "foto_alt": "Botes amarrados en un canal de los Cayos bajo un cielo nublado, con el agua agitada",
+      "foto_pie": "Foto de archivo: un canal con botes en los Cayos.",
+      "foto_pie_en": "Archive photo: a boat canal in the Keys.",
+      "fuentes": [
+        {
+          "n": "Servicio Nacional de Meteorología, Key West · Pronóstico marino de los Cayos",
+          "u": "https://www.ndbc.noaa.gov/data/Forecasts/FZUS52.KKEY.html"
+        },
+        {
+          "n": "Mote Marine Laboratory · Reef Revival Fest",
+          "u": "https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "EL TIEMPO",
+        "titulo": "Llegan tres días de viento a los Cayos: olas de hasta 11 pies en el Estrecho y aviso para los botes pequeños",
+        "bajada": "De martes a jueves, el noreste soplará hasta 25 nudos, con lluvia y aguas muy picadas en el canal Hawk y la bahía de Florida. El viernes empieza a calmar.",
+        "toca": [
+          "Si tu bote es pequeño, deja la salida para el viernes o el fin de semana.",
+          "En los puentes de la Overseas, el viento cruzado y la lluvia piden menos velocidad y más distancia.",
+          "Este pronóstico marino llega hasta el viernes por la noche; lo actualizamos en esta misma nota."
+        ],
+        "cuerpo": [
+          "El viento se instala en los Cayos para toda la semana laboral. En su [pronóstico marino](https://www.ndbc.noaa.gov/data/Forecasts/FZUS52.KKEY.html), emitido el domingo por la tarde, el Servicio Nacional de Meteorología en Key West pide a los botes pequeños navegar con precaución en el Estrecho de Florida, donde el viento del noreste va en aumento, y advierte que las brisas «frescas a fuertes» dominarán casi toda la semana.",
+          "## El mar, día a día",
+          "Hoy y esta noche: viento del noreste y el este de 15 a 20 nudos. En el canal Hawk, olas de 3 a 5 pies, y alguna de 6.",
+          "Martes: cerca de 20 nudos (unas 23 millas por hora). El canal Hawk se pone agitado, con olas de hasta 8 pies al oeste del faro de Cosgrove Shoal, y en el Estrecho el mar sube a 6 a 8 pies, con algunas olas de 10. La bahía de Florida, agitada.",
+          "Del martes por la noche al jueves: lo peor. El viento llega a 20 a 25 nudos, casi 29 millas por hora, con chubascos probables y alguna tormenta. En el Estrecho, olas de 7 a 9 pies y algunas de 11. Para el miércoles por la noche y el jueves, el pronóstico describe las aguas cercanas a la costa del canal Hawk como «extremadamente agitadas».",
+          "Viernes: el viento afloja a 15 a 20 nudos y en el canal Hawk las olas bajan a 2 a 4 pies. Para la noche, el mar pasa de picado a moderado.",
+          "## Y el fin de semana",
+          "La calma llega a tiempo para los planes. El [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) de Mote abre el viernes de 5 a 9 PM en Islamorada, y el sábado por la mañana se corre el 5K Tunnel to Towers en Big Pine Key. En Miami, la lluvia también se concentra de martes a jueves."
+        ]
+      },
+      "en": {
+        "etiqueta": "WEATHER",
+        "titulo": "Three windy days hit the Keys: seas up to 11 feet in the Straits and a caution for small boats",
+        "bajada": "Tuesday through Thursday, northeast winds will reach 25 knots, with rain and very rough water in Hawk Channel and Florida Bay. Friday starts to calm down.",
+        "toca": [
+          "If your boat is small, save the trip for Friday or the weekend.",
+          "On the Overseas bridges, crosswinds and rain call for slower speeds and more distance.",
+          "This marine forecast runs through Friday night; we'll update it in this same story."
+        ],
+        "cuerpo": [
+          "Wind is settling over the Keys for the whole work week. In its [marine forecast](https://www.ndbc.noaa.gov/data/Forecasts/FZUS52.KKEY.html), issued Sunday afternoon, the National Weather Service in Key West tells small craft to exercise caution in the Straits of Florida as northeast winds increase, and warns that \"fresh to strong breezes\" will prevail for much of the week.",
+          "## The sea, day by day",
+          "Today and tonight: northeast to east winds of 15 to 20 knots. In Hawk Channel, seas of 3 to 5 feet, occasionally 6.",
+          "Tuesday: near 20 knots (about 23 mph). Hawk Channel turns rough, with seas up to 8 feet west of Cosgrove Shoal Light, and in the Straits seas build to 6 to 8 feet, occasionally 10. Florida Bay, rough.",
+          "Tuesday night through Thursday: the worst of it. Winds reach 20 to 25 knots, nearly 29 mph, with showers likely and a few storms. In the Straits, seas of 7 to 9 feet, occasionally 11. For Wednesday night and Thursday, the forecast calls Hawk Channel's nearshore waters \"extremely rough.\"",
+          "Friday: winds ease to 15 to 20 knots and Hawk Channel seas drop to 2 to 4 feet. By night, the sea goes from choppy to a moderate chop.",
+          "## And the weekend",
+          "The calm arrives in time for weekend plans. Mote's [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) opens Friday from 5 to 9 PM in Islamorada, and Saturday morning the Tunnel to Towers 5K runs in Big Pine Key. In Miami, too, the rain is concentrated Tuesday through Thursday."
+        ]
+      },
+      "actualizada": "2026-11-16T13:30:00-05:00",
+      "ultima": 1
+    },
+    {
       "id": "control-renta-florida-boleta-2028",
       "scope": "florida",
       "tema": "casa",
@@ -134,7 +200,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 1
+      "ultima": 2
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -194,7 +260,7 @@
         ]
       },
       "actualizada": "2026-11-16T12:25:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -354,7 +420,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -436,7 +502,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -511,7 +577,7 @@
           "She died in 2003, and Miami said goodbye by the thousands. The city hasn't forgotten: on Oct. 21, what would have been her 101st birthday, it unveiled Plaza Azúcar, a park with a statue of her at 650 Beacom Boulevard in Little Havana. Construction starts in January 2027, Commissioner Ralph Rosado, who is behind the project, told [Diario Las Américas](https://www.diariolasamericas.com/cultura/miami-anuncia-un-parque-dedicado-celia-cruz-la-pequena-habana-n5404049)."
         ]
       },
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -778,7 +844,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -1285,7 +1351,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-15T09:00:00-05:00",
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "dolphins-colts-24-22-indianapolis",
@@ -1338,7 +1404,7 @@
           "For Miami, cornerback Chris Johnson returned a Daniel Jones interception 59 yards for a touchdown, and Zane Gonzalez hit a 53-yard field goal, as the [NFL's official highlights](https://www.nfl.com/videos/dolphins-add-points-to-the-board-with-53-yard-zane-gonzalez-fg) show."
         ]
       },
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "beach-polo-world-cup-miami-beach-2026",
@@ -1499,7 +1565,7 @@
         }
       ],
       "tambien": 2,
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "obamacare-2027-florida",
@@ -5701,7 +5767,7 @@
           "u": "https://www.copaair.com/"
         }
       ],
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "miami-book-fair-2026-abre-fiesta",
