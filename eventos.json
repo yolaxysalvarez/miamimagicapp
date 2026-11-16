@@ -4199,6 +4199,48 @@
     "Community"
    ],
    "link": "https://www.givemiamiday.org/"
+  },
+  {
+   "id": "ky-reefrevival26",
+   "scope": "keys",
+   "d": "2026-11-20",
+   "name": "Mote's Reef Revival Fest",
+   "name_es": "Reef Revival Fest de Mote",
+   "venue": "Bud N' Mary's Marina · 79851 Overseas Hwy, Islamorada",
+   "venue_es": "Bud N' Mary's Marina · 79851 Overseas Hwy, Islamorada",
+   "time": "Fri · 5:00–9:00 PM",
+   "time_es": "Vie · 5:00–9:00 PM",
+   "price": "Check site",
+   "price_es": "Consulta el sitio",
+   "type": "Community · Nature",
+   "type_es": "Comunidad · Naturaleza",
+   "desc": "Mote Marine Laboratory's fourth Reef Revival Fest at its Islamorada coral nursery: tours of the land-based nursery, hands-on coral micro-fragmentation workshops and a mechanical shark ride.",
+   "desc_es": "El cuarto Reef Revival Fest de Mote Marine Laboratory en su vivero de corales de Islamorada: recorridos por el vivero, talleres prácticos de microfragmentación de corales y un tiburón mecánico para montar.",
+   "tags": [
+    "Nature"
+   ],
+   "link": "https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/"
+  },
+  {
+   "id": "intermiami-po-g1-26",
+   "scope": "local",
+   "d": "2026-11-21",
+   "name": "Inter Miami vs Columbus Crew · MLS Cup Playoffs, Game 1",
+   "name_es": "Inter Miami vs Columbus Crew · Playoffs de la MLS, juego 1",
+   "venue": "Nu Stadium",
+   "venue_es": "Nu Stadium",
+   "time": "Sat · 6:00 PM · Apple TV",
+   "time_es": "Sáb · 6:00 PM · Apple TV",
+   "price": "$$$",
+   "price_es": "$$$",
+   "type": "Sports · Soccer",
+   "type_es": "Deportes · Fútbol",
+   "desc": "The defending MLS champions open their best-of-3 first-round series at home against Columbus. Game 2 is in Columbus on Nov. 27.",
+   "desc_es": "Los campeones defensores de la MLS abren en casa su serie al mejor de tres contra Columbus. El juego 2 es en Columbus el 27 de noviembre.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew"
   }
  ],
  "mes": [
