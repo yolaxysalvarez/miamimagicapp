@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 import UIKit
+import ImageIO
 
 // MARK: - Datos
 
@@ -47,19 +48,37 @@ struct PostalEntry: TimelineEntry {
 enum PostalAPI {
     static let site = "https://www.miamimagicapp.com"
     static let ny = TimeZone(identifier: "America/New_York")!
+    // sesión sin caché en memoria: el widget tiene un tope de memoria muy bajo (~30 MB)
+    static let net: URLSession = {
+        let c = URLSessionConfiguration.ephemeral
+        c.urlCache = nil; c.requestCachePolicy = .reloadIgnoringLocalCacheData
+        return URLSession(configuration: c)
+    }()
+
+    /// Decodifica la imagen YA reducida (ImageIO), sin cargarla entera en memoria.
+    static func thumb(_ d: Data, maxPx: Int) -> CGImage? {
+        guard let src = CGImageSourceCreateWithData(d as CFData, [kCGImageSourceShouldCache: false] as CFDictionary)
+        else { return nil }
+        let o: [CFString: Any] = [
+            kCGImageSourceCreateThumbnailFromImageAlways: true,
+            kCGImageSourceCreateThumbnailWithTransform: true,
+            kCGImageSourceShouldCacheImmediately: true,
+            kCGImageSourceThumbnailMaxPixelSize: maxPx]
+        return CGImageSourceCreateThumbnailAtIndex(src, 0, o as CFDictionary)
+    }
 
     static func json(_ s: String) async -> [String: Any]? {
         guard let u = URL(string: s) else { return nil }
         var req = URLRequest(url: u); req.timeoutInterval = 12
         req.cachePolicy = .reloadIgnoringLocalCacheData
-        guard let (d, _) = try? await URLSession.shared.data(for: req) else { return nil }
+        guard let (d, _) = try? await net.data(for: req) else { return nil }
         return (try? JSONSerialization.jsonObject(with: d)) as? [String: Any]
     }
 
     static func postales() async -> [Postal] {
         guard let u = URL(string: site + "/postal.json") else { return [] }
         var req = URLRequest(url: u); req.timeoutInterval = 10
-        guard let (d, _) = try? await URLSession.shared.data(for: req),
+        guard let (d, _) = try? await net.data(for: req),
               let f = try? JSONDecoder().decode(PostalFile.self, from: d) else { return [] }
         return f.postales
     }
@@ -81,8 +100,10 @@ enum PostalAPI {
         let ok = p.foto.range(of: #"^[A-Za-z0-9._-]+\.(jpg|jpeg|png|webp)$"#, options: .regularExpression) != nil
         guard ok, let u = URL(string: site + "/fotos/" + p.foto) else { return nil }
         var req = URLRequest(url: u); req.timeoutInterval = 15
-        guard let (d, _) = try? await URLSession.shared.data(for: req), let src = UIImage(data: d),
-              let cg = src.cgImage else { return nil }
+        let outW: CGFloat = aspect > 1.5 ? 760 : 480
+        // se reduce al decodificar: el lado largo justo lo necesario para recortar sin perder nitidez
+        guard let (d, _) = try? await net.data(for: req),
+              let cg = thumb(d, maxPx: aspect > 1.5 ? 1300 : 720) else { return nil }
         let w = CGFloat(cg.width), h = CGFloat(cg.height)
         var r: CGRect
         if w / h > aspect {
@@ -95,7 +116,6 @@ enum PostalAPI {
             r = CGRect(x: 0, y: y, width: w, height: nh)
         }
         guard let cut = cg.cropping(to: r.integral) else { return nil }
-        let outW: CGFloat = aspect > 1.5 ? 760 : 480
         let size = CGSize(width: outW, height: (outW / aspect).rounded())
         let fmt = UIGraphicsImageRendererFormat(); fmt.scale = 1; fmt.opaque = true
         return UIGraphicsImageRenderer(size: size, format: fmt).image { _ in
@@ -106,11 +126,8 @@ enum PostalAPI {
     static func palm() async -> UIImage? {
         guard let u = URL(string: site + "/miami-magic-icon-180.png") else { return nil }
         var req = URLRequest(url: u); req.timeoutInterval = 10
-        req.cachePolicy = .returnCacheDataElseLoad
-        guard let (d, _) = try? await URLSession.shared.data(for: req), let i = UIImage(data: d) else { return nil }
-        let fmt = UIGraphicsImageRendererFormat(); fmt.scale = 1
-        let s = CGSize(width: 96, height: 96)
-        return UIGraphicsImageRenderer(size: s, format: fmt).image { _ in i.draw(in: CGRect(origin: .zero, size: s)) }
+        guard let (d, _) = try? await net.data(for: req), let cg = thumb(d, maxPx: 96) else { return nil }
+        return UIImage(cgImage: cg)
     }
 
     /// "2026-11-16T17:32" -> "5:32"
@@ -134,17 +151,17 @@ enum PostalAPI {
         let mlat = keys ? "24.50" : "25.77", mlon = keys ? "-81.80" : "-80.13"
         async let mj = json("https://marine-api.open-meteo.com/v1/marine?latitude=\(mlat)&longitude=\(mlon)"
             + "&current=sea_surface_temperature&timezone=America%2FNew_York")
-        async let pm = palm()
         let aspect: CGFloat = family == .systemMedium ? 2.12 : 1.0
         var img: UIImage? = nil
         if let p = p { img = await photo(p, aspect: aspect) }
         let f = await fj, m = await mj
+        let pmImg = await palm()
 
         var temp: Int? = nil, sunset: String? = nil, sea: Int? = nil
         if let c = f?["current"] as? [String: Any], let t = c["temperature_2m"] as? Double { temp = Int(t.rounded()) }
         if let d = f?["daily"] as? [String: Any] { sunset = clock((d["sunset"] as? [String])?.first) }
         if let c = m?["current"] as? [String: Any], let t = c["sea_surface_temperature"] as? Double { sea = Int((t * 9 / 5 + 32).rounded()) }   // llega en °C
-        return PostalEntry(date: Date(), postal: p, image: img, palm: await pm,
+        return PostalEntry(date: Date(), postal: p, image: img, palm: pmImg,
                            tempF: temp, seaF: sea, sunset: sunset, isPlaceholder: false)
     }
 }
