@@ -135,6 +135,134 @@
       }
     },
     {
+      "id": "lujo-16-contratos-miami-dade-nov-2-8",
+      "scope": "miami",
+      "tema": "casa",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-16",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-mb-playa-edificios.jpg",
+      "foto_alt": "Playa de Miami Beach con edificios de condos al fondo",
+      "foto_pie": "Condos frente al mar en Miami Beach.",
+      "foto_pie_en": "Oceanfront condos in Miami Beach.",
+      "fuentes": [
+        {
+          "n": "The Real Deal · reporte Eklund-Gomes (Douglas Elliman), 2 al 8 de noviembre",
+          "u": "https://therealdeal.com/miami/2026/11/09/miami-beach-condos-lead-contract-activity-in-miami-dade/"
+        },
+        {
+          "n": "MIAMI Realtors · estadísticas de septiembre de 2026",
+          "u": "https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/"
+        },
+        {
+          "n": "Cushman & Wakefield · oficinas en Miami, tercer trimestre",
+          "u": "https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office"
+        },
+        {
+          "n": "Commercial Observer · reporte de oficinas de Savills",
+          "u": "https://commercialobserver.com/2026/10/miami-dade-office-q3/"
+        },
+        {
+          "n": "Colliers · mercado industrial de Miami-Dade, tercer trimestre",
+          "u": "https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-16T11:25:00-05:00",
+      "es": {
+        "etiqueta": "REAL ESTATE",
+        "titulo": "16 contratos de lujo en una semana: lo que dicen del mercado de Miami-Dade, de la casa al local comercial",
+        "bajada": "Entre el 2 y el 8 de noviembre se firmaron 16 contratos de $4 millones o más, cinco más que la semana anterior. Detrás de la cifra hay dos mercados de vivienda muy distintos y un comercio con poco espacio libre.",
+        "toca": [
+          "Casas: hay poca oferta. Con 5.1 meses de inventario, MIAMI Realtors lo considera un mercado de vendedores.",
+          "Condos: hay más donde escoger. Con 12.3 meses de inventario, es un mercado de compradores.",
+          "Locales comerciales: apenas un 3% está vacío en Miami-Dade."
+        ],
+        "cuerpo": [
+          "El segmento de lujo de Miami-Dade cerró la primera semana de noviembre con 16 contratos firmados, frente a 11 la semana anterior, según el reporte semanal del equipo Eklund-Gomes de Douglas Elliman, publicado por [The Real Deal](https://therealdeal.com/miami/2026/11/09/miami-beach-condos-lead-contract-activity-in-miami-dade/). El conteo incluye casas y condos listados en $4 millones o más: diez casas y seis condos.",
+          "El contrato más caro fue un condo frente al mar en el Surf Club, en Collins Avenue, de $21.9 millones. Le siguieron un condo en Fisher Island, de $18.9 millones, y una casa en la SW 69 Avenue, en Miami, de $13.8 millones. Los condos tardaron más en encontrar comprador: 208 días a la venta en promedio, contra 104 de las casas.",
+          "## Un récord en la cima",
+          "La semana encaja en un año fuera de serie para el lujo. Hasta septiembre, Miami-Dade sumaba 24 ventas de $30 millones o más, por encima de las 21 de todo 2025, y al ritmo actual cerraría el año con unas 32, según [MIAMI Realtors](https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/). «El lujo extremo en el sur de la Florida está en auge», resumió su presidente de junta, Alfredo Pujol.",
+          "## Casas y condos: dos mercados",
+          "Fuera del lujo, el condado vive dos realidades. La casa unifamiliar se vendió en septiembre a una mediana de $692,000, un 4.06% más que hace un año, con 5.1 meses de inventario y 41 días de la lista al contrato. El condo, en cambio, bajó levemente, a $417,090, y tiene 12.3 meses de inventario. Con esas cifras, MIAMI Realtors califica el de casas como un mercado de vendedores y el de condos como uno de compradores. Las ventas totales de septiembre fueron 1,733, un 2% menos que un año antes.",
+          "## El lado comercial",
+          "Las oficinas tienen la menor vacancia en seis años, 13.9%, según [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills ubica la renta promedio que se pide en $68.50 por pie cuadrado al año, un 8.4% más que hace un año, de acuerdo con [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Los locales comerciales casi no tienen espacio libre, con una vacancia cercana al 3%, y en lo industrial la vacancia se mantuvo en 7.7% en el tercer trimestre, mientras se entregaban más de 1.4 millones de pies cuadrados de bodegas nuevas, según [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
+        ]
+      },
+      "en": {
+        "etiqueta": "REAL ESTATE",
+        "titulo": "16 luxury contracts in one week: what they say about Miami-Dade’s market, from homes to storefronts",
+        "bajada": "Between Nov. 2 and Nov. 8, buyers signed 16 contracts of $4 million or more, five more than the week before. Behind the number are two very different housing markets and commercial space that is hard to find.",
+        "toca": [
+          "Houses: supply is tight. At 5.1 months of inventory, MIAMI Realtors calls it a seller’s market.",
+          "Condos: more to choose from. At 12.3 months of inventory, it’s a buyer’s market.",
+          "Retail space: only about 3% sits empty in Miami-Dade."
+        ],
+        "cuerpo": [
+          "Miami-Dade’s luxury segment closed the first week of November with 16 signed contracts, up from 11 the week before, according to the weekly report by Douglas Elliman’s Eklund-Gomes team, published by [The Real Deal](https://therealdeal.com/miami/2026/11/09/miami-beach-condos-lead-contract-activity-in-miami-dade/). The count covers homes and condos asking $4 million and up: ten houses and six condos.",
+          "The priciest contract was an oceanfront condo at the Surf Club on Collins Avenue, at $21.9 million. Next came a Fisher Island condo at $18.9 million and a house on SW 69th Avenue in Miami at $13.8 million. Condos took longer to find a buyer: 208 days on the market on average, versus 104 for houses.",
+          "## A record at the top",
+          "The week fits a standout year for luxury. Through September, Miami-Dade had 24 sales of $30 million or more, above the 21 of all of 2025, and at the current pace would close the year with about 32, according to [MIAMI Realtors](https://www.miamirealtors.com/2026/10/16/miami-dade-breaks-annual-record-for-30-million-plus-home-sales-in-just-nine-months/). “South Florida ultra luxury real estate is booming,” said its board chairman, Alfredo Pujol.",
+          "## Houses and condos: two markets",
+          "Beyond luxury, the county lives two realities. The single-family home sold in September at a median of $692,000, up 4.06% from a year earlier, with 5.1 months of inventory and 41 days from listing to contract. The condo, by contrast, slipped slightly to $417,090 and has 12.3 months of inventory. With those figures, MIAMI Realtors classifies houses as a seller’s market and condos as a buyer’s market. Total September sales were 1,733, down 2% from a year earlier.",
+          "## The commercial side",
+          "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
+        ]
+      },
+      "ultima": 1
+    },
+    {
+      "id": "pinecrest-puente-peatonal-canal-c2",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-16",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-canal-puente-baranda.jpg",
+      "foto_alt": "Un canal de Miami visto desde la baranda de un puente, con un sendero verde en la orilla",
+      "foto_pie": "Foto de archivo: un canal de Miami visto desde un puente.",
+      "foto_pie_en": "Archive photo: a Miami canal seen from a bridge.",
+      "fuentes": [
+        {
+          "n": "Miami Today · FYI Miami, 12 de noviembre",
+          "u": "https://www.miamitodaynews.com/2026/11/11/fyi-miami-november-12-2026/"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-16T11:25:00-05:00",
+      "es": {
+        "etiqueta": "PINECREST",
+        "titulo": "Pinecrest tendrá un puente para caminar sobre el canal C-2, y las obras empiezan antes de fin de año",
+        "bajada": "El Village convertirá un puente de servicios que ya existe en la SW 62 Avenue en un paso peatonal. El condado pondría parte del dinero.",
+        "toca": [
+          "El puente está en la SW 62 Avenue, sobre el canal C-2.",
+          "Las obras deben empezar antes de que termine el año."
+        ],
+        "cuerpo": [
+          "El canal C-2 tendrá un cruce más para quienes caminan. El Village de Pinecrest convertirá el puente de servicios de la SW 62 Avenue sobre el canal C-2 en un puente peatonal, con obras que deben arrancar antes de fin de año, según contó [Miami Today](https://www.miamitodaynews.com/2026/11/11/fyi-miami-november-12-2026/).",
+          "Un comité del condado vota esta semana un acuerdo para aportar hasta $250,000 a la obra, con dinero que se recauda por impacto en la movilidad."
+        ]
+      },
+      "en": {
+        "etiqueta": "PINECREST",
+        "titulo": "Pinecrest is getting a walking bridge over the C-2 canal, and work starts before year’s end",
+        "bajada": "The Village will turn an existing utility bridge at SW 62nd Avenue into a pedestrian crossing. The county would cover part of the cost.",
+        "toca": [
+          "The bridge is at SW 62nd Avenue, over the C-2 canal.",
+          "Work is set to start before the end of the year."
+        ],
+        "cuerpo": [
+          "The C-2 canal is getting one more crossing for people on foot. The Village of Pinecrest will convert the utility bridge at SW 62nd Avenue over the C-2 canal into a pedestrian bridge, with work set to start by year’s end, [Miami Today](https://www.miamitodaynews.com/2026/11/11/fyi-miami-november-12-2026/) reported.",
+          "A county committee votes this week on an agreement to provide up to $250,000 for the work, from mobility impact fees."
+        ]
+      },
+      "ultima": 2
+    },
+    {
       "id": "celia-cruz-salon-fama-rock-and-roll",
       "scope": "miami",
       "tema": "ciudad",
@@ -207,7 +335,7 @@
           "She died in 2003, and Miami said goodbye by the thousands. The city hasn't forgotten: on Oct. 21, what would have been her 101st birthday, it unveiled Plaza Azúcar, a park with a statue of her at 650 Beacom Boulevard in Little Havana. Construction starts in January 2027, Commissioner Ralph Rosado, who is behind the project, told [Diario Las Américas](https://www.diariolasamericas.com/cultura/miami-anuncia-un-parque-dedicado-celia-cruz-la-pequena-habana-n5404049)."
         ]
       },
-      "ultima": 1
+      "ultima": 3
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -460,7 +588,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 5
+      "ultima": 7
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
@@ -806,7 +934,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 11
+      "ultima": 13
     },
     {
       "id": "microsoft-365-caida-mundial-outlook",
@@ -907,7 +1035,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-13T09:40:00-05:00",
-      "ultima": 6
+      "ultima": 8
     },
     {
       "id": "e1-miami-gp-botes-electricos-final",
@@ -969,7 +1097,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-15T09:00:00-05:00",
-      "ultima": 2
+      "ultima": 4
     },
     {
       "id": "dolphins-colts-24-22-indianapolis",
@@ -978,7 +1106,7 @@
       "hamaca": false,
       "muelle": false,
       "destacada": false,
-      "ultima": 3,
+      "ultima": 5,
       "fecha": "2026-11-15",
       "autor": "Yolaxys Alvarez",
       "fuentes": [
@@ -1085,7 +1213,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-13T09:30:00-05:00",
-      "ultima": 7
+      "ultima": 9
     },
     {
       "id": "robots-delivery-aceras-ordenanza",
@@ -1183,7 +1311,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "ultima": 10
+      "ultima": 12
     },
     {
       "id": "obamacare-2027-florida",
@@ -1993,7 +2121,7 @@
           "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
         }
       ],
-      "ultima": 8
+      "ultima": 10
     },
     {
       "hamaca": false,
@@ -3847,7 +3975,7 @@
           "u": "https://miamiwonderland.com/faqs/"
         }
       ],
-      "ultima": 9
+      "ultima": 11
     },
     {
       "id": "luces-navidad-miami-2026",
@@ -5329,7 +5457,7 @@
       "foto_pie_en": "File photo.",
       "desarrollo": true,
       "actualizada": "2026-11-15T01:25:00-05:00",
-      "ultima": 4,
+      "ultima": 6,
       "es": {
         "etiqueta": "ÚLTIMA HORA",
         "titulo": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
