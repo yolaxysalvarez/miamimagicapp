@@ -228,36 +228,70 @@
       "foto_pie_en": "Archive photo: a Miami canal seen from a bridge.",
       "fuentes": [
         {
-          "n": "Miami Today · FYI Miami, 12 de noviembre",
-          "u": "https://www.miamitodaynews.com/2026/11/11/fyi-miami-november-12-2026/"
+          "n": "Miami-Dade County · Memorando del acuerdo con Pinecrest (expediente 261879)",
+          "u": "https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261879.pdf"
+        },
+        {
+          "n": "Village of Pinecrest · Plan estratégico 2026-2031",
+          "u": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-council/documents/strategic-plan-2026-31-final.pdf"
+        },
+        {
+          "n": "Village of Pinecrest · Ludlam Road Shared Use Path",
+          "u": "https://www.pinecrest-fl.gov/Government/Manager/Capital-Improvement-Projects/Ludlam-Road-Shared-Use-Path"
+        },
+        {
+          "n": "Village of Pinecrest · Plan maestro de transporte (2018)",
+          "u": "https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-manager/documents/transportation-master-plan_1.pdf"
+        },
+        {
+          "n": "Village of Pinecrest · Puente de Red Road sobre el Snapper Creek",
+          "u": "https://www.pinecrest-fl.gov/Government/Communications-Division/News/Miami-Dade-County-Red-Rd.Snapper-Creek-Bridge-Project-Update"
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-16T11:25:00-05:00",
+      "actualizada": "2026-11-16T11:35:00-05:00",
       "es": {
         "etiqueta": "PINECREST",
-        "titulo": "Pinecrest tendrá un puente para caminar sobre el canal C-2, y las obras empiezan antes de fin de año",
-        "bajada": "El Village convertirá un puente de servicios que ya existe en la SW 62 Avenue en un paso peatonal. El condado pondría parte del dinero.",
+        "titulo": "Pinecrest tendrá un puente para caminar sobre el canal C-2 en Ludlam Road, el cruce que le faltaba a su red de senderos",
+        "bajada": "El Village convertirá un puente de servicios de la SW 67 Avenue en un paso peatonal. El condado pondría hasta $250,000, y la obra arrancaría el 31 de diciembre.",
         "toca": [
-          "El puente está en la SW 62 Avenue, sobre el canal C-2.",
-          "Las obras deben empezar antes de que termine el año."
+          "El puente está en la SW 67 Avenue (Ludlam Road), sobre el canal C-2, el Snapper Creek.",
+          "Si el condado aprueba el dinero, la construcción arrancaría el 31 de diciembre de 2026.",
+          "Más al este, el puente de Red Road sobre el mismo canal está en obras hasta abril."
         ],
         "cuerpo": [
-          "El canal C-2 tendrá un cruce más para quienes caminan. El Village de Pinecrest convertirá el puente de servicios de la SW 62 Avenue sobre el canal C-2 en un puente peatonal, con obras que deben arrancar antes de fin de año, según contó [Miami Today](https://www.miamitodaynews.com/2026/11/11/fyi-miami-november-12-2026/).",
-          "Un comité del condado vota esta semana un acuerdo para aportar hasta $250,000 a la obra, con dinero que se recauda por impacto en la movilidad."
+          "Ludlam Road tendrá un cruce a pie sobre el canal C-2. El Village de Pinecrest convertirá el puente de servicios de la SW 67 Avenue en un puente peatonal, y el condado aportaría hasta $250,000. Según el [memorando de Miami-Dade](https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261879.pdf), fechado el 12 de noviembre, la construcción arrancaría el 31 de diciembre de 2026.",
+          "El acuerdo pasa primero por el comité de Infraestructura, Innovación y Tecnología de la Comisión y después por el pleno. El dinero sale de las tarifas de impacto de movilidad, el cargo que paga la construcción nueva para costear calles y transporte. El condado lo entrega como reembolso, contra facturas pagadas al contratista, y Pinecrest cubre el resto de la obra y cualquier sobrecosto.",
+          "## Por qué ahí",
+          "El canal C-2 corre por el borde norte de Pinecrest. El [plan de transporte del Village](https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-manager/documents/transportation-master-plan_1.pdf), de 2018, reconoce que sus dos senderos de norte a sur van por los extremos, en la SW 57 Avenue y en la US-1, y que el centro del municipio quedó sin servir.",
+          "Ludlam Road es la respuesta a ese hueco. Pinecrest construye un [sendero de 8 pies](https://www.pinecrest-fl.gov/Government/Manager/Capital-Improvement-Projects/Ludlam-Road-Shared-Use-Path) a lo largo de la SW 67 Avenue, desde el canal hasta la SW 136 Street, separado del tráfico. Su [plan estratégico 2026-2031](https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-council/documents/strategic-plan-2026-31-final.pdf) apunta a enlazarlo en 2027 con el Snapper Creek Trail, que lleva al Underline, mientras el condado trabaja para seguir el sendero al norte del canal hasta el Underline y el Ludlam Trail.",
+          "Ese sendero termina en la orilla sur del canal, y el puente es la pieza que lo cruza. El condado lo define como un paso dedicado a los peatones, para mejorar la seguridad y la conexión de vecinos y visitantes.",
+          "En esa misma esquina, el plan del Village contempla un pequeño parque frente al agua para 2027, en un terreno público sin uso junto al canal.",
+          "## Mientras tanto, en Red Road",
+          "Más al este, el puente de Red Road sobre el Snapper Creek está en obras: el condado lo rehabilita de [noviembre de 2026 a abril de 2027](https://www.pinecrest-fl.gov/Government/Communications-Division/News/Miami-Dade-County-Red-Rd.Snapper-Creek-Bridge-Project-Update), y el Village avisó que las rutas para peatones pueden ajustarse por seguridad.",
+          "Corrección: una versión anterior de esta nota ubicaba el puente en la SW 62 Avenue. Según el condado, está en la SW 67 Avenue."
         ]
       },
       "en": {
         "etiqueta": "PINECREST",
-        "titulo": "Pinecrest is getting a walking bridge over the C-2 canal, and work starts before year’s end",
-        "bajada": "The Village will turn an existing utility bridge at SW 62nd Avenue into a pedestrian crossing. The county would cover part of the cost.",
+        "titulo": "Pinecrest is getting a walking bridge over the C-2 canal on Ludlam Road, the crossing its trail network was missing",
+        "bajada": "The Village will turn a utility bridge at SW 67th Avenue into a pedestrian crossing. The county would put in up to $250,000, and work would start Dec. 31.",
         "toca": [
-          "The bridge is at SW 62nd Avenue, over the C-2 canal.",
-          "Work is set to start before the end of the year."
+          "The bridge is at SW 67th Avenue (Ludlam Road), over the C-2 canal, Snapper Creek.",
+          "If the county approves the money, construction would start Dec. 31, 2026.",
+          "Farther east, the Red Road bridge over the same canal is under repair through April."
         ],
         "cuerpo": [
-          "The C-2 canal is getting one more crossing for people on foot. The Village of Pinecrest will convert the utility bridge at SW 62nd Avenue over the C-2 canal into a pedestrian bridge, with work set to start by year’s end, [Miami Today](https://www.miamitodaynews.com/2026/11/11/fyi-miami-november-12-2026/) reported.",
-          "A county committee votes this week on an agreement to provide up to $250,000 for the work, from mobility impact fees."
+          "Ludlam Road is getting a walking crossing over the C-2 canal. The Village of Pinecrest will convert the utility bridge at SW 67th Avenue into a pedestrian bridge, and the county would contribute up to $250,000. Construction would start Dec. 31, 2026, according to a [Miami-Dade memo](https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261879.pdf) dated Nov. 12.",
+          "The agreement goes first to the Commission's Infrastructure, Innovation and Technology Committee, then to the full board. The money comes from mobility impact fees, the charge new construction pays to fund roads and transit. The county pays it back against paid contractor invoices, and Pinecrest covers the rest of the project and any overruns.",
+          "## Why there",
+          "The C-2 canal runs along Pinecrest's northern edge. The Village's [2018 transportation plan](https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-manager/documents/transportation-master-plan_1.pdf) acknowledges that its two north-south trails run along the edges, on SW 57th Avenue and US-1, leaving the center of town underserved.",
+          "Ludlam Road is the answer to that gap. Pinecrest is building an [8-foot path](https://www.pinecrest-fl.gov/Government/Manager/Capital-Improvement-Projects/Ludlam-Road-Shared-Use-Path) along SW 67th Avenue, from the canal to SW 136th Street, separated from traffic. Its [2026-2031 strategic plan](https://www.pinecrest-fl.gov/files/sharedassets/village/v/1/government/village-council/documents/strategic-plan-2026-31-final.pdf) aims to link it in 2027 to the Snapper Creek Trail, which leads to The Underline, while the county works to carry the path north of the canal to The Underline and the Ludlam Trail.",
+          "That path ends at the canal's south bank, and the bridge is the piece that crosses it. The county describes it as a dedicated pedestrian crossing meant to improve safety and connectivity for residents and visitors.",
+          "At that same corner, the Village plan calls for a small waterfront park by 2027, on unused public land next to the canal.",
+          "## Meanwhile, on Red Road",
+          "Farther east, the Red Road bridge over Snapper Creek is under repair: the county is rehabilitating it from [November 2026 to April 2027](https://www.pinecrest-fl.gov/Government/Communications-Division/News/Miami-Dade-County-Red-Rd.Snapper-Creek-Bridge-Project-Update), and the Village warned that pedestrian routes may be adjusted for safety.",
+          "Correction: An earlier version of this story placed the bridge at SW 62nd Avenue. According to the county, it is at SW 67th Avenue."
         ]
       },
       "ultima": 2
