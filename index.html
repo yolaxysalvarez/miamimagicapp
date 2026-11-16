@@ -2852,6 +2852,8 @@ body.hm-open .mm-fsearch{opacity:0;pointer-events:none;}
 ::-webkit-scrollbar-track{background:transparent;}
 ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--coral),var(--teal));border-radius:10px;}
 ::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--coral2),var(--teal));}
+/* en el teléfono no hay barra fija: solo en computadora (mouse) */
+@media (hover:none),(pointer:coarse){::-webkit-scrollbar{width:0!important;height:0!important;display:none!important;background:transparent!important}html,body{scrollbar-width:none}}
 *{scrollbar-width:thin;scrollbar-color:var(--coral) transparent;}
 @keyframes hmDrawerSlide{from{opacity:0;transform:translateX(-100%)}to{opacity:1;transform:translateX(0)}}
 @keyframes hmItemIn{from{opacity:0;transform:translateX(-16px)}to{opacity:1;transform:translateX(0)}}
