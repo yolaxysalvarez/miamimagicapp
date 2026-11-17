@@ -1225,12 +1225,12 @@ function list(){
   if(ST.casa)return a.filter(function(n){return isCC(n)||n.cc});
   if(ST.ky)return a.filter(function(n){return n.scope==='cayos'||n.ambos});
   if(ST.hi)return a.filter(isHi);
-  a=a.filter(function(n){var sc=n.scope||'miami';return !n.hamaca&&!n.muelle&&!isHi(n)&&(!isCC(n)||n.general)&&(ST.scope==='cayos'?(sc==='cayos'||n.ambos):sc!=='cayos')});
+  a=a.filter(function(n){var sc=n.scope||'miami';return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)&&(ST.scope==='cayos'?(sc==='cayos'||n.ambos):sc!=='cayos')});
   if(ST.tema!=='todo')a=a.filter(function(n){return n.tema===ST.tema});
   return a;
 }
 function otros(){
-  var a=(DATA.notas||[]).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))}).filter(function(n){return !n.hamaca&&!n.muelle&&!isHi(n)&&(!isCC(n)||n.general)});
+  var a=(DATA.notas||[]).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))}).filter(function(n){return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)});
   var grp=[];
   if(ST.ky||ST.hi)grp.push(['miami',a.filter(function(n){return (n.scope||'miami')!=='cayos'})]);
   else if(SEC()){grp.push(['miami',a.filter(function(n){return (n.scope||'miami')!=='cayos'})]);grp.push(['cayos',a.filter(function(n){return n.scope==='cayos'||n.ambos})])}
@@ -1446,7 +1446,7 @@ function colB(tt,cls,arr,go){if(!arr.length)return '';var n=arr[0],f=F(n);
    +arr.slice(1,4).map(rowS).join('')+'</div>'}
 function renderHome(lead,rest){
   var hm=HOME();document.body.classList.toggle('home',hm);if(!hm)return;
-  var pk=(DATA.notas||[]).filter(function(n){return n.ultima&&n!==lead&&!isHi(n)}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,6),inU={};pk.forEach(function(n){inU[n.id]=1});
+  var pk=(DATA.notas||[]).filter(function(n){return n.ultima&&n!==lead}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,6),inU={};pk.forEach(function(n){inU[n.id]=1});
   var tb=(DATA.notas||[]).filter(function(n){return n.tambien&&n!==lead&&!inU[n.id]}).sort(function(a,b){return a.tambien-b.tambien}).slice(0,3);tb.forEach(function(n){inU[n.id]=1});
   var ot=document.getElementById('tmb');if(ot)ot.remove();
   if(tb.length===3)document.getElementById('leadBox').insertAdjacentHTML('beforeend','<div id="tmb"><span>'+(L==='en'?'ALSO TODAY':'TAMBIÉN HOY')+'</span>'+tb.map(function(n){return '<a href="'+href(n)+'"><span class="eb">'+eb(n)+'</span><b>'+esc(F(n).titulo)+'</b></a>'}).join('')+'</div>');
