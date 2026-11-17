@@ -55,6 +55,100 @@
   "videos": [],
   "notas": [
     {
+      "id": "ebikes-scooters-aceras-ciudad-miami-multa",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-17",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-brickell-aceras-cruce.jpg",
+      "foto_alt": "Cruce peatonal y aceras de Brickell vistos desde arriba, con edificios y un mural de colores al fondo",
+      "foto_pie": "Aceras y cruces de Brickell, en la Ciudad de Miami.",
+      "foto_pie_en": "Sidewalks and crosswalks in Brickell, City of Miami.",
+      "fuentes": [
+        {
+          "n": "Miami Today · Las reglas de la ordenanza",
+          "u": "https://www.miamitodaynews.com/2026/10/28/miami-banishes-e-bikes-motorized-scooters-from-sidewalks/"
+        },
+        {
+          "n": "NBC6 · La aprobación del 22 de octubre",
+          "u": "https://www.nbcmiami.com/news/local/miami-commission-e-scooter-rules-penalties-animal-cruelty/3876286/"
+        },
+        {
+          "n": "Caribbean National Weekly · Datos de Miami Fire-Rescue",
+          "u": "https://www.caribbeannationalweekly.com/posts/miami-bans-e-bikes-and-scooters-from-public-sidewalks"
+        },
+        {
+          "n": "Alcaldesa Eileen Higgins · Campaña en Instagram",
+          "u": "https://www.instagram.com/mayoreileenhiggins/"
+        },
+        {
+          "n": "Ciudad de Miami Beach · Micromovilidad",
+          "u": "https://www.miamibeachfl.gov/micromobility/"
+        },
+        {
+          "n": "Miami-Dade · Ordenanza del condado en la agenda del 17 de noviembre",
+          "u": "https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261988.pdf"
+        },
+        {
+          "n": "Miami-Dade · Memorando sobre la renovación de las reglas",
+          "u": "https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261340.pdf"
+        },
+        {
+          "n": "Jorgensen Law · El veto a la ley estatal SB 382",
+          "u": "https://jorgensenlawoffice.com/florida-e-bike-laws/"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "EN LA CALLE",
+        "titulo": "Se acabó la acera para los scooters: la Ciudad de Miami ya multa con $100",
+        "bajada": "Desde noviembre, las e-bikes y los scooters eléctricos van por el carril de bicicletas o por la calle. Por la acera, solo caminando a su lado.",
+        "toca": [
+          "Por la acera puedes ir caminando con el aparato, pero no montado.",
+          "Los menores de 16 años no pueden manejarlos en las calles de la ciudad.",
+          "Lleva siempre una identificación con foto."
+        ],
+        "cuerpo": [
+          "En la Ciudad de Miami, la acera volvió a ser de los peatones. Desde la primera semana de noviembre rige la ordenanza que la Comisión aprobó por unanimidad el [22 de octubre](https://www.nbcmiami.com/news/local/miami-commission-e-scooter-rules-penalties-animal-cruelty/3876286/), y quien vaya montado en una e-bike o un scooter eléctrico por la acera se expone a una multa de $100. Según [Miami Today](https://www.miamitodaynews.com/2026/10/28/miami-banishes-e-bikes-motorized-scooters-from-sidewalks/), cada infracción, y cada día en que siga, cuenta por separado.",
+          "El lugar de estos aparatos es el carril de bicicletas o, donde no lo haya, las calles de la ciudad con límite de 30 millas por hora o menos. Ahí no pueden pasar de 20 mph.",
+          "## Lo que más se olvida",
+          "Estacionarlos en la acera solo se permite en los lugares marcados, sin bloquear entradas ni salidas y dejando al menos tres pies libres para los que caminan. Tampoco se puede llevar a otra persona, salvo que el aparato esté hecho para dos; un adulto sí puede llevar a un niño bien sujeto y con casco. Con los menores de 16, el niño o sus padres pueden recibir primero una advertencia y material educativo.",
+          "En la campaña que publicó la alcaldesa [Eileen Higgins](https://www.instagram.com/mayoreileenhiggins/) con la Policía de Miami, la escena correcta es una mujer que cruza la calle a pie, con el scooter al lado. El jefe de policía, Edwin Lopez, ha dicho que los agentes empezarán por educar y que la multa es el último recurso.",
+          "## Por qué ahora",
+          "Miami Fire-Rescue contó 1,380 incidentes con estos aparatos entre septiembre de 2024 y septiembre de 2026, según datos que recoge [Caribbean National Weekly](https://www.caribbeannationalweekly.com/posts/miami-bans-e-bikes-and-scooters-from-public-sidewalks). En 418 casos hubo que llevar a alguien al hospital, y al menos 86 fueron lesiones en la cabeza.",
+          "## Dónde aplica, y dónde no",
+          "Las reglas valen en las calles y aceras de la Ciudad de Miami, no en las vías del condado ni del estado. Miami Beach tiene las suyas, y en sus aceras [tampoco se permiten](https://www.miamibeachfl.gov/micromobility/) los aparatos motorizados. El condado, por su parte, tiene hoy en la agenda de su Comisión [restablecer sus propias reglas](https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261988.pdf), que [vencieron por su plazo de dos años](https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261340.pdf).",
+          "A nivel estatal no hay límite de velocidad cerca de los peatones: la ley que lo fijaba en 10 mph pasó por la Legislatura, pero el gobernador [la vetó](https://jorgensenlawoffice.com/florida-e-bike-laws/) el 25 de junio."
+        ]
+      },
+      "en": {
+        "etiqueta": "ON THE STREET",
+        "titulo": "No more sidewalk for scooters: the City of Miami now fines riders $100",
+        "bajada": "Since November, e-bikes and electric scooters go in the bike lane or on the street. On the sidewalk, only walking beside them.",
+        "toca": [
+          "You may walk your device on the sidewalk, but not ride it.",
+          "Anyone under 16 may not ride them on city streets.",
+          "Always carry a photo ID."
+        ],
+        "cuerpo": [
+          "In the City of Miami, the sidewalk belongs to pedestrians again. Since the first week of November, the ordinance the Commission passed unanimously on [October 22](https://www.nbcmiami.com/news/local/miami-commission-e-scooter-rules-penalties-animal-cruelty/3876286/) is in force, and anyone riding an e-bike or electric scooter on the sidewalk faces a $100 fine. According to [Miami Today](https://www.miamitodaynews.com/2026/10/28/miami-banishes-e-bikes-motorized-scooters-from-sidewalks/), each violation, and each day it continues, counts separately.",
+          "These devices belong in the bike lane or, where there isn't one, on city streets with a posted speed limit of 30 mph or less. There, they can't go faster than 20 mph.",
+          "## What people forget",
+          "Parking on the sidewalk is allowed only in marked spots, without blocking entrances or exits and leaving at least three feet clear for people walking. Carrying a passenger is also banned unless the device is built for two; an adult may carry a child who is securely attached and wearing a helmet. With riders under 16, the child or parents may first get a warning and safety materials.",
+          "In the campaign Mayor [Eileen Higgins](https://www.instagram.com/mayoreileenhiggins/) posted with the Miami Police Department, the right way is a woman crossing the street on foot, scooter at her side. Police Chief Edwin Lopez has said officers will start with education, and that fines are a last resort.",
+          "## Why now",
+          "Miami Fire-Rescue counted 1,380 incidents involving these devices between September 2024 and September 2026, according to figures reported by [Caribbean National Weekly](https://www.caribbeannationalweekly.com/posts/miami-bans-e-bikes-and-scooters-from-public-sidewalks). In 418 cases someone had to be taken to the hospital, and at least 86 involved head injuries.",
+          "## Where it applies, and where it doesn't",
+          "The rules cover City of Miami streets and sidewalks, not county or state roads. Miami Beach has its own, and its sidewalks are [also off-limits](https://www.miamibeachfl.gov/micromobility/) to motorized devices. The county, meanwhile, has on today's Commission agenda a measure to [re-establish its own rules](https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261988.pdf), which [expired under their two-year sunset](https://www.miamidade.gov/govaction/legistarfiles/Matters/Y2026/261340.pdf).",
+          "Statewide, there's no speed limit near pedestrians: the bill that set it at 10 mph passed the Legislature, but the governor [vetoed it](https://jorgensenlawoffice.com/florida-e-bike-laws/) on June 25."
+        ]
+      },
+      "actualizada": "2026-11-17T10:41:00-05:00",
+      "ultima": 2
+    },
+    {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
       "scope": "cayos",
       "tema": "calle",
@@ -194,7 +288,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -259,7 +353,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:00:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -361,7 +455,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -437,7 +531,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:14:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -503,7 +597,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:30:00-05:00",
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -585,7 +679,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -657,7 +751,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -817,7 +911,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -899,7 +993,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -974,7 +1068,7 @@
           "She died in 2003, and Miami said goodbye by the thousands. The city hasn't forgotten: on Oct. 21, what would have been her 101st birthday, it unveiled Plaza Azúcar, a park with a statue of her at 650 Beacom Boulevard in Little Havana. Construction starts in January 2027, Commissioner Ralph Rosado, who is behind the project, told [Diario Las Américas](https://www.diariolasamericas.com/cultura/miami-anuncia-un-parque-dedicado-celia-cruz-la-pequena-habana-n5404049)."
         ]
       },
-      "ultima": 10,
+      "ultima": 11,
       "tambien": 2
     },
     {
