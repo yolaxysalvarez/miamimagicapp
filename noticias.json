@@ -2,12 +2,12 @@
   "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES). vence: fecha del evento (AAAA-MM-DD); pasada esa fecha la nota baja detrás de lo vigente en portada y secciones, y sigue en el archivo. Pasada la fecha de 'vence', el pedacito del evento se reescribe en pasado en la misma nota (preferencia de Yoly). El aviso automático «Este evento ya pasó» solo sale si la nota lleva aviso_vence: true.",
   "updated": "2026-11-08",
   "ultima_hora": {
-    "activa": false,
-    "nota": "mia-colision-ups-copa-calle-rodaje",
-    "es": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
-    "en": "UPS and Copa planes collide on a taxiway at Miami International Airport",
-    "desde": "2026-11-15T01:05:00-05:00",
-    "hasta": "2026-11-15T02:25:00-05:00"
+    "activa": true,
+    "nota": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
+    "es": "Vigilancia de inundaciones en Miami-Dade y Broward desde las 5 PM hasta el jueves",
+    "en": "Flood watch for Miami-Dade and Broward from 5 PM through Thursday",
+    "desde": "2026-11-17T08:00:00-05:00",
+    "hasta": "2026-11-19T19:00:00-05:00"
   },
   "cifras": [
     {
@@ -54,6 +54,71 @@
   ],
   "videos": [],
   "notas": [
+    {
+      "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-17",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-vigilancia-inundaciones-nov17.jpg",
+      "foto_mm": false,
+      "foto_alt": "Gráfico de la vigilancia de inundaciones del NWS para Miami-Dade y Broward sobre el skyline de Brickell visto a través de un vidrio con gotas de lluvia",
+      "foto_pie": "Vigilancia de inundaciones del NWS Miami: del martes a las 5 PM al jueves a las 7 PM.",
+      "foto_pie_en": "NWS Miami flood watch: Tuesday 5 PM through Thursday 7 PM.",
+      "desarrollo": true,
+      "fuentes": [
+        {
+          "n": "NWS Miami · Pronóstico y avisos para Miami",
+          "u": "https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639"
+        },
+        {
+          "n": "NWS Miami · Discusión del pronóstico",
+          "u": "https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0"
+        }
+      ],
+      "es": {
+        "etiqueta": "EL TIEMPO",
+        "titulo": "Hasta 10 pulgadas en algunos puntos: Miami-Dade y Broward, en vigilancia de inundaciones desde las 5 PM hasta el jueves",
+        "bajada": "El Servicio Nacional de Meteorología espera de 2 a 4 pulgadas de lluvia en tres días, con aguaceros que pueden caer una y otra vez sobre los mismos barrios. En la costa, las corrientes de resaca son peligrosas.",
+        "toca": [
+          "No cruces con el auto una calle inundada: según el NWS, un pie de agua en movimiento basta para arrastrar la mayoría de los autos.",
+          "Si vives en una zona baja, deja el auto en alto esta noche y revisa canaletas y desagües antes de las 5 PM.",
+          "No te metas al mar hasta el jueves: hay riesgo alto de corrientes de resaca.",
+          "¿Tu calle se inunda? Búscala en el [mapa de inundación por dirección](/noticias/mapa-inundacion-miami-dade-direccion)."
+        ],
+        "cuerpo": [
+          "Desde las 5 de la tarde de hoy y hasta las 7 de la noche del jueves, Miami-Dade y Broward están en vigilancia de inundaciones, según el [Servicio Nacional de Meteorología en Miami](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639). Se esperan de 2 a 4 pulgadas de lluvia, y en puntos aislados podrían caer hasta 10.",
+          "El riesgo está en la repetición. Un frente detenido al norte y aire muy húmedo que entra del oeste y del sur pueden traer tandas de aguaceros sobre los mismos barrios, y algunas tormentas, de acuerdo con los meteorólogos, dejarían de 1 a 2 pulgadas por hora. La oficina del NWS en Miami advierte en su [discusión del pronóstico](https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0) de un aumento del riesgo de inundación urbana en la costa este, y de que, si los aguaceros se repiten, podría haber inundaciones repentinas con impacto.",
+          "Vigilancia no es advertencia. La vigilancia significa que se dan las condiciones para que haya inundaciones; si el NWS emite una advertencia, es porque la inundación está ocurriendo o está por ocurrir.",
+          "## También en el mar",
+          "El viento del este sopla con ráfagas de más de 30 millas por hora, y hay aviso para embarcaciones pequeñas. En las playas de Miami-Dade y Broward el riesgo de corrientes de resaca es alto hasta el jueves en la noche. En los Cayos no rige la vigilancia de inundaciones, pero el mar sigue picado: lo contamos en [esta nota](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre).",
+          "Esta nota se actualizará si el NWS cambia el aviso."
+        ]
+      },
+      "en": {
+        "etiqueta": "WEATHER",
+        "titulo": "Up to 10 inches in spots: Miami-Dade and Broward under a flood watch from 5 PM through Thursday",
+        "bajada": "The National Weather Service expects 2 to 4 inches of rain over three days, with downpours that may hit the same neighborhoods again and again. Along the coast, rip currents are dangerous.",
+        "toca": [
+          "Don't drive through a flooded street: according to the NWS, a foot of moving water is enough to carry away most cars.",
+          "If you live in a low-lying area, park on higher ground tonight and check gutters and drains before 5 PM.",
+          "Stay out of the ocean through Thursday: the rip current risk is high.",
+          "Does your street flood? Look it up on the [flood map by address](/noticias/mapa-inundacion-miami-dade-direccion)."
+        ],
+        "cuerpo": [
+          "From 5 p.m. today through 7 p.m. Thursday, Miami-Dade and Broward are under a flood watch, according to the [National Weather Service in Miami](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639). Two to 4 inches of rain are expected, and isolated spots could see up to 10.",
+          "The risk is in the repetition. A front stalled to the north and very moist air sliding in from the west and south could bring rounds of downpours over the same neighborhoods, and some storms, according to forecasters, could drop 1 to 2 inches an hour. The NWS Miami office warns in its [forecast discussion](https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0) of an increased threat of urban flooding along the east coast and that, if heavy rain repeats, impactful flash flooding is possible.",
+          "A watch is not a warning. A watch means conditions are right for flooding; if the NWS issues a warning, flooding is happening or about to happen.",
+          "## Out on the water too",
+          "East winds are gusting above 30 mph, and a small craft advisory is in effect. Rip current risk is high on Miami-Dade and Broward beaches through Thursday night. The Keys are not under the flood watch, but seas remain rough: we cover it in [this story](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre).",
+          "This story will be updated if the NWS changes the alert."
+        ]
+      },
+      "actualizada": "2026-11-17T08:00:00-05:00",
+      "ultima": 1
+    },
     {
       "id": "faro-cape-florida-1836-historia",
       "scope": "miami",
@@ -154,7 +219,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -379,7 +444,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -451,7 +516,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 1
+      "ultima": 2
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -611,7 +676,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 9
+      "ultima": 8
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -693,7 +758,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 7
+      "ultima": 6
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -768,7 +833,7 @@
           "She died in 2003, and Miami said goodbye by the thousands. The city hasn't forgotten: on Oct. 21, what would have been her 101st birthday, it unveiled Plaza Azúcar, a park with a statue of her at 650 Beacom Boulevard in Little Havana. Construction starts in January 2027, Commissioner Ralph Rosado, who is behind the project, told [Diario Las Américas](https://www.diariolasamericas.com/cultura/miami-anuncia-un-parque-dedicado-celia-cruz-la-pequena-habana-n5404049)."
         ]
       },
-      "ultima": 8
+      "ultima": 7
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -1034,8 +1099,7 @@
           "u": "https://eyw.com/"
         }
       ],
-      "ambos": true,
-      "ultima": 6
+      "ambos": true
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
