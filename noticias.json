@@ -4,8 +4,8 @@
   "ultima_hora": {
     "activa": true,
     "nota": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
-    "es": "US-1 cerrada en ambos sentidos en Duck Key (milla 59): volcó un camión de gasolina",
-    "en": "US-1 closed both ways at Duck Key (MM 59) after a gasoline tanker overturned",
+    "es": "US-1 sigue cerrada en Grassy Key (milla 60) por un camión de gasolina volcado",
+    "en": "US-1 still closed at Grassy Key (MM 60) after a gasoline tanker overturned",
     "desde": "2026-11-17T09:30:00-05:00",
     "hasta": "2026-11-17T23:59:00-05:00"
   },
@@ -172,42 +172,56 @@
         {
           "n": "The Florida Villager · Respuesta de los bomberos en la milla 59",
           "u": "https://thefloridavillager.com/2026/11/tanker-truck-rollover-near-duck-key-mm-59/"
+        },
+        {
+          "n": "NBC6 · El incendio en Long Key y el chofer",
+          "u": "https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/"
+        },
+        {
+          "n": "WSVN · El traspaso del combustible",
+          "u": "https://wsvn.com/news/local/florida/us-1-tanker-crash-grassy-key/"
         }
       ],
       "desarrollo": true,
       "es": {
         "etiqueta": "ÚLTIMA HORA",
-        "titulo": "Cierran la US-1 en los dos sentidos en Duck Key: volcó un camión de gasolina y no hay hora para reabrir",
-        "bajada": "El camión iba lleno y está perdiendo combustible cerca de la milla 59. El Sheriff de Monroe advierte que el cierre puede durar casi todo el día.",
+        "titulo": "La US-1 sigue cerrada en Grassy Key: pasan a otro camión 8,500 galones de gasolina y no hay hora para reabrir",
+        "bajada": "El camión se volcó a las 6:30 AM cerca de la milla 60. Con la fila detenida, un auto se incendió en el puente de Long Key.",
         "toca": [
           "No hay otra ruta por tierra: si vas o vienes del Middle Keys, espera o pospón el viaje.",
           "Si quedas en la fila, no te bajes del auto ni te acerques al derrame.",
           "Revisa FL511 o las redes del Sheriff de Monroe antes de salir."
         ],
         "cuerpo": [
-          "La Overseas Highway está cerrada en los dos sentidos cerca de la milla 59, en Duck Key, desde temprano esta mañana. Un camión cisterna se volcó, y según la Oficina del Sheriff de Monroe, [no hay hora estimada para reabrir](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
+          "## Actualización · 11:38 AM",
+          "La carretera sigue cerrada en los dos sentidos. Según la Oficina del Sheriff de Monroe, el camión llevaba unos 8,500 galones de combustible y se volcó [hacia las 6:30 de la mañana cerca de la milla 60, en Grassy Key](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/). Los equipos están pasando la gasolina a otro camión cisterna, y el Sheriff mantiene el cierre por el riesgo de que los vapores se enciendan.",
+          "Mientras la fila seguía detenida, [un auto se incendió](https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/) cerca de la milla 64, en el puente de Long Key. El chofer del camión fue trasladado en helicóptero a un hospital de Miami, en estado crítico según la [respuesta de los bomberos de Monroe](https://thefloridavillager.com/2026/11/tanker-truck-rollover-near-duck-key-mm-59/).",
+          "El Sheriff irá publicando las novedades en sus redes, y la reapertura aparecerá también en FL511.",
+          "La Overseas Highway está cerrada en los dos sentidos cerca de la milla 59, junto a Duck Key, desde temprano esta mañana. Un camión cisterna se volcó, y según la Oficina del Sheriff de Monroe, [no hay hora estimada para reabrir](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
           "El camión iba lleno de gasolina y empezó a perder combustible sobre la carretera. Los agentes montaron un bloqueo total y, [según contó Local10](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/), avisan que el cierre puede durar la mayor parte del día.",
-          "Una persona fue trasladada en helicóptero a un hospital en tierra firme en estado crítico, de acuerdo con la [respuesta de los bomberos de Monroe](https://thefloridavillager.com/2026/11/tanker-truck-rollover-near-duck-key-mm-59/), que trabajan en el lugar junto con el Sheriff y un equipo especializado en el combustible.",
           "Esta nota se actualizará cuando reabran la carretera."
         ]
       },
       "en": {
         "etiqueta": "BREAKING",
-        "titulo": "US-1 closed both ways at Duck Key after a gasoline tanker overturns, with no time to reopen",
-        "bajada": "The truck was full and is leaking fuel near mile marker 59. The Monroe County Sheriff warns the closure could last most of the day.",
+        "titulo": "US-1 still closed at Grassy Key as crews move 8,500 gallons of gasoline to another truck, with no time to reopen",
+        "bajada": "The truck overturned at 6:30 a.m. near mile marker 60. With traffic stopped, a car caught fire on the Long Key Bridge.",
         "toca": [
           "There is no other road: if you're heading to or from the Middle Keys, wait or postpone the trip.",
           "If you're stuck in the line, stay in your car and keep away from the spill.",
           "Check FL511 or the Monroe County Sheriff's social media before you leave."
         ],
         "cuerpo": [
-          "The Overseas Highway has been closed in both directions near mile marker 59, at Duck Key, since early this morning. A tanker truck overturned, and according to the Monroe County Sheriff's Office, [there is no estimated time to reopen](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
+          "## Update · 11:38 a.m.",
+          "The highway remains closed in both directions. According to the Monroe County Sheriff's Office, the truck was carrying about 8,500 gallons of fuel and overturned [around 6:30 a.m. near mile marker 60, on Grassy Key](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/). Crews are transferring the gasoline to another tanker, and the Sheriff is keeping the road closed because of the risk of vapors igniting.",
+          "While traffic was stopped, [a car caught fire](https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/) near mile marker 64, on the Long Key Bridge. The truck driver was airlifted to a Miami hospital in critical condition, according to the [Monroe County Fire Rescue response](https://thefloridavillager.com/2026/11/tanker-truck-rollover-near-duck-key-mm-59/).",
+          "The Sheriff will post updates on social media, and the reopening will also show up on FL511.",
+          "The Overseas Highway has been closed in both directions near mile marker 59, by Duck Key, since early this morning. A tanker truck overturned, and according to the Monroe County Sheriff's Office, [there is no estimated time to reopen](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
           "The truck was full of gasoline and began leaking fuel onto the road. Deputies set up a full roadblock and, [as Local10 reported](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/), warn the closure could last most of the day.",
-          "One person was airlifted to a mainland hospital in critical condition, according to the [Monroe County Fire Rescue response](https://thefloridavillager.com/2026/11/tanker-truck-rollover-near-duck-key-mm-59/), working at the scene with the Sheriff's Office and a fuel response team.",
           "This story will be updated when the road reopens."
         ]
       },
-      "actualizada": "2026-11-17T09:30:00-05:00",
+      "actualizada": "2026-11-17T11:38:00-05:00",
       "ultima": 1
     },
     {
