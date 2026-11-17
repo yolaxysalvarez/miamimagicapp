@@ -1,5 +1,5 @@
 {
-  "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES). vence: fecha del evento (AAAA-MM-DD); pasada esa fecha la nota baja detrás de lo vigente en portada y secciones, y sigue en el archivo. Pasada la fecha de 'vence', la nota muestra sola el aviso «Este evento ya pasó» (aviso_vence: false lo apaga, por ejemplo en el tiempo). Si la nota tiene valor más allá del evento, se reescribe en pasado en la misma nota.",
+  "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES). vence: fecha del evento (AAAA-MM-DD); pasada esa fecha la nota baja detrás de lo vigente en portada y secciones, y sigue en el archivo. Pasada la fecha de 'vence', el pedacito del evento se reescribe en pasado en la misma nota (preferencia de Yoly). El aviso automático «Este evento ya pasó» solo sale si la nota lleva aviso_vence: true.",
   "updated": "2026-11-08",
   "ultima_hora": {
     "activa": false,
@@ -1607,38 +1607,36 @@
       "foto_pie_en": "Miami Beach's shoreline, where the polo field is set up.",
       "es": {
         "etiqueta": "DEPORTES",
-        "titulo": "Caballos sobre la arena de South Beach: el polo de playa ya se juega y el domingo corona campeón",
-        "bajada": "El Beach Polo World Cup disputa cuatro partidos por día, de viernes a domingo, junto a Collins Park, con entrada general gratis. La premiación es el domingo 15 por la tarde.",
+        "titulo": "Caballos sobre la arena de South Beach: así se jugó el polo de playa",
+        "bajada": "El Beach Polo World Cup disputó cuatro partidos por día, del viernes 13 al domingo 15, junto a Collins Park, con entrada general gratis. La premiación fue el domingo por la tarde.",
         "toca": [
-          "Dónde: en la arena, a la altura de las calles 21 y 22 y Collins Avenue, junto a Collins Park.",
-          "Viernes 13: partidos a la 1:00, 2:15, 3:30 y 4:30 PM. Sábado 14 y domingo 15: a las 12:30, 1:15, 2:30 y 4:00 PM.",
-          "La entrada general es gratis, según anunciaron los organizadores en sus redes; las carpas VIP son de pago y se reservan en [la página del torneo](https://miamibeachpolo.com/)."
+          "Se jugó en la arena, a la altura de las calles 21 y 22 y Collins Avenue, junto a Collins Park.",
+          "La entrada general fue gratis; las carpas VIP eran de pago, en [la página del torneo](https://miamibeachpolo.com/)."
         ],
         "cuerpo": [
-          "Cascos sobre arena en vez de césped, y el Atlántico a unos pasos. El Beach Polo World Cup se juega a partir de este viernes 13 de noviembre en Miami Beach, con cuatro partidos por día hasta el domingo, [según el programa oficial](https://miamibeachpolo.com/schedule).",
-          "## Lo que viene",
-          "El sorteo de los partidos se hizo el jueves en la noche, en la presentación de los equipos. El sábado, a las 2:00 PM, hay un partido de celebridades, y el domingo, a la misma hora, uno benéfico.",
-          "## Cuándo hay campeón",
-          "El domingo 15. Después del último partido, a las 4:45 PM, se entregan los premios, entre ellos el de jugador más valioso y el del mejor caballo.",
-          "Esta nota se actualizará con los resultados de cada jornada."
+          "Cascos sobre arena en vez de césped, y el Atlántico a unos pasos. El Beach Polo World Cup se jugó del viernes 13 al domingo 15 de noviembre en Miami Beach, con cuatro partidos por día, [según el programa oficial](https://miamibeachpolo.com/schedule).",
+          "## Celebridades, causa y arena",
+          "El sorteo de los partidos se hizo el jueves en la noche, en la presentación de los equipos. El sábado hubo un partido de celebridades, y el domingo, uno benéfico.",
+          "## El cierre del domingo",
+          "Después del último partido, el domingo por la tarde, se entregaron los premios, entre ellos el de jugador más valioso y el del mejor caballo.",
+          "El resultado de la final se sumará a esta nota cuando los organizadores lo publiquen."
         ]
       },
       "en": {
         "etiqueta": "SPORTS",
-        "titulo": "Horses on the sand of South Beach: beach polo is underway and a champion is crowned Sunday",
-        "bajada": "The Beach Polo World Cup plays four matches a day, Friday through Sunday, beside Collins Park, with free general admission. The awards ceremony is Sunday, Nov. 15, in the afternoon.",
+        "titulo": "Horses on the sand of South Beach: how the beach polo played out",
+        "bajada": "The Beach Polo World Cup played four matches a day, Friday the 13th through Sunday the 15th, beside Collins Park, with free general admission. The awards ceremony was Sunday afternoon.",
         "toca": [
-          "Where: on the sand at 21st and 22nd streets and Collins Avenue, beside Collins Park.",
-          "Friday, Nov. 13: matches at 1, 2:15, 3:30 and 4:30 p.m. Saturday, Nov. 14, and Sunday, Nov. 15: at 12:30, 1:15, 2:30 and 4 p.m.",
-          "General admission is free, organizers announced on social media; VIP tents are paid and booked on [the tournament's website](https://miamibeachpolo.com/)."
+          "It was played on the sand at 21st and 22nd streets and Collins Avenue, beside Collins Park.",
+          "General admission was free; VIP tents were paid, on [the tournament's website](https://miamibeachpolo.com/)."
         ],
         "cuerpo": [
-          "Hooves on sand instead of grass, with the Atlantic a few steps away. The Beach Polo World Cup is played starting this Friday, Nov. 13, in Miami Beach, with four matches a day through Sunday, [according to the official schedule](https://miamibeachpolo.com/schedule).",
-          "## What's ahead",
-          "The match draw was held Thursday night at the team presentation. On Saturday at 2 p.m. there is a celebrity match, and on Sunday at the same hour, a charity one.",
-          "## When there's a champion",
-          "Sunday, Nov. 15. After the last match, at 4:45 p.m., the awards are presented, including most valuable player and best playing pony.",
-          "This story will be updated with each day's results."
+          "Hooves on sand instead of grass, with the Atlantic a few steps away. The Beach Polo World Cup was played Friday, Nov. 13, through Sunday, Nov. 15, in Miami Beach, with four matches a day, [according to the official schedule](https://miamibeachpolo.com/schedule).",
+          "## Celebrities, a cause and sand",
+          "The match draw was held Thursday night at the team presentation. Saturday featured a celebrity match, and Sunday a charity one.",
+          "## Sunday's finish",
+          "After the last match on Sunday afternoon, the awards were presented, including most valuable player and best playing pony.",
+          "The final's result will be added to this story once the organizers publish it."
         ]
       },
       "fuentes": [
@@ -1652,7 +1650,7 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-13T09:30:00-05:00",
+      "actualizada": "2026-11-16T22:00:00-05:00",
       "vence": "2026-11-15"
     },
     {
@@ -2516,40 +2514,40 @@
       "foto_pie_en": "Key West at dusk, with Sunset Key in the distance.",
       "es": {
         "etiqueta": "KEY WEST",
-        "titulo": "Ostras sin límite frente al muelle: Key West estrena su Oyster Fest este sábado, y cada concha vuelve al mar",
-        "bajada": "El sábado 14 de noviembre, de 5 a 10 de la noche, el Historic Seaport se llena de ostras, música en vivo y una docena de cocinas de la isla. El chef Norman Van Aken regresa como invitado.",
+        "titulo": "Ostras sin límite frente al muelle: Key West estrenó su Oyster Fest, y cada concha vuelve al mar",
+        "bajada": "El sábado 14 de noviembre, de 5 a 10 de la noche, el Historic Seaport se llenó de ostras, música en vivo y una docena de cocinas de la isla, con el chef Norman Van Aken como invitado.",
         "toca": [
-          "Sábado 14 de noviembre, de 5:00 a 10:00 PM, frente a Half Shell Raw Bar, en el Historic Seaport de Key West. La hora VIP es de 5:00 a 6:00.",
-          "Las entradas se venden en Eventbrite: busca «Key West Oyster Fest».",
-          "Viernes 13: bienvenida con Van Aken en The Marker Key West Harbor Resort. Sábado: fiesta después del festival en el Green Parrot, de 10:00 PM a 2:00 AM. Domingo 15: brunch en Half Shell, de 9:00 AM a mediodía."
+          "Fue el sábado 14 de noviembre, frente a Half Shell Raw Bar, en el Historic Seaport de Key West.",
+          "Las conchas del festival se reciclan para restaurar arrecifes de ostras, el mismo programa que Half Shell sigue todo el año.",
+          "Si quieres ostras en Key West cualquier día, Half Shell Raw Bar está en el 231 de Margaret Street."
         ],
         "cuerpo": [
-          "La primera edición del [Key West Oyster Fest](https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest) ya se asoma por el viejo puerto. Un cuchillo corto, un giro de muñeca y la concha se abre: el sábado ese gesto se va a repetir miles de veces en la rotonda del estacionamiento frente a Half Shell Raw Bar, con ostras a discreción y el agua a dos pasos.",
-          "## Lo que trae la entrada",
-          "Ostras ilimitadas, barra abierta hasta las 8 de la noche y música en vivo de The Farm Boys, una banda de country de pantano del sur de Florida. Sirven granjeros de ostras de la región y una docena de restaurantes de la isla, entre ellos Half Shell, Schooner Wharf, Square Grouper, Café Marquesa y Casa Marina. Lo organizan Half Shell Raw Bar y Everglades Oysters.",
-          "## El cocinero que vuelve a casa",
-          "El invitado es Norman Van Aken, el chef al que se le atribuye la «New World Cuisine», que empezó a cocinar en esta isla. Para él es un regreso: «Se me metió en el ADN. Se convirtió en mis raíces, en mi identidad», [dijo sobre Key West](https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html). El domingo, en el brunch de cierre, recibe el primer premio Culinary Legacy de Key West y el condado de Monroe.",
+          "La primera edición del [Key West Oyster Fest](https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest) se asomó por el viejo puerto. Un cuchillo corto, un giro de muñeca y la concha se abre: el sábado ese gesto se repitió miles de veces en la rotonda del estacionamiento frente a Half Shell Raw Bar, con ostras a discreción y el agua a dos pasos.",
+          "## Lo que trajo la entrada",
+          "Ostras ilimitadas, barra abierta hasta las 8 de la noche y música en vivo de The Farm Boys, una banda de country de pantano del sur de Florida. Sirvieron granjeros de ostras de la región y una docena de restaurantes de la isla, entre ellos Half Shell, Schooner Wharf, Square Grouper, Café Marquesa y Casa Marina. Lo organizaron Half Shell Raw Bar y Everglades Oysters.",
+          "## El cocinero que volvió a casa",
+          "El invitado fue Norman Van Aken, el chef al que se le atribuye la «New World Cuisine», que empezó a cocinar en esta isla. Para él es un regreso: «Se me metió en el ADN. Se convirtió en mis raíces, en mi identidad», [dijo sobre Key West](https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html). El domingo, en el brunch de cierre, recibió el primer premio Culinary Legacy de Key West y el condado de Monroe.",
           "## Las conchas no van a la basura",
-          "Todas las que salgan del festival se recogen y se reciclan. Los organizadores explican que pueden servir para restaurar arrecifes de ostras, crear hábitat, mejorar la calidad del agua y proteger la orilla. Es el mismo programa que Half Shell empezó este año con Everglades Oysters: lo que sale del mar, vuelve al mar."
+          "Todas las que salieron del festival se recogieron y se reciclan. Los organizadores explican que pueden servir para restaurar arrecifes de ostras, crear hábitat, mejorar la calidad del agua y proteger la orilla. Es el mismo programa que Half Shell empezó este año con Everglades Oysters: lo que sale del mar, vuelve al mar."
         ]
       },
       "en": {
         "etiqueta": "KEY WEST",
-        "titulo": "Unlimited oysters by the docks: Key West debuts its Oyster Fest this Saturday, and every shell goes back to the sea",
-        "bajada": "On Saturday, Nov. 14, from 5 to 10 p.m., the Historic Seaport fills with oysters, live music and a dozen of the island's kitchens. Chef Norman Van Aken returns as the guest.",
+        "titulo": "Unlimited oysters by the docks: Key West debuted its Oyster Fest, and every shell goes back to the sea",
+        "bajada": "On Saturday, Nov. 14, from 5 to 10 p.m., the Historic Seaport filled with oysters, live music and a dozen of the island's kitchens, with chef Norman Van Aken as the guest.",
         "toca": [
-          "Saturday, Nov. 14, 5 to 10 p.m., in front of Half Shell Raw Bar at Key West's Historic Seaport. VIP hour is 5 to 6.",
-          "Tickets are sold on Eventbrite: search \"Key West Oyster Fest.\"",
-          "Friday the 13th: welcome party with Van Aken at The Marker Key West Harbor Resort. Saturday: after-party at the Green Parrot, 10 p.m. to 2 a.m. Sunday the 15th: brunch at Half Shell, 9 a.m. to noon."
+          "It took place Saturday, Nov. 14, in front of Half Shell Raw Bar at Key West's Historic Seaport.",
+          "The festival shells are recycled to restore oyster reefs, the same program Half Shell runs year-round.",
+          "For oysters in Key West any day, Half Shell Raw Bar is at 231 Margaret Street."
         ],
         "cuerpo": [
-          "The first edition of the [Key West Oyster Fest](https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest) is already peeking over the old seaport. A short knife, a twist of the wrist and the shell pops open: on Saturday that move will be repeated thousands of times in the parking circle in front of Half Shell Raw Bar, with all the oysters you want and the water two steps away.",
-          "## What the ticket brings",
-          "Unlimited oysters, an open bar until 8 p.m. and live music from The Farm Boys, a swamp country band from South Florida. Regional oyster farmers and a dozen island restaurants are serving, among them Half Shell, Schooner Wharf, Square Grouper, Café Marquesa and Casa Marina. Half Shell Raw Bar and Everglades Oysters are the organizers.",
-          "## The cook who comes home",
-          "The guest is Norman Van Aken, the chef credited with \"New World Cuisine,\" who started cooking on this island. For him it's a homecoming: \"It entered my DNA. It became my roots. It became my identity,\" [he said of Key West](https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html). On Sunday, at the closing brunch, he receives the first Key West & Monroe County Culinary Legacy Award.",
+          "The first edition of the [Key West Oyster Fest](https://visitfloridakeys.com/plan-your-trip/travel-tips/insiders-guide/key-west-oyster-fest) came to the old seaport. A short knife, a twist of the wrist and the shell pops open: on Saturday that move was repeated thousands of times in the parking circle in front of Half Shell Raw Bar, with all the oysters you wanted and the water two steps away.",
+          "## What the ticket brought",
+          "Unlimited oysters, an open bar until 8 p.m. and live music from The Farm Boys, a swamp country band from South Florida. Regional oyster farmers and a dozen island restaurants served, among them Half Shell, Schooner Wharf, Square Grouper, Café Marquesa and Casa Marina. Half Shell Raw Bar and Everglades Oysters were the organizers.",
+          "## The cook who came home",
+          "The guest was Norman Van Aken, the chef credited with \"New World Cuisine,\" who started cooking on this island. For him it's a homecoming: \"It entered my DNA. It became my roots. It became my identity,\" [he said of Key West](https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html). On Sunday, at the closing brunch, he received the first Key West & Monroe County Culinary Legacy Award.",
           "## The shells don't go in the trash",
-          "Every one that leaves the festival is collected and recycled. Organizers say they can be used to restore oyster reefs, create habitat, improve water quality and protect the shoreline. It's the same program Half Shell started this year with Everglades Oysters: what comes out of the sea goes back to the sea."
+          "Every one that left the festival was collected for recycling. Organizers say they can be used to restore oyster reefs, create habitat, improve water quality and protect the shoreline. It's the same program Half Shell started this year with Everglades Oysters: what comes out of the sea goes back to the sea."
         ]
       },
       "fuentes": [
@@ -2562,7 +2560,8 @@
           "u": "https://www.keysnews.com/news/local/inaugural-oyster-fest-brainchild-of-half-shells-gm/article_1938cb8b-fde5-4a38-bdb0-8f0f30d20f84.html"
         }
       ],
-      "vence": "2026-11-14"
+      "vence": "2026-11-14",
+      "actualizada": "2026-11-16T22:00:00-05:00"
     },
     {
       "hamaca": false,
@@ -6027,28 +6026,28 @@
       "foto_pie_en": "Key West at dusk.",
       "es": {
         "etiqueta": "LOS CAYOS",
-        "titulo": "Domingo de mercado frente al mar: artesanos de Key West en Higgs Beach hasta las 2 PM",
-        "bajada": "El Key West Artisan Market vuelve hoy a Higgs Beach, de 10 AM a 2 PM, con la edición «Charting the Course», dedicada al Key West Sailing Center.",
+        "titulo": "Domingo de mercado frente al mar: los artesanos de Key West llenaron Higgs Beach",
+        "bajada": "El Key West Artisan Market volvió a Higgs Beach el domingo 15 de noviembre con la edición «Charting the Course», dedicada al Key West Sailing Center.",
         "toca": [
-          "Dónde: Indigenous Park, en Higgs Beach, 1801 White Street. Horario: de 10 AM a 2 PM.",
-          "La entrada y el parqueo son gratis, según la Cámara de Comercio de Key West, que recomienda ir en bicicleta y llevar tus propias bolsas."
+          "Fue el domingo 15 de noviembre en Indigenous Park, en Higgs Beach, 1801 White Street, de 10 AM a 2 PM.",
+          "La entrada y el parqueo fueron gratis, según la Cámara de Comercio de Key West."
         ],
         "cuerpo": [
-          "El mercado de artesanos de Key West abre su domingo frente al Atlántico, en Higgs Beach, con la edición dedicada al Key West Sailing Center, según la [Cámara de Comercio de Key West](https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15).",
-          "Solo pueden vender quienes viven en los Cayos y crean o seleccionan sus productos aquí, de modo que todo es hecho en los Cayos. Esta edición celebra la relación de la isla con el mar y apoya al Key West Sailing Center, una organización sin fines de lucro que acerca la vela a la comunidad. El mercado queda a pasos del White Street Pier y de la playa."
+          "El mercado de artesanos de Key West abrió su domingo frente al Atlántico, en Higgs Beach, con la edición dedicada al Key West Sailing Center, según la [Cámara de Comercio de Key West](https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15).",
+          "Solo pueden vender quienes viven en los Cayos y crean o seleccionan sus productos aquí, de modo que todo es hecho en los Cayos. Esta edición celebró la relación de la isla con el mar y apoyó al Key West Sailing Center, una organización sin fines de lucro que acerca la vela a la comunidad. El mercado queda a pasos del White Street Pier y de la playa."
         ]
       },
       "en": {
         "etiqueta": "THE KEYS",
-        "titulo": "A seaside market Sunday: Key West artisans at Higgs Beach until 2 p.m.",
-        "bajada": "The Key West Artisan Market returns to Higgs Beach today, 10 a.m. to 2 p.m., with its \"Charting the Course\" edition featuring the Key West Sailing Center.",
+        "titulo": "A seaside market Sunday: Key West artisans filled Higgs Beach",
+        "bajada": "The Key West Artisan Market returned to Higgs Beach on Sunday, Nov. 15, with its \"Charting the Course\" edition featuring the Key West Sailing Center.",
         "toca": [
-          "Where: Indigenous Park at Higgs Beach, 1801 White Street. Hours: 10 a.m. to 2 p.m.",
-          "Admission and parking are free, according to the Key West Chamber of Commerce, which suggests biking over and bringing your own bags."
+          "It took place Sunday, Nov. 15, at Indigenous Park, Higgs Beach, 1801 White Street, 10 a.m. to 2 p.m.",
+          "Admission and parking were free, according to the Key West Chamber of Commerce."
         ],
         "cuerpo": [
-          "Key West's artisan market sets up by the Atlantic at Higgs Beach today, in an edition featuring the Key West Sailing Center, according to the [Key West Chamber of Commerce](https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15).",
-          "Only people who live in the Keys and create or curate locally can sell, so everything is Keys-made. This edition celebrates the island's ties to the sea and supports the Key West Sailing Center, a nonprofit that makes sailing accessible to the community. The market sits steps from the White Street Pier and the beach."
+          "Key West's artisan market set up by the Atlantic at Higgs Beach on Sunday, in an edition featuring the Key West Sailing Center, according to the [Key West Chamber of Commerce](https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15).",
+          "Only people who live in the Keys and create or curate locally can sell, so everything is Keys-made. This edition celebrated the island's ties to the sea and supported the Key West Sailing Center, a nonprofit that makes sailing accessible to the community. The market sits steps from the White Street Pier and the beach."
         ]
       },
       "fuentes": [
@@ -6057,7 +6056,8 @@
           "u": "https://www.keywestchamber.org/latest-community-news/key-west-artisan-market-charts-the-course-with-key-west-sailing-center-sunday-november-15"
         }
       ],
-      "vence": "2026-11-15"
+      "vence": "2026-11-15",
+      "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
   "updated_at": "2026-11-12T06:00:00-05:00"
