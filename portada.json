@@ -194,8 +194,8 @@
       "yid": "2QHD4BLekY4",
       "es": "Habibi Miami",
       "en": "Habibi Miami",
-      "k_es": "RESTAURANTE · ÁRABE",
-      "k_en": "RESTAURANT · MIDDLE EASTERN",
+      "k_es": "RESTAURANTE · FRANCO-MARROQUÍ",
+      "k_en": "RESTAURANT · FRENCH-MOROCCAN",
       "item": "r32",
       "type": "rest"
     },
@@ -400,13 +400,13 @@
     {
       "id": "r32",
       "name": "Habibi Miami",
-      "cat": "Middle Eastern",
-      "cat_es": "Árabe",
+      "cat": "French-Moroccan",
+      "cat_es": "Franco-marroquí",
       "addr": "452 NW North River Dr",
       "yid": "2QHD4BLekY4",
       "foto": "fotos/mm-habibi-1.jpg",
-      "es": "Cocina libanesa, hookah y entretenimiento en vivo.",
-      "en": "Lebanese cuisine, hookah and live entertainment."
+      "es": "Supper club franco-marroquí frente al río Miami, con bailarinas y candelabros.",
+      "en": "A French-Moroccan supper club on the Miami River, with belly dancers and chandeliers."
     },
     {
       "id": "r15",
