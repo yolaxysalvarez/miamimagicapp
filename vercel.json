@@ -18,6 +18,10 @@
       "use": "@vercel/node"
     },
     {
+      "src": "api/evento.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "*.html",
       "use": "@vercel/static"
     },
@@ -82,6 +86,39 @@
     {
       "src": "/api/stripe-webhook",
       "dest": "/api/stripe-webhook.js"
+    },
+    {
+      "src": "/noticias/?",
+      "has": [
+        {
+          "type": "query",
+          "key": "ev",
+          "value": "(?<ev>.+)"
+        }
+      ],
+      "dest": "/api/evento.js?ev=$ev"
+    },
+    {
+      "src": "/news/?",
+      "has": [
+        {
+          "type": "query",
+          "key": "ev",
+          "value": "(?<ev>.+)"
+        }
+      ],
+      "dest": "/api/evento.js?ev=$ev&lang=en"
+    },
+    {
+      "src": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "ev",
+          "value": "(?<ev>.+)"
+        }
+      ],
+      "dest": "/api/evento.js?ev=$ev&page=app"
     },
     {
       "src": "/noticias/?",
