@@ -55,6 +55,86 @@
   "videos": [],
   "notas": [
     {
+      "id": "rentas-miami-efficiencies-sin-medir",
+      "scope": "miami",
+      "tema": "casa",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-17",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-week-brickell.jpg",
+      "foto_alt": "Vista aérea de los edificios residenciales de Brickell junto a la bahía",
+      "foto_pie": "Foto de archivo: Brickell desde el aire.",
+      "foto_pie_en": "Archive photo: Brickell from the air.",
+      "fuentes": [
+        {
+          "n": "Yardi Matrix · Informe multifamiliar de Miami, octubre 2026",
+          "u": "https://www.yardimatrix.com/blog/?p=5725"
+        },
+        {
+          "n": "CRE Daily · Rentas por zona según Yardi Matrix",
+          "u": "https://www.credaily.com/?p=224669"
+        },
+        {
+          "n": "WLRN · Informe nacional de rentas de Zumper, septiembre",
+          "u": "https://www.wlrn.org/business/2026-10-06/at-2-500-for-one-bedroom-apartment-miami-ranks-sixth-most-expensive-among-u-s-cities"
+        },
+        {
+          "n": "RentHop · Renta promedio en Miami",
+          "u": "https://renthop.com/average-rent-in/miami-fl"
+        },
+        {
+          "n": "RentHop · Renta promedio en Miami Beach",
+          "u": "https://renthop.com/average-rent-in/miami-beach-fl"
+        },
+        {
+          "n": "Programa de vouchers de Miami-Dade (MDHCV) · Topes de pago",
+          "u": "https://mdvoucher.com/es-ES/Home/Index"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "BIENES RAÍCES",
+        "titulo": "Las rentas de Miami apenas se mueven, pero nadie mide las efficiencies",
+        "bajada": "Los grandes informes del mercado siguen los edificios de 50 unidades o más y los apartamentos de uno y dos cuartos. La efficiency, el alquiler que más se ve en las casas de Miami-Dade, se queda fuera de casi todas las cuentas.",
+        "toca": [
+          "Si buscas o rentas una efficiency, no hay precio oficial de mercado: compara anuncios de tu misma zona.",
+          "Antes de fiarte de una cifra de renta, mira qué mide: tamaño del edificio, número de cuartos y zona.",
+          "Si tienes voucher, pregunta al programa del condado el tope de tu zona antes de firmar."
+        ],
+        "cuerpo": [
+          "El promedio de renta en Miami es de $2,545 al mes en los edificios grandes, apenas un 0.7% más que hace un año, según el [informe de octubre de Yardi Matrix](https://www.yardimatrix.com/blog/?p=5725), que además prevé cerrar 2026 con una bajada del 0.3%. Por zonas, [Brickell baja un 3.3% y Coral Gables](https://www.credaily.com/?p=224669) sigue siendo la más cara, con $4,055.",
+          "Otra medición, la de Zumper, [apunta en sentido contrario](https://www.wlrn.org/business/2026-10-06/at-2-500-for-one-bedroom-apartment-miami-ranks-sixth-most-expensive-among-u-s-cities): en septiembre el apartamento de un cuarto se quedó en $2,500, un 1.6% menos que hace un año, y el de dos bajó un 3.9%, hasta $3,230.",
+          "## Lo que esas cifras no cuentan",
+          "Ninguno de esos informes separa la efficiency. Yardi solo sigue edificios de 50 unidades o más, y Zumper publica uno y dos cuartos. La efficiency de Miami-Dade suele ser otra cosa: un espacio con entrada propia dentro o al lado de una casa, que se alquila por anuncios y de boca en boca, lejos de las torres que entran en las estadísticas.",
+          "Los portales de anuncios miden el «studio», que es lo más parecido, pero sus números bailan. En RentHop, el studio de Miami [subió un 14% en un año](https://renthop.com/average-rent-in/miami-fl), hasta $2,538 en septiembre, mientras que el de Miami Beach [bajó casi un 8%](https://renthop.com/average-rent-in/miami-beach-fl), a $1,685 en noviembre.",
+          "## La única cifra con nombre propio",
+          "Donde la palabra efficiency sí aparece es en el programa de vouchers de Miami-Dade. En [su portal](https://mdvoucher.com/es-ES/Home/Index), el tope de pago para una efficiency va de $1,704 a $1,824 al mes, según el grupo de zonas. No es el precio del mercado, sino lo máximo que el programa reconoce para ayudar con la renta, pero hoy es la referencia pública más cercana a lo que cuesta una efficiency en el condado."
+        ]
+      },
+      "en": {
+        "etiqueta": "REAL ESTATE",
+        "titulo": "Miami rents barely move, but nobody measures efficiencies",
+        "bajada": "The big market reports track buildings with 50 or more units and one- and two-bedroom apartments. The efficiency, the rental you see most in Miami-Dade homes, is left out of almost every count.",
+        "toca": [
+          "Whether you are looking for or renting out an efficiency, there is no official market price: compare listings in your own area.",
+          "Before trusting a rent figure, check what it measures: building size, number of bedrooms and area.",
+          "If you have a voucher, ask the county program for your area's cap before you sign."
+        ],
+        "cuerpo": [
+          "Average rent in Miami's large buildings is $2,545 a month, just 0.7% more than a year ago, according to [Yardi Matrix's October report](https://www.yardimatrix.com/blog/?p=5725), which also expects 2026 to close with a 0.3% drop. By area, [Brickell is down 3.3% and Coral Gables](https://www.credaily.com/?p=224669) remains the priciest, at $4,055.",
+          "Another measure, Zumper's, [points the other way](https://www.wlrn.org/business/2026-10-06/at-2-500-for-one-bedroom-apartment-miami-ranks-sixth-most-expensive-among-u-s-cities): in September a one-bedroom stood at $2,500, 1.6% less than a year earlier, and a two-bedroom fell 3.9%, to $3,230.",
+          "## What those numbers leave out",
+          "None of those reports breaks out the efficiency. Yardi only tracks buildings with 50 or more units, and Zumper publishes one- and two-bedrooms. An efficiency in Miami-Dade is usually something else: a space with its own entrance inside or next to a house, rented through listings and word of mouth, far from the towers that make it into the statistics.",
+          "Listing sites measure the \"studio,\" the closest thing, but their numbers swing. On RentHop, a Miami studio [rose 14% in a year](https://renthop.com/average-rent-in/miami-fl), to $2,538 in September, while one in Miami Beach [fell almost 8%](https://renthop.com/average-rent-in/miami-beach-fl), to $1,685 in November.",
+          "## The one figure with its name on it",
+          "Where the word efficiency does appear is Miami-Dade's voucher program. On [its portal](https://mdvoucher.com/es-ES/Home/Index), the payment cap for an efficiency runs from $1,704 to $1,824 a month, depending on the group of areas. It is not the market price but the most the program will recognize to help with rent, yet today it is the closest public reference to what an efficiency costs in the county."
+        ]
+      },
+      "actualizada": "2026-11-17T08:12:00-05:00",
+      "ultima": 2
+    },
+    {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
       "scope": "miami",
       "tema": "calle",
@@ -219,7 +299,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 3
+      "ultima": 7
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -516,7 +596,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -676,7 +756,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -833,7 +913,7 @@
           "She died in 2003, and Miami said goodbye by the thousands. The city hasn't forgotten: on Oct. 21, what would have been her 101st birthday, it unveiled Plaza Azúcar, a park with a statue of her at 650 Beacom Boulevard in Little Havana. Construction starts in January 2027, Commissioner Ralph Rosado, who is behind the project, told [Diario Las Américas](https://www.diariolasamericas.com/cultura/miami-anuncia-un-parque-dedicado-celia-cruz-la-pequena-habana-n5404049)."
         ]
       },
-      "ultima": 7,
+      "ultima": 8,
       "tambien": 2
     },
     {
