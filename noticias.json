@@ -154,7 +154,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 1
+      "ultima": 2
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -297,7 +297,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:30:00-05:00",
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -379,7 +379,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -401,45 +401,57 @@
         {
           "n": "ESPN · Reporte de lesiones del partido",
           "u": "https://www.espn.com/nba/game/_/gameId/401909998/rockets-heat"
+        },
+        {
+          "n": "NBA · Marcador y estadísticas del partido",
+          "u": "https://www.nba.com/heat/schedule"
         }
       ],
       "desarrollo": false,
       "es": {
         "etiqueta": "DEPORTES",
-        "titulo": "El HEAT llega con cuatro victorias seguidas y esta noche se mide con los Rockets, de lo mejor del Oeste",
-        "bajada": "Miami (7-6) recibe a Houston (11-3) a las 7:30 PM en el Kaseya Center. Es el primero de tres juegos en casa esta semana, con la noche de Vice City el miércoles.",
+        "titulo": "El HEAT pasa por encima de los Rockets, 128-110, y ya suma cinco victorias seguidas",
+        "bajada": "Giannis Antetokounmpo terminó con 20 puntos y 13 rebotes, Miami llegó a ganar por 26 y queda 8-6. El miércoles recibe a los Bucks en la noche de Vice City.",
         "toca": [
-          "Hoy, 7:30 PM, en el Kaseya Center.",
+          "Resultado: HEAT 128, Rockets 110, en el Kaseya Center.",
           "Miércoles 18, 7 PM: contra Milwaukee, la noche de Vice City.",
           "Domingo 22, 6 PM: contra Oklahoma City."
         ],
         "cuerpo": [
+          "## Actualización · 10:05 PM",
+          "El HEAT pasó por encima de los Rockets, 128-110, en el Kaseya Center, y ya son cinco victorias seguidas. Miami mandó desde el principio: ganó el primer cuarto 29-15 y llegó a tener 26 puntos de ventaja.",
+          "Giannis Antetokounmpo terminó con 20 puntos, 13 rebotes, 6 asistencias y 3 tapones. Klay Thompson y Andrew Wiggins anotaron 17 cada uno, Thompson con cinco triples, y Davion Mitchell sumó 16 puntos y 10 asistencias. Desde la banca llegaron 57 puntos.",
+          "Por Houston, Alperen Sengun anotó 23 y Kevin Durant 22. Fred VanVleet, que aparecía como baja en el reporte de lesiones de la tarde, terminó jugando y sumó 8 puntos. Con el triunfo, Miami queda 8-6, y Houston cae a 11-4.",
+          "## La previa",
           "El HEAT llega en su mejor momento de la temporada. Después de perder sus cuatro primeros juegos, Miami ha ganado sus últimos cuatro, los dos más recientes en casa, por 133-121 a Cleveland y 137-117 a Detroit. Con 7 victorias y 6 derrotas, es quinto en el Este.",
           "Enfrente tiene a uno de los equipos más en forma de la liga. Los Rockets de Kevin Durant van 11-3, son terceros en el Oeste y también llegan con cuatro victorias seguidas.",
           "Houston juega esta noche sin Fred VanVleet, por la rodilla, ni Clint Capela, por el tobillo, y con Marcus Smart suspendido, según el [reporte de lesiones](https://www.espn.com/nba/game/_/gameId/401909998/rockets-heat). En Miami, la duda es Pelle Larsson, que se perdió los dos últimos juegos por una enfermedad.",
-          "Es el primero de tres juegos seguidos en casa, según el [calendario oficial](https://www.nba.com/heat/schedule). El del miércoles contra los Bucks será la noche Vice City, con cancha temática por el estreno de GTA VI.",
-          "Esta nota se actualizará con el resultado."
+          "Es el primero de tres juegos seguidos en casa, según el [calendario oficial](https://www.nba.com/heat/schedule). El del miércoles contra los Bucks será la noche Vice City, con cancha temática por el estreno de GTA VI."
         ]
       },
       "en": {
         "etiqueta": "SPORTS",
-        "titulo": "The HEAT bring a four-game win streak into tonight's matchup with the Rockets, among the West's best",
-        "bajada": "Miami (7-6) hosts Houston (11-3) at 7:30 PM at Kaseya Center. It's the first of three home games this week, with Vice City night on Wednesday.",
+        "titulo": "The HEAT roll past the Rockets, 128-110, for their fifth straight win",
+        "bajada": "Giannis Antetokounmpo finished with 20 points and 13 rebounds, Miami led by as many as 26 and improved to 8-6. On Wednesday it hosts the Bucks on Vice City night.",
         "toca": [
-          "Tonight, 7:30 PM, at Kaseya Center.",
+          "Final: HEAT 128, Rockets 110, at Kaseya Center.",
           "Wednesday the 18th, 7 PM: vs. Milwaukee, Vice City night.",
           "Sunday the 22nd, 6 PM: vs. Oklahoma City."
         ],
         "cuerpo": [
+          "## Update · 10:05 PM",
+          "The HEAT rolled past the Rockets, 128-110, at Kaseya Center for their fifth straight win. Miami took control from the start, winning the first quarter 29-15 and leading by as many as 26.",
+          "Giannis Antetokounmpo finished with 20 points, 13 rebounds, 6 assists and 3 blocks. Klay Thompson and Andrew Wiggins scored 17 apiece, Thompson with five threes, and Davion Mitchell added 16 points and 10 assists. The bench contributed 57 points.",
+          "For Houston, Alperen Sengun scored 23 and Kevin Durant 22. Fred VanVleet, listed out on the afternoon injury report, ended up playing and scored 8. Miami improves to 8-6; Houston falls to 11-4.",
+          "## The preview",
           "The HEAT are at their best of the season. After losing its first four games, Miami has won its last four, the two most recent at home, 133-121 over Cleveland and 137-117 over Detroit. At 7-6, they are fifth in the East.",
           "Across the floor is one of the league's hottest teams. Kevin Durant's Rockets are 11-3, third in the West, and also riding a four-game win streak.",
           "Houston plays tonight without Fred VanVleet (knee) or Clint Capela (ankle), and with Marcus Smart suspended, per the [injury report](https://www.espn.com/nba/game/_/gameId/401909998/rockets-heat). For Miami, the question mark is Pelle Larsson, who missed the last two games with an illness.",
-          "It's the first of three straight home games, per the [official schedule](https://www.nba.com/heat/schedule). Wednesday's game against the Bucks is Vice City night, with a themed court for the GTA VI launch.",
-          "This story will be updated with the result."
+          "It's the first of three straight home games, per the [official schedule](https://www.nba.com/heat/schedule). Wednesday's game against the Bucks is Vice City night, with a themed court for the GTA VI launch."
         ]
       },
-      "actualizada": "2026-11-16T12:25:00-05:00",
-      "ultima": 3
+      "actualizada": "2026-11-16T22:05:00-05:00",
+      "ultima": 1
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -599,7 +611,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -681,7 +693,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -756,7 +768,7 @@
           "She died in 2003, and Miami said goodbye by the thousands. The city hasn't forgotten: on Oct. 21, what would have been her 101st birthday, it unveiled Plaza Azúcar, a park with a statue of her at 650 Beacom Boulevard in Little Havana. Construction starts in January 2027, Commissioner Ralph Rosado, who is behind the project, told [Diario Las Américas](https://www.diariolasamericas.com/cultura/miami-anuncia-un-parque-dedicado-celia-cruz-la-pequena-habana-n5404049)."
         ]
       },
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -1023,7 +1035,7 @@
         }
       ],
       "ambos": true,
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "seaquarium-arrendamiento-aplazado",
