@@ -3,11 +3,11 @@
   "updated": "2026-11-08",
   "ultima_hora": {
     "activa": true,
-    "nota": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
-    "es": "Vigilancia de inundaciones en Miami-Dade y Broward desde las 5 PM hasta el jueves",
-    "en": "Flood watch for Miami-Dade and Broward from 5 PM through Thursday",
-    "desde": "2026-11-17T08:00:00-05:00",
-    "hasta": "2026-11-19T19:00:00-05:00"
+    "nota": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
+    "es": "US-1 cerrada en ambos sentidos en Duck Key (milla 59): volcó un camión de gasolina",
+    "en": "US-1 closed both ways at Duck Key (MM 59) after a gasoline tanker overturned",
+    "desde": "2026-11-17T09:30:00-05:00",
+    "hasta": "2026-11-17T23:59:00-05:00"
   },
   "cifras": [
     {
@@ -54,6 +54,68 @@
   ],
   "videos": [],
   "notas": [
+    {
+      "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
+      "scope": "cayos",
+      "tema": "calle",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-17",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-carretera-entre-aguas-aereo.jpg",
+      "foto_alt": "Vista aérea de la Overseas Highway entre el mar en los Cayos",
+      "foto_pie": "Foto de archivo: la Overseas Highway en los Cayos.",
+      "foto_pie_en": "Archive photo: the Overseas Highway in the Keys.",
+      "fuentes": [
+        {
+          "n": "CBS Miami · Cierre de la Overseas Highway",
+          "u": "https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/"
+        },
+        {
+          "n": "Local10 · El camión cisterna volcado",
+          "u": "https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/"
+        },
+        {
+          "n": "The Florida Villager · Respuesta de los bomberos en la milla 59",
+          "u": "https://thefloridavillager.com/2026/11/tanker-truck-rollover-near-duck-key-mm-59/"
+        }
+      ],
+      "desarrollo": true,
+      "es": {
+        "etiqueta": "ÚLTIMA HORA",
+        "titulo": "Cierran la US-1 en los dos sentidos en Duck Key: volcó un camión de gasolina y no hay hora para reabrir",
+        "bajada": "El camión iba lleno y está perdiendo combustible cerca de la milla 59. El Sheriff de Monroe advierte que el cierre puede durar casi todo el día.",
+        "toca": [
+          "No hay otra ruta por tierra: si vas o vienes del Middle Keys, espera o pospón el viaje.",
+          "Si quedas en la fila, no te bajes del auto ni te acerques al derrame.",
+          "Revisa FL511 o las redes del Sheriff de Monroe antes de salir."
+        ],
+        "cuerpo": [
+          "La Overseas Highway está cerrada en los dos sentidos cerca de la milla 59, en Duck Key, desde temprano esta mañana. Un camión cisterna se volcó, y según la Oficina del Sheriff de Monroe, [no hay hora estimada para reabrir](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
+          "El camión iba lleno de gasolina y empezó a perder combustible sobre la carretera. Los agentes montaron un bloqueo total y, [según contó Local10](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/), avisan que el cierre puede durar la mayor parte del día.",
+          "Una persona fue trasladada en helicóptero a un hospital en tierra firme en estado crítico, de acuerdo con la [respuesta de los bomberos de Monroe](https://thefloridavillager.com/2026/11/tanker-truck-rollover-near-duck-key-mm-59/), que trabajan en el lugar junto con el Sheriff y un equipo especializado en el combustible.",
+          "Esta nota se actualizará cuando reabran la carretera."
+        ]
+      },
+      "en": {
+        "etiqueta": "BREAKING",
+        "titulo": "US-1 closed both ways at Duck Key after a gasoline tanker overturns, with no time to reopen",
+        "bajada": "The truck was full and is leaking fuel near mile marker 59. The Monroe County Sheriff warns the closure could last most of the day.",
+        "toca": [
+          "There is no other road: if you're heading to or from the Middle Keys, wait or postpone the trip.",
+          "If you're stuck in the line, stay in your car and keep away from the spill.",
+          "Check FL511 or the Monroe County Sheriff's social media before you leave."
+        ],
+        "cuerpo": [
+          "The Overseas Highway has been closed in both directions near mile marker 59, at Duck Key, since early this morning. A tanker truck overturned, and according to the Monroe County Sheriff's Office, [there is no estimated time to reopen](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
+          "The truck was full of gasoline and began leaking fuel onto the road. Deputies set up a full roadblock and, [as Local10 reported](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/), warn the closure could last most of the day.",
+          "One person was airlifted to a mainland hospital in critical condition, according to the [Monroe County Fire Rescue response](https://thefloridavillager.com/2026/11/tanker-truck-rollover-near-duck-key-mm-59/), working at the scene with the Sheriff's Office and a fuel response team.",
+          "This story will be updated when the road reopens."
+        ]
+      },
+      "actualizada": "2026-11-17T09:30:00-05:00",
+      "ultima": 1
+    },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
       "scope": "miami",
@@ -132,7 +194,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -197,7 +259,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:00:00-05:00",
-      "ultima": 1
+      "ultima": 2
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -299,7 +361,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -375,7 +437,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:14:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -441,7 +503,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:30:00-05:00",
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -523,7 +585,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -595,7 +657,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -755,7 +817,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -837,7 +899,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -912,7 +974,7 @@
           "She died in 2003, and Miami said goodbye by the thousands. The city hasn't forgotten: on Oct. 21, what would have been her 101st birthday, it unveiled Plaza Azúcar, a park with a statue of her at 650 Beacom Boulevard in Little Havana. Construction starts in January 2027, Commissioner Ralph Rosado, who is behind the project, told [Diario Las Américas](https://www.diariolasamericas.com/cultura/miami-anuncia-un-parque-dedicado-celia-cruz-la-pequena-habana-n5404049)."
         ]
       },
-      "ultima": 9,
+      "ultima": 10,
       "tambien": 2
     },
     {
