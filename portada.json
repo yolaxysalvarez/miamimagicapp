@@ -762,9 +762,9 @@
   "historia": [
     {
       "a": "1825",
-      "es": "El faro de Cape Florida se levanta en la punta sur de Key Biscayne. En 1836, durante la guerra con los seminolas, fue atacado; se reconstruyó en 1846.",
-      "en": "The Cape Florida lighthouse rises at the southern tip of Key Biscayne. In 1836, during the war with the Seminoles, it was attacked; it was rebuilt in 1846.",
-      "id": "key-biscayne-sin-prisa"
+      "es": "Se enciende el faro de Cape Florida, en Key Biscayne. En 1836 lo atacaron, y su ayudante sobrevivió haciendo estallar la pólvora en lo alto de la torre.",
+      "en": "Cape Florida Lighthouse is lit on Key Biscayne. In 1836 it was attacked, and the assistant keeper survived by blowing up the gunpowder atop the tower.",
+      "id": "faro-cape-florida-1836-historia"
     },
     {
       "a": "1873",

@@ -1482,6 +1482,8 @@ function renderPt(){
   railNav(fz,'fzR');
   /* miami de antes */
   var ds=(PT.historia||[]).filter(function(x){return x&&x.a&&ids[x.id]}),dd=ds.length?ds[doy()%ds.length]:null;
+  /* la historia de la semana (la del lunes) abre el bloque durante 7 días */
+  (function(){var lim=new Date(Date.now()-7*864e5).toLocaleDateString('en-CA',{timeZone:'America/New_York'}),best=null;ds.forEach(function(x){var f=(ids[x.id].fecha||'');if(ids[x.id].tema==='historia'&&f>=lim&&(!best||f>(ids[best.id].fecha||'')))best=x});if(best)dd=best})();
   sp.classList.toggle('solo',!dd);
   db.innerHTML=dd?(function(){var n=ids[dd.id],s=img(n);return '<a class="hist" href="'+href(n)+'"><span class="im">'+(s?'<img src="'+esc(s)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy">':'')+'</span><span class="bd"><span class="k">'+(en?'Miami, back then':'Miami de antes')+'</span><span class="ks">'+(en?'THE HISTORY OF MIAMI AND THE KEYS, ONE YEAR AT A TIME':'LA HISTORIA DE MIAMI Y LOS CAYOS, UN AÑO A LA VEZ')+'</span><span class="yr">'+esc(dd.a)+'</span><p>'+esc(en?(dd.en||dd.es):dd.es)+'</p><span class="go">'+(en?'THE STORY TODAY →':'LA HISTORIA DE HOY →')+'</span></span></a><div class="hist-l" data-h="'+(en?'OTHER YEARS':'OTROS AÑOS')+'">'+ds.filter(function(x){return x!==dd}).sort(function(a,b){return a.a<b.a?-1:1}).map(function(x){var tx=en?(x.en||x.es):x.es,c=tx.split(/\. /)[0];return '<a href="'+href(ids[x.id])+'"><b>'+esc(x.a)+'</b><span>'+esc(c.replace(/\.$/,''))+'.</span></a>'}).join('')+'</div>'})():'';
   /* video */
