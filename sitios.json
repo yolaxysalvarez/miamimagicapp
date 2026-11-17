@@ -464,7 +464,22 @@
   }
  },
  "teatros": {},
- "parques": {},
+ "parques": {
+  "pk1": {
+   "photos": [
+    "fotos/mm-larry-penny-lago-atardecer.jpg",
+    "fotos/mm-larry-penny-sendero-pinos.jpg",
+    "fotos/mm-larry-penny-cardenal.jpg",
+    "fotos/mm-larry-penny-carpintero.jpg",
+    "fotos/mm-larry-penny-gavilan.jpg",
+    "fotos/mm-larry-penny-camino-atardecer.jpg",
+    "fotos/mm-larry-penny-pato-lago.jpg",
+    "fotos/mm-larry-penny-pato-grama.jpg",
+    "fotos/mm-larry-penny-picnic-lago.jpg",
+    "fotos/mm-larry-penny-lago-roble.jpg"
+   ]
+  }
+ },
  "compras": {},
  "cafes": {},
  "ninos": {},
