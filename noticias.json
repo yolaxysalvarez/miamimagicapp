@@ -55,6 +55,107 @@
   "videos": [],
   "notas": [
     {
+      "id": "faro-cape-florida-1836-historia",
+      "scope": "miami",
+      "tema": "historia",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-16",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-kb-faro-dunas.jpg",
+      "foto_pos": "center 30%",
+      "video": "1JKm9baoKrM",
+      "foto_alt": "El faro blanco de Cape Florida sobre las dunas de Key Biscayne, con palmas y cielo azul",
+      "foto_pie": "El faro de Cape Florida, en la punta sur de Key Biscayne. Toca para ver el video.",
+      "foto_pie_en": "Cape Florida Lighthouse, at the southern tip of Key Biscayne. Tap to watch the video.",
+      "fuentes": [
+        {
+          "n": "Lighthouse Friends · Cape Florida Lighthouse",
+          "u": "https://www.lighthousefriends.com/light.asp?ID=360"
+        },
+        {
+          "n": "Guardia Costera de EE. UU. · Historia del faro de Cape Florida",
+          "u": "https://history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/1955776"
+        },
+        {
+          "n": "Florida State Parks · Bill Baggs Cape Florida",
+          "u": "https://floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park/experiences-amenities"
+        },
+        {
+          "n": "Florida State Parks · Cape Florida Light",
+          "u": "https://www.floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park/cape-florida-lighthouse"
+        },
+        {
+          "n": "Historical Marker Database · Cape Florida",
+          "u": "https://www.hmdb.org/m.asp?m=79720"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "HISTORIA",
+        "titulo": "El faro de Key Biscayne y la noche de 1836 en que su guardián hizo estallar la pólvora para que lo vieran desde el mar",
+        "bajada": "Hace 190 años, un ataque dejó a un hombre solo en lo alto de una torre en llamas. Es la historia del faro de Cape Florida, y de la ruta hacia la libertad que su luz volvió más peligrosa.",
+        "toca": [
+          "Se sube con guía, de jueves a lunes, a las 10 AM y a la 1 PM, según [Florida State Parks](https://floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park/experiences-amenities). Martes y miércoles no hay recorrido.",
+          "Para subir la escalera hay que medir al menos 42 pulgadas.",
+          "El faro está dentro del parque estatal Bill Baggs Cape Florida: la entrada al parque se paga por vehículo y el recorrido va incluido."
+        ],
+        "cuerpo": [
+          "El 23 de julio de 1836, el guardián del faro de Cape Florida, John Dubose, estaba en Key West con su familia. En la punta sur de Key Biscayne quedaban dos hombres: su ayudante, John W. B. Thompson, y Aaron Carter, que trabajaba con él. Esa tarde, en plena Segunda Guerra Seminola, un grupo de seminolas llegó hasta la torre.",
+          "Thompson y Carter alcanzaron a encerrarse. Los atacantes prendieron fuego a la puerta, y el aceite de las lámparas, que se escapaba por los tanques perforados a balazos, alimentó las llamas, según el relato que recoge [Lighthouse Friends](https://www.lighthousefriends.com/light.asp?ID=360). Los dos subieron hasta arriba con mosquetes y un barril de pólvora.",
+          "El fuego y los cristales rotos de la linterna los empujaron al balcón, un pasillo de hierro de apenas dos pies de ancho. Carter murió allí. Thompson, herido y con la ropa ardiendo, lanzó el barril de pólvora a las llamas. La explosión no lo mató: derrumbó la escalera en llamas y lo dejó medio inconsciente en lo alto. Los atacantes lo dieron por muerto, saquearon la casa del guardián y se fueron.",
+          "::img mm-faro-cf-linterna.jpg|La linterna y su balcón de hierro. En uno parecido, de apenas dos pies de ancho, quedaron atrapados Thompson y Carter en 1836.",
+          "## Al día siguiente, un hilo llegó desde el mar",
+          "Un barco de la Marina oyó la explosión. Al día siguiente, sus marineros encontraron a Thompson todavía arriba. El capitán le disparó un hilo con un mosquete; Thompson lo usó para subir una cuerda más gruesa, y por ella treparon dos marineros para bajarlo. El propio Thompson dejó escrito su relato, que hoy conserva la [Guardia Costera](https://history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/1955776).",
+          "Lo llevaron a Key West y después a Charleston a recuperarse. El faro se quedó apagado diez años.",
+          "::img mm-faro-cf-casa.jpg|La casa del guardián, reconstruida junto al faro y a pocos pasos de la playa.",
+          "## Mucho antes, ese cabo era una puerta hacia la libertad",
+          "Allí, en la punta de Key Biscayne, personas esclavizadas que escapaban del sur, y los seminolas que las acogían, esperaban los botes que las cruzaran a las Bahamas británicas, donde serían libres. A esa ruta se le conoce como el Saltwater Railroad, y la luz del faro, que alumbraba la costa de noche, la volvió más peligrosa. En 2004, Cape Florida fue designado sitio de la Red Nacional del Underground Railroad hacia la Libertad, según el folleto de Florida State Parks que reproduce el [marcador histórico](https://www.hmdb.org/m.asp?m=79720) del lugar.",
+          "::img mm-faro-cf-sendero.jpg|El sendero entre palmas que lleva hasta el faro.",
+          "## Después del fuego, la torre volvió a crecer",
+          "Reconstruida con escaleras de hierro, la torre volvió a alumbrar en 1847. En 1855 la elevaron hasta 95 pies y le pusieron una lente Fresnel nueva por recomendación del teniente George G. Meade, el mismo que años después comandaría al ejército de la Unión en Gettysburg.",
+          "::img mm-faro-cf-1855.jpg|El año grabado en el hierro del faro: 1855, cuando la torre creció hasta los 95 pies.",
+          "En agosto de 1861, en plena Guerra Civil, simpatizantes del Sur le arrancaron la lámpara y rompieron los prismas de la lente para que no guiara a los barcos de la Unión. Volvió a encenderse en 1866. El 15 de junio de 1878 se apagó del todo, porque lo reemplazó el faro de Fowey Rocks, mar adentro. Exactamente cien años después, el 4 de julio de 1978, se volvió a encender. El huracán Andrew lo dañó en 1992, y el estado lo reparó a tiempo para el centenario de Miami, en 1996.",
+          "::img mm-faro-cf-torre.jpg|La torre de ladrillo blanqueado, vista desde su base.",
+          "## Hoy se puede subir hasta donde esperó Thompson",
+          "El faro forma parte del parque estatal Bill Baggs Cape Florida, y [Florida State Parks](https://www.floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park/cape-florida-lighthouse) lo presenta como la estructura más antigua de Miami-Dade. La subida es en espiral, por una escalera estrecha, hasta un balcón desde donde se ven la bahía, el Atlántico y, en días claros, las casas de Stiltsville sobre el agua.",
+          "Arriba sopla el mismo viento que aquella noche de 1836."
+        ]
+      },
+      "en": {
+        "etiqueta": "HISTORY",
+        "titulo": "The Key Biscayne lighthouse and the 1836 night its keeper blew up the gunpowder so ships would see him",
+        "bajada": "190 years ago, an attack left one man alone atop a burning tower. This is the story of Cape Florida Lighthouse, and of the route to freedom its light made more dangerous.",
+        "toca": [
+          "Guided climbs run Thursday through Monday at 10 AM and 1 PM, according to [Florida State Parks](https://floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park/experiences-amenities). No climbs on Tuesday and Wednesday.",
+          "You must be at least 42 inches tall to climb the stairs.",
+          "The lighthouse is inside Bill Baggs Cape Florida State Park: park entry is paid per vehicle, and the tour is included."
+        ],
+        "cuerpo": [
+          "On July 23, 1836, Cape Florida's head keeper, John Dubose, was in Key West with his family. At the southern tip of Key Biscayne, two men remained: his assistant, John W. B. Thompson, and Aaron Carter, who worked with him. That afternoon, in the middle of the Second Seminole War, a group of Seminoles reached the tower.",
+          "Thompson and Carter managed to lock themselves in. The attackers set the door on fire, and lamp oil leaking from tanks pierced by gunfire fed the flames, according to the account gathered by [Lighthouse Friends](https://www.lighthousefriends.com/light.asp?ID=360). The two men climbed to the top with muskets and a keg of gunpowder.",
+          "Fire and shattering lantern glass drove them onto the balcony, an iron ledge barely two feet wide. Carter was killed there. Thompson, wounded and with his clothes burning, threw the keg into the flames. The blast did not kill him: it brought down the burning staircase and left him half-conscious at the top. The attackers took him for dead, looted the keeper's house and left.",
+          "::img mm-faro-cf-linterna.jpg|The lantern and its iron balcony. On one like it, barely two feet wide, Thompson and Carter were trapped in 1836.",
+          "## The next day, a line arrived from the sea",
+          "A Navy vessel heard the explosion. The next day its sailors found Thompson still up there. The captain fired a line to him with a musket; Thompson used it to haul up a heavier rope, and two seamen climbed it to bring him down. Thompson wrote his own account, now kept by the [Coast Guard](https://history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/1955776).",
+          "He was taken to Key West and then to Charleston to recover. The lighthouse stayed dark for ten years.",
+          "::img mm-faro-cf-casa.jpg|The keeper's house, rebuilt beside the lighthouse, steps from the beach.",
+          "## Long before, that cape was a door to freedom",
+          "There, at the tip of Key Biscayne, enslaved people fleeing the South, and the Seminoles who sheltered them, waited for boats to carry them to the British Bahamas, where they would be free. That route is known as the Saltwater Railroad, and the lighthouse, by lighting up the coast at night, made it more dangerous. In 2004, Cape Florida was designated a National Underground Railroad Network to Freedom site, according to the Florida State Parks brochure reproduced on the site's [historical marker](https://www.hmdb.org/m.asp?m=79720).",
+          "::img mm-faro-cf-sendero.jpg|The palm-lined path that leads to the lighthouse.",
+          "## After the fire, the tower grew taller",
+          "Rebuilt with iron stairs, the tower shone again in 1847. In 1855 it was raised to 95 feet and fitted with a new Fresnel lens on the recommendation of Lt. George G. Meade, the same man who would later command the Union army at Gettysburg.",
+          "::img mm-faro-cf-1855.jpg|The year cast in the lighthouse iron: 1855, when the tower grew to 95 feet.",
+          "In August 1861, during the Civil War, Southern sympathizers removed the lamp and smashed the lens prisms so it could not guide Union ships. It was relit in 1866. On June 15, 1878, it went dark for good, replaced by the offshore Fowey Rocks Lighthouse. Exactly one hundred years later, on July 4, 1978, it was lit again. Hurricane Andrew damaged it in 1992, and the state repaired it in time for Miami's centennial in 1996.",
+          "::img mm-faro-cf-torre.jpg|The whitewashed brick tower, seen from its base.",
+          "## Today you can climb to where Thompson waited",
+          "The lighthouse is part of Bill Baggs Cape Florida State Park, and [Florida State Parks](https://www.floridastateparks.org/parks-and-trails/bill-baggs-cape-florida-state-park/cape-florida-lighthouse) describes it as the oldest structure in Miami-Dade. The climb winds up a narrow spiral staircase to a balcony with views of the bay, the Atlantic and, on clear days, the houses of Stiltsville standing over the water.",
+          "Up there, the same wind blows as on that night in 1836."
+        ]
+      },
+      "actualizada": "2026-11-16T21:15:00-05:00"
+    },
+    {
       "id": "hamaca-semana-16-22-noviembre",
       "scope": "miami",
       "tema": "cultura",
