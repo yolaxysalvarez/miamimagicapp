@@ -1,5 +1,5 @@
 {
-  "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES). vence: fecha del evento (AAAA-MM-DD); pasada esa fecha la nota baja detrás de lo vigente en portada y secciones, y sigue en el archivo.",
+  "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES). vence: fecha del evento (AAAA-MM-DD); pasada esa fecha la nota baja detrás de lo vigente en portada y secciones, y sigue en el archivo. Pasada la fecha de 'vence', la nota muestra sola el aviso «Este evento ya pasó» (aviso_vence: false lo apaga, por ejemplo en el tiempo). Si la nota tiene valor más allá del evento, se reescribe en pasado en la misma nota.",
   "updated": "2026-11-08",
   "ultima_hora": {
     "activa": false,
@@ -798,7 +798,7 @@
           "Dos días después de la votación, en la conferencia regional del clima en Fort Lauderdale, funcionarios locales advirtieron que también peligran las obras contra inundaciones; [un análisis estatal](https://www.wlrn.org/government-politics/2026-11-05/voters-face-rude-awakening-in-wake-of-amendment-3-passage) proyecta para Miami-Dade $3,500 millones menos en cinco años.",
           "En ese mismo reportaje hablan las dos orillas. La representante republicana Monique Miller, que impulsó un recorte de impuestos en la Legislatura, comparó a los gobiernos locales con una familia que pierde un ingreso y tiene que sentarse a ajustar, tras años de presupuestos que crecieron con el valor de las propiedades. Jeff Kottkamp, presidente de Florida TaxWatch, advirtió del riesgo contrario: que quien esperaba ahorrar $2,000 descubra en dos años que su condado subió cargos e impuestos y el ahorro se quedó en $50.",
           "## Lo que viene",
-          "DeSantis quiere una sesión especial antes de dejar el cargo para fijar cómo se aplica y limitar que los gobiernos locales compensen con otros impuestos y cargos. Los próximos líderes de la Legislatura no tienen prisa: el senador Jim Boyd, que presidirá el Senado, [dijo este jueves](https://www.tallahassee.com/story/news/state/2026/11/12/desantis-pushes-florida-property-tax-session-before-exit/92711190007/) que el asunto puede esperar a enero y que el gobernador electo, Byron Donalds, debe opinar. Donalds asume el 5 de enero, cuatro días después de que la enmienda entre en vigor."
+          "DeSantis quiere una sesión especial antes de dejar el cargo para fijar cómo se aplica y limitar que los gobiernos locales compensen con otros impuestos y cargos. Los próximos líderes de la Legislatura no tienen prisa: el senador Jim Boyd, que presidirá el Senado, [dijo el jueves 12](https://www.tallahassee.com/story/news/state/2026/11/12/desantis-pushes-florida-property-tax-session-before-exit/92711190007/) que el asunto puede esperar a enero y que el gobernador electo, Byron Donalds, debe opinar. Donalds asume el 5 de enero, cuatro días después de que la enmienda entre en vigor."
         ]
       },
       "en": {
@@ -828,7 +828,7 @@
           "Two days after the vote, at the regional climate conference in Fort Lauderdale, local officials warned that flood-control work is also at risk; [a state analysis](https://www.wlrn.org/government-politics/2026-11-05/voters-face-rude-awakening-in-wake-of-amendment-3-passage) projects $3.5 billion less for Miami-Dade over five years.",
           "Both sides speak in that same report. Republican Rep. Monique Miller, who sponsored a property tax cut in the Legislature, compared local governments to a family that loses an income and has to sit down and adjust, after years of budgets that grew with property values. Jeff Kottkamp, president of Florida TaxWatch, warned of the opposite risk: that someone expecting to save $2,000 finds out in two years that their county raised fees and taxes and the savings came to $50.",
           "## What comes next",
-          "DeSantis wants a special session before he leaves office to set how it is applied and to limit local governments from making up the money with other taxes and fees. The Legislature's incoming leaders are in no hurry: Sen. Jim Boyd, who will preside over the Senate, [said Thursday](https://www.tallahassee.com/story/news/state/2026/11/12/desantis-pushes-florida-property-tax-session-before-exit/92711190007/) that the matter can wait until January and that Gov.-elect Byron Donalds should have a say. Donalds takes office Jan. 5, four days after the amendment takes effect."
+          "DeSantis wants a special session before he leaves office to set how it is applied and to limit local governments from making up the money with other taxes and fees. The Legislature's incoming leaders are in no hurry: Sen. Jim Boyd, who will preside over the Senate, [said Thursday, Nov. 12](https://www.tallahassee.com/story/news/state/2026/11/12/desantis-pushes-florida-property-tax-session-before-exit/92711190007/) that the matter can wait until January and that Gov.-elect Byron Donalds should have a say. Donalds takes office Jan. 5, four days after the amendment takes effect."
         ]
       },
       "fuentes": [
@@ -927,12 +927,12 @@
           "El secretario de Seguridad Nacional, Markwayne Mullin, afirmó que han visto «cero evidencia» de un ciberataque. «Parece que esto fue de origen mecánico. Sin embargo, seguimos investigando, así que no vamos a descartarlo», matizó.",
           "Tampoco fue la nueva herramienta de inteligencia artificial de la FAA, de acuerdo con Duffy. El sistema SMART, explicó, solo le sugiere rutas a un controlador, que decide si las acepta, y no está conectado a los sistemas de tráfico: «No hay manera posible de que SMART haya afectado lo que pasó hoy».",
           "Durante la parada, la comunicación y el radar funcionaron a ratos, no se apagaron del todo. «Es un riesgo que no estamos dispuestos a tolerar», dijo Duffy. Más de 3.500 aviones aterrizaron sin incidentes, y los vuelos médicos y de trasplantes de órganos siguieron operando.",
-          "Sobre la recuperación, el secretario advirtió que «no se va a resolver de la noche a la mañana». Las aerolíneas moverán esta noche los aviones que puedan, si tienen tripulaciones, y el resto desde el sábado por la mañana. Para el Día de Acción de Gracias, Duffy dijo esperar que el sistema esté operando con normalidad.",
+          "Sobre la recuperación, el secretario advirtió que «no se va a resolver de la noche a la mañana». Las aerolíneas movieron esa misma noche los aviones que pudieron, según la tripulación disponible, y el resto desde el sábado por la mañana, como había anunciado. Para el Día de Acción de Gracias, Duffy dijo esperar que el sistema esté operando con normalidad.",
           "Ambos secretarios aprovecharon para pedirle al Congreso 50.000 millones de dólares de emergencia para modernizar el control de tráfico aéreo.",
           "## Actualización · 8:19 PM",
           "«La parada nacional del Centro de Comando de la FAA ha sido cancelada», dice el [aviso oficial 005 de la agencia](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), enviado a las 8:19 PM para todos los aeropuertos y todas las instalaciones. La FAA no ha explicado todavía la causa en un comunicado.",
           "## Qué pasó",
-          "La FAA ordenó a las 3:54 PM de este viernes 13 de noviembre que ningún vuelo despegara de un aeropuerto de Estados Unidos, por «circunstancias extraordinarias y por razones de seguridad». Los aviones que estaban en el aire siguieron hasta su destino, y los vuelos internacionales hacia el país se manejan caso por caso.",
+          "La FAA ordenó a las 3:54 PM del viernes 13 de noviembre que ningún vuelo despegara de un aeropuerto de Estados Unidos, por «circunstancias extraordinarias y por razones de seguridad». Los aviones que estaban en el aire siguieron hasta su destino, y los vuelos internacionales hacia el país se manejan caso por caso.",
           "El secretario de Transporte, Sean Duffy, [atribuyó la orden](https://x.com/SecDuffy/status/2121351591106072679) a un problema de comunicaciones que afectó a todos los centros de control de rutas aéreas del país, y dijo que los técnicos de la FAA lo estaban investigando.",
           "En inglés, la FAA habla de «safety», que se refiere a la seguridad de las operaciones. Ninguna autoridad ha hablado de un ataque.",
           "Esta nota se actualizará en cuanto la FAA emita un comunicado."
@@ -956,7 +956,7 @@
           "## Update · 10:20 p.m.: South Florida airports",
           "Flights are starting to depart, but with many cancellations. [Miami International Airport](https://www.miami-airport.com/) says on its website that the nationwide ground stop has been lifted and airlines are working to resume normal schedules. In an earlier [statement](https://news.miami-airport.com/mia-statement-about-the-faa-system-outage/), MIA strongly urged passengers not to come to the airport until they have confirmed directly with their airline.",
           "In Fort Lauderdale, the flight alerts list on the [airport's official website](https://www.broward.org/airport) showed 144 canceled and 23 delayed flights at 10:15 p.m., mostly JetBlue, Azul, Delta, United, Frontier and Southwest.",
-          "[Key West International Airport](https://eyw.com/) has not posted any notice about the ground stop or its flights tonight.",
+          "[Key West International Airport](https://eyw.com/) has not posted any notice about the ground stop or its flights that night.",
           "## Update · 9:55 p.m.",
           "\"Our fix gives us a pretty good indication that it was a legacy network problem that went down,\" Transportation Secretary Sean Duffy said at the [White House press briefing](https://www.youtube.com/watch?v=Mh2q-y0wIu8). \"All of the new equipment that we put in, none of that went down.\"",
           "Duffy was blunt about the cause: \"We have old, old switches, old routers. We use 1980s little copper lines. It's an old system that went down and went down everywhere. It got overloaded.\"",
@@ -965,12 +965,12 @@
           "Homeland Security Secretary Markwayne Mullin said they have seen \"zero evidence\" of a cyberattack. \"It appears that this was mechanically driven. However, we're still looking, so we're not going to rule that out,\" he added.",
           "Nor was it the FAA's new artificial intelligence tool, according to Duffy. The SMART system, he explained, only suggests routes to a controller, who decides whether to accept them, and it is not connected to the traffic systems: \"There's no possible way SMART would have impacted what happened today.\"",
           "During the stop, communications and radar were intermittent rather than completely down. \"That's a risk that we're unwilling to tolerate,\" Duffy said. More than 3,500 aircraft landed safely, and medical and organ transplant flights kept operating.",
-          "On recovery, the secretary warned that \"this is not going to get done overnight.\" Airlines will move what aircraft they can tonight if crews are available, and the rest from Saturday morning. Duffy said he expects the system to be operating normally by Thanksgiving.",
+          "On recovery, the secretary warned that \"this is not going to get done overnight.\" Airlines moved what aircraft they could that same night, depending on crews, and the rest from Saturday morning, as he had announced. Duffy said he expects the system to be operating normally by Thanksgiving.",
           "Both secretaries used the briefing to ask Congress for $50 billion in emergency funding to modernize air traffic control.",
           "## Update · 8:19 p.m.",
           "\"The FAA Command Center nationwide ground stop has been cancelled,\" reads the [agency's official Advisory 005](https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5), sent at 8:19 p.m. for all airports and all facilities. The FAA has not yet explained the cause in a statement.",
           "## What happened",
-          "At 3:54 p.m. this Friday, Nov. 13, the FAA ordered that no flight take off from any U.S. airport, \"due to extraordinary circumstances and for reasons of safety.\" Planes already in the air continued to their destinations, and international flights inbound to the U.S. are handled case by case.",
+          "At 3:54 p.m. Friday, Nov. 13, the FAA ordered that no flight take off from any U.S. airport, \"due to extraordinary circumstances and for reasons of safety.\" Planes already in the air continued to their destinations, and international flights inbound to the U.S. are handled case by case.",
           "Transportation Secretary Sean Duffy [attributed the order](https://x.com/SecDuffy/status/2121351591106072679) to a communications issue affecting all of the country's Air Route Traffic Control Centers and said FAA technicians were investigating.",
           "The FAA's word is \"safety,\" which refers to operational safety. No authority has spoken of an attack.",
           "This story will be updated as soon as the FAA issues a statement."
@@ -1370,7 +1370,8 @@
         }
       ],
       "ambos": true,
-      "vence": "2026-11-15"
+      "vence": "2026-11-15",
+      "aviso_vence": false
     },
     {
       "id": "microsoft-365-caida-mundial-outlook",
@@ -3127,14 +3128,14 @@
       "foto_pie_en": "Alligator Reef Lighthouse, 4 miles off Islamorada, surrounded by boats and swimmers. Photo: Adobe Stock.",
       "es": {
         "titulo": "Alligator Reef: la luz que Islamorada se niega a apagar",
-        "bajada": "El faro de 1873 tiene cena benéfica este sábado, y su restauración está por entrar en obras.",
+        "bajada": "El faro de 1873 tuvo su cena benéfica el sábado 14 de noviembre, y su restauración está por entrar en obras.",
         "toca": [
-          "Cena Reignite the Light: sábado 14 de noviembre, en Founders Park, Islamorada.",
+          "La cena Reignite the Light se celebró el sábado 14 de noviembre en Founders Park, Islamorada.",
           "Para donar o saber más: [savealligatorlighthouse.org](https://www.savealligatorlighthouse.org/).",
           "El faro se ve en el horizonte desde la costa de Islamorada, a unas 4 millas mar adentro."
         ],
         "cuerpo": [
-          "Este sábado 14 de noviembre Islamorada se viste de gala por su faro. La cena benéfica anual Reignite the Light se celebra en Founders Park para seguir recaudando fondos para [restaurar el faro de Alligator Reef](https://keysweekly.com/42/after-years-of-fundraising-work-may-soon-begin-on-alligator-reef-lighthouse/). Esa sola noche ha llegado a reunir unos $225,000.",
+          "El sábado 14 de noviembre Islamorada se vistió de gala por su faro. La cena benéfica anual Reignite the Light se celebró en Founders Park para seguir recaudando fondos para [restaurar el faro de Alligator Reef](https://keysweekly.com/42/after-years-of-fundraising-work-may-soon-begin-on-alligator-reef-lighthouse/). Esa sola noche ha llegado a reunir unos $225,000.",
           "No se hace en invierno, cuando llegan los snowbirds, por una razón sencilla. «Es un evento de los locales, porque el faro representa a los locales», dijo al semanario Lorie LaLonde, presidenta de la fundación que lo cuida.",
           "## Un gigante en medio del mar",
           "El faro se encendió por primera vez en 1873 y dejó de operar en 2014. Está en el Registro Nacional de Lugares Históricos, rodeado de corales que cada año visitan decenas de miles de navegantes, buzos y nadadores. Mide 136 pies y debe su nombre al USS Alligator, una goleta de la Marina que naufragó en ese arrecife en 1822.",
@@ -3149,14 +3150,14 @@
       },
       "en": {
         "titulo": "Alligator Reef: the light Islamorada refuses to put out",
-        "bajada": "The 1873 lighthouse has its benefit dinner this Saturday, and its restoration is about to break ground.",
+        "bajada": "The 1873 lighthouse held its benefit dinner on Saturday, Nov. 14, and its restoration is about to break ground.",
         "toca": [
-          "Reignite the Light gala: Saturday, Nov. 14, at Founders Park, Islamorada.",
+          "The Reignite the Light gala took place Saturday, Nov. 14, at Founders Park, Islamorada.",
           "To donate or learn more: [savealligatorlighthouse.org](https://www.savealligatorlighthouse.org/).",
           "The lighthouse is visible on the horizon from the Islamorada shore, about 4 miles out to sea."
         ],
         "cuerpo": [
-          "This Saturday, Nov. 14, Islamorada dresses up for its lighthouse. The annual Reignite the Light benefit dinner takes place at Founders Park to keep raising money to [restore Alligator Reef Lighthouse](https://keysweekly.com/42/after-years-of-fundraising-work-may-soon-begin-on-alligator-reef-lighthouse/). That single night has raised about $225,000.",
+          "On Saturday, Nov. 14, Islamorada dressed up for its lighthouse. The annual Reignite the Light benefit dinner took place at Founders Park to keep raising money to [restore Alligator Reef Lighthouse](https://keysweekly.com/42/after-years-of-fundraising-work-may-soon-begin-on-alligator-reef-lighthouse/). That single night has raised about $225,000.",
           "It isn't held in winter, when the snowbirds arrive, for a simple reason. \"This is a locals' event. It's geared toward the locals because the lighthouse represents the locals,\" Lorie LaLonde, president of the foundation that looks after it, told the weekly.",
           "## A giant in the middle of the sea",
           "The lighthouse was first lit in 1873 and was last operational in 2014. It is on the National Register of Historic Places, surrounded by corals visited each year by tens of thousands of boaters, divers and swimmers. It stands 136 feet tall and is named for the USS Alligator, a Navy schooner that wrecked on the reef in 1822.",
@@ -3187,7 +3188,8 @@
           "es": "La costa de Islamorada, desde donde se ve el faro en el horizonte. Foto: Adobe Stock.",
           "en": "The Islamorada shore, where the lighthouse is visible on the horizon. Photo: Adobe Stock."
         }
-      ]
+      ],
+      "actualizada": "2026-11-16T21:50:00-05:00"
     },
     {
       "id": "cayos-vivienda-trabajadores-rogo",
@@ -5969,30 +5971,30 @@
       "foto_pie_en": "File photo.",
       "es": {
         "etiqueta": "CULTURA",
-        "titulo": "La Feria del Libro abre hoy con fiesta gratis en la calle: ocho días de autores en el downtown",
-        "bajada": "La edición 43 de la Miami Book Fair arranca este domingo en el campus Wolfson de Miami Dade College con una fiesta de música de Miami, de 4 a 9 PM y con entrada libre.",
+        "titulo": "La Feria del Libro abrió con fiesta gratis en la calle: ocho días de autores en el downtown",
+        "bajada": "La edición 43 de la Miami Book Fair arrancó el domingo 15 en el campus Wolfson de Miami Dade College con una fiesta de música de Miami, y sigue hasta el domingo 22.",
         "toca": [
-          "Hoy: fiesta de apertura, de 4 a 9 PM, en el campus Wolfson de MDC, en el downtown. Es gratis.",
+          "La fiesta de apertura fue el domingo 15 en el campus Wolfson de MDC, en el downtown.",
           "La feria sigue hasta el domingo 22, con la Feria de la Calle del viernes 20 al domingo 22.",
           "Programa y entradas de las charlas: [miamibookfair.com](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/)."
         ],
         "cuerpo": [
-          "«Lee todo el día, baila toda la noche». Con ese lema, la [Miami Book Fair](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/) abre su edición 43 con una fiesta dedicada a la música de baile que ha marcado a Miami por generaciones, en el campus Wolfson de Miami Dade College.",
+          "«Lee todo el día, baila toda la noche». Con ese lema, la [Miami Book Fair](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/) abrió su edición 43 con una fiesta dedicada a la música de baile que ha marcado a Miami por generaciones, en el campus Wolfson de Miami Dade College.",
           "De aquí al 22 de noviembre pasarán por el downtown cerca de 500 autores, con programación en inglés, español y criollo haitiano, según [Miami Dade College](https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/), que organiza la feria. Margaret Atwood y Colson Whitehead encabezan el cartel de esta edición.",
           "El último fin de semana, del viernes 20 al domingo 22, los libros salen a las calles que rodean el campus con la tradicional Feria de la Calle."
         ]
       },
       "en": {
         "etiqueta": "CULTURE",
-        "titulo": "Miami Book Fair opens today with a free street party: eight days of authors downtown",
-        "bajada": "The 43rd Miami Book Fair kicks off Sunday at Miami Dade College's Wolfson Campus with a party celebrating Miami's music, 4 to 9 p.m., free.",
+        "titulo": "Miami Book Fair opened with a free street party: eight days of authors downtown",
+        "bajada": "The 43rd Miami Book Fair kicked off Sunday the 15th at Miami Dade College's Wolfson Campus with a party celebrating Miami's music, and runs through Sunday the 22nd.",
         "toca": [
-          "Today: opening party, 4 to 9 p.m., at MDC's Wolfson Campus downtown. Free.",
+          "The opening party was Sunday the 15th at MDC's Wolfson Campus downtown.",
           "The fair runs through Sunday the 22nd, with the Street Fair Friday the 20th through Sunday the 22nd.",
           "Program and tickets for author talks: [miamibookfair.com](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/)."
         ],
         "cuerpo": [
-          "\"Read all day, dance all night.\" Under that motto, the [Miami Book Fair](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/) opens its 43rd edition with a party celebrating the dance music that has shaped Miami for generations, at Miami Dade College's Wolfson Campus.",
+          "\"Read all day, dance all night.\" Under that motto, the [Miami Book Fair](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/) opened its 43rd edition with a party celebrating the dance music that has shaped Miami for generations, at Miami Dade College's Wolfson Campus.",
           "Through Nov. 22, nearly 500 authors will come downtown, with programming in English, Spanish and Haitian Creole, according to [Miami Dade College](https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/), which organizes the fair. Margaret Atwood and Colson Whitehead headline this year.",
           "On the final weekend, Friday the 20th through Sunday the 22nd, books take over the streets around campus for the traditional Street Fair."
         ]
@@ -6006,7 +6008,9 @@
           "n": "Miami Dade College · programa de la Miami Book Fair 2026",
           "u": "https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/"
         }
-      ]
+      ],
+      "vence": "2026-11-22",
+      "actualizada": "2026-11-16T21:50:00-05:00"
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
