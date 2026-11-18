@@ -38,7 +38,9 @@ export default async function handler(req, res) {
       const f = (en && n.foto_en) ? n.foto_en : n.foto;
       const img = f ? (/^https?:/.test(f) ? f : SITE + '/fotos/' + f.replace(/^\/?(fotos\/)?/, '')) : SITE + '/og-share.jpg';
       const url = SITE + (en ? '/news/' : '/noticias/') + id;
-      html = html.replace(/<title>[^<]*<\/title>/i, '<title>' + esc(title) + ' · Miami Magic News</title>');
+      // Titular largo: va solo, sin " · Miami Magic News", para no alargar el título que ven los buscadores
+      html = html.replace(/<title>[^<]*<\/title>/i, '<title>' + esc(title) + (title.length > 50 ? '' : ' · Miami Magic News') + '</title>');
+      html = html.replace('<img src="/miami-magic-icon-192.png" alt="">', '<img src="/miami-magic-icon-192.png" alt="Miami Magic News">');
       html = setMeta(html, 'name', 'description', desc);
       html = setMeta(html, 'property', 'og:title', title);
       html = setMeta(html, 'property', 'og:description', desc);
