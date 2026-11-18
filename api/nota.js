@@ -73,12 +73,15 @@ export default async function handler(req, res) {
         datePublished: n.publicada || n.fecha,
         dateModified: n.actualizada || n.publicada || n.fecha,
         inLanguage: en ? 'en-US' : 'es-US',
-        author: { '@type': 'Person', name: n.autor || 'Yolaxys Alvarez', url: SITE + (en ? '/news' : '/noticias') },
+        author: { '@type': 'Person', name: n.autor || 'Yolaxys Alvarez', url: SITE + (en ? '/news/about' : '/noticias/sobre') },
         publisher: {
           '@type': 'NewsMediaOrganization',
           name: 'Miami Magic News',
           url: SITE + '/noticias',
-          logo: { '@type': 'ImageObject', url: SITE + '/miami-magic-icon-512.png', width: 512, height: 512 }
+          logo: { '@type': 'ImageObject', url: SITE + '/miami-magic-icon-512.png', width: 512, height: 512 },
+          publishingPrinciples: SITE + (en ? '/news/about' : '/noticias/sobre'),
+          correctionsPolicy: SITE + (en ? '/news/about' : '/noticias/sobre'),
+          ethicsPolicy: SITE + (en ? '/news/about' : '/noticias/sobre')
         }
       };
       // La nota completa ya dentro de la página (para Google, Bing y lectores de noticias).

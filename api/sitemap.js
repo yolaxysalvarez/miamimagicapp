@@ -98,6 +98,11 @@ export default async function handler(req, res) {
       }
     }
   }
+  if (tipo === 'notas') {
+    for (const loc of [SITE + '/noticias/sobre', SITE + '/news/about']) {
+      out.push('  <url><loc>' + loc + '</loc><xhtml:link rel="alternate" hreflang="es" href="' + SITE + '/noticias/sobre"/><xhtml:link rel="alternate" hreflang="en" href="' + SITE + '/news/about"/></url>');
+    }
+  }
   out.push('</urlset>');
 
   res.setHeader('Content-Type', 'application/xml; charset=utf-8');

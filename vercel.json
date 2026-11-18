@@ -153,6 +153,14 @@
       "dest": "/api/portada-news.js?lang=en"
     },
     {
+      "src": "/noticias/sobre/?",
+      "dest": "/noticias-sobre.html"
+    },
+    {
+      "src": "/news/about/?",
+      "dest": "/noticias-sobre-en.html"
+    },
+    {
       "src": "/noticias/([a-z0-9\\-_]+)/?",
       "dest": "/api/nota.js?id=$1"
     },
