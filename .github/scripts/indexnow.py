@@ -10,7 +10,7 @@ def load(rev):
     except Exception:
         return {"notas": []}
 before = sys.argv[1] if len(sys.argv) > 1 else "HEAD~1"
-old = {n["id"]: n for n in load(before).get("notas", [])}
+old = {} if before == "ALL" else {n["id"]: n for n in load(before).get("notas", [])}
 new = load("HEAD").get("notas", [])
 urls = []
 for n in new:

@@ -5,6 +5,11 @@ on:
     branches: [main]
     paths: [noticias.json]
   workflow_dispatch:
+    inputs:
+      todo:
+        description: 'Avisar de TODAS las notas'
+        type: boolean
+        default: false
 
 jobs:
   ping:
@@ -16,4 +21,4 @@ jobs:
       - name: Esperar a que Vercel publique
         run: sleep 90
       - name: Avisar a IndexNow
-        run: python3 .github/scripts/indexnow.py "${{ github.event.before || 'HEAD~1' }}"
+        run: python3 .github/scripts/indexnow.py "${{ inputs.todo && 'ALL' || github.event.before || 'HEAD~1' }}"
