@@ -49,6 +49,38 @@ export default async function handler(req, res) {
       html = setMeta(html, 'name', 'twitter:description', desc);
       html = setMeta(html, 'name', 'twitter:image', img);
       if (en) html = html.replace('<html lang="es">', '<html lang="en">');
+
+      // Para Google: foto grande permitida, dirección oficial de la nota y su versión en el otro idioma
+      html = setMeta(html, 'name', 'robots', 'index, follow, max-image-preview:large, max-snippet:-1');
+      const urlEs = SITE + '/noticias/' + id, urlEn = SITE + '/news/' + id;
+      html = html.replace(/<link rel="(canonical|alternate)"[^>]*>\s*/gi, '');
+      html = html.replace('</head>',
+        '<link rel="canonical" href="' + esc(url) + '">\n' +
+        '<link rel="alternate" hreflang="es" href="' + esc(urlEs) + '">\n' +
+        '<link rel="alternate" hreflang="en" href="' + esc(urlEn) + '">\n' +
+        '<link rel="alternate" hreflang="x-default" href="' + esc(urlEs) + '">\n</head>');
+
+      // Ficha de noticia (datos estructurados NewsArticle), invisible para el lector
+      const ficha = {
+        '@context': 'https://schema.org',
+        '@type': 'NewsArticle',
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+        headline: title.length > 110 ? title.slice(0, 107).replace(/\s+\S*$/, '') + '…' : title,
+        description: desc,
+        image: [img],
+        datePublished: n.fecha,
+        dateModified: n.actualizada || n.fecha,
+        inLanguage: en ? 'en-US' : 'es-US',
+        author: { '@type': 'Person', name: n.autor || 'Yolaxys Alvarez', url: SITE + (en ? '/news' : '/noticias') },
+        publisher: {
+          '@type': 'NewsMediaOrganization',
+          name: 'Miami Magic News',
+          url: SITE + '/noticias',
+          logo: { '@type': 'ImageObject', url: SITE + '/miami-magic-icon-512.png', width: 512, height: 512 }
+        }
+      };
+      html = html.replace('</head>', '<script type="application/ld+json">' +
+        JSON.stringify(ficha).replace(/</g, '\\u003c') + '</script>\n</head>');
     }
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.setHeader('Cache-Control', 'public, s-maxage=120, stale-while-revalidate=600');

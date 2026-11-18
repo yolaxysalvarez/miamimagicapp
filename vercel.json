@@ -22,6 +22,10 @@
       "use": "@vercel/node"
     },
     {
+      "src": "api/sitemap.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "*.html",
       "use": "@vercel/static"
     },
@@ -86,6 +90,14 @@
     {
       "src": "/api/stripe-webhook",
       "dest": "/api/stripe-webhook.js"
+    },
+    {
+      "src": "/sitemap-noticias\\.xml",
+      "dest": "/api/sitemap.js?t=news"
+    },
+    {
+      "src": "/sitemap-notas\\.xml",
+      "dest": "/api/sitemap.js?t=notas"
     },
     {
       "src": "/noticias/?",
