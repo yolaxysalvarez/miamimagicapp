@@ -92,7 +92,7 @@ export default async function handler(req, res) {
         return esc(s).replace(/\u0001(\d+)\u0001/g, (m, i) => '<a href="' + esc(K[i][1]) + '" rel="noopener">' + esc(K[i][0]) + '</a>');
       };
       const cuerpo = (L.cuerpo || []).filter(p => typeof p === 'string' && p.slice(0, 2) !== '::')
-        .map(p => p.slice(0, 3) === '## ' ? '<h2>' + esc(p.slice(3)) + '</h2>' : '<p>' + lk(p) + '</p>').join('\n');
+        .map(p => p.slice(0, 3) === '## ' ? '<h2>' + esc(p.slice(3)) + '</h2>' : p.slice(0, 2) === '- ' ? '<p>• ' + lk(p.slice(2)) + '</p>' : '<p>' + lk(p) + '</p>').join('\n');
       const toca = (L.toca || []).length ? '<ul>' + L.toca.map(t => '<li>' + lk(t) + '</li>').join('') + '</ul>' : '';
       const fuentes = (n.fuentes || []).length ? '<h2>' + (en ? 'Sources' : 'Fuentes') + '</h2><ul>' +
         n.fuentes.map(f => '<li>' + (f.u ? '<a href="' + esc(f.u) + '" rel="noopener">' + esc(f.n) + '</a>' : esc(f.n)) + '</li>').join('') + '</ul>' : '';

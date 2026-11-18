@@ -55,6 +55,228 @@
   "videos": [],
   "notas": [
     {
+      "id": "voyager-1-dia-luz-miami-1977",
+      "scope": "miami",
+      "tema": "curioso",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-18",
+      "publicada": "2026-11-18T15:01:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-voyager-1-dia-luz.jpg",
+      "foto_alt": "Despegue del cohete Titan-Centaur con la Voyager 1 en Cabo Cañaveral, junto a los datos de su distancia: 1 día luz, 16,100 millones de millas",
+      "foto_pie": "La Voyager 1 despega de Cabo Cañaveral el 5 de septiembre de 1977. Foto: NASA/JPL-Caltech.",
+      "foto_pie_en": "Voyager 1 lifts off from Cape Canaveral on September 5, 1977. Photo: NASA/JPL-Caltech.",
+      "fuentes": [
+        {
+          "n": "CNN · La Voyager 1 llega a un día luz",
+          "u": "https://www.cnn.com/2026/11/18/science/voyager-1-light-day"
+        },
+        {
+          "n": "EarthSky · Hora y distancia del hito, según la NASA",
+          "u": "https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/"
+        },
+        {
+          "n": "NASA · Foto del despegue (PIA21747)",
+          "u": "https://images.nasa.gov/details/PIA21747"
+        },
+        {
+          "n": "Servicio Nacional de Meteorología en Miami · La nieve de 1977",
+          "u": "https://www.weather.gov/media/mfl/news/SnowArticleSouthFlorida40th.pdf"
+        },
+        {
+          "n": "Departamento de Estado · Relaciones con Cuba",
+          "u": "https://history.state.gov/countries/cuba"
+        },
+        {
+          "n": "Departamento de Estado · Relaciones EE. UU.-Cuba (julio de 1978)",
+          "u": "https://www.latinamericanstudies.org/cuba/gist-1978.pdf"
+        },
+        {
+          "n": "Miami Sound Machine · discografía",
+          "u": "https://en.wikipedia.org/wiki/Miami_Sound_Machine"
+        },
+        {
+          "n": "Elección de alcalde de Miami, 1977",
+          "u": "https://en.wikipedia.org/wiki/1977_Miami_mayoral_election"
+        },
+        {
+          "n": "AP · La Voyager 2 llegará al día luz en 2035",
+          "u": "https://6abc.com/story/nasas-voyager-1-closes-light-day-interstellar-space-new-distance-record/20042574/"
+        },
+        {
+          "n": "Septiembre de 1977 · el vuelo a Homestead",
+          "u": "https://en.wikipedia.org/wiki/September_1977"
+        },
+        {
+          "n": "The Miami News, 19 de enero de 1977 (Wikimedia Commons)",
+          "u": "https://commons.wikimedia.org/wiki/File:The_Miami_News_January_19,_1977_front_page.jpg"
+        },
+        {
+          "n": "NASA · El Disco de Oro (PIA14113)",
+          "u": "https://images.nasa.gov/details/PIA14113"
+        },
+        {
+          "n": "NASA · Punto azul pálido (PIA23645)",
+          "u": "https://images.nasa.gov/details/PIA23645"
+        },
+        {
+          "n": "State Archives of Florida · Florida Memory (fotos de 1977)",
+          "u": "https://floridamemory.com/items/show/15637"
+        },
+        {
+          "n": "NASA · Música del Disco de Oro",
+          "u": "https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/"
+        },
+        {
+          "n": "Smithsonian · Qué lleva el Disco de Oro",
+          "u": "https://www.smithsonianmag.com/science-nature/what-is-on-voyagers-golden-record-73063839/"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-18T15:01:00-05:00",
+      "es": {
+        "etiqueta": "CIENCIA",
+        "titulo": "La Voyager 1 llega a un día luz de la Tierra: despegó de Florida en 1977, el año en que nevó en Miami",
+        "bajada": "La nave de la NASA cruzó este miércoles una distancia que ningún objeto hecho por el ser humano había alcanzado. Salió de Cabo Cañaveral el mismo año en que Miami vio nevar y Washington volvió a tener oficina en La Habana.",
+        "toca": [
+          "Una orden que salga hoy de la Tierra le llega a la Voyager 1 mañana, y su respuesta, pasado mañana.",
+          "Su gemela, la Voyager 2, no llegará al día luz hasta 2035."
+        ],
+        "cuerpo": [
+          "La Voyager 1 cruzó este miércoles, a las 5:16 a.m. hora del Este, la marca de un día luz: unos 16,100 millones de millas, la distancia que recorre la luz en 24 horas. Ningún otro objeto hecho por el ser humano había llegado tan lejos, [confirmó la NASA](https://www.cnn.com/2026/11/18/science/voyager-1-light-day). Desde ahora, cualquier señal tarda un día entero en llegar a la nave y otro en volver.",
+          "Tiene 49 años y despegó de Florida. Salió del Kennedy Space Center, en Cabo Cañaveral, el 5 de septiembre de 1977 a las 8:56 de la mañana, según los [archivos de la NASA](https://images.nasa.gov/details/PIA21747). Pasó por Júpiter y Saturno, dejó atrás el sistema solar en 2012 y hoy está a 173 unidades astronómicas, es decir, 173 veces la distancia entre la Tierra y el Sol.",
+          "## Lo que lleva el Disco de Oro",
+          "Cada Voyager carga un disco de cobre bañado en oro, de 12 pulgadas, pensado como cápsula del tiempo por si alguna civilización lo encuentra. Lo escogió un comité presidido por el astrónomo Carl Sagan, y guarda 115 imágenes, saludos en 55 idiomas, 12 minutos de sonidos de la Tierra y 90 minutos de música, detalla el [Smithsonian](https://www.smithsonianmag.com/science-nature/what-is-on-voyagers-golden-record-73063839/). En la tapa van grabadas las instrucciones para ponerlo a sonar.",
+          "::img mm-voyager-disco-de-oro.jpg|El Disco de Oro que viaja en cada Voyager. Imagen: NASA/JPL-Caltech.",
+          "Estas son las 27 piezas de música, en el orden de la [lista oficial de la NASA](https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/):",
+          "- Alemania · Bach, Concierto de Brandeburgo n.º 2 en fa, primer movimiento. Orquesta Bach de Múnich, dirigida por Karl Richter (4:40)",
+          "- Java · Gamelán de la corte, «Kinds of Flowers». Grabación de Robert Brown (4:43)",
+          "- Senegal · Percusión. Grabación de Charles Duvelle (2:08)",
+          "- Zaire · Canto de iniciación de las niñas pigmeas. Grabación de Colin Turnbull (0:56)",
+          "- Australia · Cantos aborígenes, «Morning Star» y «Devil Bird». Grabación de Sandra LeBrun Holmes (1:26)",
+          "- México · «El Cascabel». Lorenzo Barcelata y el Mariachi México (3:14)",
+          "- Estados Unidos · «Johnny B. Goode», de Chuck Berry (2:38)",
+          "- Nueva Guinea · Canto de la casa de los hombres. Grabación de Robert MacLennan (1:20)",
+          "- Japón · Shakuhachi, «Tsuru No Sugomori» («El nido de la grulla»). Goro Yamaguchi (4:51)",
+          "- Alemania · Bach, «Gavotte en rondeaux», de la Partita n.º 3 en mi mayor para violín. Arthur Grumiaux (2:55)",
+          "- Austria · Mozart, La flauta mágica, aria de la Reina de la Noche, n.º 14. Edda Moser, soprano; Ópera Estatal de Baviera, dirigida por Wolfgang Sawallisch (2:55)",
+          "- Georgia · Coro, «Tchakrulo». Recopilación de Radio Moscú (2:18)",
+          "- Perú · Zampoñas y tambor. Recopilación de la Casa de la Cultura de Lima (0:52)",
+          "- Estados Unidos · «Melancholy Blues». Louis Armstrong and his Hot Seven (3:05)",
+          "- Azerbaiyán · Gaita. Grabación de Radio Moscú (2:30)",
+          "- Rusia · Stravinski, La consagración de la primavera, Danza sacrificial. Orquesta Sinfónica de Columbia, dirigida por Ígor Stravinski (4:35)",
+          "- Alemania · Bach, El clave bien temperado, libro 2, Preludio y fuga en do, n.º 1. Glenn Gould, piano (4:48)",
+          "- Alemania · Beethoven, Quinta sinfonía, primer movimiento. Orquesta Philharmonia, dirigida por Otto Klemperer (7:20)",
+          "- Bulgaria · «Izlel je Delyo Hagdutin». Valya Balkanska (4:59)",
+          "- Estados Unidos · Canto nocturno navajo. Grabación de Willard Rhodes (0:57)",
+          "- Reino Unido · Holborne, «The Fairie Round». David Munrow y el Early Music Consort of London (1:17)",
+          "- Islas Salomón · Zampoñas. Recopilación del Servicio de Radiodifusión de las Islas Salomón (1:12)",
+          "- Perú · Canción de boda. Grabación de John Cohen (0:38)",
+          "- China · Qin (cítara), «Flowing Streams». Kuan P'ing-hu (7:37)",
+          "- India · Raga, «Jaat Kahan Ho». Surshri Kesar Bai Kerkar (3:30)",
+          "- Estados Unidos · «Dark Was the Night», de Blind Willie Johnson (3:15)",
+          "- Alemania · Beethoven, Cuarteto de cuerdas n.º 13 en si bemol, Opus 130, Cavatina. Cuarteto de Budapest (6:37)",
+          "Puedes escucharlas en la [lista de Miami Magic en Apple Music](https://music.apple.com/us/playlist/disco-de-oro-de-la-voyager-miami-magic/pl.u-4JomXdBsJzG8xWN), que reúne las piezas del disco disponibles en la plataforma. Algunas están en otras grabaciones, y las de campo no están publicadas.",
+          "## Mientras tanto, en Miami",
+          "Ese año Miami vio nevar. El 19 de enero de 1977 cayeron copos en el sur de Florida por primera vez en la historia registrada, recuerda el [Servicio Nacional de Meteorología en Miami](https://www.weather.gov/media/mfl/news/SnowArticleSouthFlorida40th.pdf). Se vieron desde West Palm Beach hasta Homestead, incluida la arena de Miami Beach, y a las 9:30 de la mañana ya no quedaba nada. The Miami News sacó esa tarde una edición de recuerdo con un titular a toda página: «Snow in Miami!».",
+          "Cuatro días antes del despegue, el 1 de septiembre, Estados Unidos abrió su Sección de Intereses en La Habana, su primera presencia diplomática en Cuba desde la ruptura de 1961, según el [Departamento de Estado](https://history.state.gov/countries/cuba). Ese mismo mes, informó después el Departamento, unos [55 ciudadanos estadounidenses y sus familias cubanas](https://www.latinamericanstudies.org/cuba/gist-1978.pdf) recibieron permiso para venir a Estados Unidos. El 22 de septiembre aterrizaron en la Base Aérea de Homestead, en un vuelo corto desde La Habana: [31 ciudadanos estadounidenses y 24 familiares cubanos](https://en.wikipedia.org/wiki/September_1977), los primeros autorizados a salir de Cuba en más de una década.",
+          "En la radio sonaba una banda local con nombre nuevo: Miami Sound Machine sacó en 1977 su primer disco, «Live Again/Renacer», con el sello [Audiofon de Miami](https://en.wikipedia.org/wiki/Miami_Sound_Machine). Y la ciudad tenía de alcalde a Maurice Ferré, [reelegido en noviembre](https://en.wikipedia.org/wiki/1977_Miami_mayoral_election) con el 67% de los votos.",
+          "Casi 50 años después, aquel Miami queda a un día luz de la nave que salió de Florida ese septiembre."
+        ]
+      },
+      "en": {
+        "etiqueta": "SCIENCE",
+        "titulo": "Voyager 1 is now one light-day from Earth: it launched from Florida in 1977, the year it snowed in Miami",
+        "bajada": "The NASA spacecraft crossed a distance on Wednesday that no human-made object had ever reached. It left Cape Canaveral the same year Miami saw snow and Washington reopened an office in Havana.",
+        "toca": [
+          "A command sent from Earth today reaches Voyager 1 tomorrow, and its reply arrives the day after.",
+          "Its twin, Voyager 2, won't reach one light-day until 2035."
+        ],
+        "cuerpo": [
+          "Voyager 1 crossed the one-light-day mark at 5:16 a.m. Eastern on Wednesday: about 16.1 billion miles, the distance light travels in 24 hours. No other human-made object has ever gone that far, [NASA confirmed](https://www.cnn.com/2026/11/18/science/voyager-1-light-day). From now on, any signal takes a full day to reach the spacecraft and another to come back.",
+          "It is 49 years old, and it left from Florida. It launched from Kennedy Space Center at Cape Canaveral on September 5, 1977, at 8:56 a.m., according to [NASA's archives](https://images.nasa.gov/details/PIA21747). It flew past Jupiter and Saturn, left the solar system in 2012 and is now 173 astronomical units away, 173 times the distance between Earth and the Sun.",
+          "## What's on the Golden Record",
+          "Each Voyager carries a 12-inch gold-plated copper record, meant as a time capsule in case another civilization ever finds it. It was chosen by a committee chaired by astronomer Carl Sagan, and it holds 115 images, greetings in 55 languages, 12 minutes of sounds from Earth and 90 minutes of music, [Smithsonian](https://www.smithsonianmag.com/science-nature/what-is-on-voyagers-golden-record-73063839/) details. Instructions for playing it are engraved on the cover.",
+          "::img mm-voyager-disco-de-oro.jpg|The Golden Record carried by each Voyager. Image: NASA/JPL-Caltech.",
+          "These are its 27 pieces of music, in the order of [NASA's official list](https://science.nasa.gov/mission/voyager/golden-record-contents/sounds/):",
+          "- Germany · Bach, Brandenburg Concerto No. 2 in F, First Movement. Munich Bach Orchestra, Karl Richter, conductor (4:40)",
+          "- Java · Court gamelan, “Kinds of Flowers.” Recorded by Robert Brown (4:43)",
+          "- Senegal · Percussion. Recorded by Charles Duvelle (2:08)",
+          "- Zaire · Pygmy girls' initiation song. Recorded by Colin Turnbull (0:56)",
+          "- Australia · Aborigine songs, “Morning Star” and “Devil Bird.” Recorded by Sandra LeBrun Holmes (1:26)",
+          "- Mexico · “El Cascabel.” Lorenzo Barcelata and the Mariachi México (3:14)",
+          "- United States · “Johnny B. Goode,” by Chuck Berry (2:38)",
+          "- New Guinea · Men's house song. Recorded by Robert MacLennan (1:20)",
+          "- Japan · Shakuhachi, “Tsuru No Sugomori” (“Crane's Nest”). Goro Yamaguchi (4:51)",
+          "- Germany · Bach, “Gavotte en rondeaux” from the Partita No. 3 in E major for Violin. Arthur Grumiaux (2:55)",
+          "- Austria · Mozart, The Magic Flute, Queen of the Night aria, No. 14. Edda Moser, soprano; Bavarian State Opera, Wolfgang Sawallisch, conductor (2:55)",
+          "- Georgia · Chorus, “Tchakrulo.” Collected by Radio Moscow (2:18)",
+          "- Peru · Panpipes and drum. Collected by Casa de la Cultura, Lima (0:52)",
+          "- United States · “Melancholy Blues.” Louis Armstrong and his Hot Seven (3:05)",
+          "- Azerbaijan · Bagpipes. Recorded by Radio Moscow (2:30)",
+          "- Russia · Stravinsky, The Rite of Spring, Sacrificial Dance. Columbia Symphony Orchestra, Igor Stravinsky, conductor (4:35)",
+          "- Germany · Bach, The Well-Tempered Clavier, Book 2, Prelude and Fugue in C, No. 1. Glenn Gould, piano (4:48)",
+          "- Germany · Beethoven, Fifth Symphony, First Movement. The Philharmonia Orchestra, Otto Klemperer, conductor (7:20)",
+          "- Bulgaria · “Izlel je Delyo Hagdutin.” Valya Balkanska (4:59)",
+          "- United States · Navajo Night Chant. Recorded by Willard Rhodes (0:57)",
+          "- United Kingdom · Holborne, “The Fairie Round.” David Munrow and the Early Music Consort of London (1:17)",
+          "- Solomon Islands · Panpipes. Collected by the Solomon Islands Broadcasting Service (1:12)",
+          "- Peru · Wedding song. Recorded by John Cohen (0:38)",
+          "- China · Ch'in, “Flowing Streams.” Kuan P'ing-hu (7:37)",
+          "- India · Raga, “Jaat Kahan Ho.” Surshri Kesar Bai Kerkar (3:30)",
+          "- United States · “Dark Was the Night,” by Blind Willie Johnson (3:15)",
+          "- Germany · Beethoven, String Quartet No. 13 in B flat, Opus 130, Cavatina. Budapest String Quartet (6:37)",
+          "You can listen to them on [Miami Magic's Apple Music playlist](https://music.apple.com/us/playlist/disco-de-oro-de-la-voyager-miami-magic/pl.u-4JomXdBsJzG8xWN), which gathers the record's pieces available on the platform. Some are in other recordings, and the field recordings aren't released there.",
+          "## Meanwhile, in Miami",
+          "That year, Miami saw snow. On January 19, 1977, flakes fell in South Florida for the first time in recorded history, the [National Weather Service in Miami](https://www.weather.gov/media/mfl/news/SnowArticleSouthFlorida40th.pdf) recalls. They were seen from West Palm Beach to Homestead, even on the sand of Miami Beach, and by 9:30 a.m. they were gone. That afternoon, The Miami News put out a souvenir edition with a full-page headline: “Snow in Miami!”",
+          "Four days before the launch, on September 1, the United States opened its Interests Section in Havana, its first diplomatic presence in Cuba since relations were cut in 1961, according to the [State Department](https://history.state.gov/countries/cuba). That same month, the Department later reported, some [55 American citizens and their Cuban families](https://www.latinamericanstudies.org/cuba/gist-1978.pdf) were allowed to come to the United States. On September 22 they landed at Homestead Air Force Base after a short flight from Havana: [31 American citizens and 24 Cuban relatives](https://en.wikipedia.org/wiki/September_1977), the first people allowed to leave Cuba in more than a decade.",
+          "On the radio was a local band with a new name: Miami Sound Machine released its first album, “Live Again/Renacer,” in 1977 on Miami's [Audiofon label](https://en.wikipedia.org/wiki/Miami_Sound_Machine). And the city's mayor was Maurice Ferré, [re-elected in November](https://en.wikipedia.org/wiki/1977_Miami_mayoral_election) with 67% of the vote.",
+          "Nearly 50 years later, that Miami is one light-day from the spacecraft that left Florida that September."
+        ]
+      },
+      "ultima": 2,
+      "galeria": [
+        {
+          "f": "mm-voyager-miami-news-nieve-1977.jpg",
+          "mm": false,
+          "es": "La portada de The Miami News del 19 de enero de 1977. Imagen: Wikimedia Commons, dominio público.",
+          "en": "The Miami News front page, January 19, 1977. Image: Wikimedia Commons, public domain."
+        },
+        {
+          "f": "mm-1977-miami-dade-college-bilingue.jpg",
+          "mm": false,
+          "es": "Clase del programa bilingüe de Miami-Dade Community College, en el campus InterAmerican, en abril de 1977. Foto: State Archives of Florida, Florida Memory.",
+          "en": "A bilingual program class at Miami-Dade Community College's InterAmerican Campus, April 1977. Photo: State Archives of Florida, Florida Memory."
+        },
+        {
+          "f": "mm-1977-puerto-dodge-island-sureste.jpg",
+          "mm": false,
+          "es": "Cruceros atracados en Dodge Island, el puerto de Miami, en 1977. Foto: State Archives of Florida, Florida Memory.",
+          "en": "Cruise ships docked at Dodge Island, the Port of Miami, in 1977. Photo: State Archives of Florida, Florida Memory."
+        },
+        {
+          "f": "mm-1977-puerto-dodge-island-este.jpg",
+          "mm": false,
+          "es": "El puerto en 1977, con el downtown al fondo. Foto: State Archives of Florida, Florida Memory.",
+          "en": "The port in 1977, with downtown in the background. Photo: State Archives of Florida, Florida Memory."
+        },
+        {
+          "f": "mm-1977-puerto-dodge-island-arriba.jpg",
+          "mm": false,
+          "es": "Dodge Island desde el aire, en 1977. Foto: State Archives of Florida, Florida Memory.",
+          "en": "Dodge Island from the air, 1977. Photo: State Archives of Florida, Florida Memory."
+        },
+        {
+          "f": "mm-voyager-punto-azul-palido.jpg",
+          "mm": false,
+          "es": "El «punto azul pálido»: la Tierra, en el círculo, fotografiada por la Voyager 1 en 1990. Versión de 2020. Imagen: NASA/JPL-Caltech.",
+          "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
+        }
+      ]
+    },
+    {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
       "scope": "miami",
       "tema": "calle",
@@ -143,7 +365,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -226,7 +448,7 @@
         ]
       },
       "actualizada": "2026-11-17T19:30:00-05:00",
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -307,7 +529,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -506,7 +728,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 12
+      "ultima": 13
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -585,7 +807,7 @@
         ]
       },
       "actualizada": "2026-11-18T11:25:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -652,7 +874,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:30:00-05:00",
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -735,7 +957,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -808,7 +1030,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -974,7 +1196,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -1057,7 +1279,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -1139,7 +1361,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 13,
+      "ultima": 14,
       "tambien": 2
     },
     {
@@ -6472,7 +6694,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-18T11:25:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -6524,5 +6746,5 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-12T06:00:00-05:00"
+  "updated_at": "2026-11-18T15:01:00-05:00"
 }
