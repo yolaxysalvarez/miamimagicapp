@@ -143,7 +143,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -226,7 +226,7 @@
         ]
       },
       "actualizada": "2026-11-17T19:30:00-05:00",
-      "ultima": 2
+      "ultima": 7
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -307,7 +307,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -506,7 +506,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 10
+      "ultima": 12
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -547,43 +547,45 @@
       "es": {
         "etiqueta": "ESTA SEMANA",
         "titulo": "Margaret Atwood, cine en Key West y corales en Islamorada: la semana que no te puedes perder",
-        "bajada": "Mañana arranca el cine en Key West, la Feria del Libro cierra con sus grandes nombres y una calle gratis el viernes, y los Cayos llenan el fin de semana. Ojo con la lluvia hasta el jueves.",
+        "bajada": "Hoy arranca el cine en Key West, la Feria del Libro cierra con sus grandes nombres y una calle gratis el viernes, y los Cayos llenan el fin de semana. Ojo con la lluvia hasta el jueves.",
         "toca": [
           "Las charlas de Whitehead y Atwood llevan entrada aparte, en miamibookfair.com.",
           "En la Feria de la Calle, los niños de 12 años o menos entran gratis todos los días.",
-          "El Reef Revival Fest es en la marina Bud N' Mary's, en el 79851 de la Overseas Highway."
+          "El Reef Revival Fest es en la marina Bud N' Mary's, en el 79851 de la Overseas Highway.",
+          "Con lluvia, confirma los actos al aire libre de los Cayos con el condado de Monroe antes de salir."
         ],
         "cuerpo": [
-          "Mañana, miércoles 18, se encienden las pantallas del [Key West Film Festival](https://keywestfilmfestival.com/), que celebra hasta el domingo 22 su edición número 15 con cine internacional, documentales y una categoría nueva para cineastas de Florida. Las funciones se reparten entre salas de Old Town como el Tropic Cinema y el San Carlos Institute. Más al norte manda el tiempo: Miami-Dade y Broward están bajo [vigilancia de inundaciones desde las 5 PM de hoy hasta el jueves](/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre), así que los planes al aire libre conviene dejarlos para el viernes.",
+          "Hoy, miércoles 18, se encienden las pantallas del [Key West Film Festival](https://keywestfilmfestival.com/), que celebra hasta el domingo 22 su edición número 15 con cine internacional, documentales y una categoría nueva para cineastas de Florida. Las funciones son bajo techo, en salas de Old Town como el Tropic Cinema y el San Carlos Institute, y el [pronóstico del NWS en Key West](https://forecast.weather.gov/MapClick.php?lat=24.555&lon=-81.78) da aguaceros para hoy y casi nada de lluvia de jueves a domingo. Más al norte sigue mandando el tiempo: Broward amaneció inundado y Miami-Dade sigue en [vigilancia de inundaciones hasta el jueves](/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre), así que los planes al aire libre conviene dejarlos para el fin de semana.",
           "## En Miami: la Feria del Libro, en su recta final",
           "La [Miami Book Fair](https://miamibookfair.com/miami-book-fair/miami-book-fair-overview/) llega a sus días grandes en el campus Wolfson de Miami Dade College, en el downtown. El jueves 19 a las 8 PM, [Colson Whitehead](https://miamibookfair.com/event/an-evening-with-colson-whitehead-on-cool-machine-a-novel-volume-iii-of-the-harlem-trilogy-fiction/), dos veces ganador del Pulitzer, presenta «Cool Machine», la novela con la que cierra su trilogía de Harlem. El sábado 21 a las 11 AM le toca a [Margaret Atwood](https://miamibookfair.com/event/a-morning-with-margaret-atwood-on-book-of-lives-a-memoir-of-sorts-jess-gibson-on-the-good-eye-stories-fiction-nonfiction/), la autora de «El cuento de la criada», con sus memorias, «Book of Lives».",
           "Del viernes al domingo, la Feria de la Calle llena el campus de puestos de libros en inglés, español y creole haitiano. El viernes 20 se entra gratis; el sábado y el domingo, la entrada cuesta $12, $7 para mayores de 62 y $5 para jóvenes de 13 a 18.",
           "## En los Cayos: corales y drones",
           "En Islamorada, Mote Marine Laboratory abre su vivero de corales el viernes 20, de 5 a 9 PM, en su cuarto [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/): una fiesta gratis con música en vivo, food trucks, talleres para aprender a fragmentar corales, una zona de niños y hasta un tiburón mecánico.",
-          "Y los Cayos siguen con su [America 250](http://www.monroecounty-fl.gov/m/newsflash/Home/Detail/1882): el miércoles, en Founders Park de Islamorada, hay paracaidistas Golden Knights y espectáculo de drones de 5 a 8 PM; el viernes, el mismo programa pasa por Big Pine Key, y el sábado por la mañana se corre allí el 5K Tunnel to Towers."
+          "Y los Cayos siguen con su [America 250](http://www.monroecounty-fl.gov/m/newsflash/Home/Detail/1882): hoy miércoles, en Founders Park de Islamorada, hay paracaidistas Golden Knights y espectáculo de drones de 5 a 8 PM; el viernes, el mismo programa pasa por Big Pine Key, y el sábado por la mañana se corre allí el 5K Tunnel to Towers."
         ]
       },
       "en": {
         "etiqueta": "THIS WEEK",
         "titulo": "Margaret Atwood, film in Key West and corals in Islamorada: the week you can't miss",
-        "bajada": "Film starts tomorrow in Key West, the Book Fair closes with its biggest names and a free street fair Friday, and the Keys fill the weekend. Watch for rain through Thursday.",
+        "bajada": "Film starts today in Key West, the Book Fair closes with its biggest names and a free street fair Friday, and the Keys fill the weekend. Watch for rain through Thursday.",
         "toca": [
           "The Whitehead and Atwood talks require separate tickets, at miamibookfair.com.",
           "At the Street Fair, kids 12 and under get in free every day.",
-          "The Reef Revival Fest is at Bud N' Mary's Marina, 79851 Overseas Highway."
+          "The Reef Revival Fest is at Bud N' Mary's Marina, 79851 Overseas Highway.",
+          "If it rains, check the Keys' outdoor events with Monroe County before heading out."
         ],
         "cuerpo": [
-          "Tomorrow, Wednesday the 18th, the screens light up at the [Key West Film Festival](https://keywestfilmfestival.com/), which runs through Sunday the 22nd for its 15th edition, with international films, documentaries and a new category for Florida filmmakers. Screenings are spread across Old Town venues such as the Tropic Cinema and the San Carlos Institute. Farther north, the weather is in charge: Miami-Dade and Broward are under a [flood watch from 5 PM today through Thursday](/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre), so outdoor plans are best saved for Friday.",
+          "Today, Wednesday the 18th, the screens light up at the [Key West Film Festival](https://keywestfilmfestival.com/), which runs through Sunday the 22nd for its 15th edition, with international films, documentaries and a new category for Florida filmmakers. Screenings are indoors, at Old Town venues such as the Tropic Cinema and the San Carlos Institute, and the [NWS forecast for Key West](https://forecast.weather.gov/MapClick.php?lat=24.555&lon=-81.78) calls for showers today and little rain Thursday through Sunday. Farther north, the weather is still in charge: Broward woke up flooded and Miami-Dade remains under a [flood watch through Thursday](/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre), so outdoor plans are best saved for the weekend.",
           "## In Miami: the Book Fair's home stretch",
           "The [Miami Book Fair](https://miamibookfair.com/miami-book-fair/miami-book-fair-overview/) reaches its big days at Miami Dade College's Wolfson Campus downtown. On Thursday the 19th at 8 PM, two-time Pulitzer winner [Colson Whitehead](https://miamibookfair.com/event/an-evening-with-colson-whitehead-on-cool-machine-a-novel-volume-iii-of-the-harlem-trilogy-fiction/) presents «Cool Machine», the novel that closes his Harlem trilogy. On Saturday the 21st at 11 AM it's [Margaret Atwood](https://miamibookfair.com/event/a-morning-with-margaret-atwood-on-book-of-lives-a-memoir-of-sorts-jess-gibson-on-the-good-eye-stories-fiction-nonfiction/), author of “The Handmaid's Tale”, with her memoir, «Book of Lives».",
           "From Friday to Sunday, the Street Fair fills the campus with booths of books in English, Spanish and Haitian Creole. Friday the 20th is free; Saturday and Sunday cost $12, $7 for seniors over 62 and $5 for teens 13 to 18.",
           "## In the Keys: corals and drones",
           "In Islamorada, Mote Marine Laboratory opens its coral nursery Friday the 20th, 5 to 9 PM, for its fourth [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/): a free party with live music, food trucks, coral-fragmenting workshops, a kids' zone and even a mechanical shark.",
-          "And the Keys keep up their [America 250](http://www.monroecounty-fl.gov/m/newsflash/Home/Detail/1882): on Wednesday at Islamorada's Founders Park there are Golden Knights parachutists and a drone show from 5 to 8 PM; on Friday the same program moves to Big Pine Key, and Saturday morning the Tunnel to Towers 5K runs there."
+          "And the Keys keep up their [America 250](http://www.monroecounty-fl.gov/m/newsflash/Home/Detail/1882): today, Wednesday, at Islamorada's Founders Park there are Golden Knights parachutists and a drone show from 5 to 8 PM; on Friday the same program moves to Big Pine Key, and Saturday morning the Tunnel to Towers 5K runs there."
         ]
       },
-      "actualizada": "2026-11-17T08:14:00-05:00",
-      "ultima": 4
+      "actualizada": "2026-11-18T11:25:00-05:00",
+      "ultima": 2
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -650,7 +652,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:30:00-05:00",
-      "ultima": 7
+      "ultima": 9
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -733,7 +735,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 9
+      "ultima": 11
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -806,7 +808,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 6
+      "ultima": 8
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -972,7 +974,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 12
+      "ultima": 5
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -1055,7 +1057,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 8
+      "ultima": 10
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -1137,7 +1139,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 11,
+      "ultima": 13,
       "tambien": 2
     },
     {
@@ -6420,35 +6422,45 @@
       "foto_pie_en": "File photo.",
       "es": {
         "etiqueta": "CULTURA",
-        "titulo": "La Feria del Libro abrió con fiesta gratis en la calle: ocho días de autores en el downtown",
-        "bajada": "La edición 43 de la Miami Book Fair arrancó el domingo 15 en el campus Wolfson de Miami Dade College con una fiesta de música de Miami, y sigue hasta el domingo 22.",
+        "titulo": "La Feria del Libro entra en su recta final, y el pronóstico mejora para la Feria de la Calle del fin de semana",
+        "bajada": "La edición 43 de la Miami Book Fair sigue hasta el domingo 22 en el campus Wolfson de Miami Dade College. La lluvia manda hasta el jueves, pero el NWS da menos probabilidad para el viernes y un domingo casi despejado.",
         "toca": [
-          "La fiesta de apertura fue el domingo 15 en el campus Wolfson de MDC, en el downtown.",
-          "La feria sigue hasta el domingo 22, con la Feria de la Calle del viernes 20 al domingo 22.",
-          "Programa y entradas de las charlas: [miamibookfair.com](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/)."
+          "La Feria de la Calle es del viernes 20 al domingo 22, al aire libre, alrededor del campus Wolfson de MDC.",
+          "Programa y entradas de las charlas: [miamibookfair.com](https://miamibookfair.com/).",
+          "Si llueve, revisa las redes de la feria antes de ir."
         ],
         "cuerpo": [
-          "«Lee todo el día, baila toda la noche». Con ese lema, la [Miami Book Fair](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/) abrió su edición 43 con una fiesta dedicada a la música de baile que ha marcado a Miami por generaciones, en el campus Wolfson de Miami Dade College.",
+          "La lluvia marca la semana de la [Miami Book Fair](https://miamibookfair.com/), pero no su fin de semana. Para el downtown, el [Servicio Nacional de Meteorología](https://forecast.weather.gov/MapClick.php?lat=25.776&lon=-80.190) prevé tormentas probables hoy y el jueves, con más de 70% de probabilidad de lluvia. Para el viernes, cuando arranca la Feria de la Calle, la baja a 32%; el sábado, a 24%, y el domingo lo da casi despejado.",
+          "Hasta el jueves, la programación es de charlas y presentaciones de autores. La Feria de la Calle, que saca los libros a las calles que rodean el campus, es al aire libre del viernes 20 al domingo 22. La feria no ha anunciado cambios por el tiempo; para sus expositores prevé [cubiertas de plástico](https://miamibookfair.com/exhibitor-faqs/) en cada mesa en caso de lluvia.",
           "De aquí al 22 de noviembre pasarán por el downtown cerca de 500 autores, con programación en inglés, español y criollo haitiano, según [Miami Dade College](https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/), que organiza la feria. Margaret Atwood y Colson Whitehead encabezan el cartel de esta edición.",
-          "El último fin de semana, del viernes 20 al domingo 22, los libros salen a las calles que rodean el campus con la tradicional Feria de la Calle."
+          "La edición 43 abrió el domingo 15 con una fiesta gratis en la calle dedicada a la música de baile que ha marcado a Miami por generaciones, en el campus Wolfson de Miami Dade College."
         ]
       },
       "en": {
         "etiqueta": "CULTURE",
-        "titulo": "Miami Book Fair opened with a free street party: eight days of authors downtown",
-        "bajada": "The 43rd Miami Book Fair kicked off Sunday the 15th at Miami Dade College's Wolfson Campus with a party celebrating Miami's music, and runs through Sunday the 22nd.",
+        "titulo": "The Book Fair enters its final stretch, and the forecast improves for the weekend Street Fair",
+        "bajada": "The 43rd Miami Book Fair runs through Sunday the 22nd at Miami Dade College's Wolfson Campus. Rain rules through Thursday, but the NWS gives lower odds for Friday and a mostly sunny Sunday.",
         "toca": [
-          "The opening party was Sunday the 15th at MDC's Wolfson Campus downtown.",
-          "The fair runs through Sunday the 22nd, with the Street Fair Friday the 20th through Sunday the 22nd.",
-          "Program and tickets for author talks: [miamibookfair.com](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/)."
+          "The Street Fair runs Friday the 20th through Sunday the 22nd, outdoors, around MDC's Wolfson Campus.",
+          "Program and tickets for the talks: [miamibookfair.com](https://miamibookfair.com/).",
+          "If it rains, check the fair's social media before going."
         ],
         "cuerpo": [
-          "\"Read all day, dance all night.\" Under that motto, the [Miami Book Fair](https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/) opened its 43rd edition with a party celebrating the dance music that has shaped Miami for generations, at Miami Dade College's Wolfson Campus.",
+          "Rain is shaping the [Miami Book Fair](https://miamibookfair.com/)'s week, but not its weekend. For downtown, the [National Weather Service](https://forecast.weather.gov/MapClick.php?lat=25.776&lon=-80.190) expects likely storms today and Thursday, with rain chances above 70%. For Friday, when the Street Fair starts, the chance drops to 32%; on Saturday, to 24%, and Sunday looks mostly sunny.",
+          "Through Thursday, the program is author talks and presentations. The Street Fair, which takes the books out to the streets around the campus, is outdoors from Friday the 20th through Sunday the 22nd. The fair has not announced weather changes; for its exhibitors it provides [plastic covers](https://miamibookfair.com/exhibitor-faqs/) for every table in case of rain.",
           "Through Nov. 22, nearly 500 authors will come downtown, with programming in English, Spanish and Haitian Creole, according to [Miami Dade College](https://news.mdc.edu/pressrelease/miami-book-fair-announces-2026-lineup-featuring-margaret-atwood-colson-whitehead-tony-shalhoub-and-bonnie-garmus/), which organizes the fair. Margaret Atwood and Colson Whitehead headline this year.",
-          "On the final weekend, Friday the 20th through Sunday the 22nd, books take over the streets around campus for the traditional Street Fair."
+          "The 43rd edition opened Sunday the 15th with a free street party devoted to the dance music that has shaped Miami for generations, at Miami Dade College's Wolfson Campus."
         ]
       },
       "fuentes": [
+        {
+          "n": "NWS Miami · pronóstico para el downtown",
+          "u": "https://forecast.weather.gov/MapClick.php?lat=25.776&lon=-80.190"
+        },
+        {
+          "n": "Miami Book Fair · preguntas para expositores (lluvia)",
+          "u": "https://miamibookfair.com/exhibitor-faqs/"
+        },
         {
           "n": "Miami Book Fair · fiesta de apertura 2026",
           "u": "https://miamibookfair.com/event/read-all-day-dance-all-night-miami-book-fairs-2026-opening-day-block-party/"
@@ -6459,7 +6471,8 @@
         }
       ],
       "vence": "2026-11-22",
-      "actualizada": "2026-11-16T21:50:00-05:00"
+      "actualizada": "2026-11-18T11:25:00-05:00",
+      "ultima": 3
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
