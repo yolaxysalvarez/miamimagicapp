@@ -68,8 +68,8 @@ export default async function handler(req, res) {
         headline: title.length > 110 ? title.slice(0, 107).replace(/\s+\S*$/, '') + '…' : title,
         description: desc,
         image: [img],
-        datePublished: n.fecha,
-        dateModified: n.actualizada || n.fecha,
+        datePublished: n.publicada || n.fecha,
+        dateModified: n.actualizada || n.publicada || n.fecha,
         inLanguage: en ? 'en-US' : 'es-US',
         author: { '@type': 'Person', name: n.autor || 'Yolaxys Alvarez', url: SITE + (en ? '/news' : '/noticias') },
         publisher: {

@@ -39,7 +39,7 @@ export default async function handler(req, res) {
         out.push('    <loc>' + x(SITE + (lang === 'en' ? '/news/' : '/noticias/') + n.id) + '</loc>');
         out.push('    <news:news>');
         out.push('      <news:publication><news:name>Miami Magic News</news:name><news:language>' + lang + '</news:language></news:publication>');
-        out.push('      <news:publication_date>' + x(n.fecha) + '</news:publication_date>');
+        out.push('      <news:publication_date>' + x(n.publicada || n.fecha) + '</news:publication_date>');
         out.push('      <news:title>' + x(L.titulo) + '</news:title>');
         out.push('    </news:news>');
         out.push('  </url>');
@@ -49,7 +49,7 @@ export default async function handler(req, res) {
     out.push('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">');
     for (const n of notas) {
       const es = SITE + '/noticias/' + n.id, en = SITE + '/news/' + n.id;
-      const mod = n.actualizada || n.fecha;
+      const mod = n.actualizada || n.publicada || n.fecha;
       for (const loc of [es, en]) {
         out.push('  <url>');
         out.push('    <loc>' + x(loc) + '</loc>');
