@@ -4,9 +4,9 @@
   "ultima_hora": {
     "activa": true,
     "nota": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
-    "es": "La lluvia frenó los vuelos hacia MIA y FLL; sigue la vigilancia de inundaciones",
-    "en": "Rain held up flights into MIA and FLL; flood watch continues",
-    "desde": "2026-11-18T10:50:00-05:00",
+    "es": "Un pie de lluvia en Broward: escuelas cerradas y vigilancia hasta el jueves",
+    "en": "A foot of rain in Broward: schools closed, flood watch through Thursday",
+    "desde": "2026-11-18T11:05:00-05:00",
     "hasta": "2026-11-19T19:00:00-05:00"
   },
   "cifras": [
@@ -314,17 +314,29 @@
       "scope": "miami",
       "tema": "calle",
       "hamaca": false,
-      "destacada": false,
+      "destacada": true,
       "fecha": "2026-11-17",
       "publicada": "2026-11-17T08:00:00-05:00",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-vigilancia-inundaciones-nov17-1pm.jpg",
+      "foto": "mm-lluvia-broward-nov18.jpg",
       "foto_mm": false,
       "foto_alt": "Gráfico de la vigilancia de inundaciones del NWS para Miami-Dade y Broward sobre el skyline de Brickell visto a través de un vidrio con gotas de lluvia",
-      "foto_pie": "Vigilancia de inundaciones del NWS Miami: del martes a la 1 PM al jueves a las 7 PM.",
-      "foto_pie_en": "NWS Miami flood watch: Tuesday 1 PM through Thursday 7 PM.",
+      "foto_pie": "Totales preliminares del NWS Miami en 24 horas, hasta las 8 AM del miércoles.",
+      "foto_pie_en": "NWS Miami preliminary 24-hour totals through 8 a.m. Wednesday.",
       "desarrollo": true,
       "fuentes": [
+        {
+          "n": "NWS Miami · totales preliminares de lluvia en 24 horas, 8:27 AM",
+          "u": "https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=PNS&format=CI&version=1&glossary=0"
+        },
+        {
+          "n": "NWS Miami · registro preliminar de daños",
+          "u": "https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=LSR&format=CI&version=1&glossary=0"
+        },
+        {
+          "n": "NWS Key West · avisos de inundación de los Cayos",
+          "u": "https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLS&format=CI&version=1&glossary=0"
+        },
         {
           "n": "FAA · avisos de parada en tierra para MIA y FLL, 18 de noviembre",
           "u": "https://www.fly.faa.gov/adv/advADB"
@@ -340,47 +352,51 @@
       ],
       "es": {
         "etiqueta": "EL TIEMPO",
-        "titulo": "La lluvia frenó los vuelos hacia MIA y FLL: Miami-Dade y Broward siguen en vigilancia de inundaciones hasta el jueves",
-        "bajada": "La FAA detuvo en tierra por baja visibilidad los vuelos con destino a los dos aeropuertos y ya levantó las dos paradas. El Servicio Nacional de Meteorología mantiene de 2 a 4 pulgadas de lluvia, con hasta 6 u 8 en algunos barrios.",
+        "titulo": "Un pie de lluvia deja a Broward bajo el agua: cierran las escuelas y la vigilancia sigue hasta el jueves en Miami-Dade",
+        "bajada": "Al sur de Plantation cayeron más de 12 pulgadas en 24 horas, según el Servicio Nacional de Meteorología. La tormenta también frenó los vuelos hacia FLL y MIA, y en los Cayos inundó tramos de los Middle y Lower Keys.",
         "toca": [
           "Si vuelas hoy, confirma tu vuelo con la aerolínea antes de salir hacia el aeropuerto.",
           "No cruces con el auto una calle inundada: según el NWS, un pie de agua en movimiento basta para arrastrar la mayoría de los autos.",
-          "Si vives en una zona baja, deja el auto en alto y revisa canaletas y desagües cuanto antes.",
+          "Si vives en Broward, revisa si tu calle sigue cerrada antes de salir.",
           "No te metas al mar hasta el jueves: hay riesgo alto de corrientes de resaca.",
           "¿Tu calle se inunda? Búscala en el [mapa de inundación por dirección](/noticias/mapa-inundacion-miami-dade-direccion)."
         ],
         "cuerpo": [
-          "La lluvia y la baja visibilidad frenaron este miércoles en la mañana los vuelos hacia los dos grandes aeropuertos del sur de Florida. Según los avisos de la [FAA](https://www.fly.faa.gov/adv/advADB), los vuelos con destino a Fort Lauderdale (FLL) quedaron retenidos en tierra en sus aeropuertos de origen desde las 8:30 AM, y los que iban a Miami (MIA), desde las 8:57 AM. La agencia levantó la parada de FLL a las 9:32 y la de MIA a las 10:03. Pasadas las 10:40, su [estado oficial de aeropuertos](https://nasstatus.faa.gov/) ya no mostraba demoras en Miami, aunque pueden quedar retrasos mientras las aerolíneas reacomodan sus horarios.",
-          "La vigilancia de inundaciones sigue vigente para Miami-Dade, Broward y Palm Beach hasta las 7 de la noche del jueves. El [Servicio Nacional de Meteorología en Miami](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639) la renovó a las 2:21 AM con los mismos totales: de 2 a 4 pulgadas, con 6 a 8 posibles en algunas zonas y más de 10 en puntos aislados.",
+          "Broward amaneció bajo el agua. En 24 horas cayeron 12.16 pulgadas al sur de Plantation, y más de 10 en Hollywood y Lauderhill, según los [totales preliminares](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=PNS&format=CI&version=1&glossary=0) del Servicio Nacional de Meteorología (NWS) hasta las 8 de la mañana. Las Escuelas Públicas del Condado de Broward [cerraron hoy](https://www.nbcmiami.com/news/local/broward-public-schools-offices-closed-on-wednesday-due-to-flooding/3889656/) todas sus escuelas y oficinas, incluidas las actividades antes y después de clases.",
+          "En su [registro de daños](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=LSR&format=CI&version=1&glossary=0), el NWS anotó el techo derrumbado de la sinagoga Temple Sinai, en Hollywood, a partir de reportes de los medios, y autos con el agua casi hasta las ruedas en el cruce de la US-441 con Sheridan Street. El condado declaró una emergencia local a las 7 de la mañana, de acuerdo con [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
+          "La tormenta también frenó los vuelos. Según los avisos de la [FAA](https://www.fly.faa.gov/adv/advADB), los vuelos con destino a Fort Lauderdale (FLL) quedaron retenidos en sus aeropuertos de origen por tormentas desde las 8:30 AM, y los que iban a Miami (MIA), por baja visibilidad desde las 8:57 AM. La agencia levantó las dos paradas a las 9:32 y a las 10:03.",
+          "En Miami-Dade, la lluvia siguió en la mañana: el NWS emitió [avisos de inundación](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=FLS&format=CI&version=1&glossary=0) para el norte del condado, de Hialeah y Miami Gardens a North Miami y Aventura. La vigilancia de inundaciones sigue hasta las 7 de la noche del jueves para Miami-Dade, Broward y Palm Beach, con otras [2 a 4 pulgadas](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639) posibles. Las escuelas de Miami-Dade abrieron con normalidad, según NBC6.",
+          "En los Cayos, el NWS de Key West tuvo un [aviso de inundación](https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLS&format=CI&version=1&glossary=0) para los Middle y Lower Keys hasta las 10:45 AM, con Marathon, el Seven Mile Bridge, Bahia Honda y la US-1 entre las millas 37 y 53. A las 9:55 canceló la advertencia de inundación de los Lower Keys porque el agua había bajado, y pidió respetar los cierres de calles que aún queden.",
           "El riesgo está en la repetición. Un frente detenido al norte y aire muy húmedo que entra del oeste y del sur pueden traer tandas de aguaceros sobre los mismos barrios, y algunas tormentas, de acuerdo con los meteorólogos, dejarían de 1 a 2 pulgadas por hora. La oficina del NWS en Miami advierte en su [discusión del pronóstico](https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0) de un aumento del riesgo de inundación urbana en la costa este, y de que, si los aguaceros se repiten, podría haber inundaciones repentinas con impacto.",
           "Vigilancia no es advertencia. La vigilancia significa que se dan las condiciones para que haya inundaciones; si el NWS emite una advertencia, es porque la inundación está ocurriendo o está por ocurrir.",
           "## También en el mar",
-          "El viento del este sopla con ráfagas de más de 30 millas por hora, y hay aviso para embarcaciones pequeñas. En las playas de Miami-Dade y Broward el riesgo de corrientes de resaca es alto hasta el jueves en la noche. En los Cayos no rige la vigilancia de inundaciones, pero el mar sigue picado: [Llegan tres días de viento a los Cayos, con olas de hasta 11 pies en el Estrecho](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre).",
-          "Esta nota se actualizará si el NWS cambia el aviso."
+          "El viento del este sopla con ráfagas de más de 30 millas por hora, y hay aviso para embarcaciones pequeñas. En las playas de Miami-Dade y Broward el riesgo de corrientes de resaca es alto hasta el jueves en la noche. En los Cayos no rige la vigilancia de inundaciones, pero el mar sigue picado: [Llegan tres días de viento a los Cayos, con olas de hasta 11 pies en el Estrecho](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
         ]
       },
       "en": {
         "etiqueta": "WEATHER",
-        "titulo": "Rain held up flights into MIA and FLL: Miami-Dade and Broward stay under a flood watch through Thursday",
-        "bajada": "The FAA held flights bound for both airports on the ground because of low visibility and has lifted both stops. The National Weather Service still expects 2 to 4 inches of rain, with up to 6 or 8 in some neighborhoods.",
+        "titulo": "A foot of rain leaves Broward under water: schools close and the flood watch continues through Thursday in Miami-Dade",
+        "bajada": "More than 12 inches fell south of Plantation in 24 hours, according to the National Weather Service. The storm also held up flights into FLL and MIA, and flooded stretches of the Middle and Lower Keys.",
         "toca": [
           "Flying today? Confirm your flight with the airline before heading to the airport.",
-          "Don't drive through a flooded street: according to the NWS, a foot of moving water is enough to carry away most cars.",
-          "If you live in a low-lying area, park on higher ground and check gutters and drains as soon as you can.",
-          "Stay out of the ocean through Thursday: the rip current risk is high.",
+          "Don't drive through a flooded street: per the NWS, a foot of moving water is enough to sweep away most cars.",
+          "In Broward, check whether your street is still closed before you head out.",
+          "Stay out of the ocean through Thursday: rip current risk is high.",
           "Does your street flood? Look it up on the [flood map by address](/noticias/mapa-inundacion-miami-dade-direccion)."
         ],
         "cuerpo": [
-          "Rain and low visibility held up flights into South Florida's two big airports on Wednesday morning. According to [FAA](https://www.fly.faa.gov/adv/advADB) advisories, flights bound for Fort Lauderdale (FLL) were held on the ground at their departure airports starting at 8:30 a.m., and those headed to Miami (MIA) starting at 8:57 a.m. The agency lifted the FLL stop at 9:32 and the MIA stop at 10:03. Shortly after 10:40, its [official airport status](https://nasstatus.faa.gov/) no longer showed delays in Miami, though some delays may linger while airlines rework their schedules.",
-          "The flood watch remains in effect for Miami-Dade, Broward and Palm Beach until 7 p.m. Thursday. The [National Weather Service in Miami](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639) renewed it at 2:21 a.m. with the same totals: 2 to 4 inches, with 6 to 8 possible in some areas and more than 10 in isolated spots.",
+          "Broward woke up under water. In 24 hours, 12.16 inches fell south of Plantation, and more than 10 in Hollywood and Lauderhill, according to [preliminary totals](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=PNS&format=CI&version=1&glossary=0) from the National Weather Service (NWS) through 8 a.m. Broward County Public Schools [closed](https://www.nbcmiami.com/news/local/broward-public-schools-offices-closed-on-wednesday-due-to-flooding/3889656/) all schools and offices today, including before- and after-school activities.",
+          "In its [storm report](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=LSR&format=CI&version=1&glossary=0), the NWS logged the collapsed roof of the Temple Sinai synagogue in Hollywood, based on media reports, and cars with water nearly up to their wheels at US-441 and Sheridan Street. The county declared a local emergency at 7 a.m., according to [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
+          "The storm also held up flights. According to [FAA](https://www.fly.faa.gov/adv/advADB) advisories, flights bound for Fort Lauderdale (FLL) were held at their departure airports because of thunderstorms starting at 8:30 a.m., and those headed to Miami (MIA) because of low visibility starting at 8:57 a.m. The agency lifted both stops at 9:32 and 10:03.",
+          "In Miami-Dade, the rain continued through the morning: the NWS issued [flood advisories](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=FLS&format=CI&version=1&glossary=0) for the northern part of the county, from Hialeah and Miami Gardens to North Miami and Aventura. The flood watch remains in effect until 7 p.m. Thursday for Miami-Dade, Broward and Palm Beach, with another [2 to 4 inches](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639) possible. Miami-Dade schools opened as usual, according to NBC6.",
+          "In the Keys, the NWS in Key West had a [flood advisory](https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLS&format=CI&version=1&glossary=0) for the Middle and Lower Keys until 10:45 a.m., including Marathon, the Seven Mile Bridge, Bahia Honda and US-1 between mile markers 37 and 53. At 9:55 it cancelled the Lower Keys flood warning because the water had receded, and asked drivers to heed any remaining road closures.",
           "The risk is in the repetition. A front stalled to the north and very moist air sliding in from the west and south could bring rounds of downpours over the same neighborhoods, and some storms, according to forecasters, could drop 1 to 2 inches an hour. The NWS Miami office warns in its [forecast discussion](https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0) of an increased threat of urban flooding along the east coast and that, if heavy rain repeats, impactful flash flooding is possible.",
           "A watch is not a warning. A watch means conditions are right for flooding; if the NWS issues a warning, flooding is happening or about to happen.",
           "## Out on the water too",
-          "East winds are gusting above 30 mph, and a small craft advisory is in effect. Rip current risk is high on Miami-Dade and Broward beaches through Thursday night. The Keys are not under the flood watch, but seas remain rough: [Three windy days hit the Keys, with waves up to 11 feet in the Straits](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre).",
-          "This story will be updated if the NWS changes the alert."
+          "East winds are gusting above 30 mph, and a small craft advisory is in effect. Rip current risk is high on Miami-Dade and Broward beaches through Thursday night. The Keys are not under the flood watch, but seas remain rough: [Three windy days hit the Keys, with waves up to 11 feet in the Straits](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
         ]
       },
-      "actualizada": "2026-11-18T10:50:00-05:00",
+      "actualizada": "2026-11-18T11:05:00-05:00",
       "ultima": 1
     },
     {
@@ -792,7 +808,7 @@
       "tema": "ciudad",
       "hamaca": false,
       "muelle": false,
-      "destacada": true,
+      "destacada": false,
       "fecha": "2026-11-16",
       "publicada": "2026-11-16T11:17:00-05:00",
       "autor": "Yolaxys Alvarez",
