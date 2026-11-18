@@ -4,9 +4,9 @@
   "ultima_hora": {
     "activa": true,
     "nota": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
-    "es": "Miami-Dade y Broward, en vigilancia de inundaciones hasta el jueves",
-    "en": "Miami-Dade and Broward under a flood watch through Thursday",
-    "desde": "2026-11-17T19:30:00-05:00",
+    "es": "La lluvia frenó los vuelos hacia MIA y FLL; sigue la vigilancia de inundaciones",
+    "en": "Rain held up flights into MIA and FLL; flood watch continues",
+    "desde": "2026-11-18T10:50:00-05:00",
     "hasta": "2026-11-19T19:00:00-05:00"
   },
   "cifras": [
@@ -143,7 +143,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -226,7 +226,7 @@
         ]
       },
       "actualizada": "2026-11-17T19:30:00-05:00",
-      "ultima": 1
+      "ultima": 2
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -326,6 +326,10 @@
       "desarrollo": true,
       "fuentes": [
         {
+          "n": "FAA · avisos de parada en tierra para MIA y FLL, 18 de noviembre",
+          "u": "https://www.fly.faa.gov/adv/advADB"
+        },
+        {
           "n": "NWS Miami · Pronóstico y avisos para Miami",
           "u": "https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639"
         },
@@ -336,16 +340,18 @@
       ],
       "es": {
         "etiqueta": "EL TIEMPO",
-        "titulo": "Más de 10 pulgadas en algunos puntos: Miami-Dade y Broward, en vigilancia de inundaciones desde la 1 PM hasta el jueves",
-        "bajada": "El Servicio Nacional de Meteorología adelantó la vigilancia y subió los totales: de 2 a 4 pulgadas, con hasta 6 u 8 en algunos barrios. En la costa, las corrientes de resaca son peligrosas.",
+        "titulo": "La lluvia frenó los vuelos hacia MIA y FLL: Miami-Dade y Broward siguen en vigilancia de inundaciones hasta el jueves",
+        "bajada": "La FAA detuvo en tierra por baja visibilidad los vuelos con destino a los dos aeropuertos y ya levantó las dos paradas. El Servicio Nacional de Meteorología mantiene de 2 a 4 pulgadas de lluvia, con hasta 6 u 8 en algunos barrios.",
         "toca": [
+          "Si vuelas hoy, confirma tu vuelo con la aerolínea antes de salir hacia el aeropuerto.",
           "No cruces con el auto una calle inundada: según el NWS, un pie de agua en movimiento basta para arrastrar la mayoría de los autos.",
           "Si vives en una zona baja, deja el auto en alto y revisa canaletas y desagües cuanto antes.",
           "No te metas al mar hasta el jueves: hay riesgo alto de corrientes de resaca.",
           "¿Tu calle se inunda? Búscala en el [mapa de inundación por dirección](/noticias/mapa-inundacion-miami-dade-direccion)."
         ],
         "cuerpo": [
-          "Desde la 1 de la tarde de hoy y hasta las 7 de la noche del jueves, Miami-Dade, Broward y Palm Beach están en vigilancia de inundaciones. En su aviso de las 8:07 AM, el [Servicio Nacional de Meteorología en Miami](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639) adelantó el inicio, que estaba previsto para las 5 PM, y subió los totales: se esperan de 2 a 4 pulgadas, con 6 a 8 posibles en algunas zonas y más de 10 en puntos aislados.",
+          "La lluvia y la baja visibilidad frenaron este miércoles en la mañana los vuelos hacia los dos grandes aeropuertos del sur de Florida. Según los avisos de la [FAA](https://www.fly.faa.gov/adv/advADB), los vuelos con destino a Fort Lauderdale (FLL) quedaron retenidos en tierra en sus aeropuertos de origen desde las 8:30 AM, y los que iban a Miami (MIA), desde las 8:57 AM. La agencia levantó la parada de FLL a las 9:32 y la de MIA a las 10:03. Pasadas las 10:40, su [estado oficial de aeropuertos](https://nasstatus.faa.gov/) ya no mostraba demoras en Miami, aunque pueden quedar retrasos mientras las aerolíneas reacomodan sus horarios.",
+          "La vigilancia de inundaciones sigue vigente para Miami-Dade, Broward y Palm Beach hasta las 7 de la noche del jueves. El [Servicio Nacional de Meteorología en Miami](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639) la renovó a las 2:21 AM con los mismos totales: de 2 a 4 pulgadas, con 6 a 8 posibles en algunas zonas y más de 10 en puntos aislados.",
           "El riesgo está en la repetición. Un frente detenido al norte y aire muy húmedo que entra del oeste y del sur pueden traer tandas de aguaceros sobre los mismos barrios, y algunas tormentas, de acuerdo con los meteorólogos, dejarían de 1 a 2 pulgadas por hora. La oficina del NWS en Miami advierte en su [discusión del pronóstico](https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0) de un aumento del riesgo de inundación urbana en la costa este, y de que, si los aguaceros se repiten, podría haber inundaciones repentinas con impacto.",
           "Vigilancia no es advertencia. La vigilancia significa que se dan las condiciones para que haya inundaciones; si el NWS emite una advertencia, es porque la inundación está ocurriendo o está por ocurrir.",
           "## También en el mar",
@@ -355,16 +361,18 @@
       },
       "en": {
         "etiqueta": "WEATHER",
-        "titulo": "More than 10 inches in spots: Miami-Dade and Broward under a flood watch from 1 PM through Thursday",
-        "bajada": "The National Weather Service moved the watch earlier and raised its totals: 2 to 4 inches, with up to 6 or 8 in some neighborhoods. Along the coast, rip currents are dangerous.",
+        "titulo": "Rain held up flights into MIA and FLL: Miami-Dade and Broward stay under a flood watch through Thursday",
+        "bajada": "The FAA held flights bound for both airports on the ground because of low visibility and has lifted both stops. The National Weather Service still expects 2 to 4 inches of rain, with up to 6 or 8 in some neighborhoods.",
         "toca": [
+          "Flying today? Confirm your flight with the airline before heading to the airport.",
           "Don't drive through a flooded street: according to the NWS, a foot of moving water is enough to carry away most cars.",
           "If you live in a low-lying area, park on higher ground and check gutters and drains as soon as you can.",
           "Stay out of the ocean through Thursday: the rip current risk is high.",
           "Does your street flood? Look it up on the [flood map by address](/noticias/mapa-inundacion-miami-dade-direccion)."
         ],
         "cuerpo": [
-          "From 1 p.m. today through 7 p.m. Thursday, Miami-Dade, Broward and Palm Beach are under a flood watch. In its 8:07 a.m. alert, the [National Weather Service in Miami](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639) moved the start up from 5 p.m. and raised its totals: 2 to 4 inches are expected, with 6 to 8 possible in some areas and more than 10 in isolated spots.",
+          "Rain and low visibility held up flights into South Florida's two big airports on Wednesday morning. According to [FAA](https://www.fly.faa.gov/adv/advADB) advisories, flights bound for Fort Lauderdale (FLL) were held on the ground at their departure airports starting at 8:30 a.m., and those headed to Miami (MIA) starting at 8:57 a.m. The agency lifted the FLL stop at 9:32 and the MIA stop at 10:03. Shortly after 10:40, its [official airport status](https://nasstatus.faa.gov/) no longer showed delays in Miami, though some delays may linger while airlines rework their schedules.",
+          "The flood watch remains in effect for Miami-Dade, Broward and Palm Beach until 7 p.m. Thursday. The [National Weather Service in Miami](https://forecast.weather.gov/MapClick.php?lat=25.79056&lon=-80.31639) renewed it at 2:21 a.m. with the same totals: 2 to 4 inches, with 6 to 8 possible in some areas and more than 10 in isolated spots.",
           "The risk is in the repetition. A front stalled to the north and very moist air sliding in from the west and south could bring rounds of downpours over the same neighborhoods, and some storms, according to forecasters, could drop 1 to 2 inches an hour. The NWS Miami office warns in its [forecast discussion](https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0) of an increased threat of urban flooding along the east coast and that, if heavy rain repeats, impactful flash flooding is possible.",
           "A watch is not a warning. A watch means conditions are right for flooding; if the NWS issues a warning, flooding is happening or about to happen.",
           "## Out on the water too",
@@ -372,8 +380,8 @@
           "This story will be updated if the NWS changes the alert."
         ]
       },
-      "actualizada": "2026-11-17T14:16:00-05:00",
-      "ultima": 3
+      "actualizada": "2026-11-18T10:50:00-05:00",
+      "ultima": 1
     },
     {
       "id": "faro-cape-florida-1836-historia",
