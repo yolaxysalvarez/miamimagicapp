@@ -1,0 +1,19 @@
+name: IndexNow — avisar a Bing de notas nuevas
+
+on:
+  push:
+    branches: [main]
+    paths: [noticias.json]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Esperar a que Vercel publique
+        run: sleep 90
+      - name: Avisar a IndexNow
+        run: python3 .github/scripts/indexnow.py "${{ github.event.before || 'HEAD~1' }}"
