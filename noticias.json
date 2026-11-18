@@ -3,11 +3,11 @@
   "updated": "2026-11-08",
   "ultima_hora": {
     "activa": true,
-    "nota": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
-    "es": "US-1 sigue cerrada en Grassy Key (milla 60) por un camión de gasolina volcado",
-    "en": "US-1 still closed at Grassy Key (MM 60) after a gasoline tanker overturned",
-    "desde": "2026-11-17T09:30:00-05:00",
-    "hasta": "2026-11-17T23:59:00-05:00"
+    "nota": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
+    "es": "Miami-Dade y Broward, en vigilancia de inundaciones hasta el jueves",
+    "en": "Miami-Dade and Broward under a flood watch through Thursday",
+    "desde": "2026-11-17T19:30:00-05:00",
+    "hasta": "2026-11-19T19:00:00-05:00"
   },
   "cifras": [
     {
@@ -158,6 +158,10 @@
       "foto_pie_en": "Archive photo: the Overseas Highway in the Keys.",
       "fuentes": [
         {
+          "n": "Oficina del Sheriff de Monroe · La reapertura en la milla 60",
+          "u": "https://x.com/keyssheriff/status/2122795814871331280"
+        },
+        {
           "n": "CBS Miami · Cierre de la Overseas Highway",
           "u": "https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/"
         },
@@ -186,42 +190,40 @@
           "u": "https://wflafm.iheart.com/featured/florida-news/content/2026-11-17-overseas-highway-closed-in-keys-due-to-rolled-over-tanker-truck/"
         }
       ],
-      "desarrollo": true,
+      "desarrollo": false,
       "es": {
-        "etiqueta": "ÚLTIMA HORA",
-        "titulo": "La US-1 sigue cerrada en Grassy Key: pasan a otro camión 8,500 galones de gasolina y no hay hora para reabrir",
-        "bajada": "El camión de gasolina se volcó a las 6:30 AM cerca de la milla 60, y el combustible llegó al agua. Con la fila detenida, un auto se incendió en el puente de Long Key.",
+        "etiqueta": "ACTUALIZADA",
+        "titulo": "Reabre la US-1 en Grassy Key tras el camión de gasolina volcado: el tráfico vuelve a moverse en la milla 60",
+        "bajada": "El camión se volcó a las 6:30 AM con unos 8,500 galones de gasolina y mantuvo cerrada la única carretera de los Cayos buena parte del día.",
         "toca": [
-          "No hay otra ruta por tierra: si vas o vienes del Middle Keys, espera o pospón el viaje.",
-          "Si quedas en la fila, no te bajes del auto ni te acerques al derrame.",
+          "Si sales esta noche, maneja con calma: el Sheriff pide precaución y advierte de demoras mientras se despeja la fila.",
           "Revisa FL511 o las redes del Sheriff de Monroe antes de salir."
         ],
         "cuerpo": [
-          "La única carretera de los Cayos sigue cerrada en los dos sentidos en Grassy Key, cerca de la milla 60, y pasadas las 2 de la tarde no había hora para reabrir. Un camión cisterna de [Circle K](https://www.wfla.com/news/florida/fuel-spill-followed-by-truck-fire-shuts-down-6-mile-stretch-of-florida-keys-only-highway/) cargado con unos 8,500 galones de gasolina se volcó hacia las 6:30 de la mañana, según la [Oficina del Sheriff de Monroe](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
-          "El combustible se derramó en la tierra y llegó al agua. «Esto podría explotar», advirtió en sus redes el sheriff Rick Ramsay, de acuerdo con [NBC6](https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/). Por eso la vía seguirá cerrada mientras los equipos pasan la gasolina a otro camión cisterna.",
+          "Todo el tráfico de la US-1 vuelve a moverse cerca de la milla 60, en Grassy Key, informó a media tarde la [Oficina del Sheriff de Monroe](https://x.com/keyssheriff/status/2122795814871331280), que pidió manejar con precaución porque la circulación seguía lenta mientras se despejaba.",
+          "La única carretera de los Cayos estuvo cerrada en los dos sentidos desde temprano. Un camión cisterna de [Circle K](https://www.wfla.com/news/florida/fuel-spill-followed-by-truck-fire-shuts-down-6-mile-stretch-of-florida-keys-only-highway/) cargado con unos 8,500 galones de gasolina se volcó hacia las 6:30 de la mañana, según la [Oficina del Sheriff de Monroe](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
+          "El combustible se derramó en la tierra y llegó al agua. «Esto podría explotar», había advertido en sus redes el sheriff Rick Ramsay, de acuerdo con [NBC6](https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/). La vía se mantuvo cerrada mientras los equipos pasaban la gasolina a otro camión cisterna.",
           "Con la fila detenida llegó el segundo susto: un auto se incendió cerca de la milla 64, en el puente de Long Key. Las colas alcanzaron [tres millas en cada sentido](https://wflafm.iheart.com/featured/florida-news/content/2026-11-17-overseas-highway-closed-in-keys-due-to-rolled-over-tanker-truck/).",
-          "El chofer del camión fue trasladado en helicóptero a un hospital de Miami en estado crítico, confirmó un [vocero del condado de Monroe](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/).",
-          "En desarrollo, pendiente de la próxima actualización de la Oficina del Sheriff de Monroe y de FL511."
+          "El chofer del camión fue trasladado en helicóptero a un hospital de Miami en estado crítico, según un [vocero del condado de Monroe](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/)."
         ]
       },
       "en": {
-        "etiqueta": "BREAKING",
-        "titulo": "US-1 still closed at Grassy Key as crews move 8,500 gallons of gasoline to another truck, with no time to reopen",
-        "bajada": "The gasoline tanker overturned at 6:30 a.m. near mile marker 60, and fuel reached the water. With traffic stopped, a car caught fire on the Long Key Bridge.",
+        "etiqueta": "UPDATED",
+        "titulo": "US-1 reopens at Grassy Key after the gasoline tanker rollover: traffic is moving again at mile marker 60",
+        "bajada": "The tanker overturned at 6:30 a.m. with about 8,500 gallons of gasoline and kept the Keys' only road closed for much of the day.",
         "toca": [
-          "There is no other road: if you're heading to or from the Middle Keys, wait or postpone the trip.",
-          "If you're stuck in the line, stay in your car and keep away from the spill.",
+          "If you're driving tonight, take it slow: the Sheriff urges caution and warns of delays while traffic clears.",
           "Check FL511 or the Monroe County Sheriff's social media before you leave."
         ],
         "cuerpo": [
-          "The only road through the Keys remains closed in both directions on Grassy Key, near mile marker 60, and past 2 p.m. there was still no time to reopen. A [Circle K](https://www.wfla.com/news/florida/fuel-spill-followed-by-truck-fire-shuts-down-6-mile-stretch-of-florida-keys-only-highway/) tanker carrying about 8,500 gallons of gasoline overturned around 6:30 a.m., according to the [Monroe County Sheriff's Office](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
-          "The fuel spilled into the ground and reached the water. \"This thing could explode potentially,\" Sheriff Rick Ramsay warned on social media, according to [NBC6](https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/). That is why the road will stay closed while crews move the gasoline to another tanker.",
+          "All US-1 traffic is moving again near mile marker 60 on Grassy Key, the [Monroe County Sheriff's Office](https://x.com/keyssheriff/status/2122795814871331280) said in the afternoon, urging drivers to use caution because traffic was still slow as it cleared.",
+          "The only road through the Keys had been closed in both directions since early morning. A [Circle K](https://www.wfla.com/news/florida/fuel-spill-followed-by-truck-fire-shuts-down-6-mile-stretch-of-florida-keys-only-highway/) tanker carrying about 8,500 gallons of gasoline overturned around 6:30 a.m., according to the [Monroe County Sheriff's Office](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
+          "The fuel spilled into the ground and reached the water. \"This thing could explode potentially,\" Sheriff Rick Ramsay had warned on social media, according to [NBC6](https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/). The road stayed closed while crews moved the gasoline to another tanker.",
           "With traffic stopped, a second scare followed: a car caught fire near mile marker 64, on the Long Key Bridge. Lines stretched [three miles in each direction](https://wflafm.iheart.com/featured/florida-news/content/2026-11-17-overseas-highway-closed-in-keys-due-to-rolled-over-tanker-truck/).",
-          "The truck driver was airlifted to a Miami hospital in critical condition, a [Monroe County spokesperson](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/) confirmed.",
-          "Developing, pending the next update from the Monroe County Sheriff's Office and FL511."
+          "The truck driver was airlifted to a Miami hospital in critical condition, according to a [Monroe County spokesperson](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/)."
         ]
       },
-      "actualizada": "2026-11-17T14:27:00-05:00",
+      "actualizada": "2026-11-17T19:30:00-05:00",
       "ultima": 1
     },
     {
