@@ -79,6 +79,25 @@ export default async function handler(req, res) {
           logo: { '@type': 'ImageObject', url: SITE + '/miami-magic-icon-512.png', width: 512, height: 512 }
         }
       };
+      // La nota completa ya dentro de la página (para Google, Bing y lectores de noticias).
+      // Al cargar, el JavaScript de siempre la redibuja con el diseño normal.
+      const lk = s => {
+        const K = [];
+        s = String(s || '').replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (m, t, u) => { K.push([t, u]); return '\u0001' + (K.length - 1) + '\u0001'; });
+        return esc(s).replace(/\u0001(\d+)\u0001/g, (m, i) => '<a href="' + esc(K[i][1]) + '" rel="noopener">' + esc(K[i][0]) + '</a>');
+      };
+      const cuerpo = (L.cuerpo || []).filter(p => typeof p === 'string' && p.slice(0, 2) !== '::')
+        .map(p => p.slice(0, 3) === '## ' ? '<h2>' + esc(p.slice(3)) + '</h2>' : '<p>' + lk(p) + '</p>').join('\n');
+      const toca = (L.toca || []).length ? '<ul>' + L.toca.map(t => '<li>' + lk(t) + '</li>').join('') + '</ul>' : '';
+      const fuentes = (n.fuentes || []).length ? '<h2>' + (en ? 'Sources' : 'Fuentes') + '</h2><ul>' +
+        n.fuentes.map(f => '<li>' + (f.u ? '<a href="' + esc(f.u) + '" rel="noopener">' + esc(f.n) + '</a>' : esc(f.n)) + '</li>').join('') + '</ul>' : '';
+      const art = '<article class="col">' +
+        '<h1>' + esc(title) + '</h1>' + (L.bajada ? '<p class="bajada">' + esc(L.bajada) + '</p>' : '') +
+        '<p>' + (en ? 'By ' : 'Por ') + esc(n.autor || 'Yolaxys Alvarez') + ' · <time datetime="' + esc(n.publicada || n.fecha) + '">' + esc(n.fecha) + '</time></p>' +
+        '<figure><img src="' + esc(img) + '" alt="' + esc(n.foto_alt || '') + '" style="max-width:100%;height:auto"></figure>' +
+        toca + cuerpo + fuentes + '</article>';
+      html = html.replace(/<main class="wrap" id="main"><\/main>/, '<main class="wrap" id="main">' + art + '</main>');
+
       html = html.replace('</head>', '<script type="application/ld+json">' +
         JSON.stringify(ficha).replace(/</g, '\\u003c') + '</script>\n</head>');
     }

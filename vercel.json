@@ -26,6 +26,10 @@
       "use": "@vercel/node"
     },
     {
+      "src": "api/portada-news.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "*.html",
       "use": "@vercel/static"
     },
@@ -100,6 +104,14 @@
       "dest": "/api/sitemap.js?t=notas"
     },
     {
+      "src": "/feed\\.xml",
+      "dest": "/api/sitemap.js?t=rss"
+    },
+    {
+      "src": "/feed-en\\.xml",
+      "dest": "/api/sitemap.js?t=rss&lang=en"
+    },
+    {
       "src": "/noticias/?",
       "has": [
         {
@@ -134,11 +146,11 @@
     },
     {
       "src": "/noticias/?",
-      "dest": "/noticias.html"
+      "dest": "/api/portada-news.js"
     },
     {
       "src": "/news/?",
-      "dest": "/noticias.html?lang=en"
+      "dest": "/api/portada-news.js?lang=en"
     },
     {
       "src": "/noticias/([a-z0-9\\-_]+)/?",
