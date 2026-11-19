@@ -30,6 +30,10 @@
       "use": "@vercel/node"
     },
     {
+      "src": "api/guia-aviso.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "*.html",
       "use": "@vercel/static"
     },

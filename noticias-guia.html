@@ -289,7 +289,7 @@ f.onsubmit=function(e){e.preventDefault();var em=document.getElementById('ge').v
  if(!document.getElementById('gc').checked){m.textContent=L==='en'?'Please check the box to continue.':'Marca la casilla para continuar.';return}
  m.style.display='none';var b=f.querySelector('button');b.disabled=true;
  fetch(SB+'mm_news_subs',{method:'POST',headers:Object.assign({'Content-Type':'application/json',Prefer:'return=minimal'},H),body:JSON.stringify({email:em.slice(0,160),lang:L,origen:'guia-compradores'+(bd?':'+bd:'')})})
-  .then(function(r){if(!r.ok&&r.status!==409)throw 0;done()})
+  .then(function(r){if(!r.ok&&r.status!==409)throw 0;try{fetch('/api/guia-aviso.js',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:em,lang:L,budget:bd}),keepalive:true}).catch(function(){})}catch(e){}done()})
   .catch(function(){b.disabled=false;m.style.display='block';m.textContent=L==='en'?'Something went wrong. Please try again.':'Algo falló. Inténtalo de nuevo.'})};
 })();
 </script>
