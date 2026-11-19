@@ -4,8 +4,8 @@
   "ultima_hora": {
     "activa": true,
     "nota": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
-    "es": "Miami-Dade y Broward cierran las escuelas el jueves por la lluvia",
-    "en": "Miami-Dade and Broward close schools Thursday because of the rain",
+    "es": "Jueves sin clases ni tribunales en Miami-Dade y Broward; la vigilancia de inundaciones sigue hasta las 7 PM",
+    "en": "No school or courts Thursday in Miami-Dade and Broward; the flood watch continues until 7 p.m.",
     "desde": "2026-11-18T11:05:00-05:00",
     "hasta": "2026-11-19T19:00:00-05:00"
   },
@@ -540,16 +540,16 @@
       "fecha": "2026-11-17",
       "publicada": "2026-11-17T08:00:00-05:00",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-lluvia-broward-nov18c.jpg",
-      "foto_en": "mm-lluvia-broward-nov18c-en.jpg",
+      "foto": "mm-lluvia-broward-nov19a.jpg",
+      "foto_en": "mm-lluvia-broward-nov19a-en.jpg",
       "foto_mm": false,
       "foto_alt": "Gráfico de la vigilancia de inundaciones del NWS para Miami-Dade y Broward sobre el skyline de Brickell visto a través de un vidrio con gotas de lluvia",
-      "foto_pie": "Totales preliminares del NWS Miami en 24 horas, hasta las 3:53 PM del miércoles.",
-      "foto_pie_en": "NWS Miami preliminary 24-hour totals through 3:53 p.m. Wednesday.",
+      "foto_pie": "Totales preliminares del NWS Miami en 48 horas, hasta las 6:41 AM del jueves.",
+      "foto_pie_en": "NWS Miami preliminary 48-hour totals through 6:41 a.m. Thursday.",
       "desarrollo": true,
       "fuentes": [
         {
-          "n": "NWS Miami · totales preliminares de lluvia en 24 horas, 8:27 AM",
+          "n": "NWS Miami · totales preliminares de lluvia en 48 horas, jueves 6:41 AM",
           "u": "https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=PNS&format=CI&version=1&glossary=0"
         },
         {
@@ -575,61 +575,77 @@
         {
           "n": "NWS Miami · Discusión del pronóstico",
           "u": "https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0"
+        },
+        {
+          "n": "NWS Miami · vigilancias y avisos vigentes",
+          "u": "https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=MFL&wwa=all"
+        },
+        {
+          "n": "NWS Key West · avisos vigentes",
+          "u": "https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=KEY&wwa=all"
+        },
+        {
+          "n": "FIU · aviso de cierre del jueves",
+          "u": "https://www.fiu.edu/"
+        },
+        {
+          "n": "Tribunales de Miami-Dade · comunicado conjunto (vía CBS Miami)",
+          "u": "https://www.cbsnews.com/miami/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/"
         }
       ],
       "es": {
         "etiqueta": "EL TIEMPO",
-        "titulo": "Más de un pie de lluvia en Broward: Miami-Dade y Broward cierran las escuelas el jueves",
-        "bajada": "Las escuelas públicas de los dos condados no abren el jueves. Al sureste de Plantation se midieron más de 15 pulgadas en 24 horas, según el Servicio Nacional de Meteorología, y en los Cayos altos rige una advertencia de inundación.",
+        "titulo": "Jueves sin clases ni tribunales en Miami-Dade y Broward: más de 16 pulgadas de lluvia en 48 horas",
+        "bajada": "No abren las escuelas públicas, FIU, Miami Dade College ni Broward College, y cierran los tribunales de los dos condados. El Servicio Nacional de Meteorología midió 16.65 pulgadas cerca de Dania Beach y mantiene la vigilancia de inundaciones hasta las 7 de la noche.",
         "toca": [
-          "El jueves no hay clases en las escuelas públicas de Miami-Dade ni de Broward, ni en Miami Dade College ni en Broward College.",
+          "Hoy no hay clases en las escuelas públicas de Miami-Dade ni de Broward, ni en FIU, Miami Dade College ni Broward College. Tampoco abren los tribunales de los dos condados.",
           "Si vuelas hoy, confirma tu vuelo con la aerolínea antes de salir hacia el aeropuerto.",
-          "Si vas a los Cayos altos esta noche, ten cuidado en la US-1 entre las millas 105 y 111: la advertencia de inundación venció a las 7:45 PM, pero ahí cayeron de 8 a 11 pulgadas.",
           "No cruces con el auto una calle inundada: según el NWS, un pie de agua en movimiento basta para arrastrar la mayoría de los autos.",
           "Si vives en Broward, revisa si tu calle sigue cerrada antes de salir.",
-          "No te metas al mar hasta el jueves: hay riesgo alto de corrientes de resaca.",
+          "No te metas al mar: hay riesgo alto de corrientes de resaca hasta el viernes en la noche.",
+          "En los Cayos altos puede haber agua salada en las calles bajas con la marea alta.",
           "¿Tu calle se inunda? Búscala en el [mapa de inundación por dirección](/noticias/mapa-inundacion-miami-dade-direccion)."
         ],
         "cuerpo": [
-          "Las escuelas públicas de Miami-Dade y de Broward cierran el jueves por el mal tiempo. Miami-Dade anunció en [su página oficial](https://www.dadeschools.net/home) que cierran todas sus escuelas y las oficinas del distrito y de las regiones; Broward, que ya había cerrado hoy, avisó en [la suya](https://www.browardschools.com/) que seguirá cerrada el jueves y que dará novedades el viernes. En las universidades, [Miami Dade College](https://www.mdc.edu/) cierra el jueves todos sus campus e instalaciones y suspende las clases y las actividades presenciales; [Broward College](https://www.broward.edu/weather/) canceló las clases del jueves en todos sus campus y centros, y [FAU](https://www.fau.edu/) mantiene suspendidas las clases presenciales y las operaciones en sus campus de Davie, Fort Lauderdale y SeaTech, con el resto en horario normal. FIU no tenía aviso de cierre en su página principal a las 7:45 PM. La lluvia no da tregua: en la actualización de las 3:53 PM de los [totales preliminares](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=PNS&format=CI&version=1&glossary=0) del Servicio Nacional de Meteorología (NWS), al sureste de Plantation se midieron 15.32 pulgadas en 24 horas, y cerca del aeropuerto North Perry, 13.71.",
-          "En su [registro de daños](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=LSR&format=CI&version=1&glossary=0), el NWS anotó el techo derrumbado de la sinagoga Temple Sinai, en Hollywood, a partir de reportes de los medios, y autos con el agua casi hasta las ruedas en el cruce de la US-441 con Sheridan Street. El condado declaró una emergencia local a las 7 de la mañana, de acuerdo con [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
-          "En Hollywood cayeron 9 pulgadas entre las 11 de la noche y las 4 de la mañana, y llegaron más de 300 llamadas de auxilio, según un [comunicado de la ciudad](https://www.local10.com/news/local/2026/11/18/severe-flooding-in-broward-hospital-suspends-visitation-synagogue-roof-collapses-in-hollywood/). Los bomberos apagaron dos incendios en viviendas y, hasta las 7:55 de la mañana, no había heridos. La ciudad pidió no salir a las calles, no atravesar el agua y llamar al 911 solo en emergencias.",
-          "La tormenta también frenó los vuelos. Según los avisos de la [FAA](https://www.fly.faa.gov/adv/advADB), los vuelos con destino a Fort Lauderdale (FLL) quedaron retenidos en sus aeropuertos de origen por tormentas desde las 8:30 AM, y los que iban a Miami (MIA), por baja visibilidad desde las 8:57 AM. La agencia levantó las dos paradas a las 9:32 y a las 10:03. A mediodía, el [estado oficial de la FAA](https://nasstatus.faa.gov/) volvía a mostrar demoras de hora y media a casi dos horas en las salidas de MIA, por tormentas. A las 5 PM, la FAA ya no reportaba paradas ni demoras en MIA, FLL ni Key West (EYW).",
-          "En Miami-Dade, la lluvia volvió con fuerza por la tarde. Según el mismo informe del NWS, el máximo del condado es de 8.93 pulgadas al este de Princeton; en Aventura se midieron 7.39, y en Coral Gables, más de 6. Hay aviso de viento hasta la 1 de la madrugada para las zonas metropolitanas y costeras de Miami-Dade, Broward y Palm Beach, y la vigilancia de inundaciones sigue hasta las 7 de la noche del jueves. Las escuelas de Miami-Dade abrieron hoy con normalidad, según NBC6.",
-          "En los Cayos, la lluvia se concentró en el norte. El NWS de Key West emitió a las 4:51 PM una [advertencia de inundación](https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLW&format=CI&version=1&glossary=0) para los Cayos altos, que venció a las 7:45 PM sin renovarse: según el radar, habían caído de 8 a 11 pulgadas. Incluía Key Largo, North Key Largo, Ocean Reef, el puente de Jewfish Creek y la US-1 entre las millas 105 y 111. Los avisos de la mañana para Marathon, los Lower Keys e Islamorada ya vencieron. Las [escuelas del condado Monroe](https://www.keysschools.com/) no habían anunciado cierres para el jueves a las 7:45 PM.",
-          "El riesgo está en la repetición. Un frente detenido al norte y aire muy húmedo que entra del oeste y del sur pueden traer tandas de aguaceros sobre los mismos barrios, y algunas tormentas, de acuerdo con los meteorólogos, dejarían de 1 a 2 pulgadas por hora. La oficina del NWS en Miami advierte en su [discusión del pronóstico](https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0) de un aumento del riesgo de inundación urbana en la costa este, y de que, si los aguaceros se repiten, podría haber inundaciones repentinas con impacto.",
-          "Hay una diferencia que conviene tener clara, porque hoy rigieron las dos en distintas zonas: la vigilancia no es una advertencia. La vigilancia significa que se dan las condiciones para que haya inundaciones; la advertencia, que la inundación está ocurriendo o está por ocurrir, como esta tarde en Key Largo.",
+          "Este jueves no abren las escuelas públicas de Miami-Dade ni de Broward, ni buena parte de las universidades, y tampoco los tribunales. [Miami-Dade](https://www.dadeschools.net/home) cerró todas sus escuelas y las oficinas del distrito; [Broward](https://www.browardschools.com/), que ya había cerrado el miércoles, sigue cerrada. [FIU](https://www.fiu.edu/) suspendió las clases y las operaciones en todas sus sedes; [Miami Dade College](https://www.mdc.edu/) cerró todos sus campus, y [Broward College](https://www.broward.edu/weather/) canceló las clases en todos los suyos. FAU avisó el miércoles que mantenía suspendidas las clases presenciales en Davie, Fort Lauderdale y SeaTech. En Miami-Dade cierran todos los tribunales y las oficinas del secretario judicial, por decisión de la jueza principal, Ariana Fajardo Orshan, y del secretario, Juan Fernandez-Barquin, que lo anunciaron en un [comunicado conjunto](https://www.cbsnews.com/miami/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/); los de Broward también siguen cerrados, de acuerdo con [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
+          "En 48 horas cayeron 16.65 pulgadas al norte de Dania Beach, 16.38 al sureste de Plantation y 15.37 al oeste de Lauderhill, según los [totales preliminares](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=PNS&format=CI&version=1&glossary=0) que el Servicio Nacional de Meteorología (NWS) publicó a las 6:41 AM. En Miami-Dade, el máximo es de 9.22 pulgadas al este de Princeton, y en Aventura se midieron 8.35.",
+          "La [vigilancia de inundaciones](https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=MFL&wwa=all) sigue hasta las 7 de la noche. El NWS espera que durante el día entren bandas de aguaceros y tormentas, con más probabilidad de lluvia fuerte en Broward y Palm Beach: donde caigan, lo común será de 1 a 2 pulgadas, con máximos aislados de 3 a 5. Los barrios que ya recibieron de 8 a 15 pulgadas son los más expuestos.",
+          "En su [registro de daños](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=LSR&format=CI&version=1&glossary=0), el NWS anotó el techo derrumbado de la sinagoga Temple Sinai, en Hollywood, a partir de reportes de los medios, y autos con el agua casi hasta las ruedas en el cruce de la US-441 con Sheridan Street. El condado de Broward declaró una emergencia local a las 7 de la mañana del miércoles, de acuerdo con [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
+          "En Hollywood cayeron 9 pulgadas entre las 11 de la noche del martes y las 4 de la mañana del miércoles, y llegaron más de 300 llamadas de auxilio, según un [comunicado de la ciudad](https://www.local10.com/news/local/2026/11/18/severe-flooding-in-broward-hospital-suspends-visitation-synagogue-roof-collapses-in-hollywood/). Los bomberos apagaron dos incendios en viviendas y, hasta las 7:55 de la mañana del miércoles, no había heridos. La ciudad pidió no salir a las calles, no atravesar el agua y llamar al 911 solo en emergencias.",
+          "La tormenta también frenó los vuelos el miércoles. Según los avisos de la [FAA](https://www.fly.faa.gov/adv/advADB), los vuelos con destino a Fort Lauderdale (FLL) quedaron retenidos en sus aeropuertos de origen por tormentas desde las 8:30 AM, y los que iban a Miami (MIA), por baja visibilidad desde las 8:57 AM. La agencia levantó las dos paradas a las 9:32 y a las 10:03. A mediodía, el [estado oficial de la FAA](https://nasstatus.faa.gov/) volvía a mostrar demoras de hora y media a casi dos horas en las salidas de MIA, por tormentas. El jueves a las 7:30 AM, la FAA no reportaba paradas ni demoras en MIA, FLL ni Key West (EYW).",
+          "En los Cayos ya no hay avisos de inundación por lluvia. Queda un [aviso de inundación costera menor](https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=KEY&wwa=all) en los Cayos altos hasta la madrugada del viernes: agua salada en calles y lotes bajos, y menos espacio bajo los puentes fijos para los botes. El miércoles, la [advertencia de inundación](https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLW&format=CI&version=1&glossary=0) de los Cayos altos venció a las 7:45 PM sin renovarse; según el radar, habían caído de 8 a 11 pulgadas entre Key Largo y Ocean Reef. Las [escuelas del condado Monroe](https://www.keysschools.com/) no han anunciado cierres.",
+          "Hay una diferencia que conviene tener clara, porque el miércoles rigieron las dos en distintas zonas: la vigilancia no es una advertencia. La vigilancia significa que se dan las condiciones para que haya inundaciones; la advertencia, que la inundación está ocurriendo o está por ocurrir, como el miércoles por la tarde en Key Largo.",
           "## También en el mar",
-          "El viento del este sopla con ráfagas de más de 30 millas por hora, y hay aviso para embarcaciones pequeñas. En las playas de Miami-Dade y Broward el riesgo de corrientes de resaca es alto hasta el jueves en la noche. En los Cayos no rige la vigilancia de inundaciones, pero el mar sigue picado: [Llegan tres días de viento a los Cayos, con olas de hasta 11 pies en el Estrecho](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
+          "En la costa de Broward hay aviso de oleaje alto hasta las 7 de la noche, y en las playas de Miami-Dade y Broward el riesgo de corrientes de resaca es alto hasta el viernes en la noche, según el NWS. En los Cayos, el mar sigue picado: [Llegan tres días de viento a los Cayos, con olas de hasta 11 pies en el Estrecho](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
         ]
       },
       "en": {
         "etiqueta": "WEATHER",
-        "titulo": "More than a foot of rain in Broward: Miami-Dade and Broward close schools Thursday",
-        "bajada": "Public schools in both counties won't open Thursday. More than 15 inches were measured southeast of Plantation in 24 hours, according to the National Weather Service, and a flood warning is in effect for the Upper Keys.",
+        "titulo": "No school or courts Thursday in Miami-Dade and Broward: more than 16 inches of rain in 48 hours",
+        "bajada": "Public schools, FIU, Miami Dade College and Broward College are closed, and so are the courts in both counties. The National Weather Service measured 16.65 inches near Dania Beach and is keeping the flood watch in effect until 7 p.m.",
         "toca": [
-          "No classes Thursday at Miami-Dade or Broward public schools, Miami Dade College or Broward College.",
+          "No classes today at Miami-Dade or Broward public schools, FIU, Miami Dade College or Broward College. Courts in both counties are closed too.",
           "Flying today? Confirm your flight with the airline before heading to the airport.",
-          "Heading to the Upper Keys tonight? Use caution on US-1 between mile markers 105 and 111: the flood warning expired at 7:45 p.m., but 8 to 11 inches fell there.",
           "Don't drive through a flooded street: per the NWS, a foot of moving water is enough to sweep away most cars.",
           "In Broward, check whether your street is still closed before you head out.",
-          "Stay out of the ocean through Thursday: rip current risk is high.",
+          "Stay out of the ocean: rip current risk is high through Friday night.",
+          "In the Upper Keys, low streets may have saltwater at high tide.",
           "Does your street flood? Look it up on the [flood map by address](/noticias/mapa-inundacion-miami-dade-direccion)."
         ],
         "cuerpo": [
-          "Public schools in Miami-Dade and Broward will be closed Thursday because of the weather. Miami-Dade announced on [its official site](https://www.dadeschools.net/home) that all schools and district and region offices will close; Broward, which already closed today, said on [its site](https://www.browardschools.com/) that it will remain closed Thursday and will share updates Friday. Among colleges, [Miami Dade College](https://www.mdc.edu/) will close all campuses and facilities Thursday and suspend classes and in-person activities; [Broward College](https://www.broward.edu/weather/) canceled Thursday classes at all campuses and centers, and [FAU](https://www.fau.edu/) is keeping in-person classes and operations suspended at its Davie, Fort Lauderdale and SeaTech campuses, with normal operations elsewhere. FIU had no closure notice on its home page as of 7:45 p.m. The rain isn't letting up: in the 3:53 p.m. update of the National Weather Service's (NWS) [preliminary totals](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=PNS&format=CI&version=1&glossary=0), 15.32 inches were measured southeast of Plantation in 24 hours, and 13.71 near North Perry Airport.",
-          "In its [storm report](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=LSR&format=CI&version=1&glossary=0), the NWS logged the collapsed roof of the Temple Sinai synagogue in Hollywood, based on media reports, and cars with water nearly up to their wheels at US-441 and Sheridan Street. The county declared a local emergency at 7 a.m., according to [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
-          "In Hollywood, 9 inches fell between 11 p.m. and 4 a.m., and more than 300 calls for help came in, according to a [city news release](https://www.local10.com/news/local/2026/11/18/severe-flooding-in-broward-hospital-suspends-visitation-synagogue-roof-collapses-in-hollywood/). Firefighters put out two house fires and, as of 7:55 a.m., no injuries had been reported. The city asked people to stay off the roads, avoid driving through flood waters and call 911 only for emergencies.",
-          "The storm also held up flights. According to [FAA](https://www.fly.faa.gov/adv/advADB) advisories, flights bound for Fort Lauderdale (FLL) were held at their departure airports because of thunderstorms starting at 8:30 a.m., and those headed to Miami (MIA) because of low visibility starting at 8:57 a.m. The agency lifted both stops at 9:32 and 10:03. At midday, the [FAA's official status](https://nasstatus.faa.gov/) again showed departure delays of an hour and a half to nearly two hours at MIA, because of thunderstorms. At 5 p.m., the FAA was no longer reporting ground stops or delays at MIA, FLL or Key West (EYW).",
-          "In Miami-Dade, the rain came back hard in the afternoon. According to the same NWS report, the county's highest total is 8.93 inches east of Princeton; Aventura measured 7.39, and Coral Gables more than 6. A wind advisory runs until 1 a.m. for the metro and coastal areas of Miami-Dade, Broward and Palm Beach, and the flood watch remains in effect until 7 p.m. Thursday. Miami-Dade schools opened as usual today, according to NBC6.",
-          "In the Keys, the rain concentrated in the north. At 4:51 p.m., the NWS in Key West issued a [flood warning](https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLW&format=CI&version=1&glossary=0) for the Upper Keys, which expired at 7:45 p.m. without being renewed: according to radar, 8 to 11 inches had fallen. It covered Key Largo, North Key Largo, Ocean Reef, the Jewfish Creek bridge and US-1 between mile markers 105 and 111. This morning's advisories for Marathon, the Lower Keys and Islamorada have expired. [Monroe County schools](https://www.keysschools.com/) had not announced any closures for Thursday as of 7:45 p.m.",
-          "The risk is in the repetition. A front stalled to the north and very moist air sliding in from the west and south could bring rounds of downpours over the same neighborhoods, and some storms, according to forecasters, could drop 1 to 2 inches an hour. The NWS Miami office warns in its [forecast discussion](https://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&highlight=off&glossary=0) of an increased threat of urban flooding along the east coast and that, if heavy rain repeats, impactful flash flooding is possible.",
-          "There's a difference worth keeping clear, because both were in effect today in different areas: a watch is not a warning. A watch means conditions are right for flooding; a warning means flooding is happening or about to happen, as it was this afternoon in Key Largo.",
+          "Public schools in Miami-Dade and Broward are closed this Thursday, along with many colleges and the courts. [Miami-Dade](https://www.dadeschools.net/home) closed all schools and district offices; [Broward](https://www.browardschools.com/), already closed Wednesday, remains closed. [FIU](https://www.fiu.edu/) suspended classes and operations at all locations; [Miami Dade College](https://www.mdc.edu/) closed all campuses, and [Broward College](https://www.broward.edu/weather/) canceled classes at all of its own. FAU said Wednesday that in-person classes remained suspended at Davie, Fort Lauderdale and SeaTech. In Miami-Dade, all courts and Clerk of the Court offices are closed by decision of Chief Judge Ariana Fajardo Orshan and Clerk Juan Fernandez-Barquin, who announced it in a [joint statement](https://www.cbsnews.com/miami/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/); Broward courts also remain closed, according to [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
+          "In 48 hours, 16.65 inches fell north of Dania Beach, 16.38 southeast of Plantation and 15.37 west of Lauderhill, according to the [preliminary totals](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=PNS&format=CI&version=1&glossary=0) the National Weather Service (NWS) published at 6:41 a.m. In Miami-Dade, the highest total is 9.22 inches east of Princeton, and Aventura measured 8.35.",
+          "The [flood watch](https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=MFL&wwa=all) continues until 7 p.m. The NWS expects bands of showers and storms to move in during the day, with the highest chance of heavy rain in Broward and Palm Beach: where they hit, 1 to 2 inches will be common, with isolated totals of 3 to 5. Neighborhoods that already received 8 to 15 inches are the most exposed.",
+          "In its [storm report](https://forecast.weather.gov/product.php?site=MFL&issuedby=MFL&product=LSR&format=CI&version=1&glossary=0), the NWS logged the collapsed roof of the Temple Sinai synagogue in Hollywood, based on media reports, and cars with water nearly up to their wheels at US-441 and Sheridan Street. Broward County declared a local emergency at 7 a.m. Wednesday, according to [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
+          "In Hollywood, 9 inches fell between 11 p.m. Tuesday and 4 a.m. Wednesday, and more than 300 calls for help came in, according to a [city news release](https://www.local10.com/news/local/2026/11/18/severe-flooding-in-broward-hospital-suspends-visitation-synagogue-roof-collapses-in-hollywood/). Firefighters put out two house fires and, as of 7:55 a.m. Wednesday, no injuries had been reported. The city asked people to stay off the roads, avoid driving through flood waters and call 911 only for emergencies.",
+          "The storm also held up flights on Wednesday. According to [FAA](https://www.fly.faa.gov/adv/advADB) advisories, flights bound for Fort Lauderdale (FLL) were held at their departure airports because of thunderstorms starting at 8:30 a.m., and those headed to Miami (MIA) because of low visibility starting at 8:57 a.m. The agency lifted both stops at 9:32 and 10:03. At midday, the [FAA's official status](https://nasstatus.faa.gov/) again showed departure delays of an hour and a half to nearly two hours at MIA, because of thunderstorms. At 7:30 a.m. Thursday, the FAA was reporting no ground stops or delays at MIA, FLL or Key West (EYW).",
+          "The Keys no longer have any rain flood alerts. A [minor coastal flood statement](https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=KEY&wwa=all) remains for the Upper Keys through early Friday: saltwater on low streets and lots, and less clearance under fixed bridges for boats. On Wednesday, the Upper Keys [flood warning](https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLW&format=CI&version=1&glossary=0) expired at 7:45 p.m. without being renewed; according to radar, 8 to 11 inches had fallen between Key Largo and Ocean Reef. [Monroe County schools](https://www.keysschools.com/) have not announced any closures.",
+          "There's a difference worth keeping clear, because both were in effect Wednesday in different areas: a watch is not a warning. A watch means conditions are right for flooding; a warning means flooding is happening or about to happen, as it was Wednesday afternoon in Key Largo.",
           "## Out on the water too",
-          "East winds are gusting above 30 mph, and a small craft advisory is in effect. Rip current risk is high on Miami-Dade and Broward beaches through Thursday night. The Keys are not under the flood watch, but seas remain rough: [Three windy days hit the Keys, with waves up to 11 feet in the Straits](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
+          "A high surf advisory is in effect on the Broward coast until 7 p.m., and rip current risk is high on Miami-Dade and Broward beaches through Friday night, according to the NWS. In the Keys, seas remain rough: [Three windy days hit the Keys, with waves up to 11 feet in the Straits](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
         ]
       },
-      "actualizada": "2026-11-18T19:55:00-05:00",
+      "actualizada": "2026-11-19T07:50:00-05:00",
       "ultima": 1
     },
     {
@@ -1066,7 +1082,7 @@
         },
         {
           "n": "NBA · marcador del partido",
-          "u": "https://www.nba.com/heat/schedule"
+          "u": "https://www.nba.com/game/mil-vs-mia-0022600260/box-score"
         },
         {
           "n": "Rockstar Games · preventa y precarga",
@@ -1094,7 +1110,7 @@
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-18T21:40:00-05:00",
+      "actualizada": "2026-11-19T07:50:00-05:00",
       "es": {
         "etiqueta": "VICE CITY",
         "titulo": "Medianoche en Vice City: GTA VI llega a Miami la noche en que la lluvia dejó a la ciudad sin clases",
@@ -1110,7 +1126,7 @@
           "## ¿Y el trabajo?",
           "Casi uno de cada cinco asalariados del país, el 18%, pensaba tomarse el día del estreno, y entre los de la generación Z, el 32%. Lo midió [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), una empresa de programas de recursos humanos, que además registró un 13% más de solicitudes de días libres para este jueves que en fechas equivalentes de 2024 y 2025. Son intenciones, no ausencias contadas. Nicholas Bloom, economista de la Universidad de Stanford, [le dijo a PBS](https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6) que no cree en esas cifras sin una encuesta representativa: calcula que quizás el 5% de quienes trabajan a tiempo completo juega Grand Theft Auto, y que solo una parte pediría el día.",
           "## La víspera, en la cancha",
-          "Horas antes del estreno, el HEAT jugó como Vice City contra los Bucks en el Kaseya Center, con una [cancha y un uniforme](https://www.nba.com/heat/vicecity) hechos para esa única noche. Al publicar esta nota, Miami ganaba 128-104 a falta de cinco minutos, en el primer partido de Giannis Antetokounmpo contra su exequipo.",
+          "Horas antes del estreno, el HEAT jugó como Vice City contra los Bucks en el Kaseya Center, con una [cancha y un uniforme](https://www.nba.com/heat/vicecity) hechos para esa única noche. Miami ganó [137-130](https://www.nba.com/game/mil-vs-mia-0022600260/box-score) después de ir 30 puntos arriba. Giannis Antetokounmpo, en su primer partido contra su exequipo, anotó 27 puntos, con 14 rebotes y 9 asistencias.",
           "## Miami, con otro nombre",
           "En el juego, South Beach es Ocean Beach, la Pequeña Habana es Little Cuba y el Kaseya Center es el Sahara Arena. El Hotel Victor de Ocean Drive aparece como Hotel Dixon, y el Venetian Causeway y las torres de Brickell salen casi idénticos, según el [mapa que armó Miami New Times](https://www.miaminewtimes.com/arts-culture/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001/). Los Cayos también están, como Leonida Keys.",
           "## La ciudad ya juega",
@@ -1134,7 +1150,7 @@
           "## What about work?",
           "Nearly one in five salaried U.S. workers, 18%, planned to take launch day off, and among Gen Z workers, 32%. That comes from [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), an HR software company, which also logged 13% more time-off requests for this Thursday than on equivalent days in 2024 and 2025. Those are intentions, not counted absences. Nicholas Bloom, an economist at Stanford University, [told PBS](https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6) he does not believe those figures without a representative survey: he estimates that perhaps 5% of full-time workers play Grand Theft Auto, and that only a fraction would take the day off.",
           "## Launch eve, on the court",
-          "Hours before the release, the HEAT played as Vice City against the Bucks at Kaseya Center, on a [court and in a uniform](https://www.nba.com/heat/vicecity) made for that one night. As this story was published, Miami led 128-104 with five minutes left, in Giannis Antetokounmpo’s first game against his former team.",
+          "Hours before the release, the HEAT played as Vice City against the Bucks at Kaseya Center, on a [court and in a uniform](https://www.nba.com/heat/vicecity) made for that one night. Miami won [137-130](https://www.nba.com/game/mil-vs-mia-0022600260/box-score) after leading by 30. Giannis Antetokounmpo, in his first game against his former team, scored 27 points, with 14 rebounds and 9 assists.",
           "## Miami, under another name",
           "In the game, South Beach is Ocean Beach, Little Havana is Little Cuba and Kaseya Center is the Sahara Arena. Ocean Drive’s Hotel Victor shows up as Hotel Dixon, and the Venetian Causeway and Brickell’s towers look almost identical, according to [Miami New Times’ map](https://www.miaminewtimes.com/arts-culture/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001/). The Keys are in too, as the Leonida Keys.",
           "## The city is already playing",
@@ -6778,5 +6794,5 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-18T21:40:00-05:00"
+  "updated_at": "2026-11-19T07:50:00-05:00"
 }
