@@ -919,6 +919,8 @@ body{background:#fff;text-rendering:optimizeLegibility}
 .ph.fit{background:#F3F1EC}
 /* gráfico completo: nunca se recorta; el hueco se llena con la misma imagen desenfocada */
 .ph.fit::before{content:"";position:absolute;inset:-26px;background:inherit;background-size:cover;background-position:center;filter:blur(22px) saturate(1.05) brightness(.86)}.ph.fit img{position:relative}
+/* crédito más discreto en las miniaturas de las secciones */
+@media(max-width:760px){.sp-r .wm{font-size:8.5px;right:6px;bottom:5px;border-left-width:1.5px;padding-left:4px;letter-spacing:.08em}}
 @media(max-width:760px){.ag-tabs{gap:16px}.ag-tabs button{font-size:16.5px;letter-spacing:.12em;white-space:nowrap}}
 .fz-c{box-shadow:0 10px 18px -16px rgba(10,17,32,.45)}
 </style>
