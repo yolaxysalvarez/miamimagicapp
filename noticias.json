@@ -55,6 +55,71 @@
   "videos": [],
   "notas": [
     {
+      "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
+      "scope": "cayos",
+      "tema": "cultura",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-19",
+      "publicada": "2026-11-19T08:25:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-atardecer-palma.jpg",
+      "foto_pos": "50% 40%",
+      "foto_alt": "Atardecer naranja sobre el agua en los Cayos, con una palma inclinada y un muelle al fondo",
+      "foto_pie": "Foto de archivo: atardecer en los Cayos.",
+      "foto_pie_en": "Archive photo: sunset in the Keys.",
+      "fuentes": [
+        {
+          "n": "Condado de Monroe · calendario",
+          "u": "https://www.monroecounty-fl.gov/calendar.aspx"
+        },
+        {
+          "n": "Servicio Nacional de Meteorología · Key West",
+          "u": "https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-19T08:25:00-05:00",
+      "ultima": 4,
+      "arriba": 2,
+      "es": {
+        "etiqueta": "LOS CAYOS",
+        "titulo": "Paracaidistas al atardecer y un show de drones: Big Pine Key celebra el viernes los 250 años del país",
+        "bajada": "La fiesta de Islamorada se canceló por el mal tiempo; la de Big Pine Key sigue en pie, gratis, de 5 a 8 PM.",
+        "toca": [
+          "Viernes 20, de 5 a 8 PM, en Big Pine Key Community Park, 31009 Atlantis Dr. La entrada es gratis.",
+          "Los paracaidistas saltan a las 5:30 PM y los drones despegan a las 7 PM: llega antes de las 5:30 para no perderte el salto.",
+          "La exposición del 11 de septiembre abre el viernes de 2 a 5:30 PM y el sábado de 9 AM a 5:30 PM."
+        ],
+        "cuerpo": [
+          "La celebración de los 250 años de Estados Unidos en los Cayos se queda con una sola fecha esta semana: el viernes en Big Pine Key. El condado de Monroe canceló el miércoles la de Islamorada por el mal tiempo y mantiene la del Big Pine Key Community Park, de 5 a 8 PM y con entrada gratis, según su [calendario](https://www.monroecounty-fl.gov/calendar.aspx).",
+          "## El programa",
+          "A las 5:30 PM saltan sobre el parque los Golden Knights, el equipo de paracaidismo del Ejército. Peirce August Band pone la música en vivo y, a las 7 PM, un show de drones cierra la noche.",
+          "En el mismo parque estará la exposición móvil sobre el 11 de septiembre de la fundación Tunnel to Towers, el viernes de 2 a 5:30 PM y el sábado de 9 AM a 5:30 PM. El sábado por la mañana, además, se corre allí el 5K de la fundación.",
+          "## El tiempo",
+          "Para el viernes, el [pronóstico](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) del Servicio Nacional de Meteorología en Key West trae viento del oeste y el noroeste de 10 a 15 nudos frente a los Cayos Bajos y una ligera probabilidad de chubascos."
+        ]
+      },
+      "en": {
+        "etiqueta": "THE KEYS",
+        "titulo": "Skydivers at sunset and a drone show: Big Pine Key celebrates the nation’s 250th on Friday",
+        "bajada": "The Islamorada celebration was canceled because of the weather; the one in Big Pine Key is still on, free, from 5 to 8 p.m.",
+        "toca": [
+          "Friday the 20th, 5 to 8 p.m., at Big Pine Key Community Park, 31009 Atlantis Dr. Admission is free.",
+          "The parachute team jumps at 5:30 p.m. and the drones go up at 7 p.m.: arrive before 5:30 so you don’t miss the jump.",
+          "The 9/11 exhibit is open Friday from 2 to 5:30 p.m. and Saturday from 9 a.m. to 5:30 p.m."
+        ],
+        "cuerpo": [
+          "The Keys’ celebration of the United States’ 250th anniversary is down to one date this week: Friday in Big Pine Key. Monroe County canceled the Islamorada event on Wednesday because of the weather and is keeping the one at Big Pine Key Community Park, from 5 to 8 p.m. with free admission, according to its [calendar](https://www.monroecounty-fl.gov/calendar.aspx).",
+          "## The program",
+          "At 5:30 p.m., the Golden Knights, the U.S. Army parachute team, jump over the park. The Peirce August Band plays live and, at 7 p.m., a drone show closes the night.",
+          "The same park hosts the Tunnel to Towers Foundation’s 9/11 mobile exhibit, Friday from 2 to 5:30 p.m. and Saturday from 9 a.m. to 5:30 p.m. On Saturday morning, the foundation’s 5K also runs there.",
+          "## The weather",
+          "For Friday, the National Weather Service in Key West [forecasts](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) west to northwest winds of 10 to 15 knots off the Lower Keys and a slight chance of showers."
+        ]
+      }
+    },
+    {
       "id": "voyager-1-dia-luz-miami-1977",
       "scope": "miami",
       "tema": "curioso",
@@ -6802,6 +6867,6 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-19T08:15:00-05:00",
+  "updated_at": "2026-11-19T08:25:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha."
 }
