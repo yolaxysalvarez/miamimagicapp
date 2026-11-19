@@ -80,6 +80,10 @@
     {
       "src": "*.xml",
       "use": "@vercel/static"
+    },
+    {
+      "src": "guias/*.pdf",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -151,6 +155,14 @@
     {
       "src": "/news/?",
       "dest": "/api/portada-news.js?lang=en"
+    },
+    {
+      "src": "/guia-compradores/?",
+      "dest": "/noticias-guia.html"
+    },
+    {
+      "src": "/buyers-guide/?",
+      "dest": "/noticias-guia.html"
     },
     {
       "src": "/noticias/sobre/?",
