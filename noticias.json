@@ -647,7 +647,8 @@
         ]
       },
       "actualizada": "2026-11-19T08:05:00-05:00",
-      "ultima": 1
+      "ultima": 1,
+      "ambos": true
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -846,8 +847,8 @@
       "foto_pie_en": "Archive photo: a boat canal in the Keys.",
       "fuentes": [
         {
-          "n": "Servicio Nacional de Meteorología, Key West · Pronóstico marino de los Cayos",
-          "u": "https://www.ndbc.noaa.gov/data/Forecasts/FZUS52.KKEY.html"
+          "n": "Servicio Nacional de Meteorología · Key West · pronóstico marino",
+          "u": "https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY"
         },
         {
           "n": "Mote Marine Laboratory · Reef Revival Fest",
@@ -857,46 +858,45 @@
       "desarrollo": false,
       "es": {
         "etiqueta": "EL TIEMPO",
-        "titulo": "Llegan tres días de viento a los Cayos: olas de hasta 11 pies en el Estrecho y aviso para los botes pequeños",
-        "bajada": "De martes a jueves, el noreste soplará hasta 25 nudos, con lluvia y aguas muy picadas en el canal Hawk y la bahía de Florida. El viernes empieza a calmar.",
+        "titulo": "El viento afloja en los Cayos antes de lo previsto, pero el viernes vuelve a soplar frente a los Cayos Altos",
+        "bajada": "El mar baja este jueves en el canal Hawk y el Estrecho. Un repunte breve, del oeste y el noroeste, llega el viernes; el fin de semana queda en calma.",
         "toca": [
-          "Si tu bote es pequeño, deja la salida para el viernes o el fin de semana.",
-          "En los puentes de la Overseas, el viento cruzado y la lluvia piden menos velocidad y más distancia.",
-          "Este pronóstico marino llega hasta el viernes por la noche; lo actualizamos en esta misma nota."
+          "El jueves por la tarde y el fin de semana son las mejores ventanas para salir en bote.",
+          "Frente a los Cayos Altos, el viernes vuelve el mar picado: de Cayo Largo a Islamorada conviene esperar al sábado.",
+          "El sábado por la mañana se corre el 5K Tunnel to Towers en Big Pine Key."
         ],
         "cuerpo": [
-          "El viento se instala en los Cayos para toda la semana laboral. En su [pronóstico marino](https://www.ndbc.noaa.gov/data/Forecasts/FZUS52.KKEY.html), emitido el domingo por la tarde, el Servicio Nacional de Meteorología en Key West pide a los botes pequeños navegar con precaución en el Estrecho de Florida, donde el viento del noreste va en aumento, y advierte que las brisas «frescas a fuertes» dominarán casi toda la semana.",
+          "La brisa cede este jueves en los Cayos, un día antes de lo que se esperaba a principios de semana. En el [pronóstico marino](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) de las 4:24 AM, el Servicio Nacional de Meteorología en Key West indica que el viento sigue aflojando durante la mañana a medida que se aleja el sistema que lo trajo, aunque una baja presión que se forma frente a la costa este de Florida puede provocar otro repunte breve entre el viernes y el sábado, sobre todo frente a los Cayos Altos.",
           "## El mar, día a día",
-          "Hoy y esta noche: viento del noreste y el este de 15 a 20 nudos. En el canal Hawk, olas de 3 a 5 pies, y alguna de 6.",
-          "Martes: cerca de 20 nudos (unas 23 millas por hora). El canal Hawk se pone agitado, con olas de hasta 8 pies al oeste del faro de Cosgrove Shoal, y en el Estrecho el mar sube a 6 a 8 pies, con algunas olas de 10. La bahía de Florida, agitada.",
-          "Del martes por la noche al jueves: lo peor. El viento llega a 20 a 25 nudos, casi 29 millas por hora, con chubascos probables y alguna tormenta. En el Estrecho, olas de 7 a 9 pies y algunas de 11. Para el miércoles por la noche y el jueves, el pronóstico describe las aguas cercanas a la costa del canal Hawk como «extremadamente agitadas».",
-          "Viernes: el viento afloja a 15 a 20 nudos y en el canal Hawk las olas bajan a 2 a 4 pies. Para la noche, el mar pasa de picado a moderado.",
-          "## Y el fin de semana",
-          "La calma llega a tiempo para los planes. El [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) de Mote abre el viernes de 5 a 9 PM en Islamorada, y el sábado por la mañana se corre el 5K Tunnel to Towers en Big Pine Key. En Miami, la lluvia también se concentra de martes a jueves."
+          "Jueves: viento del este de 10 a 15 nudos en el canal Hawk, que baja a unos 5. Las olas pasan de 2 a 4 pies a 1 a 3. En el Estrecho, de 3 a 5 pies a 2 a 3. La bahía de Florida queda en calma por la tarde.",
+          "Viernes: el viento gira al oeste y el noroeste y sube a unos 15 nudos; frente a los Cayos Altos, de 15 a 20 (hasta 23 millas por hora). En el canal Hawk, olas de 1 a 2 pies, y de 2 a 3 frente a los Cayos Altos, con aguas picadas cerca de la costa. En el Estrecho, hasta 3 a 4 pies y alguna de 5 en esa misma zona.",
+          "Sábado y domingo: unos 10 nudos el sábado y de 5 a 10 el domingo, con olas de 1 a 2 pies en el canal Hawk. Hay una ligera probabilidad de chubascos todos los días.",
+          "## Lo que dejó la semana",
+          "El pronóstico del domingo anticipaba de 20 a 25 nudos y olas de 7 a 9 pies en el Estrecho, con algunas de 11, entre el martes por la noche y el jueves. En tierra, el condado canceló el miércoles su celebración America 250 en Islamorada; la de Big Pine Key sigue en pie para el viernes de 5 a 8 PM, y el [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) de Mote abre esa misma tarde en Islamorada."
         ]
       },
       "en": {
         "etiqueta": "WEATHER",
-        "titulo": "Three windy days hit the Keys: seas up to 11 feet in the Straits and a caution for small boats",
-        "bajada": "Tuesday through Thursday, northeast winds will reach 25 knots, with rain and very rough water in Hawk Channel and Florida Bay. Friday starts to calm down.",
+        "titulo": "The wind eases in the Keys sooner than forecast, but Friday brings another surge off the Upper Keys",
+        "bajada": "Seas come down this Thursday in Hawk Channel and the Straits. A brief surge, from the west and northwest, arrives Friday; the weekend stays calm.",
         "toca": [
-          "If your boat is small, save the trip for Friday or the weekend.",
-          "On the Overseas bridges, crosswinds and rain call for slower speeds and more distance.",
-          "This marine forecast runs through Friday night; we'll update it in this same story."
+          "Thursday afternoon and the weekend are the best windows to take the boat out.",
+          "Off the Upper Keys, choppy seas return Friday: from Key Largo to Islamorada, Saturday is the better bet.",
+          "The Tunnel to Towers 5K runs Saturday morning in Big Pine Key."
         ],
         "cuerpo": [
-          "Wind is settling over the Keys for the whole work week. In its [marine forecast](https://www.ndbc.noaa.gov/data/Forecasts/FZUS52.KKEY.html), issued Sunday afternoon, the National Weather Service in Key West tells small craft to exercise caution in the Straits of Florida as northeast winds increase, and warns that \"fresh to strong breezes\" will prevail for much of the week.",
+          "The breeze is letting up in the Keys this Thursday, a day earlier than expected at the start of the week. In its 4:24 a.m. [marine forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY), the National Weather Service in Key West says winds keep slackening through the morning as the system that brought them moves away, though a low developing off Florida’s east coast may cause another brief surge Friday through Saturday, especially off the Upper Keys.",
           "## The sea, day by day",
-          "Today and tonight: northeast to east winds of 15 to 20 knots. In Hawk Channel, seas of 3 to 5 feet, occasionally 6.",
-          "Tuesday: near 20 knots (about 23 mph). Hawk Channel turns rough, with seas up to 8 feet west of Cosgrove Shoal Light, and in the Straits seas build to 6 to 8 feet, occasionally 10. Florida Bay, rough.",
-          "Tuesday night through Thursday: the worst of it. Winds reach 20 to 25 knots, nearly 29 mph, with showers likely and a few storms. In the Straits, seas of 7 to 9 feet, occasionally 11. For Wednesday night and Thursday, the forecast calls Hawk Channel's nearshore waters \"extremely rough.\"",
-          "Friday: winds ease to 15 to 20 knots and Hawk Channel seas drop to 2 to 4 feet. By night, the sea goes from choppy to a moderate chop.",
-          "## And the weekend",
-          "The calm arrives in time for weekend plans. Mote's [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) opens Friday from 5 to 9 PM in Islamorada, and Saturday morning the Tunnel to Towers 5K runs in Big Pine Key. In Miami, too, the rain is concentrated Tuesday through Thursday."
+          "Thursday: east winds of 10 to 15 knots in Hawk Channel, dropping to about 5. Seas go from 2 to 4 feet down to 1 to 3. In the Straits, from 3 to 5 feet to 2 to 3. Florida Bay turns smooth by the afternoon.",
+          "Friday: winds shift to the west and northwest and rise to about 15 knots; off the Upper Keys, 15 to 20 (up to 23 mph). In Hawk Channel, seas of 1 to 2 feet, and 2 to 3 off the Upper Keys, with choppy nearshore waters. In the Straits, up to 3 to 4 feet and occasionally 5 in that same area.",
+          "Saturday and Sunday: about 10 knots Saturday and 5 to 10 Sunday, with seas of 1 to 2 feet in Hawk Channel. There is a slight chance of showers every day.",
+          "## What the week left behind",
+          "Sunday’s forecast called for 20 to 25 knots and seas of 7 to 9 feet in the Straits, occasionally 11, from Tuesday night through Thursday. On land, the county canceled its America 250 celebration in Islamorada on Wednesday; the one in Big Pine Key is still on for Friday from 5 to 8 p.m., and Mote’s [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) opens that same evening in Islamorada."
         ]
       },
-      "actualizada": "2026-11-16T13:30:00-05:00",
-      "ultima": 11
+      "actualizada": "2026-11-19T08:15:00-05:00",
+      "ultima": 11,
+      "arriba": 1
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -6802,6 +6802,6 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-19T08:00:00-05:00",
+  "updated_at": "2026-11-19T08:15:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha."
 }
