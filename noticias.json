@@ -540,11 +540,12 @@
       "fecha": "2026-11-17",
       "publicada": "2026-11-17T08:00:00-05:00",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-lluvia-broward-nov18b.jpg",
+      "foto": "mm-lluvia-broward-nov18c.jpg",
+      "foto_en": "mm-lluvia-broward-nov18c-en.jpg",
       "foto_mm": false,
       "foto_alt": "Gráfico de la vigilancia de inundaciones del NWS para Miami-Dade y Broward sobre el skyline de Brickell visto a través de un vidrio con gotas de lluvia",
-      "foto_pie": "Totales preliminares del NWS Miami en 24 horas, hasta las 8 AM del miércoles.",
-      "foto_pie_en": "NWS Miami preliminary 24-hour totals through 8 a.m. Wednesday.",
+      "foto_pie": "Totales preliminares del NWS Miami en 24 horas, hasta las 3:53 PM del miércoles.",
+      "foto_pie_en": "NWS Miami preliminary 24-hour totals through 3:53 p.m. Wednesday.",
       "desarrollo": true,
       "fuentes": [
         {
@@ -628,7 +629,7 @@
           "East winds are gusting above 30 mph, and a small craft advisory is in effect. Rip current risk is high on Miami-Dade and Broward beaches through Thursday night. The Keys are not under the flood watch, but seas remain rough: [Three windy days hit the Keys, with waves up to 11 feet in the Straits](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
         ]
       },
-      "actualizada": "2026-11-18T19:50:00-05:00",
+      "actualizada": "2026-11-18T19:55:00-05:00",
       "ultima": 1
     },
     {
