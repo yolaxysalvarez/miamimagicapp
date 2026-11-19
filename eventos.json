@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo manda sobre la cartelera de la app, sin pasar por Apple. Lo que pongas aquí se suma o corrige lo que ya trae la app; lo que no toques se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia \"updated\" cada vez.",
- "updated": "2026-11-15",
+ "updated": "2026-11-19",
  "semana": [
   {
    "id": "realestate-semana",
@@ -4134,22 +4134,23 @@
    "link": "https://therumor.com/p/679995"
   },
   {
-   "id": "ky-isla250-26",
+   "id": "ky-bigpine250-26",
    "scope": "keys",
-   "d": "2026-11-18",
-   "name": "America's 250 in Islamorada: 9/11 Exhibit, Army Knights & Drone Show",
-   "name_es": "Los 250 años de EE. UU. en Islamorada: exposición del 11-S, paracaidistas y drones",
-   "venue": "Founders Park · Islamorada",
-   "venue_es": "Founders Park · Islamorada",
-   "time": "Wed · 5:00–8:00 PM",
-   "time_es": "Miér · 5:00 a 8:00 PM",
-   "price": "See link",
-   "price_es": "Ver enlace",
+   "d": "2026-11-20",
+   "name": "America's 250 in Big Pine Key: Golden Knights & Drone Show",
+   "name_es": "Los 250 años de EE. UU. en Big Pine Key: paracaidistas y show de drones",
+   "venue": "Big Pine Key Community Park · 31009 Atlantis Dr",
+   "venue_es": "Big Pine Key Community Park · 31009 Atlantis Dr",
+   "time": "Fri · 5:00–8:00 PM",
+   "time_es": "Vie · 5:00 a 8:00 PM",
+   "price": "Free",
+   "price_es": "Gratis",
+   "free": true,
    "type": "Community · Celebration",
    "type_es": "Comunidad · Celebración",
-   "photo": "https://www.miamimagicapp.com/fotos/mm-keys-islamorada-turquesa.jpg",
-   "desc": "As part of America's 250th, the Tunnel to Towers 9/11 Never Forget mobile exhibit, a U.S. Army Golden Knights parachute drop-in and a drone show at Founders Park. The exhibit is also open Nov 17–18 from noon (last tour 5:30 PM).",
-   "desc_es": "Por los 250 años del país, la exposición móvil del 11 de septiembre de Tunnel to Towers, el salto de los paracaidistas del Ejército y un espectáculo de drones en Founders Park. La exposición también abre el 17 y 18 de noviembre desde el mediodía (último recorrido a las 5:30 PM).",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-keys-seven-mile-bridge-aereo.jpg",
+   "desc": "Monroe County's America 250 celebration: the U.S. Army Golden Knights parachute team jumps at 5:30 PM and a patriotic drone show starts at 7 PM, with live music by the Peirce August Band. The Tunnel to Towers 9/11 Never Forget mobile exhibit is open at the park Friday 2–5:30 PM and Saturday 9 AM–5:30 PM. The Islamorada celebration on Nov 18 was canceled because of the weather.",
+   "desc_es": "La celebración America 250 del condado de Monroe: los paracaidistas Golden Knights del Ejército saltan a las 5:30 PM y el show de drones empieza a las 7 PM, con música en vivo de Peirce August Band. La exposición móvil del 11 de septiembre de Tunnel to Towers abre en el parque el viernes de 2 a 5:30 PM y el sábado de 9 AM a 5:30 PM. La celebración de Islamorada del 18 de noviembre se canceló por el mal tiempo.",
    "tags": [
     "Community"
    ],
