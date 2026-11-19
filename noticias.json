@@ -236,7 +236,7 @@
           "In Miami, the snow of 1977 didn't survive past 10 a.m. Today, on the day of the milestone, what won't stop is [the rain](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre): 15.32 inches in Broward so far, according to the National Weather Service. The spacecraft that left Florida that year has been traveling for 49 years without stopping, and if anyone ever finds it, its record will play a mariachi band, Chuck Berry and Louis Armstrong: the same mix of worlds Miami was already becoming."
         ]
       },
-      "ultima": 2,
+      "ultima": 3,
       "galeria": [
         {
           "f": "mm-voyager-miami-news-nieve-1977.jpg",
@@ -365,7 +365,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -448,7 +448,7 @@
         ]
       },
       "actualizada": "2026-11-17T19:30:00-05:00",
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -529,7 +529,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -733,7 +733,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 13
+      "ultima": 14
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -812,7 +812,7 @@
         ]
       },
       "actualizada": "2026-11-18T11:25:00-05:00",
-      "ultima": 3
+      "ultima": 4
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -879,7 +879,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:30:00-05:00",
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -962,7 +962,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 12
+      "ultima": 13
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -1035,7 +1035,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -1047,11 +1047,27 @@
       "fecha": "2026-11-16",
       "publicada": "2026-11-16T11:17:00-05:00",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-gta6-poster-vice-city.jpg",
-      "foto_alt": "El póster de Grand Theft Auto VI que viene con el juego, sobre una pared blanca",
-      "foto_pie": "El póster que trae la caja de GTA VI.",
-      "foto_pie_en": "The poster that comes in the GTA VI box.",
+      "foto": "mm-gta6-caja-frente.jpg",
+      "foto_alt": "Una mano sostiene la caja de Grand Theft Auto VI para PlayStation 5, aún sellada",
+      "foto_pie": "La caja de GTA VI para PS5, comprada en Miami.",
+      "foto_pie_en": "The GTA VI box for PS5, bought in Miami.",
       "fuentes": [
+        {
+          "n": "Rockstar Games · hora de salida por región",
+          "u": "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s"
+        },
+        {
+          "n": "BambooHR · días libres pedidos para el estreno",
+          "u": "https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto"
+        },
+        {
+          "n": "PBS News · ¿faltará la gente al trabajo?",
+          "u": "https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6"
+        },
+        {
+          "n": "NBA · marcador del partido",
+          "u": "https://www.nba.com/heat/schedule"
+        },
         {
           "n": "Rockstar Games · preventa y precarga",
           "u": "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"
@@ -1078,46 +1094,57 @@
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-16T11:17:00-05:00",
+      "actualizada": "2026-11-18T21:40:00-05:00",
       "es": {
         "etiqueta": "VICE CITY",
-        "titulo": "Miami se convierte en Vice City esta semana: GTA VI sale el jueves y la ciudad ya se viste de juego",
-        "bajada": "Rockstar lanza el jueves 19 su juego más esperado, ambientado en su versión de Miami. Antes de que salga, dos discotecas y el HEAT ya juegan a ser Vice City.",
+        "titulo": "Medianoche en Vice City: GTA VI llega a Miami la noche en que la lluvia dejó a la ciudad sin clases",
+        "bajada": "El juego ambientado en Miami se desbloquea a las 12:00 AM del jueves. Uno de cada cinco asalariados del país pensaba pedir el día, según una encuesta, y aquí las escuelas ya estaban cerradas por el mal tiempo.",
         "toca": [
-          "Sale el jueves 19, solo para PS5 y Xbox Series X|S. En digital ya se puede precargar; la caja se vende en tiendas como Costco, donde compramos la nuestra.",
-          "La caja trae un código para descargar el juego, no un disco, según Rockstar.",
+          "Se desbloquea a las 12:00 AM del jueves 19, solo en PS5 y Xbox Series X|S. Quien lo reservó en digital ya pudo precargarlo.",
+          "Está clasificado M, para mayores de 17 años, como marca la caja.",
+          "La caja trae un código de descarga, no un disco: hace falta internet para instalarlo.",
           "E11EVEN es NINE1NINE hasta el 6 de diciembre, y Club Space será The Vault del 20 al 22. Las dos están en la app."
         ],
         "cuerpo": [
-          "Vice City vuelve 24 años después de la primera, y las preventas no frenan. Siguen «llegando a niveles sin precedentes», dijo el 9 de noviembre Strauss Zelnick, presidente de [Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), la dueña de Rockstar Games. La firma de análisis Sensor Tower las calcula en [más de 12 millones](https://techsavvy.media/en/grand-theft-auto-vi-is-the-most-pre-ordered-game-ever/). Grand Theft Auto VI llega el jueves 19 a PlayStation 5 y Xbox Series X|S.",
+          "A las 12:00 AM de este jueves, Grand Theft Auto VI se desbloquea en Miami. Rockstar Games [fijó la salida](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s) a la medianoche, hora local, en todas las regiones, para PlayStation 5 y Xbox Series X|S. El juego, ambientado en una versión de Miami llamada Vice City, encuentra a la ciudad en una noche rara: con [vigilancia de inundaciones](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre) y con las escuelas públicas de Miami-Dade y Broward cerradas el jueves por la lluvia. Una cosa no tiene que ver con la otra, pero el calendario las juntó.",
+          "## ¿Y el trabajo?",
+          "Casi uno de cada cinco asalariados del país, el 18%, pensaba tomarse el día del estreno, y entre los de la generación Z, el 32%. Lo midió [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), una empresa de programas de recursos humanos, que además registró un 13% más de solicitudes de días libres para este jueves que en fechas equivalentes de 2024 y 2025. Son intenciones, no ausencias contadas. Nicholas Bloom, economista de la Universidad de Stanford, [le dijo a PBS](https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6) que no cree en esas cifras sin una encuesta representativa: calcula que quizás el 5% de quienes trabajan a tiempo completo juega Grand Theft Auto, y que solo una parte pediría el día.",
+          "## La víspera, en la cancha",
+          "Horas antes del estreno, el HEAT jugó como Vice City contra los Bucks en el Kaseya Center, con una [cancha y un uniforme](https://www.nba.com/heat/vicecity) hechos para esa única noche. Al publicar esta nota, Miami ganaba 128-104 a falta de cinco minutos, en el primer partido de Giannis Antetokounmpo contra su exequipo.",
           "## Miami, con otro nombre",
           "En el juego, South Beach es Ocean Beach, la Pequeña Habana es Little Cuba y el Kaseya Center es el Sahara Arena. El Hotel Victor de Ocean Drive aparece como Hotel Dixon, y el Venetian Causeway y las torres de Brickell salen casi idénticos, según el [mapa que armó Miami New Times](https://www.miaminewtimes.com/arts-culture/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001/). Los Cayos también están, como Leonida Keys.",
           "## La ciudad ya juega",
-          "Dos discotecas tomaron el nombre de sus gemelas del juego. E11EVEN es [NINE1NINE](https://www.11miami.com/blog/nine1nine) desde el 6 de noviembre y hasta el 6 de diciembre, con fiesta de lanzamiento el viernes 20. Club Space se convierte en The Vault del 20 al 22, según [Mixmag](https://mixmag.net/read/miami-club-space-transform-gta-vi-nightclub-games-launch-news). La víspera del estreno, el miércoles 18, el HEAT juega contra los Bucks en una [cancha Vice City](https://www.nba.com/heat/vicecity) que solo se usará esa noche.",
+          "Dos discotecas tomaron el nombre de sus gemelas del juego. E11EVEN es [NINE1NINE](https://www.11miami.com/blog/nine1nine) desde el 6 de noviembre y hasta el 6 de diciembre, con fiesta de lanzamiento el viernes 20. Club Space se convierte en The Vault del 20 al 22, según [Mixmag](https://mixmag.net/read/miami-club-space-transform-gta-vi-nightclub-games-launch-news).",
           "## La caja y el póster",
-          "En digital se compra en las tiendas de PlayStation y Xbox, y quien lo reservó puede [precargarlo](https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25). La caja física [trae un código](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions), no un disco, e incluye un póster: por un lado, el collage de la portada; por el otro, la mujer en bikini que también aparece en ese collage. Las compras hechas antes del 20 de noviembre traen de regalo el Vintage Vice City Pack."
+          "Las preventas siguen «llegando a niveles sin precedentes», dijo el 9 de noviembre Strauss Zelnick, presidente de [Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), la dueña de Rockstar Games; la firma de análisis Sensor Tower las calcula en [más de 12 millones](https://techsavvy.media/en/grand-theft-auto-vi-is-the-most-pre-ordered-game-ever/). La caja física [trae un código](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions), no un disco, e incluye un póster. Las compras hechas antes del 20 de noviembre traen de regalo el Vintage Vice City Pack."
         ]
       },
       "en": {
         "etiqueta": "VICE CITY",
-        "titulo": "Miami turns into Vice City this week: GTA VI drops Thursday and the city is already dressing the part",
-        "bajada": "Rockstar releases its most awaited game on Thursday, Nov. 19, set in its own version of Miami. Before it's out, two nightclubs and the HEAT are already playing Vice City.",
+        "titulo": "Midnight in Vice City: GTA VI reaches Miami on the night the rain canceled school",
+        "bajada": "The game set in Miami unlocks at 12:00 a.m. Thursday. One in five salaried U.S. workers planned to take the day off, a survey found, and here the schools were already closed because of the weather.",
         "toca": [
-          "Out Thursday, Nov. 19, on PS5 and Xbox Series X|S only. Digital buyers can pre-load it; the box is sold at stores such as Costco, where we bought ours.",
-          "The box holds a download code, not a disc, according to Rockstar.",
+          "It unlocks at 12:00 a.m. Thursday the 19th, on PS5 and Xbox Series X|S only. Digital pre-orders could already pre-load it.",
+          "It is rated M, for ages 17 and up, as the box shows.",
+          "The box holds a download code, not a disc: you need internet to install it.",
           "E11EVEN is NINE1NINE through Dec. 6, and Club Space becomes The Vault Nov. 20–22. Both are in the app."
         ],
         "cuerpo": [
-          "Vice City returns 24 years after the first one, and pre-orders keep climbing. They are “continuing to reach unprecedented levels,” Strauss Zelnick, chairman of [Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), Rockstar Games’ parent company, said on Nov. 9. Analytics firm Sensor Tower puts them at [more than 12 million](https://techsavvy.media/en/grand-theft-auto-vi-is-the-most-pre-ordered-game-ever/). Grand Theft Auto VI arrives Thursday on PlayStation 5 and Xbox Series X|S.",
+          "At 12:00 a.m. this Thursday, Grand Theft Auto VI unlocks in Miami. Rockstar Games [set the release](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s) for midnight local time in every region, on PlayStation 5 and Xbox Series X|S. The game, set in a version of Miami called Vice City, finds the city on an odd night: under a [flood watch](https://www.miamimagicapp.com/news/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre), with Miami-Dade and Broward public schools closed Thursday because of the rain. One has nothing to do with the other, but the calendar put them together.",
+          "## What about work?",
+          "Nearly one in five salaried U.S. workers, 18%, planned to take launch day off, and among Gen Z workers, 32%. That comes from [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), an HR software company, which also logged 13% more time-off requests for this Thursday than on equivalent days in 2024 and 2025. Those are intentions, not counted absences. Nicholas Bloom, an economist at Stanford University, [told PBS](https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6) he does not believe those figures without a representative survey: he estimates that perhaps 5% of full-time workers play Grand Theft Auto, and that only a fraction would take the day off.",
+          "## Launch eve, on the court",
+          "Hours before the release, the HEAT played as Vice City against the Bucks at Kaseya Center, on a [court and in a uniform](https://www.nba.com/heat/vicecity) made for that one night. As this story was published, Miami led 128-104 with five minutes left, in Giannis Antetokounmpo’s first game against his former team.",
           "## Miami, under another name",
           "In the game, South Beach is Ocean Beach, Little Havana is Little Cuba and Kaseya Center is the Sahara Arena. Ocean Drive’s Hotel Victor shows up as Hotel Dixon, and the Venetian Causeway and Brickell’s towers look almost identical, according to [Miami New Times’ map](https://www.miaminewtimes.com/arts-culture/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001/). The Keys are in too, as the Leonida Keys.",
           "## The city is already playing",
-          "Two nightclubs took the names of their in-game twins. E11EVEN has been [NINE1NINE](https://www.11miami.com/blog/nine1nine) since Nov. 6 and will be through Dec. 6, with a launch party Friday the 20th. Club Space becomes The Vault Nov. 20–22, according to [Mixmag](https://mixmag.net/read/miami-club-space-transform-gta-vi-nightclub-games-launch-news). On launch eve, Wednesday the 18th, the HEAT plays the Bucks on a [Vice City court](https://www.nba.com/heat/vicecity) used for that one night.",
+          "Two nightclubs took the names of their in-game twins. E11EVEN has been [NINE1NINE](https://www.11miami.com/blog/nine1nine) since Nov. 6 and will be through Dec. 6, with a launch party Friday the 20th. Club Space becomes The Vault Nov. 20–22, according to [Mixmag](https://mixmag.net/read/miami-club-space-transform-gta-vi-nightclub-games-launch-news).",
           "## The box and the poster",
-          "Digitally, it’s sold on the PlayStation and Xbox stores, and pre-orders can [pre-load](https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25). The physical box [holds a code](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions), not a disc, and includes a poster: on one side, the cover collage; on the other, the woman in a bikini who also appears in that collage. Purchases made before Nov. 20 include the Vintage Vice City Pack."
+          "Pre-orders are “continuing to reach unprecedented levels,” Strauss Zelnick, chairman of [Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), Rockstar Games’ parent company, said on Nov. 9; analytics firm Sensor Tower puts them at [more than 12 million](https://techsavvy.media/en/grand-theft-auto-vi-is-the-most-pre-ordered-game-ever/). The physical box [holds a code](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions), not a disc, and includes a poster. Purchases made before Nov. 20 include the Vintage Vice City Pack."
         ]
       },
-      "foto_pos": "center 32%"
+      "foto_pos": "50% 34%",
+      "ultima": 2
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -1201,7 +1228,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -1284,7 +1311,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -1366,7 +1393,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 14,
+      "ultima": 15,
       "tambien": 2
     },
     {
@@ -6699,7 +6726,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-18T11:25:00-05:00",
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -6751,5 +6778,5 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-18T15:01:00-05:00"
+  "updated_at": "2026-11-18T21:40:00-05:00"
 }
