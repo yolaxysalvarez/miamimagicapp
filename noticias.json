@@ -55,6 +55,107 @@
   "videos": [],
   "notas": [
     {
+      "id": "stiltsville-historia-27-casas-quedan-6",
+      "scope": "miami",
+      "tema": "historia",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-19",
+      "publicada": "2026-11-19T08:30:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-biscayne-stiltsville-aereo.jpg",
+      "foto_alt": "Vista aérea de las casas sobre pilotes de Stiltsville en el agua turquesa de la bahía de Biscayne",
+      "foto_pie": "Las casas sobre pilotes de Stiltsville, en el extremo norte del Parque Nacional Biscayne. Foto: Adobe Stock.",
+      "foto_pie_en": "The stilt houses of Stiltsville, at the northern edge of Biscayne National Park. Photo: Adobe Stock.",
+      "foto_mm": false,
+      "fuentes": [
+        {
+          "n": "Servicio de Parques Nacionales · Stiltsville",
+          "u": "https://www.nps.gov/bisc/learn/historyculture/stiltsville.htm"
+        },
+        {
+          "n": "Servicio de Parques Nacionales · permisos",
+          "u": "https://home.nps.gov/bisc/planyourvisit/permitsandreservations.htm"
+        },
+        {
+          "n": "Stiltsville · cronología",
+          "u": "https://en.wikipedia.org/wiki/Stiltsville"
+        },
+        {
+          "n": "Museo de Historia de Florida · clubes de pesca",
+          "u": "https://museumoffloridahistory.com/explore/exhibits/previous-exhibits/lure-of-florida-fishing/fishing-clubs-and-tournaments"
+        },
+        {
+          "n": "Biscayne National Park Institute · recorrido guiado",
+          "u": "https://www.biscaynenationalparkinstitute.org/stiltsville-guided-tour-from-coconut-grove/"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-19T08:30:00-05:00",
+      "ultima": 5,
+      "arriba": 3,
+      "es": {
+        "etiqueta": "HISTORIA",
+        "titulo": "Eran 27 casas en medio del mar y quedan 6: la historia de Stiltsville, el barrio sin calles de la bahía",
+        "bajada": "Nació en 1933 con una caseta de carnada, tuvo clubes y redadas, y sobrevivió a los huracanes y a la orden de retirarlo.",
+        "toca": [
+          "Las casas son del Parque Nacional Biscayne: subir sin permiso está prohibido.",
+          "Se ven de cerca en el recorrido guiado en bote que sale de Dinner Key, en Coconut Grove.",
+          "Desde el faro de Key Biscayne se distinguen en días claros."
+        ],
+        "cuerpo": [
+          "Seis casas siguen en pie sobre el agua, a 1 milla de la punta de Key Biscayne, donde hubo 27. Son lo que queda de Stiltsville, un barrio sin calles ni vecinos al que solo se llega en bote y que hoy pertenece al Parque Nacional Biscayne. Nadie puede subir a ellas sin permiso, advierte el [Servicio de Parques Nacionales](https://www.nps.gov/bisc/learn/historyculture/stiltsville.htm).",
+          "## Carnada, cerveza y chowder",
+          "Todo empezó en los años treinta con «Crawfish» Eddie Walker, que levantó la primera caseta sobre pilotes en los bajos de la bahía. Las crónicas de la época, reunidas en la [cronología de Stiltsville](https://en.wikipedia.org/wiki/Stiltsville), fechan esa caseta en 1933, al final de la Ley Seca: Walker vendía carnada y cerveza y servía un chowder de langosta que pescaba debajo de su propia casa.",
+          "Detrás de él llegaron sus compañeros de pesca, y en 1939 Jimmy Ellenburg, a quien llamaban el alcalde no oficial del lugar.",
+          "## Los clubes",
+          "El primero fue el Calvert Club, a finales de los años treinta. En noviembre de 1940 abrió el Quarterdeck Club, construido sobre una barcaza, con bar, comedor y muelle para yates; la revista Life le dedicó un reportaje el 10 de febrero de 1941 y lo convirtió en uno de los sitios de moda de Miami. Los rumores de juego llevaron a una redada en 1949, que no encontró pruebas. El club ardió hasta los pilotes en 1961.",
+          "El más recordado duró tres años. En 1962, un empresario encalló un yate de 150 pies, el Jeff, y lo abrió como Bikini Club, donde las mujeres en bikini bebían gratis. En el verano de 1965 el estado lo clausuró por vender alcohol sin licencia.",
+          "## Huracanes, incendios y un plazo",
+          "Stiltsville tocó techo en 1960, con 27 estructuras. Ese mismo año, el huracán Donna dañó la mayoría, y Betsy arrasó con casi todo en septiembre de 1965. Florida empezó entonces a cobrar un alquiler por cada parcela de agua, dejó de dar permisos de construcción y fijó una regla que todavía pesa: la casa que pierde más de la mitad no se reconstruye. En 1976 puso fecha final a los contratos, el 1 de julio de 1999.",
+          "Para entonces el lugar ya era parque nacional. El Congreso lo incluyó en 1980 y el estado cedió el fondo de la bahía en 1985. El huracán Andrew, en 1992, dejó en pie solo 7 casas, y ninguna era de la época dorada.",
+          "## Miami dijo que no",
+          "Cuando se acercaba el plazo para retirarlas, una campaña reunió más de 75,000 firmas. El Servicio de Parques dio marcha atrás en 2000, y en 2003 nació el Stiltsville Trust, la organización sin fines de lucro que cuida las casas junto al parque. Un incendio destruyó una más, la casa Leshaw, el 11 de enero de 2021.",
+          "## ¿Queda algún club?",
+          "Uno. Entre las 6 casas está la del Miami Springs Power Boat Club, que sus socios levantaron a finales de los años cincuenta sobre una barcaza hundida comprada por $1 y que, tras el huracán Betsy, pasaron a pilotes de concreto. Las otras 5 son la A-Frame, la Baldwin, Sessions & Shaw, la Bay Chateau, la Hicks y la de Jimmy Ellenburg. El Miami Beach Rod & Reel Club, que en 1938 hizo su primera salida oficial en el Calvert Club, ya no está en funcionamiento, según el [Museo de Historia de Florida](https://museumoffloridahistory.com/explore/exhibits/previous-exhibits/lure-of-florida-fishing/fishing-clubs-and-tournaments).",
+          "## En la pantalla",
+          "Las casas salen en películas como Absence of Malice y Bad Boys II y en series como Miami Vice. También en un videojuego: Grand Theft Auto: Vice City, de 2002. Su sucesor, [GTA VI](https://www.miamimagicapp.com/noticias/gta-vi-vice-city-miami-jueves-19), salió a la venta este jueves.",
+          "## Cómo verlas",
+          "El Biscayne National Park Institute ofrece un [recorrido guiado en bote](https://www.biscaynenationalparkinstitute.org/stiltsville-guided-tour-from-coconut-grove/) que sale de Dinner Key, en Coconut Grove, y rodea las casas. Desde tierra se distinguen, en días claros, desde el [faro de Key Biscayne](https://www.miamimagicapp.com/noticias/faro-cape-florida-1836-historia). Los permisos para visitarlas se tramitan con el Stiltsville Trust y el parque, que explica el proceso en su [página de permisos](https://home.nps.gov/bisc/planyourvisit/permitsandreservations.htm)."
+        ]
+      },
+      "en": {
+        "etiqueta": "HISTORY",
+        "titulo": "There were 27 houses in the middle of the sea and 6 are left: the story of Stiltsville, the bay’s neighborhood with no streets",
+        "bajada": "It was born in 1933 with a bait shack, had clubs and raids, and survived the hurricanes and the order to remove it.",
+        "toca": [
+          "The houses belong to Biscayne National Park: stepping onto them without a permit is prohibited.",
+          "You can see them up close on the guided boat tour that leaves from Dinner Key, in Coconut Grove.",
+          "From the Key Biscayne lighthouse they can be made out on clear days."
+        ],
+        "cuerpo": [
+          "Six houses still stand over the water, a mile off the tip of Key Biscayne, where there were once 27. They are what is left of Stiltsville, a neighborhood with no streets and no neighbors that can only be reached by boat and now belongs to Biscayne National Park. No one may step onto them without a permit, the [National Park Service](https://www.nps.gov/bisc/learn/historyculture/stiltsville.htm) warns.",
+          "## Bait, beer and chowder",
+          "It began in the 1930s with “Crawfish” Eddie Walker, who built the first shack on stilts on the bay’s shallow flats. Accounts from the period, gathered in the [Stiltsville timeline](https://en.wikipedia.org/wiki/Stiltsville), date that shack to 1933, at the end of Prohibition: Walker sold bait and beer and served a chowder made from the crawfish he caught under his own house.",
+          "His fishing companions followed, and in 1939 so did Jimmy Ellenburg, known as the place’s unofficial mayor.",
+          "## The clubs",
+          "The first was the Calvert Club, in the late 1930s. In November 1940 came the Quarterdeck Club, built on a barge, with a bar, a dining room and a dock for yachts; Life magazine ran a feature on it on Feb. 10, 1941, and made it one of Miami’s places to be. Gambling rumors led to a raid in 1949, which found no evidence. The club burned down to its pilings in 1961.",
+          "The best remembered lasted three years. In 1962, a businessman ran a 150-foot yacht, the Jeff, aground and opened it as the Bikini Club, where women in bikinis drank free. In the summer of 1965 the state shut it down for selling liquor without a license.",
+          "## Hurricanes, fires and a deadline",
+          "Stiltsville peaked in 1960, with 27 structures. That same year Hurricane Donna damaged most of them, and Betsy wiped out nearly everything in September 1965. Florida then began charging rent for each plot of water, stopped issuing building permits and set a rule that still applies: a house that loses more than half is not rebuilt. In 1976 it put an end date on the leases, July 1, 1999.",
+          "By then the place was already a national park. Congress added it in 1980 and the state deeded the bay bottom in 1985. Hurricane Andrew, in 1992, left only seven houses standing, none of them from the heyday.",
+          "## Miami said no",
+          "As the removal deadline approached, a petition drive gathered more than 75,000 signatures. The Park Service reversed course in 2000, and in 2003 the Stiltsville Trust was born, the nonprofit that looks after the houses alongside the park. A fire destroyed one more, the Leshaw House, on Jan. 11, 2021.",
+          "## Is any club left?",
+          "One. Among the six houses is the Miami Springs Power Boat Club’s, which its members built in the late 1950s on a sunken barge bought for $1 and moved onto concrete pilings after Hurricane Betsy. The other five are the A-Frame, the Baldwin, Sessions & Shaw, the Bay Chateau, the Hicks and the Jimmy Ellenburg houses. The Miami Beach Rod & Reel Club, which held its first official outing at the Calvert Club in 1938, is no longer in operation, according to the [Museum of Florida History](https://museumoffloridahistory.com/explore/exhibits/previous-exhibits/lure-of-florida-fishing/fishing-clubs-and-tournaments).",
+          "## On screen",
+          "The houses appear in films such as Absence of Malice and Bad Boys II and in series such as Miami Vice. Also in a video game: Grand Theft Auto: Vice City, from 2002. Its successor, [GTA VI](https://www.miamimagicapp.com/news/gta-vi-vice-city-miami-jueves-19), went on sale this Thursday.",
+          "## How to see them",
+          "The Biscayne National Park Institute runs a [guided boat tour](https://www.biscaynenationalparkinstitute.org/stiltsville-guided-tour-from-coconut-grove/) that leaves from Dinner Key, in Coconut Grove, and circles the houses. From land they can be made out, on clear days, from the [Key Biscayne lighthouse](https://www.miamimagicapp.com/news/faro-cape-florida-1836-historia). Permits to visit them go through the Stiltsville Trust and the park, which explains the process on its [permits page](https://home.nps.gov/bisc/planyourvisit/permitsandreservations.htm)."
+        ]
+      }
+    },
+    {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
       "scope": "cayos",
       "tema": "cultura",
@@ -6867,6 +6968,6 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-19T08:25:00-05:00",
+  "updated_at": "2026-11-19T08:30:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha."
 }
