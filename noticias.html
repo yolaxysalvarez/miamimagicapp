@@ -917,6 +917,9 @@ body{background:#fff;text-rendering:optimizeLegibility}
 @media(min-width:1201px){.hm-pill,.dk-pill,.cc-pill{background:#fff;box-shadow:none;border-width:1.5px}.hm-pill{border-color:rgba(201,58,37,.5)}.dk-pill{border-color:rgba(11,92,122,.5)}.cc-pill{border-color:rgba(160,112,30,.6)}}
 .ag{background:#fff}
 .ph.fit{background:#F3F1EC}
+/* gráfico completo: nunca se recorta; el hueco se llena con la misma imagen desenfocada */
+.ph.fit::before{content:"";position:absolute;inset:-26px;background:inherit;background-size:cover;background-position:center;filter:blur(22px) saturate(1.05) brightness(.86)}.ph.fit img{position:relative}
+@media(max-width:760px){.ag-tabs{gap:16px}.ag-tabs button{font-size:16.5px;letter-spacing:.12em;white-space:nowrap}}
 .fz-c{box-shadow:0 10px 18px -16px rgba(10,17,32,.45)}
 </style>
 <style>
@@ -1286,7 +1289,7 @@ function render(){
   document.getElementById('mas').innerHTML=rest.length?rest.slice(0,ST.masN).map(function(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}).join(''):'';
   document.getElementById('mas').previousElementSibling.style.display=rest.length?'':'none';document.getElementById('mas').style.display=rest.length?'':'none';
   var mb=document.getElementById('masBtn');mb.style.display=rest.length>ST.masN?'':'none';mb.firstChild.textContent=(L==='en'?'MORE NEWS':'MÁS NOTICIAS')+' ('+(rest.length-ST.masN)+')';
-  document.getElementById('otros').innerHTML=otros().map(function(g){return [g[0],g[1].filter(function(n){return n!==XB})]}).filter(function(g){return g[1].length}).map(function(g){var k=g[0],ky=k==='cayos';return '<div class="sh"><h3 class="'+(ky?'scy':'smi')+'">'+(ky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI')+'</h3><button class="vt" data-go="'+k+'">'+(L==='en'?'SEE ALL →':'VER TODO →')+'</button></div>'+(g[1].length===1?'<div class="grid4 one">'+cardW(g[1][0])+'</div>':'<div class="grid4">'+g[1].slice(0,8).map(card).join('')+'</div>')}).join('');
+  document.getElementById('otros').innerHTML=otros().map(function(g){return [g[0],g[1].filter(function(n){return n!==XB&&n!==lead})]}).filter(function(g){return g[1].length}).map(function(g){var k=g[0],ky=k==='cayos';return '<div class="sh"><h3 class="'+(ky?'scy':'smi')+'">'+(ky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI')+'</h3><button class="vt" data-go="'+k+'">'+(L==='en'?'SEE ALL →':'VER TODO →')+'</button></div>'+(g[1].length===1?'<div class="grid4 one">'+cardW(g[1][0])+'</div>':'<div class="grid4">'+g[1].slice(0,8).map(card).join('')+'</div>')}).join('');
   renderHome(lead,rest);
   renderSp(lead,rest);
   // hamaca

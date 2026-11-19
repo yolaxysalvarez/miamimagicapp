@@ -164,6 +164,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   .hero.tall{border-radius:12px;margin:0 auto 10px;width:62%}
   .op{padding:20px}.op .row{flex-direction:column}
   .nl form{flex-direction:column;max-width:none}
+  .nl input{flex:0 0 50px;width:100%}
 }
 .fsoc{display:inline-flex;gap:10px;align-items:center}.fsoc a{width:36px;height:36px;border-radius:50%;border:1px solid rgba(14,27,48,.2);display:grid;place-items:center;background:#fff}
 .toca li i,.btc b,.btc td:first-child{font-family:var(--dm);font-weight:700;font-variant-numeric:tabular-nums}
@@ -233,6 +234,8 @@ function img(){var f=(L==='en'&&N.foto_en)||N.foto||'';return f?(/^https?:|^\//.
 function url(){return 'https://www.miamimagicapp.com'+(L==='en'?'/news/':'/noticias/')+encodeURIComponent(ID)}
 function meta(name,val,prop){var s=prop?'meta[property="'+name+'"]':'meta[name="'+name+'"]';var m=document.querySelector(s);if(!m){m=document.createElement('meta');m.setAttribute(prop?'property':'name',name);document.head.appendChild(m)}m.setAttribute('content',val)}
 
+/* hora de publicación junto a la fecha (solo si 'publicada' trae hora real) */
+function hp(){if(!N.publicada||!/T\d\d:\d\d/.test(N.publicada)||/T00:00/.test(N.publicada))return '';try{return ' · '+new Date(N.publicada).toLocaleTimeString(L==='en'?'en-US':'es-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})}catch(e){return ''}}
 function upd(){var d=new Date(N.actualizada),m=Math.round((Date.now()-d)/60000),en=L==='en',hr='';try{hr=d.toLocaleTimeString(en?'en-US':'es-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'})}catch(e){}
   if(isNaN(m))return '';if(m<1)m=1;
   if(m<60)return (en?'Updated '+m+' min ago':'Actualizado hace '+m+' min')+(hr?' · '+hr:'');
@@ -252,7 +255,7 @@ function render(){
   var h='<article><div class="col"><div class="crumb"><a href="/noticias'+(L==='en'?'?lang=en':'')+'">MIAMI MAGIC NEWS</a> · '+((N.hamaca||N.muelle||CC)?te[i]:'<span class="sc'+(N.scope==='cayos'?' ky':'')+'">'+sc[i]+'</span>'+(te[i]?' · '+te[i]:''))+'</div>'
    +(N.desarrollo?'<div class="dev"><span><i></i>'+(L==='en'?'DEVELOPING STORY':'NOTICIA EN DESARROLLO')+'</span>'+(N.actualizada?'<em>'+upd()+'</em>':'')+'</div>':'')
    +'<h1>'+esc(ti)+'</h1>'+(ba?'<p class="bajada">'+esc(ba)+'</p>':'')+vencio()
-   +'<div class="by">'+(!N.autor||N.autor==='Yolaxys Alvarez'?'<img class="av" src="/fotos/mm-yoly-autora.jpg" alt="Yolaxys Alvarez" width="48" height="48">':'<span class="av">'+esc(N.autor.charAt(0))+'</span>')+'<div><b>'+t('por')+' '+esc(N.autor||'Yolaxys Alvarez')+'</b><span>'+(N.autor&&N.autor!=='Yolaxys Alvarez'?'':t('ed')+'<br>')+fd(N.fecha)+' · '+mn+' '+t('min')+'</span></div></div></div>';
+   +'<div class="by">'+(!N.autor||N.autor==='Yolaxys Alvarez'?'<img class="av" src="/fotos/mm-yoly-autora.jpg" alt="Yolaxys Alvarez" width="48" height="48">':'<span class="av">'+esc(N.autor.charAt(0))+'</span>')+'<div><b>'+t('por')+' '+esc(N.autor||'Yolaxys Alvarez')+'</b><span>'+(N.autor&&N.autor!=='Yolaxys Alvarez'?'':t('ed')+'<br>')+fd(N.fecha)+hp()+' · '+mn+' '+t('min')+'</span></div></div></div>';
   var HV=vok(N.video)?N.video:'';if(img()||HV)h+='<figure><div class="hero'+(N.foto_ratio?' tall" style="aspect-ratio:'+esc(N.foto_ratio):'')+'">'+(HV?vbtn(HV,ti,img(),N.foto_pos):'<img src="'+esc(img())+'" alt="'+esc(N.foto_alt||'')+'"'+(N.foto_pos?' style="object-position:'+esc(N.foto_pos)+'"':'')+'>')+(N.foto_mm!==false&&!HV?'<span class="wm">MIAMI MAGIC</span>':'')+'</div>'+(N.foto_credito||N.foto_pie?'<figcaption class="cap">'+esc((L==='en'&&N.foto_pie_en)||N.foto_pie||'')+(N.foto_credito?' · '+t('foto')+': '+esc(N.foto_credito):'')+'</figcaption>':'<div style="height:24px"></div>')+'</figure>';
   h+='<div class="col"><div class="body b1">';
   var at=Math.min(2,cu.length);if(at>1&&cu[at-1].slice(0,3)==='## ')at--;
@@ -261,7 +264,7 @@ function render(){
   if(N.actualizada)h+='<p class="upd">'+(N.desarrollo?'<i></i>':'')+upd()+(N.desarrollo?(L==='en'?' — This story is developing and will be updated.':' — Esta noticia está en desarrollo y se seguirá actualizando.'):'')+'</p>';
   if(N.galeria&&N.galeria.length){h+='<div class="gal">'+N.galeria.map(function(g){var src=/^https?:|^\//.test(g.f)?g.f:'/fotos/'+g.f;var cap=(g[L]||g.es||'');return '<figure><span class="gi"><img src="'+esc(src)+'" alt="'+esc(cap)+'" loading="lazy">'+(g.mm===false?'':'<span class="wm">MIAMI MAGIC</span>')+'</span>'+(cap?'<figcaption>'+esc(cap)+'</figcaption>':'')+'</figure>'}).join('')+'</div>'}
   if(N.fuentes&&N.fuentes.length)h+='<div class="src"><h5>'+t('fuentes')+'</h5><ul>'+N.fuentes.map(function(f){return '<li>'+(f.u?'<a href="'+esc(f.u)+'" target="_blank" rel="noopener">'+esc(f.n)+'</a>':esc(f.n))+'</li>'}).join('')+'</ul></div>';
-  if(N.actualizada)h+='<p class="upd">'+t('act')+' '+fd(N.actualizada)+(F('nota_act')?' · '+esc(F('nota_act')):'')+'</p>';
+  if(N.actualizada&&F('nota_act'))h+='<p class="upd">'+t('act')+' '+fd(N.actualizada)+' · '+esc(F('nota_act'))+'</p>';
   var u=encodeURIComponent(url()),tt=encodeURIComponent(ti);
   var ic=function(d){return '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+d+'</svg>'};
   var I_SH=ic('<path d="M12 3v12"/><path d="M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>'),I_LK=ic('<path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1.2 1.2"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/>');

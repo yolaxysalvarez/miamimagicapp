@@ -6,7 +6,7 @@
     "nota": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
     "es": "Jueves sin clases ni tribunales en Miami-Dade y Broward; la vigilancia de inundaciones sigue hasta las 7 PM",
     "en": "No school or courts Thursday in Miami-Dade and Broward; the flood watch continues until 7 p.m.",
-    "desde": "2026-11-18T11:05:00-05:00",
+    "desde": "2026-11-19T08:05:00-05:00",
     "hasta": "2026-11-19T19:00:00-05:00"
   },
   "cifras": [
@@ -92,7 +92,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-19T09:15:00-05:00",
-      "ultima": 5,
+      "ultima": 2,
       "arriba": 3,
       "es": {
         "etiqueta": "HISTORIA",
@@ -182,10 +182,10 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-19T08:25:00-05:00",
-      "ultima": 4,
+      "ultima": 3,
       "arriba": 2,
       "es": {
-        "etiqueta": "LOS CAYOS",
+        "etiqueta": "COMUNIDAD",
         "titulo": "Paracaidistas al atardecer y un show de drones: Big Pine Key celebra el viernes los 250 años del país",
         "bajada": "La fiesta de Islamorada se canceló por el mal tiempo; la de Big Pine Key sigue en pie, gratis, de 5 a 8 PM.",
         "toca": [
@@ -203,7 +203,7 @@
         ]
       },
       "en": {
-        "etiqueta": "THE KEYS",
+        "etiqueta": "COMMUNITY",
         "titulo": "Skydivers at sunset and a drone show: Big Pine Key celebrates the nation’s 250th on Friday",
         "bajada": "The Islamorada celebration was canceled because of the weather; the one in Big Pine Key is still on, free, from 5 to 8 p.m.",
         "toca": [
@@ -403,7 +403,7 @@
           "In Miami, the snow of 1977 didn't survive past 10 a.m. On the day of the milestone, what wouldn't stop was [the rain](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre): more than 16 inches in 48 hours in Broward, according to the National Weather Service. The spacecraft that left Florida that year has been traveling for 49 years without stopping, and if anyone ever finds it, its record will play a mariachi band, Chuck Berry and Louis Armstrong: the same mix of worlds Miami was already becoming."
         ]
       },
-      "ultima": 3,
+      "ultima": 5,
       "galeria": [
         {
           "f": "mm-voyager-miami-news-nieve-1977.jpg",
@@ -533,7 +533,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 6
+      "ultima": 9
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -616,7 +616,7 @@
         ]
       },
       "actualizada": "2026-11-17T19:30:00-05:00",
-      "ultima": 9
+      "ultima": 12
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -697,7 +697,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 8
+      "ultima": 11
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -772,7 +772,7 @@
           "Si vives en Broward, revisa si tu calle sigue cerrada antes de salir.",
           "No te metas al mar: hay riesgo alto de corrientes de resaca hasta el viernes en la noche.",
           "En los Cayos altos puede haber agua salada en las calles bajas con la marea alta.",
-          "¿Tu calle se inunda? Búscala en el [mapa de inundación por dirección](/noticias/mapa-inundacion-miami-dade-direccion)."
+          "¿Tu calle se inunda? Búscala en el [mapa de inundación por dirección](https://www.miamimagicapp.com/noticias/mapa-inundacion-miami-dade-direccion)."
         ],
         "cuerpo": [
           "Este jueves no abren las escuelas públicas de Miami-Dade ni de Broward, ni buena parte de las universidades, y tampoco los tribunales. [Miami-Dade](https://www.dadeschools.net/home) cerró todas sus escuelas y las oficinas del distrito; [Broward](https://www.browardschools.com/), que ya había cerrado el miércoles, sigue cerrada. [FIU](https://www.fiu.edu/) suspendió las clases y las operaciones en todas sus sedes; [Miami Dade College](https://www.mdc.edu/) cerró todos sus campus, y [Broward College](https://www.broward.edu/weather/) canceló las clases en todos los suyos. FAU avisó el miércoles que mantenía suspendidas las clases presenciales en Davie, Fort Lauderdale y SeaTech. En Miami-Dade cierran todos los tribunales y las oficinas del secretario judicial, por decisión de la jueza principal, Ariana Fajardo Orshan, y del secretario, Juan Fernandez-Barquin, que lo anunciaron en un [comunicado conjunto](https://www.cbsnews.com/miami/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/); los de Broward también siguen cerrados, de acuerdo con [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
@@ -784,7 +784,7 @@
           "En los Cayos ya no hay avisos de inundación por lluvia. Queda un [aviso de inundación costera menor](https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=KEY&wwa=all) en los Cayos altos hasta la madrugada del viernes: agua salada en calles y lotes bajos, y menos espacio bajo los puentes fijos para los botes. El miércoles, la [advertencia de inundación](https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLW&format=CI&version=1&glossary=0) de los Cayos altos venció a las 7:45 PM sin renovarse; según el radar, habían caído de 8 a 11 pulgadas entre Key Largo y Ocean Reef. Las [escuelas del condado Monroe](https://www.keysschools.com/) no han anunciado cierres. El condado canceló el miércoles su celebración America 250 en Islamorada; la de Big Pine Key sigue en pie para el viernes, de 5 a 8 PM, con los paracaidistas Golden Knights y un show de drones, según el [calendario del condado](https://www.monroecounty-fl.gov/calendar.aspx).",
           "Hay una diferencia que conviene tener clara, porque el miércoles rigieron las dos en distintas zonas: la vigilancia no es una advertencia. La vigilancia significa que se dan las condiciones para que haya inundaciones; la advertencia, que la inundación está ocurriendo o está por ocurrir, como el miércoles por la tarde en Key Largo.",
           "## También en el mar",
-          "En la costa de Broward hay aviso de oleaje alto hasta las 7 de la noche, y en las playas de Miami-Dade y Broward el riesgo de corrientes de resaca es alto hasta el viernes en la noche, según el NWS. En los Cayos, el mar sigue picado: [Llegan tres días de viento a los Cayos, con olas de hasta 11 pies en el Estrecho](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
+          "En la costa de Broward hay aviso de oleaje alto hasta las 7 de la noche, y en las playas de Miami-Dade y Broward el riesgo de corrientes de resaca es alto hasta el viernes en la noche, según el NWS. En los Cayos, [el viento afloja este jueves](https://www.miamimagicapp.com/noticias/cayos-viento-mar-picado-semana-17-19-noviembre), antes de lo previsto."
         ]
       },
       "en": {
@@ -798,7 +798,7 @@
           "In Broward, check whether your street is still closed before you head out.",
           "Stay out of the ocean: rip current risk is high through Friday night.",
           "In the Upper Keys, low streets may have saltwater at high tide.",
-          "Does your street flood? Look it up on the [flood map by address](/noticias/mapa-inundacion-miami-dade-direccion)."
+          "Does your street flood? Look it up on the [flood map by address](https://www.miamimagicapp.com/news/mapa-inundacion-miami-dade-direccion)."
         ],
         "cuerpo": [
           "Public schools in Miami-Dade and Broward are closed this Thursday, along with many colleges and the courts. [Miami-Dade](https://www.dadeschools.net/home) closed all schools and district offices; [Broward](https://www.browardschools.com/), already closed Wednesday, remains closed. [FIU](https://www.fiu.edu/) suspended classes and operations at all locations; [Miami Dade College](https://www.mdc.edu/) closed all campuses, and [Broward College](https://www.broward.edu/weather/) canceled classes at all of its own. FAU said Wednesday that in-person classes remained suspended at Davie, Fort Lauderdale and SeaTech. In Miami-Dade, all courts and Clerk of the Court offices are closed by decision of Chief Judge Ariana Fajardo Orshan and Clerk Juan Fernandez-Barquin, who announced it in a [joint statement](https://www.cbsnews.com/miami/live-updates/south-florida-flooding-live-updates-heavy-rain-broward-miami-dade/); Broward courts also remain closed, according to [NBC6](https://www.nbcmiami.com/news/local/breaking-news-live-updates-south-florida-miami-today-november-18-2026/3889620/).",
@@ -810,12 +810,14 @@
           "The Keys no longer have any rain flood alerts. A [minor coastal flood statement](https://forecast.weather.gov/wwamap/wwatxtget.php?cwa=KEY&wwa=all) remains for the Upper Keys through early Friday: saltwater on low streets and lots, and less clearance under fixed bridges for boats. On Wednesday, the Upper Keys [flood warning](https://forecast.weather.gov/product.php?site=KEY&issuedby=KEY&product=FLW&format=CI&version=1&glossary=0) expired at 7:45 p.m. without being renewed; according to radar, 8 to 11 inches had fallen between Key Largo and Ocean Reef. [Monroe County schools](https://www.keysschools.com/) have not announced any closures. The county canceled its America 250 celebration in Islamorada on Wednesday; the one in Big Pine Key is still on for Friday, 5 to 8 p.m., with the Golden Knights parachute team and a drone show, according to the [county calendar](https://www.monroecounty-fl.gov/calendar.aspx).",
           "There's a difference worth keeping clear, because both were in effect Wednesday in different areas: a watch is not a warning. A watch means conditions are right for flooding; a warning means flooding is happening or about to happen, as it was Wednesday afternoon in Key Largo.",
           "## Out on the water too",
-          "A high surf advisory is in effect on the Broward coast until 7 p.m., and rip current risk is high on Miami-Dade and Broward beaches through Friday night, according to the NWS. In the Keys, seas remain rough: [Three windy days hit the Keys, with waves up to 11 feet in the Straits](/noticias/cayos-viento-mar-picado-semana-17-19-noviembre)."
+          "A high surf advisory is in effect on the Broward coast until 7 p.m., and rip current risk is high on Miami-Dade and Broward beaches through Friday night, according to the NWS. In the Keys, [the wind eases this Thursday](https://www.miamimagicapp.com/news/cayos-viento-mar-picado-semana-17-19-noviembre), sooner than forecast."
         ]
       },
       "actualizada": "2026-11-19T08:05:00-05:00",
       "ultima": 1,
-      "ambos": true
+      "ambos": true,
+      "foto_fit": "contain",
+      "foto_bg": "url(/fotos/mm-lluvia-broward-nov19a.jpg) center/cover"
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -918,7 +920,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 14
+      "ultima": 17
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -959,7 +961,7 @@
       "es": {
         "etiqueta": "ESTA SEMANA",
         "titulo": "Margaret Atwood, cine en Key West y corales en Islamorada: la semana que no te puedes perder",
-        "bajada": "Hoy arranca el cine en Key West, la Feria del Libro cierra con sus grandes nombres y una calle gratis el viernes, y los Cayos llenan el fin de semana. Ojo con la lluvia hasta el jueves.",
+        "bajada": "El cine ya corre en Key West, la Feria del Libro llega a sus grandes nombres y a una calle gratis el viernes, y los Cayos llenan el fin de semana. Este jueves todavía manda la lluvia en Miami.",
         "toca": [
           "Las charlas de Whitehead y Atwood llevan entrada aparte, en miamibookfair.com.",
           "En la Feria de la Calle, los niños de 12 años o menos entran gratis todos los días.",
@@ -967,19 +969,19 @@
           "Con lluvia, confirma los actos al aire libre de los Cayos con el condado de Monroe antes de salir."
         ],
         "cuerpo": [
-          "Hoy, miércoles 18, se encienden las pantallas del [Key West Film Festival](https://keywestfilmfestival.com/), que celebra hasta el domingo 22 su edición número 15 con cine internacional, documentales y una categoría nueva para cineastas de Florida. Las funciones son bajo techo, en salas de Old Town como el Tropic Cinema y el San Carlos Institute, y el [pronóstico del NWS en Key West](https://forecast.weather.gov/MapClick.php?lat=24.555&lon=-81.78) da aguaceros para hoy y casi nada de lluvia de jueves a domingo. Más al norte sigue mandando el tiempo: Broward amaneció inundado y Miami-Dade sigue en [vigilancia de inundaciones hasta el jueves](/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre), así que los planes al aire libre conviene dejarlos para el fin de semana.",
+          "Las pantallas del [Key West Film Festival](https://keywestfilmfestival.com/) ya están encendidas: hasta el domingo 22 celebra su edición número 15 con cine internacional, documentales y una categoría nueva para cineastas de Florida. Las funciones son bajo techo, en salas de Old Town como el Tropic Cinema y el San Carlos Institute, y el [pronóstico del NWS en Key West](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) deja apenas una ligera probabilidad de chubascos hasta el domingo. Más al norte todavía manda el tiempo: Miami-Dade y Broward siguen en [vigilancia de inundaciones](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre) hasta las 7 PM de este jueves, así que los planes al aire libre conviene dejarlos para el fin de semana.",
           "## En Miami: la Feria del Libro, en su recta final",
-          "La [Miami Book Fair](https://miamibookfair.com/miami-book-fair/miami-book-fair-overview/) llega a sus días grandes en el campus Wolfson de Miami Dade College, en el downtown. El jueves 19 a las 8 PM, [Colson Whitehead](https://miamibookfair.com/event/an-evening-with-colson-whitehead-on-cool-machine-a-novel-volume-iii-of-the-harlem-trilogy-fiction/), dos veces ganador del Pulitzer, presenta «Cool Machine», la novela con la que cierra su trilogía de Harlem. El sábado 21 a las 11 AM le toca a [Margaret Atwood](https://miamibookfair.com/event/a-morning-with-margaret-atwood-on-book-of-lives-a-memoir-of-sorts-jess-gibson-on-the-good-eye-stories-fiction-nonfiction/), la autora de «El cuento de la criada», con sus memorias, «Book of Lives».",
+          "La [Miami Book Fair](https://miamibookfair.com/miami-book-fair/miami-book-fair-overview/) llega a sus días grandes en el campus Wolfson de Miami Dade College, en el downtown. El jueves 19 a las 8 PM, [Colson Whitehead](https://miamibookfair.com/event/an-evening-with-colson-whitehead-on-cool-machine-a-novel-volume-iii-of-the-harlem-trilogy-fiction/), dos veces ganador del Pulitzer, presenta «Cool Machine», la novela con la que cierra su trilogía de Harlem. El sábado 21 a las 11 AM le toca a [Margaret Atwood](https://miamibookfair.com/event/a-morning-with-margaret-atwood-on-book-of-lives-a-memoir-of-sorts-jess-gibson-on-the-good-eye-stories-fiction-nonfiction/), la autora de «El cuento de la criada», con sus memorias, «Book of Lives». Un aviso para este jueves: Miami Dade College [cerró todos sus campus](https://news.mdc.edu/pressrelease/miami-dade-college-to-close-all-campuses-thursday-november-19-due-to-severe-weather/) y suspendió las actividades presenciales del día por la lluvia, así que conviene confirmar la charla de Whitehead en miamibookfair.com antes de salir.",
           "Del viernes al domingo, la Feria de la Calle llena el campus de puestos de libros en inglés, español y creole haitiano. El viernes 20 se entra gratis; el sábado y el domingo, la entrada cuesta $12, $7 para mayores de 62 y $5 para jóvenes de 13 a 18.",
           "## En los Cayos: corales y drones",
           "En Islamorada, Mote Marine Laboratory abre su vivero de corales el viernes 20, de 5 a 9 PM, en su cuarto [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/): una fiesta gratis con música en vivo, food trucks, talleres para aprender a fragmentar corales, una zona de niños y hasta un tiburón mecánico.",
-          "Y los Cayos siguen con su [America 250](http://www.monroecounty-fl.gov/m/newsflash/Home/Detail/1882): hoy miércoles, en Founders Park de Islamorada, hay paracaidistas Golden Knights y espectáculo de drones de 5 a 8 PM; el viernes, el mismo programa pasa por Big Pine Key, y el sábado por la mañana se corre allí el 5K Tunnel to Towers."
+          "Y los Cayos celebran su America 250 con una sola fecha: el condado canceló el miércoles la de Islamorada por el mal tiempo y mantiene la del viernes en [Big Pine Key](https://www.miamimagicapp.com/noticias/big-pine-key-america-250-golden-knights-drones-20-noviembre), con los paracaidistas Golden Knights a las 5:30 PM y un show de drones a las 7 PM. El sábado por la mañana se corre allí el 5K Tunnel to Towers."
         ]
       },
       "en": {
         "etiqueta": "THIS WEEK",
         "titulo": "Margaret Atwood, film in Key West and corals in Islamorada: the week you can't miss",
-        "bajada": "Film starts today in Key West, the Book Fair closes with its biggest names and a free street fair Friday, and the Keys fill the weekend. Watch for rain through Thursday.",
+        "bajada": "Film is already rolling in Key West, the Book Fair reaches its biggest names and a free street fair Friday, and the Keys fill the weekend. This Thursday, rain is still in charge in Miami.",
         "toca": [
           "The Whitehead and Atwood talks require separate tickets, at miamibookfair.com.",
           "At the Street Fair, kids 12 and under get in free every day.",
@@ -987,17 +989,17 @@
           "If it rains, check the Keys' outdoor events with Monroe County before heading out."
         ],
         "cuerpo": [
-          "Today, Wednesday the 18th, the screens light up at the [Key West Film Festival](https://keywestfilmfestival.com/), which runs through Sunday the 22nd for its 15th edition, with international films, documentaries and a new category for Florida filmmakers. Screenings are indoors, at Old Town venues such as the Tropic Cinema and the San Carlos Institute, and the [NWS forecast for Key West](https://forecast.weather.gov/MapClick.php?lat=24.555&lon=-81.78) calls for showers today and little rain Thursday through Sunday. Farther north, the weather is still in charge: Broward woke up flooded and Miami-Dade remains under a [flood watch through Thursday](/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre), so outdoor plans are best saved for the weekend.",
+          "The screens are already lit at the [Key West Film Festival](https://keywestfilmfestival.com/): through Sunday the 22nd it marks its 15th edition with international films, documentaries and a new category for Florida filmmakers. Screenings are indoors, at Old Town venues such as the Tropic Cinema and the San Carlos Institute, and the [NWS forecast for Key West](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) leaves only a slight chance of showers through Sunday. Farther north, the weather is still in charge: Miami-Dade and Broward remain under a [flood watch](https://www.miamimagicapp.com/news/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre) until 7 p.m. this Thursday, so outdoor plans are best saved for the weekend.",
           "## In Miami: the Book Fair's home stretch",
-          "The [Miami Book Fair](https://miamibookfair.com/miami-book-fair/miami-book-fair-overview/) reaches its big days at Miami Dade College's Wolfson Campus downtown. On Thursday the 19th at 8 PM, two-time Pulitzer winner [Colson Whitehead](https://miamibookfair.com/event/an-evening-with-colson-whitehead-on-cool-machine-a-novel-volume-iii-of-the-harlem-trilogy-fiction/) presents «Cool Machine», the novel that closes his Harlem trilogy. On Saturday the 21st at 11 AM it's [Margaret Atwood](https://miamibookfair.com/event/a-morning-with-margaret-atwood-on-book-of-lives-a-memoir-of-sorts-jess-gibson-on-the-good-eye-stories-fiction-nonfiction/), author of “The Handmaid's Tale”, with her memoir, «Book of Lives».",
+          "The [Miami Book Fair](https://miamibookfair.com/miami-book-fair/miami-book-fair-overview/) reaches its big days at Miami Dade College's Wolfson Campus downtown. On Thursday the 19th at 8 PM, two-time Pulitzer winner [Colson Whitehead](https://miamibookfair.com/event/an-evening-with-colson-whitehead-on-cool-machine-a-novel-volume-iii-of-the-harlem-trilogy-fiction/) presents «Cool Machine», the novel that closes his Harlem trilogy. On Saturday the 21st at 11 AM it's [Margaret Atwood](https://miamibookfair.com/event/a-morning-with-margaret-atwood-on-book-of-lives-a-memoir-of-sorts-jess-gibson-on-the-good-eye-stories-fiction-nonfiction/), author of “The Handmaid's Tale”, with her memoir, «Book of Lives». A note for this Thursday: Miami Dade College [closed all its campuses](https://news.mdc.edu/pressrelease/miami-dade-college-to-close-all-campuses-thursday-november-19-due-to-severe-weather/) and suspended in-person activities for the day because of the rain, so it is worth confirming the Whitehead talk at miamibookfair.com before heading out.",
           "From Friday to Sunday, the Street Fair fills the campus with booths of books in English, Spanish and Haitian Creole. Friday the 20th is free; Saturday and Sunday cost $12, $7 for seniors over 62 and $5 for teens 13 to 18.",
           "## In the Keys: corals and drones",
           "In Islamorada, Mote Marine Laboratory opens its coral nursery Friday the 20th, 5 to 9 PM, for its fourth [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/): a free party with live music, food trucks, coral-fragmenting workshops, a kids' zone and even a mechanical shark.",
-          "And the Keys keep up their [America 250](http://www.monroecounty-fl.gov/m/newsflash/Home/Detail/1882): today, Wednesday, at Islamorada's Founders Park there are Golden Knights parachutists and a drone show from 5 to 8 PM; on Friday the same program moves to Big Pine Key, and Saturday morning the Tunnel to Towers 5K runs there."
+          "And the Keys mark their America 250 with a single date: the county canceled Wednesday’s event in Islamorada because of the weather and is keeping Friday’s in [Big Pine Key](https://www.miamimagicapp.com/news/big-pine-key-america-250-golden-knights-drones-20-noviembre), with the Golden Knights parachute team at 5:30 p.m. and a drone show at 7 p.m. On Saturday morning, the Tunnel to Towers 5K runs there."
         ]
       },
-      "actualizada": "2026-11-18T11:25:00-05:00",
-      "ultima": 4
+      "actualizada": "2026-11-19T10:20:00-05:00",
+      "ultima": 6
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -1062,8 +1064,9 @@
         ]
       },
       "actualizada": "2026-11-19T08:15:00-05:00",
-      "ultima": 11,
-      "arriba": 1
+      "ultima": 14,
+      "arriba": 1,
+      "tambien": 1
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -1146,7 +1149,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 13
+      "ultima": 16
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -1219,7 +1222,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 10
+      "ultima": 13
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -1334,7 +1337,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "ultima": 2,
+      "ultima": 4,
       "arriba": 1
     },
     {
@@ -1419,7 +1422,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 7
+      "ultima": 10
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -1502,7 +1505,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 12
+      "ultima": 15
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -1584,8 +1587,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 15,
-      "tambien": 2
+      "ultima": 18
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -2115,7 +2117,7 @@
           "u": "https://www.flsenate.gov/Laws/Statutes/2026/0197.162"
         }
       ],
-      "tambien": 3
+      "tambien": 2
     },
     {
       "id": "frente-frio-miami-noviembre",
@@ -2588,7 +2590,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "tambien": 1
+      "tambien": 3
     },
     {
       "id": "obamacare-2027-florida",
@@ -6917,7 +6919,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-18T11:25:00-05:00",
-      "ultima": 5
+      "ultima": 7
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -6969,6 +6971,6 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-19T09:15:00-05:00",
+  "updated_at": "2026-11-19T10:20:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha."
 }
