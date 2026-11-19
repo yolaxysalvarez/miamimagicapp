@@ -22274,22 +22274,37 @@ function kyRenderSimilar(obj){
 #mmDoor .dr-dots i:after{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:#C9962E;border-radius:2px}
 #mmDoor .dr-dots i.done:after{width:100%}
 #mmDoor .dr-dots i.on:after{width:100%;transition:width var(--drT,5.2s) linear}
-#mmDoor .dr-stage{position:relative;min-height:116px}
-#mmDoor .dr-card{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:10px 14px 10px 10px;box-shadow:0 1px 0 rgba(201,150,46,.25),0 10px 24px rgba(14,27,48,.09);min-height:116px;box-sizing:border-box;transition:opacity .42s ease,transform .42s ease}
+#mmDoor .dr-stage{position:relative;min-height:128px}
+#mmDoor .dr-card{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:10px 14px 10px 10px;box-shadow:0 1px 0 rgba(201,150,46,.25),0 10px 24px rgba(14,27,48,.09);min-height:128px;box-sizing:border-box;transition:opacity .42s ease,transform .42s ease}
 #mmDoor .dr-card.out{opacity:0;transform:translateY(8px)}
 #mmDoor .dr-ph{width:96px;height:96px;border-radius:11px;background:#EADCC8 center/cover no-repeat;display:block}
 #mmDoor .dr-tx{display:block;min-width:0}
 #mmDoor .dr-k{display:block;font:400 .86rem 'Bebas Neue',sans-serif;letter-spacing:.16em;color:#C4331C;line-height:1.1}
 #mmDoor .dr-k.ky{color:#0B7F71}
 #mmDoor .dr-k em{font-style:normal;color:#9A7420}
-#mmDoor .dr-t{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;font:700 1.07rem/1.2 'Playfair Display',serif;color:#0E1B30;margin-top:4px}
+#mmDoor .dr-t{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;font:700 1.02rem/1.2 'Playfair Display',serif;color:#0E1B30;margin-top:4px}
 #mmDoor .dr-go{display:block;font:700 .74rem 'DM Sans',sans-serif;letter-spacing:.1em;color:#C4331C;margin-top:7px}
-#mmDoor .dr-idx{display:grid;grid-template-columns:repeat(3,1fr);margin-top:14px;border-top:1px solid rgba(201,150,46,.4)}
-#mmDoor .dr-idx button{appearance:none;background:none;border:0;border-bottom:1px solid rgba(201,150,46,.28);border-right:1px solid rgba(201,150,46,.28);padding:11px 4px 9px;font:400 .86rem 'Bebas Neue',sans-serif;letter-spacing:.09em;white-space:nowrap;text-transform:uppercase;color:#0E1B30;cursor:pointer;min-height:44px}
-#mmDoor .dr-idx button:nth-child(3n){border-right:0}
-#mmDoor .dr-idx button:nth-last-child(-n+3){border-bottom:0}
-#mmDoor .dr-idx button b{font-weight:400;color:#C4331C}
-#mmDoor .dr-idx button.ky{color:#0B7F71}
+#mmDoor .dr-idx{margin-top:15px}
+#mmDoor .dr-marks{display:flex;gap:8px;justify-content:space-between}
+#mmDoor .dr-marks button{appearance:none;flex:1 1 auto;min-width:0;min-height:44px;display:flex;align-items:center;justify-content:center;padding:6px 9px;border-radius:999px;border:1px solid rgba(14,27,48,.14);background:#fff;font:900 .9rem 'Playfair Display',serif;color:#0E1B30;white-space:nowrap;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 3px 10px rgba(14,27,48,.05)}
+#mmDoor .dr-marks button:active{transform:scale(.97)}
+#mmDoor .dr-marks .m-hm{background:#FFE9DF;border-color:rgba(201,58,37,.3)}
+#mmDoor .dr-marks .m-hm em{font-style:italic;font-weight:700;color:#B4301D}
+#mmDoor .dr-marks .m-hm .sol{display:inline-block;width:.54em;height:.54em;margin:0 .012em;border-radius:50%;vertical-align:-.02em;background:radial-gradient(circle at 36% 30%,#FFE3A1 0%,#FFC24D 26%,#FF8A3D 62%,#FF4D35 100%);box-shadow:0 0 .16em rgba(255,150,70,.6)}
+#mmDoor .dr-marks .m-dk{background:#E1EFF4;border-color:rgba(11,92,122,.3)}
+#mmDoor .dr-marks .m-dk em{font-style:italic;font-weight:700;color:#0B5C7A}
+#mmDoor .dr-marks .m-dk .pil{display:inline-block;width:.13em;height:.74em;margin:0 .03em;border-radius:.05em .05em .02em .02em;vertical-align:-.02em;background:linear-gradient(180deg,rgba(255,255,255,.35) 0 5%,transparent 5% 16%,#EAD6A6 16% 20.5%,#C9A768 20.5% 22%,#EAD6A6 22% 26%,transparent 26% 100%),linear-gradient(90deg,#5E3F25 0%,#B58C59 42%,#C79F6C 52%,#6E4C2B 100%)}
+#mmDoor .dr-marks .m-dk .ringw{display:inline-block;vertical-align:-.02em;margin:0 .015em;filter:drop-shadow(0 0 .025em rgba(11,92,122,.85))}
+#mmDoor .dr-marks .m-dk .ring{display:block;width:.5em;height:.5em;border-radius:50%;background:conic-gradient(#FF4D35 0 45deg,#fff 0 90deg,#FF4D35 0 135deg,#fff 0 180deg,#FF4D35 0 225deg,#fff 0 270deg,#FF4D35 0 315deg,#fff 0 360deg);-webkit-mask:radial-gradient(circle,transparent 44%,#000 47%);mask:radial-gradient(circle,transparent 44%,#000 47%)}
+#mmDoor .dr-marks .m-cc{background:#FBF1DC;border-color:rgba(201,150,60,.55)}
+#mmDoor .dr-marks .m-cc svg{display:inline-block;width:.8em;height:.8em;margin:0 .12em;vertical-align:-.1em}
+#mmDoor .dr-links{display:flex;align-items:center;justify-content:center;margin-top:6px}
+#mmDoor .dr-links button{appearance:none;background:none;border:0;min-height:44px;padding:8px 16px 6px;font:400 .92rem 'Bebas Neue',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#0E1B30;white-space:nowrap;cursor:pointer}
+#mmDoor .dr-links button{position:relative}#mmDoor .dr-links button+button::before{content:'';position:absolute;left:0;top:50%;height:13px;margin-top:-7px;border-left:1px solid rgba(201,150,46,.6)}
+#mmDoor .dr-links button.ky{color:#0B7F71}
+#mmDoor .dr-links button b{font-weight:400;color:#C4331C}
+#mmDoor .dr-links .ag i{display:inline-block;width:5px;height:5px;border-radius:50%;background:#E23A22;margin-left:5px;vertical-align:.12em}
+@media (max-width:370px){#mmDoor .dr-t{-webkit-line-clamp:5}#mmDoor .dr-marks{gap:6px}#mmDoor .dr-marks button{font-size:.8rem;padding:6px 7px}#mmDoor .dr-links button{padding-left:10px;padding-right:10px;font-size:.86rem}}
 @media (min-width:900px){#mmDoor{max-width:760px;margin:22px auto;border:1px solid rgba(201,150,46,.38);border-radius:20px}}
 @media (prefers-reduced-motion:reduce){#mmDoor .dr-card{transition:none}#mmDoor .dr-dots i.on:after{transition:none}}
 /* barra flotante de 5: Planea al centro */
@@ -22355,12 +22370,14 @@ function kyRenderSimilar(obj){
       d.innerHTML='<div class="dr-top"><span class="dr-brand">Miami Magic <b>NEWS</b></span><span class="dr-dots" id="drDots" aria-hidden="true">'+items.map(function(){return '<i></i>'}).join('')+'</span></div>'
         +'<div class="dr-stage" id="drStage" aria-live="off"></div>'
         +'<div class="dr-idx" role="navigation" aria-label="'+(es?'Secciones de News':'News sections')+'">'
-        +'<button type="button" data-sec="agenda">'+(es?'Agenda':'What’s On')+'</button>'
-        +'<button type="button" data-sec="casa">Casa <b>&amp;</b> Coast</button>'
-        +'<button type="button" data-sec="hamaca">'+(es?'Hamaca Mood':'Hammock Mood')+'</button>'
-        +'<button type="button" data-sec="muelle">'+(es?'El Muelle':'The Dock')+'</button>'
+        +'<div class="dr-marks">'
+        +'<button type="button" class="m-hm" data-sec="hamaca" aria-label="'+(es?'Hamaca Mood':'Hammock Mood')+'"><span>'+(es?'Hamaca':'Hammock')+' <em>M<span class="sol"></span>od</em></span></button>'
+        +'<button type="button" class="m-dk" data-sec="muelle" aria-label="'+(es?'El Muelle':'The Dock')+'"><span>'+(es?'El <em>Mue<span class="pil"></span><span class="pil"></span>e</em>':'The <em>D<span class="ringw"><span class="ring"></span></span>ck</em>')+'</span></button>'
+        +'<button type="button" class="m-cc" data-sec="casa" aria-label="Casa &amp; Coast"><span>Casa<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span></button></div>'
+        +'<div class="dr-links">'
+        +'<button type="button" class="ag" data-sec="agenda">'+(es?'Agenda':'What’s On')+'<i></i></button>'
         +'<button type="button" class="ky" data-sec="cayos">'+(es?'Los Cayos':'The Keys')+'</button>'
-        +'<button type="button" data-sec="">'+(es?'Todo News':'All News')+' <b>→</b></button></div>';
+        +'<button type="button" data-sec="">'+(es?'Todo News':'All News')+' <b>→</b></button></div></div>';
       show(0,true);loop();
       placeSoc();
     }catch(e){}
