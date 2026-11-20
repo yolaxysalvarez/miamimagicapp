@@ -55,6 +55,87 @@
   "videos": [],
   "notas": [
     {
+      "id": "biltmore-coral-gables-100-anos-historia",
+      "scope": "miami",
+      "tema": "historia",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-23",
+      "publicada": "2026-11-23T08:00:00-05:00",
+      "actualizada": "2026-11-23T08:00:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-coral-gables-biltmore-aereo.jpg",
+      "foto_alt": "Vista aérea del hotel Biltmore de Coral Gables, con su torre al centro y el campo de golf detrás",
+      "foto_pie": "El Biltmore y su torre, con el campo de golf al fondo, desde el drone de Miami Magic.",
+      "foto_pie_en": "The Biltmore and its tower, with the golf course behind, from the Miami Magic drone.",
+      "video": "q8p9XwV7jgw",
+      "desarrollo": false,
+      "fuentes": [
+        {
+          "n": "The Biltmore Hotel · Historia del centenario",
+          "u": "https://biltmorehotel.com/centennial-story/the-biltmore-hotel/"
+        },
+        {
+          "n": "Servicio de Parques Nacionales · The Biltmore Hotel",
+          "u": "https://www.nps.gov/nr/travel/geo-flor/42.htm"
+        },
+        {
+          "n": "Departamento de Recursos Históricos de Coral Gables, en el archivo digital de FIU",
+          "u": "https://dpanther.fiu.edu/record/3786"
+        },
+        {
+          "n": "Departamento de Recursos Históricos de Coral Gables · Pratt General Hospital",
+          "u": "https://dpanther.fiu.edu/record/3040"
+        }
+      ],
+      "es": {
+        "etiqueta": "HISTORIA",
+        "titulo": "El Biltmore cumple 100 años: fue gran hotel, hospital de guerra y edificio abandonado antes de volver a abrir",
+        "bajada": "Abrió el 15 de enero de 1926 con una torre inspirada en la Giralda de Sevilla. En 1942 se convirtió en hospital militar y no volvió a recibir huéspedes hasta 1987.",
+        "toca": [
+          "El Biltmore está en 1200 Anastasia Avenue, en Coral Gables.",
+          "El video de esta nota es del drone de Miami Magic: la torre, la piscina y el campo de golf desde arriba.",
+          "El hotel está [en la app](https://www.miamimagicapp.com/?go=hotels), con su ficha y cómo llegar."
+        ],
+        "cuerpo": [
+          "La noche del 15 de enero de 1926, Coral Gables estrenó su torre. El Miami-Biltmore Hotel and Country Club [abrió ese día](https://biltmorehotel.com/centennial-story/the-biltmore-hotel/), diez meses después de empezada la obra, y la ciudad que George Merrick estaba levantando alrededor tuvo por fin un punto que se veía desde lejos.",
+          "## Una torre de Sevilla para vender una ciudad",
+          "Merrick, el fundador de Coral Gables, se asoció con John McEntee Bowman, presidente de la cadena Bowman-Biltmore, en pleno auge de la tierra en Florida. Los arquitectos Schultze y Weaver dibujaron un edificio de aire español con una torre que toma como modelo la Giralda de la catedral de Sevilla, [describe el Servicio de Parques Nacionales](https://www.nps.gov/nr/travel/geo-flor/42.htm). Costó 10 millones de dólares y abrió con 350 habitaciones, campo de golf y la que entonces era la piscina de hotel más grande del país, según el [Departamento de Recursos Históricos de Coral Gables](https://dpanther.fiu.edu/record/3040).",
+          "## El año en que todo se torció",
+          "La fiesta duró poco. En septiembre de ese mismo 1926, un huracán arrasó Miami y el hotel recién estrenado sirvió de refugio a los vecinos que se quedaron sin casa. Detrás del huracán llegó el fin del auge de la tierra que había pagado la obra.",
+          "## De los salones a las salas de hospital",
+          "La guerra lo cambió de oficio. En noviembre de 1942 el hotel pasó al gobierno federal para usarse como hospital, que abrió en marzo de 1943, de acuerdo con el [registro histórico de la ciudad](https://dpanther.fiu.edu/record/3786). En 1946 se convirtió en hospital general del Ejército, y la Administración de Veteranos lo tomó en julio de 1947.",
+          "## Dos décadas con las luces apagadas",
+          "El hospital cerró en 1968 y el edificio quedó vacío. La propiedad pasó a la Ciudad de Coral Gables en 1973, y todavía tardó en volver a la vida: la reapertura como hotel llegó el 31 de diciembre de 1987, 61 años después de la primera.",
+          "## Cien años después",
+          "El Biltmore fue declarado Monumento Histórico Nacional en 1996. La torre sigue asomando sobre los árboles de Coral Gables, y desde el aire todavía se entiende lo que Merrick quiso hacer con ella: ponerle un centro a una ciudad que aún no existía."
+        ]
+      },
+      "en": {
+        "etiqueta": "HISTORY",
+        "titulo": "The Biltmore turns 100: it was a grand hotel, a wartime hospital and an abandoned building before it reopened",
+        "bajada": "It opened on January 15, 1926, with a tower inspired by Seville’s Giralda. In 1942 it became a military hospital, and it did not welcome guests again until 1987.",
+        "toca": [
+          "The Biltmore is at 1200 Anastasia Avenue in Coral Gables.",
+          "The video in this story is from the Miami Magic drone: the tower, the pool and the golf course from above.",
+          "The hotel is [in the app](https://www.miamimagicapp.com/?go=hotels), with its card and directions."
+        ],
+        "cuerpo": [
+          "On the night of January 15, 1926, Coral Gables got its tower. The Miami-Biltmore Hotel and Country Club [opened that day](https://biltmorehotel.com/centennial-story/the-biltmore-hotel/), ten months after construction began, and the city George Merrick was building around it finally had a landmark visible from afar.",
+          "## A tower from Seville to sell a city",
+          "Merrick, the founder of Coral Gables, partnered with John McEntee Bowman, president of the Bowman-Biltmore chain, at the height of the Florida land boom. Architects Schultze and Weaver drew a Spanish-style building with a tower modeled after the Giralda of Seville’s cathedral, [the National Park Service notes](https://www.nps.gov/nr/travel/geo-flor/42.htm). It cost $10 million and opened with 350 rooms, a golf course and what was then the largest hotel pool in the country, according to the [Coral Gables Historical Resources Department](https://dpanther.fiu.edu/record/3040).",
+          "## The year it all went sideways",
+          "The party was short. In September of that same 1926, a hurricane tore through Miami and the brand-new hotel sheltered residents left without homes. Behind the hurricane came the end of the land boom that had paid for the building.",
+          "## From ballrooms to hospital wards",
+          "The war changed its job. In November 1942 the hotel was turned over to the federal government for use as a hospital, which opened in March 1943, according to the [city’s historical record](https://dpanther.fiu.edu/record/3786). In 1946 it became an Army general hospital, and the Veterans Administration took over in July 1947.",
+          "## Two decades with the lights off",
+          "The hospital closed in 1968 and the building sat empty. Ownership passed to the City of Coral Gables in 1973, and it still took time to come back to life: the reopening as a hotel came on December 31, 1987, 61 years after the first one.",
+          "## A hundred years later",
+          "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
+        ]
+      }
+    },
+    {
       "id": "key-west-boyas-amarre-man-of-war-boca-chica-limite-90-dias",
       "scope": "cayos",
       "tema": "mar",
