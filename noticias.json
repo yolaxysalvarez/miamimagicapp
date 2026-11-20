@@ -3078,7 +3078,8 @@
           "Del 23 al 26 de noviembre, el agua sube más alrededor de las 8 a 10 de la mañana y de las 8 a 10 de la noche.",
           "No atravieses calles inundadas: el agua salada daña el auto y puede esconder escombros o huecos.",
           "¿Vives en una zona baja de Miami Beach? Pide el estacionamiento gratis temporal. En Miami, reporta las inundaciones al 311.",
-          "En Fort Lauderdale hay sacos de arena gratis este sábado y domingo, de 10 AM a 1 PM, con prueba de domicilio."
+          "En Fort Lauderdale hay sacos de arena gratis este sábado y domingo, de 10 AM a 1 PM, con prueba de domicilio.",
+          "En los Cayos Medios y Altos ya hay aviso de inundación costera: los charcos en la calle cerca de la pleamar son agua salada."
         ],
         "cuerpo": [
           "A las 10:04 de la mañana del jueves 26, cuando en media Miami el pavo apenas entra al horno, el mar va a estar en su punto más alto. Y vuelve a las 10:10 de la noche, a la hora del recalentado, del último pedazo de flan y de los invitados buscando dónde dejaron el auto.",
@@ -3088,6 +3089,7 @@
           "## Para que el agua no se siente a la mesa",
           "Miami Beach envía avisos de tránsito a quien escriba MBTraffic al 888777, presta estacionamiento gratis temporal a los vecinos de las zonas bajas y ofrece hasta $20,000 para proteger casas en terrenos bajos. En [Miami](https://www.miami.gov/kingtide), las inundaciones se reportan al 311 o al 305-468-5900.",
           "En Broward, la marea llega sobre suelo todavía empapado por la lluvia de esta semana. Fort Lauderdale, que sitúa sus mareas reales entre el 22 y el 28 de noviembre, [reparte sacos de arena gratis](https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response) ya llenos este sábado 21 y domingo 22, de 10 AM a 1 PM, en cinco puntos: Floyd Hull/Morton Center, George English Park, Holiday Park, Mills Pond Park y Riverland Park. Son para residentes, con prueba de domicilio, y hasta cinco por vehículo mientras duren.",
+          "En los Cayos el agua ya está alta. El [Servicio Nacional de Meteorología en Key West](https://www.weather.gov/key/) mantiene este viernes un aviso de inundación costera para los Cayos Medios y Altos, con pleamares de 1 a 1.5 pies por encima de lo normal y agua estancada en calles y terrenos bajos. La oficina prevé que las mareas sigan subiendo hasta mediados de la próxima semana y que la luna llena, a principios de semana, las empeore con otra tanda de mareas reales.",
           "Lo demás es sentido común de isla: el agua salada no perdona a los autos, así que mejor rodear el charco que cruzarlo. El pavo puede esperar diez minutos."
         ]
       },
@@ -3098,7 +3100,8 @@
           "From Nov. 23 to 26, the water peaks around 8 to 10 in the morning and 8 to 10 at night.",
           "Don't drive through flooded streets: salt water damages cars and can hide debris or potholes.",
           "Live in a low-lying part of Miami Beach? Sign up for the free temporary parking. In Miami, report flooding to 311.",
-          "Fort Lauderdale is giving out free sandbags this Saturday and Sunday, 10 a.m. to 1 p.m., with proof of residency."
+          "Fort Lauderdale is giving out free sandbags this Saturday and Sunday, 10 a.m. to 1 p.m., with proof of residency.",
+          "The Middle and Upper Keys already have a coastal flood statement: street puddles near high tide are salt water."
         ],
         "cuerpo": [
           "At 10:04 a.m. on Thursday the 26th, when the turkey is just going into the oven in half of Miami, the sea will be at its highest. And it comes back at 10:10 p.m., the hour of leftovers, the last slice of flan and guests trying to remember where they left the car.",
@@ -3108,6 +3111,7 @@
           "## So the water doesn't sit down at the table",
           "Miami Beach sends traffic alerts to anyone who texts MBTraffic to 888777, lends free temporary parking to residents of low-lying areas and offers up to $20,000 to protect homes on low ground. In [Miami](https://www.miami.gov/kingtide), flooding can be reported to 311 or 305-468-5900.",
           "In Broward, the tide arrives on ground still soaked by this week’s rain. Fort Lauderdale, which places its king tides between Nov. 22 and 28, is [handing out free sandbags](https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response), prefilled, this Saturday the 21st and Sunday the 22nd, from 10 a.m. to 1 p.m., at five sites: Floyd Hull/Morton Center, George English Park, Holiday Park, Mills Pond Park and Riverland Park. They are for residents, with proof of residency, up to five per vehicle while supplies last.",
+          "In the Keys the water is already high. The [National Weather Service in Key West](https://www.weather.gov/key/) has a coastal flood statement in effect this Friday for the Middle and Upper Keys, with high tides running 1 to 1.5 feet above normal and standing water on roads and low-lying lots. The office expects tides to keep rising through the middle of next week and the full moon, early in the week, to make them worse with another round of king tides.",
           "The rest is island common sense: salt water is unforgiving to cars, so go around the puddle instead of through it. The turkey can wait ten minutes."
         ]
       },
@@ -3123,13 +3127,18 @@
         {
           "n": "Ciudad de Fort Lauderdale · sacos de arena y mareas",
           "u": "https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response"
+        },
+        {
+          "n": "Servicio Nacional de Meteorología · Key West · avisos de inundación costera",
+          "u": "https://www.weather.gov/key/"
         }
       ],
       "foto_pie_en": "5th Street in Miami Beach, one of the areas where high tide reaches the street.",
       "foto_pos": "50% 25%",
-      "actualizada": "2026-11-20T09:05:00-05:00",
+      "actualizada": "2026-11-20T16:45:00-05:00",
       "ultima": 8,
-      "tambien": 2
+      "tambien": 2,
+      "ambos": true
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -7293,7 +7302,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T16:35:00-05:00",
+  "updated_at": "2026-11-20T16:45:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
