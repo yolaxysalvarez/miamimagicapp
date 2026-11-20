@@ -184,7 +184,7 @@
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
       "ultima": 3,
-      "arriba": 3
+      "arriba": 2
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -224,7 +224,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-19T09:15:00-05:00",
-      "ultima": 7,
+      "ultima": 6,
       "es": {
         "etiqueta": "HISTORIA",
         "titulo": "Eran 27 casas en medio del mar y quedan 6: la historia de Stiltsville, el barrio sin calles de la bahía",
@@ -286,7 +286,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 4
+      "arriba": 3
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -790,6 +790,10 @@
         {
           "n": "WFLA-FM · Las filas de tres millas",
           "u": "https://wflafm.iheart.com/featured/florida-news/content/2026-11-17-overseas-highway-closed-in-keys-due-to-rolled-over-tanker-truck/"
+        },
+        {
+          "n": "Keys Weekly · El conductor murió, según el sheriff Ramsay",
+          "u": "https://keysweekly.com/42/driver-passes-away-after-tanker-rollover-vehicle-fire-close-overseas-highway/"
         }
       ],
       "desarrollo": false,
@@ -798,15 +802,15 @@
         "titulo": "Reabre la US-1 en Grassy Key tras el camión de gasolina volcado: el tráfico vuelve a moverse en la milla 60",
         "bajada": "El camión se volcó a las 6:30 AM con unos 8,500 galones de gasolina y mantuvo cerrada la única carretera de los Cayos buena parte del día.",
         "toca": [
-          "Si sales esta noche, maneja con calma: el Sheriff pide precaución y advierte de demoras mientras se despeja la fila.",
-          "Revisa FL511 o las redes del Sheriff de Monroe antes de salir."
+          "La US-1 quedó reabierta en los dos sentidos la tarde del martes 17 de noviembre.",
+          "Antes de salir hacia los Cayos, revisa FL511 o las redes del Sheriff de Monroe."
         ],
         "cuerpo": [
           "Todo el tráfico de la US-1 vuelve a moverse cerca de la milla 60, en Grassy Key, informó a media tarde la [Oficina del Sheriff de Monroe](https://x.com/keyssheriff/status/2122795814871331280), que pidió manejar con precaución porque la circulación seguía lenta mientras se despejaba.",
           "La única carretera de los Cayos estuvo cerrada en los dos sentidos desde temprano. Un camión cisterna de [Circle K](https://www.wfla.com/news/florida/fuel-spill-followed-by-truck-fire-shuts-down-6-mile-stretch-of-florida-keys-only-highway/) cargado con unos 8,500 galones de gasolina se volcó hacia las 6:30 de la mañana, según la [Oficina del Sheriff de Monroe](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
           "El combustible se derramó en la tierra y llegó al agua. «Esto podría explotar», había advertido en sus redes el sheriff Rick Ramsay, de acuerdo con [NBC6](https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/). La vía se mantuvo cerrada mientras los equipos pasaban la gasolina a otro camión cisterna y agencias estatales y federales atendían el derrame, detalló el Sheriff en un comunicado.",
           "Con la fila detenida llegó el segundo susto: un auto se incendió cerca de la milla 64, en el puente de Long Key. Las colas alcanzaron [tres millas en cada sentido](https://wflafm.iheart.com/featured/florida-news/content/2026-11-17-overseas-highway-closed-in-keys-due-to-rolled-over-tanker-truck/).",
-          "El chofer del camión fue trasladado en el helicóptero Trauma Star a un hospital de Miami en estado crítico, según un [vocero del condado de Monroe](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/)."
+          "El chofer del camión murió a causa de sus heridas, dijo el sheriff Rick Ramsay en una entrevista de radio, según [Keys Weekly](https://keysweekly.com/42/driver-passes-away-after-tanker-rollover-vehicle-fire-close-overseas-highway/). Su nombre no se ha divulgado. El martes, un [vocero del condado de Monroe](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/) había informado que lo llevaban en el helicóptero Trauma Star en estado crítico."
         ]
       },
       "en": {
@@ -814,18 +818,18 @@
         "titulo": "US-1 reopens at Grassy Key after the gasoline tanker rollover: traffic is moving again at mile marker 60",
         "bajada": "The tanker overturned at 6:30 a.m. with about 8,500 gallons of gasoline and kept the Keys' only road closed for much of the day.",
         "toca": [
-          "If you're driving tonight, take it slow: the Sheriff urges caution and warns of delays while traffic clears.",
-          "Check FL511 or the Monroe County Sheriff's social media before you leave."
+          "US-1 reopened in both directions on the afternoon of Tuesday, Nov. 17.",
+          "Before heading to the Keys, check FL511 or the Monroe County Sheriff’s social media."
         ],
         "cuerpo": [
           "All US-1 traffic is moving again near mile marker 60 on Grassy Key, the [Monroe County Sheriff's Office](https://x.com/keyssheriff/status/2122795814871331280) said in the afternoon, urging drivers to use caution because traffic was still slow as it cleared.",
           "The only road through the Keys had been closed in both directions since early morning. A [Circle K](https://www.wfla.com/news/florida/fuel-spill-followed-by-truck-fire-shuts-down-6-mile-stretch-of-florida-keys-only-highway/) tanker carrying about 8,500 gallons of gasoline overturned around 6:30 a.m., according to the [Monroe County Sheriff's Office](https://www.cbsnews.com/miami/news/overseas-highway-closed-in-florida-keys-after-fuel-truck-overturns/).",
           "The fuel spilled into the ground and reached the water. \"This thing could explode potentially,\" Sheriff Rick Ramsay had warned on social media, according to [NBC6](https://www.nbcmiami.com/traffic/fuel-tanker-rollover-crash-closes-us-1-florida-keys-driver-hospitalized/3889192/). The road stayed closed while crews moved the gasoline to another tanker and state and federal agencies handled the spill, the Sheriff's Office said in a news release.",
           "With traffic stopped, a second scare followed: a car caught fire near mile marker 64, on the Long Key Bridge. Lines stretched [three miles in each direction](https://wflafm.iheart.com/featured/florida-news/content/2026-11-17-overseas-highway-closed-in-keys-due-to-rolled-over-tanker-truck/).",
-          "The truck driver was airlifted by Trauma Star to a Miami hospital in critical condition, according to a [Monroe County spokesperson](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/)."
+          "The truck driver died of his injuries, Sheriff Rick Ramsay said in a radio interview, according to [Keys Weekly](https://keysweekly.com/42/driver-passes-away-after-tanker-rollover-vehicle-fire-close-overseas-highway/). His name has not been released. On Tuesday, a [Monroe County spokesperson](https://www.local10.com/traffic/2026/11/17/overseas-highway-shut-down-in-florida-keys-after-gasoline-tanker-overturns-leaks-fuel/) had said he was being airlifted by Trauma Star in critical condition."
         ]
       },
-      "actualizada": "2026-11-17T19:30:00-05:00",
+      "actualizada": "2026-11-20T17:15:00-05:00",
       "ultima": 17
     },
     {
@@ -914,7 +918,7 @@
       "scope": "miami",
       "tema": "calle",
       "hamaca": false,
-      "destacada": true,
+      "destacada": false,
       "fecha": "2026-11-17",
       "publicada": "2026-11-17T08:00:00-05:00",
       "autor": "Yolaxys Alvarez",
@@ -1627,8 +1631,8 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "ultima": 6,
-      "arriba": 2,
+      "ultima": 5,
+      "arriba": 1,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -3194,7 +3198,7 @@
       "foto_pie_en": "5th Street in Miami Beach, one of the areas where high tide reaches the street.",
       "foto_pos": "50% 25%",
       "actualizada": "2026-11-20T16:45:00-05:00",
-      "ultima": 8,
+      "ultima": 7,
       "tambien": 2,
       "ambos": true
     },
@@ -3203,7 +3207,7 @@
       "scope": "miami",
       "tema": "deporte",
       "hamaca": false,
-      "destacada": false,
+      "destacada": true,
       "fecha": "2026-11-13",
       "publicada": "2026-11-13T00:00:00-05:00",
       "autor": "Yolaxys Alvarez",
@@ -3212,23 +3216,23 @@
       "foto_pie": "La serie, al mejor de tres partidos.",
       "foto_pie_en": "The series, best of three.",
       "es": {
-        "titulo": "Los playoffs llegan a Nu Stadium: cómo ir sin quedar atrapado en el tráfico",
-        "bajada": "Es el primer partido de una serie al mejor de tres. Para llegar, el tren le gana al auto.",
+        "titulo": "Inter Miami abre los playoffs el sábado 21 en Nu Stadium: cómo llegar sin quedar atrapado en el tráfico",
+        "bajada": "Es el primer partido de playoffs en el estadio nuevo y el primero de una serie al mejor de tres contra Columbus, a las 6:00 PM. Para llegar, el tren le gana al auto.",
         "toca": [
           "Juego 1: sábado 21 de noviembre, 6:00 PM, en Nu Stadium, 1900 NW 37 Ave. Se transmite por Apple TV.",
           "El parqueo no se vende en el estadio: se compra por adelantado en [intermiamicf.com](https://www.intermiamicf.com/nu-stadium/public-transportation).",
           "El boleto de Tri-Rail para el partido cuesta $10 ida y vuelta e incluye $10 de crédito para comida y bebida, que se canjea en Guest Services, junto a la sección 101."
         ],
         "cuerpo": [
-          "Inter Miami abre los playoffs de la MLS este sábado 21 de noviembre a las 6:00 de la tarde en Nu Stadium, contra Columbus Crew, [anunció el club](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Terminó la temporada regular segundo en la Conferencia Este; Columbus llegó séptimo, según la [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
+          "Inter Miami abre los playoffs de la MLS el sábado 21 de noviembre a las 6:00 de la tarde en Nu Stadium, contra Columbus Crew, [anunció el club](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Terminó la temporada regular segundo en la Conferencia Este; Columbus llegó séptimo, según la [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
           "La serie es al mejor de tres partidos. El segundo se juega el viernes 27 en Columbus, Ohio, y si hace falta un tercero, vuelve a Miami el martes 1 o el miércoles 2 de diciembre, con fecha y hora por confirmar. Quien gane dos avanza a las semifinales del Este.",
           "Será el primer partido de playoffs en Nu Stadium. El estadio abrió en abril sobre el antiguo campo de golf Melreese, junto al aeropuerto, y tiene capacidad para 26,700 personas.",
           "Llegar pide planificación, y el club [empuja el transporte público](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail y Tri-Rail paran en el Miami Intermodal Center, la estación del aeropuerto, y desde allí se camina hasta el estadio por el puente peatonal sobre el canal. El club añade que, después de algunos partidos, Tri-Rail agrega un tren de regreso cerca de las 10:00 de la noche."
         ]
       },
       "en": {
-        "titulo": "Playoffs come to Nu Stadium: how to get there without getting stuck in traffic",
-        "bajada": "It's the first game of a best-of-three series. To get there, the train beats the car.",
+        "titulo": "Inter Miami opens the playoffs Saturday the 21st at Nu Stadium: how to get there without getting stuck in traffic",
+        "bajada": "It’s the first playoff game at the new stadium and the first of a best-of-three series against Columbus, at 6 p.m. To get there, the train beats the car.",
         "toca": [
           "Game 1: Saturday, Nov. 21, 6 p.m., at Nu Stadium, 1900 NW 37 Ave. Streaming on Apple TV.",
           "Parking isn't sold at the stadium: buy it in advance at [intermiamicf.com](https://www.intermiamicf.com/nu-stadium/public-transportation).",
@@ -3259,9 +3263,25 @@
           "u": "https://en.wikipedia.org/wiki/Nu_Stadium"
         }
       ],
-      "actualizada": "2026-11-20T09:05:00-05:00",
-      "arriba": 1,
-      "ultima": 5
+      "actualizada": "2026-11-20T17:15:00-05:00",
+      "versiones": [
+        {
+          "desde": "2026-11-21T00:00:00-05:00",
+          "hasta": "2026-11-21T18:00:00-05:00",
+          "es": {
+            "titulo": "Inter Miami abre hoy los playoffs en Nu Stadium, a las 6 PM: cómo llegar sin quedar atrapado en el tráfico",
+            "reemplazos": [
+              [
+                "el sábado 21 de noviembre a las 6:00 de la tarde",
+                "hoy sábado a las 6:00 de la tarde"
+              ]
+            ]
+          },
+          "en": {
+            "titulo": "Inter Miami opens the playoffs today at Nu Stadium, at 6 p.m.: how to get there without getting stuck in traffic"
+          }
+        }
+      ]
     },
     {
       "id": "heat-vice-city-bucks",
@@ -7360,7 +7380,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T17:05:00-05:00",
+  "updated_at": "2026-11-20T17:15:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
