@@ -55,6 +55,80 @@
   "videos": [],
   "notas": [
     {
+      "id": "key-west-boyas-amarre-man-of-war-boca-chica-limite-90-dias",
+      "scope": "cayos",
+      "tema": "mar",
+      "hamaca": false,
+      "muelle": true,
+      "destacada": false,
+      "fecha": "2026-11-20",
+      "publicada": "2026-11-20T09:55:00-05:00",
+      "actualizada": "2026-11-20T09:55:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-kw-marina-atardecer.jpg",
+      "foto_mm": false,
+      "foto_alt": "Botes de pesca amarrados en una marina de Key West al atardecer",
+      "foto_pie": "Botes en una marina de Key West, al caer la tarde.",
+      "foto_pie_en": "Boats at a Key West marina as evening falls.",
+      "fuentes": [
+        {
+          "n": "Condado de Monroe · Recursos Marinos, anclaje y campos de boyas",
+          "u": "https://www.monroecounty-fl.gov/634/Anchoring-Mooring-Management"
+        },
+        {
+          "n": "Estatutos de Florida · Sección 327.4108",
+          "u": "https://www.flsenate.gov/Laws/Statutes/2026/0327.4108"
+        },
+        {
+          "n": "FWC · Áreas de anclaje en los Cayos",
+          "u": "https://myfwc.com/news/all-news/anchoring-323/"
+        }
+      ],
+      "desarrollo": false,
+      "ultima": 2,
+      "arriba": 2,
+      "es": {
+        "etiqueta": "LAS REGLAS",
+        "titulo": "Key West tendrá 100 boyas de amarre nuevas, y con ellas llega el límite de 90 días para anclar",
+        "bajada": "Man of War Harbor abriría a finales de 2027 con 60 boyas y Boca Chica a finales de 2028 con 40, según el condado. Cuando estén instaladas, ningún bote podrá pasar más de 90 días anclado en el mismo punto.",
+        "toca": [
+          "Nada cambia hoy: el límite de 90 días no se aplica hasta que las boyas nuevas estén en el agua.",
+          "Cuando rija, quien esté anclado a menos de 10 millas náuticas de un campo de boyas tendrá que levantar el ancla cada 90 días y moverse al menos media milla náutica.",
+          "El permiso estatal de los 14 días es otra regla y ya está vigente."
+        ],
+        "cuerpo": [
+          "El condado de Monroe puso fecha esta semana a sus dos campos de boyas de amarre junto a Key West: 60 en Man of War Harbor, frente a Wisteria Island, y 40 en Boca Chica Basin, junto a Stock Island. Según la actualización que su oficina de [Recursos Marinos](https://www.monroecounty-fl.gov/634/Anchoring-Mooring-Management) presentó el martes a la Comisión del condado, el primero abriría a finales de 2027 y el segundo, a finales de 2028.",
+          "## Las dos obras",
+          "Man of War Harbor es el más adelantado. El condado informa que ya tiene los permisos del Cuerpo de Ingenieros del Ejército y del Santuario Marino Nacional de los Cayos, y calcula empezar la construcción a mediados de 2027.",
+          "Boca Chica va más despacio: sigue en diseño y permisos. El proyecto incluye una instalación en tierra, en Maloney Avenue, en Stock Island, con muelle para dinghies, baños y duchas, lavandería, bombeo de aguas residuales y recogida de basura para quienes alquilen una boya.",
+          "## Lo que cambia para quien vive anclado",
+          "Con las boyas llega la regla. La [ley estatal](https://www.flsenate.gov/Laws/Statutes/2026/0327.4108) convierte al condado de Monroe en un área de anclaje limitado: ninguna embarcación puede quedarse más de 90 días en el mismo punto si está a menos de 10 millas náuticas de un campo de boyas público o de un área de anclaje designada. Cumplido el plazo, toca levantar el ancla y moverse al menos media milla náutica.",
+          "Ese límite no rige hasta que las boyas nuevas estén instaladas. De acuerdo con el condado, un cambio aprobado en abril de 2026 bajó de 100 a 60 las que hacen falta para activarlo, y la Comisión de Conservación de Pesca y Vida Silvestre de Florida (FWC) colocó en septiembre las boyas que marcan las áreas de anclaje.",
+          "Es una regla distinta del permiso estatal para botes que pasan 14 días anclados, que ya está vigente: [así funciona](https://miamimagicapp.com/noticias/anclaje-prolongado-permiso-fwc)."
+        ]
+      },
+      "en": {
+        "etiqueta": "THE RULES",
+        "titulo": "Key West is getting 100 new moorings, and the 90-day anchoring limit comes with them",
+        "bajada": "Man of War Harbor would open in late 2027 with 60 moorings and Boca Chica in late 2028 with 40, the county says. Once they are in, no boat may stay anchored in the same spot for more than 90 days.",
+        "toca": [
+          "Nothing changes today: the 90-day limit does not apply until the new moorings are in the water.",
+          "Once it does, anyone anchored within 10 nautical miles of a mooring field will have to pull anchor every 90 days and move at least half a nautical mile.",
+          "The state’s 14-day permit is a separate rule and is already in effect."
+        ],
+        "cuerpo": [
+          "Monroe County put dates this week on its two mooring fields next to Key West: 60 moorings in Man of War Harbor, off Wisteria Island, and 40 in Boca Chica Basin, next to Stock Island. According to the update its [Marine Resources](https://www.monroecounty-fl.gov/634/Anchoring-Mooring-Management) office gave the County Commission on Tuesday, the first would open in late 2027 and the second in late 2028.",
+          "## The two projects",
+          "Man of War Harbor is further along. The county reports it already holds permits from the U.S. Army Corps of Engineers and the Florida Keys National Marine Sanctuary, and expects construction to begin in mid-2027.",
+          "Boca Chica is moving more slowly: it is still in design and permitting. The project includes a shoreside facility on Maloney Avenue, on Stock Island, with dinghy docks, bathrooms and showers, laundry, sewage pumpout and trash collection for mooring tenants.",
+          "## What changes for those living at anchor",
+          "The rule arrives with the moorings. [State law](https://www.flsenate.gov/Laws/Statutes/2026/0327.4108) makes Monroe County an anchoring limitation area: no vessel may stay more than 90 days in the same spot if it is within 10 nautical miles of a public mooring field or a designated anchoring area. When the time is up, it has to pull anchor and move at least half a nautical mile.",
+          "That limit does not take effect until the new moorings are installed. According to the county, a change approved in April 2026 lowered the number needed to trigger it from 100 to 60, and the Florida Fish and Wildlife Conservation Commission (FWC) placed the buoys marking the anchoring areas in September.",
+          "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
+        ]
+      }
+    },
+    {
       "id": "calamillor-coral-gables-mallorca-en-miami",
       "scope": "miami",
       "tema": "cultura",
@@ -109,7 +183,7 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -149,7 +223,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-19T09:15:00-05:00",
-      "ultima": 6,
+      "ultima": 7,
       "es": {
         "etiqueta": "HISTORIA",
         "titulo": "Eran 27 casas en medio del mar y quedan 6: la historia de Stiltsville, el barrio sin calles de la bahía",
@@ -239,7 +313,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-19T08:25:00-05:00",
-      "ultima": 3,
+      "ultima": 4,
       "es": {
         "etiqueta": "COMUNIDAD",
         "titulo": "Paracaidistas al atardecer y un show de drones: Big Pine Key celebra el viernes los 250 años del país",
@@ -460,7 +534,7 @@
           "In Miami, the snow of 1977 didn't survive past 10 a.m. On the day of the milestone, what wouldn't stop was [the rain](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre): more than 16 inches in 48 hours in Broward, according to the National Weather Service. The spacecraft that left Florida that year has been traveling for 49 years without stopping, and if anyone ever finds it, its record will play a mariachi band, Chuck Berry and Louis Armstrong: the same mix of worlds Miami was already becoming."
         ]
       },
-      "ultima": 9,
+      "ultima": 10,
       "galeria": [
         {
           "f": "mm-voyager-miami-news-nieve-1977.jpg",
@@ -589,7 +663,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 13
+      "ultima": 14
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -672,7 +746,7 @@
         ]
       },
       "actualizada": "2026-11-17T19:30:00-05:00",
-      "ultima": 16
+      "ultima": 17
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -753,7 +827,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 15
+      "ultima": 16
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -984,7 +1058,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 21
+      "ultima": 22
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -1063,7 +1137,7 @@
         ]
       },
       "actualizada": "2026-11-19T10:20:00-05:00",
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -1128,9 +1202,9 @@
         ]
       },
       "actualizada": "2026-11-19T08:15:00-05:00",
-      "ultima": 18,
+      "ultima": 19,
       "tambien": 1,
-      "arriba": 2
+      "arriba": 3
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -1213,7 +1287,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -1286,7 +1360,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 17
+      "ultima": 18
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -1401,7 +1475,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "ultima": 5,
+      "ultima": 6,
       "arriba": 2
     },
     {
@@ -1486,7 +1560,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 14
+      "ultima": 15
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -1569,7 +1643,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 19
+      "ultima": 20
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -1651,7 +1725,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 22
+      "ultima": 23
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -2904,7 +2978,7 @@
       "foto_pie_en": "5th Street in Miami Beach, one of the areas where high tide reaches the street.",
       "foto_pos": "50% 25%",
       "actualizada": "2026-11-20T09:05:00-05:00",
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -2969,7 +3043,7 @@
       ],
       "actualizada": "2026-11-20T09:05:00-05:00",
       "arriba": 1,
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "heat-vice-city-bucks",
@@ -3522,7 +3596,8 @@
           "## Lo que pide el formulario",
           "El [formulario en línea de la FWC](https://app.myfwc.com/crossdoi/ltanchoringpermit/) pide nombre, dirección, teléfono, correo y fecha de nacimiento de quien lo solicita; marca, modelo, año y número de casco del bote, y el lugar donde va a estar anclado. Cada permiso cubre una sola embarcación y vence al año. Quien cambie de fondeadero tiene que actualizarlo.",
           "## Lo que cuesta no tenerlo",
-          "El permiso es gratis; la multa, no. La ley fija hasta $100 por la primera vez, hasta $250 por la segunda y hasta $500 de la tercera en adelante. No presentarse a la audiencia o no pagar también cuenta como infracción en firme. Y el permiso se puede revocar si el bote queda abandonado, está en riesgo de quedarlo o incumple las reglas sanitarias."
+          "El permiso es gratis; la multa, no. La ley fija hasta $100 por la primera vez, hasta $250 por la segunda y hasta $500 de la tercera en adelante. No presentarse a la audiencia o no pagar también cuenta como infracción en firme. Y el permiso se puede revocar si el bote queda abandonado, está en riesgo de quedarlo o incumple las reglas sanitarias.",
+          "En los Cayos se suma otra regla, la del condado: [Key West tendrá 100 boyas de amarre nuevas y, con ellas, un límite de 90 días para anclar](https://miamimagicapp.com/noticias/key-west-boyas-amarre-man-of-war-boca-chica-limite-90-dias)."
         ]
       },
       "en": {
@@ -3541,7 +3616,8 @@
           "## What the form asks for",
           "[FWC's online form](https://app.myfwc.com/crossdoi/ltanchoringpermit/) asks for the applicant's name, address, phone, email and date of birth; the boat's make, model, year and hull number, and the place where it will be anchored. Each permit covers a single vessel and expires after a year. Anyone who changes anchorage has to update it.",
           "## What it costs not to have it",
-          "The permit is free; the fine isn't. The law sets up to $100 for a first offense, up to $250 for a second and up to $500 from the third on. Failing to appear at the hearing or failing to pay also counts as a standing violation. And the permit can be revoked if the boat becomes derelict, is at risk of becoming derelict or breaks marine sanitation rules."
+          "The permit is free; the fine isn't. The law sets up to $100 for a first offense, up to $250 for a second and up to $500 from the third on. Failing to appear at the hearing or failing to pay also counts as a standing violation. And the permit can be revoked if the boat becomes derelict, is at risk of becoming derelict or breaks marine sanitation rules.",
+          "The Keys add a county rule on top: [Key West is getting 100 new moorings and, with them, a 90-day anchoring limit](https://miamimagicapp.com/news/key-west-boyas-amarre-man-of-war-boca-chica-limite-90-dias)."
         ]
       },
       "fuentes": [
@@ -6996,7 +7072,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-19T10:40:00-05:00",
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -7048,6 +7124,6 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T09:05:00-05:00",
+  "updated_at": "2026-11-20T09:55:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha."
 }
