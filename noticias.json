@@ -108,7 +108,8 @@
         ]
       },
       "publicada": "2026-11-20T07:55:00-05:00",
-      "video": "UH-Rg0I2wjo"
+      "video": "UH-Rg0I2wjo",
+      "ultima": 2
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -148,8 +149,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-19T09:15:00-05:00",
-      "ultima": 2,
-      "arriba": 3,
+      "ultima": 6,
       "es": {
         "etiqueta": "HISTORIA",
         "titulo": "Eran 27 casas en medio del mar y quedan 6: la historia de Stiltsville, el barrio sin calles de la bahía",
@@ -210,7 +210,8 @@
           "The Biscayne National Park Institute runs a [guided boat tour](https://www.biscaynenationalparkinstitute.org/stiltsville-guided-tour-from-coconut-grove/) that leaves from Dinner Key, in Coconut Grove, and circles the houses. From land they can be made out, on clear days, from the [Key Biscayne lighthouse](https://www.miamimagicapp.com/news/faro-cape-florida-1836-historia). Permits to visit them go through the Stiltsville Trust and the park, which explains the process on its [permits page](https://home.nps.gov/bisc/planyourvisit/permitsandreservations.htm)."
         ]
       },
-      "video": "j7dh6WNqjr0"
+      "video": "j7dh6WNqjr0",
+      "arriba": 3
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -239,7 +240,6 @@
       "desarrollo": false,
       "actualizada": "2026-11-19T08:25:00-05:00",
       "ultima": 3,
-      "arriba": 2,
       "es": {
         "etiqueta": "COMUNIDAD",
         "titulo": "Paracaidistas al atardecer y un show de drones: Big Pine Key celebra el viernes los 250 años del país",
@@ -275,7 +275,8 @@
           "## The weather",
           "For Friday, the National Weather Service in Key West [forecasts](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) west to northwest winds of 10 to 15 knots off the Lower Keys and a slight chance of showers."
         ]
-      }
+      },
+      "arriba": 1
     },
     {
       "id": "voyager-1-dia-luz-miami-1977",
@@ -459,7 +460,7 @@
           "In Miami, the snow of 1977 didn't survive past 10 a.m. On the day of the milestone, what wouldn't stop was [the rain](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre): more than 16 inches in 48 hours in Broward, according to the National Weather Service. The spacecraft that left Florida that year has been traveling for 49 years without stopping, and if anyone ever finds it, its record will play a mariachi band, Chuck Berry and Louis Armstrong: the same mix of worlds Miami was already becoming."
         ]
       },
-      "ultima": 5,
+      "ultima": 9,
       "galeria": [
         {
           "f": "mm-voyager-miami-news-nieve-1977.jpg",
@@ -497,8 +498,7 @@
           "es": "El «punto azul pálido»: la Tierra, en el círculo, fotografiada por la Voyager 1 en 1990. Versión de 2020. Imagen: NASA/JPL-Caltech.",
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
-      ],
-      "arriba": 2
+      ]
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -589,7 +589,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 9
+      "ultima": 13
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -672,7 +672,7 @@
         ]
       },
       "actualizada": "2026-11-17T19:30:00-05:00",
-      "ultima": 12
+      "ultima": 16
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -753,7 +753,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 11
+      "ultima": 15
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -984,7 +984,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 17
+      "ultima": 21
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -1063,7 +1063,7 @@
         ]
       },
       "actualizada": "2026-11-19T10:20:00-05:00",
-      "ultima": 6
+      "ultima": 10
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -1128,9 +1128,9 @@
         ]
       },
       "actualizada": "2026-11-19T08:15:00-05:00",
-      "ultima": 14,
-      "arriba": 1,
-      "tambien": 1
+      "ultima": 18,
+      "tambien": 1,
+      "arriba": 2
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -1213,7 +1213,7 @@
         ]
       },
       "actualizada": "2026-11-16T13:00:00-05:00",
-      "ultima": 16
+      "ultima": 20
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -1286,7 +1286,7 @@
         ]
       },
       "actualizada": "2026-11-16T22:05:00-05:00",
-      "ultima": 13
+      "ultima": 17
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -1401,8 +1401,8 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "ultima": 4,
-      "arriba": 1
+      "ultima": 5,
+      "arriba": 2
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -1486,7 +1486,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 10
+      "ultima": 14
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -1569,7 +1569,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 15
+      "ultima": 19
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -1651,7 +1651,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 18
+      "ultima": 22
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -2853,7 +2853,8 @@
         "toca": [
           "Del 23 al 26 de noviembre, el agua sube más alrededor de las 8 a 10 de la mañana y de las 8 a 10 de la noche.",
           "No atravieses calles inundadas: el agua salada daña el auto y puede esconder escombros o huecos.",
-          "¿Vives en una zona baja de Miami Beach? Pide el estacionamiento gratis temporal. En Miami, reporta las inundaciones al 311."
+          "¿Vives en una zona baja de Miami Beach? Pide el estacionamiento gratis temporal. En Miami, reporta las inundaciones al 311.",
+          "En Fort Lauderdale hay sacos de arena gratis este sábado y domingo, de 10 AM a 1 PM, con prueba de domicilio."
         ],
         "cuerpo": [
           "A las 10:04 de la mañana del jueves 26, cuando en media Miami el pavo apenas entra al horno, el mar va a estar en su punto más alto. Y vuelve a las 10:10 de la noche, a la hora del recalentado, del último pedazo de flan y de los invitados buscando dónde dejaron el auto.",
@@ -2862,6 +2863,7 @@
           "El pico no llega de golpe. El agua empieza a notarse hora y media antes y tarda unas dos horas en irse. El jueves, eso deja mojadas las calles bajas más o menos de 8:30 de la mañana al mediodía, y de 8:40 de la noche hasta pasada la medianoche. Quien tenga la cena en Miami Beach, o invitados que cruzan por allí, hace bien en mirar el reloj antes de estacionar.",
           "## Para que el agua no se siente a la mesa",
           "Miami Beach envía avisos de tránsito a quien escriba MBTraffic al 888777, presta estacionamiento gratis temporal a los vecinos de las zonas bajas y ofrece hasta $20,000 para proteger casas en terrenos bajos. En [Miami](https://www.miami.gov/kingtide), las inundaciones se reportan al 311 o al 305-468-5900.",
+          "En Broward, la marea llega sobre suelo todavía empapado por la lluvia de esta semana. Fort Lauderdale, que sitúa sus mareas reales entre el 22 y el 28 de noviembre, [reparte sacos de arena gratis](https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response) ya llenos este sábado 21 y domingo 22, de 10 AM a 1 PM, en cinco puntos: Floyd Hull/Morton Center, George English Park, Holiday Park, Mills Pond Park y Riverland Park. Son para residentes, con prueba de domicilio, y hasta cinco por vehículo mientras duren.",
           "Lo demás es sentido común de isla: el agua salada no perdona a los autos, así que mejor rodear el charco que cruzarlo. El pavo puede esperar diez minutos."
         ]
       },
@@ -2871,7 +2873,8 @@
         "toca": [
           "From Nov. 23 to 26, the water peaks around 8 to 10 in the morning and 8 to 10 at night.",
           "Don't drive through flooded streets: salt water damages cars and can hide debris or potholes.",
-          "Live in a low-lying part of Miami Beach? Sign up for the free temporary parking. In Miami, report flooding to 311."
+          "Live in a low-lying part of Miami Beach? Sign up for the free temporary parking. In Miami, report flooding to 311.",
+          "Fort Lauderdale is giving out free sandbags this Saturday and Sunday, 10 a.m. to 1 p.m., with proof of residency."
         ],
         "cuerpo": [
           "At 10:04 a.m. on Thursday the 26th, when the turkey is just going into the oven in half of Miami, the sea will be at its highest. And it comes back at 10:10 p.m., the hour of leftovers, the last slice of flan and guests trying to remember where they left the car.",
@@ -2880,6 +2883,7 @@
           "The peak doesn't arrive all at once. The water starts to show about an hour and a half earlier and takes around two hours to leave. On Thursday, that keeps low streets wet from roughly 8:30 a.m. to noon, and from 8:40 p.m. until after midnight. Anyone having dinner in Miami Beach, or expecting guests who drive through, would do well to check the clock before parking.",
           "## So the water doesn't sit down at the table",
           "Miami Beach sends traffic alerts to anyone who texts MBTraffic to 888777, lends free temporary parking to residents of low-lying areas and offers up to $20,000 to protect homes on low ground. In [Miami](https://www.miami.gov/kingtide), flooding can be reported to 311 or 305-468-5900.",
+          "In Broward, the tide arrives on ground still soaked by this week’s rain. Fort Lauderdale, which places its king tides between Nov. 22 and 28, is [handing out free sandbags](https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response), prefilled, this Saturday the 21st and Sunday the 22nd, from 10 a.m. to 1 p.m., at five sites: Floyd Hull/Morton Center, George English Park, Holiday Park, Mills Pond Park and Riverland Park. They are for residents, with proof of residency, up to five per vehicle while supplies last.",
           "The rest is island common sense: salt water is unforgiving to cars, so go around the puddle instead of through it. The turkey can wait ten minutes."
         ]
       },
@@ -2891,10 +2895,16 @@
         {
           "n": "Ciudad de Miami · Mareas reales",
           "u": "https://www.miami.gov/kingtide"
+        },
+        {
+          "n": "Ciudad de Fort Lauderdale · sacos de arena y mareas",
+          "u": "https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response"
         }
       ],
       "foto_pie_en": "5th Street in Miami Beach, one of the areas where high tide reaches the street.",
-      "foto_pos": "50% 25%"
+      "foto_pos": "50% 25%",
+      "actualizada": "2026-11-20T09:05:00-05:00",
+      "ultima": 7
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -2918,8 +2928,8 @@
           "El boleto de Tri-Rail para el partido cuesta $10 ida y vuelta e incluye $10 de crédito para comida y bebida, que se canjea en Guest Services, junto a la sección 101."
         ],
         "cuerpo": [
-          "Inter Miami abre los playoffs de la MLS el sábado 21 de noviembre a las 6:00 de la tarde en Nu Stadium, contra Columbus Crew, [anunció el club](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Terminó la temporada regular segundo en la Conferencia Este; Columbus llegó séptimo, según la [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
-          "La serie es al mejor de tres partidos. El segundo se juega el viernes 27 en Columbus, Ohio, y si hace falta un tercero, vuelve a Miami el miércoles 2 de diciembre, con hora por confirmar. Quien gane dos avanza a las semifinales del Este.",
+          "Inter Miami abre los playoffs de la MLS este sábado 21 de noviembre a las 6:00 de la tarde en Nu Stadium, contra Columbus Crew, [anunció el club](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Terminó la temporada regular segundo en la Conferencia Este; Columbus llegó séptimo, según la [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
+          "La serie es al mejor de tres partidos. El segundo se juega el viernes 27 en Columbus, Ohio, y si hace falta un tercero, vuelve a Miami el martes 1 o el miércoles 2 de diciembre, con fecha y hora por confirmar. Quien gane dos avanza a las semifinales del Este.",
           "Será el primer partido de playoffs en Nu Stadium. El estadio abrió en abril sobre el antiguo campo de golf Melreese, junto al aeropuerto, y tiene capacidad para 26,700 personas.",
           "Llegar pide planificación, y el club [empuja el transporte público](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail y Tri-Rail paran en el Miami Intermodal Center, la estación del aeropuerto, y desde allí se camina hasta el estadio por el puente peatonal sobre el canal. El club añade que, después de algunos partidos, Tri-Rail agrega un tren de regreso cerca de las 10:00 de la noche."
         ]
@@ -2934,7 +2944,7 @@
         ],
         "cuerpo": [
           "Inter Miami opens the MLS playoffs on Saturday, Nov. 21, at 6 p.m. at Nu Stadium against the Columbus Crew, [the club announced](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Miami finished the regular season second in the Eastern Conference; Columbus finished seventh, according to [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
-          "The series is best of three. Game 2 is Friday, Nov. 27, in Columbus, Ohio, and if a third game is needed, it returns to Miami on Wednesday, Dec. 2, time to be announced. The first team to two wins advances to the East semifinals.",
+          "The series is best of three. Game 2 is Friday, Nov. 27, in Columbus, Ohio, and if a third game is needed, it returns to Miami on Tuesday, Dec. 1, or Wednesday, Dec. 2, date and time to be announced. The first team to two wins advances to the East semifinals.",
           "It will be the first playoff game at Nu Stadium. The stadium opened in April on the former Melreese golf course next to the airport and holds 26,700 people.",
           "Getting there takes planning, and the club is [pushing public transit](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail and Tri-Rail stop at the Miami Intermodal Center, the airport station, and from there fans walk to the stadium across the pedestrian bridge over the canal. The club adds that after some games, Tri-Rail runs a return train around 10 p.m."
         ]
@@ -2956,7 +2966,10 @@
           "n": "Wikipedia · Nu Stadium",
           "u": "https://en.wikipedia.org/wiki/Nu_Stadium"
         }
-      ]
+      ],
+      "actualizada": "2026-11-20T09:05:00-05:00",
+      "arriba": 1,
+      "ultima": 4
     },
     {
       "id": "heat-vice-city-bucks",
@@ -6983,7 +6996,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-19T10:40:00-05:00",
-      "ultima": 7
+      "ultima": 11
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -7035,6 +7048,6 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T07:55:00-05:00",
+  "updated_at": "2026-11-20T09:05:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha."
 }
