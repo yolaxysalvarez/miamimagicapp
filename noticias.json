@@ -183,7 +183,8 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "ultima": 3
+      "ultima": 3,
+      "arriba": 3
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -285,7 +286,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 3
+      "arriba": 4
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -4959,7 +4960,8 @@
       ],
       "foto_mm": false,
       "actualizada": "2026-11-20T15:55:00-05:00",
-      "tambien": 2
+      "tambien": 2,
+      "arriba": 3
     },
     {
       "id": "larry-penny-thompson-park",
@@ -7275,6 +7277,6 @@
     }
   ],
   "updated_at": "2026-11-20T16:20:00-05:00",
-  "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha.",
+  "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }

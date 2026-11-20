@@ -1461,6 +1461,9 @@ function renderHome(lead,rest){
   var ot=document.getElementById('tmb');if(ot)ot.remove();
   if(tb.length===3)document.getElementById('leadBox').insertAdjacentHTML('beforeend','<div id="tmb"><span>'+(L==='en'?'ALSO TODAY':'TAMBIÉN HOY')+'</span>'+tb.map(function(n){return '<a href="'+href(n)+'"><span class="eb">'+eb(n)+'</span><b>'+esc(F(n).titulo)+'</b></a>'}).join('')+'</div>');
   var og=otros()[0],ky=(og?og[1]:[]).filter(function(n){return !inU[n.id]}),mi=rest.filter(function(n){return !inU[n.id]}),used={};
+  /* Las notas con 'arriba' abren su columna (Miami / Los Cayos) aunque ya salgan en Lo último, y sean de la sección que sean */
+  var arr=function(c){return (DATA.notas||[]).filter(function(n){return n.arriba&&n!==lead&&(c?n.scope==='cayos':(n.scope||'miami')!=='cayos')}).sort(function(x,y){return x.arriba-y.arriba})},noA=function(n){return !n.arriba};
+  mi=arr(0).concat(mi.filter(noA));ky=arr(1).concat(ky.filter(noA));
   [lead].concat(pk,mi.slice(0,4),ky.slice(0,4)).forEach(function(n){if(n)used[n.id]=1});
   var d=document.getElementById('duo');d.className='duo'+(mi.length&&ky.length?'':' one');
   d.innerHTML=colB('MIAMI','mi',mi,'all')+colB(L==='en'?'THE KEYS':'LOS CAYOS','ky',ky,'cayos');
