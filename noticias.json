@@ -6362,9 +6362,10 @@
       },
       "galeria": [
         {
-          "f": "mm-dk-haulover-escollera.jpg",
-          "es": "La escollera de Haulover, punto de encuentro de pescadores.",
-          "en": "The Haulover jetty, a meeting point for anglers."
+          "f": "mm-keys-largo-harbor-marina.jpg",
+          "mm": false,
+          "es": "Una marina de Key Largo, punto de salida para la pesca en los Cayos.",
+          "en": "A Key Largo marina, a starting point for fishing in the Keys."
         },
         {
           "f": "mm-dk-haulover-inlet.jpg",
@@ -6391,7 +6392,8 @@
           "u": "https://myfwc.com/news/all-news/snook-1124/"
         }
       ],
-      "foto_alt": "Pescadores con sus cañas en la escollera de Haulover, junto a la playa"
+      "foto_alt": "Pescadores con sus cañas en la escollera de Haulover, junto a la playa",
+      "actualizada": "2026-11-20T19:05:00-05:00"
     },
     {
       "id": "carnet-bote-boater-freedom-act",

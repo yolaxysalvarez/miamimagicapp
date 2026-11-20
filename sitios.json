@@ -122,8 +122,8 @@
    "photo": "fotos/mm-calamillor-fachada.jpg",
    "desc": "A Spanish bakery and restaurant from a Mallorcan baking family, named after a cove in Mallorca. Mornings belong to the ensaimadas, filled with whipped cream or crème brûlée; later come croquetas, patatas bravas, grilled octopus, gambas al ajillo, tortilla and jamón ibérico, plus a market of Spanish oils, cheeses, cured meats and wine.",
    "desc_es": "Una panadería y restaurante español de una familia de panaderos mallorquines, con el nombre de una cala de Mallorca. Las mañanas son de las ensaimadas, rellenas de nata o de crema quemada; después llegan las croquetas, las patatas bravas, el pulpo a la parrilla, las gambas al ajillo, la tortilla y el jamón ibérico, además de un mercado de aceites, quesos, embutidos y vinos españoles.",
-   "pnote": "Monday is paella night, from 6 PM. Happy hour runs Mon–Fri 3:30–6 PM, and there is a weekday executive lunch menu (11 AM–4 PM). It sits at Bird Road and 57th Avenue, in the old Allen's Drugs building.",
-   "pnote_es": "El lunes es noche de paella, desde las 6 PM. Hay happy hour de lunes a viernes de 3:30 a 6 PM y menú ejecutivo al mediodía entre semana (11 AM–4 PM). Está en Bird Road y la 57 Avenida, en el antiguo edificio de Allen's Drugs.",
+   "pnote": "Monday is paella night, from 6 PM. Happy hour runs Mon–Fri 3:30–6 PM, and there is a weekday executive lunch menu (11 AM–4 PM). It sits at Bird Road and 57th Avenue, in the old Allen's Drugs building. <a href=\"https://www.miamimagicapp.com/news/calamillor-coral-gables-mallorca-en-miami\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('calamillor-coral-gables-mallorca-en-miami');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "El lunes es noche de paella, desde las 6 PM. Hay happy hour de lunes a viernes de 3:30 a 6 PM y menú ejecutivo al mediodía entre semana (11 AM–4 PM). Está en Bird Road y la 57 Avenida, en el antiguo edificio de Allen's Drugs. <a href=\"https://www.miamimagicapp.com/noticias/calamillor-coral-gables-mallorca-en-miami\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('calamillor-coral-gables-mallorca-en-miami');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>",
    "photo_url": "https://youtu.be/UH-Rg0I2wjo"
   },
   "r69": {
@@ -431,7 +431,9 @@
    "photo": "fotos/mm-hobie-island.jpg"
   },
   "b16": {
-   "photo": "fotos/mm-oleta-kayak.jpg"
+   "photo": "fotos/mm-oleta-kayak.jpg",
+   "pnote": "The beach is on the bay, not the ocean — calm, shallow, no waves. Kayak and paddleboard rentals go through the mangrove tunnels. <a href=\"https://www.miamimagicapp.com/news/oleta-river-kayak-pesca-norte\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oleta-river-kayak-pesca-norte');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "La playa da a la bahía, no al océano: tranquila, baja y sin olas. Los alquileres de kayak y paddleboard entran por los túneles de mangle. <a href=\"https://www.miamimagicapp.com/noticias/oleta-river-kayak-pesca-norte\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oleta-river-kayak-pesca-norte');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   },
   "b14": {
    "photo": "fotos/mm-hollywood-beach.jpg"
@@ -444,6 +446,14 @@
   },
   "b18": {
    "photo": "fotos/mm-mb-ocean-drive-parque.jpg"
+  },
+  "b15": {
+   "pnote": "The 1825 lighthouse is the oldest standing structure in Miami-Dade. Manatees gather in the shallows on the bay side, and the beach faces sunrise. <a href=\"https://www.miamimagicapp.com/news/faro-cape-florida-1836-historia\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('faro-cape-florida-1836-historia');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "El faro de 1825 es la estructura en pie más antigua de Miami-Dade. Los manatíes se juntan en los bajos del lado de la bahía, y la playa mira al amanecer. <a href=\"https://www.miamimagicapp.com/noticias/faro-cape-florida-1836-historia\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('faro-cape-florida-1836-historia');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "b8": {
+   "pnote": "The atoll pool is fed by Biscayne Bay, so rays and small fish circle inside it. Facing west, it is one of the few Miami beaches where the sun sets over the water. <a href=\"https://www.miamimagicapp.com/news/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "La piscina atolón se alimenta de la Bahía Biscayne, así que rayas y peces pequeños circulan dentro. Mirando al oeste, es de las pocas playas de Miami donde el sol se pone sobre el agua. <a href=\"https://www.miamimagicapp.com/noticias/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
  "museos": {
@@ -495,7 +505,35 @@
    "badge": "Best Campground 2020 · Miami New Times",
    "badge_es": "Mejor Campamento 2020 · Miami New Times",
    "desc": "Miami New Times named it Miami's Best Campground in 2020, after earning Best Family Outing (2005) and Best Public Swimming Pool (2004). A pine rockland forest, a 22-acre lake, a pool, trails for walking, biking and horseback riding, and the county's largest campground, right next to Zoo Miami.",
-   "desc_es": "Miami New Times lo eligió Mejor Campamento de Miami en 2020, después de premiarlo como Mejor Paseo Familiar (2005) y Mejor Piscina Pública (2004). Pinar de roca, lago de 22 acres, piscina, senderos para caminar, montar bicicleta y a caballo, y el campamento más grande del condado, junto a Zoo Miami."
+   "desc_es": "Miami New Times lo eligió Mejor Campamento de Miami en 2020, después de premiarlo como Mejor Paseo Familiar (2005) y Mejor Piscina Pública (2004). Pinar de roca, lago de 22 acres, piscina, senderos para caminar, montar bicicleta y a caballo, y el campamento más grande del condado, junto a Zoo Miami.",
+   "pnote": "<a href=\"https://www.miamimagicapp.com/news/larry-penny-thompson-park\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('larry-penny-thompson-park');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/larry-penny-thompson-park\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('larry-penny-thompson-park');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "pk3": {
+   "pnote": "The palm-ringed atoll pool is one of the most photographed spots in Miami, and the west-facing shoreline gets a real sunset over the bay. <a href=\"https://www.miamimagicapp.com/news/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "La piscina atolón rodeada de palmas es uno de los lugares más fotografiados de Miami, y la orilla que mira al oeste tiene un atardecer real sobre la bahía. <a href=\"https://www.miamimagicapp.com/noticias/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "pk4": {
+   "pnote": "Manatees enter the mangrove creeks year-round and are most visible from a kayak in the early morning. Leashed dogs are welcome on the trails. <a href=\"https://www.miamimagicapp.com/news/oleta-river-kayak-pesca-norte\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oleta-river-kayak-pesca-norte');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "Los manatíes entran a los canales de manglar todo el año y se ven mejor desde un kayak temprano en la mañana. Los perros con correa son bienvenidos en los senderos. <a href=\"https://www.miamimagicapp.com/noticias/oleta-river-kayak-pesca-norte\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oleta-river-kayak-pesca-norte');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "pk9": {
+   "pnote": "<a href=\"https://www.miamimagicapp.com/news/christmas-wonderland-tropical-park-2026\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('christmas-wonderland-tropical-park-2026');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/christmas-wonderland-tropical-park-2026\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('christmas-wonderland-tropical-park-2026');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "pk-stiltsville": {
+   "name": "Stiltsville · Biscayne National Park",
+   "name_es": "Stiltsville · Parque Nacional Biscayne",
+   "bg": "bg-teal",
+   "city": "Biscayne Bay",
+   "desc": "A neighborhood with no streets: six wooden houses on stilts standing in the shallows of Biscayne Bay, a mile off Key Biscayne. They belong to Biscayne National Park and are reached only by boat.",
+   "desc_es": "Un barrio sin calles: seis casas de madera sobre pilotes en los bajos de la Bahía de Biscayne, a una milla de Key Biscayne. Son del Parque Nacional Biscayne y solo se llega en bote.",
+   "addr": "Biscayne Bay, off Key Biscayne",
+   "hrs": "Seen from the water · permit required to go aboard",
+   "link": "https://www.nps.gov/bisc/learn/historyculture/stiltsville.htm",
+   "photo": "fotos/mm-stiltsville-casa-azul-bote.jpg",
+   "pnote": "Going onto the houses without a permit is prohibited. A guided boat tour leaves from Dinner Key, in Coconut Grove. <a href=\"https://www.miamimagicapp.com/news/stiltsville-historia-27-casas-quedan-6\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('stiltsville-historia-27-casas-quedan-6');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "Subir a las casas sin permiso está prohibido. Hay un recorrido guiado en bote que sale de Dinner Key, en Coconut Grove. <a href=\"https://www.miamimagicapp.com/noticias/stiltsville-historia-27-casas-quedan-6\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('stiltsville-historia-27-casas-quedan-6');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
  "compras": {},
@@ -518,6 +556,10 @@
    "pnote": "Pair it with the Redland's fruit stands and farms for a full day south of Miami. Designate a driver: it's a long drive back.",
    "pnote_es": "Combínalo con los puestos de frutas y las fincas del Redland para un día completo al sur de Miami. Lleva conductor designado: el regreso es largo.",
    "photo": "fotos/mm-schnebly-fuente.jpg"
+  },
+  "dt7": {
+   "pnote": "Reachable only by boat or seaplane, and the reef around Fort Jefferson is some of the clearest snorkeling water in North America. <a href=\"https://www.miamimagicapp.com/news/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "Solo se llega en bote o hidroavión, y el arrecife alrededor de Fort Jefferson tiene de las aguas más claras para snorkel en Norteamérica. <a href=\"https://www.miamimagicapp.com/noticias/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
  "conciertos": {
@@ -546,7 +588,30 @@
    ]
   }
  },
- "botes": {},
+ "botes": {
+  "w-stiltsville": {
+   "name": "Stiltsville by Boat",
+   "name_es": "Stiltsville en bote",
+   "cat": "Boat outing",
+   "cat_es": "Paseo en bote",
+   "ac": "#1D7FA6",
+   "ico": "<path d=\"M4 20V11\"/><path d=\"M9 20V11\"/><path d=\"M15 20V11\"/><path d=\"M20 20V11\"/><path d=\"M3 11h18\"/><path d=\"M5 11V6h14v5\"/><path d=\"M4 6l8-3 8 3\"/>",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-stiltsville-casa-azul-bote.jpg",
+   "where": "Biscayne Bay · 1 mile off Key Biscayne",
+   "where_es": "Bahía de Biscayne · a 1 milla de Key Biscayne",
+   "price": "Free to see from your own boat · guided tour from Coconut Grove",
+   "price_es": "Gratis desde tu propio bote · recorrido guiado desde Coconut Grove",
+   "when": "Clear, calm days",
+   "when_es": "Días claros y de mar tranquilo",
+   "desc": "Six wooden houses on stilts in the middle of Biscayne Bay, what is left of a neighborhood that once had 27. There are no streets and no way to walk there: they are reached only by boat, inside Biscayne National Park.",
+   "desc_es": "Seis casas de madera sobre pilotes en medio de la Bahía de Biscayne, lo que queda de un barrio que llegó a tener 27. No hay calles ni forma de llegar a pie: solo se llega en bote, dentro del Parque Nacional Biscayne.",
+   "tip": "The houses belong to the national park and going aboard without a permit is prohibited: you look from the water. The Biscayne National Park Institute runs a guided boat tour from Dinner Key, in Coconut Grove.",
+   "tip_es": "Las casas son del parque nacional y subir sin permiso está prohibido: se miran desde el agua. El Biscayne National Park Institute ofrece un recorrido guiado en bote desde Dinner Key, en Coconut Grove.",
+   "link": "https://www.miamimagicapp.com/noticias/stiltsville-historia-27-casas-quedan-6",
+   "linkLabel": "Read the story",
+   "linkLabel_es": "Leer la historia"
+  }
+ },
  "lujo": {},
  "cruceros": {},
  "cines": {},
@@ -635,6 +700,10 @@
    "loc": "Florida Keys",
    "d": "A long rock jetty into calm water, then a sheltered lagoon of clear green water.",
    "d_es": "Una larga escollera de piedra sobre agua en calma y luego una laguna protegida de agua verde y clara."
+  },
+  "1016261002": {
+   "d": "The wooden houses on stilts that have stood in the shallows of Biscayne Bay since the 1930s, a mile off Key Biscayne.",
+   "d_es": "Las casas de madera sobre pilotes que se levantan en los bajos de la Bahía de Biscayne desde los años 30, a una milla de Key Biscayne."
   }
  }
 }
