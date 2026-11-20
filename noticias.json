@@ -55,6 +55,62 @@
   "videos": [],
   "notas": [
     {
+      "id": "calamillor-coral-gables-mallorca-en-miami",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": true,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-20",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-calamillor-paella-mariscos.jpg",
+      "foto_alt": "Paella de mariscos con gambas, almejas, mejillones y calamar en CalaMillor",
+      "foto_pie": "La paella de mariscos de CalaMillor.",
+      "foto_pie_en": "CalaMillor's seafood paella.",
+      "fuentes": [
+        {
+          "n": "CalaMillor · quiénes somos",
+          "u": "https://calamillormiami.com/about-calamillor/"
+        },
+        {
+          "n": "CalaMillor · menú",
+          "u": "https://menu.calamillormiami.com/"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-20T07:55:00-05:00",
+      "es": {
+        "etiqueta": "A LA MESA",
+        "titulo": "Mallorca en la 57 Avenida: croquetas, gambas al ajillo y paella en CalaMillor",
+        "bajada": "Panadería artesanal española, mercado y restaurante bajo el mismo techo, en la 4000 SW 57th Ave.",
+        "toca": [
+          "Dirección: 4000 SW 57th Ave, en Bird Road y la 57 Avenida.",
+          "El lunes es noche de paella, desde las 6 PM.",
+          "Sirve desayuno, brunch, almuerzo y cena; su ficha completa está en la app."
+        ],
+        "cuerpo": [
+          "La idea nació en Mallorca en los años 70, con una panadería junto al Mediterráneo, y hoy es un rincón español en la 57 Avenida. CalaMillor se presenta como una [panadería artesanal española](https://calamillormiami.com/about-calamillor/) conocida por sus ensaimadas mallorquinas, con un mercado de productos hechos en España y un restaurante que sirve desde el desayuno hasta la cena.",
+          "En la mesa mandan los clásicos: croquetas de jamón ibérico 5 Jotas, bacalao o chorizo; gambas al ajillo con alioli, y una paella de mariscos con gambas, calamar, almejas, mejillones y pesca del día, según su [menú](https://menu.calamillormiami.com/)."
+        ]
+      },
+      "en": {
+        "etiqueta": "AT THE TABLE",
+        "titulo": "Mallorca on 57th Avenue: croquetas, garlic shrimp and paella at CalaMillor",
+        "bajada": "A Spanish artisan bakery, market and restaurant under one roof at 4000 SW 57th Ave.",
+        "toca": [
+          "Address: 4000 SW 57th Ave, at Bird Road and 57th Avenue.",
+          "Monday is paella night, from 6 p.m.",
+          "Serves breakfast, brunch, lunch and dinner; its full card is in the app."
+        ],
+        "cuerpo": [
+          "The idea was born in Mallorca in the 1970s as a bakery by the Mediterranean, and today it is a Spanish corner on 57th Avenue. CalaMillor describes itself as a [Spanish artisan bakery](https://calamillormiami.com/about-calamillor/) known for its Mallorcan ensaimadas, with a market of goods made in Spain and a restaurant serving breakfast through dinner.",
+          "The classics rule the table: croquetas of 5 Jotas Iberian ham, cod or chorizo; garlic shrimp with aioli; and a seafood paella with shrimp, squid, clams, mussels and catch of the day, according to its [menu](https://menu.calamillormiami.com/)."
+        ]
+      },
+      "publicada": "2026-11-20T07:55:00-05:00",
+      "video": "UH-Rg0I2wjo"
+    },
+    {
       "id": "stiltsville-historia-27-casas-quedan-6",
       "scope": "miami",
       "tema": "historia",
@@ -6979,6 +7035,6 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T07:30:00-05:00",
+  "updated_at": "2026-11-20T07:55:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha."
 }
