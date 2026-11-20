@@ -343,7 +343,8 @@ document.querySelectorAll('.lng button').forEach(function(b){b.onclick=function(
 addEventListener('scroll',function(){var a=document.querySelector('article');if(!a)return;var h=a.offsetHeight-innerHeight,p=h>0?Math.min(1,Math.max(0,scrollY/h)):0;document.getElementById('bar').style.width=(p*100)+'%'},{passive:true});
 document.getElementById('yr').textContent=new Date().getFullYear();
 fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVD=j;renderMas()}).catch(function(){});
-fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){ALL=j.notas||[];N=(j.notas||[]).filter(function(n){return n.id===ID})[0]||null;if(N&&!DEMO&&!(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}})(N))N=null;render()}).catch(function(){render()});
+function VERS(n){try{var v=n&&n.versiones;if(!v)return n;var t=Date.now();v.slice().sort(function(a,b){return Date.parse(a.desde)-Date.parse(b.desde)}).forEach(function(p){var a=Date.parse(p.desde);if(!(a<=t)||(p.hasta&&t>=Date.parse(p.hasta)))return;['es','en'].forEach(function(l){var c=p[l],o=n[l];if(!c||!o)return;for(var k in c)if(k!=='reemplazos')o[k]=c[k];(c.reemplazos||[]).forEach(function(r){var f=function(s){return typeof s==='string'?s.split(r[0]).join(r[1]):s};['titulo','bajada'].forEach(function(k){o[k]=f(o[k])});['toca','cuerpo'].forEach(function(k){if(o[k])o[k]=o[k].map(f)})})});if(!n.actualizada||a>Date.parse(n.actualizada))n.actualizada=p.desde})}catch(e){}return n}
+fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){ALL=j.notas||[];ALL.forEach(VERS);N=(j.notas||[]).filter(function(n){return n.id===ID})[0]||null;if(N&&!DEMO&&!(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}})(N))N=null;render()}).catch(function(){render()});
 })();
 </script>
 </body>

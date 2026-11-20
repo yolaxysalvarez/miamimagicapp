@@ -312,45 +312,124 @@
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-20T16:00:00-05:00",
+      "actualizada": "2026-11-20T16:20:00-05:00",
       "ultima": 4,
       "es": {
         "etiqueta": "COMUNIDAD",
-        "titulo": "Hoy a las 5:30 PM caen paracaidistas sobre Big Pine Key, y a las 7 despegan los drones",
-        "bajada": "Los Cayos celebran esta tarde los 250 años del país en el Big Pine Key Community Park, gratis, de 5 a 8 PM. La fiesta de Islamorada se canceló por el mal tiempo.",
+        "titulo": "Paracaidistas al atardecer y un show de drones: el programa de Big Pine Key para los 250 años del país, el viernes 20",
+        "bajada": "La fiesta de Islamorada se canceló por el mal tiempo; la de Big Pine Key quedó en pie, gratis, el viernes 20 de noviembre de 5 a 8 PM.",
         "toca": [
-          "Hoy viernes, de 5 a 8 PM, en Big Pine Key Community Park, 31009 Atlantis Dr. La entrada es gratis.",
-          "Los paracaidistas saltan a las 5:30 PM y los drones despegan a las 7 PM: llega antes de las 5:30 para no perderte el salto.",
-          "La exposición del 11 de septiembre está abierta hoy hasta las 5:30 PM y mañana sábado de 9 AM a 5:30 PM."
+          "Viernes 20 de noviembre, de 5 a 8 PM, en Big Pine Key Community Park, 31009 Atlantis Dr. La entrada es gratis.",
+          "Los paracaidistas saltan a las 5:30 PM y los drones despegan a las 7 PM: conviene llegar antes de las 5:30 para no perderse el salto.",
+          "La exposición del 11 de septiembre abre el viernes 20 de 2 a 5:30 PM y el sábado 21 de 9 AM a 5:30 PM."
         ],
         "cuerpo": [
-          "Esta tarde, a las 5:30, los Golden Knights saltan en paracaídas sobre Big Pine Key. Es la celebración de los 250 años de Estados Unidos en los Cayos, la única que quedó en pie esta semana: el condado de Monroe canceló el miércoles la de Islamorada por el mal tiempo y mantiene la del Big Pine Key Community Park, de 5 a 8 PM y con entrada gratis, según su [calendario](https://www.monroecounty-fl.gov/calendar.aspx).",
-          "## El programa de hoy",
-          "El salto del equipo de paracaidismo del Ejército es a las 5:30 PM. Peirce August Band pone la música en vivo y, a las 7 PM, un show de drones cierra la noche.",
-          "En el mismo parque está la exposición móvil sobre el 11 de septiembre de la fundación Tunnel to Towers, hoy hasta las 5:30 PM y mañana sábado de 9 AM a 5:30 PM. Mañana por la mañana, además, se corre allí el 5K de la fundación.",
+          "La celebración de los 250 años de Estados Unidos en los Cayos se quedó con una sola fecha esta semana: el viernes 20 de noviembre en Big Pine Key. El condado de Monroe canceló el miércoles la de Islamorada por el mal tiempo y mantuvo la del Big Pine Key Community Park, de 5 a 8 PM y con entrada gratis, según su [calendario](https://www.monroecounty-fl.gov/calendar.aspx).",
+          "## El programa",
+          "A las 5:30 PM saltan sobre el parque los Golden Knights, el equipo de paracaidismo del Ejército. Peirce August Band pone la música en vivo y, a las 7 PM, un show de drones cierra la noche.",
+          "En el mismo parque está la exposición móvil sobre el 11 de septiembre de la fundación Tunnel to Towers, el viernes 20 de 2 a 5:30 PM y el sábado 21 de 9 AM a 5:30 PM. El sábado por la mañana, además, se corre allí el 5K de la fundación.",
           "## El tiempo",
-          "El [pronóstico](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) que el Servicio Nacional de Meteorología en Key West emitió el jueves traía para hoy viento del oeste y el noroeste de 10 a 15 nudos frente a los Cayos Bajos y una ligera probabilidad de chubascos."
+          "El [pronóstico](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) que el Servicio Nacional de Meteorología en Key West emitió el jueves traía para el viernes viento del oeste y el noroeste de 10 a 15 nudos frente a los Cayos Bajos y una ligera probabilidad de chubascos."
         ]
       },
       "en": {
         "etiqueta": "COMMUNITY",
-        "titulo": "Skydivers drop over Big Pine Key today at 5:30 p.m., and the drones go up at 7",
-        "bajada": "The Keys celebrate the nation’s 250th this evening at Big Pine Key Community Park, free, from 5 to 8 p.m. The Islamorada celebration was canceled because of the weather.",
+        "titulo": "Skydivers at sunset and a drone show: Big Pine Key’s program for the nation’s 250th, Friday the 20th",
+        "bajada": "The Islamorada celebration was canceled because of the weather; the one in Big Pine Key stayed on, free, Friday, Nov. 20, from 5 to 8 p.m.",
         "toca": [
-          "Today, Friday, 5 to 8 p.m., at Big Pine Key Community Park, 31009 Atlantis Dr. Admission is free.",
-          "The parachute team jumps at 5:30 p.m. and the drones go up at 7 p.m.: arrive before 5:30 so you don’t miss the jump.",
-          "The 9/11 exhibit is open today until 5:30 p.m. and tomorrow, Saturday, from 9 a.m. to 5:30 p.m."
+          "Friday, Nov. 20, 5 to 8 p.m., at Big Pine Key Community Park, 31009 Atlantis Dr. Admission is free.",
+          "The parachute team jumps at 5:30 p.m. and the drones go up at 7 p.m.: it pays to arrive before 5:30 so as not to miss the jump.",
+          "The 9/11 exhibit is open Friday the 20th from 2 to 5:30 p.m. and Saturday the 21st from 9 a.m. to 5:30 p.m."
         ],
         "cuerpo": [
-          "This evening at 5:30, the Golden Knights parachute over Big Pine Key. It is the Keys’ celebration of the United States’ 250th anniversary, the only one left standing this week: Monroe County canceled the Islamorada event on Wednesday because of the weather and is keeping the one at Big Pine Key Community Park, from 5 to 8 p.m. with free admission, according to its [calendar](https://www.monroecounty-fl.gov/calendar.aspx).",
-          "## Today’s program",
-          "The U.S. Army parachute team jumps at 5:30 p.m. The Peirce August Band plays live and, at 7 p.m., a drone show closes the night.",
-          "The same park hosts the Tunnel to Towers Foundation’s 9/11 mobile exhibit, today until 5:30 p.m. and tomorrow, Saturday, from 9 a.m. to 5:30 p.m. Tomorrow morning, the foundation’s 5K also runs there.",
+          "The Keys’ celebration of the United States’ 250th anniversary came down to one date this week: Friday, Nov. 20, in Big Pine Key. Monroe County canceled the Islamorada event on Wednesday because of the weather and kept the one at Big Pine Key Community Park, from 5 to 8 p.m. with free admission, according to its [calendar](https://www.monroecounty-fl.gov/calendar.aspx).",
+          "## The program",
+          "At 5:30 p.m., the Golden Knights, the U.S. Army parachute team, jump over the park. The Peirce August Band plays live and, at 7 p.m., a drone show closes the night.",
+          "The same park hosts the Tunnel to Towers Foundation’s 9/11 mobile exhibit, Friday the 20th from 2 to 5:30 p.m. and Saturday the 21st from 9 a.m. to 5:30 p.m. On Saturday morning, the foundation’s 5K also runs there.",
           "## The weather",
-          "The [forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) the National Weather Service in Key West issued Thursday called for west to northwest winds of 10 to 15 knots off the Lower Keys today and a slight chance of showers."
+          "The [forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) the National Weather Service in Key West issued Thursday called for west to northwest winds of 10 to 15 knots off the Lower Keys on Friday and a slight chance of showers."
         ]
       },
-      "arriba": 1
+      "arriba": 1,
+      "versiones": [
+        {
+          "desde": "2026-11-20T00:00:00-05:00",
+          "hasta": "2026-11-20T20:00:00-05:00",
+          "es": {
+            "titulo": "Hoy a las 5:30 PM caen paracaidistas sobre Big Pine Key, y a las 7 despegan los drones",
+            "bajada": "Los Cayos celebran esta tarde los 250 años del país en el Big Pine Key Community Park, gratis, de 5 a 8 PM. La fiesta de Islamorada se canceló por el mal tiempo.",
+            "toca": [
+              "Hoy viernes, de 5 a 8 PM, en Big Pine Key Community Park, 31009 Atlantis Dr. La entrada es gratis.",
+              "Los paracaidistas saltan a las 5:30 PM y los drones despegan a las 7 PM: llega antes de las 5:30 para no perderte el salto.",
+              "La exposición del 11 de septiembre está abierta hoy hasta las 5:30 PM y mañana sábado de 9 AM a 5:30 PM."
+            ],
+            "cuerpo": [
+              "Esta tarde, a las 5:30, los Golden Knights saltan en paracaídas sobre Big Pine Key. Es la celebración de los 250 años de Estados Unidos en los Cayos, la única que quedó en pie esta semana: el condado de Monroe canceló el miércoles la de Islamorada por el mal tiempo y mantiene la del Big Pine Key Community Park, de 5 a 8 PM y con entrada gratis, según su [calendario](https://www.monroecounty-fl.gov/calendar.aspx).",
+              "## El programa de hoy",
+              "El salto del equipo de paracaidismo del Ejército es a las 5:30 PM. Peirce August Band pone la música en vivo y, a las 7 PM, un show de drones cierra la noche.",
+              "En el mismo parque está la exposición móvil sobre el 11 de septiembre de la fundación Tunnel to Towers, hoy hasta las 5:30 PM y mañana sábado de 9 AM a 5:30 PM. Mañana por la mañana, además, se corre allí el 5K de la fundación.",
+              "## El tiempo",
+              "El [pronóstico](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) que el Servicio Nacional de Meteorología en Key West emitió el jueves traía para hoy viento del oeste y el noroeste de 10 a 15 nudos frente a los Cayos Bajos y una ligera probabilidad de chubascos."
+            ]
+          },
+          "en": {
+            "titulo": "Skydivers drop over Big Pine Key today at 5:30 p.m., and the drones go up at 7",
+            "bajada": "The Keys celebrate the nation’s 250th this evening at Big Pine Key Community Park, free, from 5 to 8 p.m. The Islamorada celebration was canceled because of the weather.",
+            "toca": [
+              "Today, Friday, 5 to 8 p.m., at Big Pine Key Community Park, 31009 Atlantis Dr. Admission is free.",
+              "The parachute team jumps at 5:30 p.m. and the drones go up at 7 p.m.: arrive before 5:30 so you don’t miss the jump.",
+              "The 9/11 exhibit is open today until 5:30 p.m. and tomorrow, Saturday, from 9 a.m. to 5:30 p.m."
+            ],
+            "cuerpo": [
+              "This evening at 5:30, the Golden Knights parachute over Big Pine Key. It is the Keys’ celebration of the United States’ 250th anniversary, the only one left standing this week: Monroe County canceled the Islamorada event on Wednesday because of the weather and is keeping the one at Big Pine Key Community Park, from 5 to 8 p.m. with free admission, according to its [calendar](https://www.monroecounty-fl.gov/calendar.aspx).",
+              "## Today’s program",
+              "The U.S. Army parachute team jumps at 5:30 p.m. The Peirce August Band plays live and, at 7 p.m., a drone show closes the night.",
+              "The same park hosts the Tunnel to Towers Foundation’s 9/11 mobile exhibit, today until 5:30 p.m. and tomorrow, Saturday, from 9 a.m. to 5:30 p.m. Tomorrow morning, the foundation’s 5K also runs there.",
+              "## The weather",
+              "The [forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) the National Weather Service in Key West issued Thursday called for west to northwest winds of 10 to 15 knots off the Lower Keys today and a slight chance of showers."
+            ]
+          }
+        },
+        {
+          "desde": "2026-11-20T20:00:00-05:00",
+          "es": {
+            "bajada": "Era la única fiesta de los 250 años que quedó en pie en los Cayos esta semana, después de que la de Islamorada se cancelara por el mal tiempo. La exposición del 11 de septiembre sigue el sábado 21.",
+            "toca": [
+              "El programa del viernes 20 de noviembre en Big Pine Key Community Park, 31009 Atlantis Dr., iba de 5 a 8 PM, con entrada gratis.",
+              "La exposición del 11 de septiembre sigue el sábado 21, de 9 AM a 5:30 PM, en el mismo parque.",
+              "El sábado 21 por la mañana se corre allí el 5K de Tunnel to Towers."
+            ],
+            "reemplazos": [
+              [
+                "A las 5:30 PM saltan sobre el parque los Golden Knights, el equipo de paracaidismo del Ejército. Peirce August Band pone la música en vivo y, a las 7 PM, un show de drones cierra la noche.",
+                "El programa tenía a las 5:30 PM el salto de los Golden Knights, el equipo de paracaidismo del Ejército, música en vivo de Peirce August Band y, a las 7 PM, un show de drones para cerrar la noche."
+              ],
+              [
+                "En el mismo parque está la exposición",
+                "En el mismo parque se montó la exposición"
+              ]
+            ]
+          },
+          "en": {
+            "bajada": "It was the only 250th celebration left standing in the Keys this week, after Islamorada’s was canceled because of the weather. The 9/11 exhibit continues Saturday the 21st.",
+            "toca": [
+              "Friday, Nov. 20’s program at Big Pine Key Community Park, 31009 Atlantis Dr., ran from 5 to 8 p.m., with free admission.",
+              "The 9/11 exhibit continues Saturday the 21st, 9 a.m. to 5:30 p.m., in the same park.",
+              "On Saturday morning, the 21st, the Tunnel to Towers 5K runs there."
+            ],
+            "reemplazos": [
+              [
+                "At 5:30 p.m., the Golden Knights, the U.S. Army parachute team, jump over the park. The Peirce August Band plays live and, at 7 p.m., a drone show closes the night.",
+                "The program had the Golden Knights, the U.S. Army parachute team, jumping at 5:30 p.m., live music from the Peirce August Band and, at 7 p.m., a drone show to close the night."
+              ],
+              [
+                "The same park hosts the",
+                "The same park hosted the"
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "voyager-1-dia-luz-miami-1977",
@@ -1165,46 +1244,44 @@
       "desarrollo": false,
       "es": {
         "etiqueta": "EL TIEMPO",
-        "titulo": "El viento afloja en los Cayos antes de lo previsto, pero el viernes vuelve a soplar frente a los Cayos Altos",
-        "bajada": "El mar baja este jueves en el canal Hawk y el Estrecho. Un repunte breve, del oeste y el noroeste, llega el viernes; el fin de semana queda en calma.",
+        "titulo": "El viento aflojó en los Cayos, y el pronóstico deja el fin de semana del 21 y 22 en calma",
+        "bajada": "El mar bajó el jueves 19 en el canal Hawk y el Estrecho. El Servicio Nacional de Meteorología preveía un repunte breve el viernes 20 frente a los Cayos Altos y unos 10 nudos o menos el sábado y el domingo.",
         "toca": [
-          "El jueves por la tarde y el fin de semana son las mejores ventanas para salir en bote.",
-          "Frente a los Cayos Altos, el viernes vuelve el mar picado: de Cayo Largo a Islamorada conviene esperar al sábado.",
-          "El sábado por la mañana se corre el 5K Tunnel to Towers en Big Pine Key."
+          "En el pronóstico del jueves 19, el sábado 21 y el domingo 22 eran las mejores ventanas para salir en bote.",
+          "El pronóstico marino cambia cada día: antes de soltar amarras, mira [el de hoy](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY).",
+          "El sábado 21 por la mañana se corre el 5K Tunnel to Towers en Big Pine Key."
         ],
         "cuerpo": [
-          "La brisa cede este jueves en los Cayos, un día antes de lo que se esperaba a principios de semana. En el [pronóstico marino](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) de las 4:24 AM, el Servicio Nacional de Meteorología en Key West indica que el viento sigue aflojando durante la mañana a medida que se aleja el sistema que lo trajo, aunque una baja presión que se forma frente a la costa este de Florida puede provocar otro repunte breve entre el viernes y el sábado, sobre todo frente a los Cayos Altos.",
-          "## El mar, día a día",
-          "Jueves: viento del este de 10 a 15 nudos en el canal Hawk, que baja a unos 5. Las olas pasan de 2 a 4 pies a 1 a 3. En el Estrecho, de 3 a 5 pies a 2 a 3. La bahía de Florida queda en calma por la tarde.",
-          "Viernes: el viento gira al oeste y el noroeste y sube a unos 15 nudos; frente a los Cayos Altos, de 15 a 20 (hasta 23 millas por hora). En el canal Hawk, olas de 1 a 2 pies, y de 2 a 3 frente a los Cayos Altos, con aguas picadas cerca de la costa. En el Estrecho, hasta 3 a 4 pies y alguna de 5 en esa misma zona.",
-          "Sábado y domingo: unos 10 nudos el sábado y de 5 a 10 el domingo, con olas de 1 a 2 pies en el canal Hawk. Hay una ligera probabilidad de chubascos todos los días.",
+          "La brisa cedió el jueves 19 de noviembre en los Cayos, un día antes de lo que se esperaba a principios de semana. En el [pronóstico marino](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) de las 4:24 AM de ese jueves, el Servicio Nacional de Meteorología en Key West indicaba que el viento seguiría aflojando a medida que se alejaba el sistema que lo trajo, aunque una baja presión frente a la costa este de Florida podía provocar otro repunte breve entre el viernes 20 y el sábado 21, sobre todo frente a los Cayos Altos.",
+          "## El mar, día a día, según ese pronóstico",
+          "Jueves 19: viento del este de 10 a 15 nudos en el canal Hawk, bajando a unos 5. Olas de 2 a 4 pies que pasaban a 1 a 3. En el Estrecho, de 3 a 5 pies a 2 a 3.",
+          "Viernes 20: viento del oeste y el noroeste de unos 15 nudos; frente a los Cayos Altos, de 15 a 20 (hasta 23 millas por hora). En el canal Hawk, olas de 1 a 2 pies, y de 2 a 3 frente a los Cayos Altos, con aguas picadas cerca de la costa. En el Estrecho, hasta 3 a 4 pies y alguna de 5 en esa misma zona.",
+          "Sábado 21 y domingo 22: unos 10 nudos el sábado y de 5 a 10 el domingo, con olas de 1 a 2 pies en el canal Hawk y una ligera probabilidad de chubascos.",
           "## Lo que dejó la semana",
-          "El pronóstico del domingo anticipaba de 20 a 25 nudos y olas de 7 a 9 pies en el Estrecho, con algunas de 11, entre el martes por la noche y el jueves. En tierra, el condado canceló el miércoles su celebración America 250 en Islamorada; la de Big Pine Key sigue en pie para el viernes de 5 a 8 PM, y el [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) de Mote abre esa misma tarde en Islamorada."
+          "El pronóstico del domingo 15 anticipaba de 20 a 25 nudos y olas de 7 a 9 pies en el Estrecho, con algunas de 11, entre el martes por la noche y el jueves. En tierra, el condado canceló el miércoles 18 su celebración America 250 en Islamorada y mantuvo la de [Big Pine Key](https://www.miamimagicapp.com/noticias/big-pine-key-america-250-golden-knights-drones-20-noviembre) para el viernes 20; el [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) de Mote estaba anunciado para esa misma tarde en Islamorada."
         ]
       },
       "en": {
         "etiqueta": "WEATHER",
-        "titulo": "The wind eases in the Keys sooner than forecast, but Friday brings another surge off the Upper Keys",
-        "bajada": "Seas come down this Thursday in Hawk Channel and the Straits. A brief surge, from the west and northwest, arrives Friday; the weekend stays calm.",
+        "titulo": "The wind eased in the Keys, and the forecast leaves the weekend of the 21st and 22nd calm",
+        "bajada": "Seas came down Thursday the 19th in Hawk Channel and the Straits. The National Weather Service expected a brief surge Friday the 20th off the Upper Keys and about 10 knots or less Saturday and Sunday.",
         "toca": [
-          "Thursday afternoon and the weekend are the best windows to take the boat out.",
-          "Off the Upper Keys, choppy seas return Friday: from Key Largo to Islamorada, Saturday is the better bet.",
-          "The Tunnel to Towers 5K runs Saturday morning in Big Pine Key."
+          "In Thursday the 19th’s forecast, Saturday the 21st and Sunday the 22nd were the best windows to take the boat out.",
+          "The marine forecast changes daily: before casting off, check [today’s](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY).",
+          "The Tunnel to Towers 5K runs Saturday morning, the 21st, in Big Pine Key."
         ],
         "cuerpo": [
-          "The breeze is letting up in the Keys this Thursday, a day earlier than expected at the start of the week. In its 4:24 a.m. [marine forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY), the National Weather Service in Key West says winds keep slackening through the morning as the system that brought them moves away, though a low developing off Florida’s east coast may cause another brief surge Friday through Saturday, especially off the Upper Keys.",
-          "## The sea, day by day",
-          "Thursday: east winds of 10 to 15 knots in Hawk Channel, dropping to about 5. Seas go from 2 to 4 feet down to 1 to 3. In the Straits, from 3 to 5 feet to 2 to 3. Florida Bay turns smooth by the afternoon.",
-          "Friday: winds shift to the west and northwest and rise to about 15 knots; off the Upper Keys, 15 to 20 (up to 23 mph). In Hawk Channel, seas of 1 to 2 feet, and 2 to 3 off the Upper Keys, with choppy nearshore waters. In the Straits, up to 3 to 4 feet and occasionally 5 in that same area.",
-          "Saturday and Sunday: about 10 knots Saturday and 5 to 10 Sunday, with seas of 1 to 2 feet in Hawk Channel. There is a slight chance of showers every day.",
+          "The breeze let up in the Keys on Thursday, Nov. 19, a day earlier than expected at the start of the week. In its 4:24 a.m. [marine forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) that Thursday, the National Weather Service in Key West said winds would keep slackening as the system that brought them moved away, though a low off Florida’s east coast could cause another brief surge Friday the 20th through Saturday the 21st, especially off the Upper Keys.",
+          "## The sea, day by day, in that forecast",
+          "Thursday the 19th: east winds of 10 to 15 knots in Hawk Channel, dropping to about 5. Seas of 2 to 4 feet coming down to 1 to 3. In the Straits, from 3 to 5 feet to 2 to 3.",
+          "Friday the 20th: west to northwest winds of about 15 knots; off the Upper Keys, 15 to 20 (up to 23 mph). In Hawk Channel, seas of 1 to 2 feet, and 2 to 3 off the Upper Keys, with choppy nearshore waters. In the Straits, up to 3 to 4 feet and occasionally 5 in that same area.",
+          "Saturday the 21st and Sunday the 22nd: about 10 knots Saturday and 5 to 10 Sunday, with seas of 1 to 2 feet in Hawk Channel and a slight chance of showers.",
           "## What the week left behind",
-          "Sunday’s forecast called for 20 to 25 knots and seas of 7 to 9 feet in the Straits, occasionally 11, from Tuesday night through Thursday. On land, the county canceled its America 250 celebration in Islamorada on Wednesday; the one in Big Pine Key is still on for Friday from 5 to 8 p.m., and Mote’s [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) opens that same evening in Islamorada."
+          "The forecast from Sunday the 15th called for 20 to 25 knots and seas of 7 to 9 feet in the Straits, occasionally 11, from Tuesday night through Thursday. On land, the county canceled its America 250 celebration in Islamorada on Wednesday the 18th and kept the one in [Big Pine Key](https://www.miamimagicapp.com/news/big-pine-key-america-250-golden-knights-drones-20-noviembre) for Friday the 20th; Mote’s [Reef Revival Fest](https://mote.org/event/motes-4th-annual-reef-revival-fest-2026/) was announced for that same evening in Islamorada."
         ]
       },
-      "actualizada": "2026-11-19T08:15:00-05:00",
-      "ultima": 19,
-      "tambien": 1,
-      "arriba": 3
+      "actualizada": "2026-11-20T16:20:00-05:00",
+      "ultima": 19
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -1423,60 +1500,116 @@
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-19T08:00:00-05:00",
+      "actualizada": "2026-11-20T16:20:00-05:00",
       "es": {
         "etiqueta": "VICE CITY",
-        "titulo": "Medianoche en Vice City: GTA VI llega a Miami la noche en que la lluvia dejó a la ciudad sin clases",
-        "bajada": "El juego ambientado en Miami ya está a la venta, todavía sin cifra oficial de ventas. Uno de cada cinco asalariados del país pensaba pedir el día, según una encuesta, y aquí las escuelas ya estaban cerradas por el mal tiempo.",
+        "titulo": "GTA VI ya se juega en Miami: salió la noche en que la lluvia dejó a la ciudad sin clases",
+        "bajada": "El juego ambientado en Miami está a la venta desde el jueves 19 de noviembre, todavía sin cifra oficial de ventas. Uno de cada cinco asalariados del país pensaba pedir el día, según una encuesta, y aquí las escuelas ya estaban cerradas por el mal tiempo.",
         "toca": [
           "Ya está a la venta, solo para PS5 y Xbox Series X|S: $79.99 la edición estándar.",
           "Está clasificado M, para mayores de 17 años, como marca la caja.",
           "La caja trae un código de descarga, no un disco: hace falta internet para instalarlo.",
-          "E11EVEN es NINE1NINE hasta el 6 de diciembre, y Club Space será The Vault del 20 al 22. Las dos están en la app."
+          "E11EVEN es NINE1NINE hasta el 6 de diciembre, y Club Space es The Vault del viernes 20 al domingo 22 de noviembre. Las dos están en la app."
         ],
         "cuerpo": [
-          "Grand Theft Auto VI ya se juega en Miami. Rockstar Games [lo dio por disponible](https://www.businesswire.com/news/home/20261119830927/en/) a las 7:00 AM de este jueves, sin cifras de ventas todavía: el comunicado solo recuerda que la serie ronda los 480 millones de copias, casi 235 millones de ellas de GTA V. La única cuenta que circula es una estimación de la firma de análisis Sensor Tower, [más de $1,650 millones en preventas](https://finance.yahoo.com/technology/article/grand-theft-auto-vi-could-be-the-biggest-entertainment-launch-in-history-preorders-top-165-billion-143427744.html), citada por Yahoo Finance.",
-          "El juego [se desbloqueó](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s) a las 12:00 AM, hora local, para PlayStation 5 y Xbox Series X|S. Ambientado en una versión de Miami llamada Vice City, encontró a la ciudad en una noche rara: con [vigilancia de inundaciones](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre) y con las escuelas públicas de Miami-Dade y Broward cerradas el jueves por la lluvia. Una cosa no tiene que ver con la otra, pero el calendario las juntó.",
+          "Grand Theft Auto VI ya se juega en Miami. Rockstar Games [lo dio por disponible](https://www.businesswire.com/news/home/20261119830927/en/) a las 7:00 AM del jueves 19 de noviembre, sin cifras de ventas: el comunicado solo recuerda que la serie ronda los 480 millones de copias, casi 235 millones de ellas de GTA V. La cuenta que circulaba antes del estreno era una estimación de la firma de análisis Sensor Tower, [más de $1,650 millones en preventas](https://finance.yahoo.com/technology/article/grand-theft-auto-vi-could-be-the-biggest-entertainment-launch-in-history-preorders-top-165-billion-143427744.html), citada por Yahoo Finance.",
+          "El juego [se desbloqueó](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s) a las 12:00 AM, hora local, para PlayStation 5 y Xbox Series X|S. Ambientado en una versión de Miami llamada Vice City, encontró a la ciudad en una noche rara: con [vigilancia de inundaciones](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre) y con las escuelas públicas de Miami-Dade y Broward cerradas ese jueves por la lluvia. Una cosa no tiene que ver con la otra, pero el calendario las juntó.",
           "## ¿Y el trabajo?",
-          "Casi uno de cada cinco asalariados del país, el 18%, pensaba tomarse el día del estreno, y entre los de la generación Z, el 32%. Lo midió [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), una empresa de programas de recursos humanos, que además registró un 13% más de solicitudes de días libres para este jueves que en fechas equivalentes de 2024 y 2025. Son intenciones, no ausencias contadas. Nicholas Bloom, economista de la Universidad de Stanford, [le dijo a PBS](https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6) que no cree en esas cifras sin una encuesta representativa: calcula que quizás el 5% de quienes trabajan a tiempo completo juega Grand Theft Auto, y que solo una parte pediría el día.",
+          "Casi uno de cada cinco asalariados del país, el 18%, pensaba tomarse el día del estreno, y entre los de la generación Z, el 32%. Lo midió [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), una empresa de programas de recursos humanos, que además registró un 13% más de solicitudes de días libres para ese jueves que en fechas equivalentes de 2024 y 2025. Son intenciones, no ausencias contadas. Nicholas Bloom, economista de la Universidad de Stanford, [le dijo a PBS](https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6) que no cree en esas cifras sin una encuesta representativa: calcula que quizás el 5% de quienes trabajan a tiempo completo juega Grand Theft Auto, y que solo una parte pediría el día.",
           "## La víspera, en la cancha",
           "Horas antes del estreno, el HEAT jugó como Vice City contra los Bucks en el Kaseya Center, con una [cancha y un uniforme](https://www.nba.com/heat/vicecity) hechos para esa única noche. Miami ganó [137-130](https://www.nba.com/game/mil-vs-mia-0022600260/box-score) después de ir 30 puntos arriba. Giannis Antetokounmpo, en su primer partido contra su exequipo, anotó 27 puntos, con 14 rebotes y 9 asistencias.",
           "## Miami, con otro nombre",
           "En el juego, South Beach es Ocean Beach, la Pequeña Habana es Little Cuba y el Kaseya Center es el Sahara Arena. El Hotel Victor de Ocean Drive aparece como Hotel Dixon, y el Venetian Causeway y las torres de Brickell salen casi idénticos, según el [mapa que armó Miami New Times](https://www.miaminewtimes.com/arts-culture/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001/). Los Cayos también están, como Leonida Keys.",
           "## La ciudad ya juega",
-          "Dos discotecas tomaron el nombre de sus gemelas del juego. E11EVEN es [NINE1NINE](https://www.11miami.com/blog/nine1nine) desde el 6 de noviembre y hasta el 6 de diciembre, con fiesta de lanzamiento el viernes 20. Club Space se convierte en The Vault del 20 al 22, según [Mixmag](https://mixmag.net/read/miami-club-space-transform-gta-vi-nightclub-games-launch-news).",
+          "Dos discotecas tomaron el nombre de sus gemelas del juego. E11EVEN es [NINE1NINE](https://www.11miami.com/blog/nine1nine) desde el 6 de noviembre y hasta el 6 de diciembre, con fiesta de lanzamiento el viernes 20 de noviembre. Club Space se convierte en The Vault del viernes 20 al domingo 22, según [Mixmag](https://mixmag.net/read/miami-club-space-transform-gta-vi-nightclub-games-launch-news).",
           "## La caja y el póster",
-          "Las preventas seguían «llegando a niveles sin precedentes», dijo el 9 de noviembre Strauss Zelnick, presidente de [Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), la dueña de Rockstar Games, sin dar un número. La caja física [trae un código](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions), no un disco, e incluye un póster. Las compras hechas antes del 20 de noviembre traen de regalo el Vintage Vice City Pack."
+          "Las preventas seguían «llegando a niveles sin precedentes», dijo el 9 de noviembre Strauss Zelnick, presidente de [Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), la dueña de Rockstar Games, sin dar un número. La caja física [trae un código](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions), no un disco, e incluye un póster. Las compras hechas antes del 20 de noviembre traían de regalo el Vintage Vice City Pack."
         ]
       },
       "en": {
         "etiqueta": "VICE CITY",
-        "titulo": "Midnight in Vice City: GTA VI reaches Miami on the night the rain canceled school",
-        "bajada": "The game set in Miami is on sale, with no official sales figure yet. One in five salaried U.S. workers planned to take the day off, a survey found, and here the schools were already closed because of the weather.",
+        "titulo": "GTA VI is being played in Miami: it came out the night the rain canceled school",
+        "bajada": "The game set in Miami has been on sale since Thursday, Nov. 19, with no official sales figure yet. One in five salaried U.S. workers planned to take the day off, a survey found, and here the schools were already closed because of the weather.",
         "toca": [
           "It is on sale now, on PS5 and Xbox Series X|S only: $79.99 for the standard edition.",
           "It is rated M, for ages 17 and up, as the box shows.",
           "The box holds a download code, not a disc: you need internet to install it.",
-          "E11EVEN is NINE1NINE through Dec. 6, and Club Space becomes The Vault Nov. 20–22. Both are in the app."
+          "E11EVEN is NINE1NINE through Dec. 6, and Club Space is The Vault Friday, Nov. 20, through Sunday the 22nd. Both are in the app."
         ],
         "cuerpo": [
-          "Grand Theft Auto VI is being played in Miami. Rockstar Games [declared it available](https://www.businesswire.com/news/home/20261119830927/en/) at 7:00 a.m. this Thursday, with no sales figures yet: the release only notes that the series stands at nearly 480 million copies, almost 235 million of them GTA V. The one number in circulation is an estimate from analytics firm Sensor Tower, [more than $1.65 billion in pre-orders](https://finance.yahoo.com/technology/article/grand-theft-auto-vi-could-be-the-biggest-entertainment-launch-in-history-preorders-top-165-billion-143427744.html), cited by Yahoo Finance.",
+          "Grand Theft Auto VI is being played in Miami. Rockstar Games [declared it available](https://www.businesswire.com/news/home/20261119830927/en/) at 7:00 a.m. on Thursday, Nov. 19, with no sales figures: the release only notes that the series stands at nearly 480 million copies, almost 235 million of them GTA V. The number circulating before launch was an estimate from analytics firm Sensor Tower, [more than $1.65 billion in pre-orders](https://finance.yahoo.com/technology/article/grand-theft-auto-vi-could-be-the-biggest-entertainment-launch-in-history-preorders-top-165-billion-143427744.html), cited by Yahoo Finance.",
           "The game [unlocked](https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s) at 12:00 a.m. local time on PlayStation 5 and Xbox Series X|S. Set in a version of Miami called Vice City, it found the city on an odd night: under a [flood watch](https://www.miamimagicapp.com/news/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre), with Miami-Dade and Broward public schools closed Thursday because of the rain. One has nothing to do with the other, but the calendar put them together.",
           "## What about work?",
-          "Nearly one in five salaried U.S. workers, 18%, planned to take launch day off, and among Gen Z workers, 32%. That comes from [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), an HR software company, which also logged 13% more time-off requests for this Thursday than on equivalent days in 2024 and 2025. Those are intentions, not counted absences. Nicholas Bloom, an economist at Stanford University, [told PBS](https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6) he does not believe those figures without a representative survey: he estimates that perhaps 5% of full-time workers play Grand Theft Auto, and that only a fraction would take the day off.",
+          "Nearly one in five salaried U.S. workers, 18%, planned to take launch day off, and among Gen Z workers, 32%. That comes from [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), an HR software company, which also logged 13% more time-off requests for that Thursday than on equivalent days in 2024 and 2025. Those are intentions, not counted absences. Nicholas Bloom, an economist at Stanford University, [told PBS](https://www.pbs.org/newshour/nation/will-people-skip-work-and-hurt-the-u-s-economy-to-play-grand-theft-auto-6) he does not believe those figures without a representative survey: he estimates that perhaps 5% of full-time workers play Grand Theft Auto, and that only a fraction would take the day off.",
           "## Launch eve, on the court",
           "Hours before the release, the HEAT played as Vice City against the Bucks at Kaseya Center, on a [court and in a uniform](https://www.nba.com/heat/vicecity) made for that one night. Miami won [137-130](https://www.nba.com/game/mil-vs-mia-0022600260/box-score) after leading by 30. Giannis Antetokounmpo, in his first game against his former team, scored 27 points, with 14 rebounds and 9 assists.",
           "## Miami, under another name",
           "In the game, South Beach is Ocean Beach, Little Havana is Little Cuba and Kaseya Center is the Sahara Arena. Ocean Drive’s Hotel Victor shows up as Hotel Dixon, and the Venetian Causeway and Brickell’s towers look almost identical, according to [Miami New Times’ map](https://www.miaminewtimes.com/arts-culture/interactive-map-20-miami-landmarks-in-gta-6-and-where-to-find-them-22206001/). The Keys are in too, as the Leonida Keys.",
           "## The city is already playing",
-          "Two nightclubs took the names of their in-game twins. E11EVEN has been [NINE1NINE](https://www.11miami.com/blog/nine1nine) since Nov. 6 and will be through Dec. 6, with a launch party Friday the 20th. Club Space becomes The Vault Nov. 20–22, according to [Mixmag](https://mixmag.net/read/miami-club-space-transform-gta-vi-nightclub-games-launch-news).",
+          "Two nightclubs took the names of their in-game twins. E11EVEN has been [NINE1NINE](https://www.11miami.com/blog/nine1nine) since Nov. 6 and will be through Dec. 6, with a launch party Friday, Nov. 20. Club Space becomes The Vault Friday the 20th through Sunday the 22nd, according to [Mixmag](https://mixmag.net/read/miami-club-space-transform-gta-vi-nightclub-games-launch-news).",
           "## The box and the poster",
           "Pre-orders were “continuing to reach unprecedented levels,” Strauss Zelnick, chairman of [Take-Two](https://www.sec.gov/Archives/edgar/data/0000946581/000162828026072175/ttwo2q27earningsrelease.htm), Rockstar Games’ parent company, said on Nov. 9, without giving a number. The physical box [holds a code](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions), not a disc, and includes a poster. Purchases made before Nov. 20 include the Vintage Vice City Pack."
         ]
       },
       "foto_pos": "50% 34%",
       "ultima": 6,
-      "arriba": 2
+      "arriba": 2,
+      "versiones": [
+        {
+          "desde": "2026-11-23T05:00:00-05:00",
+          "es": {
+            "reemplazos": [
+              [
+                "Club Space es The Vault del viernes 20 al domingo 22 de noviembre.",
+                "Club Space fue The Vault del 20 al 22 de noviembre."
+              ],
+              [
+                "Club Space se convierte en The Vault del viernes 20 al domingo 22",
+                "Club Space se convirtió en The Vault del viernes 20 al domingo 22 de noviembre"
+              ]
+            ]
+          },
+          "en": {
+            "reemplazos": [
+              [
+                "Club Space is The Vault Friday, Nov. 20, through Sunday the 22nd.",
+                "Club Space was The Vault Nov. 20–22."
+              ],
+              [
+                "Club Space becomes The Vault Friday the 20th through Sunday the 22nd",
+                "Club Space became The Vault Friday, Nov. 20, through Sunday the 22nd"
+              ]
+            ]
+          }
+        },
+        {
+          "desde": "2026-12-07T05:00:00-05:00",
+          "es": {
+            "reemplazos": [
+              [
+                "E11EVEN es NINE1NINE hasta el 6 de diciembre",
+                "E11EVEN fue NINE1NINE hasta el 6 de diciembre"
+              ],
+              [
+                "E11EVEN es [NINE1NINE](https://www.11miami.com/blog/nine1nine) desde el 6 de noviembre y hasta el 6 de diciembre",
+                "E11EVEN fue [NINE1NINE](https://www.11miami.com/blog/nine1nine) del 6 de noviembre al 6 de diciembre"
+              ]
+            ]
+          },
+          "en": {
+            "reemplazos": [
+              [
+                "E11EVEN is NINE1NINE through Dec. 6",
+                "E11EVEN was NINE1NINE through Dec. 6"
+              ],
+              [
+                "E11EVEN has been [NINE1NINE](https://www.11miami.com/blog/nine1nine) since Nov. 6 and will be through Dec. 6",
+                "E11EVEN was [NINE1NINE](https://www.11miami.com/blog/nine1nine) from Nov. 6 through Dec. 6"
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -2255,7 +2388,7 @@
           "u": "https://www.flsenate.gov/Laws/Statutes/2026/0197.162"
         }
       ],
-      "tambien": 2
+      "tambien": 1
     },
     {
       "id": "frente-frio-miami-noviembre",
@@ -2645,15 +2778,15 @@
       "foto_pie": "Un robot de Serve Robotics espera para cruzar cerca de Lincoln Road, en Miami Beach.",
       "foto_pie_en": "A Serve Robotics robot waits to cross near Lincoln Road in Miami Beach.",
       "es": {
-        "titulo": "Los robots de delivery ya ruedan por las aceras de Miami-Dade, y el condado está por ponerles reglas",
-        "bajada": "Son de Serve y Coco, ya pasan de cien y dividen opiniones. La Comisión vota el martes 17 de noviembre una ordenanza con límites de velocidad, permisos, seguro y multas.",
+        "titulo": "Los robots de delivery ya ruedan por las aceras de Miami-Dade, y el condado llevó sus reglas a votación final",
+        "bajada": "Son de Serve y Coco, ya pasan de cien y dividen opiniones. La Comisión tenía en agenda para el martes 17 de noviembre la votación final de una ordenanza con límites de velocidad, permisos, seguro y multas.",
         "toca": [
-          "La votación final es el martes 17 de noviembre, en la Comisión del Condado. Hasta entonces la ordenanza no está en vigor.",
+          "La votación final estaba en la agenda de la Comisión del Condado del martes 17 de noviembre. El resultado y la fecha en que entra en vigor constan en el [registro legislativo del condado](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026).",
           "La ordenanza le da siempre el paso al peatón: el robot debe cederlo en todo momento.",
-          "El texto completo está en el [registro legislativo del condado](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026)."
+          "El texto completo de la ordenanza está en ese mismo registro."
         ],
         "cuerpo": [
-          "Esperan el semáforo en rojo como un peatón más, con su banderita en alto, y ya son parte del paisaje de Brickell, Wynwood y South Beach. A los robots de reparto les llegan ahora las reglas: la Comisión de Miami-Dade tiene en agenda para el martes 17 de noviembre la votación final de la [ordenanza](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) que los regula. El propio texto reconoce que cada vez hay más en las aceras y cruces peatonales del condado.",
+          "Esperan el semáforo en rojo como un peatón más, con su banderita en alto, y ya son parte del paisaje de Brickell, Wynwood y South Beach. A los robots de reparto les llegaron las reglas: la Comisión de Miami-Dade tenía en agenda para el martes 17 de noviembre la votación final de la [ordenanza](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) que los regula. El propio texto reconoce que cada vez hay más en las aceras y cruces peatonales del condado.",
           "## ¿De quién son?",
           "De dos empresas de California, sobre todo. Serve Robotics [anunció en febrero de 2025](https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-expands-miami-metro-offering-autonomous-delivery) su llegada a Brickell y Miami Beach, con pedidos de Uber Eats y de locales como Shake Shack y Mister O1. Coco Robotics [arrancó en abril de ese año](https://www.nasdaq.com/press-release/coco-robotics-expands-uber-eats-partnership-miami-2025-04-02) en Wynwood y el downtown, también con Uber Eats, y en noviembre [sumó a DoorDash](https://about.doordash.com/en-us/news/doordash-coco-expand-partnership).",
           "## ¿Cómo los ha recibido la gente?",
@@ -2672,15 +2805,15 @@
         ]
       },
       "en": {
-        "titulo": "Delivery robots already roll down Miami-Dade sidewalks, and the county is about to set rules",
-        "bajada": "They belong to Serve and Coco, there are already more than a hundred and opinions are split. The Commission votes Tuesday, Nov. 17, on an ordinance with speed limits, permits, insurance and fines.",
+        "titulo": "Delivery robots already roll down Miami-Dade sidewalks, and the county took their rules to a final vote",
+        "bajada": "They belong to Serve and Coco, there are already more than a hundred and opinions are split. The Commission had the final vote on an ordinance with speed limits, permits, insurance and fines on its agenda for Tuesday, Nov. 17.",
         "toca": [
-          "The final vote is Tuesday, Nov. 17, at the County Commission. Until then the ordinance is not in effect.",
+          "The final vote was on the County Commission’s agenda for Tuesday, Nov. 17. The outcome and the effective date are in the [county’s legislative record](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026).",
           "The ordinance always gives pedestrians the right of way: the robot must yield at all times.",
-          "The full text is in the [county's legislative record](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026)."
+          "The full text of the ordinance is in that same record."
         ],
         "cuerpo": [
-          "They wait at the red light like any other pedestrian, little flag held high, and they are already part of the scenery in Brickell, Wynwood and South Beach. Now the rules are catching up with delivery robots: the Miami-Dade Commission has the final vote on the [ordinance](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) that regulates them on its agenda for Tuesday, Nov. 17. The text itself acknowledges that more and more of them are on the county's sidewalks and crosswalks.",
+          "They wait at the red light like any other pedestrian, little flag held high, and they are already part of the scenery in Brickell, Wynwood and South Beach. The rules caught up with delivery robots: the Miami-Dade Commission had the final vote on the [ordinance](https://www.miamidade.gov/govaction/matter.asp?matter=261932&file=true&fileAnalysis=false&yearFolder=Y2026) that regulates them on its agenda for Tuesday, Nov. 17. The text itself acknowledges that more and more of them are on the county's sidewalks and crosswalks.",
           "## Who owns them?",
           "Two California companies, mostly. Serve Robotics [announced in February 2025](https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-expands-miami-metro-offering-autonomous-delivery) its arrival in Brickell and Miami Beach, with Uber Eats orders and restaurants such as Shake Shack and Mister O1. Coco Robotics [started that April](https://www.nasdaq.com/press-release/coco-robotics-expands-uber-eats-partnership-miami-2025-04-02) in Wynwood and downtown, also with Uber Eats, and in November [added DoorDash](https://about.doordash.com/en-us/news/doordash-coco-expand-partnership).",
           "## How have people taken to them?",
@@ -2728,7 +2861,7 @@
           "u": "https://refreshmiami.com/news/look-down-and-all-around-more-delivery-robots-are-on-their-way/"
         }
       ],
-      "tambien": 3
+      "actualizada": "2026-11-20T16:20:00-05:00"
     },
     {
       "id": "obamacare-2027-florida",
@@ -4825,7 +4958,8 @@
         }
       ],
       "foto_mm": false,
-      "actualizada": "2026-11-20T15:55:00-05:00"
+      "actualizada": "2026-11-20T15:55:00-05:00",
+      "tambien": 2
     },
     {
       "id": "larry-penny-thompson-park",
@@ -7140,6 +7274,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T16:00:00-05:00",
-  "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha."
+  "updated_at": "2026-11-20T16:20:00-05:00",
+  "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha.",
+  "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }

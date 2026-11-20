@@ -1155,6 +1155,8 @@ function unwait(){if(!WAIT)return;requestAnimationFrame(function(){document.docu
 function HOME(){return !SEC()&&ST.scope==='miami'&&ST.tema==='todo'&&!ST.all}
 function isCC(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle}
 if(SEC())ST.scope='miami';
+/* Notas con fecha: cambian solas de versión según la hora. Ver _versiones en noticias.json */
+function VERS(n){try{var v=n&&n.versiones;if(!v)return n;var t=Date.now();v.slice().sort(function(a,b){return Date.parse(a.desde)-Date.parse(b.desde)}).forEach(function(p){var a=Date.parse(p.desde);if(!(a<=t)||(p.hasta&&t>=Date.parse(p.hasta)))return;['es','en'].forEach(function(l){var c=p[l],o=n[l];if(!c||!o)return;for(var k in c)if(k!=='reemplazos')o[k]=c[k];(c.reemplazos||[]).forEach(function(r){var f=function(s){return typeof s==='string'?s.split(r[0]).join(r[1]):s};['titulo','bajada'].forEach(function(k){o[k]=f(o[k])});['toca','cuerpo'].forEach(function(k){if(o[k])o[k]=o[k].map(f)})})});if(!n.actualizada||a>Date.parse(n.actualizada))n.actualizada=p.desde})}catch(e){}return n}
 var DATA={notas:[],videos:[],cifras:[],ultima_hora:null}, EVS=[];
 
 var T={
@@ -1664,7 +1666,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 
 /* ── cargar ── */
 render();
-fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}});render();unwait()}).catch(function(){unwait()});
+fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(DATA.notas)DATA.notas.forEach(VERS);if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}});render();unwait()}).catch(function(){unwait()});
 fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg();try{if(AGO){var a0=document.getElementById('ag');if(!a0||a0.style.display==='none')document.documentElement.classList.remove('ag-only');window.scrollTo(0,0)}}catch(x){}try{var q=new URLSearchParams(location.search).get('ev');if(q){var ag=document.getElementById('ag');if(ag)ag.scrollIntoView();evOpen(q,false)}}catch(x){}}).catch(function(){});
 loadWx();
 setInterval(function(){if(!document.hidden){try{loadWx()}catch(e){}}},18e5); /* el cintillo se refresca cada 30 minutos con la página abierta */

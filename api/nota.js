@@ -29,6 +29,7 @@ export default async function handler(req, res) {
     if (dr.ok) {
       const d = await dr.json();
       n = (d.notas || []).find(x => x.id === id) || null;
+      if (n) vers(n); // versión que toca a esta hora
       if (n && n.fecha && n.fecha > hoyNY()) n = null; // nada de adelantar notas programadas
     }
     if (n) {
@@ -115,3 +116,5 @@ export default async function handler(req, res) {
     res.end();
   }
 }
+
+function vers(n){try{var v=n&&n.versiones;if(!v)return n;var t=Date.now();v.slice().sort(function(a,b){return Date.parse(a.desde)-Date.parse(b.desde)}).forEach(function(p){var a=Date.parse(p.desde);if(!(a<=t)||(p.hasta&&t>=Date.parse(p.hasta)))return;['es','en'].forEach(function(l){var c=p[l],o=n[l];if(!c||!o)return;for(var k in c)if(k!=='reemplazos')o[k]=c[k];(c.reemplazos||[]).forEach(function(r){var f=function(s){return typeof s==='string'?s.split(r[0]).join(r[1]):s};['titulo','bajada'].forEach(function(k){o[k]=f(o[k])});['toca','cuerpo'].forEach(function(k){if(o[k])o[k]=o[k].map(f)})})});if(!n.actualizada||a>Date.parse(n.actualizada))n.actualizada=p.desde})}catch(e){}return n}

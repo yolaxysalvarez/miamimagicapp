@@ -22,6 +22,7 @@ export default async function handler(req, res) {
   try {
     const r = await fetch(base + '/noticias.json');
     if (r.ok) notas = ((await r.json()).notas || []);
+    notas.forEach(vers);
   } catch (e) { /* mapa vacío antes que un error */ }
 
   const hoy = hoyNY(0);
@@ -109,3 +110,5 @@ export default async function handler(req, res) {
   res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=900');
   res.status(200).send(out.join('\n'));
 }
+
+function vers(n){try{var v=n&&n.versiones;if(!v)return n;var t=Date.now();v.slice().sort(function(a,b){return Date.parse(a.desde)-Date.parse(b.desde)}).forEach(function(p){var a=Date.parse(p.desde);if(!(a<=t)||(p.hasta&&t>=Date.parse(p.hasta)))return;['es','en'].forEach(function(l){var c=p[l],o=n[l];if(!c||!o)return;for(var k in c)if(k!=='reemplazos')o[k]=c[k];(c.reemplazos||[]).forEach(function(r){var f=function(s){return typeof s==='string'?s.split(r[0]).join(r[1]):s};['titulo','bajada'].forEach(function(k){o[k]=f(o[k])});['toca','cuerpo'].forEach(function(k){if(o[k])o[k]=o[k].map(f)})})});if(!n.actualizada||a>Date.parse(n.actualizada))n.actualizada=p.desde})}catch(e){}return n}
