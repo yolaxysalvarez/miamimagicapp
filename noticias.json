@@ -98,6 +98,10 @@
         {
           "n": "National Key Deer Refuge · Reglas",
           "u": "https://fws.gov/refuge/national-key-deer/visit-us/rules-policies"
+        },
+        {
+          "n": "The Wildlife Society · el brote de gusano barrenador de 2016",
+          "u": "https://wildlife.org/the-return-of-an-odious-invader-from-the-wildlife-professional/"
         }
       ],
       "desarrollo": false,
@@ -121,6 +125,10 @@
           "## Lo que más los mata",
           "Los choques con autos son hoy su primera causa de muerte, señala la FWC. El refugio pide manejar con cuidado desde Big Pine Key hasta Lower Sugarloaf Key y respetar los límites de velocidad señalizados.",
           "Darles comida es ilegal y les hace daño. Según la misma agencia, les quita el miedo a la gente y los concentra en un punto, con lo que se contagian parásitos y enfermedades. Por eso se acercan a las personas y a los autos: buscan que les den algo.",
+          "## Los vecinos que los cuidan",
+          "En Big Pine Key la gente los reconoce uno por uno. Son parte del vecindario, y quedó demostrado en 2016, cuando una plaga de gusano barrenador mató a 135 venados, más de una décima parte de la manada.",
+          "Varios cientos de voluntarios se sumaron entonces a los biólogos para salvarlos, cuenta [The Wildlife Society](https://wildlife.org/the-return-of-an-odious-invader-from-the-wildlife-professional/), la asociación profesional de biólogos de vida silvestre: aprendieron a darles en la mano alimento con medicina, la única excepción a la regla de no alimentarlos, y llamaban a la línea del refugio cada vez que veían un animal herido. La plaga se declaró erradicada en marzo de 2017.",
+          "Ese cariño tiene una forma de demostrarse sin hacerles daño: manejar despacio, no darles comida y avisar si alguno está herido.",
           "## Dónde verlos",
           "El refugio recomienda empezar por su [Nature Center](https://www.fws.gov/refuge/national-key-deer/visit-us), justo antes del único semáforo de Big Pine Key para quien llega desde Miami. Desde ahí se va al Blue Hole, una plataforma de observación a tres millas al norte de la US 1 por Key Deer Boulevard, y a los senderos Watson y Mannillo, un cuarto de milla más adelante.",
           "No hay que buscarlos mucho: andan sueltos por las tierras del refugio y por el vecindario."
@@ -146,12 +154,17 @@
           "## What kills them most",
           "Vehicle collisions are now their leading cause of death, the FWC says. The refuge asks drivers to take care from Big Pine Key to Lower Sugarloaf Key and to obey the posted speed limits.",
           "Feeding them is illegal and harms them. According to the same agency, it takes away their fear of people and concentrates them in one spot, which spreads parasites and disease. That is why they walk up to people and cars: they are looking for a handout.",
+          "## The neighbors who look after them",
+          "On Big Pine Key people know them one by one. They are part of the neighborhood, and it showed in 2016, when a screwworm outbreak killed 135 deer, more than a tenth of the herd.",
+          "Several hundred volunteers joined the biologists to save them, according to [The Wildlife Society](https://wildlife.org/the-return-of-an-odious-invader-from-the-wildlife-professional/), the professional association of wildlife biologists: they learned to hand-feed them medicated food, the one exception to the no-feeding rule, and called the refuge hotline whenever they saw an injured animal. The outbreak was declared eradicated in March 2017.",
+          "That affection has a way of showing itself without harming them: drive slowly, don’t feed them and report any that is hurt.",
           "## Where to see them",
           "The refuge recommends starting at its [Nature Center](https://www.fws.gov/refuge/national-key-deer/visit-us), just before the only traffic light on Big Pine Key for anyone arriving from Miami. From there you can head to the Blue Hole, an observation platform three miles north of US 1 on Key Deer Boulevard, and to the Watson and Mannillo trails, a quarter mile farther on.",
           "You won’t have to look hard: they roam freely across refuge lands and through the neighborhood."
         ]
       },
-      "foto_mm": false
+      "foto_mm": false,
+      "actualizada": "2026-11-20T21:45:00-05:00"
     },
     {
       "id": "mr-bean-coffee-shop-the-falls-cafe-para-quedarse",
