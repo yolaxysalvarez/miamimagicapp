@@ -1,5 +1,5 @@
 {
- "_v": "2026-11-20",
+ "_v": "2026-11-20b",
  "hero": {
   "photo": "fotos/mm-keys-muelle-garzas.jpg",
   "video": "videos/mm-keys-video-reefhouse-letrero.mp4",
@@ -233,7 +233,10 @@
    "photos": [
     "fotos/mm-keys-cheeca-playa.jpg",
     "fotos/mm-keys-muelle-garzas.jpg",
-    "fotos/mm-keys-atardecer-palma.jpg"
+    "fotos/mm-keys-atardecer-palma.jpg",
+    "fotos/mm-keys-cheeca-amanecer-muelle.jpg",
+    "fotos/mm-keys-cheeca-amanecer-sol.jpg",
+    "fotos/mm-keys-cheeca-amanecer-palma.jpg"
    ]
   },
   {
