@@ -519,7 +519,12 @@
    "photo": "fotos/mm-pl8.jpg"
   },
   "m1": {
-   "photo": "fotos/mm-pamm-bahia-noche.jpg"
+   "photo": "fotos/mm-pamm-escultura-portada.jpg",
+   "photos": [
+    "fotos/mm-pamm-escultura-escalinata.jpg",
+    "fotos/mm-pamm-bahia-noche.jpg",
+    "fotos/mm-downtown-desde-pamm-kaseya.jpg"
+   ]
   },
   "m2": {
    "photo": "fotos/mm-ficha-miami-magic.jpg"
@@ -692,8 +697,8 @@
    "bg": "bg-amber",
    "badge": "The Falls",
    "badge_es": "The Falls",
-   "desc": "A neighborhood coffee shop at The Falls with a retro streak: classic video games to play, original Mr. Bean episodes on the screen, and a counter of coffee, signature drinks and baked goods. Tables inside and out, under the mall's covered walkway.",
-   "desc_es": "Una cafetería de barrio en The Falls con aire retro: videojuegos clásicos para jugar, episodios originales de Mr. Bean en la pantalla y un mostrador de café, bebidas de la casa y horneados. Mesas adentro y afuera, bajo el pasillo techado del centro comercial.",
+   "desc": "A coffee shop at The Falls with a personality of its own and a French-leaning menu. Tables inside and out, plus a corner with sofas made for reading or lingering, whether you come alone, as a couple or with a group.",
+   "desc_es": "Una cafetería muy particular en The Falls, con un menú a lo francés. Mesas adentro y afuera y una zona de sofás para leer o quedarse conversando, ya sea solo, en pareja o en grupo.",
    "addr": "8888 SW 136th St, Suite 585 · The Falls",
    "hrs": "Mon–Thu 10AM–9PM · Fri–Sat 9AM–10PM · Sun 10AM–8PM",
    "hrs_es": "Lun–Jue 10AM–9PM · Vie–Sáb 9AM–10PM · Dom 10AM–8PM",
@@ -758,7 +763,7 @@
    "desc": "Miami's premier indoor arena hosting the world's biggest acts — Taylor Swift, Bad Bunny, Coldplay, Shakira.",
    "desc_es": "La principal arena de Miami. Bad Bunny, Shakira, Coldplay.",
    "cap": "19,600",
-   "photo": "fotos/mm-heat-kaseya-noche.jpg"
+   "photo": "fotos/mm-kaseya-center-desde-pamm.jpg"
   },
   "c7": {
    "photo": "fotos/mm-ficha-miami-magic.jpg"
