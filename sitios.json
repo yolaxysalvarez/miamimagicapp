@@ -373,6 +373,14 @@
     "fotos/mm-oculus-hard-rock-turq-mm.jpg",
     "fotos/mm-hard-rock-sabores-arco.jpg"
    ]
+  },
+  "h4": {
+   "photo": "fotos/mm-fontainebleau-piscina-palmas.jpg",
+   "photos": [
+    "fotos/mm-fontainebleau-piscina-palmas.jpg",
+    "fotos/mm-fontainebleau-playa-palmas.jpg",
+    "fotos/mm-fontainebleau-edificio-palmas.jpg"
+   ]
   }
  },
  "noche": {
@@ -734,6 +742,20 @@
    "photo": "fotos/mm-frost-science-mosaico-portada.jpg",
    "photos": [
     "fotos/mm-frost-science-mosaico-world-ocean-day.jpg"
+   ]
+  },
+  "k7": {
+   "photo": "fotos/mm-zoo-miami-elefante.jpg",
+   "photos": [
+    "fotos/mm-zoo-miami-elefante.jpg",
+    "fotos/mm-zoo-miami-tigre-templo.jpg",
+    "fotos/mm-zoo-miami-leones.jpg",
+    "fotos/mm-zoo-miami-tortugas-gigantes.jpg",
+    "fotos/mm-zoo-miami-rinoceronte.jpg",
+    "fotos/mm-zoo-miami-perro-salvaje.jpg",
+    "fotos/mm-zoo-miami-ciguena.jpg",
+    "fotos/mm-zoo-miami-hipopotamo-pigmeo.jpg",
+    "fotos/mm-zoo-miami-poste-senales.jpg"
    ]
   }
  },
