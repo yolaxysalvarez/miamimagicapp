@@ -913,6 +913,9 @@
   "dt7": {
    "pnote": "Reachable only by boat or seaplane, and the reef around Fort Jefferson is some of the clearest snorkeling water in North America. <a href=\"https://www.miamimagicapp.com/news/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "Solo se llega en bote o hidroavión, y el arrecife alrededor de Fort Jefferson tiene de las aguas más claras para snorkel en Norteamérica. <a href=\"https://www.miamimagicapp.com/noticias/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "dt8": {
+   "photo": "fotos/mm-ficha-miami-magic-3.jpg"
   }
  },
  "conciertos": {
