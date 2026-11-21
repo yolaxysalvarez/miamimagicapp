@@ -527,7 +527,10 @@
    ]
   },
   "m2": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-frost-science-mosaico-portada.jpg",
+   "photos": [
+    "fotos/mm-frost-science-mosaico-world-ocean-day.jpg"
+   ]
   },
   "m4": {
    "photo": "fotos/mm-ficha-miami-magic.jpg"
@@ -719,7 +722,10 @@
  },
  "ninos": {
   "k1": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-frost-science-mosaico-portada.jpg",
+   "photos": [
+    "fotos/mm-frost-science-mosaico-world-ocean-day.jpg"
+   ]
   }
  },
  "galerias": {
