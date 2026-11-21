@@ -3665,7 +3665,7 @@ body{padding-bottom:0;}
       </a>
       <a href="#" onclick="goWeek();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-teal"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.15s"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-        <span data-en="This Week" data-es="Esta Semana">Esta Semana</span>
+        <span data-en="This Week" data-es="Esta semana">Esta Semana</span>
       </a>
       <a href="#" onclick="toggleHM();mmReOpen();return false;" class="hm-link" >
         <div class="hm-ico-wrap c-gold"><svg class="hm-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="animation-delay:.16s"><path d="M4 11.5 12 5l8 6.5"/><path d="M6 10v9.5h12V10"/><path d="M10 19.5v-5h4v5"/></svg></div>
@@ -3845,13 +3845,13 @@ body{padding-bottom:0;}
     <div id="navLinks">
       <a href="#" onclick="go('sec-hotels');return false;" data-en="Hotels" data-es="Hoteles">Hotels</a>
       <a href="#" onclick="go('sec-beach');return false;" data-en="Beaches" data-es="Playas">Beaches</a>
-      <a href="#" onclick="goWeek();return false;" data-en="This Week" data-es="Esta Semana">This Week</a>
+      <a href="#" onclick="goWeek();return false;" data-en="This Week" data-es="Esta semana">This Week</a>
       <a href="#" onclick="go('sec-events');return false;" data-en="Events" data-es="Eventos">Events</a>
-      <a href="#" onclick="go('sec-rest');return false;" data-en="Dining" data-es="Comer">Dining</a>
+      <a href="#" onclick="go('sec-rest');return false;" data-en="Dining" data-es="Restaurantes">Dining</a>
       <a href="#" onclick="go('sec-map');return false;" data-en="Map" data-es="Mapa">Map</a>
-      <a href="#" onclick="go('sec-transport');return false;" data-en="Fly In" data-es="Vuela">Fly In</a>
+      <a href="#" onclick="go('sec-transport');return false;" data-en="Fly In" data-es="Aeropuertos">Fly In</a>
       <a href="/noticias" onclick="if(window.mmNewsOpen){mmNewsOpen('');return false}" data-en="News" data-es="News">News</a>
-      <a href="#" onclick="openSignup();return false;" class="nav-join" data-en="Join Free" data-es="&Uacute;nete Gratis">Join Free</a>
+      <a href="#" onclick="openSignup();return false;" class="nav-join" data-en="Join Free" data-es="&Uacute;nete gratis">Join Free</a>
       <a href="https://miamimagicdirectory.com" onclick="openInAppSheet(this.href,'Miami Magic Directory');return false;" class="nav-web">Web ↗</a>
     </div>
     <!-- Fila 2 móvil: solo 3 links -->
@@ -13031,8 +13031,8 @@ function navSyncUser(){
     j.onclick=function(){openAccount();return false;};
   } else {
     j.setAttribute('data-en','Join Free');
-    j.setAttribute('data-es','\u00danete Gratis');
-    j.textContent=ES?'\u00danete Gratis':'Join Free';
+    j.setAttribute('data-es','\u00danete gratis');
+    j.textContent=ES?'\u00danete gratis':'Join Free';
     j.onclick=function(){openSignup('signup');return false;};
   }
 }
