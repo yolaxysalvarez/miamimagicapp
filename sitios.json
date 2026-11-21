@@ -542,8 +542,8 @@
    "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/christmas-wonderland-tropical-park-2026\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('christmas-wonderland-tropical-park-2026');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   },
   "pk-stiltsville": {
-   "name": "Stiltsville · Biscayne National Park",
-   "name_es": "Stiltsville · Parque Nacional Biscayne",
+   "name": "Stiltsville",
+   "name_es": "Stiltsville",
    "bg": "bg-teal",
    "city": "Biscayne Bay",
    "desc": "A neighborhood with no streets: six wooden houses on stilts standing in the shallows of Biscayne Bay, a mile off Key Biscayne. They belong to Biscayne National Park and are reached only by boat.",
@@ -608,20 +608,6 @@
   "dt7": {
    "pnote": "Reachable only by boat or seaplane, and the reef around Fort Jefferson is some of the clearest snorkeling water in North America. <a href=\"https://www.miamimagicapp.com/news/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "Solo se llega en bote o hidroavión, y el arrecife alrededor de Fort Jefferson tiene de las aguas más claras para snorkel en Norteamérica. <a href=\"https://www.miamimagicapp.com/noticias/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
-  },
-  "dt-biscayne": {
-   "name": "Biscayne National Park",
-   "name_es": "Parque Nacional Biscayne",
-   "bg": "bg-cyan",
-   "dist": "45 min",
-   "duration": "Half day",
-   "desc": "Biscayne charges no entrance fee and is 95% water: reefs, mangroves, shipwrecks and a 1930s lighthouse on Boca Chita Key, reached only by boat. Tours leave from the Dante Fascell Visitor Center in Homestead.",
-   "desc_es": "Biscayne no cobra entrada y el 95% de su territorio es agua: arrecifes, manglares, naufragios y un faro de los años 30 en Boca Chita Key, al que solo se llega en bote. Las excursiones salen del centro de visitantes Dante Fascell, en Homestead.",
-   "addr": "9700 SW 328th St, Homestead",
-   "link": "https://www.nps.gov/bisc/index.htm",
-   "photo": "fotos/mm-boca-chita-key-playa.jpg",
-   "pnote": "In Boca Chita there is no drinking water or electricity and pets are not allowed: bring repellent and take your trash back. <a href=\"https://www.miamimagicapp.com/news/parque-nacional-biscayne-escapada\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('parque-nacional-biscayne-escapada');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
-   "pnote_es": "En Boca Chita no hay agua potable ni electricidad y no se admiten mascotas: lleva repelente y regresa con tu basura. <a href=\"https://www.miamimagicapp.com/noticias/parque-nacional-biscayne-escapada\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('parque-nacional-biscayne-escapada');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
  "conciertos": {
