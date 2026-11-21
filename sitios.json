@@ -489,6 +489,9 @@
   },
   "b4": {
    "photo": "fotos/mm-haulover-inlet-app.jpg"
+  },
+  "b6": {
+   "photo": "fotos/mm-sunny-isles-playa-torres.jpg"
   }
  },
  "museos": {
@@ -571,6 +574,12 @@
    ],
    "pnote": "Guided tour: $50 adults, $40 ages 65 and up, $35 ages 13 to 17; children 12 and under are free. <a href=\"https://www.miamimagicapp.com/news/art-deco-miami-beach-caminata\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('art-deco-miami-beach-caminata');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "Recorrido guiado: $50 adultos, $40 mayores de 65 años y $35 de 13 a 17; los menores de 12 no pagan. <a href=\"https://www.miamimagicapp.com/noticias/art-deco-miami-beach-caminata\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('art-deco-miami-beach-caminata');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "pl9": {
+   "photos": [
+    "fotos/mm-pl9.jpg",
+    "fotos/mm-freedom-tower-desde-pamm.jpg"
+   ]
   }
  },
  "teatros": {
