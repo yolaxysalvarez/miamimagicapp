@@ -438,12 +438,18 @@
   },
   "n26": {
    "link": "https://riverhousebar.com",
-   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+   "photo": "fotos/mm-bar-copas-corchos.jpg"
   },
   "n27": {
    "hrs": "Tue–Wed 12 PM – 12 AM · Thu–Fri 12 PM – 1 AM · Sat 11:30 AM – 1 AM · Sun 11:30 AM – 12 AM · Closed Mon",
    "hrs_es": "Mar–Mié 12 PM – 12 AM · Jue–Vie 12 PM – 1 AM · Sáb 11:30 AM – 1 AM · Dom 11:30 AM – 12 AM · Cierra lunes",
-   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+   "photo": "fotos/mm-la-tropical-silo-portada.jpg",
+   "photos": [
+    "fotos/mm-la-tropical-silo.jpg",
+    "fotos/mm-la-tropical-glorieta-bar.jpg",
+    "fotos/mm-la-tropical-barco-papel.jpg",
+    "fotos/mm-la-tropical-mural-ave.jpg"
+   ]
   },
   "n28": {
    "hrs": "Fri–Sun 11 PM – 5 AM",
@@ -482,13 +488,13 @@
    "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n23": {
-   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+   "photo": "fotos/mm-bar-botellas-copas.jpg"
   },
   "n24": {
    "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n25": {
-   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+   "photo": "fotos/mm-bar-botellas-copas.jpg"
   },
   "n29": {
    "photo": "fotos/mm-ficha-miami-magic-2.jpg"
@@ -836,6 +842,31 @@
   },
   "k14": {
    "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "k-topgolf": {
+   "name": "Topgolf Miami · Doral",
+   "name_es": "Topgolf Miami · Doral",
+   "bg": "bg-teal",
+   "ico_color": "c-teal",
+   "ico_path": "<circle cx=\"12\" cy=\"7\" r=\"4\"/><path d=\"M10 11v3h4v-3\"/><path d=\"M12 14v7\"/><path d=\"M9 21h6\"/>",
+   "desc": "Three levels of climate-covered hitting bays where you aim at lit targets on the field and the ball keeps score for you. No golf experience needed: it works as a game for the whole group, with a full kitchen and bar brought to your bay. Bays are rented by the hour, not per person.",
+   "desc_es": "Tres niveles de bahías techadas desde donde se le tira a blancos iluminados en el campo, y la pelota lleva la puntuación sola. No hace falta saber de golf: funciona como juego para todo el grupo, con cocina y bar servidos en la misma bahía. Las bahías se alquilan por hora, no por persona.",
+   "addr": "11850 NW 22nd St, Doral",
+   "hrs": "Mon–Thu 12PM–12AM · Fri 12PM–1AM · Sat 9AM–1AM · Sun 9AM–12AM",
+   "hrs_es": "Lun–Jue 12PM–12AM · Vie 12PM–1AM · Sáb 9AM–1AM · Dom 9AM–12AM",
+   "age": "All ages",
+   "price": "Bay by the hour · price varies by time",
+   "price_es": "Bahía por hora · el precio varía según el horario",
+   "link": "https://topgolf.com/us/miami-doral/",
+   "photo": "fotos/mm-topgolf-doral-mural-portada.jpg",
+   "photos": [
+    "fotos/mm-topgolf-doral-mural.jpg"
+   ],
+   "tags": [
+    "Golf",
+    "Games",
+    "Groups"
+   ]
   }
  },
  "galerias": {
