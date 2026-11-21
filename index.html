@@ -1151,6 +1151,16 @@ section[id^="sec-"]{scroll-margin-top:84px;}
 .modal-ov.open .modal{transform:scale(1) translateY(0);}
 .modal-img{height:170px;display:flex;align-items:center;justify-content:center;font-size:4.5rem;border-radius:24px 24px 0 0;overflow:hidden;position:relative;}
 .modal-img-ov{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(0,0,0,.35));}
+/* v2.1 · La foto de la ficha respira: con foto, la cabecera pasa a 3:2 (antes 170px fijos, muy recortada) y se abre a pantalla completa al tocarla */
+.modal-img.mi-photo{height:auto;aspect-ratio:3/2;max-height:52vh;cursor:zoom-in;background-position:center;}
+.modal-img.mi-photo .modal-img-ov{background:linear-gradient(to bottom,rgba(0,0,0,.18) 0%,transparent 26%,transparent 70%,rgba(0,0,0,.28));pointer-events:none;}
+.mi-zoom{position:absolute;left:14px;bottom:12px;display:inline-flex;align-items:center;gap:6px;padding:6px 11px 6px 9px;border-radius:999px;background:rgba(8,15,30,.46);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;font:600 .72rem 'DM Sans',sans-serif;letter-spacing:.02em;pointer-events:none;}
+.mi-zoom svg{width:13px;height:13px;}
+#mmGalView .mmgv-a{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+#mmGalView .mmgv-a svg{width:20px;height:20px;}
+#mmGalView .mmgv-p{left:10px;} #mmGalView .mmgv-q{right:10px;}
+#mmGalView.solo .mmgv-a{display:none;}
+#mmGalView img{max-height:86vh;}
 .modal-x{position:absolute;top:12px;right:12px;background:rgba(255,255,255,.92);border:none;color:#0E1B30;-webkit-appearance:none;appearance:none;width:40px;height:40px;border-radius:50%;font-size:1.05rem;font-weight:700;cursor:pointer;z-index:10;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,.18);}
 .modal-x:hover{background:var(--coral);color:#fff;}
 .modal-fav{position:absolute;top:12px;right:63px;background:rgba(255,255,255,.92);border:none;color:#0E1B30;-webkit-appearance:none;appearance:none;width:40px;height:40px;border-radius:50%;font-size:1.2rem;cursor:pointer;z-index:10;transition:all .2s;display:flex;align-items:center;justify-content:center;line-height:1;box-shadow:0 2px 8px rgba(0,0,0,.18);}
@@ -1191,7 +1201,7 @@ section[id^="sec-"]{scroll-margin-top:84px;}
 .mm-gal-lbl:before{content:'';width:16px;height:2px;border-radius:2px;background:#FF4D35;}
 .mm-gal-strip{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:2px 0 6px;margin:0 -20px;padding-left:20px;padding-right:20px;scrollbar-width:none;}
 .mm-gal-strip::-webkit-scrollbar{display:none;}
-.mm-gal-ph{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;flex:0 0 auto;width:78%;max-width:280px;aspect-ratio:16/10;border-radius:14px;background-size:cover;background-position:center;scroll-snap-align:start;box-shadow:0 4px 16px rgba(8,15,30,.14);position:relative;cursor:pointer;}
+.mm-gal-ph{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;flex:0 0 auto;width:86%;max-width:360px;aspect-ratio:4/3;border-radius:14px;background-size:cover;background-position:center;scroll-snap-align:start;box-shadow:0 4px 16px rgba(8,15,30,.14);position:relative;cursor:pointer;}
 .mm-gal-ph:after{content:'';position:absolute;inset:0;border-radius:14px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);}
 .mm-gal-solo .mm-gal-ph{width:100%;max-width:none;}
 .mm-gal-count{font:600 .68rem 'DM Sans',sans-serif;color:#9aa0a8;margin-left:auto;letter-spacing:.02em;}
@@ -6646,33 +6656,66 @@ function mmVideoRow(obj){
 var MM_GAL=[];
 function mmGalleryRow(obj){
   var ph=(obj&&obj.photos)||[]; if(!ph.length) return '';
-  MM_GAL=ph.slice(0);
+  MM_GAL=ph.slice(0); MM_GAL_ROW=ph.slice(0);
   var ES=(typeof lang!=='undefined'&&lang==='es');
   var lbl=ES?'El lugar':'The place';
   var cnt=ph.length>1?('<span class="mm-gal-count">'+ph.length+(ES?' fotos':' photos')+'</span>'):'';
   var strip=ph.map(function(u,i){
-    return '<div class="mm-gal-ph" role="button" tabindex="0" aria-label="'+(ES?'Foto ':'Photo ')+(i+1)+'" onclick="mmGalOpen('+i+')" style="background-image:url(\''+u+'\')"></div>';
+    return '<div class="mm-gal-ph" role="button" tabindex="0" aria-label="'+(ES?'Foto ':'Photo ')+(i+1)+'" onclick="mmGalStrip(this)" style="background-image:url(\''+u+'\')"></div>';
   }).join('');
   var cred='<div class="mm-gal-cred">'+(ES?'Fotos \u00a9 Miami Magic':'Photos \u00a9 Miami Magic')+'</div>';
   return '<div class="mm-gal"><div class="mm-gal-lbl">'+lbl+cnt+'</div>'
     +'<div class="mm-gal-strip'+(ph.length===1?' mm-gal-solo':'')+'">'+strip+'</div>'+cred+'</div>';
 }
+var MM_GAL_I=0, MM_GAL_ROW=[];
+function mmGalStrip(el){ var all=[].slice.call(el.parentNode.querySelectorAll('.mm-gal-ph')); MM_GAL=MM_GAL_ROW.slice(0); mmGalOpen(Math.max(0,all.indexOf(el))); }
+function mmGalStep(d){ if(!MM_GAL.length) return; mmGalOpen((MM_GAL_I+d+MM_GAL.length)%MM_GAL.length); }
 function mmGalOpen(i){
   if(!MM_GAL.length) return; i=Math.max(0,Math.min(i,MM_GAL.length-1));
+  MM_GAL_I=i;
   var box=document.getElementById('mmGalView');
   if(!box){
     box=document.createElement('div'); box.id='mmGalView';
     box.innerHTML='<button class="mmgv-x" aria-label="Cerrar" onclick="mmGalClose()">\u00d7</button><img alt="" draggable="false" oncontextmenu="return false" style="-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;"><div class="mmgv-n"></div>';
     box.addEventListener('click',function(e){ if(e.target===box) mmGalClose(); });
+    var _ar=function(c,d,pth,lab){ var b=document.createElement('button'); b.className='mmgv-a '+c; b.setAttribute('aria-label',lab); b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="'+pth+'"/></svg>'; b.onclick=function(e){ e.stopPropagation(); mmGalStep(d); }; box.appendChild(b); };
+    _ar('mmgv-p',-1,'M15 18l-6-6 6-6','Anterior'); _ar('mmgv-q',1,'M9 18l6-6-6-6','Siguiente');
+    var _tx=null; box.addEventListener('touchstart',function(e){ _tx=e.touches[0].clientX; },{passive:true});
+    box.addEventListener('touchend',function(e){ if(_tx===null) return; var dx=e.changedTouches[0].clientX-_tx; _tx=null; if(Math.abs(dx)>48) mmGalStep(dx<0?1:-1); },{passive:true});
     document.body.appendChild(box);
   }
   box.querySelector('img').src=MM_GAL[i]||'';
   var _es=(typeof lang!=='undefined'&&lang==='es');
   box.querySelector('.mmgv-n').textContent=(i+1)+' / '+MM_GAL.length+'  \u00b7  '+(_es?'Foto \u00a9 Miami Magic':'Photo \u00a9 Miami Magic');
+  box.classList.toggle('solo',MM_GAL.length<2);
   box.classList.add('on');
 }
 function mmGalClose(){ var b=document.getElementById('mmGalView'); if(b) b.classList.remove('on'); }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') mmGalClose(); });
+document.addEventListener('keydown',function(e){ var b=document.getElementById('mmGalView'); if(!b||!b.classList.contains('on')) return; if(e.key==='ArrowRight') mmGalStep(1); if(e.key==='ArrowLeft') mmGalStep(-1); });
+/* v2.1 · cabecera de la ficha: si lleva foto, se muestra en 3:2 y al tocarla abre el visor (la foto de portada primero, luego la galería) */
+function mmModalImgSync(){
+  var mi=document.getElementById('mImg'); if(!mi) return;
+  var bg=mi.style.backgroundImage||''; var m=bg.match(/url\((['"]?)(.*?)\1\)/);
+  var has=!!(m&&m[2]&&m[2].indexOf('mm-ficha-miami-magic')<0);
+  if(mi.classList.contains('mi-photo')!==has) mi.classList.toggle('mi-photo',has);
+  var z=mi.querySelector('.mi-zoom');
+  if(has && !z){ var ES=(typeof lang!=='undefined'&&lang==='es'); z=document.createElement('span'); z.className='mi-zoom';
+    z.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>'+(ES?'Ver foto':'View photo'); mi.appendChild(z); }
+  if(!has && z) z.remove();
+  mi._mmSrc=has?m[2]:'';
+}
+document.addEventListener('DOMContentLoaded',function(){
+  var mi=document.getElementById('mImg'); if(!mi) return;
+  try{ new MutationObserver(function(){ mmModalImgSync(); }).observe(mi,{attributes:true,attributeFilter:['style','class'],childList:true}); }catch(e){}
+  mi.addEventListener('click',function(e){
+    if(!mi._mmSrc) return; if(e.target.closest&&e.target.closest('button,a')) return;
+    var fn=function(u){ return String(u).split('/').pop().split('?')[0].replace(/-(portada|app|mm)(?=\.)/,''); };
+    var box=mi.closest?mi.closest('.modal'):null; var cur=(box&&box.querySelector('.mm-gal'))?MM_GAL_ROW.slice(0):[];
+    var first=fn(mi._mmSrc); var rest=cur.filter(function(u){ return fn(u)!==first; });
+    MM_GAL=[mi._mmSrc].concat(rest); mmGalOpen(0);
+  });
+});
 function mmBizContactRows(o){
   /* Instagram (mensaje directo), teléfono y email como filas de texto */
   var ES=(typeof lang!=='undefined'&&lang==='es'), out='';
