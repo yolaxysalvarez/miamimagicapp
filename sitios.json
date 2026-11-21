@@ -485,6 +485,26 @@
   },
   "pl8": {
    "photo": "fotos/mm-bayside-aerea.jpg"
+  },
+  "pl-artdeco": {
+   "name": "Art Deco Historic District",
+   "name_es": "Distrito Histórico Art Deco",
+   "bg": "bg-rose",
+   "desc": "A mile and a half of 1930s hotels along Ocean Drive and Collins Avenue, in three styles. The official walking tour leaves every day from the Art Deco Welcome Center and steps into the lobbies; there is also an audio tour in four languages.",
+   "desc_es": "Milla y media de hoteles de los años 30 entre Ocean Drive y Collins Avenue, en tres estilos. El recorrido oficial a pie sale todos los días del Art Deco Welcome Center y entra a los lobbies; también hay un audio-tour en cuatro idiomas.",
+   "addr": "1001 Ocean Drive, Miami Beach",
+   "hrs": "Welcome Center daily 9 AM–5 PM",
+   "link": "https://mdpl.org/tours/art-deco-walking-tour/",
+   "photo": "fotos/mm-mb-cardozo.jpg",
+   "photos": [
+    "fotos/mm-mb-cardozo.jpg",
+    "fotos/mm-mb-carlyle.jpg",
+    "fotos/mm-mb-the-tides.jpg",
+    "fotos/mm-mb-cavalier.jpg",
+    "fotos/mm-mb-art-deco-letrero.jpg"
+   ],
+   "pnote": "Guided tour: $50 adults, $40 ages 65 and up, $35 ages 13 to 17; children 12 and under are free. <a href=\"https://www.miamimagicapp.com/news/art-deco-miami-beach-caminata\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('art-deco-miami-beach-caminata');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "Recorrido guiado: $50 adultos, $40 mayores de 65 años y $35 de 13 a 17; los menores de 12 no pagan. <a href=\"https://www.miamimagicapp.com/noticias/art-deco-miami-beach-caminata\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('art-deco-miami-beach-caminata');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
  "teatros": {},
@@ -534,6 +554,34 @@
    "photo": "fotos/mm-stiltsville-casa-azul-cerca.jpg",
    "pnote": "Going onto the houses without a permit is prohibited. A guided boat tour leaves from Dinner Key, in Coconut Grove. <a href=\"https://www.miamimagicapp.com/news/stiltsville-historia-27-casas-quedan-6\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('stiltsville-historia-27-casas-quedan-6');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "Subir a las casas sin permiso está prohibido. Hay un recorrido guiado en bote que sale de Dinner Key, en Coconut Grove. <a href=\"https://www.miamimagicapp.com/noticias/stiltsville-historia-27-casas-quedan-6\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('stiltsville-historia-27-casas-quedan-6');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "pk-underline": {
+   "name": "The Underline",
+   "name_es": "The Underline",
+   "bg": "bg-green",
+   "city": "Brickell to Coral Gables",
+   "desc": "A linear park under the Metrorail that now runs uninterrupted from the Miami River to Douglas Road, past butterfly gardens, murals and courts. Every Metrorail station along the way works as a way in, or as the ride back.",
+   "desc_es": "Un parque lineal bajo el Metrorail que ya se recorre sin interrupciones desde el río Miami hasta Douglas Road, entre jardines de mariposas, murales y canchas. Cada estación del Metrorail en el camino sirve para entrar o para regresar en tren.",
+   "addr": "Brickell Metrorail Station, Miami",
+   "hrs": "Free · open daily",
+   "link": "https://www.theunderline.org/location",
+   "photo": "fotos/mm-metrorail-brickell.jpg",
+   "pnote": "With kids: the Hammock Playground is at SW 15th Road and SW 1st Avenue; the Play Forest is at 6130 Sunset Drive, behind the South Miami library. <a href=\"https://www.miamimagicapp.com/news/the-underline-cinco-millas\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('the-underline-cinco-millas');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "Con niños: el Hammock Playground está en SW 15th Road y SW 1st Avenue; el Play Forest, en 6130 Sunset Drive, detrás de la biblioteca de South Miami. <a href=\"https://www.miamimagicapp.com/noticias/the-underline-cinco-millas\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('the-underline-cinco-millas');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "pk-biscayne": {
+   "name": "Biscayne National Park",
+   "name_es": "Parque Nacional Biscayne",
+   "bg": "bg-cyan",
+   "city": "Homestead",
+   "desc": "Biscayne charges no entrance fee and is 95% water: reefs, mangroves, shipwrecks and a 1930s lighthouse on Boca Chita Key, reached only by boat. Tours leave from the Dante Fascell Visitor Center in Homestead.",
+   "desc_es": "Biscayne no cobra entrada y el 95% de su territorio es agua: arrecifes, manglares, naufragios y un faro de los años 30 en Boca Chita Key, al que solo se llega en bote. Las excursiones salen del centro de visitantes Dante Fascell, en Homestead.",
+   "addr": "9700 SW 328th St, Homestead",
+   "hrs": "Visitor center daily 9 AM–5 PM · free entry",
+   "link": "https://www.nps.gov/bisc/index.htm",
+   "photo": "fotos/mm-boca-chita-key-playa.jpg",
+   "pnote": "In Boca Chita there is no drinking water or electricity and pets are not allowed: bring repellent and take your trash back. <a href=\"https://www.miamimagicapp.com/news/parque-nacional-biscayne-escapada\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('parque-nacional-biscayne-escapada');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "En Boca Chita no hay agua potable ni electricidad y no se admiten mascotas: lleva repelente y regresa con tu basura. <a href=\"https://www.miamimagicapp.com/noticias/parque-nacional-biscayne-escapada\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('parque-nacional-biscayne-escapada');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
  "compras": {},
@@ -560,6 +608,20 @@
   "dt7": {
    "pnote": "Reachable only by boat or seaplane, and the reef around Fort Jefferson is some of the clearest snorkeling water in North America. <a href=\"https://www.miamimagicapp.com/news/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "Solo se llega en bote o hidroavión, y el arrecife alrededor de Fort Jefferson tiene de las aguas más claras para snorkel en Norteamérica. <a href=\"https://www.miamimagicapp.com/noticias/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "dt-biscayne": {
+   "name": "Biscayne National Park",
+   "name_es": "Parque Nacional Biscayne",
+   "bg": "bg-cyan",
+   "dist": "45 min",
+   "duration": "Half day",
+   "desc": "Biscayne charges no entrance fee and is 95% water: reefs, mangroves, shipwrecks and a 1930s lighthouse on Boca Chita Key, reached only by boat. Tours leave from the Dante Fascell Visitor Center in Homestead.",
+   "desc_es": "Biscayne no cobra entrada y el 95% de su territorio es agua: arrecifes, manglares, naufragios y un faro de los años 30 en Boca Chita Key, al que solo se llega en bote. Las excursiones salen del centro de visitantes Dante Fascell, en Homestead.",
+   "addr": "9700 SW 328th St, Homestead",
+   "link": "https://www.nps.gov/bisc/index.htm",
+   "photo": "fotos/mm-boca-chita-key-playa.jpg",
+   "pnote": "In Boca Chita there is no drinking water or electricity and pets are not allowed: bring repellent and take your trash back. <a href=\"https://www.miamimagicapp.com/news/parque-nacional-biscayne-escapada\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('parque-nacional-biscayne-escapada');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "En Boca Chita no hay agua potable ni electricidad y no se admiten mascotas: lleva repelente y regresa con tu basura. <a href=\"https://www.miamimagicapp.com/noticias/parque-nacional-biscayne-escapada\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('parque-nacional-biscayne-escapada');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
  "conciertos": {
