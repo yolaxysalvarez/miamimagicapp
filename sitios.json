@@ -67,7 +67,8 @@
    "pro": false,
    "link": "https://casajuancho.com/",
    "zone": "little-havana",
-   "hrs_es": "Mar–Jue 12–10 PM · Vie–Sáb 12–11 PM · Dom 12–10 PM · Cerrado lun"
+   "hrs_es": "Mar–Jue 12–10 PM · Vie–Sáb 12–11 PM · Dom 12–10 PM · Cerrado lun",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "r103": {
    "name": "Giselle Miami",
@@ -94,7 +95,8 @@
    "pnote_es": "Happy hour de miércoles a domingo, de 6 a 8 PM y desde la medianoche. Menú de Miami Spice hasta el 30 de octubre.",
    "pro": false,
    "link": "https://gisellemiami.com/",
-   "zone": "downtown"
+   "zone": "downtown",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "r104": {
    "name": "CalaMillor",
@@ -185,6 +187,9 @@
     "https://i.ytimg.com/vi/bw7zbEqBprc/maxres1.jpg",
     "https://i.ytimg.com/vi/bw7zbEqBprc/maxres3.jpg"
    ]
+  },
+  "r105": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "hoteles": {
@@ -405,11 +410,12 @@
   "n10": {
    "hrs": "Mon–Wed & Sun 4 PM – 2 AM · Thu–Sat 4 PM – 3 AM",
    "hrs_es": "Lun–Mié y Dom 4 PM – 2 AM · Jue–Sáb 4 PM – 3 AM",
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n21": {
    "hrs": "Thu 4 PM – 1 AM · Fri 4 PM – 3 AM · Sat 12 PM – 3 AM · Sun 12 PM – 1 AM · Closed Mon–Wed",
-   "hrs_es": "Jue 4 PM – 1 AM · Vie 4 PM – 3 AM · Sáb 12 PM – 3 AM · Dom 12 PM – 1 AM · Cierra Lun–Mié"
+   "hrs_es": "Jue 4 PM – 1 AM · Vie 4 PM – 3 AM · Sáb 12 PM – 3 AM · Dom 12 PM – 1 AM · Cierra Lun–Mié",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n11": {
    "desc": "Little Havana's beloved live music institution — a Cuban social club where local and international Latin artists perform every Friday and Saturday night in an intimate wood-paneled room. Authentic son cubano, timba, trova, and salsa. No tourists, all locals, all music, all soul.",
@@ -431,39 +437,61 @@
    "link": "https://www.lagniappehouse.com"
   },
   "n26": {
-   "link": "https://riverhousebar.com"
+   "link": "https://riverhousebar.com",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n27": {
    "hrs": "Tue–Wed 12 PM – 12 AM · Thu–Fri 12 PM – 1 AM · Sat 11:30 AM – 1 AM · Sun 11:30 AM – 12 AM · Closed Mon",
-   "hrs_es": "Mar–Mié 12 PM – 12 AM · Jue–Vie 12 PM – 1 AM · Sáb 11:30 AM – 1 AM · Dom 11:30 AM – 12 AM · Cierra lunes"
+   "hrs_es": "Mar–Mié 12 PM – 12 AM · Jue–Vie 12 PM – 1 AM · Sáb 11:30 AM – 1 AM · Dom 11:30 AM – 12 AM · Cierra lunes",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n28": {
    "hrs": "Fri–Sun 11 PM – 5 AM",
-   "hrs_es": "Vie–Dom 11 PM – 5 AM"
+   "hrs_es": "Vie–Dom 11 PM – 5 AM",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n30": {
    "hrs": "Thu–Sun from 9 PM, usually until 5 AM",
    "hrs_es": "Jue–Dom desde las 9 PM, normalmente hasta las 5 AM",
-   "link": "https://www.mode.miami"
+   "link": "https://www.mode.miami",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n31": {
-   "link": "https://www.instagram.com/domicile.miami/"
+   "link": "https://www.instagram.com/domicile.miami/",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n32": {
-   "link": "https://www.instagram.com/madradiomiami/"
+   "link": "https://www.instagram.com/madradiomiami/",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n33": {
    "desc": "A small room on NE 79th Street that feels like a house party thrown by friends with very good taste in DJs. Drag shows, themed nights and pop-ups mean it is never quite the same twice. Open Wednesday through Saturday.",
    "desc_es": "Una sala pequeña en la NE 79th Street que se siente como una fiesta en casa de amigos con muy buen gusto para los DJs. Shows de drag, noches temáticas y pop-ups hacen que nunca sea igual dos veces. De miércoles a sábado.",
    "hrs": "Wed 8 PM – 12 AM · Thu–Fri 8 PM – 3 AM · Sat 10 PM – 3 AM · Closed Sun–Tue",
    "hrs_es": "Mié 8 PM – 12 AM · Jue–Vie 8 PM – 3 AM · Sáb 10 PM – 3 AM · Cierra Dom–Mar",
-   "link": "https://www.supernatural305.com"
+   "link": "https://www.supernatural305.com",
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "n34": {
    "active": false
   },
   "n3": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "n22": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "n23": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "n24": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "n25": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "n29": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "playas": {
@@ -500,6 +528,9 @@
   },
   "b6": {
    "photo": "fotos/mm-sunny-isles-playa-torres.jpg"
+  },
+  "b19": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "museos": {
@@ -508,20 +539,20 @@
    "hrs_es": "Mié–Dom 12–5 PM · Cierra Lun–Mar",
    "fee": "Adults $15",
    "fee_es": "Adultos $15",
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "m6": {
    "hrs": "Wed–Sun 11 AM – 6 PM · Closed Mon–Tue",
    "hrs_es": "Mié–Dom 11 AM – 6 PM · Cierra Lun–Mar",
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "m9": {
    "link": "https://www.superblue.com/miami",
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "m10": {
    "link": "https://paradoxmuseum.com/miami",
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "m11": {
    "desc": "Nearly 200 feet above Bayside Marketplace, in an air-conditioned capsule, with Biscayne Bay on one side and the Downtown skyline on the other. The ride lasts about 12–15 minutes — go near sunset.",
@@ -544,16 +575,16 @@
    ]
   },
   "m4": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "m5": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "m7": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "m8": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "lugares": {
@@ -592,16 +623,37 @@
  },
  "teatros": {
   "t2": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "t3": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "t4": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "t5": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "t7": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "t8": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "t9": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "t10": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "t11": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "t12": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "t6": {
+   "photo": "fotos/mm-miracle-mile-letrero-mm.jpg"
   }
  },
  "parques": {
@@ -687,19 +739,19 @@
    "photo": "fotos/mm-virginia-key-playa-puente.jpg"
   },
   "pk2": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "pk6": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "pk7": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "pk8": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   },
   "pk10": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "compras": {
@@ -708,6 +760,9 @@
   },
   "sh7": {
    "photo": "fotos/mm-bayside-aerea.jpg"
+  },
+  "sh10": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "cafes": {
@@ -735,6 +790,21 @@
    ],
    "pnote": "<a href=\"https://www.miamimagicapp.com/news/mr-bean-coffee-shop-the-falls-cafe-para-quedarse\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('mr-bean-coffee-shop-the-falls-cafe-para-quedarse');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/mr-bean-coffee-shop-the-falls-cafe-para-quedarse\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('mr-bean-coffee-shop-the-falls-cafe-para-quedarse');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "cf13": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "cf9": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "cf10": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "cf11": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "cf12": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "ninos": {
@@ -757,6 +827,15 @@
     "fotos/mm-zoo-miami-hipopotamo-pigmeo.jpg",
     "fotos/mm-zoo-miami-poste-senales.jpg"
    ]
+  },
+  "k12": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "k13": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "k14": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "galerias": {
@@ -766,6 +845,21 @@
     "fotos/mm-wynwood-mural-robot-completo.jpg",
     "fotos/mm-wynwood-mural-retrato.jpg"
    ]
+  },
+  "art9": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "art10": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "art11": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "art12": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
+  },
+  "art13": {
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "excursiones": {
@@ -805,7 +899,7 @@
    "photo": "fotos/mm-kaseya-center-desde-pamm.jpg"
   },
   "c7": {
-   "photo": "fotos/mm-ficha-miami-magic.jpg"
+   "photo": "fotos/mm-ficha-miami-magic-2.jpg"
   }
  },
  "estadios": {
