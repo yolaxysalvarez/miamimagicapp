@@ -6076,12 +6076,10 @@ function doSearch(val, fromFilter){
 function hl(text,q){
   if(!q||!text)return text||'';
   const words=q.split(/\s+/).filter(w=>w.length>1);
-  let out=text;
-  words.forEach(w=>{
-    const re=new RegExp('('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');
-    out=out.replace(re,'<strong style="color:#fff;background:rgba(255,77,53,.5);border-radius:3px;padding:0 2px">$1</strong>');
-  });
-  return out;
+  if(!words.length)return text;
+  /* una sola pasada: si se resalta palabra por palabra, la segunda encuentra letras dentro del resaltado de la primera ("un" en "background") y rompe el texto */
+  const re=new RegExp('('+words.sort((a,b)=>b.length-a.length).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')','gi');
+  return text.replace(re,'<strong style="color:#fff;background:rgba(255,77,53,.5);border-radius:3px;padding:0 2px">$1</strong>');
 }
 
 function renderPanel(q){
