@@ -6969,6 +6969,11 @@ function openItemModal(obj,type,link,btnLabel){
     btnLabel=btnLabel||(obj.link?(lang==='es'?'Ver sitio oficial \u2192':'Visit the official site \u2192'):t.mapsBtn);
     setModalImg(obj.bg||'bg-coral',obj.emoji||'',obj.id);
   }
+  /* Galeria y video para TODA ficha que los traiga (parques, playas, excursiones, cafes...): antes solo salian en restaurantes, hoteles y lugares */
+  if(obj && typeof rows==='string'){
+    if(obj.photo_url && rows.indexOf('mm-vid')<0 && typeof mmVideoRow==='function') rows+=mmVideoRow(obj);
+    if(obj.photos && obj.photos.length && rows.indexOf('mm-gal')<0) rows+=mmGalleryRow(obj);
+  }
   // Show fun fact/tip if available (World Cup facts etc.) — uses its own element so it never
   // touches #mTip's internal mTipLbl/mTipTxt children, which openConcertModal relies on.
   var tipExtraEl = document.getElementById('mTipExtra');
