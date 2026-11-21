@@ -1154,13 +1154,18 @@ section[id^="sec-"]{scroll-margin-top:84px;}
 /* v2.1 · La foto de la ficha respira: con foto, la cabecera pasa a 3:2 (antes 170px fijos, muy recortada) y se abre a pantalla completa al tocarla */
 .modal-img.mi-photo{height:auto;aspect-ratio:3/2;max-height:52vh;cursor:zoom-in;background-position:center;}
 .modal-img.mi-photo .modal-img-ov{background:linear-gradient(to bottom,rgba(0,0,0,.18) 0%,transparent 26%,transparent 70%,rgba(0,0,0,.28));pointer-events:none;}
-.mi-zoom{position:absolute;left:14px;bottom:12px;display:inline-flex;align-items:center;gap:6px;padding:6px 11px 6px 9px;border-radius:999px;background:rgba(8,15,30,.46);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;font:600 .72rem 'DM Sans',sans-serif;letter-spacing:.02em;pointer-events:none;}
+.mi-zoom{position:absolute;left:14px;bottom:13px;display:inline-flex;align-items:center;gap:7px;padding:7px 12px 7px 10px;border-radius:999px;background:rgba(8,15,30,.42);border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);color:#fff;font:600 .72rem 'DM Sans',sans-serif;letter-spacing:.03em;pointer-events:none;box-shadow:0 6px 18px rgba(0,0,0,.18);}
+.mi-zoom b{color:var(--gold);font-weight:700;margin-left:1px;}
+.mi-zoom i{width:1px;height:11px;background:rgba(255,255,255,.35);display:inline-block;}
+@keyframes miIn{from{opacity:.0;transform:scale(1.035);}to{opacity:1;transform:none;}}
+.modal-img.mi-photo{animation:miIn .55s cubic-bezier(.2,.7,.2,1) both;transform-origin:center;}
+@media (prefers-reduced-motion:reduce){.modal-img.mi-photo{animation:none;}}
 .mi-zoom svg{width:13px;height:13px;}
 #mmGalView .mmgv-a{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;}
 #mmGalView .mmgv-a svg{width:20px;height:20px;}
 #mmGalView .mmgv-p{left:10px;} #mmGalView .mmgv-q{right:10px;}
 #mmGalView.solo .mmgv-a{display:none;}
-#mmGalView img{max-height:86vh;}
+#mmGalView img{max-height:78vh;}
 .modal-x{position:absolute;top:12px;right:12px;background:rgba(255,255,255,.92);border:none;color:#0E1B30;-webkit-appearance:none;appearance:none;width:40px;height:40px;border-radius:50%;font-size:1.05rem;font-weight:700;cursor:pointer;z-index:10;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,.18);}
 .modal-x:hover{background:var(--coral);color:#fff;}
 .modal-fav{position:absolute;top:12px;right:63px;background:rgba(255,255,255,.92);border:none;color:#0E1B30;-webkit-appearance:none;appearance:none;width:40px;height:40px;border-radius:50%;font-size:1.2rem;cursor:pointer;z-index:10;transition:all .2s;display:flex;align-items:center;justify-content:center;line-height:1;box-shadow:0 2px 8px rgba(0,0,0,.18);}
@@ -1207,8 +1212,15 @@ section[id^="sec-"]{scroll-margin-top:84px;}
 .mm-gal-count{font:600 .68rem 'DM Sans',sans-serif;color:#9aa0a8;margin-left:auto;letter-spacing:.02em;}
 .mm-gal-cred{font:600 .62rem 'DM Sans',sans-serif;color:#a8adb5;letter-spacing:.06em;margin-top:6px;}
 /* Visor a pantalla completa */
-#mmGalView{position:fixed;inset:0;z-index:99999;background:rgba(8,15,30,.96);display:none;align-items:center;justify-content:center;}
-#mmGalView.on{display:flex;}
+#mmGalView{position:fixed;inset:0;z-index:99999;background:radial-gradient(120% 90% at 50% 40%,rgba(14,27,51,.93),rgba(4,8,16,.98));-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);display:none;align-items:center;justify-content:center;}
+#mmGalView.on{display:flex;animation:mmgvIn .28s ease both;}
+@keyframes mmgvIn{from{opacity:0;}to{opacity:1;}}
+#mmGalView img{box-shadow:0 30px 90px rgba(0,0,0,.55);transition:opacity .28s ease,transform .28s ease;}
+#mmGalView img.sw{opacity:0;transform:scale(.985);}
+#mmGalView .mmgv-t{position:absolute;top:calc(env(safe-area-inset-top,0px) + 22px);left:20px;right:76px;color:#fff;font:700 1.05rem 'Playfair Display',Georgia,serif;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+#mmGalView .mmgv-n b{color:var(--gold);font-weight:700;}
+#mmGalView .mmgv-n span{display:block;margin-top:5px;font-weight:500;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.45);}
+#mmGalView .mmgv-x,#mmGalView .mmgv-a{border:1px solid rgba(255,255,255,.18)!important;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);}
 #mmGalView img{max-width:100%;max-height:82vh;border-radius:10px;}
 #mmGalView .mmgv-x{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);right:16px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:1.3rem;line-height:1;cursor:pointer;}
 #mmGalView .mmgv-n{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);left:0;right:0;text-align:center;color:rgba(255,255,255,.6);font:600 .76rem 'DM Sans',sans-serif;}
@@ -6684,9 +6696,14 @@ function mmGalOpen(i){
     box.addEventListener('touchend',function(e){ if(_tx===null) return; var dx=e.changedTouches[0].clientX-_tx; _tx=null; if(Math.abs(dx)>48) mmGalStep(dx<0?1:-1); },{passive:true});
     document.body.appendChild(box);
   }
-  box.querySelector('img').src=MM_GAL[i]||'';
+  var _im=box.querySelector('img'); _im.classList.add('sw'); _im.onload=function(){ _im.classList.remove('sw'); }; _im.onerror=_im.onload; _im.src=MM_GAL[i]||'';
+  if(_im.complete) _im.classList.remove('sw');
+  var _tt=box.querySelector('.mmgv-t'); if(!_tt){ _tt=document.createElement('div'); _tt.className='mmgv-t'; box.appendChild(_tt); }
+  var _mt=document.getElementById('mTitle'); _tt.textContent=(_mt&&_mt.textContent)||'';
+  if(MM_GAL.length>1){ var _nx=new Image(); _nx.src=MM_GAL[(i+1)%MM_GAL.length]; }
   var _es=(typeof lang!=='undefined'&&lang==='es');
-  box.querySelector('.mmgv-n').textContent=(i+1)+' / '+MM_GAL.length+'  \u00b7  '+(_es?'Foto \u00a9 Miami Magic':'Photo \u00a9 Miami Magic');
+  var _cr=(window.MM_GAL_CREDIT||'')||(/(^|\/)fotos\/mm-/.test(String(MM_GAL[i]||''))?(_es?'Foto \u00a9 Miami Magic':'Photo \u00a9 Miami Magic'):'');
+  box.querySelector('.mmgv-n').innerHTML=(MM_GAL.length>1?('<b>'+(i+1)+'</b> / '+MM_GAL.length):'')+(_cr?'<span>'+String(_cr).replace(/</g,'&lt;')+'</span>':'');
   box.classList.toggle('solo',MM_GAL.length<2);
   box.classList.add('on');
 }
@@ -6701,7 +6718,9 @@ function mmModalImgSync(){
   if(mi.classList.contains('mi-photo')!==has) mi.classList.toggle('mi-photo',has);
   var z=mi.querySelector('.mi-zoom');
   if(has && !z){ var ES=(typeof lang!=='undefined'&&lang==='es'); z=document.createElement('span'); z.className='mi-zoom';
-    z.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>'+(ES?'Ver foto':'View photo'); mi.appendChild(z); }
+    z.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>'+'<em style="font-style:normal"></em>'; mi.appendChild(z); }
+  if(has && z){ var ES2=(typeof lang!=='undefined'&&lang==='es'); var bx=mi.closest?mi.closest('.modal'):null; var ng=(bx&&bx.querySelector('.mm-gal'))?(MM_GAL_ROW||[]).length:0;
+    var tx=ng>1?((ES2?'Ver fotos':'View photos')+' <i></i> <b>'+ng+'</b>'):(ES2?'Ver foto':'View photo'); var em=z.querySelector('em'); if(em&&em.innerHTML!==tx) em.innerHTML=tx; }
   if(!has && z) z.remove();
   mi._mmSrc=has?m[2]:'';
 }
@@ -7013,6 +7032,7 @@ function openItemModal(obj,type,link,btnLabel){
     setModalImg(obj.bg||'bg-coral',obj.emoji||'',obj.id);
   }
   /* Galeria y video para TODA ficha que los traiga (parques, playas, excursiones, cafes...): antes solo salian en restaurantes, hoteles y lugares */
+  try{ var _esC=(typeof lang!=='undefined'&&lang==='es'); window.MM_GAL_CREDIT=obj?((_esC?(obj.photo_credit_es||obj.photo_credit):obj.photo_credit)||''):''; }catch(e){ window.MM_GAL_CREDIT=''; }
   if(obj && typeof rows==='string'){
     if(obj.photo_url && rows.indexOf('mm-vid')<0 && typeof mmVideoRow==='function') rows+=mmVideoRow(obj);
     if(obj.photos && obj.photos.length && rows.indexOf('mm-gal')<0) rows+=mmGalleryRow(obj);
