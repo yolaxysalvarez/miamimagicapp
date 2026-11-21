@@ -166,7 +166,9 @@
         ]
       },
       "foto_mm": false,
-      "actualizada": "2026-11-20T21:45:00-05:00"
+      "actualizada": "2026-11-20T21:45:00-05:00",
+      "ultima": 3,
+      "arriba": 1
     },
     {
       "id": "mr-bean-coffee-shop-the-falls-cafe-para-quedarse",
@@ -257,7 +259,9 @@
           "The menu is its signature, and it speaks with a French accent. The baked goods wait in plain sight on the counter and, above them, on yellow panels, the house drinks read like a list of cravings. Coffee, of course, has a menu of its own.",
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
-      }
+      },
+      "ultima": 5,
+      "arriba": 2
     },
     {
       "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
@@ -353,7 +357,9 @@
           "It is also the anteroom to the guitar-shaped tower, which opened in October 2019 and has its own light show on the facade every night."
         ]
       },
-      "actualizada": "2026-11-20T21:40:00-05:00"
+      "actualizada": "2026-11-20T21:40:00-05:00",
+      "ultima": 4,
+      "arriba": 1
     },
     {
       "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
@@ -428,7 +434,8 @@
           "The county estimates the port contributes $61 billion a year to the local economy and supports more than 340,000 jobs."
         ]
       },
-      "actualizada": "2026-11-20T21:40:00-05:00"
+      "actualizada": "2026-11-20T21:40:00-05:00",
+      "ultima": 1
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -554,8 +561,7 @@
         }
       ],
       "desarrollo": false,
-      "ultima": 2,
-      "arriba": 2,
+      "arriba": 3,
       "es": {
         "etiqueta": "LAS REGLAS",
         "titulo": "Key West tendrá 100 boyas de amarre nuevas, y con ellas llega el límite de 90 días para anclar",
@@ -595,7 +601,8 @@
           "That limit does not take effect until the new moorings are installed. According to the county, a change approved in April 2026 lowered the number needed to trigger it from 100 to 60, and the Florida Fish and Wildlife Conservation Commission (FWC) placed the buoys marking the anchoring areas in September.",
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
-      }
+      },
+      "ultima": 6
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -652,8 +659,8 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "ultima": 3,
-      "arriba": 2
+      "arriba": 4,
+      "ultima": 8
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -693,7 +700,6 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-20T18:55:00-05:00",
-      "ultima": 6,
       "es": {
         "etiqueta": "HISTORIA",
         "titulo": "Eran 27 casas en medio del mar y quedan 6: la historia de Stiltsville, el barrio sin calles de la bahía",
@@ -755,7 +761,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 3,
+      "arriba": 5,
       "galeria": [
         {
           "f": "mm-stiltsville-casa-azul-cerca.jpg",
@@ -763,7 +769,8 @@
           "es": "Una de las casas de Stiltsville, vista desde el bote.",
           "en": "One of the Stiltsville houses, seen from the boat."
         }
-      ]
+      ],
+      "ultima": 13
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -791,7 +798,6 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-20T16:20:00-05:00",
-      "ultima": 4,
       "es": {
         "etiqueta": "COMUNIDAD",
         "titulo": "Paracaidistas al atardecer y un show de drones: el programa de Big Pine Key para los 250 años del país, el viernes 20",
@@ -828,7 +834,7 @@
           "The [forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) the National Weather Service in Key West issued Thursday called for west to northwest winds of 10 to 15 knots off the Lower Keys on Friday and a slight chance of showers."
         ]
       },
-      "arriba": 1,
+      "arriba": 2,
       "versiones": [
         {
           "desde": "2026-11-20T00:00:00-05:00",
@@ -907,7 +913,8 @@
             ]
           }
         }
-      ]
+      ],
+      "ultima": 24
     },
     {
       "id": "voyager-1-dia-luz-miami-1977",
@@ -1091,7 +1098,6 @@
           "In Miami, the snow of 1977 didn't survive past 10 a.m. On the day of the milestone, what wouldn't stop was [the rain](https://www.miamimagicapp.com/noticias/vigilancia-inundaciones-miami-dade-broward-17-19-noviembre): more than 16 inches in 48 hours in Broward, according to the National Weather Service. The spacecraft that left Florida that year has been traveling for 49 years without stopping, and if anyone ever finds it, its record will play a mariachi band, Chuck Berry and Louis Armstrong: the same mix of worlds Miami was already becoming."
         ]
       },
-      "ultima": 10,
       "galeria": [
         {
           "f": "mm-voyager-miami-news-nieve-1977.jpg",
@@ -1129,7 +1135,8 @@
           "es": "El «punto azul pálido»: la Tierra, en el círculo, fotografiada por la Voyager 1 en 1990. Versión de 2020. Imagen: NASA/JPL-Caltech.",
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
-      ]
+      ],
+      "ultima": 10
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -1405,7 +1412,7 @@
       "foto_alt": "Gráfico de la vigilancia de inundaciones del NWS para Miami-Dade y Broward sobre el skyline de Brickell visto a través de un vidrio con gotas de lluvia",
       "foto_pie": "Totales preliminares del NWS Miami en 48 horas, hasta las 6:41 AM del jueves.",
       "foto_pie_en": "NWS Miami preliminary 48-hour totals through 6:41 a.m. Thursday.",
-      "desarrollo": true,
+      "desarrollo": false,
       "fuentes": [
         {
           "n": "NWS Miami · pronóstico y avisos del viernes",
@@ -1535,7 +1542,6 @@
         ]
       },
       "actualizada": "2026-11-20T21:50:00-05:00",
-      "ultima": 1,
       "ambos": true,
       "foto_fit": "contain",
       "foto_bg": "url(/fotos/mm-lluvia-broward-nov19a.jpg) center/cover",
@@ -1585,7 +1591,8 @@
             ]
           }
         }
-      ]
+      ],
+      "ultima": 2
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -1838,8 +1845,8 @@
         ]
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
-      "ultima": 19,
-      "arriba": 4
+      "arriba": 5,
+      "ultima": 19
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -2110,8 +2117,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "ultima": 5,
-      "arriba": 1,
+      "arriba": 3,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -2167,7 +2173,8 @@
             ]
           }
         }
-      ]
+      ],
+      "ultima": 9
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -3677,9 +3684,9 @@
       "foto_pie_en": "5th Street in Miami Beach, one of the areas where high tide reaches the street.",
       "foto_pos": "50% 25%",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 7,
       "tambien": 2,
-      "ambos": true
+      "ambos": true,
+      "ultima": 7
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -5546,7 +5553,7 @@
       "foto_mm": false,
       "actualizada": "2026-11-20T15:55:00-05:00",
       "tambien": 3,
-      "arriba": 3
+      "arriba": 4
     },
     {
       "id": "larry-penny-thompson-park",
@@ -7874,7 +7881,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T21:50:00-05:00",
+  "updated_at": "2026-11-20T21:55:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
