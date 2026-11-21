@@ -12453,10 +12453,10 @@ function mmHeroMoment(ES,now,h,S,W){
         : f<3.5 ? (ES?'Mar moderado':'Moderate seas') : (ES?'Mar picado hoy':'Rough seas today');
   }
   if(mom) part.push(mom);
-  if(up && tNow<up && S.sunrise) part.push((ES?'amanece ':'sunrise ')+'<b>'+S.sunrise+'</b>');
-  else if(dn && tNow<dn && S.sunset) part.push((ES?'atardece ':'sunset ')+'<b>'+S.sunset+'</b>');
-  else if(S.sunrise) part.push((ES?'amanece ':'sunrise ')+'<b>'+S.sunrise+'</b>');
-  else if(S.sunset) part.push((ES?'atardece ':'sunset ')+'<b>'+S.sunset+'</b>');
+  if(up && tNow<up && S.sunrise) part.push((ES?'amanecer ':'sunrise ')+'<b>'+S.sunrise+'</b>');
+  else if(dn && tNow<dn && S.sunset) part.push((ES?'atardecer ':'sunset ')+'<b>'+S.sunset+'</b>');
+  else if(S.sunrise) part.push((ES?'amanecer ':'sunrise ')+'<b>'+S.sunrise+'</b>');
+  else if(S.sunset) part.push((ES?'atardecer ':'sunset ')+'<b>'+S.sunset+'</b>');
   return part.length ? part.join(' <span class="mm-now-sep">·</span> ') : (ES?'Tu guía, en tiempo real':'Your guide, in real time');
 }
 function mmGreetFit(){
@@ -12505,13 +12505,13 @@ function mmNowRender(){
   try{ if(S.sunriseRaw) sunUp=new Date(S.sunriseRaw).getTime(); }catch(e){}
   try{ if(S.sunsetRaw) sunDn=new Date(S.sunsetRaw).getTime(); }catch(e){}
   if(h>=4&&sunUp&&tNow<sunUp&&S.sunrise){
-    st.push('<span style="white-space:nowrap">'+(ES?'amanece ':'sunrise ')+'<b class="mm-nw-sun">'+S.sunrise+'</b></span>');
+    st.push('<span style="white-space:nowrap">'+(ES?'amanecer ':'sunrise ')+'<b class="mm-nw-sun">'+S.sunrise+'</b></span>');
   } else if(h>=21||h<5||(sunDn&&tNow>=sunDn)){
     st.push('<b class="mm-nw-moon" style="white-space:nowrap">'+mmMoonPhase(now,ES)+'</b>');
   } else if(sunDn&&tNow<sunDn&&S.sunset){
-    st.push('<span style="white-space:nowrap">'+(ES?'atardece ':'sunset ')+'<b class="mm-nw-sun">'+S.sunset+'</b></span>');
+    st.push('<span style="white-space:nowrap">'+(ES?'atardecer ':'sunset ')+'<b class="mm-nw-sun">'+S.sunset+'</b></span>');
   } else if(S.sunset){
-    st.push('<span style="white-space:nowrap">'+(ES?'atardece ':'sunset ')+'<b class="mm-nw-sun">'+S.sunset+'</b></span>');
+    st.push('<span style="white-space:nowrap">'+(ES?'atardecer ':'sunset ')+'<b class="mm-nw-sun">'+S.sunset+'</b></span>');
   }
   var status = st.length ? st.join(' <span class="mm-now-sep">·</span> ') : (ES?'Tu guía, en tiempo real':'Your guide, in real time');
   var ev=mmNowToday(), evH='';
