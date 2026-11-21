@@ -3713,7 +3713,8 @@
           "Inter Miami abre los playoffs de la MLS el sábado 21 de noviembre a las 6:00 de la tarde en Nu Stadium, contra Columbus Crew, [anunció el club](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Terminó la temporada regular segundo en la Conferencia Este; Columbus llegó séptimo, según la [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
           "La serie es al mejor de tres partidos. El segundo se juega el viernes 27 en Columbus, Ohio, y si hace falta un tercero, vuelve a Miami el martes 1 o el miércoles 2 de diciembre, con fecha y hora por confirmar. Quien gane dos avanza a las semifinales del Este.",
           "Será el primer partido de playoffs en Nu Stadium. El estadio abrió en abril sobre el antiguo campo de golf Melreese, junto al aeropuerto, y tiene capacidad para 26,700 personas.",
-          "Llegar pide planificación, y el club [empuja el transporte público](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail y Tri-Rail paran en el Miami Intermodal Center, la estación del aeropuerto, y desde allí se camina hasta el estadio por el puente peatonal sobre el canal. El club añade que, después de algunos partidos, Tri-Rail agrega un tren de regreso cerca de las 10:00 de la noche."
+          "Llegar pide planificación, y el club [empuja el transporte público](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail y Tri-Rail paran en el Miami Intermodal Center, la estación del aeropuerto, y desde allí se camina hasta el estadio por el puente peatonal sobre el canal. El club añade que, después de algunos partidos, Tri-Rail agrega un tren de regreso cerca de las 10:00 de la noche.",
+          "En auto también se puede llegar y estacionar, pero solo con un pase de parqueo comprado por adelantado: en la entrada no se vende, advierte el club en sus [preguntas frecuentes](https://www.intermiamicf.com/nu-stadium/faqs), donde avisa además de que el espacio es muy limitado los días de partido. Los lotes abren tres horas antes del pitazo, a las 3:00 PM este sábado, y las puertas del estadio, 90 minutos antes, a las 4:30 PM. Cada lote tiene su entrada: al Negro (Audi) se llega por NW 37 Ave y al Rojo por LeJeune Road, ambos con acceso por Heron Lane; al Amarillo, por NW 14 St y Volley Drive. Sin pase, la opción es el tren."
         ]
       },
       "en": {
@@ -3728,7 +3729,8 @@
           "Inter Miami opens the MLS playoffs on Saturday, Nov. 21, at 6 p.m. at Nu Stadium against the Columbus Crew, [the club announced](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Miami finished the regular season second in the Eastern Conference; Columbus finished seventh, according to [MLS](https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups).",
           "The series is best of three. Game 2 is Friday, Nov. 27, in Columbus, Ohio, and if a third game is needed, it returns to Miami on Tuesday, Dec. 1, or Wednesday, Dec. 2, date and time to be announced. The first team to two wins advances to the East semifinals.",
           "It will be the first playoff game at Nu Stadium. The stadium opened in April on the former Melreese golf course next to the airport and holds 26,700 people.",
-          "Getting there takes planning, and the club is [pushing public transit](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail and Tri-Rail stop at the Miami Intermodal Center, the airport station, and from there fans walk to the stadium across the pedestrian bridge over the canal. The club adds that after some games, Tri-Rail runs a return train around 10 p.m."
+          "Getting there takes planning, and the club is [pushing public transit](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail and Tri-Rail stop at the Miami Intermodal Center, the airport station, and from there fans walk to the stadium across the pedestrian bridge over the canal. The club adds that after some games, Tri-Rail runs a return train around 10 p.m.",
+          "Driving and parking is possible too, but only with a parking pass bought in advance: none are sold at the entrance, the club warns in its [FAQ](https://www.intermiamicf.com/nu-stadium/faqs), which also notes that space is very limited on match days. Lots open three hours before kickoff, at 3:00 PM this Saturday, and stadium gates open 90 minutes before, at 4:30 PM. Each lot has its own entrance: the Audi Black Lot is reached from NW 37th Ave and the Red Lot from LeJeune Road, both through Heron Lane; the Yellow Lot, from NW 14th St and Volley Drive. Without a pass, the train is the way to go."
         ]
       },
       "fuentes": [
@@ -3747,9 +3749,13 @@
         {
           "n": "Wikipedia · Nu Stadium",
           "u": "https://en.wikipedia.org/wiki/Nu_Stadium"
+        },
+        {
+          "n": "Inter Miami CF · Preguntas frecuentes de Nu Stadium",
+          "u": "https://www.intermiamicf.com/nu-stadium/faqs"
         }
       ],
-      "actualizada": "2026-11-20T17:15:00-05:00",
+      "actualizada": "2026-11-21T12:15:00-05:00",
       "versiones": [
         {
           "desde": "2026-11-21T00:00:00-05:00",
@@ -7881,7 +7887,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T21:55:00-05:00",
+  "updated_at": "2026-11-21T12:15:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
