@@ -55,6 +55,145 @@
   "videos": [],
   "notas": [
     {
+      "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
+      "scope": "miami",
+      "tema": "curioso",
+      "hamaca": true,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-20",
+      "publicada": "2026-11-20T20:55:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-oculus-hard-rock-azul.jpg",
+      "foto_fit": "contain",
+      "foto_bg": "#0a090b",
+      "foto_alt": "La cascada del Oculus iluminada de azul en la entrada del Guitar Hotel",
+      "foto_pie": "El Oculus, en la entrada del Guitar Hotel, en Hollywood.",
+      "foto_pie_en": "The Oculus, at the entrance of the Guitar Hotel in Hollywood.",
+      "galeria": [
+        {
+          "f": "mm-oculus-hard-rock-rojo.jpg",
+          "es": "Las figuras se proyectan sobre la cortina de agua.",
+          "en": "The images are projected onto the curtain of water."
+        },
+        {
+          "f": "mm-oculus-hard-rock-rosa.jpg",
+          "es": "Cada canción trae sus colores.",
+          "en": "Each song brings its own colors."
+        },
+        {
+          "f": "mm-oculus-hard-rock-turq.jpg",
+          "es": "La cascada cae desde el techo hasta una fuente circular.",
+          "en": "The waterfall drops from the ceiling into a circular fountain."
+        }
+      ],
+      "fuentes": [
+        {
+          "n": "Seminole Hard Rock Hotel & Casino Hollywood · The Oculus",
+          "u": "https://casino.hardrock.com/hollywood/entertainment/the-oculus"
+        },
+        {
+          "n": "Seminole Hard Rock Hotel & Casino Hollywood · Oculus Bar",
+          "u": "https://casino.hardrock.com/hollywood/bars-and-lounges/oculus-bar"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "HAMACA MOOD",
+        "titulo": "Cada 20 minutos llueve con música dentro del Guitar Hotel",
+        "bajada": "El Oculus es una cascada de 35 pies en la entrada del Seminole Hard Rock, en Hollywood: agua, luces y proyecciones al ritmo de una canción.",
+        "toca": [
+          "Corre todos los días, cada 20 minutos. El hotel advierte que el horario puede cambiar sin aviso.",
+          "Está en la entrada principal del Guitar Hotel: 1 Seminole Way, Hollywood.",
+          "La página del hotel no menciona boleto ni reserva para verlo."
+        ],
+        "cuerpo": [
+          "Baja la luz del lobby, suena una canción y el agua empieza a caer en círculo desde el techo. Sobre esa cortina aparecen figuras que cambian con la música: ondas azules, burbujas, trazos rojos. Dura lo que dura el tema, y a los 20 minutos vuelve a empezar.",
+          "## Qué es",
+          "El Oculus ocupa el centro de la entrada del Guitar Hotel, en el Seminole Hard Rock Hotel & Casino de Hollywood. Según [el hotel](https://casino.hardrock.com/hollywood/entertainment/the-oculus), la cascada mide 35 pies de alto y combina agua, luces y proyecciones de piso a techo, coreografiadas con música de artistas como Maroon 5, Pitbull, Sting y Bill Withers.",
+          "## Cómo verlo",
+          "Los espectáculos corren a diario. Alrededor de la fuente hay espacio para quedarse de pie, y desde arriba la mira el [Oculus Bar](https://casino.hardrock.com/hollywood/bars-and-lounges/oculus-bar), que abre de mediodía a medianoche de domingo a jueves y hasta las 2 a.m. los viernes y sábados."
+        ]
+      },
+      "en": {
+        "etiqueta": "HAMACA MOOD",
+        "titulo": "Every 20 minutes it rains to music inside the Guitar Hotel",
+        "bajada": "The Oculus is a 35-foot waterfall at the entrance of the Seminole Hard Rock in Hollywood: water, lights and projections set to a song.",
+        "toca": [
+          "It runs every day, every 20 minutes. The hotel notes the schedule may change without notice.",
+          "It sits at the main entrance of the Guitar Hotel: 1 Seminole Way, Hollywood.",
+          "The hotel’s page mentions no ticket or reservation to watch it."
+        ],
+        "cuerpo": [
+          "The lobby lights dim, a song starts and water begins to fall in a circle from the ceiling. On that curtain, images appear and shift with the music: blue waves, bubbles, red strokes. It lasts as long as the track, and 20 minutes later it starts again.",
+          "## What it is",
+          "The Oculus stands at the center of the entrance to the Guitar Hotel, at the Seminole Hard Rock Hotel & Casino in Hollywood. According to [the hotel](https://casino.hardrock.com/hollywood/entertainment/the-oculus), the waterfall is 35 feet tall and combines water, lighting and floor-to-ceiling projections, choreographed to music by artists such as Maroon 5, Pitbull, Sting and Bill Withers.",
+          "## How to see it",
+          "The shows run daily. There is room to stand around the fountain, and the [Oculus Bar](https://casino.hardrock.com/hollywood/bars-and-lounges/oculus-bar) looks down on it from above; it opens from noon to midnight Sunday through Thursday and until 2 a.m. on Fridays and Saturdays."
+        ]
+      }
+    },
+    {
+      "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
+      "scope": "miami",
+      "tema": "mar",
+      "hamaca": false,
+      "muelle": true,
+      "destacada": false,
+      "fecha": "2026-11-20",
+      "publicada": "2026-11-20T20:50:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-macarthur-cruceros.jpg",
+      "foto_alt": "Cruceros atracados en PortMiami vistos desde el MacArthur Causeway",
+      "foto_pie": "Cruceros en PortMiami, vistos desde el MacArthur Causeway.",
+      "foto_pie_en": "Cruise ships at PortMiami, seen from the MacArthur Causeway.",
+      "fuentes": [
+        {
+          "n": "Condado de Miami-Dade · PortMiami, comunicado del 18 de noviembre de 2026",
+          "u": "https://www.miamidade.gov/global/release.page?Mduid_release=rel1794957081815401"
+        },
+        {
+          "n": "PortMiami",
+          "u": "https://www.miamidade.gov/portmiami/home.page"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "EL DATO",
+        "titulo": "PortMiami pasa de 10 millones de pasajeros por primera vez",
+        "bajada": "El puerto cerró su año fiscal con 10,533,854 pasajeros de crucero, un 23% más que el anterior, informó el condado. La carga, en cambio, bajó un poco.",
+        "toca": [
+          "Más pasajeros es más tráfico los días de embarque. El condado indica entrar por el túnel a las terminales AA, A, B, C y D, y por el puente a las E, F, G, J y V.",
+          "Octubre ya vino más cargado que el del año pasado: 106 escalas frente a 93."
+        ],
+        "cuerpo": [
+          "PortMiami recibió 10,533,854 pasajeros de crucero entre el 1 de octubre de 2025 y el 30 de septiembre de 2026, y es la primera vez que supera los 10 millones en un año fiscal. La cifra, que el [condado de Miami-Dade](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794957081815401) divulgó el miércoles 18 de noviembre, deja atrás los 8,564,225 del período anterior: casi dos millones más, un aumento de 23%.",
+          "## El año nuevo arrancó igual",
+          "El ritmo no aflojó en octubre, primer mes del nuevo año fiscal. Pasaron por el puerto 832,142 pasajeros en 106 escalas, el octubre más alto de su historia, de acuerdo con el mismo comunicado. Un año antes habían sido 699,043 en 93 escalas.",
+          "## La carga, casi igual",
+          "En contenedores el balance es otro. El puerto movió 1,105,517 TEU, la medida estándar que equivale a un contenedor de 20 pies: un 0.86% menos que los 1,115,058 del año anterior. Aun así, lleva doce años seguidos por encima del millón.",
+          "El condado calcula que el puerto aporta 61,000 millones de dólares al año a la economía local y sostiene más de 340,000 empleos."
+        ]
+      },
+      "en": {
+        "etiqueta": "THE NUMBER",
+        "titulo": "PortMiami tops 10 million passengers for the first time",
+        "bajada": "The port closed its fiscal year with 10,533,854 cruise passengers, 23% more than the year before, the county reported. Cargo, meanwhile, slipped slightly.",
+        "toca": [
+          "More passengers means more traffic on embarkation days. The county directs drivers to the tunnel for Terminals AA, A, B, C and D, and to the bridge for E, F, G, J and V.",
+          "October already came in busier than last year’s: 106 cruise calls versus 93."
+        ],
+        "cuerpo": [
+          "PortMiami welcomed 10,533,854 cruise passengers between October 1, 2025 and September 30, 2026, the first time it has passed 10 million in a fiscal year. The figure, which [Miami-Dade County](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794957081815401) released on Wednesday, November 18, leaves behind the 8,564,225 of the previous period: nearly two million more, a 23% increase.",
+          "## The new year started the same way",
+          "The pace held in October, the first month of the new fiscal year. The port handled 832,142 passengers across 106 cruise calls, the highest October in its history, according to the same release. A year earlier it had been 699,043 on 93 calls.",
+          "## Cargo, almost flat",
+          "Containers tell a different story. The port moved 1,105,517 TEUs, the standard measure equal to one 20-foot container: 0.86% fewer than the 1,115,058 of the year before. Even so, it has stayed above one million for twelve straight years.",
+          "The county estimates the port contributes $61 billion a year to the local economy and supports more than 340,000 jobs."
+        ]
+      }
+    },
+    {
       "id": "biltmore-coral-gables-100-anos-historia",
       "scope": "miami",
       "tema": "historia",
@@ -7496,7 +7635,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T18:55:00-05:00",
+  "updated_at": "2026-11-20T21:05:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }

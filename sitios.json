@@ -353,6 +353,26 @@
    "pnote_es": "El hotel Nobu comparte la propiedad y una de las piscinas es solo para sus huéspedes: al reservar, confirma de qué lado queda tu habitación.",
    "price": "",
    "stars": ""
+  },
+  "h-guitar": {
+   "name": "The Guitar Hotel · Seminole Hard Rock",
+   "cat": "Resort · Casino · Hollywood",
+   "cat_es": "Resort · Casino · Hollywood",
+   "addr": "1 Seminole Way, Hollywood",
+   "link": "https://www.seminolehardrockhollywood.com/",
+   "price": "",
+   "desc": "The guitar-shaped hotel tower at the Seminole Hard Rock Hotel & Casino in Hollywood, with the casino, the Hard Rock Live concert hall, pools and restaurants on the same property. At its entrance, the Oculus waterfall puts on a music and light show every 20 minutes.",
+   "desc_es": "La torre con forma de guitarra del Seminole Hard Rock Hotel & Casino, en Hollywood, con el casino, la sala de conciertos Hard Rock Live, piscinas y restaurantes en la misma propiedad. En su entrada, la cascada del Oculus ofrece un espectáculo de música y luces cada 20 minutos.",
+   "pnote": "<a href=\"https://www.miamimagicapp.com/news/oculus-hard-rock-hollywood-cascada-guitar-hotel\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oculus-hard-rock-hollywood-cascada-guitar-hotel');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story of the Oculus in Miami Magic News →</a>",
+   "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/oculus-hard-rock-hollywood-cascada-guitar-hotel\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oculus-hard-rock-hollywood-cascada-guitar-hotel');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia del Oculus en Miami Magic News →</a>",
+   "photo": "fotos/mm-oculus-hard-rock-portada.jpg",
+   "photos": [
+    "fotos/mm-oculus-hard-rock-azul-mm.jpg",
+    "fotos/mm-oculus-hard-rock-rojo-mm.jpg",
+    "fotos/mm-oculus-hard-rock-rosa-mm.jpg",
+    "fotos/mm-oculus-hard-rock-turq-mm.jpg",
+    "fotos/mm-hard-rock-sabores-arco.jpg"
+   ]
   }
  },
  "noche": {
