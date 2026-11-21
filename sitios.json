@@ -712,7 +712,9 @@
     "fotos/mm-mrbean-vidriera.jpg",
     "fotos/mm-mrbean-cartel-coffee.jpg",
     "fotos/mm-mrbean-pop-art.jpg"
-   ]
+   ],
+   "pnote": "<a href=\"https://www.miamimagicapp.com/news/mr-bean-coffee-shop-the-falls-cafe-para-quedarse\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('mr-bean-coffee-shop-the-falls-cafe-para-quedarse');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/mr-bean-coffee-shop-the-falls-cafe-para-quedarse\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('mr-bean-coffee-shop-the-falls-cafe-para-quedarse');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
  "ninos": {

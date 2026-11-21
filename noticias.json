@@ -55,6 +55,193 @@
   "videos": [],
   "notas": [
     {
+      "id": "venado-de-los-cayos-key-deer-big-pine-key-como-verlo",
+      "scope": "cayos",
+      "tema": "curioso",
+      "hamaca": true,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-20",
+      "publicada": "2026-11-20T21:35:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-venados-calle.jpg",
+      "foto_alt": "Cuatro venados de los Cayos junto a una calle residencial, entre palmas",
+      "foto_pie": "Venados de los Cayos en una calle residencial de los Cayos Bajos.",
+      "foto_pie_en": "Key deer on a residential street in the Lower Keys.",
+      "galeria": [
+        {
+          "f": "mm-keys-venado-jardin-1.jpg",
+          "es": "Un venado de los Cayos en un jardín. De adulto apenas pasa de las 30 pulgadas hasta el lomo.",
+          "en": "A Key deer in a yard. A full-grown adult barely tops 30 inches at the shoulder."
+        },
+        {
+          "f": "mm-keys-venado-jardin-2.jpg",
+          "es": "Se acercan a la gente, y por eso mismo está prohibido darles comida.",
+          "en": "They walk up to people, which is exactly why feeding them is prohibited."
+        }
+      ],
+      "fuentes": [
+        {
+          "n": "Servicio de Pesca y Vida Silvestre de EE. UU. · Key deer",
+          "u": "https://www.fws.gov/species/key-deer-odocoileus-virginianus-clavium"
+        },
+        {
+          "n": "FWC · Key deer",
+          "u": "https://myfwc.com/wildlifehabitats/profiles/mammals/land/key-deer/"
+        },
+        {
+          "n": "National Key Deer Refuge · Visítanos",
+          "u": "https://www.fws.gov/refuge/national-key-deer/visit-us"
+        },
+        {
+          "n": "National Key Deer Refuge · Reglas",
+          "u": "https://fws.gov/refuge/national-key-deer/visit-us/rules-policies"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "HAMACA MOOD · LOS CAYOS",
+        "titulo": "Llegaron a quedar menos de 50: el venado que solo existe en los Cayos, y cómo verlo sin hacerle daño",
+        "bajada": "El venado de los Cayos es el más pequeño de Norteamérica y vive únicamente entre Big Pine Key y Sugarloaf Key. Hoy hay entre 700 y 800, según la agencia estatal de vida silvestre, y lo que más los mata son los autos.",
+        "toca": [
+          "Darles comida, tocarlos o perseguirlos está prohibido en el refugio.",
+          "Se ven mejor al amanecer y al atardecer, en Big Pine Key y hacia el sur hasta Lower Sugarloaf Key.",
+          "El Nature Center del refugio abre de miércoles a sábado, de 10 a.m. a 3 p.m.: 30587 Overseas Highway, Big Pine Key.",
+          "Un venado herido se reporta al 888-404-3922."
+        ],
+        "cuerpo": [
+          "Caminan por los jardines, cruzan la calle sin apuro y se quedan mirando al que pasa. En Big Pine Key, el venado de los Cayos (Key deer) es un vecino más, y es un animal que no existe en ningún otro lugar del mundo.",
+          "## Un venado en miniatura",
+          "Es la subespecie más pequeña del venado de cola blanca de Norteamérica. Un adulto mide entre 25 y 30 pulgadas hasta el lomo y pesa de 45 a 75 libras, de acuerdo con el [Servicio de Pesca y Vida Silvestre de Estados Unidos](https://www.fws.gov/species/key-deer-odocoileus-virginianus-clavium). Vive en unas 25 islas, de Big Pine Key a Sugarloaf Key, y nada de una a otra.",
+          "## De menos de 50 a varios cientos",
+          "La caza y la pérdida de su hábitat lo llevaron al borde de la extinción: en la década de 1940 quedaban menos de 50, indica la [Comisión de Conservación de Pesca y Vida Silvestre de Florida](https://myfwc.com/wildlifehabitats/profiles/mammals/land/key-deer/) (FWC). Después se prohibió cazarlo, en 1957 se creó el National Key Deer Refuge y en 1967 entró en la lista de especies en peligro.",
+          "Hoy la FWC calcula entre 700 y 800 ejemplares, la mayoría en Big Pine Key y No Name Key. La población se considera estable, pero el venado sigue en peligro de extinción.",
+          "## Lo que más los mata",
+          "Los choques con autos son hoy su primera causa de muerte, señala la FWC. El refugio pide manejar con cuidado desde Big Pine Key hasta Lower Sugarloaf Key y respetar los límites de velocidad señalizados.",
+          "Darles comida es ilegal y les hace daño. Según la misma agencia, les quita el miedo a la gente y los concentra en un punto, con lo que se contagian parásitos y enfermedades. Por eso se acercan a las personas y a los autos: buscan que les den algo.",
+          "## Dónde verlos",
+          "El refugio recomienda empezar por su [Nature Center](https://www.fws.gov/refuge/national-key-deer/visit-us), justo antes del único semáforo de Big Pine Key para quien llega desde Miami. Desde ahí se va al Blue Hole, una plataforma de observación a tres millas al norte de la US 1 por Key Deer Boulevard, y a los senderos Watson y Mannillo, un cuarto de milla más adelante.",
+          "No hay que buscarlos mucho: andan sueltos por las tierras del refugio y por el vecindario."
+        ]
+      },
+      "en": {
+        "etiqueta": "HAMACA MOOD · THE KEYS",
+        "titulo": "Fewer than 50 were once left: the deer that lives only in the Keys, and how to see it without harming it",
+        "bajada": "The Key deer is the smallest in North America and lives only between Big Pine Key and Sugarloaf Key. There are 700 to 800 today, the state wildlife agency says, and cars are what kills them most.",
+        "toca": [
+          "Feeding, touching or chasing them is prohibited in the refuge.",
+          "They are best seen at dawn and dusk, on Big Pine Key and south to Lower Sugarloaf Key.",
+          "The refuge’s Nature Center is open Wednesday through Saturday, 10 a.m. to 3 p.m.: 30587 Overseas Highway, Big Pine Key.",
+          "Report an injured deer at 888-404-3922."
+        ],
+        "cuerpo": [
+          "They walk through yards, cross the street in no hurry and stare at whoever goes by. On Big Pine Key, the Key deer is just another neighbor, and it is an animal that exists nowhere else in the world.",
+          "## A deer in miniature",
+          "It is the smallest subspecies of North American white-tailed deer. An adult stands 25 to 30 inches at the shoulder and weighs 45 to 75 pounds, according to the [U.S. Fish and Wildlife Service](https://www.fws.gov/species/key-deer-odocoileus-virginianus-clavium). It lives on about 25 islands, from Big Pine Key to Sugarloaf Key, and swims from one to another.",
+          "## From fewer than 50 to several hundred",
+          "Hunting and habitat loss pushed it to the edge of extinction: fewer than 50 were left in the 1940s, the [Florida Fish and Wildlife Conservation Commission](https://myfwc.com/wildlifehabitats/profiles/mammals/land/key-deer/) (FWC) notes. Hunting was then banned, the National Key Deer Refuge was created in 1957 and the deer was listed as endangered in 1967.",
+          "Today the FWC estimates 700 to 800 animals, most of them on Big Pine Key and No Name Key. The population is considered stable, but the deer remains endangered.",
+          "## What kills them most",
+          "Vehicle collisions are now their leading cause of death, the FWC says. The refuge asks drivers to take care from Big Pine Key to Lower Sugarloaf Key and to obey the posted speed limits.",
+          "Feeding them is illegal and harms them. According to the same agency, it takes away their fear of people and concentrates them in one spot, which spreads parasites and disease. That is why they walk up to people and cars: they are looking for a handout.",
+          "## Where to see them",
+          "The refuge recommends starting at its [Nature Center](https://www.fws.gov/refuge/national-key-deer/visit-us), just before the only traffic light on Big Pine Key for anyone arriving from Miami. From there you can head to the Blue Hole, an observation platform three miles north of US 1 on Key Deer Boulevard, and to the Watson and Mannillo trails, a quarter mile farther on.",
+          "You won’t have to look hard: they roam freely across refuge lands and through the neighborhood."
+        ]
+      }
+    },
+    {
+      "id": "mr-bean-coffee-shop-the-falls-cafe-para-quedarse",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": true,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-20",
+      "publicada": "2026-11-20T21:38:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-mrbean-portada.jpg",
+      "foto_mm": false,
+      "foto_alt": "La fachada de Mr. Bean Coffee Shop en The Falls, con mesas en el pasillo",
+      "foto_pie": "Mr. Bean Coffee Shop, en The Falls.",
+      "foto_pie_en": "Mr. Bean Coffee Shop, at The Falls.",
+      "galeria": [
+        {
+          "f": "mm-mrbean-mostrador.jpg",
+          "mm": false,
+          "es": "El mostrador, con los horneados a la vista y el menú en pizarras.",
+          "en": "The counter, with the baked goods on display and the menu on chalkboards."
+        },
+        {
+          "f": "mm-mrbean-vidriera.jpg",
+          "mm": false,
+          "es": "La frase de la vidriera.",
+          "en": "The line on the window."
+        },
+        {
+          "f": "mm-mrbean-pop-art.jpg",
+          "mm": false,
+          "es": "Un sombrero de copa hace de lámpara.",
+          "en": "A top hat serves as a lamp."
+        },
+        {
+          "f": "mm-mrbean-cartel-coffee.jpg",
+          "mm": false,
+          "es": "Los carteles de la pared hablan de lo mismo: café.",
+          "en": "The signs on the wall all say the same thing: coffee."
+        },
+        {
+          "f": "mm-mrbean-vaso.jpg",
+          "mm": false,
+          "es": "Para llevar, con el sello de la casa.",
+          "en": "To go, with the house stamp."
+        }
+      ],
+      "fuentes": [
+        {
+          "n": "The Falls · Mr. Bean",
+          "u": "https://www.simon.com/mall/the-falls/stores/mr-bean"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "HAMACA MOOD",
+        "titulo": "Sofás, un libro y un menú a lo francés: el café de The Falls para quedarse",
+        "bajada": "Mr. Bean Coffee Shop es de esos lugares a los que se va sin reloj: mesas adentro y afuera, una zona de sofás y un mostrador que invita a pedir algo más.",
+        "toca": [
+          "Abre de lunes a jueves de 10 a.m. a 9 p.m., viernes y sábado de 9 a.m. a 10 p.m. y domingo de 10 a.m. a 8 p.m., según The Falls.",
+          "Está cerca de Macy’s; la entrada más cómoda es la de P.F. Chang’s.",
+          "Dirección: 8888 SW 136th St, Suite 585."
+        ],
+        "cuerpo": [
+          "En la vidriera lo dice sin rodeos: “Coffee is always a good idea”. Adentro, un sombrero de copa hace de lámpara, las paredes de ladrillo blanco están llenas de carteles de café y hay una zona de sofás para quedarse el rato que haga falta.",
+          "## Para quién es",
+          "Sirve para casi todo: para ir en pareja, en grupo o solo, o con un libro. Hay mesas dentro y también afuera, bajo el pasillo techado de The Falls, que es un centro comercial al aire libre.",
+          "## El menú",
+          "Lo que lo distingue es su menú, a lo francés, con los horneados a la vista en el mostrador y las bebidas de la casa anotadas en paneles amarillos, aparte de la carta de cafés.",
+          "The Falls lo describe en [su directorio](https://www.simon.com/mall/the-falls/stores/mr-bean) como la cafetería del vecindario."
+        ]
+      },
+      "en": {
+        "etiqueta": "HAMACA MOOD",
+        "titulo": "Sofas, a book and a French-leaning menu: the café at The Falls made for staying",
+        "bajada": "Mr. Bean Coffee Shop is one of those places you visit without a watch: tables inside and out, a corner with sofas and a counter that invites you to order one more thing.",
+        "toca": [
+          "It opens Monday through Thursday 10 a.m. to 9 p.m., Friday and Saturday 9 a.m. to 10 p.m. and Sunday 10 a.m. to 8 p.m., according to The Falls.",
+          "It is near Macy’s; the easiest entrance is the one by P.F. Chang’s.",
+          "Address: 8888 SW 136th St, Suite 585."
+        ],
+        "cuerpo": [
+          "The window says it plainly: “Coffee is always a good idea.” Inside, a top hat serves as a lamp, the white brick walls are covered in coffee signs and there is a corner with sofas to stay as long as you need.",
+          "## Who it is for",
+          "It works for almost anything: as a couple, with a group or alone, or with a book. There are tables inside and also outside, under the covered walkway of The Falls, an open-air mall.",
+          "## The menu",
+          "What sets it apart is its French-leaning menu, with the baked goods on display at the counter and the house drinks listed on yellow panels, apart from the coffee list.",
+          "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
+        ]
+      }
+    },
+    {
       "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
       "scope": "miami",
       "tema": "curioso",
@@ -95,43 +282,60 @@
         {
           "n": "Seminole Hard Rock Hotel & Casino Hollywood · Oculus Bar",
           "u": "https://casino.hardrock.com/hollywood/bars-and-lounges/oculus-bar"
+        },
+        {
+          "n": "Faour Glass Technologies · Seminole Hard Rock, Hollywood",
+          "u": "https://faourglass.com/seminole-hard-rock-casino-hollywood-fl/"
+        },
+        {
+          "n": "5TEN Visuals · Hard Rock Hotel & Casino",
+          "u": "https://www.510visuals.com/hard-rock-hotel-and-casino-case-study"
         }
       ],
       "desarrollo": false,
       "es": {
         "etiqueta": "HAMACA MOOD",
         "titulo": "Cada 20 minutos llueve con música dentro del Guitar Hotel",
-        "bajada": "El Oculus es una cascada de 35 pies en la entrada del Seminole Hard Rock, en Hollywood: agua, luces y proyecciones al ritmo de una canción.",
+        "bajada": "El Oculus recibe a quien entra al Seminole Hard Rock, en Hollywood, con una cascada de 35 pies que cae desde el techo y se convierte en pantalla: agua, luces y proyecciones al ritmo de una canción.",
         "toca": [
           "Corre todos los días, cada 20 minutos. El hotel advierte que el horario puede cambiar sin aviso.",
           "Está en la entrada principal del Guitar Hotel: 1 Seminole Way, Hollywood.",
           "La página del hotel no menciona boleto ni reserva para verlo."
         ],
         "cuerpo": [
-          "Baja la luz del lobby, suena una canción y el agua empieza a caer en círculo desde el techo. Sobre esa cortina aparecen figuras que cambian con la música: ondas azules, burbujas, trazos rojos. Dura lo que dura el tema, y a los 20 minutos vuelve a empezar.",
+          "No hace falta entrada de concierto para ver un espectáculo en el Hard Rock: basta con cruzar la puerta. Baja la luz del lobby, suena una canción y el agua empieza a caer en círculo desde el techo, tres pisos más arriba. Sobre esa cortina aparecen figuras que cambian con la música (ondas azules, burbujas, trazos rojos) mientras las columnas y el techo se tiñen del mismo color. Dura lo que dura el tema, y a los 20 minutos vuelve a empezar.",
           "## Qué es",
           "El Oculus ocupa el centro de la entrada del Guitar Hotel, en el Seminole Hard Rock Hotel & Casino de Hollywood. Según [el hotel](https://casino.hardrock.com/hollywood/entertainment/the-oculus), la cascada mide 35 pies de alto y combina agua, luces y proyecciones de piso a techo, coreografiadas con música de artistas como Maroon 5, Pitbull, Sting y Bill Withers.",
+          "## Cómo está hecho",
+          "Detrás del efecto hay un cilindro de vidrio de 40 pies de diámetro, armado con catorce paneles laminados a la medida. El agua corre por una cara y, en ocho de ellos, una película especial convierte el vidrio en pantalla, explica [Faour Glass](https://faourglass.com/seminole-hard-rock-casino-hollywood-fl/), la empresa que los fabricó.",
+          "El diseño es de Rockwell Group, en colaboración con la firma de iluminación Focus, SenovvA y WET Design, de acuerdo con [5TEN Visuals](https://www.510visuals.com/hard-rock-hotel-and-casino-case-study), una de las empresas que trabajó en el montaje. Alrededor de la fuente, seis columnas iluminadas y las luces del techo siguen la misma coreografía.",
           "## Cómo verlo",
-          "Los espectáculos corren a diario. Alrededor de la fuente hay espacio para quedarse de pie, y desde arriba la mira el [Oculus Bar](https://casino.hardrock.com/hollywood/bars-and-lounges/oculus-bar), que abre de mediodía a medianoche de domingo a jueves y hasta las 2 a.m. los viernes y sábados."
+          "Los espectáculos corren a diario. Alrededor de la fuente hay espacio para quedarse de pie, y desde arriba la mira el [Oculus Bar](https://casino.hardrock.com/hollywood/bars-and-lounges/oculus-bar), que abre de mediodía a medianoche de domingo a jueves y hasta las 2 a.m. los viernes y sábados.",
+          "Es, además, la antesala de la torre con forma de guitarra, que abrió en octubre de 2019 y tiene su propio espectáculo de luces en la fachada cada noche."
         ]
       },
       "en": {
         "etiqueta": "HAMACA MOOD",
         "titulo": "Every 20 minutes it rains to music inside the Guitar Hotel",
-        "bajada": "The Oculus is a 35-foot waterfall at the entrance of the Seminole Hard Rock in Hollywood: water, lights and projections set to a song.",
+        "bajada": "The Oculus greets anyone walking into the Seminole Hard Rock in Hollywood with a 35-foot waterfall that drops from the ceiling and turns into a screen: water, lights and projections set to a song.",
         "toca": [
           "It runs every day, every 20 minutes. The hotel notes the schedule may change without notice.",
           "It sits at the main entrance of the Guitar Hotel: 1 Seminole Way, Hollywood.",
           "The hotel’s page mentions no ticket or reservation to watch it."
         ],
         "cuerpo": [
-          "The lobby lights dim, a song starts and water begins to fall in a circle from the ceiling. On that curtain, images appear and shift with the music: blue waves, bubbles, red strokes. It lasts as long as the track, and 20 minutes later it starts again.",
+          "You don’t need a concert ticket to see a show at the Hard Rock: walking through the door is enough. The lobby lights dim, a song starts and water begins to fall in a circle from the ceiling, three stories up. On that curtain, images appear and shift with the music (blue waves, bubbles, red strokes) while the columns and the ceiling turn the same color. It lasts as long as the track, and 20 minutes later it starts again.",
           "## What it is",
           "The Oculus stands at the center of the entrance to the Guitar Hotel, at the Seminole Hard Rock Hotel & Casino in Hollywood. According to [the hotel](https://casino.hardrock.com/hollywood/entertainment/the-oculus), the waterfall is 35 feet tall and combines water, lighting and floor-to-ceiling projections, choreographed to music by artists such as Maroon 5, Pitbull, Sting and Bill Withers.",
+          "## How it is built",
+          "Behind the effect is a glass cylinder 40 feet in diameter, made of fourteen custom laminated panels. Water runs down one side and, on eight of them, a special film turns the glass into a screen, explains [Faour Glass](https://faourglass.com/seminole-hard-rock-casino-hollywood-fl/), the company that made them.",
+          "The design is by Rockwell Group, working with lighting firm Focus, SenovvA and WET Design, according to [5TEN Visuals](https://www.510visuals.com/hard-rock-hotel-and-casino-case-study), one of the companies involved in the installation. Around the fountain, six illuminated columns and the ceiling lights follow the same choreography.",
           "## How to see it",
-          "The shows run daily. There is room to stand around the fountain, and the [Oculus Bar](https://casino.hardrock.com/hollywood/bars-and-lounges/oculus-bar) looks down on it from above; it opens from noon to midnight Sunday through Thursday and until 2 a.m. on Fridays and Saturdays."
+          "The shows run daily. There is room to stand around the fountain, and the [Oculus Bar](https://casino.hardrock.com/hollywood/bars-and-lounges/oculus-bar) looks down on it from above; it opens from noon to midnight Sunday through Thursday and until 2 a.m. on Fridays and Saturdays.",
+          "It is also the anteroom to the guitar-shaped tower, which opened in October 2019 and has its own light show on the facade every night."
         ]
-      }
+      },
+      "actualizada": "2026-11-20T21:40:00-05:00"
     },
     {
       "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
@@ -155,6 +359,10 @@
         {
           "n": "PortMiami",
           "u": "https://www.miamidade.gov/portmiami/home.page"
+        },
+        {
+          "n": "Cruise Industry News · programa de la temporada 2026-27 anunciado por PortMiami",
+          "u": "https://cruiseindustrynews.com/cruise-news/2026/10/portmiami-announces-new-lineup-of-ships-for-2026-27-season/"
         }
       ],
       "desarrollo": false,
@@ -164,12 +372,15 @@
         "bajada": "El puerto cerró su año fiscal con 10,533,854 pasajeros de crucero, un 23% más que el anterior, informó el condado. La carga, en cambio, bajó un poco.",
         "toca": [
           "Más pasajeros es más tráfico los días de embarque. El condado indica entrar por el túnel a las terminales AA, A, B, C y D, y por el puente a las E, F, G, J y V.",
-          "Octubre ya vino más cargado que el del año pasado: 106 escalas frente a 93."
+          "Vienen días cargados: el puerto prevé 81 jornadas esta temporada con entre siete y diez cruceros a la vez."
         ],
         "cuerpo": [
           "PortMiami recibió 10,533,854 pasajeros de crucero entre el 1 de octubre de 2025 y el 30 de septiembre de 2026, y es la primera vez que supera los 10 millones en un año fiscal. La cifra, que el [condado de Miami-Dade](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794957081815401) divulgó el miércoles 18 de noviembre, deja atrás los 8,564,225 del período anterior: casi dos millones más, un aumento de 23%.",
           "## El año nuevo arrancó igual",
           "El ritmo no aflojó en octubre, primer mes del nuevo año fiscal. Pasaron por el puerto 832,142 pasajeros en 106 escalas, el octubre más alto de su historia, de acuerdo con el mismo comunicado. Un año antes habían sido 699,043 en 93 escalas.",
+          "## Noviembre trae barcos nuevos",
+          "La temporada alta apenas empieza. Para noviembre el puerto tenía en calendario el estreno en Miami de cuatro barcos: el Orient Express Corinthian, el Silver Shadow de Silversea, el Ilma de The Ritz-Carlton Yacht Collection y el Emerald Sakara, según el programa que PortMiami anunció en octubre y que recogió [Cruise Industry News](https://cruiseindustrynews.com/cruise-news/2026/10/portmiami-announces-new-lineup-of-ships-for-2026-27-season/). En diciembre les siguen el Silver Ray, el Azamara Quest, el Four Seasons I y el Silver Dawn.",
+          "El puerto también adelantó que esta temporada tendrá 81 días con entre siete y diez cruceros atracados a la vez.",
           "## La carga, casi igual",
           "En contenedores el balance es otro. El puerto movió 1,105,517 TEU, la medida estándar que equivale a un contenedor de 20 pies: un 0.86% menos que los 1,115,058 del año anterior. Aun así, lleva doce años seguidos por encima del millón.",
           "El condado calcula que el puerto aporta 61,000 millones de dólares al año a la economía local y sostiene más de 340,000 empleos."
@@ -181,17 +392,21 @@
         "bajada": "The port closed its fiscal year with 10,533,854 cruise passengers, 23% more than the year before, the county reported. Cargo, meanwhile, slipped slightly.",
         "toca": [
           "More passengers means more traffic on embarkation days. The county directs drivers to the tunnel for Terminals AA, A, B, C and D, and to the bridge for E, F, G, J and V.",
-          "October already came in busier than last year’s: 106 cruise calls versus 93."
+          "Busy days ahead: the port expects 81 days this season with seven to ten cruise ships at once."
         ],
         "cuerpo": [
           "PortMiami welcomed 10,533,854 cruise passengers between October 1, 2025 and September 30, 2026, the first time it has passed 10 million in a fiscal year. The figure, which [Miami-Dade County](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794957081815401) released on Wednesday, November 18, leaves behind the 8,564,225 of the previous period: nearly two million more, a 23% increase.",
           "## The new year started the same way",
           "The pace held in October, the first month of the new fiscal year. The port handled 832,142 passengers across 106 cruise calls, the highest October in its history, according to the same release. A year earlier it had been 699,043 on 93 calls.",
+          "## November brings new ships",
+          "High season is only beginning. For November the port had four ships scheduled to make their Miami debut: Orient Express Corinthian, Silversea’s Silver Shadow, The Ritz-Carlton Yacht Collection’s Ilma and Emerald Sakara, according to the lineup PortMiami announced in October, as reported by [Cruise Industry News](https://cruiseindustrynews.com/cruise-news/2026/10/portmiami-announces-new-lineup-of-ships-for-2026-27-season/). Silver Ray, Azamara Quest, Four Seasons I and Silver Dawn follow in December.",
+          "The port has also said this season will bring 81 days with seven to ten cruise ships docked at once.",
           "## Cargo, almost flat",
           "Containers tell a different story. The port moved 1,105,517 TEUs, the standard measure equal to one 20-foot container: 0.86% fewer than the 1,115,058 of the year before. Even so, it has stayed above one million for twelve straight years.",
           "The county estimates the port contributes $61 billion a year to the local economy and supports more than 340,000 jobs."
         ]
-      }
+      },
+      "actualizada": "2026-11-20T21:40:00-05:00"
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -7635,7 +7850,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-20T21:05:00-05:00",
+  "updated_at": "2026-11-20T21:40:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
