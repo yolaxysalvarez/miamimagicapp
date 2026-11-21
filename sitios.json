@@ -511,16 +511,16 @@
  "parques": {
   "pk1": {
    "photos": [
-    "fotos/mm-larry-penny-lago-atardecer.jpg",
-    "fotos/mm-larry-penny-sendero-pinos.jpg",
-    "fotos/mm-larry-penny-cardenal.jpg",
-    "fotos/mm-larry-penny-carpintero.jpg",
-    "fotos/mm-larry-penny-gavilan.jpg",
-    "fotos/mm-larry-penny-camino-atardecer.jpg",
-    "fotos/mm-larry-penny-pato-lago.jpg",
-    "fotos/mm-larry-penny-pato-grama.jpg",
-    "fotos/mm-larry-penny-picnic-lago.jpg",
-    "fotos/mm-larry-penny-lago-roble.jpg"
+    "fotos/mm-larry-penny-lago-atardecer-mm.jpg",
+    "fotos/mm-larry-penny-sendero-pinos-mm.jpg",
+    "fotos/mm-larry-penny-cardenal-mm.jpg",
+    "fotos/mm-larry-penny-carpintero-mm.jpg",
+    "fotos/mm-larry-penny-gavilan-mm.jpg",
+    "fotos/mm-larry-penny-camino-atardecer-mm.jpg",
+    "fotos/mm-larry-penny-pato-lago-mm.jpg",
+    "fotos/mm-larry-penny-pato-grama-mm.jpg",
+    "fotos/mm-larry-penny-picnic-lago-mm.jpg",
+    "fotos/mm-larry-penny-lago-roble-mm.jpg"
    ],
    "badge": "Best Campground 2020 · Miami New Times",
    "badge_es": "Mejor Campamento 2020 · Miami New Times",
@@ -532,7 +532,8 @@
   },
   "pk3": {
    "pnote": "The palm-ringed atoll pool is one of the most photographed spots in Miami, and the west-facing shoreline gets a real sunset over the bay. <a href=\"https://www.miamimagicapp.com/news/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
-   "pnote_es": "La piscina atolón rodeada de palmas es uno de los lugares más fotografiados de Miami, y la orilla que mira al oeste tiene un atardecer real sobre la bahía. <a href=\"https://www.miamimagicapp.com/noticias/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+   "pnote_es": "La piscina atolón rodeada de palmas es uno de los lugares más fotografiados de Miami, y la orilla que mira al oeste tiene un atardecer real sobre la bahía. <a href=\"https://www.miamimagicapp.com/noticias/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>",
+   "photo": "fotos/mm-matheson-atoll-aereo-app.jpg"
   },
   "pk4": {
    "pnote": "Manatees enter the mangrove creeks year-round and are most visible from a kayak in the early morning. Leashed dogs are welcome on the trails. <a href=\"https://www.miamimagicapp.com/news/oleta-river-kayak-pesca-norte\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oleta-river-kayak-pesca-norte');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
@@ -541,7 +542,8 @@
   },
   "pk9": {
    "pnote": "<a href=\"https://www.miamimagicapp.com/news/christmas-wonderland-tropical-park-2026\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('christmas-wonderland-tropical-park-2026');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
-   "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/christmas-wonderland-tropical-park-2026\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('christmas-wonderland-tropical-park-2026');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+   "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/christmas-wonderland-tropical-park-2026\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('christmas-wonderland-tropical-park-2026');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>",
+   "photo": "fotos/mm-tropical-park-wonderland-arbol-dron.jpg"
   },
   "pk-stiltsville": {
    "name": "Stiltsville",
@@ -584,6 +586,9 @@
    "photo": "fotos/mm-boca-chita-key-playa.jpg",
    "pnote": "In Boca Chita there is no drinking water or electricity and pets are not allowed: bring repellent and take your trash back. <a href=\"https://www.miamimagicapp.com/news/parque-nacional-biscayne-escapada\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('parque-nacional-biscayne-escapada');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "En Boca Chita no hay agua potable ni electricidad y no se admiten mascotas: lleva repelente y regresa con tu basura. <a href=\"https://www.miamimagicapp.com/noticias/parque-nacional-biscayne-escapada\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('parque-nacional-biscayne-escapada');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "pk5": {
+   "photo": "fotos/mm-virginia-key-playa-puente.jpg"
   }
  },
  "compras": {},
