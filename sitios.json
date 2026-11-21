@@ -177,6 +177,14 @@
     "fotos/mm-delilah-salmon.jpg",
     "fotos/mm-delilah-postre.jpg"
    ]
+  },
+  "r24": {
+   "photo": "https://i.ytimg.com/vi/bw7zbEqBprc/maxres2.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/bw7zbEqBprc/maxres2.jpg",
+    "https://i.ytimg.com/vi/bw7zbEqBprc/maxres1.jpg",
+    "https://i.ytimg.com/vi/bw7zbEqBprc/maxres3.jpg"
+   ]
   }
  },
  "hoteles": {
@@ -665,7 +673,7 @@
  },
  "galerias": {
   "art1": {
-   "photo": "fotos/mm-pl2.jpg"
+   "photo": "fotos/mm-wynwood-mural-retrato.jpg"
   }
  },
  "excursiones": {
