@@ -22386,6 +22386,13 @@ function kyRenderSimilar(obj){
 #mmDoor .dr-marks .m-dk .ringw{display:inline-block;vertical-align:-.02em;margin:0 .015em;filter:drop-shadow(0 0 .025em rgba(11,92,122,.85))}
 #mmDoor .dr-marks .m-dk .ring{display:block;width:.5em;height:.5em;border-radius:50%;background:conic-gradient(#FF4D35 0 45deg,#fff 0 90deg,#FF4D35 0 135deg,#fff 0 180deg,#FF4D35 0 225deg,#fff 0 270deg,#FF4D35 0 315deg,#fff 0 360deg);-webkit-mask:radial-gradient(circle,transparent 44%,#000 47%);mask:radial-gradient(circle,transparent 44%,#000 47%)}
 #mmDoor .dr-marks .m-cc{background:#FBF1DC;border-color:rgba(201,150,60,.55)}
+#mmDoor .dr-marks .m-ev{background:#0E1B30;border-color:#0E1B30;color:#FFF8EF;box-shadow:0 6px 16px -8px rgba(14,27,48,.6)}
+#mmDoor .dr-marks .m-ev svg{display:inline-block;width:.95em;height:.95em;margin-right:.42em;vertical-align:-.12em;color:#FFD166}
+#mmDoor .dr-marks .m-ev i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#FF4D35;margin-left:7px;vertical-align:.14em}
+#mmDoor .dr-links button.hm{color:#B4301D}#mmDoor .dr-links button.dk{color:#0B5C7A}
+#mmDoor .dr-links{margin-top:8px}#mmDoor .dr-links button{padding-left:8px!important;padding-right:8px!important;letter-spacing:.08em!important;font-size:.86rem!important}
+@media (max-width:385px){#mmDoor .dr-links button{padding-left:6px!important;padding-right:6px!important;font-size:.8rem!important;letter-spacing:.06em!important}}
+@media (max-width:340px){#mmDoor .dr-links button{padding-left:4px!important;padding-right:4px!important;font-size:.74rem!important;letter-spacing:.04em!important}}
 #mmDoor .dr-marks .m-cc svg{display:inline-block;width:.8em;height:.8em;margin:0 .12em;vertical-align:-.1em}
 #mmDoor .dr-links{display:flex;align-items:center;justify-content:center;margin-top:6px}
 #mmDoor .dr-links button{appearance:none;background:none;border:0;min-height:44px;padding:8px 16px 6px;font:400 .92rem 'Bebas Neue',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#0E1B30;white-space:nowrap;cursor:pointer}
@@ -22456,17 +22463,17 @@ function kyRenderSimilar(obj){
         d.addEventListener('touchstart',function(){paused=true},{passive:true});d.addEventListener('touchend',function(){setTimeout(function(){paused=false},2500)},{passive:true});
       }
       d.style.setProperty('--drT',(T/1000)+'s');
-      d.innerHTML='<div class="dr-top"><span class="dr-brand">Miami Magic <b>NEWS</b></span><span class="dr-dots" id="drDots" aria-hidden="true">'+items.map(function(){return '<i></i>'}).join('')+'</span></div>'
+      d.innerHTML='<div class="dr-top"><span class="dr-brand" data-sec="" role="link" tabindex="0" style="cursor:pointer">Miami Magic <b>NEWS</b></span><span class="dr-dots" id="drDots" aria-hidden="true">'+items.map(function(){return '<i></i>'}).join('')+'</span></div>'
         +'<div class="dr-stage" id="drStage" aria-live="off"></div>'
         +'<div class="dr-idx" role="navigation" aria-label="'+(es?'Secciones de News':'News sections')+'">'
         +'<div class="dr-marks">'
-        +'<button type="button" class="m-hm" data-sec="hamaca" aria-label="'+(es?'Hamaca Mood':'Hammock Mood')+'"><span>'+(es?'Hamaca':'Hammock')+' <em>M<span class="sol"></span>od</em></span></button>'
-        +'<button type="button" class="m-dk" data-sec="muelle" aria-label="'+(es?'El Muelle':'The Dock')+'"><span>'+(es?'El <em>Mue<span class="pil"></span><span class="pil"></span>e</em>':'The <em>D<span class="ringw"><span class="ring"></span></span>ck</em>')+'</span></button>'
+        +'<button type="button" class="m-ev" data-sec="agenda" aria-label="'+(es?'Eventos':'Events')+'"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>'+(es?'Eventos':'Events')+'<i></i></span></button>'
         +'<button type="button" class="m-cc" data-sec="casa" aria-label="Casa &amp; Coast"><span>Casa<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span></button></div>'
         +'<div class="dr-links">'
-        +'<button type="button" class="ag" data-sec="agenda">'+(es?'Agenda':'What’s On')+'<i></i></button>'
+        +'<button type="button" class="hm" data-sec="hamaca">'+(es?'Hamaca Mood':'Hammock Mood')+'</button>'
+        +'<button type="button" class="dk" data-sec="muelle">'+(es?'El Muelle':'The Dock')+'</button>'
         +'<button type="button" class="ky" data-sec="cayos">'+(es?'Los Cayos':'The Keys')+'</button>'
-        +'<button type="button" data-sec="">'+(es?'Todo News':'All News')+' <b>→</b></button></div></div>';
+        +'</div></div>';
       show(0,true);loop();
       placeSoc();
     }catch(e){}

@@ -212,6 +212,25 @@ main.wrap{padding-top:4px;padding-bottom:40px}
 .dk-pill b{font-family:var(--pf);font-weight:900;font-size:19px;white-space:nowrap}
 .dk-pill.on{background:#fff;border-color:#0B5C7A}
 .tabs .dk-pill{margin-left:8px}
+/* Eventos, arriba con Casa & Coast (nov 2026): Hamaca Mood y El Muelle siguen en la portada y en el pie */
+.hd-off{display:none!important}
+/* volver a la guía (la app) desde News, sin abrir otra pestaña */
+.bk{display:inline-flex;align-items:center;gap:5px;height:38px;padding:0 14px 0 10px;border-radius:999px;border:1px solid rgba(14,27,48,.2);background:#fff;color:var(--ink);font-weight:700;font-size:14.5px;white-space:nowrap;text-decoration:none;flex:none}
+.bk svg{width:15px;height:15px;color:var(--coral-d)}
+.bk:hover{border-color:var(--coral-d)}
+html.in-app .bk{display:none}
+@media(max-width:1380px){.bk{height:34px;font-size:14px}}
+.bk2{display:none}
+@media(max-width:760px){.bk{display:none}
+  .bk2{display:inline-flex;align-items:center;gap:1px;flex:none;margin-right:-2px;text-decoration:none;color:var(--coral-d)}
+  .bk2 svg{width:13px;height:13px;flex:none}.bk2 img{width:34px;height:34px;border-radius:9px;display:block}
+  html:not(.in-app) .mast>img{display:none}html.in-app .bk2{display:none}
+  html:not(.in-app) .hdr-in{justify-content:flex-start;column-gap:7px}html:not(.in-app) .mast{margin-right:auto}}
+@media(min-width:1201px){.bk{padding:0 10px 0 6px;font-size:13.5px;gap:3px}.tabs .dk-pill{margin-left:6px}}
+.tabs .ev-pill{background:var(--ink)!important;border-color:var(--ink)!important;color:#FFF8EF}
+.ev-pill b{display:flex;align-items:center;gap:7px}
+.ev-pill svg{width:.92em;height:.92em;color:var(--sun);flex:none}
+.ev-pill.on{box-shadow:0 0 0 2px var(--sun)}
 .cc-pill{background:#FBF1DC;border-color:rgba(201,150,60,.55)}.cc-pill.on{background:#fff;border-color:#8A5A12}.cc-pill .ccw .em{width:.8em;height:.8em;vertical-align:-.1em;margin:0 .12em}
 .dk{position:relative;margin:56px 0 64px;display:grid;grid-template-columns:250px minmax(0,1fr);border-radius:18px;overflow:hidden;background:#F5FAFB;box-shadow:0 18px 40px -30px rgba(11,60,80,.55);border:1px solid rgba(11,92,122,.12)}
 .dk-post{position:relative;background:linear-gradient(180deg,#EEF7F9 0%,#D4EAF0 55%,#B6D8E2 100%);padding:26px 20px 26px;display:flex;flex-direction:column;align-items:center;gap:20px;min-height:600px;overflow:hidden}
@@ -360,7 +379,7 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 .fb{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-top:16px;padding-bottom:34px;border-top:1px solid rgba(14,27,48,.08);font-size:15px;color:var(--mut)}
 
 /* ── teléfono ── */
-@media (max-width:1410px){.dl{display:none}}
+@media (max-width:1620px){.dl{display:none}}
 @media (min-width:1201px){.hdr-in{gap:12px}.mast{gap:12px}.navr{gap:10px}.hm-pill,.dk-pill{padding-left:13px;padding-right:13px}.lng button{padding-left:9px;padding-right:9px}.dl{padding-left:11px;padding-right:11px}.hm-pill,.dk-pill{padding-left:11px;padding-right:11px}}
 @media (max-width:370px){.tab{font-size:15px!important}.hm-pill b,.dk-pill b{font-size:13.5px!important}}
 @media (max-width:1200px){
@@ -391,6 +410,12 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
   .tab{font-size:16px;letter-spacing:.07em;padding:7px 2px 5px}
   .hm-pill,.dk-pill{padding:7px 2px 5px;background:none;border:0;border-bottom:2px solid transparent;border-radius:0;box-shadow:none}.hm-pill b,.dk-pill b{font-size:14.5px}
   .hm-pill.on,.dk-pill.on{background:none;border-bottom-color:currentColor}.hm-pill.on{color:var(--coral-d)}.dk-pill.on{color:#0B5C7A}.cc-pill.on{color:#8A5A12}
+  .tabs{gap:8px!important;justify-content:stretch!important;overflow:visible!important;padding:2px 0 4px}
+  .tabs .ev-pill,.tabs .cc-pill{flex:1 1 0!important;justify-content:center;min-height:40px;padding:6px 10px!important;border-radius:999px!important;border:1px solid rgba(201,150,60,.55)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)!important}
+  .tabs .ev-pill{background:var(--ink)!important;border-color:var(--ink)!important;color:#FFF8EF!important}.tabs .ev-pill svg{color:var(--sun)!important}
+  .tabs .cc-pill{background:#FBF1DC!important;color:var(--ink)!important}
+  .tabs .ev-pill b,.tabs .cc-pill b{font-size:16px!important}
+  .tabs .ev-pill.on{box-shadow:0 0 0 2px var(--sun)!important}.tabs .cc-pill.on{background:#fff!important;border-color:#8A5A12!important}
   .lng{padding:2px}.lng button{padding:5px 9px;font-size:13px}
   .info-in{height:42px}
   .wxb{height:32px;margin-right:10px;padding:0 10px 0 8px;gap:6px}.wxb svg.wi{width:20px;height:20px}.wxb b{font-size:16px}.wxb .wl{display:none}
@@ -968,22 +993,25 @@ body{background:#fff;text-rendering:optimizeLegibility}
 </div></div>
 <header class="hdr">
   <div class="wrap hdr-in">
+    <a class="bk2" href="/" id="bkApp2" aria-label="Volver a la guía de Miami Magic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg><img src="/miami-magic-icon-192.png" alt=""></a>
     <a class="mast" href="/noticias" id="home" aria-label="Miami Magic News">
       <img src="/miami-magic-icon-192.png" alt="">
       <span class="mt"><span class="mt1"><b class="mname">Miami Magic</b><span class="news">NEWS</span></span><span class="lema" data-h="lema">Lo que mueve a <em>Miami</em> y <em class="ky">los Cayos.</em></span></span>
     </a>
     <nav class="tabs" aria-label="Miami Magic News">
-      <button class="tab on" data-s="miami" aria-pressed="true">MIAMI</button>
-      <button class="tab" data-s="cayos" data-t="cayos" aria-pressed="false">LOS CAYOS</button>
-      <button class="hm-pill" id="hmPill" aria-pressed="false"><b><span data-t="hamaca">Hamaca</span> <em>M<span class="sol" role="img" aria-label="o"></span>od</em></b></button>
-      <button class="dk-pill" id="dkPill" aria-pressed="false"><b id="dkPillW"></b></button>
+      <button class="tab on hd-off" data-s="miami" aria-pressed="true">MIAMI</button>
+      <button class="tab hd-off" data-s="cayos" data-t="cayos" aria-pressed="false">LOS CAYOS</button>
+      <button class="dk-pill ev-pill" id="evPill" type="button" aria-pressed="false"><b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span id="evPillW">Eventos</span></b></button>
       <button class="dk-pill cc-pill" id="ccPill" aria-pressed="false" aria-label="Casa &amp; Coast"><b id="ccPillW"></b></button>
+      <button class="hm-pill hd-off" id="hmPill" aria-pressed="false"><b><span data-t="hamaca">Hamaca</span> <em>M<span class="sol" role="img" aria-label="o"></span>od</em></b></button>
+      <button class="dk-pill hd-off" id="dkPill" aria-pressed="false"><b id="dkPillW"></b></button>
     </nav>
     <div class="navr">
       <span class="div"></span>
+      <a class="bk" id="bkApp" href="/" aria-label="Volver a la guía de Miami Magic"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 3.5L5 8l4.5 4.5"/></svg><span id="bkAppW">App</span></a>
       <button class="sb" id="sb" type="button" aria-label="Buscar"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8.5" cy="8.5" r="6"/><path d="M13.2 13.2L18 18"/></svg></button>
       <span class="lng"><button data-l="es">ES</button><button data-l="en">EN</button></span>
-      <a class="dl" href="https://www.miamimagicdirectory.com/descargar" aria-label="Descarga la app de Miami Magic"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 7L8 10.5 11.5 7M3 13.5h10"/></svg><span data-t="descarga">La app</span></a>
+      <a class="dl" href="https://www.miamimagicdirectory.com/descargar" aria-label="Descarga la app de Miami Magic"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v8M4.5 7L8 10.5 11.5 7M3 13.5h10"/></svg><span data-t="descarga">Descargar</span></a>
     </div>
   </div>
   <div class="wrap"><div class="hz"></div></div>
@@ -1151,6 +1179,12 @@ function isHi(n){return n&&n.tema==='historia'}
 var AGO=location.hash==='#ag'&&!Q.get('ev');if(AGO)document.documentElement.classList.add('ag-only');
 var WAIT=!!Q.get('s')&&!Q.get('ev');if(WAIT){document.documentElement.classList.add('mm-wait');setTimeout(function(){document.documentElement.classList.remove('mm-wait')},3000)}
 document.addEventListener('click',function(e){if(!document.documentElement.classList.contains('ag-only'))return;if(e.target.closest&&e.target.closest('.tab,.vt,[data-sc],#hmPill,#dkPill,#ccPill,.hdr a,.ag-back')){document.documentElement.classList.remove('ag-only');try{history.replaceState(null,'',location.pathname+location.search)}catch(x){}if(e.target.closest('.ag-back')){e.preventDefault();window.scrollTo(0,0)}}},true);
+/* Eventos en la cabecera: abre la Agenda sola, igual que entrar con #ag */
+function evSync(){try{var on=document.documentElement.classList.contains('ag-only'),p=document.getElementById('evPill');if(!p)return;p.classList.toggle('on',on);p.setAttribute('aria-pressed',on?'true':'false');var w=document.getElementById('evPillW');if(w)w.textContent=(typeof L!=='undefined'&&L==='en')?'Events':'Eventos';var k=document.getElementById('bkAppW');if(k)k.textContent='App';['bkApp','bkApp2'].forEach(function(i){var ka=document.getElementById(i);if(ka)ka.setAttribute('href',(typeof L!=='undefined'&&L==='en')?'/?lang=en':'/')})}catch(x){}}
+document.addEventListener('DOMContentLoaded',function(){try{var p=document.getElementById('evPill');if(!p)return;
+  p.addEventListener('click',function(){var a=document.getElementById('ag');if(!a||a.style.display==='none'){if(a)a.scrollIntoView({behavior:'smooth',block:'start'});return}
+    document.documentElement.classList.add('ag-only');try{history.replaceState(null,'',location.pathname+location.search+'#ag')}catch(x){}window.scrollTo(0,0);evSync()});
+  new MutationObserver(evSync).observe(document.documentElement,{attributes:true,attributeFilter:['class','lang']});evSync();setTimeout(evSync,1500)}catch(x){}});
 function unwait(){if(!WAIT)return;requestAnimationFrame(function(){document.documentElement.classList.remove('mm-wait')})}
 function HOME(){return !SEC()&&ST.scope==='miami'&&ST.tema==='todo'&&!ST.all}
 function isCC(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle}
@@ -1160,7 +1194,7 @@ function VERS(n){try{var v=n&&n.versiones;if(!v)return n;var t=Date.now();v.slic
 var DATA={notas:[],videos:[],cifras:[],ultima_hora:null}, EVS=[];
 
 var T={
- es:{ultima:'ÚLTIMA HORA',leer:'LEER',slogan:'Donde viven Miami y los Cayos.',guia:'LA GUÍA',semana:'ESTA SEMANA',descarga:'La app',cayos:'LOS CAYOS',usa:'EE. UU.',intl:'INTERNACIONAL',hamaca:'Hamaca',tiempo:'EL TIEMPO EN MIAMI',prox5:'Próximos 5 días',cifras:'MIAMI EN CIFRAS',cifras2:'Lo que mueve tu bolsillo',mas:'MÁS DE LA SEMANA',hmdesc:'Lo ligero de la temporada: planes, tradiciones y esas cosas de Miami que se disfrutan sin prisa.',hmmore:'TODO HAMACA MOOD →',desde:'DESDE LA APP',desde2:'Las noticias de cada sección',correo:'EN TU CORREO',nl1:'Lo que hay que saber de la semana, en cinco minutos',nl2:'La cartelera de Miami y los Cayos',nl3:'Un plan para el fin de semana, de Hamaca Mood',tucorreo:'Tu correo',suscribir:'Suscribirme',nlnote:'Gratis, en español o en inglés. Te das de baja cuando quieras.',presentado:'Presentado por',tunegocio:'TU NEGOCIO AQUÍ',patro:'PATROCINADO',vas2:'Restaurantes, hoteles, playas, eventos y los Cayos, en la app.',cayosT:'Los Cayos',flT:'Florida · EE. UU. · Internacional',redaccion:'LA REDACCIÓN',comotrab:'Cómo trabajamos',correc:'Correcciones',envia:'Envíanos una noticia',anun:'Anúnciate con nosotros',laapp:'La app',directorio:'El directorio',privacidad:'Privacidad',terminos:'Términos',fotos:'Fotos © Miami Magic salvo que se indique · contacto@miamimagicapp.com',
+ es:{ultima:'ÚLTIMA HORA',leer:'LEER',slogan:'Donde viven Miami y los Cayos.',guia:'LA GUÍA',semana:'ESTA SEMANA',descarga:'Descargar',cayos:'LOS CAYOS',usa:'EE. UU.',intl:'INTERNACIONAL',hamaca:'Hamaca',tiempo:'EL TIEMPO EN MIAMI',prox5:'Próximos 5 días',cifras:'MIAMI EN CIFRAS',cifras2:'Lo que mueve tu bolsillo',mas:'MÁS DE LA SEMANA',hmdesc:'Lo ligero de la temporada: planes, tradiciones y esas cosas de Miami que se disfrutan sin prisa.',hmmore:'TODO HAMACA MOOD →',desde:'DESDE LA APP',desde2:'Las noticias de cada sección',correo:'EN TU CORREO',nl1:'Lo que hay que saber de la semana, en cinco minutos',nl2:'La cartelera de Miami y los Cayos',nl3:'Un plan para el fin de semana, de Hamaca Mood',tucorreo:'Tu correo',suscribir:'Suscribirme',nlnote:'Gratis, en español o en inglés. Te das de baja cuando quieras.',presentado:'Presentado por',tunegocio:'TU NEGOCIO AQUÍ',patro:'PATROCINADO',vas2:'Restaurantes, hoteles, playas, eventos y los Cayos, en la app.',cayosT:'Los Cayos',flT:'Florida · EE. UU. · Internacional',redaccion:'LA REDACCIÓN',comotrab:'Cómo trabajamos',correc:'Correcciones',envia:'Envíanos una noticia',anun:'Anúnciate con nosotros',laapp:'La app',directorio:'El directorio',privacidad:'Privacidad',terminos:'Términos',fotos:'Fotos © Miami Magic salvo que se indique · contacto@miamimagicapp.com',
   lema:'Lo que mueve a <em>Miami</em> y <em class="ky">los Cayos.</em>',firma:'<b>Yolaxys Alvarez</b> · editora, productora y fundadora de Miami Magic',nltit:'Miami Magic <em>News</em>, en tu correo.',vas:'¿Vas a salir? <em>Donde viven Miami y los Cayos.</em>',
   live:'EN VIVO · ACTUALIZADO',min:'min de lectura',lluvia:'lluvia',hace:'Hace',mins:'min',horas:'h',
   mar:'El mar hoy',atard:'Atardecer',hur1:'Temporada de huracanes',hurFalta:'faltan',hurTermina:'días',hurPre:'empieza en',
@@ -1168,7 +1202,7 @@ var T={
   nlOk:'¡Listo! Te escribimos el próximo jueves.',nlBad:'Revisa el correo, por favor.',nlErr:'No se pudo guardar. Intenta de nuevo.',enviando:'Enviando…',
   verApp:'VER EN LA APP →',days:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],months:['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE'],
   dayFull:['DOMINGO','LUNES','MARTES','MIÉRCOLES','JUEVES','VIERNES','SÁBADO'],de:'DE'},
- en:{ultima:'BREAKING',leer:'READ',slogan:'Where Miami and the Keys live.',guia:'THE GUIDE',semana:'THIS WEEK',descarga:'App',cayos:'THE KEYS',usa:'USA',intl:'INTERNATIONAL',hamaca:'Hammock',tiempo:'MIAMI WEATHER',prox5:'Next 5 days',cifras:'MIAMI BY THE NUMBERS',cifras2:'What moves your wallet',mas:'MORE THIS WEEK',hmdesc:'The lighter side of the season: plans, traditions and the Miami things best enjoyed slowly.',hmmore:'ALL OF HAMMOCK MOOD →',desde:'FROM THE APP',desde2:'News from every section',correo:'IN YOUR INBOX',nl1:'What you need to know this week, in five minutes',nl2:'What\'s on in Miami and the Keys',nl3:'A weekend plan from Hammock Mood',tucorreo:'Your email',suscribir:'Subscribe',nlnote:'Free, in English or Spanish. Unsubscribe anytime.',presentado:'Presented by',tunegocio:'YOUR BUSINESS HERE',patro:'SPONSORED',vas2:'Restaurants, hotels, beaches, events and the Keys, in the app.',cayosT:'The Keys',flT:'Florida · USA · International',redaccion:'THE NEWSROOM',comotrab:'How we work',correc:'Corrections',envia:'Send us a story',anun:'Advertise with us',laapp:'The app',directorio:'The directory',privacidad:'Privacy',terminos:'Terms',fotos:'Photos © Miami Magic unless noted · contacto@miamimagicapp.com',
+ en:{ultima:'BREAKING',leer:'READ',slogan:'Where Miami and the Keys live.',guia:'THE GUIDE',semana:'THIS WEEK',descarga:'Download',cayos:'THE KEYS',usa:'USA',intl:'INTERNATIONAL',hamaca:'Hammock',tiempo:'MIAMI WEATHER',prox5:'Next 5 days',cifras:'MIAMI BY THE NUMBERS',cifras2:'What moves your wallet',mas:'MORE THIS WEEK',hmdesc:'The lighter side of the season: plans, traditions and the Miami things best enjoyed slowly.',hmmore:'ALL OF HAMMOCK MOOD →',desde:'FROM THE APP',desde2:'News from every section',correo:'IN YOUR INBOX',nl1:'What you need to know this week, in five minutes',nl2:'What\'s on in Miami and the Keys',nl3:'A weekend plan from Hammock Mood',tucorreo:'Your email',suscribir:'Subscribe',nlnote:'Free, in English or Spanish. Unsubscribe anytime.',presentado:'Presented by',tunegocio:'YOUR BUSINESS HERE',patro:'SPONSORED',vas2:'Restaurants, hotels, beaches, events and the Keys, in the app.',cayosT:'The Keys',flT:'Florida · USA · International',redaccion:'THE NEWSROOM',comotrab:'How we work',correc:'Corrections',envia:'Send us a story',anun:'Advertise with us',laapp:'The app',directorio:'The directory',privacidad:'Privacy',terminos:'Terms',fotos:'Photos © Miami Magic unless noted · contacto@miamimagicapp.com',
   lema:'What moves <em>Miami</em> and <em class="ky">the Keys.</em>',firma:'<b>Yolaxys Alvarez</b> · editor, producer and founder of Miami Magic',nltit:'Miami Magic <em>News</em>, in your inbox.',vas:'Heading out? <em>Where Miami and the Keys live.</em>',
   live:'LIVE · UPDATED',min:'min read',lluvia:'rain',hace:'',mins:'min ago',horas:'h ago',
   mar:'The ocean today',atard:'Sunset',hur1:'Hurricane season',hurFalta:'',hurTermina:'days left',hurPre:'starts in',
@@ -1411,7 +1445,7 @@ function loadWx(){
 }
 
 /* ── eventos ── */
-function setLang(l){setTimeout(renderAg,0);L=l;try{localStorage.setItem('mm_lang',l)}catch(e){}var u=new URL(location.href);if(l==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u);render()}
+function setLang(l){setTimeout(renderAg,0);setTimeout(evSync,30);L=l;try{localStorage.setItem('mm_lang',l)}catch(e){}var u=new URL(location.href);if(l==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u);render()}
 document.querySelectorAll('.lng button').forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
 document.getElementById('otros').addEventListener('click',function(e){var b=e.target.closest('.vt');if(!b)return;ST.scope=b.dataset.go;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;ST.tema='todo';render();scrollTo({top:0,behavior:'smooth'})});
 document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;ST.all=false;ST.scope=b.dataset.s;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;ST.tema='todo';render();if(scrollY>200)scrollTo({top:0,behavior:'smooth'})});
