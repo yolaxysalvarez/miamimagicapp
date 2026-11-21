@@ -190,6 +190,16 @@
   },
   "r105": {
    "photo": "fotos/mm-ficha-miami-magic-3.jpg"
+  },
+  "r43": {
+   "photo": "fotos/mm-abiaka-salon.jpg",
+   "photos": [
+    "fotos/mm-guitar-hotel-ventanal-abiaka.jpg",
+    "fotos/mm-abiaka-croquetas.jpg",
+    "fotos/mm-abiaka-carne-parrilla.jpg",
+    "fotos/mm-abiaka-pasta-crujiente.jpg",
+    "fotos/mm-abiaka-postre-merengue.jpg"
+   ]
   }
  },
  "hoteles": {
@@ -370,8 +380,10 @@
    "desc_es": "La torre con forma de guitarra del Seminole Hard Rock Hotel & Casino, en Hollywood, con el casino, la sala de conciertos Hard Rock Live, piscinas y restaurantes en la misma propiedad. En su entrada, la cascada del Oculus ofrece un espectáculo de música y luces cada 20 minutos.",
    "pnote": "<a href=\"https://www.miamimagicapp.com/news/oculus-hard-rock-hollywood-cascada-guitar-hotel\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oculus-hard-rock-hollywood-cascada-guitar-hotel');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story of the Oculus in Miami Magic News →</a>",
    "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/oculus-hard-rock-hollywood-cascada-guitar-hotel\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('oculus-hard-rock-hollywood-cascada-guitar-hotel');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia del Oculus en Miami Magic News →</a>",
-   "photo": "fotos/mm-oculus-hard-rock-portada.jpg",
+   "photo": "fotos/mm-guitar-hotel-dia-palmas.jpg",
    "photos": [
+    "fotos/mm-guitar-hotel-ventanal-abiaka.jpg",
+    "fotos/mm-oculus-hard-rock-portada.jpg",
     "fotos/mm-oculus-hard-rock-azul-mm.jpg",
     "fotos/mm-oculus-hard-rock-rojo-mm.jpg",
     "fotos/mm-oculus-hard-rock-rosa-mm.jpg",
