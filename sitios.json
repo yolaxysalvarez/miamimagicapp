@@ -368,7 +368,8 @@
   },
   "n10": {
    "hrs": "Mon–Wed & Sun 4 PM – 2 AM · Thu–Sat 4 PM – 3 AM",
-   "hrs_es": "Lun–Mié y Dom 4 PM – 2 AM · Jue–Sáb 4 PM – 3 AM"
+   "hrs_es": "Lun–Mié y Dom 4 PM – 2 AM · Jue–Sáb 4 PM – 3 AM",
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
   },
   "n21": {
    "hrs": "Thu 4 PM – 1 AM · Fri 4 PM – 3 AM · Sat 12 PM – 3 AM · Sun 12 PM – 1 AM · Closed Mon–Wed",
@@ -424,6 +425,9 @@
   },
   "n34": {
    "active": false
+  },
+  "n3": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
   }
  },
  "playas": {
@@ -454,6 +458,9 @@
   "b8": {
    "pnote": "The atoll pool is fed by Biscayne Bay, so rays and small fish circle inside it. Facing west, it is one of the few Miami beaches where the sun sets over the water. <a href=\"https://www.miamimagicapp.com/news/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "La piscina atolón se alimenta de la Bahía Biscayne, así que rayas y peces pequeños circulan dentro. Mirando al oeste, es de las pocas playas de Miami donde el sol se pone sobre el agua. <a href=\"https://www.miamimagicapp.com/noticias/matheson-hammock-laguna-atoll\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('matheson-hammock-laguna-atoll');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
+  "b4": {
+   "photo": "fotos/mm-haulover-inlet-app.jpg"
   }
  },
  "museos": {
@@ -461,22 +468,45 @@
    "hrs": "Wed–Sun 12–5 PM · Closed Mon–Tue",
    "hrs_es": "Mié–Dom 12–5 PM · Cierra Lun–Mar",
    "fee": "Adults $15",
-   "fee_es": "Adultos $15"
+   "fee_es": "Adultos $15",
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
   },
   "m6": {
    "hrs": "Wed–Sun 11 AM – 6 PM · Closed Mon–Tue",
-   "hrs_es": "Mié–Dom 11 AM – 6 PM · Cierra Lun–Mar"
+   "hrs_es": "Mié–Dom 11 AM – 6 PM · Cierra Lun–Mar",
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
   },
   "m9": {
-   "link": "https://www.superblue.com/miami"
+   "link": "https://www.superblue.com/miami",
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
   },
   "m10": {
-   "link": "https://paradoxmuseum.com/miami"
+   "link": "https://paradoxmuseum.com/miami",
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
   },
   "m11": {
    "desc": "Nearly 200 feet above Bayside Marketplace, in an air-conditioned capsule, with Biscayne Bay on one side and the Downtown skyline on the other. The ride lasts about 12–15 minutes — go near sunset.",
    "desc_es": "Casi 60 metros sobre Bayside Marketplace, en cápsula con aire acondicionado, con la Bahía de Biscayne de un lado y el skyline del Downtown del otro. El paseo dura unos 12–15 minutos — ve cerca del atardecer.",
-   "link": "https://skyviewsmiami.com"
+   "link": "https://skyviewsmiami.com",
+   "photo": "fotos/mm-pl8.jpg"
+  },
+  "m1": {
+   "photo": "fotos/mm-pamm-bahia-noche.jpg"
+  },
+  "m2": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  },
+  "m4": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  },
+  "m5": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  },
+  "m7": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  },
+  "m8": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
   }
  },
  "lugares": {
@@ -507,7 +537,20 @@
    "pnote_es": "Recorrido guiado: $50 adultos, $40 mayores de 65 años y $35 de 13 a 17; los menores de 12 no pagan. <a href=\"https://www.miamimagicapp.com/noticias/art-deco-miami-beach-caminata\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('art-deco-miami-beach-caminata');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   }
  },
- "teatros": {},
+ "teatros": {
+  "t2": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  },
+  "t3": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  },
+  "t4": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  },
+  "t5": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  }
+ },
  "parques": {
   "pk1": {
    "photos": [
@@ -606,10 +649,25 @@
    "photo": "fotos/mm-ficha-miami-magic.jpg"
   }
  },
- "compras": {},
+ "compras": {
+  "sh4": {
+   "photo": "fotos/mm-pl6.jpg"
+  },
+  "sh7": {
+   "photo": "fotos/mm-bayside-aerea.jpg"
+  }
+ },
  "cafes": {},
- "ninos": {},
- "galerias": {},
+ "ninos": {
+  "k1": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
+  }
+ },
+ "galerias": {
+  "art1": {
+   "photo": "fotos/mm-pl2.jpg"
+  }
+ },
  "excursiones": {
   "dt-schnebly": {
    "name": "Schnebly Redland's Winery & Brewery",
@@ -643,7 +701,11 @@
   "c1": {
    "desc": "Miami's premier indoor arena hosting the world's biggest acts — Taylor Swift, Bad Bunny, Coldplay, Shakira.",
    "desc_es": "La principal arena de Miami. Bad Bunny, Shakira, Coldplay.",
-   "cap": "19,600"
+   "cap": "19,600",
+   "photo": "fotos/mm-heat-kaseya-noche.jpg"
+  },
+  "c7": {
+   "photo": "fotos/mm-ficha-miami-magic.jpg"
   }
  },
  "estadios": {
