@@ -55,6 +55,70 @@
   "videos": [],
   "notas": [
     {
+      "id": "dolphins-bills-26-9-buffalo",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": true,
+      "fecha": "2026-11-22",
+      "publicada": "2026-11-22T17:38:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "fuentes": [
+        {
+          "n": "Buffalo Bills · resumen oficial del partido",
+          "u": "https://www.buffalobills.com/news/bills-26-dolphins-9-final-score-recap-highlights"
+        },
+        {
+          "n": "CBS Sports · jugada por jugada del partido",
+          "u": "https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261122_MIA@BUF/"
+        },
+        {
+          "n": "Associated Press · crónica del partido",
+          "u": "https://www.thetelegraph.com/sports/article/bills-defense-feasts-in-26-9-win-over-22544704.php"
+        },
+        {
+          "n": "NFL · calendario de la semana 12",
+          "u": "https://www.nfl.com/schedules/2026/by-week/week-12"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-22T17:38:00-05:00",
+      "es": {
+        "etiqueta": "DEPORTES",
+        "titulo": "Los Dolphins caen 26-9 en Buffalo, quedan 1-9 y vuelven a casa sin un solo touchdown",
+        "bajada": "Los nueve puntos de Miami salieron del pie de Daniel Carlson, que acertó sus tres goles de campo. Los Bills ganaron su sexto partido seguido y quedaron 9-1.",
+        "toca": [
+          "El próximo partido de los Dolphins es el domingo 29 de noviembre, a la 1:00 PM, en el Hard Rock Stadium contra los Jets, según el [calendario de la NFL](https://www.nfl.com/schedules/2026/by-week/week-12)."
+        ],
+        "cuerpo": [
+          "Buffalo ganó 26-9 en Orchard Park sin permitir un solo touchdown, según el [resumen oficial de los Bills](https://www.buffalobills.com/news/bills-26-dolphins-9-final-score-recap-highlights). Fue su sexto triunfo seguido y los dejó 9-1, algo que no lograban desde 1991, de acuerdo con el mismo resumen. Los Dolphins quedan 1-9.",
+          "Miami solo anotó con las patadas de Daniel Carlson: dos goles de campo de 52 yardas y uno de 27, como muestra la [jugada por jugada de CBS Sports](https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261122_MIA@BUF/). Carlson había sido ascendido esta semana desde el equipo de práctica, informó la [Associated Press](https://www.thetelegraph.com/sports/article/bills-defense-feasts-in-26-9-win-over-22544704.php).",
+          "La defensa de Buffalo limitó a los Dolphins a dos primeras oportunidades y 38 yardas en la primera mitad, con dos capturas de Greg Rousseau, según la AP. Miami terminó con 185 yardas y 10 primeras oportunidades."
+        ]
+      },
+      "en": {
+        "etiqueta": "SPORTS",
+        "titulo": "Dolphins fall 26-9 in Buffalo, drop to 1-9 and head home without a single touchdown",
+        "bajada": "All nine of Miami's points came off the foot of Daniel Carlson, who made all three of his field goals. The Bills won their sixth straight and moved to 9-1.",
+        "toca": [
+          "The Dolphins' next game is Sunday, Nov. 29, at 1:00 p.m. at Hard Rock Stadium against the Jets, per the [NFL schedule](https://www.nfl.com/schedules/2026/by-week/week-12)."
+        ],
+        "cuerpo": [
+          "Buffalo won 26-9 in Orchard Park without allowing a touchdown, according to the [Bills' official recap](https://www.buffalobills.com/news/bills-26-dolphins-9-final-score-recap-highlights). It was their sixth straight win and left them 9-1, something they had not done since 1991, per the same recap. The Dolphins fall to 1-9.",
+          "Miami scored only on Daniel Carlson's kicks: two 52-yard field goals and one from 27, as the [CBS Sports play-by-play](https://www.cbssports.com/nfl/gametracker/boxscore/NFL_20261122_MIA@BUF/) shows. Carlson had been elevated from the practice squad this week, the [Associated Press](https://www.thetelegraph.com/sports/article/bills-defense-feasts-in-26-9-win-over-22544704.php) reported.",
+          "Buffalo's defense held the Dolphins to two first downs and 38 yards in the first half, with two sacks by Greg Rousseau, according to the AP. Miami finished with 185 yards and 10 first downs."
+        ]
+      },
+      "foto": "mm-hard-rock-stadium-techo.jpg",
+      "foto_pos": "center 55%",
+      "foto_mm": false,
+      "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
+      "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
+      "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
+      "ultima": 1
+    },
+    {
       "id": "venado-de-los-cayos-key-deer-big-pine-key-como-verlo",
       "scope": "cayos",
       "tema": "curioso",
@@ -261,7 +325,7 @@
         ]
       },
       "ultima": 5,
-      "arriba": 2
+      "arriba": 3
     },
     {
       "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
@@ -359,7 +423,7 @@
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
       "ultima": 4,
-      "arriba": 1
+      "arriba": 2
     },
     {
       "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
@@ -435,7 +499,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 1
+      "ultima": 2
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -659,7 +723,7 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "arriba": 4,
+      "arriba": 5,
       "ultima": 8
     },
     {
@@ -761,7 +825,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 5,
+      "arriba": 6,
       "galeria": [
         {
           "f": "mm-stiltsville-casa-azul-cerca.jpg",
@@ -1541,7 +1605,7 @@
           "Rip current risk is high on Miami-Dade and Broward beaches through Friday night, according to the NWS. In the Keys, [the wind eased on Thursday](https://www.miamimagicapp.com/news/cayos-viento-mar-picado-semana-17-19-noviembre), though it picks up again this Friday off the Upper Keys."
         ]
       },
-      "actualizada": "2026-11-20T21:50:00-05:00",
+      "actualizada": "2026-11-22T17:38:00-05:00",
       "ambos": true,
       "foto_fit": "contain",
       "foto_bg": "url(/fotos/mm-lluvia-broward-nov19a.jpg) center/cover",
@@ -1590,9 +1654,54 @@
               ]
             ]
           }
+        },
+        {
+          "desde": "2026-11-22T00:00:00-05:00",
+          "es": {
+            "titulo": "Miami-Dade volvió a clases el viernes; Broward no abre sus escuelas hasta después de Thanksgiving",
+            "bajada": "La vigilancia de inundaciones terminó el viernes 20 a las 7 de la mañana. En 48 horas cayeron más de 16 pulgadas en Broward, y Hollywood pide a sus vecinos reportar los daños.",
+            "toca": [
+              "En Broward los estudiantes regresan el lunes 30. En Miami-Dade las clases se reanudaron el viernes 20.",
+              "Brightline había anunciado que retomaba el sábado 21 su horario regular entre Orlando y West Palm Beach; confirma tu tren en su app antes de salir.",
+              "Si tuviste daños en Hollywood, repórtalos en el [formulario de la ciudad](https://www.hollywoodfl.org/m/newsflash/home/detail/1886) y avisa a tu seguro antes de botar nada.",
+              "No cruces con el auto una calle inundada: según el NWS, un pie de agua en movimiento basta para arrastrar la mayoría de los autos.",
+              "¿Tu calle se inunda? Búscala en el [mapa de inundación por dirección](https://www.miamimagicapp.com/noticias/mapa-inundacion-miami-dade-direccion)."
+            ],
+            "reemplazos": [
+              [
+                "se reanuda el sábado 21",
+                "se reanudaba el sábado 21"
+              ],
+              [
+                "la de Big Pine Key es esta tarde, de 5 a 8 PM,",
+                "la de Big Pine Key estaba programada para el viernes 20, de 5 a 8 PM,"
+              ]
+            ]
+          },
+          "en": {
+            "titulo": "Miami-Dade went back to class Friday; Broward schools stay closed until after Thanksgiving",
+            "bajada": "The flood watch ended Friday the 20th at 7 a.m. More than 16 inches fell in Broward in 48 hours, and Hollywood is asking residents to report damage.",
+            "toca": [
+              "In Broward, students return Monday the 30th. In Miami-Dade, classes resumed Friday the 20th.",
+              "Brightline had announced it would return to its regular schedule between Orlando and West Palm Beach on Saturday the 21st; confirm your train in its app before leaving.",
+              "If you had damage in Hollywood, report it on the [city form](https://www.hollywoodfl.org/m/newsflash/home/detail/1886) and notify your insurer before throwing anything away.",
+              "Don’t drive through a flooded street: according to the NWS, a foot of moving water is enough to carry away most cars.",
+              "Does your street flood? Look it up on the [flood map by address](https://www.miamimagicapp.com/news/mapa-inundacion-miami-dade-direccion)."
+            ],
+            "reemplazos": [
+              [
+                "resumes Saturday the 21st",
+                "was to resume Saturday the 21st"
+              ],
+              [
+                "the one in Big Pine Key is this evening, 5 to 8 p.m.,",
+                "the one in Big Pine Key was scheduled for Friday the 20th, 5 to 8 p.m.,"
+              ]
+            ]
+          }
         }
       ],
-      "ultima": 2
+      "ultima": 25
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -2117,7 +2226,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "arriba": 3,
+      "arriba": 4,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -3623,11 +3732,11 @@
         "titulo": "El pavo en el horno y el mar en la calle: las mareas reales llegan a Miami justo en Thanksgiving",
         "bajada": "Del 23 al 26 de noviembre suben las mareas más altas del mes, y el pico cae el jueves del pavo, a las 10:04 de la mañana y a las 10:10 de la noche. En las zonas bajas, el agua salada puede volver a la calle.",
         "toca": [
-          "Del 23 al 26 de noviembre, el agua sube más alrededor de las 8 a 10 de la mañana y de las 8 a 10 de la noche.",
+          "Del 23 al 26 de noviembre el agua sube más alrededor de las 8 a 10 de la mañana y de las 8 a 10 de la noche. El lunes 23, la primera pleamar es a las 7:33 de la mañana, según la [Ciudad de Miami](https://www.miami.gov/kingtide).",
           "No atravieses calles inundadas: el agua salada daña el auto y puede esconder escombros o huecos.",
           "¿Vives en una zona baja de Miami Beach? Pide el estacionamiento gratis temporal. En Miami, reporta las inundaciones al 311.",
-          "En Fort Lauderdale hay sacos de arena gratis el sábado 21 y el domingo 22, de 10 AM a 1 PM, con prueba de domicilio.",
-          "En los Cayos Medios y Altos ya hay aviso de inundación costera: los charcos en la calle cerca de la pleamar son agua salada."
+          "Fort Lauderdale ofreció sacos de arena gratis el sábado 21 y el domingo 22, de 10 AM a 1 PM, con prueba de domicilio; confirma en la ciudad si quedan.",
+          "En los Cayos Medios y Altos, el NWS mantenía el viernes 20 un aviso de inundación costera: los charcos en la calle cerca de la pleamar son agua salada."
         ],
         "cuerpo": [
           "A las 10:04 de la mañana del jueves 26, cuando en media Miami el pavo apenas entra al horno, el mar va a estar en su punto más alto. Y vuelve a las 10:10 de la noche, a la hora del recalentado, del último pedazo de flan y de los invitados buscando dónde dejaron el auto.",
@@ -3636,7 +3745,7 @@
           "El pico no llega de golpe. El agua empieza a notarse hora y media antes y tarda unas dos horas en irse. El jueves, eso deja mojadas las calles bajas más o menos de 8:30 de la mañana al mediodía, y de 8:40 de la noche hasta pasada la medianoche. Quien tenga la cena en Miami Beach, o invitados que cruzan por allí, hace bien en mirar el reloj antes de estacionar.",
           "## Para que el agua no se siente a la mesa",
           "Miami Beach envía avisos de tránsito a quien escriba MBTraffic al 888777, presta estacionamiento gratis temporal a los vecinos de las zonas bajas y ofrece hasta $20,000 para proteger casas en terrenos bajos. En [Miami](https://www.miami.gov/kingtide), las inundaciones se reportan al 311 o al 305-468-5900.",
-          "En Broward, la marea llega sobre suelo todavía empapado por la lluvia de la semana del 16. Fort Lauderdale, que sitúa sus mareas reales entre el 22 y el 28 de noviembre, [reparte sacos de arena gratis](https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response) ya llenos el sábado 21 y el domingo 22, de 10 AM a 1 PM, en cinco puntos: Floyd Hull/Morton Center, George English Park, Holiday Park, Mills Pond Park y Riverland Park. Son para residentes, con prueba de domicilio, y hasta cinco por vehículo mientras duren.",
+          "En Broward, la marea llega sobre suelo todavía empapado por la lluvia de la semana del 16. Fort Lauderdale, que sitúa sus mareas reales entre el 22 y el 28 de noviembre, [ofreció sacos de arena gratis](https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response) ya llenos el sábado 21 y el domingo 22, de 10 AM a 1 PM, en cinco puntos: Floyd Hull/Morton Center, George English Park, Holiday Park, Mills Pond Park y Riverland Park. Eran para residentes, con prueba de domicilio, y hasta cinco por vehículo mientras durasen.",
           "En los Cayos el agua ya está alta. El [Servicio Nacional de Meteorología en Key West](https://www.weather.gov/key/) mantenía el viernes 20 un aviso de inundación costera para los Cayos Medios y Altos, con pleamares de 1 a 1.5 pies por encima de lo normal y agua estancada en calles y terrenos bajos. La oficina prevé que las mareas sigan subiendo hasta mediados de la semana de Thanksgiving y que la luna llena, a principios de esa semana, las empeore con otra tanda de mareas reales.",
           "Lo demás es sentido común de isla: el agua salada no perdona a los autos, así que mejor rodear el charco que cruzarlo. El pavo puede esperar diez minutos."
         ]
@@ -3645,11 +3754,11 @@
         "titulo": "Turkey in the oven, sea in the street: king tides reach Miami right on Thanksgiving",
         "bajada": "From Nov. 23 to 26 the month's highest tides roll in, and the peak falls on turkey Thursday, at 10:04 a.m. and 10:10 p.m. In low-lying areas, salt water may reach the streets again.",
         "toca": [
-          "From Nov. 23 to 26, the water peaks around 8 to 10 in the morning and 8 to 10 at night.",
+          "From Nov. 23 to 26 the water peaks around 8 to 10 in the morning and 8 to 10 at night. On Monday the 23rd, the first high tide is at 7:33 a.m., per the [City of Miami](https://www.miami.gov/kingtide).",
           "Don't drive through flooded streets: salt water damages cars and can hide debris or potholes.",
           "Live in a low-lying part of Miami Beach? Sign up for the free temporary parking. In Miami, report flooding to 311.",
-          "Fort Lauderdale is giving out free sandbags Saturday the 21st and Sunday the 22nd, 10 a.m. to 1 p.m., with proof of residency.",
-          "The Middle and Upper Keys already have a coastal flood statement: street puddles near high tide are salt water."
+          "Fort Lauderdale offered free sandbags Saturday the 21st and Sunday the 22nd, 10 a.m. to 1 p.m., with proof of residency; check with the city whether any are left.",
+          "In the Middle and Upper Keys, the NWS had a coastal flood statement in effect Friday the 20th: street puddles near high tide are salt water."
         ],
         "cuerpo": [
           "At 10:04 a.m. on Thursday the 26th, when the turkey is just going into the oven in half of Miami, the sea will be at its highest. And it comes back at 10:10 p.m., the hour of leftovers, the last slice of flan and guests trying to remember where they left the car.",
@@ -3658,7 +3767,7 @@
           "The peak doesn't arrive all at once. The water starts to show about an hour and a half earlier and takes around two hours to leave. On Thursday, that keeps low streets wet from roughly 8:30 a.m. to noon, and from 8:40 p.m. until after midnight. Anyone having dinner in Miami Beach, or expecting guests who drive through, would do well to check the clock before parking.",
           "## So the water doesn't sit down at the table",
           "Miami Beach sends traffic alerts to anyone who texts MBTraffic to 888777, lends free temporary parking to residents of low-lying areas and offers up to $20,000 to protect homes on low ground. In [Miami](https://www.miami.gov/kingtide), flooding can be reported to 311 or 305-468-5900.",
-          "In Broward, the tide arrives on ground still soaked by the rain of the week of the 16th. Fort Lauderdale, which places its king tides between Nov. 22 and 28, is [handing out free sandbags](https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response), prefilled, Saturday the 21st and Sunday the 22nd, from 10 a.m. to 1 p.m., at five sites: Floyd Hull/Morton Center, George English Park, Holiday Park, Mills Pond Park and Riverland Park. They are for residents, with proof of residency, up to five per vehicle while supplies last.",
+          "In Broward, the tide arrives on ground still soaked by the rain of the week of the 16th. Fort Lauderdale, which places its king tides between Nov. 22 and 28, [offered free sandbags](https://www.fortlauderdale.gov/Residents/City-News/Flooding-Update-City-Crews-Continue-Around-the-Clock-Response), prefilled, Saturday the 21st and Sunday the 22nd, from 10 a.m. to 1 p.m., at five sites: Floyd Hull/Morton Center, George English Park, Holiday Park, Mills Pond Park and Riverland Park. They were for residents, with proof of residency, up to five per vehicle while supplies lasted.",
           "In the Keys the water is already high. The [National Weather Service in Key West](https://www.weather.gov/key/) had a coastal flood statement in effect Friday the 20th for the Middle and Upper Keys, with high tides running 1 to 1.5 feet above normal and standing water on roads and low-lying lots. The office expects tides to keep rising through the middle of Thanksgiving week and the full moon, early that week, to make them worse with another round of king tides.",
           "The rest is island common sense: salt water is unforgiving to cars, so go around the puddle instead of through it. The turkey can wait ten minutes."
         ]
@@ -3683,7 +3792,7 @@
       ],
       "foto_pie_en": "5th Street in Miami Beach, one of the areas where high tide reaches the street.",
       "foto_pos": "50% 25%",
-      "actualizada": "2026-11-20T17:40:00-05:00",
+      "actualizada": "2026-11-22T17:38:00-05:00",
       "tambien": 2,
       "ambos": true,
       "ultima": 7
@@ -3693,7 +3802,7 @@
       "scope": "miami",
       "tema": "deporte",
       "hamaca": false,
-      "destacada": true,
+      "destacada": false,
       "fecha": "2026-11-13",
       "publicada": "2026-11-13T00:00:00-05:00",
       "autor": "Yolaxys Alvarez",
@@ -3758,7 +3867,8 @@
       "actualizada": "2026-11-21T20:45:00-05:00",
       "versiones": [],
       "foto_fit": "contain",
-      "foto_bg": "#0a090b"
+      "foto_bg": "#0a090b",
+      "arriba": 1
     },
     {
       "id": "heat-vice-city-bucks",
@@ -7870,7 +7980,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-21T20:45:00-05:00",
+  "updated_at": "2026-11-22T17:38:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
