@@ -49,10 +49,10 @@
   },
   "r61": {
    "photo_url": "https://youtu.be/HpNgTQxfH6E",
-   "photo": "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres3.jpg",
+   "photo": "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres1.jpg",
    "photos": [
-    "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres3.jpg",
     "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres1.jpg",
+    "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres3.jpg",
     "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres2.jpg"
    ]
   },
@@ -307,11 +307,11 @@
    ]
   },
   "r40": {
-   "photo": "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres3.jpg",
+   "photo": "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres1.jpg",
    "photos": [
+    "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres1.jpg",
     "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres3.jpg",
-    "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres2.jpg",
-    "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres1.jpg"
+    "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres2.jpg"
    ]
   },
   "r44": {
