@@ -3697,10 +3697,10 @@
       "fecha": "2026-11-13",
       "publicada": "2026-11-13T00:00:00-05:00",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-nu-stadium-playoffs-panoramica.jpg",
-      "foto_alt": "Nu Stadium visto desde la grada antes del partido de playoffs entre Inter Miami y Columbus",
-      "foto_pie": "Nu Stadium, minutos antes del primer partido de playoffs de su historia. Columbus ganó 3–0.",
-      "foto_pie_en": "Nu Stadium, minutes before the first playoff game in its history. Columbus won 3–0.",
+      "foto": "mm-nu-stadium-marcador-0-3-portada.jpg",
+      "foto_alt": "El marcador de Nu Stadium en el minuto 80: Inter Miami 0, Columbus 3",
+      "foto_pie": "El marcador de Nu Stadium en el minuto 80: dos goles de Tapia y uno de Habroune.",
+      "foto_pie_en": "The Nu Stadium scoreboard in the 80th minute: two goals by Tapia and one by Habroune.",
       "es": {
         "titulo": "Inter Miami cayó 3–0 ante Columbus en el primer partido de playoffs en Nu Stadium y queda obligado a ganar el viernes",
         "bajada": "La serie es al mejor de tres: sigue el viernes 27 en Columbus y solo vuelve a Miami si Inter Miami gana ese partido.",
@@ -3757,18 +3757,8 @@
       ],
       "actualizada": "2026-11-21T20:45:00-05:00",
       "versiones": [],
-      "galeria": [
-        {
-          "f": "mm-nu-stadium-marcador-0-3.jpg",
-          "es": "El marcador del estadio en el minuto 80: dos goles de Tapia y uno de Habroune.",
-          "en": "The stadium scoreboard in the 80th minute: two goals by Tapia and one by Habroune."
-        },
-        {
-          "f": "mm-nu-stadium-leo-messi-stand.jpg",
-          "es": "La grada que lleva el nombre de Leo Messi, antes del pitazo.",
-          "en": "The stand named after Leo Messi, before kickoff."
-        }
-      ]
+      "foto_fit": "contain",
+      "foto_bg": "#0a090b"
     },
     {
       "id": "heat-vice-city-bucks",
