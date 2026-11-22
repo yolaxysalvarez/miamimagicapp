@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   const email = String(b.email || '').trim().toLowerCase().slice(0, 160);
   if (!/^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']{2,}$/.test(email)) return res.status(400).end();
   const lang = b.lang === 'en' ? 'inglés' : 'español';
-  const pres = { 'lt1m': 'Menos de $1 millón', '1-3m': 'De $1 a $3 millones', 'gt3m': 'Más de $3 millones' }[b.budget] || 'No lo indicó';
+  const pres = { 'lt500k': 'Hasta $500,000', '500k-1m': 'De $500,000 a $1 millón', 'gt1m': 'Más de $1 millón', 'lt1m': 'Menos de $1 millón', '1-3m': 'De $1 a $3 millones', 'gt3m': 'Más de $3 millones' }[b.budget] || 'No lo indicó';
   const cuando = new Intl.DateTimeFormat('es-US', { timeZone: 'America/New_York', dateStyle: 'full', timeStyle: 'short' }).format(new Date());
   const text = 'Alguien descargó la guía "Comprar en Miami y los Cayos".\n\n'
     + 'Correo: ' + email + '\n'
