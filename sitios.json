@@ -10,13 +10,24 @@
  },
  "restaurantes": {
   "r16": {
-   "photo_url": "https://youtu.be/7miwoX4qiDg"
+   "photo_url": "https://youtu.be/7miwoX4qiDg",
+   "photo": "https://i.ytimg.com/vi/7miwoX4qiDg/maxres2.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/7miwoX4qiDg/maxres2.jpg",
+    "https://i.ytimg.com/vi/7miwoX4qiDg/maxres3.jpg"
+   ]
   },
   "r99": {
    "photo_url": "https://youtu.be/4XOSsAGfTeM"
   },
   "r76": {
-   "photo_url": "https://youtu.be/H3_xFwbRCCs"
+   "photo_url": "https://youtu.be/H3_xFwbRCCs",
+   "photo": "https://i.ytimg.com/vi/H3_xFwbRCCs/maxres1.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/H3_xFwbRCCs/maxres1.jpg",
+    "https://i.ytimg.com/vi/H3_xFwbRCCs/maxres3.jpg",
+    "https://i.ytimg.com/vi/H3_xFwbRCCs/maxres2.jpg"
+   ]
   },
   "r17": {
    "photo_url": "https://youtu.be/KwmdPgm_azI"
@@ -37,10 +48,22 @@
    "photo_url": "https://youtu.be/cMcjduVQ_Lw"
   },
   "r61": {
-   "photo_url": "https://youtu.be/HpNgTQxfH6E"
+   "photo_url": "https://youtu.be/HpNgTQxfH6E",
+   "photo": "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres3.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres3.jpg",
+    "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres1.jpg",
+    "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres2.jpg"
+   ]
   },
   "r78": {
-   "photo_url": "https://youtu.be/PY2xL1rdRDw"
+   "photo_url": "https://youtu.be/PY2xL1rdRDw",
+   "photo": "https://i.ytimg.com/vi/PY2xL1rdRDw/maxres3.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/PY2xL1rdRDw/maxres3.jpg",
+    "https://i.ytimg.com/vi/PY2xL1rdRDw/maxres2.jpg",
+    "https://i.ytimg.com/vi/PY2xL1rdRDw/maxres1.jpg"
+   ]
   },
   "r102": {
    "name": "Casa Juancho",
@@ -134,19 +157,47 @@
    "_nota": "Cerrado (revisión de nov 2026)."
   },
   "r57": {
-   "photo_url": "https://youtu.be/VvIvPXMoJDk"
+   "photo_url": "https://youtu.be/VvIvPXMoJDk",
+   "photo": "https://i.ytimg.com/vi/VvIvPXMoJDk/maxres2.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/VvIvPXMoJDk/maxres2.jpg",
+    "https://i.ytimg.com/vi/VvIvPXMoJDk/maxres1.jpg",
+    "https://i.ytimg.com/vi/VvIvPXMoJDk/maxres3.jpg"
+   ]
   },
   "r84": {
-   "photo_url": "https://youtu.be/A5i0vuQ-z-w"
+   "photo_url": "https://youtu.be/A5i0vuQ-z-w",
+   "photo": "https://i.ytimg.com/vi/A5i0vuQ-z-w/maxres3.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/A5i0vuQ-z-w/maxres3.jpg",
+    "https://i.ytimg.com/vi/A5i0vuQ-z-w/maxres1.jpg"
+   ]
   },
   "r92": {
-   "photo_url": "https://youtu.be/GaVecc2NLz0"
+   "photo_url": "https://youtu.be/GaVecc2NLz0",
+   "photo": "https://i.ytimg.com/vi/GaVecc2NLz0/maxres2.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/GaVecc2NLz0/maxres2.jpg",
+    "https://i.ytimg.com/vi/GaVecc2NLz0/maxres3.jpg",
+    "https://i.ytimg.com/vi/GaVecc2NLz0/maxres1.jpg"
+   ]
   },
   "r64": {
-   "photo_url": "https://youtu.be/2TdU6DsxWus"
+   "photo_url": "https://youtu.be/2TdU6DsxWus",
+   "photo": "https://i.ytimg.com/vi/2TdU6DsxWus/maxres1.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/2TdU6DsxWus/maxres1.jpg",
+    "https://i.ytimg.com/vi/2TdU6DsxWus/maxres2.jpg",
+    "https://i.ytimg.com/vi/2TdU6DsxWus/maxres3.jpg"
+   ]
   },
   "r73": {
-   "photo_url": "https://youtu.be/Wuh91quMOE4"
+   "photo_url": "https://youtu.be/Wuh91quMOE4",
+   "photo": "https://i.ytimg.com/vi/Wuh91quMOE4/maxres1.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/Wuh91quMOE4/maxres1.jpg",
+    "https://i.ytimg.com/vi/Wuh91quMOE4/maxres3.jpg"
+   ]
   },
   "r33": {
    "photo_url": "https://youtu.be/p_YC19ewj98"
@@ -245,6 +296,85 @@
     "https://i.ytimg.com/vi/tXjt_0WlL7E/maxres1.jpg",
     "https://i.ytimg.com/vi/tXjt_0WlL7E/maxres3.jpg",
     "https://i.ytimg.com/vi/tXjt_0WlL7E/maxres2.jpg"
+   ]
+  },
+  "r38": {
+   "photo": "https://i.ytimg.com/vi/KZWRBCmRwjE/maxres3.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/KZWRBCmRwjE/maxres3.jpg",
+    "https://i.ytimg.com/vi/KZWRBCmRwjE/maxres2.jpg",
+    "https://i.ytimg.com/vi/KZWRBCmRwjE/maxres1.jpg"
+   ]
+  },
+  "r40": {
+   "photo": "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres3.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres3.jpg",
+    "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres2.jpg",
+    "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres1.jpg"
+   ]
+  },
+  "r44": {
+   "photo": "https://i.ytimg.com/vi/iiMnTgNSZlA/maxres2.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/iiMnTgNSZlA/maxres2.jpg",
+    "https://i.ytimg.com/vi/iiMnTgNSZlA/maxres3.jpg",
+    "https://i.ytimg.com/vi/iiMnTgNSZlA/maxres1.jpg"
+   ]
+  },
+  "r08": {
+   "photo": "https://i.ytimg.com/vi/mu-XK8sEcWo/maxres3.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/mu-XK8sEcWo/maxres3.jpg",
+    "https://i.ytimg.com/vi/mu-XK8sEcWo/maxres1.jpg",
+    "https://i.ytimg.com/vi/mu-XK8sEcWo/maxres2.jpg"
+   ]
+  },
+  "r10": {
+   "photo": "https://i.ytimg.com/vi/jCnTjUJavzM/maxres3.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/jCnTjUJavzM/maxres3.jpg",
+    "https://i.ytimg.com/vi/jCnTjUJavzM/maxres2.jpg",
+    "https://i.ytimg.com/vi/jCnTjUJavzM/maxres1.jpg"
+   ]
+  },
+  "r13": {
+   "photo": "https://i.ytimg.com/vi/Qofs2E0TfEI/maxres3.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/Qofs2E0TfEI/maxres3.jpg",
+    "https://i.ytimg.com/vi/Qofs2E0TfEI/maxres2.jpg",
+    "https://i.ytimg.com/vi/Qofs2E0TfEI/maxres1.jpg"
+   ]
+  },
+  "r14": {
+   "photo": "https://i.ytimg.com/vi/pL_XuNaATaw/maxres1.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/pL_XuNaATaw/maxres1.jpg",
+    "https://i.ytimg.com/vi/pL_XuNaATaw/maxres2.jpg"
+   ]
+  },
+  "r23": {
+   "photo": "https://i.ytimg.com/vi/bfOYw8BVqx0/maxres1.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/bfOYw8BVqx0/maxres1.jpg",
+    "https://i.ytimg.com/vi/bfOYw8BVqx0/maxres3.jpg",
+    "https://i.ytimg.com/vi/bfOYw8BVqx0/maxres2.jpg"
+   ]
+  },
+  "r29": {
+   "photo": "https://i.ytimg.com/vi/kovQ9WDHV98/maxres1.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/kovQ9WDHV98/maxres1.jpg",
+    "https://i.ytimg.com/vi/kovQ9WDHV98/maxres3.jpg",
+    "https://i.ytimg.com/vi/kovQ9WDHV98/maxres2.jpg"
+   ]
+  },
+  "r30": {
+   "photo": "https://i.ytimg.com/vi/ExyV5C0q2eY/maxres2.jpg",
+   "photos": [
+    "https://i.ytimg.com/vi/ExyV5C0q2eY/maxres2.jpg",
+    "https://i.ytimg.com/vi/ExyV5C0q2eY/maxres1.jpg",
+    "https://i.ytimg.com/vi/ExyV5C0q2eY/maxres3.jpg"
    ]
   }
  },

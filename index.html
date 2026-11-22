@@ -4499,6 +4499,9 @@ function mmSweep(root){
       .then(function(d){
         if(!d) return;
         MM_FOTOS=d.fotos||{}; MM_RUTAS=d.rutas||{}; MM_MEDIA_V=d.updated||'';
+        /* fotos.json llega después de sitios.json: sin esto borraba las fotos
+           que sitios.json había puesto y la ficha se abría sin foto en el iPhone */
+        try{ var _sg=JSON.parse(localStorage.getItem('mm_sitios')||'null'); if(_sg) for(var _sk in _sg){ var _sv=_sg[_sk]; if(_sk.charAt(0)==='_'||!_sv||typeof _sv!=='object') continue; for(var _si in _sv){ var _se=_sv[_si]; if(_se&&_se.photo&&_se.active!==false&&!MM_FOTOS[_si]) MM_FOTOS[_si]=_se.photo; } } }catch(e){}
         try{ localStorage.setItem('mm_fotos',JSON.stringify({fotos:MM_FOTOS,rutas:MM_RUTAS,updated:MM_MEDIA_V})); }catch(e){}
         try{ mmSweep(document.body); }catch(e){}
       })['catch'](function(){ MM_MEDIA_OFF=true; mmMediaRevert(); });
