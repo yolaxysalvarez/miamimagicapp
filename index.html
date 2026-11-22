@@ -7774,7 +7774,7 @@ function renderRestCards(list){
 
 /* ===== PROTOTYPE: horizontal card, full-bleed photo fading into text zone ===== */
 /* El carrusel del inicio enseñaba siempre los ocho primeros de la lista, así
-   que la app parecía la misma todos los días aunque tuviera 96 restaurantes.
+   que la app parecía la misma todos los días aunque tuviera decenas de restaurantes.
    Ahora la ventana avanza un día por vez: cada jornada salen ocho distintos y
    en doce días han pasado todos. No es aleatorio a propósito — dentro del
    mismo día el orden no cambia, para que no se mueva bajo el dedo. */
@@ -12934,7 +12934,7 @@ function build(){
   document.getElementById('fLinks2').innerHTML=t.fLinks2.map(function(l,i){
     return '<a role="button" tabindex="0" onclick="'+(F2ACT[i]||'')+'">'+l+'</a>';
   }).join('');
-  document.getElementById('heroStats').innerHTML=t.stats.map(s=>'<div><div class="hstat-n">'+s.n+'</div><div class="hstat-l">'+s.l+'</div></div>').join('');
+  var _hsK=['restaurants','beaches','museums','stadiums','events','nightlife'];document.getElementById('heroStats').innerHTML=t.stats.map((s,i)=>{var _v=0;try{_v=(D[_hsK[i]]||[]).length;}catch(e){}return '<div><div class="hstat-n">'+(_v||s.n)+'</div><div class="hstat-l">'+s.l+'</div></div>';}).join('');
   // sidebar
   
   // marquee

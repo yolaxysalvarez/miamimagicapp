@@ -316,15 +316,6 @@
       "type": "rest"
     },
     {
-      "yid": "oevLqFJznX0",
-      "es": "Charlatam",
-      "en": "Charlatam",
-      "k_es": "RESTAURANTE · LATINO · PARA COMPARTIR",
-      "k_en": "RESTAURANT · LATIN · SHARED PLATES",
-      "item": "r27",
-      "type": "rest"
-    },
-    {
       "yid": "kovQ9WDHV98",
       "es": "CHŌ Funky Asian Bistro",
       "en": "CHŌ Funky Asian Bistro",
@@ -522,16 +513,6 @@
       "yid": "bw7zbEqBprc",
       "es": "Cocina libanesa auténtica en Wynwood, de Giovanna “Gigi” Mansi y Farid Lutfi, en un local cuya fachada copia los arcos turquesa de las casas beirutíes de la era otomana del siglo XIX.",
       "en": "Authentic Lebanese in Wynwood from Giovanna “Gigi” Mansi and Farid Lutfi, in a building whose facade copies the turquoise arches of 19th-century Ottoman-era Beirut homes."
-    },
-    {
-      "id": "r27",
-      "name": "Charlatam",
-      "cat": "Latin · Shared Plates",
-      "cat_es": "Latino · Para Compartir",
-      "addr": "2525 SW 3rd Ave, Brickell",
-      "yid": "oevLqFJznX0",
-      "es": "Comida latina de confort armada en torno a platos grandes para compartir, justo al oeste de Brickell.",
-      "en": "Latin comfort food built around big shareable plates just west of Brickell."
     },
     {
       "id": "r29",

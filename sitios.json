@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo cambia los lugares de la guía sin pasar por Apple. Funciona por id: si el id YA EXISTE, corrige solo los campos que pongas y el resto se queda igual; si el id es NUEVO y lleva \"name\", AÑADE el lugar a su sección; \"active\": false lo quita de la guía sin borrarlo de aquí. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
- "updated": "2026-11-20",
+ "updated": "2026-11-22",
  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs y hrs_es (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo). Solo para lugares nuevos: zone (little-havana, brickell, south-beach…), photo (fotos/….jpg para la tarjeta) y top (true = sale primero).",
  "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
  "_app": {
@@ -129,7 +129,9 @@
    "photo_url": "https://youtu.be/UH-Rg0I2wjo"
   },
   "r69": {
-   "photo_url": "https://youtu.be/uVZ8R8FFTkM"
+   "photo_url": "https://youtu.be/uVZ8R8FFTkM",
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
   },
   "r57": {
    "photo_url": "https://youtu.be/VvIvPXMoJDk"
@@ -200,6 +202,42 @@
     "fotos/mm-abiaka-pasta-crujiente.jpg",
     "fotos/mm-abiaka-postre-merengue.jpg"
    ]
+  },
+  "r18": {
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
+  },
+  "br2": {
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
+  },
+  "r28": {
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
+  },
+  "r54": {
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
+  },
+  "br6": {
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
+  },
+  "r22": {
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
+  },
+  "r25": {
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
+  },
+  "r27": {
+   "active": false,
+   "_nota": "Cerrado (revisión de nov 2026)."
+  },
+  "r58": {
+   "active": false,
+   "_nota": "Cerrado por remodelación (nov 2026): volver a activar cuando reabra."
   }
  },
  "hoteles": {
