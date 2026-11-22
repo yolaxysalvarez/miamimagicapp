@@ -11,8 +11,10 @@
  "restaurantes": {
   "r16": {
    "photo_url": "https://youtu.be/7miwoX4qiDg",
-   "photo": "https://i.ytimg.com/vi/7miwoX4qiDg/maxres2.jpg",
+   "photo": "fotos/mm-bachour-salon.jpg",
    "photos": [
+    "fotos/mm-bachour-salon.jpg",
+    "fotos/mm-bachour-letrero.jpg",
     "https://i.ytimg.com/vi/7miwoX4qiDg/maxres2.jpg",
     "https://i.ytimg.com/vi/7miwoX4qiDg/maxres3.jpg"
    ]
@@ -22,8 +24,10 @@
   },
   "r76": {
    "photo_url": "https://youtu.be/H3_xFwbRCCs",
-   "photo": "https://i.ytimg.com/vi/H3_xFwbRCCs/maxres1.jpg",
+   "photo": "fotos/mm-bulla-salon.jpg",
    "photos": [
+    "fotos/mm-bulla-salon.jpg",
+    "fotos/mm-bulla-letrero.jpg",
     "https://i.ytimg.com/vi/H3_xFwbRCCs/maxres1.jpg",
     "https://i.ytimg.com/vi/H3_xFwbRCCs/maxres3.jpg",
     "https://i.ytimg.com/vi/H3_xFwbRCCs/maxres2.jpg"
@@ -58,8 +62,10 @@
   },
   "r78": {
    "photo_url": "https://youtu.be/PY2xL1rdRDw",
-   "photo": "https://i.ytimg.com/vi/PY2xL1rdRDw/maxres3.jpg",
+   "photo": "fotos/mm-boiade-barra.jpg",
    "photos": [
+    "fotos/mm-boiade-barra.jpg",
+    "fotos/mm-boiade-bodega.jpg",
     "https://i.ytimg.com/vi/PY2xL1rdRDw/maxres3.jpg",
     "https://i.ytimg.com/vi/PY2xL1rdRDw/maxres2.jpg",
     "https://i.ytimg.com/vi/PY2xL1rdRDw/maxres1.jpg"
@@ -158,8 +164,10 @@
   },
   "r57": {
    "photo_url": "https://youtu.be/VvIvPXMoJDk",
-   "photo": "https://i.ytimg.com/vi/VvIvPXMoJDk/maxres2.jpg",
+   "photo": "fotos/mm-cantina-interior.jpg",
    "photos": [
+    "fotos/mm-cantina-interior.jpg",
+    "fotos/mm-cantina-salon.jpg",
     "https://i.ytimg.com/vi/VvIvPXMoJDk/maxres2.jpg",
     "https://i.ytimg.com/vi/VvIvPXMoJDk/maxres1.jpg",
     "https://i.ytimg.com/vi/VvIvPXMoJDk/maxres3.jpg"
@@ -167,16 +175,21 @@
   },
   "r84": {
    "photo_url": "https://youtu.be/A5i0vuQ-z-w",
-   "photo": "https://i.ytimg.com/vi/A5i0vuQ-z-w/maxres3.jpg",
+   "photo": "fotos/mm-kiki-salon.jpg",
    "photos": [
+    "fotos/mm-kiki-salon.jpg",
+    "fotos/mm-kiki-entrada.jpg",
+    "fotos/mm-kiki-rio.jpg",
     "https://i.ytimg.com/vi/A5i0vuQ-z-w/maxres3.jpg",
     "https://i.ytimg.com/vi/A5i0vuQ-z-w/maxres1.jpg"
    ]
   },
   "r92": {
    "photo_url": "https://youtu.be/GaVecc2NLz0",
-   "photo": "https://i.ytimg.com/vi/GaVecc2NLz0/maxres2.jpg",
+   "photo": "fotos/mm-komodo-salon.jpg",
    "photos": [
+    "fotos/mm-komodo-salon.jpg",
+    "fotos/mm-komodo-pilares.jpg",
     "https://i.ytimg.com/vi/GaVecc2NLz0/maxres2.jpg",
     "https://i.ytimg.com/vi/GaVecc2NLz0/maxres3.jpg",
     "https://i.ytimg.com/vi/GaVecc2NLz0/maxres1.jpg"
@@ -184,8 +197,10 @@
   },
   "r64": {
    "photo_url": "https://youtu.be/2TdU6DsxWus",
-   "photo": "https://i.ytimg.com/vi/2TdU6DsxWus/maxres1.jpg",
+   "photo": "fotos/mm-montys-tiki.jpg",
    "photos": [
+    "fotos/mm-montys-tiki.jpg",
+    "fotos/mm-montys-letrero.jpg",
     "https://i.ytimg.com/vi/2TdU6DsxWus/maxres1.jpg",
     "https://i.ytimg.com/vi/2TdU6DsxWus/maxres2.jpg",
     "https://i.ytimg.com/vi/2TdU6DsxWus/maxres3.jpg"
@@ -299,8 +314,10 @@
    ]
   },
   "r38": {
-   "photo": "https://i.ytimg.com/vi/KZWRBCmRwjE/maxres3.jpg",
+   "photo": "fotos/mm-casadonna-terraza.jpg",
    "photos": [
+    "fotos/mm-casadonna-terraza.jpg",
+    "fotos/mm-casadonna-salon.jpg",
     "https://i.ytimg.com/vi/KZWRBCmRwjE/maxres3.jpg",
     "https://i.ytimg.com/vi/KZWRBCmRwjE/maxres2.jpg",
     "https://i.ytimg.com/vi/KZWRBCmRwjE/maxres1.jpg"
@@ -315,8 +332,10 @@
    ]
   },
   "r44": {
-   "photo": "https://i.ytimg.com/vi/iiMnTgNSZlA/maxres2.jpg",
+   "photo": "fotos/mm-calledragones-salon.jpg",
    "photos": [
+    "fotos/mm-calledragones-salon.jpg",
+    "fotos/mm-calledragones-bar.jpg",
     "https://i.ytimg.com/vi/iiMnTgNSZlA/maxres2.jpg",
     "https://i.ytimg.com/vi/iiMnTgNSZlA/maxres3.jpg",
     "https://i.ytimg.com/vi/iiMnTgNSZlA/maxres1.jpg"
