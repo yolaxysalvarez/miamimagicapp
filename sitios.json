@@ -53,9 +53,11 @@
   },
   "r61": {
    "photo_url": "https://youtu.be/HpNgTQxfH6E",
-   "photo": "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres1.jpg",
+   "photo": "fotos/mm-sramartinez-salon.jpg",
    "photos": [
-    "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres1.jpg",
+    "fotos/mm-sramartinez-salon.jpg",
+    "fotos/mm-sramartinez-bar.jpg",
+    "fotos/mm-sramartinez-letrero.jpg",
     "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres3.jpg",
     "https://i.ytimg.com/vi/HpNgTQxfH6E/maxres2.jpg"
    ]
@@ -324,9 +326,11 @@
    ]
   },
   "r40": {
-   "photo": "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres1.jpg",
+   "photo": "fotos/mm-labirra-salon.jpg",
    "photos": [
-    "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres1.jpg",
+    "fotos/mm-labirra-salon.jpg",
+    "fotos/mm-labirra-neon.jpg",
+    "fotos/mm-labirra-barra.jpg",
     "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres3.jpg",
     "https://i.ytimg.com/vi/vwuUaPLiLbM/maxres2.jpg"
    ]
@@ -381,8 +385,11 @@
    ]
   },
   "r29": {
-   "photo": "https://i.ytimg.com/vi/kovQ9WDHV98/maxres1.jpg",
+   "photo": "fotos/mm-cho-salon.jpg",
    "photos": [
+    "fotos/mm-cho-salon.jpg",
+    "fotos/mm-cho-murales.jpg",
+    "fotos/mm-cho-comedor.jpg",
     "https://i.ytimg.com/vi/kovQ9WDHV98/maxres1.jpg",
     "https://i.ytimg.com/vi/kovQ9WDHV98/maxres3.jpg",
     "https://i.ytimg.com/vi/kovQ9WDHV98/maxres2.jpg"
