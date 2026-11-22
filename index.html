@@ -11571,7 +11571,8 @@ function mmSeaWidget(m,s,ES){
   window.mmSea={wave:wv, waveFt:(wv!=null?wv*3.28084:null), rain:rain, sunset:sunset,
                 sunrise:(function(){try{return hhmm(s.daily.sunrise[0]);}catch(e){return '';}})(),
                 sunsetRaw:(function(){try{return s.daily.sunset[0];}catch(e){return null;}})(),
-                sunriseRaw:(function(){try{return s.daily.sunrise[0];}catch(e){return null;}})()};
+                sunriseRaw:(function(){try{return s.daily.sunrise[0];}catch(e){return null;}})(),
+                sunriseNext:(function(){try{return hhmm(s.daily.sunrise[1]);}catch(e){return '';}})()};
   try{ mmNowRender(); }catch(e){}
   if(!box) return;
   try{
@@ -12520,6 +12521,7 @@ function mmHeroMoment(ES,now,h,S,W){
   if(mom) part.push(mom);
   if(up && tNow<up && S.sunrise) part.push((ES?'amanecer ':'sunrise ')+'<b>'+S.sunrise+'</b>');
   else if(dn && tNow<dn && S.sunset) part.push((ES?'atardecer ':'sunset ')+'<b>'+S.sunset+'</b>');
+  else if(dn && tNow>=dn && S.sunriseNext) part.push((ES?'amanecer mañana ':'sunrise tomorrow ')+'<b>'+S.sunriseNext+'</b>');
   else if(S.sunrise) part.push((ES?'amanecer ':'sunrise ')+'<b>'+S.sunrise+'</b>');
   else if(S.sunset) part.push((ES?'atardecer ':'sunset ')+'<b>'+S.sunset+'</b>');
   return part.length ? part.join(' <span class="mm-now-sep">·</span> ') : (ES?'Tu guía, en tiempo real':'Your guide, in real time');
