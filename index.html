@@ -37,23 +37,58 @@
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.miamimagicapp.com/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-itunes-app" content="app-id=6808848681">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  "name": "Miami Magic",
-  "url": "https://www.miamimagicapp.com/",
-  "description": "Bilingual insider guide to Miami — 300+ curated restaurants, hotels, beaches, museums, live cams, walking tours and hidden gems. Free.",
-  "image": "https://www.miamimagicapp.com/og-share.jpg",
-  "areaServed": {
-    "@type": "City",
-    "name": "Miami",
-    "containedInPlace": {
-      "@type": "AdministrativeArea",
-      "name": "Florida"
-    }
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://www.miamimagicapp.com/#site",
+   "name": "Miami Magic",
+   "url": "https://www.miamimagicapp.com/",
+   "inLanguage": [
+    "en",
+    "es"
+   ],
+   "description": "Bilingual guide to Miami and the Florida Keys: restaurants, hotels, beaches, events, live cams and local news.",
+   "publisher": {
+    "@id": "https://www.miamimagicapp.com/#org"
+   }
   },
-  "inLanguage": ["en", "es"]
+  {
+   "@type": "Organization",
+   "@id": "https://www.miamimagicapp.com/#org",
+   "name": "Miami Magic",
+   "url": "https://www.miamimagicapp.com/",
+   "logo": "https://www.miamimagicapp.com/miami-magic-icon-512.png",
+   "email": "contacto@miamimagicapp.com",
+   "sameAs": [
+    "https://www.instagram.com/miamimagicapp/",
+    "https://www.youtube.com/@MiamiMagicApp",
+    "https://apps.apple.com/app/id6808848681",
+    "https://play.google.com/store/apps/details?id=com.yyentertainment.miamimagic"
+   ]
+  },
+  {
+   "@type": "MobileApplication",
+   "name": "Miami Magic",
+   "operatingSystem": "iOS, Android",
+   "applicationCategory": "TravelApplication",
+   "url": "https://www.miamimagicapp.com/",
+   "image": "https://www.miamimagicapp.com/og-share.jpg",
+   "installUrl": "https://apps.apple.com/app/id6808848681",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=com.yyentertainment.miamimagic",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "publisher": {
+    "@id": "https://www.miamimagicapp.com/#org"
+   }
+  }
+ ]
 }
 </script>
 <link rel="apple-touch-icon" sizes="180x180" href="miami-magic-icon-180.png">
@@ -3542,6 +3577,7 @@ body{padding-bottom:0;}
 .mm-found{outline:3px solid rgba(255,77,53,.95);outline-offset:-3px;animation:mmFound 2.6s ease forwards}
 @keyframes mmFound{0%,55%{outline-color:rgba(255,77,53,.95)}100%{outline-color:rgba(255,77,53,0)}}
 @media (prefers-reduced-motion:reduce){.mm-found{animation:none}}
+@media(max-width:899px){.ap-opt-badge,.wtr-badge,.ev-stat-chip,.mm-exp-swipe,.mm-exp-ct,.mi-promo-eyebrow,.mmtour-row-tt,.mmsub-note{font-size:11.5px!important}}
 </style>
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#FF4D35">
@@ -4305,7 +4341,7 @@ html body .twx-pill{font-size:.78rem!important}
       <div>
         <div class="f-logo"><span class="fm">MIAMI</span><span class="fstar"></span><span class="fg">MAGIC</span></div>
         <p class="f-tag" id="fTag"></p>
-        <div class="f-cred"><div class="f-cred-eyebrow" id="fDevLbl"></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 20V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14"/><path d="M15 10h3a2 2 0 0 1 2 2v8"/><path d="M3 20h18"/><path d="M8 8h2M8 12h2M8 16h2"/></svg></span><span>Y &amp; Y Entertainment Corp</span></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg></span><span><a href="mailto:yyentertainment@outlook.com">yyentertainment@outlook.com</a></span></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M6 6l3.5 3.5M18 6l-3.5 3.5M6 18l3.5-3.5M18 18l-3.5-3.5"/></svg></span><span><a href="mailto:yyentertainment@outlook.com?subject=Miami Magic Support">Help and Support · Ayuda y Soporte</a></span></div><div class="f-cred-made"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M12 20.5C6.5 16.5 3 13 3 9.3 3 6.4 5.2 4.5 7.7 4.5c1.7 0 3.2.9 4.3 2.4 1.1-1.5 2.6-2.4 4.3-2.4 2.5 0 4.7 1.9 4.7 4.8 0 3.7-3.5 7.2-9 11.2z"/></svg><span>Designed &amp; produced in Miami · Diseñada y producida en Miami</span></div></div>
+        <div class="f-cred"><div class="f-cred-eyebrow" id="fDevLbl"></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M5 20V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14"/><path d="M15 10h3a2 2 0 0 1 2 2v8"/><path d="M3 20h18"/><path d="M8 8h2M8 12h2M8 16h2"/></svg></span><span>Y &amp; Y Entertainment Corp</span></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg></span><span><a href="mailto:contacto@miamimagicapp.com">contacto@miamimagicapp.com</a></span></div><div class="f-cred-row"><span class="f-cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M6 6l3.5 3.5M18 6l-3.5 3.5M6 18l3.5-3.5M18 18l-3.5-3.5"/></svg></span><span><a href="mailto:contacto@miamimagicapp.com?subject=Miami Magic Support">Help and Support · Ayuda y Soporte</a></span></div><div class="f-cred-made"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:12px;height:12px"><path d="M12 20.5C6.5 16.5 3 13 3 9.3 3 6.4 5.2 4.5 7.7 4.5c1.7 0 3.2.9 4.3 2.4 1.1-1.5 2.6-2.4 4.3-2.4 2.5 0 4.7 1.9 4.7 4.8 0 3.7-3.5 7.2-9 11.2z"/></svg><span>Designed &amp; produced in Miami · Diseñada y producida en Miami</span></div></div>
         <div style="display:flex;gap:14px;margin-top:16px;flex-wrap:wrap">
           <a href="https://www.instagram.com/miamimagicapp/" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:7px;color:#fff;text-decoration:none;font-size:.82rem;font-weight:600;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:9px 15px;border-radius:8px">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -5871,7 +5907,8 @@ coffee:[
 ],
 };
 // ── LANGUAGE ──
-let lang=(function(){try{return localStorage.getItem('mm_lang')==='es'?'es':'en';}catch(e){return 'en';}})(), activeFlt='all';
+let lang=(function(){try{var s=localStorage.getItem('mm_lang');if(s==='es'||s==='en')return s;var b=/^es/i.test((navigator.languages&&navigator.languages[0])||navigator.language||'')?'es':'en';try{localStorage.setItem('mm_lang',b);}catch(e){}return b;}catch(e){return 'en';}})(), activeFlt='all';
+try{document.documentElement.lang=lang;}catch(e){}
 const TX={
 en:{logoTag:'The Ultimate City Guide',eye:'Your Ultimate City Guide',l1:'Discover',sub:'Restaurants, beaches, museums, theaters, stadiums, events and nightlife — the complete guide to the Magic&nbsp;City.',cta1:'Explore Now',cta2:'Upcoming Events',stats:[{n:'108',l:'Restaurants'},{n:'8',l:'Beaches'},{n:'8',l:'Museums'},{n:'6',l:'Stadiums'},{n:'6',l:'Events'},{n:'8',l:'Nightlife'}],sph:'Search anything — restaurant, concert, artist, event…',sgo:'Search',biz:'For Business',langTxt:'Español',reserveBtn:'Reserve on OpenTable →',ticketsBtn:'Buy Tickets on Ticketmaster →',moreBtn:'More Info →',mapsBtn:'View on Google Maps →',gamesBtn:'Get Game Tickets →',upLbl:'Upcoming Shows:',tipLbl:'Insider Tip',
 nav:[{label:'Discover',items:[{icon:'',lbl:'Map',cnt:'',id:'sec-map'},{icon:'',lbl:'Restaurants',cnt:'30+',id:'sec-rest'},{icon:'',lbl:'Hotels',cnt:'',id:'sec-hotels'},{icon:'',lbl:'Beaches',cnt:'8',id:'sec-beach'},{icon:'',lbl:'Cinemas',cnt:'9',id:'sec-cine'},{icon:'',lbl:'Nightlife',cnt:'8',id:'sec-night'}]},{label:'Curated',items:[{icon:'',lbl:'On the Water',cnt:'',id:'sec-water'},{icon:'',lbl:'Luxury Miami',cnt:'',id:'sec-lux'},{icon:'',lbl:'Leave the Mainland',cnt:'',id:'sec-esc'}]},{label:'Explore More',items:[{icon:'',lbl:'Miami Through Time',cnt:'',id:'sec-mtt'},{icon:'',lbl:'Museums',cnt:'8',id:'sec-museum'},{icon:'',lbl:'Concerts',cnt:'8',id:'sec-concert'},{icon:'',lbl:'Theaters',cnt:'5',id:'sec-theater'},{icon:'',lbl:'Stadiums',cnt:'6',id:'sec-stad'},{icon:'',lbl:'Miami Insiders',cnt:'',id:'sec-insiders'},{icon:'',lbl:'Landmarks',cnt:'',id:'sec-place'},{icon:'',lbl:'Parks',cnt:'10',id:'sec-parks'},{icon:'',lbl:'Shopping',cnt:'8',id:'sec-shop'},{icon:'',lbl:'Art and Galleries',cnt:'',id:'sec-art'},{icon:'',lbl:'Coffee Shops',cnt:'',id:'sec-coffee'},{icon:'',lbl:'Kids and Families',cnt:'',id:'sec-kids'},{icon:'',lbl:'Day Trips',cnt:'',id:'sec-daytrips'},{icon:'',lbl:'Airports',cnt:'',id:'sec-transport'},{icon:'',lbl:'Getting Around',cnt:'',id:'sec-transport'},{icon:'',lbl:'Events Calendar',cnt:'10',id:'sec-events'},{icon:'',lbl:'Fly Over Miami & the Keys',cnt:'',id:'sec-drones'}]}],
@@ -6035,9 +6072,9 @@ function buildDB(){
   });
   (D.daytrips||[]).forEach(d=>{
     rows.push({id:d.id,type:'daytrip',emoji:d.emoji||'',bg:d.bg||'bg-navy',name:n(d.name,d.name_es||d.name),
-      sub:(lang==='es'?'Day Trip · ':'Day Trip · ')+d.addr,badge:'Day Trip',
+      sub:(lang==='es'?'Escapada · ':'Day Trip · ')+d.addr,badge:'Day Trip',
       link:d.link||('https://www.google.com/maps/search/'+encodeURIComponent(d.name)),
-      btn:t.moreBtn,sec:'sec-daytrips',grp:lang==='es'?'Day Trips':'Day Trips',
+      btn:t.moreBtn,sec:'sec-daytrips',grp:lang==='es'?'Escapadas':'Day Trips',
       kw:[d.name,d.addr,n(d.desc,d.desc_es)||'','day trip excursion everglades keys miami'].join(' ').toLowerCase(),obj:d});
   });
   /* Same treatment for the search results, which carry their own button. */
@@ -6444,8 +6481,8 @@ function renderUGC(){
   var shareText=L==='es'?'Síguenos en Instagram':'Follow us on Instagram';
   var seeMore=L==='es'?'Ver más →':'See more →';
   var title=L==='es'?'Miami en fotos':'Miami in Photos';
-  var sub=L==='es'?'La comunidad':'Community';
-  var tagLine=L==='es'?'Usa #MiamiMagic para aparecer aquí':'Tag #MiamiMagic to be featured here';
+  var sub=L==='es'?'Instagram':'Instagram';
+  var tagLine=L==='es'?'Fotos de Miami Magic':'Photos by Miami Magic';
   return '<section class="sec fade" id="sec-ugc">'
     +'<div class="sec-hd"><div class="sec-tt"><small>'+sub+'</small>'+title+'</div>'
     +'<a class="see-all" href="https://www.instagram.com/miamimagicapp/" target="_blank" rel="noopener">'+seeMore+'</a></div>'
@@ -7249,6 +7286,7 @@ function openAnnualEventModal(id){
   document.getElementById('mTitle').textContent=name;
   document.getElementById('mDesc').textContent=desc;
   var eWhen = n(e.when, e.when_es) || monthLabel;
+  try{var _eEnd=e.d2||e.d;if(_eEnd&&new Date(_eEnd+'T23:59:59')<new Date())eWhen=((typeof lang!=='undefined'&&lang==='es')?'Pr\u00f3xima edici\u00f3n por anunciar':'Next edition to be announced');}catch(_e){}
   var eCost = n(e.cost, e.cost_es);
   var eStat = n(e.stat, e.stat_es);
   var svgCal='<svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>';
@@ -7495,7 +7533,7 @@ var MM_DEFERRED=[
   {id:'sec-art',src:'galleries',fn:function(){return renderArt();},en:'Art and Murals',es:'Arte y Murales',ic:'<path d="M12 3.5c-4.7 0-8.5 3.6-8.5 8s3.8 8 8.5 8c1 0 1.8-.8 1.8-1.8 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-1 .8-1.8 1.8-1.8h2.1c2.4 0 4.3-1.9 4.3-4.3 0-3.3-4-5.7-9-5.7z"/><circle cx="7.8" cy="10.2" r="1.1"/><circle cx="12" cy="7.8" r="1.1"/><circle cx="16.2" cy="10.2" r="1.1"/>'},
   {id:'sec-coffee',src:'coffee',fn:function(){return renderCoffee();},en:'Coffee',es:'Café',ic:'<path d="M5.5 9.5h10v4a4.2 4.2 0 0 1-4.2 4.2h-1.6a4.2 4.2 0 0 1-4.2-4.2v-4z"/><path d="M15.5 10.5h1.5a2 2 0 0 1 0 4h-1.5"/><path d="M8.5 6.5c0-1.3.9-1.3.9-2.6M11.8 6.5c0-1.3.9-1.3.9-2.6"/>'},
   {id:'sec-kids',src:'kids',fn:function(){return renderKids();},en:'Kids',es:'Niños',ic:'<circle cx="12" cy="8" r="4.5"/><path d="M12 12.5c-.8 2.2.8 3 .1 5"/><path d="M10.3 7.4a2.4 2.4 0 0 1 1.7-.9"/>'},
-  {id:'sec-daytrips',src:'daytrips',fn:function(){return renderDayTrips();},en:'Day Trips',es:'Day Trips',ic:'<rect x="3" y="10" width="18" height="6" rx="2"/><circle cx="7.5" cy="17" r="1.6"/><circle cx="16.5" cy="17" r="1.6"/>'},
+  {id:'sec-daytrips',src:'daytrips',fn:function(){return renderDayTrips();},en:'Day Trips',es:'Escapadas',ic:'<rect x="3" y="10" width="18" height="6" rx="2"/><circle cx="7.5" cy="17" r="1.6"/><circle cx="16.5" cy="17" r="1.6"/>'},
   {id:'sec-drones',src:'',ph:'MMDR',ct:6,fn:function(){return renderDrones();},en:'Fly Over Miami & the Keys',es:'Sobrevuela Miami y los Cayos',ic:'<circle cx="12" cy="12" r="8.5"/><path d="M10 8.8l5.2 3.2L10 15.2V8.8z"/>'}
 ];
 var _mmExpanded={};
@@ -7778,7 +7816,7 @@ function renderRestCardsHorizontal(list){
       +'<button class="rcardh-trip-btn'+(isSaved?' saved':'')+'" onclick="event.stopPropagation();addToTrip(&quot;'+r.id+'&quot;,&quot;'+safeName+'&quot;,&quot;rest&quot;)" title="'+tripLabel+'">'+(isSaved?'✓':'+')+'</button>'
       +'<div class="rcardh-info">'
         +'<div class="rcardh-top-row">'
-          +'<span class="rcardh-badge'+(r.pro?' pro':'')+'">'+r.badge+'</span>'
+          +'<span class="rcardh-badge'+(r.pro?' pro':'')+'">'+mmEs(r.badge)+'</span>'
           +'<span class="rcardh-rating"><i>★</i> '+r.rating+'</span>'
         +'</div>'
         +'<div class="rcardh-mid">'
@@ -8175,6 +8213,16 @@ function tqLink(key){
    Mientras enabled sea false, lleva a una búsqueda genérica de
    DiscoverCars en Miami (sin comisión, pero funcional).
    ══════════════════════════════════════════════════════════ */
+/* Etiquetas cortas (insignias, tipos, horarios) en español cuando la app está en español.
+   Lo que no está en la lista (nombres propios, barrios) se deja tal cual. */
+var MM_ES_TAGS={"3 Michelin Stars Chef": "Chef de 3 estrellas Michelin", "Award-Winning": "Premiado", "Bal Harbour Luxury": "Lujo en Bal Harbour", "Beach": "Playa", "Beach Vibes": "Ambiente de playa", "Brickell Experience": "Experiencia Brickell", "Brickell Luxury": "Lujo en Brickell", "Burgers": "Hamburguesas", "Celebrity Hotspot": "Punto de celebridades", "Celebrity Scene": "Ambiente de celebridades", "Chef’s Counter": "Barra del chef", "Coconut Grove Waterfront": "Frente al agua en Coconut Grove", "Coral Gables Gem": "Joya de Coral Gables", "Coral Way Original": "Original de Coral Way", "Cuban Sandwich": "Sándwich cubano", "Dinner and Show": "Cena y espectáculo", "Exclusive Counter": "Barra exclusiva", "Family Since 1977": "Familiar desde 1977", "Fine Mexican": "Alta cocina mexicana", "Forbes Five-Star": "Cinco estrellas Forbes", "Fried Chicken": "Pollo frito", "Garden Dining": "Cena en el jardín", "Hidden Door Club": "Club de puerta secreta", "Hidden Gem": "Joya escondida", "Iconic": "Icónico", "Indian": "Cocina india", "Kendall Classic": "Clásico de Kendall", "Kendall Institution": "Institución de Kendall", "Key Biscayne Icon": "Ícono de Key Biscayne", "Late Night": "Hasta tarde", "Latin-Japanese": "Latino-japonés", "Little Havana Soul": "Alma de Little Havana", "Live Flamenco": "Flamenco en vivo", "Local Fave": "Favorito local", "Local Institution": "Institución local", "Local Legend": "Leyenda local", "Local Since 1995": "Local desde 1995", "Luxury Brunch": "Brunch de lujo", "Mallorcan Bakery & Tapas": "Panadería mallorquina y tapas", "Miami River Luxury": "Lujo en el río Miami", "Michelin Star": "Estrella Michelin", "Midtown Brunch": "Brunch en Midtown", "Most Beautiful Terrace": "La terraza más bella", "New for Miami Spice": "Nuevo en Miami Spice", "Nightlife": "Vida nocturna", "On The River": "Sobre el río", "Paella & Live Music": "Paella y música en vivo", "Pasta Heaven": "Paraíso de la pasta", "River Gem Since 1966": "Joya del río desde 1966", "Rooftop & Skyline": "Rooftop y skyline", "Seminole Cultural": "Cultura seminola", "Since 1913": "Desde 1913", "Since 1976": "Desde 1976", "Tel Aviv in Miami": "Tel Aviv en Miami", "Trending": "De moda", "Unique Fusion": "Fusión única", "Vegan": "Vegano", "Views": "Vistas", "Waterfront": "Frente al agua", "World Legend": "Leyenda mundial", "World-Class": "De clase mundial", "World-Class Pastry": "Repostería de clase mundial", "Wynwood Gem": "Joya de Wynwood", "Wynwood Staple": "Clásico de Wynwood", "Adults Only": "Solo adultos", "Airport": "Aeropuerto", "Art": "Arte", "Art Hotel": "Hotel de arte", "Artsy": "Artístico", "Beachfront": "Frente a la playa", "Budget": "Económico", "Budget Luxury": "Lujo accesible", "Business": "Negocios", "Celebrity": "Celebridades", "Chill": "Relajado", "Classic": "Clásico", "Convenient": "Práctico", "Convention": "Convenciones", "Cool": "Con estilo", "Cozy": "Acogedor", "Design": "Diseño", "Design Hotel": "Hotel de diseño", "Eco": "Ecológico", "Eco-Luxury": "Lujo ecológico", "Family": "Familiar", "Fun": "Divertido", "Golf Resort": "Resort de golf", "Grand Scale": "Gran escala", "Hip": "A la moda", "Historic": "Histórico", "Island Resort": "Resort en la isla", "Lifestyle": "Estilo de vida", "Luxury": "Lujo", "Mega Resort": "Megaresort", "Modern": "Moderno", "New": "Nuevo", "Oceanfront": "Frente al mar", "Party": "Fiesta", "Pool": "Piscina", "Pool Party": "Fiesta en la piscina", "Quiet": "Tranquilo", "Quirky": "Original", "Rooftop pool": "Piscina en la azotea", "Trendy": "De moda", "Ultra Luxury": "Ultralujo", "Unique": "Único", "Urban": "Urbano", "Urban Luxury": "Lujo urbano", "Value": "Buen precio", "Wellness": "Bienestar", "Brewery": "Cervecería", "Cocktails": "Cócteles", "Cuban": "Cubano", "Dance": "Baile", "Entertainment": "Espectáculo", "Intimate": "Íntimo", "Late": "Hasta tarde", "Latin": "Latino", "Live Music": "Música en vivo", "No Cover": "Sin cover", "Themed Nights": "Noches temáticas", "Two Floors": "Dos pisos", "Electronic": "Electrónica", "Indie Electronic": "Electrónica indie", "Vinyl": "Vinilo", "JAN": "ENE", "APR": "ABR", "AUG": "AGO", "DEC": "DIC", "Culture": "Cultura", "Food": "Gastronomía", "Sports": "Deportes", "Concert": "Concierto", "History": "Historia", "Free": "Gratis", "Restaurants citywide": "Restaurantes de toda la ciudad"};
+function mmEs(s){try{if(typeof lang==='undefined'||lang!=='es'||s==null)return s;return String(s).split(' \u00b7 ').map(function(x){var k=x.trim();return Object.prototype.hasOwnProperty.call(MM_ES_TAGS,k)?MM_ES_TAGS[k]:x;}).join(' \u00b7 ');}catch(e){return s;}}
+function mmEsHrs(s){try{if(typeof lang==='undefined'||lang!=='es'||s==null)return s;var M={Mon:'Lun',Tue:'Mar',Wed:'Mi\u00e9',Thu:'Jue',Fri:'Vie',Sat:'S\u00e1b',Sun:'Dom',Daily:'Todos los d\u00edas',Closed:'Cerrado',until:'hasta',from:'desde',usually:'normalmente'};return String(s).replace(/\b(Mon|Tue|Wed|Thu|Fri|Sat|Sun|Daily|Closed|until|from|usually)\b/g,function(m){return M[m];}).replace(/ & /g,' y ');}catch(e){return s;}}
+/* Menú lateral: etiquetas en el idioma elegido y contadores reales (antes fijos y en inglés). */
+var MM_HM_ES={"Home": "Inicio", "Get Featured · $9.99/mo": "Destaca tu negocio · $9.99/mes", "Restaurants": "Restaurantes", "Beaches": "Playas", "Nightlife": "Vida nocturna", "Map": "Mapa", "Concerts": "Conciertos", "Theaters": "Teatros", "Stadiums": "Estadios", "Museums": "Museos", "Getting Around": "Cómo moverse", "Shopping": "Tiendas", "Parks": "Parques", "Landmarks": "Lugares", "Magic Moments": "Momentos mágicos", "Live Cams": "Cámaras en vivo", "Walking Tours": "Tours a pie", "Near Me": "Cerca de mí", "Subscribe": "Suscríbete", "Ask a Local": "Pregúntale a un local", "Time Machine": "Miami en el tiempo", "Art and Galleries": "Arte y galerías", "Coffee Shops": "Cafés", "Kids and Families": "Niños y familia", "Day Trips": "Escapadas", "Dark Mode": "Modo oscuro"}, MM_HM_CT={"Restaurants": "restaurants", "Beaches": "beaches", "Nightlife": "nightlife", "Concerts": "concerts", "Theaters": "theaters", "Stadiums": "stadiums", "Museums": "museums", "Shopping": "shopping", "Parks": "parks", "Landmarks": "places", "Art and Galleries": "galleries", "Coffee Shops": "coffee", "Kids and Families": "kids", "Day Trips": "daytrips"};
+function mmHmFix(){try{var es=(typeof lang!=='undefined'&&lang==='es');var ls=document.querySelectorAll('.hm-link');for(var i=0;i<ls.length;i++){var a=ls[i],tn=null;for(var j=0;j<a.childNodes.length;j++){var c=a.childNodes[j];if(c.nodeType===3&&c.textContent.trim()){tn=c;break;}}if(!tn)continue;var en=a.getAttribute('data-hm-en');if(!en){en=tn.textContent.trim();if(!Object.prototype.hasOwnProperty.call(MM_HM_ES,en))continue;a.setAttribute('data-hm-en',en);}tn.textContent=tn.textContent.replace(tn.textContent.trim(),es?MM_HM_ES[en]:en);var k=MM_HM_CT[en],ct=a.querySelector('.hm-link-count');if(k&&ct){try{var v=(D[k]||[]).length;if(v)ct.textContent=String(v);}catch(e){}}}}catch(e){}}
+window.addEventListener('load',function(){try{var _t=window.toggleHM;if(typeof _t==='function'){window.toggleHM=function(){try{mmHmFix();}catch(e){}return _t.apply(this,arguments);};}mmHmFix();}catch(e){}});
+function apBadge(o){try{if(o&&o.k==='rentacar'&&!(MM_CAR.enabled&&MM_CAR.link))return 'info';}catch(e){}return o.badge;}
 var MM_CAR = {
   enabled: false,
   link: ''
@@ -8530,7 +8578,7 @@ function renderHotels(){
       +'<button class="rcardh-trip-btn'+(isSaved?' saved':'')+'" onclick="event.stopPropagation();addToTrip(&quot;'+h.id+'&quot;,&quot;'+safeName+'&quot;,&quot;hotel&quot;)" title="Trip">'+(isSaved?'✓':'+')+'</button>'
       +'<div class="rcardh-info">'
         +'<div class="rcardh-top-row"><span class="rcardh-badge pro">'+hStars+'</span></div>'
-        +'<div class="rcardh-mid"><div class="rcardh-name">'+h.name+'</div><div class="rcardh-meta">'+h.cat+'</div></div>'
+        +'<div class="rcardh-mid"><div class="rcardh-name">'+h.name+'</div><div class="rcardh-meta">'+mmEs(h.cat)+'</div></div>'
       +'</div>'
     +'</div>';
   }
@@ -9562,7 +9610,7 @@ var MM_PRIV={
   {h:'Analytics and advertising',b:'We do not run advertising networks or third-party behavioural tracking inside the app, and we do not build advertising profiles about you.'},
   {h:'Your rights',b:'You can ask us at any time for a copy of the data we hold about you, ask us to correct it, or ask us to delete it entirely. Write to the address below and we will act on it. If you are in the EU or UK, GDPR applies to you; if you are in California, the CCPA applies. Either way, the same request works.'},
   {h:'Security and changes',b:'Data is transmitted over encrypted connections and access is limited to the operator of the app. No system is perfect, so we hold only the minimum we need. If this policy changes we will update the date at the top of this page.'},
-  {h:'Contact',b:'Questions, corrections or deletion requests: <a href="mailto:info@miamimagicapp.com">info@miamimagicapp.com</a> — Y &amp; Y Entertainment Corp., Miami, Florida, USA.'}
+  {h:'Contact',b:'Questions, corrections or deletion requests: <a href="mailto:contacto@miamimagicapp.com">contacto@miamimagicapp.com</a> — Y &amp; Y Entertainment Corp., Miami, Florida, USA.'}
  ]},
  es:{title:'Política de Privacidad',upd:'Última actualización: 1 de agosto de 2026',
  intro:'Miami Magic es operada por Y &amp; Y Entertainment Corp. en Miami, Florida. Esta política explica, en lenguaje claro, qué recoge la app, para qué, y qué control tienes tú. No vendemos tu información personal.',
@@ -9576,7 +9624,7 @@ var MM_PRIV={
   {h:'Analítica y publicidad',b:'No usamos redes publicitarias ni rastreo de comportamiento de terceros dentro de la app, y no construimos perfiles publicitarios sobre ti.'},
   {h:'Tus derechos',b:'Puedes pedirnos en cualquier momento una copia de los datos que tenemos sobre ti, pedir que los corrijamos, o pedir que los borremos por completo. Escríbenos a la dirección de abajo y lo haremos. Si estás en la Unión Europea o el Reino Unido, te aplica el GDPR; si estás en California, te aplica la CCPA. En cualquier caso, la misma solicitud sirve.'},
   {h:'Seguridad y cambios',b:'Los datos se transmiten por conexiones cifradas y el acceso está limitado a quien opera la app. Ningún sistema es perfecto, así que guardamos solo el mínimo necesario. Si esta política cambia, actualizaremos la fecha al inicio de esta página.'},
-  {h:'Contacto',b:'Preguntas, correcciones o solicitudes de borrado: <a href="mailto:info@miamimagicapp.com">info@miamimagicapp.com</a> — Y &amp; Y Entertainment Corp., Miami, Florida, EE.UU.'}
+  {h:'Contacto',b:'Preguntas, correcciones o solicitudes de borrado: <a href="mailto:contacto@miamimagicapp.com">contacto@miamimagicapp.com</a> — Y &amp; Y Entertainment Corp., Miami, Florida, EE.UU.'}
  ]}
 };
 function openPrivacy(){
@@ -10256,6 +10304,7 @@ function renderEvents(){
     var isFaved = typeof isFav==='function' && isFav(e.id);
     var safeName = (name||'').replace(/'/g,'`');
     var eWhen = L==='es'&&e.when_es ? e.when_es : (e.when||'');
+    try{var _eEnd=e.d2||e.d;if(_eEnd&&new Date(_eEnd+'T23:59:59')<new Date())eWhen=(L==='es'?'Pr\u00f3xima edici\u00f3n por anunciar':'Next edition to be announced');}catch(_e){}
     var eStat = L==='es'&&e.stat_es ? e.stat_es : (e.stat||'');
     var eCost = L==='es'&&e.cost_es ? e.cost_es : (e.cost||'');
     return '<div class="rcardh ev-cardh" onclick="openAnnualEventModal(\''+e.id+'\')">'
@@ -10265,14 +10314,14 @@ function renderEvents(){
       +(eStat?'<div class="ev-stat-chip">'+eStat+'</div>':'')
       +'<div class="rcardh-info">'
         +'<div class="rcardh-top-row">'
-          +'<span class="rcardh-badge">'+e.month+'</span>'
-          +(isFree?'<span class="rcardh-rating">Free</span>':(e.type?'<span class="rcardh-rating">'+e.type+'</span>':''))
+          +'<span class="rcardh-badge">'+mmEs(e.month)+'</span>'
+          +(isFree?'<span class="rcardh-rating">'+mmEs('Free')+'</span>':(e.type?'<span class="rcardh-rating">'+mmEs(e.type)+'</span>':''))
         +'</div>'
         +'<div class="rcardh-mid"><div class="rcardh-name">'+name+'</div>'
           +(eWhen?'<div class="ev-when">'+eWhen+'</div>':'')
           +'<div class="rcardh-desc">'+desc.split('.')[0]+'.</div></div>'
         +'<div class="rcardh-metarow">'
-          +'<div class="rcardh-metaitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>'+e.venue+'</div>'
+          +'<div class="rcardh-metaitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>'+mmEs(e.venue)+'</div>'
           +(eCost?'<div class="rcardh-metaitem ev-cost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>'+eCost+'</div>':'')
         +'</div>'
       +'</div>'
@@ -10519,9 +10568,9 @@ function renderNight(){
       +'<div class="rcardh-fade"></div>'
       +'<button class="rcardh-fav-btn'+(isFaved?' faved':'')+'" onclick="event.stopPropagation();addFavFromCard(\''+ni.id+'\',\''+safeName+'\',\'night\',this)">'+(isFaved?'♥':'♡')+'</button>'
       +'<div class="rcardh-info">'
-        +'<div class="rcardh-top-row"><span class="rcardh-badge">'+ni.vibe+'</span></div>'
+        +'<div class="rcardh-top-row"><span class="rcardh-badge">'+mmEs(ni.vibe)+'</span></div>'
         +'<div class="rcardh-mid"><div class="rcardh-name">'+ni.name+'</div></div>'
-        +'<div class="rcardh-metarow"><div class="rcardh-metaitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>'+ni.hrs+'</div></div>'
+        +'<div class="rcardh-metarow"><div class="rcardh-metaitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>'+mmEsHrs(ni.hrs)+'</div></div>'
       +'</div>'
     +'</div>';
   });
@@ -10796,16 +10845,16 @@ function renderAirports(){
     +'</div>';
   }).join('');
   var sell=apSellItems().map(function(o){
-    var badgeTx = o.badge==='partner' ? (es?'Partner':'Partner')
-                : o.badge==='new'     ? (es?'Nuevo':'New') : (es?'Info':'Info');
+    var badgeTx = apBadge(o)==='partner' ? (es?'Partner':'Partner')
+                : apBadge(o)==='new'     ? (es?'Nuevo':'New') : (es?'Info':'Info');
     var sub = MM_AP_SELL_SUB[o.k] ? (es?MM_AP_SELL_SUB[o.k].es:MM_AP_SELL_SUB[o.k].en)
                                   : (es?o.sub.es:o.sub.en);
     var ph=(typeof MM_AP_SELL_PHOTO!=='undefined'&&MM_AP_SELL_PHOTO[o.k])?MM_AP_SELL_PHOTO[o.k]:'';
     return '<a class="ap-opt ap-sell-card ap-opt-photo" href="'+apOptLink(o)+'" target="_blank"'
-      +' rel="noopener'+(o.badge==='partner'?' sponsored':'')+'"'
+      +' rel="noopener'+(apBadge(o)==='partner'?' sponsored':'')+'"'
       +' onclick="try{mmTrack(\'ap_sell\',\''+o.k+'\')}catch(e){}">'
       +(ph?'<span class="ap-opt-ph" style="background-image:url(\''+ph+'\')"></span><span class="ap-opt-scrim"></span>':'')
-      +'<span class="ap-opt-badge ap-opt-badge-'+o.badge+'">'+badgeTx+'</span>'
+      +'<span class="ap-opt-badge ap-opt-badge-'+apBadge(o)+'">'+badgeTx+'</span>'
       +'<div class="ap-opt-tx"><b>'+(es?o.label.es:o.label.en)+'</b><i>'+sub+'</i></div>'
     +'</a>';
   }).join('');
@@ -10838,16 +10887,16 @@ var MM_AP_SELL_PHOTO={
 function renderBeforeFly(){
   var es=(typeof lang!=='undefined'&&lang==='es');
   var sell=apSellItems().map(function(o){
-    var badgeTx = o.badge==='partner' ? (es?'Partner':'Partner')
-                : o.badge==='new'     ? (es?'Nuevo':'New') : (es?'Info':'Info');
+    var badgeTx = apBadge(o)==='partner' ? (es?'Partner':'Partner')
+                : apBadge(o)==='new'     ? (es?'Nuevo':'New') : (es?'Info':'Info');
     var sub = MM_AP_SELL_SUB[o.k] ? (es?MM_AP_SELL_SUB[o.k].es:MM_AP_SELL_SUB[o.k].en)
                                   : (es?o.sub.es:o.sub.en);
     var ph=(typeof MM_AP_SELL_PHOTO!=='undefined'&&MM_AP_SELL_PHOTO[o.k])?MM_AP_SELL_PHOTO[o.k]:'';
     return '<a class="ap-opt ap-sell-card ap-opt-photo" href="'+apOptLink(o)+'" target="_blank"'
-      +' rel="noopener'+(o.badge==='partner'?' sponsored':'')+'"'
+      +' rel="noopener'+(apBadge(o)==='partner'?' sponsored':'')+'"'
       +' onclick="try{mmTrack(\'ap_sell\',\''+o.k+'\')}catch(e){}">'
       +(ph?'<span class="ap-opt-ph" style="background-image:url(\''+ph+'\')"></span><span class="ap-opt-scrim"></span>':'')
-      +'<span class="ap-opt-badge ap-opt-badge-'+o.badge+'">'+badgeTx+'</span>'
+      +'<span class="ap-opt-badge ap-opt-badge-'+apBadge(o)+'">'+badgeTx+'</span>'
       +'<div class="ap-opt-tx"><b>'+(es?o.label.es:o.label.en)+'</b><i>'+sub+'</i></div>'
     +'</a>';
   }).join('');
@@ -10884,11 +10933,11 @@ function mmOpenAirport(id){
   if(!ov){ ov=document.createElement('div'); ov.id='mmApOv'; ov.className='mmap-ov'; document.body.appendChild(ov); }
   var opts=a.opts.map(function(o){
     var linkVal = apOptLink(o);
-    var badgeTx = o.badge==='partner' ? (es?'Comisi\u00f3n':'Partner')
+    var badgeTx = apBadge(o)==='partner' ? (es?'Comisi\u00f3n':'Partner')
                 : o.badge==='new'     ? (es?'Nuevo':'New') : (es?'Info':'Info');
-    return '<a class="ap-opt" href="'+linkVal+'" target="_blank" rel="noopener'+(o.badge==='partner'?' sponsored':'')+'">'
+    return '<a class="ap-opt" href="'+linkVal+'" target="_blank" rel="noopener'+(apBadge(o)==='partner'?' sponsored':'')+'">'
       +'<span class="ap-opt-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+MM_AP_ICO[o.icon]+'</svg></span>'
-      +'<span class="ap-opt-badge ap-opt-badge-'+o.badge+'">'+badgeTx+'</span>'
+      +'<span class="ap-opt-badge ap-opt-badge-'+apBadge(o)+'">'+badgeTx+'</span>'
       +'<div class="ap-opt-tx"><b>'+(es?o.label.es:o.label.en)+'</b><i>'+(es?o.sub.es:o.sub.en)+'</i></div>'
     +'</a>';
   }).join('');
@@ -11197,7 +11246,7 @@ function renderCoffee(){
         +'<div class="rcardh-mid"><div class="rcardh-name">'+n(c.name,c.name_es)+'</div><div class="rcardh-desc">'+n(c.desc,c.desc_es)+'</div></div>'
         +'<div class="rcardh-metarow">'
           +'<div class="rcardh-metaitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>'+c.addr+'</div>'
-          +'<div class="rcardh-metaitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>'+c.hrs+'</div>'
+          +'<div class="rcardh-metaitem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>'+mmEsHrs(c.hrs)+'</div>'
         +'</div>'
       +'</div>'
     +'</div>';
@@ -11883,7 +11932,7 @@ function mmDatoSend(){
       +(ES?'Dato: ':'Tip: ')+txt+'\n\n'
       +(ES?'De: ':'From: ')+who+(mail?' · '+mail:'');
     try{
-      location.href='mailto:yyentertainment@outlook.com?subject='
+      location.href='mailto:contacto@miamimagicapp.com?subject='
         +encodeURIComponent((ES?'Dato para Miami Magic — ':'Tip for Miami Magic — ')+MM_DATO_PLACE.name)
         +'&body='+encodeURIComponent(body);
     }catch(e){}
@@ -12889,7 +12938,8 @@ function build(){
   // sidebar
   
   // marquee
-  const mqItems=['100+ Restaurants','100+ Hotels','17 Beaches','12 Theaters','11 Museums','20 Nightlife Spots','20 On the Water','14 Live Cams','Fly Over Miami','Walking Tours','Bilingual EN/ES','Business Ready'];
+  const _mqE=(typeof lang!=='undefined'&&lang==='es');const _mqC=function(k,f){try{var v=(D[k]||[]).length;return v?String(v):f;}catch(e){return f;}};
+  const mqItems=_mqE?[_mqC('restaurants','99')+' Restaurantes',_mqC('hotels','92')+' Hoteles',_mqC('beaches','18')+' Playas',_mqC('theaters','12')+' Teatros',_mqC('museums','11')+' Museos',_mqC('nightlife','25')+' Vida nocturna',(typeof MM_WATER!=='undefined'?MM_WATER.length:20)+' Botes y pesca','14 C\u00e1maras en vivo','Sobrevuela Miami','Tours a pie','Biling\u00fce EN/ES','Negocios de Miami']:[_mqC('restaurants','99')+' Restaurants',_mqC('hotels','92')+' Hotels',_mqC('beaches','18')+' Beaches',_mqC('theaters','12')+' Theaters',_mqC('museums','11')+' Museums',_mqC('nightlife','25')+' Nightlife Spots',(typeof MM_WATER!=='undefined'?MM_WATER.length:20)+' On the Water','14 Live Cams','Fly Over Miami','Walking Tours','Bilingual EN/ES','Miami Business'];
   const mqs=mqItems.map(q=>'<div class="mq-item"><span class="mq-dot"></span><span class="mq-n">'+q.split(' ')[0]+'</span> '+q.split(' ').slice(1).join(' ')+'</div>').join('');
   /* Su nota (sep 2026): este marquee de conteos competía con la banda
      de restaurantes. Ahora vive justo antes de "Explore more" — el HTML
@@ -13004,6 +13054,7 @@ function toggleLang(){
   var lbl = document.getElementById('langToggleLabel');
   if(lbl) lbl.textContent = lang==='es' ? 'English / Español ✓' : 'Español / English';
   try { localStorage.setItem('mm_lang', lang); } catch(e) {}
+  try{document.documentElement.lang=lang;}catch(e){}
 }
 
 function navSyncUser(){
@@ -14100,7 +14151,7 @@ function mmReFill(){
     <div style="padding:8px 22px 40px;">
       <button id="acc-logout-btn" onclick="accLogout()" style="width:100%;padding:13px;background:transparent;border:1.5px solid #ddd;border-radius:50px;font-size:.82rem;font-weight:600;color:#aaa;cursor:pointer;font-family:'DM Sans',sans-serif;">Cerrar sesi&#243;n</button>
       <div id="acc-signin-link" onclick="closeAccount();openSignin();" style="display:none;text-align:center;margin-top:14px;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;color:#FF4D35;cursor:pointer;">&iquest;Ya tienes cuenta? <span style="text-decoration:underline">Inicia sesi&oacute;n</span></div>
-      <div style="text-align:center;font-family:'DM Sans',sans-serif;font-size:.65rem;color:#ccc;margin-top:12px;letter-spacing:1px;">MIAMI MAGIC v1.0 &middot; hola@miamimagicapp.com</div>
+      <div style="text-align:center;font-family:'DM Sans',sans-serif;font-size:.65rem;color:#ccc;margin-top:12px;letter-spacing:1px;">MIAMI MAGIC &middot; contacto@miamimagicapp.com</div>
     </div>
   </div>
 </div>
@@ -14177,7 +14228,7 @@ function mmReFill(){
 
       <!-- Error state -->
       <div id="su-error" style="display:none;margin-top:10px;padding:10px 14px;background:#fff0f0;border-radius:12px;font-size:.8rem;color:#e03a24;text-align:center">
-        Algo salió mal. Intenta de nuevo o escríbenos a hola@miamimagicapp.com
+        Algo salió mal. Intenta de nuevo o escríbenos a contacto@miamimagicapp.com
       </div>
 
     </div>
@@ -14794,8 +14845,8 @@ function mmDeleteAccountRun(email){
     setTimeout(function(){
       alert(serverOk
         ? (ES?'Tu cuenta ha sido eliminada.':'Your account has been deleted.')
-        : (ES?'Tu cuenta se elimin\u00f3 de este dispositivo. No pudimos contactar al servidor; escr\u00edbenos a info@miamimagicapp.com si vuelves a ver tus datos.'
-             :'Your account was deleted from this device. We could not reach the server; write to info@miamimagicapp.com if your data reappears.'));
+        : (ES?'Tu cuenta se elimin\u00f3 de este dispositivo. No pudimos contactar al servidor; escr\u00edbenos a contacto@miamimagicapp.com si vuelves a ver tus datos.'
+             :'Your account was deleted from this device. We could not reach the server; write to contacto@miamimagicapp.com if your data reappears.'));
       try{ if(typeof build==='function') build(); }catch(e){}
     },260);
   }
@@ -15029,7 +15080,7 @@ function mmSubscribe(){
   try{ localStorage.setItem('mm_sub_email', v); }catch(e){}
   var subj=encodeURIComponent('Miami Magic — Nueva suscripción / New subscriber');
   var body=encodeURIComponent((es?'Quiero suscribirme a Miami Magic.':'I want to subscribe to Miami Magic.')+'\n\nEmail: '+v);
-  window.location.href='mailto:yyentertainment@outlook.com?subject='+subj+'&body='+body;
+  window.location.href='mailto:contacto@miamimagicapp.com?subject='+subj+'&body='+body;
   var f=document.getElementById('mmsubForm');
   if(f) f.innerHTML='<div class="mmsub-done"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M20 6 9 17l-5-5"/></svg>'+(es?'¡Listo! Revisa tu app de correo para confirmar.':'Done! Check your mail app to confirm.')+'</div>';
 }
@@ -15148,11 +15199,11 @@ function mmFootAbout(){
 function mmAboutClose(){ var o=document.getElementById('aboutOv'); if(o) o.style.display='none'; }
 function mmFootContact(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
-  location.href='mailto:yyentertainment@outlook.com?subject='+encodeURIComponent(ES?'Miami Magic — Contacto':'Miami Magic — Contact');
+  location.href='mailto:contacto@miamimagicapp.com?subject='+encodeURIComponent(ES?'Miami Magic — Contacto':'Miami Magic — Contact');
 }
 function mmFootSubmit(){
   var ES=(typeof lang!=='undefined'&&lang==='es');
-  location.href='mailto:yyentertainment@outlook.com?subject='+encodeURIComponent(ES?'Sugerir un lugar para Miami Magic':'Submit a place to Miami Magic')
+  location.href='mailto:contacto@miamimagicapp.com?subject='+encodeURIComponent(ES?'Sugerir un lugar para Miami Magic':'Submit a place to Miami Magic')
     +'&body='+encodeURIComponent(ES?'Lugar:\nDirección:\n¿Por qué vale la pena?\n':'Place:\nAddress:\nWhy is it worth it?\n');
 }
 function mmFootBiz(){
@@ -16411,7 +16462,9 @@ function renderTripList(){
   var empty = document.getElementById('tripEmpty');
   var cnt   = document.getElementById('tripCount');
   if(!list) return;
-  if(cnt) cnt.textContent = items.length + (items.length===1?' place':' places') + ' saved';
+  var _tE=(typeof lang!=='undefined'&&lang==='es');
+  if(cnt) cnt.textContent = _tE ? (items.length + (items.length===1?' lugar guardado':' lugares guardados')) : (items.length + (items.length===1?' place':' places') + ' saved');
+  try{var _tS=document.getElementById('tripShareBtn');if(_tS)_tS.textContent=_tE?'Compartir \u2197':'Share \u2197';var _tX=document.getElementById('tripEmptyTx');if(_tX)_tX.innerHTML=_tE?'Toca el bot\u00f3n <strong>+</strong> en cualquier lugar para guardarlo aqu\u00ed.':'Tap the <strong>+</strong> button on any place to save it here.';var _tT=document.getElementById('tripTitleTx');if(_tT)_tT.textContent=_tE?'Mi viaje':'My Trip';}catch(_e){}
   if(items.length===0){
     list.innerHTML='';
     if(empty) empty.style.display='block';
@@ -19496,18 +19549,18 @@ document.addEventListener('keydown', function(e) {
   <div style="text-align:center;padding:12px 0 0"><div style="width:36px;height:4px;background:#e0dbd4;border-radius:4px;display:inline-block"></div></div>
   <div style="padding:16px 18px 0;display:flex;align-items:center;justify-content:space-between;">
     <div>
-      <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#08172E;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px;vertical-align:-2px"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4z"/><path d="M9 4v14M15 6v14"/></svg> My Trip</div>
-      <div id="tripCount" style="font-size:.74rem;color:#999;margin-top:2px;">0 places saved</div>
+      <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:#08172E;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px;vertical-align:-2px"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4z"/><path d="M9 4v14M15 6v14"/></svg> <span id="tripTitleTx">My Trip</span></div>
+      <div id="tripCount" style="font-size:.74rem;color:#999;margin-top:2px;">0 places saved</div><!--mmTripI18n-->
     </div>
     <div style="display:flex;gap:8px;">
-      <button onclick="shareTrip()" style="padding:8px 14px;border-radius:50px;border:1.5px solid #e0dbd4;background:#fff;font-size:.75rem;color:#444;cursor:pointer;">Share ↗</button>
+      <button onclick="shareTrip()" style="padding:8px 14px;border-radius:50px;border:1.5px solid #e0dbd4;background:#fff;font-size:.75rem;color:#444;cursor:pointer;" id="tripShareBtn">Share ↗</button>
       <button onclick="closeMyTrip()" style="background:#f5f0eb;border:none;border-radius:50%;width:34px;height:34px;font-size:1rem;cursor:pointer;">×</button>
     </div>
   </div>
   <div id="tripList" style="padding:12px 0 0;"></div>
   <div id="tripEmpty" style="padding:40px 18px;text-align:center;color:#aaa;font-size:.85rem;">
     <div style="font-size:2rem;margin-bottom:10px;color:#FF4D35;display:flex;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:30px;height:30px;vertical-align:-2px"><path d="M9 4 3.5 6v14L9 18l6 2 5.5-2V4L15 6 9 4z"/><path d="M9 4v14M15 6v14"/></svg></div>
-    Tap the <strong>+ Trip</strong> button on any place to save it here.
+    <span id="tripEmptyTx">Tap the <strong>+</strong> button on any place to save it here.</span>
   </div>
 </div>
 
@@ -22403,6 +22456,11 @@ function kyRenderSimilar(obj){
 @media (max-width:370px){#mmDoor .dr-t{-webkit-line-clamp:5}#mmDoor .dr-marks{gap:6px}#mmDoor .dr-marks button{font-size:.8rem;padding:6px 7px}#mmDoor .dr-links button{padding-left:10px;padding-right:10px;font-size:.86rem}}
 @media (min-width:900px){#mmDoor{max-width:760px;margin:22px auto;border:1px solid rgba(201,150,46,.38);border-radius:20px}}
 @media (prefers-reduced-motion:reduce){#mmDoor .dr-card{transition:none}#mmDoor .dr-dots i.on:after{transition:none}}
+/* Puerta de News: la fila de abajo ocupa el mismo ancho que Eventos y Casa & Coast, en tres columnas iguales */
+#mmDoor .dr-links{margin-top:10px;justify-content:space-between}
+#mmDoor .dr-links button{flex:1 1 0;min-width:0;text-align:center;padding-left:4px!important;padding-right:4px!important;font-size:.92rem!important;letter-spacing:.12em!important}
+@media (max-width:385px){#mmDoor .dr-links button{font-size:.86rem!important;letter-spacing:.1em!important}}
+@media (max-width:340px){#mmDoor .dr-links button{font-size:.78rem!important;letter-spacing:.05em!important}}
 /* barra flotante de 5: Planea al centro */
 #bottomNav .bn-item{flex:1 1 0}
 </style>

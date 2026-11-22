@@ -189,7 +189,7 @@ module.exports = async function handler(req, res) {
 
   try {
     // El contacto VAPID tiene que ser una URL: si en Vercel se guardó solo el correo, se le antepone "mailto:"
-    let vapidContact = (process.env.VAPID_CONTACT_EMAIL || 'mailto:hola@miamimagicapp.com').trim();
+    let vapidContact = (process.env.VAPID_CONTACT_EMAIL || 'mailto:contacto@miamimagicapp.com').trim();
     if (!/^(mailto:|https:\/\/)/i.test(vapidContact)) vapidContact = 'mailto:' + vapidContact;
     webpush.setVapidDetails(
       vapidContact,

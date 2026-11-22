@@ -108,6 +108,13 @@ export default async function handler(req, res) {
         JSON.stringify(ficha).replace(/</g, '\\u003c') + '</script>\n</head>');
     }
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    if (!n) {
+      // Nota que no existe (o aún no sale): no encontrada de verdad, y fuera de Google
+      html = setMeta(html, 'name', 'robots', 'noindex, follow');
+      res.setHeader('Cache-Control', 'public, s-maxage=60');
+      res.status(404).send(html);
+      return;
+    }
     res.setHeader('Cache-Control', 'public, s-maxage=120, stale-while-revalidate=600');
     res.status(200).send(html);
   } catch (e) {
