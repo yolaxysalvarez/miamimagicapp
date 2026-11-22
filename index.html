@@ -3578,6 +3578,16 @@ body{padding-bottom:0;}
 @keyframes mmFound{0%,55%{outline-color:rgba(255,77,53,.95)}100%{outline-color:rgba(255,77,53,0)}}
 @media (prefers-reduced-motion:reduce){.mm-found{animation:none}}
 @media(max-width:899px){.ap-opt-badge,.wtr-badge,.ev-stat-chip,.mm-exp-swipe,.mm-exp-ct,.mi-promo-eyebrow,.mmtour-row-tt,.mmsub-note{font-size:11.5px!important}}
+
+/* ficha abierta: nunca bajo el reloj ni la isla del iPhone, y los tres
+   botones de arriba con el mismo aire entre ellos */
+.modal-ov{padding:calc(14px + env(safe-area-inset-top,0px)) 14px calc(14px + env(safe-area-inset-bottom,0px))!important;}
+.modal{max-height:calc(100vh - 28px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))!important;}
+@supports (height:100dvh){.modal{max-height:calc(100dvh - 28px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))!important;}}
+.modal-x,.modal-fav,.modal-share{top:14px!important;}
+.modal-x{right:14px!important;}
+.modal-fav{right:64px!important;}
+.modal-share{right:114px!important;}
 </style>
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#FF4D35">
