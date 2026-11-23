@@ -55,6 +55,70 @@
   "videos": [],
   "notas": [
     {
+      "id": "tren-flagler-key-west-1912-historia",
+      "scope": "cayos",
+      "tema": "historia",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-23",
+      "publicada": "2026-11-23T12:55:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-puente-entre-cayos-aereo.jpg",
+      "foto_alt": "Vista aérea de la carretera de los Cayos cruzando entre islas de manglar y agua azul",
+      "foto_pie": "La carretera de los Cayos cruza entre islas, desde el drone de Miami Magic.",
+      "foto_pie_en": "The Keys highway crossing between islands, from the Miami Magic drone.",
+      "fuentes": [
+        {
+          "n": "Biblioteca del Congreso · Today in History, 22 de enero",
+          "u": "https://webarchive.library.unt.edu/eot2008/20090111060037/http:/memory.loc.gov/ammem/today/jan22.html"
+        },
+        {
+          "n": "Museo Flagler · Florida East Coast Railway",
+          "u": "https://flaglermuseum.us/history/florida-east-coast-railway"
+        },
+        {
+          "n": "USF Libraries · Huracán del Día del Trabajo, 1935",
+          "u": "https://usflibexhibits.omeka.net/exhibits/show/flgreathurricane/labordayhurricane"
+        },
+        {
+          "n": "WJCT · Los Cayos recuerdan la tormenta, 80 años después",
+          "u": "https://news.wjct.org/post/keys-remembers-killer-storm-80-years-later"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-23T12:55:00-05:00",
+      "ultima": 1,
+      "arriba": 1,
+      "es": {
+        "etiqueta": "HISTORIA",
+        "titulo": "Un tren cruzó el mar hasta Key West en 1912; sus puentes terminaron siendo la carretera de los Cayos",
+        "bajada": "La vía llegó a Key West en enero de 1912 y un huracán la destrozó en 1935. Sobre su ruta, y sobre sus puentes, se construyó la carretera que hoy recorres.",
+        "toca": [
+          "La carretera de los Cayos, la Overseas Highway, sigue en buena parte la ruta que dejó el tren, hasta Key West.",
+          "En Upper Matecumbe Key, en Islamorada, hay un monumento a las víctimas del huracán de 1935, según la [USF](https://usflibexhibits.omeka.net/exhibits/show/flgreathurricane/labordayhurricane)."
+        ],
+        "cuerpo": [
+          "El 22 de enero de 1912, Key West celebró la llegada de un ferrocarril que por fin la unía con el continente, según la [Biblioteca del Congreso](https://webarchive.library.unt.edu/eot2008/20090111060037/http:/memory.loc.gov/ammem/today/jan22.html). La ciudad tenía casi 20,000 habitantes. Henry Flagler viajó en aquel primer tren, semanas después de cumplir 82 años, según el [Museo Flagler](https://flaglermuseum.us/history/florida-east-coast-railway). Era el último tramo del Florida East Coast Railway.",
+          "La vía duró hasta 1935. El huracán del Día del Trabajo, de categoría 5, arrasó 41 millas de riel y dejó 408 víctimas, según un [archivo de la USF](https://usflibexhibits.omeka.net/exhibits/show/flgreathurricane/labordayhurricane). La compañía decidió no reconstruirla.",
+          "Lo que quedó fue el camino. El derecho de paso se vendió al estado de Florida y los puentes del tren se adaptaron para la carretera, según [WJCT](https://news.wjct.org/post/keys-remembers-killer-storm-80-years-later). Varios siguieron en servicio hasta finales de los años 70 y principios de los 80."
+        ]
+      },
+      "en": {
+        "etiqueta": "HISTORY",
+        "titulo": "A train crossed the sea to Key West in 1912; its bridges ended up as the road through the Keys",
+        "bajada": "The railroad reached Key West in January 1912 and a hurricane wrecked it in 1935. The highway you drive today was built along its route, and on its bridges.",
+        "toca": [
+          "The Overseas Highway follows, in large part, the route the train left behind, all the way to Key West.",
+          "On Upper Matecumbe Key, in Islamorada, a monument honors the victims of the 1935 hurricane, according to [USF](https://usflibexhibits.omeka.net/exhibits/show/flgreathurricane/labordayhurricane)."
+        ],
+        "cuerpo": [
+          "On January 22, 1912, Key West celebrated the arrival of a railroad that finally tied it to the mainland, according to the [Library of Congress](https://webarchive.library.unt.edu/eot2008/20090111060037/http:/memory.loc.gov/ammem/today/jan22.html). The city had nearly 20,000 residents. Henry Flagler rode that first train, weeks after turning 82, according to the [Flagler Museum](https://flaglermuseum.us/history/florida-east-coast-railway). It was the last stretch of the Florida East Coast Railway.",
+          "The line lasted until 1935. The Labor Day hurricane, a Category 5, swept away 41 miles of track and left 408 victims, according to a [USF archive](https://usflibexhibits.omeka.net/exhibits/show/flgreathurricane/labordayhurricane). The company decided not to rebuild.",
+          "What remained was the roadbed. The right-of-way was sold to the state of Florida and the railroad's bridges were adapted for the highway, according to [WJCT](https://news.wjct.org/post/keys-remembers-killer-storm-80-years-later). Several stayed in service until the late 1970s and early 1980s."
+        ]
+      }
+    },
+    {
       "id": "heat-thunder-22-noviembre",
       "scope": "miami",
       "tema": "deporte",
@@ -81,7 +145,7 @@
       "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
       "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
       "foto_mm": false,
-      "ultima": 2,
+      "ultima": 3,
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "El HEAT le gana 123-113 a Oklahoma City, con triple-doble de Bam Adebayo, y ya suma siete victorias seguidas",
@@ -173,7 +237,7 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 3,
+      "ultima": 4,
       "arriba": 2
     },
     {
@@ -289,8 +353,8 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 5,
-      "arriba": 1
+      "ultima": 6,
+      "arriba": 2
     },
     {
       "id": "mr-bean-coffee-shop-the-falls-cafe-para-quedarse",
@@ -382,7 +446,7 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 7,
+      "ultima": 8,
       "arriba": 5
     },
     {
@@ -480,7 +544,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 6,
+      "ultima": 7,
       "arriba": 4
     },
     {
@@ -557,7 +621,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -651,7 +715,7 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 1,
+      "ultima": 2,
       "arriba": 1
     },
     {
@@ -685,7 +749,7 @@
         }
       ],
       "desarrollo": false,
-      "arriba": 3,
+      "arriba": 4,
       "es": {
         "etiqueta": "LAS REGLAS",
         "titulo": "Key West tendrá 100 boyas de amarre nuevas, y con ellas llega el límite de 90 días para anclar",
@@ -726,7 +790,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -784,7 +848,7 @@
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
       "arriba": 7,
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -894,7 +958,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 15
+      "ultima": 16
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -958,7 +1022,7 @@
           "The [forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) the National Weather Service in Key West issued Thursday called for west to northwest winds of 10 to 15 knots off the Lower Keys on Friday and a slight chance of showers."
         ]
       },
-      "arriba": 2,
+      "arriba": 3,
       "versiones": [
         {
           "desde": "2026-11-20T00:00:00-05:00",
@@ -1038,7 +1102,7 @@
           }
         }
       ],
-      "ultima": 26
+      "ultima": 27
     },
     {
       "id": "voyager-1-dia-luz-miami-1977",
@@ -1260,7 +1324,7 @@
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
       ],
-      "ultima": 12
+      "ultima": 13
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -1351,7 +1415,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 16
+      "ultima": 17
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -1438,7 +1502,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 19
+      "ultima": 20
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -1519,7 +1583,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 18
+      "ultima": 19
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -1761,7 +1825,7 @@
           }
         }
       ],
-      "ultima": 27
+      "ultima": 28
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -1864,7 +1928,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 24
+      "ultima": 25
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -1943,7 +2007,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 13
+      "ultima": 14
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -2014,8 +2078,8 @@
         ]
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
-      "arriba": 5,
-      "ultima": 21
+      "arriba": 6,
+      "ultima": 22
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -2098,7 +2162,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 23
+      "ultima": 24
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -2171,7 +2235,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -2343,7 +2407,7 @@
           }
         }
       ],
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -2427,7 +2491,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 17
+      "ultima": 18
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -2510,7 +2574,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 22
+      "ultima": 23
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -2592,7 +2656,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 25
+      "ultima": 26
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -3855,7 +3919,7 @@
       "actualizada": "2026-11-22T17:38:00-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -5712,7 +5776,7 @@
       "foto_mm": false,
       "actualizada": "2026-11-20T15:55:00-05:00",
       "tambien": 3,
-      "arriba": 4
+      "arriba": 5
     },
     {
       "id": "larry-penny-thompson-park",
@@ -7988,7 +8052,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 14
+      "ultima": 15
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -8040,7 +8104,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-23T08:20:00-05:00",
+  "updated_at": "2026-11-23T12:55:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
