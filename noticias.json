@@ -55,12 +55,69 @@
   "videos": [],
   "notas": [
     {
-      "id": "dolphins-bills-26-9-buffalo",
+      "id": "heat-thunder-22-noviembre",
       "scope": "miami",
       "tema": "deporte",
       "hamaca": false,
       "muelle": false,
       "destacada": true,
+      "fecha": "2026-11-22",
+      "publicada": "2026-11-22T23:55:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "fuentes": [
+        {
+          "n": "NBA · Marcador y estadísticas oficiales del partido",
+          "u": "https://www.nba.com/heat/schedule"
+        },
+        {
+          "n": "Miami HEAT · Calendario oficial",
+          "u": "https://www.nba.com/heat/schedule"
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-22T23:55:00-05:00",
+      "foto": "mm-heat-kaseya-noche.jpg",
+      "foto_alt": "Vista aérea del downtown de Miami al anochecer, con el Kaseya Center a la izquierda junto a la bahía",
+      "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
+      "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
+      "foto_mm": false,
+      "ultima": 1,
+      "es": {
+        "etiqueta": "DEPORTES",
+        "titulo": "El HEAT le gana 123-113 a Oklahoma City, con triple-doble de Bam Adebayo, y ya suma siete victorias seguidas",
+        "bajada": "Miami ganó el primer cuarto 36-24, llegó a mandar por 20 y Oklahoma City nunca lideró. El HEAT queda 10-6 y el miércoles visita a Filadelfia.",
+        "toca": [
+          "Resultado: HEAT 123, Thunder 113, el domingo 22 de noviembre en el Kaseya Center.",
+          "Próximo partido: miércoles 25, 5:00 PM, en Filadelfia; el viernes 27, 7:00 PM, en Nueva York contra los Knicks, según el [calendario oficial del HEAT](https://www.nba.com/heat/schedule)."
+        ],
+        "cuerpo": [
+          "El HEAT venció 123-113 a Oklahoma City en el Kaseya Center y ya suma siete victorias seguidas, según las estadísticas oficiales del partido. Miami arrancó mandando, con un primer cuarto de 36-24, y llegó a tener 20 puntos de ventaja. Oklahoma City recortó en el último cuarto, que ganó 33-28, pero nunca llegó a ponerse al frente.",
+          "Bam Adebayo cerró con triple-doble: 24 puntos, 15 rebotes y 12 asistencias, con 8 de 11 en tiros de campo. Pelle Larsson anotó 21 puntos, Nikola Jovic 15, con tres triples, y Davion Mitchell 14. La banca del HEAT aportó 45 puntos y el equipo acertó 15 triples.",
+          "Por Oklahoma City, Bennett Stirtz y Jared McCain anotaron 21 y 20 puntos, y Ajay Mitchell sumó 17. Con el triunfo, Miami queda 10-6 en la temporada."
+        ]
+      },
+      "en": {
+        "etiqueta": "SPORTS",
+        "titulo": "Heat beat Oklahoma City 123-113 behind a Bam Adebayo triple-double, their seventh win in a row",
+        "bajada": "Miami won the first quarter 36-24, led by as many as 20 and Oklahoma City never held the lead. The Heat improve to 10-6 and visit Philadelphia on Wednesday.",
+        "toca": [
+          "Final: Heat 123, Thunder 113, Sunday, November 22, at Kaseya Center.",
+          "Next up: Wednesday the 25th, 5:00 PM, at Philadelphia; Friday the 27th, 7:00 PM, at the Knicks in New York, per the [Heat's official schedule](https://www.nba.com/heat/schedule)."
+        ],
+        "cuerpo": [
+          "The Heat beat Oklahoma City 123-113 at Kaseya Center and have now won seven straight, according to the game's official statistics. Miami came out ahead, taking the first quarter 36-24, and led by as many as 20 points. Oklahoma City cut into it in the fourth quarter, which it won 33-28, but never took the lead.",
+          "Bam Adebayo finished with a triple-double: 24 points, 15 rebounds and 12 assists, shooting 8 of 11 from the field. Pelle Larsson scored 21 points, Nikola Jovic 15, with three three-pointers, and Davion Mitchell 14. The Heat bench added 45 points and the team made 15 threes.",
+          "For Oklahoma City, Bennett Stirtz and Jared McCain scored 21 and 20 points, and Ajay Mitchell added 17. With the win, Miami moves to 10-6 on the season."
+        ]
+      }
+    },
+    {
+      "id": "dolphins-bills-26-9-buffalo",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
       "fecha": "2026-11-22",
       "publicada": "2026-11-22T17:38:00-05:00",
       "autor": "Yolaxys Alvarez",
@@ -116,7 +173,8 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 1
+      "ultima": 2,
+      "arriba": 1
     },
     {
       "id": "venado-de-los-cayos-key-deer-big-pine-key-como-verlo",
@@ -231,7 +289,7 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 3,
+      "ultima": 4,
       "arriba": 1
     },
     {
@@ -324,8 +382,8 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 5,
-      "arriba": 3
+      "ultima": 6,
+      "arriba": 4
     },
     {
       "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
@@ -422,8 +480,8 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 4,
-      "arriba": 2
+      "ultima": 5,
+      "arriba": 3
     },
     {
       "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
@@ -499,7 +557,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 2
+      "ultima": 3
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -666,7 +724,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -723,8 +781,8 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "arriba": 5,
-      "ultima": 8
+      "arriba": 6,
+      "ultima": 9
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -825,7 +883,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 6,
+      "arriba": 7,
       "galeria": [
         {
           "f": "mm-stiltsville-casa-azul-cerca.jpg",
@@ -834,7 +892,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 13
+      "ultima": 14
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -978,7 +1036,7 @@
           }
         }
       ],
-      "ultima": 24
+      "ultima": 25
     },
     {
       "id": "voyager-1-dia-luz-miami-1977",
@@ -1200,7 +1258,7 @@
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
       ],
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -1291,7 +1349,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 14
+      "ultima": 15
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -1378,7 +1436,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 17
+      "ultima": 18
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -1459,7 +1517,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 16
+      "ultima": 17
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -1701,7 +1759,7 @@
           }
         }
       ],
-      "ultima": 25
+      "ultima": 26
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -1804,7 +1862,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 22
+      "ultima": 23
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -1883,7 +1941,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -1955,7 +2013,7 @@
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
       "arriba": 5,
-      "ultima": 19
+      "ultima": 20
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -2038,7 +2096,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 21
+      "ultima": 22
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -2111,7 +2169,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 18
+      "ultima": 19
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -2226,7 +2284,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "arriba": 4,
+      "arriba": 5,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -2283,7 +2341,7 @@
           }
         }
       ],
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -2367,7 +2425,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 15
+      "ultima": 16
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -2450,7 +2508,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -2532,7 +2590,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 23
+      "ultima": 24
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -3795,7 +3853,7 @@
       "actualizada": "2026-11-22T17:38:00-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -3868,7 +3926,7 @@
       "versiones": [],
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
-      "arriba": 1
+      "arriba": 2
     },
     {
       "id": "heat-vice-city-bucks",
@@ -7928,7 +7986,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 12
+      "ultima": 13
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -7980,7 +8038,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-22T17:38:00-05:00",
+  "updated_at": "2026-11-22T23:55:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
