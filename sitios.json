@@ -409,6 +409,11 @@
   }
  },
  "hoteles": {
+  "h14": {
+   "photo_url": "https://youtu.be/q8p9XwV7jgw",
+   "pnote": "The Biltmore turns 100: it was a grand hotel, a war hospital and an abandoned building before it reopened. <a href=\"https://www.miamimagicapp.com/news/biltmore-coral-gables-100-anos-historia\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('biltmore-coral-gables-100-anos-historia');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
+   "pnote_es": "El Biltmore cumple 100 años: fue gran hotel, hospital de guerra y edificio abandonado antes de volver a abrir. <a href=\"https://www.miamimagicapp.com/noticias/biltmore-coral-gables-100-anos-historia\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('biltmore-coral-gables-100-anos-historia');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
+  },
   "h29": {
    "photo": "fotos/mm-mb-hotel-victor.jpg",
    "photos": [
