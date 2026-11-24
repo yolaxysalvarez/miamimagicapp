@@ -299,6 +299,41 @@
    ]
   },
   {
+   "id": "ky-klfisheries",
+   "cat": "comer",
+   "also": [
+    "agua"
+   ],
+   "tramo": "upper",
+   "mm": "100",
+   "town": "Key Largo",
+   "name": "Key Largo Fisheries Backyard Café",
+   "type_en": "Seafood market and dockside café",
+   "type_es": "Pescadería y café en el muelle",
+   "desc_en": "A Key Largo seafood landmark since 1972: a working waterfront fish market up front and, out back, an open-air café on the marina. You order at the counter and eat on the deck among palms, fishing boats and charters: hogfish, grouper, snapper, mahi, shrimp and, in season, stone crab, fried, grilled, in sandwiches and platters.",
+   "desc_es": "Un clásico del mar en Key Largo desde 1972: al frente, una pescadería de muelle que trabaja todos los días; atrás, un café al aire libre sobre la marina. Se pide en el mostrador y se come en la terraza, entre palmas, botes de pesca y charters: hogfish, mero, pargo, dorado, camarones y, en temporada, cangrejo de piedra, frito, a la plancha, en sándwich o en plato.",
+   "addr": "1313 Ocean Bay Dr, Key Largo, FL 33037",
+   "phone": "+1 305-451-3784",
+   "price": "$",
+   "web": "https://www.keylargofisheries.com/",
+   "tip_en": "Casual and self-serve: order at the window and find a table by the water. Before leaving, stop at the market up front to take fish or stone crab home. Hours change by season, so check before you go.",
+   "tip_es": "Es informal y de autoservicio: pides en la ventanilla y buscas mesa junto al agua. Antes de irte, pasa por la pescadería de enfrente para llevarte pescado o cangrejo a casa. El horario cambia según la temporada: confírmalo antes de ir.",
+   "perks": [
+    "family"
+   ],
+   "photo": "fotos/mm-keys-kl-fisheries-fachada.jpg",
+   "photos": [
+    "fotos/mm-keys-kl-fisheries-fachada.jpg",
+    "fotos/mm-keys-kl-fisheries-terraza.jpg",
+    "fotos/mm-keys-kl-fisheries-patio.jpg",
+    "fotos/mm-keys-kl-fisheries-muelle.jpg",
+    "fotos/mm-keys-kl-fisheries-letrero.jpg",
+    "fotos/mm-keys-kl-fisheries-botes.jpg",
+    "fotos/mm-keys-kl-fisheries-bahia.jpg",
+    "fotos/mm-keys-kl-fisheries-marina.jpg"
+   ]
+  },
+  {
    "id": "ky-moradabay",
    "cat": "comer",
    "also": [
