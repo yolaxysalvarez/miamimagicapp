@@ -22583,6 +22583,12 @@ function kyRenderSimilar(obj){
 #mmDoor .dr-guia2:active{opacity:.7}
 @media (max-width:385px){#mmDoor .dr-ix button{font-size:.8rem}#mmDoor .dr-ix button.m-ev,#mmDoor .dr-ix button.m-cc{font-size:.92rem}#mmDoor .dr-guia2{font-size:.82rem;letter-spacing:.08em;gap:6px}}
 @media (max-width:340px){#mmDoor .dr-ix button{font-size:.7rem;padding-left:2px;padding-right:2px}#mmDoor .dr-ix button.m-ev,#mmDoor .dr-ix button.m-cc{font-size:.84rem}#mmDoor .dr-guia2{font-size:.74rem;letter-spacing:.05em}}
+#mmDoor .dr-ix button::after{transition:width .28s cubic-bezier(.2,.8,.2,1),margin-left .28s cubic-bezier(.2,.8,.2,1)}
+#mmDoor .dr-ix button:active::after,#mmDoor .dr-ix button:focus-visible::after{width:28px;margin-left:-14px}
+@keyframes mmLive{0%,100%{box-shadow:0 0 0 0 rgba(226,58,34,.35)}60%{box-shadow:0 0 0 6px rgba(226,58,34,0)}}
+#mmDoor .dr-ix .m-ev i{animation:mmLive 2.4s ease-out infinite}
+@media (hover:hover){#mmDoor .dr-ix button:hover{background:#FBF5EC}#mmDoor .dr-ix button:hover::after{width:28px;margin-left:-14px}}
+@media (prefers-reduced-motion:reduce){#mmDoor .dr-ix .m-ev i{animation:none}#mmDoor .dr-ix button::after{transition:none}}
 /* barra flotante de 5: Planea al centro */
 #bottomNav .bn-item{flex:1 1 0}
 </style>
