@@ -773,8 +773,8 @@
    "photo": "fotos/mm-sunny-isles-playa-torres.jpg"
   },
   "b19": {
-   "photo": "fotos/mm-brickell-skyline-rickenbacker.jpg",
-   "area_photo": "Miami"
+   "photo": "fotos/mm-nascar-homestead.jpg",
+   "area_photo": "Homestead"
   }
  },
  "museos": {
@@ -835,8 +835,8 @@
    "area_photo": "Miami Beach"
   },
   "m8": {
-   "photo": "fotos/mm-macarthur-atardecer.jpg",
-   "area_photo": "Miami"
+   "photo": "fotos/mm-zoo-miami-poste-senales.jpg",
+   "area_photo": "Zoo Miami"
   }
  },
  "lugares": {
@@ -1009,16 +1009,16 @@
    "area_photo": "Miami Beach"
   },
   "pk7": {
-   "photo": "fotos/mm-miami-skyline-atardecer-macarthur.jpg",
-   "area_photo": "Miami"
+   "photo": "fotos/mm-redland-patch-of-heaven-jardin.jpg",
+   "area_photo": "Redland"
   },
   "pk8": {
-   "photo": "fotos/mm-brickell-skyline-rickenbacker.jpg",
-   "area_photo": "Miami"
+   "photo": "fotos/mm-larry-penny-lago-atardecer-mm.jpg",
+   "area_photo": "South Dade"
   },
   "pk10": {
-   "photo": "fotos/mm-miami-skyline-atardecer-macarthur.jpg",
-   "area_photo": "Miami"
+   "photo": "fotos/mm-larry-penny-sendero-pinos-mm.jpg",
+   "area_photo": "South Dade"
   }
  },
  "compras": {
@@ -1106,12 +1106,12 @@
    "area_photo": "Coconut Grove"
   },
   "k13": {
-   "photo": "fotos/mm-brickell-skyline-rickenbacker.jpg",
-   "area_photo": "Miami"
+   "photo": "fotos/mm-larry-penny-picnic-lago-mm.jpg",
+   "area_photo": "South Dade"
   },
   "k14": {
-   "photo": "fotos/mm-macarthur-palmas.jpg",
-   "area_photo": "Miami"
+   "photo": "fotos/mm-larry-penny-pato-grama-mm.jpg",
+   "area_photo": "South Dade"
   },
   "k-topgolf": {
    "name": "Topgolf Miami · Doral",
