@@ -22613,6 +22613,7 @@ function kyRenderSimilar(obj){
 #mmDoor .dr-ix .m-ev i{animation:mmLive 2.4s ease-out infinite}
 @media (hover:hover){#mmDoor .dr-ix button:hover{background:#FBF5EC}#mmDoor .dr-ix button:hover::after{width:28px;margin-left:-14px}}
 @media (prefers-reduced-motion:reduce){#mmDoor .dr-ix .m-ev i{animation:none}#mmDoor .dr-ix button::after{transition:none}}
+#mmDoor .dr-stage{position:relative}#mmDoor .dr-stage>.dr-card{height:100%}
 /* barra flotante de 5: Planea al centro */
 #bottomNav .bn-item{flex:1 1 0}
 </style>
@@ -22662,7 +22663,10 @@ function kyRenderSimilar(obj){
     }catch(e){}
   }
   function fresh(n){try{var d=new Date(Date.now()-4*864e5),z=function(x){return (x<10?'0':'')+x};return (n.fecha||'')>=d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate())}catch(e){return true}}
+  try{var _rz=null;window.addEventListener('resize',function(){clearTimeout(_rz);_rz=setTimeout(function(){if(window.mmDoorBuild)window.mmDoorBuild()},300)})}catch(e){}
+  var _fontsHooked=false;
   window.mmDoorBuild=function(){
+    try{if(!_fontsHooked&&document.fonts&&document.fonts.ready){_fontsHooked=true;document.fonts.ready.then(function(){setTimeout(function(){if(window.mmDoorBuild)window.mmDoorBuild()},60)})}}catch(e){}
     try{
       var home=document.getElementById('home');if(!home)return;
       var all=window.mmNewsAll||[];if(!all.length)return;
@@ -22684,6 +22688,12 @@ function kyRenderSimilar(obj){
         +'<button type="button" class="m-ky" data-sec="cayos" aria-label="'+(es?'Los Cayos':'The Keys')+'"><span><svg viewBox="0 0 20 24" aria-hidden="true"><rect x="1.5" y="1.5" width="17" height="15" rx="2.2" fill="#0F5B45"/><rect x="3.3" y="3.3" width="13.4" height="11.4" rx="1.2" fill="none" stroke="#fff" stroke-width="1.1"/><path d="M6.5 9h7" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/><path d="M10 16.5V23" stroke="#0F5B45" stroke-width="2.4" stroke-linecap="round"/></svg>'+(es?'Los Cayos':'The Keys')+'</span></button>'
         +'</div>'
         +'<button type="button" class="dr-guia2" data-guia="1"><span>'+(es?'Guía gratuita':'Free guide')+'</span><i aria-hidden="true"></i>'+(es?'Comprar en Miami y los Cayos':'Buying in Miami and the Keys')+' <b aria-hidden="true">→</b></button></div>';
+      /* 2.1: la tarjeta que cambia sola tiene alto fijo (el de la noticia más larga),
+         así el resto de la app no salta cada vez que cambia el titular */
+      try{var st=document.getElementById('drStage');if(st){st.style.height='';var mx=0;
+        st.innerHTML=items.map(function(it){return card(it).replace('class="dr-card out"','class="dr-card" style="position:absolute;left:0;right:0;top:0;height:auto;visibility:hidden"')}).join('');
+        [].forEach.call(st.children,function(c){mx=Math.max(mx,c.offsetHeight)});
+        st.innerHTML='';if(mx>0)st.style.height=mx+'px';}}catch(e){}
       show(0,true);loop();
       placeSoc();
     }catch(e){}
