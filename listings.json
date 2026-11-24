@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-11-24",
   "listings": [
     {
       "id": "bz1",
@@ -38,7 +38,7 @@
       "id": "bz2",
       "cat": "realestate",
       "top": true,
-      "active": true,
+      "active": false,
       "name": "Efficiency for Rent",
       "name_es": "Efficiency en renta",
       "type": "For Rent",
@@ -93,7 +93,8 @@
         "web": "",
         "photo": "fotos/mm-agent-yoly.jpg"
       },
-      "agent_id": "bz1"
+      "agent_id": "bz1",
+      "_nota": "Retirada del app y del directorio el 24 nov 2026 (pedido de Yoly)."
     },
     {
       "id": "yy1",
@@ -138,7 +139,7 @@
     {
       "id": "ms2",
       "cat": "realestate",
-      "active": true,
+      "active": false,
       "name": "4-Bedroom Home for Sale",
       "name_es": "Casa de 4 cuartos en venta",
       "type": "For Sale",
@@ -197,7 +198,8 @@
         "photo": "fotos/mm-agent-midelvis.jpg",
         "dm": "midelvis_santana_pa_realtor"
       },
-      "agent_id": "ms1"
+      "agent_id": "ms1",
+      "_nota": "Retirada del app y del directorio el 24 nov 2026 (pedido de Yoly)."
     }
   ]
 }
