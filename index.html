@@ -22556,6 +22556,33 @@ function kyRenderSimilar(obj){
 #mmDoor .dr-links button{flex:1 1 0;min-width:0;text-align:center;padding-left:4px!important;padding-right:4px!important;font-size:.92rem!important;letter-spacing:.12em!important}
 @media (max-width:385px){#mmDoor .dr-links button{font-size:.86rem!important;letter-spacing:.1em!important}}
 @media (max-width:340px){#mmDoor .dr-links button{font-size:.78rem!important;letter-spacing:.05em!important}}
+/* Puerta de News (rediseño 2.1): índice editorial. Las cinco secciones en una sola pieza blanca
+   con filetes dorados finos, 2 arriba y 3 abajo, mismo tratamiento para todas; el color de cada
+   sección vive solo en su marca y en un trazo fino. La guía, una línea discreta debajo. */
+#mmDoor .dr-ix{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(201,150,46,.32);border:1px solid rgba(201,150,46,.42);border-radius:14px;overflow:hidden;box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 10px 24px -18px rgba(14,27,48,.35)}
+#mmDoor .dr-ix button{appearance:none;grid-column:span 2;position:relative;display:flex;align-items:center;justify-content:center;min-width:0;min-height:52px;padding:10px 4px 13px;border:0;border-radius:0;background:#FFFDF9;cursor:pointer;font:700 .86rem 'Playfair Display',serif;letter-spacing:.005em;color:#0E1B30;white-space:nowrap;box-shadow:none;transition:background .2s ease}
+#mmDoor .dr-ix button.m-ev,#mmDoor .dr-ix button.m-cc{grid-column:span 3;font-size:.98rem;min-height:56px}
+#mmDoor .dr-ix button:active{background:#F6EEE2;transform:none}
+#mmDoor .dr-ix button>span{display:inline-flex;align-items:center}
+#mmDoor .dr-ix button::after{content:'';position:absolute;left:50%;bottom:8px;width:16px;height:2px;margin-left:-8px;border-radius:2px;background:var(--acc,#C9962E);opacity:.85}
+#mmDoor .dr-ix .m-ev{--acc:#0E1B30}#mmDoor .dr-ix .m-cc{--acc:#C9963C}#mmDoor .dr-ix .m-hm{--acc:#C4331C}#mmDoor .dr-ix .m-dk{--acc:#0B5C7A}#mmDoor .dr-ix .m-ky{--acc:#0F5B45}
+#mmDoor .dr-ix .m-ev svg{width:.95em;height:.95em;margin-right:.42em;color:#8A5A12;flex:none}
+#mmDoor .dr-ix .m-ev i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#E23A22;margin-left:7px;box-shadow:0 0 0 3px rgba(226,58,34,.14)}
+#mmDoor .dr-ix .m-cc svg{width:.8em;height:.8em;margin:0 .12em}
+#mmDoor .dr-ix .m-hm em{font-style:italic;color:#B4301D;margin-left:.22em;display:inline-flex;align-items:center}
+#mmDoor .dr-ix .m-hm .sol{display:inline-block;width:.5em;height:.5em;margin:0 .012em;border-radius:50%;background:radial-gradient(circle at 36% 30%,#FFE3A1 0%,#FFC24D 30%,#FF8A3D 66%,#E2462F 100%)}
+#mmDoor .dr-ix .m-dk em{font-style:italic;color:#0B5C7A;margin-left:.22em;display:inline-flex;align-items:center}
+#mmDoor .dr-ix .m-dk .pil{display:inline-block;width:.12em;height:.7em;margin:0 .03em;border-radius:.05em .05em .02em .02em;background:linear-gradient(90deg,#5E3F25 0%,#B58C59 45%,#6E4C2B 100%)}
+#mmDoor .dr-ix .m-dk .ringw{display:inline-block;margin:0 .015em}
+#mmDoor .dr-ix .m-dk .ring{display:block;width:.48em;height:.48em;border-radius:50%;background:conic-gradient(#E2462F 0 45deg,#fff 0 90deg,#E2462F 0 135deg,#fff 0 180deg,#E2462F 0 225deg,#fff 0 270deg,#E2462F 0 315deg,#fff 0 360deg);-webkit-mask:radial-gradient(circle,transparent 44%,#000 47%);mask:radial-gradient(circle,transparent 44%,#000 47%)}
+#mmDoor .dr-ix .m-ky svg{width:.74em;height:.9em;margin-right:.36em;flex:none}
+#mmDoor .dr-guia2{appearance:none;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:6px 4px 2px;border:0;background:none;cursor:pointer;font:400 .88rem 'Bebas Neue',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#0E1B30;white-space:nowrap;min-height:44px}
+#mmDoor .dr-guia2 span{color:#C4331C}
+#mmDoor .dr-guia2 i{display:block;width:4px;height:4px;border-radius:50%;background:#C9962E;flex:none}
+#mmDoor .dr-guia2 b{font-weight:400;color:#C4331C;margin-left:2px}
+#mmDoor .dr-guia2:active{opacity:.7}
+@media (max-width:385px){#mmDoor .dr-ix button{font-size:.8rem}#mmDoor .dr-ix button.m-ev,#mmDoor .dr-ix button.m-cc{font-size:.92rem}#mmDoor .dr-guia2{font-size:.82rem;letter-spacing:.08em;gap:6px}}
+@media (max-width:340px){#mmDoor .dr-ix button{font-size:.7rem;padding-left:2px;padding-right:2px}#mmDoor .dr-ix button.m-ev,#mmDoor .dr-ix button.m-cc{font-size:.84rem}#mmDoor .dr-guia2{font-size:.74rem;letter-spacing:.05em}}
 /* barra flotante de 5: Planea al centro */
 #bottomNav .bn-item{flex:1 1 0}
 </style>
@@ -22619,15 +22646,14 @@ function kyRenderSimilar(obj){
       d.innerHTML='<div class="dr-top"><span class="dr-brand" data-sec="" role="link" tabindex="0" style="cursor:pointer">Miami Magic <b>NEWS</b></span><span class="dr-dots" id="drDots" aria-hidden="true">'+items.map(function(){return '<i></i>'}).join('')+'</span></div>'
         +'<div class="dr-stage" id="drStage" aria-live="off"></div>'
         +'<div class="dr-idx" role="navigation" aria-label="'+(es?'Secciones de News':'News sections')+'">'
-        +'<div class="dr-marks">'
+        +'<div class="dr-ix">'
         +'<button type="button" class="m-ev" data-sec="agenda" aria-label="'+(es?'Eventos':'Events')+'"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>'+(es?'Eventos':'Events')+'<i></i></span></button>'
-        +'<button type="button" class="m-cc" data-sec="casa" aria-label="Casa &amp; Coast"><span>Casa<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span></button></div>'
-        +'<div class="dr-links">'
-        +'<button type="button" class="hm" data-sec="hamaca">'+(es?'Hamaca Mood':'Hammock Mood')+'</button>'
-        +'<button type="button" class="dk" data-sec="muelle">'+(es?'El Muelle':'The Dock')+'</button>'
-        +'<button type="button" class="ky" data-sec="cayos">'+(es?'Los Cayos':'The Keys')+'</button>'
+        +'<button type="button" class="m-cc" data-sec="casa" aria-label="Casa &amp; Coast"><span>Casa<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span></button>'
+        +'<button type="button" class="m-hm" data-sec="hamaca" aria-label="'+(es?'Hamaca Mood':'Hammock Mood')+'"><span>'+(es?'Hamaca':'Hammock')+' <em>M<span class="sol" aria-hidden="true"></span>od</em></span></button>'
+        +'<button type="button" class="m-dk" data-sec="muelle" aria-label="'+(es?'El Muelle':'The Dock')+'"><span>'+(es?'El <em>Mue<span class="pil" aria-hidden="true"></span><span class="pil" aria-hidden="true"></span>e</em>':'The <em>D<span class="ringw" aria-hidden="true"><span class="ring"></span></span>ck</em>')+'</span></button>'
+        +'<button type="button" class="m-ky" data-sec="cayos" aria-label="'+(es?'Los Cayos':'The Keys')+'"><span><svg viewBox="0 0 20 24" aria-hidden="true"><rect x="1.5" y="1.5" width="17" height="15" rx="2.2" fill="#0F5B45"/><rect x="3.3" y="3.3" width="13.4" height="11.4" rx="1.2" fill="none" stroke="#fff" stroke-width="1.1"/><path d="M6.5 9h7" stroke="#F2C14E" stroke-width="2" stroke-linecap="round"/><path d="M10 16.5V23" stroke="#0F5B45" stroke-width="2.4" stroke-linecap="round"/></svg>'+(es?'Los Cayos':'The Keys')+'</span></button>'
         +'</div>'
-        +'<button type="button" class="dr-guia" data-guia="1"><span>'+(es?'Guía gratuita':'Free guide')+'</span>'+(es?'Comprar en Miami y los Cayos':'Buying in Miami and the Keys')+' <b>→</b></button></div>';
+        +'<button type="button" class="dr-guia2" data-guia="1"><span>'+(es?'Guía gratuita':'Free guide')+'</span><i aria-hidden="true"></i>'+(es?'Comprar en Miami y los Cayos':'Buying in Miami and the Keys')+' <b aria-hidden="true">→</b></button></div>';
       show(0,true);loop();
       placeSoc();
     }catch(e){}
