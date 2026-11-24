@@ -121,7 +121,8 @@
           "Monroe County closes its offices Thursday and Friday, per its [holiday memo](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), and pickup depends on who provides it, according to the county's [holiday schedule](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). From Stock Island to Seven Mile Bridge, with Waste Management, there is no pickup Thursday: that day's collection moves to Friday and Friday's moves to Saturday. In Marathon, through mile marker 73, Thursday's garbage is picked up Friday and Thursday's recycling waits until the following week. Between miles 91 and 102, with Keys Sanitary Service, and in Ocean Reef, the route runs as usual.",
           "The table, the history and the events of this Thanksgiving are in our [tradition story](https://miamimagicapp.com/news/thanksgiving-tradicion-historia-como-se-celebra)."
         ]
-      }
+      },
+      "arriba": 1
     },
     {
       "id": "thanksgiving-tradicion-historia-como-se-celebra",
@@ -189,7 +190,7 @@
       "desarrollo": true,
       "actualizada": "2026-11-24T12:25:00-05:00",
       "ultima": 2,
-      "arriba": 1,
+      "arriba": 2,
       "es": {
         "etiqueta": "TRADICIÓN",
         "titulo": "Dar gracias: de una cosecha compartida en 1621 a la mesa que reúne a todo el país",
@@ -408,7 +409,7 @@
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
       "ultima": 6,
-      "arriba": 3
+      "arriba": 4
     },
     {
       "id": "venado-de-los-cayos-key-deer-big-pine-key-como-verlo",
@@ -617,7 +618,7 @@
         ]
       },
       "ultima": 10,
-      "arriba": 6
+      "arriba": 7
     },
     {
       "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
@@ -715,7 +716,7 @@
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
       "ultima": 9,
-      "arriba": 5
+      "arriba": 6
     },
     {
       "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
@@ -886,7 +887,7 @@
         ]
       },
       "ultima": 4,
-      "arriba": 2
+      "arriba": 3
     },
     {
       "id": "key-west-boyas-amarre-man-of-war-boca-chica-limite-90-dias",
@@ -1017,7 +1018,7 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "arriba": 8,
+      "arriba": 9,
       "ultima": 13
     },
     {
@@ -1119,7 +1120,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 9,
+      "arriba": 10,
       "galeria": [
         {
           "f": "mm-stiltsville-casa-azul-cerca.jpg",
@@ -2520,7 +2521,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "arriba": 7,
+      "arriba": 8,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -4162,7 +4163,7 @@
       "versiones": [],
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
-      "arriba": 4
+      "arriba": 5
     },
     {
       "id": "heat-vice-city-bucks",
@@ -8274,7 +8275,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-24T12:42:00-05:00",
+  "updated_at": "2026-11-24T13:05:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
