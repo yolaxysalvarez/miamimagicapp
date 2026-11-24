@@ -6219,7 +6219,7 @@ function pickResult(idx){
   var card=mmFindCard(sec, item.type==='show'?item.parentId:item.id);
   window._mmFoundCard=card||null;
   if(card) card.scrollIntoView({behavior:'auto',block:'center',inline:'center'});
-  else if(sec) sec.scrollIntoView({behavior:'auto',block:'start'});
+  else if(sec) sec.scrollIntoView({behavior:'smooth',block:'start'});
   setTimeout(()=>{
     if(item.type==='show') openConcertModal(item.parentId,item.link,item.btn);
     else if(item.type==='concert') openConcertModal(item.id,item.link,item.btn);
@@ -6230,7 +6230,7 @@ function pickResult(idx){
       else openItemModal(item.obj,item.type,item.link,item.btn);
     }
     else openItemModal(item.obj,item.type,item.link,item.btn);
-  },40); /* 2.1: la ficha abre al instante (antes esperaba 260–450 ms) */
+  },card?260:450); /* esta espera deja que el iPhone baje el teclado y quede en la tarjeta: al cerrar la ficha vuelves a ella */
 }
 function mmFindCard(root,id){
   if(!id) return null;
@@ -6260,11 +6260,14 @@ function mmFindCard(root,id){
       if(ov.classList.contains('open')) return;
       var c=window._mmFoundCard; if(!c) return;
       window._mmFoundCard=null;
+      /* 2.1: se coloca la tarjeta en su sitio en el mismo instante en que la ficha empieza a cerrarse
+         (debajo del fondo oscuro), sin el segundo salto que se veía antes */
+      window._mmFoundClose=Date.now();
+      if(document.body.contains(c)){ try{ c.scrollIntoView({behavior:'auto',block:'center',inline:'nearest'}); }catch(e){} }
       setTimeout(function(){
-        if(document.body.contains(c)) c.scrollIntoView({behavior:'auto',block:'center',inline:'nearest'});
         c.classList.remove('mm-found');void c.offsetWidth;c.classList.add('mm-found');
         setTimeout(function(){c.classList.remove('mm-found');},2600);
-      },230);
+      },120);
     }).observe(ov,{attributes:true,attributeFilter:['class']});
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',hook); else hook();
@@ -7281,6 +7284,7 @@ function closeModal(){document.getElementById('modalOv').classList.remove('open'
         if(saved===null) saved=scrollTop();
       } else if(saved!==null){
         var y=saved; saved=null;
+        if(window._mmFoundClose&&Date.now()-window._mmFoundClose<400) return; /* la tarjeta buscada ya se colocó */
         if(ticking) return;
         ticking=true;
         // restore across the frames the browser uses to unlock scrolling
@@ -22726,6 +22730,24 @@ function kyRenderSimilar(obj){
       if(typeof _av==='function')return _av.apply(this,arguments);
     };
   }catch(e){}
+})();
+</script>
+<script>
+/* 2.1 · la ✕ del buscador borra al primer toque en el iPhone: se actúa al tocar (pointerdown),
+   antes de que el teclado se cierre y mueva la pantalla, y sin quitarle el foco al campo */
+(function(){
+  function clr(e){
+    var b=e.target.closest&&e.target.closest('#heroSearchClear,#mmFloatSearch .fs-clear');if(!b)return;
+    e.preventDefault();e.stopPropagation();
+    var hero=b.id==='heroSearchClear', i=document.getElementById(hero?'heroSearchInp':'floatSearchInp');if(!i)return;
+    i.value='';try{i.dispatchEvent(new Event('input',{bubbles:true}))}catch(_){}
+    if(hero){b.style.display='none'}else{var f=document.getElementById('mmFloatSearch');if(f)f.classList.remove('has-text')}
+    try{closeSearch()}catch(_){}
+    try{i.focus({preventScroll:true})}catch(_){i.focus()}
+    b.__mmJust=Date.now();
+  }
+  document.addEventListener('pointerdown',clr,true);
+  document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('#heroSearchClear,#mmFloatSearch .fs-clear');if(b&&b.__mmJust&&Date.now()-b.__mmJust<800){e.preventDefault();e.stopPropagation()}},true);
 })();
 </script>
 </body>
