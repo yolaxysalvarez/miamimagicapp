@@ -55,6 +55,90 @@
   "videos": [],
   "notas": [
     {
+      "id": "thanksgiving-tradicion-historia-como-se-celebra",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-24",
+      "publicada": "2026-11-24T12:20:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-delilah-mesa.jpg",
+      "foto_alt": "Plato con servilleta bordada sobre una mesa de madera, servida para una cena",
+      "foto_pie": "Una mesa servida, foto de Miami Magic.",
+      "foto_pie_en": "A set table, photo by Miami Magic.",
+      "fuentes": [
+        {
+          "n": "Biblioteca del Congreso · La historia real de Thanksgiving",
+          "u": "https://blogs.loc.gov/families/2024/11/the-real-history-of-thanksgiving/"
+        },
+        {
+          "n": "Smithsonian · De cosechas locales a fiesta nacional",
+          "u": "https://si.edu/spotlight/thanksgiving/history"
+        },
+        {
+          "n": "History.com · Historia de Thanksgiving",
+          "u": "https://www.history.com/articles/history-of-thanksgiving"
+        },
+        {
+          "n": "NBCUniversal · 100.º Desfile de Macy's",
+          "u": "https://www.nbcuniversal.com/article/100th-macys-thanksgiving-day-parade-returns-live-nbc-and-peacock-nov-26-bringing-holiday-magic-life"
+        },
+        {
+          "n": "NFL · Calendario de Thanksgiving 2026",
+          "u": "https://www.nbcchicago.com/news/sports/nfl/nfl-thanksgiving-schedule-2026-chiefs-bills-eagles-cowboys-bears-lions/3935839/?amp=1"
+        },
+        {
+          "n": "Casa Blanca · Thanksgiving",
+          "u": "https://www.whitehouse.gov/thanksgiving/"
+        },
+        {
+          "n": "Federación Nacional del Pavo · Historia de la presentación",
+          "u": "https://www.eatturkey.org/history/"
+        },
+        {
+          "n": "Asociación Histórica de la Casa Blanca",
+          "u": "https://whitehousehistory.org/press-room/thanksgiving-at-the-white-house"
+        }
+      ],
+      "desarrollo": true,
+      "actualizada": "2026-11-24T12:20:00-05:00",
+      "ultima": 1,
+      "arriba": 1,
+      "es": {
+        "etiqueta": "TRADICIÓN",
+        "titulo": "Dar gracias: de una cosecha compartida en 1621 a la mesa que reúne a todo el país",
+        "bajada": "El desfile de Macy's llega a su edición 100 este jueves 26 de noviembre, el mismo día del mes y de la semana en que Lincoln proclamó, en 1863, un día nacional de Acción de Gracias.",
+        "toca": [
+          "Jueves 26: el desfile de Macy's sale a las 8:30 a.m. por NBC, Peacock y Telemundo, y el National Dog Show va de 12:00 a 2:00 p.m. por NBC, según [NBCUniversal](https://www.nbcuniversal.com/article/100th-macys-thanksgiving-day-parade-returns-live-nbc-and-peacock-nov-26-bringing-holiday-magic-life) y [TV Insider](https://www.tvinsider.com/1303427/national-dog-show-compeitition-date-premiere-date-hosts-location-time-more/).",
+          "Hoy martes, a las 2:00 p.m. ET, el presidente indulta al pavo nacional en el jardín sur de la Casa Blanca, según la [Casa Blanca](https://www.whitehouse.gov/thanksgiving/)."
+        ],
+        "cuerpo": [
+          "Se suele trazar hasta el otoño de 1621, cuando colonos de Plymouth y el pueblo wampanoag compartieron un banquete de cosecha, según la [Biblioteca del Congreso](https://blogs.loc.gov/families/2024/11/the-real-history-of-thanksgiving/). Hay quien da ese título a una fiesta de 1565 en Florida entre españoles y timucua, según [History.com](https://www.history.com/articles/history-of-thanksgiving).",
+          "Durante siglos fueron fechas sueltas de cada colonia y estado. George Washington emitió en 1789 la primera proclama federal, y la editora Sarah Josepha Hale pasó años pidiendo una fiesta nacional hasta que Lincoln la proclamó en 1863, en plena Guerra Civil, según [History.com](https://www.history.com/articles/history-of-thanksgiving). En 1939 Franklin D. Roosevelt la adelantó una semana para alargar las compras navideñas, y en 1941 el Congreso fijó el cuarto jueves de noviembre, según el [Smithsonian](https://si.edu/spotlight/thanksgiving/history).",
+          "Hoy el día tiene su propio guion. El desfile de Macy's, que debutó en 1924, es según NBCUniversal el programa de entretenimiento más visto del año en la televisión abierta. Después llega el National Dog Show, y el fútbol americano toma la tarde: Bears–Lions a la 1:00 p.m. por CBS, Eagles–Cowboys a las 4:30 p.m. por FOX y Chiefs–Bills a las 8:20 p.m. por NBC, según el [calendario de la NFL](https://www.nbcchicago.com/news/sports/nfl/nfl-thanksgiving-schedule-2026-chiefs-bills-eagles-cowboys-bears-lions/3935839/?amp=1). Este año se suma además un partido en la víspera, Packers–Rams, el miércoles 25 a las 8:00 p.m. por Netflix, y otro el viernes 27 a las 3:00 p.m., Broncos–Steelers, por Prime Video.",
+          "Y está el indulto del pavo. La Federación Nacional del Pavo le entrega un ave al presidente desde 1947, y lo de «indultarla» arrancó con George H.W. Bush en 1989, según la [federación](https://www.eatturkey.org/history/). La historia de Lincoln perdonando a un pavo es probablemente apócrifa, según la [Asociación Histórica de la Casa Blanca](https://whitehousehistory.org/press-room/thanksgiving-at-the-white-house). Los dos pavos de este año fueron criados en Deans Gap Farm, en West Virginia, y sus nombres se anuncian en la ceremonia.",
+          "La mesa cambia de casa en casa, pero la idea de fondo sigue siendo la que describe la federación avícola: detenerse a agradecer lo cosechado."
+        ]
+      },
+      "en": {
+        "etiqueta": "TRADITION",
+        "titulo": "Giving thanks: from a shared 1621 harvest to the table that gathers the whole country",
+        "bajada": "Macy's parade reaches its 100th edition this Thursday, November 26, the same day of the month and week on which Lincoln proclaimed a national day of thanksgiving in 1863.",
+        "toca": [
+          "Thursday 26: Macy's parade starts at 8:30 a.m. on NBC, Peacock and Telemundo, and the National Dog Show runs 12:00 to 2:00 p.m. on NBC, according to [NBCUniversal](https://www.nbcuniversal.com/article/100th-macys-thanksgiving-day-parade-returns-live-nbc-and-peacock-nov-26-bringing-holiday-magic-life) and [TV Insider](https://www.tvinsider.com/1303427/national-dog-show-compeitition-date-premiere-date-hosts-location-time-more/).",
+          "Today, Tuesday, at 2:00 p.m. ET, the president pardons the national turkey on the White House South Lawn, according to the [White House](https://www.whitehouse.gov/thanksgiving/)."
+        ],
+        "cuerpo": [
+          "It is usually traced to autumn 1621, when Plymouth colonists and the Wampanoag people shared a harvest feast, according to the [Library of Congress](https://blogs.loc.gov/families/2024/11/the-real-history-of-thanksgiving/). Some give that title to a 1565 feast in Florida between Spanish settlers and the Timucua, according to [History.com](https://www.history.com/articles/history-of-thanksgiving).",
+          "For centuries these were scattered days kept by individual colonies and states. George Washington issued the first federal proclamation in 1789, and editor Sarah Josepha Hale spent years campaigning for a national holiday until Lincoln proclaimed one in 1863, in the middle of the Civil War, according to [History.com](https://www.history.com/articles/history-of-thanksgiving). In 1939 Franklin D. Roosevelt moved it up a week to lengthen the Christmas shopping season, and in 1941 Congress set the fourth Thursday of November, according to the [Smithsonian](https://si.edu/spotlight/thanksgiving/history).",
+          "Today the day has its own script. Macy's parade, which debuted in 1924, is the most-watched entertainment program of the year on broadcast TV, according to NBCUniversal. The National Dog Show follows, and football takes over the afternoon: Bears–Lions at 1:00 p.m. on CBS, Eagles–Cowboys at 4:30 p.m. on FOX and Chiefs–Bills at 8:20 p.m. on NBC, according to the [NFL schedule](https://www.nbcchicago.com/news/sports/nfl/nfl-thanksgiving-schedule-2026-chiefs-bills-eagles-cowboys-bears-lions/3935839/?amp=1). This year adds a Thanksgiving Eve game, Packers–Rams, on Wednesday the 25th at 8:00 p.m. on Netflix, and another on Friday the 27th at 3:00 p.m., Broncos–Steelers, on Prime Video.",
+          "And then there is the turkey pardon. The National Turkey Federation has presented the president with a bird since 1947, and the \"pardoning\" began with George H.W. Bush in 1989, according to the [federation](https://www.eatturkey.org/history/). The story of Lincoln sparing a turkey is probably apocryphal, according to the [White House Historical Association](https://whitehousehistory.org/press-room/thanksgiving-at-the-white-house). This year's two turkeys were raised at Deans Gap Farm in West Virginia, and their names are announced at the ceremony.",
+          "The table changes from home to home, but the core idea remains the one the turkey federation describes: pausing to give thanks for the harvest."
+        ]
+      }
+    },
+    {
       "id": "tren-flagler-key-west-1912-historia",
       "scope": "cayos",
       "tema": "historia",
@@ -87,7 +171,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-23T12:55:00-05:00",
-      "ultima": 1,
+      "ultima": 2,
       "arriba": 1,
       "es": {
         "etiqueta": "HISTORIA",
@@ -145,7 +229,7 @@
       "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
       "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
       "foto_mm": false,
-      "ultima": 3,
+      "ultima": 4,
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "El HEAT le gana 123-113 a Oklahoma City, con triple-doble de Bam Adebayo, y ya suma siete victorias seguidas",
@@ -237,8 +321,8 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 4,
-      "arriba": 2
+      "ultima": 5,
+      "arriba": 3
     },
     {
       "id": "venado-de-los-cayos-key-deer-big-pine-key-como-verlo",
@@ -353,7 +437,7 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 6,
+      "ultima": 7,
       "arriba": 2
     },
     {
@@ -446,8 +530,8 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 8,
-      "arriba": 5
+      "ultima": 9,
+      "arriba": 6
     },
     {
       "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
@@ -544,8 +628,8 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 7,
-      "arriba": 4
+      "ultima": 8,
+      "arriba": 5
     },
     {
       "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
@@ -621,7 +705,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -715,8 +799,8 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 2,
-      "arriba": 1
+      "ultima": 3,
+      "arriba": 2
     },
     {
       "id": "key-west-boyas-amarre-man-of-war-boca-chica-limite-90-dias",
@@ -790,7 +874,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -847,8 +931,8 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "arriba": 7,
-      "ultima": 11
+      "arriba": 8,
+      "ultima": 12
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -949,7 +1033,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 8,
+      "arriba": 9,
       "galeria": [
         {
           "f": "mm-stiltsville-casa-azul-cerca.jpg",
@@ -958,7 +1042,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 16
+      "ultima": 17
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -1102,7 +1186,7 @@
           }
         }
       ],
-      "ultima": 27
+      "ultima": 28
     },
     {
       "id": "voyager-1-dia-luz-miami-1977",
@@ -1324,7 +1408,7 @@
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
       ],
-      "ultima": 13
+      "ultima": 14
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -1415,7 +1499,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 17
+      "ultima": 18
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -1502,7 +1586,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -1583,7 +1667,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 19
+      "ultima": 20
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -1825,7 +1909,7 @@
           }
         }
       ],
-      "ultima": 28
+      "ultima": 29
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -1928,7 +2012,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 25
+      "ultima": 26
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -2007,7 +2091,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 14
+      "ultima": 15
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -2079,7 +2163,7 @@
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
       "arriba": 6,
-      "ultima": 22
+      "ultima": 23
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -2162,7 +2246,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 24
+      "ultima": 25
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -2235,7 +2319,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 21
+      "ultima": 22
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -2350,7 +2434,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "arriba": 6,
+      "arriba": 7,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -2407,7 +2491,7 @@
           }
         }
       ],
-      "ultima": 12
+      "ultima": 13
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -2491,7 +2575,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 18
+      "ultima": 19
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -2574,7 +2658,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 23
+      "ultima": 24
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -2656,7 +2740,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 26
+      "ultima": 27
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -3919,7 +4003,7 @@
       "actualizada": "2026-11-22T17:38:00-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -3992,7 +4076,7 @@
       "versiones": [],
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
-      "arriba": 3
+      "arriba": 4
     },
     {
       "id": "heat-vice-city-bucks",
@@ -8052,7 +8136,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 15
+      "ultima": 16
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -8104,7 +8188,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-23T12:55:00-05:00",
+  "updated_at": "2026-11-24T12:20:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
