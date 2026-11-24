@@ -12993,7 +12993,9 @@ function build(){
     return '<a role="button" tabindex="0" onclick="mmFootGo(\''+F1SEC[i]+'\')">'+l+'</a>';
   }).join('');
   var F2ACT=['mmFootAbout()','mmFootContact()','openPrivacy()','mmFootSubmit()','mmFootBiz()'];
+  var _apl=(typeof mmIsAppleApp==='function'&&mmIsAppleApp());
   document.getElementById('fLinks2').innerHTML=t.fLinks2.map(function(l,i){
+    if(_apl&&F2ACT[i]==='mmFootBiz()') return ''; /* en el iPhone no se menciona el directorio (regla de Apple) */
     return '<a role="button" tabindex="0" onclick="'+(F2ACT[i]||'')+'">'+l+'</a>';
   }).join('');
   var _hsK=['restaurants','beaches','museums','stadiums','events','nightlife'];document.getElementById('heroStats').innerHTML=t.stats.map((s,i)=>{var _v=0;try{_v=(D[_hsK[i]]||[]).length;}catch(e){}return '<div><div class="hstat-n">'+(_v||s.n)+'</div><div class="hstat-l">'+s.l+'</div></div>';}).join('');
@@ -15269,16 +15271,17 @@ function mmFootAbout(){
     +'<div class="about-eyebrow">'+(ES?'Sobre la app':'About the app')+'</div>'
     +'<h3>Miami Magic</h3>'
     +'<p class="about-tx">'+(ES
-      ?'Una guía de Miami hecha en Miami, escrita a mano lugar por lugar: playas, mesas, museos, teatros, vida nocturna y los rincones que solo sabe quien vive aquí. Sin listas automáticas ni reseñas copiadas — cada ficha la revisamos nosotros.'
-      :'A Miami guide made in Miami, written by hand place by place: beaches, tables, museums, theaters, nightlife and the corners only locals know. No auto-generated lists, no copied reviews — every entry is reviewed by us.')+'</p>'
-    +'<p class="about-tx">'+(ES
-      ?'La app es gratis. Premium quita el límite de preguntas al asistente y ayuda a mantenerla viva.'
-      :'The app is free. Premium removes the limit on assistant questions and helps keep it alive.')+'</p>'
+      ?'Una guía de Miami y los Cayos hecha aquí, escrita a mano lugar por lugar: playas, restaurantes, museos, teatros, vida nocturna y los rincones que solo conoce quien vive aquí. Sin listas automáticas ni reseñas copiadas: cada ficha la revisamos nosotros.'
+      :'A guide to Miami and the Keys made here, written by hand place by place: beaches, restaurants, museums, theaters, nightlife and the corners only locals know. No auto-generated lists, no copied reviews: we check every entry ourselves.')+'</p>'
+    +'<p class="about-tx">'+((typeof mmIsAppleApp==='function'&&mmIsAppleApp())
+      ?(ES?'La app es gratis y no tiene compras dentro.':'The app is free, with no in-app purchases.')
+      :(ES?'La app es gratis. Quien quiera hacerle más preguntas a los guías con IA (Luna, Mateo y Sofía) puede pasarse a Premium, que quita ese límite y ayuda a sostener el proyecto.'
+          :'The app is free. If you want to ask the AI guides (Luna, Mateo and Sofía) more questions, Premium removes that limit and helps keep the project going.'))+'</p>'
     +'<div class="about-by">'+(ES?'Publicada por':'Published by')+' <b>Y &amp; Y Entertainment Corp</b> · Miami, FL</div>'
     +'<div class="about-links">'
       +'<a onclick="mmAboutClose();mmFootContact()">'+(ES?'Contacto':'Contact')+'</a>'
       +'<a onclick="mmAboutClose();openPrivacy()">'+(ES?'Privacidad':'Privacy')+'</a>'
-      +'<a onclick="mmAboutClose();mmFootBiz()">'+(ES?'Para negocios':'For business')+'</a>'
+      +((typeof mmIsAppleApp==='function'&&mmIsAppleApp())?'':'<a onclick="mmAboutClose();mmFootBiz()">'+(ES?'Para negocios':'For business')+'</a>')
     +'</div>'
   +'</div>';
   ov.style.display='flex';
