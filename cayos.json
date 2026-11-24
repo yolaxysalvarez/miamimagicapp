@@ -305,21 +305,22 @@
     "agua"
    ],
    "tramo": "upper",
-   "mm": "100",
+   "mm": "99.4",
    "town": "Key Largo",
    "name": "Key Largo Fisheries Backyard Café",
-   "type_en": "Seafood market and dockside café",
-   "type_es": "Pescadería y café en el muelle",
-   "desc_en": "A Key Largo seafood landmark since 1972: a working waterfront fish market up front and, out back, an open-air café on the marina. You order at the counter and eat on the deck among palms, fishing boats and charters: hogfish, grouper, snapper, mahi, shrimp and, in season, stone crab, fried, grilled, in sandwiches and platters.",
-   "desc_es": "Un clásico del mar en Key Largo desde 1972: al frente, una pescadería de muelle que trabaja todos los días; atrás, un café al aire libre sobre la marina. Se pide en el mostrador y se come en la terraza, entre palmas, botes de pesca y charters: hogfish, mero, pargo, dorado, camarones y, en temporada, cangrejo de piedra, frito, a la plancha, en sándwich o en plato.",
+   "type_en": "Dockside seafood, straight off the boats",
+   "type_es": "Mariscos en el muelle, recién bajados del bote",
+   "desc_en": "A working waterfront since 1972: commercial fishing boats tie up here every day with lobster, stone crab, shrimp, mahi, grouper and yellowtail, and the fish house up front sells it fresh. Out back, the Backyard Café serves it at covered picnic tables over the harbor. Order at the window and watch the boats come in: lobster BLT, lobster roll, blackened mahi sandwich, fish tacos and, in season, stone crab claws. Kids can feed the fish from the docks, and on Saturdays there is live local music.",
+   "desc_es": "Un muelle de pesca que trabaja desde 1972: los botes comerciales atracan aquí cada día con langosta, cangrejo de piedra, camarones, dorado, mero y rabirrubia, y la pescadería de enfrente lo vende fresco. Atrás, el Backyard Café lo sirve en mesas bajo techo sobre la marina. Se pide en la ventanilla y se espera viendo llegar los botes: BLT de langosta, lobster roll, sándwich de dorado ennegrecido, tacos de pescado y, en temporada, muelas de cangrejo de piedra. Los niños pueden darles de comer a los peces desde el muelle, y los sábados hay música en vivo.",
    "addr": "1313 Ocean Bay Dr, Key Largo, FL 33037",
-   "phone": "+1 305-451-3784",
+   "phone": "+1 305-451-3782",
    "price": "$",
    "web": "https://www.keylargofisheries.com/",
-   "tip_en": "Casual and self-serve: order at the window and find a table by the water. Before leaving, stop at the market up front to take fish or stone crab home. Hours change by season, so check before you go.",
-   "tip_es": "Es informal y de autoservicio: pides en la ventanilla y buscas mesa junto al agua. Antes de irte, pasa por la pescadería de enfrente para llevarte pescado o cangrejo a casa. El horario cambia según la temporada: confírmalo antes de ir.",
+   "tip_en": "It's self-serve and relaxed, not a sit-down restaurant: order at the window and grab a table by the water. On the way out, stop at the fish market to take fish or stone crab home. Hours change with the season, so check before you go. From the US-1 light at MM 99.4 (Port Largo), turn toward the ocean and follow Ocean Bay Drive.",
+   "tip_es": "Es informal y de autoservicio, no un restaurante de mantel: pides en la ventanilla y buscas mesa junto al agua. Al salir, pasa por la pescadería para llevarte pescado o cangrejo a casa. El horario cambia según la temporada: confírmalo antes de ir. Para llegar, en el semáforo de la US-1 en la MM 99.4 (Port Largo) dobla hacia el océano y sigue por Ocean Bay Drive.",
    "perks": [
-    "family"
+    "family",
+    "fauna"
    ],
    "photo": "fotos/mm-keys-kl-fisheries-fachada.jpg",
    "photos": [
