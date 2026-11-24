@@ -933,12 +933,32 @@ body.sp-cc #cc{display:none!important}
 .esp-go{margin-top:16px;font-family:var(--bb);font-size:16px;letter-spacing:.16em;color:#FFD9A0;border-bottom:1.5px solid currentColor;padding-bottom:1px}
 .esp-pie{position:absolute;z-index:1;right:14px;bottom:10px;font-size:14.5px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.8)}
 @media(max-width:760px){.esp{margin-bottom:44px}.esp::after{background:linear-gradient(180deg,rgba(10,17,32,.25) 0%,rgba(10,17,32,.9) 52%,rgba(10,17,32,.96) 100%)}.esp-in{padding:150px 20px 44px;min-height:0;max-width:none;justify-content:flex-end}.esp b{font-size:27px}.esp-c u{font-size:52px}.esp-pie{right:auto;left:20px}}
+
+/* app 2.1+: volver a la app desde News */
+html.in-app.app21 .bk{display:inline-flex}
+@media(max-width:760px){html.in-app.app21 .bk{display:none}html.in-app.app21 .bk2{display:inline-flex}html.in-app.app21 .mast>img{display:none}html.in-app.app21 .hdr-in{justify-content:flex-start;column-gap:7px}html.in-app.app21 .mast{margin-right:auto}}
+/* créditos (pie) centrados y ordenados en el teléfono */
+@media(max-width:760px){
+ footer .ft{grid-template-columns:1fr 1fr!important;gap:30px 16px;text-align:center;padding-top:34px}
+ footer .ft>div:first-child{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;padding-bottom:22px;border-bottom:1px solid rgba(201,150,60,.28)}
+ footer .ft>div:last-child{grid-column:1/-1}
+ footer .ft .logo{flex-direction:column;align-items:center;gap:10px;text-align:center}
+ footer .ft .logo span{display:flex;flex-direction:column;align-items:center;gap:4px}
+ footer .ft .logo em{margin-left:0!important}
+ footer .ft .soc{justify-content:center;margin-top:16px}
+ footer .ft h5{margin-bottom:12px}
+ footer .ft a.l{margin-bottom:12px}
+ footer .ft>div:last-child{display:flex;flex-wrap:wrap;justify-content:center;column-gap:18px}
+ footer .ft>div:last-child h5{flex-basis:100%}
+ footer .fb{align-items:center;text-align:center;gap:6px}
+}
 </style>
 <script>
 /* 'vence': fecha del evento; pasada esa fecha la nota baja detrás de lo vigente (sigue en el archivo) */
 function FK(n){var f=(n&&n.fecha)||'';return (n&&n.vence&&n.vence<HOYNY()?'0':'1')+f}
 function HOYNY(){var h;try{h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'})}catch(e){h=new Date().toISOString().slice(0,10)}return h}
-/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app')}catch(e){}</script>
+/* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app');if(/[?&]app=21\b/.test(location.search))sessionStorage.setItem('mm_app21','1');if(sessionStorage.getItem('mm_app21')==='1')document.documentElement.classList.add('app21')}catch(e){}
+/* app 2.1+: el botón de volver cierra News y regresa a la app */document.addEventListener('DOMContentLoaded',function(){if(!document.documentElement.classList.contains('app21'))return;['bkApp','bkApp2'].forEach(function(i){var a=document.getElementById(i);if(a)a.setAttribute('href','miamimagic://cerrar')})});</script>
 <style>html.in-app a[href*="miamimagicdirectory"],html.in-app .dl,html.in-app .band,html.in-app .adv{display:none!important}/* ── pasada editorial: blanco limpio y tinta profunda ── */
 :root{--bg:#FFFFFF;--paper:#F8F7F4;--card:#F3F1EC;--ink:#0A1120;--ink2:#1D2839;--mut:#434B59;--line:rgba(10,17,32,.13)}
 body{background:#fff;text-rendering:optimizeLegibility}
@@ -1192,7 +1212,7 @@ var WAIT=!!Q.get('s')&&!Q.get('ev');if(WAIT){document.documentElement.classList.
 document.addEventListener('click',function(e){if(!document.documentElement.classList.contains('ag-only'))return;if(e.target.closest&&e.target.closest('.tab,.vt,[data-sc],#hmPill,#dkPill,#ccPill,.hdr a,.ag-back')){document.documentElement.classList.remove('ag-only');try{history.replaceState(null,'',location.pathname+location.search)}catch(x){}if(e.target.closest('.ag-back')){e.preventDefault();window.scrollTo(0,0)}}},true);
 /* Eventos en la cabecera: abre la Agenda sola, igual que entrar con #ag */
 function GUIAHTML(en){return '<a class="cc-guia" href="'+(en?'/buyers-guide':'/guia-compradores')+'"><span class="g-k">'+(en?'FREE GUIDE':'GUÍA GRATUITA')+'</span><span class="g-t">'+(en?'Buying in Miami and the Keys':'Comprar en Miami y los Cayos')+'</span><span class="g-d">'+(en?'A buyer’s guide, from Brickell to Key West · 15 pages':'Guía del comprador, de Brickell a Key West · 15 páginas')+'</span><b>'+(en?'Download':'Descargar')+' →</b></a>'}
-function evSync(){try{var gh=document.getElementById('ccGuiaHome');if(gh)gh.innerHTML=GUIAHTML(typeof L!=='undefined'&&L==='en')}catch(x){}try{var on=document.documentElement.classList.contains('ag-only'),p=document.getElementById('evPill');if(!p)return;p.classList.toggle('on',on);p.setAttribute('aria-pressed',on?'true':'false');var w=document.getElementById('evPillW');if(w)w.textContent=(typeof L!=='undefined'&&L==='en')?'Events':'Eventos';var k=document.getElementById('bkAppW');if(k)k.textContent='App';['bkApp','bkApp2'].forEach(function(i){var ka=document.getElementById(i);if(ka)ka.setAttribute('href',(typeof L!=='undefined'&&L==='en')?'/?lang=en':'/')})}catch(x){}}
+function evSync(){try{var gh=document.getElementById('ccGuiaHome');if(gh)gh.innerHTML=GUIAHTML(typeof L!=='undefined'&&L==='en')}catch(x){}try{var on=document.documentElement.classList.contains('ag-only'),p=document.getElementById('evPill');if(!p)return;p.classList.toggle('on',on);p.setAttribute('aria-pressed',on?'true':'false');var w=document.getElementById('evPillW');if(w)w.textContent=(typeof L!=='undefined'&&L==='en')?'Events':'Eventos';var k=document.getElementById('bkAppW');if(k)k.textContent='App';['bkApp','bkApp2'].forEach(function(i){var ka=document.getElementById(i);if(ka)ka.setAttribute('href',document.documentElement.classList.contains('app21')?'miamimagic://cerrar':((typeof L!=='undefined'&&L==='en')?'/?lang=en':'/'))})}catch(x){}}
 document.addEventListener('DOMContentLoaded',function(){try{var p=document.getElementById('evPill');if(!p)return;
   p.addEventListener('click',function(){var a=document.getElementById('ag');if(!a||a.style.display==='none'){if(a)a.scrollIntoView({behavior:'smooth',block:'start'});return}
     document.documentElement.classList.add('ag-only');try{history.replaceState(null,'',location.pathname+location.search+'#ag')}catch(x){}window.scrollTo(0,0);evSync()});

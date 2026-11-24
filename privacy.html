@@ -64,12 +64,14 @@
   }
   footer a{text-decoration:none;}
   @media(min-width:760px){ h1{font-size:2.5rem;} .top{padding:46px 22px 40px;} }
-</style>
+
+.bkc{display:inline-flex;align-items:center;gap:4px;height:34px;padding:0 13px 0 9px;margin-right:10px;border-radius:999px;border:1px solid rgba(14,27,48,.18);background:#fff;color:#0E1B30;font:700 14px/1 "DM Sans",system-ui,sans-serif;text-decoration:none;white-space:nowrap}.bkc svg{width:13px;height:13px;color:#E0402B}.bkc:hover{border-color:#E0402B}</style>
 </head>
 <body>
 
 <div class="top">
   <div class="top-inner">
+    <a class="bkc" href="/" data-bk="1" aria-label="Back"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>Back</a>
     <a class="brand" href="/">
       <svg viewBox="0 0 24 34" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 33V15"/>
@@ -164,5 +166,6 @@ function setLang(L){
 })();
 </script>
 
+<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[data-bk]");if(!a)return;try{if(history.length>1&&document.referrer&&new URL(document.referrer).host===location.host){e.preventDefault();history.back()}}catch(x){}});</script>
 </body>
 </html>
