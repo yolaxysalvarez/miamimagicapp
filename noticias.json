@@ -55,6 +55,75 @@
   "videos": [],
   "notas": [
     {
+      "id": "thanksgiving-logistica-miami-cayos-metro-basura",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-24",
+      "publicada": "2026-11-24T12:42:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-metrorail-brickell.jpg",
+      "foto_alt": "Un tren del Metrorail sobre su vía elevada, con edificios de Brickell al fondo",
+      "foto_pie": "El Metrorail, sobre su vía elevada en Brickell.",
+      "foto_pie_en": "Metrorail on its elevated track in Brickell.",
+      "fuentes": [
+        {
+          "n": "Miami-Dade · Feriados del condado",
+          "u": "https://www.miamidade.gov/global/humanresources/holidays.page"
+        },
+        {
+          "n": "Miami-Dade · Residuos Sólidos en Thanksgiving 2026",
+          "u": "https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664"
+        },
+        {
+          "n": "Condado de Monroe · Calendario de feriados",
+          "u": "https://www.monroecounty-fl.gov/1164/Holiday-Schedule"
+        },
+        {
+          "n": "Condado de Monroe · Memo de feriados 2026",
+          "u": "https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId="
+        }
+      ],
+      "desarrollo": false,
+      "actualizada": "2026-11-24T12:42:00-05:00",
+      "ultima": 1,
+      "es": {
+        "etiqueta": "EN LA CALLE",
+        "titulo": "Thanksgiving: el Metro va con horario de domingo, las oficinas cierran dos días y en Los Cayos la basura se corre un día",
+        "bajada": "Miami-Dade cierra sus oficinas y bibliotecas el jueves 26 y el viernes 27, pero el Metro sigue rodando y la basura se recoge. En Los Cayos, el condado de Monroe corre la recogida un día en buena parte de la ruta.",
+        "toca": [
+          "Jueves 26: Metrobus, Metrorail y Metromover con horario de domingo. El viernes, servicio normal.",
+          "Miami-Dade: oficinas y bibliotecas cerradas el jueves y el viernes; la basura se recoge igual.",
+          "Los Cayos: de Stock Island a Seven Mile Bridge, la basura del jueves pasa al viernes y la del viernes al sábado."
+        ],
+        "cuerpo": [
+          "En Miami-Dade, las oficinas del condado y sus bibliotecas cierran el jueves 26 y el viernes 27, según su [calendario de feriados](https://www.miamidade.gov/global/humanresources/holidays.page). Lo que no se detiene es el transporte: el condado indica que Metrobus, Metrorail y Metromover circulan el jueves con horario de domingo, y el viernes vuelven al servicio normal.",
+          "La basura tampoco cambia de día. De acuerdo con [Residuos Sólidos del condado](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), la recogida de basura y reciclaje sigue su calendario y los centros de basura y reciclaje abren en su horario regular. La excepción es el vertedero Medley, de WM, que el jueves cierra al mediodía y el viernes abre normal. Para dudas por zona, el condado remite al 311.",
+          "## En Los Cayos",
+          "El condado de Monroe cierra sus oficinas el jueves y el viernes, según su [memo de feriados](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), y la recogida depende de quién la presta, de acuerdo con su [calendario de feriados](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). De Stock Island a Seven Mile Bridge, con Waste Management, no hay recogida el jueves: la de ese día pasa al viernes y la del viernes al sábado. En Marathon, hasta la milla 73, la basura del jueves se recoge el viernes y el reciclaje del jueves espera a la semana siguiente. Entre las millas 91 y 102, con Keys Sanitary Service, y en Ocean Reef, la ruta sigue normal.",
+          "La mesa, la historia y los eventos de este Thanksgiving están en la [nota de tradición](https://miamimagicapp.com/noticias/thanksgiving-tradicion-historia-como-se-celebra)."
+        ]
+      },
+      "en": {
+        "etiqueta": "ON THE STREET",
+        "titulo": "Thanksgiving: Metro runs on a Sunday schedule, offices close for two days and Keys trash pickup shifts by a day",
+        "bajada": "Miami-Dade closes its offices and libraries Thursday the 26th and Friday the 27th, but Metro keeps running and trash is still collected. In the Keys, Monroe County shifts pickup by a day along much of the route.",
+        "toca": [
+          "Thursday 26: Metrobus, Metrorail and Metromover run a Sunday schedule. Friday, regular service.",
+          "Miami-Dade: offices and libraries closed Thursday and Friday; trash is still collected.",
+          "The Keys: from Stock Island to Seven Mile Bridge, Thursday's pickup moves to Friday and Friday's to Saturday."
+        ],
+        "cuerpo": [
+          "In Miami-Dade, county offices and libraries close Thursday the 26th and Friday the 27th, according to the county's [holiday calendar](https://www.miamidade.gov/global/humanresources/holidays.page). Transit does not stop: the county says Metrobus, Metrorail and Metromover run a Sunday schedule on Thursday and return to regular service on Friday.",
+          "Trash doesn't change days either. According to the county's [Solid Waste Management department](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), garbage and recycling collection keeps its regular schedule and the trash and recycling centers keep regular hours. The exception is WM's Medley Landfill, which closes at noon on Thursday and reopens normally on Friday. For questions by area, the county points to 311.",
+          "## In the Keys",
+          "Monroe County closes its offices Thursday and Friday, per its [holiday memo](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), and pickup depends on who provides it, according to the county's [holiday schedule](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). From Stock Island to Seven Mile Bridge, with Waste Management, there is no pickup Thursday: that day's collection moves to Friday and Friday's moves to Saturday. In Marathon, through mile marker 73, Thursday's garbage is picked up Friday and Thursday's recycling waits until the following week. Between miles 91 and 102, with Keys Sanitary Service, and in Ocean Reef, the route runs as usual.",
+          "The table, the history and the events of this Thanksgiving are in our [tradition story](https://miamimagicapp.com/news/thanksgiving-tradicion-historia-como-se-celebra)."
+        ]
+      }
+    },
+    {
       "id": "thanksgiving-tradicion-historia-como-se-celebra",
       "scope": "miami",
       "tema": "cultura",
@@ -119,7 +188,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-24T12:25:00-05:00",
-      "ultima": 1,
+      "ultima": 2,
       "arriba": 1,
       "es": {
         "etiqueta": "TRADICIÓN",
@@ -189,7 +258,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-23T12:55:00-05:00",
-      "ultima": 2,
+      "ultima": 3,
       "arriba": 1,
       "es": {
         "etiqueta": "HISTORIA",
@@ -246,7 +315,7 @@
       "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
       "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
       "foto_mm": false,
-      "ultima": 4,
+      "ultima": 5,
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "El HEAT le gana 123-113 a Oklahoma City, con triple-doble de Bam Adebayo, y ya suma siete victorias seguidas",
@@ -338,7 +407,7 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 5,
+      "ultima": 6,
       "arriba": 3
     },
     {
@@ -454,7 +523,7 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 7,
+      "ultima": 8,
       "arriba": 2
     },
     {
@@ -547,7 +616,7 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 9,
+      "ultima": 10,
       "arriba": 6
     },
     {
@@ -645,7 +714,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 8,
+      "ultima": 9,
       "arriba": 5
     },
     {
@@ -722,7 +791,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -816,7 +885,7 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 3,
+      "ultima": 4,
       "arriba": 2
     },
     {
@@ -891,7 +960,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -949,7 +1018,7 @@
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
       "arriba": 8,
-      "ultima": 12
+      "ultima": 13
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -1059,7 +1128,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 17
+      "ultima": 18
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -1203,7 +1272,7 @@
           }
         }
       ],
-      "ultima": 28
+      "ultima": 29
     },
     {
       "id": "voyager-1-dia-luz-miami-1977",
@@ -1425,7 +1494,7 @@
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
       ],
-      "ultima": 14
+      "ultima": 15
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -1516,7 +1585,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 18
+      "ultima": 19
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -1603,7 +1672,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 21
+      "ultima": 22
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -1684,7 +1753,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -1926,7 +1995,7 @@
           }
         }
       ],
-      "ultima": 29
+      "ultima": 30
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -2029,7 +2098,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 26
+      "ultima": 27
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -2108,7 +2177,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 15
+      "ultima": 16
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -2180,7 +2249,7 @@
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
       "arriba": 6,
-      "ultima": 23
+      "ultima": 24
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -2263,7 +2332,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 25
+      "ultima": 26
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -2336,7 +2405,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 22
+      "ultima": 23
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -2508,7 +2577,7 @@
           }
         }
       ],
-      "ultima": 13
+      "ultima": 14
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -2592,7 +2661,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 19
+      "ultima": 20
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -2675,7 +2744,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 24
+      "ultima": 25
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -2757,7 +2826,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 27
+      "ultima": 28
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -4020,7 +4089,7 @@
       "actualizada": "2026-11-22T17:38:00-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -8153,7 +8222,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 16
+      "ultima": 17
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -8205,7 +8274,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-24T12:25:00-05:00",
+  "updated_at": "2026-11-24T12:42:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
