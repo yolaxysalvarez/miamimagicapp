@@ -99,7 +99,8 @@
    "link": "https://casajuancho.com/",
    "zone": "little-havana",
    "hrs_es": "Mar–Jue 12–10 PM · Vie–Sáb 12–11 PM · Dom 12–10 PM · Cerrado lun",
-   "photo": "fotos/mm-ficha-miami-magic-3.jpg"
+   "photo": "fotos/mm-little-havana-mural-letras.jpg",
+   "area_photo": "Little Havana"
   },
   "r103": {
    "name": "Giselle Miami",
@@ -127,7 +128,8 @@
    "pro": false,
    "link": "https://gisellemiami.com/",
    "zone": "downtown",
-   "photo": "fotos/mm-ficha-miami-magic-3.jpg"
+   "photo": "fotos/mm-pamm-bahia-noche.jpg",
+   "area_photo": "Downtown"
   },
   "r104": {
    "name": "CalaMillor",
@@ -263,7 +265,8 @@
    ]
   },
   "r105": {
-   "photo": "fotos/mm-ficha-miami-magic-3.jpg"
+   "photo": "fotos/mm-wynwood-mural-robot.jpg",
+   "area_photo": "Wynwood"
   },
   "r43": {
    "photo": "fotos/mm-abiaka-salon.jpg",

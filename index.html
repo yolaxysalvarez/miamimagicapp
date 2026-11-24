@@ -6556,7 +6556,7 @@ function setModalImg(bg,emoji,photoId){
     mi.style.backgroundImage='url('+photoUrl+')';
     mi.style.backgroundSize='cover';
     mi.style.backgroundPosition='center';
-    mi.innerHTML='<div class="modal-img-ov"></div>';
+    mi.innerHTML='<div class="modal-img-ov"></div>'+mmAreaCapHtml(photoId,'bottom:auto;top:16px;left:14px;');
   } else {
     mi.style.backgroundImage='';
     mi.style.backgroundSize='';
@@ -7771,7 +7771,7 @@ function renderRestCards(list){
     var safeName = (r.name||'').replace(/'/g,'`');
     var html = '<div class="rcard" onclick="openItemModal(D.restaurants.find(x=>x.id===&quot;'+r.id+'&quot;),&quot;rest&quot;)">';
     html += '<div class="rcard-img '+r.bg+'" style="position:relative;overflow:hidden;'+imgStyle+'">';
-    html += '<div class="rcard-ov"></div>';
+    html += '<div class="rcard-ov"></div>'+mmAreaCapHtml(r.id,'bottom:auto;top:44px;');
     html += '<div class="rcard-top"><span class="rbadge'+(r.pro?' rbadge-pro':'')+'">'+r.badge+'</span></div>';
     html += '<div class="rrating"><span class="rstar">★</span> '+r.rating+'</div>';
     html += '<button class="fav-card-btn'+(isFaved?' faved':'')+'" onclick="event.stopPropagation();addFavFromCard(&quot;'+r.id+'&quot;,&quot;'+safeName+'&quot;,&quot;rest&quot;,this)">'+(isFaved?'♥':'♡')+'</button>';
@@ -7823,7 +7823,7 @@ function renderRestCardsHorizontal(list){
     var safeName = (r.name||'').replace(/'/g,'`');
     var tripLabel = L==='es' ? 'Viaje' : 'Trip';
     return '<div class="rcardh" onclick="openItemModal(D.restaurants.find(x=>x.id===&quot;'+r.id+'&quot;),&quot;rest&quot;)">'
-      +(photoUrl ? '<div class="rcardh-photo" style="background-image:url('+photoUrl+')"></div>' : '')
+      +(photoUrl ? '<div class="rcardh-photo" style="position:relative;background-image:url('+photoUrl+')">'+mmAreaCapHtml(r.id)+'</div>' : '')
       +'<div class="rcardh-fade"></div>'
       +'<button class="rcardh-fav-btn'+(isFaved?' faved':'')+'" onclick="event.stopPropagation();addFavFromCard(&quot;'+r.id+'&quot;,&quot;'+safeName+'&quot;,&quot;rest&quot;,this)">'+(isFaved?'♥':'♡')+'</button>'
       +'<button class="rcardh-trip-btn'+(isSaved?' saved':'')+'" onclick="event.stopPropagation();addToTrip(&quot;'+r.id+'&quot;,&quot;'+safeName+'&quot;,&quot;rest&quot;)" title="'+tripLabel+'">'+(isSaved?'✓':'+')+'</button>'
@@ -9514,6 +9514,9 @@ function mmSitiosLista(clave){
   if(MM_SITIOS_EXTRA[clave]) return MM_SITIOS_EXTRA[clave]();
   return null;
 }
+/* fichas sin foto propia que llevan una foto de su zona de Miami: rótulo "Foto de la zona" */
+var MM_AREA_CAP={};
+function mmAreaCapHtml(id,st){ var a=MM_AREA_CAP[id]; if(!a) return ''; return '<span class="mm-area-cap"'+(st?' style="'+st+'"':'')+'>'+((typeof lang!=='undefined'&&lang==='es')?'Foto de la zona · ':'Area photo · ')+a+'</span>'; }
 function mmAplicarSitios(d){
   if(!d || typeof d!=='object' || typeof D==='undefined' || !D) return false;
   var tocado=false;
@@ -9541,6 +9544,7 @@ function mmAplicarSitios(d){
       } else continue;
       try{ if(campos.zone && typeof ZONES!=='undefined') ZONES[id]=campos.zone; }catch(e){}
       try{ if(campos.photo && typeof MM_FOTOS!=='undefined') MM_FOTOS[id]=campos.photo; }catch(e){}
+      try{ if(campos.area_photo) MM_AREA_CAP[id]=campos.area_photo; else delete MM_AREA_CAP[id]; }catch(e){}
       /* v1.6: botes, lujo y cruceros pintan su tarjeta con .photo propio */
       try{ if(campos.photo && pos>-1 && MM_SITIOS_EXTRA[clave] && 'photo' in lista[pos]) lista[pos].photo=campos.photo; }catch(e){}
       try{ if(campos.photo && pos<0 && MM_SITIOS_EXTRA[clave] && typeof nuevo!=='undefined' && nuevo && nuevo.id===id) nuevo.photo=campos.photo; }catch(e){}
