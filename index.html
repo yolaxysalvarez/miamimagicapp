@@ -9517,6 +9517,25 @@ function mmSitiosLista(clave){
 /* fichas sin foto propia que llevan una foto de su zona de Miami: rótulo "Foto de la zona" */
 var MM_AREA_CAP={};
 function mmAreaCapHtml(id,st){ var a=MM_AREA_CAP[id]; if(!a) return ''; return '<span class="mm-area-cap"'+(st?' style="'+st+'"':'')+'>'+((typeof lang!=='undefined'&&lang==='es')?'Foto de la zona · ':'Area photo · ')+a+'</span>'; }
+/* tarjetas de cualquier sección con foto de la zona: ponerles el rótulo una sola vez */
+function mmAreaCapPass(){
+  try{
+    var ids=Object.keys(MM_AREA_CAP); if(!ids.length) return;
+    var root=document.getElementById('app')||document.body;
+    ids.forEach(function(id){
+      var q='[onclick*="\''+id+'\'"],[onclick*=\'"'+id+'"\']';
+      root.querySelectorAll(q).forEach(function(card){
+        if(card.closest('.modal')||card.querySelector('.mm-area-cap')) return;
+        var ph=card.querySelector('[style*="background-image"],[data-mmbg]')||null;
+        if(!ph) return;
+        if(getComputedStyle(ph).position==='static') ph.style.position='relative';
+        ph.insertAdjacentHTML('beforeend',mmAreaCapHtml(id,'bottom:auto;top:10px;left:10px;'));
+      });
+    });
+  }catch(e){}
+}
+(function(){ try{ var t=null; var mo=new MutationObserver(function(){ clearTimeout(t); t=setTimeout(mmAreaCapPass,250); });
+  document.addEventListener('DOMContentLoaded',function(){ mo.observe(document.getElementById('app')||document.body,{childList:true,subtree:true}); mmAreaCapPass(); }); }catch(e){} })();
 function mmAplicarSitios(d){
   if(!d || typeof d!=='object' || typeof D==='undefined' || !D) return false;
   var tocado=false;
