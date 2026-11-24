@@ -3620,6 +3620,21 @@ body{padding-bottom:0;}
   })();
 </script>
 
+
+<style id="mm-perf-21">
+/* 2.1 · rendimiento en iPhone: menos trabajo de pintura al buscar y al abrir/cerrar fichas */
+.mm-shim{animation-iteration-count:6!important}
+.fav-card-btn,.trip-card-btn,.rcardh-fav-btn,.rcardh-trip-btn,.rrating,.hp-card,.hp-card-cat,.ev-stat-chip,.wtr-fav,.tr-card-fav{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.fav-card-btn,.rcardh-fav-btn,.wtr-fav,.tr-card-fav{background:rgba(8,15,30,.58)!important}
+.rcardh-trip-btn{background:rgba(8,15,30,.55)!important}
+.trip-card-btn{background:rgba(8,15,30,.74)!important}
+.rrating{background:rgba(8,15,30,.88)!important}
+/* la ficha abierta: fondo oscuro sólido en vez de desenfocar toda la página (era lo que hacía lento abrir y cerrar) */
+.modal-ov{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:rgba(4,8,15,.88)!important;transition:opacity .2s ease!important}
+.modal-ov:not(.open) .modal{will-change:auto}.modal-ov.open .modal{will-change:transform}
+
+
+</style>
 </head>
 <body>
 <!-- ══ BOOT LOADER — pinta desde el primer byte ══ -->
@@ -6204,7 +6219,7 @@ function pickResult(idx){
   var card=mmFindCard(sec, item.type==='show'?item.parentId:item.id);
   window._mmFoundCard=card||null;
   if(card) card.scrollIntoView({behavior:'auto',block:'center',inline:'center'});
-  else if(sec) sec.scrollIntoView({behavior:'smooth',block:'start'});
+  else if(sec) sec.scrollIntoView({behavior:'auto',block:'start'});
   setTimeout(()=>{
     if(item.type==='show') openConcertModal(item.parentId,item.link,item.btn);
     else if(item.type==='concert') openConcertModal(item.id,item.link,item.btn);
@@ -6215,7 +6230,7 @@ function pickResult(idx){
       else openItemModal(item.obj,item.type,item.link,item.btn);
     }
     else openItemModal(item.obj,item.type,item.link,item.btn);
-  },card?260:450);
+  },40); /* 2.1: la ficha abre al instante (antes esperaba 260–450 ms) */
 }
 function mmFindCard(root,id){
   if(!id) return null;
@@ -9520,17 +9535,20 @@ function mmAreaCapHtml(id,st){ var a=MM_AREA_CAP[id]; if(!a) return ''; return '
 /* tarjetas de cualquier sección con foto de la zona: ponerles el rótulo una sola vez */
 function mmAreaCapPass(){
   try{
-    var ids=Object.keys(MM_AREA_CAP); if(!ids.length) return;
+    if(!Object.keys(MM_AREA_CAP).length) return;
     var root=document.getElementById('app')||document.body;
-    ids.forEach(function(id){
-      var q='[onclick*="\''+id+'\'"],[onclick*=\'"'+id+'"\']';
-      root.querySelectorAll(q).forEach(function(card){
-        if(card.closest('.modal')||card.querySelector('.mm-area-cap')) return;
-        var ph=card.querySelector('[style*="background-image"],[data-mmbg]')||null;
-        if(!ph) return;
-        if(getComputedStyle(ph).position==='static') ph.style.position='relative';
-        ph.insertAdjacentHTML('beforeend',mmAreaCapHtml(id,'bottom:auto;top:10px;left:10px;'));
-      });
+    /* una sola pasada por las tarjetas (antes: una búsqueda por cada id) */
+    root.querySelectorAll('[onclick]').forEach(function(card){
+      var oc=card.getAttribute('onclick')||'';
+      var m=/['"]([A-Za-z0-9_-]+)['"]/.exec(oc); if(!m) return;
+      var id=null,re=/['"]([A-Za-z0-9_-]+)['"]/g,mm;
+      while((mm=re.exec(oc))){ if(MM_AREA_CAP[mm[1]]){ id=mm[1]; break; } }
+      if(!id) return;
+      if(card.closest('.modal')||card.querySelector('.mm-area-cap')) return;
+      var ph=card.querySelector('[style*="background-image"],[data-mmbg]')||null;
+      if(!ph) return;
+      if(getComputedStyle(ph).position==='static') ph.style.position='relative';
+      ph.insertAdjacentHTML('beforeend',mmAreaCapHtml(id,'bottom:auto;top:10px;left:10px;'));
     });
   }catch(e){}
 }
@@ -11637,7 +11655,9 @@ function mmMarqueeFill(el, seq){
   el.innerHTML='<div class="mq-track">'+seq+'</div>';
   var tr=el.querySelector('.mq-track');
   var seqW=tr.scrollWidth||1, boxW=el.clientWidth||360;
-  var k=Math.max(1, Math.ceil(boxW/seqW));
+  /* banda oculta (sin medidas): no multiplicar la secuencia, antes creaba más de 20 000 nodos */
+  if(seqW<40||!el.clientWidth){ return; }
+  var k=Math.min(6,Math.max(1, Math.ceil(boxW/seqW)));
   var half=''; for(var i=0;i<k;i++) half+=seq;
   tr.innerHTML=half+half;
   tr.style.animationDuration=Math.max(14, Math.round((seqW*k)/70))+'s';
