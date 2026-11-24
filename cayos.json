@@ -158,7 +158,7 @@
    "es": "Cómo llegar",
    "sub_en": "By road, by air, by tour",
    "sub_es": "Por carretera, en avión, en tour",
-   "cover": "https://images.unsplash.com/photo-1692146316309-678fe905c2c9?w=760&q=72&auto=format&fit=crop",
+   "cover": "fotos/mm-keys-largo-carretera-agua.jpg",
    "video": "videos/mm-keys-video-north-key-largo.mp4",
    "miami": "sec-transport",
    "miami_en": "Getting around Miami",
@@ -325,7 +325,9 @@
     "sunset",
     "photo"
    ],
-   "photo": "https://images.unsplash.com/photo-1567870496265-e68fae98229b?w=760&q=72&auto=format&fit=crop"
+   "photo": "fotos/mm-keys-cheeca-amanecer-muelle.jpg",
+   "area_photo": "Islamorada",
+   "web": "https://cheeca.com/dine-drink/morada-bay-beach-cafe"
   },
   {
    "id": "ky-pennekamp",
@@ -354,7 +356,8 @@
     "paddle",
     "family"
    ],
-   "photo": "https://images.unsplash.com/photo-1531429957-9e7c26e39c84?w=760&q=72&auto=format&fit=crop"
+   "photo": "fotos/mm-keys-largo-bay.jpg",
+   "area_photo": "Key Largo"
   },
   {
    "id": "ky-robbies",
@@ -383,7 +386,8 @@
     "fauna",
     "family"
    ],
-   "photo": "https://images.unsplash.com/photo-1601136939973-5b5dc52a16cb?w=760&q=72&auto=format&fit=crop"
+   "photo": "fotos/mm-keys-cheeca-amanecer-sol.jpg",
+   "area_photo": "Islamorada"
   },
   {
    "id": "ky-cruisintikis",
@@ -474,7 +478,7 @@
     "photo",
     "sunset"
    ],
-   "photo": "https://images.unsplash.com/photo-1692146316309-678fe905c2c9?w=760&q=72&auto=format&fit=crop",
+   "photo": "fotos/mm-keys-seven-mile-bridge-aereo.jpg",
    "pnote": "<a href=\"https://www.miamimagicapp.com/news/seven-mile-bridge-rehabilitacion\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('seven-mile-bridge-rehabilitacion');return false}\" style=\"font-weight:700;text-decoration:underline\">Read the story in Miami Magic News →</a>",
    "pnote_es": "<a href=\"https://www.miamimagicapp.com/noticias/seven-mile-bridge-rehabilitacion\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('seven-mile-bridge-rehabilitacion');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   },
@@ -505,7 +509,8 @@
     "paddle",
     "photo"
    ],
-   "photo": "https://images.unsplash.com/photo-1747485460686-11da4cdebe63?w=760&q=72&auto=format&fit=crop"
+   "photo": "fotos/mm-keys-puente-entre-cayos-aereo.jpg",
+   "area_photo": "Cayos"
   },
   {
    "id": "ky-keydeer",
@@ -678,7 +683,8 @@
    "addr": "Duval St, Key West, FL 33040",
    "tip_en": "Costumes aren't required, but you'll feel out of place without one. Duval Street at night is not for kids.",
    "tip_es": "El disfraz no es obligatorio, pero sin él te sentirás fuera de lugar. Duval Street de noche no es para niños.",
-   "photo": "https://images.unsplash.com/photo-1709304225457-dc3f846cb2ed?w=760&q=72&auto=format&fit=crop"
+   "photo": "fotos/mm-keys-kw-atardecer-naranja.jpg",
+   "area_photo": "Key West"
   },
   {
    "id": "ky-songwriters",
@@ -779,7 +785,7 @@
    "desc_es": "Desde Miami, la US-1 entra a los Cayos por Key Largo, a una hora al sur, y sigue sobre el agua por 42 puentes hasta Key West. Sin paradas, el recorrido completo toma unas tres horas y media a cuatro.",
    "tip_en": "Don't do Key West and back in one day if you can avoid it: sleep over and the drive becomes the best part.",
    "tip_es": "Si puedes, no hagas Key West ida y vuelta en un día: duerme allá y la carretera se vuelve lo mejor del viaje.",
-   "photo": "https://images.unsplash.com/photo-1740989973080-95c282ab1b16?w=760&q=72&auto=format&fit=crop",
+   "photo": "fotos/mm-keys-carretera-entre-aguas-aereo.jpg",
    "video": "videos/mm-keys-video-north-key-largo.mp4"
   },
   {
@@ -817,7 +823,7 @@
    "desc_es": "Si no quieres manejar, salen excursiones de un día desde Miami en la mañana, con paradas en los Cayos y tiempo libre en Key West antes del regreso.",
    "tip_en": "It's a long day on the road: worth it if you only have one day.",
    "tip_es": "Es un día largo en carretera: vale la pena si solo tienes un día.",
-   "photo": "https://images.unsplash.com/photo-1740989973994-1404b10e4ff4?w=760&q=72&auto=format&fit=crop"
+   "photo": "fotos/mm-keys-kw-old-town-aereo.jpg"
   }
  ]
 }

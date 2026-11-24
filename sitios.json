@@ -1,12 +1,24 @@
 {
  "_como_usar": "Este archivo cambia los lugares de la guía sin pasar por Apple. Funciona por id: si el id YA EXISTE, corrige solo los campos que pongas y el resto se queda igual; si el id es NUEVO y lleva \"name\", AÑADE el lugar a su sección; \"active\": false lo quita de la guía sin borrarlo de aquí. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia 'updated' cada vez.",
- "updated": "2026-11-22",
+ "updated": "2026-11-24",
  "_campos": "Los más usados: photo_url (el video de YouTube de la ficha), hrs y hrs_es (horario), addr (dirección), price ($ a $$$$), link (sitio web), desc y desc_es (la descripción), pnote y pnote_es (el aviso en amarillo). Solo para lugares nuevos: zone (little-havana, brickell, south-beach…), photo (fotos/….jpg para la tarjeta) y top (true = sale primero).",
  "_secciones": "restaurantes, hoteles, noche, playas, museos, lugares, teatros, parques, compras, cafes, ninos, galerias, excursiones, conciertos, estadios, botes, lujo, cruceros, cines, aeropuertos",
  "_app": {
   "ios": "2.0",
   "_nota": "La última versión aprobada por Apple. Cuando aprueben una nueva, pon aquí su número y quien tenga una anterior verá el aviso de Actualizar.",
-  "_portada_nota": "Para cambiar las fotos de la portada de la app sin versión nueva de Apple, añade aquí \"portada\": [\"fotos/a.jpg\",\"fotos/b.jpg\", …] (hasta 5). Sin esa lista, la app usa las suyas."
+  "_portada_nota": "Fotos de la portada de la app sin versión nueva de Apple: \"portada\": [\"fotos/a.jpg\", …], Miami y los Cayos intercalados. Desde la 2.1 entran todas las que pongas; la 2.0 del iPhone muestra las 5 primeras.",
+  "portada": [
+   "fotos/mm-x-9.jpg",
+   "fotos/mm-keys-canal-veleros.jpg",
+   "fotos/mm-x-10.jpg",
+   "fotos/mm-keys-reefhouse-03.jpg",
+   "fotos/mm-x-11.jpg",
+   "fotos/mm-keys-atardecer-palma.jpg",
+   "fotos/mm-x-12.jpg",
+   "fotos/mm-keys-reefhouse-02.jpg",
+   "fotos/mm-x-13.jpg",
+   "fotos/mm-keys-kw-atardecer-naranja.jpg"
+  ]
  },
  "restaurantes": {
   "r16": {
@@ -409,6 +421,186 @@
     "https://i.ytimg.com/vi/ExyV5C0q2eY/maxres1.jpg",
     "https://i.ytimg.com/vi/ExyV5C0q2eY/maxres3.jpg"
    ]
+  },
+  "r96": {
+   "photo": "fotos/mm-little-havana-mural-letras.jpg",
+   "area_photo": "Little Havana"
+  },
+  "r51": {
+   "photo": "fotos/mm-little-havana-mural-letras.jpg",
+   "area_photo": "Little Havana"
+  },
+  "rn1": {
+   "photo": "fotos/mm-little-havana-mural-letras.jpg",
+   "area_photo": "Little Havana"
+  },
+  "rn2": {
+   "photo": "fotos/mm-little-havana-mural-letras.jpg",
+   "area_photo": "Little Havana"
+  },
+  "r97": {
+   "photo": "fotos/mm-dk-haulover-inlet.jpg",
+   "area_photo": "Haulover · Bal Harbour"
+  },
+  "r72": {
+   "photo": "fotos/mm-haulover-inlet-app.jpg",
+   "area_photo": "Haulover · Bal Harbour"
+  },
+  "r98": {
+   "photo": "fotos/mm-brickell-rio-noche.jpg",
+   "area_photo": "Brickell"
+  },
+  "r05": {
+   "photo": "fotos/mm-week-brickell.jpg",
+   "area_photo": "Brickell"
+  },
+  "r70": {
+   "photo": "fotos/mm-brickell-metromover.jpg",
+   "area_photo": "Brickell"
+  },
+  "r93": {
+   "photo": "fotos/mm-x-7.jpg",
+   "area_photo": "Brickell"
+  },
+  "r02": {
+   "photo": "fotos/mm-mb-calle-03.jpg",
+   "area_photo": "South Beach"
+  },
+  "r04": {
+   "photo": "fotos/mm-mb-playa-edificios.jpg",
+   "area_photo": "South Beach"
+  },
+  "r07": {
+   "photo": "fotos/mm-mb-ocean-plaza.jpg",
+   "area_photo": "South Beach"
+  },
+  "r21": {
+   "photo": "fotos/mm-mb-art-deco-letrero.jpg",
+   "area_photo": "South Beach"
+  },
+  "r60": {
+   "photo": "fotos/mm-mb-salvavidas-17st.jpg",
+   "area_photo": "South Beach"
+  },
+  "r65": {
+   "photo": "fotos/mm-mb-calle-01.jpg",
+   "area_photo": "South Beach"
+  },
+  "r83": {
+   "photo": "fotos/mm-mb-banos-14-street.jpg",
+   "area_photo": "South Beach"
+  },
+  "r94": {
+   "photo": "fotos/mm-mb-art-deco-letrero-02.jpg",
+   "area_photo": "South Beach"
+  },
+  "br8": {
+   "photo": "fotos/mm-mb-salvavidas-13st.jpg",
+   "area_photo": "South Beach"
+  },
+  "r59": {
+   "photo": "fotos/mm-mb-playa-lincoln.jpg",
+   "area_photo": "South Beach"
+  },
+  "r20": {
+   "photo": "fotos/mm-fontainebleau-piscina-palmas.jpg",
+   "area_photo": "Fontainebleau"
+  },
+  "r03": {
+   "photo": "fotos/mm-wynwood-mural-robot.jpg",
+   "area_photo": "Wynwood"
+  },
+  "r19": {
+   "photo": "fotos/mm-wynwood-mural-retrato.jpg",
+   "area_photo": "Wynwood"
+  },
+  "r71": {
+   "photo": "fotos/mm-wynwood-mural-robot-completo.jpg",
+   "area_photo": "Wynwood"
+  },
+  "r86": {
+   "photo": "fotos/mm-wynwood-mural-robot.jpg",
+   "area_photo": "Wynwood"
+  },
+  "r26": {
+   "photo": "fotos/mm-pl6.jpg",
+   "area_photo": "Design District"
+  },
+  "r90": {
+   "photo": "fotos/mm-pl6.jpg",
+   "area_photo": "Design District"
+  },
+  "r09": {
+   "photo": "fotos/mm-pl7.jpg",
+   "area_photo": "Coconut Grove"
+  },
+  "r63": {
+   "photo": "fotos/mm-river-landing.jpg",
+   "area_photo": "Miami River"
+  },
+  "r66": {
+   "photo": "fotos/mm-river-landing-sunset.jpg",
+   "area_photo": "Miami River"
+  },
+  "rk1": {
+   "photo": "fotos/mm-kb-crandon-palmar.jpg",
+   "area_photo": "Key Biscayne"
+  },
+  "rk2": {
+   "photo": "fotos/mm-kb-crandon-agua.jpg",
+   "area_photo": "Key Biscayne"
+  },
+  "rk3": {
+   "photo": "fotos/mm-kb-crandon-palma-cielo.jpg",
+   "area_photo": "Key Biscayne"
+  },
+  "rn11": {
+   "photo": "fotos/mm-miracle-mile-letrero.jpg",
+   "area_photo": "Coral Gables"
+  },
+  "r12": {
+   "photo": "fotos/mm-miami-skyline-atardecer-macarthur.jpg",
+   "area_photo": "Miami"
+  },
+  "r85": {
+   "photo": "fotos/mm-bayside-aerea.jpg",
+   "area_photo": "Miami"
+  },
+  "r50": {
+   "photo": "fotos/mm-brickell-skyline-rickenbacker.jpg",
+   "area_photo": "Miami"
+  },
+  "r52": {
+   "photo": "fotos/mm-macarthur-palmas.jpg",
+   "area_photo": "Miami"
+  },
+  "r53": {
+   "photo": "fotos/mm-macarthur-atardecer.jpg",
+   "area_photo": "Miami"
+  },
+  "r79": {
+   "photo": "fotos/mm-x-6.jpg",
+   "area_photo": "Miami"
+  },
+  "r87": {
+   "photo": "fotos/mm-miami-skyline-atardecer-macarthur.jpg",
+   "area_photo": "Miami"
+  },
+  "rn3": {
+   "photo": "fotos/mm-bayside-aerea.jpg",
+   "area_photo": "Miami"
+  },
+  "rn4": {
+   "photo": "fotos/mm-brickell-skyline-rickenbacker.jpg",
+   "area_photo": "Miami"
+  },
+  "rn7": {
+   "photo": "fotos/mm-macarthur-palmas.jpg",
+   "area_photo": "Miami"
+  },
+  "rn12": {
+   "photo": "fotos/mm-macarthur-atardecer.jpg",
+   "area_photo": "Miami"
   }
  },
  "hoteles": {
@@ -532,7 +724,8 @@
    "desc": "A brand-new hotel steps from Collins Avenue, with balconies, a rooftop pool and a short walk to the beach.",
    "desc_es": "Un hotel nuevo a pasos de Collins Avenue, con balcones, piscina en la azotea y la playa a una caminata corta.",
    "price": "",
-   "stars": ""
+   "stars": "",
+   "link": "https://www.wyndhamhotels.com/dolce/miami-beach-florida/dolce-miami-beach/overview"
   },
   "h107": {
    "name": "The Claremont Hotel, South Beach",
@@ -612,20 +805,94 @@
     "fotos/mm-fontainebleau-playa-palmas.jpg",
     "fotos/mm-fontainebleau-edificio-palmas.jpg"
    ]
+  },
+  "h19": {
+   "active": false,
+   "_nota": "Cerrado desde el 20 ago 2026: reabre en invierno 2027 como Waldorf Astoria Miami Beach (revisión de nov 2026). Volver a activar con el nombre nuevo cuando abra."
+  },
+  "h35": {
+   "active": false,
+   "_nota": "En restauración: abre en ene 2027 como Bossa House Miami Beach (IHG Vignette Collection). Volver a activar con el nombre nuevo cuando abra."
+  },
+  "h85": {
+   "active": false,
+   "_nota": "En renovación: reabre a fines de 2026 como The James Nautilus Miami Beach. Volver a activar con el nombre nuevo cuando confirme apertura."
+  },
+  "h70": {
+   "active": false,
+   "_nota": "No se encontró un Doral Marriott en 1000 NW 87th Ave ni su página (revisión de nov 2026)."
+  },
+  "h75": {
+   "name": "Eurostars Winter Haven",
+   "link": "https://www.eurostarshotels.co.uk/eurostars-winter-haven.html"
+  },
+  "h78": {
+   "addr": "2500 Brickell Ave, Brickell"
+  },
+  "h53": {
+   "link": "https://www.hyatt.com/hyatt-regency/en-US/miarm-hyatt-regency-miami"
+  },
+  "h55": {
+   "link": "https://www.hilton.com/en/hotels/miadthf-hilton-miami-downtown/"
+  },
+  "h57": {
+   "link": "https://www.marriott.com/en-us/hotels/miaba-aloft-miami-brickell/overview/"
+  },
+  "h63": {
+   "link": "https://www.hyatt.com/hyatt-regency/en-US/coral-hyatt-regency-coral-gables"
+  },
+  "h64": {
+   "link": "https://www.marriott.com/en-us/hotels/miacl-aloft-coral-gables/overview/"
+  },
+  "h65": {
+   "link": "https://www.marriott.com/en-us/hotels/miaao-hotel-colonnade-coral-gables-autograph-collection/overview/"
+  },
+  "h67": {
+   "link": "https://www.marriott.com/en-us/hotels/miaap-miami-airport-marriott/overview/"
+  },
+  "h77": {
+   "link": "https://www.marriott.com/en-us/hotels/miaaw-ac-hotel-miami-wynwood/overview/"
+  },
+  "h79": {
+   "link": "https://www.hilton.com/en/hotels/miabvhx-hampton-suites-miami-brickell-downtown/"
+  },
+  "h80": {
+   "link": "https://www.marriott.com/en-us/hotels/miadt-courtyard-miami-downtown-brickell-area/overview/"
+  },
+  "h81": {
+   "link": "https://www.hilton.com/en/hotels/MIAHSHX/"
+  },
+  "h87": {
+   "link": "https://www.marriott.com/en-us/hotels/miakc-cadillac-hotel-and-beach-club-autograph-collection/overview/"
+  },
+  "h88": {
+   "link": "https://www.properhotel.com/shelborne/"
+  },
+  "h95": {
+   "link": "https://www.hyatt.com/hyatt-centric/en-US/miahs-hyatt-centric-south-beach-miami"
+  },
+  "h100": {
+   "link": "https://www.margaritavilleresorts.com/margaritaville-beach-resort-hollywood-beach"
   }
  },
  "noche": {
   "n2": {
    "hrs": "Mon–Wed 11 AM – 1 AM · Thu & Sun until 2 AM · Fri–Sat until 3 AM",
-   "hrs_es": "Lun–Mié 11 AM – 1 AM · Jue y Dom hasta 2 AM · Vie–Sáb hasta 3 AM"
+   "hrs_es": "Lun–Mié 11 AM – 1 AM · Jue y Dom hasta 2 AM · Vie–Sáb hasta 3 AM",
+   "photo": "fotos/mm-little-havana-mural-letras.jpg",
+   "area_photo": "Little Havana"
   },
   "n6": {
    "hrs": "Daily 5–11 PM",
-   "hrs_es": "Todos los días 5–11 PM"
+   "hrs_es": "Todos los días 5–11 PM",
+   "photo": "fotos/mm-fontainebleau-playa-palmas.jpg",
+   "area_photo": "Mid-Beach"
   },
   "n7": {
    "hrs": "Wed–Sat 10 PM – 5 AM",
-   "hrs_es": "Mié–Sáb 10 PM – 5 AM"
+   "hrs_es": "Mié–Sáb 10 PM – 5 AM",
+   "photo": "fotos/mm-mb-salvavidas-17st.jpg",
+   "area_photo": "South Beach"
   },
   "n9": {
    "desc": "Miami's legendary underground techno church — a raw downtown warehouse club with a rooftop terrace and the city's most respected sound system. Where global electronic music legends play marathon sets from midnight to Monday morning. A true Miami institution.",
@@ -649,20 +916,26 @@
    "desc": "Little Havana's beloved live music institution — a Cuban social club where local and international Latin artists perform every Friday and Saturday night in an intimate wood-paneled room. Authentic son cubano, timba, trova, and salsa. No tourists, all locals, all music, all soul.",
    "desc_es": "La querida institución musical de Little Havana — club social cubano donde artistas locales e internacionales tocan los viernes y sábados por la noche. Son cubano, timba, trova y salsa auténticos. Sin turistas, solo locales y alma.",
    "hrs": "Fri & Sat 8 PM – 2 AM",
-   "hrs_es": "Vie y Sáb 8 PM – 2 AM"
+   "hrs_es": "Vie y Sáb 8 PM – 2 AM",
+   "photo": "fotos/mm-little-havana-mural-letras.jpg",
+   "area_photo": "Little Havana"
   },
   "n15": {
    "active": false
   },
   "n16": {
    "hrs": "Mon–Thu 11 AM – 1 AM · Fri–Sun 11 AM – 2 AM",
-   "hrs_es": "Lun–Jue 11 AM – 1 AM · Vie–Dom 11 AM – 2 AM"
+   "hrs_es": "Lun–Jue 11 AM – 1 AM · Vie–Dom 11 AM – 2 AM",
+   "photo": "fotos/mm-mb-salvavidas-13st.jpg",
+   "area_photo": "South Beach"
   },
   "n17": {
    "active": false
   },
   "n19": {
-   "link": "https://www.lagniappehouse.com"
+   "link": "https://www.lagniappehouse.com",
+   "photo": "fotos/mm-miami-skyline-atardecer-macarthur.jpg",
+   "area_photo": "Miami"
   },
   "n26": {
    "link": "https://riverhousebar.com",
@@ -735,6 +1008,18 @@
   "n29": {
    "photo": "fotos/mm-river-landing-noche.jpg",
    "area_photo": "Downtown"
+  },
+  "n4": {
+   "photo": "fotos/mm-mb-ocean-drive-parque.jpg",
+   "area_photo": "South Beach"
+  },
+  "n14": {
+   "photo": "fotos/mm-mb-edificio-washington.jpg",
+   "area_photo": "South Beach"
+  },
+  "n1": {
+   "photo": "fotos/mm-fontainebleau-edificio-palmas.jpg",
+   "area_photo": "Fontainebleau"
   }
  },
  "playas": {
@@ -836,7 +1121,8 @@
   },
   "m8": {
    "photo": "fotos/mm-zoo-miami-poste-senales.jpg",
-   "area_photo": "Zoo Miami"
+   "area_photo": "Zoo Miami",
+   "link": "https://goldcoastrailroadmuseum.org/"
   }
  },
  "lugares": {
@@ -871,6 +1157,9 @@
     "fotos/mm-pl9.jpg",
     "fotos/mm-freedom-tower-desde-pamm.jpg"
    ]
+  },
+  "pl10": {
+   "link": ""
   }
  },
  "teatros": {
@@ -900,7 +1189,9 @@
   },
   "t9": {
    "photo": "fotos/mm-macarthur-palmas.jpg",
-   "area_photo": "Miami"
+   "area_photo": "Miami",
+   "active": false,
+   "_nota": "Havanafama perdió su sala (el edificio fue demolido); ahora presenta en otros teatros (revisión de nov 2026)."
   },
   "t10": {
    "photo": "fotos/mm-macarthur-atardecer.jpg",
@@ -1018,7 +1309,9 @@
   },
   "pk10": {
    "photo": "fotos/mm-larry-penny-sendero-pinos-mm.jpg",
-   "area_photo": "South Dade"
+   "area_photo": "South Dade",
+   "name": "Cutler Ridge Park and Pool",
+   "link": "https://www.cutlerbay-fl.gov/parksrec/page/cutler-ridge-park-and-pool"
   }
  },
  "compras": {
@@ -1031,6 +1324,22 @@
   "sh10": {
    "photo": "fotos/mm-miracle-mile-letrero.jpg",
    "area_photo": "Coral Gables"
+  },
+  "sh2": {
+   "photo": "fotos/mm-dk-haulover-inlet.jpg",
+   "area_photo": "Haulover · Bal Harbour"
+  },
+  "sh8": {
+   "photo": "fotos/mm-cviche105-sawgrass-fachada.jpg",
+   "area_photo": "Sawgrass Mills"
+  },
+  "sh1": {
+   "photo": "fotos/mm-bayside-aerea.jpg",
+   "area_photo": "Miami"
+  },
+  "sh5": {
+   "photo": "fotos/mm-brickell-skyline-rickenbacker.jpg",
+   "area_photo": "Miami"
   }
  },
  "cafes": {
@@ -1078,6 +1387,14 @@
   "cf12": {
    "photo": "fotos/mm-bayside-aerea.jpg",
    "area_photo": "Downtown"
+  },
+  "cf1": {
+   "photo": "fotos/mm-wynwood-mural-retrato.jpg",
+   "area_photo": "Wynwood"
+  },
+  "cf6": {
+   "photo": "fotos/mm-x-6.jpg",
+   "area_photo": "Miami"
   }
  },
  "ninos": {
@@ -1149,7 +1466,8 @@
   },
   "art9": {
    "photo": "fotos/mm-miami-skyline-atardecer-macarthur.jpg",
-   "area_photo": "Miami"
+   "area_photo": "Miami",
+   "link": "https://elespacio23.org"
   },
   "art10": {
    "photo": "fotos/mm-wynwood-mural-robot-completo.jpg",
@@ -1166,6 +1484,14 @@
   "art13": {
    "photo": "fotos/mm-wynwood-mural-robot-completo.jpg",
    "area_photo": "Wynwood"
+  },
+  "art6": {
+   "photo": "fotos/mm-macarthur-palmas.jpg",
+   "area_photo": "Miami"
+  },
+  "art7": {
+   "photo": "fotos/mm-macarthur-atardecer.jpg",
+   "area_photo": "Miami"
   }
  },
  "excursiones": {
@@ -1190,8 +1516,10 @@
    "pnote_es": "Solo se llega en bote o hidroavión, y el arrecife alrededor de Fort Jefferson tiene de las aguas más claras para snorkel en Norteamérica. <a href=\"https://www.miamimagicapp.com/noticias/dry-tortugas-escapada-ferry\" onclick=\"if(window.mmNewsOpen){mmNewsOpen('dry-tortugas-escapada-ferry');return false}\" style=\"font-weight:700;text-decoration:underline\">Lee la historia en Miami Magic News →</a>"
   },
   "dt8": {
-   "photo": "fotos/mm-macarthur-cruceros.jpg",
-   "area_photo": "Port of Miami"
+   "photo": "fotos/mm-miami-skyline-atardecer-macarthur.jpg",
+   "area_photo": "Miami",
+   "addr": "Port Everglades, Cruise Terminal 21 · 2021 Eller Dr, Fort Lauderdale",
+   "link": ""
   }
  },
  "conciertos": {
@@ -1211,6 +1539,19 @@
   "c7": {
    "photo": "fotos/mm-bayside-aerea.jpg",
    "area_photo": "Downtown"
+  },
+  "c5": {
+   "photo": "fotos/mm-downtown-freedom-tower.jpg",
+   "area_photo": "Downtown",
+   "link": ""
+  },
+  "c8": {
+   "photo": "fotos/mm-bayside-aerea.jpg",
+   "area_photo": "Bayfront Park"
+  },
+  "c2": {
+   "photo": "fotos/mm-guitar-hotel-dia-palmas.jpg",
+   "area_photo": "Seminole Hard Rock"
   }
  },
  "estadios": {
@@ -1223,6 +1564,14 @@
     "fotos/mm-amerant-plaza.jpg",
     "fotos/mm-amerant-fachada.jpg"
    ]
+  },
+  "s3": {
+   "photo": "fotos/mm-little-havana-mural-letras.jpg",
+   "area_photo": "Little Havana"
+  },
+  "s4": {
+   "photo": "fotos/mm-x-6.jpg",
+   "area_photo": "Miami"
   }
  },
  "botes": {
@@ -1249,7 +1598,26 @@
    "linkLabel_es": "Leer la historia"
   }
  },
- "lujo": {},
+ "lujo": {
+  "x1": {
+   "photo": "fotos/mm-marina-miami-pilotes-reflejo.jpg"
+  },
+  "x2": {
+   "photo": "fotos/mm-bayside-aerea.jpg"
+  },
+  "x3": {
+   "photo": "fotos/mm-x-11.jpg"
+  },
+  "x4": {
+   "photo": "fotos/mm-fontainebleau-piscina-palmas.jpg"
+  },
+  "x5": {
+   "photo": "fotos/mm-brickell-rio-noche.jpg"
+  },
+  "x6": {
+   "photo": "fotos/mm-fontainebleau-playa-palmas.jpg"
+  }
+ },
  "cruceros": {},
  "cines": {},
  "aeropuertos": {},

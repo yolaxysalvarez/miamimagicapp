@@ -115,7 +115,8 @@
     "Culture",
     "Theater"
    ],
-   "link": "https://miaminewdrama.org/show/gandhi-and-the-jew/"
+   "link": "https://miaminewdrama.org/show/gandhi-and-the-jew/",
+   "photo": "fotos/mm-mb-playa-lincoln.jpg"
   },
   {
    "id": "vmonet26",
@@ -220,7 +221,8 @@
    "type_es": "Mercado",
    "desc": "Every Friday night: local makers, food vendors, handmade goods and live music in the open air. Rain or shine.",
    "desc_es": "Cada viernes por la noche: creadores locales, comida, artesanía y música en vivo al aire libre. Llueva o no.",
-   "link": "https://miamiworldcenter.com/events/night-market/"
+   "link": "https://miamiworldcenter.com/events/night-market/",
+   "photo": "fotos/mm-downtown-desde-pamm-kaseya.jpg"
   },
   {
    "id": "ky-firstfridays-fleming26",
@@ -289,7 +291,7 @@
    "tags": [
     "Food"
    ],
-   "link": "https://www.miamiandbeaches.com/deals/spice-restaurant-months"
+   "link": ""
   },
   {
    "id": "parking1-26",
@@ -314,7 +316,7 @@
    "tags": [
     "Deal"
    ],
-   "link": "https://www.miamiandbeaches.com/deals/spice-restaurant-months"
+   "link": ""
   },
   {
    "id": "ihtf-hamlet",
@@ -899,7 +901,7 @@
     "Culture",
     "Free"
    ],
-   "link": "https://www.miamiandbeaches.com/events/celebrate-hispanic-heritage"
+   "link": ""
   },
   {
    "id": "hrl-defleppard26",
@@ -1828,7 +1830,7 @@
    "price_es": "$$",
    "type": "Concert · Latin",
    "type_es": "Concierto · Latino",
-   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "photo": "fotos/mm-downtown-desde-pamm-kaseya.jpg",
    "desc": "The Venezuelan band fills the Kaseya two nights in a row.",
    "desc_es": "La banda venezolana llena el Kaseya dos noches seguidas.",
    "tags": [
@@ -1850,7 +1852,7 @@
    "price_es": "$$",
    "type": "Concert · Cuban pop",
    "type_es": "Concierto · Pop cubano",
-   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "photo": "fotos/mm-downtown-freedom-tower.jpg",
    "desc": "Miami's own Cuban hitmakers, at home.",
    "desc_es": "Los cubanos de los éxitos, en casa, en Miami.",
    "tags": [
@@ -1872,7 +1874,7 @@
    "price_es": "$$",
    "type": "Concert · R&B",
    "type_es": "Concierto · R&B",
-   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "photo": "fotos/mm-mb-fillmore.jpg",
    "desc": "A night of R&B classics, sing-along style.",
    "desc_es": "Una noche de clásicos del R&B para cantar a coro.",
    "tags": [
@@ -1894,7 +1896,7 @@
    "price_es": "$$",
    "type": "Concert · Reggae",
    "type_es": "Concierto · Reggae",
-   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "photo": "fotos/mm-mb-playa-edificios.jpg",
    "desc": "\"One Day\" by the beach, a holiday-season tradition.",
    "desc_es": "\"One Day\" junto a la playa, una tradición de las fiestas.",
    "tags": [
@@ -2598,7 +2600,8 @@
    "type_es": "Mercado",
    "desc": "Every Thursday afternoon on the Truman Waterfront: local produce, island food and makers, through December 31.",
    "desc_es": "Cada jueves por la tarde en el Truman Waterfront: productos locales, comida isleña y artesanos, hasta el 31 de diciembre.",
-   "link": "https://marketspread.com/market/13694/kw-farmers-market-at-truman-waterfront/"
+   "link": "https://marketspread.com/market/13694/kw-farmers-market-at-truman-waterfront/",
+   "photo": "fotos/mm-keys-kw-marina-atardecer.jpg"
   },
   {
    "id": "ky-isla-farmers26",
@@ -2617,7 +2620,8 @@
    "type_es": "Mercado",
    "desc": "The Sunday market of the Upper Keys, in the parking lot of Islamorada Gardens Plaza.",
    "desc_es": "El mercado de los domingos de los Upper Keys, en el parqueo de Islamorada Gardens Plaza.",
-   "link": "https://visitfloridakeys.com/plan-your-trip/plan-book/events/florida-keys-farmers-market"
+   "link": "https://visitfloridakeys.com/plan-your-trip/plan-book/events/florida-keys-farmers-market",
+   "photo": "fotos/mm-keys-cheeca-amanecer-sol.jpg"
   },
   {
    "id": "ky-moradaway26",
@@ -2639,7 +2643,8 @@
    "type_es": "Arte y música",
    "desc": "Galleries and studios open their doors along Morada Way: painting, sculpture, ceramics and fish printing, with live music, food trucks and a beer garden by Florida Keys Brewing.",
    "desc_es": "Galerías y talleres abren sus puertas en Morada Way: pintura, escultura, cerámica y fish printing, con música en vivo, food trucks y un beer garden de Florida Keys Brewing.",
-   "link": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/morada-way-art-walk"
+   "link": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/morada-way-art-walk",
+   "photo": "fotos/mm-keys-cheeca-amanecer-palma.jpg"
   },
   {
    "id": "ky-castingcats26",
@@ -3717,7 +3722,8 @@
     "Family",
     "Holidays"
    ],
-   "link": "https://feverup.com/m/803732"
+   "link": "https://feverup.com/m/803732",
+   "photo": "fotos/mm-luces-fairchild-sendero.jpg"
   },
   {
    "id": "wonderland26",
@@ -3740,7 +3746,8 @@
     "Family",
     "Holidays"
    ],
-   "link": "https://miamiwonderland.com/tickets/"
+   "link": "https://miamiwonderland.com/tickets/",
+   "photo": "fotos/mm-tropical-park-wonderland-arbol-dron.jpg"
   },
   {
    "id": "usher-cb26",
@@ -3762,7 +3769,8 @@
    "tags": [
     "Music"
    ],
-   "link": "https://www.hardrockstadium.com/events/usher-chris-brown-the-rb-tour/"
+   "link": "https://www.hardrockstadium.com/events/usher-chris-brown-the-rb-tour/",
+   "photo": "fotos/mm-hard-rock-stadium-techo.jpg"
   },
   {
    "id": "ky-klboatparade26",
@@ -3803,7 +3811,8 @@
    "tags": [
     "Sports"
    ],
-   "link": "https://www.orangebowl.org/capital-one-orange-bowl-cfp-semifinal-set-for-primetime-on-january-14-2027/"
+   "link": "https://www.orangebowl.org/capital-one-orange-bowl-cfp-semifinal-set-for-primetime-on-january-14-2027/",
+   "photo": "fotos/mm-hard-rock-stadium-techo.jpg"
   },
   {
    "id": "deering-vintage26",
@@ -3847,7 +3856,8 @@
    "tags": [
     "Family"
    ],
-   "link": "https://www.zoomiami.org/"
+   "link": "https://www.zoomiami.org/",
+   "photo": "fotos/mm-zoo-miami-poste-senales.jpg"
   },
   {
    "id": "berrywinter26",
@@ -3869,7 +3879,8 @@
    "tags": [
     "Family"
    ],
-   "link": "https://www.showpass.com/6th-annual-winter-festival-landing-page"
+   "link": "https://www.showpass.com/6th-annual-winter-festival-landing-page",
+   "photo": "fotos/mm-redland-patch-of-heaven-jardin.jpg"
   },
   {
    "id": "turkeytrot26",
@@ -3891,7 +3902,8 @@
     "Sports",
     "Family"
    ],
-   "link": "https://www.letsdothis.com/us/e/2026-life-time-turkey-trot-miami-5k10k-kids-race-261396"
+   "link": "https://www.letsdothis.com/us/e/2026-life-time-turkey-trot-miami-5k10k-kids-race-261396",
+   "photo": "fotos/mm-tropical-park-wonderland-arbol-dron.jpg"
   },
   {
    "id": "fil-jackwhite26",
@@ -3934,7 +3946,8 @@
    "tags": [
     "Music"
    ],
-   "link": "https://www.myhrl.com/"
+   "link": "https://www.myhrl.com/",
+   "photo": "fotos/mm-guitar-hotel-dia-palmas.jpg"
   },
   {
    "id": "fil-aitana26",
@@ -3955,7 +3968,8 @@
    "tags": [
     "Music"
    ],
-   "link": "https://www.fillmoremb.com/"
+   "link": "https://www.fillmoremb.com/",
+   "photo": "fotos/mm-mb-fillmore-letrero.jpg"
   },
   {
    "id": "nfl-jets26",
@@ -3976,7 +3990,8 @@
    "tags": [
     "Sports"
    ],
-   "link": "https://www.miamidolphins.com/tickets/"
+   "link": "https://www.miamidolphins.com/tickets/",
+   "photo": "fotos/mm-hard-rock-stadium-techo.jpg"
   },
   {
    "id": "e1miami26",
@@ -4125,7 +4140,7 @@
    "price_es": "Con RSVP",
    "type": "Fashion · Block party",
    "type_es": "Moda · Fiesta en la calle",
-   "photo": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=900&q=60&auto=format",
+   "photo": "fotos/mm-mb-playa-lincoln.jpg",
    "desc": "Runway shows, live music and art on Lincoln Road, with Miami Swim Week's resident DJ Vito Lee and guest DJ Aeonvfluxx. Bring a new, unwrapped toy for the holiday toy drive.",
    "desc_es": "Pasarela, música en vivo y arte en plena Lincoln Road, con el DJ residente de Miami Swim Week, Vito Lee, y el invitado Aeonvfluxx. Lleva un juguete nuevo, sin envolver, para la colecta navideña.",
    "tags": [
@@ -4372,7 +4387,7 @@
    "time_es": "Hasta el 31 de octubre",
    "price": "$40–95",
    "free": false,
-   "link": "https://www.miamiandbeaches.com/deals/spice-restaurant-months"
+   "link": ""
   },
   {
    "id": "oc1",
