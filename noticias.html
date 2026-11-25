@@ -560,7 +560,7 @@ body.sp #masH,body.sp #masBtn,body.sp-hm #hm,body.sp-dk #dk{display:none!importa
 .ph:empty,a:has(>.ph:empty):not(:has(h3,h4,b,span:not(.ph))){display:none}
 html.mm-wait main.wrap{opacity:0}
 html.ag-only main.wrap>*:not(#split){display:none!important}html.ag-only #split{display:block!important}html.ag-only #split>*:not(#ag):not(#evs){display:none!important}html.ag-only #ag{margin-top:6px}.ag-back{display:none}html.ag-only .ag-back{display:inline-block;margin:4px 0 18px;font-family:var(--bb);font-size:15px;letter-spacing:.16em;color:var(--coral-d);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}main.wrap{transition:opacity .28s ease}
-.kyw{font-family:var(--pf);font-weight:900}.kyw em{font-style:italic;color:#0E7A63}.hiw em{color:#B8862F}
+.kyw{font-family:var(--pf);font-weight:900}.kyw em{font-style:italic;color:#0E7A63}.hiw em{color:#B8862F}.opw em{color:#C93A25}.dpw em{color:#0E7A63}.sp-h p:empty{display:none}
 .hist-all{display:inline-block;margin-top:14px;font-family:var(--bb);font-size:15px;letter-spacing:.16em;color:#8A5A12;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
 .sp-k{display:block;font-family:var(--bb);font-size:17px;letter-spacing:.18em;color:var(--coral-d)}
 .sp-dk .sp-k{color:#0B5C7A}
@@ -1207,9 +1207,13 @@ if(/^\/news\/?$/.test(location.pathname)&&!Q.get('lang'))Q.set('lang','en');
 var L=(Q.get('lang')||(function(){try{return localStorage.getItem('mm_lang')}catch(e){return null}})()||((navigator.language||'es').slice(0,2)==='en'?'en':'es'));try{if(!localStorage.getItem('mm_lang'))localStorage.setItem('mm_lang',L==='en'?'en':'es')}catch(e){}
 if(L!=='en')L='es';
 var DEMO=Q.get('demo')==='1';
-var ST={scope:Q.get('s')||'miami',tema:Q.get('t')||'todo',hamaca:Q.get('s')==='hamaca',muelle:Q.get('s')==='muelle',casa:Q.get('s')==='casa',ky:Q.get('s')==='cayos',hi:Q.get('s')==='historia'};
-function SEC(){return ST.hamaca||ST.muelle||ST.casa||ST.ky||ST.hi}
+var ST={scope:Q.get('s')||'miami',tema:Q.get('t')||'todo',hamaca:Q.get('s')==='hamaca',muelle:Q.get('s')==='muelle',casa:Q.get('s')==='casa',ky:Q.get('s')==='cayos',hi:Q.get('s')==='historia',op:Q.get('s')==='opinion',dp:Q.get('s')==='deportes'};
+function SEC(){return ST.hamaca||ST.muelle||ST.casa||ST.ky||ST.hi||ST.op||ST.dp}
 function isHi(n){return n&&n.tema==='historia'}
+function isOp(n){return n&&n.tema==='opinion'}
+function isDp(n){return n&&n.tema==='deporte'}
+function isSecN(n){return isOp(n)||isDp(n)}
+var SECN=[];function ALLN(){return (DATA.notas||[]).concat(SECN)}
 var AGO=location.hash==='#ag'&&!Q.get('ev');if(AGO)document.documentElement.classList.add('ag-only');
 var WAIT=!!Q.get('s')&&!Q.get('ev');if(WAIT){document.documentElement.classList.add('mm-wait');setTimeout(function(){document.documentElement.classList.remove('mm-wait')},3000)}
 document.addEventListener('click',function(e){if(!document.documentElement.classList.contains('ag-only'))return;if(e.target.closest&&e.target.closest('.tab,.vt,[data-sc],#hmPill,#dkPill,#ccPill,.hdr a,.ag-back')){document.documentElement.classList.remove('ag-only');try{history.replaceState(null,'',location.pathname+location.search)}catch(x){}if(e.target.closest('.ag-back')){e.preventDefault();window.scrollTo(0,0)}}},true);
@@ -1264,7 +1268,7 @@ var TEMAS=[
  {k:'ciudad',es:['Tu ciudad','Lo que decide el condado'],en:['Your city','What the county decides'],ic:sv('<path d="M4 27h24"/><path d="M7 27V16h4.5v11M13.5 27V8l2.5-3 2.5 3v19M20.5 27V13H25v14"/>')},
  {k:'curioso',es:['Miami curioso','Historia y lo que se habla'],en:['Curious Miami','History and the talk of the town'],ic:sv('<circle cx="14" cy="14" r="8"/><path d="M20 20l7.5 7.5"/><path d="M14 10.5v.2M14 13.5v4"/>')}
 ];
-var TEMA_EB={casa:['TU CASA','YOUR HOME'],bolsillo:['TU BOLSILLO','YOUR WALLET'],calle:['TU CALLE','YOUR STREET'],barrio:['TU BARRIO','YOUR NEIGHBORHOOD'],ciudad:['TU CIUDAD','YOUR CITY'],curioso:['MIAMI CURIOSO','CURIOUS MIAMI'],deporte:['DEPORTE','SPORTS'],cultura:['CULTURA','CULTURE'],mar:['EL MAR','THE SEA'],ruta:['EN RUTA','ON THE ROAD'],ciencia:['CIENCIA','SCIENCE'],historia:['HISTORIA','HISTORY']};
+var TEMA_EB={casa:['TU CASA','YOUR HOME'],bolsillo:['TU BOLSILLO','YOUR WALLET'],calle:['TU CALLE','YOUR STREET'],barrio:['TU BARRIO','YOUR NEIGHBORHOOD'],ciudad:['TU CIUDAD','YOUR CITY'],curioso:['MIAMI CURIOSO','CURIOUS MIAMI'],deporte:['DEPORTE','SPORTS'],cultura:['CULTURA','CULTURE'],mar:['EL MAR','THE SEA'],ruta:['EN RUTA','ON THE ROAD'],ciencia:['CIENCIA','SCIENCE'],historia:['HISTORIA','HISTORY'],opinion:['OPINIÓN','OPINION']};
 function ai(b){return '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+b+'</svg>'}
 var APPS=[
  {c:'#FF4D35',t:'#C93A25',es:['RESTAURANTES','Lo que abre y lo que cierra esta semana'],en:['RESTAURANTS','What opens and closes this week'],u:'/?go=rest',ic:ai('<path d="M7 3v8a2 2 0 0 0 2 2v8M5 3v5M9 3v5M16 21V3c2.5 1.5 3.5 4 3.5 7.5H16"/>')},
@@ -1295,13 +1299,15 @@ function ph(n,cls){var s=img(n);return '<span class="ph '+(cls||'')+(n.foto_fit=
 
 /* ── filtrar ── */
 function list(){
-  var a=(DATA.notas||[]).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))});
+  var a=(ST.op||ST.dp?ALLN():(DATA.notas||[])).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))});
   a=a.map(function(n,i){return [n,i]}).sort(function(p,q){var u=p[0].arriba||99,w=q[0].arriba||99;return u-w||p[1]-q[1]}).map(function(p){return p[0]});
   if(ST.hamaca)return a.filter(function(n){return n.hamaca});
   if(ST.muelle)return a.filter(function(n){return n.muelle});
   if(ST.casa)return a.filter(function(n){return isCC(n)||n.cc});
   if(ST.ky)return a.filter(function(n){return n.scope==='cayos'||n.ambos});
   if(ST.hi)return a.filter(isHi);
+  if(ST.op)return a.filter(isOp);
+  if(ST.dp)return a.filter(isDp);
   a=a.filter(function(n){var sc=n.scope||'miami';return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)&&(ST.scope==='cayos'?(sc==='cayos'||n.ambos):sc!=='cayos')});
   if(ST.tema!=='todo')a=a.filter(function(n){return n.tema===ST.tema});
   return a;
@@ -1333,7 +1339,7 @@ function renderCc(){
 }
 document.getElementById('ccSel').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;ST.ccS=b.dataset.cc;ST.ccN=3;renderCc()});
 document.getElementById('ccMb').onclick=function(){ST.ccN=99;renderCc()};
-document.getElementById('ccPill').onclick=document.getElementById('ccMore').onclick=function(){ST.casa=true;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;render();scrollTo({top:0,behavior:'smooth'})};
+document.getElementById('ccPill').onclick=document.getElementById('ccMore').onclick=function(){ST.casa=true;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;render();scrollTo({top:0,behavior:'smooth'})};
 function cardW(n){var f=F(n);return '<article class="card wide"><a href="'+href(n)+'">'+ph(n)+'</a><div><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><p>'+esc(f.bajada||'')+'</p><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}
 function card(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}
 function empty(msg){return '<div class="empty"><b>'+t('vacioT')+'</b>'+(msg||t('vacio'))+'</div>'}
@@ -1358,7 +1364,7 @@ function render(){
      +'<a class="lkl rd" href="'+href(lead)+'">'+(HOME()?(L==='en'?'ALL':'TODO'):(L==='en'?'READ MORE':'LEER MÁS'))+' →</a>'+'<span class="meta">'+mins(lead)+' '+t('min')+((lead.fuentes&&lead.fuentes.length>1)?' · '+lead.fuentes.length+(L==='en'?' sources':' fuentes'):(lead.fuentes&&lead.fuentes[0])?' · '+(L==='en'?'Source: ':'Fuente: ')+esc(lead.fuentes[0].n):'')+'</span></div></article>'
      +(XB?'<a class="xb'+(xky?'':' mi')+'" href="'+href(XB)+'">'+ph(XB)+'<span><span class="eb"><span class="lg'+(xky?' ky':'')+'">'+(xky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI')+'</span></span><b>'+esc(F(XB).titulo)+'</b></span><span class="go">'+(L==='en'?'READ →':'LEER →')+'</span></a>':'');
   } else lb.innerHTML='<div class="lead" style="grid-template-columns:1fr">'+empty(ST.hamaca?t('vacioH'):ST.muelle?t('vacioM'):ST.casa?t('vacioC'):'')+'</div>';
-  var vk=(ST.hamaca?'h':ST.muelle?'m':ST.casa?'c':ST.ky?'k':ST.hi?'hi':ST.scope)+'|'+ST.tema;if(ST._vk!==vk){ST._vk=vk;ST.masN=8}
+  var vk=(ST.hamaca?'h':ST.muelle?'m':ST.casa?'c':ST.ky?'k':ST.hi?'hi':ST.op?'op':ST.dp?'dp':ST.scope)+'|'+ST.tema;if(ST._vk!==vk){ST._vk=vk;ST.masN=8}
   document.getElementById('mas').innerHTML=rest.length?rest.slice(0,ST.masN).map(function(n){var f=F(n);return '<article class="card"><a href="'+href(n)+'">'+ph(n)+'</a><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></article>'}).join(''):'';
   document.getElementById('mas').previousElementSibling.style.display=rest.length?'':'none';document.getElementById('mas').style.display=rest.length?'':'none';
   var mb=document.getElementById('masBtn');mb.style.display=rest.length>ST.masN?'':'none';mb.firstChild.textContent=(L==='en'?'MORE NEWS':'MÁS NOTICIAS')+' ('+(rest.length-ST.masN)+')';
@@ -1482,20 +1488,20 @@ function loadWx(){
 /* ── eventos ── */
 function setLang(l){setTimeout(renderAg,0);setTimeout(evSync,30);L=l;try{localStorage.setItem('mm_lang',l)}catch(e){}var u=new URL(location.href);if(l==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u);render()}
 document.querySelectorAll('.lng button').forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
-document.getElementById('otros').addEventListener('click',function(e){var b=e.target.closest('.vt');if(!b)return;ST.scope=b.dataset.go;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;ST.tema='todo';render();scrollTo({top:0,behavior:'smooth'})});
-document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;ST.all=false;ST.scope=b.dataset.s;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;ST.tema='todo';render();if(scrollY>200)scrollTo({top:0,behavior:'smooth'})});
+document.getElementById('otros').addEventListener('click',function(e){var b=e.target.closest('.vt');if(!b)return;ST.scope=b.dataset.go;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;ST.tema='todo';render();scrollTo({top:0,behavior:'smooth'})});
+document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;ST.all=false;ST.scope=b.dataset.s;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;ST.tema='todo';render();if(scrollY>200)scrollTo({top:0,behavior:'smooth'})});
 document.getElementById('hmS').addEventListener('click',function(e){var b=e.target.closest('.hm-pg button');if(!b||b.disabled)return;var d=+b.dataset.d;ST.hmP=(ST.hmP||0)+d;render();var hs=document.getElementById('hmS');hs.classList.remove('dn','up');void hs.offsetWidth;hs.classList.add(d>0?'dn':'up');var nb=hs.querySelector('.hm-pg button[data-d="'+d+'"]');if(nb&&!nb.disabled)nb.focus()});
 /* ── páginas de sección: Hamaca Mood y El Muelle ── */
 function spSync(){var c=document.getElementById('spCond'),d=document.getElementById('dkCond');if(c&&d)c.innerHTML=d.innerHTML;var u=document.getElementById('spSun');if(u)u.innerHTML=CF.sunset?(L==='en'?'TODAY THE SUN SETS AT':'HOY EL SOL CAE A LAS')+'<b>'+esc(CF.sunset)+'</b>':''}
 function renderSp(lead,rest){
-  var hm=ST.hamaca,dk=ST.muelle,cc=ST.casa,ky=ST.ky,hi=ST.hi,on=hm||dk||cc||ky||hi,en=L==='en',b=document.body,mas=document.getElementById('mas');
-  b.classList.toggle('sp',!!on);b.classList.toggle('sp-hm',!!hm);b.classList.toggle('sp-dk',!!dk);b.classList.toggle('sp-cc',!!cc);b.classList.toggle('sp-ky',!!ky);b.classList.toggle('sp-hi',!!hi);
+  var hm=ST.hamaca,dk=ST.muelle,cc=ST.casa,ky=ST.ky,hi=ST.hi,op=ST.op,sd=ST.dp,on=hm||dk||cc||ky||hi||op||sd,en=L==='en',b=document.body,mas=document.getElementById('mas');
+  b.classList.toggle('sp',!!on);b.classList.toggle('sp-hm',!!hm);b.classList.toggle('sp-dk',!!dk);b.classList.toggle('sp-cc',!!cc);b.classList.toggle('sp-ky',!!ky);b.classList.toggle('sp-hi',!!hi);b.classList.toggle('sp-op',!!op);b.classList.toggle('sp-dp',!!sd);
   if(!on){mas.className='grid4';return}
-  var nm=hm?'HAMACA MOOD':cc?'CASA & COAST':hi?(en?'MIAMI, BACK THEN':'MIAMI DE ANTES'):ky?(en?'THE KEYS':'LOS CAYOS'):(en?'THE DOCK':'EL MUELLE'),k=function(n){return '<span class="sp-k">'+esc(F(n,'etiqueta')||nm)+'</span>'},rd=function(n){return '<a class="lkl" href="'+href(n)+'">'+(en?'READ MORE':'LEER MÁS')+' →</a>'};
+  var nm=hm?'HAMACA MOOD':cc?'CASA & COAST':op?(en?'OPINION':'OPINIÓN'):sd?(en?'SPORTS':'DEPORTES'):hi?(en?'MIAMI, BACK THEN':'MIAMI DE ANTES'):ky?(en?'THE KEYS':'LOS CAYOS'):(en?'THE DOCK':'EL MUELLE'),k=function(n){return '<span class="sp-k">'+esc(F(n,'etiqueta')||nm)+'</span>'},rd=function(n){return '<a class="lkl" href="'+href(n)+'">'+(en?'READ MORE':'LEER MÁS')+' →</a>'};
   var tot=(lead?1:0)+rest.length;
-  var head='<header class="sp-h"><img class="sp-bg" src="/fotos/'+(hm?'mm-kb-crandon-cocoteros.jpg':hi?'mm-kb-faro-torre.jpg':ky?'mm-keys-seven-mile-bridge-aereo.jpg':cc?'mm-keys-canal-casas-palmas.jpg':'mm-marina-miami-pilotes-reflejo.jpg')+'" alt="">'+(dk?'<svg class="wv" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26 C 50 14, 100 38, 150 26 S 250 14, 300 26 V60 H0z" fill="#9CCBD8"/><path d="M0 42 C 60 30, 110 54, 160 42 S 250 30, 300 42 V60 H0z" fill="#7FB9CB"/></svg>':'')
-   +'<div><h1 class="sp-t'+(hm?' hm-t':'')+'">'+(hm?(en?'Hammock':'Hamaca')+' <em>M<span class="sol" role="img" aria-label="o"></span>od</em>':hi?'<span class="kyw hiw">'+(en?'Miami, <em>back then</em>':'Miami <em>de antes</em>')+'</span>':ky?'<span class="kyw">'+(en?'The <em>Keys</em>':'Los <em>Cayos</em>')+'</span>':cc?ccw():dkw())+'</h1><p>'+(hi?(en?'The history of Miami and the Keys, told through the places still standing. A new story every Monday.':'La historia de Miami y los Cayos, contada desde los lugares que siguen en pie. Una historia nueva cada lunes.'):ky?(en?'From Key Largo to Key West: what is happening, plans, the sea and the Overseas Highway.':'De Key Largo a Key West: lo que pasa, los planes, el mar y la carretera de los Cayos.'):t(hm?'hmdesc':cc?'ccdesc':'dkdesc'))+'</p>'+(cc?GUIAHTML(en):'')+'<span class="sp-n">'+tot+' '+(en?(tot===1?'STORY':'STORIES'):(tot===1?'HISTORIA':'HISTORIAS'))+'</span></div>'
-   +'<div class="sp-x">'+(dk?'<div class="dk-cond" id="spCond"></div><a class="lkl" href="/?go=water">'+(en?'BOATS AND FISHING IN THE APP':'BOTES Y PESCA EN LA APP')+' →</a>':hi?'':ky?'<a class="lkl" href="/?go=keys">'+(en?'THE KEYS IN THE APP':'LOS CAYOS EN LA APP')+' →</a>':cc?'<small class="sp-dis">'+t('ccnota')+'</small>':'<span class="sp-sun" id="spSun"></span>')+'</div></header>';
+  var head='<header class="sp-h"><img class="sp-bg" src="/fotos/'+(hm?'mm-kb-crandon-cocoteros.jpg':op?'mm-miami-skyline-atardecer-macarthur.jpg':sd?'mm-hard-rock-stadium-techo.jpg':hi?'mm-kb-faro-torre.jpg':ky?'mm-keys-seven-mile-bridge-aereo.jpg':cc?'mm-keys-canal-casas-palmas.jpg':'mm-marina-miami-pilotes-reflejo.jpg')+'" alt="">'+(dk?'<svg class="wv" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26 C 50 14, 100 38, 150 26 S 250 14, 300 26 V60 H0z" fill="#9CCBD8"/><path d="M0 42 C 60 30, 110 54, 160 42 S 250 30, 300 42 V60 H0z" fill="#7FB9CB"/></svg>':'')
+   +'<div><h1 class="sp-t'+(hm?' hm-t':'')+'">'+(hm?(en?'Hammock':'Hamaca')+' <em>M<span class="sol" role="img" aria-label="o"></span>od</em>':op?'<span class="kyw opw">'+(en?'<em>Opinion</em>':'<em>Opinión</em>')+'</span>':sd?'<span class="kyw dpw">'+(en?'<em>Sports</em>':'<em>Deportes</em>')+'</span>':hi?'<span class="kyw hiw">'+(en?'Miami, <em>back then</em>':'Miami <em>de antes</em>')+'</span>':ky?'<span class="kyw">'+(en?'The <em>Keys</em>':'Los <em>Cayos</em>')+'</span>':cc?ccw():dkw())+'</h1><p>'+(op||sd?'':hi?(en?'The history of Miami and the Keys, told through the places still standing. A new story every Monday.':'La historia de Miami y los Cayos, contada desde los lugares que siguen en pie. Una historia nueva cada lunes.'):ky?(en?'From Key Largo to Key West: what is happening, plans, the sea and the Overseas Highway.':'De Key Largo a Key West: lo que pasa, los planes, el mar y la carretera de los Cayos.'):t(hm?'hmdesc':cc?'ccdesc':'dkdesc'))+'</p>'+(cc?GUIAHTML(en):'')+'<span class="sp-n">'+tot+' '+(op?(en?(tot===1?'COLUMN':'COLUMNS'):(tot===1?'COLUMNA':'COLUMNAS')):(en?(tot===1?'STORY':'STORIES'):(tot===1?'HISTORIA':'HISTORIAS')))+'</span></div>'
+   +'<div class="sp-x">'+(dk?'<div class="dk-cond" id="spCond"></div><a class="lkl" href="/?go=water">'+(en?'BOATS AND FISHING IN THE APP':'BOTES Y PESCA EN LA APP')+' →</a>':hi||op||sd?'':ky?'<a class="lkl" href="/?go=keys">'+(en?'THE KEYS IN THE APP':'LOS CAYOS EN LA APP')+' →</a>':cc?'<small class="sp-dis">'+t('ccnota')+'</small>':'<span class="sp-sun" id="spSun"></span>')+'</div></header>';
   var lb=document.getElementById('leadBox');lb.innerHTML=head+lb.innerHTML;
   if(lead){var e=lb.querySelector('.lead .eb');if(e)e.outerHTML=k(lead)}
   var big=function(n){var f=F(n);return '<article class="sp-b"><a href="'+href(n)+'">'+ph(n)+'</a>'+k(n)+'<h3><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h3><p>'+esc(f.bajada||'')+'</p>'+rd(n)+'</article>'};
@@ -1525,8 +1531,8 @@ function colB(tt,cls,arr,go){if(!arr.length)return '';var n=arr[0],f=F(n);
    +arr.slice(1,4).map(rowS).join('')+'</div>'}
 function renderHome(lead,rest){
   var hm=HOME();document.body.classList.toggle('home',hm);if(!hm)return;
-  var pk=(DATA.notas||[]).filter(function(n){return n.ultima&&n!==lead}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,6),inU={};pk.forEach(function(n){inU[n.id]=1});
-  var tb=(DATA.notas||[]).filter(function(n){return n.tambien&&n!==lead&&!inU[n.id]}).sort(function(a,b){return a.tambien-b.tambien}).slice(0,3);tb.forEach(function(n){inU[n.id]=1});
+  var pk=ALLN().filter(function(n){return n.ultima&&n!==lead}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,6),inU={};pk.forEach(function(n){inU[n.id]=1});
+  var tb=ALLN().filter(function(n){return n.tambien&&n!==lead&&!inU[n.id]}).sort(function(a,b){return a.tambien-b.tambien}).slice(0,3);tb.forEach(function(n){inU[n.id]=1});
   var ot=document.getElementById('tmb');if(ot)ot.remove();
   if(tb.length===3)document.getElementById('leadBox').insertAdjacentHTML('beforeend','<div id="tmb"><span>'+(L==='en'?'ALSO TODAY':'TAMBIÉN HOY')+'</span>'+tb.map(function(n){return '<a href="'+href(n)+'"><span class="eb">'+eb(n)+'</span><b>'+esc(F(n).titulo)+'</b></a>'}).join('')+'</div>');
   var og=otros()[0],ky=(og?og[1]:[]).filter(function(n){return !inU[n.id]}),mi=rest.filter(function(n){return !inU[n.id]}),used={};
@@ -1553,7 +1559,7 @@ function renderPt(){
   document.getElementById('appsH').lastElementChild.textContent=en?'Places from the guide, one from each section':'Lugares de la guía, uno de cada sección';
   if(!PT){fz.innerHTML='';tv.style.display='none';ms.style.display='none';ho.style.display='none';db.innerHTML='';sp.classList.add('solo');
     ap.className='apps-m';ap.innerHTML='<span>'+(en?'Sections of the app:':'Secciones de la app:')+'</span>'+more;return}
-  var ids={};(DATA.notas||[]).forEach(function(n){ids[n.id]=n});
+  var ids={};ALLN().forEach(function(n){ids[n.id]=n});
   (function(){var E=PT.especial,bx=document.getElementById('esp'),n=E&&ids[E.id];if(!hm||!n||nyDay()>new Date(E.d2+'T23:59')){bx.innerHTML='';return}
     var dd=Math.ceil((new Date(E.d+'T00:00')-nyDay())/864e5),f=F(n);
     bx.innerHTML='<a class="esp" href="'+href(n)+'"><img src="'+ptF(E.foto)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy"'+(E.pos?' style="object-position:'+esc(E.pos)+'"':'')+'><span class="esp-in"><span class="esp-c">'+(dd>0?'<u>'+dd+'</u><i>'+(en?(dd===1?'DAY TO GO':'DAYS TO GO'):(dd===1?'DÍA FALTA':'DÍAS FALTAN'))+'</i>':'<i>'+(en?'THIS WEEK':'ESTA SEMANA')+'</i>')+'</span><span class="esp-k">'+esc(en?E.k_en:E.k_es)+'</span><b>'+esc(f.titulo)+'</b><span class="esp-p">'+esc(f.bajada||'')+'</span><span class="esp-go">'+(en?'WHAT TO SEE →':'QUÉ SE VE →')+'</span></span><span class="esp-pie">'+esc(en?E.pie_en:E.pie_es)+'</span></a>'})();try{renderCifras()}catch(e){}
@@ -1609,7 +1615,7 @@ function renderPt(){
     mm.innerHTML='<span>'+(en?'More sections of the app:':'Más secciones de la app:')+'</span>'+more;
   } else {ap.className='apps-m';ap.innerHTML='<span>'+(en?'Sections of the app:':'Secciones de la app:')+'</span>'+more}
 }
-document.getElementById('duo').addEventListener('click',function(e){var b=e.target.closest('.vt');if(!b)return;if(b.dataset.go==='all'){ST.all=true}else{ST.scope=b.dataset.go}ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;ST.tema='todo';render();scrollTo({top:0,behavior:'smooth'})});
+document.getElementById('duo').addEventListener('click',function(e){var b=e.target.closest('.vt');if(!b)return;if(b.dataset.go==='all'){ST.all=true}else{ST.scope=b.dataset.go}ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;ST.tema='todo';render();scrollTo({top:0,behavior:'smooth'})});
 fetch('/portada.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){PT=j;renderPt()}).catch(function(){});
 /* ── agenda: lee el mismo eventos.json de la app ── */
 var AGD=null,AGS={tab:'sem',n:6,day:-1};
@@ -1696,7 +1702,7 @@ function sxMark(tx,toks){var out=esc(tx);toks.forEach(function(k){if(k.length<3)
 function sxRow(n,toks){var f=F(n);return '<a href="'+href(n)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'<span></span>')+'<span><span class="eb">'+esc(sxSec(n))+(f.etiqueta?' · '+esc(f.etiqueta):'')+'</span><b>'+(toks&&toks.length?sxMark(f.titulo||'',toks.slice(0,1)):esc(f.titulo||''))+'</b></span></a>'}
 function sxRun(){
   var q=sxNorm(document.getElementById('sxQ').value).trim(), toks=q.split(/\s+/).filter(Boolean).map(sxStem), N=document.getElementById('sxN'), R=document.getElementById('sxR');
-  var all=(DATA.notas||[]).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))});
+  var all=ALLN().slice().sort(function(x,y){return FK(y).localeCompare(FK(x))});
   if(!toks.length){N.textContent=L==='en'?'LATEST':'LO MÁS RECIENTE';R.innerHTML=all.slice(0,5).map(function(n){return sxRow(n)}).join('');return}
   var hit=[];all.forEach(function(n){var f=F(n),ti=sxNorm(f.titulo),ba=sxNorm(f.bajada)+' '+sxNorm(f.etiqueta)+' '+sxNorm(sxSec(n)),bo=sxNorm((f.cuerpo||[]).join(' ')+' '+(f.toca||[]).join(' ')),sc=0,ok=toks.every(function(k){if(ti.indexOf(k)>-1){sc+=5;return true}if(ba.indexOf(k)>-1){sc+=3;return true}if(bo.indexOf(k)>-1){sc+=1;return true}return false});if(ok)hit.push([sc,n])});
   hit.sort(function(a,b){return b[0]-a[0]});
@@ -1711,9 +1717,10 @@ document.getElementById('sx').addEventListener('click',function(e){if(e.target==
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.getElementById('sx').classList.contains('on'))sxClose();if(e.key==='/'&&!/INPUT|TEXTAREA/.test((document.activeElement||{}).tagName||'')&&!document.getElementById('sx').classList.contains('on')){e.preventDefault();sxOpen()}});
 document.getElementById('masBtn').onclick=function(){ST.masN+=8;render()};
 document.getElementById('dkMb').onclick=function(){ST.dkN=99;render()};
-document.getElementById('hmPill').onclick=document.getElementById('hmMore').onclick=function(){ST.hamaca=true;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
-document.getElementById('dkPill').onclick=document.getElementById('dkMore').onclick=function(){ST.muelle=true;ST.ky=false;ST.hi=false;ST.hamaca=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
-document.querySelectorAll('[data-sc]').forEach(function(a){a.onclick=function(e){e.preventDefault();var s=a.dataset.sc;if(s==='hamaca'){ST.hamaca=true;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false}else if(s==='muelle'){ST.muelle=true;ST.ky=false;ST.hi=false;ST.hamaca=false;ST.casa=false}else if(s==='casa'){ST.casa=true;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false}else{ST.scope=s;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;ST.tema='todo'}render();scrollTo({top:0,behavior:'smooth'})}});
+function goSec(k){ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;ST.op=k==='op';ST.dp=k==='dp';render();scrollTo({top:0,behavior:'smooth'})}
+document.getElementById('hmPill').onclick=document.getElementById('hmMore').onclick=function(){ST.hamaca=true;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
+document.getElementById('dkPill').onclick=document.getElementById('dkMore').onclick=function(){ST.muelle=true;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.hamaca=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
+document.querySelectorAll('[data-sc]').forEach(function(a){a.onclick=function(e){e.preventDefault();var s=a.dataset.sc;if(s==='opinion'){goSec('op');return}if(s==='deportes'){goSec('dp');return}if(s==='hamaca'){ST.hamaca=true;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false}else if(s==='muelle'){ST.muelle=true;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.hamaca=false;ST.casa=false}else if(s==='casa'){ST.casa=true;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false}else{ST.scope=s;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;ST.tema='todo'}render();scrollTo({top:0,behavior:'smooth'})}});
 /* ── pronóstico desplegable ── */
 var wxb=document.getElementById('wxb'), wxp=document.getElementById('wxp');
 function wxOpen(o){var c=wxp.querySelector('.wxp-card'),w=wxp.querySelector('.wrap');wxp.hidden=!o;if(o)c.style.marginLeft=innerWidth>760?Math.max(0,wxb.getBoundingClientRect().left-w.getBoundingClientRect().left-parseFloat(getComputedStyle(w).paddingLeft)-24)+'px':'';wxb.setAttribute('aria-expanded',o?'true':'false')}
@@ -1738,7 +1745,7 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 
 /* ── cargar ── */
 render();
-fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(DATA.notas)DATA.notas.forEach(VERS);if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}});render();unwait()}).catch(function(){unwait()});
+fetch(DEMO?'/noticias-ejemplo.json':'/noticias.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){DATA=j||DATA;if(DATA.notas)DATA.notas.forEach(VERS);if(!DEMO&&DATA.notas)DATA.notas=DATA.notas.filter(function(n){try{var h=HOYNY();return !n.fecha||n.fecha<=h}catch(e){return true}});if(!DEMO&&DATA.notas){SECN=DATA.notas.filter(isSecN);DATA.notas=DATA.notas.filter(function(n){return !isSecN(n)})}render();unwait()}).catch(function(){unwait()});
 fetch('/eventos.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(j){EVS=(j.semana||[]).concat(j.mes||[]);AGD=j;renderCifras();renderAg();try{if(AGO){var a0=document.getElementById('ag');if(!a0||a0.style.display==='none')document.documentElement.classList.remove('ag-only');window.scrollTo(0,0)}}catch(x){}try{var q=new URLSearchParams(location.search).get('ev');if(q){var ag=document.getElementById('ag');if(ag)ag.scrollIntoView();evOpen(q,false)}}catch(x){}}).catch(function(){});
 loadWx();
 setInterval(function(){if(!document.hidden){try{loadWx()}catch(e){}}},18e5); /* el cintillo se refresca cada 30 minutos con la página abierta */
