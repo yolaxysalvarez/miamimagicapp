@@ -55,6 +55,77 @@
   "videos": [],
   "notas": [
     {
+      "id": "frente-lluvia-inundacion-miami-cayos-25-noviembre",
+      "scope": "miami",
+      "ambos": true,
+      "tema": "ciudad",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-25",
+      "publicada": "2026-11-25T10:40:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-frente-lluvia-nov25.jpg",
+      "foto_en": "mm-frente-lluvia-nov25-en.jpg",
+      "foto_mm": false,
+      "foto_alt": "Tarjeta con el skyline de Brickell: aviso de inundación en el sur de Florida, de 1 a 2 pulgadas de lluvia, alerta costera en Los Cayos y sol el jueves de Thanksgiving",
+      "foto_pie": "Resumen del frente, según el Servicio Meteorológico, con datos de la mañana del miércoles 25.",
+      "foto_pie_en": "Summary of the front, according to the National Weather Service, with data from Wednesday morning, Nov. 25.",
+      "fuentes": [
+        {
+          "n": "Servicio Meteorológico · Oficina de Miami",
+          "u": "https://www.weather.gov/mfl/"
+        },
+        {
+          "n": "Servicio Meteorológico · Oficina de Key West",
+          "u": "https://www.weather.gov/key/"
+        },
+        {
+          "n": "Servicio Meteorológico · Pronóstico para Miami",
+          "u": "https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046"
+        },
+        {
+          "n": "Servicio Meteorológico · Pronóstico para Islamorada",
+          "u": "https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633"
+        }
+      ],
+      "desarrollo": true,
+      "actualizada": "2026-11-25T10:40:00-05:00",
+      "vence": "2026-11-27",
+      "aviso_vence": false,
+      "ultima": 1,
+      "arriba": 1,
+      "es": {
+        "etiqueta": "EL TIEMPO",
+        "titulo": "Lluvia, aviso de inundación y posibles tornados hoy en Miami; el jueves de Thanksgiving, sol",
+        "bajada": "El Servicio Meteorológico mantiene un aviso de inundación para Miami-Dade, Broward y Palm Beach hasta tarde esta noche, con riesgo de tormentas fuertes y algún tornado. En Los Cayos, alerta por inundación costera hasta las 7:00 p.m. Para Thanksgiving, el pronóstico trae sol.",
+        "toca": [
+          "Hoy miércoles: aviso de inundación en Miami-Dade, Broward y Palm Beach hasta tarde esta noche, según la [oficina de Miami](https://www.weather.gov/mfl/); en Los Cayos, alerta costera hasta las 7:00 p.m., según la [oficina de Key West](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633).",
+          "Jueves 26: mayormente soleado, máxima cerca de 78 °F y viento del oeste con ráfagas de hasta 23 mph, según el [pronóstico](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046)."
+        ],
+        "cuerpo": [
+          "A las 10:20 a.m., la oficina del Servicio Meteorológico en Miami seguía advirtiendo de tormentas fuertes y algún tornado para hoy, y de inundación costera de leve a moderada con la marea alta, según su [página](https://www.weather.gov/mfl/). Su previsión para Miami habla de 1 a 2 pulgadas de lluvia nueva y de ráfagas de hasta 29 mph, según el [pronóstico de las 5:02 a.m.](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
+          "## En Los Cayos",
+          "La oficina de Key West avisa de lluvia excesiva, viento y posibilidad de tiempo severo para el martes y el miércoles, según su [página](https://www.weather.gov/key/). En Islamorada rige un aviso de inundación costera hasta las 7:00 p.m., y la previsión habla de 1 a 2 pulgadas de lluvia posibles, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). Con las mareas altas de estos días, el agua puede quedarse en calles bajas, y es agua de mar.",
+          "El jueves cambia el cielo: mayormente soleado y con viento del oeste, lo que deja el camino libre para los Turkey Trots y el banquete comunitario del Hard Rock Stadium. El horario del Metro, las oficinas y la basura, en [la nota de logística](https://miamimagicapp.com/noticias/thanksgiving-logistica-miami-cayos-metro-basura)."
+        ]
+      },
+      "en": {
+        "etiqueta": "WEATHER",
+        "titulo": "Rain, a flood watch and possible tornadoes in Miami today; sun on Thanksgiving Day",
+        "bajada": "The National Weather Service keeps a flood watch for Miami-Dade, Broward and Palm Beach until late tonight, with a risk of strong storms and a tornado or two. In the Keys, a coastal flood alert runs until 7:00 p.m. For Thanksgiving, the forecast brings sun.",
+        "toca": [
+          "Today, Wednesday: flood watch in Miami-Dade, Broward and Palm Beach until late tonight, according to the [Miami office](https://www.weather.gov/mfl/); in the Keys, a coastal alert until 7:00 p.m., according to the [Key West office](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633).",
+          "Thursday 26: mostly sunny, high near 78°F and a west wind with gusts up to 23 mph, according to the [forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046)."
+        ],
+        "cuerpo": [
+          "As of 10:20 a.m., the National Weather Service office in Miami was still warning of strong storms and a tornado or two today, and of minor to moderate coastal flooding around high tide, according to its [page](https://www.weather.gov/mfl/). Its Miami forecast calls for 1 to 2 inches of new rain and gusts up to 29 mph, according to the [5:02 a.m. forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
+          "## In the Keys",
+          "The Key West office warns of excessive rain, wind and a chance of severe weather for Tuesday and Wednesday, according to its [page](https://www.weather.gov/key/). In Islamorada a coastal flood advisory runs until 7:00 p.m., and the forecast calls for 1 to 2 inches of rain, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). With this week's high tides, water can linger on low streets, and it is seawater.",
+          "Thursday the sky changes: mostly sunny with a west wind, which clears the way for the Turkey Trots and the community feast at Hard Rock Stadium. Metro hours, offices and trash are in [the logistics story](https://miamimagicapp.com/news/thanksgiving-logistica-miami-cayos-metro-basura)."
+        ]
+      }
+    },
+    {
       "id": "thanksgiving-logistica-miami-cayos-metro-basura",
       "scope": "miami",
       "tema": "calle",
@@ -87,7 +158,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-24T12:42:00-05:00",
-      "ultima": 1,
+      "ultima": 2,
       "es": {
         "etiqueta": "EN LA CALLE",
         "titulo": "Thanksgiving: el Metro va con horario de domingo, las oficinas cierran dos días y en Los Cayos la basura se corre un día",
@@ -122,7 +193,7 @@
           "The table, the history and the events of this Thanksgiving are in our [tradition story](https://miamimagicapp.com/news/thanksgiving-tradicion-historia-como-se-celebra)."
         ]
       },
-      "arriba": 1
+      "arriba": 2
     },
     {
       "id": "thanksgiving-tradicion-historia-como-se-celebra",
@@ -189,8 +260,8 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-25T08:05:00-05:00",
-      "ultima": 2,
-      "arriba": 2,
+      "ultima": 3,
+      "arriba": 3,
       "es": {
         "etiqueta": "TRADICIÓN",
         "titulo": "Dar gracias: de una cosecha compartida en 1621 a la mesa que reúne a todo el país",
@@ -259,8 +330,8 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-23T12:55:00-05:00",
-      "ultima": 3,
-      "arriba": 1,
+      "ultima": 4,
+      "arriba": 2,
       "es": {
         "etiqueta": "HISTORIA",
         "titulo": "Un tren cruzó el mar hasta Key West en 1912; sus puentes terminaron siendo la carretera de los Cayos",
@@ -316,7 +387,7 @@
       "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
       "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
       "foto_mm": false,
-      "ultima": 5,
+      "ultima": 6,
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "El HEAT le gana 123-113 a Oklahoma City, con triple-doble de Bam Adebayo, y ya suma siete victorias seguidas",
@@ -408,8 +479,8 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 6,
-      "arriba": 4
+      "ultima": 7,
+      "arriba": 5
     },
     {
       "id": "venado-de-los-cayos-key-deer-big-pine-key-como-verlo",
@@ -524,8 +595,8 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 8,
-      "arriba": 2
+      "ultima": 9,
+      "arriba": 3
     },
     {
       "id": "mr-bean-coffee-shop-the-falls-cafe-para-quedarse",
@@ -617,8 +688,8 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 10,
-      "arriba": 7
+      "ultima": 11,
+      "arriba": 8
     },
     {
       "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
@@ -715,8 +786,8 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 9,
-      "arriba": 6
+      "ultima": 10,
+      "arriba": 7
     },
     {
       "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
@@ -792,7 +863,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -886,8 +957,8 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 4,
-      "arriba": 3
+      "ultima": 5,
+      "arriba": 4
     },
     {
       "id": "key-west-boyas-amarre-man-of-war-boca-chica-limite-90-dias",
@@ -920,7 +991,7 @@
         }
       ],
       "desarrollo": false,
-      "arriba": 4,
+      "arriba": 5,
       "es": {
         "etiqueta": "LAS REGLAS",
         "titulo": "Key West tendrá 100 boyas de amarre nuevas, y con ellas llega el límite de 90 días para anclar",
@@ -961,7 +1032,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -1018,8 +1089,8 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "arriba": 9,
-      "ultima": 13
+      "arriba": 10,
+      "ultima": 14
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -1120,7 +1191,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 10,
+      "arriba": 11,
       "galeria": [
         {
           "f": "mm-stiltsville-casa-azul-cerca.jpg",
@@ -1129,7 +1200,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 18
+      "ultima": 19
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -1193,7 +1264,7 @@
           "The [forecast](https://forecast.weather.gov/product.php?site=KEY&product=CWF&issuedby=KEY) the National Weather Service in Key West issued Thursday called for west to northwest winds of 10 to 15 knots off the Lower Keys on Friday and a slight chance of showers."
         ]
       },
-      "arriba": 3,
+      "arriba": 4,
       "versiones": [
         {
           "desde": "2026-11-20T00:00:00-05:00",
@@ -1273,7 +1344,7 @@
           }
         }
       ],
-      "ultima": 29
+      "ultima": 30
     },
     {
       "id": "voyager-1-dia-luz-miami-1977",
@@ -1495,7 +1566,7 @@
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
       ],
-      "ultima": 15
+      "ultima": 16
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -1586,7 +1657,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 19
+      "ultima": 20
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -1673,7 +1744,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 22
+      "ultima": 23
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -1754,7 +1825,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 21
+      "ultima": 22
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -1996,7 +2067,7 @@
           }
         }
       ],
-      "ultima": 30
+      "ultima": 31
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -2099,7 +2170,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 27
+      "ultima": 28
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -2178,7 +2249,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 16
+      "ultima": 17
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -2249,8 +2320,8 @@
         ]
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
-      "arriba": 6,
-      "ultima": 24
+      "arriba": 7,
+      "ultima": 25
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -2333,7 +2404,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 26
+      "ultima": 27
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -2406,7 +2477,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 23
+      "ultima": 24
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -2521,7 +2592,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "arriba": 8,
+      "arriba": 9,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -2578,7 +2649,7 @@
           }
         }
       ],
-      "ultima": 14
+      "ultima": 15
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -2662,7 +2733,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -2745,7 +2816,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 25
+      "ultima": 26
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -2827,7 +2898,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 28
+      "ultima": 29
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -4090,7 +4161,7 @@
       "actualizada": "2026-11-22T17:38:00-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 12
+      "ultima": 13
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -4163,7 +4234,7 @@
       "versiones": [],
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
-      "arriba": 5
+      "arriba": 6
     },
     {
       "id": "heat-vice-city-bucks",
@@ -5947,7 +6018,7 @@
       "foto_mm": false,
       "actualizada": "2026-11-20T15:55:00-05:00",
       "tambien": 3,
-      "arriba": 5
+      "arriba": 6
     },
     {
       "id": "larry-penny-thompson-park",
@@ -8223,7 +8294,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 17
+      "ultima": 18
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -8275,7 +8346,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-25T08:05:00-05:00",
+  "updated_at": "2026-11-25T10:40:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
