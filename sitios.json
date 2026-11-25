@@ -680,7 +680,8 @@
    "desc": "The yellow-and-white Art Deco icon of Ocean Drive, in the heart of South Beach, across from Lummus Park and the sand.",
    "desc_es": "El ícono Art Deco amarillo y blanco de Ocean Drive, en el corazón de South Beach, frente a Lummus Park y la arena.",
    "price": "",
-   "stars": ""
+   "stars": "",
+   "link": "https://www.lesliehotel.com"
   },
   "h104": {
    "name": "Royal Palm South Beach Miami",
@@ -696,7 +697,8 @@
    "photos": [
     "fotos/mm-mb-royal-palm.jpg",
     "fotos/mm-mb-royal-palm-02.jpg"
-   ]
+   ],
+   "link": "https://www.marriott.com/en-us/hotels/miatx-royal-palm-south-beach-miami-a-tribute-portfolio-resort/overview/"
   },
   "h105": {
    "name": "Uma House by Yurbban South Beach",
@@ -744,7 +746,8 @@
    "photos": [
     "fotos/mm-mb-claremont.jpg",
     "fotos/mm-mb-claremont-dorset.jpg"
-   ]
+   ],
+   "link": "https://hotels.cloudbeds.com/reservation/wnUhSL"
   },
   "h6": {
    "photo": "fotos/mm-mb-loews.jpg",
