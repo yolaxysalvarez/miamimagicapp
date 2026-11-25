@@ -86,10 +86,14 @@
         {
           "n": "Servicio Meteorológico · Pronóstico para Islamorada",
           "u": "https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633"
+        },
+        {
+          "n": "Servicio Meteorológico · Pronóstico para Hollywood",
+          "u": "https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1"
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-25T10:40:00-05:00",
+      "actualizada": "2026-11-25T11:05:00-05:00",
       "vence": "2026-11-27",
       "aviso_vence": false,
       "ultima": 1,
@@ -100,10 +104,10 @@
         "bajada": "El Servicio Meteorológico mantiene un aviso de inundación para Miami-Dade, Broward y Palm Beach hasta tarde esta noche, con riesgo de tormentas fuertes y algún tornado. En Los Cayos, alerta por inundación costera hasta las 7:00 p.m. Para Thanksgiving, el pronóstico trae sol.",
         "toca": [
           "Hoy miércoles: aviso de inundación en Miami-Dade, Broward y Palm Beach hasta tarde esta noche, según la [oficina de Miami](https://www.weather.gov/mfl/); en Los Cayos, alerta costera hasta las 7:00 p.m., según la [oficina de Key West](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633).",
-          "Jueves 26: mayormente soleado, máxima cerca de 78 °F y viento del oeste con ráfagas de hasta 23 mph, según el [pronóstico](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046)."
+          "Jueves 26: mayormente soleado, máxima cerca de 78 °F y viento del oeste con ráfagas de hasta 23 mph, según el [pronóstico](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). Ojo con las corrientes de resaca en la playa: la declaración rige hasta las 7:00 p.m. del jueves, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1)."
         ],
         "cuerpo": [
-          "A las 10:20 a.m., la oficina del Servicio Meteorológico en Miami seguía advirtiendo de tormentas fuertes y algún tornado para hoy, y de inundación costera de leve a moderada con la marea alta, según su [página](https://www.weather.gov/mfl/). Su previsión para Miami habla de 1 a 2 pulgadas de lluvia nueva y de ráfagas de hasta 29 mph, según el [pronóstico de las 5:02 a.m.](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
+          "A las 10:20 a.m., la oficina del Servicio Meteorológico en Miami seguía advirtiendo de tormentas fuertes y algún tornado para hoy, y de inundación costera de leve a moderada con la marea alta, según su [página](https://www.weather.gov/mfl/), donde figuran además avisos marítimos, entre ellos uno de temporal (Gale Warning) y otro para embarcaciones pequeñas. La advertencia costera no se acaba esta tarde: en la costa de Broward se extiende hasta las 7:00 a.m. del jueves, y una declaración de corrientes de resaca rige hasta las 7:00 p.m. del jueves, según el [pronóstico para Hollywood](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). Para Miami, el Servicio habla de 1 a 2 pulgadas de lluvia nueva y de ráfagas de hasta 29 mph, según el [pronóstico de las 5:02 a.m.](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
           "## En Los Cayos",
           "La oficina de Key West avisa de lluvia excesiva, viento y posibilidad de tiempo severo para el martes y el miércoles, según su [página](https://www.weather.gov/key/). En Islamorada rige un aviso de inundación costera hasta las 7:00 p.m., y la previsión habla de 1 a 2 pulgadas de lluvia posibles, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). Con las mareas altas de estos días, el agua puede quedarse en calles bajas, y es agua de mar.",
           "El jueves cambia el cielo: mayormente soleado y con viento del oeste, lo que deja el camino libre para los Turkey Trots y el banquete comunitario del Hard Rock Stadium. El horario del Metro, las oficinas y la basura, en [la nota de logística](https://miamimagicapp.com/noticias/thanksgiving-logistica-miami-cayos-metro-basura)."
@@ -115,10 +119,10 @@
         "bajada": "The National Weather Service keeps a flood watch for Miami-Dade, Broward and Palm Beach until late tonight, with a risk of strong storms and a tornado or two. In the Keys, a coastal flood alert runs until 7:00 p.m. For Thanksgiving, the forecast brings sun.",
         "toca": [
           "Today, Wednesday: flood watch in Miami-Dade, Broward and Palm Beach until late tonight, according to the [Miami office](https://www.weather.gov/mfl/); in the Keys, a coastal alert until 7:00 p.m., according to the [Key West office](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633).",
-          "Thursday 26: mostly sunny, high near 78°F and a west wind with gusts up to 23 mph, according to the [forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046)."
+          "Thursday 26: mostly sunny, high near 78°F and a west wind with gusts up to 23 mph, according to the [forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). Mind the rip currents at the beach: the statement runs until 7:00 p.m. Thursday, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1)."
         ],
         "cuerpo": [
-          "As of 10:20 a.m., the National Weather Service office in Miami was still warning of strong storms and a tornado or two today, and of minor to moderate coastal flooding around high tide, according to its [page](https://www.weather.gov/mfl/). Its Miami forecast calls for 1 to 2 inches of new rain and gusts up to 29 mph, according to the [5:02 a.m. forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
+          "As of 10:20 a.m., the National Weather Service office in Miami was still warning of strong storms and a tornado or two today, and of minor to moderate coastal flooding around high tide, according to its [page](https://www.weather.gov/mfl/), which also lists marine alerts, including a gale warning and one for small craft. The coastal warning does not end this afternoon: on the Broward coast it runs until 7:00 a.m. Thursday, and a rip current statement is in effect until 7:00 p.m. Thursday, according to the [Hollywood forecast](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). For Miami, the Service calls for 1 to 2 inches of new rain and gusts up to 29 mph, according to the [5:02 a.m. forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
           "## In the Keys",
           "The Key West office warns of excessive rain, wind and a chance of severe weather for Tuesday and Wednesday, according to its [page](https://www.weather.gov/key/). In Islamorada a coastal flood advisory runs until 7:00 p.m., and the forecast calls for 1 to 2 inches of rain, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). With this week's high tides, water can linger on low streets, and it is seawater.",
           "Thursday the sky changes: mostly sunny with a west wind, which clears the way for the Turkey Trots and the community feast at Hard Rock Stadium. Metro hours, offices and trash are in [the logistics story](https://miamimagicapp.com/news/thanksgiving-logistica-miami-cayos-metro-basura)."
@@ -8346,7 +8350,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-25T10:40:00-05:00",
+  "updated_at": "2026-11-25T11:05:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
