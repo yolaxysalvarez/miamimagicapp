@@ -274,33 +274,39 @@
       "es": {
         "etiqueta": "OPINIÓN",
         "titulo": "Es la única fiesta que no heredamos: la elegimos",
-        "bajada": "En Miami pocos crecen con este jueves. Se aprende de adulto, y por eso se agradece distinto.",
+        "bajada": "En Miami pocos crecen con este día. Se aprende de adulto, y por eso se agradece distinto.",
         "toca": [],
         "cuerpo": [
-          "Las demás fechas llegan solas, con la familia. Thanksgiving no. Se aprende de grande, mirando cómo lo hacen los vecinos y preguntando a qué hora se come.",
-          "## Por eso se agradece distinto",
-          "Quien agradece lo que heredó cumple una costumbre. Quien agradece lo que eligió sabe exactamente por qué lo hace.",
-          "Yo lo sé. Este país nos abrió la puerta, y detrás de esa puerta hay trabajo, un negocio posible y una voz que se puede usar. Aquí crezco cada día: disfruto de mi familia, de cada lugar de Miami y de Los Cayos, del trabajo que hago. Gracias a esta gran nación por acogernos.",
-          "Este jueves, en las mesas de Miami, el saludo no suena igual en dos casas seguidas:",
+          "Las demás fiestas llegan solas. La Navidad, los cumpleaños, el 31: alguien las trajo antes que uno. Thanksgiving no. Se aprende de grande, mirando cómo lo hacen los vecinos y preguntando a qué hora se come.",
+          "## Una fiesta que no pide nada",
+          "No hay regalos que comprar ni disfraz que armar. Hay una mesa, gente alrededor y una costumbre sencilla: decir en voz alta de qué se está agradecido. Para quien llegó de otro lugar, esa costumbre pesa distinto, porque obliga a hacer cuentas.",
+          "## Mis cuentas",
+          "Quien agradece lo que heredó cumple una tradición. Quien agradece lo que eligió sabe exactamente por qué lo hace.",
+          "Yo lo sé. Este país nos abrió la puerta, y del otro lado encontramos trabajo, la posibilidad de levantar un negocio y una voz que cuenta. Aquí crezco cada día: disfruto de mi familia, de cada lugar de Miami y de Los Cayos, del trabajo que hago. Gracias a esta gran nación por acogernos.",
+          "## Una mesa, cinco idiomas",
+          "Hoy, en las mesas de Miami, el saludo cambia de casa en casa:",
           "Happy Thanksgiving · Feliz Día de Acción de Gracias · Bon fèt Aksyon de Gras · Feliz Dia de Ação de Graças · Joyeux Thanksgiving",
-          "Cinco maneras de decir lo mismo: gracias.",
-          "Feliz Thanksgiving, Miami. Feliz Thanksgiving, Los Cayos."
+          "Suenan distinto y dicen lo mismo.",
+          "Gracias. Feliz Thanksgiving, Miami. Feliz Thanksgiving, Los Cayos."
         ]
       },
       "en": {
         "etiqueta": "OPINION",
         "titulo": "It’s the one holiday we didn’t inherit: we chose it",
-        "bajada": "In Miami few people grow up with this Thursday. You learn it as an adult, and that is why the thanks feel different.",
+        "bajada": "In Miami few people grow up with this day. You learn it as an adult, and that is why the thanks feel different.",
         "toca": [],
         "cuerpo": [
-          "The other holidays arrive on their own, with the family. Thanksgiving doesn't. You learn it later in life, watching how the neighbors do it and asking what time dinner is.",
-          "## That is why the thanks feel different",
-          "Whoever gives thanks for something inherited is keeping a custom. Whoever gives thanks for something chosen knows exactly why.",
-          "I know why. This country opened the door, and behind that door there is work, a business within reach and a voice that can be used. Here I grow every day: I enjoy my family, every place in Miami and the Keys, the work I do. Thank you to this great nation for taking us in.",
-          "This Thursday, at tables across Miami, the greeting does not sound the same in two houses in a row:",
+          "The other holidays arrive on their own. Christmas, birthdays, New Year's Eve: someone brought them before we got here. Thanksgiving didn't come that way. You learn it later in life, watching how the neighbors do it and asking what time dinner is.",
+          "## A holiday that asks for nothing",
+          "There are no gifts to buy and no costume to put together. There is a table, people around it and one simple custom: saying out loud what you are grateful for. For someone who arrived from somewhere else, that custom weighs differently, because it forces you to take stock.",
+          "## My accounts",
+          "Whoever gives thanks for something inherited is keeping a tradition. Whoever gives thanks for something chosen knows exactly why.",
+          "I know why. This country opened the door, and on the other side we found work, the chance to build a business and a voice that counts. Here I grow every day: I enjoy my family, every place in Miami and the Keys, the work I do. Thank you to this great nation for taking us in.",
+          "## One table, five languages",
+          "Today, at tables across Miami, the greeting changes from house to house:",
           "Happy Thanksgiving · Feliz Día de Acción de Gracias · Bon fèt Aksyon de Gras · Feliz Dia de Ação de Graças · Joyeux Thanksgiving",
-          "Five ways of saying the same thing: thank you.",
-          "Happy Thanksgiving, Miami. Happy Thanksgiving, Keys."
+          "They sound different and say the same thing.",
+          "Thank you. Happy Thanksgiving, Miami. Happy Thanksgiving, Keys."
         ]
       }
     },
@@ -8626,7 +8632,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T08:10:49-05:00",
+  "updated_at": "2026-11-26T08:13:04-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
