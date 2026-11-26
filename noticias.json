@@ -119,9 +119,9 @@
       "fecha": "2026-11-26",
       "publicada": "2026-11-26T07:41:59-05:00",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-mia-fedex-aviso.jpg",
-      "foto_en": "mm-mia-fedex-aviso-en.jpg",
-      "foto_alt": "Gráfico de Miami Magic con el aviso del avión de FedEx en la pista 26R del aeropuerto de Miami",
+      "foto": "mm-mia-generica.jpg",
+      "foto_en": "mm-mia-generica-en.jpg",
+      "foto_alt": "Gráfico de Miami Magic con las siglas MIA, aeropuerto internacional de Miami",
       "foto_pie": "Gráfico de Miami Magic.",
       "foto_pie_en": "Graphic by Miami Magic.",
       "desarrollo": true,
@@ -170,7 +170,8 @@
         ]
       },
       "ultima": 1,
-      "arriba": 1
+      "arriba": 1,
+      "foto_alt_en": "Miami Magic graphic with the letters MIA, Miami International Airport"
     },
     {
       "id": "guia-michelin-historia-estrellas-miami-broward-cayos",
@@ -8626,7 +8627,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T07:56:19-05:00",
+  "updated_at": "2026-11-26T08:10:15-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
