@@ -279,13 +279,13 @@
         "cuerpo": [
           "Con el tiempo nos volvemos algo nostálgicos, y hay un plato que no quisiera que faltara hoy en la mesa de Thanksgiving: el boniato. Bastaría con eso para sentir a mis abuelos con nosotros. Ya no están, y no importa. Cada año doy gracias por haberlos tenido.",
           "Mi abuelo Castelao me enseñó el valor de cada cosa y a agradecer, y esa lección me acompaña más que cualquier receta.",
-          "Por eso el boniato no viaja solo. Alrededor de ese plato se juntan mis hijos, la familia entera y los amigos, y los mayores que faltan se sientan con ellos sin hacer ruido.",
+          "El boniato no viajará solo: alrededor de ese plato se juntarán mis hijos, la familia entera y los amigos.",
           "Esa lección la confirmé en mi primer Thanksgiving, tan simple como inolvidable: lo único que no puede faltar en la mesa es la familia y las personas que amas.",
-          "Hoy, cuando toca decir en voz alta de qué se está agradecido, gracias a esta gran nación por acogernos. Y a Dios, hoy, por tanto.",
-          "En esta ciudad el gracias se dice en muchos idiomas, y hoy, de casa en casa, suena así:",
-          "Happy Thanksgiving · Feliz Día de Acción de Gracias · Bon fèt Aksyon de Gras · Feliz Dia de Ação de Graças · Joyeux Thanksgiving",
+          "Hoy decimos en voz alta de qué estamos agradecidos, y yo tengo tanto que agradecer.",
+          "Happy Thanksgiving · Feliz Día de Acción de Gracias · Bon fèt Aksyon de Gras · Feliz Dia de Ação de Graças · Joyeux Thanksgiving · Buon Giorno del Ringraziamento · Frohes Thanksgiving · С Днём благодарения · חג הודיה שמח · 感恩节快乐",
           "Suenan distinto y dicen lo mismo.",
-          "Gracias. Feliz Thanksgiving, Miami. Feliz Thanksgiving, Los Cayos."
+          "Gracias. Feliz Thanksgiving, Miami. Feliz Thanksgiving, Los Cayos.",
+          "¡Llegó el pavo! ¡Y que alguien pase el boniato!"
         ]
       },
       "en": {
@@ -296,13 +296,13 @@
         "cuerpo": [
           "With time we grow a little nostalgic, and there is one dish I would not want missing from the Thanksgiving table today: the boniato, the Cuban sweet potato. That alone would be enough to feel my grandparents with us. They are no longer here, and it doesn't matter. Every year I give thanks for having had them.",
           "My grandfather Castelao taught me the value of every little thing and how to be grateful, and that lesson stays with me more than any recipe.",
-          "That is why the boniato never travels alone. Around that dish gather my children, the whole family and our friends, and the elders who are missing sit down with them without making a sound.",
+          "The boniato will not travel alone: around that dish my children, the whole family and our friends will gather.",
           "I confirmed that lesson at my first Thanksgiving, as simple as it was unforgettable: the one thing that cannot be missing from the table is family and the people you love.",
-          "Today, when it comes time to say out loud what we are grateful for: thank you to this great nation for taking us in. And thank you, God, today, for so much.",
-          "In this city thank you is said in many languages, and today, from house to house, it sounds like this:",
-          "Happy Thanksgiving · Feliz Día de Acción de Gracias · Bon fèt Aksyon de Gras · Feliz Dia de Ação de Graças · Joyeux Thanksgiving",
+          "Today we say out loud what we are grateful for, and I have so much to be grateful for.",
+          "Happy Thanksgiving · Feliz Día de Acción de Gracias · Bon fèt Aksyon de Gras · Feliz Dia de Ação de Graças · Joyeux Thanksgiving · Buon Giorno del Ringraziamento · Frohes Thanksgiving · С Днём благодарения · חג הודיה שמח · 感恩节快乐",
           "They sound different and say the same thing.",
-          "Thank you. Happy Thanksgiving, Miami. Happy Thanksgiving, Keys."
+          "Thank you. Happy Thanksgiving, Miami. Happy Thanksgiving, Keys.",
+          "The turkey is here! And somebody pass the boniato!"
         ]
       }
     },
@@ -8628,7 +8628,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T08:45:30-05:00",
+  "updated_at": "2026-11-26T09:02:30-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
