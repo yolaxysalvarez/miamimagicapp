@@ -410,22 +410,26 @@
         {
           "n": "Condado de Monroe · Memo de feriados 2026",
           "u": "https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId="
+        },
+        {
+          "n": "Sistema de Bibliotecas Públicas de Miami-Dade · Cierre del fin de semana de Thanksgiving",
+          "u": "https://bookings.mdpls.org/holiday"
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-24T12:42:00-05:00",
+      "actualizada": "2026-11-26T09:17:18-05:00",
       "ultima": 8,
       "es": {
         "etiqueta": "EN LA CALLE",
         "titulo": "Thanksgiving: el Metro va con horario de domingo, las oficinas cierran dos días y en Los Cayos la basura se corre un día",
-        "bajada": "Miami-Dade cierra sus oficinas y bibliotecas el jueves 26 y el viernes 27, pero el Metro sigue rodando y la basura se recoge. En Los Cayos, el condado de Monroe corre la recogida un día en buena parte de la ruta.",
+        "bajada": "Miami-Dade cierra sus oficinas el jueves 26 y el viernes 27, y sus bibliotecas hasta el sábado 28, pero el Metro sigue rodando y la basura se recoge. En Los Cayos, el condado de Monroe corre la recogida un día en buena parte de la ruta.",
         "toca": [
           "Jueves 26: Metrobus, Metrorail y Metromover con horario de domingo. El viernes, servicio normal.",
-          "Miami-Dade: oficinas y bibliotecas cerradas el jueves y el viernes; la basura se recoge igual.",
+          "Miami-Dade: oficinas cerradas el jueves y el viernes; bibliotecas, de jueves a sábado; la basura se recoge igual.",
           "Los Cayos: de Stock Island a Seven Mile Bridge, la basura del jueves pasa al viernes y la del viernes al sábado."
         ],
         "cuerpo": [
-          "En Miami-Dade, las oficinas del condado y sus bibliotecas cierran el jueves 26 y el viernes 27, según su [calendario de feriados](https://www.miamidade.gov/global/humanresources/holidays.page). Lo que no se detiene es el transporte: el condado indica que Metrobus, Metrorail y Metromover circulan el jueves con horario de domingo, y el viernes vuelven al servicio normal.",
+          "En Miami-Dade, las oficinas del condado cierran el jueves 26 y el viernes 27, según su [calendario de feriados](https://www.miamidade.gov/global/humanresources/holidays.page), y las bibliotecas públicas permanecen cerradas hasta el sábado 28, de acuerdo con el [calendario del sistema de bibliotecas](https://bookings.mdpls.org/holiday). Lo que no se detiene es el transporte: el condado indica que Metrobus, Metrorail y Metromover circulan el jueves con horario de domingo, y el viernes vuelven al servicio normal.",
           "La basura tampoco cambia de día. De acuerdo con [Residuos Sólidos del condado](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), la recogida de basura y reciclaje sigue su calendario y los centros de basura y reciclaje abren en su horario regular. La excepción es el vertedero Medley, de WM, que el jueves cierra al mediodía y el viernes abre normal. Para dudas por zona, el condado remite al 311.",
           "## En Los Cayos",
           "El condado de Monroe cierra sus oficinas el jueves y el viernes, según su [memo de feriados](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), y la recogida depende de quién la presta, de acuerdo con su [calendario de feriados](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). De Stock Island a Seven Mile Bridge, con Waste Management, no hay recogida el jueves: la de ese día pasa al viernes y la del viernes al sábado. En Marathon, hasta la milla 73, la basura del jueves se recoge el viernes y el reciclaje del jueves espera a la semana siguiente. Entre las millas 91 y 102, con Keys Sanitary Service, y en Ocean Reef, la ruta sigue normal.",
@@ -435,14 +439,14 @@
       "en": {
         "etiqueta": "ON THE STREET",
         "titulo": "Thanksgiving: Metro runs on a Sunday schedule, offices close for two days and Keys trash pickup shifts by a day",
-        "bajada": "Miami-Dade closes its offices and libraries Thursday the 26th and Friday the 27th, but Metro keeps running and trash is still collected. In the Keys, Monroe County shifts pickup by a day along much of the route.",
+        "bajada": "Miami-Dade closes its offices Thursday the 26th and Friday the 27th, and its libraries through Saturday the 28th, but Metro keeps running and trash is still collected. In the Keys, Monroe County shifts pickup by a day along much of the route.",
         "toca": [
           "Thursday 26: Metrobus, Metrorail and Metromover run a Sunday schedule. Friday, regular service.",
-          "Miami-Dade: offices and libraries closed Thursday and Friday; trash is still collected.",
+          "Miami-Dade: offices closed Thursday and Friday; libraries, Thursday through Saturday; trash is still collected.",
           "The Keys: from Stock Island to Seven Mile Bridge, Thursday's pickup moves to Friday and Friday's to Saturday."
         ],
         "cuerpo": [
-          "In Miami-Dade, county offices and libraries close Thursday the 26th and Friday the 27th, according to the county's [holiday calendar](https://www.miamidade.gov/global/humanresources/holidays.page). Transit does not stop: the county says Metrobus, Metrorail and Metromover run a Sunday schedule on Thursday and return to regular service on Friday.",
+          "In Miami-Dade, county offices close Thursday the 26th and Friday the 27th, according to the county's [holiday calendar](https://www.miamidade.gov/global/humanresources/holidays.page), and public libraries stay closed through Saturday the 28th, per the [library system's schedule](https://bookings.mdpls.org/holiday). Transit does not stop: the county says Metrobus, Metrorail and Metromover run a Sunday schedule on Thursday and return to regular service on Friday.",
           "Trash doesn't change days either. According to the county's [Solid Waste Management department](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), garbage and recycling collection keeps its regular schedule and the trash and recycling centers keep regular hours. The exception is WM's Medley Landfill, which closes at noon on Thursday and reopens normally on Friday. For questions by area, the county points to 311.",
           "## In the Keys",
           "Monroe County closes its offices Thursday and Friday, per its [holiday memo](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), and pickup depends on who provides it, according to the county's [holiday schedule](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). From Stock Island to Seven Mile Bridge, with Waste Management, there is no pickup Thursday: that day's collection moves to Friday and Friday's moves to Saturday. In Marathon, through mile marker 73, Thursday's garbage is picked up Friday and Thursday's recycling waits until the following week. Between miles 91 and 102, with Keys Sanitary Service, and in Ocean Reef, the route runs as usual.",
@@ -5421,17 +5425,17 @@
       "foto_pie_en": "The Southernmost Point buoy in Key West.",
       "es": {
         "titulo": "Key West enciende un árbol de boyas y otro de trampas de langosta: así arranca su Navidad",
-        "bajada": "El Holiday Fest empieza la víspera de Thanksgiving y dura un mes, con desfile por Duval, botes iluminados y recorridos nocturnos.",
+        "bajada": "El mal tiempo pasó el encendido del puerto al viernes 27. El Holiday Fest dura un mes, con desfile por Duval, botes iluminados y recorridos nocturnos.",
         "toca": [
-          "Miércoles 25 de noviembre, 6:00 p.m.: encendido del árbol de boyas y del Harbor Walk of Lights en Greene Street Plaza. A las 7:00 p.m., el árbol de trampas de langosta en Margaret Street Plaza.",
+          "Viernes 27 de noviembre (antes, miércoles 25): música a las 5:00 p.m. en Greene y Elizabeth; árbol de boyas a las 6:00; árbol náutico a las 6:30 en Williams Street; árbol de trampas de langosta a las 7:00 en Margaret Street.",
           "Sábado 5 de diciembre, 7:00 p.m.: desfile navideño, de Bayview Park por Truman Avenue y Duval Street.",
           "Domingo 6 de diciembre, 5:00 p.m.: encendido de la menorá en Bayview Park.",
           "Sábado 12 de diciembre, 8:00 p.m.: desfile de botes iluminados en el Historic Seaport.",
-          "Lleva un juguete nuevo al encendido del día 25: se recoge para la colecta Cheryl Cates."
+          "Lleva un juguete nuevo al encendido del viernes 27: se recoge para la colecta Cheryl Cates."
         ],
         "cuerpo": [
-          "A partir del miércoles 25 de noviembre, víspera de Thanksgiving, Key West entra en Navidad a su manera. Ese día, a las 6:00 de la tarde, se enciende en el puerto histórico un árbol gigante hecho de boyas de pesca, y una hora después otro levantado con trampas de langosta.",
-          "Con ellos se prende también el Harbor Walk of Lights, que este año cumple 21 ediciones según la Cámara de Comercio: palmas, barcos, tiendas y bares iluminados a lo largo del puerto, desde Lazy Way Lane hasta la terminal del ferry en Grinnell Street. Queda encendido hasta la noche de Año Nuevo.",
+          "El mal tiempo movió el encendido del puerto de Key West: del miércoles 25 pasó al viernes 27, con el mismo programa, según el organizador, Tom Stroh, que lo explicó al [Key West Citizen](https://www.keysnews.com/news/local/holiday-celebration-on-key-west-harbor-moved-to-friday/article_f00360da-e880-4898-9c3c-e4448de246ae.html). La música empieza a las 5:00 de la tarde en la plaza de Greene y Elizabeth; a las 6:00 se enciende un árbol gigante hecho de boyas de pesca, y después, según el [Historic Seaport](https://keywesthistoricseaport.com/blog/2026-bight-before-christmas-festivities-at-key-west-historic-seaport-are-just-around-the-corner/), el árbol náutico a las 6:30 y el de trampas de langosta a las 7:00. La marcha navideña de los niños con luces, prevista para la misma noche, también se pasó al viernes, de acuerdo con el [sitio de los organizadores](https://keywestchristmas.org/).",
+          "Con los árboles se prende el Harbor Walk of Lights, que este año cumple 21 ediciones según la Cámara de Comercio: palmas, barcos, tiendas y bares iluminados a lo largo del puerto, desde Lazy Way Lane hasta la terminal del ferry en Grinnell Street. Queda encendido hasta la noche de Año Nuevo.",
           "El [calendario del mes, publicado por la Cámara de Comercio de Key West](https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che), es largo. Lo esencial cabe en cuatro noches: el encendido del árbol de la ciudad el lunes 30 de noviembre en Bayview Park, el desfile del sábado 5 de diciembre por Truman y Duval, el encendido de la menorá el domingo 6 y el desfile de botes iluminados del sábado 12 en el puerto.",
           "Entre una fecha y otra hay mercados de artesanos, conciertos y una versión local de El Cascanueces, del 3 al 7 de diciembre en el Tennessee Williams Theatre, con unos 200 vecinos en escena. Del 7 al 27 de diciembre, el Conch Tour Train y el Old Town Trolley hacen recorridos nocturnos para ver las casas iluminadas.",
           "Varios eventos son gratuitos. Otros piden un juguete o una donación para organizaciones de la isla."
@@ -5439,17 +5443,17 @@
       },
       "en": {
         "titulo": "Key West lights a tree of buoys and another of lobster traps: its Christmas begins",
-        "bajada": "Holiday Fest starts on Thanksgiving eve and runs for a month, with a parade down Duval, lighted boats and nighttime tours.",
+        "bajada": "Bad weather pushed the harbor lighting to Friday, Nov. 27. Holiday Fest runs for a month, with a parade down Duval, lighted boats and nighttime tours.",
         "toca": [
-          "Wednesday, Nov. 25, 6 p.m.: lighting of the buoy tree and the Harbor Walk of Lights at Greene Street Plaza. At 7 p.m., the lobster trap tree at Margaret Street Plaza.",
+          "Friday, Nov. 27 (originally Wednesday the 25th): music at 5 p.m. at Greene and Elizabeth; buoy tree at 6; nautical tree at 6:30 on Williams Street; lobster trap tree at 7 on Margaret Street.",
           "Saturday, Dec. 5, 7 p.m.: holiday parade, from Bayview Park along Truman Avenue and Duval Street.",
           "Sunday, Dec. 6, 5 p.m.: menorah lighting at Bayview Park.",
           "Saturday, Dec. 12, 8 p.m.: lighted boat parade at the Historic Seaport.",
-          "Bring a new toy to the Nov. 25 lighting: it goes to the Cheryl Cates Toy Drive."
+          "Bring a new toy to the Friday, Nov. 27 lighting: it goes to the Cheryl Cates Toy Drive."
         ],
         "cuerpo": [
-          "Starting Wednesday, Nov. 25, Thanksgiving eve, Key West does Christmas its own way. That day at 6 p.m., a giant tree made of fishing buoys is lit at the historic seaport, and an hour later another one built from lobster traps.",
-          "With them comes the Harbor Walk of Lights, in its 21st year according to the Chamber of Commerce: palms, ships, shops and bars lit up along the seaport, from Lazy Way Lane to the ferry terminal at Grinnell Street. It stays on through New Year's Eve.",
+          "Bad weather moved the lighting at Key West's seaport: from Wednesday the 25th to Friday the 27th, with the same program, according to organizer Tom Stroh, who explained it to the [Key West Citizen](https://www.keysnews.com/news/local/holiday-celebration-on-key-west-harbor-moved-to-friday/article_f00360da-e880-4898-9c3c-e4448de246ae.html). Music starts at 5 p.m. at the Greene and Elizabeth plaza; at 6 a giant tree made of fishing buoys is lit, and then, per the [Historic Seaport](https://keywesthistoricseaport.com/blog/2026-bight-before-christmas-festivities-at-key-west-historic-seaport-are-just-around-the-corner/), the nautical tree at 6:30 and the lobster trap tree at 7. The Lighted Children's Holiday March, planned for the same night, also moved to Friday, according to the [organizers' site](https://keywestchristmas.org/).",
+          "With the trees comes the Harbor Walk of Lights, in its 21st year according to the Chamber of Commerce: palms, ships, shops and bars lit up along the seaport, from Lazy Way Lane to the ferry terminal at Grinnell Street. It stays on through New Year's Eve.",
           "The [month's calendar, published by the Key West Chamber of Commerce](https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che), is long. The essentials fit in four nights: the city tree lighting on Monday, Nov. 30, at Bayview Park; the parade on Saturday, Dec. 5, along Truman and Duval; the menorah lighting on Sunday, Dec. 6; and the lighted boat parade on Saturday, Dec. 12, at the seaport.",
           "In between there are artisan markets, concerts and a local version of The Nutcracker, Dec. 3-7 at the Tennessee Williams Theatre, with some 200 residents on stage. From Dec. 7 to 27, the Conch Tour Train and the Old Town Trolley run nighttime tours of the decorated houses.",
           "Several events are free. Others ask for a toy or a donation for island organizations."
@@ -5459,8 +5463,21 @@
         {
           "n": "Key West Chamber of Commerce · Key West Holiday Fest, comunicado del 4 de noviembre de 2026",
           "u": "https://www.keywestchamber.org/latest-community-news/key-west-holiday-fest-brings-a-month-of-seasonal-magic-and-tropical-che"
+        },
+        {
+          "n": "Key West Citizen · Holiday Lighting Celebration movido al viernes 27 (25 de noviembre de 2026)",
+          "u": "https://www.keysnews.com/news/local/holiday-celebration-on-key-west-harbor-moved-to-friday/article_f00360da-e880-4898-9c3c-e4448de246ae.html"
+        },
+        {
+          "n": "Key West \"Bight\" before Christmas · sitio de los organizadores",
+          "u": "https://keywestchristmas.org/"
+        },
+        {
+          "n": "Key West Historic Seaport · Bight Before Christmas 2026",
+          "u": "https://keywesthistoricseaport.com/blog/2026-bight-before-christmas-festivities-at-key-west-historic-seaport-are-just-around-the-corner/"
         }
-      ]
+      ],
+      "actualizada": "2026-11-26T09:17:18-05:00"
     },
     {
       "id": "seven-mile-bridge-rehabilitacion",
@@ -8626,7 +8643,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T09:13:08-05:00",
+  "updated_at": "2026-11-26T09:17:18-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
