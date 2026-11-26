@@ -1562,9 +1562,9 @@ function renderHome(lead,rest){
   var byD=function(x,y){return String(y.publicada||y.fecha||'').localeCompare(String(x.publicada||x.fecha||''))},opn=SECN.filter(isOp).sort(byD)[0],dpn=SECN.filter(isDp).sort(byD)[0];
   if(opn)vsU[opn.id]=1;if(dpn)vsU[dpn.id]=1;
   var ed=(DATA.notas||[]).filter(function(n){return n.editor&&!vsU[n.id]})[0];
-  if(!ed){var pool=(DATA.notas||[]).filter(function(n){return !vsU[n.id]&&!n.desarrollo&&img(n)&&!(n.vence&&n.vence<HOYNY())&&/^(historia|curioso|cultura|mar|casa)$/.test(n.tema||'')});ed=pool.length?pool[doy()%pool.length]:null}
+  if(!ed){var pool=(DATA.notas||[]).filter(function(n){return !vsU[n.id]&&!n.desarrollo&&img(n)&&!(n.vence&&n.vence<HOYNY())&&n.hamaca});ed=pool.length?pool[doy()%pool.length]:null}
   var vsC=function(k,cl,lb,n,more){if(!n)return '';return '<a href="'+href(n)+'"><span><span class="vk '+cl+'">'+lb+'</span><b class="hl">'+esc(F(n).titulo)+'</b>'+(more?'<span class="vm" data-vs="'+more+'">'+(L==='en'?'ALL →':'VER TODO →')+'</span>':'')+'</span>'+ph(n)+'</a>'};
-  document.getElementById('vs').innerHTML=vsC('o','o',L==='en'?'OPINION':'OPINIÓN',opn,'opinion')+vsC('d','d',L==='en'?'SPORTS':'DEPORTES',dpn,'deportes')+vsC('e','e',L==='en'?'EDITOR\'S PICK':'SELECCIÓN DE LA REDACCIÓN',ed,'');
+  document.getElementById('vs').innerHTML=vsC('o','o',L==='en'?'OPINION':'OPINIÓN',opn,'opinion')+vsC('d','d',L==='en'?'SPORTS':'DEPORTES',dpn,'deportes')+vsC('e','e','HAMACA MOOD',ed,'');
   document.getElementById('pzU').innerHTML=ul.length?'<div class="sh"><h3>'+(L==='en'?'LATEST':'LO ÚLTIMO')+'</h3></div>'+ul.map(function(n,i){return '<a href="'+href(n)+'"><i>'+(i+1)+'</i><span><span class="eb">'+eb(n)+'</span><b class="hl">'+esc(F(n).titulo)+'</b></span></a>'}).join(''):'';
 }
 function ytT(id,q){return 'https://i.ytimg.com/vi/'+encodeURIComponent(id)+'/'+(q||'hq720')+'.jpg'}
