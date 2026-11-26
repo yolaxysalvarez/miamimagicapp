@@ -55,6 +55,65 @@
   "videos": [],
   "notas": [
     {
+      "id": "dolphins-jets-hard-rock-29-noviembre-previa",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-26",
+      "publicada": "2026-11-26T11:44:53-05:00",
+      "autor": "Yolaxys Alvarez",
+      "fuentes": [
+        {
+          "n": "NFL · calendario de la semana 12",
+          "u": "https://www.nfl.com/schedules/2026/by-week/week-12"
+        },
+        {
+          "n": "Miami Dolphins · calendario y resultados",
+          "u": "https://www.miamidolphins.com/schedule/"
+        },
+        {
+          "n": "NFL · tabla de posiciones",
+          "u": "https://www.nfl.com/standings/"
+        }
+      ],
+      "desarrollo": false,
+      "foto": "mm-hard-rock-stadium-techo.jpg",
+      "foto_pos": "center 55%",
+      "foto_mm": false,
+      "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
+      "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
+      "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
+      "vence": "2026-11-29",
+      "es": {
+        "etiqueta": "DEPORTES",
+        "titulo": "Los Dolphins reciben el domingo a los Jets, el único equipo al que le han ganado esta temporada",
+        "bajada": "Miami llega 1-9 y todavía sin ganar en el Hard Rock Stadium. Su única victoria fue 28-25 en casa de los Jets, el 25 de octubre.",
+        "toca": [
+          "Domingo 29 de noviembre, 1:00 p.m., en el Hard Rock Stadium, Miami Gardens, según el [calendario de la NFL](https://www.nfl.com/schedules/2026/by-week/week-12).",
+          "Después, los Dolphins visitan a Denver el domingo 6 de diciembre, a las 4:05 p.m."
+        ],
+        "cuerpo": [
+          "Los Dolphins vuelven a casa este domingo 29, a la 1:00 p.m., para medirse con los Jets, el rival de su única victoria del año: 28-25 el 25 de octubre en Nueva Jersey, como recoge el [calendario del equipo](https://www.miamidolphins.com/schedule/). Desde entonces perdieron cuatro seguidos, ante Patriots, Lions, Colts y Bills, y están 1-9, en el fondo del Este de la Conferencia Americana, de acuerdo con la [tabla de la NFL](https://www.nfl.com/standings/).",
+          "En el Hard Rock Stadium, Miami no ha ganado esta temporada: cayó ante Chiefs, Bengals, Patriots y Lions. Los Jets llegan 3-8, terceros de la división. El último partido de los Dolphins, la derrota 26-9 en Buffalo sin un solo touchdown, está en [esta nota](https://miamimagicapp.com/noticias/dolphins-bills-26-9-buffalo)."
+        ]
+      },
+      "en": {
+        "etiqueta": "SPORTS",
+        "titulo": "The Dolphins host the Jets on Sunday, the only team they have beaten this season",
+        "bajada": "Miami comes in 1-9 and still winless at Hard Rock Stadium. Its only victory was 28-25 at the Jets' home on Oct. 25.",
+        "toca": [
+          "Sunday, Nov. 29, 1:00 p.m., at Hard Rock Stadium, Miami Gardens, per the [NFL schedule](https://www.nfl.com/schedules/2026/by-week/week-12).",
+          "Next, the Dolphins visit Denver on Sunday, Dec. 6, at 4:05 p.m."
+        ],
+        "cuerpo": [
+          "The Dolphins return home this Sunday the 29th, at 1:00 p.m., to face the Jets, the opponent in their only win of the year: 28-25 on Oct. 25 in New Jersey, as the [team schedule](https://www.miamidolphins.com/schedule/) shows. Since then they have lost four straight, to the Patriots, Lions, Colts and Bills, and sit 1-9, at the bottom of the AFC East, according to the [NFL standings](https://www.nfl.com/standings/).",
+          "At Hard Rock Stadium, Miami has not won this season: it fell to the Chiefs, Bengals, Patriots and Lions. The Jets arrive 3-8, third in the division. The Dolphins' last game, the 26-9 loss in Buffalo without a single touchdown, is in [this story](https://miamimagicapp.com/news/dolphins-bills-26-9-buffalo)."
+        ]
+      }
+    },
+    {
       "id": "black-friday-horarios-malls-tiendas-miami-27-noviembre",
       "scope": "miami",
       "tema": "bolsillo",
@@ -8724,7 +8783,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T11:39:34-05:00",
+  "updated_at": "2026-11-26T11:44:53-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
