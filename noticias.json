@@ -55,6 +55,62 @@
   "videos": [],
   "notas": [
     {
+      "id": "heat-76ers-panthers-ottawa-25-noviembre",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-26",
+      "publicada": "2026-11-26T07:46:06-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-kaseya-center-desde-pamm.jpg",
+      "foto_alt": "El Kaseya Center, de paredes blancas, frente al downtown de Miami",
+      "foto_pie": "El Kaseya Center, casa del HEAT. Foto: Miami Magic.",
+      "foto_pie_en": "Kaseya Center, home of the Heat. Photo: Miami Magic.",
+      "foto_mm": true,
+      "fuentes": [
+        {
+          "n": "NBA · Calendario del HEAT",
+          "u": "https://www.nba.com/heat/schedule"
+        },
+        {
+          "n": "Inter Miami CF · Calendario de la primera ronda",
+          "u": "https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew"
+        }
+      ],
+      "es": {
+        "etiqueta": "DEPORTES",
+        "titulo": "El HEAT cae 111-104 en Filadelfia y se le corta la racha; los Panthers ganan 5-3",
+        "bajada": "Giannis Antetokounmpo anotó 32 puntos con 14 rebotes, pero Miami perdió el segundo cuarto 33-21 y no se recuperó. El viernes juegan el HEAT, los Panthers e Inter Miami.",
+        "toca": [
+          "Viernes 27: HEAT en Nueva York a las 7:00 PM, Panthers en Washington a las 3:00 PM e Inter Miami en Columbus a las 8:00 PM.",
+          "El HEAT quedó 10-7 en la temporada."
+        ],
+        "cuerpo": [
+          "El HEAT perdió 111-104 en Filadelfia y vio cortarse la racha de siete victorias, según las estadísticas del partido. Miami ganó el primer cuarto 32-29, pero Filadelfia se lo cobró con un segundo de 33-21 y se fue al descanso arriba 62-53. En la segunda mitad el HEAT anotó 51 puntos contra 49, pero no le alcanzó para remontar.",
+          "Giannis Antetokounmpo cerró con 32 puntos y 14 rebotes, Davion Mitchell sumó 20 puntos y 10 asistencias, y Bam Adebayo, 17 y 11. Por Filadelfia, Tyrese Maxey anotó 30. El HEAT acertó 8 de 31 triples, contra 14 de 35 de los locales. Con la derrota, Miami quedó 10-7 y tiene poco descanso: juega el viernes en Nueva York, contra los Knicks, y el domingo 29, a las 3:30 PM, en Cleveland, según el [calendario oficial](https://www.nba.com/heat/schedule).",
+          "Mejor le fue a los Panthers, que vencieron 5-3 a Ottawa en casa. Brad Marchand dio tres asistencias; Sam Bennett marcó el gol del triunfo con un hombre de más, y Anton Lundell y Niko Mikkola aportaron un gol y una asistencia cada uno. Aleksander Barkov cerró el marcador con un gol a puerta vacía. Florida visita a Washington el viernes y recibe a Tampa Bay el sábado 28, a las 6:00 PM.",
+          "El viernes por la noche también juega Inter Miami, que perdió 3-0 el primer partido ante Columbus y necesita ganar para forzar un tercero. Los detalles están en [la nota del partido](https://miamimagicapp.com/noticias/inter-miami-playoffs-nu-stadium)."
+        ]
+      },
+      "en": {
+        "etiqueta": "SPORTS",
+        "titulo": "Heat fall 111-104 in Philadelphia, ending the streak; Panthers win 5-3",
+        "bajada": "Giannis Antetokounmpo scored 32 points with 14 rebounds, but Miami lost the second quarter 33-21 and never recovered. On Friday the Heat, the Panthers and Inter Miami all play.",
+        "toca": [
+          "Friday the 27th: Heat in New York at 7:00 PM, Panthers in Washington at 3:00 PM and Inter Miami in Columbus at 8:00 PM.",
+          "The Heat are 10-7 on the season."
+        ],
+        "cuerpo": [
+          "The Heat lost 111-104 in Philadelphia, and their seven-game winning streak ended, according to the game statistics. Miami won the first quarter 32-29, but Philadelphia answered with a 33-21 second quarter and led 62-53 at halftime. In the second half the Heat outscored Philadelphia 51-49, but it was not enough to come back.",
+          "Giannis Antetokounmpo finished with 32 points and 14 rebounds, Davion Mitchell added 20 points and 10 assists, and Bam Adebayo had 17 and 11. For Philadelphia, Tyrese Maxey scored 30. The Heat hit 8 of 31 three-pointers, against 14 of 35 for the home team. With the loss Miami moved to 10-7 and has little rest: it plays Friday in New York against the Knicks and Sunday the 29th, 3:30 PM, in Cleveland, per the [official schedule](https://www.nba.com/heat/schedule).",
+          "The Panthers fared better, beating Ottawa 5-3 at home. Brad Marchand had three assists; Sam Bennett scored the winner on the power play, and Anton Lundell and Niko Mikkola each had a goal and an assist. Aleksander Barkov closed the scoring with an empty-net goal. Florida visits Washington on Friday and hosts Tampa Bay on Saturday the 28th, 6:00 PM.",
+          "Inter Miami also plays Friday night. It lost the first game 3-0 to Columbus and needs a win to force a third. The details are in [our game story](https://miamimagicapp.com/news/inter-miami-playoffs-nu-stadium)."
+        ]
+      },
+      "ultima": 3
+    },
+    {
       "id": "fedex-md-11-se-sale-pista-26r-mia-25-noviembre",
       "scope": "miami",
       "tema": "calle",
@@ -288,7 +344,7 @@
       "actualizada": "2026-11-26T07:13:15-05:00",
       "vence": "2026-11-27",
       "aviso_vence": false,
-      "ultima": 3,
+      "ultima": 4,
       "arriba": 2,
       "es": {
         "etiqueta": "EL TIEMPO",
@@ -356,7 +412,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-24T12:42:00-05:00",
-      "ultima": 7,
+      "ultima": 8,
       "es": {
         "etiqueta": "EN LA CALLE",
         "titulo": "Thanksgiving: el Metro va con horario de domingo, las oficinas cierran dos días y en Los Cayos la basura se corre un día",
@@ -458,7 +514,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-26T07:05:54-05:00",
-      "ultima": 8,
+      "ultima": 9,
       "arriba": 5,
       "es": {
         "etiqueta": "TRADICIÓN",
@@ -530,7 +586,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-23T12:55:00-05:00",
-      "ultima": 9,
+      "ultima": 10,
       "arriba": 3,
       "es": {
         "etiqueta": "HISTORIA",
@@ -581,39 +637,39 @@
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-22T23:55:00-05:00",
+      "actualizada": "2026-11-26T07:46:06-05:00",
       "foto": "mm-heat-kaseya-noche.jpg",
       "foto_alt": "Vista aérea del downtown de Miami al anochecer, con el Kaseya Center a la izquierda junto a la bahía",
       "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
       "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
       "foto_mm": false,
-      "ultima": 11,
+      "ultima": 12,
       "es": {
         "etiqueta": "DEPORTES",
-        "titulo": "El Heat vence 123-113 al Thunder y suma siete victorias seguidas",
-        "bajada": "Miami ganó el primer cuarto 36-24, llegó a mandar por 20 y Oklahoma City nunca lideró. El HEAT queda 10-6 y el miércoles visita a Filadelfia.",
+        "titulo": "El HEAT venció 123-113 al Thunder y llegó a siete victorias seguidas",
+        "bajada": "Miami ganó el primer cuarto 36-24, llegó a mandar por 20 y Oklahoma City nunca lideró. El HEAT quedó 10-6; el miércoles cayó en Filadelfia y la racha se cortó.",
         "toca": [
           "Resultado: HEAT 123, Thunder 113, el domingo 22 de noviembre en el Kaseya Center.",
-          "Próximo partido: miércoles 25, 5:00 PM, en Filadelfia; el viernes 27, 7:00 PM, en Nueva York contra los Knicks, según el [calendario oficial del HEAT](https://www.nba.com/heat/schedule)."
+          "Después: el miércoles 25 perdió 111-104 en Filadelfia, y el viernes 27, a las 7:00 PM, visita a los Knicks en Nueva York, según el [calendario oficial del HEAT](https://www.nba.com/heat/schedule)."
         ],
         "cuerpo": [
-          "El HEAT venció 123-113 a Oklahoma City en el Kaseya Center y ya suma siete victorias seguidas, según las estadísticas oficiales del partido. Miami arrancó mandando, con un primer cuarto de 36-24, y llegó a tener 20 puntos de ventaja. Oklahoma City recortó en el último cuarto, que ganó 33-28, pero nunca llegó a ponerse al frente.",
+          "El HEAT venció 123-113 a Oklahoma City en el Kaseya Center y llegó a siete victorias seguidas, según las estadísticas oficiales del partido. Miami arrancó mandando, con un primer cuarto de 36-24, y llegó a tener 20 puntos de ventaja. Oklahoma City recortó en el último cuarto, que ganó 33-28, pero nunca llegó a ponerse al frente.",
           "Bam Adebayo cerró con triple-doble: 24 puntos, 15 rebotes y 12 asistencias, con 8 de 11 en tiros de campo. Pelle Larsson anotó 21 puntos, Nikola Jovic 15, con tres triples, y Davion Mitchell 14. La banca del HEAT aportó 45 puntos y el equipo acertó 15 triples.",
-          "Por Oklahoma City, Bennett Stirtz y Jared McCain anotaron 21 y 20 puntos, y Ajay Mitchell sumó 17. Con el triunfo, Miami queda 10-6 en la temporada."
+          "Por Oklahoma City, Bennett Stirtz y Jared McCain anotaron 21 y 20 puntos, y Ajay Mitchell sumó 17. Con el triunfo, Miami quedó 10-6 en la temporada."
         ]
       },
       "en": {
         "etiqueta": "SPORTS",
         "titulo": "Heat beat Thunder 123-113 for a seventh straight win",
-        "bajada": "Miami won the first quarter 36-24, led by as many as 20 and Oklahoma City never held the lead. The Heat improve to 10-6 and visit Philadelphia on Wednesday.",
+        "bajada": "Miami won the first quarter 36-24, led by as many as 20 and Oklahoma City never held the lead. The Heat moved to 10-6; on Wednesday they lost in Philadelphia and the streak ended.",
         "toca": [
           "Final: Heat 123, Thunder 113, Sunday, November 22, at Kaseya Center.",
-          "Next up: Wednesday the 25th, 5:00 PM, at Philadelphia; Friday the 27th, 7:00 PM, at the Knicks in New York, per the [Heat's official schedule](https://www.nba.com/heat/schedule)."
+          "Since then: on Wednesday the 25th they lost 111-104 in Philadelphia, and on Friday the 27th, 7:00 PM, they visit the Knicks in New York, per the [Heat's official schedule](https://www.nba.com/heat/schedule)."
         ],
         "cuerpo": [
           "The Heat beat Oklahoma City 123-113 at Kaseya Center and have now won seven straight, according to the game's official statistics. Miami came out ahead, taking the first quarter 36-24, and led by as many as 20 points. Oklahoma City cut into it in the fourth quarter, which it won 33-28, but never took the lead.",
           "Bam Adebayo finished with a triple-double: 24 points, 15 rebounds and 12 assists, shooting 8 of 11 from the field. Pelle Larsson scored 21 points, Nikola Jovic 15, with three three-pointers, and Davion Mitchell 14. The Heat bench added 45 points and the team made 15 threes.",
-          "For Oklahoma City, Bennett Stirtz and Jared McCain scored 21 and 20 points, and Ajay Mitchell added 17. With the win, Miami moves to 10-6 on the season."
+          "For Oklahoma City, Bennett Stirtz and Jared McCain scored 21 and 20 points, and Ajay Mitchell added 17. With the win, Miami moved to 10-6 on the season."
         ]
       }
     },
@@ -679,7 +735,7 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 12,
+      "ultima": 13,
       "arriba": 6
     },
     {
@@ -795,7 +851,7 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 14,
+      "ultima": 15,
       "arriba": 4
     },
     {
@@ -888,7 +944,7 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 16,
+      "ultima": 17,
       "arriba": 10
     },
     {
@@ -986,7 +1042,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 15,
+      "ultima": 16,
       "arriba": 9
     },
     {
@@ -1063,7 +1119,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 13
+      "ultima": 14
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -1157,7 +1213,7 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 10,
+      "ultima": 11,
       "arriba": 6
     },
     {
@@ -1232,7 +1288,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 17
+      "ultima": 18
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -1290,7 +1346,7 @@
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
       "arriba": 12,
-      "ultima": 18
+      "ultima": 19
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -1400,7 +1456,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 23
+      "ultima": 24
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -1543,7 +1599,7 @@
           }
         }
       ],
-      "ultima": 34,
+      "ultima": 35,
       "vence": "2026-11-21"
     },
     {
@@ -1766,7 +1822,7 @@
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
       ],
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -1857,7 +1913,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 24
+      "ultima": 25
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -1944,7 +2000,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 27
+      "ultima": 28
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -2025,7 +2081,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 26
+      "ultima": 27
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -2267,7 +2323,7 @@
           }
         }
       ],
-      "ultima": 35
+      "ultima": 36
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -2370,7 +2426,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 32
+      "ultima": 33
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -2449,7 +2505,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 21
+      "ultima": 22
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -2521,7 +2577,7 @@
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
       "arriba": 8,
-      "ultima": 29
+      "ultima": 30
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -2604,7 +2660,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 31
+      "ultima": 32
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -2637,11 +2693,11 @@
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "El HEAT pasa por encima de los Rockets, 128-110, y ya suma cinco victorias seguidas",
-        "bajada": "Giannis Antetokounmpo terminó con 20 puntos y 13 rebotes, Miami llegó a ganar por 26 y queda 8-6. El miércoles recibe a los Bucks en la noche de Vice City.",
+        "bajada": "Giannis Antetokounmpo terminó con 20 puntos y 13 rebotes, y Miami llegó a ganar por 26. Fue la quinta victoria seguida del HEAT, que quedó 8-6.",
         "toca": [
           "Resultado: HEAT 128, Rockets 110, en el Kaseya Center.",
-          "Miércoles 18, 7 PM: contra Milwaukee, la noche de Vice City.",
-          "Domingo 22, 6 PM: contra Oklahoma City."
+          "Miércoles 18: el HEAT venció a Milwaukee 137-130.",
+          "Domingo 22: venció a Oklahoma City 123-113."
         ],
         "cuerpo": [
           "## Actualización · 10:05 PM",
@@ -2652,17 +2708,17 @@
           "El HEAT llega en su mejor momento de la temporada. Después de perder sus cuatro primeros juegos, Miami ha ganado sus últimos cuatro, los dos más recientes en casa, por 133-121 a Cleveland y 137-117 a Detroit. Con 7 victorias y 6 derrotas, es quinto en el Este.",
           "Enfrente tiene a uno de los equipos más en forma de la liga. Los Rockets de Kevin Durant van 11-3, son terceros en el Oeste y también llegan con cuatro victorias seguidas.",
           "Houston jugó sin Fred VanVleet, por la rodilla, ni Clint Capela, por el tobillo, y con Marcus Smart suspendido, según el [reporte de lesiones](https://www.espn.com/nba/game/_/gameId/401909998/rockets-heat). En Miami, la duda es Pelle Larsson, que se perdió los dos últimos juegos por una enfermedad.",
-          "Es el primero de tres juegos seguidos en casa, según el [calendario oficial](https://www.nba.com/heat/schedule). El del miércoles contra los Bucks será la noche Vice City, con cancha temática por el estreno de GTA VI."
+          "Era el primero de tres juegos seguidos en casa, según el [calendario oficial](https://www.nba.com/heat/schedule). El del miércoles contra los Bucks estaba programado como la noche Vice City, con cancha temática por el estreno de GTA VI."
         ]
       },
       "en": {
         "etiqueta": "SPORTS",
         "titulo": "The HEAT roll past the Rockets, 128-110, for their fifth straight win",
-        "bajada": "Giannis Antetokounmpo finished with 20 points and 13 rebounds, Miami led by as many as 26 and improved to 8-6. On Wednesday it hosts the Bucks on Vice City night.",
+        "bajada": "Giannis Antetokounmpo finished with 20 points and 13 rebounds, and Miami led by as many as 26. It was the Heat's fifth straight win, moving them to 8-6.",
         "toca": [
           "Final: HEAT 128, Rockets 110, at Kaseya Center.",
-          "Wednesday the 18th, 7 PM: vs. Milwaukee, Vice City night.",
-          "Sunday the 22nd, 6 PM: vs. Oklahoma City."
+          "Wednesday the 18th: the Heat beat Milwaukee 137-130.",
+          "Sunday the 22nd: they beat Oklahoma City 123-113."
         ],
         "cuerpo": [
           "## Update · 10:05 PM",
@@ -2673,11 +2729,11 @@
           "The HEAT are at their best of the season. After losing its first four games, Miami has won its last four, the two most recent at home, 133-121 over Cleveland and 137-117 over Detroit. At 7-6, they are fifth in the East.",
           "Across the floor is one of the league's hottest teams. Kevin Durant's Rockets are 11-3, third in the West, and also riding a four-game win streak.",
           "Houston played without Fred VanVleet (knee) or Clint Capela (ankle), and with Marcus Smart suspended, per the [injury report](https://www.espn.com/nba/game/_/gameId/401909998/rockets-heat). For Miami, the question mark is Pelle Larsson, who missed the last two games with an illness.",
-          "It's the first of three straight home games, per the [official schedule](https://www.nba.com/heat/schedule). Wednesday's game against the Bucks is Vice City night, with a themed court for the GTA VI launch."
+          "It was the first of three straight home games, per the [official schedule](https://www.nba.com/heat/schedule). Wednesday's game against the Bucks was scheduled as Vice City night, with a themed court for the GTA VI launch."
         ]
       },
-      "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 28
+      "actualizada": "2026-11-26T07:46:06-05:00",
+      "ultima": 29
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -2849,7 +2905,7 @@
           }
         }
       ],
-      "ultima": 19
+      "ultima": 20
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -2933,7 +2989,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 25
+      "ultima": 26
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -3016,7 +3072,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 30
+      "ultima": 31
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -3098,7 +3154,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 33
+      "ultima": 34
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -4369,7 +4425,7 @@
       "actualizada": "2026-11-26T07:13:33-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 5,
+      "ultima": 6,
       "desarrollo": true,
       "arriba": 3
     },
@@ -6151,7 +6207,7 @@
       "foto_mm": false,
       "desarrollo": true,
       "actualizada": "2026-11-26T07:13:33-05:00",
-      "ultima": 6,
+      "ultima": 7,
       "arriba": 1
     },
     {
@@ -8516,7 +8572,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 22
+      "ultima": 23
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -8568,7 +8624,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T07:41:59-05:00",
+  "updated_at": "2026-11-26T07:46:06-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
