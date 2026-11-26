@@ -224,7 +224,8 @@
           "## Broward",
           "La única estrella del condado es reciente. El Chef's Counter at MAASS, dentro del Four Seasons de Fort Lauderdale, la ganó en 2025, la primera de la historia de la ciudad, y volvió a recibirla este año, según el [Four Seasons](https://press.fourseasons.com/fortlauderdale/hotel-news/2026/michelin-honours-for-evelyns-and-maass). Es una barra de menú de degustación del chef Ryan Ratino.",
           "## En Los Cayos",
-          "Los Cayos no tienen estrellas, pero 2026 trajo una primera vez: al volverse estatal, la guía llegó a Key West. Moondog Cafe & Bakery, junto a la casa de Hemingway, recibió un [Bib Gourmand](https://guide.michelin.com/us/en/florida/key-west_2883507/restaurant/moondog-cafe-bakery), y Blue Heaven entró como restaurante recomendado. Son los primeros de todos los Cayos en aparecer en la guía. Una guía que nació para llevar gente a la carretera termina premiando, en el extremo sur de Florida, un desayuno y un pedazo de pie de key lime."
+          "Los Cayos no tienen estrellas, pero 2026 trajo una primera vez: al volverse estatal, la guía llegó a Key West. Moondog Cafe & Bakery, junto a la casa de Hemingway, recibió un [Bib Gourmand](https://guide.michelin.com/us/en/florida/key-west_2883507/restaurant/moondog-cafe-bakery), y Blue Heaven entró como restaurante recomendado. Son los primeros de todos los Cayos en aparecer en la guía.",
+          "Cuesta no ver el círculo cerrado. En 1900 dos fabricantes de neumáticos regalaron una guía para que la gente se subiera al auto, y más de un siglo después el mapa de esas estrellas todavía se recorre manejando: desde el Design District, con tres estrellas bajo un mismo techo, hasta la milla 0 de la U.S. 1, en Key West, donde un café con su pie de key lime ya tiene lugar en la guía. Michelin quería que se gastaran gomas. En Miami y en Los Cayos, el pretexto es bueno."
         ]
       },
       "en": {
@@ -247,7 +248,8 @@
           "## Broward",
           "The county's only star is recent. Chef's Counter at MAASS, inside the Four Seasons in Fort Lauderdale, won it in 2025, the city's first ever, and kept it this year, according to the [Four Seasons](https://press.fourseasons.com/fortlauderdale/hotel-news/2026/michelin-honours-for-evelyns-and-maass). It is a tasting-menu counter from chef Ryan Ratino.",
           "## In the Keys",
-          "The Keys have no stars, but 2026 brought a first: once the guide went statewide, it reached Key West. Moondog Cafe & Bakery, next to the Hemingway house, earned a [Bib Gourmand](https://guide.michelin.com/us/en/florida/key-west_2883507/restaurant/moondog-cafe-bakery), and Blue Heaven made the recommended list. They are the first in the Keys to appear in the guide. A guide born to put people on the road ends up honoring, at the southern tip of Florida, a breakfast and a slice of key lime pie."
+          "The Keys have no stars, but 2026 brought a first: once the guide went statewide, it reached Key West. Moondog Cafe & Bakery, next to the Hemingway house, earned a [Bib Gourmand](https://guide.michelin.com/us/en/florida/key-west_2883507/restaurant/moondog-cafe-bakery), and Blue Heaven made the recommended list. They are the first in the Keys to appear in the guide.",
+          "It is hard not to see the circle close. In 1900 two tire makers gave away a guide to get people into their cars, and more than a century later the map of those stars is still something you drive: from the Design District, with three stars under one roof, to Mile 0 of U.S. 1 in Key West, where a café and its key lime pie now have a place in the guide. Michelin wanted tires worn out. In Miami and the Keys, the excuse is a good one."
         ]
       },
       "publicada": "2026-11-26T07:41:59-05:00",
@@ -8624,7 +8626,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T07:46:06-05:00",
+  "updated_at": "2026-11-26T07:56:19-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
