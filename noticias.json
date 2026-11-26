@@ -2,7 +2,7 @@
   "_como_usar": "Archivo de Miami Magic News. Cada nota va en 'notas' con su id (sin espacios, minúsculas). scope: miami | cayos | florida | usa | internacional. tema: casa | bolsillo | calle | barrio | ciudad | curioso | deporte. hamaca: true para Hamaca Mood. destacada: true para la nota principal de la portada. Todo texto va en es y en. 'ultima_hora' solo se muestra si activa es true y la hora 'hasta' no ha pasado. 'cifras' se muestran en la cinta solo si tienen valor v; fuente y fecha son obligatorias. foto_pie_en: pie de foto en inglés. foto_pos: encuadre de la foto (ej. \"50% 22%\" sube el foco). foto_ratio: proporción de la foto principal en la nota (ej. \"3/4\" para mostrarla vertical y completa). Enlaces en el texto: [texto](https://...). muelle: true para El Muelle / The Dock (pescadores y dueños de botes); etiqueta = tipo (LAS REGLAS, CONSEJOS, LUGARES, EVENTOS, VIAJES). vence: fecha del evento (AAAA-MM-DD); pasada esa fecha la nota baja detrás de lo vigente en portada y secciones, y sigue en el archivo. Pasada la fecha de 'vence', el pedacito del evento se reescribe en pasado en la misma nota (preferencia de Yoly). El aviso automático «Este evento ya pasó» solo sale si la nota lleva aviso_vence: true. publicada: fecha y hora ISO con zona horaria (ej. 2026-11-17T09:30:00-05:00) en que salió la nota; no cambia con las actualizaciones (eso va en 'actualizada'). Google la usa como hora de publicación.",
   "updated": "2026-11-08",
   "ultima_hora": {
-    "activa": true,
+    "activa": false,
     "nota": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
     "es": "Miami-Dade vuelve a clases este viernes; las escuelas de Broward no abren hasta el lunes 30",
     "en": "Miami-Dade goes back to school this Friday; Broward schools stay closed until Monday the 30th",
@@ -54,6 +54,153 @@
   ],
   "videos": [],
   "notas": [
+    {
+      "id": "fedex-md-11-se-sale-pista-26r-mia-25-noviembre",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-26",
+      "publicada": "2026-11-26T07:41:59-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-mia-fedex-aviso.jpg",
+      "foto_en": "mm-mia-fedex-aviso-en.jpg",
+      "foto_alt": "Gráfico de Miami Magic con el aviso del avión de FedEx en la pista 26R del aeropuerto de Miami",
+      "foto_pie": "Gráfico de Miami Magic.",
+      "foto_pie_en": "Graphic by Miami Magic.",
+      "desarrollo": true,
+      "fuentes": [
+        {
+          "n": "FAA · Publicación sobre el vuelo 910 de FedEx",
+          "u": "https://x.com/FAANews/status/2125781991387779283"
+        },
+        {
+          "n": "Aeropuerto Internacional de Miami · Actualización",
+          "u": "https://x.com/iflymia/status/2125821301814157360"
+        },
+        {
+          "n": "FAA · Reporte diario de tráfico aéreo",
+          "u": "https://www.faa.gov/newsroom/faa-daily-air-traffic-report"
+        }
+      ],
+      "es": {
+        "etiqueta": "EN LA CALLE",
+        "titulo": "Un avión de carga de FedEx se sale de la pista 26R en Miami: sin heridos reportados",
+        "bajada": "El vuelo 910, un MD-11 procedente de Memphis, se pasó de la pista alrededor de las 8:40 p.m. del miércoles. En su última actualización de la madrugada, el aeropuerto tenía dos pistas abiertas.",
+        "toca": [
+          "Si vuela hoy, confirme su vuelo con la aerolínea antes de salir hacia MIA.",
+          "Según el aeropuerto, no hay heridos reportados.",
+          "La FAA investigará lo ocurrido."
+        ],
+        "cuerpo": [
+          "Un avión de carga de FedEx se pasó de la pista 26R del Aeropuerto Internacional de Miami alrededor de las 8:40 p.m. del miércoles, informó el propio aeropuerto. Los bomberos de Miami-Dade respondieron y no hay heridos reportados. La [FAA](https://x.com/FAANews/status/2125781991387779283) identificó el avión como el vuelo 910, un McDonnell Douglas MD-11 que salió de Memphis, y dijo que investigará.",
+          "Durante la noche, el aeropuerto cerró pistas. En su [actualización posterior](https://x.com/iflymia/status/2125821301814157360), indicó que había dos pistas abiertas: la sur (9-27), para llegadas y salidas, y la diagonal (12/30), reabierta a las 10:30 p.m. solo para salidas. A los pasajeros les pidió que consulten con sus aerolíneas.",
+          "Las publicaciones oficiales no detallan la causa. El reporte diario de la [FAA](https://www.faa.gov/newsroom/faa-daily-air-traffic-report) del miércoles ya advertía de tormentas que podían causar demoras en Miami y Fort Lauderdale."
+        ]
+      },
+      "en": {
+        "etiqueta": "ON THE STREET",
+        "titulo": "FedEx cargo plane runs off Runway 26R at Miami airport: no injuries reported",
+        "bajada": "Flight 910, an MD-11 from Memphis, overran the runway around 8:40 p.m. Wednesday. In its latest early-morning update, the airport had two runways open.",
+        "toca": [
+          "Flying today? Check your flight with your airline before heading to MIA.",
+          "According to the airport, no injuries have been reported.",
+          "The FAA will investigate."
+        ],
+        "cuerpo": [
+          "A FedEx cargo plane overran Runway 26R at Miami International Airport around 8:40 p.m. Wednesday, the airport said. Miami-Dade Fire Rescue responded and no injuries have been reported. The [FAA](https://x.com/FAANews/status/2125781991387779283) identified the aircraft as Flight 910, a McDonnell Douglas MD-11 that left Memphis, and said it will investigate.",
+          "The airport closed runways overnight. In its [later update](https://x.com/iflymia/status/2125821301814157360), it said two runways were open: the south runway (9-27) for arrivals and departures, and the diagonal (12/30), reopened at 10:30 p.m. for departures only. Passengers were asked to check with their airlines.",
+          "The official posts do not give a cause. The [FAA's](https://www.faa.gov/newsroom/faa-daily-air-traffic-report) Wednesday daily report had already warned of thunderstorms that could cause delays in Miami and Fort Lauderdale."
+        ]
+      },
+      "ultima": 1,
+      "arriba": 1
+    },
+    {
+      "id": "guia-michelin-historia-estrellas-miami-broward-cayos",
+      "scope": "miami",
+      "ambos": true,
+      "tema": "historia",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-26",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-guia-michelin-portada.jpg",
+      "fuentes": [
+        {
+          "n": "Michelin · Historia de la Guía",
+          "u": "https://guide.michelin.com/kr/en/article/features/history-michelin-guide"
+        },
+        {
+          "n": "Michelin · Estrellas de Florida 2026",
+          "u": "https://guide.michelin.com/en/article/michelin-guide-ceremony/every-michelin-starred-restaurant-in-florida-for-2026-and-the-year-s-key-trends-copy1"
+        },
+        {
+          "n": "Michelin · Moondog Cafe & Bakery",
+          "u": "https://guide.michelin.com/us/en/florida/key-west_2883507/restaurant/moondog-cafe-bakery"
+        },
+        {
+          "n": "Miami Living · Restaurantes con estrella",
+          "u": "https://www.miamilivingmagazine.com/post/miami-michelin-guide-2026-every-michelin-starred-restaurant-you-need-to-know"
+        },
+        {
+          "n": "Four Seasons Fort Lauderdale · MAASS",
+          "u": "https://press.fourseasons.com/fortlauderdale/hotel-news/2026/michelin-honours-for-evelyns-and-maass"
+        }
+      ],
+      "es": {
+        "etiqueta": "HISTORIA",
+        "titulo": "Nació para vender gomas y hoy hay 15 estrellas en Miami-Dade: la historia de la Guía Michelin",
+        "bajada": "En 1900 los hermanos Michelin regalaron una guía para que los conductores gastaran más neumáticos. Más de un siglo después, Miami-Dade suma 15 estrellas, Broward una, y en Los Cayos la guía acaba de llegar.",
+        "toca": [
+          "Florida tiene 26 restaurantes con estrella en la guía 2026, según Michelin: 14 en Miami-Dade y 1 en Broward.",
+          "En Los Cayos no hay estrellas, pero Key West entró por primera vez a la guía.",
+          "Un Bib Gourmand premia buena comida a buen precio. No es una estrella."
+        ],
+        "cuerpo": [
+          "En 1900 circulaban menos de 3,000 autos por toda Francia y los hermanos André y Édouard Michelin fabricaban neumáticos. El problema era sencillo: si la gente no manejaba, las gomas no se gastaban. Su solución fue regalar un librito. Según [Michelin](https://guide.michelin.com/kr/en/article/features/history-michelin-guide), se repartieron 35,000 ejemplares gratis, con lo que un conductor necesitaba en la carretera: gasolina, talleres, hoteles y dónde comer.",
+          "Veinte años después, la historia dio un giro. Cuenta la propia empresa que André entró a un taller y vio sus guías usadas para calzar una mesa de trabajo. Concluyó que la gente solo valora lo que paga, y en 1920 empezó a cobrarla: siete francos. En 1926 llegó la primera estrella y, en los años 30, el sistema de una, dos y tres estrellas que hoy mide la alta cocina en medio mundo.",
+          "Esa guía llegó a Florida en 2022 con Miami, Orlando y Tampa. En 2025 se sumaron Fort Lauderdale, Palm Beach y St. Pete-Clearwater, y el 28 de mayo de 2026 la selección se volvió estatal. Hoy hay [26 restaurantes con estrella](https://guide.michelin.com/en/article/michelin-guide-ceremony/every-michelin-starred-restaurant-in-florida-for-2026-and-the-year-s-key-trends-copy1) en todo el estado, y más de la mitad están en el sur.",
+          "## Miami y Miami Beach",
+          "El centro de gravedad es el Design District. Allí está [L'Atelier de Joël Robuchon](https://miamimagicapp.com/?item=r90&type=rest), el único restaurante de Florida con dos estrellas, con su barra frente a la cocina. En el mismo edificio, en 151 NE 41st St, está Le Jardinier, de cocina francesa moderna, y a pocas cuadras Cote, donde los cortes coreanos se asan en la mesa. Más al norte, en una plaza pequeña de Buena Vista, [Boia De](https://miamimagicapp.com/?item=r78&type=rest) hace la pasta a mano y también tiene estrella.",
+          "Siguiendo hacia el sur está Coconut Grove, con dos estrellas a pocas cuadras. [Ariete](https://miamimagicapp.com/?item=r09&type=rest), del chef Michael Beltran, es famoso por el pato prensado en la mesa. Los Félix cocina un menú mexicano que parte del maíz nixtamalizado. En Brickell, Elcielo convierte un menú colombiano, del chef Juan Manuel Barrientos, en una función con historias. En Wynwood y Little Haiti la estrella está en barras diminutas de omakase: Hiden recibe a muy pocos comensales y Ogawa tiene un mostrador de diez asientos. En Coral Gables, Shingo hace sushi de técnica Edomae.",
+          "Al otro lado de la bahía, en Miami Beach, [Stubborn Seed](https://miamimagicapp.com/?item=r04&type=rest), del chef Jeremy Ford, cocina con productos de su finca en Homestead, y Tambourine Room by Tristan Brandt sirve un menú de inspiración francesa dentro del Carillon. En Surfside, The Surf Club Restaurant ocupa el histórico [Four Seasons at The Surf Club](https://miamimagicapp.com/?item=h38&type=hotel). La novedad de 2026 es Mutra, en North Miami: el chef israelí Raz Shabtai hace cocina de Medio Oriente con aire miamense y, según [Miami Living](https://www.miamilivingmagazine.com/post/miami-michelin-guide-2026-every-michelin-starred-restaurant-you-need-to-know), es el primer restaurante kosher del mundo con una estrella. Son 14 restaurantes y 15 estrellas, porque L'Atelier tiene dos.",
+          "## Broward",
+          "La única estrella del condado es reciente. El Chef's Counter at MAASS, dentro del Four Seasons de Fort Lauderdale, la ganó en 2025, la primera de la historia de la ciudad, y volvió a recibirla este año, según el [Four Seasons](https://press.fourseasons.com/fortlauderdale/hotel-news/2026/michelin-honours-for-evelyns-and-maass). Es una barra de menú de degustación del chef Ryan Ratino.",
+          "## En Los Cayos",
+          "Los Cayos no tienen estrellas, pero 2026 trajo una primera vez: al volverse estatal, la guía llegó a Key West. Moondog Cafe & Bakery, junto a la casa de Hemingway, recibió un [Bib Gourmand](https://guide.michelin.com/us/en/florida/key-west_2883507/restaurant/moondog-cafe-bakery), y Blue Heaven entró como restaurante recomendado. Son los primeros de todos los Cayos en aparecer en la guía. Una guía que nació para llevar gente a la carretera termina premiando, en el extremo sur de Florida, un desayuno y un pedazo de pie de key lime."
+        ]
+      },
+      "en": {
+        "etiqueta": "HISTORY",
+        "titulo": "Born to sell tires, now 15 stars in Miami-Dade: the story of the Michelin Guide",
+        "bajada": "In 1900 the Michelin brothers gave away a guide so drivers would wear out more tires. Over a century later, Miami-Dade holds 15 stars, Broward one, and the guide has just reached the Keys.",
+        "toca": [
+          "Florida has 26 Michelin-starred restaurants in the 2026 guide, according to Michelin: 14 in Miami-Dade and 1 in Broward.",
+          "The Keys have no stars, but Key West entered the guide for the first time.",
+          "A Bib Gourmand rewards good food at a fair price. It is not a star."
+        ],
+        "cuerpo": [
+          "In 1900 fewer than 3,000 cars were on the road in all of France, and brothers André and Édouard Michelin made tires. The problem was simple: if people didn't drive, tires didn't wear out. Their answer was to give away a little book. According to [Michelin](https://guide.michelin.com/kr/en/article/features/history-michelin-guide), 35,000 copies went out free, with what a driver needed on the road: fuel, garages, hotels and places to eat.",
+          "Twenty years later the story turned. The company itself tells it this way: André walked into a garage and saw his guides propping up a workbench. He decided people only value what they pay for, and in 1920 he began charging seven francs. The first star came in 1926 and, in the 1930s, the one-, two- and three-star system that now measures fine dining across the world.",
+          "The guide reached Florida in 2022 with Miami, Orlando and Tampa. Fort Lauderdale, Palm Beach and St. Pete-Clearwater joined in 2025, and on May 28, 2026 the selection went statewide. Today there are [26 starred restaurants](https://guide.michelin.com/en/article/michelin-guide-ceremony/every-michelin-starred-restaurant-in-florida-for-2026-and-the-year-s-key-trends-copy1) across the state, and more than half are in South Florida.",
+          "## Miami and Miami Beach",
+          "The center of gravity is the Design District. That's where [L'Atelier de Joël Robuchon](https://miamimagicapp.com/?item=r90&type=rest) sits, Florida's only two-star restaurant, with its counter facing the kitchen. In the same building, at 151 NE 41st St, is Le Jardinier, modern French, and a few blocks away Cote, where Korean cuts are grilled at your table. Farther north, in a small Buena Vista plaza, [Boia De](https://miamimagicapp.com/?item=r78&type=rest) makes its pasta by hand and also holds a star.",
+          "Heading south is Coconut Grove, with two stars a few blocks apart. [Ariete](https://miamimagicapp.com/?item=r09&type=rest), from chef Michael Beltran, is known for pressed duck finished at the table. Los Félix cooks a Mexican menu built on nixtamalized corn. In Brickell, Elcielo turns a Colombian tasting menu, from chef Juan Manuel Barrientos, into a performance full of stories. In Wynwood and Little Haiti the stars sit at tiny omakase counters: Hiden seats very few guests and Ogawa has a ten-seat bar. In Coral Gables, Shingo makes Edomae-style sushi.",
+          "Across the bay in Miami Beach, [Stubborn Seed](https://miamimagicapp.com/?item=r04&type=rest), from chef Jeremy Ford, cooks with produce from his Homestead farm, and Tambourine Room by Tristan Brandt serves a French-inspired tasting menu inside the Carillon. In Surfside, The Surf Club Restaurant occupies the historic [Four Seasons at The Surf Club](https://miamimagicapp.com/?item=h38&type=hotel). The 2026 newcomer is Mutra in North Miami: Israeli chef Raz Shabtai cooks Middle Eastern food with a Miami accent and, according to [Miami Living](https://www.miamilivingmagazine.com/post/miami-michelin-guide-2026-every-michelin-starred-restaurant-you-need-to-know), it is the world's first kosher restaurant with a star. That makes 14 restaurants and 15 stars, because L'Atelier holds two.",
+          "## Broward",
+          "The county's only star is recent. Chef's Counter at MAASS, inside the Four Seasons in Fort Lauderdale, won it in 2025, the city's first ever, and kept it this year, according to the [Four Seasons](https://press.fourseasons.com/fortlauderdale/hotel-news/2026/michelin-honours-for-evelyns-and-maass). It is a tasting-menu counter from chef Ryan Ratino.",
+          "## In the Keys",
+          "The Keys have no stars, but 2026 brought a first: once the guide went statewide, it reached Key West. Moondog Cafe & Bakery, next to the Hemingway house, earned a [Bib Gourmand](https://guide.michelin.com/us/en/florida/key-west_2883507/restaurant/moondog-cafe-bakery), and Blue Heaven made the recommended list. They are the first in the Keys to appear in the guide. A guide born to put people on the road ends up honoring, at the southern tip of Florida, a breakfast and a slice of key lime pie."
+        ]
+      },
+      "publicada": "2026-11-26T07:41:59-05:00",
+      "foto_en": "mm-guia-michelin-portada-en.jpg",
+      "foto_alt": "Gráfico de Miami Magic: 15 estrellas Michelin en Miami-Dade, 1 en Broward y primera vez de Los Cayos en la guía",
+      "foto_pie": "Gráfico de Miami Magic.",
+      "foto_pie_en": "Graphic by Miami Magic.",
+      "ultima": 2
+    },
     {
       "id": "opinion-thanksgiving-fiesta-que-elegimos",
       "scope": "miami",
@@ -141,8 +288,8 @@
       "actualizada": "2026-11-26T07:13:15-05:00",
       "vence": "2026-11-27",
       "aviso_vence": false,
-      "ultima": 1,
-      "arriba": 1,
+      "ultima": 3,
+      "arriba": 2,
       "es": {
         "etiqueta": "EL TIEMPO",
         "titulo": "Thanksgiving llega con sol en el pronóstico, tras la lluvia y la vigilancia de inundación de ayer",
@@ -209,7 +356,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-24T12:42:00-05:00",
-      "ultima": 5,
+      "ultima": 7,
       "es": {
         "etiqueta": "EN LA CALLE",
         "titulo": "Thanksgiving: el Metro va con horario de domingo, las oficinas cierran dos días y en Los Cayos la basura se corre un día",
@@ -244,7 +391,7 @@
           "The table, the history and the events of this Thanksgiving are in our [tradition story](https://miamimagicapp.com/news/thanksgiving-tradicion-historia-como-se-celebra)."
         ]
       },
-      "arriba": 3
+      "arriba": 4
     },
     {
       "id": "thanksgiving-tradicion-historia-como-se-celebra",
@@ -311,8 +458,8 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-26T07:05:54-05:00",
-      "ultima": 6,
-      "arriba": 4,
+      "ultima": 8,
+      "arriba": 5,
       "es": {
         "etiqueta": "TRADICIÓN",
         "titulo": "Dar gracias: de una cosecha compartida en 1621 a la mesa que reúne a todo el país",
@@ -383,7 +530,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-23T12:55:00-05:00",
-      "ultima": 7,
+      "ultima": 9,
       "arriba": 3,
       "es": {
         "etiqueta": "HISTORIA",
@@ -440,7 +587,7 @@
       "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
       "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
       "foto_mm": false,
-      "ultima": 9,
+      "ultima": 11,
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "El Heat vence 123-113 al Thunder y suma siete victorias seguidas",
@@ -532,8 +679,8 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 10,
-      "arriba": 5
+      "ultima": 12,
+      "arriba": 6
     },
     {
       "id": "venado-de-los-cayos-key-deer-big-pine-key-como-verlo",
@@ -648,7 +795,7 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 12,
+      "ultima": 14,
       "arriba": 4
     },
     {
@@ -741,8 +888,8 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 14,
-      "arriba": 9
+      "ultima": 16,
+      "arriba": 10
     },
     {
       "id": "oculus-hard-rock-hollywood-cascada-guitar-hotel",
@@ -839,8 +986,8 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 13,
-      "arriba": 8
+      "ultima": 15,
+      "arriba": 9
     },
     {
       "id": "portmiami-10-millones-pasajeros-ano-fiscal-2026",
@@ -916,7 +1063,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 11
+      "ultima": 13
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -1010,8 +1157,8 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 8,
-      "arriba": 5
+      "ultima": 10,
+      "arriba": 6
     },
     {
       "id": "key-west-boyas-amarre-man-of-war-boca-chica-limite-90-dias",
@@ -1085,7 +1232,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 15
+      "ultima": 17
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -1142,8 +1289,8 @@
       },
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
-      "arriba": 11,
-      "ultima": 16
+      "arriba": 12,
+      "ultima": 18
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -1244,7 +1391,7 @@
         ]
       },
       "video": "j7dh6WNqjr0",
-      "arriba": 12,
+      "arriba": 13,
       "galeria": [
         {
           "f": "mm-stiltsville-casa-azul-cerca.jpg",
@@ -1253,7 +1400,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 21
+      "ultima": 23
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -1396,7 +1543,7 @@
           }
         }
       ],
-      "ultima": 32,
+      "ultima": 34,
       "vence": "2026-11-21"
     },
     {
@@ -1619,7 +1766,7 @@
           "en": "The “Pale Blue Dot”: Earth, circled, photographed by Voyager 1 in 1990. 2020 version. Image: NASA/JPL-Caltech."
         }
       ],
-      "ultima": 18
+      "ultima": 20
     },
     {
       "id": "ebikes-scooters-aceras-ciudad-miami-multa",
@@ -1710,7 +1857,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 22
+      "ultima": 24
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -1797,7 +1944,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 25
+      "ultima": 27
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -1878,7 +2025,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 24
+      "ultima": 26
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -2120,7 +2267,7 @@
           }
         }
       ],
-      "ultima": 33
+      "ultima": 35
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -2223,7 +2370,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 30
+      "ultima": 32
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -2302,7 +2449,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 19
+      "ultima": 21
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -2374,7 +2521,7 @@
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
       "arriba": 8,
-      "ultima": 27
+      "ultima": 29
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -2457,7 +2604,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 29
+      "ultima": 31
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -2530,7 +2677,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 26
+      "ultima": 28
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -2645,7 +2792,7 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "arriba": 10,
+      "arriba": 11,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -2702,7 +2849,7 @@
           }
         }
       ],
-      "ultima": 17
+      "ultima": 19
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -2786,7 +2933,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 23
+      "ultima": 25
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -2869,7 +3016,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 28
+      "ultima": 30
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -2951,7 +3098,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 31
+      "ultima": 33
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -4222,9 +4369,9 @@
       "actualizada": "2026-11-26T07:13:33-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 3,
+      "ultima": 5,
       "desarrollo": true,
-      "arriba": 2
+      "arriba": 3
     },
     {
       "id": "inter-miami-playoffs-nu-stadium",
@@ -4297,7 +4444,7 @@
       "versiones": [],
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
-      "arriba": 6
+      "arriba": 7
     },
     {
       "id": "heat-vice-city-bucks",
@@ -6004,7 +6151,7 @@
       "foto_mm": false,
       "desarrollo": true,
       "actualizada": "2026-11-26T07:13:33-05:00",
-      "ultima": 4,
+      "ultima": 6,
       "arriba": 1
     },
     {
@@ -8369,7 +8516,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 20
+      "ultima": 22
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -8421,7 +8568,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T07:13:33-05:00",
+  "updated_at": "2026-11-26T07:41:59-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
