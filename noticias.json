@@ -283,7 +283,7 @@
           "Mi primer Thanksgiving fue tan simple como inolvidable. No hizo falta nada más que la familia y las personas que quiero alrededor de la mesa.",
           "## Los que ya no están",
           "Hay quien ya no está con nosotros, y no importa: cada año doy gracias por haberlos tenido. Hablo de mis abuelos. Mi abuelo, principalmente, me enseñó el valor de cada cosa y a agradecer.",
-          "En mi mesa lo que no puede faltar es el boniato. Me trae a mis abuelos de vuelta.",
+          "En mi mesa lo que no puede faltar es el boniato. Me trae a mis abuelos de vuelta y los reúne con mis hijos, con toda la familia y con los amigos.",
           "Por eso esta fiesta la elegí yo, pero el agradecer lo heredé de él.",
           "## Mis cuentas",
           "Este país nos abrió la puerta, y del otro lado encontramos trabajo, la posibilidad de levantar un negocio y una voz que cuenta. Aquí crezco cada día: disfruto de mi familia, de cada lugar de Miami y de Los Cayos, del trabajo que hago. Gracias a esta gran nación por acogernos.",
@@ -307,7 +307,7 @@
           "My first Thanksgiving was as simple as it was unforgettable. Nothing else was needed: just family and the people I love around the table.",
           "## Those who are no longer here",
           "Some are no longer with us, and it doesn't matter: every year I give thanks for having had them. I'm talking about my grandparents. My grandfather, above all, taught me the value of every little thing and how to be grateful.",
-          "What can never be missing from my table is the boniato, the Cuban sweet potato. It brings my grandparents back to me.",
+          "What can never be missing from my table is the boniato, the Cuban sweet potato. It brings my grandparents back to me and gathers them with my children, the whole family and our friends.",
           "So I chose this holiday myself, but gratitude I inherited from him.",
           "## My accounts",
           "This country opened the door, and on the other side we found work, the chance to build a business and a voice that counts. Here I grow every day: I enjoy my family, every place in Miami and the Keys, the work I do. Thank you to this great nation for taking us in.",
@@ -8642,7 +8642,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T08:24:17-05:00",
+  "updated_at": "2026-11-26T08:24:57-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
