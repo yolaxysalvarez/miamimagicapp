@@ -138,39 +138,41 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-25T15:33:02-05:00",
+      "actualizada": "2026-11-26T07:13:15-05:00",
       "vence": "2026-11-27",
       "aviso_vence": false,
       "ultima": 1,
       "arriba": 1,
       "es": {
         "etiqueta": "EL TIEMPO",
-        "titulo": "Lluvia, vigilancia de inundación y posibles tornados hoy en Miami; el jueves de Thanksgiving, sol",
-        "bajada": "El Servicio Meteorológico mantiene una vigilancia de inundación para Miami-Dade, Broward y Palm Beach hasta la 1:00 a.m. del jueves, con riesgo de tormentas fuertes y algún tornado hoy. En Islamorada, la advertencia de inundación costera sigue hasta las 7:00 p.m. Para Thanksgiving, el pronóstico trae sol.",
+        "titulo": "Thanksgiving llega con sol en el pronóstico, tras la lluvia y la vigilancia de inundación de ayer",
+        "bajada": "La vigilancia de inundación para Miami-Dade, Broward y Palm Beach estaba vigente hasta la 1:00 a.m. del jueves, según el Servicio Meteorológico, y el pronóstico para hoy es mayormente soleado, con máxima cerca de 78 °F. En los Cayos de arriba sigue una advertencia de inundación costera hasta las 7:00 p.m.",
         "toca": [
-          "Hoy miércoles: vigilancia de inundación en Miami-Dade, Broward y Palm Beach hasta la 1:00 a.m. del jueves, según el [pronóstico para Miami](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046); en Los Cayos, advertencia de inundación costera en Islamorada hasta las 7:00 p.m., según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633).",
-          "Jueves 26: mayormente soleado, máxima cerca de 78 °F y viento del oeste con ráfagas de hasta 23 mph, según el [pronóstico](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). Ojo con las corrientes de resaca en la playa: la declaración rige hasta las 7:00 p.m. del jueves, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1)."
+          "Hoy jueves 26: mayormente soleado en Miami, máxima cerca de 78 °F y viento del oeste con ráfagas de hasta 23 mph, según el [pronóstico del Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
+          "Los Cayos de arriba: advertencia de inundación costera de 3:51 a.m. a 7:00 p.m. de hoy, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). En Islamorada, sol, viento del oeste de 15 a 20 mph y máxima cerca de 77 °F.",
+          "Playa: la declaración de corrientes de resaca en la costa de Broward rige hasta las 7:00 p.m., según el [pronóstico para Hollywood](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1)."
         ],
         "cuerpo": [
-          "La oficina del Servicio Meteorológico en Miami mantiene la vigilancia de inundación hasta la 1:00 a.m. del jueves, según su [pronóstico para Miami](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). Su [página](https://www.weather.gov/mfl/), actualizada a las 10:20 a.m., sigue hablando de tormentas fuertes y algún tornado posibles hoy, y de inundación costera de leve a moderada con la marea alta. En la costa de Broward, la advertencia costera se extiende hasta las 7:00 a.m. del jueves y la declaración de corrientes de resaca rige hasta las 7:00 p.m. del jueves, mientras que una advertencia de inundación en la zona de Hollywood terminó a las 12:30 p.m., según el [pronóstico para Hollywood](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). Para Miami, el Servicio habla de 1 a 2 pulgadas de lluvia nueva y de ráfagas de hasta 29 mph, según el [pronóstico de las 5:02 de la mañana](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
+          "La vigilancia de inundación para Miami-Dade, Broward y Palm Beach estaba vigente hasta la 1:00 a.m. del jueves, según el [pronóstico para Miami](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). El miércoles, el Servicio Meteorológico hablaba además de tormentas fuertes y algún tornado posibles, y de inundación costera de leve a moderada con la marea alta. En la costa de Broward, la advertencia costera llegaba hasta las 7:00 a.m. de hoy y la declaración de corrientes de resaca rige hasta las 7:00 p.m., según el [pronóstico para Hollywood](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). Para Miami, el pronóstico del jueves es mayormente soleado, con máxima cerca de 78 °F y ráfagas de hasta 23 mph del oeste.",
           "## En Los Cayos",
-          "La oficina de Key West avisó de lluvia excesiva, viento y posibilidad de tiempo severo para el martes y el miércoles, con el mayor riesgo de inundación por lluvia entre la 1:00 a.m. y la 1:00 p.m. de hoy, según su [página](https://www.weather.gov/key/); esas horas ya pasaron. En Islamorada, la advertencia de inundación costera rige hasta las 7:00 p.m., y para esta noche el pronóstico deja hasta 50 % de probabilidad de lluvia y viento del oeste de 15 a 20 mph, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). Con las mareas altas de estos días, el agua puede quedarse en calles bajas, y es agua de mar.",
-          "El jueves cambia el cielo: mayormente soleado y con viento del oeste, lo que deja el camino libre para los Turkey Trots y el banquete comunitario del Hard Rock Stadium. En Islamorada también habrá sol y viento, con máxima cerca de 79 °F, según el mismo pronóstico. El horario del Metro, las oficinas y la basura, en [la nota de logística](https://miamimagicapp.com/noticias/thanksgiving-logistica-miami-cayos-metro-basura)."
+          "En Islamorada, el pronóstico de las 3:15 a.m. del jueves anuncia sol, viento del oeste de 15 a 20 mph y máxima cerca de 77 °F; para esta noche, cielo parcialmente nublado y mínima cerca de 68 °F, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). La advertencia de inundación costera para los Cayos de arriba rige de 3:51 a.m. a 7:00 p.m. de hoy: con la marea alta, el agua puede quedarse en calles bajas, y es agua de mar. La lluvia fuerte que la oficina de Key West esperaba entre la 1:00 a.m. y la 1:00 p.m. del miércoles ya pasó, según su [página](https://www.weather.gov/key/).",
+          "Con el cielo despejado queda el camino libre para los Turkey Trots y el banquete comunitario del Hard Rock Stadium. La marea alta de hoy cae a las 10:04 a.m. y a las 10:10 p.m., como cuenta [la nota de las mareas](https://miamimagicapp.com/noticias/mareas-reales-thanksgiving). El horario del Metro, las oficinas y la basura, en [la nota de logística](https://miamimagicapp.com/noticias/thanksgiving-logistica-miami-cayos-metro-basura)."
         ]
       },
       "en": {
         "etiqueta": "WEATHER",
-        "titulo": "Rain, a flood watch and possible tornadoes in Miami today; sun on Thanksgiving Day",
-        "bajada": "The National Weather Service keeps a flood watch for Miami-Dade, Broward and Palm Beach until 1:00 a.m. Thursday, with a risk of strong storms and a possible tornado today. In Islamorada, the coastal flood advisory runs until 7:00 p.m. For Thanksgiving, the forecast brings sun.",
+        "titulo": "Thanksgiving arrives with sun in the forecast, after yesterday's rain and flood watch",
+        "bajada": "The flood watch for Miami-Dade, Broward and Palm Beach was in effect until 1:00 a.m. Thursday, according to the National Weather Service, and today's forecast is mostly sunny, with a high near 78 °F. In the Upper Keys, a coastal flood advisory continues until 7:00 p.m.",
         "toca": [
-          "Today, Wednesday: flood watch in Miami-Dade, Broward and Palm Beach until 1:00 a.m. Thursday, according to the [Miami forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046); in the Keys, a coastal flood advisory in Islamorada until 7:00 p.m., according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633).",
-          "Thursday 26: mostly sunny, high near 78°F and a west wind with gusts up to 23 mph, according to the [forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). Mind the rip currents at the beach: the statement runs until 7:00 p.m. Thursday, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1)."
+          "Today, Thursday 26: mostly sunny in Miami, high near 78 °F and west wind with gusts up to 23 mph, according to the [National Weather Service forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
+          "Upper Keys: coastal flood advisory from 3:51 a.m. to 7:00 p.m. today, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). In Islamorada, sun, west wind at 15 to 20 mph and a high near 77 °F.",
+          "Beach: the rip current statement on the Broward coast runs until 7:00 p.m., according to the [Hollywood forecast](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1)."
         ],
         "cuerpo": [
-          "The National Weather Service office in Miami keeps the flood watch until 1:00 a.m. Thursday, according to its [Miami forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). Its [page](https://www.weather.gov/mfl/), updated at 10:20 a.m., still speaks of strong storms and possibly a tornado today, and of minor to moderate coastal flooding around high tide. On the Broward coast, the coastal advisory runs until 7:00 a.m. Thursday and the rip current statement until 7:00 p.m. Thursday, while a flood advisory for the Hollywood area ended at 12:30 p.m., according to the [Hollywood forecast](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). For Miami, the Service calls for 1 to 2 inches of new rain and gusts up to 29 mph, according to the [5:02 a.m. forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046).",
+          "The flood watch for Miami-Dade, Broward and Palm Beach was in effect until 1:00 a.m. Thursday, according to the [Miami forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). On Wednesday, the National Weather Service also spoke of possible strong storms and a tornado, and of minor to moderate coastal flooding around high tide. On the Broward coast, the coastal advisory ran until 7:00 a.m. today and the rip current statement lasts until 7:00 p.m., according to the [Hollywood forecast](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). For Miami, Thursday's forecast is mostly sunny, with a high near 78 °F and west gusts up to 23 mph.",
           "## In the Keys",
-          "The Key West office warned of excessive rain, wind and a chance of severe weather for Tuesday and Wednesday, with the highest rain-flooding risk between 1:00 a.m. and 1:00 p.m. today, according to its [page](https://www.weather.gov/key/); those hours have passed. In Islamorada, the coastal flood advisory runs until 7:00 p.m., and for tonight the forecast gives up to a 50% chance of rain and a west wind of 15 to 20 mph, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). With the high tides of these days, water can sit on low streets, and it is seawater.",
-          "On Thursday the sky changes: mostly sunny with a west wind, which clears the way for the Turkey Trots and the Hard Rock Stadium community feast. In Islamorada it will also be sunny and breezy, with a high near 79°F, according to the same forecast. Metro schedules, office closures and trash pickup are in [the logistics story](https://miamimagicapp.com/news/thanksgiving-logistica-miami-cayos-metro-basura)."
+          "In Islamorada, the 3:15 a.m. Thursday forecast calls for sun, west wind at 15 to 20 mph and a high near 77 °F; tonight, partly cloudy with a low near 68 °F, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). The coastal flood advisory for the Upper Keys runs from 3:51 a.m. to 7:00 p.m. today: with high tide, water can sit in low streets, and it is seawater. The heavy rain the Key West office expected between 1:00 a.m. and 1:00 p.m. Wednesday has passed, according to its [page](https://www.weather.gov/key/).",
+          "With clear skies, the way is open for the Turkey Trots and the community feast at Hard Rock Stadium. Today's high tide comes at 10:04 a.m. and 10:10 p.m., as [the tides story](https://miamimagicapp.com/news/mareas-reales-thanksgiving) explains. The Metro, office and trash schedule is in [the logistics story](https://miamimagicapp.com/news/thanksgiving-logistica-miami-cayos-metro-basura)."
         ]
       }
     },
@@ -4147,9 +4149,9 @@
       "foto_pie": "La calle 5 de Miami Beach, una de las zonas donde la marea alta llega a la calle.",
       "es": {
         "titulo": "El pavo en el horno y el mar en la calle: las mareas reales llegan a Miami justo en Thanksgiving",
-        "bajada": "Del 23 al 26 de noviembre suben las mareas más altas del mes, y el pico cae el jueves del pavo, a las 10:04 de la mañana y a las 10:10 de la noche. Hoy la lluvia se les suma: con la marea alta, el agua salada puede llegar a calles que ya están mojadas.",
+        "bajada": "Del 23 al 26 de noviembre suben las mareas más altas del mes, y el pico cae el jueves del pavo, a las 10:04 de la mañana y a las 10:10 de la noche. Ayer la lluvia se les sumó; hoy el pronóstico es de sol, pero el agua salada puede seguir llegando a calles bajas con la marea alta.",
         "toca": [
-          "Hoy miércoles rige una vigilancia de inundación en Miami-Dade, Broward y Palm Beach hasta la 1:00 a.m. del jueves, y en la costa de Broward la advertencia de inundación costera sigue hasta las 7:00 a.m. del jueves, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). El detalle, en [la nota del frente](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
+          "Hoy jueves, la vigilancia de inundación ya terminó (estaba vigente hasta la 1:00 a.m.) y en la costa de Broward la declaración de corrientes de resaca rige hasta las 7:00 p.m., según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). El detalle, en [la nota del frente](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "Del 23 al 26 de noviembre el agua sube más alrededor de las 8 a 10 de la mañana y de las 8 a 10 de la noche. El lunes 23, la primera pleamar fue a las 7:33 de la mañana, según la [Ciudad de Miami](https://www.miami.gov/kingtide).",
           "No atravieses calles inundadas: el agua salada daña el auto y puede esconder escombros o huecos.",
           "¿Vives en una zona baja de Miami Beach? Pide el estacionamiento gratis temporal. En Miami, reporta las inundaciones al 311.",
@@ -4159,7 +4161,7 @@
         "cuerpo": [
           "A las 10:04 de la mañana del jueves 26, cuando en media Miami el pavo apenas entra al horno, el mar va a estar en su punto más alto. Y vuelve a las 10:10 de la noche, a la hora del recalentado, del último pedazo de flan y de los invitados buscando dónde dejaron el auto.",
           "Este año las mareas reales se invitaron solas a Thanksgiving. Llegan del 23 al 26 de noviembre, [según las predicciones para la estación de Virginia Key](https://www.miamibeachfl.gov/flood-awareness/kingtides/), y no necesitan lluvia: son las mareas más altas del año, las que trae la alineación de la Luna y el Sol, y en las zonas bajas el agua salada sube por los desagües con el cielo despejado.",
-          "Hoy el mar y el cielo juegan en el mismo equipo. El Servicio Meteorológico mantiene la vigilancia de inundación hasta la 1:00 a.m. del jueves, y en la costa de Broward la advertencia costera se extiende hasta las 7:00 a.m. del jueves, según su [pronóstico para Hollywood](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). Con la marea alta, los desagües descargan peor, y esa agua de lluvia no tiene adónde ir. Lo que trae el frente, [en esta nota](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
+          "Ayer el mar y el cielo jugaron en el mismo equipo: el Servicio Meteorológico mantuvo la vigilancia de inundación hasta la 1:00 a.m. del jueves, y en la costa de Broward la advertencia costera llegó hasta las 7:00 a.m., según su [pronóstico para Hollywood](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). Con la marea alta, los desagües descargan peor, y esa agua de lluvia no tiene adónde ir; hoy el suelo sigue empapado cuando llega el pico. Lo que trajo el frente, [en esta nota](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "## El horario del agua",
           "El pico no llega de golpe. El agua empieza a notarse hora y media antes y tarda unas dos horas en irse. El jueves, eso deja mojadas las calles bajas más o menos de 8:30 de la mañana al mediodía, y de 8:40 de la noche hasta pasada la medianoche. Quien tenga la cena en Miami Beach, o invitados que cruzan por allí, hace bien en mirar el reloj antes de estacionar.",
           "## Para que el agua no se siente a la mesa",
@@ -4171,9 +4173,9 @@
       },
       "en": {
         "titulo": "Turkey in the oven, sea in the street: king tides reach Miami right on Thanksgiving",
-        "bajada": "From Nov. 23 to 26 the month's highest tides roll in, and the peak lands on Thanksgiving Day, at 10:04 a.m. and 10:10 p.m. Today the rain joins them: at high tide, saltwater can reach streets that are already wet.",
+        "bajada": "From Nov. 23 to 26 the month's highest tides roll in, and the peak lands on Thanksgiving Day, at 10:04 a.m. and 10:10 p.m. Yesterday the rain joined them; today the forecast is sunny, but saltwater can still reach low streets at high tide.",
         "toca": [
-          "Today, Wednesday, a flood watch is in effect for Miami-Dade, Broward and Palm Beach until 1:00 a.m. Thursday, and on the Broward coast the coastal flood advisory runs until 7:00 a.m. Thursday, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). Details in [the front story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
+          "Today, Thursday, the flood watch is over (it was in effect until 1:00 a.m.) and on the Broward coast the rip current statement runs until 7:00 p.m., according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). Details in [the front story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "From Nov. 23 to 26 the water peaks around 8 to 10 in the morning and 8 to 10 at night. On Monday the 23rd, the first high tide was at 7:33 a.m., per the [City of Miami](https://www.miami.gov/kingtide).",
           "Don't drive through flooded streets: salt water damages cars and can hide debris or potholes.",
           "Live in a low-lying part of Miami Beach? Sign up for the free temporary parking. In Miami, report flooding to 311.",
@@ -4183,7 +4185,7 @@
         "cuerpo": [
           "At 10:04 a.m. on Thursday the 26th, when the turkey is just going into the oven in half of Miami, the sea will be at its highest. And it comes back at 10:10 p.m., the hour of leftovers, the last slice of flan and guests trying to remember where they left the car.",
           "This year the king tides invited themselves to Thanksgiving. They arrive Nov. 23 to 26, [according to predictions for the Virginia Key station](https://www.miamibeachfl.gov/flood-awareness/kingtides/), and they don't need rain: they are the highest tides of the year, the ones that come when the Moon and Sun line up, and in low-lying areas salt water pushes up through the drains under a clear sky.",
-          "Today the sea and the sky are on the same team. The National Weather Service keeps the flood watch until 1:00 a.m. Thursday, and on the Broward coast the coastal advisory runs until 7:00 a.m. Thursday, according to its [Hollywood forecast](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). At high tide, storm drains discharge more slowly, and today's rainwater has nowhere to go. What the front brings, [in this story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
+          "Yesterday the sea and the sky were on the same team: the National Weather Service kept the flood watch until 1:00 a.m. Thursday, and on the Broward coast the coastal advisory ran until 7:00 a.m., according to its [Hollywood forecast](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). At high tide, storm drains discharge more slowly, and that rainwater has nowhere to go; today the ground is still soaked when the peak arrives. What the front brought, [in this story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "## The water's schedule",
           "The peak doesn't arrive all at once. The water starts to show about an hour and a half earlier and takes around two hours to leave. On Thursday, that keeps low streets wet from roughly 8:30 a.m. to noon, and from 8:40 p.m. until after midnight. Anyone having dinner in Miami Beach, or expecting guests who drive through, would do well to check the clock before parking.",
           "## So the water doesn't sit down at the table",
@@ -4217,7 +4219,7 @@
       ],
       "foto_pie_en": "5th Street in Miami Beach, one of the areas where high tide reaches the street.",
       "foto_pos": "50% 25%",
-      "actualizada": "2026-11-25T15:33:02-05:00",
+      "actualizada": "2026-11-26T07:13:33-05:00",
       "tambien": 2,
       "ambos": true,
       "ultima": 3,
@@ -5946,9 +5948,9 @@
       "foto_pie": "Un canal de los Cayos, donde la marea alta se nota primero.",
       "es": {
         "titulo": "A los Cayos les queda una marea real este año, y ya tiene fecha",
-        "bajada": "Tras las inundaciones de finales de octubre, el Servicio Meteorológico marca el 25 y 26 de noviembre como los días de agua más alta que quedan en el año. Hoy, además, llueve.",
+        "bajada": "Tras las inundaciones de finales de octubre, el Servicio Meteorológico marca el 25 y 26 de noviembre como los días de agua más alta que quedan en el año. Ayer, además, llovió; hoy el pronóstico es de sol, con advertencia de inundación costera en los Cayos de arriba hasta las 7:00 p.m.",
         "toca": [
-          "Hoy miércoles rige una advertencia de inundación costera en Islamorada hasta las 7:00 p.m., según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). El detalle, en [la nota del frente](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
+          "Hoy jueves rige una advertencia de inundación costera en los Cayos de arriba hasta las 7:00 p.m., según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). El detalle, en [la nota del frente](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "Antes de salir el 25 y 26 de noviembre, revisa las alertas de inundación costera del Servicio Meteorológico en Key West, sobre todo si vas a usar Card Sound Road o las calles bajas junto a la US-1.",
           "No manejes por agua salada: puede ser más honda de lo que parece, esconde huecos y tapas de alcantarilla abiertas, y corroe el auto. Busca otra ruta, y si no la hay, lava los bajos después.",
           "Si vives en el lado de la bahía de los Cayos de arriba o en una calle baja, mueve el auto a terreno alto antes del pico: allí el agua tarda más en bajar.",
@@ -5957,16 +5959,16 @@
         ],
         "cuerpo": [
           "El [Servicio Meteorológico Nacional en Key West](https://www.weather.gov/key/coastal_flooding) prevé para el 25 y 26 de noviembre las mareas más altas que quedan del año en los Cayos, tras las inundaciones de finales de octubre.",
-          "La fecha llegó con lluvia. La oficina de Key West avisó de lluvia excesiva, viento y posibilidad de tiempo severo, con el mayor riesgo de 1:00 a.m. a 1:00 p.m. de hoy, según su [página](https://www.weather.gov/key/); para esta noche, el pronóstico para Islamorada deja hasta 50 % de probabilidad de lluvia, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). Con el mar en lo más alto, la calle baja se llena de agua que viene de los dos lados. Lo que trae el frente, [en esta nota](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
+          "La fecha llegó con lluvia. La oficina de Key West avisó de lluvia excesiva, viento y posibilidad de tiempo severo el miércoles, con el mayor riesgo de 1:00 a.m. a 1:00 p.m., según su [página](https://www.weather.gov/key/); esas horas ya pasaron. Hoy, en Islamorada, el pronóstico de las 3:15 a.m. trae sol y viento del oeste, y la advertencia de inundación costera rige de 3:51 a.m. a 7:00 p.m., según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). Con el mar en lo más alto, la calle baja se llena de agua que viene de los dos lados. Lo que trajo el frente, [en esta nota](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "El 28 de octubre, el medidor de Key West llegó a unos 2.4 pies sobre la marea alta media, por encima del nivel de alerta de 2.1, y el de Vaca Key, en Marathon, a 2.37, [reportó Weatherboy](https://weatherboy.com/king-tides-push-major-saltwater-flooding-into-florida-keys-streets/). Parte de Card Sound Road quedó bajo el agua. En los Cayos, explica el Servicio Meteorológico, la piedra caliza deja que el mar suba desde abajo, y en el lado de la bahía de los Cayos de arriba el agua tarda más en bajar.",
           "Las inundaciones se pueden reportar en la página del Servicio Meteorológico en Key West o al 305-295-1316."
         ]
       },
       "en": {
         "titulo": "The Keys have one more king tide this year, and it already has a date",
-        "bajada": "After the late-October flooding, the National Weather Service marks Nov. 25 and 26 as the highest-water days left this year. Today, it is also raining.",
+        "bajada": "After the late-October flooding, the National Weather Service marks Nov. 25 and 26 as the highest-water days left this year. Yesterday it also rained; today the forecast is sunny, with a coastal flood advisory in the Upper Keys until 7:00 p.m.",
         "toca": [
-          "Today, Wednesday, a coastal flood advisory is in effect in Islamorada until 7:00 p.m., according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). Details in [the front story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
+          "Today, Thursday, a coastal flood advisory is in effect in the Upper Keys until 7:00 p.m., according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). Details in [the front story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "Before heading out on Nov. 25 and 26, check the National Weather Service Key West coastal flood alerts, especially if you'll use Card Sound Road or the low streets along US-1.",
           "Don't drive through salt water: it can be deeper than it looks, hides potholes and open manhole covers, and corrodes cars. Find another route, and if there isn't one, wash the undercarriage afterward.",
           "If you live on the bay side of the Upper Keys or on a low street, move your car to higher ground before the peak: water takes longer to recede there.",
@@ -5975,7 +5977,7 @@
         ],
         "cuerpo": [
           "The [National Weather Service in Key West](https://www.weather.gov/key/coastal_flooding) expects the highest tides left this year in the Keys on Nov. 25 and 26, following flooding in late October.",
-          "The date arrived with rain. The Key West office warned of excessive rain, wind and a chance of severe weather, with the highest risk from 1:00 a.m. to 1:00 p.m. today, according to its [page](https://www.weather.gov/key/); for tonight, the Islamorada forecast gives up to a 50% chance of rain, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). With the sea at its highest, a low street fills with water from both sides. What the front brings, [in this story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
+          "The date arrived with rain. The Key West office warned of excessive rain, wind and a chance of severe weather on Wednesday, with the highest risk from 1:00 a.m. to 1:00 p.m., according to its [page](https://www.weather.gov/key/); those hours have passed. Today, in Islamorada, the 3:15 a.m. forecast brings sun and west wind, and the coastal flood advisory runs from 3:51 a.m. to 7:00 p.m., according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). With the sea at its highest, a low street fills with water from both sides. What the front brought, [in this story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "On Oct. 28, the Key West gauge reached about 2.4 feet above mean higher high water, above the 2.1-foot alert level, and the Vaca Key gauge in Marathon hit 2.37, [Weatherboy reported](https://weatherboy.com/king-tides-push-major-saltwater-flooding-into-florida-keys-streets/). Part of Card Sound Road went under water. In the Keys, the Weather Service explains, the limestone lets the sea rise from below, and on the bay side of the Upper Keys the water takes longer to recede.",
           "Flooding can be reported on the National Weather Service Key West page or at 305-295-1316."
         ]
@@ -6001,7 +6003,7 @@
       "foto_pie_en": "A Keys canal, where high tide shows up first.",
       "foto_mm": false,
       "desarrollo": true,
-      "actualizada": "2026-11-25T15:33:02-05:00",
+      "actualizada": "2026-11-26T07:13:33-05:00",
       "ultima": 4,
       "arriba": 1
     },
@@ -8419,7 +8421,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T07:05:54-05:00",
+  "updated_at": "2026-11-26T07:13:33-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
