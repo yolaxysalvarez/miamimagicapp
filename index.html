@@ -12228,7 +12228,7 @@ function mmOpenWeb(url){
   try{
     var C=window.Capacitor;
     if(C && C.Plugins && C.Plugins.Browser && C.Plugins.Browser.open){
-      C.Plugins.Browser.open({url:url, presentationStyle:'popover'}); return;
+      C.Plugins.Browser.open({url:url, presentationStyle:'fullscreen'}); return;
     }
   }catch(e){}
   try{ window.open(url,'_blank','noopener'); }catch(e){ location.href=url; }
