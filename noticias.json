@@ -55,6 +55,76 @@
   "videos": [],
   "notas": [
     {
+      "id": "black-friday-horarios-malls-tiendas-miami-27-noviembre",
+      "scope": "miami",
+      "tema": "bolsillo",
+      "hamaca": false,
+      "destacada": false,
+      "fecha": "2026-11-26",
+      "publicada": "2026-11-26T11:39:34-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-black-friday-horarios.jpg",
+      "foto_en": "mm-black-friday-horarios-en.jpg",
+      "foto_alt": "Gráfico de Miami Magic con el texto Black Friday, viernes 27 de noviembre, 6:00 a.m.",
+      "foto_pie": "Gráfico de Miami Magic.",
+      "foto_pie_en": "Graphic by Miami Magic.",
+      "vence": "2026-11-28",
+      "fuentes": [
+        {
+          "n": "Dolphin Mall · Horarios (Simon)",
+          "u": "https://www.simon.com/mall/dolphin-mall/hours"
+        },
+        {
+          "n": "Target · Holiday Shopping Information 2026",
+          "u": "https://corporate.target.com/press/fact-sheet/2026/11/holiday-shopping-information"
+        },
+        {
+          "n": "Walmart · Comunicado de eventos de temporada 2026 (Business Wire)",
+          "u": "https://www.businesswire.com/news/home/20261026164255/en/"
+        },
+        {
+          "n": "Miami Herald · Horarios de Thanksgiving y Black Friday (23 de noviembre de 2026)",
+          "u": "https://www.yahoo.com/news/articles/publix-open-cvs-buses-run-205023457.html"
+        }
+      ],
+      "es": {
+        "etiqueta": "COMPRAS",
+        "titulo": "Black Friday arranca a las 6:00 a.m.: Dolphin Mall abre 17 horas y Target y Walmart madrugan",
+        "bajada": "Hoy los malls están cerrados. El viernes 27, Dolphin y Sawgrass abren a las 6:00 a.m. y Aventura a las 7:00; aquí van los horarios y lo que sigue abierto este jueves.",
+        "toca": [
+          "Dolphin Mall: viernes 27, de 6:00 a.m. a 11:00 p.m.; sábado 28, de 10:00 a.m. a 11:00 p.m.; domingo 29, de 10:00 a.m. a 9:00 p.m., según su [página de horarios](https://www.simon.com/mall/dolphin-mall/hours).",
+          "Otros malls el viernes, según el [Miami Herald](https://www.yahoo.com/news/articles/publix-open-cvs-buses-run-205023457.html): Sawgrass Mills, Dadeland y Miami International, de 6:00 a.m. a 10:00 p.m.; Aventura, de 7:00 a.m. a 10:00 p.m.; The Falls, de 7:00 a.m. a 9:00 p.m.; Brickell City Centre, de 9:00 a.m. a 10:00 p.m.; Merrick Park, de 9:00 a.m. a 9:00 p.m.",
+          "Camino a Los Cayos: Florida Keys Outlet Marketplace, en Florida City, de 6:00 a.m. a 9:00 p.m., según la misma lista.",
+          "Antes de salir, confirma la hora de tu tienda: cada local puede variar."
+        ],
+        "cuerpo": [
+          "Los centros comerciales del sur de Florida pasan cerrados este jueves de Thanksgiving y abren de madrugada el viernes 27. Dolphin Mall, en Sweetwater, tiene la jornada más larga: de 6:00 a.m. a 11:00 p.m., de acuerdo con su [página de horarios](https://www.simon.com/mall/dolphin-mall/hours). Sawgrass Mills, en Sunrise, y Dadeland abren a la misma hora y cierran a las 10:00 p.m.; Aventura Mall empieza a las 7:00 a.m., según la lista que publicó el [Miami Herald](https://www.yahoo.com/news/articles/publix-open-cvs-buses-run-205023457.html).",
+          "## Las grandes cadenas",
+          "Target mantiene sus tiendas cerradas hoy y las abre a las 6:00 a.m. del viernes, informa la [empresa](https://corporate.target.com/press/fact-sheet/2026/11/holiday-shopping-information); sus ofertas de Black Friday van del 22 al 29 de noviembre. Walmart fijó para esa misma hora el inicio de sus ofertas en tienda, dentro de un evento que corre del 23 al 29, señala su [comunicado](https://www.businesswire.com/news/home/20261026164255/en/). BJ's abre a las 7:00 a.m. y Costco a las 9:00 a.m. para sus socios Executive, de acuerdo con el Herald.",
+          "## Si hoy falta algo para la mesa",
+          "Publix, Winn-Dixie, Aldi y Trader Joe's están cerrados este jueves. Sedano's y Presidente atienden de 7:00 a.m. a 6:00 p.m., Milam's hasta las 4:00 p.m., The Fresh Market hasta las 3:00 p.m. y Whole Foods hasta la 1:00 p.m., según el mismo recuento del Herald. El horario del Metro, las oficinas y la basura está en [la nota de logística](https://miamimagicapp.com/noticias/thanksgiving-logistica-miami-cayos-metro-basura)."
+        ]
+      },
+      "en": {
+        "etiqueta": "SHOPPING",
+        "titulo": "Black Friday starts at 6 a.m.: Dolphin Mall opens for 17 hours and Target and Walmart rise early",
+        "bajada": "The malls are closed today. On Friday the 27th, Dolphin and Sawgrass open at 6 a.m. and Aventura at 7; here are the hours and what is still open this Thursday.",
+        "toca": [
+          "Dolphin Mall: Friday the 27th, 6 a.m. to 11 p.m.; Saturday the 28th, 10 a.m. to 11 p.m.; Sunday the 29th, 10 a.m. to 9 p.m., according to its [hours page](https://www.simon.com/mall/dolphin-mall/hours).",
+          "Other malls on Friday, per the [Miami Herald](https://www.yahoo.com/news/articles/publix-open-cvs-buses-run-205023457.html): Sawgrass Mills, Dadeland and Miami International, 6 a.m. to 10 p.m.; Aventura, 7 a.m. to 10 p.m.; The Falls, 7 a.m. to 9 p.m.; Brickell City Centre, 9 a.m. to 10 p.m.; Merrick Park, 9 a.m. to 9 p.m.",
+          "On the way to the Keys: Florida Keys Outlet Marketplace, in Florida City, 6 a.m. to 9 p.m., per the same list.",
+          "Before heading out, confirm your store's hours: each location can vary."
+        ],
+        "cuerpo": [
+          "South Florida's malls stay closed this Thanksgiving Thursday and open before dawn on Friday the 27th. Dolphin Mall, in Sweetwater, has the longest day: 6 a.m. to 11 p.m., according to its [hours page](https://www.simon.com/mall/dolphin-mall/hours). Sawgrass Mills, in Sunrise, and Dadeland open at the same time and close at 10 p.m.; Aventura Mall starts at 7 a.m., per the list published by the [Miami Herald](https://www.yahoo.com/news/articles/publix-open-cvs-buses-run-205023457.html).",
+          "## The big chains",
+          "Target keeps its stores closed today and opens them at 6 a.m. Friday, the [company](https://corporate.target.com/press/fact-sheet/2026/11/holiday-shopping-information) says; its Black Friday deals run Nov. 22-29. Walmart set the same hour for the start of its in-store deals, part of an event that runs Nov. 23-29, its [press release](https://www.businesswire.com/news/home/20261026164255/en/) notes. BJ's opens at 7 a.m. and Costco at 9 a.m. for Executive members, according to the Herald.",
+          "## If the table is missing something today",
+          "Publix, Winn-Dixie, Aldi and Trader Joe's are closed this Thursday. Sedano's and Presidente are open 7 a.m. to 6 p.m., Milam's until 4 p.m., The Fresh Market until 3 p.m. and Whole Foods until 1 p.m., per the same Herald rundown. The Metro, office and trash schedule is in [the logistics story](https://miamimagicapp.com/news/thanksgiving-logistica-miami-cayos-metro-basura)."
+        ]
+      }
+    },
+    {
       "id": "heat-76ers-panthers-ottawa-25-noviembre",
       "scope": "miami",
       "tema": "deporte",
@@ -343,7 +413,7 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-26T07:13:15-05:00",
+      "actualizada": "2026-11-26T11:39:34-05:00",
       "vence": "2026-11-27",
       "aviso_vence": false,
       "ultima": 4,
@@ -361,7 +431,7 @@
           "La vigilancia de inundación para Miami-Dade, Broward y Palm Beach estaba vigente hasta la 1:00 a.m. del jueves, según el [pronóstico para Miami](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). El miércoles, el Servicio Meteorológico hablaba además de tormentas fuertes y algún tornado posibles, y de inundación costera de leve a moderada con la marea alta. En la costa de Broward, la advertencia costera llegaba hasta las 7:00 a.m. de hoy y la declaración de corrientes de resaca rige hasta las 7:00 p.m., según el [pronóstico para Hollywood](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). Para Miami, el pronóstico del jueves es mayormente soleado, con máxima cerca de 78 °F y ráfagas de hasta 23 mph del oeste.",
           "## En Los Cayos",
           "En Islamorada, el pronóstico de las 3:15 a.m. del jueves anuncia sol, viento del oeste de 15 a 20 mph y máxima cerca de 77 °F; para esta noche, cielo parcialmente nublado y mínima cerca de 68 °F, según el [Servicio Meteorológico](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). La advertencia de inundación costera para los Cayos de arriba rige de 3:51 a.m. a 7:00 p.m. de hoy: con la marea alta, el agua puede quedarse en calles bajas, y es agua de mar. La lluvia fuerte que la oficina de Key West esperaba entre la 1:00 a.m. y la 1:00 p.m. del miércoles ya pasó, según su [página](https://www.weather.gov/key/).",
-          "Con el cielo despejado queda el camino libre para los Turkey Trots y el banquete comunitario del Hard Rock Stadium. La marea alta de hoy cae a las 10:04 a.m. y a las 10:10 p.m., como cuenta [la nota de las mareas](https://miamimagicapp.com/noticias/mareas-reales-thanksgiving). El horario del Metro, las oficinas y la basura, en [la nota de logística](https://miamimagicapp.com/noticias/thanksgiving-logistica-miami-cayos-metro-basura)."
+          "Los Turkey Trots de la mañana y el banquete comunitario del Hard Rock Stadium tenían pronóstico de cielo despejado. La marea alta de la mañana cayó a las 10:04 a.m.; la próxima es a las 10:10 p.m., como cuenta [la nota de las mareas](https://miamimagicapp.com/noticias/mareas-reales-thanksgiving). El horario del Metro, las oficinas y la basura, en [la nota de logística](https://miamimagicapp.com/noticias/thanksgiving-logistica-miami-cayos-metro-basura)."
         ]
       },
       "en": {
@@ -377,7 +447,7 @@
           "The flood watch for Miami-Dade, Broward and Palm Beach was in effect until 1:00 a.m. Thursday, according to the [Miami forecast](https://forecast.weather.gov/MapClick.php?lat=25.7776&lon=-80.2046). On Wednesday, the National Weather Service also spoke of possible strong storms and a tornado, and of minor to moderate coastal flooding around high tide. On the Broward coast, the coastal advisory ran until 7:00 a.m. today and the rip current statement lasts until 7:00 p.m., according to the [Hollywood forecast](https://forecast.weather.gov/MapClick.php?CityName=Hollywood&state=FL&site=MFL&textField1=26.0298&textField2=-80.1648&e=1). For Miami, Thursday's forecast is mostly sunny, with a high near 78 °F and west gusts up to 23 mph.",
           "## In the Keys",
           "In Islamorada, the 3:15 a.m. Thursday forecast calls for sun, west wind at 15 to 20 mph and a high near 77 °F; tonight, partly cloudy with a low near 68 °F, according to the [National Weather Service](https://forecast.weather.gov/MapClick.php?CityName=Islamorada&state=FL&site=KEY&lat=24.921&lon=-80.633). The coastal flood advisory for the Upper Keys runs from 3:51 a.m. to 7:00 p.m. today: with high tide, water can sit in low streets, and it is seawater. The heavy rain the Key West office expected between 1:00 a.m. and 1:00 p.m. Wednesday has passed, according to its [page](https://www.weather.gov/key/).",
-          "With clear skies, the way is open for the Turkey Trots and the community feast at Hard Rock Stadium. Today's high tide comes at 10:04 a.m. and 10:10 p.m., as [the tides story](https://miamimagicapp.com/news/mareas-reales-thanksgiving) explains. The Metro, office and trash schedule is in [the logistics story](https://miamimagicapp.com/news/thanksgiving-logistica-miami-cayos-metro-basura)."
+          "The morning Turkey Trots and the community feast at Hard Rock Stadium had clear skies in the forecast. The morning high tide came at 10:04 a.m.; the next is at 10:10 p.m., as [the tides story](https://miamimagicapp.com/news/mareas-reales-thanksgiving) explains. The Metro, office and trash schedule is in [the logistics story](https://miamimagicapp.com/news/thanksgiving-logistica-miami-cayos-metro-basura)."
         ]
       }
     },
@@ -519,7 +589,7 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-26T07:05:54-05:00",
+      "actualizada": "2026-11-26T11:39:34-05:00",
       "ultima": 9,
       "arriba": 5,
       "es": {
@@ -535,7 +605,7 @@
           "Se suele trazar hasta el otoño de 1621, cuando colonos de Plymouth y el pueblo wampanoag compartieron un banquete de cosecha, según la [Biblioteca del Congreso](https://blogs.loc.gov/families/2024/11/the-real-history-of-thanksgiving/). Hay quien da ese título a una fiesta de 1565 en Florida entre españoles y timucua, según [History.com](https://www.history.com/articles/history-of-thanksgiving).",
           "Durante siglos fueron fechas sueltas de cada colonia y estado. George Washington emitió en 1789 la primera proclama federal, y la editora Sarah Josepha Hale pasó años pidiendo una fiesta nacional hasta que Lincoln la proclamó en 1863, en plena Guerra Civil, según [History.com](https://www.history.com/articles/history-of-thanksgiving). En 1939 Franklin D. Roosevelt la adelantó una semana para alargar las compras navideñas, y en 1941 el Congreso fijó el cuarto jueves de noviembre, según el [Smithsonian](https://si.edu/spotlight/thanksgiving/history).",
           "Hoy el día tiene su propio guion. El desfile de Macy's, que debutó en 1924, es uno de los programas de entretenimiento más vistos del año en la televisión abierta; esta vez se corrió al sábado. El jueves, el National Dog Show sigue en el calendario de NBC y el fútbol americano toma la tarde: Bears–Lions a la 1:00 p.m. por CBS, Eagles–Cowboys a las 4:30 p.m. por FOX y Chiefs–Bills a las 8:20 p.m. por NBC, según el [calendario de la NFL](https://www.nfl.com/news/thanksgiving-2026-nfl-schedule-release). Este año se suma además un partido en la víspera, Packers–Rams, el miércoles 25 a las 8:00 p.m. por Netflix, y otro el viernes 27 a las 3:00 p.m., Broncos–Steelers, por Prime Video.",
-          "Aquí, el jueves arranca corriendo. El Life Time Turkey Trot Miami, en Tropical Park, tiene carreras de 5K y 10K ese 26 de noviembre, según [The Miami Marathon](https://www.themiamimarathon.com/pineapple-series/), que lo organiza. A las 11:00 a.m., Feeding South Florida sirve en el Hard Rock Stadium su primer Thanksgiving Community Feast, con comida preparada para 500 invitados, según la [organización](https://www.miamilivingmagazine.com/post/feeding-south-florida-thanksgiving-community-feast-hard-rock-stadium). Y en Los Cayos, el Southernmost Turkey Trot sale a las 8:00 a.m. desde la boya del Punto Más al Sur, en Key West, a beneficio de Reef Relief, según [RunSignup](https://runsignup.com/Race/FL/KeyWest/SouthernmostTurkeyTrot).",
+          "Aquí, el jueves arrancó corriendo. El Life Time Turkey Trot Miami, en Tropical Park, tenía carreras de 5K y 10K este 26 de noviembre, según [The Miami Marathon](https://www.themiamimarathon.com/pineapple-series/), que lo organiza, y en Los Cayos el Southernmost Turkey Trot salía a las 8:00 a.m. desde la boya del Punto Más al Sur, en Key West, a beneficio de Reef Relief, según [RunSignup](https://runsignup.com/Race/FL/KeyWest/SouthernmostTurkeyTrot). Para las 11:00 a.m., Feeding South Florida tenía previsto servir en el Hard Rock Stadium su primer Thanksgiving Community Feast, con comida preparada para 500 invitados, según la [organización](https://www.miamilivingmagazine.com/post/feeding-south-florida-thanksgiving-community-feast-hard-rock-stadium).",
           "Y está el indulto del pavo. La Federación Nacional del Pavo le entrega un ave al presidente desde 1947, y lo de «indultarla» arrancó con George H.W. Bush en 1989, según la [federación](https://www.eatturkey.org/history/). La historia de Lincoln perdonando a un pavo es probablemente apócrifa, según la [Asociación Histórica de la Casa Blanca](https://whitehousehistory.org/press-room/thanksgiving-at-the-white-house). Este año los protagonistas fueron Freedom y Feathers, dos pavos de 4 meses nacidos el 15 de julio en Deans Gap Farm, en West Virginia, según la [Casa Blanca](https://www.whitehouse.gov/thanksgiving/). Los dos quedaron oficialmente indultados, pero solo uno recibe el honor ceremonial en la Casa Blanca, y en la votación pública ganó Freedom. Después, según la [Casa Blanca](https://www.whitehouse.gov/releases/2026/11/voting-begins-for-the-2026-national-thanksgiving-turkey-pardon-ceremony/), los dos pasarán el resto de su vida en Texas A&M.",
           "La mesa cambia de casa en casa, pero la idea de fondo sigue siendo la que describe la federación avícola: detenerse a agradecer lo cosechado."
         ]
@@ -553,7 +623,7 @@
           "It is usually traced to autumn 1621, when Plymouth colonists and the Wampanoag people shared a harvest feast, according to the [Library of Congress](https://blogs.loc.gov/families/2024/11/the-real-history-of-thanksgiving/). Some give that title to a 1565 feast in Florida between Spanish settlers and the Timucua, according to [History.com](https://www.history.com/articles/history-of-thanksgiving).",
           "For centuries these were scattered days kept by individual colonies and states. George Washington issued the first federal proclamation in 1789, and editor Sarah Josepha Hale spent years campaigning for a national holiday until Lincoln proclaimed one in 1863, in the middle of the Civil War, according to [History.com](https://www.history.com/articles/history-of-thanksgiving). In 1939 Franklin D. Roosevelt moved it up a week to lengthen the Christmas shopping season, and in 1941 Congress set the fourth Thursday of November, according to the [Smithsonian](https://si.edu/spotlight/thanksgiving/history).",
           "Today the day has its own script. Macy's parade, which debuted in 1924, is one of the most-watched entertainment programs of the year on broadcast TV; this time it moved to Saturday. On Thursday, the National Dog Show stays on NBC's calendar and football takes over the afternoon: Bears–Lions at 1:00 p.m. on CBS, Eagles–Cowboys at 4:30 p.m. on FOX and Chiefs–Bills at 8:20 p.m. on NBC, according to the [NFL schedule](https://www.nfl.com/news/thanksgiving-2026-nfl-schedule-release). This year adds a Thanksgiving Eve game, Packers–Rams, on Wednesday the 25th at 8:00 p.m. on Netflix, and another on Friday the 27th at 3:00 p.m., Broncos–Steelers, on Prime Video.",
-          "Here, Thursday starts with a run. The Life Time Turkey Trot Miami, at Tropical Park, has 5K and 10K races on November 26, according to [The Miami Marathon](https://www.themiamimarathon.com/pineapple-series/), which runs it. At 11:00 a.m., Feeding South Florida serves its first Thanksgiving Community Feast at Hard Rock Stadium, with prepared meals for 500 guests, according to the [organization](https://www.miamilivingmagazine.com/post/feeding-south-florida-thanksgiving-community-feast-hard-rock-stadium). And in the Keys, the Southernmost Turkey Trot starts at 8:00 a.m. from the Southernmost Point buoy in Key West, benefiting Reef Relief, according to [RunSignup](https://runsignup.com/Race/FL/KeyWest/SouthernmostTurkeyTrot).",
+          "Here, Thursday started with a run. The Life Time Turkey Trot Miami, at Tropical Park, had 5K and 10K races this November 26, according to [The Miami Marathon](https://www.themiamimarathon.com/pineapple-series/), which runs it, and in the Keys the Southernmost Turkey Trot was set to start at 8:00 a.m. from the Southernmost Point buoy in Key West, benefiting Reef Relief, according to [RunSignup](https://runsignup.com/Race/FL/KeyWest/SouthernmostTurkeyTrot). For 11:00 a.m., Feeding South Florida planned to serve its first Thanksgiving Community Feast at Hard Rock Stadium, with prepared meals for 500 guests, according to the [organization](https://www.miamilivingmagazine.com/post/feeding-south-florida-thanksgiving-community-feast-hard-rock-stadium).",
           "And then there is the turkey pardon. The National Turkey Federation has presented the president with a bird since 1947, and the \"pardoning\" began with George H.W. Bush in 1989, according to the [federation](https://www.eatturkey.org/history/). The story of Lincoln sparing a turkey is probably apocryphal, according to the [White House Historical Association](https://whitehousehistory.org/press-room/thanksgiving-at-the-white-house). This year's stars were Freedom and Feathers, two 4-month-old turkeys hatched on July 15 at Deans Gap Farm in West Virginia, according to the [White House](https://www.whitehouse.gov/thanksgiving/). Both were officially pardoned, but only one receives the ceremonial honor at the White House, and in the public vote Freedom won. Afterward, according to the [White House](https://www.whitehouse.gov/releases/2026/11/voting-begins-for-the-2026-national-thanksgiving-turkey-pardon-ceremony/), both will live out their days at Texas A&M.",
           "The table changes from home to home, but the core idea remains the one the turkey federation describes: pausing to give thanks for the harvest."
         ]
@@ -4617,7 +4687,8 @@
         "toca": [
           "Faena Art: del 1 al 6 de diciembre, de 12:00 a 9:00 PM, en Faena Beach, detrás del hotel Faena, 3201 Collins Ave. Gratis. Programa en [faenaart.org](https://www.faenaart.org).",
           "Between Tides: del 29 de noviembre al 6 de diciembre, de 10:00 AM a 5:00 PM, en Collins Park, 2100 Collins Ave. Gratis.",
-          "Art Basel: del 4 al 6 de diciembre, de 11:00 AM a 6:00 PM, en el Miami Beach Convention Center, 1901 Convention Center Dr. Boletos en [artbasel.com](https://www.artbasel.com/miami-beach)."
+          "Art Basel: del 4 al 6 de diciembre, de 11:00 AM a 6:00 PM, en el Miami Beach Convention Center, 1901 Convention Center Dr. Boletos en [artbasel.com](https://www.artbasel.com/miami-beach).",
+          "Taxi acuático gratis: del 30 de noviembre al 5 de diciembre, de 10:00 a.m. a medianoche; el domingo 6, hasta las 10:00 p.m. Sale cada 7 a 9 minutos de Maurice Gibb Memorial Park, 1790 Purdy Ave., según la [ciudad](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/)."
         ],
         "cuerpo": [
           "Durante la primera semana de diciembre, Miami cambia de piel. Aparece arte en la arena, en los parques y en las paredes; el coleccionista anda de lino y chancletas, y la música sale de donde menos se espera. Instalación, luz, sonido, diseño, arte callejero: todas las tendencias caben en la misma acera. Art Basel es el imán, puertas adentro y con boleto. El ritmo de la ciudad, en cambio, se siente afuera, y buena parte es gratis.",
@@ -4630,7 +4701,9 @@
           "## Y la feria",
           "Art Basel reúne [272 galerías de más de 40 países](https://www.artsy.net/article/artsy-editorial-art-basel-miami-beach-announces-272-exhibitors-2026-edition) y abre al público del 4 al 6 en el centro de convenciones. También anunció una obra de James Turrell al aire libre y sin costo.",
           "## Lo que la arena ya ha visto",
-          "Esa playa tiene memoria. En 2024 la cruzó una manada de elefantes de tamaño real, The Great Elephant Migration. El año pasado, Es Devlin levantó allí Library of Us, un triángulo de 2,500 libros sobre un espejo de agua; al cerrar, [los libros se repartieron](https://mymodernmet.com/library-of-us-faena-art-es-devlin) entre bibliotecas y escuelas de la ciudad."
+          "Esa playa tiene memoria. En 2024 la cruzó una manada de elefantes de tamaño real, The Great Elephant Migration. El año pasado, Es Devlin levantó allí Library of Us, un triángulo de 2,500 libros sobre un espejo de agua; al cerrar, [los libros se repartieron](https://mymodernmet.com/library-of-us-faena-art-es-devlin) entre bibliotecas y escuelas de la ciudad.",
+          "## Cómo cruzar sin auto",
+          "Para llegar sin auto, la ciudad de Miami Beach pone taxis acuáticos gratis entre Maurice Gibb Memorial Park, en Sunset Harbour, y Venetian Marina & Yacht Club (1635 North Bayshore Drive, en Miami), del lunes 30 de noviembre al domingo 6 de diciembre, según su [página de transporte](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/). Desde el muelle salen shuttles gratis al centro de convenciones, a South Beach, a Mid-Beach y al Design District, cada 10 a 15 minutos. Y quien cruce por el Venetian tendrá menos esperas: el puente levadizo del este no abrirá a embarcaciones de 3:00 a 9:00 p.m. durante esos siete días, salvo emergencias."
         ]
       },
       "en": {
@@ -4639,7 +4712,8 @@
         "toca": [
           "Faena Art: Dec. 1-6, noon to 9 p.m., on Faena Beach behind the Faena Hotel, 3201 Collins Ave. Free. Program at [faenaart.org](https://www.faenaart.org).",
           "Between Tides: Nov. 29 to Dec. 6, 10 a.m. to 5 p.m., in Collins Park, 2100 Collins Ave. Free.",
-          "Art Basel: Dec. 4-6, 11 a.m. to 6 p.m., at the Miami Beach Convention Center, 1901 Convention Center Drive. Tickets at [artbasel.com](https://www.artbasel.com/miami-beach)."
+          "Art Basel: Dec. 4-6, 11 a.m. to 6 p.m., at the Miami Beach Convention Center, 1901 Convention Center Drive. Tickets at [artbasel.com](https://www.artbasel.com/miami-beach).",
+          "Free water taxi: Nov. 30 to Dec. 5, 10 a.m. to midnight; Sunday the 6th, until 10 p.m. It leaves every 7 to 9 minutes from Maurice Gibb Memorial Park, 1790 Purdy Ave., according to the [city](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/)."
         ],
         "cuerpo": [
           "During the first week of December, Miami changes its skin. Art shows up on the sand, in the parks and on the walls; the collector goes around in linen and flip-flops, and music comes from where you least expect it. Installation, light, sound, design, street art: every trend fits on the same sidewalk. Art Basel is the magnet, indoors and ticketed. The city's rhythm, though, is felt outside, and much of it is free.",
@@ -4652,7 +4726,9 @@
           "## And the fair",
           "Art Basel brings together [272 galleries from more than 40 countries](https://www.artsy.net/article/artsy-editorial-art-basel-miami-beach-announces-272-exhibitors-2026-edition) and opens to the public Dec. 4-6 at the convention center. It has also announced an outdoor work by James Turrell, free to the public.",
           "## What the sand has already seen",
-          "That beach has a memory. In 2024 a herd of life-size elephants crossed it, The Great Elephant Migration. Last year, Es Devlin built Library of Us there, a triangle of 2,500 books over a reflecting pool; when it closed, [the books went](https://mymodernmet.com/library-of-us-faena-art-es-devlin) to the city's libraries and schools."
+          "That beach has a memory. In 2024 a herd of life-size elephants crossed it, The Great Elephant Migration. Last year, Es Devlin built Library of Us there, a triangle of 2,500 books over a reflecting pool; when it closed, [the books went](https://mymodernmet.com/library-of-us-faena-art-es-devlin) to the city's libraries and schools.",
+          "## Crossing without a car",
+          "To get there without a car, the City of Miami Beach is running free water taxis between Maurice Gibb Memorial Park, in Sunset Harbour, and Venetian Marina & Yacht Club (1635 North Bayshore Drive, in Miami), from Monday, Nov. 30 to Sunday, Dec. 6, according to its [transportation page](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/). Free shuttles leave the dock for the convention center, South Beach, Mid-Beach and the Design District every 10 to 15 minutes. And anyone crossing the Venetian will wait less: the east drawbridge will not open to vessels from 3 to 9 p.m. during those seven days, except for emergencies."
         ]
       },
       "fuentes": [
@@ -4675,8 +4751,13 @@
         {
           "n": "My Modern Met · Library of Us, de Es Devlin",
           "u": "https://mymodernmet.com/library-of-us-faena-art-es-devlin"
+        },
+        {
+          "n": "Ciudad de Miami Beach · Art Week Free Transportation 2026",
+          "u": "https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/"
         }
-      ]
+      ],
+      "actualizada": "2026-11-26T11:39:34-05:00"
     },
     {
       "id": "mercado-miami-dade-dos-velocidades",
@@ -6979,43 +7060,43 @@
       "es": {
         "etiqueta": "LUCES DE TEMPORADA",
         "titulo": "Navidad sin nieve: Miami enciende sus jardines, su zoo y sus parques",
-        "bajada": "Christmas Wonderland ya abrió, NightGarden encendió el viernes 13 y, antes de que acabe noviembre, se suman Luminosa, Zoo Lights y Berry Farm. Hay un plan para cada quien.",
+        "bajada": "Christmas Wonderland y NightGarden ya están encendidos, y este viernes 27 se suman Zoo Lights, con el encendido de su árbol a las 7:00 p.m., y Berry Farm. Hay un plan para cada quien.",
         "toca": [
           "NightGarden: Fairchild, 10901 Old Cutler Rd, Coral Gables. Desde $38, con entrada por día y hora; los menores de 3 años no pagan y la pista de hielo se paga aparte.",
           "Christmas Wonderland: Tropical Park, 7900 SW 40 St. De lunes a jueves abre de 5:00 a 11:00 de la noche, viernes y sábado hasta la medianoche, y el domingo de 4:00 a 10:00. Cierra el 16 y el 30 de noviembre y el 7 de diciembre.",
           "Luminosa: Jungle Island, 1111 Parrot Jungle Trail, en Watson Island. El parqueo cuesta $20 por auto.",
-          "Zoo Lights: Zoo Miami, 12400 SW 152 St. El tren se paga aparte.",
+          "Zoo Lights: Zoo Miami, 12400 SW 152 St. De 6:30 a 10:00 p.m. el 27 y 28 de noviembre y el 4, 5, 11, 12, del 18 al 23 y del 26 al 30 de diciembre. Entradas solo en línea, aparte de la visita de día; el tren se paga aparte.",
           "Berry Farm: 13720 SW 216 St, en Redland. Las noches iluminadas van incluidas con la entrada, en fechas seleccionadas.",
           "Pinecrest Gardens: 11000 Red Road, Pinecrest. Todavía no publica las fechas de Nights of Lights; el año pasado abrió los fines de semana de diciembre, de 6:00 a 9:00 de la noche."
         ],
         "cuerpo": [
-          "La temporada de luces arranca en Miami. [Christmas Wonderland](https://www.miamimagicapp.com/?ev=twm-wonderland26) abrió el jueves 12 de noviembre en Tropical Park, y el viernes 13 [NightGarden](https://www.miamimagicapp.com/?ev=twm-nightgarden26) encendió Fairchild. El 25 llega [Luminosa](https://www.jungleisland.com) a Jungle Island, y el 27 se suman [Zoo Lights](https://www.miamimagicapp.com/?ev=twm-zoolights26) y [Berry Farm](https://www.miamimagicapp.com/?ev=twm-berrywinter26).",
+          "La temporada de luces arranca en Miami. [Christmas Wonderland](https://www.miamimagicapp.com/?ev=twm-wonderland26) abrió el jueves 12 de noviembre en Tropical Park, y el viernes 13 [NightGarden](https://www.miamimagicapp.com/?ev=twm-nightgarden26) encendió Fairchild. [Luminosa](https://www.jungleisland.com) tenía fijada su apertura en Jungle Island para el miércoles 25, y este viernes 27 se suman [Zoo Lights](https://www.miamimagicapp.com/?ev=twm-zoolights26) y [Berry Farm](https://www.miamimagicapp.com/?ev=twm-berrywinter26).",
           "Para caminar despacio, los jardines. En NightGarden, los senderos de Fairchild se llenan de luz, hay instalaciones que responden al visitante, un show de láser, Archimedes, el árbol que habla, noches de películas navideñas y, esta temporada, una pista de hielo al aire libre. El recorrido toma cerca de una hora.",
           "En [Pinecrest Gardens](https://www.pinecrestgardens.org/Arts-Events/Events-Calendar/Nights-of-Lights), Nights of Lights convierte el jardín en un paseo nocturno: luces que flotan sobre el lago, esferas encendidas que cuelgan de los árboles, un túnel iluminado y el árbol de Navidad, con música en vivo y cuentos para los niños. Ese jardín fue el Parrot Jungle original, abierto en 1936.",
           "Cuando Parrot Jungle se mudó a Watson Island en 2002, pasó a llamarse Jungle Island, y allí está Luminosa: cerca de milla y media de linternas inspiradas en los barrios de Miami, del 25 de noviembre al 10 de enero. El mismo parque, dos jardines encendidos.",
           "Durante casi cuatro décadas, Tropical Park en diciembre fue Santa's Enchanted Forest. Desde 2023 ese lugar lo ocupa Christmas Wonderland, que según su [comunicado](https://www.prnewswire.com/news-releases/christmas-wonderland-returns-to-tropical-park-nov-12-with-a-mile-of-synchronized-music-and-lighting-spectacular-the-230-foot-america-250-wheel-and-a-new-classic-european-style-christmas-market-302926863.html) tiene más de 50 atracciones, una milla de luces que bailan con la música y una noria de 230 pies. Este año le rinde homenaje con Santa's Enchanted Forest Memory Lane, que trae de vuelta piezas originales y fotos clásicas como la de Surfin' Santa.",
-          "En Redland, Berry Farm cambia las calabazas por paseos en carreta, películas en el césped, nieve de mentira y la visita de Santa. Y en Zoo Miami, Zoo Lights reparte, según el zoo, más de un millón de luces entre los animales, con un árbol de LED de 26 pies y villancicos, del 27 de noviembre al 30 de diciembre."
+          "En Redland, Berry Farm cambia las calabazas por paseos en carreta, películas en el césped, nieve de mentira y la visita de Santa. Y en Zoo Miami, Zoo Lights abre este viernes 27 con el encendido del árbol a las 7:00 p.m. Son 17 noches, de 6:30 a 10:00 p.m., hasta el 30 de diciembre, con más de un millón de luces, un árbol de LED de 26 pies y villancicos, según el zoo, que vende las entradas solo en línea."
         ]
       },
       "en": {
         "etiqueta": "SEASON OF LIGHTS",
         "titulo": "Christmas without snow: Miami lights up its gardens, its zoo and its parks",
-        "bajada": "Christmas Wonderland is open, NightGarden lit up Friday the 13th, and Luminosa, Zoo Lights and The Berry Farm join before November ends. There's a plan for everyone.",
+        "bajada": "Christmas Wonderland and NightGarden are already lit, and this Friday the 27th Zoo Lights, with its tree lighting at 7 p.m., and The Berry Farm join in. There's a plan for everyone.",
         "toca": [
           "NightGarden: Fairchild, 10901 Old Cutler Rd, Coral Gables. From $38 with timed entry; kids 3 and under are free and the ice rink is a separate ticket.",
           "Christmas Wonderland: Tropical Park, 7900 SW 40 St. Open 5 to 11 p.m. Monday through Thursday, until midnight Friday and Saturday, and 4 to 10 p.m. Sunday. Closed Nov. 16, Nov. 30 and Dec. 7.",
           "Luminosa: Jungle Island, 1111 Parrot Jungle Trail, Watson Island. Parking is $20 per car.",
-          "Zoo Lights: Zoo Miami, 12400 SW 152 St. The train ride costs extra.",
+          "Zoo Lights: Zoo Miami, 12400 SW 152 St. 6:30 to 10 p.m. on Nov. 27 and 28 and Dec. 4, 5, 11, 12, 18-23 and 26-30. Tickets are online only and separate from daytime admission; the train ride costs extra.",
           "The Berry Farm: 13720 SW 216 St, Redland. The lit-up nights are included with admission on select dates.",
           "Pinecrest Gardens: 11000 Red Road, Pinecrest. This year's Nights of Lights dates aren't posted yet; last year it ran on December weekends, 6 to 9 p.m."
         ],
         "cuerpo": [
-          "Light season starts in Miami. [Christmas Wonderland](https://www.miamimagicapp.com/?ev=twm-wonderland26) opened Thursday, Nov. 12, at Tropical Park, and on Friday the 13th [NightGarden](https://www.miamimagicapp.com/?ev=twm-nightgarden26) lit up Fairchild. [Luminosa](https://www.jungleisland.com) arrives at Jungle Island on Nov. 25, and [Zoo Lights](https://www.miamimagicapp.com/?ev=twm-zoolights26) and [The Berry Farm](https://www.miamimagicapp.com/?ev=twm-berrywinter26) join on Nov. 27.",
+          "Light season starts in Miami. [Christmas Wonderland](https://www.miamimagicapp.com/?ev=twm-wonderland26) opened Thursday, Nov. 12, at Tropical Park, and on Friday the 13th [NightGarden](https://www.miamimagicapp.com/?ev=twm-nightgarden26) lit up Fairchild. [Luminosa](https://www.jungleisland.com) had its Jungle Island opening set for Wednesday, Nov. 25, and [Zoo Lights](https://www.miamimagicapp.com/?ev=twm-zoolights26) and [The Berry Farm](https://www.miamimagicapp.com/?ev=twm-berrywinter26) join this Friday, Nov. 27.",
           "For a slow walk, there are the gardens. At NightGarden, Fairchild's paths fill with light, with interactive installations, a laser show, Archimedes the talking tree, holiday movie nights and, this season, an outdoor ice rink. The walk takes about an hour.",
           "At [Pinecrest Gardens](https://www.pinecrestgardens.org/Arts-Events/Events-Calendar/Nights-of-Lights), Nights of Lights turns the garden into a night stroll: lights floating over the lake, glowing spheres hanging from the trees, a lit tunnel and the Christmas tree, with live music and storytime for kids. That garden was the original Parrot Jungle, opened in 1936.",
           "When Parrot Jungle moved to Watson Island in 2002, it became Jungle Island, and that's where Luminosa glows: about a mile and a half of lanterns inspired by Miami's neighborhoods, from Nov. 25 to Jan. 10. The same park, two gardens lit up.",
           "For almost four decades, Tropical Park in December meant Santa's Enchanted Forest. Since 2023 the spot has belonged to Christmas Wonderland, which its [press release](https://www.prnewswire.com/news-releases/christmas-wonderland-returns-to-tropical-park-nov-12-with-a-mile-of-synchronized-music-and-lighting-spectacular-the-230-foot-america-250-wheel-and-a-new-classic-european-style-christmas-market-302926863.html) says has more than 50 rides, a mile of lights synchronized to music and a 230-foot wheel. This year it pays tribute with Santa's Enchanted Forest Memory Lane, bringing back original set pieces and classic photo spots like Surfin' Santa.",
-          "In Redland, The Berry Farm trades pumpkins for hayrides, movies on the lawn, make-believe snow and a visit from Santa. And at Zoo Miami, Zoo Lights spreads, the zoo says, more than a million lights among the animals, with a 26-foot LED tree and carolers, from Nov. 27 to Dec. 30."
+          "In Redland, The Berry Farm trades pumpkins for hayrides, movies on the lawn, make-believe snow and a visit from Santa. And at Zoo Miami, Zoo Lights opens this Friday the 27th with the tree lighting at 7 p.m. It runs 17 nights, 6:30 to 10 p.m., through Dec. 30, with more than a million lights, a 26-foot LED tree and carolers, according to the zoo, which sells tickets online only."
         ]
       },
       "galeria": [
@@ -7079,7 +7160,7 @@
           "u": "https://www.showpass.com/6th-annual-winter-festival-landing-page"
         }
       ],
-      "actualizada": "2026-11-20T17:40:00-05:00"
+      "actualizada": "2026-11-26T11:39:34-05:00"
     },
     {
       "id": "manaties-noviembre-botes-despacio",
@@ -8643,7 +8724,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T09:17:18-05:00",
+  "updated_at": "2026-11-26T11:39:34-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
