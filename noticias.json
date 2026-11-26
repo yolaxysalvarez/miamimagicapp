@@ -280,6 +280,7 @@
           "Las demás fiestas llegan solas. La Navidad, los cumpleaños, el 31: alguien las trajo antes que uno. Thanksgiving no. Se aprende de grande, mirando cómo lo hacen los vecinos y preguntando a qué hora se come.",
           "## Una fiesta que no pide nada",
           "No hay regalos que comprar ni disfraz que armar. Hay una mesa, gente alrededor y una costumbre sencilla: decir en voz alta de qué se está agradecido. Para quien llegó de otro lugar, esa costumbre pesa distinto, porque obliga a hacer cuentas.",
+          "Mi primer Thanksgiving fue tan simple como inolvidable. No hizo falta nada más que la familia y las personas que quiero alrededor de la mesa.",
           "## Mis cuentas",
           "Quien agradece lo que heredó cumple una tradición. Quien agradece lo que eligió sabe exactamente por qué lo hace.",
           "Yo lo sé. Este país nos abrió la puerta, y del otro lado encontramos trabajo, la posibilidad de levantar un negocio y una voz que cuenta. Aquí crezco cada día: disfruto de mi familia, de cada lugar de Miami y de Los Cayos, del trabajo que hago. Gracias a esta gran nación por acogernos.",
@@ -299,6 +300,7 @@
           "The other holidays arrive on their own. Christmas, birthdays, New Year's Eve: someone brought them before we got here. Thanksgiving didn't come that way. You learn it later in life, watching how the neighbors do it and asking what time dinner is.",
           "## A holiday that asks for nothing",
           "There are no gifts to buy and no costume to put together. There is a table, people around it and one simple custom: saying out loud what you are grateful for. For someone who arrived from somewhere else, that custom weighs differently, because it forces you to take stock.",
+          "My first Thanksgiving was as simple as it was unforgettable. Nothing else was needed: just family and the people I love around the table.",
           "## My accounts",
           "Whoever gives thanks for something inherited is keeping a tradition. Whoever gives thanks for something chosen knows exactly why.",
           "I know why. This country opened the door, and on the other side we found work, the chance to build a business and a voice that counts. Here I grow every day: I enjoy my family, every place in Miami and the Keys, the work I do. Thank you to this great nation for taking us in.",
@@ -8632,7 +8634,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T08:13:04-05:00",
+  "updated_at": "2026-11-26T08:18:24-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
