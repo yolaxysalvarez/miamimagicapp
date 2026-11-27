@@ -87,7 +87,7 @@
       "desarrollo": false,
       "es": {
         "etiqueta": "SEMANA DEL ARTE",
-        "titulo": "Semana del arte con niños: cinco planes gratis",
+        "titulo": "Arte que los niños pueden tocar, y gratis",
         "bajada": "Ping-pong de artistas, castillos de arena, una esfera de espejos y un museo donde se puede dibujar.",
         "toca": [
           "The Bass (2100 Collins Ave.) no cobra entrada el domingo 6 de diciembre, de 10:00 a.m. a 5:00 p.m.",
@@ -106,7 +106,7 @@
       },
       "en": {
         "etiqueta": "ART WEEK",
-        "titulo": "Art week with kids: five free plans",
+        "titulo": "Art that kids can touch, for free",
         "bajada": "Artist-designed ping-pong, sandcastles, a mirrored sphere and a museum where you can draw.",
         "toca": [
           "The Bass (2100 Collins Ave.) has free admission on Sunday, Dec. 6, from 10 a.m. to 5 p.m.",
@@ -157,7 +157,7 @@
       "desarrollo": false,
       "es": {
         "etiqueta": "SEMANA DEL ARTE",
-        "titulo": "Semana del arte: lo que pasa fuera de la playa",
+        "titulo": "La semana del arte que se queda en Miami",
         "bajada": "Museos, una colección abierta sin costo y los murales de Wynwood, del lado de Miami.",
         "toca": [
           "El ICA Miami, en el Design District (61 NE 41 Street), no cobra entrada.",
@@ -178,7 +178,7 @@
       },
       "en": {
         "etiqueta": "ART WEEK",
-        "titulo": "Art week: what happens off the beach",
+        "titulo": "The art week that stays in Miami",
         "bajada": "Museums, a collection open at no cost and Wynwood's murals, on the Miami side.",
         "toca": [
           "ICA Miami, in the Design District (61 NE 41st Street), does not charge admission.",
@@ -227,7 +227,7 @@
       "desarrollo": false,
       "es": {
         "etiqueta": "A LA MESA",
-        "titulo": "Semana del arte: dónde comer cerca de las ferias",
+        "titulo": "Entre feria y feria, once mesas a pocos pasos",
         "bajada": "Once mesas de Miami Beach, ordenadas por lo cerca que quedan del centro de convenciones y de las rutas gratis.",
         "toca": [
           "A pie del centro de convenciones: CHŌ Funky Asian Bistro y Bodega Taqueria y Tequila.",
@@ -255,7 +255,7 @@
       },
       "en": {
         "etiqueta": "AT THE TABLE",
-        "titulo": "Art week: where to eat near the fairs",
+        "titulo": "Between fairs, eleven tables a few steps away",
         "bajada": "Eleven Miami Beach tables, sorted by how close they are to the convention center and the free routes.",
         "toca": [
           "Walking distance from the convention center: CHŌ Funky Asian Bistro and Bodega Taqueria y Tequila.",
@@ -376,7 +376,7 @@
       "desarrollo": false,
       "es": {
         "etiqueta": "SEMANA DEL ARTE",
-        "titulo": "Semana del arte: las otras ferias, cuál es cuál",
+        "titulo": "Art Basel no viene sola: diez ferias más y dónde encontrarlas",
         "bajada": "Art Basel es la más conocida, pero no la única: hay ferias en la playa, en el downtown, en Wynwood y en Coconut Grove.",
         "toca": [
           "Art Basel abre al público del 4 al 6 de diciembre, de 11:00 a.m. a 6:00 p.m., en el centro de convenciones de Miami Beach.",
@@ -401,7 +401,7 @@
       },
       "en": {
         "etiqueta": "ART WEEK",
-        "titulo": "Art week: the other fairs, and which is which",
+        "titulo": "Art Basel does not come alone: ten more fairs and where to find them",
         "bajada": "Art Basel is the best known, but not the only one: there are fairs on the beach, downtown, in Wynwood and in Coconut Grove.",
         "toca": [
           "Art Basel is open to the public Dec. 4 to 6, 11 a.m. to 6 p.m., at the Miami Beach Convention Center.",
@@ -454,7 +454,7 @@
       "serie": "artweek",
       "es": {
         "etiqueta": "SEMANA DEL ARTE",
-        "titulo": "Semana del arte: cómo moverse sin quedar atrapado",
+        "titulo": "A la semana del arte se llega gratis, y por agua",
         "bajada": "Taxi acuático, shuttles y trolley gratis, y dónde dejar el auto.",
         "toca": [
           "Taxi acuático gratis: del 30 de noviembre al 5 de diciembre, de 10:00 a.m. a medianoche; el domingo 6, hasta las 10:00 p.m.",
@@ -483,7 +483,7 @@
       },
       "en": {
         "etiqueta": "ART WEEK",
-        "titulo": "Art week: how to get around without getting stuck",
+        "titulo": "You can get to art week for free, and by water",
         "bajada": "Free water taxi, shuttles and trolley, and where to leave the car.",
         "toca": [
           "Free water taxi: Nov. 30 to Dec. 5, 10 a.m. to midnight; Sunday the 6th, until 10 p.m.",
@@ -5646,7 +5646,7 @@
         }
       ],
       "es": {
-        "titulo": "Semana del arte: qué ver gratis en la playa y los parques",
+        "titulo": "La semana del arte empieza en la arena, y es gratis",
         "bajada": "Una esfera de espejos en la arena, luz, poesía y mesas de ping-pong de artistas, sin pagar entrada.",
         "toca": [
           "Faena Art: del 1 al 6 de diciembre, de 12:00 a 9:00 PM, en Faena Beach, detrás del hotel Faena, 3201 Collins Ave. Gratis. Programa en [faenaart.org](https://www.faenaart.org).",
@@ -5667,16 +5667,16 @@
           "## Lo que la arena ya ha visto",
           "Esa playa tiene memoria. En 2024 la cruzó una manada de elefantes de tamaño real, The Great Elephant Migration. El año pasado, Es Devlin levantó allí Library of Us, un triángulo de 2,500 libros sobre un espejo de agua; al cerrar, [los libros se repartieron](https://mymodernmet.com/library-of-us-faena-art-es-devlin) entre bibliotecas y escuelas de la ciudad.",
           "## Toda la semana del arte",
-          "- [Cómo moverse sin quedar atrapado](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
-          "- [Las otras ferias, cuál es cuál](https://miamimagicapp.com/noticias/semana-del-arte-otras-ferias-guia)",
-          "- [Con niños: cinco planes gratis](https://miamimagicapp.com/noticias/semana-del-arte-con-ninos-gratis)",
-          "- [Dónde comer cerca de las ferias](https://miamimagicapp.com/noticias/semana-del-arte-donde-comer-miami-beach)",
-          "- [Lo que pasa fuera de la playa](https://miamimagicapp.com/noticias/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
-          "- [La feria suiza que llegó con un año de retraso](https://miamimagicapp.com/noticias/art-basel-miami-beach-historia-como-llego)"
+          "- [A la semana del arte se llega gratis, y por agua](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
+          "- [Art Basel no viene sola: diez ferias más y dónde encontrarlas](https://miamimagicapp.com/noticias/semana-del-arte-otras-ferias-guia)",
+          "- [Arte que los niños pueden tocar, y gratis](https://miamimagicapp.com/noticias/semana-del-arte-con-ninos-gratis)",
+          "- [Entre feria y feria, once mesas a pocos pasos](https://miamimagicapp.com/noticias/semana-del-arte-donde-comer-miami-beach)",
+          "- [La semana del arte que se queda en Miami](https://miamimagicapp.com/noticias/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
+          "- [La feria suiza que llegó a Miami Beach con un año de retraso](https://miamimagicapp.com/noticias/art-basel-miami-beach-historia-como-llego)"
         ]
       },
       "en": {
-        "titulo": "Art week: what to see for free on the beach and in the parks",
+        "titulo": "Art week starts on the sand, and it is free",
         "bajada": "A mirrored sphere on the sand, light, poetry and artist-designed ping-pong tables, with no admission.",
         "toca": [
           "Faena Art: Dec. 1-6, noon to 9 p.m., on Faena Beach behind the Faena Hotel, 3201 Collins Ave. Free. Program at [faenaart.org](https://www.faenaart.org).",
@@ -5697,12 +5697,12 @@
           "## What the sand has already seen",
           "That beach has a memory. In 2024 a herd of life-size elephants crossed it, The Great Elephant Migration. Last year, Es Devlin built Library of Us there, a triangle of 2,500 books over a reflecting pool; when it closed, [the books went](https://mymodernmet.com/library-of-us-faena-art-es-devlin) to the city's libraries and schools.",
           "## All of art week",
-          "- [How to get around without getting stuck](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
-          "- [The other fairs, and which is which](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia)",
-          "- [With kids: five free plans](https://miamimagicapp.com/news/semana-del-arte-con-ninos-gratis)",
-          "- [Where to eat near the fairs](https://miamimagicapp.com/news/semana-del-arte-donde-comer-miami-beach)",
-          "- [What happens off the beach](https://miamimagicapp.com/news/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
-          "- [The Swiss fair that arrived a year late](https://miamimagicapp.com/news/art-basel-miami-beach-historia-como-llego)"
+          "- [You can get to art week for free, and by water](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
+          "- [Art Basel does not come alone: ten more fairs and where to find them](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia)",
+          "- [Art that kids can touch, for free](https://miamimagicapp.com/news/semana-del-arte-con-ninos-gratis)",
+          "- [Between fairs, eleven tables a few steps away](https://miamimagicapp.com/news/semana-del-arte-donde-comer-miami-beach)",
+          "- [The art week that stays in Miami](https://miamimagicapp.com/news/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
+          "- [The Swiss fair that reached Miami Beach a year late](https://miamimagicapp.com/news/art-basel-miami-beach-historia-como-llego)"
         ]
       },
       "fuentes": [
@@ -9701,7 +9701,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:38:52-05:00",
+  "updated_at": "2026-11-27T11:39:36-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
