@@ -568,20 +568,20 @@
         }
       ],
       "desarrollo": false,
-      "actualizada": "2026-11-26T09:17:18-05:00",
+      "actualizada": "2026-11-27T08:25:27-05:00",
       "ultima": 8,
       "es": {
         "etiqueta": "EN LA CALLE",
-        "titulo": "Thanksgiving: el Metro va con horario de domingo, las oficinas cierran dos días y en Los Cayos la basura se corre un día",
-        "bajada": "Miami-Dade cierra sus oficinas el jueves 26 y el viernes 27, y sus bibliotecas hasta el sábado 28, pero el Metro sigue rodando y la basura se recoge. En Los Cayos, el condado de Monroe corre la recogida un día en buena parte de la ruta.",
+        "titulo": "Viernes tras Thanksgiving: el Metro vuelve a su horario normal, las oficinas siguen cerradas y en Los Cayos la basura va con un día de retraso",
+        "bajada": "Miami-Dade mantiene cerradas sus oficinas este viernes 27 y sus bibliotecas hasta el sábado 28; el transporte ya corre con servicio normal y la basura se recoge. En Los Cayos, el condado de Monroe corrió la recogida un día en buena parte de la ruta.",
         "toca": [
-          "Jueves 26: Metrobus, Metrorail y Metromover con horario de domingo. El viernes, servicio normal.",
-          "Miami-Dade: oficinas cerradas el jueves y el viernes; bibliotecas, de jueves a sábado; la basura se recoge igual.",
-          "Los Cayos: de Stock Island a Seven Mile Bridge, la basura del jueves pasa al viernes y la del viernes al sábado."
+          "Viernes 27: Metrobus, Metrorail y Metromover, con servicio normal. El jueves circularon con horario de domingo.",
+          "Miami-Dade: oficinas cerradas también este viernes; bibliotecas, hasta el sábado; la basura se recoge igual.",
+          "Los Cayos: de Stock Island a Seven Mile Bridge, la basura del jueves se recoge este viernes y la del viernes, el sábado."
         ],
         "cuerpo": [
-          "En Miami-Dade, las oficinas del condado cierran el jueves 26 y el viernes 27, según su [calendario de feriados](https://www.miamidade.gov/global/humanresources/holidays.page), y las bibliotecas públicas permanecen cerradas hasta el sábado 28, de acuerdo con el [calendario del sistema de bibliotecas](https://bookings.mdpls.org/holiday). Lo que no se detiene es el transporte: el condado indica que Metrobus, Metrorail y Metromover circulan el jueves con horario de domingo, y el viernes vuelven al servicio normal.",
-          "La basura tampoco cambia de día. De acuerdo con [Residuos Sólidos del condado](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), la recogida de basura y reciclaje sigue su calendario y los centros de basura y reciclaje abren en su horario regular. La excepción es el vertedero Medley, de WM, que el jueves cierra al mediodía y el viernes abre normal. Para dudas por zona, el condado remite al 311.",
+          "En Miami-Dade, las oficinas del condado cierran el jueves 26 y el viernes 27, según su [calendario de feriados](https://www.miamidade.gov/global/humanresources/holidays.page), y las bibliotecas públicas permanecen cerradas hasta el sábado 28, de acuerdo con el [calendario del sistema de bibliotecas](https://bookings.mdpls.org/holiday). Lo que no se detiene es el transporte: el condado indica que Metrobus, Metrorail y Metromover circularon el jueves con horario de domingo y este viernes vuelven al servicio normal.",
+          "La basura tampoco cambia de día. De acuerdo con [Residuos Sólidos del condado](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), la recogida de basura y reciclaje sigue su calendario y los centros de basura y reciclaje abren en su horario regular. La excepción es el vertedero Medley, de WM, que cerró el jueves al mediodía y este viernes abre normal. Para dudas por zona, el condado remite al 311.",
           "## En Los Cayos",
           "El condado de Monroe cierra sus oficinas el jueves y el viernes, según su [memo de feriados](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), y la recogida depende de quién la presta, de acuerdo con su [calendario de feriados](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). De Stock Island a Seven Mile Bridge, con Waste Management, no hay recogida el jueves: la de ese día pasa al viernes y la del viernes al sábado. En Marathon, hasta la milla 73, la basura del jueves se recoge el viernes y el reciclaje del jueves espera a la semana siguiente. Entre las millas 91 y 102, con Keys Sanitary Service, y en Ocean Reef, la ruta sigue normal.",
           "La mesa, la historia y los eventos de este Thanksgiving están en la [nota de tradición](https://miamimagicapp.com/noticias/thanksgiving-tradicion-historia-como-se-celebra)."
@@ -589,16 +589,16 @@
       },
       "en": {
         "etiqueta": "ON THE STREET",
-        "titulo": "Thanksgiving: Metro runs on a Sunday schedule, offices close for two days and Keys trash pickup shifts by a day",
-        "bajada": "Miami-Dade closes its offices Thursday the 26th and Friday the 27th, and its libraries through Saturday the 28th, but Metro keeps running and trash is still collected. In the Keys, Monroe County shifts pickup by a day along much of the route.",
+        "titulo": "The Friday after Thanksgiving: Metro is back on its regular schedule, offices stay closed and Keys trash pickup runs a day behind",
+        "bajada": "Miami-Dade keeps its offices closed this Friday the 27th and its libraries through Saturday the 28th; transit is back to regular service and trash is collected. In the Keys, Monroe County shifted pickup by a day along much of the route.",
         "toca": [
-          "Thursday 26: Metrobus, Metrorail and Metromover run a Sunday schedule. Friday, regular service.",
-          "Miami-Dade: offices closed Thursday and Friday; libraries, Thursday through Saturday; trash is still collected.",
-          "The Keys: from Stock Island to Seven Mile Bridge, Thursday's pickup moves to Friday and Friday's to Saturday."
+          "Friday 27: Metrobus, Metrorail and Metromover run regular service. On Thursday they ran a Sunday schedule.",
+          "Miami-Dade: offices closed this Friday too; libraries, through Saturday; trash is still collected.",
+          "The Keys: from Stock Island to Seven Mile Bridge, Thursday's pickup is collected this Friday and Friday's on Saturday."
         ],
         "cuerpo": [
-          "In Miami-Dade, county offices close Thursday the 26th and Friday the 27th, according to the county's [holiday calendar](https://www.miamidade.gov/global/humanresources/holidays.page), and public libraries stay closed through Saturday the 28th, per the [library system's schedule](https://bookings.mdpls.org/holiday). Transit does not stop: the county says Metrobus, Metrorail and Metromover run a Sunday schedule on Thursday and return to regular service on Friday.",
-          "Trash doesn't change days either. According to the county's [Solid Waste Management department](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), garbage and recycling collection keeps its regular schedule and the trash and recycling centers keep regular hours. The exception is WM's Medley Landfill, which closes at noon on Thursday and reopens normally on Friday. For questions by area, the county points to 311.",
+          "In Miami-Dade, county offices close Thursday the 26th and Friday the 27th, according to the county's [holiday calendar](https://www.miamidade.gov/global/humanresources/holidays.page), and public libraries stay closed through Saturday the 28th, per the [library system's schedule](https://bookings.mdpls.org/holiday). Transit does not stop: the county says Metrobus, Metrorail and Metromover ran a Sunday schedule on Thursday and return to regular service this Friday.",
+          "Trash doesn't change days either. According to the county's [Solid Waste Management department](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), garbage and recycling collection keeps its regular schedule and the trash and recycling centers keep regular hours. The exception is WM's Medley Landfill, which closed at noon on Thursday and reopens normally this Friday. For questions by area, the county points to 311.",
           "## In the Keys",
           "Monroe County closes its offices Thursday and Friday, per its [holiday memo](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), and pickup depends on who provides it, according to the county's [holiday schedule](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). From Stock Island to Seven Mile Bridge, with Waste Management, there is no pickup Thursday: that day's collection moves to Friday and Friday's moves to Saturday. In Marathon, through mile marker 73, Thursday's garbage is picked up Friday and Thursday's recycling waits until the following week. Between miles 91 and 102, with Keys Sanitary Service, and in Ocean Reef, the route runs as usual.",
           "The table, the history and the events of this Thanksgiving are in our [tradition story](https://miamimagicapp.com/news/thanksgiving-tradicion-historia-como-se-celebra)."
@@ -2320,7 +2320,7 @@
       ],
       "es": {
         "etiqueta": "EL TIEMPO",
-        "titulo": "Miami-Dade vuelve a clases este viernes; Broward no abre sus escuelas hasta después de Thanksgiving",
+        "titulo": "Miami-Dade volvió a clases el viernes 20; Broward no abre sus escuelas hasta después de Thanksgiving",
         "bajada": "La vigilancia de inundaciones terminó a las 7 de la mañana. Reabren los tribunales de Miami-Dade y FIU, y Brightline suspende por hoy el tramo entre Orlando y West Palm Beach. En 48 horas cayeron más de 16 pulgadas en Broward.",
         "toca": [
           "Hoy hay clases en las escuelas públicas de Miami-Dade. En Broward no: los estudiantes regresan el lunes 30.",
@@ -2353,7 +2353,7 @@
       },
       "en": {
         "etiqueta": "WEATHER",
-        "titulo": "Miami-Dade goes back to school this Friday; Broward schools stay closed until after Thanksgiving",
+        "titulo": "Miami-Dade went back to school on Friday the 20th; Broward schools stay closed until after Thanksgiving",
         "bajada": "The flood watch ended at 7 a.m. Miami-Dade courts and FIU reopen, and Brightline suspends its Orlando–West Palm Beach leg for the day. More than 16 inches of rain fell in Broward in 48 hours.",
         "toca": [
           "Miami-Dade public schools are open today. Broward’s are not: students return Monday the 30th.",
@@ -2480,7 +2480,8 @@
           }
         }
       ],
-      "ultima": 36
+      "ultima": 36,
+      "vence": "2026-11-20"
     },
     {
       "id": "faro-cape-florida-1836-historia",
@@ -2733,8 +2734,8 @@
         ]
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
-      "arriba": 8,
-      "ultima": 30
+      "ultima": 30,
+      "vence": "2026-11-22"
     },
     {
       "id": "control-renta-florida-boleta-2028",
@@ -4600,32 +4601,32 @@
       "foto_pie": "El marcador de Nu Stadium en el minuto 80: dos goles de Tapia y uno de Habroune.",
       "foto_pie_en": "The Nu Stadium scoreboard in the 80th minute: two goals by Tapia and one by Habroune.",
       "es": {
-        "titulo": "Inter Miami cayó 3–0 ante Columbus en el primer partido de playoffs en Nu Stadium y queda obligado a ganar el viernes",
-        "bajada": "La serie es al mejor de tres: sigue el viernes 27 en Columbus y solo vuelve a Miami si Inter Miami gana ese partido.",
+        "titulo": "Inter Miami se juega la temporada esta noche en Columbus: 8:00 p.m., obligado a ganar tras el 3–0 en Nu Stadium",
+        "bajada": "La serie es al mejor de tres y Columbus la gana 1-0. Si Inter Miami vence hoy, el tercer partido vuelve a Nu Stadium el miércoles 2 de diciembre.",
         "toca": [
-          "Juego 2: viernes 27 de noviembre, en Columbus, Ohio. Se transmite por Apple TV.",
-          "Si Inter Miami gana el viernes, el tercer partido se juega en Nu Stadium el martes 1 o el miércoles 2 de diciembre, con fecha y hora por confirmar.",
+          "Juego 2: hoy viernes 27, 8:00 p.m., en Columbus, Ohio. Se ve por Apple TV, FS1 y FOX Deportes, según la [MLS](https://www.mlssoccer.com/playoffs/2026/news/columbus-crew-vs-inter-miami-how-to-watch-stream-round-one-game-2).",
+          "Si Inter Miami gana, el tercer partido se juega en Nu Stadium el miércoles 2 de diciembre, según la MLS.",
           "Para ese posible partido: el parqueo no se vende en el estadio, se compra por adelantado; el boleto de Tri-Rail cuesta $10 ida y vuelta."
         ],
         "cuerpo": [
           "Inter Miami perdió 3–0 con Columbus Crew este sábado en Nu Stadium, según los datos oficiales del partido, en el primer juego de la serie de primera ronda de los playoffs de la MLS. Gonzalo Tapia anotó dos goles, a los 9 y a los 58 minutos, y Taha Habroune el otro, a los 52, como mostró el marcador del estadio. Fue también el primer partido de playoffs que se jugó en el estadio nuevo, abierto en abril junto al aeropuerto.",
-          "La serie es al mejor de tres y Columbus quedó a una victoria de avanzar. El segundo partido es el viernes 27 en Columbus, Ohio, de acuerdo con el [calendario que anunció el club](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Inter Miami necesita ganarlo para forzar un tercero, que volvería a Nu Stadium el martes 1 o el miércoles 2 de diciembre, con fecha y hora por confirmar. Quien gane dos avanza a las semifinales del Este.",
+          "La serie es al mejor de tres y Columbus quedó a una victoria de avanzar. El segundo partido es este viernes 27, a las 8:00 p.m., en Columbus, Ohio, de acuerdo con el [calendario que anunció el club](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Inter Miami necesita ganarlo para forzar un tercero, que volvería a Nu Stadium el miércoles 2 de diciembre, según la [MLS](https://www.mlssoccer.com/playoffs/2026/news/columbus-crew-vs-inter-miami-how-to-watch-stream-round-one-game-2). Quien gane dos avanza a las semifinales del Este.",
           "Si la serie regresa a Miami, llegar pide planificación, y el club [empuja el transporte público](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail y Tri-Rail paran en el Miami Intermodal Center, la estación del aeropuerto, y desde allí se camina hasta el estadio por el puente peatonal sobre el canal.",
           "En auto también se puede llegar y estacionar, pero solo con un pase de parqueo comprado por adelantado: en la entrada no se vende, advierte el club en sus [preguntas frecuentes](https://www.intermiamicf.com/nu-stadium/faqs), donde avisa además de que el espacio es muy limitado los días de partido. Los lotes abren tres horas antes del pitazo y las puertas del estadio, 90 minutos antes. Cada lote tiene su entrada: al Negro (Audi) se llega por NW 37 Ave y al Rojo por LeJeune Road, ambos con acceso por Heron Lane; al Amarillo, por NW 14 St y Volley Drive.",
           "Miami Magic estuvo en el partido y llegó en auto, con el pase comprado ese mismo día: la entrada al estacionamiento fue ordenada y sin demoras. Conviene llegar temprano. Afuera del estadio la vibra es tranquila, con varios puestos de actividades y de comida, y reparten souvenirs. Adentro se vive la tensión al ritmo del marcador y de la conga, que no paró de tocar en todo el partido. A la salida regalaban el afiche del equipo."
         ]
       },
       "en": {
-        "titulo": "Inter Miami fell 3–0 to Columbus in the first playoff game at Nu Stadium and must win Friday",
-        "bajada": "The series is best of three: it continues Friday the 27th in Columbus and only returns to Miami if Inter Miami wins that game.",
+        "titulo": "Inter Miami plays for its season tonight in Columbus: 8 p.m., needing a win after the 3–0 at Nu Stadium",
+        "bajada": "The series is best of three and Columbus leads 1-0. If Inter Miami wins today, Game 3 returns to Nu Stadium on Wednesday, Dec. 2.",
         "toca": [
-          "Game 2: Friday, Nov. 27, in Columbus, Ohio. Streaming on Apple TV.",
-          "If Inter Miami wins Friday, Game 3 is at Nu Stadium on Tuesday, Dec. 1, or Wednesday, Dec. 2, date and time to be announced.",
+          "Game 2: today, Friday the 27th, 8 p.m., in Columbus, Ohio. Watch on Apple TV, FS1 and FOX Deportes, per [MLS](https://www.mlssoccer.com/playoffs/2026/news/columbus-crew-vs-inter-miami-how-to-watch-stream-round-one-game-2).",
+          "If Inter Miami wins, Game 3 is at Nu Stadium on Wednesday, Dec. 2, per MLS.",
           "For that possible game: parking isn’t sold at the stadium, buy it in advance; the Tri-Rail ticket is $10 round trip."
         ],
         "cuerpo": [
           "Inter Miami lost 3–0 to the Columbus Crew on Saturday at Nu Stadium, according to the official match data, in the first game of their MLS playoffs Round One series. Gonzalo Tapia scored twice, in the 9th and 58th minutes, and Taha Habroune added the other in the 52nd, as the stadium scoreboard showed. It was also the first playoff game played at the new stadium, which opened in April next to the airport.",
-          "The series is best of three, and Columbus is now one win from advancing. Game 2 is Friday, Nov. 27, in Columbus, Ohio, per the [schedule the club announced](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Inter Miami needs to win it to force a third game, which would return to Nu Stadium on Tuesday, Dec. 1, or Wednesday, Dec. 2, date and time to be announced. The first team to two wins advances to the East semifinals.",
+          "The series is best of three, and Columbus is now one win from advancing. Game 2 is this Friday, Nov. 27, at 8 p.m., in Columbus, Ohio, per the [schedule the club announced](https://www.intermiamicf.com/news/it-s-miami-time-presented-by-royal-caribbean-schedule-announced-for-audi-2026-mls-cup-playoffs-round-one-series-against-columbus-crew). Inter Miami needs to win it to force a third game, which would return to Nu Stadium on Wednesday, Dec. 2, according to [MLS](https://www.mlssoccer.com/playoffs/2026/news/columbus-crew-vs-inter-miami-how-to-watch-stream-round-one-game-2). The first team to two wins advances to the East semifinals.",
           "If the series comes back to Miami, getting there takes planning, and the club is [pushing public transit](https://www.intermiamicf.com/nu-stadium/public-transportation). Metrorail and Tri-Rail stop at the Miami Intermodal Center, the airport station, and from there it’s a walk to the stadium over the pedestrian bridge across the canal.",
           "Driving and parking is possible too, but only with a parking pass bought in advance: none are sold at the entrance, the club warns in its [FAQ](https://www.intermiamicf.com/nu-stadium/faqs), which also notes that space is very limited on match days. Lots open three hours before kickoff and stadium gates open 90 minutes before. Each lot has its own entrance: the Audi Black Lot is reached from NW 37th Ave and the Red Lot from LeJeune Road, both through Heron Lane; the Yellow Lot, from NW 14th St and Volley Drive.",
           "Miami Magic was at the game and drove in, with a pass bought that same day: getting into the parking lot was orderly, with no delays. It pays to arrive early. Outside the stadium the vibe is relaxed, with several activity and food stands and souvenir giveaways. Inside, the tension rises and falls with the scoreboard and the conga drums, which never stopped all game. On the way out, they were giving away the team poster."
@@ -4651,9 +4652,13 @@
         {
           "n": "Inter Miami CF · Preguntas frecuentes de Nu Stadium",
           "u": "https://www.intermiamicf.com/nu-stadium/faqs"
+        },
+        {
+          "n": "MLS · Columbus Crew vs. Inter Miami: cómo ver el Juego 2",
+          "u": "https://www.mlssoccer.com/playoffs/2026/news/columbus-crew-vs-inter-miami-how-to-watch-stream-round-one-game-2"
         }
       ],
-      "actualizada": "2026-11-21T20:45:00-05:00",
+      "actualizada": "2026-11-27T08:25:27-05:00",
       "versiones": [],
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
@@ -8805,7 +8810,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T07:32:10-05:00",
+  "updated_at": "2026-11-27T08:25:27-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
