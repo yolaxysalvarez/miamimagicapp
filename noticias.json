@@ -55,6 +55,71 @@
   "videos": [],
   "notas": [
     {
+      "id": "temporada-huracanes-2026-termina-un-solo-huracan",
+      "scope": "miami",
+      "ambos": true,
+      "tema": "ciudad",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:00:20-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-muelle-nubes.jpg",
+      "foto_pos": "50% 22%",
+      "foto_alt": "Nubes grises sobre un muelle de madera en los Cayos de Florida",
+      "foto_pie": "Nubes sobre un muelle en los Cayos de Florida.",
+      "foto_pie_en": "Clouds over a dock in the Florida Keys.",
+      "fuentes": [
+        {
+          "n": "NOAA · Balance de la temporada de huracanes 2026 (24 de noviembre de 2026)",
+          "u": "https://www.noaa.gov/news-release/hurricane-season-wrap-up-el-nino-fueled-record-number-of-pacific-storms-but-calmed-atlantic"
+        },
+        {
+          "n": "NOAA NESDIS · 2026 Hurricane Season Wrap-Up",
+          "u": "https://www.nesdis.noaa.gov/news/2026-hurricane-season-wrap"
+        }
+      ],
+      "desarrollo": false,
+      "ultima": 3,
+      "es": {
+        "etiqueta": "EL TIEMPO",
+        "titulo": "Termina una temporada de huracanes con un solo huracán",
+        "bajada": "El Atlántico cerró por debajo de lo normal, según NOAA. La temporada acaba el 30 de noviembre.",
+        "toca": [
+          "La temporada del Atlántico termina oficialmente el 30 de noviembre.",
+          "Hubo 10 tormentas con nombre y un huracán; el promedio es de 14 y siete, según NOAA.",
+          "El único huracán, Isaias, tocó tierra el 9 de octubre cerca de Destin, en el noroeste de Florida."
+        ],
+        "cuerpo": [
+          "La temporada de huracanes del Atlántico de 2026 termina el 30 de noviembre con 10 tormentas con nombre y un solo huracán. Una temporada promedio trae 14 tormentas, siete huracanes y tres huracanes mayores, de acuerdo con el [balance que NOAA publicó](https://www.noaa.gov/news-release/hurricane-season-wrap-up-el-nino-fueled-record-number-of-pacific-storms-but-calmed-atlantic) el 24 de noviembre.",
+          "Ese único huracán fue Isaias. Tocó tierra el 9 de octubre como categoría 2 cerca de Destin, en el noroeste de Florida, y fue el primero en llegar a la costa continental de Estados Unidos desde Milton, en octubre de 2024. Según datos preliminares de la agencia, el primer huracán de una temporada no se formaba tan tarde desde que empezó la era de los satélites, en 1966.",
+          "Para Miami y los Cayos, eso se tradujo en una temporada sin huracán en tierra: el único del año entró por el Panhandle.",
+          "## Por qué fue tan tranquila",
+          "La agencia lo atribuye a un El Niño muy fuerte, que frenó el Atlántico y disparó el Pacífico oriental. Allí hubo 20 tormentas con nombre, 10 huracanes y ocho huracanes mayores, y la temporada del Pacífico [fue excepcionalmente activa](https://www.nesdis.noaa.gov/news/2026-hurricane-season-wrap), en palabras del servicio de satélites de NOAA.",
+          "Ken Graham, director del Servicio Nacional de Meteorología, recordó en el balance que basta una sola tormenta para que una temporada sea mala."
+        ]
+      },
+      "en": {
+        "etiqueta": "THE WEATHER",
+        "titulo": "A hurricane season with a single hurricane comes to an end",
+        "bajada": "The Atlantic finished below normal, according to NOAA. The season ends Nov. 30.",
+        "toca": [
+          "The Atlantic season officially ends on Nov. 30.",
+          "There were 10 named storms and one hurricane; the average is 14 and seven, according to NOAA.",
+          "The only hurricane, Isaias, made landfall on Oct. 9 near Destin, in northwest Florida."
+        ],
+        "cuerpo": [
+          "The 2026 Atlantic hurricane season ends on Nov. 30 with 10 named storms and a single hurricane. An average season brings 14 named storms, seven hurricanes and three major hurricanes, according to the [wrap-up NOAA published](https://www.noaa.gov/news-release/hurricane-season-wrap-up-el-nino-fueled-record-number-of-pacific-storms-but-calmed-atlantic) on Nov. 24.",
+          "That lone hurricane was Isaias. It made landfall on Oct. 9 as a Category 2 near Destin, in northwest Florida, and was the first to reach the U.S. mainland since Milton, in October 2024. According to the agency's preliminary data, a season's first hurricane had not formed this late since the satellite era began in 1966.",
+          "For Miami and the Keys, that meant a season with no hurricane landfall: the year's only one came ashore in the Panhandle.",
+          "## Why it was so quiet",
+          "The agency attributes it to a very strong El Niño, which held the Atlantic down and fueled the eastern Pacific. That basin saw 20 named storms, 10 hurricanes and eight major hurricanes, and its season [was exceptionally active](https://www.nesdis.noaa.gov/news/2026-hurricane-season-wrap), in the words of NOAA's satellite service.",
+          "Ken Graham, director of the National Weather Service, noted in the wrap-up that it only takes one storm to make it a bad season."
+        ]
+      }
+    },
+    {
       "id": "hurricanes-boston-college-hard-rock-28-noviembre-previa",
       "scope": "miami",
       "tema": "deporte",
@@ -110,7 +175,7 @@
           "The visitor needs the game more than the host. Boston College is 5-6 and a win would make it bowl eligible; Miami, meanwhile, already has its place in the conference championship game, on Saturday, Dec. 5, in Charlotte, against Wake Forest, which it beat 33-20 on Sept. 18. The Hurricanes' only loss was 31-24 at Notre Dame on Nov. 7; they then beat Duke and Virginia Tech."
         ]
       },
-      "ultima": 9
+      "ultima": 10
     },
     {
       "id": "dolphins-jets-hard-rock-29-noviembre-previa",
@@ -170,7 +235,7 @@
           "At Hard Rock Stadium, Miami has not won this season: it fell to the Chiefs, Bengals, Patriots and Lions. The Jets arrive 3-8, third in the division. The Dolphins' last game, the 26-9 loss in Buffalo without a single touchdown, is in [this story](https://miamimagicapp.com/news/dolphins-bills-26-9-buffalo)."
         ]
       },
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "black-friday-horarios-malls-tiendas-miami-27-noviembre",
@@ -244,7 +309,7 @@
         ]
       },
       "actualizada": "2026-11-26T19:17:32-05:00",
-      "ultima": 6,
+      "ultima": 7,
       "foto_fit": "contain",
       "foto_bg": "#0A0F1A"
     },
@@ -302,7 +367,7 @@
           "Inter Miami also plays on Friday night, the 27th. It lost the first game 3-0 to Columbus and needs a win to force a third. The details are in [our game story](https://miamimagicapp.com/news/inter-miami-playoffs-nu-stadium)."
         ]
       },
-      "ultima": 15
+      "ultima": 16
     },
     {
       "id": "fedex-md-11-se-sale-pista-26r-mia-25-noviembre",
@@ -377,7 +442,7 @@
           "The official posts do not detail the cause. The [FAA](https://www.faa.gov/newsroom/faa-daily-air-traffic-report) daily report on Wednesday had already warned of storms that could cause delays in Miami and Fort Lauderdale."
         ]
       },
-      "ultima": 3,
+      "ultima": 4,
       "arriba": 2,
       "actualizada": "2026-11-26T14:02:34-05:00"
     },
@@ -472,7 +537,7 @@
       "foto_alt": "Gráfico de Miami Magic sobre una vista aérea de Brickell Key y la bahía: 15 estrellas Michelin en Miami-Dade, 1 en Broward y primera vez de Los Cayos en la guía",
       "foto_pie": "Gráfico de Miami Magic.",
       "foto_pie_en": "Graphic by Miami Magic.",
-      "ultima": 12,
+      "ultima": 13,
       "foto_mm": false
     },
     {
@@ -640,7 +705,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-27T08:25:27-05:00",
-      "ultima": 8,
+      "ultima": 9,
       "es": {
         "etiqueta": "EN LA CALLE",
         "titulo": "Viernes tras Thanksgiving: Metro normal y oficinas cerradas",
@@ -826,7 +891,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-23T12:55:00-05:00",
-      "ultima": 13,
+      "ultima": 14,
       "arriba": 3,
       "es": {
         "etiqueta": "HISTORIA",
@@ -883,7 +948,7 @@
       "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
       "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
       "foto_mm": false,
-      "ultima": 13,
+      "ultima": 14,
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "El HEAT venció 123-113 al Thunder y llegó a siete victorias seguidas",
@@ -975,7 +1040,7 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 14,
+      "ultima": 15,
       "arriba": 6
     },
     {
@@ -1091,7 +1156,7 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 16,
+      "ultima": 17,
       "arriba": 4
     },
     {
@@ -1184,7 +1249,7 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 18,
+      "ultima": 19,
       "arriba": 10
     },
     {
@@ -1282,7 +1347,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 17,
+      "ultima": 18,
       "arriba": 9
     },
     {
@@ -1359,7 +1424,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 15
+      "ultima": 16
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -1453,7 +1518,7 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 14,
+      "ultima": 15,
       "arriba": 6
     },
     {
@@ -1528,7 +1593,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 19
+      "ultima": 20
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -1586,7 +1651,7 @@
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
       "arriba": 12,
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -1696,7 +1761,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 25
+      "ultima": 26
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -1839,7 +1904,7 @@
           }
         }
       ],
-      "ultima": 36,
+      "ultima": 37,
       "vence": "2026-11-21"
     },
     {
@@ -2152,7 +2217,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 26
+      "ultima": 27
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -2239,7 +2304,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 29
+      "ultima": 30
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -2320,7 +2385,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 28
+      "ultima": 29
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -2562,7 +2627,7 @@
           }
         }
       ],
-      "ultima": 37,
+      "ultima": 38,
       "vence": "2026-11-20"
     },
     {
@@ -2666,7 +2731,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 34
+      "ultima": 35
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -2745,7 +2810,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 23
+      "ultima": 24
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -2816,7 +2881,7 @@
         ]
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
-      "ultima": 31,
+      "ultima": 32,
       "vence": "2026-11-22"
     },
     {
@@ -2900,7 +2965,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 33
+      "ultima": 34
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -2973,7 +3038,7 @@
         ]
       },
       "actualizada": "2026-11-26T07:46:06-05:00",
-      "ultima": 30
+      "ultima": 31
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -3227,7 +3292,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 27
+      "ultima": 28
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -3310,7 +3375,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 32
+      "ultima": 33
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -3392,7 +3457,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 35
+      "ultima": 36
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -3788,7 +3853,7 @@
       "actualizada": "2026-11-27T10:58:58-05:00",
       "desarrollo": false,
       "arriba": 3,
-      "ultima": 4
+      "ultima": 5
     },
     {
       "id": "impuestos-propiedad-bitcoin-miami-dade",
@@ -4667,7 +4732,7 @@
       "actualizada": "2026-11-27T08:38:22-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 16,
+      "ultima": 17,
       "desarrollo": false
     },
     {
@@ -4750,7 +4815,7 @@
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
       "arriba": 7,
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "heat-vice-city-bucks",
@@ -5733,7 +5798,7 @@
         }
       ],
       "actualizada": "2026-11-26T09:17:18-05:00",
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "seven-mile-bridge-rehabilitacion",
@@ -7336,7 +7401,7 @@
         }
       ],
       "actualizada": "2026-11-26T11:39:34-05:00",
-      "ultima": 7
+      "ultima": 8
     },
     {
       "id": "manaties-noviembre-botes-despacio",
@@ -8847,7 +8912,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 24
+      "ultima": 25
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -8899,7 +8964,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T10:58:58-05:00",
+  "updated_at": "2026-11-27T11:00:20-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
