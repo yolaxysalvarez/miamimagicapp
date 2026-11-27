@@ -1230,7 +1230,8 @@ body{background:#fff;text-rendering:optimizeLegibility}
 var SB='https://rlhawyyhqhjhwdeghkon.supabase.co/rest/v1/', SBK='sb_publishable_lZ80XlA7N30lx2JEzRX2kg_QFuipRAF';
 var Q=new URLSearchParams(location.search);
 if(/^\/news\/?$/.test(location.pathname)&&!Q.get('lang'))Q.set('lang','en');
-var L=(Q.get('lang')||(function(){try{return localStorage.getItem('mm_lang')}catch(e){return null}})()||((navigator.language||'es').slice(0,2)==='en'?'en':'es'));try{if(!localStorage.getItem('mm_lang'))localStorage.setItem('mm_lang',L==='en'?'en':'es')}catch(e){}
+/* El idioma lo manda la dirección: /news/ es inglés y /noticias/ es español (así Google ve cada versión en su idioma) */
+var L=(Q.get('lang')||(/^\/news(\/|$)/i.test(location.pathname)?'en':/^\/noticias(\/|$)/i.test(location.pathname)?'es':null)||(function(){try{return localStorage.getItem('mm_lang')}catch(e){return null}})()||((navigator.language||'es').slice(0,2)==='en'?'en':'es'));try{if(!localStorage.getItem('mm_lang'))localStorage.setItem('mm_lang',L==='en'?'en':'es')}catch(e){}
 if(L!=='en')L='es';
 var DEMO=Q.get('demo')==='1';
 var ST={scope:Q.get('s')||'miami',tema:Q.get('t')||'todo',hamaca:Q.get('s')==='hamaca',muelle:Q.get('s')==='muelle',casa:Q.get('s')==='casa',ky:Q.get('s')==='cayos',hi:Q.get('s')==='historia',op:Q.get('s')==='opinion',dp:Q.get('s')==='deportes'};
@@ -1512,7 +1513,7 @@ function loadWx(){
 }
 
 /* ── eventos ── */
-function setLang(l){setTimeout(renderAg,0);setTimeout(evSync,30);L=l;try{localStorage.setItem('mm_lang',l)}catch(e){}var u=new URL(location.href);if(l==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u);render()}
+function setLang(l){setTimeout(renderAg,0);setTimeout(evSync,30);L=l;try{localStorage.setItem('mm_lang',l)}catch(e){}var u=new URL(location.href);if(/^\/(news|noticias)(\/|$)/i.test(u.pathname)){u.pathname=u.pathname.replace(/^\/(news|noticias)/i,l==='en'?'/news':'/noticias');u.searchParams.delete('lang')}else if(l==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');history.replaceState(null,'',u);render()}
 document.querySelectorAll('.lng button').forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
 document.getElementById('otros').addEventListener('click',function(e){var b=e.target.closest('.vt');if(!b)return;ST.scope=b.dataset.go;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;ST.tema='todo';render();scrollTo({top:0,behavior:'smooth'})});
 document.querySelector('.tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;ST.all=false;ST.scope=b.dataset.s;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;ST.tema='todo';render();if(scrollY>200)scrollTo({top:0,behavior:'smooth'})});
