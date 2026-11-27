@@ -55,6 +55,67 @@
   "videos": [],
   "notas": [
     {
+      "id": "art-basel-miami-beach-historia-como-llego",
+      "scope": "miami",
+      "tema": "historia",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:31:10-05:00",
+      "autor": "Yolaxys Alvarez",
+      "serie": "artweek",
+      "foto": "mm-mb-delano-national.jpg",
+      "foto_alt": "Las torres art déco de los hoteles Delano y National sobre Collins Avenue",
+      "foto_pie": "Los hoteles Delano y National, en Collins Avenue, Miami Beach. Foto: Miami Magic.",
+      "foto_pie_en": "The Delano and National hotels on Collins Avenue, Miami Beach. Photo: Miami Magic.",
+      "fuentes": [
+        {
+          "n": "Artsy · The Man Who Brought Art Basel to Miami Beach (entrevista con Norman Braman)",
+          "u": "https://www.artsy.net/article/artsy-editorial-man-brought-art-basel-miami-beach"
+        },
+        {
+          "n": "Art Basel · Facts and Figures, Art Basel in Miami Beach",
+          "u": "https://d2u3kfwd92fzu7.cloudfront.net/asset/factfigures/Art_Basel_l_Facts_and_Figures_Art_Basel_in_Miami_Beach_l_2018-1.pdf"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "HISTORIA",
+        "titulo": "La feria suiza que llegó a Miami Beach con un año de retraso",
+        "bajada": "Art Basel debía estrenarse en diciembre de 2001. Abrió en 2002 y cambió el calendario de la ciudad.",
+        "toca": [
+          "La primera edición reunió 160 galerías de 23 países y 30,000 visitantes, según las cifras de la feria.",
+          "Se celebra la semana después de Thanksgiving porque enero ya era de otra feria, Art Miami.",
+          "La edición de 2026 abre al público del 4 al 6 de diciembre."
+        ],
+        "cuerpo": [
+          "A mediados de los años noventa, un coleccionista de Miami le hizo una pregunta al director de la feria de arte más importante de Europa: ¿por qué no Estados Unidos, por qué no Miami? Norman Braman, empresario de concesionarios de autos, compraba arte en Basilea, la ciudad suiza donde Art Basel se celebra desde 1970, y allí empezó a insistirle a Lorenzo Rudolf, [según contó él mismo a Artsy](https://www.artsy.net/article/artsy-editorial-man-brought-art-basel-miami-beach).",
+          "La idea no era obvia. Miami cargaba entonces con la fama del crimen y apenas tenía museos de arte contemporáneo; no existían ni el ICA ni el Pérez Art Museum. Aun así, Rudolf visitó la ciudad y convenció a la casa matriz de la feria. Quedaba elegir la fecha: enero ya era de Art Miami, la feria local, así que la nueva cita se fijó en la semana siguiente a Thanksgiving. Por eso hoy la semana del arte cae a principios de diciembre.",
+          "Todo estaba listo para diciembre de 2001. Los atentados del 11 de septiembre obligaron a posponer el estreno, y la feria abrió un año después, en diciembre de 2002, en el centro de convenciones de Miami Beach, con 160 galerías de 23 países y 30,000 visitantes, de acuerdo con las [cifras de la propia Art Basel](https://d2u3kfwd92fzu7.cloudfront.net/asset/factfigures/Art_Basel_l_Facts_and_Figures_Art_Basel_in_Miami_Beach_l_2018-1.pdf). Para entonces Rudolf se había ido y el proyecto lo dirigía Sam Keller.",
+          "El éxito tampoco fue inmediato. Muchas galerías grandes no se apuntaron al principio y, según Braman, la feria perdió dinero en sus primeros años. Los suizos esperaron. En 2018, la edición 17 ya reunía 268 galerías de 35 países y 83,000 visitantes.",
+          "Alrededor creció todo lo demás: las ferias paralelas, los museos y una semana entera en la que el arte sale a la playa y a los parques. Lo que trae la de 2026 está en [qué ver gratis](https://miamimagicapp.com/noticias/art-basel-arte-gratis-playa) y en [las otras ferias](https://miamimagicapp.com/noticias/semana-del-arte-otras-ferias-guia)."
+        ]
+      },
+      "en": {
+        "etiqueta": "HISTORY",
+        "titulo": "The Swiss fair that reached Miami Beach a year late",
+        "bajada": "Art Basel was set to debut in December 2001. It opened in 2002 and changed the city's calendar.",
+        "toca": [
+          "The first edition brought 160 galleries from 23 countries and 30,000 visitors, according to the fair's figures.",
+          "It is held the week after Thanksgiving because January already belonged to another fair, Art Miami.",
+          "The 2026 edition is open to the public Dec. 4 to 6."
+        ],
+        "cuerpo": [
+          "In the mid-1990s, a Miami collector put a question to the director of Europe's most important art fair: why not the United States, why not Miami? Norman Braman, a car dealership owner, bought art in Basel, the Swiss city where Art Basel has been held since 1970, and there he began pressing Lorenzo Rudolf, [as he told Artsy](https://www.artsy.net/article/artsy-editorial-man-brought-art-basel-miami-beach).",
+          "The idea was not obvious. Miami then carried a reputation for crime and had few contemporary art museums; neither the ICA nor the Pérez Art Museum existed. Even so, Rudolf visited the city and persuaded the fair's parent company. A date had to be chosen: January already belonged to Art Miami, the local fair, so the new event was set for the week after Thanksgiving. That is why art week falls in early December today.",
+          "Everything was ready for December 2001. The Sept. 11 attacks forced the debut to be postponed, and the fair opened a year later, in December 2002, at the Miami Beach Convention Center, with 160 galleries from 23 countries and 30,000 visitors, according to [Art Basel's own figures](https://d2u3kfwd92fzu7.cloudfront.net/asset/factfigures/Art_Basel_l_Facts_and_Figures_Art_Basel_in_Miami_Beach_l_2018-1.pdf). By then Rudolf had left and the project was led by Sam Keller.",
+          "Success was not immediate either. Many major galleries did not sign up at first and, according to Braman, the fair lost money in its early years. The Swiss waited. By 2018, the 17th edition brought 268 galleries from 35 countries and 83,000 visitors.",
+          "Everything else grew around it: the satellite fairs, the museums and a whole week when art spills onto the beach and into the parks. What the 2026 edition brings is in [what to see for free](https://miamimagicapp.com/news/art-basel-arte-gratis-playa) and [the other fairs](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia)."
+        ]
+      }
+    },
+    {
       "id": "semana-del-arte-otras-ferias-guia",
       "scope": "miami",
       "tema": "cultura",
@@ -9402,7 +9463,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:30:00-05:00",
+  "updated_at": "2026-11-27T11:31:10-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
