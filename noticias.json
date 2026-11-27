@@ -55,6 +55,190 @@
   "videos": [],
   "notas": [
     {
+      "id": "no-vacancy-miami-beach-doce-hoteles-arte",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:54:28-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-12-19",
+      "serie": "artweek",
+      "foto": "mm-mb-betsy.jpg",
+      "foto_alt": "Fachada blanca del hotel The Betsy en Ocean Drive, con toldos de rayas y una bandera de Estados Unidos",
+      "foto_pie": "The Betsy, en Ocean Drive, uno de los doce hoteles de la ruta. Foto: Miami Magic.",
+      "foto_pie_en": "The Betsy, on Ocean Drive, one of the twelve hotels on the route. Photo: Miami Magic.",
+      "fuentes": [
+        {
+          "n": "Ciudad de Miami Beach · No Vacancy, Miami Beach 2026",
+          "u": "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/"
+        },
+        {
+          "n": "Ciudad de Miami Beach · Comunicado del 19 de octubre de 2026",
+          "u": "https://www.miamibeachfl.gov/2026-installment-of-no-vacancy-miami-beach-on-display-november-12-through-december-19/"
+        },
+        {
+          "n": "Ciudad de Miami Beach · Programa de la semana del arte 2026",
+          "u": "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "SEMANA DEL ARTE",
+        "titulo": "Doce hoteles, doce obras y ninguna habitación que reservar",
+        "bajada": "Una ruta de arte por los hoteles de Miami Beach, sin pagar entrada.",
+        "toca": [
+          "No Vacancy: del 12 de noviembre al 19 de diciembre de 2026, en doce hoteles de Miami Beach. Sin costo.",
+          "El recorrido es por cuenta propia y el horario depende de cada hotel: conviene preguntar en recepción.",
+          "El público vota por su obra favorita en la [página de No Vacancy](https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/)."
+        ],
+        "cuerpo": [
+          "Para ver arte en Miami Beach basta con cruzar la puerta de un hotel. Doce de ellos, de Ocean Drive a Normandy Isle, exhiben hasta el 19 de diciembre de 2026 una obra hecha a la medida del lugar: es la séptima edición de [No Vacancy](https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/), el concurso con el que la ciudad convierte sus hoteles en galerías temporales.",
+          "La convocatoria atrajo 228 solicitudes, la cifra más alta del programa, [informó la Ciudad de Miami Beach](https://www.miamibeachfl.gov/2026-installment-of-no-vacancy-miami-beach-on-display-november-12-through-december-19/). Los doce artistas elegidos, casi todos locales, recibieron $10,000 cada uno para montar su pieza y compiten por dos premios: uno de $10,000 que decide el público y otro de $25,000 que otorga un jurado.",
+          "Las direcciones salen del [programa de la ciudad](https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/). De sur a norte, la ruta queda así:",
+          "## South Beach",
+          "- Marriott Stanton South Beach (161 Ocean Drive): Marlon Portales, Busco en El Monte Amparo. Dos pinturas de gran formato sobre un paisaje cubano imaginado.",
+          "- Balfour Hotel (350 Ocean Drive): Luján Candria, Living Archive. Telas translúcidas con fotos de vegetación nativa en las ventanas.",
+          "- Avalon Hotel (700 Ocean Drive): Morel Doucet, To Bloom Under the Midnight Stars. La flora tropical del sur de Florida, vista de noche.",
+          "- The Betsy (1440 Ocean Drive): Ricardo E. Zulueta, RISING GLITCH LEVELS. Video proyectado sobre el Orb, la esfera del hotel, a la vista desde la calle.",
+          "- The Royal Palm (1545 Collins Avenue): Diana Eusebio, Home, Safe. Textiles, fotografía y tintes naturales.",
+          "- Kimpton Surfcomber (1717 Collins Avenue): Alex Nuñez, You Cannot Step into the Same Ocean Twice. Palmas impresas y un portal iridiscente.",
+          "- The Shelborne By Proper (1801 Collins Avenue): Yanira Collado, Converging Timelines/Woven Silhouettes. Papel, madera y telas reutilizados.",
+          "## Mid-Beach",
+          "- Casa Faena (3500 Collins Avenue): Kevin Arrow, The Magic Is You!. Una instalación hecha con película de 35 mm recogida durante décadas.",
+          "- Hotel Croydon (3720 Collins Avenue): Justin H. Long, Abyssal Wunderkammer. Reliquias submarinas inventadas dentro de una vitrina art déco.",
+          "- Eden Roc (4525 Collins Avenue): Emmett Moore, Riviera. Un tubo de escape de acero inoxidable hecho nudo.",
+          "## North Beach",
+          "- Sherry Frontenac (6565 Collins Avenue): Gonzalo Hernández, AMERICA. Siete estandartes tejidos que deletrean la palabra con colores de banderas sudamericanas.",
+          "- International Inn on the Bay (2301 Normandy Drive): Lulu Sanchez, Palm Court Ship: The Jury is Out at the International Inn. Un jardín luminoso de palmas hechas a mano.",
+          "El tramo de South Beach se camina: siete hoteles en menos de veinte cuadras. Para seguir hacia el norte, el trolley de la ciudad es gratis. Y si la visita coincide con la primera semana de diciembre, el resto del arte sin boleto está en [la guía de la semana del arte](https://miamimagicapp.com/noticias/art-basel-arte-gratis-playa)."
+        ]
+      },
+      "en": {
+        "etiqueta": "ART WEEK",
+        "titulo": "Twelve hotels, twelve artworks and no room to book",
+        "bajada": "An art route through Miami Beach hotels, with no admission to pay.",
+        "toca": [
+          "No Vacancy: Nov. 12 to Dec. 19, 2026, at twelve Miami Beach hotels. Free.",
+          "The tour is self-guided and hours depend on each hotel: it is worth asking at the front desk.",
+          "The public votes for its favorite work on the [No Vacancy page](https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/)."
+        ],
+        "cuerpo": [
+          "Seeing art in Miami Beach takes nothing more than walking into a hotel. Twelve of them, from Ocean Drive to Normandy Isle, are showing a site-specific work through Dec. 19, 2026: it is the seventh edition of [No Vacancy](https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/), the competition the city uses to turn its hotels into temporary galleries.",
+          "The call drew 228 applications, the most in the program’s history, [the City of Miami Beach said](https://www.miamibeachfl.gov/2026-installment-of-no-vacancy-miami-beach-on-display-november-12-through-december-19/). The twelve artists chosen, nearly all local, received $10,000 each to build their piece and compete for two prizes: $10,000 decided by the public and $25,000 awarded by a jury.",
+          "The addresses come from the [city’s program](https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/). From south to north, the route looks like this:",
+          "## South Beach",
+          "- Marriott Stanton South Beach (161 Ocean Drive): Marlon Portales, Busco en El Monte Amparo. Two large paintings of an imagined Cuban landscape.",
+          "- Balfour Hotel (350 Ocean Drive): Luján Candria, Living Archive. Translucent textiles with photos of native plants in the windows.",
+          "- Avalon Hotel (700 Ocean Drive): Morel Doucet, To Bloom Under the Midnight Stars. South Florida’s tropical flora, seen at night.",
+          "- The Betsy (1440 Ocean Drive): Ricardo E. Zulueta, RISING GLITCH LEVELS. Video projected onto the Orb, the hotel’s sphere, visible from the street.",
+          "- The Royal Palm (1545 Collins Avenue): Diana Eusebio, Home, Safe. Textiles, photography and natural dyes.",
+          "- Kimpton Surfcomber (1717 Collins Avenue): Alex Nuñez, You Cannot Step into the Same Ocean Twice. Printed palms and an iridescent portal.",
+          "- The Shelborne By Proper (1801 Collins Avenue): Yanira Collado, Converging Timelines/Woven Silhouettes. Reused paper, wood and textiles.",
+          "## Mid-Beach",
+          "- Casa Faena (3500 Collins Avenue): Kevin Arrow, The Magic Is You!. An installation built from 35mm film collected over decades.",
+          "- Hotel Croydon (3720 Collins Avenue): Justin H. Long, Abyssal Wunderkammer. Invented undersea relics inside an Art Deco cabinet.",
+          "- Eden Roc (4525 Collins Avenue): Emmett Moore, Riviera. A stainless-steel exhaust pipe tied in a knot.",
+          "## North Beach",
+          "- Sherry Frontenac (6565 Collins Avenue): Gonzalo Hernández, AMERICA. Seven woven banners spelling the word in the colors of South American flags.",
+          "- International Inn on the Bay (2301 Normandy Drive): Lulu Sanchez, Palm Court Ship: The Jury is Out at the International Inn. A glowing garden of handmade palms.",
+          "The South Beach stretch is walkable: seven hotels in under twenty blocks. To keep going north, the city trolley is free. And if the visit falls in the first week of December, the rest of the art that needs no ticket is in [the art week guide](https://miamimagicapp.com/news/art-basel-arte-gratis-playa)."
+        ]
+      }
+    },
+    {
+      "id": "art-basel-miami-beach-2026-piso-mas-pequeno-legacy-purchase",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:54:28-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-12-06",
+      "serie": "artweek",
+      "foto": "mm-artbasel-library-diagonal.jpg",
+      "foto_alt": "Estantería inclinada llena de libros de colores, reflejada en un espejo de agua bajo el cielo azul",
+      "foto_pie": "Library of Us, de Es Devlin, en la semana del arte de 2025. Foto: Miami Magic.",
+      "foto_pie_en": "Es Devlin’s Library of Us during the 2025 art week. Photo: Miami Magic.",
+      "fuentes": [
+        {
+          "n": "Art Basel · Expositores y nuevo plano de Miami Beach 2026",
+          "u": "https://www.artbasel.com/stories/art-basel-announces-exhibitors-and-a-reconfigured-showfloor-for-miami-beach-2026?lang=en"
+        },
+        {
+          "n": "Art Basel · Más novedades de la edición 2026",
+          "u": "https://www.artbasel.com/stories/art-basel-announces-further-highlights-of-its-2026-miami-beach-edition-1"
+        },
+        {
+          "n": "The Art Newspaper · Art Basel Miami Beach reduce su sector principal",
+          "u": "https://www.theartnewspaper.com/2026/09/29/art-basel-miami-beach-scaled-down-floorplan-galleries-sector"
+        },
+        {
+          "n": "Ciudad de Miami Beach · Finalistas del Legacy Purchase Program 2026",
+          "u": "https://www.miamibeachfl.gov/city-of-miami-beach-announces-top-three-finalists-for-its-2026-legacy-purchase-program-at-art-basel-miami-beach/"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "SEMANA DEL ARTE",
+        "titulo": "La gran feria se encoge a propósito",
+        "bajada": "Art Basel Miami Beach llega con menos galerías, un piso rediseñado y una obra que la ciudad compra por voto del público.",
+        "toca": [
+          "Días con boleto: del 4 al 6 de diciembre de 2026, de 11:00 a.m. a 6:00 p.m., en el Miami Beach Convention Center (1901 Convention Center Drive). Entradas en [artbasel.com](https://www.artbasel.com/miami-beach).",
+          "El 2 y el 3 de diciembre se entra solo con invitación.",
+          "La obra que Miami Beach compra este año se anuncia el 2 de diciembre de 2026 y quedará expuesta en el centro de convenciones."
+        ],
+        "cuerpo": [
+          "Art Basel Miami Beach ocupa en 2026 cerca de un 12% menos de superficie y su sector principal, Galleries, tiene alrededor de un 10% menos de expositores: 204, frente a los 226 de la edición anterior, [según The Art Newspaper](https://www.theartnewspaper.com/2026/09/29/art-basel-miami-beach-scaled-down-floorplan-galleries-sector). La feria lo presenta como una decisión, no como un recorte: un piso «más enfocado», rediseñado a partir de lo que pidieron galeristas y coleccionistas.",
+          "El cambio se nota al caminar. Hay cuatro plazas de descanso en lugar de cinco y pasillos con más distancia a la vista. Las galerías más poderosas, que antes se agrupaban en una misma zona, ahora están repartidas por todo el recinto, de modo que una firma histórica puede quedar junto a una recién llegada, [explica Art Basel](https://www.artbasel.com/stories/art-basel-announces-exhibitors-and-a-reconfigured-showfloor-for-miami-beach-2026?lang=en).",
+          "En total son 272 expositores de más de 40 países y territorios, y más de 30 participan por primera vez. Además de Galleries, el plano se divide así:",
+          "- Nova: 20 galerías con obra reciente.",
+          "- Positions: 12 proyectos individuales de artistas emergentes.",
+          "- Survey: 16 presentaciones de corte histórico.",
+          "- Kabinett: 26 muestras pequeñas dentro de los propios puestos.",
+          "- Zero 10: el espacio del arte digital, con 21 galerías y plataformas y [19 proyectos](https://www.artbasel.com/stories/art-basel-announces-further-highlights-of-its-2026-miami-beach-edition-1).",
+          "## La obra que elige el público",
+          "Una de las piezas de la feria no volverá a su galería. Desde 2019, Miami Beach compra cada año una obra de un artista emergente para su colección pública, y son los vecinos quienes la escogen entre tres finalistas. En esta octava edición se postularon 34 galerías con 54 artistas, [detalla la ciudad](https://www.miamibeachfl.gov/city-of-miami-beach-announces-top-three-finalists-for-its-2026-legacy-purchase-program-at-art-basel-miami-beach/), y la votación cerró el 23 de noviembre. Compiten:",
+          "- Marlon Portales, Nocturno para Ana (2026), con Spinello Projects: un óleo de 90 por 80 pulgadas que dialoga con el legado de Ana Mendieta.",
+          "- Bony Ramirez, The Custodian (2026), con Bradley Ertaskiran: técnica mixta sobre madera, un homenaje a los artesanos dominicanos.",
+          "- Sumakshi Singh, Pichla Darwaza II (2026), con 193 Gallery: una escultura de hilo y encaje que reconstruye a tamaño real la casa demolida de sus abuelos en Nueva Delhi.",
+          "La ganadora se sumará a las ocho que ya cuelgan en el vestíbulo este del centro de convenciones, entre ellas la del año pasado: Modulations – Sequence XXIX, de Ximena Garrido-Lecca.",
+          "Las demás ferias de la semana están en [la guía de ferias](https://miamimagicapp.com/noticias/semana-del-arte-otras-ferias-guia), y lo que se ve sin boleto, en [la arena](https://miamimagicapp.com/noticias/art-basel-arte-gratis-playa)."
+        ]
+      },
+      "en": {
+        "etiqueta": "ART WEEK",
+        "titulo": "The big fair shrinks on purpose",
+        "bajada": "Art Basel Miami Beach arrives with fewer galleries, a redesigned floor and an artwork the city buys by public vote.",
+        "toca": [
+          "Ticketed days: Dec. 4 to 6, 2026, 11 a.m. to 6 p.m., at the Miami Beach Convention Center (1901 Convention Center Drive). Tickets at [artbasel.com](https://www.artbasel.com/miami-beach).",
+          "Dec. 2 and 3 are by invitation only.",
+          "The work Miami Beach buys this year is announced on Dec. 2, 2026, and will go on display at the convention center."
+        ],
+        "cuerpo": [
+          "Art Basel Miami Beach takes up about 12% less floor space in 2026, and its main sector, Galleries, has around 10% fewer exhibitors: 204, down from 226 in the previous edition, [according to The Art Newspaper](https://www.theartnewspaper.com/2026/09/29/art-basel-miami-beach-scaled-down-floorplan-galleries-sector). The fair presents it as a choice rather than a cut: a \"more focused\" floor, redesigned around what dealers and collectors asked for.",
+          "The change shows as you walk. There are four rest plazas instead of five and aisles with longer sightlines. The most powerful galleries, once clustered in one area, are now spread across the hall, so a historic name can sit next to a newcomer, [Art Basel explains](https://www.artbasel.com/stories/art-basel-announces-exhibitors-and-a-reconfigured-showfloor-for-miami-beach-2026?lang=en).",
+          "In all there are 272 exhibitors from more than 40 countries and territories, and more than 30 are taking part for the first time. Besides Galleries, the floor is divided like this:",
+          "- Nova: 20 galleries with recent work.",
+          "- Positions: 12 solo projects by emerging artists.",
+          "- Survey: 16 historically focused presentations.",
+          "- Kabinett: 26 small shows inside the booths themselves.",
+          "- Zero 10: the space for digital art, with 21 galleries and platforms and [19 projects](https://www.artbasel.com/stories/art-basel-announces-further-highlights-of-its-2026-miami-beach-edition-1).",
+          "## The work the public picks",
+          "One of the fair’s pieces will not go back to its gallery. Since 2019, Miami Beach has bought a work by an emerging artist each year for its public collection, and residents choose it from three finalists. In this eighth edition, 34 galleries applied with 54 artists, [the city says](https://www.miamibeachfl.gov/city-of-miami-beach-announces-top-three-finalists-for-its-2026-legacy-purchase-program-at-art-basel-miami-beach/), and voting closed on Nov. 23. In the running:",
+          "- Marlon Portales, Nocturno para Ana (2026), with Spinello Projects: a 90-by-80-inch oil painting in dialogue with the legacy of Ana Mendieta.",
+          "- Bony Ramirez, The Custodian (2026), with Bradley Ertaskiran: mixed media on wood, a tribute to Dominican artisans.",
+          "- Sumakshi Singh, Pichla Darwaza II (2026), with 193 Gallery: a thread-and-lace sculpture that rebuilds at full scale her grandparents’ demolished home in New Delhi.",
+          "The winner will join the eight already hanging in the convention center’s east lobby, among them last year’s: Modulations – Sequence XXIX, by Ximena Garrido-Lecca.",
+          "The week’s other fairs are in [the fair guide](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia), and what can be seen without a ticket, in [the sand](https://miamimagicapp.com/news/art-basel-arte-gratis-playa)."
+        ]
+      }
+    },
+    {
       "id": "semana-del-arte-con-ninos-gratis",
       "scope": "miami",
       "tema": "cultura",
@@ -152,6 +336,18 @@
         {
           "n": "Ciudad de Miami Beach · Art Week Free Transportation 2026",
           "u": "https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/"
+        },
+        {
+          "n": "Pérez Art Museum Miami · Programa de Miami Art Week 2026",
+          "u": "https://www.pamm.org/en/press/perez-art-museum-miami-announces-2026-miami-art-week-programming/"
+        },
+        {
+          "n": "Miami Living · ICA Miami y Design District en la semana del arte",
+          "u": "https://www.miamilivingmagazine.com/post/miami-art-week-2026-ica-miami-exhibitions-and-design-district-highlights"
+        },
+        {
+          "n": "Wynwood Walls · Work in Progress",
+          "u": "https://ma.to/event/work-in-progress-at-wynwood-walls-26-nov-2026"
         }
       ],
       "desarrollo": false,
@@ -168,11 +364,13 @@
           "La semana del arte no se queda en Miami Beach. Del otro lado de la bahía hay museos con exposiciones nuevas y arte que se ve desde la acera.",
           "## Design District",
           "El ICA Miami (61 NE 41 Street) tiene entrada gratis y presenta la primera exposición individual en un museo de Estados Unidos de Sheroanawë Hakihiiwë, con más de cien obras, hasta el 28 de marzo de 2027, [según Artsy](https://www.artsy.net/article/artsy-editorial-art-miami-art-week-2026). Se llega sin auto con el shuttle gratis que sale del centro de convenciones; la ruta está en [cómo moverse](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles).",
+          "En las aceras del barrio hay además obra nueva: el encargo anual de diseño del distrito, que este año firma el estudio Objects of Common Interest, repartió por las calles unas formas totémicas que responden al tacto, sueltan vapor o emiten sonidos, [describe Miami Living](https://www.miamilivingmagazine.com/post/miami-art-week-2026-ica-miami-exhibitions-and-design-district-highlights). A una cuadra del museo, en el 23 NE 41 Street, el ICA abre a partir del 29 de noviembre una muestra sobre las marcas ocultas que Basquiat pintó con materiales ultravioleta.",
           "## Wynwood y Allapattah",
           "El Gary Nader Art Centre (62 NE 27 Street) abre al público sin costo, desde el 2 de diciembre, una exposición con obras de Wifredo Lam y Jean-Michel Basquiat, [informa el propio centro](https://garynader.com/journal/miami-art-week-guide/). En las calles del barrio, los murales se ven gratis a cualquier hora.",
+          "Wynwood Walls (2516 NW 2 Avenue) dedica la semana a Work in Progress: seis murales nuevos, de D*Face, GIZ, Hebru Brantley, Mr B Baby, Sonny Sundancer y Timur Fork, que se pintan a la vista del público hasta el 4 de diciembre, y un trol de gran tamaño del danés Thomas Dambo, [según el programa del museo](https://ma.to/event/work-in-progress-at-wynwood-walls-26-nov-2026). Se entra con el boleto general.",
           "A pocos minutos, en Allapattah, el Rubell Museum (1100 NW 23 Street) estrena exposiciones el 1 de diciembre y mantiene las dos Infinity Rooms de Yayoi Kusama, de acuerdo con Artsy. Cobra entrada.",
           "## Frente a la bahía",
-          "El Pérez Art Museum Miami (1103 Biscayne Boulevard) muestra obras maestras de Picasso, Klee y Matisse llegadas del Museum Berggruen, según la misma guía de Gary Nader. También cobra entrada.",
+          "El Pérez Art Museum Miami (1103 Biscayne Boulevard) abre los siete días de la semana del arte, de 11:00 a.m. a 6:00 p.m., salvo el jueves 3 de diciembre, cuando cierra a las 5:00 p.m., [informa el museo](https://www.pamm.org/en/press/perez-art-museum-miami-announces-2026-miami-art-week-programming/). Sus dos muestras grandes son Picasso–Klee–Matisse, con obras llegadas del Museum Berggruen de Berlín, y Basquiat: Figures, Signs, Symbols. Cobra entrada.",
           "Las ferias de este lado, de Art Miami a Pinta, están en [las otras ferias](https://miamimagicapp.com/noticias/semana-del-arte-otras-ferias-guia)."
         ]
       },
@@ -189,14 +387,17 @@
           "Art week does not stay in Miami Beach. Across the bay there are museums with new exhibitions and art you can see from the sidewalk.",
           "## Design District",
           "ICA Miami (61 NE 41st Street) has free admission and is presenting the first solo museum exhibition in the United States by Sheroanawë Hakihiiwë, with more than a hundred works, through March 28, 2027, [according to Artsy](https://www.artsy.net/article/artsy-editorial-art-miami-art-week-2026). You can get there without a car on the free shuttle from the convention center; the route is in [how to get around](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles).",
+          "There is also new work on the neighborhood’s sidewalks: the district’s annual design commission, this year by the studio Objects of Common Interest, scattered totemic forms through the streets that respond to touch, release vapor or emit sounds, [Miami Living reports](https://www.miamilivingmagazine.com/post/miami-art-week-2026-ica-miami-exhibitions-and-design-district-highlights). A block from the museum, at 23 NE 41st Street, ICA opens on Nov. 29 a show about the hidden marks Basquiat painted with ultraviolet materials.",
           "## Wynwood and Allapattah",
           "The Gary Nader Art Centre (62 NE 27th Street) opens to the public at no cost, starting Dec. 2, an exhibition with works by Wifredo Lam and Jean-Michel Basquiat, [the center itself says](https://garynader.com/journal/miami-art-week-guide/). On the neighborhood's streets, the murals are free to see at any hour.",
+          "Wynwood Walls (2516 NW 2nd Avenue) devotes the week to Work in Progress: six new murals, by D*Face, GIZ, Hebru Brantley, Mr B Baby, Sonny Sundancer and Timur Fork, painted in front of visitors through Dec. 4, and a large troll by Danish artist Thomas Dambo, [according to the museum’s program](https://ma.to/event/work-in-progress-at-wynwood-walls-26-nov-2026). Entry is with general admission.",
           "A few minutes away, in Allapattah, the Rubell Museum (1100 NW 23rd Street) opens new exhibitions on Dec. 1 and keeps Yayoi Kusama's two Infinity Rooms, according to Artsy. It charges admission.",
           "## On the bay",
-          "The Pérez Art Museum Miami (1103 Biscayne Boulevard) is showing masterpieces by Picasso, Klee and Matisse from the Museum Berggruen, according to the same Gary Nader guide. It also charges admission.",
+          "The Pérez Art Museum Miami (1103 Biscayne Boulevard) opens all seven days of art week, 11 a.m. to 6 p.m., except Thursday, Dec. 3, when it closes at 5 p.m., [the museum says](https://www.pamm.org/en/press/perez-art-museum-miami-announces-2026-miami-art-week-programming/). Its two big shows are Picasso–Klee–Matisse, with works from Berlin’s Museum Berggruen, and Basquiat: Figures, Signs, Symbols. It charges admission.",
           "The fairs on this side, from Art Miami to Pinta, are in [the other fairs](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia)."
         ]
-      }
+      },
+      "actualizada": "2026-11-27T11:54:28-05:00"
     },
     {
       "id": "semana-del-arte-donde-comer-miami-beach",
@@ -371,6 +572,14 @@
         {
           "n": "Art Basel Miami Beach",
           "u": "https://www.artbasel.com/miami-beach"
+        },
+        {
+          "n": "Art Miami · Expositores y horarios de la 36.ª edición",
+          "u": "https://www.artmiami.com/media/artmiami/pressrelease/ArtMiamiUnveils2026ParticipatingExhibitorsfor36thEdition,December1-6_T639265531132441485.pdf"
+        },
+        {
+          "n": "Redwood Art Group · Spectrum Miami y Red Dot Miami",
+          "u": "https://redwoodartgroup.com/spectrum-miami/"
         }
       ],
       "desarrollo": false,
@@ -391,9 +600,9 @@
           "- Untitled Art: una carpa sobre la arena, en Ocean Drive y la calle 12. Del 2 al 6 de diciembre.",
           "- Aqua Art Miami: galerías dentro de las habitaciones del Aqua Hotel (1530 Collins Avenue). Del 2 al 6 de diciembre.",
           "## En Miami",
-          "- Art Miami y CONTEXT: dos ferias en un mismo recinto frente a la bahía, en One Herald Plaza (NE 14 Street y Biscayne Bay). Del 1 al 6 de diciembre: el martes 1, de 4:00 a 7:00 p.m.; del 2 al 5, de 11:00 a.m. a 7:00 p.m.; el domingo 6, hasta las 6:00 p.m.",
+          "- Art Miami y CONTEXT: dos ferias en un mismo recinto frente a la bahía, en One Herald Plaza (NE 14 Street y Biscayne Bay). Del 1 al 6 de diciembre: el martes 1, de 4:00 a 8:00 p.m. (CONTEXT, hasta las 9:30 p.m.); del 2 al 5, de 11:00 a.m. a 7:00 p.m.; el domingo 6, hasta las 6:00 p.m.",
           "- NADA Miami: galerías jóvenes y artistas emergentes, en Ice Palace Studios (1400 North Miami Avenue). Del 1 al 5 de diciembre.",
-          "- Red Dot y Spectrum: dos ferias juntas en Mana Wynwood (2217 NW 5 Avenue). Del 3 al 5 de diciembre, de 12:00 a 8:00 p.m.; el domingo 6, hasta las 6:00 p.m.",
+          "- Red Dot y Spectrum: dos ferias juntas en Mana Wynwood (2217 NW 5 Avenue). Noche de apertura el 2 de diciembre, de 6:00 a 9:00 p.m.; del 3 al 5, de 12:00 a 8:00 p.m.; el domingo 6, hasta las 6:00 p.m.",
           "- Pinta Miami: arte latinoamericano, en The Hangar de Coconut Grove (3385 Pan American Drive). Del 3 al 6 de diciembre.",
           "- AfriKin Art Fair: en el Scott Galvin Community Center de North Miami (1600 NE 126 Street). Del 29 de noviembre al 6 de diciembre.",
           "Lo que se ve sin pagar está en [qué ver gratis](https://miamimagicapp.com/noticias/art-basel-arte-gratis-playa), y la forma de llegar, en [cómo moverse](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
@@ -416,9 +625,9 @@
           "- Untitled Art: a tent on the sand, at Ocean Drive and 12th Street. Dec. 2 to 6.",
           "- Aqua Art Miami: galleries inside the rooms of the Aqua Hotel (1530 Collins Avenue). Dec. 2 to 6.",
           "## In Miami",
-          "- Art Miami and CONTEXT: two fairs in one bayfront venue, at One Herald Plaza (NE 14th Street and Biscayne Bay). Dec. 1 to 6: Tuesday the 1st, 4 to 7 p.m.; the 2nd to the 5th, 11 a.m. to 7 p.m.; Sunday the 6th, until 6 p.m.",
+          "- Art Miami and CONTEXT: two fairs in one bayfront venue, at One Herald Plaza (NE 14th Street and Biscayne Bay). Dec. 1 to 6: Tuesday the 1st, 4 to 8 p.m. (CONTEXT until 9:30 p.m.); the 2nd to the 5th, 11 a.m. to 7 p.m.; Sunday the 6th, until 6 p.m.",
           "- NADA Miami: young galleries and emerging artists, at Ice Palace Studios (1400 North Miami Avenue). Dec. 1 to 5.",
-          "- Red Dot and Spectrum: two fairs together at Mana Wynwood (2217 NW 5th Avenue). Dec. 3 to 5, noon to 8 p.m.; Sunday the 6th, until 6 p.m.",
+          "- Red Dot and Spectrum: two fairs together at Mana Wynwood (2217 NW 5th Avenue). Opening night on Dec. 2, 6 to 9 p.m.; Dec. 3 to 5, noon to 8 p.m.; Sunday the 6th, until 6 p.m.",
           "- Pinta Miami: Latin American art, at The Hangar in Coconut Grove (3385 Pan American Drive). Dec. 3 to 6.",
           "- AfriKin Art Fair: at the Scott Galvin Community Center in North Miami (1600 NE 126th Street). Nov. 29 to Dec. 6.",
           "What you can see without paying is in [what to see for free](https://miamimagicapp.com/news/art-basel-arte-gratis-playa), and how to get there, in [how to get around](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
@@ -5672,7 +5881,9 @@
           "- [Castillos de arena y ping-pong: arte para ir con niños](https://miamimagicapp.com/noticias/semana-del-arte-con-ninos-gratis)",
           "- [Entre feria y feria, once mesas a pocos pasos](https://miamimagicapp.com/noticias/semana-del-arte-donde-comer-miami-beach)",
           "- [Museos y murales: el arte que se queda del lado de Miami](https://miamimagicapp.com/noticias/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
-          "- [La feria suiza que llegó a Miami Beach con un año de retraso](https://miamimagicapp.com/noticias/art-basel-miami-beach-historia-como-llego)"
+          "- [La feria suiza que llegó a Miami Beach con un año de retraso](https://miamimagicapp.com/noticias/art-basel-miami-beach-historia-como-llego)",
+          "- [Doce hoteles, doce obras y ninguna habitación que reservar](https://miamimagicapp.com/noticias/no-vacancy-miami-beach-doce-hoteles-arte)",
+          "- [La gran feria se encoge a propósito](https://miamimagicapp.com/noticias/art-basel-miami-beach-2026-piso-mas-pequeno-legacy-purchase)"
         ]
       },
       "en": {
@@ -5702,7 +5913,9 @@
           "- [Sandcastles and ping-pong: art to enjoy with kids](https://miamimagicapp.com/news/semana-del-arte-con-ninos-gratis)",
           "- [Between fairs, eleven tables a few steps away](https://miamimagicapp.com/news/semana-del-arte-donde-comer-miami-beach)",
           "- [Museums and murals: the art that stays on the Miami side](https://miamimagicapp.com/news/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
-          "- [The Swiss fair that reached Miami Beach a year late](https://miamimagicapp.com/news/art-basel-miami-beach-historia-como-llego)"
+          "- [The Swiss fair that reached Miami Beach a year late](https://miamimagicapp.com/news/art-basel-miami-beach-historia-como-llego)",
+          "- [Twelve hotels, twelve artworks and no room to book](https://miamimagicapp.com/news/no-vacancy-miami-beach-doce-hoteles-arte)",
+          "- [The big fair shrinks on purpose](https://miamimagicapp.com/news/art-basel-miami-beach-2026-piso-mas-pequeno-legacy-purchase)"
         ]
       },
       "fuentes": [
@@ -9701,7 +9914,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:43:09-05:00",
+  "updated_at": "2026-11-27T11:54:28-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
