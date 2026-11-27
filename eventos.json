@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo manda sobre la cartelera de la app, sin pasar por Apple. Lo que pongas aquí se suma o corrige lo que ya trae la app; lo que no toques se queda igual. Sube el archivo a GitHub y lo ven iPhone, Android y web la próxima vez que se abra la app. Cambia \"updated\" cada vez.",
- "updated": "2026-11-19",
+ "updated": "2026-11-27",
  "semana": [
   {
    "id": "realestate-semana",
@@ -4072,15 +4072,16 @@
    "time_es": "Vie a dom · 11 AM–6 PM",
    "price": "See link",
    "price_es": "Ver enlace",
-   "type": "Culture · Art",
-   "type_es": "Cultura · Arte",
+   "type": "Art Week · Fair",
+   "type_es": "Semana del arte · Feria",
    "photo": "https://www.miamimagicapp.com/fotos/mm-mb-art-deco-letrero.jpg",
    "desc": "The biggest art week in the Americas. Public days Friday to Sunday, and the whole city fills with parallel fairs.",
    "desc_es": "La semana de arte más grande de las Américas. Días abiertos al público de viernes a domingo, y toda la ciudad se llena de ferias paralelas.",
    "tags": [
     "Culture"
    ],
-   "link": "https://www.artbasel.com/miami-beach"
+   "link": "https://www.artbasel.com/miami-beach",
+   "serie": "artweek"
   },
   {
    "id": "ky-tourdekeys26",
@@ -4341,6 +4342,312 @@
     "Sports"
    ],
    "link": "https://runwalkbigpinekey.t2t.org"
+  },
+  {
+   "id": "aw26-novacancy",
+   "scope": "local",
+   "d": "2026-11-12",
+   "d2": "2026-12-19",
+   "name": "No Vacancy, Miami Beach",
+   "name_es": "No Vacancy, Miami Beach",
+   "venue": "12 hotels · Ocean Drive to Normandy Isle",
+   "venue_es": "12 hoteles · de Ocean Drive a Normandy Isle",
+   "time": "Daily · hours vary by hotel",
+   "time_es": "Todos los días · el horario depende de cada hotel",
+   "price": "Free",
+   "price_es": "Gratis",
+   "type": "Art Week · Public art",
+   "type_es": "Semana del arte · Arte público",
+   "desc": "Twelve Miami Beach hotels each show a site-specific work by a mostly local artist. Self-guided: walk in and ask at the front desk.",
+   "desc_es": "Doce hoteles de Miami Beach exhiben cada uno una obra hecha para el lugar, casi todas de artistas locales. El recorrido es por cuenta propia: se entra y se pregunta en recepción.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.miamibeachfl.gov/city-hall/tourism-culture/culture-art-in-public-places/no-vacancy/",
+   "serie": "artweek",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-mb-betsy.jpg",
+   "free": true
+  },
+  {
+   "id": "aw26-betweentides",
+   "scope": "local",
+   "d": "2026-11-29",
+   "d2": "2026-12-06",
+   "name": "Between Tides · artist-designed ping-pong tables",
+   "name_es": "Between Tides · mesas de ping-pong de artistas",
+   "venue": "Collins Park · 2100 Collins Ave, Miami Beach",
+   "venue_es": "Collins Park · 2100 Collins Ave, Miami Beach",
+   "time": "Daily · 10 AM–5 PM",
+   "time_es": "Todos los días · 10 AM–5 PM",
+   "price": "Free",
+   "price_es": "Gratis",
+   "type": "Art Week · Public art",
+   "type_es": "Semana del arte · Arte público",
+   "desc": "Six ping-pong tables designed by artists, made to be played. Open tournament on Monday, Nov. 30, 4 to 6 PM.",
+   "desc_es": "Seis mesas de ping-pong diseñadas por artistas, hechas para jugar. Torneo abierto el lunes 30 de noviembre, de 4 a 6 PM.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+   "serie": "artweek",
+   "free": true
+  },
+  {
+   "id": "aw26-pamm",
+   "scope": "local",
+   "d": "2026-11-30",
+   "d2": "2026-12-06",
+   "name": "PAMM · Art Week hours",
+   "name_es": "PAMM · horario de la semana del arte",
+   "venue": "Pérez Art Museum Miami · 1103 Biscayne Blvd",
+   "venue_es": "Pérez Art Museum Miami · 1103 Biscayne Blvd",
+   "time": "Nov 30–Dec 6 · 11 AM–6 PM (Thu Dec 3 until 5 PM)",
+   "time_es": "30 nov al 6 dic · 11 AM–6 PM (jue 3 de dic hasta las 5 PM)",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Art Week · Museum",
+   "type_es": "Semana del arte · Museo",
+   "desc": "The museum opens all seven days of art week, with Picasso–Klee–Matisse from Berlin’s Museum Berggruen and Basquiat: Figures, Signs, Symbols.",
+   "desc_es": "El museo abre los siete días de la semana del arte, con Picasso–Klee–Matisse, llegada del Museum Berggruen de Berlín, y Basquiat: Figures, Signs, Symbols.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.pamm.org/en/press/perez-art-museum-miami-announces-2026-miami-art-week-programming/",
+   "serie": "artweek",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-pamm-escultura-portada.jpg"
+  },
+  {
+   "id": "aw26-wolfsonian",
+   "scope": "local",
+   "d": "2026-11-30",
+   "d2": "2026-12-06",
+   "name": "The Wolfsonian–FIU · free admission",
+   "name_es": "The Wolfsonian–FIU · entrada gratis",
+   "venue": "1001 Washington Ave, Miami Beach",
+   "venue_es": "1001 Washington Ave, Miami Beach",
+   "time": "Daily · from 10 AM",
+   "time_es": "Todos los días · desde las 10 AM",
+   "price": "Free",
+   "price_es": "Gratis",
+   "type": "Art Week · Museum",
+   "type_es": "Semana del arte · Museo",
+   "desc": "The design and art museum in the Art Deco District does not charge admission during art week, according to the City of Miami Beach program.",
+   "desc_es": "El museo de diseño y arte del distrito art déco no cobra entrada durante la semana del arte, según el programa de la Ciudad de Miami Beach.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+   "serie": "artweek",
+   "free": true
+  },
+  {
+   "id": "aw26-faena",
+   "scope": "local",
+   "d": "2026-12-01",
+   "d2": "2026-12-06",
+   "name": "Faena Art on the beach",
+   "name_es": "Faena Art en la playa",
+   "venue": "Faena Beach · 3201 Collins Ave, Miami Beach",
+   "venue_es": "Faena Beach · 3201 Collins Ave, Miami Beach",
+   "time": "Daily · 12–9 PM",
+   "time_es": "Todos los días · 12–9 PM",
+   "price": "Free",
+   "price_es": "Gratis",
+   "type": "Art Week · Public art",
+   "type_es": "Semana del arte · Arte público",
+   "desc": "A Lore Supreme, a mirrored sphere half-buried in the sand, and a light installation to walk through, with readings, poetry and dance.",
+   "desc_es": "A Lore Supreme, una esfera de espejos medio enterrada en la arena, y una instalación de luz que se recorre por dentro, con lecturas, poesía y baile.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.faenaart.org",
+   "serie": "artweek",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-artbasel-library-reflejo.jpg",
+   "free": true
+  },
+  {
+   "id": "aw26-artmiami",
+   "scope": "local",
+   "d": "2026-12-01",
+   "d2": "2026-12-06",
+   "name": "Art Miami + CONTEXT",
+   "name_es": "Art Miami + CONTEXT",
+   "venue": "One Herald Plaza · NE 14th St & Biscayne Bay",
+   "venue_es": "One Herald Plaza · NE 14 St y Biscayne Bay",
+   "time": "Dec 1–6 · Tue 4–8 PM (CONTEXT until 9:30), Wed–Sat 11 AM–7 PM, Sun 11 AM–6 PM",
+   "time_es": "1 al 6 de dic · mar 4–8 PM (CONTEXT hasta 9:30), mié a sáb 11 AM–7 PM, dom 11 AM–6 PM",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Art Week · Fair",
+   "type_es": "Semana del arte · Feria",
+   "desc": "Two fairs in one bayfront venue, joined by a passageway: modern and contemporary art at Art Miami, emerging and mid-career artists at CONTEXT.",
+   "desc_es": "Dos ferias en un mismo recinto frente a la bahía, unidas por un pasillo: arte moderno y contemporáneo en Art Miami, artistas emergentes y de media carrera en CONTEXT.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.artmiami.com",
+   "serie": "artweek"
+  },
+  {
+   "id": "aw26-designmiami",
+   "scope": "local",
+   "d": "2026-12-01",
+   "d2": "2026-12-06",
+   "name": "Design Miami",
+   "name_es": "Design Miami",
+   "venue": "Convention Center Dr & 19th St, Miami Beach",
+   "venue_es": "Convention Center Dr y calle 19, Miami Beach",
+   "time": "Dec 1–6 · hours on the official site",
+   "time_es": "1 al 6 de dic · horario en el sitio oficial",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Art Week · Fair",
+   "type_es": "Semana del arte · Feria",
+   "desc": "Collectible design, right next to the Art Basel hall.",
+   "desc_es": "Diseño de colección, justo al lado del recinto de Art Basel.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://designmiami.com",
+   "serie": "artweek"
+  },
+  {
+   "id": "aw26-nada",
+   "scope": "local",
+   "d": "2026-12-01",
+   "d2": "2026-12-05",
+   "name": "NADA Miami",
+   "name_es": "NADA Miami",
+   "venue": "Ice Palace Studios · 1400 North Miami Ave",
+   "venue_es": "Ice Palace Studios · 1400 North Miami Ave",
+   "time": "Dec 1–5 · hours on the official site",
+   "time_es": "1 al 5 de dic · horario en el sitio oficial",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Art Week · Fair",
+   "type_es": "Semana del arte · Feria",
+   "desc": "Young galleries and emerging artists.",
+   "desc_es": "Galerías jóvenes y artistas emergentes.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.newartdealers.org",
+   "serie": "artweek"
+  },
+  {
+   "id": "aw26-untitled",
+   "scope": "local",
+   "d": "2026-12-02",
+   "d2": "2026-12-06",
+   "name": "Untitled Art",
+   "name_es": "Untitled Art",
+   "venue": "Ocean Drive & 12th St, Miami Beach",
+   "venue_es": "Ocean Drive y calle 12, Miami Beach",
+   "time": "Dec 2–6 · hours on the official site",
+   "time_es": "2 al 6 de dic · horario en el sitio oficial",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Art Week · Fair",
+   "type_es": "Semana del arte · Feria",
+   "desc": "A fair inside a tent on the sand.",
+   "desc_es": "Una feria dentro de una carpa sobre la arena.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://untitledartfairs.com",
+   "serie": "artweek"
+  },
+  {
+   "id": "aw26-reddot",
+   "scope": "local",
+   "d": "2026-12-02",
+   "d2": "2026-12-06",
+   "name": "Spectrum Miami + Red Dot Miami",
+   "name_es": "Spectrum Miami + Red Dot Miami",
+   "venue": "Mana Wynwood · 2217 NW 5th Ave",
+   "venue_es": "Mana Wynwood · 2217 NW 5 Ave",
+   "time": "Dec 2–6 · Wed 6–9 PM (opening night), Thu–Sat 12–8 PM, Sun 12–6 PM",
+   "time_es": "2 al 6 de dic · mié 6–9 PM (noche de apertura), jue a sáb 12–8 PM, dom 12–6 PM",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Art Week · Fair",
+   "type_es": "Semana del arte · Feria",
+   "desc": "Two fairs under one roof in Wynwood.",
+   "desc_es": "Dos ferias bajo un mismo techo en Wynwood.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://redwoodartgroup.com/spectrum-miami/",
+   "serie": "artweek"
+  },
+  {
+   "id": "aw26-pinta",
+   "scope": "local",
+   "d": "2026-12-03",
+   "d2": "2026-12-06",
+   "name": "Pinta Miami",
+   "name_es": "Pinta Miami",
+   "venue": "The Hangar · 3385 Pan American Dr, Coconut Grove",
+   "venue_es": "The Hangar · 3385 Pan American Dr, Coconut Grove",
+   "time": "Dec 3–6 · hours on the official site",
+   "time_es": "3 al 6 de dic · horario en el sitio oficial",
+   "price": "See link",
+   "price_es": "Ver enlace",
+   "type": "Art Week · Fair",
+   "type_es": "Semana del arte · Feria",
+   "desc": "Latin American art, in Coconut Grove.",
+   "desc_es": "Arte latinoamericano, en Coconut Grove.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.pinta.art",
+   "serie": "artweek"
+  },
+  {
+   "id": "aw26-wallcast",
+   "scope": "local",
+   "d": "2026-12-05",
+   "name": "New World Symphony · WALLCAST in the park",
+   "name_es": "New World Symphony · WALLCAST en el parque",
+   "venue": "SoundScape Park · 400 17th St, Miami Beach",
+   "venue_es": "SoundScape Park · 400 17 St, Miami Beach",
+   "time": "Sat · 4–5 PM",
+   "time_es": "Sáb · 4–5 PM",
+   "price": "Free",
+   "price_es": "Gratis",
+   "type": "Art Week · Music",
+   "type_es": "Semana del arte · Música",
+   "desc": "A free outdoor concert and projection on the wall of the New World Center, listed in the city’s art week program.",
+   "desc_es": "Concierto y proyección gratis al aire libre en el muro del New World Center, dentro del programa de la semana del arte de la ciudad.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+   "serie": "artweek",
+   "free": true
+  },
+  {
+   "id": "aw26-bassfree",
+   "scope": "local",
+   "d": "2026-12-06",
+   "name": "The Bass · Free Community Day",
+   "name_es": "The Bass · día gratis para la comunidad",
+   "venue": "The Bass · 2100 Collins Ave, Miami Beach",
+   "venue_es": "The Bass · 2100 Collins Ave, Miami Beach",
+   "time": "Sun · 12–5 PM",
+   "time_es": "Dom · 12–5 PM",
+   "price": "Free",
+   "price_es": "Gratis",
+   "type": "Art Week · Museum",
+   "type_es": "Semana del arte · Museo",
+   "desc": "The Miami Beach museum opens free on the last day of art week.",
+   "desc_es": "El museo de Miami Beach abre gratis el último día de la semana del arte.",
+   "tags": [
+    "Culture"
+   ],
+   "link": "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
+   "serie": "artweek",
+   "free": true
   }
  ],
  "mes": [
@@ -5056,7 +5363,7 @@
  "_anuales": "Calendario anual, el de 'Eventos imperdibles'. Mismo criterio: por id (ae1, ae2...) reemplaza o agrega. Campos: id, d, d2, month, name, name_es, venue, venue_es, desc, desc_es.",
  "anuales": [],
  "quitar_anuales": [],
- "_verificado": "Cartelera del 26 de septiembre al 31 de diciembre de 2026. Conciertos verificados el 26 de septiembre en la web oficial de cada sede o en su vendedor oficial: kaseyacenter.com (todos los del Kaseya), hardrockstadium.com (Karol G), casino.hardrock.com/hollywood y Ticketmaster (Hard Rock Live), amerantbankarena.com y su boletería (Amerant), pompanobeacharts.org/AXS (Pompano), fillmoremb.com. Precios en $ / $$ / $$$: orientativos, siempre en el vendedor oficial. · Actualización del 1 de octubre de 2026 (eventos de octubre que no son conciertos), verificada en las webs oficiales: miamicarnival.org, redlandorchidfestival.com, sobeseafoodfest.com, zoomiami.org, iiipoints.com, kaseyacenter.com y miamiandbeaches.com (calendario oficial de turismo). Halloween en la calle y otros eventos sin fecha oficial confirmada quedan fuera. · Actualización del 5 de octubre de 2026: Live En La Playa, Lincoln Road Farmers Market y Ocean Drive Promenade Music Series verificados en el calendario oficial de la ciudad (events.miamibeachfl.gov); Inter Miami vs D.C. United (sáb 10 oct, 7:30 PM, Nu Stadium) confirmado en Ticketmaster. · Boots & Blooms (jue 8 oct) verificado en fairchildgarden.org; Orchids in October (10–11 oct) en Miami Living Magazine. · 6 oct 2026: Salsa Fest (miamibeachbandshell.com), Teatro Real y Ghostbusters (arshtcenter.org), Zombie Run (pinecrest-fl.gov), Billboard Latin Music Week (Billboard/Miami New Times), Miami Fashion Week (miamifashionweek.com), Berry Farm y Pumpkin Patch de Coral Gables (Miami on the Cheap); Trick-or-Treat on the Mile y Día de Muertos de Coral Gables con aviso de confirmar horario. · 6 oct 2026 (Ruta del Terror): Horrorland, House of Horror y Sounds of Screams (Miami New Times, 23 sep 2026); Deering Estate (South Florida Family Life); Miami Haunts (MiamiHauntedHouses.com); HalloWYN (Eventbrite); Lincoln Road, Hialeah Cares, Moss Center, Cutler Bay, MIM y W Rooftop (The Miami Guide / Mommy Poppins 2026). · 6 oct 2026: La Ruta del Terror (rutaterror26) enlaza a /terror.html, que lee las 15 paradas de este mismo archivo. · Actualización del 12 de octubre de 2026, verificada en la web oficial de cada evento o sede: oktoberfest.miami (Eventbrite oficial del German American Social Club), miamidesigndistrict.com (Fiesta Latina Kick-Off, Creed, ICA), amerantbankarena.com (Panthers: 15, 17 y 30 de oct; la hora no está publicada), miamifilmfestival.com y WLRN (GEMS y Vizcaya), flibs.com, miamifashionweek.com (MIAFW hasta el 18), reef.org, waterfrontplayhouse.org, ladiesletsgofishing.com, keysdiscovery.com, marathonfirerescue.org, marinelab.org, islamorada.fl.us y keysso.net. · Actualización del 25 de octubre de 2026 (semana 26 oct–1 nov): Inter Miami vs FC Cincinnati (intermiamicf.com, 7:30 PM), Dolphins vs Patriots (4:25 PM, CBS), Spooktacular Miami City Cemetery Walking Tour (miamiandbeaches.com / museumofmiami.org), Cayos (visitfloridakeys.com) y World's Fastest Boat Parade (keysweekly.com).",
+ "_verificado": "Cartelera del 26 de septiembre al 31 de diciembre de 2026. Conciertos verificados el 26 de septiembre en la web oficial de cada sede o en su vendedor oficial: kaseyacenter.com (todos los del Kaseya), hardrockstadium.com (Karol G), casino.hardrock.com/hollywood y Ticketmaster (Hard Rock Live), amerantbankarena.com y su boletería (Amerant), pompanobeacharts.org/AXS (Pompano), fillmoremb.com. Precios en $ / $$ / $$$: orientativos, siempre en el vendedor oficial. · Actualización del 1 de octubre de 2026 (eventos de octubre que no son conciertos), verificada en las webs oficiales: miamicarnival.org, redlandorchidfestival.com, sobeseafoodfest.com, zoomiami.org, iiipoints.com, kaseyacenter.com y miamiandbeaches.com (calendario oficial de turismo). Halloween en la calle y otros eventos sin fecha oficial confirmada quedan fuera. · Actualización del 5 de octubre de 2026: Live En La Playa, Lincoln Road Farmers Market y Ocean Drive Promenade Music Series verificados en el calendario oficial de la ciudad (events.miamibeachfl.gov); Inter Miami vs D.C. United (sáb 10 oct, 7:30 PM, Nu Stadium) confirmado en Ticketmaster. · Boots & Blooms (jue 8 oct) verificado en fairchildgarden.org; Orchids in October (10–11 oct) en Miami Living Magazine. · 6 oct 2026: Salsa Fest (miamibeachbandshell.com), Teatro Real y Ghostbusters (arshtcenter.org), Zombie Run (pinecrest-fl.gov), Billboard Latin Music Week (Billboard/Miami New Times), Miami Fashion Week (miamifashionweek.com), Berry Farm y Pumpkin Patch de Coral Gables (Miami on the Cheap); Trick-or-Treat on the Mile y Día de Muertos de Coral Gables con aviso de confirmar horario. · 6 oct 2026 (Ruta del Terror): Horrorland, House of Horror y Sounds of Screams (Miami New Times, 23 sep 2026); Deering Estate (South Florida Family Life); Miami Haunts (MiamiHauntedHouses.com); HalloWYN (Eventbrite); Lincoln Road, Hialeah Cares, Moss Center, Cutler Bay, MIM y W Rooftop (The Miami Guide / Mommy Poppins 2026). · 6 oct 2026: La Ruta del Terror (rutaterror26) enlaza a /terror.html, que lee las 15 paradas de este mismo archivo. · Actualización del 12 de octubre de 2026, verificada en la web oficial de cada evento o sede: oktoberfest.miami (Eventbrite oficial del German American Social Club), miamidesigndistrict.com (Fiesta Latina Kick-Off, Creed, ICA), amerantbankarena.com (Panthers: 15, 17 y 30 de oct; la hora no está publicada), miamifilmfestival.com y WLRN (GEMS y Vizcaya), flibs.com, miamifashionweek.com (MIAFW hasta el 18), reef.org, waterfrontplayhouse.org, ladiesletsgofishing.com, keysdiscovery.com, marathonfirerescue.org, marinelab.org, islamorada.fl.us y keysso.net. · Actualización del 25 de octubre de 2026 (semana 26 oct–1 nov): Inter Miami vs FC Cincinnati (intermiamicf.com, 7:30 PM), Dolphins vs Patriots (4:25 PM, CBS), Spooktacular Miami City Cemetery Walking Tour (miamiandbeaches.com / museumofmiami.org), Cayos (visitfloridakeys.com) y World's Fastest Boat Parade (keysweekly.com). · Actualización del 27 de noviembre de 2026 (semana del arte, ids aw26-*): verificado en miamibeachfl.gov (programa de Art Week, No Vacancy), artbasel.com, pamm.org, artmiami.com, redwoodartgroup.com y la agenda de miamiartweek.org.",
  "_campos": "Cada concierto lleva: d (fecha), d2 (si son dos noches), name, venue con la distancia desde Miami cuando está fuera, time/time_es, price, type, desc/desc_es, link al vendedor oficial. Para quitar uno, pon su id en quitar_semana. La app enseña solo los próximos 10 días en Esta Semana; el resto aparece cuando le toca.",
  "proximos": [
   {
@@ -5133,7 +5440,8 @@
    "venue_es": "Miami Beach Convention Center",
    "desc": "The biggest art week in the Americas: 272 exhibitors at the convention center. Public days Friday to Sunday, 11 AM–6 PM, and the whole city hosts parallel fairs.",
    "desc_es": "La semana de arte más grande de las Américas: 272 expositores en el centro de convenciones. Días abiertos al público de viernes a domingo, de 11 AM a 6 PM, y toda la ciudad se llena de ferias paralelas.",
-   "link": "https://www.artbasel.com/miami-beach"
+   "link": "https://www.artbasel.com/miami-beach",
+   "serie": "artweek"
   },
   {
    "id": "px-powerboats",

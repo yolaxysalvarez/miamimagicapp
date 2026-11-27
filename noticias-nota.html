@@ -159,6 +159,7 @@ h1{font-family:var(--pf);font-weight:900;font-size:52px;line-height:1.06;letter-
 .mas .sp.big .sp-c u{font-size:40px}
 .mas .sp.big b{font-size:23px}
 .col.wide{max-width:980px}
+@media(min-width:701px){.mas .evg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}.mas .evg h5,.mas .evg a.go{grid-column:1/-1}}
 .mas .sg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 28px;margin-top:26px}
 .mas a.sgc{display:block;color:var(--ink)}
 .mas a.sgc:hover{text-decoration:none}
@@ -363,19 +364,22 @@ function sCard(big){var hb=sHub();if(!hb)return '';var en=L==='en',f=hb[L]||hb.e
   var im=ESP.foto?(/^https?:|^\//.test(ESP.foto)?ESP.foto:'/'+ESP.foto):nImg(hb);
   return '<a class="sp'+(big?' big':'')+'" href="'+(big?nHref(hb):sHref())+'">'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy"'+(ESP.pos?' style="object-position:'+esc(ESP.pos)+'"':'')+'>':'')+'<span class="sp-in"><span class="sp-c">'+c+'</span><span class="sp-k">'+esc(en?ESP.k_en:ESP.k_es)+'</span><b>'+esc(f.titulo||'')+'</b>'+(big?'<span class="sp-go">'+(en?'OPEN THE FULL GUIDE →':'ABRIR LA GUÍA COMPLETA →')+'</span>':'')+'</span></a>'}
 function sGrid(n){var f=n[L]||n.es||{},im=nImg(n);return '<a class="sgc" href="'+nHref(n)+'"><span class="ph">'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy"'+(n.foto_pos?' style="object-position:'+esc(n.foto_pos)+'"':'')+'>':'')+'</span><span class="eb">'+esc(sName()+(n.tema==='historia'?(L==='en'?' · HISTORY':' · HISTORIA'):''))+'</span><b>'+esc(f.titulo||'')+'</b>'+(f.bajada?'<p>'+esc(f.bajada)+'</p>':'')+'</a>'}
+function sEv(){if(!EVD||!ESP||!ESP.serie)return [];var p=function(x){var a=String(x||'').split('-');return a.length===3?new Date(+a[0],+a[1]-1,+a[2]):null},t0=new Date();t0.setHours(0,0,0,0);var q={};(EVD.quitar_semana||[]).forEach(function(i){q[i]=1});var seen={},out=[];
+  (EVD.semana||[]).concat(EVD.proximos||[]).forEach(function(e){if(!e||e.serie!==ESP.serie||!e.d||q[e.id])return;var a=p(e.d),b=p(e.d2||e.d);if(!a||!b||b<t0)return;var k=(e.name||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,22);if(seen[k])return;seen[k]=1;out.push({e:e,a:a,b:b,s:a<t0?t0:a,ky:false,o:(a<t0)?1:0})});
+  out.sort(function(x,y){return x.s-y.s||x.b-y.b||(x.e.name<y.e.name?-1:1)});return out}
 function renderMas(){
   var box=document.getElementById('mas');if(!box||!N)return;
   var pool=ALL.filter(function(n){return pub(n)&&n.id!==N.id}),k=secOf(N),used={};
   var rel=pool.map(function(n){var sc=(secOf(n)===k?6:0)+(n.scope===N.scope?2:0)+(n.tema&&n.tema===N.tema?2:0);return [sc,n]}).filter(function(x){return x[0]>=6}).sort(function(a,b){return b[0]-a[0]||(b[1].fecha||'').localeCompare(a[1].fecha||'')}).slice(0,3).map(function(x){used[x[1].id]=1;return x[1]});
   var ult=pool.filter(function(n){return !used[n.id]}).sort(function(a,b){return (b.fecha||'').localeCompare(a.fecha||'')}).slice(0,3);
-  var ev=evList(),en=L==='en',DW=en?['SUN','MON','TUE','WED','THU','FRI','SAT']:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'],t0=new Date();t0.setHours(0,0,0,0);
+  var SE=(typeof inS==='function'&&inS(N))?sEv():[],ev=SE.length?(SM?SE:SE.slice(0,4)):evList(),en=L==='en',DW=en?['SUN','MON','TUE','WED','THU','FRI','SAT']:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'],t0=new Date();t0.setHours(0,0,0,0);
   var h='';
   var S=inS(N)&&sHub();
   if(S){var by={};ALL.forEach(function(n){by[n.id]=n});var ot=(ESP.notas||[]).map(function(x){return by[x.id]}).filter(function(n){return n&&pub(n)&&n.id!==N.id});
     h+='<div class="mg" id="serie">'+(SM?'':'<h5>'+esc(sName())+'</h5>')+(SM||N.id!==ESP.id?sCard(SM):'')+(SM?'<div class="sg">'+ot.map(sGrid).join('')+'</div>':ot.map(miRow).join(''))+'</div>';}
   if(!S&&rel.length)h+='<div class="mg"><h5>'+t('mas')+' '+secName(k)+'</h5>'+rel.map(miRow).join('')+'</div>';
   if(!S&&ult.length)h+='<div class="mg"><h5>'+t('ult')+'</h5>'+ult.map(miRow).join('')+'</div>';
-  if(ev.length)h+='<div class="mg"><h5>'+t('sem')+'</h5>'+ev.map(function(o){var e=o.e,on=o.a<t0,d=on?o.b:o.a;var ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,'');
+  if(ev.length)h+='<div class="mg'+(SE.length&&SM?' evg':'')+'"><h5>'+(SE.length?esc(sName())+(en?' · LISTINGS':' · LA CARTELERA'):t('sem'))+'</h5>'+ev.map(function(o){var e=o.e,on=o.a<t0,d=on?o.b:o.a;var ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,'');
     return '<a class="ev" href="/?ev='+encodeURIComponent(e.id)+'"><span class="dt"><i>'+(on?(en?'UNTIL':'HASTA'):DW[d.getDay()])+'</i><u>'+d.getDate()+'</u><s>'+MO[d.getMonth()]+'</s></span><span><span class="eb'+(o.ky?' ky':'')+'">'+esc(((en?e.type:(e.type_es||e.type))||'').toUpperCase())+'</span><b>'+esc(en?e.name:(e.name_es||e.name))+'</b><p>'+esc(ve)+(tm?' · '+esc(tm):'')+'</p></span></a>'}).join('')+'<a class="go" href="/?go=week">'+t('cart')+'</a></div>';
   box.innerHTML=h;box.style.display=h?'':'none';
 }
