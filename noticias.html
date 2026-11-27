@@ -1769,7 +1769,7 @@ function renderAg(){
   var tb=box.querySelectorAll('.ag-tabs button');tb[0].textContent=en?'THIS WEEK':'ESTA SEMANA';tb[1].textContent=en?'COMING UP':'LO QUE VIENE';if(tb[2])tb[2].textContent=en?'THE KEYS':'LOS CAYOS';
   for(var i=0;i<tb.length;i++){var on=tb[i].dataset.ag===AGS.tab;tb[i].classList.toggle('on',on);tb[i].setAttribute('aria-selected',on)}
   var t0=new Date();t0.setHours(0,0,0,0);
-  (function(){var z=document.getElementById('agSer');if(!z)return;var E=PT&&PT.especial,ok=E&&E.serie&&E.d2&&HOYNY()<=E.d2;
+  (function(){var z=document.getElementById('agSer');if(!z)return;var E=PT&&PT.especial,ok=E&&E.serie&&E.d2&&HOYNY()<=E.d2&&AGS.tab!=='keys';
     var n=ok?(AGD.semana||[]).concat(AGD.proximos||[]).filter(function(e){var b=agDate(e&&(e.d2||e.d));return e&&e.serie===E.serie&&b&&b>=t0}).map(function(e){return (e.name||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,22)}).filter(function(k,i,a){return a.indexOf(k)===i}).length:0;
     if(!n){z.innerHTML='';if(AGS.serie){AGS.serie=''}return}
     z.innerHTML='<button type="button" id="agSerB" class="'+(AGS.serie?'on':'')+'" aria-pressed="'+(AGS.serie?'true':'false')+'"><b>'+esc(String(en?E.c_en:E.c_es).toUpperCase())+'</b><span>'+n+' '+(en?'plans':'planes')+'</span><i>'+(AGS.serie?(en?'SEE EVERYTHING ×':'VER TODO ×'):(en?'SEE →':'VER →'))+'</i></button>';
@@ -1787,13 +1787,15 @@ function renderAg(){
     var mo=lng?MO[o.a.getMonth()]:multi&&o.a>t0&&!same?MO[o.a.getMonth()]+'–'+MO[o.b.getMonth()]:MO[(multi&&o.a<=t0?o.b:o.a).getMonth()];
     var ky=e.scope==='keys'||e.zone==='keys',ty=(en?e.type:(e.type_es||e.type))||'',ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,''),pr=(en?e.price:(e.price_es||e.price))||'';
     return '<a class="ag-r'+(ky?' ky':'')+'" data-ev="'+esc(e.id)+'" href="/noticias?ev='+encodeURIComponent(e.id)+'"><span class="ag-d"><i'+(dw.length>5?' class="w"':'')+'>'+esc(dw)+'</i><b'+(String(dn).length>2?' class="rg"':'')+'>'+esc(dn)+'</b><u>'+esc(mo)+'</u></span><span class="ag-x"><span class="k">'+(ky&&AGS.tab!=='keys'?'<em>'+(en?'THE KEYS':'LOS CAYOS')+'</em> · ':'')+esc(ty.toUpperCase())+'</span><h4>'+esc(en?e.name:(e.name_es||e.name))+'</h4><p>'+esc(ve)+(tm?' · <b>'+esc(tm)+'</b>':'')+(pr&&!/^\$+$/.test(pr)&&!/enlace|link/i.test(pr)?' · '+esc(pr):'')+'</p></span></a>'}).join(''):'<p class="ag-e">'+(en?'Nothing on the calendar for these days yet.':'Todavía no hay nada en el calendario para estos días.')+'</p>';
-  (function(){var c=document.getElementById('agCol');if(!c)return;var sv=[AGS.tab,AGS.day,AGS.cnt];AGS.tab='sem';AGS.day=-1;AGS.cnt=1;var wk=agList();AGS.tab=sv[0];AGS.day=sv[1];AGS.cnt=sv[2];
-    var seen={},pk=[],add=function(o){var f=o.e.photo;if(!f||seen[f]||pk.length>=5)return;seen[f]=1;pk.push(o)};
-    var kk=wk.filter(function(o){return o.e.scope==='keys'||o.e.zone==='keys'});wk.filter(function(o){return !(o.e.scope==='keys'||o.e.zone==='keys')}).slice(0,40).forEach(function(o){if(pk.length<4)add(o)});kk.forEach(function(o){if(pk.length<5)add(o)});wk.forEach(add);
+  (function(){var c=document.getElementById('agCol');if(!c)return;var sv=[AGS.day,AGS.cnt,AGS.serie],kt=AGS.tab==='keys';AGS.day=-1;AGS.cnt=1;AGS.serie='';var wk=agList();AGS.day=sv[0];AGS.cnt=sv[1];AGS.serie=sv[2];
+    var isK=function(o){return o.e.scope==='keys'||o.e.zone==='keys'},KP=['fotos/mm-keys-largo-bay.jpg','fotos/mm-keys-kw-old-town-aereo.jpg','fotos/mm-keys-puente-entre-cayos-aereo.jpg','fotos/mm-keys-southernmost-point.jpg','fotos/mm-keys-canal-botes.jpg','fotos/mm-keys-kw-marina-atardecer.jpg'];
+    var bn=function(x){return String(x||'').split('/').pop()},seen={},pk=[],add=function(o){var f=o.e.photo;if(isK(o)&&(!f||seen[bn(f)]))f=KP.filter(function(x){return !seen[bn(x)]})[0];if(!f||seen[bn(f)]||pk.length>=5)return;seen[bn(f)]=1;pk.push({e:o.e,f:f})};
+    if(kt){wk.filter(isK).forEach(add)}
+    else{wk.filter(function(o){return !isK(o)}).slice(0,40).forEach(function(o){if(pk.length<4)add(o)});wk.filter(isK).forEach(function(o){if(pk.length<5)add(o)});wk.forEach(add);
+      var ki=-1;pk.forEach(function(o,i){if(ki<0&&isK(o))ki=i});if(ki>1){var k=pk.splice(ki,1)[0];pk.splice(1,0,k)}}
     if(pk.length<3){c.innerHTML='';c.style.display='none';return}
-    (function(){var isK=function(o){return o.e.scope==='keys'||o.e.zone==='keys'},ki=-1;pk.forEach(function(o,i){if(ki<0&&isK(o))ki=i});if(ki>1){var k=pk.splice(ki,1)[0];pk.splice(1,0,k)}})();
     var rot=[-2.2,1.6,-1.2,2,-1.6];c.style.display='';
-    c.innerHTML=pk.map(function(o,i){var e=o.e,ky=e.scope==='keys'||e.zone==='keys';return '<a class="ag-ct'+(ky?' ky':'')+'" tabindex="-1" data-ev="'+esc(e.id)+'" href="/noticias?ev='+encodeURIComponent(e.id)+'" style="--r:'+rot[i%5]+'deg"><img src="'+esc(ptF(e.photo))+'" alt="" loading="lazy">'+(ky?'<em>'+(en?'THE KEYS':'LOS CAYOS')+'</em>':'')+'<span>'+esc(en?e.name:(e.name_es||e.name))+'</span></a>'}).join('')})();
+    c.innerHTML=pk.map(function(o,i){var e=o.e;return '<a class="ag-ct" tabindex="-1" data-ev="'+esc(e.id)+'" href="/noticias?ev='+encodeURIComponent(e.id)+'" style="--r:'+rot[i%5]+'deg"><img src="'+esc(ptF(o.f))+'" alt="" loading="lazy"><span>'+esc(en?e.name:(e.name_es||e.name))+'</span></a>'}).join('')})();
   var mb=document.getElementById('agMb');mb.style.display=li.length>AGS.n?'':'none';mb.textContent=(en?'MORE':'MÁS')+' ('+(li.length-AGS.n)+')';
 
 }
