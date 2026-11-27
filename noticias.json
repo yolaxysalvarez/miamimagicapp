@@ -55,6 +55,78 @@
   "videos": [],
   "notas": [
     {
+      "id": "cayos-hog-trot-key-west-island-art-fair-big-pine-28-noviembre",
+      "scope": "cayos",
+      "tema": "cultura",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:01:11-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-11-28",
+      "foto": "mm-keys-kw-scooter.jpg",
+      "foto_pos": "50% 42%",
+      "foto_alt": "Una moto circula por una calle arbolada de Key West",
+      "foto_pie": "Una calle de Key West.",
+      "foto_pie_en": "A street in Key West.",
+      "fuentes": [
+        {
+          "n": "Ciudad de Key West · Calendario de eventos especiales y cierres de calles",
+          "u": "https://www.cityofkeywest-fl.gov/calendar.aspx?CID=25"
+        },
+        {
+          "n": "Florida Keys & Key West · 40th Annual Island Art Fair",
+          "u": "https://visitfloridakeys.com/plan-your-trip/plan-book/events/40th-annual-island-art-fair"
+        },
+        {
+          "n": "Island Art Festival · Convocatoria a los artistas",
+          "u": "https://wheretheshowsare.com/email/bigpineislandartfestival/"
+        }
+      ],
+      "desarrollo": false,
+      "ultima": 5,
+      "arriba": 2,
+      "es": {
+        "etiqueta": "FIN DE SEMANA",
+        "titulo": "Cayos: carrera en Key West y feria de arte en Big Pine Key",
+        "bajada": "Las dos son el sábado 28 de noviembre. En Key West hay calles cerradas desde temprano.",
+        "toca": [
+          "Key West: Front Street, entre Duval y Tifts, cierra desde las 5:00 a.m. del sábado 28; la carrera sale a las 8:00 a.m.",
+          "Big Pine Key: la feria es en los terrenos de la Cámara de Comercio de los Cayos Bajos, milla 31 de la Overseas Highway. La entrada es gratis.",
+          "Si vas en auto por el Old Town de Key West esa mañana, cuenta con cierres móviles a lo largo de la ruta."
+        ],
+        "cuerpo": [
+          "El sábado 28 de noviembre los Cayos tienen dos citas: el Hog Trot 5K en Key West, que llega a su edición 32, y el Island Art Fair en Big Pine Key, que cumple 40 años.",
+          "## Key West: la carrera y los cierres",
+          "El Hog Trot sale a las 8:00 a.m. de Front Street y la ciudad calcula actividad hasta las 10:30 a.m., según su [calendario de eventos especiales](https://www.cityofkeywest-fl.gov/calendar.aspx?CID=25). Front Street queda cerrada entre Duval y Tifts desde las 5:00 a.m., y el resto de la ruta tendrá cierres móviles al paso de los corredores.",
+          "El recorrido dobla a la izquierda en Whitehead y a la derecha en Southard, cruza el Truman Waterfront Park, regresa por Southard y sigue por Whitehead hasta United, donde da la vuelta para volver a Front Street, detalla el mismo aviso.",
+          "## Big Pine Key: 40 años de feria",
+          "El Island Art Fair, que organiza la Cámara de Comercio de los Cayos Bajos, reúne arte y artesanía de artistas de Florida, música en vivo y comida, con entrada gratis, de acuerdo con la [oficina de turismo de los Cayos](https://visitfloridakeys.com/plan-your-trip/plan-book/events/40th-annual-island-art-fair). La [convocatoria a los artistas](https://wheretheshowsare.com/email/bigpineislandartfestival/) lo sitúa en los terrenos de la cámara, en el 31020 de la Overseas Highway, milla 31, de 9:00 a.m. a 3:00 p.m.",
+          "Para el camino, la [advertencia costera](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre) de los Cayos de arriba sigue vigente hasta las 5:00 a.m. del sábado 28."
+        ]
+      },
+      "en": {
+        "etiqueta": "WEEKEND",
+        "titulo": "Keys: a race in Key West and an art fair on Big Pine Key",
+        "bajada": "Both are on Saturday, Nov. 28. In Key West, streets close early.",
+        "toca": [
+          "Key West: Front Street, between Duval and Tifts, closes at 5 a.m. on Saturday the 28th; the race starts at 8 a.m.",
+          "Big Pine Key: the fair is on the Lower Keys Chamber of Commerce grounds, mile marker 31 of the Overseas Highway. Admission is free.",
+          "If you drive through Old Town Key West that morning, expect rolling closures along the route."
+        ],
+        "cuerpo": [
+          "On Saturday, Nov. 28, the Keys have two dates: the Hog Trot 5K in Key West, now in its 32nd edition, and the Island Art Fair on Big Pine Key, which turns 40.",
+          "## Key West: the race and the closures",
+          "The Hog Trot starts at 8 a.m. on Front Street and the city expects activity until 10:30 a.m., according to its [special events calendar](https://www.cityofkeywest-fl.gov/calendar.aspx?CID=25). Front Street will be closed between Duval and Tifts from 5 a.m., and the rest of the route will have rolling closures as runners pass.",
+          "The course turns left on Whitehead and right on Southard, crosses Truman Waterfront Park, returns on Southard and continues on Whitehead to United, where it turns around to head back to Front Street, the same notice says.",
+          "## Big Pine Key: 40 years of the fair",
+          "The Island Art Fair, hosted by the Lower Keys Chamber of Commerce, brings together art and crafts from Florida artists, live music and food, with free admission, according to the [Keys tourism office](https://visitfloridakeys.com/plan-your-trip/plan-book/events/40th-annual-island-art-fair). The [call to artists](https://wheretheshowsare.com/email/bigpineislandartfestival/) places it on the chamber grounds, at 31020 Overseas Highway, mile marker 31, from 9 a.m. to 3 p.m.",
+          "For the drive, the [coastal flood advisory](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre) for the Upper Keys remains in effect until 5 a.m. on Saturday the 28th."
+        ]
+      }
+    },
+    {
       "id": "temporada-huracanes-2026-termina-un-solo-huracan",
       "scope": "miami",
       "ambos": true,
@@ -175,7 +247,7 @@
           "The visitor needs the game more than the host. Boston College is 5-6 and a win would make it bowl eligible; Miami, meanwhile, already has its place in the conference championship game, on Saturday, Dec. 5, in Charlotte, against Wake Forest, which it beat 33-20 on Sept. 18. The Hurricanes' only loss was 31-24 at Notre Dame on Nov. 7; they then beat Duke and Virginia Tech."
         ]
       },
-      "ultima": 10
+      "ultima": 11
     },
     {
       "id": "dolphins-jets-hard-rock-29-noviembre-previa",
@@ -235,7 +307,7 @@
           "At Hard Rock Stadium, Miami has not won this season: it fell to the Chiefs, Bengals, Patriots and Lions. The Jets arrive 3-8, third in the division. The Dolphins' last game, the 26-9 loss in Buffalo without a single touchdown, is in [this story](https://miamimagicapp.com/news/dolphins-bills-26-9-buffalo)."
         ]
       },
-      "ultima": 11
+      "ultima": 12
     },
     {
       "id": "black-friday-horarios-malls-tiendas-miami-27-noviembre",
@@ -309,7 +381,7 @@
         ]
       },
       "actualizada": "2026-11-26T19:17:32-05:00",
-      "ultima": 7,
+      "ultima": 8,
       "foto_fit": "contain",
       "foto_bg": "#0A0F1A"
     },
@@ -367,7 +439,7 @@
           "Inter Miami also plays on Friday night, the 27th. It lost the first game 3-0 to Columbus and needs a win to force a third. The details are in [our game story](https://miamimagicapp.com/news/inter-miami-playoffs-nu-stadium)."
         ]
       },
-      "ultima": 16
+      "ultima": 17
     },
     {
       "id": "fedex-md-11-se-sale-pista-26r-mia-25-noviembre",
@@ -537,7 +609,7 @@
       "foto_alt": "Gráfico de Miami Magic sobre una vista aérea de Brickell Key y la bahía: 15 estrellas Michelin en Miami-Dade, 1 en Broward y primera vez de Los Cayos en la guía",
       "foto_pie": "Gráfico de Miami Magic.",
       "foto_pie_en": "Graphic by Miami Magic.",
-      "ultima": 13,
+      "ultima": 14,
       "foto_mm": false
     },
     {
@@ -705,7 +777,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-27T08:25:27-05:00",
-      "ultima": 9,
+      "ultima": 10,
       "es": {
         "etiqueta": "EN LA CALLE",
         "titulo": "Viernes tras Thanksgiving: Metro normal y oficinas cerradas",
@@ -891,8 +963,8 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-23T12:55:00-05:00",
-      "ultima": 14,
-      "arriba": 3,
+      "ultima": 15,
+      "arriba": 4,
       "es": {
         "etiqueta": "HISTORIA",
         "titulo": "Un tren cruzó el mar hasta Key West en 1912; sus puentes terminaron siendo la carretera de los Cayos",
@@ -948,7 +1020,7 @@
       "foto_pie": "Kaseya Center, a la izquierda, al caer la noche sobre el downtown. Foto: Adobe Stock.",
       "foto_pie_en": "Kaseya Center, left, as night falls over downtown. Photo: Adobe Stock.",
       "foto_mm": false,
-      "ultima": 14,
+      "ultima": 15,
       "es": {
         "etiqueta": "DEPORTES",
         "titulo": "El HEAT venció 123-113 al Thunder y llegó a siete victorias seguidas",
@@ -1040,7 +1112,7 @@
       "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Dolphins",
       "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
       "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
-      "ultima": 15,
+      "ultima": 16,
       "arriba": 6
     },
     {
@@ -1156,8 +1228,8 @@
       },
       "foto_mm": false,
       "actualizada": "2026-11-20T21:45:00-05:00",
-      "ultima": 17,
-      "arriba": 4
+      "ultima": 18,
+      "arriba": 5
     },
     {
       "id": "mr-bean-coffee-shop-the-falls-cafe-para-quedarse",
@@ -1249,7 +1321,7 @@
           "The Falls describes it in [its directory](https://www.simon.com/mall/the-falls/stores/mr-bean) as the neighborhood coffee shop."
         ]
       },
-      "ultima": 19,
+      "ultima": 20,
       "arriba": 10
     },
     {
@@ -1347,7 +1419,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 18,
+      "ultima": 19,
       "arriba": 9
     },
     {
@@ -1424,7 +1496,7 @@
         ]
       },
       "actualizada": "2026-11-20T21:40:00-05:00",
-      "ultima": 16
+      "ultima": 17
     },
     {
       "id": "biltmore-coral-gables-100-anos-historia",
@@ -1518,7 +1590,7 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 15,
+      "ultima": 16,
       "arriba": 6
     },
     {
@@ -1552,7 +1624,7 @@
         }
       ],
       "desarrollo": false,
-      "arriba": 6,
+      "arriba": 7,
       "es": {
         "etiqueta": "LAS REGLAS",
         "titulo": "Key West tendrá 100 boyas de amarre nuevas, y con ellas llega el límite de 90 días para anclar",
@@ -1593,7 +1665,7 @@
           "It is a separate rule from the state permit for boats anchored 14 days, which is already in effect: [here is how it works](https://miamimagicapp.com/news/anclaje-prolongado-permiso-fwc)."
         ]
       },
-      "ultima": 20
+      "ultima": 21
     },
     {
       "id": "calamillor-coral-gables-mallorca-en-miami",
@@ -1651,7 +1723,7 @@
       "publicada": "2026-11-20T07:55:00-05:00",
       "video": "UH-Rg0I2wjo",
       "arriba": 12,
-      "ultima": 21
+      "ultima": 22
     },
     {
       "id": "stiltsville-historia-27-casas-quedan-6",
@@ -1761,7 +1833,7 @@
           "en": "One of the Stiltsville houses, seen from the boat."
         }
       ],
-      "ultima": 26
+      "ultima": 27
     },
     {
       "id": "big-pine-key-america-250-golden-knights-drones-20-noviembre",
@@ -1904,7 +1976,7 @@
           }
         }
       ],
-      "ultima": 37,
+      "ultima": 38,
       "vence": "2026-11-21"
     },
     {
@@ -2217,7 +2289,7 @@
         ]
       },
       "actualizada": "2026-11-18T07:20:00-05:00",
-      "ultima": 27
+      "ultima": 28
     },
     {
       "id": "us1-cerrada-duck-key-camion-gasolina-17-noviembre",
@@ -2304,7 +2376,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:15:00-05:00",
-      "ultima": 30
+      "ultima": 31
     },
     {
       "id": "rentas-miami-efficiencies-sin-medir",
@@ -2385,7 +2457,7 @@
         ]
       },
       "actualizada": "2026-11-17T08:12:00-05:00",
-      "ultima": 29
+      "ultima": 30
     },
     {
       "id": "vigilancia-inundaciones-miami-dade-broward-17-19-noviembre",
@@ -2627,7 +2699,7 @@
           }
         }
       ],
-      "ultima": 38,
+      "ultima": 39,
       "vence": "2026-11-20"
     },
     {
@@ -2731,7 +2803,7 @@
         ]
       },
       "actualizada": "2026-11-16T21:15:00-05:00",
-      "ultima": 35
+      "ultima": 36
     },
     {
       "id": "hamaca-semana-16-22-noviembre",
@@ -2810,7 +2882,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 24
+      "ultima": 25
     },
     {
       "id": "cayos-viento-mar-picado-semana-17-19-noviembre",
@@ -2881,7 +2953,7 @@
         ]
       },
       "actualizada": "2026-11-20T16:55:00-05:00",
-      "ultima": 32,
+      "ultima": 33,
       "vence": "2026-11-22"
     },
     {
@@ -2965,7 +3037,7 @@
         ]
       },
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 34
+      "ultima": 35
     },
     {
       "id": "heat-rockets-16-noviembre-previa",
@@ -3038,7 +3110,7 @@
         ]
       },
       "actualizada": "2026-11-26T07:46:06-05:00",
-      "ultima": 31
+      "ultima": 32
     },
     {
       "id": "gta-vi-vice-city-miami-jueves-19",
@@ -3292,7 +3364,7 @@
           "Office vacancy is at a six-year low, 13.9%, according to [Cushman & Wakefield](https://www.cushmanwakefield.com/en/united-states/insights/us-marketbeats/miami-marketbeats/office). Savills puts average asking rent at $68.50 per square foot a year, up 8.4% from a year ago, per [Commercial Observer](https://commercialobserver.com/2026/10/miami-dade-office-q3/). Retail space is nearly full, with vacancy around 3%, and industrial vacancy held at 7.7% in the third quarter as more than 1.4 million square feet of new warehouses delivered, according to [Colliers](https://www.colliers.com/en/research/miami/3q26-miami-dade-county-industrial)."
         ]
       },
-      "ultima": 28
+      "ultima": 29
     },
     {
       "id": "pinecrest-puente-peatonal-canal-c2",
@@ -3375,7 +3447,7 @@
         ]
       },
       "foto_pos": "center 70%",
-      "ultima": 33
+      "ultima": 34
     },
     {
       "id": "celia-cruz-salon-fama-rock-and-roll",
@@ -3457,7 +3529,7 @@
           "Ten days earlier, the county had paid its own tribute: Mayor Daniella Levine Cava and the Miami-Dade Commission proclaimed Sunday, Oct. 11, 2026, as Celia Cruz Day, according to the document shared by [Celia Cruz's official account](https://www.instagram.com/celiacruz/). The proclamation calls on the community to honor \"this cultural and music icon\" for her legacy."
         ]
       },
-      "ultima": 36
+      "ultima": 37
     },
     {
       "id": "enmienda-3-condado-presupuesto",
@@ -3853,7 +3925,7 @@
       "actualizada": "2026-11-27T10:58:58-05:00",
       "desarrollo": false,
       "arriba": 3,
-      "ultima": 5
+      "ultima": 6
     },
     {
       "id": "impuestos-propiedad-bitcoin-miami-dade",
@@ -4732,7 +4804,7 @@
       "actualizada": "2026-11-27T08:38:22-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 17,
+      "ultima": 18,
       "desarrollo": false
     },
     {
@@ -4815,7 +4887,7 @@
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
       "arriba": 7,
-      "ultima": 6
+      "ultima": 7
     },
     {
       "id": "heat-vice-city-bucks",
@@ -5798,7 +5870,7 @@
         }
       ],
       "actualizada": "2026-11-26T09:17:18-05:00",
-      "ultima": 12
+      "ultima": 13
     },
     {
       "id": "seven-mile-bridge-rehabilitacion",
@@ -6636,7 +6708,7 @@
       "foto_mm": false,
       "actualizada": "2026-11-20T15:55:00-05:00",
       "tambien": 3,
-      "arriba": 7
+      "arriba": 8
     },
     {
       "id": "larry-penny-thompson-park",
@@ -7401,7 +7473,7 @@
         }
       ],
       "actualizada": "2026-11-26T11:39:34-05:00",
-      "ultima": 8
+      "ultima": 9
     },
     {
       "id": "manaties-noviembre-botes-despacio",
@@ -8912,7 +8984,7 @@
       ],
       "vence": "2026-11-22",
       "actualizada": "2026-11-20T17:40:00-05:00",
-      "ultima": 25
+      "ultima": 26
     },
     {
       "id": "key-west-artisan-market-higgs-15-noviembre",
@@ -8964,7 +9036,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:00:20-05:00",
+  "updated_at": "2026-11-27T11:01:11-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
