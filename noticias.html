@@ -508,6 +508,15 @@ footer{margin-top:20px;border-top:1px solid rgba(201,150,60,.35);background:#fff
 @media(min-width:761px) and (max-width:1380px){.navr{gap:8px}.navr .div{display:none}.sb{width:34px;height:34px}.dl{padding-left:12px;padding-right:12px;font-size:14px}.tab{padding-left:8px;padding-right:8px}}
 /* ── agenda ── */
 .ag{margin:8px 0 60px;padding:26px 30px 22px;border-radius:6px;background:#FFFDF8;border-top:4px double var(--ink);border-bottom:1px solid rgba(14,27,48,.25)}
+.ag-col{display:grid;grid-template-columns:1.25fr 1fr 1.15fr 1fr 1.25fr;gap:10px;margin:2px 0 22px;padding:6px 4px 0}
+.ag-ct{position:relative;display:block;height:170px;border-radius:10px;overflow:hidden;background:#EADFCF;border:4px solid #fff;box-shadow:0 10px 22px -12px rgba(14,27,48,.55);transform:rotate(var(--r,0deg));transition:transform .25s ease}
+.ag-ct:nth-child(even){margin-top:14px}
+.ag-ct:hover{transform:rotate(0deg) translateY(-3px);text-decoration:none}
+.ag-ct img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ag-ct::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,27,48,0) 45%,rgba(14,27,48,.86) 100%)}
+.ag-ct span{position:absolute;left:10px;right:10px;bottom:8px;z-index:1;color:#fff;font-family:var(--pf);font-weight:700;font-size:15.5px;line-height:1.18;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.ag-ct.ky{border-color:#E4F1EC}
+@media(max-width:760px){.ag-col{grid-template-columns:repeat(3,1fr);gap:7px;margin-bottom:16px;padding:4px 0 0}.ag-ct{height:118px;border-width:3px}.ag-ct:nth-child(n+4){display:none}.ag-ct:nth-child(even){margin-top:10px}.ag-ct span{font-size:14px;left:7px;right:7px;bottom:6px}}
 .ag-h{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-bottom:12px;border-bottom:1px solid rgba(14,27,48,.18)}
 .ag-t{font-family:var(--pf);font-weight:900;font-style:italic;font-size:46px;line-height:1;letter-spacing:-.01em;color:var(--ink)}
 .ag-t:after{content:'';display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--coral);margin-left:8px;vertical-align:baseline}
@@ -611,6 +620,7 @@ body:not(.home) #vs,body:not(.home) #pzU,body:not(.home) #pzF,body:not(.home) #d
 .op-c em{display:block;font-style:normal;font-size:17.5px;color:var(--ink2);margin-bottom:10px}
 .op-c i{display:block;font-style:normal;font-family:var(--bb);font-size:15px;letter-spacing:.14em;color:var(--mut)}
 body:not(.home) #opB{display:none!important}
+body.sp #hm,body.sp #pair{display:none!important}body.sp #ag{margin-top:44px}
 @media(max-width:760px){#opB{margin-bottom:44px}.op-c{grid-template-columns:1fr;gap:12px}.op-c b{font-size:24px}}
 .vs b{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;font-family:var(--pf);font-weight:700;font-size:17.5px;line-height:1.22}
 .vs .vm{display:block;margin-top:8px;font-size:15.5px;font-weight:700;letter-spacing:.06em}
@@ -778,6 +788,13 @@ body:not(.home) .split{display:block;margin-bottom:0}
  .pair:has(>section[style*="none"]){display:block}
  .pair .dk,.pair .cc{margin:0}
  .pair{align-items:stretch}.pair .cc{display:flex;flex-direction:column}.pair .cc .cc-ft{margin-top:auto}
+ .pair .cc-b{gap:0}
+ .pair .cc-f,.pair .cc-it{display:grid;grid-template-columns:228px minmax(0,1fr)!important;gap:20px;align-items:center;padding:14px 0;border-bottom:1px solid rgba(201,150,60,.38)}
+ .pair .cc-it.x{display:none}.pair .dk{align-content:start}
+ .pair .cc-f{padding-top:0}.pair .cc-it:first-child{padding-top:14px}.pair .cc-it:last-child{border-bottom:0;padding-bottom:4px}
+ .pair .cc-f .ph,.pair .cc-it .ph{aspect-ratio:16/9;border-radius:10px}
+ .pair .cc-f h3,.pair .cc-it h4{font-size:22px!important;line-height:1.16;margin:4px 0 6px}
+ .pair .cc-f p{display:none}.pair .cc-f .k{margin-top:0}
  .pair .dk{grid-template-columns:1fr;border-radius:14px}
  .pair .dk-post{min-height:0;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 18px;padding:20px 26px 18px}
  .pair .dk-post .dk-vt{flex:none;width:auto;min-height:0;font-size:46px}
@@ -1026,6 +1043,7 @@ html.in-app.app21 .bk{display:inline-flex}
 </style>
 <script>
 /* 'vence': fecha del evento; pasada esa fecha la nota baja detrás de lo vigente (sigue en el archivo) */
+document.addEventListener('click',function(e){try{var a=e.target.closest&&e.target.closest('a[href^="/?item="]');if(a&&a.getAttribute('href').indexOf('back=')<0)a.setAttribute('href',a.getAttribute('href')+'&back=news')}catch(x){}},true);
 function VIG(n){return !(n&&n.vence&&n.vence<HOYNY())}
 function AR(n){return (n&&n.arriba&&VIG(n))?n.arriba:99}
 function FK(n){var f=(n&&n.fecha)||'';return (n&&n.vence&&n.vence<HOYNY()?'0':'1')+f}
@@ -1158,6 +1176,7 @@ body{background:#fff;text-rendering:optimizeLegibility}
 <div class="evs" id="evs" role="dialog" aria-modal="true" aria-labelledby="evsT"><div class="evs-c"><button type="button" class="evs-x" id="evsX" aria-label="Cerrar">✕</button><div id="evsB"></div></div></div>
   <section class="ag" id="ag" aria-label="Agenda" style="display:none">
     <a class="ag-back" href="#" id="agBack">← TODO NEWS</a>
+    <div class="ag-col" id="agCol" aria-hidden="true"></div>
     <div class="ag-h">
       <h3 class="ag-t"><span id="agT">Agenda</span></h3>
       <div class="ag-tabs" role="tablist">
@@ -1284,7 +1303,7 @@ if(L!=='en')L='es';
 var DEMO=Q.get('demo')==='1';
 var ST={scope:Q.get('s')||'miami',tema:Q.get('t')||'todo',hamaca:Q.get('s')==='hamaca',muelle:Q.get('s')==='muelle',casa:Q.get('s')==='casa',ky:Q.get('s')==='cayos',hi:Q.get('s')==='historia',op:Q.get('s')==='opinion',dp:Q.get('s')==='deportes'};
 function SEC(){return ST.hamaca||ST.muelle||ST.casa||ST.ky||ST.hi||ST.op||ST.dp}
-function isHi(n){return n&&n.tema==='historia'}
+function isHi(n){return n&&(n.tema==='historia'||!!(typeof PT!=='undefined'&&PT&&(PT.historia||[]).some(function(x){return x&&x.id===n.id})))}
 function isOp(n){return n&&n.tema==='opinion'}
 function isDp(n){return n&&n.tema==='deporte'}
 function isSecN(n){return isOp(n)||isDp(n)}
@@ -1451,8 +1470,8 @@ function render(){
   var hb=document.getElementById('hmBig'), hs=document.getElementById('hmS');
   hb.style.gridColumn=h[0]?'':'span 2';
   if(h[0]){var f0=F(h[0]);hb.innerHTML='<a class="hm-big" href="'+href(h[0])+'">'+(img(h[0])?'<img src="'+esc(img(h[0]))+'" alt="" loading="lazy">':'')+'<span class="sh2"></span><span class="tx"><span class="k">'+esc(F(h[0],'etiqueta')||(L==='en'?'IN SEASON':'DE TEMPORADA'))+'</span><b>'+esc(f0.titulo)+'</b></span>'+(h[0].foto_mm!==false?'<span class="wm">MIAMI MAGIC</span>':'')+'</a>';
-    var hr=h.slice(1,13),hpN=Math.max(1,Math.ceil(hr.length/2));ST.hmP=Math.min(ST.hmP||0,hpN-1);
-    hs.innerHTML=hr.map(function(n,i){return '<a'+(Math.floor(i/2)===ST.hmP?' class="on"':'')+' href="'+href(n)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'<span><span class="k">'+esc(F(n,'etiqueta')||'HAMACA MOOD')+'</span><b class="hl">'+esc(F(n,'titulo'))+'</b></span></a>'}).join('')+(hpN>1?'<div class="hm-pg"><button type="button" data-d="-1" aria-label="'+(L==='en'?'Previous':'Anteriores')+'"'+(ST.hmP===0?' disabled':'')+'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5l5-5 5 5"/></svg></button><span>'+(ST.hmP+1)+' / '+hpN+'</span><button type="button" data-d="1" aria-label="'+(L==='en'?'Next':'Siguientes')+'"'+(ST.hmP>=hpN-1?' disabled':'')+'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5l5 5 5-5"/></svg></button></div>':'');
+    var hPP=(window.innerWidth>1020?3:2),hr=h.slice(1,13),hpN=Math.max(1,Math.ceil(hr.length/hPP));ST.hmP=Math.min(ST.hmP||0,hpN-1);
+    hs.innerHTML=hr.map(function(n,i){return '<a'+(Math.floor(i/hPP)===ST.hmP?' class="on"':'')+' href="'+href(n)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'<span><span class="k">'+esc(F(n,'etiqueta')||'HAMACA MOOD')+'</span><b class="hl">'+esc(F(n,'titulo'))+'</b></span></a>'}).join('')+(hpN>1?'<div class="hm-pg"><button type="button" data-d="-1" aria-label="'+(L==='en'?'Previous':'Anteriores')+'"'+(ST.hmP===0?' disabled':'')+'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5l5-5 5 5"/></svg></button><span>'+(ST.hmP+1)+' / '+hpN+'</span><button type="button" data-d="1" aria-label="'+(L==='en'?'Next':'Siguientes')+'"'+(ST.hmP>=hpN-1?' disabled':'')+'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5.5l5 5 5-5"/></svg></button></div>':'');
   } else {hb.innerHTML='<div class="empty" style="height:100%;display:flex;flex-direction:column;justify-content:center"><b>'+t('vacioT')+'</b>'+t('vacioH')+'</div>';hs.innerHTML='';}
   document.getElementById('hmMore').style.display=h.length>3?'':'none';
   // el muelle
@@ -1571,6 +1590,7 @@ function spSync(){var c=document.getElementById('spCond'),d=document.getElementB
 function renderSp(lead,rest){
   var hm=ST.hamaca,dk=ST.muelle,cc=ST.casa,ky=ST.ky,hi=ST.hi,op=ST.op,sd=ST.dp,on=hm||dk||cc||ky||hi||op||sd,en=L==='en',b=document.body,mas=document.getElementById('mas');
   b.classList.toggle('sp',!!on);b.classList.toggle('sp-hm',!!hm);b.classList.toggle('sp-dk',!!dk);b.classList.toggle('sp-cc',!!cc);b.classList.toggle('sp-ky',!!ky);b.classList.toggle('sp-hi',!!hi);b.classList.toggle('sp-op',!!op);b.classList.toggle('sp-dp',!!sd);
+  (function(){try{var ag=document.getElementById('ag'),ot=document.getElementById('otros');if(!ag||!ot)return;if(!window.AGHOME){window.AGHOME=document.createComment('ag-home');ag.parentNode.insertBefore(window.AGHOME,ag)}if(on){if(ot.nextElementSibling!==ag)ot.parentNode.insertBefore(ag,ot.nextSibling)}else if(window.AGHOME.nextSibling!==ag){window.AGHOME.parentNode.insertBefore(ag,window.AGHOME.nextSibling)}}catch(x){}})();
   if(!on){mas.className='grid4';return}
   var nm=hm?'HAMACA MOOD':cc?'CASA & COAST':op?(en?'OPINION':'OPINIÓN'):sd?(en?'SPORTS':'DEPORTES'):hi?(en?'MIAMI, BACK THEN':'MIAMI DE ANTES'):ky?(en?'THE KEYS':'LOS CAYOS'):(en?'THE DOCK':'EL MUELLE'),k=function(n){return '<span class="sp-k">'+esc(F(n,'etiqueta')||nm)+'</span>'},rd=function(n){return '<a class="lkl" href="'+href(n)+'">'+(en?'READ MORE':'LEER MÁS')+' →</a>'};
   var tot=(lead?1:0)+rest.length;
@@ -1591,7 +1611,9 @@ function renderSp(lead,rest){
     st++}
   mas.className='sp-m';mas.style.display=r.length?'':'none';mas.innerHTML=h;
   var g=otros(),mi=(g.filter(function(x){return x[0]==='miami'})[0]||[0,[]])[1],ky=(g.filter(function(x){return x[0]==='cayos'})[0]||[0,[]])[1];
-  document.getElementById('otros').innerHTML=(mi.length||ky.length)?'<h3 class="sp-also">'+(en?'Also in Miami Magic News':'También en Miami Magic News')+'</h3><div class="duo'+(mi.length&&ky.length?'':' one')+'">'+colB('MIAMI','mi',mi,'miami')+colB(en?'THE KEYS':'LOS CAYOS','ky',ky,'cayos')+'</div>':'';
+  var lu=(DATA.notas||[]).filter(function(n){return (n.destacada||n.ultima)&&VIG(n)&&n!==lead&&rest.indexOf(n)<0&&img(n)}).sort(function(x,y){return (y.destacada?1:0)-(x.destacada?1:0)||(x.ultima||99)-(y.ultima||99)}).slice(0,4);
+  document.getElementById('otros').innerHTML=lu.length?'<div class="sh"><h3>'+(en?'LATEST':'LO ÚLTIMO')+'</h3><button class="vt" type="button" id="luAll">'+(en?'ALL THE NEWS →':'TODO NEWS →')+'</button></div><div class="grid4">'+lu.map(card).join('')+'</div>':'';
+  var la=document.getElementById('luAll');if(la)la.onclick=function(){location.href=(en?'/news':'/noticias')+(Q.get('src')?'?src='+encodeURIComponent(Q.get('src'))+(Q.get('app')?'&app='+encodeURIComponent(Q.get('app')):''):'')};
   spSync();
 }
 (function(){var a=renderDk,c=renderCifras;renderDk=function(){a.apply(this,arguments);spSync()};renderCifras=function(){c.apply(this,arguments);spSync()}})();
@@ -1729,7 +1751,7 @@ function agList(){
 }
 function renderAg(){
   var box=document.getElementById('ag');if(!box)return;
-  var en=L==='en',show=AGD&&!SEC();
+  var en=L==='en',show=!!AGD;
   box.style.display=show?'':'none';if(!show)return;
   var DW=en?['SUN','MON','TUE','WED','THU','FRI','SAT']:['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'],MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
   document.getElementById('agT').textContent=en?'What’s On':'Agenda';var ab=document.getElementById('agBack');if(ab)ab.textContent=en?'← ALL NEWS':'← TODO NEWS';
@@ -1749,6 +1771,12 @@ function renderAg(){
     var mo=lng?MO[o.a.getMonth()]:multi&&o.a>t0&&!same?MO[o.a.getMonth()]+'–'+MO[o.b.getMonth()]:MO[(multi&&o.a<=t0?o.b:o.a).getMonth()];
     var ky=e.scope==='keys'||e.zone==='keys',ty=(en?e.type:(e.type_es||e.type))||'',ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,''),pr=(en?e.price:(e.price_es||e.price))||'';
     return '<a class="ag-r'+(ky?' ky':'')+'" data-ev="'+esc(e.id)+'" href="/noticias?ev='+encodeURIComponent(e.id)+'"><span class="ag-d"><i'+(dw.length>5?' class="w"':'')+'>'+esc(dw)+'</i><b'+(String(dn).length>2?' class="rg"':'')+'>'+esc(dn)+'</b><u>'+esc(mo)+'</u></span><span class="ag-x"><span class="k">'+(ky&&AGS.tab!=='keys'?'<em>'+(en?'THE KEYS':'LOS CAYOS')+'</em> · ':'')+esc(ty.toUpperCase())+'</span><h4>'+esc(en?e.name:(e.name_es||e.name))+'</h4><p>'+esc(ve)+(tm?' · <b>'+esc(tm)+'</b>':'')+(pr&&!/^\$+$/.test(pr)&&!/enlace|link/i.test(pr)?' · '+esc(pr):'')+'</p></span></a>'}).join(''):'<p class="ag-e">'+(en?'Nothing on the calendar for these days yet.':'Todavía no hay nada en el calendario para estos días.')+'</p>';
+  (function(){var c=document.getElementById('agCol');if(!c)return;var sv=[AGS.tab,AGS.day,AGS.cnt];AGS.tab='sem';AGS.day=-1;AGS.cnt=1;var wk=agList();AGS.tab=sv[0];AGS.day=sv[1];AGS.cnt=sv[2];
+    var seen={},pk=[],add=function(o){var f=o.e.photo;if(!f||seen[f]||pk.length>=5)return;seen[f]=1;pk.push(o)};
+    var kk=wk.filter(function(o){return o.e.scope==='keys'||o.e.zone==='keys'});wk.filter(function(o){return !(o.e.scope==='keys'||o.e.zone==='keys')}).slice(0,40).forEach(function(o){if(pk.length<4)add(o)});kk.forEach(function(o){if(pk.length<5)add(o)});wk.forEach(add);
+    if(pk.length<3){c.innerHTML='';c.style.display='none';return}
+    var rot=[-2.2,1.6,-1.2,2,-1.6];c.style.display='';
+    c.innerHTML=pk.map(function(o,i){var e=o.e,ky=e.scope==='keys'||e.zone==='keys';return '<a class="ag-ct'+(ky?' ky':'')+'" tabindex="-1" data-ev="'+esc(e.id)+'" href="/noticias?ev='+encodeURIComponent(e.id)+'" style="--r:'+rot[i%5]+'deg"><img src="'+esc(ptF(e.photo))+'" alt="" loading="lazy"><span>'+esc(en?e.name:(e.name_es||e.name))+'</span></a>'}).join('')})();
   var mb=document.getElementById('agMb');mb.style.display=li.length>AGS.n?'':'none';mb.textContent=(en?'MORE':'MÁS')+' ('+(li.length-AGS.n)+')';
 
 }
@@ -1780,6 +1808,7 @@ document.getElementById('evsX').onclick=evClose;
 document.getElementById('evs').addEventListener('click',function(e){if(e.target===this)evClose()});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')evClose()});
 document.getElementById('agL').addEventListener('click',function(e){var a=e.target.closest('.ag-r');if(!a||!a.dataset.ev)return;if(evOpen(a.dataset.ev))e.preventDefault()});
+document.getElementById('agCol').addEventListener('click',function(e){var a=e.target.closest('.ag-ct');if(!a||!a.dataset.ev)return;if(evOpen(a.dataset.ev))e.preventDefault()});
 document.querySelector('.ag-tabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;AGS.tab=b.dataset.ag;AGS.n=6;renderAg()});
 document.getElementById('agMb').onclick=function(){AGS.n+=6;renderAg()};
 document.getElementById('agDays').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;AGS.day=+b.dataset.d;AGS.n=6;renderAg()});

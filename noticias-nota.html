@@ -340,6 +340,7 @@ function render(){
      .then(function(r){if(!r.ok&&r.status!==409)throw 0;ok.textContent=t('nlOk');document.getElementById('nlF').style.display='none'}).catch(function(){ok.textContent=t('opErr')})};
 }
 var ALL=[],EVD=null,SUG=[];
+document.addEventListener('click',function(e){try{var a=e.target.closest&&e.target.closest('a[href^="/?item="]');if(a&&a.getAttribute('href').indexOf('back=')<0)a.setAttribute('href',a.getAttribute('href')+'&back=news')}catch(x){}},true);
 function hoy(){try{return HOYNY()}catch(e){return new Date().toISOString().slice(0,10)}}
 function pub(n){return n&&n.id&&!n.programada&&(DEMO||!n.fecha||n.fecha<=hoy())}
 function isCCn(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle}
