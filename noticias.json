@@ -109,7 +109,8 @@
           "The Hurricanes play their last regular-season game on Saturday, Nov. 28, at noon: they host Boston College at Hard Rock Stadium, on Senior Day, according to the [Sports Illustrated](https://www.si.com/college/miami/football/how-to-watch-no-4-miami-regular-season-finale-against-boston-college) preview. Miami comes in 10-1, unbeaten in eight ACC games, and seventh in the [College Football Playoff ranking](https://www.si.com/college/miami/football/where-miami-ranks-in-the-cfp-rankings-ahead-of-regular-season-finale-playoff-outlook).",
           "The visitor needs the game more than the host. Boston College is 5-6 and a win would make it bowl eligible; Miami, meanwhile, already has its place in the conference championship game, on Saturday, Dec. 5, in Charlotte, against Wake Forest, which it beat 33-20 on Sept. 18. The Hurricanes' only loss was 31-24 at Notre Dame on Nov. 7; they then beat Duke and Virginia Tech."
         ]
-      }
+      },
+      "ultima": 8
     },
     {
       "id": "dolphins-jets-hard-rock-29-noviembre-previa",
@@ -168,7 +169,8 @@
           "The Dolphins return home on Sunday the 29th, at 1:00 p.m., to face the Jets, the opponent in their only win of the year: 28-25 on Oct. 25 in New Jersey, as the [team schedule](https://www.miamidolphins.com/schedule/) shows. Since then they have lost four straight, to the Patriots, Lions, Colts and Bills, and sit 1-9, at the bottom of the AFC East, according to the [NFL standings](https://www.nfl.com/standings/).",
           "At Hard Rock Stadium, Miami has not won this season: it fell to the Chiefs, Bengals, Patriots and Lions. The Jets arrive 3-8, third in the division. The Dolphins' last game, the 26-9 loss in Buffalo without a single touchdown, is in [this story](https://miamimagicapp.com/news/dolphins-bills-26-9-buffalo)."
         ]
-      }
+      },
+      "ultima": 9
     },
     {
       "id": "black-friday-horarios-malls-tiendas-miami-27-noviembre",
@@ -242,7 +244,9 @@
         ]
       },
       "actualizada": "2026-11-26T19:17:32-05:00",
-      "ultima": 5
+      "ultima": 5,
+      "foto_fit": "contain",
+      "foto_bg": "#0A0F1A"
     },
     {
       "id": "heat-76ers-panthers-ottawa-25-noviembre",
@@ -298,7 +302,7 @@
           "Inter Miami also plays on Friday night, the 27th. It lost the first game 3-0 to Columbus and needs a win to force a third. The details are in [our game story](https://miamimagicapp.com/news/inter-miami-playoffs-nu-stadium)."
         ]
       },
-      "ultima": 10
+      "ultima": 14
     },
     {
       "id": "fedex-md-11-se-sale-pista-26r-mia-25-noviembre",
@@ -468,7 +472,7 @@
       "foto_alt": "Gráfico de Miami Magic sobre una vista aérea de Brickell Key y la bahía: 15 estrellas Michelin en Miami-Dade, 1 en Broward y primera vez de Los Cayos en la guía",
       "foto_pie": "Gráfico de Miami Magic.",
       "foto_pie_en": "Graphic by Miami Magic.",
-      "ultima": 9,
+      "ultima": 11,
       "foto_mm": false
     },
     {
@@ -822,7 +826,7 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-23T12:55:00-05:00",
-      "ultima": 10,
+      "ultima": 12,
       "arriba": 3,
       "es": {
         "etiqueta": "HISTORIA",
@@ -1449,7 +1453,7 @@
           "The Biltmore was designated a National Historic Landmark in 1996. The tower still rises above the trees of Coral Gables, and from the air you can still read what Merrick meant it to be: a center for a city that did not yet exist."
         ]
       },
-      "ultima": 11,
+      "ultima": 13,
       "arriba": 6
     },
     {
@@ -4639,7 +4643,7 @@
       "actualizada": "2026-11-27T08:38:22-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 11,
+      "ultima": 15,
       "desarrollo": false
     },
     {
@@ -5704,7 +5708,8 @@
           "u": "https://keywesthistoricseaport.com/blog/2026-bight-before-christmas-festivities-at-key-west-historic-seaport-are-just-around-the-corner/"
         }
       ],
-      "actualizada": "2026-11-26T09:17:18-05:00"
+      "actualizada": "2026-11-26T09:17:18-05:00",
+      "ultima": 10
     },
     {
       "id": "seven-mile-bridge-rehabilitacion",
@@ -8870,7 +8875,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T09:16:03-05:00",
+  "updated_at": "2026-11-27T09:31:34-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
