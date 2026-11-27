@@ -158,6 +158,16 @@ h1{font-family:var(--pf);font-weight:900;font-size:52px;line-height:1.06;letter-
 .mas .sp.big .sp-in{min-height:150px;padding:20px 22px 22px}
 .mas .sp.big .sp-c u{font-size:40px}
 .mas .sp.big b{font-size:23px}
+.col.wide{max-width:980px}
+.mas .sg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 28px;margin-top:26px}
+.mas a.sgc{display:block;color:var(--ink)}
+.mas a.sgc:hover{text-decoration:none}
+.mas a.sgc:hover b{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-color:rgba(201,150,60,.85)}
+.mas .sgc .ph{display:block;aspect-ratio:3/2;border-radius:10px;overflow:hidden;background:var(--card);margin-bottom:10px}
+.mas .sgc .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.mas .sgc b{font-size:20px;line-height:1.22}
+.mas .sgc p{font-size:16px;line-height:1.45;color:var(--mut);margin-top:5px}
+@media(max-width:700px){.mas .sg{gap:22px 14px}.mas .sgc b{font-size:16.5px}.mas .sgc p{display:none}.mas .sgc .eb{font-size:14px}}
 .sp-i{font-size:17px;line-height:1.5;color:var(--mut);margin-top:12px}
 .mas a.go{display:inline-block;margin-top:14px;font-family:var(--bb);font-size:17px;letter-spacing:.14em;color:var(--coral-d)}
 @media(max-width:640px){.mas a.mi{grid-template-columns:96px minmax(0,1fr);gap:12px}.mas .th{width:96px}.mas b{font-size:17px}}
@@ -271,7 +281,7 @@ function render(){
   var m=document.getElementById('main');
   if(!N){m.innerHTML='<div class="nf"><b>'+t('nf')+'</b><p>'+t('nf2')+'</p><p style="margin-top:18px"><a href="/noticias">'+t('volver')+'</a></p></div>';return}
   if(SM&&inS(N)&&sHub()){var en0=L==='en',io=en0?ESP.intro_en:ESP.intro_es;document.title=(en0?ESP.c_en:ESP.c_es)+' · Miami Magic News';
-    m.innerHTML='<article><div class="col"><div class="crumb"><a href="'+(en0?'/news':'/noticias')+'">MIAMI MAGIC NEWS</a> · <span class="sc">'+esc(sName())+'</span></div>'+(io?'<p class="sp-i">'+esc(io)+'</p>':'')+'<section class="mas" id="mas"></section></div></article>';renderMas();return}
+    m.innerHTML='<article><div class="col wide"><div class="crumb"><a href="'+(en0?'/news':'/noticias')+'">MIAMI MAGIC NEWS</a> · <span class="sc">'+esc(sName())+'</span></div>'+(io?'<p class="sp-i">'+esc(io)+'</p>':'')+'<section class="mas" id="mas"></section></div></article>';renderMas();return}
   var ti=F('titulo'),ba=F('bajada')||'',cu=F('cuerpo')||[],to=F('toca')||[],w=cu.join(' ').split(/\s+/).length,mn=Math.max(2,Math.round(w/200));
   document.title=ti+' · Miami Magic News';
   meta('description',ba);meta('og:title',ti,1);meta('og:description',ba,1);meta('og:url',url(),1);if(img())meta('og:image',(/^https?:/.test(img())?'':'https://www.miamimagicapp.com')+img(),1);
@@ -352,6 +362,7 @@ function sCard(big){var hb=sHub();if(!hb)return '';var en=L==='en',f=hb[L]||hb.e
   var c=dd>0?'<u>'+dd+'</u><i>'+(en?(dd===1?'DAY TO GO':'DAYS TO GO'):(dd===1?'DÍA FALTA':'DÍAS FALTAN'))+'</i>':(q>1?'<u>'+q+'</u><i>'+(en?'DAYS LEFT':'DÍAS QUEDAN')+'</i>':'<u>1</u><i>'+(en?'LAST DAY':'ÚLTIMO DÍA')+'</i>');
   var im=ESP.foto?(/^https?:|^\//.test(ESP.foto)?ESP.foto:'/'+ESP.foto):nImg(hb);
   return '<a class="sp'+(big?' big':'')+'" href="'+(big?nHref(hb):sHref())+'">'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy"'+(ESP.pos?' style="object-position:'+esc(ESP.pos)+'"':'')+'>':'')+'<span class="sp-in"><span class="sp-c">'+c+'</span><span class="sp-k">'+esc(en?ESP.k_en:ESP.k_es)+'</span><b>'+esc(f.titulo||'')+'</b>'+(big?'<span class="sp-go">'+(en?'OPEN THE FULL GUIDE →':'ABRIR LA GUÍA COMPLETA →')+'</span>':'')+'</span></a>'}
+function sGrid(n){var f=n[L]||n.es||{},im=nImg(n);return '<a class="sgc" href="'+nHref(n)+'"><span class="ph">'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy"'+(n.foto_pos?' style="object-position:'+esc(n.foto_pos)+'"':'')+'>':'')+'</span><span class="eb">'+esc(sName()+(n.tema==='historia'?(L==='en'?' · HISTORY':' · HISTORIA'):''))+'</span><b>'+esc(f.titulo||'')+'</b>'+(f.bajada?'<p>'+esc(f.bajada)+'</p>':'')+'</a>'}
 function renderMas(){
   var box=document.getElementById('mas');if(!box||!N)return;
   var pool=ALL.filter(function(n){return pub(n)&&n.id!==N.id}),k=secOf(N),used={};
@@ -361,7 +372,7 @@ function renderMas(){
   var h='';
   var S=inS(N)&&sHub();
   if(S){var by={};ALL.forEach(function(n){by[n.id]=n});var ot=(ESP.notas||[]).map(function(x){return by[x.id]}).filter(function(n){return n&&pub(n)&&n.id!==N.id});
-    h+='<div class="mg" id="serie">'+(SM?'':'<h5>'+esc(sName())+'</h5>')+(SM||N.id!==ESP.id?sCard(SM):'')+ot.map(miRow).join('')+'</div>';}
+    h+='<div class="mg" id="serie">'+(SM?'':'<h5>'+esc(sName())+'</h5>')+(SM||N.id!==ESP.id?sCard(SM):'')+(SM?'<div class="sg">'+ot.map(sGrid).join('')+'</div>':ot.map(miRow).join(''))+'</div>';}
   if(!S&&rel.length)h+='<div class="mg"><h5>'+t('mas')+' '+secName(k)+'</h5>'+rel.map(miRow).join('')+'</div>';
   if(!S&&ult.length)h+='<div class="mg"><h5>'+t('ult')+'</h5>'+ult.map(miRow).join('')+'</div>';
   if(ev.length)h+='<div class="mg"><h5>'+t('sem')+'</h5>'+ev.map(function(o){var e=o.e,on=o.a<t0,d=on?o.b:o.a;var ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,'');
