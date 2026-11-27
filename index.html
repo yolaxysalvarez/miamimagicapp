@@ -22538,6 +22538,9 @@ function kyRenderSimilar(obj){
 #mmDoor .dr-card{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;background:#fff;border-radius:16px;padding:10px 14px 10px 10px;box-shadow:0 1px 0 rgba(201,150,46,.25),0 10px 24px rgba(14,27,48,.09);min-height:128px;box-sizing:border-box;transition:opacity .42s ease,transform .42s ease}
 #mmDoor .dr-card.out{opacity:0;transform:translateY(8px)}
 #mmDoor .dr-ph{width:96px;height:96px;border-radius:11px;background:#EADCC8 center/cover no-repeat;display:block}
+.dr-ph.fit{position:relative;overflow:hidden;background:#0A0F1A}
+.dr-ph.fit::before{content:"";position:absolute;inset:-14px;background:var(--im) center/cover no-repeat;filter:blur(12px) brightness(.85)}
+.dr-ph.fit::after{content:"";position:absolute;inset:0;background:var(--im) center/contain no-repeat}
 #mmDoor .dr-tx{display:block;min-width:0}
 #mmDoor .dr-k{display:block;font:400 .86rem 'Bebas Neue',sans-serif;letter-spacing:.16em;color:#C4331C;line-height:1.1}
 #mmDoor .dr-k.ky{color:#0B7F71}
@@ -22630,7 +22633,7 @@ function kyRenderSimilar(obj){
   function tt(n){var es=ES();return (es?(n.es&&n.es.titulo):(n.en&&n.en.titulo))||(n.es&&n.es.titulo)||''}
   function pick(all){
     var es=ES(),out=[],used={};
-    function add(n,k,ky){if(!n||used[n.id]||!n.foto)return;used[n.id]=1;out.push({id:n.id,k:k,ky:!!ky,t:tt(n),img:window.mmNewsImg?window.mmNewsImg(n):''})}
+    function add(n,k,ky){if(!n||used[n.id]||!n.foto)return;used[n.id]=1;out.push({id:n.id,k:k,ky:!!ky,t:tt(n),fit:n.foto_fit==='contain',img:window.mmNewsImg?window.mmNewsImg(n):''})}
     var srt=all.slice().sort(function(a,b){return (b.actualizada||b.fecha||'').localeCompare(a.actualizada||a.fecha||'')});
     function first(f,any){for(var i=0;i<srt.length;i++)if(f(srt[i])&&!used[srt[i].id]&&(any||fresh(srt[i])))return srt[i];return null}
     var cc=function(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle};
@@ -22643,7 +22646,7 @@ function kyRenderSimilar(obj){
   }
   function card(it){
     var es=ES();
-    return '<a class="dr-card out" href="#" data-news="'+esc(it.id)+'"><span class="dr-ph" style="background-image:url(&quot;'+esc(it.img)+'&quot;)"></span><span class="dr-tx"><span class="dr-k'+(it.ky?' ky':'')+'">'+esc(it.k)+'</span><span class="dr-t">'+esc(it.t)+'</span><span class="dr-go">'+(es?'LEER EN NEWS':'READ IN NEWS')+' →</span></span></a>';
+    return '<a class="dr-card out" href="#" data-news="'+esc(it.id)+'"><span class="dr-ph'+(it.fit?' fit':'')+'" style="'+(it.fit?'--im:':'background-image:')+'url(&quot;'+esc(it.img)+'&quot;)"></span><span class="dr-tx"><span class="dr-k'+(it.ky?' ky':'')+'">'+esc(it.k)+'</span><span class="dr-t">'+esc(it.t)+'</span><span class="dr-go">'+(es?'LEER EN NEWS':'READ IN NEWS')+' →</span></span></a>';
   }
   function show(i,instant){
     var st=document.getElementById('drStage'),d=document.getElementById('drDots');if(!st||!items.length)return;
