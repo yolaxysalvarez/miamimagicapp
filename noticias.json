@@ -4290,7 +4290,7 @@
           "u": "https://miamibeachpolo.com/"
         }
       ],
-      "desarrollo": true,
+      "desarrollo": false,
       "actualizada": "2026-11-16T22:00:00-05:00",
       "vence": "2026-11-15"
     },
@@ -8692,42 +8692,40 @@
       "foto_alt": "Avión comercial en vuelo",
       "foto_pie": "Imagen de archivo.",
       "foto_pie_en": "File photo.",
-      "desarrollo": true,
-      "actualizada": "2026-11-15T01:25:00-05:00",
+      "desarrollo": false,
+      "actualizada": "2026-11-27T09:12:38-05:00",
       "es": {
-        "etiqueta": "ÚLTIMA HORA",
-        "titulo": "Un avión de UPS y uno de Copa chocan en una calle de rodaje del aeropuerto de Miami",
-        "bajada": "La punta del ala del Copa que llegaba de Panamá golpeó la nariz del carguero que salía hacia Bogotá. Los 166 pasajeros ya bajaron, dos personas recibieron atención por heridas leves y la FAA investiga.",
+        "etiqueta": "EN LA CALLE",
+        "titulo": "Un avión de UPS y uno de Copa chocaron en una calle de rodaje de MIA",
+        "bajada": "Ocurrió el sábado 14 de noviembre. No hubo heridos graves y la FAA abrió una investigación.",
         "toca": [
-          "El aeropuerto informó que los vuelos se desviaron por otras calles de rodaje y que las operaciones no se vieron afectadas.",
-          "Si vuelas desde MIA, confirma tu vuelo con la aerolínea antes de salir: siguen los retrasos por la parada nacional del viernes.",
-          "Estado de vuelos: [página oficial de MIA](https://www.miami-airport.com/flight-info.asp)."
+          "Dos personas recibieron atención por heridas leves y ninguna necesitó hospital, según el aeropuerto.",
+          "Las operaciones de MIA no se vieron afectadas, informó el aeropuerto: los vuelos se desviaron por otras calles de rodaje.",
+          "La FAA investiga; no ha informado conclusiones."
         ],
         "cuerpo": [
-          "## Actualización · 1:25 AM",
-          "Los 166 pasajeros y los seis tripulantes del vuelo de Copa ya bajaron del avión, que fue remolcado de vuelta a la terminal, informó la aerolínea. «La seguridad de nuestros pasajeros y tripulantes es nuestra máxima prioridad, y cooperaremos con las autoridades en la investigación», añadió Copa, que lamentó las molestias que el incidente pueda causar a sus clientes.",
-          "Un Boeing 767 de carga de UPS y un Boeing 737 de Copa Airlines se tocaron alrededor de las 9:15 PM del sábado en el cruce de dos calles de rodaje del Aeropuerto Internacional de Miami, según el director de comunicaciones de MIA, Greg Chin.",
+          "Un Boeing 767 de carga de UPS y un Boeing 737 de Copa Airlines se tocaron alrededor de las 9:15 p.m. del sábado 14 de noviembre en el cruce de dos calles de rodaje del Aeropuerto Internacional de Miami, según el director de comunicaciones de MIA, Greg Chin.",
           "De acuerdo con la FAA, la punta del ala del avión de Copa, que rodaba hacia su puerta tras llegar de Ciudad de Panamá con el vuelo 427, golpeó la nariz del carguero de UPS, que se dirigía a despegar hacia Bogotá con el vuelo 358. La agencia afirma que los controladores habían indicado a la tripulación de UPS que cediera el paso al Copa, y anunció que investiga lo ocurrido.",
-          "Bomberos de Miami-Dade atendieron en el lugar a dos personas con heridas leves, que no necesitaron traslado al hospital, según el aeropuerto. UPS aseguró en un comunicado que su tripulación está a salvo y que colaborará con las autoridades.",
-          "El choque llega un día después de la parada nacional de la FAA, y MIA todavía no recupera su ritmo. A la 1:15 AM, el [tablero oficial de vuelos del aeropuerto](https://webvids.miami-airport.com/webfids/) mostraba 27 vuelos con una hora nueva más tarde de la programada (20 llegadas y 7 salidas) y 25 cancelados (15 llegadas y 10 salidas), entre los de la noche del sábado y la mañana del domingo."
+          "Los 166 pasajeros y los seis tripulantes del vuelo de Copa bajaron del avión, que fue remolcado de vuelta a la terminal, informó la aerolínea. «La seguridad de nuestros pasajeros y tripulantes es nuestra máxima prioridad, y cooperaremos con las autoridades en la investigación», añadió Copa.",
+          "Bomberos de Miami-Dade atendieron en el lugar a dos personas con heridas leves, que no necesitaron traslado al hospital, según el aeropuerto. UPS aseguró en un comunicado que su tripulación estaba a salvo y que colaboraría con las autoridades.",
+          "El choque llegó un día después de la parada nacional de la FAA del viernes 13. A la 1:15 a.m. del domingo 15, el [tablero oficial de vuelos del aeropuerto](https://webvids.miami-airport.com/webfids/) mostraba 27 vuelos con una hora nueva más tarde de la programada y 25 cancelados."
         ]
       },
       "en": {
-        "etiqueta": "BREAKING",
-        "titulo": "UPS and Copa planes collide on a taxiway at Miami International Airport",
-        "bajada": "The wingtip of the Copa jet arriving from Panama struck the nose of the cargo plane heading to Bogotá. All 166 passengers are off the plane, two people were treated for minor injuries, and the FAA is investigating.",
+        "etiqueta": "ON THE STREET",
+        "titulo": "UPS and Copa planes collided on a taxiway at MIA",
+        "bajada": "It happened on Saturday, Nov. 14. No one was seriously hurt and the FAA opened an investigation.",
         "toca": [
-          "The airport said flights were routed to other taxiways and operations were not affected.",
-          "Flying out of MIA? Confirm your flight with your airline before you leave: delays from Friday's nationwide ground stop continue.",
-          "Flight status: [MIA's official page](https://www.miami-airport.com/flight-info.asp)."
+          "Two people were treated for minor injuries and neither needed a hospital, the airport said.",
+          "MIA operations were not affected, the airport said: flights were routed to other taxiways.",
+          "The FAA is investigating; it has not reported conclusions."
         ],
         "cuerpo": [
-          "## Update · 1:25 a.m.",
-          "All 166 passengers and six crew members of the Copa flight have disembarked, and the plane was towed back to the terminal, the airline said. \"The safety of our passengers and crew is our top priority, and we will cooperate with authorities as they investigate,\" Copa added, saying it regrets the disruption the incident may cause its passengers.",
-          "A UPS Boeing 767 cargo plane and a Copa Airlines Boeing 737 made contact at about 9:15 p.m. Saturday at the intersection of two taxiways at Miami International Airport, according to MIA communications director Greg Chin.",
-          "According to the FAA, the wingtip of the Copa jet, taxiing to its gate after arriving from Panama City as Flight 427, struck the nose of the UPS plane, which was taxiing for departure to Bogotá as Flight 358. The agency says controllers had instructed the UPS crew to give way to the Copa flight, and it is investigating.",
-          "Miami-Dade Fire Rescue treated two people at the scene for minor injuries; neither needed hospital transport, the airport said. UPS said in a statement that its crew is safe and that it will work with authorities.",
-          "The collision comes a day after the FAA's nationwide ground stop, and MIA has yet to get back to its normal pace. At 1:15 a.m., the [airport's official flight board](https://webvids.miami-airport.com/webfids/) showed 27 flights rescheduled to a later time (20 arrivals and 7 departures) and 25 canceled (15 arrivals and 10 departures), among those from Saturday night through Sunday morning."
+          "A UPS Boeing 767 cargo plane and a Copa Airlines Boeing 737 made contact at about 9:15 p.m. on Saturday, Nov. 14, at the intersection of two taxiways at Miami International Airport, according to MIA communications director Greg Chin.",
+          "According to the FAA, the wingtip of the Copa jet, taxiing to its gate after arriving from Panama City as Flight 427, struck the nose of the UPS plane, which was taxiing for departure to Bogotá as Flight 358. The agency says controllers had instructed the UPS crew to give way to the Copa flight, and it announced an investigation.",
+          "All 166 passengers and six crew members of the Copa flight got off the plane, which was towed back to the terminal, the airline said. \"The safety of our passengers and crew is our top priority, and we will cooperate with authorities as they investigate,\" Copa added.",
+          "Miami-Dade Fire Rescue treated two people at the scene for minor injuries; neither needed hospital transport, the airport said. UPS said in a statement that its crew was safe and that it would work with authorities.",
+          "The collision came a day after the FAA's nationwide ground stop on Friday, Nov. 13. At 1:15 a.m. on Sunday, Nov. 15, the [airport's official flight board](https://webvids.miami-airport.com/webfids/) showed 27 flights rescheduled to a later time and 25 canceled."
         ]
       },
       "fuentes": [
@@ -8751,7 +8749,8 @@
           "n": "Copa Airlines · comunicado",
           "u": "https://www.copaair.com/"
         }
-      ]
+      ],
+      "vence": "2026-11-15"
     },
     {
       "id": "miami-book-fair-2026-abre-fiesta",
@@ -8871,7 +8870,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T09:10:11-05:00",
+  "updated_at": "2026-11-27T09:12:38-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
