@@ -55,6 +55,90 @@
   "videos": [],
   "notas": [
     {
+      "id": "semana-del-arte-donde-comer-miami-beach",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:32:03-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-12-06",
+      "serie": "artweek",
+      "foto": "mm-oceansocial-1.jpg",
+      "foto_alt": "Terraza del restaurante Ocean Social frente al mar, en el hotel Eden Roc",
+      "foto_pie": "Ocean Social, en el hotel Eden Roc de Mid-Beach.",
+      "foto_pie_en": "Ocean Social, at the Eden Roc hotel in Mid-Beach.",
+      "fuentes": [
+        {
+          "n": "Miami Magic · Restaurantes de la app",
+          "u": "https://www.miamimagicapp.com/"
+        },
+        {
+          "n": "Ciudad de Miami Beach · Art Week Free Transportation 2026",
+          "u": "https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "A LA MESA",
+        "titulo": "Semana del arte: dónde comer cerca de las ferias",
+        "bajada": "Once mesas de Miami Beach, ordenadas por lo cerca que quedan del centro de convenciones y de las rutas gratis.",
+        "toca": [
+          "A pie del centro de convenciones: CHŌ Funky Asian Bistro y Bodega Taqueria y Tequila.",
+          "Junto al muelle del taxi acuático, en Sunset Harbour: Pubbelly Sushi.",
+          "Reserva con tiempo: es una de las semanas más concurridas del año en la playa."
+        ],
+        "cuerpo": [
+          "Entre feria y feria hay que comer, y esa semana conviene tenerlo decidido antes de salir. Estos son los restaurantes de Miami Beach que están en la app de Miami Magic, agrupados por zona; cada nombre abre su ficha, con dirección y horario.",
+          "## A pie del centro de convenciones",
+          "- [CHŌ Funky Asian Bistro](https://miamimagicapp.com/?item=r29&type=rest), en el 1209 de la calle 17: cocina china, coreana y tailandesa, con dumplings y wok.",
+          "- [Bodega Taqueria y Tequila](https://miamimagicapp.com/?item=r59&type=rest), en el 1220 de la calle 16: tacos y margaritas de día, y un club detrás de una puerta escondida de noche.",
+          "## Junto al taxi acuático",
+          "- [Pubbelly Sushi](https://miamimagicapp.com/?item=r73&type=rest), en el 1424 de la calle 20, en Sunset Harbour: sushi latino-japonés del chef José Mendín, a unos pasos de Maurice Gibb Memorial Park.",
+          "## Mid-Beach, en la ruta del shuttle",
+          "- [Hakkasan](https://miamimagicapp.com/?item=r20&type=rest), en el Fontainebleau (4441 Collins Ave.): cocina cantonesa y dim sum.",
+          "- [Ocean Social](https://miamimagicapp.com/?item=r39&type=rest), en el Eden Roc (4525 Collins Ave.): cocina americana con vista al mar.",
+          "## Al sur, en South of Fifth",
+          "- [Joe's Stone Crab](https://miamimagicapp.com/?item=r02&type=rest), en el 11 de Washington Avenue: mariscos desde 1913, en plena temporada de cangrejo moro.",
+          "- [Stubborn Seed](https://miamimagicapp.com/?item=r04&type=rest), en el 101 de Washington Avenue: el menú degustación de Jeremy Ford, con estrella Michelin.",
+          "- [Carbone](https://miamimagicapp.com/?item=r07&type=rest), en el 49 de Collins Avenue: italoamericano, conocido por su rigatoni al vodka.",
+          "- [Azabu Miami Beach](https://miamimagicapp.com/?item=r21&type=rest) y [Lolo's Surf Cantina](https://miamimagicapp.com/?item=r60&type=rest), los dos en el 161 de Ocean Drive: omakase japonés el primero, tacos de pescado y ceviche el segundo.",
+          "- [Papi Steak](https://miamimagicapp.com/?item=r94&type=rest), en el 736 de la calle 1: carnes, con la cena convertida en espectáculo.",
+          "Las rutas gratis que conectan estas zonas están en [cómo moverse](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
+        ]
+      },
+      "en": {
+        "etiqueta": "AT THE TABLE",
+        "titulo": "Art week: where to eat near the fairs",
+        "bajada": "Eleven Miami Beach tables, sorted by how close they are to the convention center and the free routes.",
+        "toca": [
+          "Walking distance from the convention center: CHŌ Funky Asian Bistro and Bodega Taqueria y Tequila.",
+          "Next to the water taxi dock, in Sunset Harbour: Pubbelly Sushi.",
+          "Book ahead: it is one of the busiest weeks of the year on the beach."
+        ],
+        "cuerpo": [
+          "Between fairs you have to eat, and that week it pays to decide before heading out. These are the Miami Beach restaurants in the Miami Magic app, grouped by area; each name opens its listing, with address and hours.",
+          "## Walking distance from the convention center",
+          "- [CHŌ Funky Asian Bistro](https://miamimagicapp.com/?item=r29&type=rest), at 1209 17th Street: Chinese, Korean and Thai cooking, with dumplings and wok dishes.",
+          "- [Bodega Taqueria y Tequila](https://miamimagicapp.com/?item=r59&type=rest), at 1220 16th Street: tacos and margaritas by day, and a club behind a hidden door at night.",
+          "## Next to the water taxi",
+          "- [Pubbelly Sushi](https://miamimagicapp.com/?item=r73&type=rest), at 1424 20th Street, in Sunset Harbour: chef José Mendín's Latin-Japanese sushi, steps from Maurice Gibb Memorial Park.",
+          "## Mid-Beach, on the shuttle route",
+          "- [Hakkasan](https://miamimagicapp.com/?item=r20&type=rest), at the Fontainebleau (4441 Collins Ave.): Cantonese cooking and dim sum.",
+          "- [Ocean Social](https://miamimagicapp.com/?item=r39&type=rest), at the Eden Roc (4525 Collins Ave.): American cooking with an ocean view.",
+          "## To the south, in South of Fifth",
+          "- [Joe's Stone Crab](https://miamimagicapp.com/?item=r02&type=rest), at 11 Washington Avenue: seafood since 1913, in the middle of stone crab season.",
+          "- [Stubborn Seed](https://miamimagicapp.com/?item=r04&type=rest), at 101 Washington Avenue: Jeremy Ford's Michelin-starred tasting menu.",
+          "- [Carbone](https://miamimagicapp.com/?item=r07&type=rest), at 49 Collins Avenue: Italian-American, known for its rigatoni alla vodka.",
+          "- [Azabu Miami Beach](https://miamimagicapp.com/?item=r21&type=rest) and [Lolo's Surf Cantina](https://miamimagicapp.com/?item=r60&type=rest), both at 161 Ocean Drive: Japanese omakase at the first, fish tacos and ceviche at the second.",
+          "- [Papi Steak](https://miamimagicapp.com/?item=r94&type=rest), at 736 1st Street: steaks, with dinner turned into a show.",
+          "The free routes connecting these areas are in [how to get around](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
+        ]
+      }
+    },
+    {
       "id": "art-basel-miami-beach-historia-como-llego",
       "scope": "miami",
       "tema": "historia",
@@ -9463,7 +9547,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:31:10-05:00",
+  "updated_at": "2026-11-27T11:32:03-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
