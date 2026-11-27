@@ -8696,8 +8696,8 @@
       "actualizada": "2026-11-27T09:12:38-05:00",
       "es": {
         "etiqueta": "EN LA CALLE",
-        "titulo": "Un avión de UPS y uno de Copa chocaron en una calle de rodaje de MIA",
-        "bajada": "Ocurrió el sábado 14 de noviembre. No hubo heridos graves y la FAA abrió una investigación.",
+        "titulo": "Dos aviones chocaron en una calle de rodaje de MIA",
+        "bajada": "Fue el sábado 14 de noviembre, entre un carguero de UPS y un avión de Copa. No hubo heridos graves y la FAA investiga.",
         "toca": [
           "Dos personas recibieron atención por heridas leves y ninguna necesitó hospital, según el aeropuerto.",
           "Las operaciones de MIA no se vieron afectadas, informó el aeropuerto: los vuelos se desviaron por otras calles de rodaje.",
@@ -8713,8 +8713,8 @@
       },
       "en": {
         "etiqueta": "ON THE STREET",
-        "titulo": "UPS and Copa planes collided on a taxiway at MIA",
-        "bajada": "It happened on Saturday, Nov. 14. No one was seriously hurt and the FAA opened an investigation.",
+        "titulo": "Two planes collided on a taxiway at MIA",
+        "bajada": "It happened on Saturday, Nov. 14, between a UPS cargo plane and a Copa jet. No one was seriously hurt and the FAA is investigating.",
         "toca": [
           "Two people were treated for minor injuries and neither needed a hospital, the airport said.",
           "MIA operations were not affected, the airport said: flights were routed to other taxiways.",
@@ -8870,7 +8870,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T09:12:38-05:00",
+  "updated_at": "2026-11-27T09:16:03-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
