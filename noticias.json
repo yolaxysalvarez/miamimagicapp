@@ -175,7 +175,7 @@
       "scope": "miami",
       "tema": "bolsillo",
       "hamaca": false,
-      "destacada": false,
+      "destacada": true,
       "fecha": "2026-11-26",
       "publicada": "2026-11-26T11:39:34-05:00",
       "autor": "Yolaxys Alvarez",
@@ -298,7 +298,7 @@
           "Inter Miami also plays on Friday night, the 27th. It lost the first game 3-0 to Columbus and needs a win to force a third. The details are in [our game story](https://miamimagicapp.com/news/inter-miami-playoffs-nu-stadium)."
         ]
       },
-      "ultima": 8
+      "ultima": 10
     },
     {
       "id": "fedex-md-11-se-sale-pista-26r-mia-25-noviembre",
@@ -468,7 +468,7 @@
       "foto_alt": "Gráfico de Miami Magic sobre una vista aérea de Brickell Key y la bahía: 15 estrellas Michelin en Miami-Dade, 1 en Broward y primera vez de Los Cayos en la guía",
       "foto_pie": "Gráfico de Miami Magic.",
       "foto_pie_en": "Graphic by Miami Magic.",
-      "ultima": 7,
+      "ultima": 9,
       "foto_mm": false
     },
     {
@@ -560,7 +560,7 @@
       ],
       "desarrollo": true,
       "actualizada": "2026-11-27T07:32:10-05:00",
-      "vence": "2026-11-27",
+      "vence": "2026-11-28",
       "aviso_vence": false,
       "ultima": 1,
       "arriba": 1,
@@ -636,21 +636,21 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-27T08:25:27-05:00",
-      "ultima": 8,
+      "ultima": 7,
       "es": {
         "etiqueta": "EN LA CALLE",
         "titulo": "Viernes tras Thanksgiving: Metro normal y oficinas cerradas",
         "bajada": "Miami-Dade mantiene cerradas sus oficinas el viernes 27 y sus bibliotecas hasta el sábado 28; el transporte ya corre con servicio normal y la basura se recoge. En Los Cayos, el condado de Monroe corrió la recogida un día en buena parte de la ruta.",
         "toca": [
-          "Viernes 27: Metrobus, Metrorail y Metromover, con servicio normal. El jueves circularon con horario de domingo.",
-          "Miami-Dade: oficinas cerradas también el viernes 27; bibliotecas, hasta el sábado; la basura se recoge igual.",
-          "Los Cayos: de Stock Island a Seven Mile Bridge, la basura del jueves se recoge el viernes 27 y la del viernes, el sábado."
+          "Viernes 27: Metrobus, Metrorail y Metromover, con servicio normal. El jueves 26, horario de domingo.",
+          "Miami-Dade: oficinas cerradas también el viernes 27; bibliotecas, hasta el sábado 28; la basura se recoge igual.",
+          "Los Cayos: de Stock Island a Seven Mile Bridge, la basura del jueves se recoge el viernes 27 y la del viernes, el sábado 28."
         ],
         "cuerpo": [
-          "En Miami-Dade, las oficinas del condado cierran el jueves 26 y el viernes 27, según su [calendario de feriados](https://www.miamidade.gov/global/humanresources/holidays.page), y las bibliotecas públicas permanecen cerradas hasta el sábado 28, de acuerdo con el [calendario del sistema de bibliotecas](https://bookings.mdpls.org/holiday). Lo que no se detiene es el transporte: el condado indica que Metrobus, Metrorail y Metromover circularon el jueves con horario de domingo y el viernes 27 vuelven al servicio normal.",
-          "La basura tampoco cambia de día. De acuerdo con [Residuos Sólidos del condado](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), la recogida de basura y reciclaje sigue su calendario y los centros de basura y reciclaje abren en su horario regular. La excepción es el vertedero Medley, de WM, que cerró el jueves al mediodía y el viernes 27 abre normal. Para dudas por zona, el condado remite al 311.",
+          "En Miami-Dade, las oficinas del condado cierran el jueves 26 y el viernes 27, según su [calendario de feriados](https://www.miamidade.gov/global/humanresources/holidays.page), y las bibliotecas públicas permanecen cerradas hasta el sábado 28, de acuerdo con el [calendario del sistema de bibliotecas](https://bookings.mdpls.org/holiday). Lo que no se detiene es el transporte: el condado indica que Metrobus, Metrorail y Metromover circulan el jueves 26 con horario de domingo y el viernes 27 vuelven al servicio normal.",
+          "La basura tampoco cambia de día. De acuerdo con [Residuos Sólidos del condado](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), la recogida de basura y reciclaje sigue su calendario y los centros de basura y reciclaje abren en su horario regular. La excepción es el vertedero Medley, de WM, que cierra el jueves 26 al mediodía y el viernes 27 abre normal. Para dudas por zona, el condado remite al 311.",
           "## En Los Cayos",
-          "El condado de Monroe cierra sus oficinas el jueves y el viernes, según su [memo de feriados](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), y la recogida depende de quién la presta, de acuerdo con su [calendario de feriados](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). De Stock Island a Seven Mile Bridge, con Waste Management, no hay recogida el jueves: la de ese día pasa al viernes y la del viernes al sábado. En Marathon, hasta la milla 73, la basura del jueves se recoge el viernes y el reciclaje del jueves espera a la semana siguiente. Entre las millas 91 y 102, con Keys Sanitary Service, y en Ocean Reef, la ruta sigue normal.",
+          "El condado de Monroe cierra sus oficinas el jueves 26 y el viernes 27, según su [memo de feriados](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), y la recogida depende de quién la presta, de acuerdo con su [calendario de feriados](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). De Stock Island a Seven Mile Bridge, con Waste Management, no hay recogida el jueves 26: la de ese día pasa al viernes 27 y la del viernes, al sábado 28. En Marathon, hasta la milla 73, la basura del jueves 26 se recoge el viernes 27 y el reciclaje de ese jueves espera a la semana siguiente. Entre las millas 91 y 102, con Keys Sanitary Service, y en Ocean Reef, la ruta sigue normal.",
           "La mesa, la historia y los eventos de este Thanksgiving están en la [nota de tradición](https://miamimagicapp.com/noticias/thanksgiving-tradicion-historia-como-se-celebra)."
         ]
       },
@@ -659,26 +659,40 @@
         "titulo": "Friday after Thanksgiving: regular Metro, closed offices",
         "bajada": "Miami-Dade keeps its offices closed on Friday the 27th and its libraries through Saturday the 28th; transit is back to regular service and trash is collected. In the Keys, Monroe County shifted pickup by a day along much of the route.",
         "toca": [
-          "Friday 27: Metrobus, Metrorail and Metromover run regular service. On Thursday they ran a Sunday schedule.",
-          "Miami-Dade: offices closed on Friday the 27th too; libraries, through Saturday; trash is still collected.",
-          "The Keys: from Stock Island to Seven Mile Bridge, Thursday's pickup is collected on Friday the 27th and Friday's on Saturday."
+          "Friday 27: Metrobus, Metrorail and Metromover run regular service. Thursday the 26th, Sunday schedule.",
+          "Miami-Dade: offices closed on Friday the 27th too; libraries, through Saturday the 28th; trash is still collected.",
+          "The Keys: from Stock Island to Seven Mile Bridge, Thursday's pickup is collected on Friday the 27th and Friday's on Saturday the 28th."
         ],
         "cuerpo": [
-          "In Miami-Dade, county offices close Thursday the 26th and Friday the 27th, according to the county's [holiday calendar](https://www.miamidade.gov/global/humanresources/holidays.page), and public libraries stay closed through Saturday the 28th, per the [library system's schedule](https://bookings.mdpls.org/holiday). Transit does not stop: the county says Metrobus, Metrorail and Metromover ran a Sunday schedule on Thursday and return to regular service on Friday the 27th.",
-          "Trash doesn't change days either. According to the county's [Solid Waste Management department](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), garbage and recycling collection keeps its regular schedule and the trash and recycling centers keep regular hours. The exception is WM's Medley Landfill, which closed at noon on Thursday and reopens normally on Friday the 27th. For questions by area, the county points to 311.",
+          "In Miami-Dade, county offices close Thursday the 26th and Friday the 27th, according to the county's [holiday calendar](https://www.miamidade.gov/global/humanresources/holidays.page), and public libraries stay closed through Saturday the 28th, per the [library system's schedule](https://bookings.mdpls.org/holiday). Transit does not stop: the county says Metrobus, Metrorail and Metromover run a Sunday schedule on Thursday the 26th and return to regular service on Friday the 27th.",
+          "Trash doesn't change days either. According to the county's [Solid Waste Management department](https://www.miamidade.gov/global/release.page?Mduid_release=rel1794923682470664), garbage and recycling collection keeps its regular schedule and the trash and recycling centers keep regular hours. The exception is WM's Medley Landfill, which closes at noon on Thursday the 26th and reopens normally on Friday the 27th. For questions by area, the county points to 311.",
           "## In the Keys",
-          "Monroe County closes its offices Thursday and Friday, per its [holiday memo](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), and pickup depends on who provides it, according to the county's [holiday schedule](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). From Stock Island to Seven Mile Bridge, with Waste Management, there is no pickup Thursday: that day's collection moves to Friday and Friday's moves to Saturday. In Marathon, through mile marker 73, Thursday's garbage is picked up Friday and Thursday's recycling waits until the following week. Between miles 91 and 102, with Keys Sanitary Service, and in Ocean Reef, the route runs as usual.",
+          "Monroe County closes its offices Thursday the 26th and Friday the 27th, per its [holiday memo](https://monroecounty-fl.gov/DocumentCenter/View/39572/2026-Holiday-Schedule-11242025?bidId=), and pickup depends on who provides it, according to the county's [holiday schedule](https://www.monroecounty-fl.gov/1164/Holiday-Schedule). From Stock Island to Seven Mile Bridge, with Waste Management, there is no pickup Thursday the 26th: that day's collection moves to Friday the 27th and Friday's moves to Saturday the 28th. In Marathon, through mile marker 73, Thursday the 26th's garbage is picked up Friday the 27th and that Thursday's recycling waits until the following week. Between miles 91 and 102, with Keys Sanitary Service, and in Ocean Reef, the route runs as usual.",
           "The table, the history and the events of this Thanksgiving are in our [tradition story](https://miamimagicapp.com/news/thanksgiving-tradicion-historia-como-se-celebra)."
         ]
       },
-      "arriba": 4
+      "arriba": 4,
+      "versiones": [
+        {
+          "desde": "2026-11-28T00:00:00-05:00",
+          "es": {
+            "titulo": "Feriado de Thanksgiving: transporte, oficinas y basura",
+            "bajada": "Los horarios del jueves 26 al sábado 28 de noviembre en Miami-Dade y los Cayos."
+          },
+          "en": {
+            "titulo": "Thanksgiving holiday: transit, offices and trash",
+            "bajada": "The schedules from Thursday, Nov. 26, through Saturday, Nov. 28, in Miami-Dade and the Keys."
+          }
+        }
+      ],
+      "vence": "2026-11-27"
     },
     {
       "id": "thanksgiving-tradicion-historia-como-se-celebra",
       "scope": "miami",
       "tema": "cultura",
       "hamaca": false,
-      "destacada": true,
+      "destacada": false,
       "fecha": "2026-11-24",
       "publicada": "2026-11-24T12:20:00-05:00",
       "autor": "Yolaxys Alvarez",
@@ -738,8 +752,6 @@
       ],
       "desarrollo": false,
       "actualizada": "2026-11-27T07:32:10-05:00",
-      "ultima": 9,
-      "arriba": 5,
       "es": {
         "etiqueta": "TRADICIÓN",
         "titulo": "Dar gracias: de una cosecha compartida en 1621 a la mesa que reúne a todo el país",
@@ -4630,7 +4642,7 @@
       "actualizada": "2026-11-27T08:38:22-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 9,
+      "ultima": 11,
       "desarrollo": false
     },
     {
@@ -8862,7 +8874,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T09:05:24-05:00",
+  "updated_at": "2026-11-27T09:08:28-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }

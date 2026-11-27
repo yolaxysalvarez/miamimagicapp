@@ -970,6 +970,8 @@ html.in-app.app21 .bk{display:inline-flex}
 </style>
 <script>
 /* 'vence': fecha del evento; pasada esa fecha la nota baja detrás de lo vigente (sigue en el archivo) */
+function VIG(n){return !(n&&n.vence&&n.vence<HOYNY())}
+function AR(n){return (n&&n.arriba&&VIG(n))?n.arriba:99}
 function FK(n){var f=(n&&n.fecha)||'';return (n&&n.vence&&n.vence<HOYNY()?'0':'1')+f}
 function HOYNY(){var h;try{h=new Date().toLocaleDateString('en-CA',{timeZone:'America/New_York'})}catch(e){h=new Date().toISOString().slice(0,10)}return h}
 /* dentro de la app de iPhone: sin enlaces al directorio ni a descargar la app */try{if(/[?&]src=app\b/.test(location.search))sessionStorage.setItem('mm_inapp','1');if(sessionStorage.getItem('mm_inapp')==='1')document.documentElement.classList.add('in-app');if(/[?&]app=21\b/.test(location.search))sessionStorage.setItem('mm_app21','1');if(sessionStorage.getItem('mm_app21')==='1')document.documentElement.classList.add('app21')}catch(e){}
@@ -1312,7 +1314,7 @@ function ph(n,cls){var s=img(n);return '<span class="ph '+(cls||'')+(n.foto_fit=
 /* ── filtrar ── */
 function list(){
   var a=(ST.op||ST.dp?ALLN():(DATA.notas||[])).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))});
-  a=a.map(function(n,i){return [n,i]}).sort(function(p,q){var u=p[0].arriba||99,w=q[0].arriba||99;return u-w||p[1]-q[1]}).map(function(p){return p[0]});
+  a=a.map(function(n,i){return [n,i]}).sort(function(p,q){var u=AR(p[0]),w=AR(q[0]);return u-w||p[1]-q[1]}).map(function(p){return p[0]});
   if(ST.hamaca)return a.filter(function(n){return n.hamaca});
   if(ST.muelle)return a.filter(function(n){return n.muelle});
   if(ST.casa)return a.filter(function(n){return isCC(n)||n.cc});
@@ -1326,7 +1328,7 @@ function list(){
 }
 function otros(){
   var a=(DATA.notas||[]).slice().sort(function(x,y){return FK(y).localeCompare(FK(x))}).filter(function(n){return !n.hamaca&&!n.muelle&&(!isCC(n)||n.general)});
-  a=a.map(function(n,i){return [n,i]}).sort(function(p,q){var u=p[0].arriba||99,w=q[0].arriba||99;return u-w||p[1]-q[1]}).map(function(p){return p[0]});
+  a=a.map(function(n,i){return [n,i]}).sort(function(p,q){var u=AR(p[0]),w=AR(q[0]);return u-w||p[1]-q[1]}).map(function(p){return p[0]});
   var grp=[];
   if(ST.ky||ST.hi)grp.push(['miami',a.filter(function(n){return (n.scope||'miami')!=='cayos'})]);
   else if(SEC()){grp.push(['miami',a.filter(function(n){return (n.scope||'miami')!=='cayos'})]);grp.push(['cayos',a.filter(function(n){return n.scope==='cayos'||n.ambos})])}
@@ -1543,13 +1545,13 @@ function colB(tt,cls,arr,go){if(!arr.length)return '';var n=arr[0],f=F(n);
    +arr.slice(1,4).map(rowS).join('')+'</div>'}
 function renderHome(lead,rest){
   var hm=HOME();document.body.classList.toggle('home',hm);if(!hm)return;
-  var pk=ALLN().filter(function(n){return n.ultima&&n!==lead}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,6),inU={};pk.forEach(function(n){inU[n.id]=1});
+  var pk=ALLN().filter(function(n){return n.ultima&&n!==lead&&VIG(n)}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,6),inU={};pk.forEach(function(n){inU[n.id]=1});
   var tb=ALLN().filter(function(n){return n.tambien&&n!==lead&&!inU[n.id]}).sort(function(a,b){return a.tambien-b.tambien}).slice(0,3);tb.forEach(function(n){inU[n.id]=1});
   var ot=document.getElementById('tmb');if(ot)ot.remove();
   if(tb.length===3)document.getElementById('leadBox').insertAdjacentHTML('beforeend','<div id="tmb"><span>'+(L==='en'?'ALSO TODAY':'TAMBIÉN HOY')+'</span>'+tb.map(function(n){return '<a href="'+href(n)+'"><span class="eb">'+eb(n)+'</span><b>'+esc(F(n).titulo)+'</b></a>'}).join('')+'</div>');
   var og=otros()[0],ky=(og?og[1]:[]).filter(function(n){return !inU[n.id]}),mi=rest.filter(function(n){return !inU[n.id]}),used={};
   /* Las notas con 'arriba' abren su columna (Miami / Los Cayos) aunque ya salgan en Lo último, y sean de la sección que sean */
-  var arr=function(c){return (DATA.notas||[]).filter(function(n){return n.arriba&&n!==lead&&(c?n.scope==='cayos':(n.scope||'miami')!=='cayos')}).sort(function(x,y){return x.arriba-y.arriba})},noA=function(n){return !n.arriba};
+  var arr=function(c){return (DATA.notas||[]).filter(function(n){return n.arriba&&VIG(n)&&n!==lead&&(c?n.scope==='cayos':(n.scope||'miami')!=='cayos')}).sort(function(x,y){return x.arriba-y.arriba})},noA=function(n){return !(n.arriba&&VIG(n))};
   mi=arr(0).concat(mi.filter(noA));ky=arr(1).concat(ky.filter(noA));
   [lead].concat(pk,mi.slice(0,4),ky.slice(0,4)).forEach(function(n){if(n)used[n.id]=1});
   var d=document.getElementById('duo');d.className='duo'+(mi.length&&ky.length?'':' one');
