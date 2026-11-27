@@ -1123,8 +1123,10 @@
    "area_photo": "Miami Beach"
   },
   "m8": {
-   "photo": "fotos/mm-zoo-miami-poste-senales.jpg",
+   "photo": "fotos/mm-zoo-miami-entrada.jpg",
    "area_photo": "Zoo Miami",
+   "photo_credit": "Photo: courtesy of Zoo Miami",
+   "photo_credit_es": "Foto: colaboración de Zoo Miami",
    "link": "https://goldcoastrailroadmuseum.org/"
   }
  },

@@ -1,6 +1,6 @@
 {
  "_como_usar": "Este archivo manda sobre las fotos y los videos de la app, sin pasar por Apple. Regla: lo que NO esté aquí se lee de la copia que ya viene dentro del teléfono (no gasta datos). Lo que SÍ esté aquí se baja de miamimagicapp.com. Sube la foto nueva a la carpeta fotos/ del repo, agrégala abajo, cambia 'updated' a la fecha de hoy, y sube todo a GitHub. Se ve en iPhone, Android y web la próxima vez que se abra la app. IMPORTANTE: usa siempre un nombre de archivo NUEVO (mm-ci7-b.jpg, no mm-ci7.jpg) y cambia 'updated' cada vez, o los teléfonos seguirán mostrando la vieja desde su cache.",
- "updated": "2026-11-22",
+ "updated": "2026-11-27",
  "_fotos": "Por ID de tarjeta. El ID es el mismo que usa la app (r12, b6, ci7, pl10, h14...). Sirve para cambiar QUÉ foto le toca a un lugar.",
  "fotos": {
   "n27": "fotos/mm-la-tropical-silo-portada.jpg",
@@ -85,7 +85,7 @@
   "m4": "fotos/mm-mb-calle-02.jpg",
   "m5": "fotos/mm-brickell-skyline-rickenbacker.jpg",
   "m7": "fotos/mm-mb-calle-01.jpg",
-  "m8": "fotos/mm-zoo-miami-poste-senales.jpg",
+  "m8": "fotos/mm-zoo-miami-entrada.jpg",
   "pl1": "fotos/mm-mb-art-deco-letrero.jpg",
   "pl8": "fotos/mm-bayside-aerea.jpg",
   "pl-artdeco": "fotos/mm-mb-cardozo.jpg",
