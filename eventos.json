@@ -4648,6 +4648,52 @@
    "link": "https://www.miamibeachfl.gov/miami-beach-once-again-becomes-center-of-global-art-world/",
    "serie": "artweek",
    "free": true
+  },
+  {
+   "id": "ky-hogtrot26",
+   "scope": "keys",
+   "d": "2026-11-28",
+   "name": "Hog Trot 5K",
+   "name_es": "Hog Trot 5K",
+   "venue": "Front Street · Key West",
+   "venue_es": "Front Street · Key West",
+   "time": "Sat · 8:00 AM",
+   "time_es": "Sáb · 8:00 AM",
+   "price": "Registration",
+   "price_es": "Inscripción",
+   "type": "Sports · Running",
+   "type_es": "Deportes · Carrera",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-keys-kw-old-town-aereo.jpg",
+   "desc": "The 32nd edition of the Key West 5K. It starts on Front Street and runs through Old Town and Truman Waterfront Park; Front Street closes between Duval and Tifts from 5 AM, with rolling closures along the route.",
+   "desc_es": "La edición 32 del 5K de Key West. Sale de Front Street y recorre el Old Town y el Truman Waterfront Park; Front Street cierra entre Duval y Tifts desde las 5 AM, con cierres móviles en la ruta.",
+   "tags": [
+    "Sports"
+   ],
+   "link": "https://www.cityofkeywest-fl.gov/calendar.aspx?CID=25"
+  },
+  {
+   "id": "ky-islandartfair26",
+   "scope": "keys",
+   "d": "2026-11-28",
+   "name": "Island Art Fair · 40th year",
+   "name_es": "Island Art Fair · 40 años",
+   "venue": "Lower Keys Chamber of Commerce · MM 31, Big Pine Key",
+   "venue_es": "Cámara de Comercio de los Cayos Bajos · milla 31, Big Pine Key",
+   "time": "Sat · 9 AM–3 PM",
+   "time_es": "Sáb · 9 AM–3 PM",
+   "price": "Free",
+   "price_es": "Gratis",
+   "type": "Culture · Art fair",
+   "type_es": "Cultura · Feria de arte",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-keys-puente-entre-cayos-aereo.jpg",
+   "desc": "Art and crafts by Florida artists, live music and food on the chamber grounds, at 31020 Overseas Highway. Free admission.",
+   "desc_es": "Arte y artesanía de artistas de Florida, música en vivo y comida en los terrenos de la cámara, en el 31020 de la Overseas Highway. Entrada gratis.",
+   "tags": [
+    "Culture",
+    "Family"
+   ],
+   "free": true,
+   "link": "https://visitfloridakeys.com/plan-your-trip/plan-book/events/40th-annual-island-art-fair"
   }
  ],
  "mes": [
@@ -5596,7 +5642,8 @@
    "venue_es": "Islamorada",
    "desc": "The 63rd edition: two days of sailfishing in pro and non-pro divisions, and the first leg of the Florida Keys Gold Cup. Lines in at 8:30 a.m. both days.",
    "desc_es": "La edición 63: dos días de pesca de pez vela en divisiones profesional y no profesional, y la primera fecha del Florida Keys Gold Cup. Líneas al agua a las 8:30 a.m. los dos días.",
-   "link": "https://www.islamoradasailfishtournament.com/"
+   "link": "https://www.islamoradasailfishtournament.com/",
+   "photo": "https://www.miamimagicapp.com/fotos/mm-keys-canal-botes.jpg"
   },
   {
    "id": "px-kwhalf",
