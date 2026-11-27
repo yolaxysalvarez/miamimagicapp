@@ -1,6 +1,6 @@
 {
   "_como_usar": "Extras de la portada de Miami Magic News. fechas: lo que vence (d = fecha AAAA-MM-DD, d2 = fin si es un rango, id = la nota que lo explica). videos: yid = el código del video de YouTube. mesa: restaurantes; patrocinado:true los pone primero con la etiqueta PATROCINADO. historia: Miami de antes (a = año), cada entrada enlazada a la nota donde se cuenta. hoteles: hoteles de la app con foto propia; rotan cada día. app: fichas de la app por categoría (rotan cada día); cada una lleva foto propia y un texto corto antes del enlace. rota_desde: día desde el que se cuenta la rotación; ese día cada sección abre con el primero de su lista, así que el orden de cada lista es el orden de prioridad.",
-  "updated": "2026-11-16",
+  "updated": "2026-11-27",
   "canal": "https://www.youtube.com/@MiamiMagicApp",
   "fechas": [
     {
@@ -788,16 +788,48 @@
   ],
   "especial": {
     "id": "art-basel-arte-gratis-playa",
-    "d": "2026-12-01",
+    "d": "2026-11-30",
     "d2": "2026-12-06",
-    "k_es": "SEMANA DEL ARTE · MIAMI BEACH · 1–6 DIC",
-    "k_en": "ART WEEK · MIAMI BEACH · DEC. 1–6",
+    "k_es": "SEMANA DEL ARTE · MIAMI BEACH · 30 NOV–6 DIC",
+    "k_en": "ART WEEK · MIAMI BEACH · NOV. 30–DEC. 6",
     "c_es": "Semana del arte",
     "c_en": "Art week",
     "foto": "fotos/mm-artbasel-library-of-us.jpg",
     "pos": "70% 36%",
     "pie_es": "Library of Us, Faena Beach, 2025",
-    "pie_en": "Library of Us, Faena Beach, 2025"
+    "pie_en": "Library of Us, Faena Beach, 2025",
+    "notas": [
+      {
+        "id": "semana-del-arte-como-moverse-taxi-acuatico-shuttles",
+        "es": "Cómo moverse sin quedar atrapado",
+        "en": "How to get around without getting stuck"
+      },
+      {
+        "id": "semana-del-arte-otras-ferias-guia",
+        "es": "Las otras ferias, cuál es cuál",
+        "en": "The other fairs, and which is which"
+      },
+      {
+        "id": "semana-del-arte-con-ninos-gratis",
+        "es": "Con niños: cinco planes gratis",
+        "en": "With kids: five free plans"
+      },
+      {
+        "id": "semana-del-arte-donde-comer-miami-beach",
+        "es": "Dónde comer cerca de las ferias",
+        "en": "Where to eat near the fairs"
+      },
+      {
+        "id": "semana-del-arte-fuera-de-la-playa-museos-wynwood",
+        "es": "Lo que pasa fuera de la playa",
+        "en": "What happens off the beach"
+      },
+      {
+        "id": "art-basel-miami-beach-historia-como-llego",
+        "es": "La feria suiza que llegó con un año de retraso",
+        "en": "The Swiss fair that arrived a year late"
+      }
+    ]
   },
   "rota_desde": "2026-11-13"
 }

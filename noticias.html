@@ -954,6 +954,18 @@ body.sp-cc #cc{display:none!important}
 .esp-p{font-size:16.5px;line-height:1.45;color:rgba(255,255,255,.9)}
 .esp-go{margin-top:16px;font-family:var(--bb);font-size:16px;letter-spacing:.16em;color:#FFD9A0;border-bottom:1.5px solid currentColor;padding-bottom:1px}
 .esp-pie{position:absolute;z-index:1;right:14px;bottom:10px;font-size:14.5px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.8)}
+.espw{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:30px;margin:0 0 52px;align-items:stretch}
+.espw .esp{margin:0}
+.espw .esp::after{background:linear-gradient(180deg,rgba(10,17,32,.15) 0%,rgba(10,17,32,.55) 42%,rgba(10,17,32,.95) 78%)}
+.espw .esp-in{max-width:none;min-height:470px;height:100%;box-sizing:border-box;justify-content:flex-end;padding:30px 32px 40px}
+.espw .esp b{font-size:31px}
+.esp-l{display:flex;flex-direction:column;min-width:0}
+.esp-l h3{margin:0;font-family:var(--bb);font-weight:400;font-size:26px;letter-spacing:.08em;color:var(--ink);border-top:2px solid var(--ink);padding:12px 0 6px;text-transform:uppercase}
+.esp-r{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink);flex:1}
+.esp-r:hover{text-decoration:none}.esp-r:hover b{color:var(--coral-d)}
+.esp-r img{width:96px;height:66px;object-fit:cover;border-radius:6px;display:block}
+.esp-r b{font-family:var(--pf);font-weight:700;font-size:17.5px;line-height:1.22}
+@media(max-width:1020px){.espw{grid-template-columns:minmax(0,1fr);gap:14px;margin-bottom:44px}.espw .esp-in{min-height:0;padding:150px 20px 44px}.esp-r{flex:none}}
 @media(max-width:760px){.esp{margin-bottom:44px}.esp::after{background:linear-gradient(180deg,rgba(10,17,32,.25) 0%,rgba(10,17,32,.9) 52%,rgba(10,17,32,.96) 100%)}.esp-in{padding:150px 20px 44px;min-height:0;max-width:none;justify-content:flex-end}.esp b{font-size:27px}.esp-c u{font-size:52px}.esp-pie{right:auto;left:20px}}
 
 /* app 2.1+: volver a la app desde News */
@@ -1603,7 +1615,7 @@ function renderPt(){
   var ids={};ALLN().forEach(function(n){ids[n.id]=n});
   (function(){var E=PT.especial,bx=document.getElementById('esp'),n=E&&ids[E.id];if(!hm||!n||nyDay()>new Date(E.d2+'T23:59')){bx.innerHTML='';return}
     var dd=Math.ceil((new Date(E.d+'T00:00')-nyDay())/864e5),f=F(n);
-    bx.innerHTML='<a class="esp" href="'+href(n)+'"><img src="'+ptF(E.foto)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy"'+(E.pos?' style="object-position:'+esc(E.pos)+'"':'')+'><span class="esp-in"><span class="esp-c">'+(dd>0?'<u>'+dd+'</u><i>'+(en?(dd===1?'DAY TO GO':'DAYS TO GO'):(dd===1?'DÍA FALTA':'DÍAS FALTAN'))+'</i>':'<i>'+(en?'THIS WEEK':'ESTA SEMANA')+'</i>')+'</span><span class="esp-k">'+esc(en?E.k_en:E.k_es)+'</span><b>'+esc(f.titulo)+'</b><span class="esp-p">'+esc(f.bajada||'')+'</span><span class="esp-go">'+(en?'WHAT TO SEE →':'QUÉ SE VE →')+'</span></span><span class="esp-pie">'+esc(en?E.pie_en:E.pie_es)+'</span></a>'})();try{renderCifras()}catch(e){}
+    var card='<a class="esp" href="'+href(n)+'"><img src="'+ptF(E.foto)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy"'+(E.pos?' style="object-position:'+esc(E.pos)+'"':'')+'><span class="esp-in"><span class="esp-c">'+(dd>0?'<u>'+dd+'</u><i>'+(en?(dd===1?'DAY TO GO':'DAYS TO GO'):(dd===1?'DÍA FALTA':'DÍAS FALTAN'))+'</i>':'<i>'+(en?'THIS WEEK':'ESTA SEMANA')+'</i>')+'</span><span class="esp-k">'+esc(en?E.k_en:E.k_es)+'</span><b>'+esc(f.titulo)+'</b><span class="esp-p">'+esc(f.bajada||'')+'</span><span class="esp-go">'+(en?'WHAT TO SEE →':'QUÉ SE VE →')+'</span></span><span class="esp-pie">'+esc(en?E.pie_en:E.pie_es)+'</span></a>';var ls=(E.notas||[]).map(function(x){var m=ids[x.id];return m&&VIG(m)?[m,en?(x.en||F(m).titulo):(x.es||F(m).titulo)]:null}).filter(Boolean);bx.innerHTML=ls.length?'<div class="espw">'+card+'<div class="esp-l"><h3>'+esc(en?(E.c_en||''):(E.c_es||''))+'</h3>'+ls.map(function(p){var s2=img(p[0]);return '<a class="esp-r" href="'+href(p[0])+'">'+(s2?'<img src="'+esc(s2)+'" alt="" loading="lazy">':'')+'<b class="hl">'+esc(p[1])+'</b></a>'}).join('')+'</div></div>':card})();try{renderCifras()}catch(e){}
   var appL=function(u,tx){return '<a class="lkl" href="'+u+'">'+tx+' →</a>'};
   /* que no se te pase */
   var t0=nyDay(),pd=function(x){var a=String(x||'').split('-');return new Date(+a[0],+a[1]-1,+a[2])},MO=en?['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']:['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
