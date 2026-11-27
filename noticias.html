@@ -1072,6 +1072,15 @@ html.in-app.app21 .bk{display:inline-flex}
  .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a span{font-size:15.5px;line-height:1.38}
  .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-all{display:none}
 }
+.tv-tt .kk{text-decoration:none}.tv-tt .kk b{font-weight:400}.tv-tt .kk:hover{text-decoration:none}.tv-tt .kk u{display:none;text-decoration:none;color:var(--coral-d)}
+@media(max-width:760px){
+ .tv-sub{display:none!important}.tv-tt .kk u{display:inline}.tv-tt .kk b{display:none}
+ .tv-h{padding:14px 16px 12px!important;flex-wrap:nowrap}.tv-b{gap:12px;min-width:0}
+ .tv-lg,.tv-lg img{width:58px!important;height:58px!important}
+ .tv-h h3{font-size:25px!important;white-space:nowrap}
+ .tv-tt{min-width:0}.tv-tt .kk{font-size:14px!important;letter-spacing:.1em!important;white-space:nowrap}
+ .tv-m{padding:12px 16px 14px!important}.tv-n{margin-top:14px!important}
+}
 /* El Muelle: tablero de condiciones (Miami y los Cayos a la par) */
 .dk-cond{display:block!important;width:100%;max-width:380px}
 .dk-t{display:grid;grid-template-columns:minmax(0,1.25fr) repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
@@ -1687,7 +1696,7 @@ function spSync(){var c=document.getElementById('spCond'),d=document.getElementB
 function renderSp(lead,rest){
   var hm=ST.hamaca,dk=ST.muelle,cc=ST.casa,ky=ST.ky,hi=ST.hi,op=ST.op,sd=ST.dp,on=hm||dk||cc||ky||hi||op||sd,en=L==='en',b=document.body,mas=document.getElementById('mas');
   b.classList.toggle('sp',!!on);b.classList.toggle('sp-hm',!!hm);b.classList.toggle('sp-dk',!!dk);b.classList.toggle('sp-cc',!!cc);b.classList.toggle('sp-ky',!!ky);b.classList.toggle('sp-hi',!!hi);b.classList.toggle('sp-op',!!op);b.classList.toggle('sp-dp',!!sd);
-  (function(){try{var ag=document.getElementById('ag'),ot=document.getElementById('otros');if(!ag||!ot)return;if(!window.AGHOME){window.AGHOME=document.createComment('ag-home');ag.parentNode.insertBefore(window.AGHOME,ag)}if(on){if(ot.nextElementSibling!==ag)ot.parentNode.insertBefore(ag,ot.nextSibling)}else if(window.AGHOME.nextSibling!==ag){window.AGHOME.parentNode.insertBefore(ag,window.AGHOME.nextSibling)}}catch(x){}})();
+  (function(){try{var ag=document.getElementById('ag'),ot=document.getElementById('otros');if(!ag||!ot)return;if(!window.AGHOME){window.AGHOME=document.createComment('ag-home');ag.parentNode.insertBefore(window.AGHOME,ag)}if(on){if(ot.previousElementSibling!==ag)ot.parentNode.insertBefore(ag,ot)}else if(window.AGHOME.nextSibling!==ag){window.AGHOME.parentNode.insertBefore(ag,window.AGHOME.nextSibling)}}catch(x){}})();
   if(!on){mas.className='grid4';return}
   var nm=hm?'HAMACA MOOD':cc?'CASA & COAST':op?(en?'OPINION':'OPINIÓN'):sd?(en?'SPORTS':'DEPORTES'):hi?(en?'MIAMI, BACK THEN':'MIAMI DE ANTES'):ky?(en?'THE KEYS':'LOS CAYOS'):(en?'THE DOCK':'EL MUELLE'),k=function(n){return '<span class="sp-k">'+esc(F(n,'etiqueta')||nm)+'</span>'},rd=function(n){return '<a class="lkl" href="'+href(n)+'">'+(en?'READ MORE':'LEER MÁS')+' →</a>'};
   var tot=(lead?1:0)+rest.length;
@@ -1790,7 +1799,7 @@ function renderPt(){
   if(vs.length&&hm){var st=(doy()*3)%vs.length,vv=[];for(var i=0;i<Math.min(5,vs.length);i++)vv.push(vs[(st+i)%vs.length]);
     if(TVS.i>=vv.length)TVS.i=0;var c=vv[TVS.i],ca=esc(PT.canal||'https://www.youtube.com/@MiamiMagicApp');
     tv.style.display='';
-    tv.innerHTML='<div class="tv-h"><div class="tv-b"><span class="tv-lg"><img src="/mm-sello-video-'+(en?'en':'es')+'.png" alt="Miami Magic" width="88" height="88"></span><span class="tv-tt"><span class="kk">YOUTUBE · @MIAMIMAGICAPP</span><h3>Miami Magic <em>'+(en?'on video':'en video')+'</em></h3></span></div><a class="tv-sub" href="'+ca+'" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>'+(en?'SUBSCRIBE TO THE CHANNEL':'SUSCRÍBETE AL CANAL')+'</a></div>'
+    tv.innerHTML='<div class="tv-h"><div class="tv-b"><span class="tv-lg"><img src="/mm-sello-video-'+(en?'en':'es')+'.png" alt="Miami Magic" width="88" height="88"></span><span class="tv-tt"><a class="kk" href="'+ca+'" target="_blank" rel="noopener">YOUTUBE<b> · @MIAMIMAGICAPP</b><u>'+(en?' · SUBSCRIBE TO THE CHANNEL →':' · SUSCRÍBETE AL CANAL →')+'</u></a><h3>Miami Magic <em>'+(en?'on video':'en video')+'</em></h3></span></div><a class="tv-sub" href="'+ca+'" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>'+(en?'SUBSCRIBE TO THE CHANNEL':'SUSCRÍBETE AL CANAL')+'</a></div>'
      +'<div class="tv-g"><div class="tv-m"><div class="tv-p" id="tvP">'+(TVS.play?'<iframe src="/video.html?v='+encodeURIComponent(c.yid)+'&lang='+L+'" title="'+esc(c[L]||c.es)+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>':'<button type="button" id="tvGo" aria-label="'+(en?'Play: ':'Reproducir: ')+esc(c[L]||c.es)+'">'+ytImg(c.yid)+'<span class="sc"></span><span class="pl">'+PLAY+'</span><span class="tx"><span>'+esc(en?c.k_en:c.k_es)+'</span><b>'+esc(c[L]||c.es)+'</b></span></button>')+'</div>'
      +'<div class="tv-n"><span class="cnt">'+(TVS.play?(en?'NOW PLAYING':'REPRODUCIENDO')+' · ':'')+'0'+(TVS.i+1)+' / 0'+vv.length+'</span><span>'+(TVS.play?esc(c[L]||c.es):'')+'</span>'+(c.item?'<a href="/?item='+encodeURIComponent(c.item)+'&type='+encodeURIComponent(c.type||'rest')+'">'+(en?'ITS CARD IN THE APP →':'SU FICHA EN LA APP →')+'</a>':'')+'</div></div>'
      +'<div class="tv-l"><h4>'+(en?'UP NEXT':'A CONTINUACIÓN')+'</h4>'+vv.map(function(x,i){return i===TVS.i?'':'<button type="button" data-i="'+i+'"><span class="no">'+(i+1)+'</span><span class="th">'+ytImg(x.yid)+'</span><span><span class="k">'+esc(en?x.k_en:x.k_es)+'</span><b>'+esc(x[L]||x.es)+'</b></span></button>'}).join('')+'</div></div>';
