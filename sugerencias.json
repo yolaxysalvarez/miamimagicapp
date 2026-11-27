@@ -1,0 +1,32 @@
+{
+ "_como_usar": "Bloque 'Lo que mueve hoy' debajo de 'Lo último' en cada nota de News. Se intercala: una nota fuerte, algo nuevo en la app, otra nota y un video de YouTube. Pon arriba lo más nuevo de cada tipo; las dos primeras de cada tipo se turnan por día. tipo: 'app' o 'video'. u: el enlace (/?item=ID abre la ficha en la app). foto: imagen de la tarjeta.",
+ "items": [
+  {
+   "tipo": "video",
+   "u": "https://youtu.be/q8p9XwV7jgw",
+   "foto": "fotos/mm-coral-gables-biltmore-aereo.jpg",
+   "eb_es": "YOUTUBE · MIAMI MAGIC",
+   "eb_en": "YOUTUBE · MIAMI MAGIC",
+   "t_es": "El Biltmore cumple 100: Coral Gables desde el aire",
+   "t_en": "The Biltmore at 100: Coral Gables' landmark hotel from the air"
+  },
+  {
+   "tipo": "video",
+   "u": "https://youtu.be/8iPIAfp5uKM",
+   "foto": "fotos/mm-delilah-mesa.jpg",
+   "eb_es": "YOUTUBE · SABORES DE MIAMI",
+   "eb_en": "YOUTUBE · FLAVORS OF MIAMI",
+   "t_es": "Delilah Miami: cena y show en Brickell Key",
+   "t_en": "Delilah Miami: dinner and a show on Brickell Key"
+  },
+  {
+   "tipo": "app",
+   "u": "/?item=ky-klfisheries",
+   "foto": "fotos/mm-keys-kl-fisheries-fachada.jpg",
+   "eb_es": "NUEVO EN LA APP · LOS CAYOS",
+   "eb_en": "NEW IN THE APP · THE KEYS",
+   "t_es": "Key Largo Fisheries: mariscos en el muelle, recién bajados del bote",
+   "t_en": "Key Largo Fisheries: dockside seafood, straight off the boats"
+  }
+ ]
+}
