@@ -55,6 +55,150 @@
   "videos": [],
   "notas": [
     {
+      "id": "semana-del-arte-con-ninos-gratis",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:33:18-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-12-06",
+      "serie": "artweek",
+      "foto": "mm-wynwood-mural-robot.jpg",
+      "foto_alt": "Mural de un robot gigante pintado con colores pastel sobre una pared negra en Wynwood",
+      "foto_pie": "Un mural en Wynwood. Foto: Miami Magic.",
+      "foto_pie_en": "A mural in Wynwood. Photo: Miami Magic.",
+      "fuentes": [
+        {
+          "n": "The Bass · Art Week",
+          "u": "https://thebass.org/art-week/"
+        },
+        {
+          "n": "Artsy · Miami Art Week 2026: ferias, museos y exposiciones",
+          "u": "https://www.artsy.net/article/artsy-editorial-art-miami-art-week-2026"
+        },
+        {
+          "n": "ArtRabbit · Between Tides, Collins Park",
+          "u": "https://www.artrabbit.com/events/between-tides"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "SEMANA DEL ARTE",
+        "titulo": "Semana del arte con niños: cinco planes gratis",
+        "bajada": "Ping-pong de artistas, castillos de arena, una esfera de espejos y un museo donde se puede dibujar.",
+        "toca": [
+          "The Bass (2100 Collins Ave.) no cobra entrada el domingo 6 de diciembre, de 10:00 a.m. a 5:00 p.m.",
+          "El concurso de castillos de arena es el martes 1 de diciembre, de 2:30 a 4:30 p.m.",
+          "En Art Basel, los niños de hasta 12 años entran gratis con un adulto que tenga boleto."
+        ],
+        "cuerpo": [
+          "Buena parte de la semana del arte está pensada para coleccionistas, pero hay planes que funcionan con niños y no cuestan nada.",
+          "- Ping-pong en Collins Park (2100 Collins Ave.): seis mesas diseñadas por artistas, con paletas y pelotas que se prestan gratis, del 29 de noviembre al 6 de diciembre, de 10:00 a.m. a 5:00 p.m. El lunes 30, de 4:00 a 6:00 p.m., hay torneo abierto.",
+          "- Castillos de arena: artistas compiten construyendo esculturas en la orilla, el martes 1 de diciembre de 2:30 a 4:30 p.m., frente a The Miami Beach EDITION (2901 Collins Ave.), según Artsy.",
+          "- La esfera de espejos de Faena Beach (3201 Collins Ave.): 27 pies de alto, medio enterrada en la arena, del 1 al 6 de diciembre, de 12:00 a 9:00 p.m.",
+          "- Un museo para dibujar: en The Bass, la obra de Amalia Pica llena una sala de pizarras donde el visitante puede escribir y dibujar, cuenta Artsy. El domingo 6 de diciembre es su día comunitario, con entrada gratis y actividades para todas las edades, [anuncia el museo](https://thebass.org/art-week/).",
+          "- Títeres en Lincoln Road: la instalación de Marcel Dzama en el 434 de Lincoln Road, con títeres y una sala de ajedrez, abre el 3 y el 4 de diciembre, gratis con reserva previa, de acuerdo con la misma guía.",
+          "Más arte sin boleto, en [qué ver gratis](https://miamimagicapp.com/noticias/art-basel-arte-gratis-playa); y las rutas, en [cómo moverse](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
+        ]
+      },
+      "en": {
+        "etiqueta": "ART WEEK",
+        "titulo": "Art week with kids: five free plans",
+        "bajada": "Artist-designed ping-pong, sandcastles, a mirrored sphere and a museum where you can draw.",
+        "toca": [
+          "The Bass (2100 Collins Ave.) has free admission on Sunday, Dec. 6, from 10 a.m. to 5 p.m.",
+          "The sandcastle competition is Tuesday, Dec. 1, from 2:30 to 4:30 p.m.",
+          "At Art Basel, children 12 and under get in free with a ticketed adult."
+        ],
+        "cuerpo": [
+          "Much of art week is aimed at collectors, but there are plans that work with children and cost nothing.",
+          "- Ping-pong in Collins Park (2100 Collins Ave.): six artist-designed tables, with paddles and balls lent for free, from Nov. 29 to Dec. 6, 10 a.m. to 5 p.m. On Monday the 30th, from 4 to 6 p.m., there is an open tournament.",
+          "- Sandcastles: artists compete building sculptures on the shore, on Tuesday, Dec. 1, from 2:30 to 4:30 p.m., in front of The Miami Beach EDITION (2901 Collins Ave.), according to Artsy.",
+          "- The mirrored sphere on Faena Beach (3201 Collins Ave.): 27 feet tall, half buried in the sand, Dec. 1 to 6, noon to 9 p.m.",
+          "- A museum for drawing: at The Bass, Amalia Pica's work fills a room with chalkboards where visitors can write and draw, Artsy reports. Sunday, Dec. 6, is its community day, with free admission and activities for all ages, [the museum says](https://thebass.org/art-week/).",
+          "- Puppets on Lincoln Road: Marcel Dzama's installation at 434 Lincoln Road, with puppets and a chess room, opens Dec. 3 and 4, free with advance RSVP, according to the same guide.",
+          "More art with no ticket, in [what to see for free](https://miamimagicapp.com/news/art-basel-arte-gratis-playa); and the routes, in [how to get around](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
+        ]
+      }
+    },
+    {
+      "id": "semana-del-arte-fuera-de-la-playa-museos-wynwood",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:33:18-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-12-06",
+      "serie": "artweek",
+      "foto": "mm-wynwood-mural-retrato.jpg",
+      "foto_alt": "Mural con el retrato de una mujer y formas de colores en una pared de Wynwood",
+      "foto_pie": "Un mural en Wynwood. Foto: Miami Magic.",
+      "foto_pie_en": "A mural in Wynwood. Photo: Miami Magic.",
+      "fuentes": [
+        {
+          "n": "Artsy · Miami Art Week 2026: ferias, museos y exposiciones",
+          "u": "https://www.artsy.net/article/artsy-editorial-art-miami-art-week-2026"
+        },
+        {
+          "n": "Gary Nader Art Centre · Guía de Miami Art Week 2026",
+          "u": "https://garynader.com/journal/miami-art-week-guide/"
+        },
+        {
+          "n": "Ciudad de Miami Beach · Art Week Free Transportation 2026",
+          "u": "https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "SEMANA DEL ARTE",
+        "titulo": "Semana del arte: lo que pasa fuera de la playa",
+        "bajada": "Museos, una colección abierta sin costo y los murales de Wynwood, del lado de Miami.",
+        "toca": [
+          "El ICA Miami, en el Design District (61 NE 41 Street), no cobra entrada.",
+          "En Wynwood, el Gary Nader Art Centre abre gratis su exposición a partir del 2 de diciembre.",
+          "Hay un shuttle gratis entre el centro de convenciones de Miami Beach y el Design District."
+        ],
+        "cuerpo": [
+          "La semana del arte no se queda en Miami Beach. Del otro lado de la bahía hay museos con exposiciones nuevas y arte que se ve desde la acera.",
+          "## Design District",
+          "El ICA Miami (61 NE 41 Street) tiene entrada gratis y presenta la primera exposición individual en un museo de Estados Unidos de Sheroanawë Hakihiiwë, con más de cien obras, hasta el 28 de marzo de 2027, [según Artsy](https://www.artsy.net/article/artsy-editorial-art-miami-art-week-2026). Se llega sin auto con el shuttle gratis que sale del centro de convenciones; la ruta está en [cómo moverse](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles).",
+          "## Wynwood y Allapattah",
+          "El Gary Nader Art Centre (62 NE 27 Street) abre al público sin costo, desde el 2 de diciembre, una exposición con obras de Wifredo Lam y Jean-Michel Basquiat, [informa el propio centro](https://garynader.com/journal/miami-art-week-guide/). En las calles del barrio, los murales se ven gratis a cualquier hora.",
+          "A pocos minutos, en Allapattah, el Rubell Museum (1100 NW 23 Street) estrena exposiciones el 1 de diciembre y mantiene las dos Infinity Rooms de Yayoi Kusama, de acuerdo con Artsy. Cobra entrada.",
+          "## Frente a la bahía",
+          "El Pérez Art Museum Miami (1103 Biscayne Boulevard) muestra obras maestras de Picasso, Klee y Matisse llegadas del Museum Berggruen, según la misma guía de Gary Nader. También cobra entrada.",
+          "Las ferias de este lado, de Art Miami a Pinta, están en [las otras ferias](https://miamimagicapp.com/noticias/semana-del-arte-otras-ferias-guia)."
+        ]
+      },
+      "en": {
+        "etiqueta": "ART WEEK",
+        "titulo": "Art week: what happens off the beach",
+        "bajada": "Museums, a collection open at no cost and Wynwood's murals, on the Miami side.",
+        "toca": [
+          "ICA Miami, in the Design District (61 NE 41st Street), does not charge admission.",
+          "In Wynwood, the Gary Nader Art Centre opens its exhibition free starting Dec. 2.",
+          "There is a free shuttle between the Miami Beach Convention Center and the Design District."
+        ],
+        "cuerpo": [
+          "Art week does not stay in Miami Beach. Across the bay there are museums with new exhibitions and art you can see from the sidewalk.",
+          "## Design District",
+          "ICA Miami (61 NE 41st Street) has free admission and is presenting the first solo museum exhibition in the United States by Sheroanawë Hakihiiwë, with more than a hundred works, through March 28, 2027, [according to Artsy](https://www.artsy.net/article/artsy-editorial-art-miami-art-week-2026). You can get there without a car on the free shuttle from the convention center; the route is in [how to get around](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles).",
+          "## Wynwood and Allapattah",
+          "The Gary Nader Art Centre (62 NE 27th Street) opens to the public at no cost, starting Dec. 2, an exhibition with works by Wifredo Lam and Jean-Michel Basquiat, [the center itself says](https://garynader.com/journal/miami-art-week-guide/). On the neighborhood's streets, the murals are free to see at any hour.",
+          "A few minutes away, in Allapattah, the Rubell Museum (1100 NW 23rd Street) opens new exhibitions on Dec. 1 and keeps Yayoi Kusama's two Infinity Rooms, according to Artsy. It charges admission.",
+          "## On the bay",
+          "The Pérez Art Museum Miami (1103 Biscayne Boulevard) is showing masterpieces by Picasso, Klee and Matisse from the Museum Berggruen, according to the same Gary Nader guide. It also charges admission.",
+          "The fairs on this side, from Art Miami to Pinta, are in [the other fairs](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia)."
+        ]
+      }
+    },
+    {
       "id": "semana-del-arte-donde-comer-miami-beach",
       "scope": "miami",
       "tema": "cultura",
@@ -9547,7 +9691,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:32:03-05:00",
+  "updated_at": "2026-11-27T11:33:18-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
