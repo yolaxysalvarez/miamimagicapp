@@ -87,7 +87,7 @@
       "desarrollo": false,
       "es": {
         "etiqueta": "SEMANA DEL ARTE",
-        "titulo": "Arte que los niños pueden tocar, y gratis",
+        "titulo": "Castillos de arena y ping-pong: arte para ir con niños",
         "bajada": "Ping-pong de artistas, castillos de arena, una esfera de espejos y un museo donde se puede dibujar.",
         "toca": [
           "The Bass (2100 Collins Ave.) no cobra entrada el domingo 6 de diciembre, de 10:00 a.m. a 5:00 p.m.",
@@ -106,7 +106,7 @@
       },
       "en": {
         "etiqueta": "ART WEEK",
-        "titulo": "Art that kids can touch, for free",
+        "titulo": "Sandcastles and ping-pong: art to enjoy with kids",
         "bajada": "Artist-designed ping-pong, sandcastles, a mirrored sphere and a museum where you can draw.",
         "toca": [
           "The Bass (2100 Collins Ave.) has free admission on Sunday, Dec. 6, from 10 a.m. to 5 p.m.",
@@ -157,7 +157,7 @@
       "desarrollo": false,
       "es": {
         "etiqueta": "SEMANA DEL ARTE",
-        "titulo": "La semana del arte que se queda en Miami",
+        "titulo": "Museos y murales: el arte que se queda del lado de Miami",
         "bajada": "Museos, una colección abierta sin costo y los murales de Wynwood, del lado de Miami.",
         "toca": [
           "El ICA Miami, en el Design District (61 NE 41 Street), no cobra entrada.",
@@ -178,7 +178,7 @@
       },
       "en": {
         "etiqueta": "ART WEEK",
-        "titulo": "The art week that stays in Miami",
+        "titulo": "Museums and murals: the art that stays on the Miami side",
         "bajada": "Museums, a collection open at no cost and Wynwood's murals, on the Miami side.",
         "toca": [
           "ICA Miami, in the Design District (61 NE 41st Street), does not charge admission.",
@@ -5669,9 +5669,9 @@
           "## Toda la semana del arte",
           "- [Cruzar la bahía en taxi acuático no cuesta nada](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
           "- [Art Basel no viene sola: diez ferias más y dónde encontrarlas](https://miamimagicapp.com/noticias/semana-del-arte-otras-ferias-guia)",
-          "- [Arte que los niños pueden tocar, y gratis](https://miamimagicapp.com/noticias/semana-del-arte-con-ninos-gratis)",
+          "- [Castillos de arena y ping-pong: arte para ir con niños](https://miamimagicapp.com/noticias/semana-del-arte-con-ninos-gratis)",
           "- [Entre feria y feria, once mesas a pocos pasos](https://miamimagicapp.com/noticias/semana-del-arte-donde-comer-miami-beach)",
-          "- [La semana del arte que se queda en Miami](https://miamimagicapp.com/noticias/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
+          "- [Museos y murales: el arte que se queda del lado de Miami](https://miamimagicapp.com/noticias/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
           "- [La feria suiza que llegó a Miami Beach con un año de retraso](https://miamimagicapp.com/noticias/art-basel-miami-beach-historia-como-llego)"
         ]
       },
@@ -5699,9 +5699,9 @@
           "## All of art week",
           "- [Crossing the bay by water taxi costs nothing](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
           "- [Art Basel does not come alone: ten more fairs and where to find them](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia)",
-          "- [Art that kids can touch, for free](https://miamimagicapp.com/news/semana-del-arte-con-ninos-gratis)",
+          "- [Sandcastles and ping-pong: art to enjoy with kids](https://miamimagicapp.com/news/semana-del-arte-con-ninos-gratis)",
           "- [Between fairs, eleven tables a few steps away](https://miamimagicapp.com/news/semana-del-arte-donde-comer-miami-beach)",
-          "- [The art week that stays in Miami](https://miamimagicapp.com/news/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
+          "- [Museums and murals: the art that stays on the Miami side](https://miamimagicapp.com/news/semana-del-arte-fuera-de-la-playa-museos-wynwood)",
           "- [The Swiss fair that reached Miami Beach a year late](https://miamimagicapp.com/news/art-basel-miami-beach-historia-como-llego)"
         ]
       },
@@ -9701,7 +9701,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:42:25-05:00",
+  "updated_at": "2026-11-27T11:43:09-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
