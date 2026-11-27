@@ -723,13 +723,15 @@ body:not(.home) .split{display:block;margin-bottom:0}
 .ag-days::-webkit-scrollbar{display:none}
 .ag-days:empty{display:none}
 .ag-ser:empty{display:none}.ag-ser{padding:14px 0 0}
-.ag-ser button{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:1px solid rgba(201,150,60,.55);background:linear-gradient(90deg,#FFF6E3,#FFFDF8);border-radius:10px;padding:10px 14px 8px;color:var(--ink)}
+.ag-ser button{position:relative;overflow:hidden;display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:0;background:linear-gradient(100deg,#C2187A 0%,#E8452F 36%,#F0762A 58%,#7A3FD0 82%,#0E8FA6 100%);border-radius:10px;padding:11px 14px 9px;color:#fff;box-shadow:0 6px 18px -8px rgba(194,24,122,.55)}
+.ag-ser button:before{content:"";position:absolute;inset:0;background:radial-gradient(120px 60px at 12% 0,rgba(255,255,255,.28),transparent 70%),radial-gradient(160px 70px at 88% 120%,rgba(255,214,90,.35),transparent 70%);pointer-events:none}
+.ag-ser button>*{position:relative;text-shadow:0 1px 2px rgba(0,0,0,.28)}
 .ag-ser button b{font-family:var(--bb);font-weight:400;font-size:18px;letter-spacing:.14em}
-.ag-ser button span{font-family:var(--dm);font-weight:700;font-size:16px;color:#8A5A12}
-.ag-ser button i{margin-left:auto;font-style:normal;font-family:var(--bb);font-size:15px;letter-spacing:.14em;color:var(--coral-d)}
+.ag-ser button span{font-family:var(--dm);font-weight:700;font-size:16px;color:#FFE9A8}
+.ag-ser button i{margin-left:auto;font-style:normal;font-family:var(--bb);font-size:15px;letter-spacing:.14em;color:#fff}
 .ag-ser button b,.ag-ser button span,.ag-ser button i{white-space:nowrap}
 @media(max-width:480px){.ag-ser button{gap:9px;padding:10px 12px 8px}.ag-ser button b{font-size:15.5px;letter-spacing:.1em}.ag-ser button span{font-size:15px}.ag-ser button i{font-size:14.5px;letter-spacing:.08em}.ag-ct em{font-size:13px;letter-spacing:.08em;left:6px;top:6px;padding:4px 6px 2px}}
-.ag-ser button.on{background:#0E1B30;border-color:#0E1B30;color:#fff}.ag-ser button.on span{color:#FFC24D}.ag-ser button.on i{color:#FFD9A0}
+.ag-ser button.on{background:#0E1B30;box-shadow:inset 0 -3px 0 0 #E8452F}.ag-ser button.on:before{background:linear-gradient(90deg,#C2187A,#E8452F,#F0762A,#7A3FD0,#0E8FA6);inset:auto 0 0 0;height:3px}.ag-ser button.on span{color:#FFC24D}.ag-ser button.on i{color:#FFD9A0}
 .ag-days button{flex:0 0 auto;min-width:58px;border:1px solid rgba(14,27,48,.18);background:#fff;border-radius:8px;padding:7px 10px 5px;text-align:center;color:var(--ink);line-height:1}
 .ag-days button i{display:block;font-style:normal;font-family:var(--bb);font-size:14.5px;letter-spacing:.16em;color:var(--mut)}
 .ag-days button b{display:block;font-family:var(--pf);font-weight:900;font-size:22px;margin-top:3px}
@@ -1772,7 +1774,7 @@ function renderAg(){
   (function(){var z=document.getElementById('agSer');if(!z)return;var E=PT&&PT.especial,ok=E&&E.serie&&E.d2&&HOYNY()<=E.d2&&AGS.tab!=='keys';
     var n=ok?(AGD.semana||[]).concat(AGD.proximos||[]).filter(function(e){var b=agDate(e&&(e.d2||e.d));return e&&e.serie===E.serie&&b&&b>=t0}).map(function(e){return (e.name||'').toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,22)}).filter(function(k,i,a){return a.indexOf(k)===i}).length:0;
     if(!n){z.innerHTML='';if(AGS.serie){AGS.serie=''}return}
-    z.innerHTML='<button type="button" id="agSerB" class="'+(AGS.serie?'on':'')+'" aria-pressed="'+(AGS.serie?'true':'false')+'"><b>'+esc(String(en?E.c_en:E.c_es).toUpperCase())+'</b><span>'+n+' '+(en?'plans':'planes')+'</span><i>'+(AGS.serie?(en?'SEE EVERYTHING ×':'VER TODO ×'):(en?'SEE →':'VER →'))+'</i></button>';
+    z.innerHTML='<button type="button" id="agSerB" class="'+(AGS.serie?'on':'')+'" aria-pressed="'+(AGS.serie?'true':'false')+'"><b>'+esc(String(en?E.c_en:E.c_es).toUpperCase())+'</b><span>'+n+' '+(en?'plans':'planes')+'</span><i>'+(AGS.serie?(en?'SEE ALL ×':'VER TODO ×'):(en?'SEE →':'VER →'))+'</i></button>';
     document.getElementById('agSerB').onclick=function(){AGS.serie=AGS.serie?'':E.serie;AGS.n=AGS.serie?40:6;AGS.day=-1;renderAg()}})();
   var dz=document.getElementById('agDays');
   if(AGS.tab==='sem'&&!AGS.serie){AGS.cnt=1;var wk=agList();AGS.cnt=0;var cn=[];for(var d=0;d<7;d++){var dx=new Date(t0);dx.setDate(dx.getDate()+d);cn.push([dx,wk.filter(function(o){return o.a<=dx&&o.b>=dx}).length])}
