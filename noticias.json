@@ -241,7 +241,8 @@
           "Publix, Winn-Dixie and Aldi keep regular hours on Friday, November 27, according to the [Miami Herald](https://www.yahoo.com/news/articles/publix-open-cvs-buses-run-205023457.html) rundown. Miami-Dade offices are closed that day; that and other schedules are in [the logistics story](https://miamimagicapp.com/news/thanksgiving-logistica-miami-cayos-metro-basura)."
         ]
       },
-      "actualizada": "2026-11-26T19:17:32-05:00"
+      "actualizada": "2026-11-26T19:17:32-05:00",
+      "ultima": 5
     },
     {
       "id": "heat-76ers-panthers-ottawa-25-noviembre",
@@ -297,7 +298,7 @@
           "Inter Miami also plays on Friday night, the 27th. It lost the first game 3-0 to Columbus and needs a win to force a third. The details are in [our game story](https://miamimagicapp.com/news/inter-miami-playoffs-nu-stadium)."
         ]
       },
-      "ultima": 3
+      "ultima": 8
     },
     {
       "id": "fedex-md-11-se-sale-pista-26r-mia-25-noviembre",
@@ -313,7 +314,7 @@
       "foto_alt": "Gráfico de Miami Magic con las siglas MIA, un avión y una pista, aeropuerto internacional de Miami",
       "foto_pie": "Gráfico de Miami Magic.",
       "foto_pie_en": "Graphic by Miami Magic.",
-      "desarrollo": true,
+      "desarrollo": false,
       "fuentes": [
         {
           "n": "NTSB · Anuncio de la investigación",
@@ -341,7 +342,7 @@
         }
       ],
       "es": {
-        "etiqueta": "EN LA CALLE",
+        "etiqueta": "INVESTIGACIÓN",
         "titulo": "La NTSB investiga el avión de FedEx que se salió de la pista en MIA",
         "bajada": "El aeropuerto informó el jueves que operaba con tres de sus cuatro pistas tras el incidente del miércoles por la noche con el vuelo 910, un MD-11 procedente de Memphis. No hubo heridos reportados.",
         "toca": [
@@ -357,7 +358,7 @@
         ]
       },
       "en": {
-        "etiqueta": "ON THE STREET",
+        "etiqueta": "INVESTIGATION",
         "titulo": "NTSB investigating the FedEx jet that overran the runway at MIA",
         "bajada": "The airport said Thursday it was operating with three of its four runways after Wednesday night's incident with Flight 910, an MD-11 arriving from Memphis. No injuries were reported.",
         "toca": [
@@ -372,8 +373,8 @@
           "The official posts do not detail the cause. The [FAA](https://www.faa.gov/newsroom/faa-daily-air-traffic-report) daily report on Wednesday had already warned of storms that could cause delays in Miami and Fort Lauderdale."
         ]
       },
-      "ultima": 1,
-      "arriba": 1,
+      "ultima": 3,
+      "arriba": 2,
       "actualizada": "2026-11-26T14:02:34-05:00"
     },
     {
@@ -467,7 +468,7 @@
       "foto_alt": "Gráfico de Miami Magic sobre una vista aérea de Brickell Key y la bahía: 15 estrellas Michelin en Miami-Dade, 1 en Broward y primera vez de Los Cayos en la guía",
       "foto_pie": "Gráfico de Miami Magic.",
       "foto_pie_en": "Graphic by Miami Magic.",
-      "ultima": 2,
+      "ultima": 7,
       "foto_mm": false
     },
     {
@@ -561,8 +562,8 @@
       "actualizada": "2026-11-27T07:32:10-05:00",
       "vence": "2026-11-27",
       "aviso_vence": false,
-      "ultima": 4,
-      "arriba": 2,
+      "ultima": 1,
+      "arriba": 1,
       "es": {
         "etiqueta": "EL TIEMPO",
         "titulo": "Advertencia costera en los Cayos de arriba hasta el sábado 28",
@@ -735,7 +736,7 @@
           "u": "https://www.akc.org/expert-advice/news/watch-national-dog-show/"
         }
       ],
-      "desarrollo": true,
+      "desarrollo": false,
       "actualizada": "2026-11-27T07:32:10-05:00",
       "ultima": 9,
       "arriba": 5,
@@ -4629,7 +4630,7 @@
       "actualizada": "2026-11-27T08:38:22-05:00",
       "tambien": 2,
       "ambos": true,
-      "ultima": 6,
+      "ultima": 9,
       "desarrollo": false
     },
     {
@@ -4711,7 +4712,8 @@
       "versiones": [],
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
-      "arriba": 7
+      "arriba": 7,
+      "ultima": 4
     },
     {
       "id": "heat-vice-city-bucks",
@@ -6442,7 +6444,7 @@
       "foto_mm": false,
       "desarrollo": true,
       "actualizada": "2026-11-27T08:39:16-05:00",
-      "ultima": 7,
+      "ultima": 2,
       "arriba": 1
     },
     {
@@ -7295,7 +7297,8 @@
           "u": "https://www.showpass.com/6th-annual-winter-festival-landing-page"
         }
       ],
-      "actualizada": "2026-11-26T11:39:34-05:00"
+      "actualizada": "2026-11-26T11:39:34-05:00",
+      "ultima": 6
     },
     {
       "id": "manaties-noviembre-botes-despacio",
@@ -8859,7 +8862,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T09:00:03-05:00",
+  "updated_at": "2026-11-27T09:05:24-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
