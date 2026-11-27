@@ -1816,6 +1816,30 @@
    "link": "https://www.amerantbankarena.com/events"
   },
   {
+   "id": "sbs-gables26",
+   "scope": "local",
+   "d": "2026-11-28",
+   "name": "Small Business Saturday in Coral Gables",
+   "name_es": "Small Business Saturday en Coral Gables",
+   "venue": "Downtown Coral Gables · kickoff at Violetas, 257 Miracle Mile",
+   "venue_es": "Centro de Coral Gables · arranque en Violetas, 257 Miracle Mile",
+   "time": "Sat · 9 AM–5 PM · kickoff 10 AM",
+   "time_es": "Sáb · 9 AM–5 PM · arranque 10 AM",
+   "price": "Free · free parking in city garages",
+   "price_es": "Gratis · estacionamiento gratis en los garajes municipales",
+   "type": "Shopping · Community",
+   "type_es": "Compras · Comunidad",
+   "desc": "A day to shop local on Miracle Mile. Downtown city garages are free from 9 AM to 5 PM, and the Chamber of Commerce kicks things off at 10 AM at Violetas.",
+   "desc_es": "Un día para comprar en los negocios locales de Miracle Mile. Los garajes municipales del centro son gratis de 9 AM a 5 PM, y la Cámara de Comercio arranca a las 10 AM en Violetas.",
+   "tags": [
+    "Shopping",
+    "Community"
+   ],
+   "link": "https://www.coralgables.com/events/small-business-saturday",
+   "photo": "fotos/mm-miracle-mile-letrero.jpg",
+   "free": true
+  },
+  {
    "id": "kas-rawayana26",
    "scope": "local",
    "d": "2026-12-05",

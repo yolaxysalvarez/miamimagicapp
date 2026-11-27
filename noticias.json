@@ -248,7 +248,7 @@
           "u": "https://cityofkeywest-fl.gov/810/City-Parking-Lots-Rates"
         }
       ],
-      "ultima": 8
+      "ultima": 2
     },
     {
       "id": "no-vacancy-miami-beach-doce-hoteles-arte",
@@ -934,6 +934,10 @@
       "foto_pie_en": "Amerant Bank Arena, home of the Panthers, in Sunrise. Photo: Miami Magic.",
       "fuentes": [
         {
+          "n": "NHL · Resultados del 27 de noviembre de 2026",
+          "u": "https://www.nhl.com/scores/2026-11-27"
+        },
+        {
           "n": "NHL · Previa Panthers–Capitals (27 de noviembre de 2026)",
           "u": "https://www.nhl.com/news/florida-panthers-washington-capitals-game-preview-november-27-2026"
         },
@@ -952,14 +956,14 @@
         "titulo": "Viernes decisivo para el deporte de Miami",
         "bajada": "Horarios y dónde ver a los Panthers, el HEAT e Inter Miami el 27 de noviembre.",
         "toca": [
-          "Panthers en Washington: 3:00 p.m., por Scripps (WSFL 39 en Miami).",
+          "Panthers 3, Capitals 2: tercera victoria seguida, con marca de 15-8-3.",
           "HEAT en Nueva York: 7:00 p.m., por Prime Video.",
           "Inter Miami en Columbus: 8:00 p.m., por Apple TV, FS1 y FOX Deportes."
         ],
         "cuerpo": [
-          "El viernes 27 de noviembre los tres equipos del sur de Florida juegan fuera de casa, uno detrás del otro: los Panthers a las 3:00 p.m., el HEAT a las 7:00 p.m. e Inter Miami a las 8:00 p.m.",
-          "## Panthers en Washington",
-          "Los Panthers (14-8-3) visitan a los Capitals en el Capital One Arena con dos victorias seguidas. La última fue el 5-3 sobre Ottawa del miércoles 25, en el que volvieron Aleksander Barkov y Brad Marchand. Jonah Gadjovich sigue de baja. El sábado 28 reciben a Tampa Bay a las 6:00 p.m.",
+          "El viernes 27 de noviembre los tres equipos del sur de Florida juegan fuera de casa. Los Panthers abrieron la jornada con un triunfo en Washington; el HEAT sale a las 7:00 p.m. e Inter Miami a las 8:00 p.m.",
+          "## Panthers: 3-2 en Washington",
+          "Los Panthers vencieron 3-2 a los Capitals en el Capital One Arena y suman tres victorias seguidas, con marca de 15-8-3. Aaron Ekblad anotó en ventaja numérica y Sam Bennett marcó el gol del triunfo en el tercer período; Matthew Tkachuk dio dos asistencias, de acuerdo con las [estadísticas de la NHL](https://www.nhl.com/scores/2026-11-27). El sábado 28 reciben a Tampa Bay a las 6:00 p.m.",
           "## HEAT en el Madison Square Garden",
           "El HEAT (10-7) juega contra los Knicks por el Grupo B del Este de la NBA Cup, según el [calendario del equipo local](https://www.nba.com/knicks/). Llega de perder 111-104 en Filadelfia, la derrota que cortó su racha de siete triunfos. El domingo 29 visita a Cleveland a las 3:30 p.m.",
           "## Inter Miami, sin margen",
@@ -972,14 +976,14 @@
         "titulo": "A decisive Friday for Miami sports",
         "bajada": "Times and where to watch the Panthers, the HEAT and Inter Miami on Nov. 27.",
         "toca": [
-          "Panthers in Washington: 3 p.m., on Scripps (WSFL 39 in Miami).",
+          "Panthers 3, Capitals 2: third straight win, now 15-8-3.",
           "HEAT in New York: 7 p.m., on Prime Video.",
           "Inter Miami in Columbus: 8 p.m., on Apple TV, FS1 and FOX Deportes."
         ],
         "cuerpo": [
-          "On Friday, Nov. 27, South Florida's three teams play on the road, one after another: the Panthers at 3 p.m., the HEAT at 7 p.m. and Inter Miami at 8 p.m.",
-          "## Panthers in Washington",
-          "The Panthers (14-8-3) visit the Capitals at Capital One Arena on a two-game winning streak. The latest was the 5-3 win over Ottawa on Wednesday the 25th, when Aleksander Barkov and Brad Marchand returned. Jonah Gadjovich remains out. On Saturday the 28th they host Tampa Bay at 6 p.m.",
+          "On Friday, Nov. 27, South Florida's three teams play on the road. The Panthers opened the day with a win in Washington; the HEAT tip off at 7 p.m. and Inter Miami kick off at 8 p.m.",
+          "## Panthers: 3-2 in Washington",
+          "The Panthers beat the Capitals 3-2 at Capital One Arena for their third straight win, moving to 15-8-3. Aaron Ekblad scored on the power play and Sam Bennett got the winner in the third period; Matthew Tkachuk had two assists, according to [NHL statistics](https://www.nhl.com/scores/2026-11-27). On Saturday the 28th they host Tampa Bay at 6 p.m.",
           "## HEAT at Madison Square Garden",
           "The HEAT (10-7) face the Knicks in East Group B of the NBA Cup, according to the [home team's schedule](https://www.nba.com/knicks/). They are coming off a 111-104 loss in Philadelphia, the defeat that ended their seven-game winning streak. On Sunday the 29th they visit Cleveland at 3:30 p.m.",
           "## Inter Miami, no margin",
@@ -987,7 +991,8 @@
           "The [MLS player availability report](https://www.mlssoccer.com/league-reports/player-availability-report/) lists César Abadía-Reda, David Ayala and Sergio Reguilón as out with lower-body issues, and Tadeo Allende and Mateo Silvetti as out for the season. Gonzalo Luján is suspended after his red card in Game 1."
         ]
       },
-      "ultima": 3
+      "ultima": 3,
+      "actualizada": "2026-11-27T18:55:00-05:00"
     },
     {
       "id": "hepatitis-a-viajes-cuba-miami-dade-aviso-salud",
@@ -7632,10 +7637,10 @@
       "foto_alt": "Botes en un canal de los Cayos",
       "foto_pie": "Un canal de los Cayos, donde la marea alta se nota primero.",
       "es": {
-        "titulo": "La marea real de noviembre aún moja los Cayos de arriba",
-        "bajada": "El Servicio Meteorológico había marcado el 25 y 26 de noviembre como los días de agua más alta que quedaban en el año. La advertencia de inundación costera para los Cayos de arriba sigue vigente hasta las 5:00 a.m. del sábado 28.",
+        "titulo": "La marea real de noviembre afloja en los Cayos",
+        "bajada": "El Servicio Meteorológico canceló la advertencia de inundación costera; queda una declaración por inundación menor hasta la madrugada del sábado 28.",
         "toca": [
-          "Cayos de arriba: advertencia de inundación costera hasta las 5:00 a.m. del sábado 28. Cayos del medio y de abajo: declaración hasta entrada la noche del viernes 27, según el [listado de avisos](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all) del Servicio Meteorológico.",
+          "Toda la cadena de los Cayos: declaración de inundación costera hasta la madrugada del sábado 28. La advertencia para los Cayos de arriba fue cancelada el viernes 27 a las 3:47 p.m., según el [listado de avisos](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all) del Servicio Meteorológico.",
           "Antes de salir, revisa las alertas de inundación costera del Servicio Meteorológico en Key West, sobre todo si vas a usar Card Sound Road o las calles bajas junto a la US-1.",
           "No manejes por agua salada: puede ser más honda de lo que parece, esconde huecos y tapas de alcantarilla abiertas, y corroe el auto. Busca otra ruta, y si no la hay, lava los bajos después.",
           "Si vives en el lado de la bahía de los Cayos de arriba o en una calle baja, mueve el auto a terreno alto antes del pico: allí el agua tarda más en bajar.",
@@ -7643,17 +7648,17 @@
           "En bote, revisa la marea antes de salir: con la marea alta queda menos espacio bajo los puentes fijos. Cerca de las casas, navega despacio para no levantar olas que empujen el agua hacia los patios."
         ],
         "cuerpo": [
-          "La última marea real del año en los Cayos ya pasó su pico, pero el agua no ha terminado de bajar: el Servicio Meteorológico mantiene la advertencia de inundación costera para los Cayos de arriba hasta las 5:00 a.m. del sábado 28, y una declaración para los Cayos del medio y de abajo hasta entrada la noche del viernes 27, según su [listado de avisos](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all).",
+          "El Servicio Meteorológico canceló el viernes 27 de noviembre, a las 3:47 p.m., la advertencia de inundación costera que mantenía para los Cayos de arriba. En su lugar queda una declaración, el escalón más bajo, para los Cayos de arriba, del medio y de abajo hasta la madrugada del sábado 28, según su [listado de avisos](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all). La última marea real del año ya pasó su pico y el agua sigue bajando.",
           "La oficina de [Key West](https://www.weather.gov/key/coastal_flooding) había previsto para el 25 y 26 de noviembre las mareas más altas que quedaban del año, tras las inundaciones de finales de octubre. La fecha llegó con lluvia: para el miércoles 25 avisó de lluvia excesiva, viento y posibilidad de tiempo severo, y el jueves 26 la advertencia costera ya estaba en vigor. Con el mar en lo más alto, la calle baja se llena de agua que viene de los dos lados. Lo que trajo el frente está en [esta nota](https://miamimagicapp.com/noticias/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "El 28 de octubre, el medidor de Key West llegó a unos 2.4 pies sobre la marea alta media, por encima del nivel de alerta de 2.1, y el de Vaca Key, en Marathon, a 2.37, [reportó Weatherboy](https://weatherboy.com/king-tides-push-major-saltwater-flooding-into-florida-keys-streets/). Parte de Card Sound Road quedó bajo el agua. En los Cayos, explica el Servicio Meteorológico, la piedra caliza deja que el mar suba desde abajo, y en el lado de la bahía de los Cayos de arriba el agua tarda más en bajar.",
           "Las inundaciones se pueden reportar en la página del Servicio Meteorológico en Key West o al 305-295-1316."
         ]
       },
       "en": {
-        "titulo": "November's king tide still wets the Upper Keys",
-        "bajada": "The National Weather Service had marked Nov. 25 and 26 as the highest-water days left this year. The coastal flood advisory for the Upper Keys remains in effect until 5 a.m. Saturday the 28th.",
+        "titulo": "November's king tide eases in the Keys",
+        "bajada": "The National Weather Service canceled the coastal flood advisory; a statement for minor flooding remains through early Saturday the 28th.",
         "toca": [
-          "Upper Keys: coastal flood advisory until 5 a.m. Saturday the 28th. Middle and Lower Keys: statement through late Friday night, the 27th, according to the National Weather Service's [alert list](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all).",
+          "The whole island chain: coastal flood statement through early Saturday the 28th. The advisory for the Upper Keys was canceled Friday the 27th at 3:47 p.m., according to the National Weather Service's [alert list](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all).",
           "Before heading out, check the National Weather Service Key West coastal flood alerts, especially if you'll use Card Sound Road or the low streets along US-1.",
           "Don't drive through salt water: it can be deeper than it looks, hides potholes and open manhole covers, and corrodes cars. Find another route, and if there isn't one, wash the undercarriage afterward.",
           "If you live on the bay side of the Upper Keys or on a low street, move your car to higher ground before the peak: water takes longer to recede there.",
@@ -7661,7 +7666,7 @@
           "By boat, check the tide before leaving: high tide leaves less clearance under fixed bridges. Near homes, go slow so your wake doesn't push water into yards."
         ],
         "cuerpo": [
-          "The year's last king tide in the Keys is past its peak, but the water has not finished receding: the National Weather Service keeps the coastal flood advisory for the Upper Keys until 5 a.m. Saturday the 28th, and a statement for the Middle and Lower Keys through late Friday night, the 27th, according to its [alert list](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all).",
+          "The National Weather Service canceled, on Friday, Nov. 27, at 3:47 p.m., the coastal flood advisory it had kept for the Upper Keys. In its place is a statement, the lowest tier, for the Upper, Middle and Lower Keys through early Saturday the 28th, according to its [alert list](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all). The year's last king tide is past its peak and the water keeps receding.",
           "The [Key West](https://www.weather.gov/key/coastal_flooding) office had expected the highest tides left this year on Nov. 25 and 26, following the late-October flooding. The date arrived with rain: for Wednesday the 25th it warned of excessive rain, wind and a chance of severe weather, and by Thursday the 26th the coastal advisory was already in effect. With the sea at its highest, a low street fills with water from both sides. What the front brought is in [this story](https://miamimagicapp.com/news/frente-lluvia-inundacion-miami-cayos-25-noviembre).",
           "On Oct. 28, the Key West gauge reached about 2.4 feet above mean higher high water, above the 2.1-foot alert level, and the Vaca Key gauge in Marathon hit 2.37, [Weatherboy reported](https://weatherboy.com/king-tides-push-major-saltwater-flooding-into-florida-keys-streets/). Part of Card Sound Road went under water. In the Keys, the Weather Service explains, the limestone lets the sea rise from below, and on the bay side of the Upper Keys the water takes longer to recede.",
           "Flooding can be reported on the National Weather Service Key West page or at 305-295-1316."
@@ -7687,10 +7692,9 @@
       ],
       "foto_pie_en": "A Keys canal, where high tide shows up first.",
       "foto_mm": false,
-      "desarrollo": true,
-      "actualizada": "2026-11-27T08:39:16-05:00",
-      "ultima": 2,
-      "arriba": 1
+      "desarrollo": false,
+      "actualizada": "2026-11-27T18:55:00-05:00",
+      "arriba": 3
     },
     {
       "id": "dry-tortugas-escapada-ferry",
@@ -10107,7 +10111,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T15:30:00-05:00",
+  "updated_at": "2026-11-27T18:55:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
