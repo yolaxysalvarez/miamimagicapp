@@ -55,6 +55,78 @@
   "videos": [],
   "notas": [
     {
+      "id": "panthers-heat-inter-miami-viernes-27-noviembre",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:14:37-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-amerant-fachada.jpg",
+      "foto_pos": "50% 28%",
+      "foto_alt": "Fachada del Amerant Bank Arena con el escudo de los Florida Panthers",
+      "foto_pie": "El Amerant Bank Arena, casa de los Panthers, en Sunrise. Foto: Miami Magic.",
+      "foto_pie_en": "Amerant Bank Arena, home of the Panthers, in Sunrise. Photo: Miami Magic.",
+      "fuentes": [
+        {
+          "n": "NHL · Previa Panthers–Capitals (27 de noviembre de 2026)",
+          "u": "https://www.nhl.com/news/florida-panthers-washington-capitals-game-preview-november-27-2026"
+        },
+        {
+          "n": "New York Knicks · Calendario oficial, NBA Cup",
+          "u": "https://www.nba.com/knicks/"
+        },
+        {
+          "n": "MLS · Reporte de disponibilidad de jugadores",
+          "u": "https://www.mlssoccer.com/league-reports/player-availability-report/"
+        }
+      ],
+      "desarrollo": false,
+      "ultima": 8,
+      "es": {
+        "etiqueta": "DEPORTES",
+        "titulo": "Panthers, HEAT e Inter Miami juegan el viernes 27",
+        "bajada": "Los tres salen de visita. Para Inter Miami, perder es quedar eliminado.",
+        "toca": [
+          "Panthers en Washington: 3:00 p.m., por Scripps (WSFL 39 en Miami).",
+          "HEAT en Nueva York: 7:00 p.m., por Prime Video.",
+          "Inter Miami en Columbus: 8:00 p.m., por Apple TV, FS1 y FOX Deportes."
+        ],
+        "cuerpo": [
+          "El viernes 27 de noviembre los tres equipos del sur de Florida juegan fuera de casa, uno detrás del otro: los Panthers a las 3:00 p.m., el HEAT a las 7:00 p.m. e Inter Miami a las 8:00 p.m.",
+          "## Panthers en Washington",
+          "Los Panthers (14-8-3) visitan a los Capitals en el Capital One Arena con dos victorias seguidas. La última fue el 5-3 sobre Ottawa del miércoles 25, en el que volvieron Aleksander Barkov y Brad Marchand. Jonah Gadjovich sigue de baja. El sábado 28 reciben a Tampa Bay a las 6:00 p.m.",
+          "## HEAT en el Madison Square Garden",
+          "El HEAT (10-7) juega contra los Knicks por el Grupo B del Este de la NBA Cup, según el [calendario del equipo local](https://www.nba.com/knicks/). Llega de perder 111-104 en Filadelfia, la derrota que cortó su racha de siete triunfos. El domingo 29 visita a Cleveland a las 3:30 p.m.",
+          "## Inter Miami, sin margen",
+          "Inter Miami perdió 3-0 el primer partido de la serie al mejor de tres contra el Columbus Crew, así que otra derrota lo deja fuera. Si gana, el tercer partido es el miércoles 2 de diciembre a las 7:30 p.m. en el Nu Stadium. La serie completa está en [esta nota](https://miamimagicapp.com/noticias/inter-miami-playoffs-nu-stadium).",
+          "El [reporte de disponibilidad de la MLS](https://www.mlssoccer.com/league-reports/player-availability-report/) da por fuera a César Abadía-Reda, David Ayala y Sergio Reguilón, con molestias en el tren inferior, y a Tadeo Allende y Mateo Silvetti, lesionados por el resto de la temporada. Gonzalo Luján está suspendido tras su expulsión en el primer partido."
+        ]
+      },
+      "en": {
+        "etiqueta": "SPORTS",
+        "titulo": "Panthers, HEAT and Inter Miami play on Friday the 27th",
+        "bajada": "All three are on the road. For Inter Miami, a loss means elimination.",
+        "toca": [
+          "Panthers in Washington: 3 p.m., on Scripps (WSFL 39 in Miami).",
+          "HEAT in New York: 7 p.m., on Prime Video.",
+          "Inter Miami in Columbus: 8 p.m., on Apple TV, FS1 and FOX Deportes."
+        ],
+        "cuerpo": [
+          "On Friday, Nov. 27, South Florida's three teams play on the road, one after another: the Panthers at 3 p.m., the HEAT at 7 p.m. and Inter Miami at 8 p.m.",
+          "## Panthers in Washington",
+          "The Panthers (14-8-3) visit the Capitals at Capital One Arena on a two-game winning streak. The latest was the 5-3 win over Ottawa on Wednesday the 25th, when Aleksander Barkov and Brad Marchand returned. Jonah Gadjovich remains out. On Saturday the 28th they host Tampa Bay at 6 p.m.",
+          "## HEAT at Madison Square Garden",
+          "The HEAT (10-7) face the Knicks in East Group B of the NBA Cup, according to the [home team's schedule](https://www.nba.com/knicks/). They are coming off a 111-104 loss in Philadelphia, the defeat that ended their seven-game winning streak. On Sunday the 29th they visit Cleveland at 3:30 p.m.",
+          "## Inter Miami, no margin",
+          "Inter Miami lost the first game of the best-of-three series against the Columbus Crew 3-0, so another loss ends its season. If it wins, Game 3 is Wednesday, Dec. 2, at 7:30 p.m. at Nu Stadium. The full series is in [this story](https://miamimagicapp.com/news/inter-miami-playoffs-nu-stadium).",
+          "The [MLS player availability report](https://www.mlssoccer.com/league-reports/player-availability-report/) lists César Abadía-Reda, David Ayala and Sergio Reguilón as out with lower-body issues, and Tadeo Allende and Mateo Silvetti as out for the season. Gonzalo Luján is suspended after his red card in Game 1."
+        ]
+      }
+    },
+    {
       "id": "hepatitis-a-viajes-cuba-miami-dade-aviso-salud",
       "scope": "miami",
       "tema": "ciudad",
@@ -5011,8 +5083,7 @@
       "versiones": [],
       "foto_fit": "contain",
       "foto_bg": "#0a090b",
-      "arriba": 7,
-      "ultima": 8
+      "arriba": 7
     },
     {
       "id": "heat-vice-city-bucks",
@@ -5150,7 +5221,7 @@
           "- En Miami: Omni Garage (453 NE 15 St.), junto al taxi acuático; y en el Design District, City View Garage (25 NE 38 St.), Palm Court Garage (155 NE 38 St.) y el estacionamiento público del 3630 NE 1 Court.",
           "- En Miami Beach: Sunset Harbour Garage (1900 Bay Road), 17 Street Garage (640 17 St.), Pennsylvania Avenue Garage (1661 Pennsylvania Ave.), City Hall Garage (1755 Meridian Ave.) y 42 Street Garage (4049 Royal Palm Ave.).",
           "## Trolley, taxi y rideshare",
-          "El trolley gratis de Miami Beach refuerza su frecuencia del miércoles 2 al sábado 5 de diciembre, de 8:00 a.m. a medianoche. Para taxis, Uber y Lyft, la ciudad señala dos zonas junto al centro de convenciones: Convention Center Drive, en dirección norte, entre las calles 18 y 19; y Washington Avenue, en dirección sur, entre las calles 18 y 19 y entre la 20 y la 21.",
+          "El trolley gratis de Miami Beach refuerza su frecuencia del miércoles 2 al sábado 5 de diciembre, de 8:00 a.m. a medianoche; se puede seguir en tiempo real con la aplicación Transit, que es la que [indica la ciudad](https://www.miamibeachfl.gov/city-hall/transportation/trolley/trolleytrackerapps/). Para taxis, Uber y Lyft, la ciudad señala dos zonas junto al centro de convenciones: Convention Center Drive, en dirección norte, entre las calles 18 y 19; y Washington Avenue, en dirección sur, entre las calles 18 y 19 y entre la 20 y la 21.",
           "## El tráfico",
           "La ciudad avisa que las tardes entre semana son las más pesadas y que el tráfico crece hacia el fin de semana. Las obras del FDOT cerca de la salida de Biscayne Boulevard, en el downtown, afectarán a quien salga de la playa hacia el oeste por la MacArthur Causeway. En el Venetian, el puente levadizo del este no abrirá a embarcaciones de 3:00 a 9:00 p.m. del 30 de noviembre al 6 de diciembre, salvo emergencias.",
           "Para recibir alertas de tráfico por mensaje de texto, la ciudad indica enviar MBAlert al 888777."
@@ -5189,7 +5260,7 @@
           "- In Miami: Omni Garage (453 NE 15 St.), next to the water taxi; and in the Design District, City View Garage (25 NE 38 St.), Palm Court Garage (155 NE 38 St.) and the public lot at 3630 NE 1 Court.",
           "- In Miami Beach: Sunset Harbour Garage (1900 Bay Road), 17 Street Garage (640 17 St.), Pennsylvania Avenue Garage (1661 Pennsylvania Ave.), City Hall Garage (1755 Meridian Ave.) and 42 Street Garage (4049 Royal Palm Ave.).",
           "## Trolley, taxi and rideshare",
-          "The free Miami Beach trolley runs more often from Wednesday, Dec. 2, through Saturday, Dec. 5, from 8 a.m. to midnight. For taxis, Uber and Lyft, the city lists two zones by the convention center: northbound Convention Center Drive between 18th and 19th streets; and southbound Washington Avenue between 18th and 19th streets and between 20th and 21st.",
+          "The free Miami Beach trolley runs more often from Wednesday, Dec. 2, through Saturday, Dec. 5, from 8 a.m. to midnight; it can be tracked in real time with the Transit app, the one [the city points to](https://www.miamibeachfl.gov/city-hall/transportation/trolley/trolleytrackerapps/). For taxis, Uber and Lyft, the city lists two zones by the convention center: northbound Convention Center Drive between 18th and 19th streets; and southbound Washington Avenue between 18th and 19th streets and between 20th and 21st.",
           "## Traffic",
           "The city warns that weekday afternoons are the heaviest and that traffic builds toward the weekend. FDOT construction near the Biscayne Boulevard exit, downtown, will affect westbound traffic leaving the beach on the MacArthur Causeway. On the Venetian, the east drawbridge will not open to vessels from 3 to 9 p.m. from Nov. 30 to Dec. 6, except for emergencies.",
           "To get traffic alerts by text, the city says to send MBAlert to 888777."
@@ -5221,7 +5292,7 @@
           "u": "https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/"
         }
       ],
-      "actualizada": "2026-11-27T11:10:47-05:00"
+      "actualizada": "2026-11-27T11:14:37-05:00"
     },
     {
       "id": "mercado-miami-dade-dos-velocidades",
@@ -9189,7 +9260,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:10:47-05:00",
+  "updated_at": "2026-11-27T11:14:37-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
