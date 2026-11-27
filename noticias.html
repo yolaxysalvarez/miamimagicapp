@@ -559,7 +559,7 @@ body.sp #masH,body.sp #masBtn,body.sp-hm #hm,body.sp-dk #dk{display:none!importa
 .sp-sun:empty{display:none}
 .ph:empty,a:has(>.ph:empty):not(:has(h3,h4,b,span:not(.ph))){display:none}
 html.mm-wait main.wrap{opacity:0}
-html.ag-only main.wrap>*:not(#split){display:none!important}html.ag-only #split{display:block!important}html.ag-only #split>*:not(#ag):not(#evs){display:none!important}html.ag-only #ag{margin-top:6px}.ag-back{display:none}html.ag-only .ag-back{display:inline-block;margin:4px 0 18px;font-family:var(--bb);font-size:15px;letter-spacing:.16em;color:var(--coral-d);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}main.wrap{transition:opacity .28s ease}
+html.ag-only main.wrap>*:not(#ag):not(#evs){display:none!important}html.ag-only #ag{display:block!important}html.ag-only #ag{margin-top:6px}.ag-back{display:none}html.ag-only .ag-back{display:inline-block;margin:4px 0 18px;font-family:var(--bb);font-size:15px;letter-spacing:.16em;color:var(--coral-d);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:3px}main.wrap{transition:opacity .28s ease}
 .kyw{font-family:var(--pf);font-weight:900}.kyw em{font-style:italic;color:#0E7A63}.hiw em{color:#B8862F}.opw em{color:#C93A25}.dpw em{color:#0E7A63}.sp-h p:empty{display:none}
 .hist-all{display:inline-block;margin-top:14px;font-family:var(--bb);font-size:15px;letter-spacing:.16em;color:#8A5A12;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
 .sp-k{display:block;font-family:var(--bb);font-size:17px;letter-spacing:.18em;color:var(--coral-d)}
@@ -835,7 +835,7 @@ body:not(.home) .split{display:block;margin-bottom:0}
  .ht{margin-bottom:44px}.ht-c .hd{grid-template-columns:96px minmax(0,1fr);gap:12px}.ht-c b{font-size:18px}
  .apps{grid-template-columns:1fr;gap:26px}.af.big{grid-column:auto;min-height:320px;padding:20px}.af.big b{font-size:25px}.apps-m{margin-bottom:44px}
 }
-.split.solo{display:block}
+.split.solo{display:block}.split:has(>#opB[style*="none"]){display:block}.split #opB{margin:0}.split .op-c{grid-template-columns:1fr;gap:14px}
 .ul a>i,.fz-c .n u,.hist .yr,.hist-l b,.tv-l .no,.sp-sun b,.dk-cond b,.ag-d b,.ag-days button b{font-family:var(--dm);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 @media (max-width:600px){.ag-days{flex-wrap:wrap;gap:6px;overflow:visible}.ag-days button.all{flex:1 0 100%;justify-content:center;padding:10px 14px}.ag-days button:not(.all){flex:1 1 0;min-width:0;padding:7px 0 6px}.ag-days button:not(.all) i{font-size:12.5px;letter-spacing:.06em}.ag-days button:not(.all) b{font-size:19px}.ag-days button:not(.all) u{display:none}}
 .hist .yr{letter-spacing:-.04em}
@@ -1125,9 +1125,6 @@ body{background:#fff;text-rendering:optimizeLegibility}
   <div class="mb" id="masBtn" style="display:none"><button type="button"></button></div>
   <div id="otros"></div>
 
-  <section class="tv" id="tv" aria-label="Video" style="display:none"></section>
-
-  <div class="split" id="split">
 <div class="evs" id="evs" role="dialog" aria-modal="true" aria-labelledby="evsT"><div class="evs-c"><button type="button" class="evs-x" id="evsX" aria-label="Cerrar">✕</button><div id="evsB"></div></div></div>
   <section class="ag" id="ag" aria-label="Agenda" style="display:none">
     <a class="ag-back" href="#" id="agBack">← TODO NEWS</a>
@@ -1143,8 +1140,9 @@ body{background:#fff;text-rendering:optimizeLegibility}
     <div class="ag-l" id="agL"></div>
     <div class="ag-f"><button type="button" class="ag-mb" id="agMb" style="display:none"></button><a id="agGo" href="/?go=week"></a></div>
   </section>
-  <div id="datoBox"></div>
-  </div>
+
+  <section class="tv" id="tv" aria-label="Video" style="display:none"></section>
+
 
   <section class="ms" id="mesa" aria-label="La Mesa" style="display:none"></section>
   <section class="ht" id="hot" aria-label="Hoteles" style="display:none"></section>
@@ -1192,7 +1190,10 @@ body{background:#fff;text-rendering:optimizeLegibility}
   </section>
   </div>
 
+  <div class="split" id="split">
   <section id="opB" aria-label="Opinión" style="display:none"></section>
+  <div id="datoBox"></div>
+  </div>
 
   <div class="sh" id="appsH"><h3 data-t="desde">DESDE LA APP</h3><span data-t="desde2">Las noticias de cada sección</span></div>
   <div class="apps" id="apps"></div>
