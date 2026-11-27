@@ -131,7 +131,7 @@ h1{font-family:var(--pf);font-weight:900;font-size:52px;line-height:1.06;letter-
 .mas a.mi:hover{text-decoration:none}.mas a.mi:hover b{text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-color:rgba(201,150,60,.85)}
 .mas .th{width:112px;aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:var(--card)}
 .mas .th img{width:100%;height:100%;object-fit:cover}
-.mas .th.fit img{object-fit:contain;background:#0E1B30}
+.mas .th.fit img{object-fit:contain;background:transparent}.mas .th{position:relative}.fit .fitbg{position:absolute!important;inset:-16px!important;width:calc(100% + 32px)!important;height:calc(100% + 32px)!important;object-fit:cover!important;filter:blur(18px) brightness(.85) saturate(1.1);z-index:0;pointer-events:none}.fit>img:not(.fitbg){position:relative;z-index:1}.fit .wm{z-index:2}
 .mas .eb{display:block;font-family:var(--bb);font-size:15px;letter-spacing:.12em;color:var(--coral-d);margin-bottom:3px}
 .mas .eb.ky{color:var(--keys)}
 .mas b{display:block;font-family:var(--pf);font-weight:700;font-size:18px;line-height:1.25}
@@ -312,7 +312,7 @@ function nImg(n){var f=(L==='en'&&n.foto_en)||n.foto||'';return f?(/^https?:|^\/
 function secName(k,sc){var en=L==='en';return k==='casa'?CCW:k==='muelle'?(en?'THE DOCK':'EL MUELLE'):k==='hamaca'?'HAMACA MOOD':k==='cayos'?(en?'THE KEYS':'LOS CAYOS'):'MIAMI'}
 var CCW='<span class="ccw" role="img" aria-label="Casa &amp; Coast">Casa<svg class="em" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 30 L32 10 L56 30" fill="none" stroke="#C9963C" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 42 q6 -6 12 0 t12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-width="4.4" stroke-linecap="round"/><path d="M14 54 q6 -5 12 0 t12 0 t12 0" fill="none" stroke="#12806E" stroke-opacity=".45" stroke-width="3.4" stroke-linecap="round"/></svg>Coast</span>';
 function miRow(n){var f=n[L]||n.es||{},k=secOf(n),ky=n.scope==='cayos',im=nImg(n),eb=(k==='casa'?'CASA & COAST':k==='muelle'?(L==='en'?'THE DOCK':'EL MUELLE'):k==='hamaca'?'HAMACA MOOD':(ky?(L==='en'?'THE KEYS':'LOS CAYOS'):'MIAMI'))+(f.etiqueta?' · '+f.etiqueta:'');
-  return '<a class="mi" href="'+nHref(n)+'"><span class="th'+(n.foto_fit==='contain'?' fit':'')+'">'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy">':'')+'</span><span><span class="eb'+(ky&&k!=='casa'?' ky':'')+'">'+esc(eb)+'</span><b>'+esc(f.titulo||'')+'</b></span></a>'}
+  return '<a class="mi" href="'+nHref(n)+'"><span class="th'+(n.foto_fit==='contain'?' fit':'')+'">'+(im&&n.foto_fit==='contain'?'<img class="fitbg" src="'+esc(im)+'" alt="" aria-hidden="true" loading="lazy">':'')+(im?'<img src="'+esc(im)+'" alt="" loading="lazy">':'')+'</span><span><span class="eb'+(ky&&k!=='casa'?' ky':'')+'">'+esc(eb)+'</span><b>'+esc(f.titulo||'')+'</b></span></a>'}
 function evList(){
   if(!EVD)return [];var p=function(x){var a=String(x||'').split('-');return a.length===3?new Date(+a[0],+a[1]-1,+a[2]):null};
   var t0=new Date();t0.setHours(0,0,0,0);var t7=new Date(t0);t7.setDate(t7.getDate()+6);var q={};(EVD.quitar_semana||[]).forEach(function(i){q[i]=1});
