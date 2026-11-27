@@ -284,14 +284,14 @@
       "es": {
         "etiqueta": "EN LA CALLE",
         "titulo": "La NTSB investiga la salida de pista del avión de FedEx en Miami; la 26R sigue cerrada",
-        "bajada": "El aeropuerto opera con tres de sus cuatro pistas tras el incidente del miércoles por la noche con el vuelo 910, un MD-11 procedente de Memphis. No hubo heridos reportados.",
+        "bajada": "El aeropuerto informó el jueves que operaba con tres de sus cuatro pistas tras el incidente del miércoles por la noche con el vuelo 910, un MD-11 procedente de Memphis. No hubo heridos reportados.",
         "toca": [
-          "Si vuela hoy, confirme su vuelo con la aerolínea antes de salir hacia MIA.",
-          "Tres de las cuatro pistas están abiertas; la 8L-26R sigue cerrada, según el aeropuerto.",
+          "Si vuela en estos días, confirme su vuelo con la aerolínea antes de salir hacia MIA.",
+          "En la última actualización del aeropuerto, del jueves 26, tres de las cuatro pistas estaban abiertas y la 8L-26R seguía cerrada.",
           "La NTSB y la FAA investigan; ninguna ha informado la causa."
         ],
         "cuerpo": [
-          "La Junta Nacional de Seguridad en el Transporte (NTSB) [anunció](https://x.com/NTSB_Newsroom/status/2126016211641327702) este jueves que investiga la salida de pista del MD-11 de FedEx ocurrida el miércoles 25 en el Aeropuerto Internacional de Miami. El aeropuerto, en su [actualización](https://x.com/iflymia/status/2125937493493043337) de hoy, indicó que tres de sus cuatro pistas están abiertas y que la 8L-26R, la del incidente, permanece cerrada.",
+          "La Junta Nacional de Seguridad en el Transporte (NTSB) [anunció](https://x.com/NTSB_Newsroom/status/2126016211641327702) el jueves 26 que investiga la salida de pista del MD-11 de FedEx ocurrida el miércoles 25 en el Aeropuerto Internacional de Miami. El aeropuerto, en su [actualización](https://x.com/iflymia/status/2125937493493043337) de ese día, indicó que tres de sus cuatro pistas están abiertas y que la 8L-26R, la del incidente, permanece cerrada.",
           "El avión se pasó de la pista 26R alrededor de las 8:40 p.m. del miércoles, informó el propio aeropuerto. Los bomberos de Miami-Dade respondieron y no hay heridos reportados. La [FAA](https://x.com/FAANews/status/2125781991387779283) identificó el avión como el vuelo 910, un McDonnell Douglas MD-11 que salió de Memphis, y dijo que investigará.",
           "Esa noche MIA llegó a quedarse con una sola pista, la 9R, de acuerdo con su [primer aviso](https://x.com/iflymia/status/2125778965985972338). En una [actualización posterior](https://x.com/iflymia/status/2125821301814157360) ya tenía dos: la sur (9-27), para llegadas y salidas, y la diagonal (12/30), reabierta a las 10:30 p.m. solo para salidas.",
           "Las publicaciones oficiales no detallan la causa. El reporte diario de la [FAA](https://www.faa.gov/newsroom/faa-daily-air-traffic-report) del miércoles ya advertía de tormentas que podían causar demoras en Miami y Fort Lauderdale."
@@ -300,14 +300,14 @@
       "en": {
         "etiqueta": "ON THE STREET",
         "titulo": "NTSB investigating the FedEx jet's runway overrun in Miami; 26R remains closed",
-        "bajada": "The airport is operating with three of its four runways after Wednesday night's incident with Flight 910, an MD-11 arriving from Memphis. No injuries were reported.",
+        "bajada": "The airport said Thursday it was operating with three of its four runways after Wednesday night's incident with Flight 910, an MD-11 arriving from Memphis. No injuries were reported.",
         "toca": [
-          "If you are flying today, confirm your flight with the airline before heading to MIA.",
-          "Three of the four runways are open; 8L-26R remains closed, according to the airport.",
+          "If you are flying in the coming days, confirm your flight with the airline before heading to MIA.",
+          "In the airport's latest update, on Thursday the 26th, three of the four runways were open and 8L-26R remained closed.",
           "The NTSB and the FAA are investigating; neither has given a cause."
         ],
         "cuerpo": [
-          "The National Transportation Safety Board (NTSB) [announced](https://x.com/NTSB_Newsroom/status/2126016211641327702) this Thursday that it is investigating the runway excursion of the FedEx MD-11 on Wednesday the 25th at Miami International Airport. The airport, in today's [update](https://x.com/iflymia/status/2125937493493043337), said three of its four runways are open and that 8L-26R, where the incident happened, remains closed.",
+          "The National Transportation Safety Board (NTSB) [announced](https://x.com/NTSB_Newsroom/status/2126016211641327702) on Thursday the 26th that it is investigating the runway excursion of the FedEx MD-11 on Wednesday the 25th at Miami International Airport. The airport, in that day's [update](https://x.com/iflymia/status/2125937493493043337), said three of its four runways are open and that 8L-26R, where the incident happened, remains closed.",
           "The plane overran Runway 26R at about 8:40 p.m. Wednesday, the airport itself reported. Miami-Dade Fire Rescue responded and no injuries were reported. The [FAA](https://x.com/FAANews/status/2125781991387779283) identified the aircraft as Flight 910, a McDonnell Douglas MD-11 that departed Memphis, and said it will investigate.",
           "That night MIA was down to a single runway, 9R, according to its [first notice](https://x.com/iflymia/status/2125778965985972338). In a [later update](https://x.com/iflymia/status/2125821301814157360) it had two: the south runway (9-27), for arrivals and departures, and the diagonal (12/30), reopened at 10:30 p.m. for departures only.",
           "The official posts do not detail the cause. The [FAA](https://www.faa.gov/newsroom/faa-daily-air-traffic-report) daily report on Wednesday had already warned of storms that could cause delays in Miami and Fort Lauderdale."
@@ -492,41 +492,41 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-26T19:17:32-05:00",
+      "actualizada": "2026-11-27T07:32:10-05:00",
       "vence": "2026-11-27",
       "aviso_vence": false,
       "ultima": 4,
       "arriba": 2,
       "es": {
         "etiqueta": "EL TIEMPO",
-        "titulo": "Thanksgiving cierra con marea alta: la advertencia costera en los Cayos de arriba se extiende hasta las 2:00 a.m.",
-        "bajada": "El Servicio Meteorológico prolongó la advertencia de inundación costera para los Cayos de arriba y mantiene declaraciones costeras para el resto de Los Cayos y para la costa de Miami-Dade y Broward hasta el viernes. La marea alta de esta noche es a las 10:10 p.m.",
+        "titulo": "La advertencia de inundación costera en los Cayos de arriba se alarga hasta el sábado a las 5:00 a.m.",
+        "bajada": "El Servicio Meteorológico la renovó este viernes de madrugada y mantiene una declaración para el resto de Los Cayos. En la costa de Miami-Dade y Broward, la declaración costera vence hoy a las 11:00 a.m.",
         "toca": [
-          "Cayos de arriba: advertencia de inundación costera hasta las 2:00 a.m. del viernes 27, según el [listado de avisos vigentes](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all) del Servicio Meteorológico.",
-          "Cayos del medio y de abajo: declaración de inundación costera hasta las 2:00 a.m. del viernes.",
-          "Costa de Miami-Dade y Broward: declaración de inundación costera hasta las 11:00 a.m. del viernes. El riesgo alto de corrientes de resaca venció a las 7:00 p.m. del jueves.",
-          "Marea alta de esta noche: 10:10 p.m."
+          "Cayos de arriba: advertencia de inundación costera hasta las 5:00 a.m. del sábado 28, según el [listado de avisos vigentes](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all) del Servicio Meteorológico.",
+          "Cayos del medio y de abajo: declaración de inundación costera hasta entrada la noche de este viernes.",
+          "Costa de Miami-Dade y Broward: declaración de inundación costera hasta las 11:00 a.m. de este viernes.",
+          "Con marea alta, no cruces calles con agua: es agua de mar y daña el auto."
         ],
         "cuerpo": [
-          "La marea sigue mandando esta noche. La oficina de Key West del Servicio Meteorológico extendió a las 3:43 p.m. del jueves la advertencia de inundación costera para los Cayos de arriba, ahora vigente hasta las 2:00 a.m. del viernes 27, y mantiene hasta esa hora una declaración para los Cayos del medio y de abajo, según su [listado de avisos](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all). Con la marea alta, el agua puede quedarse en calles bajas, y es agua de mar.",
-          "En tierra firme, la oficina de Miami conserva hasta las 11:00 a.m. del viernes una declaración de inundación costera para la costa de Miami-Dade y de Broward. El riesgo alto de corrientes de resaca en esas playas venció a las 7:00 p.m. del jueves, de acuerdo con el mismo listado. La próxima marea alta cae a las 10:10 p.m., como cuenta [la nota de las mareas](https://miamimagicapp.com/noticias/mareas-reales-thanksgiving).",
+          "Los Cayos de arriba pasarán otro día pendientes de la marea. La oficina de Key West del Servicio Meteorológico renovó a las 4:17 a.m. de este viernes la advertencia de inundación costera para esa zona, ahora vigente hasta las 5:00 a.m. del sábado 28, y mantiene una declaración para los Cayos del medio y de abajo hasta entrada la noche, según su [listado de avisos](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all). Con la marea alta, el agua puede quedarse en calles bajas, y es agua de mar.",
+          "En tierra firme, la oficina de Miami dejó vigente hasta las 11:00 a.m. de este viernes la declaración de inundación costera para la costa de Miami-Dade y de Broward, de acuerdo con el mismo listado. El riesgo alto de corrientes de resaca en esas playas había vencido el jueves a las 7:00 p.m.",
           "## Cómo llegamos aquí",
           "El frente dejó lluvia el miércoles, cuando el Servicio Meteorológico hablaba de tormentas fuertes y algún tornado posibles, y una vigilancia de inundación para Miami-Dade, Broward y Palm Beach que rigió hasta la 1:00 a.m. del jueves. Para el día de Thanksgiving, el pronóstico de Miami era mayormente soleado, con máxima cerca de 78 °F y ráfagas del oeste de hasta 23 mph."
         ]
       },
       "en": {
         "etiqueta": "WEATHER",
-        "titulo": "Thanksgiving ends on a high tide: the Upper Keys coastal advisory is extended until 2 a.m.",
-        "bajada": "The National Weather Service extended the coastal flood advisory for the Upper Keys and keeps coastal statements for the rest of the Keys and for the Miami-Dade and Broward coast into Friday. Tonight's high tide is at 10:10 p.m.",
+        "titulo": "The coastal flood advisory in the Upper Keys now runs until 5 a.m. Saturday",
+        "bajada": "The National Weather Service renewed it early this Friday and keeps a statement for the rest of the Keys. On the Miami-Dade and Broward coast, the coastal statement expires today at 11 a.m.",
         "toca": [
-          "Upper Keys: coastal flood advisory until 2 a.m. Friday the 27th, according to the National Weather Service's [list of active alerts](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all).",
-          "Middle and Lower Keys: coastal flood statement until 2 a.m. Friday.",
-          "Miami-Dade and Broward coast: coastal flood statement until 11 a.m. Friday. The high rip current risk expired at 7 p.m. Thursday.",
-          "Tonight's high tide: 10:10 p.m."
+          "Upper Keys: coastal flood advisory until 5 a.m. Saturday the 28th, according to the National Weather Service's [list of active alerts](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all).",
+          "Middle and Lower Keys: coastal flood statement through late tonight, Friday.",
+          "Miami-Dade and Broward coast: coastal flood statement until 11 a.m. this Friday.",
+          "At high tide, do not drive through flooded streets: it is seawater and it damages the car."
         ],
         "cuerpo": [
-          "The tide is still in charge tonight. The National Weather Service office in Key West extended, at 3:43 p.m. Thursday, the coastal flood advisory for the Upper Keys, now in effect until 2 a.m. Friday the 27th, and keeps a statement for the Middle and Lower Keys until the same hour, according to its [alert list](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all). At high tide, water can sit in low streets, and it is seawater.",
-          "On the mainland, the Miami office keeps a coastal flood statement for the Miami-Dade and Broward coast until 11 a.m. Friday. The high rip current risk on those beaches expired at 7 p.m. Thursday, per the same list. The next high tide comes at 10:10 p.m., as [the tides story](https://miamimagicapp.com/news/mareas-reales-thanksgiving) explains.",
+          "The Upper Keys will spend another day watching the tide. The National Weather Service office in Key West renewed, at 4:17 a.m. this Friday, the coastal flood advisory for that area, now in effect until 5 a.m. Saturday the 28th, and keeps a statement for the Middle and Lower Keys through late tonight, according to its [alert list](https://www.weather.gov/wwamap/wwatxtget.php?cwa=key&wwa=all). At high tide, water can sit in low streets, and it is seawater.",
+          "On the mainland, the Miami office left the coastal flood statement for the Miami-Dade and Broward coast in effect until 11 a.m. this Friday, per the same list. The high rip current risk on those beaches had expired Thursday at 7 p.m.",
           "## How we got here",
           "The front brought rain on Wednesday, when the National Weather Service spoke of possible strong storms and a tornado, and a flood watch for Miami-Dade, Broward and Palm Beach that ran until 1 a.m. Thursday. For Thanksgiving Day, Miami's forecast was mostly sunny, with a high near 78 °F and west gusts up to 23 mph."
         ]
@@ -670,13 +670,13 @@
         }
       ],
       "desarrollo": true,
-      "actualizada": "2026-11-26T14:02:34-05:00",
+      "actualizada": "2026-11-27T07:32:10-05:00",
       "ultima": 9,
       "arriba": 5,
       "es": {
         "etiqueta": "TRADICIÓN",
         "titulo": "Dar gracias: de una cosecha compartida en 1621 a la mesa que reúne a todo el país",
-        "bajada": "El desfile de Macy's, en su edición 100, se pospuso por el temporal en Nueva York y sale el sábado 28 de noviembre. Este jueves, el mismo día del mes y de la semana en que Lincoln proclamó, en 1863, un día nacional de Acción de Gracias, Miami y Los Cayos mantienen la tradición: carreras desde la madrugada y un banquete comunitario en el Hard Rock Stadium.",
+        "bajada": "El desfile de Macy's, en su edición 100, se pospuso por el temporal en Nueva York y sale el sábado 28 de noviembre. El jueves 26, el mismo día del mes y de la semana en que Lincoln proclamó, en 1863, un día nacional de Acción de Gracias, Miami y Los Cayos mantuvieron la tradición: carreras desde la madrugada y un banquete comunitario en el Hard Rock Stadium.",
         "toca": [
           "Sábado 28, 8:30 a.m.: sale el desfile de Macy's, pospuesto del jueves por el temporal en Nueva York, según el anuncio de Macy's del miércoles por la tarde.",
           "Jueves 26: el National Dog Show estaba programado de 12:00 a 2:00 p.m. por NBC, según el [AKC](https://www.akc.org/expert-advice/news/watch-national-dog-show/).",
@@ -685,7 +685,7 @@
         "cuerpo": [
           "Se suele trazar hasta el otoño de 1621, cuando colonos de Plymouth y el pueblo wampanoag compartieron un banquete de cosecha, según la [Biblioteca del Congreso](https://blogs.loc.gov/families/2024/11/the-real-history-of-thanksgiving/). Hay quien da ese título a una fiesta de 1565 en Florida entre españoles y timucua, según [History.com](https://www.history.com/articles/history-of-thanksgiving).",
           "Durante siglos fueron fechas sueltas de cada colonia y estado. George Washington emitió en 1789 la primera proclama federal, y la editora Sarah Josepha Hale pasó años pidiendo una fiesta nacional hasta que Lincoln la proclamó en 1863, en plena Guerra Civil, según [History.com](https://www.history.com/articles/history-of-thanksgiving). En 1939 Franklin D. Roosevelt la adelantó una semana para alargar las compras navideñas, y en 1941 el Congreso fijó el cuarto jueves de noviembre, según el [Smithsonian](https://si.edu/spotlight/thanksgiving/history).",
-          "Hoy el día tiene su propio guion. El desfile de Macy's, que debutó en 1924, es uno de los programas de entretenimiento más vistos del año en la televisión abierta; esta vez se corrió al sábado. El jueves, el National Dog Show tenía su horario de mediodía en NBC y el fútbol americano toma la tarde: Bears–Lions a la 1:00 p.m. por CBS, Eagles–Cowboys a las 4:30 p.m. por FOX y Chiefs–Bills a las 8:20 p.m. por NBC, según el [calendario de la NFL](https://www.nfl.com/news/thanksgiving-2026-nfl-schedule-release). Este año se suma además un partido en la víspera, Packers–Rams, el miércoles 25 a las 8:00 p.m. por Netflix, y otro el viernes 27 a las 3:00 p.m., Broncos–Steelers, por Prime Video.",
+          "El jueves tuvo su propio guion. El desfile de Macy's, que debutó en 1924, es uno de los programas de entretenimiento más vistos del año en la televisión abierta; esta vez se corrió al sábado. El National Dog Show tenía su horario de mediodía en NBC y el fútbol americano tomó la tarde: Bears–Lions a la 1:00 p.m. por CBS, Eagles–Cowboys a las 4:30 p.m. por FOX y Chiefs–Bills a las 8:20 p.m. por NBC, según el [calendario de la NFL](https://www.nfl.com/news/thanksgiving-2026-nfl-schedule-release). Este año se suma además un partido en la víspera, Packers–Rams, el miércoles 25 a las 8:00 p.m. por Netflix, y otro el viernes 27 a las 3:00 p.m., Broncos–Steelers, por Prime Video.",
           "Aquí, el jueves arrancó corriendo. El Life Time Turkey Trot Miami, en Tropical Park, tenía carreras de 5K y 10K este 26 de noviembre, según [The Miami Marathon](https://www.themiamimarathon.com/pineapple-series/), que lo organiza, y en Los Cayos el Southernmost Turkey Trot salía a las 8:00 a.m. desde la boya del Punto Más al Sur, en Key West, a beneficio de Reef Relief, según [RunSignup](https://runsignup.com/Race/FL/KeyWest/SouthernmostTurkeyTrot). Para las 11:00 a.m., Feeding South Florida tenía previsto servir en el Hard Rock Stadium su primer Thanksgiving Community Feast, con comida preparada para 500 invitados, según la [organización](https://www.miamilivingmagazine.com/post/feeding-south-florida-thanksgiving-community-feast-hard-rock-stadium).",
           "Y está el indulto del pavo. La Federación Nacional del Pavo le entrega un ave al presidente desde 1947, y lo de «indultarla» arrancó con George H.W. Bush en 1989, según la [federación](https://www.eatturkey.org/history/). La historia de Lincoln perdonando a un pavo es probablemente apócrifa, según la [Asociación Histórica de la Casa Blanca](https://whitehousehistory.org/press-room/thanksgiving-at-the-white-house). Este año los protagonistas fueron Freedom y Feathers, dos pavos de 4 meses nacidos el 15 de julio en Deans Gap Farm, en West Virginia, según la [Casa Blanca](https://www.whitehouse.gov/thanksgiving/). Los dos quedaron oficialmente indultados, pero solo uno recibe el honor ceremonial en la Casa Blanca, y en la votación pública ganó Freedom. Después, según la [Casa Blanca](https://www.whitehouse.gov/releases/2026/11/voting-begins-for-the-2026-national-thanksgiving-turkey-pardon-ceremony/), los dos pasarán el resto de su vida en Texas A&M.",
           "La mesa cambia de casa en casa, pero la idea de fondo sigue siendo la que describe la federación avícola: detenerse a agradecer lo cosechado."
@@ -694,7 +694,7 @@
       "en": {
         "etiqueta": "TRADITION",
         "titulo": "Giving thanks: from a shared 1621 harvest to the table that gathers the whole country",
-        "bajada": "Macy's parade, in its 100th edition, was postponed because of the storm in New York and now steps off on Saturday, November 28. This Thursday, the same day of the month and week on which Lincoln proclaimed a national day of thanksgiving in 1863, Miami and the Keys keep the tradition: morning races and a community feast at Hard Rock Stadium.",
+        "bajada": "Macy's parade, in its 100th edition, was postponed because of the storm in New York and now steps off on Saturday, November 28. On Thursday the 26th, the same day of the month and week on which Lincoln proclaimed a national day of thanksgiving in 1863, Miami and the Keys kept the tradition: morning races and a community feast at Hard Rock Stadium.",
         "toca": [
           "Saturday 28, 8:30 a.m.: Macy's parade steps off, postponed from Thursday because of the New York storm, according to Macy's announcement on Wednesday afternoon.",
           "Thursday 26: the National Dog Show was scheduled from 12:00 to 2:00 p.m. on NBC, according to the [AKC](https://www.akc.org/expert-advice/news/watch-national-dog-show/).",
@@ -703,7 +703,7 @@
         "cuerpo": [
           "It is usually traced to autumn 1621, when Plymouth colonists and the Wampanoag people shared a harvest feast, according to the [Library of Congress](https://blogs.loc.gov/families/2024/11/the-real-history-of-thanksgiving/). Some give that title to a 1565 feast in Florida between Spanish settlers and the Timucua, according to [History.com](https://www.history.com/articles/history-of-thanksgiving).",
           "For centuries these were scattered days kept by individual colonies and states. George Washington issued the first federal proclamation in 1789, and editor Sarah Josepha Hale spent years campaigning for a national holiday until Lincoln proclaimed one in 1863, in the middle of the Civil War, according to [History.com](https://www.history.com/articles/history-of-thanksgiving). In 1939 Franklin D. Roosevelt moved it up a week to lengthen the Christmas shopping season, and in 1941 Congress set the fourth Thursday of November, according to the [Smithsonian](https://si.edu/spotlight/thanksgiving/history).",
-          "Today the day has its own script. Macy's parade, which debuted in 1924, is one of the most-watched entertainment programs of the year on broadcast TV; this time it moved to Saturday. On Thursday, the National Dog Show had its midday slot on NBC and football takes over the afternoon: Bears–Lions at 1:00 p.m. on CBS, Eagles–Cowboys at 4:30 p.m. on FOX and Chiefs–Bills at 8:20 p.m. on NBC, according to the [NFL schedule](https://www.nfl.com/news/thanksgiving-2026-nfl-schedule-release). This year adds a Thanksgiving Eve game, Packers–Rams, on Wednesday the 25th at 8:00 p.m. on Netflix, and another on Friday the 27th at 3:00 p.m., Broncos–Steelers, on Prime Video.",
+          "Thursday had its own script. Macy's parade, which debuted in 1924, is one of the most-watched entertainment programs of the year on broadcast TV; this time it moved to Saturday. The National Dog Show had its midday slot on NBC and football took over the afternoon: Bears–Lions at 1:00 p.m. on CBS, Eagles–Cowboys at 4:30 p.m. on FOX and Chiefs–Bills at 8:20 p.m. on NBC, according to the [NFL schedule](https://www.nfl.com/news/thanksgiving-2026-nfl-schedule-release). This year adds a Thanksgiving Eve game, Packers–Rams, on Wednesday the 25th at 8:00 p.m. on Netflix, and another on Friday the 27th at 3:00 p.m., Broncos–Steelers, on Prime Video.",
           "Here, Thursday started with a run. The Life Time Turkey Trot Miami, at Tropical Park, had 5K and 10K races this November 26, according to [The Miami Marathon](https://www.themiamimarathon.com/pineapple-series/), which runs it, and in the Keys the Southernmost Turkey Trot was set to start at 8:00 a.m. from the Southernmost Point buoy in Key West, benefiting Reef Relief, according to [RunSignup](https://runsignup.com/Race/FL/KeyWest/SouthernmostTurkeyTrot). For 11:00 a.m., Feeding South Florida planned to serve its first Thanksgiving Community Feast at Hard Rock Stadium, with prepared meals for 500 guests, according to the [organization](https://www.miamilivingmagazine.com/post/feeding-south-florida-thanksgiving-community-feast-hard-rock-stadium).",
           "And then there is the turkey pardon. The National Turkey Federation has presented the president with a bird since 1947, and the \"pardoning\" began with George H.W. Bush in 1989, according to the [federation](https://www.eatturkey.org/history/). The story of Lincoln sparing a turkey is probably apocryphal, according to the [White House Historical Association](https://whitehousehistory.org/press-room/thanksgiving-at-the-white-house). This year's stars were Freedom and Feathers, two 4-month-old turkeys hatched on July 15 at Deans Gap Farm in West Virginia, according to the [White House](https://www.whitehouse.gov/thanksgiving/). Both were officially pardoned, but only one receives the ceremonial honor at the White House, and in the public vote Freedom won. Afterward, according to the [White House](https://www.whitehouse.gov/releases/2026/11/voting-begins-for-the-2026-national-thanksgiving-turkey-pardon-ceremony/), both will live out their days at Texas A&M.",
           "The table changes from home to home, but the core idea remains the one the turkey federation describes: pausing to give thanks for the harvest."
@@ -8805,7 +8805,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-26T19:17:32-05:00",
+  "updated_at": "2026-11-27T07:32:10-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
