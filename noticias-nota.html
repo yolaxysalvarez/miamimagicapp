@@ -155,9 +155,9 @@ h1{font-family:var(--pf);font-weight:900;font-size:52px;line-height:1.06;letter-
 .mas .sp-p{font-size:16px;line-height:1.45;color:rgba(255,255,255,.92)}
 .mas .sp-go{align-self:flex-start;margin-top:8px;font-family:var(--bb);font-size:16px;letter-spacing:.16em;color:#FFD9A0;border-bottom:1.5px solid currentColor;padding-bottom:1px}
 .mas .sp.big{margin-top:18px}
-.mas .sp.big .sp-in{min-height:250px;padding:26px 26px 28px}
-.mas .sp.big .sp-c u{font-size:52px}
-.mas .sp.big b{font-size:29px}
+.mas .sp.big .sp-in{min-height:150px;padding:20px 22px 22px}
+.mas .sp.big .sp-c u{font-size:40px}
+.mas .sp.big b{font-size:23px}
 .sp-i{font-size:17px;line-height:1.5;color:var(--mut);margin-top:12px}
 .mas a.go{display:inline-block;margin-top:14px;font-family:var(--bb);font-size:17px;letter-spacing:.14em;color:var(--coral-d)}
 @media(max-width:640px){.mas a.mi{grid-template-columns:96px minmax(0,1fr);gap:12px}.mas .th{width:96px}.mas b{font-size:17px}}
@@ -351,7 +351,7 @@ function sHref(){var h=sHub();return h?nHref(h)+(nHref(h).indexOf('?')<0?'?':'&'
 function sCard(big){var hb=sHub();if(!hb)return '';var en=L==='en',f=hb[L]||hb.es||{},dd=dnum(ESP.d)-dnum(hoy()),q=dnum(ESP.d2)-dnum(hoy())+1;
   var c=dd>0?'<u>'+dd+'</u><i>'+(en?(dd===1?'DAY TO GO':'DAYS TO GO'):(dd===1?'DÍA FALTA':'DÍAS FALTAN'))+'</i>':(q>1?'<u>'+q+'</u><i>'+(en?'DAYS LEFT':'DÍAS QUEDAN')+'</i>':'<u>1</u><i>'+(en?'LAST DAY':'ÚLTIMO DÍA')+'</i>');
   var im=ESP.foto?(/^https?:|^\//.test(ESP.foto)?ESP.foto:'/'+ESP.foto):nImg(hb);
-  return '<a class="sp'+(big?' big':'')+'" href="'+(big?nHref(hb):sHref())+'">'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy"'+(ESP.pos?' style="object-position:'+esc(ESP.pos)+'"':'')+'>':'')+'<span class="sp-in"><span class="sp-c">'+c+'</span><span class="sp-k">'+esc(en?ESP.k_en:ESP.k_es)+'</span><b>'+esc(f.titulo||'')+'</b>'+(big?'<span class="sp-p">'+esc(f.bajada||'')+'</span><span class="sp-go">'+(en?'WHAT TO SEE →':'QUÉ SE VE →')+'</span>':'')+'</span></a>'}
+  return '<a class="sp'+(big?' big':'')+'" href="'+(big?nHref(hb):sHref())+'">'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy"'+(ESP.pos?' style="object-position:'+esc(ESP.pos)+'"':'')+'>':'')+'<span class="sp-in"><span class="sp-c">'+c+'</span><span class="sp-k">'+esc(en?ESP.k_en:ESP.k_es)+'</span><b>'+esc(f.titulo||'')+'</b>'+(big?'<span class="sp-go">'+(en?'OPEN THE FULL GUIDE →':'ABRIR LA GUÍA COMPLETA →')+'</span>':'')+'</span></a>'}
 function renderMas(){
   var box=document.getElementById('mas');if(!box||!N)return;
   var pool=ALL.filter(function(n){return pub(n)&&n.id!==N.id}),k=secOf(N),used={};
