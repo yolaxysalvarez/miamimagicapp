@@ -55,6 +55,92 @@
   "videos": [],
   "notas": [
     {
+      "id": "semana-del-arte-como-moverse-taxi-acuatico-shuttles",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:28:50-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-12-06",
+      "foto": "mm-macarthur-atardecer.jpg",
+      "foto_alt": "Autos en la MacArthur Causeway al atardecer, con palmas y la bahía al fondo",
+      "foto_pie": "La MacArthur Causeway al atardecer. Foto: Miami Magic.",
+      "foto_pie_en": "The MacArthur Causeway at sunset. Photo: Miami Magic.",
+      "fuentes": [
+        {
+          "n": "Ciudad de Miami Beach · Art Week Free Transportation 2026",
+          "u": "https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/"
+        },
+        {
+          "n": "Ciudad de Miami Beach · Trolley Tracker",
+          "u": "https://www.miamibeachfl.gov/city-hall/transportation/trolley/trolleytrackerapps/"
+        }
+      ],
+      "desarrollo": false,
+      "serie": "artweek",
+      "es": {
+        "etiqueta": "SEMANA DEL ARTE",
+        "titulo": "Semana del arte: cómo moverse sin quedar atrapado",
+        "bajada": "Taxi acuático, shuttles y trolley gratis, y dónde dejar el auto.",
+        "toca": [
+          "Taxi acuático gratis: del 30 de noviembre al 5 de diciembre, de 10:00 a.m. a medianoche; el domingo 6, hasta las 10:00 p.m.",
+          "Cuatro rutas de shuttle gratis, cada 10 a 15 minutos, con el mismo horario.",
+          "Alertas de tráfico por texto: envía MBAlert al 888777."
+        ],
+        "cuerpo": [
+          "Del lunes 30 de noviembre al domingo 6 de diciembre, la semana del arte llena Miami Beach de visitantes y de tráfico. Para esos días, la ciudad puso en marcha transporte gratis por agua y por tierra.",
+          "## El taxi acuático",
+          "La ciudad de Miami Beach pone taxis acuáticos gratis entre Maurice Gibb Memorial Park (1790 Purdy Ave., en Sunset Harbour) y Venetian Marina & Yacht Club (1635 North Bayshore Drive, en Miami), cada 7 a 9 minutos, según su [página de transporte](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/). Funcionan del lunes 30 de noviembre al sábado 5 de diciembre, de 10:00 a.m. a medianoche, y el domingo 6 hasta las 10:00 p.m. Del muelle al centro de convenciones hay de 20 a 25 minutos a pie.",
+          "## Los shuttles gratis",
+          "Con el mismo horario del taxi acuático, la ciudad opera cuatro rutas gratis, cada 10 a 15 minutos:",
+          "- Water Taxi Shuttle: de Maurice Gibb Memorial Park al centro de convenciones (Convention Center Drive y 18 Street).",
+          "- South Beach: del centro de convenciones a Collins Avenue, entre las calles 10 y 11.",
+          "- Mid Beach: del centro de convenciones a Collins Avenue (calles 22, 32 y 46) y a Royal Palm Avenue, entre las calles 41 y 42.",
+          "- Design District: del centro de convenciones a NE 38 Street y NE 1 Court, en Miami, por la Julia Tuttle Causeway.",
+          "## Dónde dejar el auto",
+          "- En Miami: Omni Garage (453 NE 15 St.), junto al taxi acuático; y en el Design District, City View Garage (25 NE 38 St.), Palm Court Garage (155 NE 38 St.) y el estacionamiento público del 3630 NE 1 Court.",
+          "- En Miami Beach: Sunset Harbour Garage (1900 Bay Road), 17 Street Garage (640 17 St.), Pennsylvania Avenue Garage (1661 Pennsylvania Ave.), City Hall Garage (1755 Meridian Ave.) y 42 Street Garage (4049 Royal Palm Ave.).",
+          "## Trolley, taxi y rideshare",
+          "El trolley gratis de Miami Beach refuerza su frecuencia del miércoles 2 al sábado 5 de diciembre, de 8:00 a.m. a medianoche; se puede seguir en tiempo real con la aplicación Transit, que es la que [indica la ciudad](https://www.miamibeachfl.gov/city-hall/transportation/trolley/trolleytrackerapps/). Para taxis, Uber y Lyft, la ciudad señala dos zonas junto al centro de convenciones: Convention Center Drive, en dirección norte, entre las calles 18 y 19; y Washington Avenue, en dirección sur, entre las calles 18 y 19 y entre la 20 y la 21.",
+          "## El tráfico",
+          "La ciudad avisa que las tardes entre semana son las más pesadas y que el tráfico crece hacia el fin de semana. Las obras del FDOT cerca de la salida de Biscayne Boulevard, en el downtown, afectarán a quien salga de la playa hacia el oeste por la MacArthur Causeway. En el Venetian, el puente levadizo del este no abrirá a embarcaciones de 3:00 a 9:00 p.m. del 30 de noviembre al 6 de diciembre, salvo emergencias.",
+          "Para recibir alertas de tráfico por mensaje de texto, la ciudad indica enviar MBAlert al 888777."
+        ]
+      },
+      "en": {
+        "etiqueta": "ART WEEK",
+        "titulo": "Art week: how to get around without getting stuck",
+        "bajada": "Free water taxi, shuttles and trolley, and where to leave the car.",
+        "toca": [
+          "Free water taxi: Nov. 30 to Dec. 5, 10 a.m. to midnight; Sunday the 6th, until 10 p.m.",
+          "Four free shuttle routes, every 10 to 15 minutes, on the same schedule.",
+          "Traffic alerts by text: send MBAlert to 888777."
+        ],
+        "cuerpo": [
+          "From Monday, Nov. 30, to Sunday, Dec. 6, art week fills Miami Beach with visitors and traffic. For those days, the city has set up free transportation by water and by land.",
+          "## The water taxi",
+          "The City of Miami Beach is running free water taxis between Maurice Gibb Memorial Park (1790 Purdy Ave., in Sunset Harbour) and Venetian Marina & Yacht Club (1635 North Bayshore Drive, in Miami) every 7 to 9 minutes, according to its [transportation page](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/). They run Monday, Nov. 30, through Saturday, Dec. 5, from 10 a.m. to midnight, and on Sunday, Dec. 6, until 10 p.m. From the dock, the convention center is a 20- to 25-minute walk.",
+          "## The free shuttles",
+          "On the same schedule as the water taxi, the city runs four free routes every 10 to 15 minutes:",
+          "- Water Taxi Shuttle: from Maurice Gibb Memorial Park to the convention center (Convention Center Drive and 18th Street).",
+          "- South Beach: from the convention center to Collins Avenue, between 10th and 11th streets.",
+          "- Mid Beach: from the convention center to Collins Avenue (22nd, 32nd and 46th streets) and Royal Palm Avenue, between 41st and 42nd streets.",
+          "- Design District: from the convention center to NE 38th Street and NE 1st Court, in Miami, via the Julia Tuttle Causeway.",
+          "## Where to leave the car",
+          "- In Miami: Omni Garage (453 NE 15 St.), next to the water taxi; and in the Design District, City View Garage (25 NE 38 St.), Palm Court Garage (155 NE 38 St.) and the public lot at 3630 NE 1 Court.",
+          "- In Miami Beach: Sunset Harbour Garage (1900 Bay Road), 17 Street Garage (640 17 St.), Pennsylvania Avenue Garage (1661 Pennsylvania Ave.), City Hall Garage (1755 Meridian Ave.) and 42 Street Garage (4049 Royal Palm Ave.).",
+          "## Trolley, taxi and rideshare",
+          "The free Miami Beach trolley runs more often from Wednesday, Dec. 2, through Saturday, Dec. 5, from 8 a.m. to midnight; it can be tracked in real time with the Transit app, the one [the city points to](https://www.miamibeachfl.gov/city-hall/transportation/trolley/trolleytrackerapps/). For taxis, Uber and Lyft, the city lists two zones by the convention center: northbound Convention Center Drive between 18th and 19th streets; and southbound Washington Avenue between 18th and 19th streets and between 20th and 21st.",
+          "## Traffic",
+          "The city warns that weekday afternoons are the heaviest and that traffic builds toward the weekend. FDOT construction near the Biscayne Boulevard exit, downtown, will affect westbound traffic leaving the beach on the MacArthur Causeway. On the Venetian, the east drawbridge will not open to vessels from 3 to 9 p.m. from Nov. 30 to Dec. 6, except for emergencies.",
+          "To get traffic alerts by text, the city says to send MBAlert to 888777."
+        ]
+      }
+    },
+    {
       "id": "panthers-heat-inter-miami-viernes-27-noviembre",
       "scope": "miami",
       "tema": "deporte",
@@ -5189,13 +5275,13 @@
         }
       ],
       "es": {
-        "titulo": "Semana del arte: qué ver gratis y cómo llegar sin auto",
-        "bajada": "Arte en la playa y en los parques de Miami Beach, con taxi acuático y shuttles sin costo.",
+        "titulo": "Semana del arte: qué ver gratis en la playa y los parques",
+        "bajada": "Una esfera de espejos en la arena, luz, poesía y mesas de ping-pong de artistas, sin pagar entrada.",
         "toca": [
           "Faena Art: del 1 al 6 de diciembre, de 12:00 a 9:00 PM, en Faena Beach, detrás del hotel Faena, 3201 Collins Ave. Gratis. Programa en [faenaart.org](https://www.faenaart.org).",
           "Between Tides: del 29 de noviembre al 6 de diciembre, de 10:00 AM a 5:00 PM, en Collins Park, 2100 Collins Ave. Gratis.",
           "Art Basel: del 4 al 6 de diciembre, de 11:00 AM a 6:00 PM, en el Miami Beach Convention Center, 1901 Convention Center Dr. Boletos en [artbasel.com](https://www.artbasel.com/miami-beach).",
-          "Taxi acuático gratis: del 30 de noviembre al 5 de diciembre, de 10:00 a.m. a medianoche; el domingo 6, hasta las 10:00 p.m. Sale cada 7 a 9 minutos de Maurice Gibb Memorial Park, 1790 Purdy Ave., según la [ciudad](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/)."
+          "Transporte gratis del 30 de noviembre al 6 de diciembre: rutas y horarios en [cómo moverse](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
         ],
         "cuerpo": [
           "Durante la primera semana de diciembre, Miami cambia de piel. Aparece arte en la arena, en los parques y en las paredes; el coleccionista anda de lino y chancletas, y la música sale de donde menos se espera. Instalación, luz, sonido, diseño, arte callejero: todas las tendencias caben en la misma acera. Art Basel es el imán, puertas adentro y con boleto. El ritmo de la ciudad, en cambio, se siente afuera, y buena parte es gratis.",
@@ -5209,32 +5295,18 @@
           "Art Basel reúne [272 galerías de más de 40 países](https://www.artsy.net/article/artsy-editorial-art-basel-miami-beach-announces-272-exhibitors-2026-edition) y abre al público del 4 al 6 en el centro de convenciones. También anunció una obra de James Turrell al aire libre y sin costo.",
           "## Lo que la arena ya ha visto",
           "Esa playa tiene memoria. En 2024 la cruzó una manada de elefantes de tamaño real, The Great Elephant Migration. El año pasado, Es Devlin levantó allí Library of Us, un triángulo de 2,500 libros sobre un espejo de agua; al cerrar, [los libros se repartieron](https://mymodernmet.com/library-of-us-faena-art-es-devlin) entre bibliotecas y escuelas de la ciudad.",
-          "## Cómo llegar sin auto",
-          "La ciudad de Miami Beach pone taxis acuáticos gratis entre Maurice Gibb Memorial Park (1790 Purdy Ave., en Sunset Harbour) y Venetian Marina & Yacht Club (1635 North Bayshore Drive, en Miami), cada 7 a 9 minutos, según su [página de transporte](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/). Funcionan del lunes 30 de noviembre al sábado 5 de diciembre, de 10:00 a.m. a medianoche, y el domingo 6 hasta las 10:00 p.m. Del muelle al centro de convenciones hay de 20 a 25 minutos a pie.",
-          "## Los shuttles gratis",
-          "Con el mismo horario del taxi acuático, la ciudad opera cuatro rutas gratis, cada 10 a 15 minutos:",
-          "- Water Taxi Shuttle: de Maurice Gibb Memorial Park al centro de convenciones (Convention Center Drive y 18 Street).",
-          "- South Beach: del centro de convenciones a Collins Avenue, entre las calles 10 y 11.",
-          "- Mid Beach: del centro de convenciones a Collins Avenue (calles 22, 32 y 46) y a Royal Palm Avenue, entre las calles 41 y 42.",
-          "- Design District: del centro de convenciones a NE 38 Street y NE 1 Court, en Miami, por la Julia Tuttle Causeway.",
-          "## Dónde dejar el auto",
-          "- En Miami: Omni Garage (453 NE 15 St.), junto al taxi acuático; y en el Design District, City View Garage (25 NE 38 St.), Palm Court Garage (155 NE 38 St.) y el estacionamiento público del 3630 NE 1 Court.",
-          "- En Miami Beach: Sunset Harbour Garage (1900 Bay Road), 17 Street Garage (640 17 St.), Pennsylvania Avenue Garage (1661 Pennsylvania Ave.), City Hall Garage (1755 Meridian Ave.) y 42 Street Garage (4049 Royal Palm Ave.).",
-          "## Trolley, taxi y rideshare",
-          "El trolley gratis de Miami Beach refuerza su frecuencia del miércoles 2 al sábado 5 de diciembre, de 8:00 a.m. a medianoche; se puede seguir en tiempo real con la aplicación Transit, que es la que [indica la ciudad](https://www.miamibeachfl.gov/city-hall/transportation/trolley/trolleytrackerapps/). Para taxis, Uber y Lyft, la ciudad señala dos zonas junto al centro de convenciones: Convention Center Drive, en dirección norte, entre las calles 18 y 19; y Washington Avenue, en dirección sur, entre las calles 18 y 19 y entre la 20 y la 21.",
-          "## El tráfico",
-          "La ciudad avisa que las tardes entre semana son las más pesadas y que el tráfico crece hacia el fin de semana. Las obras del FDOT cerca de la salida de Biscayne Boulevard, en el downtown, afectarán a quien salga de la playa hacia el oeste por la MacArthur Causeway. En el Venetian, el puente levadizo del este no abrirá a embarcaciones de 3:00 a 9:00 p.m. del 30 de noviembre al 6 de diciembre, salvo emergencias.",
-          "Para recibir alertas de tráfico por mensaje de texto, la ciudad indica enviar MBAlert al 888777."
+          "## Cómo llegar",
+          "La ciudad de Miami Beach pone taxi acuático, shuttles y trolley gratis del 30 de noviembre al 6 de diciembre. Rutas, horarios y garajes están en [cómo moverse en la semana del arte](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
         ]
       },
       "en": {
-        "titulo": "Art week: what to see for free and how to get there without a car",
-        "bajada": "Art on the beach and in the parks of Miami Beach, with free water taxis and shuttles.",
+        "titulo": "Art week: what to see for free on the beach and in the parks",
+        "bajada": "A mirrored sphere on the sand, light, poetry and artist-designed ping-pong tables, with no admission.",
         "toca": [
           "Faena Art: Dec. 1-6, noon to 9 p.m., on Faena Beach behind the Faena Hotel, 3201 Collins Ave. Free. Program at [faenaart.org](https://www.faenaart.org).",
           "Between Tides: Nov. 29 to Dec. 6, 10 a.m. to 5 p.m., in Collins Park, 2100 Collins Ave. Free.",
           "Art Basel: Dec. 4-6, 11 a.m. to 6 p.m., at the Miami Beach Convention Center, 1901 Convention Center Drive. Tickets at [artbasel.com](https://www.artbasel.com/miami-beach).",
-          "Free water taxi: Nov. 30 to Dec. 5, 10 a.m. to midnight; Sunday the 6th, until 10 p.m. It leaves every 7 to 9 minutes from Maurice Gibb Memorial Park, 1790 Purdy Ave., according to the [city](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/)."
+          "Free transportation from Nov. 30 to Dec. 6: routes and hours in [how to get around](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
         ],
         "cuerpo": [
           "During the first week of December, Miami changes its skin. Art shows up on the sand, in the parks and on the walls; the collector goes around in linen and flip-flops, and music comes from where you least expect it. Installation, light, sound, design, street art: every trend fits on the same sidewalk. Art Basel is the magnet, indoors and ticketed. The city's rhythm, though, is felt outside, and much of it is free.",
@@ -5248,22 +5320,8 @@
           "Art Basel brings together [272 galleries from more than 40 countries](https://www.artsy.net/article/artsy-editorial-art-basel-miami-beach-announces-272-exhibitors-2026-edition) and opens to the public Dec. 4-6 at the convention center. It has also announced an outdoor work by James Turrell, free to the public.",
           "## What the sand has already seen",
           "That beach has a memory. In 2024 a herd of life-size elephants crossed it, The Great Elephant Migration. Last year, Es Devlin built Library of Us there, a triangle of 2,500 books over a reflecting pool; when it closed, [the books went](https://mymodernmet.com/library-of-us-faena-art-es-devlin) to the city's libraries and schools.",
-          "## Getting there without a car",
-          "The City of Miami Beach is running free water taxis between Maurice Gibb Memorial Park (1790 Purdy Ave., in Sunset Harbour) and Venetian Marina & Yacht Club (1635 North Bayshore Drive, in Miami) every 7 to 9 minutes, according to its [transportation page](https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/). They run Monday, Nov. 30, through Saturday, Dec. 5, from 10 a.m. to midnight, and on Sunday, Dec. 6, until 10 p.m. From the dock, the convention center is a 20- to 25-minute walk.",
-          "## The free shuttles",
-          "On the same schedule as the water taxi, the city runs four free routes every 10 to 15 minutes:",
-          "- Water Taxi Shuttle: from Maurice Gibb Memorial Park to the convention center (Convention Center Drive and 18th Street).",
-          "- South Beach: from the convention center to Collins Avenue, between 10th and 11th streets.",
-          "- Mid Beach: from the convention center to Collins Avenue (22nd, 32nd and 46th streets) and Royal Palm Avenue, between 41st and 42nd streets.",
-          "- Design District: from the convention center to NE 38th Street and NE 1st Court, in Miami, via the Julia Tuttle Causeway.",
-          "## Where to leave the car",
-          "- In Miami: Omni Garage (453 NE 15 St.), next to the water taxi; and in the Design District, City View Garage (25 NE 38 St.), Palm Court Garage (155 NE 38 St.) and the public lot at 3630 NE 1 Court.",
-          "- In Miami Beach: Sunset Harbour Garage (1900 Bay Road), 17 Street Garage (640 17 St.), Pennsylvania Avenue Garage (1661 Pennsylvania Ave.), City Hall Garage (1755 Meridian Ave.) and 42 Street Garage (4049 Royal Palm Ave.).",
-          "## Trolley, taxi and rideshare",
-          "The free Miami Beach trolley runs more often from Wednesday, Dec. 2, through Saturday, Dec. 5, from 8 a.m. to midnight; it can be tracked in real time with the Transit app, the one [the city points to](https://www.miamibeachfl.gov/city-hall/transportation/trolley/trolleytrackerapps/). For taxis, Uber and Lyft, the city lists two zones by the convention center: northbound Convention Center Drive between 18th and 19th streets; and southbound Washington Avenue between 18th and 19th streets and between 20th and 21st.",
-          "## Traffic",
-          "The city warns that weekday afternoons are the heaviest and that traffic builds toward the weekend. FDOT construction near the Biscayne Boulevard exit, downtown, will affect westbound traffic leaving the beach on the MacArthur Causeway. On the Venetian, the east drawbridge will not open to vessels from 3 to 9 p.m. from Nov. 30 to Dec. 6, except for emergencies.",
-          "To get traffic alerts by text, the city says to send MBAlert to 888777."
+          "## Getting there",
+          "The City of Miami Beach is running free water taxis, shuttles and trolleys from Nov. 30 to Dec. 6. Routes, hours and garages are in [how to get around during art week](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
         ]
       },
       "fuentes": [
@@ -5292,7 +5350,8 @@
           "u": "https://www.miamibeachfl.gov/art-week-miami-beach/artweek-free-transportation/"
         }
       ],
-      "actualizada": "2026-11-27T11:14:37-05:00"
+      "actualizada": "2026-11-27T11:28:50-05:00",
+      "serie": "artweek"
     },
     {
       "id": "mercado-miami-dade-dos-velocidades",
@@ -9261,7 +9320,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:22:18-05:00",
+  "updated_at": "2026-11-27T11:28:50-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
