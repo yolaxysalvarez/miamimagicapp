@@ -55,6 +55,67 @@
   "videos": [],
   "notas": [
     {
+      "id": "midtown-park-distrito-2000-millones-aprobado",
+      "scope": "miami",
+      "tema": "casa",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:05:18-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-design-district-domo-noche.jpg",
+      "foto_pos": "50% 35%",
+      "foto_alt": "El domo Fly's Eye iluminado de noche en el Palm Court del Miami Design District",
+      "foto_pie": "El domo Fly's Eye, en el Design District, uno de los barrios que el proyecto busca conectar con Midtown y Wynwood.",
+      "foto_pie_en": "The Fly's Eye Dome in the Design District, one of the neighborhoods the project aims to connect with Midtown and Wynwood.",
+      "fuentes": [
+        {
+          "n": "Rosso Development y Midtown Development · Comunicado sobre la aprobación de Midtown Park (24 de noviembre de 2026)",
+          "u": "https://cre-sources.com/city-of-miami-commission-approves-2-billion-midtown-park/"
+        },
+        {
+          "n": "The Real Deal · Aprobación de Midtown Park (26 de noviembre de 2026)",
+          "u": "https://therealdeal.com/miami/2026/11/26/miami-approves-rosso-and-vadias-midtown-park-mixed-use-project/"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "BIENES RAÍCES",
+        "titulo": "Midtown Miami tendrá un distrito de $2,000 millones",
+        "bajada": "La Comisión de Miami aprobó Midtown Park: hasta 924 residencias, comercios, oficinas y casi dos acres de espacio público.",
+        "toca": [
+          "El proyecto ocupa cinco acres en el 3055 de North Miami Avenue, entre Wynwood y el Design District.",
+          "La primera torre tiene 280 viviendas y entrega prevista para 2029, según los desarrolladores.",
+          "Esta nota es informativa; no es una recomendación de compra ni de inversión."
+        ],
+        "cuerpo": [
+          "Midtown Miami ya tiene luz verde para su mayor proyecto: la Comisión de la Ciudad de Miami aprobó el permiso especial de Midtown Park, un distrito de uso mixto de $2,000 millones en cinco acres, [anunciaron sus desarrolladores](https://cre-sources.com/city-of-miami-commission-approves-2-billion-midtown-park/), Rosso Development y Midtown Development, el 24 de noviembre.",
+          "El plan suma 1.2 millones de pies cuadrados: hasta 924 residencias, más de 120,000 pies cuadrados de comercios y restaurantes, unos 60,000 de oficinas y casi dos acres de espacio público, con un parque central de un acre. La idea, según el comunicado, es unir a pie Midtown con Wynwood y el Design District mediante senderos con sombra.",
+          "El terreno, en el 3055 de North Miami Avenue, es el mismo donde años atrás se proyectó un Walmart que nunca se construyó. Hoy funciona allí un club temporal de pádel de dos acres, recoge [The Real Deal](https://therealdeal.com/miami/2026/11/26/miami-approves-rosso-and-vadias-midtown-park-mixed-use-project/).",
+          "## La primera torre",
+          "La primera fase es Midtown Park Residences by Proper, una torre de 28 pisos diseñada por Arquitectonica, con 280 viviendas que van de estudios a tres habitaciones. Los desarrolladores informan precios desde poco más de $600,000 y entrega en 2029."
+        ]
+      },
+      "en": {
+        "etiqueta": "REAL ESTATE",
+        "titulo": "Midtown Miami is getting a $2 billion district",
+        "bajada": "The Miami Commission approved Midtown Park: up to 924 residences, retail, offices and nearly two acres of public space.",
+        "toca": [
+          "The project covers five acres at 3055 North Miami Avenue, between Wynwood and the Design District.",
+          "The first tower has 280 homes and is scheduled for delivery in 2029, according to the developers.",
+          "This story is informational; it is not a recommendation to buy or invest."
+        ],
+        "cuerpo": [
+          "Midtown Miami now has the green light for its biggest project: the Miami City Commission approved the special permit for Midtown Park, a $2 billion mixed-use district on five acres, [its developers announced](https://cre-sources.com/city-of-miami-commission-approves-2-billion-midtown-park/) on Nov. 24. They are Rosso Development and Midtown Development.",
+          "The plan totals 1.2 million square feet: up to 924 residences, more than 120,000 square feet of shops and restaurants, about 60,000 of offices and nearly two acres of public space, with a one-acre central park. The idea, according to the announcement, is to link Midtown with Wynwood and the Design District on foot through shaded paths.",
+          "The site, at 3055 North Miami Avenue, is the same one where a Walmart was planned years ago and never built. A temporary two-acre padel club operates there today, [The Real Deal](https://therealdeal.com/miami/2026/11/26/miami-approves-rosso-and-vadias-midtown-park-mixed-use-project/) reports.",
+          "## The first tower",
+          "The first phase is Midtown Park Residences by Proper, a 28-story tower designed by Arquitectonica, with 280 homes ranging from studios to three bedrooms. The developers report prices starting just above $600,000 and delivery in 2029."
+        ]
+      }
+    },
+    {
       "id": "cayos-hog-trot-key-west-island-art-fair-big-pine-28-noviembre",
       "scope": "cayos",
       "tema": "cultura",
@@ -9036,7 +9097,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:01:11-05:00",
+  "updated_at": "2026-11-27T11:05:18-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
