@@ -1068,6 +1068,17 @@ html.in-app.app21 .bk{display:inline-flex}
 .pair .dk-t{grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,.8fr)) minmax(0,1fr)}.pair .dk-pl strong{font-size:16.5px}.pair .dk-r.hd>div{letter-spacing:.1em}.pair .dk-r>div{padding-left:8px}.pair .dk-r>div:first-child{padding-left:0}.pair .dk-t b{font-size:19px}
 @media(min-width:761px){.sp-x .dk-cond{width:360px;flex:0 0 360px}}
 @media(max-width:760px){.dk-cond{max-width:none}.dk-t b{font-size:20px}}
+.dk-wide{display:none!important}
+@media(min-width:1021px){
+ body.home .pair:not(:has(>section[style*="none"])) #dkCond{display:none!important}
+ body.home .pair:not(:has(>section[style*="none"])) .dk-wide{display:block!important;max-width:none;margin:0}
+ .dk-wide .dk-t{grid-template-columns:minmax(0,1.9fr) repeat(2,minmax(0,.8fr)) minmax(0,1.6fr)!important;border-top:0}.dk-wide em{white-space:nowrap}
+ .dk-wide .dk-r>div{padding:10px 0 9px 14px!important}.dk-wide .dk-r>div:first-child{padding-left:0!important}
+ .dk-wide .dk-r.hd>div{padding-top:10px!important;padding-bottom:3px!important;border-bottom:0;letter-spacing:.16em!important}
+ .dk-wide .dk-pl{display:flex;align-items:baseline;gap:8px}.dk-wide .dk-pl strong{font-size:18px!important}
+ .dk-wide .dk-r em{display:inline;margin:0 0 0 7px}.dk-wide .dk-pl em{margin:0}
+ .dk-wide .dk-t b{display:inline;font-size:20px!important}
+}
 /* YouTube: claro, sobrio y futurista */
 .tv{background:linear-gradient(180deg,#FFFFFF 0%,#F3F5F8 100%);color:var(--ink);border:1px solid rgba(14,27,48,.12);box-shadow:0 40px 70px -48px rgba(14,27,48,.55),inset 0 1px 0 #fff}
 .tv:before{left:0;right:0;top:0;width:auto;height:100%;border-radius:0;background:linear-gradient(rgba(14,27,48,.035) 1px,transparent 1px) 0 0/100% 44px,linear-gradient(90deg,rgba(14,27,48,.035) 1px,transparent 1px) 0 0/44px 100%;-webkit-mask:linear-gradient(120deg,transparent 30%,#000 100%);mask:linear-gradient(120deg,transparent 30%,#000 100%)}
@@ -1275,6 +1286,7 @@ body{background:#fff;text-rendering:optimizeLegibility}
     </div>
     <div class="dk-main">
       <div class="dk-hd"><p data-t="dkdesc">Para pescadores, dueños de botes y amantes del mar, de Miami a los Cayos: reglas, consejos, lugares, eventos y viajes por mar.</p><button class="dk-more" id="dkMore" data-t="dkmore">TODO EL MUELLE →</button></div>
+      <div class="dk-cond dk-wide" id="dkCond2"></div>
       <div id="dkList"></div>
       <button type="button" class="dk-mb" id="dkMb" style="display:none"></button>
     </div>
@@ -1532,7 +1544,7 @@ function render(){
   document.getElementById('hmMore').style.display=h.length>3?'':'none';
   // el muelle
   var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return (y.muelle_portada?1:0)-(x.muelle_portada?1:0)||FK(y).localeCompare(FK(x))});
-  var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=(window.innerWidth>1020?5:4);dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
+  var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=4;dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
   document.getElementById('dkMore').style.display=mu.length>4?'':'none';
   var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'ALL THE DOCK':'TODO EL MUELLE')+' ↓';
   renderDk();renderCc();
@@ -1617,7 +1629,7 @@ function renderDk(){var el=document.getElementById('dkCond');if(!el)return;var e
      +'<div>'+(D.wave!=null?v(Math.round(D.wave*3.281*2)/2,'ft'):'—')+'</div>'
      +'<div>'+(D.wind!=null?v(Math.round(D.wind),'mph')+(D.dir!=null?'<em>'+DIRS[L][Math.round(D.dir/45)%8]+'</em>':''):'—')+'</div></div>'}
   var rs=row(DK,'Miami Beach','')+row(DKK,'Islamorada',en?'THE KEYS':'LOS CAYOS');
-  el.innerHTML=rs?'<div class="dk-t"><div class="dk-r hd"><div>'+(en?'RIGHT NOW':'AHORA')+'</div><div>'+t('agua')+'</div><div>'+t('olas')+'</div><div>'+t('viento')+'</div></div>'+rs+'</div>':'';if(typeof spSync==='function')spSync()}
+  el.innerHTML=rs?'<div class="dk-t"><div class="dk-r hd"><div>'+(en?'RIGHT NOW':'AHORA')+'</div><div>'+t('agua')+'</div><div>'+t('olas')+'</div><div>'+t('viento')+'</div></div>'+rs+'</div>':'';var e2=document.getElementById('dkCond2');if(e2)e2.innerHTML=el.innerHTML;if(typeof spSync==='function')spSync()}
 function renderWx(){
   var now=document.getElementById('wxNow');
   if(WXC){now.innerHTML=wxIcon(WXC.c).replace('<svg ','<svg class="wi" ')+'<b>'+Math.round(WXC.t)+'°</b>'}
