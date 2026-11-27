@@ -22638,10 +22638,11 @@ function kyRenderSimilar(obj){
     function first(f,any){for(var i=0;i<srt.length;i++)if(f(srt[i])&&!used[srt[i].id]&&(any||fresh(srt[i])))return srt[i];return null}
     var cc=function(n){return n.tema==='casa'&&!n.hamaca&&!n.muelle};
     add(all.filter(function(n){return n.destacada})[0]||srt[0],(es?'HOY':'TODAY'));
-    add(first(function(n){return n.scope==='cayos'&&!n.hamaca&&!n.muelle&&!cc(n)}),(es?'LOS CAYOS':'THE KEYS'),true);
-    add(first(function(n){return n.tema==='deporte'}),(es?'DEPORTES':'SPORTS'));
-    add(first(cc),'CASA & COAST');
-    add(first(function(n){return n.hamaca},true),(es?'HAMACA MOOD':'HAMMOCK MOOD'));
+    /* lo que rota: la principal y después "Lo último", en su mismo orden */
+    var hoyS=(function(){try{var d=new Date(),z=function(x){return (x<10?'0':'')+x};return d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate())}catch(e){return ''}})();
+    function lab(n){return n.scope==='cayos'&&!cc(n)?(es?'LOS CAYOS':'THE KEYS'):n.tema==='deporte'?(es?'DEPORTES':'SPORTS'):cc(n)?'CASA & COAST':n.hamaca?(es?'HAMACA MOOD':'HAMMOCK MOOD'):n.muelle?(es?'EL MUELLE':'THE DOCK'):(es?'LO ÚLTIMO':'LATEST')}
+    all.filter(function(n){return n.ultima&&!(n.vence&&hoyS&&n.vence<hoyS)}).sort(function(x,y){return x.ultima-y.ultima}).forEach(function(n){add(n,lab(n),n.scope==='cayos'&&!cc(n))});
+    if(out.length<5)srt.forEach(function(n){if(out.length<5&&fresh(n))add(n,lab(n),n.scope==='cayos'&&!cc(n))});
     return out.slice(0,5);
   }
   function card(it){
