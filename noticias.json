@@ -454,8 +454,8 @@
       "serie": "artweek",
       "es": {
         "etiqueta": "SEMANA DEL ARTE",
-        "titulo": "A la semana del arte se llega gratis, y por agua",
-        "bajada": "Taxi acuático, shuttles y trolley gratis, y dónde dejar el auto.",
+        "titulo": "Cruzar la bahía en taxi acuático no cuesta nada",
+        "bajada": "Rutas y horarios del taxi acuático, los shuttles y el trolley de la semana del arte, y dónde dejar el auto.",
         "toca": [
           "Taxi acuático gratis: del 30 de noviembre al 5 de diciembre, de 10:00 a.m. a medianoche; el domingo 6, hasta las 10:00 p.m.",
           "Cuatro rutas de shuttle gratis, cada 10 a 15 minutos, con el mismo horario.",
@@ -483,8 +483,8 @@
       },
       "en": {
         "etiqueta": "ART WEEK",
-        "titulo": "You can get to art week for free, and by water",
-        "bajada": "Free water taxi, shuttles and trolley, and where to leave the car.",
+        "titulo": "Crossing the bay by water taxi costs nothing",
+        "bajada": "Routes and hours for art week's water taxi, shuttles and trolley, and where to leave the car.",
         "toca": [
           "Free water taxi: Nov. 30 to Dec. 5, 10 a.m. to midnight; Sunday the 6th, until 10 p.m.",
           "Four free shuttle routes, every 10 to 15 minutes, on the same schedule.",
@@ -5667,7 +5667,7 @@
           "## Lo que la arena ya ha visto",
           "Esa playa tiene memoria. En 2024 la cruzó una manada de elefantes de tamaño real, The Great Elephant Migration. El año pasado, Es Devlin levantó allí Library of Us, un triángulo de 2,500 libros sobre un espejo de agua; al cerrar, [los libros se repartieron](https://mymodernmet.com/library-of-us-faena-art-es-devlin) entre bibliotecas y escuelas de la ciudad.",
           "## Toda la semana del arte",
-          "- [A la semana del arte se llega gratis, y por agua](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
+          "- [Cruzar la bahía en taxi acuático no cuesta nada](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
           "- [Art Basel no viene sola: diez ferias más y dónde encontrarlas](https://miamimagicapp.com/noticias/semana-del-arte-otras-ferias-guia)",
           "- [Arte que los niños pueden tocar, y gratis](https://miamimagicapp.com/noticias/semana-del-arte-con-ninos-gratis)",
           "- [Entre feria y feria, once mesas a pocos pasos](https://miamimagicapp.com/noticias/semana-del-arte-donde-comer-miami-beach)",
@@ -5697,7 +5697,7 @@
           "## What the sand has already seen",
           "That beach has a memory. In 2024 a herd of life-size elephants crossed it, The Great Elephant Migration. Last year, Es Devlin built Library of Us there, a triangle of 2,500 books over a reflecting pool; when it closed, [the books went](https://mymodernmet.com/library-of-us-faena-art-es-devlin) to the city's libraries and schools.",
           "## All of art week",
-          "- [You can get to art week for free, and by water](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
+          "- [Crossing the bay by water taxi costs nothing](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)",
           "- [Art Basel does not come alone: ten more fairs and where to find them](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia)",
           "- [Art that kids can touch, for free](https://miamimagicapp.com/news/semana-del-arte-con-ninos-gratis)",
           "- [Between fairs, eleven tables a few steps away](https://miamimagicapp.com/news/semana-del-arte-donde-comer-miami-beach)",
@@ -9701,7 +9701,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:39:36-05:00",
+  "updated_at": "2026-11-27T11:42:25-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
