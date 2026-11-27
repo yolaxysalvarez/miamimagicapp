@@ -55,6 +55,88 @@
   "videos": [],
   "notas": [
     {
+      "id": "semana-del-arte-otras-ferias-guia",
+      "scope": "miami",
+      "tema": "cultura",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:30:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-12-06",
+      "serie": "artweek",
+      "foto": "mm-mb-fillmore.jpg",
+      "foto_alt": "Fachada art déco del teatro Fillmore en Miami Beach",
+      "foto_pie": "El Fillmore, vecino del centro de convenciones de Miami Beach. Foto: Miami Magic.",
+      "foto_pie_en": "The Fillmore, next door to the Miami Beach Convention Center. Photo: Miami Magic.",
+      "fuentes": [
+        {
+          "n": "Miami Art Week · Agenda de ferias 2026",
+          "u": "https://www.miamiartweek.org/events"
+        },
+        {
+          "n": "Travel Squire · Boletos de Art Basel Miami Beach 2026",
+          "u": "https://travelsquire.com/art-basel-miami-beach-2026-highlights-tickets/"
+        },
+        {
+          "n": "Art Basel Miami Beach",
+          "u": "https://www.artbasel.com/miami-beach"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "SEMANA DEL ARTE",
+        "titulo": "Semana del arte: las otras ferias, cuál es cuál",
+        "bajada": "Art Basel es la más conocida, pero no la única: hay ferias en la playa, en el downtown, en Wynwood y en Coconut Grove.",
+        "toca": [
+          "Art Basel abre al público del 4 al 6 de diciembre, de 11:00 a.m. a 6:00 p.m., en el centro de convenciones de Miami Beach.",
+          "Las ferias de Miami abren antes: Art Miami, CONTEXT y NADA, desde el 1 de diciembre.",
+          "Cada feria vende sus boletos en su sitio; los precios y horarios pueden cambiar, así que confirma antes de ir."
+        ],
+        "cuerpo": [
+          "Alrededor de Art Basel crece cada diciembre una docena de ferias con público y precios distintos. Estas son las principales de 2026, con las fechas y sedes que recoge la [agenda de Miami Art Week](https://www.miamiartweek.org/events).",
+          "## En Miami Beach",
+          "- Art Basel Miami Beach: la feria grande, con galerías de todo el mundo. Del 4 al 6 de diciembre, de 11:00 a.m. a 6:00 p.m., en el Miami Beach Convention Center (1901 Convention Center Drive). El boleto de un día cuesta $92 y el reducido $68, y los niños de hasta 12 años entran gratis con un adulto, [según la guía de Travel Squire](https://travelsquire.com/art-basel-miami-beach-2026-highlights-tickets/).",
+          "- Design Miami: diseño de colección, justo al lado, en Convention Center Drive y la calle 19. Del 1 al 6 de diciembre.",
+          "- Untitled Art: una carpa sobre la arena, en Ocean Drive y la calle 12. Del 2 al 6 de diciembre.",
+          "- Aqua Art Miami: galerías dentro de las habitaciones del Aqua Hotel (1530 Collins Avenue). Del 2 al 6 de diciembre.",
+          "## En Miami",
+          "- Art Miami y CONTEXT: dos ferias en un mismo recinto frente a la bahía, en One Herald Plaza (NE 14 Street y Biscayne Bay). Del 1 al 6 de diciembre: el martes 1, de 4:00 a 7:00 p.m.; del 2 al 5, de 11:00 a.m. a 7:00 p.m.; el domingo 6, hasta las 6:00 p.m.",
+          "- NADA Miami: galerías jóvenes y artistas emergentes, en Ice Palace Studios (1400 North Miami Avenue). Del 1 al 5 de diciembre.",
+          "- Red Dot y Spectrum: dos ferias juntas en Mana Wynwood (2217 NW 5 Avenue). Del 3 al 5 de diciembre, de 12:00 a 8:00 p.m.; el domingo 6, hasta las 6:00 p.m.",
+          "- Pinta Miami: arte latinoamericano, en The Hangar de Coconut Grove (3385 Pan American Drive). Del 3 al 6 de diciembre.",
+          "- AfriKin Art Fair: en el Scott Galvin Community Center de North Miami (1600 NE 126 Street). Del 29 de noviembre al 6 de diciembre.",
+          "Lo que se ve sin pagar está en [qué ver gratis](https://miamimagicapp.com/noticias/art-basel-arte-gratis-playa), y la forma de llegar, en [cómo moverse](https://miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
+        ]
+      },
+      "en": {
+        "etiqueta": "ART WEEK",
+        "titulo": "Art week: the other fairs, and which is which",
+        "bajada": "Art Basel is the best known, but not the only one: there are fairs on the beach, downtown, in Wynwood and in Coconut Grove.",
+        "toca": [
+          "Art Basel is open to the public Dec. 4 to 6, 11 a.m. to 6 p.m., at the Miami Beach Convention Center.",
+          "The Miami-side fairs open earlier: Art Miami, CONTEXT and NADA, starting Dec. 1.",
+          "Each fair sells tickets on its own site; prices and hours can change, so confirm before you go."
+        ],
+        "cuerpo": [
+          "Around Art Basel, a dozen fairs with different audiences and prices spring up every December. These are the main ones for 2026, with the dates and venues listed in the [Miami Art Week calendar](https://www.miamiartweek.org/events).",
+          "## In Miami Beach",
+          "- Art Basel Miami Beach: the big fair, with galleries from around the world. Dec. 4 to 6, 11 a.m. to 6 p.m., at the Miami Beach Convention Center (1901 Convention Center Drive). A day ticket is $92 and the reduced ticket $68, and children 12 and under get in free with an adult, [according to Travel Squire's guide](https://travelsquire.com/art-basel-miami-beach-2026-highlights-tickets/).",
+          "- Design Miami: collectible design, right next door, at Convention Center Drive and 19th Street. Dec. 1 to 6.",
+          "- Untitled Art: a tent on the sand, at Ocean Drive and 12th Street. Dec. 2 to 6.",
+          "- Aqua Art Miami: galleries inside the rooms of the Aqua Hotel (1530 Collins Avenue). Dec. 2 to 6.",
+          "## In Miami",
+          "- Art Miami and CONTEXT: two fairs in one bayfront venue, at One Herald Plaza (NE 14th Street and Biscayne Bay). Dec. 1 to 6: Tuesday the 1st, 4 to 7 p.m.; the 2nd to the 5th, 11 a.m. to 7 p.m.; Sunday the 6th, until 6 p.m.",
+          "- NADA Miami: young galleries and emerging artists, at Ice Palace Studios (1400 North Miami Avenue). Dec. 1 to 5.",
+          "- Red Dot and Spectrum: two fairs together at Mana Wynwood (2217 NW 5th Avenue). Dec. 3 to 5, noon to 8 p.m.; Sunday the 6th, until 6 p.m.",
+          "- Pinta Miami: Latin American art, at The Hangar in Coconut Grove (3385 Pan American Drive). Dec. 3 to 6.",
+          "- AfriKin Art Fair: at the Scott Galvin Community Center in North Miami (1600 NE 126th Street). Nov. 29 to Dec. 6.",
+          "What you can see without paying is in [what to see for free](https://miamimagicapp.com/news/art-basel-arte-gratis-playa), and how to get there, in [how to get around](https://miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles)."
+        ]
+      }
+    },
+    {
       "id": "semana-del-arte-como-moverse-taxi-acuatico-shuttles",
       "scope": "miami",
       "tema": "calle",
@@ -9320,7 +9402,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:28:50-05:00",
+  "updated_at": "2026-11-27T11:30:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
