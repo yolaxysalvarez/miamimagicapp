@@ -1181,8 +1181,8 @@
       "fecha": "2026-11-26",
       "publicada": "2026-11-26T11:39:34-05:00",
       "autor": "Yolaxys Alvarez",
-      "foto": "mm-black-friday-portada-v3.jpg",
-      "foto_en": "mm-black-friday-portada-v3-en.jpg",
+      "foto": "mm-black-friday-portada-v4.jpg",
+      "foto_en": "mm-black-friday-portada-v4-en.jpg",
       "foto_alt": "Gráfico de Miami Magic News: Black Friday, Miami y los Cayos, sobre fotos de Brickell de noche y del Seven Mile Bridge.",
       "foto_pie": "Gráfico de Miami Magic.",
       "foto_pie_en": "Graphic by Miami Magic.",
@@ -1244,9 +1244,7 @@
         ]
       },
       "actualizada": "2026-11-26T19:17:32-05:00",
-      "ultima": 10,
-      "foto_fit": "contain",
-      "foto_bg": "#0A0F1A"
+      "ultima": 10
     },
     {
       "id": "heat-76ers-panthers-ottawa-25-noviembre",
