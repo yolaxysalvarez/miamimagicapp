@@ -55,6 +55,192 @@
   "videos": [],
   "notas": [
     {
+      "id": "mia-aeropuerto-como-llegar-south-beach-brickell-portmiami",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T15:50:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-macarthur-terminal-isle.jpg",
+      "foto_pos": "50% 55%",
+      "foto_alt": "El MacArthur Causeway al atardecer, con palmas y autos camino a Miami Beach",
+      "foto_pie": "El MacArthur Causeway, la entrada a Miami Beach desde la ciudad.",
+      "foto_pie_en": "The MacArthur Causeway, the way into Miami Beach from the city.",
+      "es": {
+        "etiqueta": "LA GUÍA",
+        "titulo": "Del aeropuerto a South Beach por $2.25",
+        "bajada": "A la playa, a Brickell o al puerto de cruceros: las formas de salir de MIA y lo que cuesta cada una.",
+        "toca": [
+          "El MIA Mover es gratis y sale del tercer nivel de la terminal.",
+          "Un viaje en Metrobus o Metrorail cuesta $2.25.",
+          "El taxi cobra por taxímetro, con un mínimo de $15 al salir del aeropuerto."
+        ],
+        "cuerpo": [
+          "Casi todo empieza en el tercer nivel. Entre los garajes Dolphin y Flamingo sale el MIA Mover, un tren automático que no cobra y que deja al viajero en la estación central del aeropuerto, donde coinciden el Metrorail, los autobuses del condado, el Tri-Rail y los autos de alquiler, [explica el propio aeropuerto](https://www.miami-airport.com/public-transportation.asp).",
+          "En esa estación se paga el transporte público. Hay máquinas de EASY Card, y el condado acepta también tarjetas bancarias sin contacto. Pagando con tarjeta, y no con efectivo, el transbordo entre autobús y tren sale gratis, [según la tabla de tarifas de Miami-Dade](https://www.miamidade.gov/global/faq.page?Mduid_faq=faq1621351643698500).",
+          "## A South Beach",
+          "La ruta 150, el Miami Beach Airport Express, parte de allí más o menos cada 30 minutos, de 6:00 a.m. a 11:40 p.m., los siete días. Entra a Miami Beach por la calle 41 y baja hasta South Pointe Drive, con paradas en Collins Avenue, Lincoln Road y Washington Avenue. Los autobuses llevan portaequipaje.",
+          "## A Brickell",
+          "De lunes a viernes, la línea naranja del Metrorail va directo del aeropuerto a Brickell, pasando por Government Center. El fin de semana cambia: esa línea solo hace de lanzadera entre el aeropuerto y la estación Earlington Heights, y ahí toca pasar a la línea verde para seguir al sur, [advierte Miami-Dade Transit](https://www.miamidade.gov/global/transportation/metrorail.page). El tren funciona de 5:00 a.m. a medianoche.",
+          "## Al puerto de cruceros",
+          "PortMiami queda a unas 9 millas. Quien contrató el traslado con su naviera lo aborda en el nivel 1: en la estación norte, puerta 1 del Concourse D, o en la sur, puerta 33 del Concourse J. Sin ese traslado, lo directo es un taxi o una app. La vía económica que [lista el aeropuerto](https://www.miami-airport.com/ground-transportation.asp) es el MIA Mover y luego el trolley de la Ciudad de Miami, por las rutas Flagami, Little Havana o Coral Way.",
+          "## Taxi y apps",
+          "Los taxis esperan en el nivel de llegadas, afuera del reclamo de equipaje. El aeropuerto no publica tarifas fijas por destino. [El taxímetro](https://www.miami-airport.com/taxicabs-shuttles.asp) arranca en $2.95 por el primer sexto de milla, sigue a 85 centavos por cada sexto hasta completar la milla y a 55 centavos de ahí en adelante, más 40 centavos por minuto de espera y un cargo de $2 por salir de MIA. Las SUV y las vans autorizadas pueden sumar un 30%, y deben llevar a la vista la calcomanía que lo indica.",
+          "Uber y Lyft recogen en el primer nivel y en el segundo; la app señala la puerta y muestra el precio antes de confirmar.",
+          "Queda una advertencia que vale para todos: ignorar a quien ofrezca transporte dentro de la terminal. Captar pasajeros así es ilegal y muchos de esos choferes no tienen licencia ni seguro, avisa el aeropuerto, que remite a las paradas oficiales de la acera del nivel inferior, atendidas por personal uniformado."
+        ]
+      },
+      "en": {
+        "etiqueta": "THE GUIDE",
+        "titulo": "From the airport to South Beach for $2.25",
+        "bajada": "To the beach, to Brickell or to the cruise port: the ways out of MIA and what each one costs.",
+        "toca": [
+          "The MIA Mover is free and leaves from the terminal's third level.",
+          "A Metrobus or Metrorail trip costs $2.25.",
+          "Taxis run on the meter, with a $15 minimum for trips leaving the airport."
+        ],
+        "cuerpo": [
+          "Almost everything starts on the third level. Between the Dolphin and Flamingo garages is the MIA Mover, a free automated train that drops travelers at the airport's central station, where Metrorail, county buses, Tri-Rail and the rental cars all meet, [the airport itself explains](https://www.miami-airport.com/public-transportation.asp).",
+          "That station is where you pay for public transit. There are EASY Card machines, and the county also takes contactless bank cards. Pay by card rather than cash and the transfer between bus and train is free, [according to Miami-Dade's fare table](https://www.miamidade.gov/global/faq.page?Mduid_faq=faq1621351643698500).",
+          "## To South Beach",
+          "Route 150, the Miami Beach Airport Express, leaves from there roughly every 30 minutes, from 6:00 a.m. to 11:40 p.m., seven days a week. It enters Miami Beach at 41st Street and runs down to South Pointe Drive, stopping at Collins Avenue, Lincoln Road and Washington Avenue. The buses have luggage racks.",
+          "## To Brickell",
+          "Monday through Friday, Metrorail's Orange Line runs straight from the airport to Brickell, by way of Government Center. Weekends are different: that line only shuttles between the airport and Earlington Heights station, where riders switch to the Green Line to continue south, [Miami-Dade Transit warns](https://www.miamidade.gov/global/transportation/metrorail.page). Trains run from 5:00 a.m. to midnight.",
+          "## To the cruise port",
+          "PortMiami is about 9 miles away. Travelers who booked a transfer with their cruise line board on level 1: at the North Bus Station, Door 1 of Concourse D, or the South Bus Station, Door 33 of Concourse J. Without that transfer, a taxi or a ride app is the direct way. The low-cost route [the airport lists](https://www.miami-airport.com/ground-transportation.asp) is the MIA Mover and then the City of Miami Trolley, on the Flagami, Little Havana or Coral Way routes.",
+          "## Taxis and ride apps",
+          "Taxis wait on the arrivals level, outside baggage claim. The airport publishes no flat fares by destination. [The meter](https://www.miami-airport.com/taxicabs-shuttles.asp) starts at $2.95 for the first sixth of a mile, continues at 85 cents per sixth up to one mile and 55 cents after that, plus 40 cents per minute of waiting and a $2 charge for leaving MIA. Authorized SUVs and vans may add 30%, and must display the decal that says so.",
+          "Uber and Lyft pick up on the first and second levels; the app names the door and shows the price before you confirm.",
+          "One warning applies to everyone: ignore anyone offering a ride inside the terminal. Soliciting passengers that way is illegal and many of those drivers are unlicensed and uninsured, says the airport, which points travelers to the official stands at the lower-level curb, staffed by uniformed personnel."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Aeropuerto Internacional de Miami · Transporte público",
+          "u": "https://www.miami-airport.com/public-transportation.asp"
+        },
+        {
+          "n": "Aeropuerto Internacional de Miami · Taxis y apps",
+          "u": "https://www.miami-airport.com/taxicabs-shuttles.asp"
+        },
+        {
+          "n": "Aeropuerto Internacional de Miami · Transporte terrestre y PortMiami",
+          "u": "https://www.miami-airport.com/ground-transportation.asp"
+        },
+        {
+          "n": "Miami-Dade Transit · Tarifas de Metrobus y Metrorail",
+          "u": "https://www.miamidade.gov/global/faq.page?Mduid_faq=faq1621351643698500"
+        },
+        {
+          "n": "Miami-Dade Transit · Metrorail",
+          "u": "https://www.miamidade.gov/global/transportation/metrorail.page"
+        }
+      ]
+    },
+    {
+      "id": "miami-key-west-en-auto-paradas-peajes",
+      "scope": "cayos",
+      "tema": "ruta",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T15:50:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-keys-costa-marina-aereo.jpg",
+      "foto_pos": "50% 45%",
+      "foto_alt": "Vista aérea de una marina y la carretera que cruza los Cayos entre el agua",
+      "foto_pie": "La carretera de los Cayos, entre el agua, vista desde el aire.",
+      "foto_pie_en": "The Keys highway, between the water, seen from the air.",
+      "es": {
+        "etiqueta": "LA GUÍA",
+        "titulo": "Miami–Key West en auto: dónde parar y qué se paga",
+        "bajada": "Una sola carretera, 42 puentes y pocas paradas que de verdad valen el freno.",
+        "toca": [
+          "La Overseas Highway no cobra peaje. Florida's Turnpike, el camino hasta ella, sí, y solo de forma electrónica.",
+          "Los parques estatales de la ruta abren de 8:00 a.m. al atardecer y cobran $8 por vehículo, más 50 centavos por persona.",
+          "En los Cayos las direcciones se dan por millas: de la 127, cerca de Florida City, a la 0, en Key West."
+        ],
+        "cuerpo": [
+          "Son unas 159 millas entre Miami y Key West, y buena parte del encanto está en que no hay atajo: una sola carretera, la US-1, salta de isla en isla. Su tramo final, la [Overseas Highway](https://visitfloridakeys.com/the-highway-that-goes-to-sea/), recorre 113 millas y está catalogado como All-American Road, la categoría más alta del programa federal de carreteras escénicas, [recuerda la oficina de turismo de los Cayos](https://visitfloridakeys.com/how-to-get-here/).",
+          "## El camino y lo que cuesta",
+          "Desde Miami lo habitual es bajar por Florida's Turnpike hasta Florida City y tomar ahí la US-1. La Turnpike no acepta efectivo: cobra con SunPass u otro transpondedor compatible, o manda la cuenta por correo según la placa, a una tarifa más alta. Florida City es, además, el último punto cómodo para echar gasolina antes del tramo de 18 millas que lleva a Key Largo.",
+          "Existe una entrada alterna, Card Sound Road, que llega por el norte de Key Largo y sí tiene peaje en su puente: $2.18 con SunPass y $3.28 por placa para vehículos de dos ejes, más un cargo administrativo de $2.50 al mes en el segundo caso, [de acuerdo con el condado de Monroe](https://www.monroecounty-fl.gov/100/Card-Sound-Toll-Authority). Tampoco recibe efectivo.",
+          "## Las paradas",
+          "La primera está en Key Largo, milla 102.5: [John Pennekamp](https://www.floridastateparks.org/parks-and-trails/john-pennekamp-coral-reef-state-park), el primer parque submarino del país. Anda en obras, con una de sus dos rampas para botes cerrada y menos espacio para remolques. Quien viaja solo paga $4.50.",
+          "En Islamorada, milla 77.5 y del lado de la bahía, [Robbie's](https://www.robbies.com/) cobra $2.50 por entrar al muelle y $5 por la cubeta de pescado para darles de comer a los sábalos.",
+          "Pasado Marathon aparece el [Seven Mile Bridge](https://www.miamimagicapp.com/noticias/seven-mile-bridge-rehabilitacion), que en realidad mide 6.79 millas, y poco después [Bahia Honda](https://www.floridastateparks.org/parks-and-trails/bahia-honda-state-park/hours-fees), entre las millas 36 y 37, con una de las playas más queridas de los Cayos. Los fines de semana conviene llegar temprano.",
+          "En Big Pine Key hay que levantar el pie, y no solo por la multa: allí vive el [venado de los Cayos](https://www.miamimagicapp.com/noticias/venado-de-los-cayos-key-deer-big-pine-key-como-verlo), una especie en peligro que cruza la carretera, sobre todo de noche.",
+          "## Al llegar",
+          "La carretera termina en la milla 0. Para la foto del Southernmost Point hay un detalle: la esquina original, en Whitehead y South, está en reconstrucción, y la Ciudad colocó una réplica de la boya en el Duval Street Pocket Park, [informó Keys News](https://www.keysnews.com/news/local/buoy-landmark-under-construction/article_b14b3079-0cdf-44ed-b864-21ba18be8d09.html).",
+          "Estacionar en Old Town es lo difícil. El garaje municipal de 301 Grinnell Street, esquina con Caroline, tiene 300 espacios y cobra $6 la hora o $48 el día, más impuestos, [según la Ciudad de Key West](https://cityofkeywest-fl.gov/810/City-Parking-Lots-Rates).",
+          "Y un consejo de quien hace la ruta seguido: salir temprano, sobre todo viernes y fines de semana. Al ser la única carretera, cualquier atasco deja a todos adentro."
+        ]
+      },
+      "en": {
+        "etiqueta": "THE GUIDE",
+        "titulo": "Miami to Key West by car: where to stop, what you pay",
+        "bajada": "One road, 42 bridges and a handful of stops that are truly worth the brakes.",
+        "toca": [
+          "The Overseas Highway charges no toll. Florida's Turnpike, the road that gets you there, does, and only electronically.",
+          "State parks along the route open from 8:00 a.m. to sunset and charge $8 per vehicle, plus 50 cents per person.",
+          "In the Keys, addresses go by mile markers: from 127, near Florida City, down to 0, in Key West."
+        ],
+        "cuerpo": [
+          "It's about 159 miles from Miami to Key West, and much of the charm is that there is no shortcut: a single road, US-1, hops from island to island. Its final stretch, the [Overseas Highway](https://visitfloridakeys.com/the-highway-that-goes-to-sea/), runs 113 miles and is designated an All-American Road, the top tier of the federal scenic byways program, [the Keys tourism office notes](https://visitfloridakeys.com/how-to-get-here/).",
+          "## The road and what it costs",
+          "From Miami the usual way is south on Florida's Turnpike to Florida City, then onto US-1. The Turnpike takes no cash: it charges by SunPass or another compatible transponder, or mails a bill by license plate at a higher rate. Florida City is also the last convenient place to fill the tank before the 18-mile stretch to Key Largo.",
+          "There is an alternate way in, Card Sound Road, which arrives at the north end of Key Largo and does have a toll on its bridge: $2.18 with SunPass and $3.28 by plate for two-axle vehicles, plus a $2.50 monthly administrative fee in the second case, [according to Monroe County](https://www.monroecounty-fl.gov/100/Card-Sound-Toll-Authority). It takes no cash either.",
+          "## The stops",
+          "The first is in Key Largo, mile marker 102.5: [John Pennekamp](https://www.floridastateparks.org/parks-and-trails/john-pennekamp-coral-reef-state-park), the country's first undersea park. It's under construction, with one of its two boat ramps closed and less room for trailers. A driver traveling alone pays $4.50.",
+          "In Islamorada, mile marker 77.5 on the bay side, [Robbie's](https://www.robbies.com/) charges $2.50 to walk onto the dock and $5 for the bucket of fish to feed the tarpon.",
+          "Past Marathon comes the [Seven Mile Bridge](https://www.miamimagicapp.com/news/seven-mile-bridge-rehabilitacion), which actually measures 6.79 miles, and soon after [Bahia Honda](https://www.floridastateparks.org/parks-and-trails/bahia-honda-state-park/hours-fees), between mile markers 36 and 37, with one of the best-loved beaches in the Keys. On weekends it pays to arrive early.",
+          "On Big Pine Key it's time to ease off the gas, and not only because of the ticket: this is home to the [Key deer](https://www.miamimagicapp.com/news/venado-de-los-cayos-key-deer-big-pine-key-como-verlo), an endangered species that crosses the road, especially at night.",
+          "## On arrival",
+          "The road ends at mile marker 0. For the Southernmost Point photo there's a catch: the original corner, at Whitehead and South, is being rebuilt, and the City has placed a replica of the buoy at Duval Street Pocket Park, [Keys News reported](https://www.keysnews.com/news/local/buoy-landmark-under-construction/article_b14b3079-0cdf-44ed-b864-21ba18be8d09.html).",
+          "Parking in Old Town is the hard part. The city garage at 301 Grinnell Street, at the corner of Caroline, has 300 spaces and charges $6 an hour or $48 a day, plus tax, [according to the City of Key West](https://cityofkeywest-fl.gov/810/City-Parking-Lots-Rates).",
+          "And one piece of advice from someone who drives it often: leave early, especially on Fridays and weekends. With only one road, any backup keeps everyone in it."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Florida Keys & Key West · Cómo llegar",
+          "u": "https://visitfloridakeys.com/how-to-get-here/"
+        },
+        {
+          "n": "Florida Keys & Key West · The Highway That Goes to Sea",
+          "u": "https://visitfloridakeys.com/the-highway-that-goes-to-sea/"
+        },
+        {
+          "n": "Condado de Monroe · Card Sound Toll Authority",
+          "u": "https://www.monroecounty-fl.gov/100/Card-Sound-Toll-Authority"
+        },
+        {
+          "n": "Florida State Parks · John Pennekamp Coral Reef State Park",
+          "u": "https://www.floridastateparks.org/parks-and-trails/john-pennekamp-coral-reef-state-park"
+        },
+        {
+          "n": "Florida State Parks · Bahia Honda, horario y tarifas",
+          "u": "https://www.floridastateparks.org/parks-and-trails/bahia-honda-state-park/hours-fees"
+        },
+        {
+          "n": "Robbie's of Islamorada",
+          "u": "https://www.robbies.com/"
+        },
+        {
+          "n": "Keys News · Buoy landmark under construction",
+          "u": "https://www.keysnews.com/news/local/buoy-landmark-under-construction/article_b14b3079-0cdf-44ed-b864-21ba18be8d09.html"
+        },
+        {
+          "n": "Ciudad de Key West · Estacionamientos y tarifas",
+          "u": "https://cityofkeywest-fl.gov/810/City-Parking-Lots-Rates"
+        }
+      ]
+    },
+    {
       "id": "no-vacancy-miami-beach-doce-hoteles-arte",
       "scope": "miami",
       "tema": "cultura",
@@ -9913,7 +10099,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:54:28-05:00",
+  "updated_at": "2026-11-27T15:50:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
