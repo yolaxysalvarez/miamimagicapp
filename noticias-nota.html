@@ -299,8 +299,8 @@ function render(){
   var HV=vok(N.video)?N.video:'';if(img()||HV)h+='<figure><div class="hero'+(N.foto_ratio?' tall" style="aspect-ratio:'+esc(N.foto_ratio):'')+'">'+(HV?vbtn(HV,ti,img(),N.foto_pos):'<img src="'+esc(img())+'" alt="'+esc(N.foto_alt||'')+'"'+(N.foto_pos?' style="object-position:'+esc(N.foto_pos)+'"':'')+'>')+(N.foto_mm!==false&&!HV?'<span class="wm">MIAMI MAGIC</span>':'')+'</div>'+(N.foto_credito||N.foto_pie?'<figcaption class="cap">'+esc((L==='en'&&N.foto_pie_en)||N.foto_pie||'')+(N.foto_credito?' · '+t('foto')+': '+esc(N.foto_credito):'')+'</figcaption>':'<div style="height:24px"></div>')+'</figure>';
   h+='<div class="col"><div class="body b1">';
   var at=Math.min(2,cu.length);if(at>1&&cu[at-1].slice(0,3)==='## ')at--;
-  var midK=-1;if(cu.length>=6&&!(typeof inS==='function'&&inS(N))){for(var q=Math.ceil(cu.length*.5);q<cu.length-1;q++){var c0=String(cu[q]),c1=String(cu[q-1]);if(c0.slice(0,2)!=='- '&&c1.slice(0,2)!=='- '&&c1.slice(0,3)!=='## '&&c0.slice(0,2)!=='::'){midK=q;break}}}
-  var midH=(function(){if(midK<0)return '';var u=ALL.filter(function(n){return n.ultima&&n.id!==N.id&&pub(n)&&!(n.vence&&n.vence<hoy())}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,3);if(u.length<2)return '';return '</div><aside class="midu"><b>'+t('ult')+'</b>'+u.map(function(n){return '<a href="'+nHref(n)+'">'+esc((n[L]||n.es||{}).titulo||'')+'</a>'}).join('')+'<a class="all" href="'+(L==='en'?'/news':'/noticias')+'">'+(L==='en'?'ALL OF MIAMI MAGIC NEWS →':'TODO MIAMI MAGIC NEWS →')+'</a></aside><div class="body">'})();
+  window.MIDU={};var midK=-1;if(cu.length>=6&&!(typeof inS==='function'&&inS(N))){for(var q=Math.ceil(cu.length*.5);q<cu.length-1;q++){var c0=String(cu[q]),c1=String(cu[q-1]);if(c0.slice(0,2)!=='- '&&c1.slice(0,2)!=='- '&&c1.slice(0,3)!=='## '&&c0.slice(0,2)!=='::'){midK=q;break}}}
+  var midH=(function(){if(midK<0)return '';var u=ALL.filter(function(n){return n.ultima&&n.id!==N.id&&pub(n)&&!(n.vence&&n.vence<hoy())}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,3);if(u.length<2)return '';window.MIDU={};u.forEach(function(n){window.MIDU[n.id]=1});return '</div><aside class="midu"><b>'+(L==='en'?'ON THE FRONT PAGE NOW':'AHORA EN PORTADA')+'</b>'+u.map(function(n){return '<a href="'+nHref(n)+'">'+esc((n[L]||n.es||{}).titulo||'')+'</a>'}).join('')+'<a class="all" href="'+(L==='en'?'/news':'/noticias')+'">'+(L==='en'?'ALL OF MIAMI MAGIC NEWS →':'TODO MIAMI MAGIC NEWS →')+'</a></aside><div class="body">'})();
   cu.forEach(function(p,k){if(k===midK)h+=midH;h+=(p==='::btc'?btcT():p.slice(0,6)==='::img '?gfx(p.slice(6)):p.slice(0,8)==='::video '?vfig(p.slice(8)):p.slice(0,3)==='## '?'<h3 class="q">'+esc(p.slice(3))+'</h3>':p.slice(0,2)==='- '?((k&&String(cu[k-1]).slice(0,2)==='- '?'':'<ul class="lst">')+'<li>'+hn(p.slice(2))+'</li>'+(String(cu[k+1]||'').slice(0,2)==='- '?'':'</ul>')):'<p>'+hn(p)+'</p>');if(k===at-1&&to.length)h+='</div><div class="toca"><b>'+t('toca')+'</b><ul>'+to.map(function(x,j){return '<li><i>'+(j+1)+'</i><span>'+hn(x)+'</span></li>'}).join('')+'</ul></div><div class="body">'});
   h+='</div>';
   if(N.actualizada)h+='<p class="upd">'+(N.desarrollo?'<i></i>':'')+upd()+(N.desarrollo?(L==='en'?' — This story is developing and will be updated.':' — Esta noticia está en desarrollo y se seguirá actualizando.'):'')+'</p>';
@@ -376,7 +376,7 @@ function sEv(){if(!EVD||!ESP||!ESP.serie)return [];var p=function(x){var a=Strin
   out.sort(function(x,y){return x.s-y.s||x.b-y.b||(x.e.name<y.e.name?-1:1)});return out}
 function renderMas(){
   var box=document.getElementById('mas');if(!box||!N)return;
-  var pool=ALL.filter(function(n){return pub(n)&&n.id!==N.id}),k=secOf(N),used={};
+  var pool=ALL.filter(function(n){return pub(n)&&n.id!==N.id&&!(window.MIDU&&window.MIDU[n.id])}),k=secOf(N),used={};
   var ts=function(n){return String(n.publicada||n.fecha||'')};
   var SX=inS(N)&&sHub();
   var ult=pool.filter(function(n){return !(SX&&inS(n))}).sort(function(a,b){return ts(b).localeCompare(ts(a))}).slice(0,3);ult.forEach(function(n){used[n.id]=1});
@@ -394,6 +394,7 @@ function renderMas(){
   var S=inS(N)&&sHub();
   if(S){var by={};ALL.forEach(function(n){by[n.id]=n});var ot=(ESP.notas||[]).map(function(x){return by[x.id]}).filter(function(n){return n&&pub(n)&&n.id!==N.id});
     h+='<div class="mg" id="serie">'+(SM?'':'<h5>'+esc(sName())+'</h5>')+(SM||N.id!==ESP.id?sCard(SM):'')+(SM?'<div class="sg">'+ot.map(sGrid).join('')+'</div>':ot.map(miRow).join(''))+'</div>';}
+  var hTop=h;h='';
   if(ult.length)h+='<div class="mg"><h5>'+t('ult')+'</h5>'+ult.map(miRow).join('')+'</div>';
   var dy=Math.floor(Date.now()/864e5),pk=function(tp){var a=SUG.filter(function(x){return x&&x.tipo===tp&&x.u&&(x.t_es||x.t_en)}).slice(0,2);return a.length?a[dy%a.length]:null};
   var sRow=function(x){var en=L==='en',ex=/^https?:/.test(x.u),im=x.foto?(/^https?:|^\//.test(x.foto)?x.foto:'/'+x.foto):'';return '<a class="mi" href="'+esc(x.u)+'"'+(ex?' target="_blank" rel="noopener"':'')+'><span class="th'+(x.tipo==='video'?' vd':'')+'">'+(im?'<img src="'+esc(im)+'" alt="" loading="lazy">':'')+'</span><span><span class="eb'+(/CAYOS|KEYS/.test((en?x.eb_en:x.eb_es)||'')?' ky':'')+'">'+esc((en?x.eb_en:x.eb_es)||'')+'</span><b>'+esc((en?x.t_en:x.t_es)||x.t_es||'')+'</b></span></a>'};
@@ -402,8 +403,10 @@ function renderMas(){
   if(rel[0])mix.push(miRow(rel[0]));if(ap)mix.push(sRow(ap));if(rel[1])mix.push(miRow(rel[1]));if(vd)mix.push(sRow(vd));
   if(!ap&&rel[2])mix.push(miRow(rel[2]));
   if(mix.length)h+='<div class="mg"><h5>'+(L==='en'?'WHAT MOVES TODAY':'LO QUE MUEVE HOY')+'</h5>'+mix.join('')+'</div>';
+  var hMid=h;h='';
   if(ev.length)h+='<div class="mg'+(SE.length&&SM?' evg':'')+'"><h5>'+(SE.length?esc(sName())+(en?' · LISTINGS':' · LA CARTELERA'):t('sem'))+'</h5>'+ev.map(function(o){var e=o.e,on=o.a<t0,d=on?o.b:o.a;var ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,'');
     return '<a class="ev" href="/?ev='+encodeURIComponent(e.id)+'"><span class="dt"><i>'+(on?(en?'UNTIL':'HASTA'):DW[d.getDay()])+'</i><u>'+d.getDate()+'</u><s>'+MO[d.getMonth()]+'</s></span><span><span class="eb'+(o.ky?' ky':'')+'">'+esc(((en?e.type:(e.type_es||e.type))||'').toUpperCase())+'</span><b>'+esc(en?e.name:(e.name_es||e.name))+'</b><p>'+esc(ve)+(tm?' · '+esc(tm):'')+'</p></span></a>'}).join('')+'<a class="go" href="/?go=week">'+t('cart')+'</a></div>';
+  h=(S&&SM)?hTop+h+hMid:hTop+hMid+h;
   box.innerHTML=h;box.style.display=h?'':'none';
 }
 function loadOps(){
