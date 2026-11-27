@@ -603,7 +603,15 @@ body:not(.home) #vs,body:not(.home) #pzU,body:not(.home) #pzF,body:not(.home) #d
 .vs .ph{position:relative;aspect-ratio:16/10;display:block;overflow:hidden;margin-bottom:10px}
 .vs .ph img{width:100%;height:100%;object-fit:cover}
 .vs .vk{display:block;font-size:15.5px;font-weight:800;letter-spacing:.14em;margin-bottom:5px}
-.vs .vk.o{color:#C93A25}.vs .vk.d{color:#0E7A63}.vs .vk.e{color:var(--gold)}
+.vs .vk.o{color:#C93A25}.vs .vk.d{color:#0E7A63}.vs .vk.e{color:var(--gold)}.vs .vk.m{color:#0B5C7A}
+#opB{margin:0 0 56px}#opB .sh h3{color:#C93A25}
+.op-c{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:26px;align-items:center;color:var(--ink)}.op-c:hover{text-decoration:none}
+.op-c .ph{position:relative;display:block;aspect-ratio:16/10;overflow:hidden}.op-c .ph img{width:100%;height:100%;object-fit:cover}
+.op-c b{display:block;font-family:var(--pf);font-weight:900;font-size:30px;line-height:1.12;margin-bottom:10px}
+.op-c em{display:block;font-style:normal;font-size:17.5px;color:var(--ink2);margin-bottom:10px}
+.op-c i{display:block;font-style:normal;font-family:var(--bb);font-size:15px;letter-spacing:.14em;color:var(--mut)}
+body:not(.home) #opB{display:none!important}
+@media(max-width:760px){#opB{margin-bottom:44px}.op-c{grid-template-columns:1fr;gap:12px}.op-c b{font-size:24px}}
 .vs b{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;font-family:var(--pf);font-weight:700;font-size:17.5px;line-height:1.22}
 .vs .vm{display:block;margin-top:8px;font-size:15.5px;font-weight:700;letter-spacing:.06em}
 @media(max-width:820px){.top{display:flex!important;flex-direction:column}.lc{display:contents}#leadBox{order:1}.ul{order:2}.vs{order:3;grid-template-columns:1fr;gap:18px;margin:0 0 40px}.vs a{display:grid;grid-template-columns:minmax(0,1fr) 110px;gap:14px;align-items:start}.vs a>.ph{grid-column:2;grid-row:1;aspect-ratio:1/1;margin:0}.vs a>span:not(.ph){grid-column:1;grid-row:1}}
@@ -1100,6 +1108,8 @@ body{background:#fff;text-rendering:optimizeLegibility}
   <div class="mb" id="masBtn" style="display:none"><button type="button"></button></div>
   <div id="otros"></div>
 
+  <section id="opB" aria-label="Opinión" style="display:none"></section>
+
   <section class="tv" id="tv" aria-label="Video" style="display:none"></section>
 
   <div class="split" id="split">
@@ -1548,9 +1558,9 @@ function colB(tt,cls,arr,go){if(!arr.length)return '';var n=arr[0],f=F(n);
 function renderHome(lead,rest){
   var hm=HOME();document.body.classList.toggle('home',hm);if(!hm)return;
   var pk=ALLN().filter(function(n){return n.ultima&&n!==lead&&VIG(n)}).sort(function(a,b){return a.ultima-b.ultima}).slice(0,12),inU={};pk.forEach(function(n){inU[n.id]=1});
-  var tb=ALLN().filter(function(n){return n.tambien&&n!==lead&&!inU[n.id]}).sort(function(a,b){return a.tambien-b.tambien}).slice(0,3);tb.forEach(function(n){inU[n.id]=1});
+  var tb=[];/* 'También hoy' retirado (27 nov 2026) */
   var ot=document.getElementById('tmb');if(ot)ot.remove();
-  if(tb.length===3)document.getElementById('leadBox').insertAdjacentHTML('beforeend','<div id="tmb"><span>'+(L==='en'?'ALSO TODAY':'TAMBIÉN HOY')+'</span>'+tb.map(function(n){return '<a href="'+href(n)+'"><span class="eb">'+eb(n)+'</span><b>'+esc(F(n).titulo)+'</b></a>'}).join('')+'</div>');
+  if(false&&tb.length===3)document.getElementById('leadBox').insertAdjacentHTML('beforeend','<div id="tmb"><span>'+(L==='en'?'ALSO TODAY':'TAMBIÉN HOY')+'</span>'+tb.map(function(n){return '<a href="'+href(n)+'"><span class="eb">'+eb(n)+'</span><b>'+esc(F(n).titulo)+'</b></a>'}).join('')+'</div>');
   var og=otros()[0],ky=(og?og[1]:[]).filter(function(n){return !inU[n.id]}),mi=rest.filter(function(n){return !inU[n.id]}),used={};
   /* Las notas con 'arriba' abren su columna (Miami / Los Cayos) aunque ya salgan en Lo último, y sean de la sección que sean */
   var arr=function(c){return (DATA.notas||[]).filter(function(n){return n.arriba&&VIG(n)&&n!==lead&&(c?n.scope==='cayos':(n.scope||'miami')!=='cayos')}).sort(function(x,y){return x.arriba-y.arriba})},noA=function(n){return !(n.arriba&&VIG(n))};
@@ -1567,7 +1577,9 @@ function renderHome(lead,rest){
   var ed=(DATA.notas||[]).filter(function(n){return n.editor&&!vsU[n.id]})[0];
   if(!ed){var pool=(DATA.notas||[]).filter(function(n){return !vsU[n.id]&&!n.desarrollo&&img(n)&&!(n.vence&&n.vence<HOYNY())&&n.hamaca});ed=pool.length?pool[doy()%pool.length]:null}
   var vsC=function(k,cl,lb,n,more){if(!n)return '';return '<a href="'+href(n)+'">'+ph(n)+'<span><span class="vk '+cl+'">'+lb+'</span><b class="hl">'+esc(F(n).titulo)+'</b>'+(more?'<span class="vm" data-vs="'+more+'">'+(L==='en'?'ALL →':'VER TODO →')+'</span>':'')+'</span></a>'};
-  document.getElementById('vs').innerHTML=vsC('o','o',L==='en'?'OPINION':'OPINIÓN',opn,'opinion')+vsC('d','d',L==='en'?'SPORTS':'DEPORTES',dpn,'deportes')+vsC('e','e','HAMACA MOOD',ed,'');
+  var mun=(DATA.notas||[]).filter(function(n){return n.muelle&&!vsU[n.id]&&img(n)&&!(n.vence&&n.vence<HOYNY())}).sort(byD)[0];
+  document.getElementById('vs').innerHTML=vsC('d','d',L==='en'?'SPORTS':'DEPORTES',dpn,'deportes')+vsC('e','e','HAMACA MOOD',ed,'hamaca')+vsC('m','m',L==='en'?'THE DOCK':'EL MUELLE',mun,'muelle');
+  var ob=document.getElementById('opB');if(ob){if(opn){var of=F(opn);ob.style.display='';ob.innerHTML='<div class="sh"><h3>'+(L==='en'?'OPINION':'OPINIÓN')+'</h3><button class="vt" type="button" id="opAll">'+(L==='en'?'SEE ALL →':'VER TODO →')+'</button></div><a class="op-c" href="'+href(opn)+'">'+ph(opn)+'<span><b class="hl">'+esc(of.titulo)+'</b><em>'+esc(of.bajada||'')+'</em>'+(opn.autor?'<i>'+(L==='en'?'By ':'Por ')+esc(opn.autor)+'</i>':'')+'</span></a>';document.getElementById('opAll').onclick=function(){goSec('op')}}else{ob.style.display='none';ob.innerHTML=''}}
   document.getElementById('pzU').innerHTML=ul.length?'<div class="sh"><h3>'+(L==='en'?'LATEST':'LO ÚLTIMO')+'</h3></div>'+ul.map(function(n,i){return '<a href="'+href(n)+'"><i>'+(i+1)+'</i><span><span class="eb">'+eb(n)+'</span><b class="hl">'+esc(F(n).titulo)+'</b></span></a>'}).join(''):'';
   fitU();
 }
@@ -1747,7 +1759,7 @@ document.getElementById('dkMb').onclick=function(){ST.dkN=99;render()};
 function goSec(k){ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.casa=false;ST.op=k==='op';ST.dp=k==='dp';render();scrollTo({top:0,behavior:'smooth'})}
 document.getElementById('hmPill').onclick=document.getElementById('hmMore').onclick=function(){ST.hamaca=true;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
 document.getElementById('dkPill').onclick=document.getElementById('dkMore').onclick=function(){ST.muelle=true;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.hamaca=false;ST.casa=false;render();scrollTo({top:0,behavior:'smooth'})};
-document.getElementById('vs').addEventListener('click',function(e){var m=e.target.closest('.vm');if(!m)return;e.preventDefault();goSec(m.dataset.vs==='opinion'?'op':'dp')});
+document.getElementById('vs').addEventListener('click',function(e){var m=e.target.closest('.vm');if(!m)return;e.preventDefault();var k=m.dataset.vs;if(k==='hamaca')document.getElementById('hmMore').onclick();else if(k==='muelle')document.getElementById('dkMore').onclick();else goSec(k==='opinion'?'op':'dp')});
 document.querySelectorAll('[data-sc]').forEach(function(a){a.onclick=function(e){e.preventDefault();var s=a.dataset.sc;if(s==='opinion'){goSec('op');return}if(s==='deportes'){goSec('dp');return}if(s==='hamaca'){ST.hamaca=true;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false}else if(s==='muelle'){ST.muelle=true;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.hamaca=false;ST.casa=false}else if(s==='casa'){ST.casa=true;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false}else{ST.scope=s;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;ST.casa=false;ST.tema='todo'}render();scrollTo({top:0,behavior:'smooth'})}});
 /* ── pronóstico desplegable ── */
 var wxb=document.getElementById('wxb'), wxp=document.getElementById('wxp');
