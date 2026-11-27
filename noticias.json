@@ -87,8 +87,8 @@
       "ultima": 8,
       "es": {
         "etiqueta": "DEPORTES",
-        "titulo": "Panthers, HEAT e Inter Miami juegan el viernes 27",
-        "bajada": "Los tres salen de visita. Para Inter Miami, perder es quedar eliminado.",
+        "titulo": "Viernes decisivo para el deporte de Miami",
+        "bajada": "Horarios y dónde ver a los Panthers, el HEAT e Inter Miami el 27 de noviembre.",
         "toca": [
           "Panthers en Washington: 3:00 p.m., por Scripps (WSFL 39 en Miami).",
           "HEAT en Nueva York: 7:00 p.m., por Prime Video.",
@@ -107,8 +107,8 @@
       },
       "en": {
         "etiqueta": "SPORTS",
-        "titulo": "Panthers, HEAT and Inter Miami play on Friday the 27th",
-        "bajada": "All three are on the road. For Inter Miami, a loss means elimination.",
+        "titulo": "A decisive Friday for Miami sports",
+        "bajada": "Times and where to watch the Panthers, the HEAT and Inter Miami on Nov. 27.",
         "toca": [
           "Panthers in Washington: 3 p.m., on Scripps (WSFL 39 in Miami).",
           "HEAT in New York: 7 p.m., on Prime Video.",
@@ -9260,7 +9260,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:14:37-05:00",
+  "updated_at": "2026-11-27T11:16:51-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
