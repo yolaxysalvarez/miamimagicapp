@@ -3085,7 +3085,6 @@
         ]
       },
       "foto_pos": "50% 34%",
-      "arriba": 11,
       "versiones": [
         {
           "desde": "2026-11-23T05:00:00-05:00",
@@ -3141,8 +3140,7 @@
             ]
           }
         }
-      ],
-      "ultima": 20
+      ]
     },
     {
       "id": "lujo-16-contratos-miami-dade-nov-2-8",
@@ -8874,7 +8872,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T09:08:28-05:00",
+  "updated_at": "2026-11-27T09:09:36-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
