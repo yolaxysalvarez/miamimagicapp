@@ -160,10 +160,10 @@
       "autor": "Yolaxys Alvarez",
       "vence": "2026-12-06",
       "serie": "artweek",
-      "foto": "mm-artbasel-library-diagonal.jpg",
-      "foto_alt": "Estantería inclinada llena de libros de colores, reflejada en un espejo de agua bajo el cielo azul",
-      "foto_pie": "Library of Us, de Es Devlin, en la semana del arte de 2025. Foto: Miami Magic.",
-      "foto_pie_en": "Es Devlin’s Library of Us during the 2025 art week. Photo: Miami Magic.",
+      "foto": "mm-mb-letrero-convention-center.jpg",
+      "foto_alt": "Letrero azul de calle en Miami Beach con flechas hacia Ocean Drive, Convention Center, Miami Beach Marina y South Pointe Park",
+      "foto_pie": "Un letrero de Miami Beach señala el camino al centro de convenciones, sede de la feria. Foto: Miami Magic.",
+      "foto_pie_en": "A Miami Beach street sign points the way to the convention center, home of the fair. Photo: Miami Magic.",
       "fuentes": [
         {
           "n": "Art Basel · Expositores y nuevo plano de Miami Beach 2026",
@@ -236,7 +236,8 @@
           "The winner will join the eight already hanging in the convention center’s east lobby, among them last year’s: Modulations – Sequence XXIX, by Ximena Garrido-Lecca.",
           "The week’s other fairs are in [the fair guide](https://miamimagicapp.com/news/semana-del-arte-otras-ferias-guia), and what can be seen without a ticket, in [the sand](https://miamimagicapp.com/news/art-basel-arte-gratis-playa)."
         ]
-      }
+      },
+      "foto_pos": "35% 42%"
     },
     {
       "id": "semana-del-arte-con-ninos-gratis",
