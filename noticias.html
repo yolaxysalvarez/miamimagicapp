@@ -1069,9 +1069,9 @@ html.in-app.app21 .bk{display:inline-flex}
 .tv-tt{display:flex;flex-direction:column;gap:3px}
 .tv-tt .kk{font-family:var(--bb);font-size:15.5px;letter-spacing:.24em;color:#8A6417;line-height:1}
 .tv-h h3{color:var(--ink)}.tv-h h3 em{color:#8A6417}
-.tv-sub{color:#fff;background:var(--ink);border-color:var(--ink);box-shadow:0 14px 22px -14px rgba(14,27,48,.9)}
-.tv-sub svg{color:var(--gold-l)}
-.tv-sub:hover{background:#8A6417;border-color:#8A6417;color:#fff}
+.tv-sub{color:#fff;background:var(--coral-d);border-color:var(--coral-d);box-shadow:0 12px 20px -13px rgba(201,58,37,.9)}
+.tv-sub:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.tv-n span:empty{display:none}
 .tv-m{position:relative}
 .tv-p{border-radius:14px;background:#E6E9EE;box-shadow:0 0 0 1px rgba(14,27,48,.1),0 0 0 6px #fff,0 0 0 7px rgba(201,150,60,.55),0 40px 50px -34px rgba(14,27,48,.7)}
 .tv-p .sc{background:linear-gradient(transparent 54%,rgba(10,17,32,.8))}
@@ -1742,7 +1742,7 @@ function renderPt(){
     tv.style.display='';
     tv.innerHTML='<div class="tv-h"><div class="tv-b"><span class="tv-lg"><img src="/miami-magic-icon-192.png" alt="" width="58" height="58"><i></i></span><span class="tv-tt"><span class="kk">YOUTUBE · @MIAMIMAGICAPP</span><h3>Miami Magic <em>'+(en?'on video':'en video')+'</em></h3></span></div><a class="tv-sub" href="'+ca+'" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>'+(en?'SUBSCRIBE TO THE CHANNEL':'SUSCRÍBETE AL CANAL')+'</a></div>'
      +'<div class="tv-g"><div class="tv-m"><div class="tv-p" id="tvP">'+(TVS.play?'<iframe src="/video.html?v='+encodeURIComponent(c.yid)+'&lang='+L+'" title="'+esc(c[L]||c.es)+'" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>':'<button type="button" id="tvGo" aria-label="'+(en?'Play: ':'Reproducir: ')+esc(c[L]||c.es)+'">'+ytImg(c.yid)+'<span class="sc"></span><span class="pl">'+PLAY+'</span><span class="tx"><span>'+esc(en?c.k_en:c.k_es)+'</span><b>'+esc(c[L]||c.es)+'</b></span></button>')+'</div>'
-     +'<div class="tv-n"><span class="cnt">'+(TVS.play?(en?'NOW PLAYING':'REPRODUCIENDO')+' · ':'')+'0'+(TVS.i+1)+' / 0'+vv.length+'</span><span>'+(TVS.play?esc(c[L]||c.es):(en?'Places filmed by Miami Magic.':'Lugares grabados por Miami Magic.'))+'</span>'+(c.item?'<a href="/?item='+encodeURIComponent(c.item)+'&type='+encodeURIComponent(c.type||'rest')+'">'+(en?'ITS CARD IN THE APP →':'SU FICHA EN LA APP →')+'</a>':'')+'</div></div>'
+     +'<div class="tv-n"><span class="cnt">'+(TVS.play?(en?'NOW PLAYING':'REPRODUCIENDO')+' · ':'')+'0'+(TVS.i+1)+' / 0'+vv.length+'</span><span>'+(TVS.play?esc(c[L]||c.es):'')+'</span>'+(c.item?'<a href="/?item='+encodeURIComponent(c.item)+'&type='+encodeURIComponent(c.type||'rest')+'">'+(en?'ITS CARD IN THE APP →':'SU FICHA EN LA APP →')+'</a>':'')+'</div></div>'
      +'<div class="tv-l"><h4>'+(en?'UP NEXT':'A CONTINUACIÓN')+'</h4>'+vv.map(function(x,i){return i===TVS.i?'':'<button type="button" data-i="'+i+'"><span class="no">'+(i+1)+'</span><span class="th">'+ytImg(x.yid)+'</span><span><span class="k">'+esc(en?x.k_en:x.k_es)+'</span><b>'+esc(x[L]||x.es)+'</b></span></button>'}).join('')+'</div></div>';
     var go=document.getElementById('tvGo');if(go)go.onclick=function(){TVS.play=true;renderPt()};
     tv.querySelectorAll('.tv-l button').forEach(function(b){b.onclick=function(){TVS.i=+b.dataset.i;TVS.play=true;renderPt();if(innerWidth<1021)document.getElementById('tvP').scrollIntoView({behavior:'smooth',block:'center'})}});
