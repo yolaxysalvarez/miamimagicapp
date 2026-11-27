@@ -1052,10 +1052,13 @@ html.in-app.app21 .bk{display:inline-flex}
  footer .ft>div:last-child{row-gap:4px;column-gap:22px}
 }
 /* El Muelle: de dónde son las condiciones */
-.dk-cond{flex-wrap:wrap!important}
+.dk-cond{flex-wrap:wrap!important;gap:12px 22px!important}
+.dk-g{display:flex;flex-wrap:wrap;gap:6px 0;flex:1 1 auto;min-width:0}
+@media(min-width:761px){.sp-x .dk-cond{width:300px;flex:0 0 300px}.sp-x .dk-g{flex:0 0 100%}}
 .dk-cond .dk-loc{flex:0 0 100%;font-style:normal;font-family:var(--bb);font-size:14.5px;letter-spacing:.18em;color:var(--mut);line-height:1}
 .dk-cond b small{display:block;font-family:var(--bb);font-weight:400;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
-.pair .dk-cond span,.sp-x .dk-cond span{justify-content:flex-start}
+.dk-g span{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:2px;padding:6px 12px 4px;font-size:14.5px}
+.dk-g span:nth-of-type(1){padding-left:0;border-left:0}
 @media(max-width:1020px){.dk-cond span{flex:1 1 0!important;min-width:0;justify-content:flex-start!important}.dk-cond b small{letter-spacing:.06em;white-space:normal;line-height:1.15}}
 /* YouTube: claro, sobrio y futurista */
 .tv{background:linear-gradient(180deg,#FFFFFF 0%,#F3F5F8 100%);color:var(--ink);border:1px solid rgba(14,27,48,.12);box-shadow:0 40px 70px -48px rgba(14,27,48,.55),inset 0 1px 0 #fff}
@@ -1596,13 +1599,15 @@ function wxIcon(c){
   var storm='<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#5B6B82" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 15h10a4 4 0 0 0 0-8 5 5 0 0 0-9.6 1.5A3.3 3.3 0 0 0 7 15z"/><path d="M12.5 15l-2 4h3l-2 4" stroke="#E0A526"/></svg>';
   if(c<=1)return sun; if(c<=48)return cloud; if(c>=95)return storm; return rain;
 }
-var WX=null, WXC=null, DK={};
+var WX=null, WXC=null, DK={}, DKK={};
 var DIRS={es:['del norte','del noreste','del este','del sureste','del sur','del suroeste','del oeste','del noroeste'],en:['from the north','from the northeast','from the east','from the southeast','from the south','from the southwest','from the west','from the northwest']};
-function renderDk(){var el=document.getElementById('dkCond');if(!el)return;var r=[];
-  if(DK.sea!=null)r.push([t('agua'),Math.round(DK.sea)+'°F']);
-  if(DK.wave!=null)r.push([t('olas'),(Math.round(DK.wave*3.281*2)/2)+' ft']);
-  if(DK.wind!=null)r.push([t('viento'),Math.round(DK.wind)+' mph'+(DK.dir!=null?'<small>'+DIRS[L][Math.round(DK.dir/45)%8]+'</small>':'')]);
-  el.innerHTML=(r.length?'<i class="dk-loc">'+(L==='en'?'MIAMI BEACH · RIGHT NOW':'MIAMI BEACH · AHORA')+'</i>':'')+r.map(function(x){return '<span>'+x[0]+' <b>'+x[1]+'</b></span>'}).join('')}
+function renderDk(){var el=document.getElementById('dkCond');if(!el)return;
+  function g(D,lab){var r=[];
+    if(D.sea!=null)r.push([t('agua'),Math.round(D.sea)+'°F']);
+    if(D.wave!=null)r.push([t('olas'),(Math.round(D.wave*3.281*2)/2)+' ft']);
+    if(D.wind!=null)r.push([t('viento'),Math.round(D.wind)+' mph'+(D.dir!=null?'<small>'+DIRS[L][Math.round(D.dir/45)%8]+'</small>':'')]);
+    return r.length?'<div class="dk-g"><i class="dk-loc">'+lab+'</i>'+r.map(function(x){return '<span>'+x[0]+' <b>'+x[1]+'</b></span>'}).join('')+'</div>':''}
+  el.innerHTML=g(DK,L==='en'?'MIAMI BEACH · RIGHT NOW':'MIAMI BEACH · AHORA')+g(DKK,L==='en'?'THE KEYS · ISLAMORADA':'LOS CAYOS · ISLAMORADA');if(typeof spSync==='function')spSync()}
 function renderWx(){
   var now=document.getElementById('wxNow');
   if(WXC){now.innerHTML=wxIcon(WXC.c).replace('<svg ','<svg class="wi" ')+'<b>'+Math.round(WXC.t)+'°</b>'}
@@ -1622,6 +1627,10 @@ function loadWx(){
      renderWx();renderCifras()}).catch(function(){});
   fetch('https://marine-api.open-meteo.com/v1/marine?latitude=25.77&longitude=-80.13&current=sea_surface_temperature,wave_height&temperature_unit=fahrenheit&timezone=America/New_York')
    .then(function(r){return r.json()}).then(function(j){if(j.current&&j.current.sea_surface_temperature!=null){CF.sea=j.current.sea_surface_temperature;DK.sea=CF.sea;renderCifras()}if(j.current&&j.current.wave_height!=null){DK.wave=j.current.wave_height}renderDk()}).catch(function(){});
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=24.92&longitude=-80.63&current=wind_speed_10m,wind_direction_10m&wind_speed_unit=mph&timezone=America/New_York')
+   .then(function(r){return r.json()}).then(function(j){if(j.current&&j.current.wind_speed_10m!=null){DKK.wind=j.current.wind_speed_10m;DKK.dir=j.current.wind_direction_10m;renderDk()}}).catch(function(){});
+  fetch('https://marine-api.open-meteo.com/v1/marine?latitude=24.88&longitude=-80.58&current=sea_surface_temperature,wave_height&temperature_unit=fahrenheit&timezone=America/New_York')
+   .then(function(r){return r.json()}).then(function(j){if(j.current){if(j.current.sea_surface_temperature!=null)DKK.sea=j.current.sea_surface_temperature;if(j.current.wave_height!=null)DKK.wave=j.current.wave_height}renderDk()}).catch(function(){});
 }
 
 /* ── eventos ── */
