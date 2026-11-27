@@ -2,6 +2,10 @@
   "version": 2,
   "builds": [
     {
+      "src": "api/sugerencias.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "api/chat.js",
       "use": "@vercel/node"
     },
@@ -95,6 +99,10 @@
     }
   ],
   "routes": [
+    {
+      "src": "/api/sugerencias",
+      "dest": "/api/sugerencias.js"
+    },
     {
       "src": "/api/chat",
       "dest": "/api/chat.js"
