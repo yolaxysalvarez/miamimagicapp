@@ -906,6 +906,10 @@ body:not(.home) .split{display:block;margin-bottom:0}
  .pair .cc{padding:20px 0 0}
 }
 @media(max-width:1020px){.hm{padding:0}.dk-post{padding-left:0;padding-right:0}.dk-main{padding-left:0;padding-right:0}.cc{padding-left:0;padding-right:0}.hm-s a{background:none;box-shadow:none;padding:8px 0}}
+@media(max-width:760px){.hm-g{gap:16px}.hm{margin-bottom:44px}.pair .dk{margin-top:0;margin-bottom:40px}
+.hm-big .sh2{background:linear-gradient(180deg,rgba(14,27,48,.5) 0%,rgba(14,27,48,.42) 30%,rgba(14,27,48,.82) 100%)}
+.hm-big .tx .k{text-shadow:0 1px 4px rgba(14,27,48,.75)}
+.hm-s{align-items:flex-start}.hm-s b{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}}
 @media(max-width:760px){.hist .bd{margin-top:-26px}.hm-s{margin:0 -16px;padding:2px 16px 10px}.fz-r{grid-auto-columns:64%;padding-right:16px}.fz-c{padding:14px 16px 4px}}
 /* cabeceras paralelas de El Muelle y Casa & Coast */
 #dkMore,#ccMore{display:none!important}
@@ -1426,7 +1430,7 @@ function render(){
   } else {hb.innerHTML='<div class="empty" style="height:100%;display:flex;flex-direction:column;justify-content:center"><b>'+t('vacioT')+'</b>'+t('vacioH')+'</div>';hs.innerHTML='';}
   document.getElementById('hmMore').style.display=h.length>3?'':'none';
   // el muelle
-  var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return FK(y).localeCompare(FK(x))});
+  var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return (y.muelle_portada?1:0)-(x.muelle_portada?1:0)||FK(y).localeCompare(FK(x))});
   var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=4;dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
   document.getElementById('dkMore').style.display=mu.length>4?'':'none';
   var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'ALL THE DOCK':'TODO EL MUELLE')+' ↓';
