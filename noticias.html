@@ -1051,15 +1051,23 @@ html.in-app.app21 .bk{display:inline-flex}
  footer .fb>span+span{border-top:1px solid rgba(201,150,60,.25)}
  footer .ft>div:last-child{row-gap:4px;column-gap:22px}
 }
-/* El Muelle: de dónde son las condiciones */
-.dk-cond{flex-wrap:wrap!important;gap:12px 22px!important}
-.dk-g{display:flex;flex-wrap:wrap;gap:6px 0;flex:1 1 auto;min-width:0}
-@media(min-width:761px){.sp-x .dk-cond{width:300px;flex:0 0 300px}.sp-x .dk-g{flex:0 0 100%}}
-.dk-cond .dk-loc{flex:0 0 100%;font-style:normal;font-family:var(--bb);font-size:14.5px;letter-spacing:.18em;color:var(--mut);line-height:1}
-.dk-cond b small{display:block;font-family:var(--bb);font-weight:400;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
-.dk-g span{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:2px;padding:6px 12px 4px;font-size:14.5px}
-.dk-g span:nth-of-type(1){padding-left:0;border-left:0}
-@media(max-width:1020px){.dk-cond span{flex:1 1 0!important;min-width:0;justify-content:flex-start!important}.dk-cond b small{letter-spacing:.06em;white-space:normal;line-height:1.15}}
+/* El Muelle: tablero de condiciones (Miami y los Cayos a la par) */
+.dk-cond{display:block!important;width:100%;max-width:380px}
+.dk-t{display:grid;grid-template-columns:minmax(0,1.25fr) repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
+.dk-r{display:contents}
+.dk-r>div{padding:10px 0 9px 12px;border-bottom:1px solid var(--line);min-width:0}
+.dk-r>div:first-child{padding-left:0}
+.dk-r.hd>div{font-family:var(--bb);font-size:14.5px;letter-spacing:.16em;color:var(--mut);padding-top:7px;padding-bottom:5px;line-height:1.2}
+.dk-r.hd>div:first-child{color:var(--coral-d)}
+.dk-pl strong{display:block;font-family:var(--pf);font-weight:700;font-size:18px;line-height:1.15;color:var(--ink)}
+.dk-r em{display:block;font-style:normal;font-family:var(--bb);font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);line-height:1.2;margin-top:2px}
+.dk-t b{display:block;font-family:var(--dm);font-weight:700;font-size:21px;line-height:1.15;letter-spacing:-.02em;color:#0E7FA8;font-variant-numeric:tabular-nums;white-space:nowrap}
+.dk-t b u{text-decoration:none;font-size:14px;font-weight:500;letter-spacing:0;color:var(--mut);margin-left:3px}
+.pair .dk-cond{justify-self:end}
+.dk-pl strong{white-space:nowrap}
+.pair .dk-t{grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,.8fr)) minmax(0,1fr)}.pair .dk-pl strong{font-size:16.5px}.pair .dk-r.hd>div{letter-spacing:.1em}.pair .dk-r>div{padding-left:8px}.pair .dk-r>div:first-child{padding-left:0}.pair .dk-t b{font-size:19px}
+@media(min-width:761px){.sp-x .dk-cond{width:360px;flex:0 0 360px}}
+@media(max-width:760px){.dk-cond{max-width:none}.dk-t b{font-size:20px}}
 /* YouTube: claro, sobrio y futurista */
 .tv{background:linear-gradient(180deg,#FFFFFF 0%,#F3F5F8 100%);color:var(--ink);border:1px solid rgba(14,27,48,.12);box-shadow:0 40px 70px -48px rgba(14,27,48,.55),inset 0 1px 0 #fff}
 .tv:before{left:0;right:0;top:0;width:auto;height:100%;border-radius:0;background:linear-gradient(rgba(14,27,48,.035) 1px,transparent 1px) 0 0/100% 44px,linear-gradient(90deg,rgba(14,27,48,.035) 1px,transparent 1px) 0 0/44px 100%;-webkit-mask:linear-gradient(120deg,transparent 30%,#000 100%);mask:linear-gradient(120deg,transparent 30%,#000 100%)}
@@ -1600,14 +1608,16 @@ function wxIcon(c){
   if(c<=1)return sun; if(c<=48)return cloud; if(c>=95)return storm; return rain;
 }
 var WX=null, WXC=null, DK={}, DKK={};
-var DIRS={es:['del norte','del noreste','del este','del sureste','del sur','del suroeste','del oeste','del noroeste'],en:['from the north','from the northeast','from the east','from the southeast','from the south','from the southwest','from the west','from the northwest']};
-function renderDk(){var el=document.getElementById('dkCond');if(!el)return;
-  function g(D,lab){var r=[];
-    if(D.sea!=null)r.push([t('agua'),Math.round(D.sea)+'°F']);
-    if(D.wave!=null)r.push([t('olas'),(Math.round(D.wave*3.281*2)/2)+' ft']);
-    if(D.wind!=null)r.push([t('viento'),Math.round(D.wind)+' mph'+(D.dir!=null?'<small>'+DIRS[L][Math.round(D.dir/45)%8]+'</small>':'')]);
-    return r.length?'<div class="dk-g"><i class="dk-loc">'+lab+'</i>'+r.map(function(x){return '<span>'+x[0]+' <b>'+x[1]+'</b></span>'}).join('')+'</div>':''}
-  el.innerHTML=g(DK,L==='en'?'MIAMI BEACH · RIGHT NOW':'MIAMI BEACH · AHORA')+g(DKK,L==='en'?'THE KEYS · ISLAMORADA':'LOS CAYOS · ISLAMORADA');if(typeof spSync==='function')spSync()}
+var DIRS={es:['norte','noreste','este','sureste','sur','suroeste','oeste','noroeste'],en:['north','northeast','east','southeast','south','southwest','west','northwest']};
+function renderDk(){var el=document.getElementById('dkCond');if(!el)return;var en=L==='en';
+  function v(n,u){return '<b>'+n+(u?'<u>'+u+'</u>':'')+'</b>'}
+  function row(D,nm,sub){if(D.sea==null&&D.wave==null&&D.wind==null)return '';
+    return '<div class="dk-r"><div class="dk-pl"><strong>'+nm+'</strong>'+(sub?'<em>'+sub+'</em>':'')+'</div>'
+     +'<div>'+(D.sea!=null?v(Math.round(D.sea)+'°','F'):'—')+'</div>'
+     +'<div>'+(D.wave!=null?v(Math.round(D.wave*3.281*2)/2,'ft'):'—')+'</div>'
+     +'<div>'+(D.wind!=null?v(Math.round(D.wind),'mph')+(D.dir!=null?'<em>'+DIRS[L][Math.round(D.dir/45)%8]+'</em>':''):'—')+'</div></div>'}
+  var rs=row(DK,'Miami Beach','')+row(DKK,'Islamorada',en?'THE KEYS':'LOS CAYOS');
+  el.innerHTML=rs?'<div class="dk-t"><div class="dk-r hd"><div>'+(en?'RIGHT NOW':'AHORA')+'</div><div>'+t('agua')+'</div><div>'+t('olas')+'</div><div>'+t('viento')+'</div></div>'+rs+'</div>':'';if(typeof spSync==='function')spSync()}
 function renderWx(){
   var now=document.getElementById('wxNow');
   if(WXC){now.innerHTML=wxIcon(WXC.c).replace('<svg ','<svg class="wi" ')+'<b>'+Math.round(WXC.t)+'°</b>'}
