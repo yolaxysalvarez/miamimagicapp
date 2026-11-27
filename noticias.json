@@ -55,6 +55,69 @@
   "videos": [],
   "notas": [
     {
+      "id": "hepatitis-a-viajes-cuba-miami-dade-aviso-salud",
+      "scope": "miami",
+      "tema": "ciudad",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T11:07:19-05:00",
+      "autor": "Yolaxys Alvarez",
+      "foto": "mm-airport-fll.jpg",
+      "foto_mm": false,
+      "foto_alt": "Un avión se aproxima a una pista de aterrizaje con edificios al fondo",
+      "foto_pie": "Un avión se aproxima a una pista en el sur de Florida. Imagen de archivo.",
+      "foto_pie_en": "A plane approaches a runway in South Florida. File photo.",
+      "fuentes": [
+        {
+          "n": "Departamento de Salud de Florida en Miami-Dade · Aviso «Hepatitis A is Preventable» (20 de noviembre de 2026)",
+          "u": "https://miamidade.floridahealth.gov/"
+        },
+        {
+          "n": "CDC · MMWR: Hepatitis A Outbreak Associated with Cuba — Florida, June 2024–February 2026 (24 de septiembre de 2026)",
+          "u": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7537a1.htm"
+        }
+      ],
+      "desarrollo": false,
+      "es": {
+        "etiqueta": "SALUD",
+        "titulo": "Hepatitis A: Miami-Dade pide precaución a quien viaje a Cuba",
+        "bajada": "El Departamento de Salud dice que la infección se puede prevenir. Los CDC recomiendan vacunarse antes del viaje.",
+        "toca": [
+          "Los CDC recomiendan la vacuna contra la hepatitis A, o inmunoglobulina, antes de viajar a Cuba.",
+          "Pregunta a tu médico o a tu farmacia antes del viaje. El Departamento de Salud de Florida en Miami-Dade atiende en el 305-324-2400.",
+          "Esta nota es informativa y no sustituye el consejo de un profesional de salud."
+        ],
+        "cuerpo": [
+          "El Departamento de Salud de Florida en Miami-Dade advierte en [su página oficial](https://miamidade.floridahealth.gov/) que quienes viajan a Cuba pueden tener un riesgo mayor de contraer hepatitis A, y que la infección se puede prevenir. El aviso se publicó el 20 de noviembre.",
+          "## Lo que encontraron los CDC",
+          "Detrás del aviso hay un [informe de los CDC](https://www.cdc.gov/mmwr/volumes/75/wr/mm7537a1.htm), publicado el 24 de septiembre con datos del Departamento de Salud de Florida. Revisó 249 casos confirmados de hepatitis A en el estado entre junio de 2024 y febrero de 2026: 79 se asociaron al brote vinculado a Cuba y 46 de ellos eran de Miami-Dade. El 72% de esos pacientes fue hospitalizado y no hubo muertes.",
+          "El mismo informe aclara que, como la mayoría de los pacientes pasó tiempo tanto en Cuba como en Florida, no se puede confirmar que todos se contagiaran en la isla. También señala que el riesgo para los viajeros continúa.",
+          "## Cómo prevenirla",
+          "Los CDC recomiendan vacunarse contra la hepatitis A, o recibir inmunoglobulina, antes de viajar a Cuba. Para el viaje, el informe pide atención al agua y a los alimentos, y lavarse bien las manos."
+        ]
+      },
+      "en": {
+        "etiqueta": "HEALTH",
+        "titulo": "Hepatitis A: Miami-Dade urges caution for travelers to Cuba",
+        "bajada": "The Health Department says the infection is preventable. The CDC recommends vaccination before the trip.",
+        "toca": [
+          "The CDC recommends hepatitis A vaccination, or immune globulin, before travel to Cuba.",
+          "Ask your doctor or pharmacy before the trip. The Florida Department of Health in Miami-Dade can be reached at 305-324-2400.",
+          "This story is informational and does not replace the advice of a health professional."
+        ],
+        "cuerpo": [
+          "The Florida Department of Health in Miami-Dade warns on [its official site](https://miamidade.floridahealth.gov/) that travelers to Cuba may be at increased risk for hepatitis A, and that the infection is preventable. The notice was published on Nov. 20.",
+          "## What the CDC found",
+          "Behind the notice is a [CDC report](https://www.cdc.gov/mmwr/volumes/75/wr/mm7537a1.htm), published on Sept. 24 with data from the Florida Department of Health. It reviewed 249 confirmed hepatitis A cases in the state between June 2024 and February 2026: 79 were associated with the Cuba-linked outbreak, and 46 of those were in Miami-Dade. Seventy-two percent of those patients were hospitalized and there were no deaths.",
+          "The same report notes that, because most patients spent time in both Cuba and Florida, it cannot be confirmed that all of them were infected on the island. It also says the risk for travelers is ongoing.",
+          "## How to prevent it",
+          "The CDC recommends hepatitis A vaccination, or immune globulin, before travel to Cuba. For the trip, the report calls for attention to water and food safety and thorough handwashing."
+        ]
+      }
+    },
+    {
       "id": "midtown-park-distrito-2000-millones-aprobado",
       "scope": "miami",
       "tema": "casa",
@@ -9097,7 +9160,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T11:05:18-05:00",
+  "updated_at": "2026-11-27T11:07:19-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
