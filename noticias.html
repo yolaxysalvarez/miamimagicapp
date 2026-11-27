@@ -1051,19 +1051,25 @@ html.in-app.app21 .bk{display:inline-flex}
  footer .fb>span+span{border-top:1px solid rgba(201,150,60,.25)}
  footer .ft>div:last-child{row-gap:4px;column-gap:22px}
 }
-/* Miami de antes: línea de tiempo de "otros años", claramente de historia */
+/* Miami de antes: tarjeta + "otros años" dentro de un mismo marco, a la derecha de Opinión */
 .hist-th{display:none}
 @media(min-width:1021px){
- .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l{background:linear-gradient(180deg,#FFF8EF,#FFFDF9);border:1px solid rgba(201,150,60,.42);border-radius:14px;margin-top:6px;padding:22px 28px 24px;gap:0;display:flex;flex-wrap:wrap}
+ .split:not(.solo):not(:has(>#opB[style*="none"])){grid-template-columns:minmax(0,.62fr) minmax(0,1fr);gap:0 32px}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) #datoBox{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:0 26px;background:linear-gradient(180deg,#FFF8EF,#FFFDF9);border:1px solid rgba(201,150,60,.45);border-radius:16px;padding:12px}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist{min-height:560px}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .op-c b{font-size:28px}.split .op-c em{font-size:17px}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l{grid-column:auto;display:flex;flex-direction:column;flex-wrap:nowrap;gap:0;background:none;border:0;border-radius:0;margin:0;padding:12px 14px 6px 4px}
  .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l::before{display:none}
- .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-th{display:flex;flex:0 0 100%;align-items:baseline;gap:14px;padding:0 0 22px}
- .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-th em{font-family:var(--pf);font-style:italic;font-weight:700;font-size:26px;line-height:1;color:#8A5A12}
- .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-th i{font-style:normal;font-family:var(--bb);font-size:16px;letter-spacing:.2em;color:var(--mut)}
- .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l .hist-th a{display:inline;margin-left:auto;padding:0 0 2px;border:0;border-bottom:1px solid currentColor;font-family:var(--bb);font-size:15px;letter-spacing:.16em;color:#8A5A12}
- .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a{position:relative;display:block;flex:1 1 0;min-width:0;border:0;border-top:2px solid rgba(201,150,60,.6);padding:18px 22px 0 0}
- .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a::before{content:"";position:absolute;left:0;top:-8px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px #FFF9F1}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-th{display:flex;flex:none;align-items:baseline;gap:12px;padding:0 0 16px}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-th em{display:none}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-th i{font-style:normal;font-family:var(--bb);font-size:17px;letter-spacing:.18em;color:#8A5A12;white-space:nowrap}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l .hist-th a{display:inline;margin-left:auto;padding:0 0 2px;border:0;border-bottom:1px solid currentColor;font-family:var(--bb);font-size:14.5px;letter-spacing:.08em;color:#8A5A12;white-space:nowrap}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a{position:relative;display:block;flex:1 1 auto;min-width:0;border:0;border-left:2px solid rgba(201,150,60,.6);margin-left:7px;padding:0 0 12px 22px}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a:last-child{padding-bottom:0}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a::before{content:"";position:absolute;left:-8px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px #FFF9F1}
  .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a:hover b{color:var(--coral-d)}
- .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a b{display:block;margin-bottom:6px;font-size:28px;color:#8A5A12}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a b{display:block;margin:0 0 3px;font-size:24px;line-height:1.1;color:#8A5A12}
+ .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l>a span{font-size:15.5px;line-height:1.38}
  .split:not(.solo):not(:has(>#opB[style*="none"])) .hist-all{display:none}
 }
 /* El Muelle: tablero de condiciones (Miami y los Cayos a la par) */
@@ -1778,7 +1784,7 @@ function renderPt(){
   /* la historia de la semana (la del lunes) abre el bloque durante 7 días */
   (function(){var lim=new Date(Date.now()-7*864e5).toLocaleDateString('en-CA',{timeZone:'America/New_York'}),best=null;ds.forEach(function(x){var f=(ids[x.id].fecha||'');if(ids[x.id].tema==='historia'&&f>=lim&&(!best||f>(ids[best.id].fecha||'')))best=x});if(best)dd=best})();
   sp.classList.toggle('solo',!dd);
-  db.innerHTML=dd?(function(){var n=ids[dd.id],s=img(n);return '<a class="hist" href="'+href(n)+'"><span class="im">'+(s?'<img src="'+esc(s)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy">':'')+'</span><span class="bd"><span class="k">'+(en?'Miami, back then':'Miami de antes')+'</span><span class="ks">'+(en?'THE HISTORY OF MIAMI AND THE KEYS, ONE YEAR AT A TIME':'LA HISTORIA DE MIAMI Y LOS CAYOS, UN AÑO A LA VEZ')+'</span><span class="yr">'+esc(dd.a)+'</span><p>'+esc(en?(dd.en||dd.es):dd.es)+'</p><span class="go">'+(en?'THE STORY TODAY →':'LA HISTORIA DE HOY →')+'</span></span></a><div class="hist-l" data-h="'+(en?'OTHER YEARS':'OTROS AÑOS')+'"><div class="hist-th"><em>'+(en?'Miami, back then':'Miami de antes')+'</em><i>'+(en?'OTHER YEARS':'OTROS AÑOS')+'</i><a href="/noticias?s=historia'+(L==='en'?'&lang=en':'')+(Q.get('src')?'&src='+encodeURIComponent(Q.get('src')):'')+'">'+(en?'ALL THE STORIES →':'TODAS LAS HISTORIAS →')+'</a></div>'+ds.filter(function(x){return x!==dd}).sort(function(a,b){return a.a<b.a?-1:1}).map(function(x){var tx=en?(x.en||x.es):x.es,c=tx.split(/\. /)[0];return '<a href="'+href(ids[x.id])+'"><b>'+esc(x.a)+'</b><span>'+esc(c.replace(/\.$/,''))+'.</span></a>'}).join('')+'</div><a class="hist-all" href="/noticias?s=historia'+(L==='en'?'&lang=en':'')+(Q.get('src')?'&src='+encodeURIComponent(Q.get('src')):'')+'">'+(en?'ALL THE STORIES →':'TODAS LAS HISTORIAS →')+'</a>'})():'';
+  db.innerHTML=dd?(function(){var n=ids[dd.id],s=img(n);return '<a class="hist" href="'+href(n)+'"><span class="im">'+(s?'<img src="'+esc(s)+'" alt="'+esc(n.foto_alt||'')+'" loading="lazy">':'')+'</span><span class="bd"><span class="k">'+(en?'Miami, back then':'Miami de antes')+'</span><span class="ks">'+(en?'THE HISTORY OF MIAMI AND THE KEYS, ONE YEAR AT A TIME':'LA HISTORIA DE MIAMI Y LOS CAYOS, UN AÑO A LA VEZ')+'</span><span class="yr">'+esc(dd.a)+'</span><p>'+esc(en?(dd.en||dd.es):dd.es)+'</p><span class="go">'+(en?'THE STORY TODAY →':'LA HISTORIA DE HOY →')+'</span></span></a><div class="hist-l" data-h="'+(en?'OTHER YEARS':'OTROS AÑOS')+'"><div class="hist-th"><em>'+(en?'Miami, back then':'Miami de antes')+'</em><i>'+(en?'OTHER YEARS':'OTROS AÑOS')+'</i><a href="/noticias?s=historia'+(L==='en'?'&lang=en':'')+(Q.get('src')?'&src='+encodeURIComponent(Q.get('src')):'')+'">'+(en?'SEE ALL →':'VER TODAS →')+'</a></div>'+ds.filter(function(x){return x!==dd}).sort(function(a,b){return a.a<b.a?-1:1}).map(function(x){var tx=en?(x.en||x.es):x.es,c=tx.split(/\. /)[0];return '<a href="'+href(ids[x.id])+'"><b>'+esc(x.a)+'</b><span>'+esc(c.replace(/\.$/,''))+'.</span></a>'}).join('')+'</div><a class="hist-all" href="/noticias?s=historia'+(L==='en'?'&lang=en':'')+(Q.get('src')?'&src='+encodeURIComponent(Q.get('src')):'')+'">'+(en?'ALL THE STORIES →':'TODAS LAS HISTORIAS →')+'</a>'})():'';
   /* video */
   var vs=PT.videos||[];
   if(vs.length&&hm){var st=(doy()*3)%vs.length,vv=[];for(var i=0;i<Math.min(5,vs.length);i++)vv.push(vs[(st+i)%vs.length]);
