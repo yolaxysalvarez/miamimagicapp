@@ -405,7 +405,7 @@ function renderMas(){
   if(mix.length)h+='<div class="mg"><h5>'+(L==='en'?'WHAT MOVES TODAY':'LO QUE MUEVE HOY')+'</h5>'+mix.join('')+'</div>';
   var hMid=h;h='';
   if(ev.length)h+='<div class="mg'+(SE.length&&SM?' evg':'')+'"><h5>'+(SE.length?esc(sName())+(en?' · LISTINGS':' · LA CARTELERA'):t('sem'))+'</h5>'+ev.map(function(o){var e=o.e,on=o.a<t0,d=on?o.b:o.a;var ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,'');
-    return '<a class="ev" href="/?ev='+encodeURIComponent(e.id)+'"><span class="dt"><i>'+(on?(en?'UNTIL':'HASTA'):DW[d.getDay()])+'</i><u>'+d.getDate()+'</u><s>'+MO[d.getMonth()]+'</s></span><span><span class="eb'+(o.ky?' ky':'')+'">'+esc(((en?e.type:(e.type_es||e.type))||'').toUpperCase())+'</span><b>'+esc(en?e.name:(e.name_es||e.name))+'</b><p>'+esc(ve)+(tm?' · '+esc(tm):'')+'</p></span></a>'}).join('')+'<a class="go" href="/?go=week">'+t('cart')+'</a></div>';
+    return '<a class="ev" href="/?ev='+encodeURIComponent(e.id)+'"><span class="dt"><i>'+(on?(en?'UNTIL':'HASTA'):DW[d.getDay()])+'</i><u>'+d.getDate()+'</u><s>'+MO[d.getMonth()]+'</s></span><span><span class="eb'+(o.ky?' ky':'')+'">'+esc(((en?e.type:(e.type_es||e.type))||'').toUpperCase())+'</span><b>'+esc(en?e.name:(e.name_es||e.name))+'</b><p>'+esc(ve)+(tm?' · '+esc(tm):'')+'</p></span></a>'}).join('')+'<a class="go" href="'+(L==='en'?'/news':'/noticias')+(Q.get('src')?'?src='+encodeURIComponent(Q.get('src'))+(Q.get('app')?'&app='+encodeURIComponent(Q.get('app')):''):'')+'#ag">'+(L==='en'?'SEE MORE →':'VER MÁS →')+'</a></div>';
   h=(S&&SM)?hTop+h+hMid:hTop+hMid+h;
   box.innerHTML=h;box.style.display=h?'':'none';
 }

@@ -746,7 +746,10 @@ body:not(.home) .split{display:block;margin-bottom:0}
 .ms-c .ad{font-size:15px;color:var(--mut)}
 .ms-c p{font-size:15.5px;line-height:1.42;color:var(--ink2)}
 .ms-c .lkl{align-self:flex-start;margin-top:auto;font-size:15.5px}
-.ms-f{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:18px;font-size:15.5px;color:var(--mut)}
+.ms-c .go{position:absolute;left:10px;bottom:10px;font-family:var(--bb);font-size:14.5px;letter-spacing:.14em;color:#fff;background:rgba(14,27,48,.82);border-radius:999px;padding:6px 12px 4px;transition:background .2s}
+.ms-c a.ph:hover .go{background:var(--coral-d)}
+.ms-c a.nm{color:var(--ink)}.ms-c a.nm:hover{text-decoration:none}
+.ms-f{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:15.5px;color:var(--mut)}
 /* dónde quedarse */
 .ht{margin:0 0 60px}
 .ht .sh{margin-bottom:8px}
@@ -774,6 +777,7 @@ body:not(.home) .split{display:block;margin-bottom:0}
  body:not(.home) .pair{display:block}
  .pair:has(>section[style*="none"]){display:block}
  .pair .dk,.pair .cc{margin:0}
+ .pair{align-items:stretch}.pair .cc{display:flex;flex-direction:column}.pair .cc .cc-ft{margin-top:auto}
  .pair .dk{grid-template-columns:1fr;border-radius:14px}
  .pair .dk-post{min-height:0;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 18px;padding:20px 26px 18px}
  .pair .dk-post .dk-vt{flex:none;width:auto;min-height:0;font-size:46px}
@@ -836,6 +840,28 @@ body:not(.home) .split{display:block;margin-bottom:0}
  .apps{grid-template-columns:1fr;gap:26px}.af.big{grid-column:auto;min-height:320px;padding:20px}.af.big b{font-size:25px}.apps-m{margin-bottom:44px}
 }
 .split.solo{display:block}.split:has(>#opB[style*="none"]){display:block}.split #opB{margin:0}.split .op-c{grid-template-columns:1fr;gap:14px}
+
+/* Opinión + Miami de antes: dos tarjetas a la misma altura y los otros años en una franja debajo */
+@media(min-width:1021px){
+.split:not(.solo):not(:has(>#opB[style*="none"])){grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:26px 36px;align-items:stretch}
+.split:not(.solo):not(:has(>#opB[style*="none"])) #datoBox{display:contents}
+.split:not(.solo):not(:has(>#opB[style*="none"])) #opB{display:flex;flex-direction:column;margin:0}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .op-c{flex:1;position:relative;display:block;min-height:440px;border-radius:12px;overflow:hidden;background:#0E1B30}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .op-c .ph{position:absolute;inset:0;aspect-ratio:auto;border-radius:0}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .op-c .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,27,48,.08) 0%,rgba(14,27,48,.35) 42%,rgba(14,27,48,.92) 100%)}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .op-c>span:not(.ph){position:absolute;left:30px;right:30px;bottom:28px;color:#fff}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .op-c b{color:#fff;font-size:34px;line-height:1.1}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .op-c em{color:rgba(255,255,255,.92);font-size:18px}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .op-c i{color:#FFD9A0}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .op-c .wm{top:14px;bottom:auto}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .hist{display:flex;flex-direction:column}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .hist .im{flex:1;aspect-ratio:auto;min-height:200px}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0 28px;margin-top:4px}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l::before{grid-column:1/-1;padding-bottom:6px}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l a{display:block;border-bottom:0;padding:8px 0 0}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .hist-l b{display:block;margin-bottom:6px}
+.split:not(.solo):not(:has(>#opB[style*="none"])) .hist-all{grid-column:1/-1;justify-self:start;margin-top:0}
+}
 .ul a>i,.fz-c .n u,.hist .yr,.hist-l b,.tv-l .no,.sp-sun b,.dk-cond b,.ag-d b,.ag-days button b{font-family:var(--dm);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 @media (max-width:600px){.ag-days{flex-wrap:wrap;gap:6px;overflow:visible}.ag-days button.all{flex:1 0 100%;justify-content:center;padding:10px 14px}.ag-days button:not(.all){flex:1 1 0;min-width:0;padding:7px 0 6px}.ag-days button:not(.all) i{font-size:12.5px;letter-spacing:.06em}.ag-days button:not(.all) b{font-size:19px}.ag-days button:not(.all) u{display:none}}
 .hist .yr{letter-spacing:-.04em}
@@ -1142,7 +1168,7 @@ body{background:#fff;text-rendering:optimizeLegibility}
     </div>
     <div class="ag-days" id="agDays"></div>
     <div class="ag-l" id="agL"></div>
-    <div class="ag-f"><button type="button" class="ag-mb" id="agMb" style="display:none"></button><a id="agGo" href="/?go=week"></a></div>
+    <div class="ag-f"><button type="button" class="ag-mb" id="agMb" style="display:none"></button></div>
   </section>
 
   <section class="tv" id="tv" aria-label="Video" style="display:none"></section>
@@ -1188,8 +1214,8 @@ body{background:#fff;text-rendering:optimizeLegibility}
         <button class="cc-more" id="ccMore" data-t="ccmore"></button>
       </div>
     </div>
-    <div id="ccGuiaHome"></div>
     <div class="cc-b" id="ccB"></div>
+    <div id="ccGuiaHome"></div>
     <div class="cc-ft"><small data-t="ccnota"></small><button type="button" class="cc-mb" id="ccMb" style="display:none"></button></div>
   </section>
   </div>
@@ -1375,7 +1401,7 @@ function renderCc(){
   var all=(DATA.notas||[]).filter(function(n){return isCC(n)||n.cc}).sort(function(x,y){return FK(y).localeCompare(FK(x))});
   var sec=document.getElementById('cc');sec.style.display=all.length?'':'none';
   document.getElementById('ccT').innerHTML=ccw();document.getElementById('ccFoot').innerHTML=ccw().replace('class="ccw"','class="ccw" style="font-weight:700"');
-  if(ST._ccSc!==ST.scope){ST._ccSc=ST.scope;ST.ccS=ST.scope==='cayos'?'cayos':'miami';ST.ccN=3}
+  if(ST._ccSc!==ST.scope){ST._ccSc=ST.scope;ST.ccS=ST.scope==='cayos'?'cayos':'miami';ST.ccN=2}
   document.querySelectorAll('#ccSel button').forEach(function(b){var on=b.dataset.cc===ST.ccS;b.classList.toggle('on',on);b.setAttribute('aria-selected',on?'true':'false')});
   var a=all.filter(function(n){return ST.ccS==='cayos'?n.scope==='cayos':n.scope!=='cayos'}),b=document.getElementById('ccB'),mb=document.getElementById('ccMb');
   function k(n){return esc(F(n,'etiqueta')||(L==='en'?'YOUR HOME':'TU CASA'))}
@@ -1386,7 +1412,7 @@ function renderCc(){
    +(r.length?'<div class="cc-l">'+r.map(function(n,i){var f=F(n);return '<article class="cc-it'+(i>=ST.ccN?' x':'')+'"><a class="ph'+(n.foto_fit==='contain'?' fit':'')+'" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'"'+(n.foto_bg?' style="background:'+esc(n.foto_bg)+'"':'')+'>'+(img(n)&&n.foto_fit==='contain'?'<img class="fitbg" src="'+esc(img(n))+'" alt="" aria-hidden="true" loading="lazy">':'')+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+k(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join('')+'</div>':'');
   mb.style.display=r.length>ST.ccN?'':'none';mb.textContent=(L==='en'?'ALL CASA & COAST':'TODO CASA & COAST')+' ↓';
 }
-document.getElementById('ccSel').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;ST.ccS=b.dataset.cc;ST.ccN=3;renderCc()});
+document.getElementById('ccSel').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;ST.ccS=b.dataset.cc;ST.ccN=2;renderCc()});
 document.getElementById('ccMb').onclick=function(){ST.ccN=99;renderCc()};
 document.getElementById('ccPill').onclick=document.getElementById('ccMore').onclick=function(){ST.casa=true;ST.hamaca=false;ST.muelle=false;ST.ky=false;ST.hi=false;ST.op=false;ST.dp=false;render();scrollTo({top:0,behavior:'smooth'})};
 function cardW(n){var f=F(n);return '<article class="card wide"><a href="'+href(n)+'">'+ph(n)+'</a><div><span class="eb">'+eb(n)+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><p>'+esc(f.bajada||'')+'</p><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}
@@ -1431,7 +1457,7 @@ function render(){
   document.getElementById('hmMore').style.display=h.length>3?'':'none';
   // el muelle
   var mu=(DATA.notas||[]).filter(function(n){return n.muelle}).sort(function(x,y){return (y.muelle_portada?1:0)-(x.muelle_portada?1:0)||FK(y).localeCompare(FK(x))});
-  var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=4;dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
+  var dl=document.getElementById('dkList');if(!ST.dkN)ST.dkN=(window.innerWidth>1020?5:4);dl.className=mu.length===1?'dk-one':'sw';dl.innerHTML=mu.length?mu.slice(0,12).map(function(n,i){var f=F(n);return '<article class="dk-it'+(i>=ST.dkN?' x':'')+'"><a class="ph" href="'+href(n)+'" aria-label="'+esc(f.titulo)+'">'+(img(n)?'<img src="'+esc(img(n))+'" alt="" loading="lazy">':'')+'</a><div><span class="k">'+esc(f.etiqueta||'')+'</span><h4><a class="hl" href="'+href(n)+'">'+esc(f.titulo)+'</a></h4><span class="meta">'+mins(n)+' '+t('min')+'</span></div></article>'}).join(''):'<div class="empty" style="margin-top:18px"><b>'+t('vacioT')+'</b>'+t('vacioM')+'</div>';
   document.getElementById('dkMore').style.display=mu.length>4?'':'none';
   var dm=document.getElementById('dkMb');dm.style.display=mu.length>ST.dkN?'':'none';dm.textContent=(L==='en'?'ALL THE DOCK':'TODO EL MUELLE')+' ↓';
   renderDk();renderCc();
@@ -1658,7 +1684,7 @@ function renderPt(){
     ms.style.display='';
     ms.innerHTML='<div class="ms-h"><h3 class="ms-t">La <em>Mesa</em></h3><p>'+(en?'Miami restaurants filmed by Miami Magic: what each one is, and its full card in the app.':'Restaurantes de Miami grabados por Miami Magic: qué es cada uno, y su ficha completa en la app.')+'</p>'+navB(en)+'</div>'
      +'<div class="ms-r" id="msR">'+ord.map(function(x){var im=x.foto?'<img src="'+esc(ptF(x.foto))+'" alt="" loading="lazy">':(x.yid?ytImg(x.yid):'');
-        return '<article class="ms-c"><span class="ph">'+im+(x.patrocinado?'<span class="tg pt">'+(en?'SPONSORED':'PATROCINADO')+'</span>':x.yid?'<span class="tg"><svg width="11" height="11" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5l7 4.5-7 4.5z" fill="#fff"/></svg>VIDEO</span>':'')+'</span><span class="k">'+esc((en?x.cat:(x.cat_es||x.cat))||'')+'</span><b>'+esc(x.name)+'</b><span class="ad">'+esc(x.addr||'')+'</span><p>'+esc(en?(x.en||x.es):x.es)+'</p>'+appL('/?item='+encodeURIComponent(x.id)+'&type=rest',en?'MENU, HOURS AND VIDEO IN THE APP':'MENÚ, HORARIO Y VIDEO EN LA APP')+'</article>'}).join('')+'</div>'
+        var mu_='/?item='+encodeURIComponent(x.id)+'&type=rest';return '<article class="ms-c"><a class="ph" href="'+mu_+'" aria-label="'+esc(x.name)+'">'+im+(x.patrocinado?'<span class="tg pt">'+(en?'SPONSORED':'PATROCINADO')+'</span>':x.yid?'<span class="tg"><svg width="11" height="11" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5l7 4.5-7 4.5z" fill="#fff"/></svg>VIDEO</span>':'')+'<span class="go">'+(en?'MENU AND HOURS →':'MENÚ Y HORARIO →')+'</span></a><span class="k">'+esc((en?x.cat:(x.cat_es||x.cat))||'')+'</span><a class="nm hl" href="'+mu_+'"><b>'+esc(x.name)+'</b></a><span class="ad">'+esc(x.addr||'')+'</span><p>'+esc(en?(x.en||x.es):x.es)+'</p></article>'}).join('')+'</div>'
      +'<div class="ms-f"><span class="adv">'+(en?'Your restaurant at La Mesa: ':'Tu restaurante en La Mesa: ')+'<a href="mailto:contacto@miamimagicapp.com?subject=La%20Mesa">contacto@miamimagicapp.com</a></span>'+appL('/?go=rest',en?'ALL RESTAURANTS IN THE APP':'TODOS LOS RESTAURANTES EN LA APP')+'</div>';
     railNav(ms,'msR');
   } else ms.style.display='none';
@@ -1724,7 +1750,7 @@ function renderAg(){
     var ky=e.scope==='keys'||e.zone==='keys',ty=(en?e.type:(e.type_es||e.type))||'',ve=(en?e.venue:(e.venue_es||e.venue))||'',tm=((en?e.time:(e.time_es||e.time))||'').replace(/^[^·]*·\s*/,''),pr=(en?e.price:(e.price_es||e.price))||'';
     return '<a class="ag-r'+(ky?' ky':'')+'" data-ev="'+esc(e.id)+'" href="/noticias?ev='+encodeURIComponent(e.id)+'"><span class="ag-d"><i'+(dw.length>5?' class="w"':'')+'>'+esc(dw)+'</i><b'+(String(dn).length>2?' class="rg"':'')+'>'+esc(dn)+'</b><u>'+esc(mo)+'</u></span><span class="ag-x"><span class="k">'+(ky&&AGS.tab!=='keys'?'<em>'+(en?'THE KEYS':'LOS CAYOS')+'</em> · ':'')+esc(ty.toUpperCase())+'</span><h4>'+esc(en?e.name:(e.name_es||e.name))+'</h4><p>'+esc(ve)+(tm?' · <b>'+esc(tm)+'</b>':'')+(pr&&!/^\$+$/.test(pr)&&!/enlace|link/i.test(pr)?' · '+esc(pr):'')+'</p></span></a>'}).join(''):'<p class="ag-e">'+(en?'Nothing on the calendar for these days yet.':'Todavía no hay nada en el calendario para estos días.')+'</p>';
   var mb=document.getElementById('agMb');mb.style.display=li.length>AGS.n?'':'none';mb.textContent=(en?'MORE':'MÁS')+' ('+(li.length-AGS.n)+')';
-  document.getElementById('agGo').textContent=(en?'FULL LISTINGS IN THE APP':'LA CARTELERA COMPLETA EN LA APP')+' →';
+
 }
 /* ── ficha del evento: se amplía aquí mismo, con su enlace oficial ── */
 function evFind(id){if(!AGD)return null;var a=(AGD.semana||[]).concat(AGD.proximos||[],AGD.mes||[]);for(var i=0;i<a.length;i++)if(a[i]&&a[i].id===id)return a[i];return null}
