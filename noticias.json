@@ -55,6 +55,63 @@
   "videos": [],
   "notas": [
     {
+      "id": "hurricanes-boston-college-hard-rock-28-noviembre-previa",
+      "scope": "miami",
+      "tema": "deporte",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T08:35:24-05:00",
+      "autor": "Yolaxys Alvarez",
+      "fuentes": [
+        {
+          "n": "Sports Illustrated · Cómo ver Miami–Boston College",
+          "u": "https://www.si.com/college/miami/football/how-to-watch-no-4-miami-regular-season-finale-against-boston-college"
+        },
+        {
+          "n": "Sports Illustrated · Miami en el ranking del College Football Playoff",
+          "u": "https://www.si.com/college/miami/football/where-miami-ranks-in-the-cfp-rankings-ahead-of-regular-season-finale-playoff-outlook"
+        }
+      ],
+      "desarrollo": false,
+      "foto": "mm-hard-rock-stadium-techo.jpg",
+      "foto_pos": "center 55%",
+      "foto_mm": false,
+      "foto_alt": "Techo del Hard Rock Stadium, casa de los Miami Hurricanes",
+      "foto_pie": "Hard Rock Stadium, Miami Gardens. Foto: Adobe Stock (uso editorial)",
+      "foto_pie_en": "Hard Rock Stadium, Miami Gardens. Photo: Adobe Stock (editorial use)",
+      "vence": "2026-11-28",
+      "es": {
+        "etiqueta": "DEPORTES",
+        "titulo": "Los Hurricanes cierran la temporada regular ante Boston College con la final de la ACC ya en el bolsillo",
+        "bajada": "Miami llega 10-1 y séptimo en el ranking del playoff al partido del sábado 28, a las 12:00 p.m., en el Hard Rock Stadium. Una semana después lo espera Wake Forest por el título de la conferencia.",
+        "toca": [
+          "Sábado 28 de noviembre, 12:00 p.m., en el Hard Rock Stadium, Miami Gardens. Por ESPN, según [Sports Illustrated](https://www.si.com/college/miami/football/how-to-watch-no-4-miami-regular-season-finale-against-boston-college).",
+          "Final de la ACC: sábado 5 de diciembre, en Charlotte, contra Wake Forest.",
+          "El domingo 29, el mismo estadio recibe a [Dolphins y Jets](https://miamimagicapp.com/noticias/dolphins-jets-hard-rock-29-noviembre-previa)."
+        ],
+        "cuerpo": [
+          "Los Hurricanes juegan el sábado 28 de noviembre, a las 12:00 p.m., su último partido de la temporada regular: reciben a Boston College en el Hard Rock Stadium, en la despedida de los jugadores de último año, de acuerdo con la previa de [Sports Illustrated](https://www.si.com/college/miami/football/how-to-watch-no-4-miami-regular-season-finale-against-boston-college). Miami llega con marca de 10-1, invicto en ocho partidos de la ACC, y en el séptimo puesto del [ranking del College Football Playoff](https://www.si.com/college/miami/football/where-miami-ranks-in-the-cfp-rankings-ahead-of-regular-season-finale-playoff-outlook).",
+          "El rival necesita el partido más que el local. Boston College está 5-6 y una victoria lo haría elegible para un bowl; Miami, en cambio, ya tiene su lugar en la final de la conferencia, el sábado 5 de diciembre en Charlotte, contra Wake Forest, al que venció 33-20 el 18 de septiembre. La única derrota de los Hurricanes fue 31-24 en Notre Dame, el 7 de noviembre; después ganaron a Duke y a Virginia Tech."
+        ]
+      },
+      "en": {
+        "etiqueta": "SPORTS",
+        "titulo": "The Hurricanes close the regular season against Boston College with the ACC title game already in hand",
+        "bajada": "Miami comes in 10-1 and seventh in the playoff ranking for the game on Saturday the 28th, at noon, at Hard Rock Stadium. A week later Wake Forest awaits for the conference title.",
+        "toca": [
+          "Saturday, Nov. 28, 12:00 p.m., at Hard Rock Stadium, Miami Gardens. On ESPN, per [Sports Illustrated](https://www.si.com/college/miami/football/how-to-watch-no-4-miami-regular-season-finale-against-boston-college).",
+          "ACC championship game: Saturday, Dec. 5, in Charlotte, against Wake Forest.",
+          "On Sunday the 29th, the same stadium hosts [Dolphins and Jets](https://miamimagicapp.com/news/dolphins-jets-hard-rock-29-noviembre-previa)."
+        ],
+        "cuerpo": [
+          "The Hurricanes play their last regular-season game on Saturday, Nov. 28, at noon: they host Boston College at Hard Rock Stadium, on Senior Day, according to the [Sports Illustrated](https://www.si.com/college/miami/football/how-to-watch-no-4-miami-regular-season-finale-against-boston-college) preview. Miami comes in 10-1, unbeaten in eight ACC games, and seventh in the [College Football Playoff ranking](https://www.si.com/college/miami/football/where-miami-ranks-in-the-cfp-rankings-ahead-of-regular-season-finale-playoff-outlook).",
+          "The visitor needs the game more than the host. Boston College is 5-6 and a win would make it bowl eligible; Miami, meanwhile, already has its place in the conference championship game, on Saturday, Dec. 5, in Charlotte, against Wake Forest, which it beat 33-20 on Sept. 18. The Hurricanes' only loss was 31-24 at Notre Dame on Nov. 7; they then beat Duke and Virginia Tech."
+        ]
+      }
+    },
+    {
       "id": "dolphins-jets-hard-rock-29-noviembre-previa",
       "scope": "miami",
       "tema": "deporte",
@@ -8814,7 +8871,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T08:31:32-05:00",
+  "updated_at": "2026-11-27T08:35:24-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
