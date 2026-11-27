@@ -138,7 +138,8 @@
           "n": "Miami-Dade Transit · Metrorail",
           "u": "https://www.miamidade.gov/global/transportation/metrorail.page"
         }
-      ]
+      ],
+      "ultima": 5
     },
     {
       "id": "miami-key-west-en-auto-paradas-peajes",
@@ -238,7 +239,8 @@
           "n": "Ciudad de Key West · Estacionamientos y tarifas",
           "u": "https://cityofkeywest-fl.gov/810/City-Parking-Lots-Rates"
         }
-      ]
+      ],
+      "ultima": 8
     },
     {
       "id": "no-vacancy-miami-beach-doce-hoteles-arte",
@@ -1040,8 +1042,7 @@
           "## How to prevent it",
           "The CDC recommends hepatitis A vaccination, or immune globulin, before travel to Cuba. For the trip, the report calls for attention to water and food safety and thorough handwashing."
         ]
-      },
-      "ultima": 8
+      }
     },
     {
       "id": "midtown-park-distrito-2000-millones-aprobado",
@@ -1562,7 +1563,6 @@
           "The official posts do not detail the cause. The [FAA](https://www.faa.gov/newsroom/faa-daily-air-traffic-report) daily report on Wednesday had already warned of storms that could cause delays in Miami and Fort Lauderdale."
         ]
       },
-      "ultima": 5,
       "arriba": 2,
       "actualizada": "2026-11-26T14:02:34-05:00"
     },
@@ -10099,7 +10099,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T15:50:00-05:00",
+  "updated_at": "2026-11-27T15:30:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
