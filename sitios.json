@@ -1433,8 +1433,13 @@
    "area_photo": "South Dade"
   },
   "k14": {
-   "photo": "fotos/mm-larry-penny-pato-grama-mm.jpg",
-   "area_photo": "South Dade"
+   "photo": "fotos/mm-by-brothers-arco-entrada.jpg",
+   "photos": [
+    "fotos/mm-by-brothers-arco-entrada.jpg",
+    "fotos/mm-by-brothers-park-market.jpg",
+    "fotos/mm-by-brothers-poste-senales.jpg",
+    "fotos/mm-by-brothers-vista-entrada.jpg"
+   ]
   },
   "k-topgolf": {
    "name": "Topgolf Miami · Doral",
