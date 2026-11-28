@@ -55,6 +55,66 @@
   "videos": [],
   "notas": [
     {
+      "id": "regreso-a-clases-30-noviembre-miami-dade-broward-cayos",
+      "scope": "miami",
+      "tema": "calle",
+      "hamaca": false,
+      "muelle": false,
+      "destacada": false,
+      "fecha": "2026-11-27",
+      "publicada": "2026-11-27T20:40:00-05:00",
+      "autor": "Yolaxys Alvarez",
+      "vence": "2026-12-01",
+      "foto": "mm-trafico-atardecer-sur.jpg",
+      "foto_alt": "Autos en una avenida del sur de Miami-Dade al atardecer",
+      "foto_pie": "El tráfico de la mañana vuelve con las escuelas.",
+      "foto_pie_en": "Morning traffic returns with the schools.",
+      "es": {
+        "etiqueta": "TU CALLE",
+        "titulo": "Las clases vuelven el lunes 30 de noviembre",
+        "bajada": "Miami-Dade, Broward y los Cayos terminan el mismo día el receso de Thanksgiving.",
+        "toca": [
+          "Lunes 30 de noviembre de 2026: primer día de clases tras el receso en los tres distritos.",
+          "Vuelven las zonas escolares, con velocidad reducida a la entrada y a la salida.",
+          "Las dudas sobre una escuela en particular se resuelven en el calendario de su distrito."
+        ],
+        "cuerpo": [
+          "Los estudiantes de las escuelas públicas de Miami-Dade, Broward y el condado de Monroe regresan a clases el lunes 30 de noviembre de 2026, después de una semana completa de receso por Thanksgiving, del 23 al 27. Así lo fijan los calendarios 2026-2027 de los tres distritos: [Miami-Dade](https://www.dadeschools.net/), [Broward](https://www.browardschools.com/) y [Monroe](https://www.keysschools.com/).",
+          "Con las escuelas vuelven también los autobuses amarillos y el tráfico de la hora pico. Ese lunes coincide, además, con el arranque de la semana del arte en Miami Beach, que tiene [su propia guía para moverse](https://www.miamimagicapp.com/noticias/semana-del-arte-como-moverse-taxi-acuatico-shuttles).",
+          "El calendario da poca tregua: en Miami-Dade y en los Cayos, el receso de invierno empieza el lunes 21 de diciembre."
+        ]
+      },
+      "en": {
+        "etiqueta": "YOUR STREET",
+        "titulo": "Classes resume Monday, Nov. 30",
+        "bajada": "Miami-Dade, Broward and the Keys end their Thanksgiving break on the same day.",
+        "toca": [
+          "Monday, Nov. 30, 2026: first day back after the break in all three districts.",
+          "School zones are back, with reduced speeds at arrival and dismissal.",
+          "Questions about a specific school are answered in its district's calendar."
+        ],
+        "cuerpo": [
+          "Public school students in Miami-Dade, Broward and Monroe County return to class on Monday, Nov. 30, 2026, after a full week off for Thanksgiving, Nov. 23 to 27. That is what the 2026-2027 calendars of the three districts set: [Miami-Dade](https://www.dadeschools.net/), [Broward](https://www.browardschools.com/) and [Monroe](https://www.keysschools.com/).",
+          "With the schools come the yellow buses and rush-hour traffic. That Monday also marks the start of Art Week in Miami Beach, which has [its own guide to getting around](https://www.miamimagicapp.com/news/semana-del-arte-como-moverse-taxi-acuatico-shuttles).",
+          "The calendar offers little rest: in Miami-Dade and the Keys, winter recess begins Monday, Dec. 21."
+        ]
+      },
+      "fuentes": [
+        {
+          "n": "Miami-Dade County Public Schools · Calendario 2026-2027",
+          "u": "https://www.dadeschools.net/"
+        },
+        {
+          "n": "Broward County Public Schools · Calendario 2026-2027",
+          "u": "https://www.browardschools.com/"
+        },
+        {
+          "n": "Monroe County School District · Calendario 2026-2027",
+          "u": "https://www.keysschools.com/"
+        }
+      ]
+    },
+    {
       "id": "mia-aeropuerto-como-llegar-south-beach-brickell-portmiami",
       "scope": "miami",
       "tema": "calle",
@@ -10111,7 +10171,7 @@
       "actualizada": "2026-11-16T22:00:00-05:00"
     }
   ],
-  "updated_at": "2026-11-27T18:55:00-05:00",
+  "updated_at": "2026-11-27T20:40:00-05:00",
   "_arriba": "Orden editorial dentro de Miami y de los Cayos: 'arriba': 1, 2, 3… pone la nota justo después de la principal de su zona. Se revisa cada día; quitarlo devuelve la nota a su lugar por fecha. En la portada, las notas con 'arriba' abren la columna de su zona aunque estén en Lo último y sean de cualquier sección (Hamaca, El Muelle…).",
   "_versiones": "Notas con fecha que cambian solas: 'versiones': [{desde, hasta (opcional), es:{...}, en:{...}}]. A partir de 'desde' la página sustituye los campos que traiga (titulo, bajada, toca, cuerpo) y aplica 'reemplazos': [[texto viejo, texto nuevo], …] sobre todo el texto. Se aplican en orden de fecha. El texto base (es/en) va con fecha fija ('el viernes 20 de noviembre') porque es el que ve la app de iPhone hasta su próxima versión. La versión 'después' nunca afirma que algo ocurrió: 'estaba programado'. Los resultados se actualizan a mano."
 }
