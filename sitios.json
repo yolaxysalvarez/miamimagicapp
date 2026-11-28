@@ -601,6 +601,39 @@
   "rn12": {
    "photo": "fotos/mm-macarthur-atardecer.jpg",
    "area_photo": "Miami"
+  },
+  "r106": {
+   "name": "Tu Sabor a Cuba",
+   "cat": "Cuban",
+   "cat_es": "Cubano",
+   "filter": "cuban",
+   "bg": "bg-red",
+   "badge": "Krome Ave",
+   "badge_es": "Krome Ave",
+   "rating": 4.3,
+   "rev": "389",
+   "price": "$$",
+   "occ": "Family · Groups",
+   "occ_es": "Familia · Grupos",
+   "tags": [
+    "Cuban",
+    "Seafood",
+    "Krome"
+   ],
+   "desc": "Out on Krome Avenue, an open-air ranch with picnic tables, a pond with a little wooden bridge and a Cuban flag at the back. The kitchen is proud of its Cuban-style crab; there is also lobster, seafood rice, a roast pork sandwich and a tostón stuffed with crab and grilled shrimp. They deliver across Miami.",
+   "desc_es": "En plena Krome Avenue, un rancho abierto con mesas de picnic, un estanque con su puentecito de madera y la bandera cubana al fondo. La casa presume de su cangrejo al estilo cubano; también hay langosta, arroz marinero, pan con lechón y tostón relleno con cangrejo y camarones a la plancha. Hacen entregas en todo Miami.",
+   "addr": "14330 SW 177th Ave (Krome Ave), Miami",
+   "hrs": "Mon 11 AM–6 PM · Tue–Sat 11 AM–9 PM · Sun 9 AM–9 PM",
+   "hrs_es": "Lun 11 AM–6 PM · Mar–Sáb 11 AM–9 PM · Dom 9 AM–9 PM",
+   "pro": false,
+   "link": "https://tusaboracuba.com/",
+   "pnote": "Online orders for pickup need 24 hours' notice; pickup is at 12 PM or 5 PM and you pay when you collect.",
+   "pnote_es": "Los pedidos en línea para recoger se hacen con 24 horas de antelación; se retiran a las 12 PM o a las 5 PM y se paga al recoger.",
+   "photo": "fotos/mm-tu-sabor-a-cuba-puente.jpg",
+   "photos": [
+    "fotos/mm-tu-sabor-a-cuba-puente.jpg",
+    "fotos/mm-tu-sabor-a-cuba-rancho.jpg"
+   ]
   }
  },
  "hoteles": {
