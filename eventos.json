@@ -1840,6 +1840,29 @@
    "free": true
   },
   {
+   "id": "hrl-marcello26",
+   "scope": "local",
+   "d": "2026-11-28",
+   "name": "Marcello Hernández",
+   "name_es": "Marcello Hernández",
+   "venue": "Hard Rock Live · Hollywood (35 min from Miami)",
+   "venue_es": "Hard Rock Live · Hollywood (35 min de Miami)",
+   "time": "Sat · 8:00 PM",
+   "time_es": "Sáb · 8:00 PM",
+   "price": "$$",
+   "price_es": "$$",
+   "type": "Comedy · Stand-up",
+   "type_es": "Comedia · Stand-up",
+   "desc": "The Miami-raised Saturday Night Live comedian brings his stand-up home. Phone-free show. Another date follows on Sunday the 29th, and more in December.",
+   "desc_es": "El comediante de Saturday Night Live, criado en Miami, trae su stand-up a casa. Función sin teléfonos. Hay otra fecha el domingo 29 y más en diciembre.",
+   "tags": [
+    "Nightlife",
+    "Celebrity"
+   ],
+   "link": "https://www.myhrl.com/",
+   "photo": "fotos/mm-guitar-hotel-dia-palmas.jpg"
+  },
+  {
    "id": "kas-rawayana26",
    "scope": "local",
    "d": "2026-12-05",
