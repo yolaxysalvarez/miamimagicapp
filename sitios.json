@@ -1433,6 +1433,27 @@
   "cf6": {
    "photo": "fotos/mm-x-6.jpg",
    "area_photo": "Miami"
+  },
+  "cf-knaus": {
+   "name": "Knaus Berry Farm",
+   "name_es": "Knaus Berry Farm",
+   "bg": "bg-amber",
+   "badge": "Redland · Krome Ave",
+   "badge_es": "Redland · Krome Ave",
+   "desc": "The Redland farm stand that South Florida lines up for every season: warm, sticky cinnamon rolls from a recipe that goes back to 1956, plus pies, breads, milkshakes, strawberries and local produce. It moved a few miles north to Krome Avenue, with more parking and shade for the line.",
+   "desc_es": "El puesto de finca del Redland por el que el sur de Florida hace fila cada temporada: rollos de canela calientes y pegajosos, con una receta que viene de 1956, además de pies, panes, batidos, fresas y productos de la zona. Se mudó unas millas al norte, a Krome Avenue, con más estacionamiento y sombra para la fila.",
+   "addr": "16790 SW 177th Ave (Krome Ave), Redland",
+   "hrs": "Tue–Sun 8 AM–5 PM · Closed Mon · Seasonal",
+   "hrs_es": "Mar–Dom 8 AM–5 PM · Cerrado lun · De temporada",
+   "link": "https://www.knausberryfarm.com/",
+   "photo": "fotos/mm-knaus-rollos-canela.jpg",
+   "photos": [
+    "fotos/mm-knaus-rollos-canela.jpg",
+    "fotos/mm-knaus-letrero.jpg",
+    "fotos/mm-knaus-edificio.jpg"
+   ],
+   "pnote": "It only opens in season, from fall into spring, and closes on Christmas, New Year's Day and Easter. When the strawberries come in, the farm brings back pick-your-own in the field; it announces the dates. Cinnamon rolls are limited to four dozen per person at the counter. Cards and cash are accepted. Go early: the line is part of the ritual.",
+   "pnote_es": "Solo abre en temporada, del otoño a la primavera, y cierra en Navidad, Año Nuevo y Pascua. Cuando llega la cosecha de fresas, la finca vuelve a dejar recogerlas en el campo; las fechas las anuncia ella. Los rollos de canela tienen un límite de cuatro docenas por persona en el mostrador. Aceptan tarjeta y efectivo. Conviene ir temprano: la fila es parte del ritual."
   }
  },
  "ninos": {
